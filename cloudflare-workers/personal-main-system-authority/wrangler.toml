@@ -4,9 +4,10 @@ compatibility_date = "2026-08-20"
 workers_dev = true
 
 # IMPORTANT:
-# - Manual Wrangler deployment authority only.
-# - No GitHub auto-deploy is configured by this file alone.
-# - Real secrets MUST be configured in Cloudflare, never committed.
+# - Production deployment path is GitHub Actions -> cloudflare/wrangler-action@v3.
+# - The deploy workflow lives on the default branch and checks out this staged source ref.
+# - GitHub Repository Secrets provide CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
+# - Real secret values MUST never be committed or exposed in chat.
 # - Personal Worker applies to MAIN_PERSONAL systems only.
 
 [vars]
