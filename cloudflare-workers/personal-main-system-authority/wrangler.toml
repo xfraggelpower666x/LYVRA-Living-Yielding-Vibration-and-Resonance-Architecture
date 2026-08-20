@@ -1,13 +1,16 @@
-name = "666-main-system-authority-evidence"
+name = "lyvrasystem"
 main = "worker.js"
-compatibility_date = "2026-08-20"
+compatibility_date = "2026-04-09"
 workers_dev = true
 
 # IMPORTANT:
-# - Production deployment path is GitHub Actions -> cloudflare/wrangler-action@v3.
-# - The deploy workflow lives on the default branch and checks out this staged source ref.
-# - GitHub Repository Secrets provide CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
+# - This configuration is bound to the existing production Worker script `lyvrasystem`.
+# - Production custom domain ownership was read-only verified before this change.
+# - Deployment transport is GitHub Actions -> cloudflare/wrangler-action@v3.
+# - GitHub is Worker source/version/deploy transport only; it is NOT LYVRA runtime/canon/identity authority.
+# - GitHub Repository Secrets provide CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID in the authenticated deploy repository.
 # - Real secret values MUST never be committed or exposed in chat.
+# - Existing live secret binding `LYVRA_BOOT_SIGNING_SECRET` must be preserved.
 # - Personal Worker applies to MAIN_PERSONAL systems only.
 
 [vars]
