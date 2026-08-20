@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: audit-cloudflare-authority-worker
@@ -25,45 +25,122 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validate secret bindings without exposing values
+      - name: Run read-only Cloudflare discovery
+        id: audit
+        shell: bash
+        run: |
+          set -uo pipefail
+          REPORT=/tmp/CLOUDFLARE_DISCOVERY_LATEST.md
+          {
+            echo "# Cloudflare Authority Worker Discovery"
+            echo
+            echo "GENERATED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "DEPLOY_EXECUTED=FALSE"
+            echo "WORKER_MUTATION=FALSE"
+            echo "READ_ONLY_AUDIT=TRUE"
+          } > "$REPORT"
+
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "GITHUB_SECRET_CLOUDFLARE_API_TOKEN=MISSING" >> "$REPORT"
+            echo "AUDIT_STATUS=AUTH_BINDING_MISSING" >> "$REPORT"
+            exit_code=21
+          elif [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]; then
+            echo "GITHUB_SECRET_CLOUDFLARE_API_TOKEN=PRESENT" >> "$REPORT"
+            echo "GITHUB_SECRET_CLOUDFLARE_ACCOUNT_ID=MISSING" >> "$REPORT"
+            echo "AUDIT_STATUS=AUTH_BINDING_MISSING" >> "$REPORT"
+            exit_code=22
+          else
+            echo "GITHUB_SECRET_CLOUDFLARE_API_TOKEN=PRESENT" >> "$REPORT"
+            echo "GITHUB_SECRET_CLOUDFLARE_ACCOUNT_ID=PRESENT" >> "$REPORT"
+
+            scripts_http=$(curl -sS -o /tmp/workers.json -w '%{http_code}' \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/scripts" || true)
+            echo "WORKERS_API_HTTP=${scripts_http}" >> "$REPORT"
+
+            domains_http=$(curl -sS -o /tmp/domains.json -w '%{http_code}' \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/domains" || true)
+            echo "DOMAINS_API_HTTP=${domains_http}" >> "$REPORT"
+
+            scripts_ok=false
+            domains_ok=false
+            [ "$scripts_http" = "200" ] && jq -e '.success == true' /tmp/workers.json >/dev/null 2>&1 && scripts_ok=true
+            [ "$domains_http" = "200" ] && jq -e '.success == true' /tmp/domains.json >/dev/null 2>&1 && domains_ok=true
+
+            echo >> "$REPORT"
+            echo "## Candidate scripts" >> "$REPORT"
+            if [ "$scripts_ok" = true ]; then
+              candidates=$(jq -r '.result[]? | select((.id // "") | test("lyvra|authority|evidence|boot"; "i")) | "SCRIPT=\(.id)|MODIFIED=\(.modified_on // "unknown")"' /tmp/workers.json)
+              if [ -n "$candidates" ]; then
+                printf '%s\n' "$candidates" >> "$REPORT"
+              else
+                echo "NONE_MATCHING_NAME_FILTER" >> "$REPORT"
+              fi
+            else
+              echo "UNAVAILABLE" >> "$REPORT"
+            fi
+
+            echo >> "$REPORT"
+            echo "## LYVRA custom domain ownership" >> "$REPORT"
+            if [ "$domains_ok" = true ]; then
+              owner=$(jq -r '.result[]? | select((.hostname // "") == "lyvrasystem.666soundsdesign-broadcaster.com") | "HOSTNAME=\(.hostname)|SERVICE=\(.service // "unknown")|ENVIRONMENT=\(.environment // "unknown")"' /tmp/domains.json)
+              if [ -n "$owner" ]; then
+                printf '%s\n' "$owner" >> "$REPORT"
+                echo "LIVE_DOMAIN_OWNER_RESOLVED=TRUE" >> "$REPORT"
+              else
+                echo "NO_MATCHING_CUSTOM_DOMAIN" >> "$REPORT"
+                echo "LIVE_DOMAIN_OWNER_RESOLVED=FALSE" >> "$REPORT"
+              fi
+            else
+              echo "UNAVAILABLE" >> "$REPORT"
+              echo "LIVE_DOMAIN_OWNER_RESOLVED=FALSE" >> "$REPORT"
+            fi
+
+            if [ "$scripts_ok" = true ] && [ "$domains_ok" = true ]; then
+              echo "AUDIT_STATUS=PASS_READ_ONLY" >> "$REPORT"
+              exit_code=0
+            else
+              echo "AUDIT_STATUS=CLOUDFLARE_API_READ_FAILED" >> "$REPORT"
+              exit_code=23
+            fi
+          fi
+
+          echo "report=$REPORT" >> "$GITHUB_OUTPUT"
+          echo "audit_exit_code=${exit_code:-0}" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Checkout isolated Worker branch for audit receipt only
+        uses: actions/checkout@v4
+        with:
+          ref: worker-v2-main-system-authority
+          path: worker-branch
+
+      - name: Persist discovery receipt on isolated Worker branch
         shell: bash
         run: |
           set -euo pipefail
-          test -n "${CLOUDFLARE_API_TOKEN:-}" || { echo "CLOUDFLARE_API_TOKEN binding missing"; exit 21; }
-          test -n "${CLOUDFLARE_ACCOUNT_ID:-}" || { echo "CLOUDFLARE_ACCOUNT_ID binding missing"; exit 22; }
-          echo "GitHub Cloudflare secret bindings are present."
+          mkdir -p worker-branch/cloudflare-workers/personal-main-system-authority/checkpoints
+          cp "${{ steps.audit.outputs.report }}" worker-branch/cloudflare-workers/personal-main-system-authority/checkpoints/CLOUDFLARE_DISCOVERY_LATEST.md
+          cd worker-branch
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cloudflare-workers/personal-main-system-authority/checkpoints/CLOUDFLARE_DISCOVERY_LATEST.md
+          if git diff --cached --quiet; then
+            echo "No discovery receipt change."
+          else
+            git commit -m "Record read-only Cloudflare Worker discovery"
+            git push origin HEAD:worker-v2-main-system-authority
+          fi
 
-      - name: Discover candidate Worker scripts read-only
+      - name: Enforce discovery result after receipt persistence
         shell: bash
         run: |
-          set -euo pipefail
-          curl -fsS \
-            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
-            -H "Content-Type: application/json" \
-            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/scripts" \
-            > /tmp/workers.json
-          jq -e '.success == true' /tmp/workers.json >/dev/null
-          echo "CANDIDATE_SCRIPTS_BEGIN"
-          jq -r '.result[]? | select((.id // "") | test("lyvra|authority|evidence|boot"; "i")) | "script=\(.id) modified=\(.modified_on // "unknown")"' /tmp/workers.json
-          echo "CANDIDATE_SCRIPTS_END"
-
-      - name: Resolve LYVRA custom-domain ownership read-only
-        shell: bash
-        run: |
-          set -euo pipefail
-          curl -fsS \
-            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
-            -H "Content-Type: application/json" \
-            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/domains" \
-            > /tmp/domains.json
-          jq -e '.success == true' /tmp/domains.json >/dev/null
-          echo "LYVRA_DOMAIN_OWNER_BEGIN"
-          jq -r '.result[]? | select((.hostname // "") == "lyvrasystem.666soundsdesign-broadcaster.com") | "hostname=\(.hostname) service=\(.service // "unknown") environment=\(.environment // "unknown")"' /tmp/domains.json
-          echo "LYVRA_DOMAIN_OWNER_END"
-
-      - name: Preservation assertion
-        shell: bash
-        run: |
+          code="${{ steps.audit.outputs.audit_exit_code }}"
+          if [ "$code" != "0" ]; then
+            echo "Discovery completed with non-pass status recorded in isolated Worker branch."
+            exit "$code"
+          fi
           echo "READ_ONLY_AUDIT=PASS"
-          echo "DEPLOY_EXECUTED=FALSE"
-          echo "WORKER_MUTATION=FALSE"
