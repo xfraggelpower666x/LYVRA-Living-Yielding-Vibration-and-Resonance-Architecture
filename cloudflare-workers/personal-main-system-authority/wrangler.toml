@@ -1,5 +1,5 @@
 name = "lyvrasystem"
-main = "worker.js"
+main = "worker-runtime-adapter.js"
 compatibility_date = "2026-04-09"
 workers_dev = true
 
@@ -12,6 +12,8 @@ workers_dev = true
 # - Real secret values MUST never be committed or exposed in chat.
 # - Existing live secret binding `LYVRA_BOOT_SIGNING_SECRET` must be preserved.
 # - Personal Worker applies to MAIN_PERSONAL systems only.
+# - worker-runtime-adapter.js adds evidence-only adapters for SYSTEM VORNE (FOREGROUND) and FUCK HORST (RECOVERY).
+# - Native commands remain system-side; the Worker never executes or mutates system state.
 
 [vars]
 WORKER_SCOPE = "MAIN_PERSONAL_ONLY"
