@@ -1,0 +1,17 @@
+name = "666-main-system-authority-evidence"
+main = "worker.js"
+compatibility_date = "2026-08-20"
+workers_dev = true
+
+# IMPORTANT:
+# - Manual Wrangler deployment authority only.
+# - No GitHub auto-deploy is configured by this file alone.
+# - Real secrets MUST be configured in Cloudflare, never committed.
+# - Personal Worker applies to MAIN_PERSONAL systems only.
+
+[vars]
+WORKER_SCOPE = "MAIN_PERSONAL_ONLY"
+PORTABLE_WORKER_BINDING = "DISABLED"
+
+# MAIN_SYSTEM_REGISTRY_JSON should be configured server-side when needed.
+# Prefer Cloudflare secret/variable management over committing live authority data.
