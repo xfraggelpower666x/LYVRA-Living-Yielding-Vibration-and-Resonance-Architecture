@@ -1,0 +1,69 @@
+name: Audit Cloudflare Authority Worker
+
+on:
+  push:
+    branches:
+      - lyvra
+    paths:
+      - ".github/workflows/audit-cloudflare-authority-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: audit-cloudflare-authority-worker
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate secret bindings without exposing values
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${CLOUDFLARE_API_TOKEN:-}" || { echo "CLOUDFLARE_API_TOKEN binding missing"; exit 21; }
+          test -n "${CLOUDFLARE_ACCOUNT_ID:-}" || { echo "CLOUDFLARE_ACCOUNT_ID binding missing"; exit 22; }
+          echo "GitHub Cloudflare secret bindings are present."
+
+      - name: Discover candidate Worker scripts read-only
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/scripts" \
+            > /tmp/workers.json
+          jq -e '.success == true' /tmp/workers.json >/dev/null
+          echo "CANDIDATE_SCRIPTS_BEGIN"
+          jq -r '.result[]? | select((.id // "") | test("lyvra|authority|evidence|boot"; "i")) | "script=\(.id) modified=\(.modified_on // "unknown")"' /tmp/workers.json
+          echo "CANDIDATE_SCRIPTS_END"
+
+      - name: Resolve LYVRA custom-domain ownership read-only
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type: application/json" \
+            "https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/workers/domains" \
+            > /tmp/domains.json
+          jq -e '.success == true' /tmp/domains.json >/dev/null
+          echo "LYVRA_DOMAIN_OWNER_BEGIN"
+          jq -r '.result[]? | select((.hostname // "") == "lyvrasystem.666soundsdesign-broadcaster.com") | "hostname=\(.hostname) service=\(.service // "unknown") environment=\(.environment // "unknown")"' /tmp/domains.json
+          echo "LYVRA_DOMAIN_OWNER_END"
+
+      - name: Preservation assertion
+        shell: bash
+        run: |
+          echo "READ_ONLY_AUDIT=PASS"
+          echo "DEPLOY_EXECUTED=FALSE"
+          echo "WORKER_MUTATION=FALSE"
