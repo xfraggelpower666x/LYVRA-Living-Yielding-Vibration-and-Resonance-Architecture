@@ -1,0 +1,58 @@
+{
+  "666PFS": {
+    "enabled": false,
+    "system_id": "VERIFY_FROM_666PFS_AUTHORITY",
+    "namespace": "666PFS",
+    "authority_context": "666PFS_MAIN_PERSONAL",
+    "branch_class": "MAIN_PERSONAL",
+    "architectural_owner": "VERIFY_FROM_666PFS_AUTHORITY",
+    "human_core": "FRAGGLE",
+    "origin_architect": "FRAGGLEPOWER666",
+    "execution_host": "CHATGPT_EXECUTION_LAYER",
+    "execution_role": "TECHNICAL_EXECUTOR_ONLY",
+    "signing_secret_binding": "PFS_AUTHORITY_SIGNING_SECRET",
+    "root_revision": "VERIFY_FROM_666PFS_AUTHORITY"
+  },
+  "666CSM": {
+    "enabled": false,
+    "system_id": "VERIFY_FROM_666CSM_AUTHORITY",
+    "namespace": "666CSM",
+    "authority_context": "666CSM_MAIN_PERSONAL",
+    "branch_class": "MAIN_PERSONAL",
+    "architectural_owner": "VERIFY_FROM_666CSM_AUTHORITY",
+    "human_core": "FRAGGLE",
+    "origin_architect": "FRAGGLEPOWER666",
+    "execution_host": "CHATGPT_EXECUTION_LAYER",
+    "execution_role": "TECHNICAL_EXECUTOR_ONLY",
+    "signing_secret_binding": "CSM_AUTHORITY_SIGNING_SECRET",
+    "root_revision": "VERIFY_FROM_666CSM_AUTHORITY"
+  },
+  "666LINGUA": {
+    "enabled": false,
+    "system_id": "VERIFY_FROM_666LINGUA_AUTHORITY",
+    "namespace": "666LINGUA",
+    "authority_context": "666LINGUA_MAIN_PERSONAL",
+    "branch_class": "MAIN_PERSONAL",
+    "architectural_owner": "VERIFY_FROM_666LINGUA_AUTHORITY",
+    "human_core": "FRAGGLE",
+    "origin_architect": "FRAGGLEPOWER666",
+    "execution_host": "CHATGPT_EXECUTION_LAYER",
+    "execution_role": "TECHNICAL_EXECUTOR_ONLY",
+    "signing_secret_binding": "LINGUA_AUTHORITY_SIGNING_SECRET",
+    "root_revision": "VERIFY_FROM_666LINGUA_AUTHORITY"
+  },
+  "666CLS": {
+    "enabled": false,
+    "system_id": "VERIFY_FROM_666CLS_AUTHORITY",
+    "namespace": "666CLS",
+    "authority_context": "666CLS_MAIN_PERSONAL",
+    "branch_class": "MAIN_PERSONAL",
+    "architectural_owner": "VERIFY_FROM_666CLS_AUTHORITY",
+    "human_core": "FRAGGLE",
+    "origin_architect": "FRAGGLEPOWER666",
+    "execution_host": "CHATGPT_EXECUTION_LAYER",
+    "execution_role": "TECHNICAL_EXECUTOR_ONLY",
+    "signing_secret_binding": "CLS_AUTHORITY_SIGNING_SECRET",
+    "root_revision": "VERIFY_FROM_666CLS_AUTHORITY"
+  }
+}
