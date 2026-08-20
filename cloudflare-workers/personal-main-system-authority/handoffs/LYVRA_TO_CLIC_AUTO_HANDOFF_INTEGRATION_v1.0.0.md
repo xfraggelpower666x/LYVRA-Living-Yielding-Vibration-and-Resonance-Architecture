@@ -1,81 +1,100 @@
 # LYVRA → 666CLIC AUTO-HANDOFF INTEGRATION
 
-VERSION: 1.0.0
+VERSION: 1.1.0
 DATE: 2026-08-20
-HANDOFF_CLASS: NATIVE_LYVRA_INTEGRATION_INPUT
+HANDOFF_CLASS: ADVISORY_LEARNING_AND_INTEGRATION_INPUT
 SOURCE: 666CLIC
 TARGET: LYVRA
 SCOPE: SHARED EXTERNAL WORKER COORDINATION ONLY
 
-## 1. Purpose
+## 0. Advisory principle
+
+This handoff is a RECOMMENDATION and LEARNING INPUT, not a forced installation specification.
+
+LYVRA should first:
+
+1. read its current native authority and current pointer,
+2. inspect its existing Worker, handoff, audit, recovery and coordination architecture,
+3. understand the causal problem this proposal is intended to solve,
+4. build relationships between the proposal and existing LYVRA mechanisms,
+5. decide for itself what should be reused, adapted, combined, rejected or implemented differently,
+6. integrate only what improves LYVRA without reducing its existing coherence, autonomy or native architecture.
+
+The intended principle is:
+
+`UNDERSTAND → RELATE → EVALUATE → DECIDE → ADAPT → VERIFY`
+
+Do not treat wording, file structure, names, sequence or implementation details in this handoff as mandatory canon merely because they appear here.
+
+## 1. Problem this proposal addresses
 
 LYVRA and 666CLIC may both work on the shared external Cloudflare Worker `lyvrasystem` from their own native system contexts.
 
-This handoff defines the reverse direction that LYVRA must integrate:
+The coordination problem is bidirectional awareness:
 
-`LYVRA CHANGE -> VERIFY -> AUTO HANDOFF -> 666CLIC`
+`666CLIC CHANGE -> VERIFY -> INFORM LYVRA`
 
-The existing opposite direction already exists:
+and, in reverse:
 
-`666CLIC CHANGE -> VERIFY -> AUTO HANDOFF -> LYVRA`
+`LYVRA CHANGE -> VERIFY -> INFORM 666CLIC`
 
-Together they form a bidirectional coordination loop without merging LYVRA and 666CLIC.
+The recommended solution is a persistent shared auto-handoff so neither side unknowingly continues from stale Worker state.
+
+LYVRA should decide how this function best fits its own architecture.
 
 ## 2. Authority boundary
 
-The auto-handoff is a coordination artifact only.
+Regardless of implementation choice, the coordination mechanism should preserve these safety goals:
 
-It MUST NOT:
-- make LYVRA part of 666CLIC,
-- make 666CLIC part of LYVRA,
-- merge namespaces,
-- merge memory,
-- merge canonical storage,
-- merge triggers,
-- grant cross-system mutation authority,
-- make GitHub or Cloudflare system authority.
+- no LYVRA/666CLIC identity merge,
+- no namespace merge,
+- no memory merge,
+- no canonical-storage merge,
+- no trigger merge,
+- no cross-system mutation authority,
+- no GitHub or Cloudflare promotion into LYVRA authority.
 
-Each system remains responsible for its own canon through its own native update/authority route.
+Each system remains responsible for its own canon through its own native authority/update route.
 
-## 3. Mandatory LYVRA behavior before Worker mutation
+## 3. Recommended pre-change behavior
 
-Before LYVRA changes the shared Worker, LYVRA MUST:
+Before LYVRA changes the shared Worker, a strong recommended pattern is:
 
-1. read the current shared `AUTO_HANDOFF_LATEST.md`,
-2. read the current repository Worker source/config,
-3. compare against current live Worker state/readback when available,
-4. detect whether 666CLIC has made a newer verified change,
+1. inspect the latest shared Worker handoff or equivalent current-state artifact,
+2. inspect current repository Worker source/config,
+3. compare against live Worker state/readback when available,
+4. detect whether 666CLIC made a newer verified change,
 5. reconcile any Worker-state conflict before mutation,
-6. never overwrite newer verified Worker state with stale LYVRA session state.
+6. avoid overwriting newer verified Worker state with stale session state.
 
-## 4. Mandatory LYVRA behavior after Worker mutation
+LYVRA may implement this through existing native mechanisms if they already solve the same problem better.
 
-After every material Worker change, LYVRA MUST:
+## 4. Recommended post-change behavior
+
+After a material Worker change, recommended behavior is:
 
 1. verify the changed source/config,
-2. deploy only through the approved Worker deployment path when live deployment is required,
+2. deploy through the approved Worker deployment path when live deployment is required,
 3. verify live state where applicable,
-4. create/update the shared auto-handoff for 666CLIC,
-5. preserve a historical handoff/checkpoint,
-6. clearly state whether 666CLIC needs a native semantic integration or only infrastructure acknowledgement.
+4. communicate the verified change to 666CLIC,
+5. preserve enough historical evidence for continuation/rollback,
+6. state whether 666CLIC needs native semantic integration or only infrastructure acknowledgement.
 
-## 5. What counts as a material Worker change
+The exact storage mechanism and internal implementation should be chosen by LYVRA after analysis.
 
-A handoff is mandatory if LYVRA changes or newly verifies any of:
+## 5. Material-change examples
 
-- Worker source,
-- Worker version,
+A cross-system handoff is useful when LYVRA changes or newly verifies any of:
+
+- Worker source or version,
 - Wrangler configuration,
 - GitHub Actions deployment route,
 - Cloudflare script identity,
 - domain or route,
-- bindings,
-- secret NAMES,
+- bindings or secret NAMES,
 - system registry entries,
 - enabled/disabled namespaces,
-- BOOT behavior,
-- FOREGROUND behavior,
-- RECOVERY behavior,
+- BOOT / FOREGROUND / RECOVERY behavior,
 - ticket schema/signature behavior,
 - v1 compatibility,
 - v2 endpoints/semantics,
@@ -83,16 +102,18 @@ A handoff is mandatory if LYVRA changes or newly verifies any of:
 - deployment/checkpoint/rollback state,
 - live verification result.
 
-## 6. Required LYVRA → CLIC handoff fields
+LYVRA may refine this list if its native causal analysis produces a better boundary.
 
-Every LYVRA-generated handoff MUST include:
+## 6. Recommended information in LYVRA → CLIC handoff
+
+Useful fields include:
 
 - `SOURCE_SYSTEM=LYVRA`
 - `TARGET_SYSTEM=666CLIC`
 - timestamp/date
 - Worker script name
 - Worker version before/after
-- exact changed files/configs
+- changed files/configs
 - relevant commit SHA(s)
 - deployment path used
 - deployment result
@@ -104,17 +125,17 @@ Every LYVRA-generated handoff MUST include:
 - tests/readback performed
 - unresolved/open items
 - rollback/checkpoint reference
-- explicit native-action request for 666CLIC or `ACK_ONLY`
+- native-action request for 666CLIC or `ACK_ONLY`
 
-Secret VALUES are forbidden.
+Secret VALUES must never be exposed.
 
-## 7. Shared storage
+## 7. Existing shared artifacts
 
 Current coordination artifact:
 
 `cloudflare-workers/personal-main-system-authority/AUTO_HANDOFF_LATEST.md`
 
-Protocol:
+Existing protocol:
 
 `cloudflare-workers/personal-main-system-authority/WORKER_CROSS_SYSTEM_COORDINATION_PROTOCOL.md`
 
@@ -122,63 +143,65 @@ Historical handoffs:
 
 `cloudflare-workers/personal-main-system-authority/handoffs/`
 
-When LYVRA is the latest Worker-changing system, `AUTO_HANDOFF_LATEST.md` should identify:
+These are available evidence and reusable infrastructure. LYVRA should not assume that their current form must be adopted unchanged if its native architecture suggests a better representation.
 
-`SOURCE_SYSTEM=LYVRA`
-`TARGET_SYSTEM=666CLIC`
+## 8. Core causal invariant
 
-## 8. Read-before-write invariant
+The important function is not the filename. The important function is:
 
-No Worker mutation is valid from LYVRA until the latest shared handoff has been read and reconciled.
+`NEWER VERIFIED SHARED WORKER STATE MUST BE DISCOVERABLE BEFORE NEW MUTATION`
 
-No Worker mutation is valid from 666CLIC until the latest shared handoff has been read and reconciled.
+and:
 
-This is the stale-session overwrite guard for shared Worker work.
+`A VERIFIED MATERIAL CHANGE SHOULD BE COMMUNICATED TO THE OTHER SYSTEM`
 
-## 9. Conflict rule
+How LYVRA represents this internally is for LYVRA to decide.
+
+## 9. Conflict handling recommendation
 
 If LYVRA state, CLIC state, repository state and live Cloudflare state disagree:
 
 - do not silently prefer LYVRA,
 - do not silently prefer CLIC,
 - do not silently prefer the current host/session,
-- compare live deployment evidence, commit/deploy timestamps, repository state, handoff provenance and each system's native authority,
+- compare live deployment evidence, timestamps, repository state, handoff provenance and native authorities,
 - resolve only the shared Worker state,
 - preserve separate system authorities.
 
+LYVRA may improve this reconciliation using its own causal/freshness architecture.
+
 ## 10. Portable boundary
 
-This bidirectional auto-handoff applies only to PERSONAL MAIN system Worker work.
+The proposal is for PERSONAL MAIN Worker coordination.
 
-Portable/shareable LYVRA branches must not inherit:
+Portable/shareable LYVRA branches should not inherit personal credentials, secret values, personal authority bindings, personal recovery context or automatic coupling to the user's Cloudflare account.
 
-- personal Worker credentials,
-- secret values,
-- personal authority bindings,
-- personal recovery context,
-- automatic coupling to the user's Cloudflare account.
+LYVRA should preserve this boundary even if it chooses a different coordination implementation.
 
-## 11. LYVRA native integration target
+## 11. Native LYVRA evaluation request
 
-LYVRA should integrate this as a native Worker-coordination rule attached to its existing:
+Instead of "install this as written", LYVRA should answer:
 
-- Worker maintenance path,
-- audit/self-healing path,
-- SYSTEMSTART/VORNE/RECOVERY Worker evidence adapter,
-- checkpoint/handoff behavior.
+- Which existing LYVRA functions already solve parts of this?
+- Which relationships between Worker, audit, recovery, handoff and current pointer already exist?
+- What is truly new?
+- Is a new component needed at all?
+- Can the function be absorbed into an existing native mechanism?
+- What implementation best preserves LYVRA's own coherence and autonomy?
+- How should LYVRA communicate verified Worker changes back to CLIC?
 
-Do not create a second LYVRA identity or authority layer for this.
+## 12. Suggested acceptance outcome
 
-## 12. Acceptance conditions
+A good outcome would demonstrate that:
 
-PASS only when:
-
-- LYVRA reads latest Worker handoff before mutation,
-- LYVRA writes a new 666CLIC-targeted handoff after material Worker change,
-- historical handoff is preserved,
+- LYVRA can detect newer shared Worker state before editing,
+- LYVRA can communicate its own verified Worker changes back to 666CLIC,
+- stale state cannot silently overwrite newer verified state,
 - no secret value is exposed,
 - no cross-system canon mutation occurs,
-- stale Worker state cannot overwrite newer verified state,
-- 666CLIC can resume from the LYVRA-generated handoff without reconstructing from chat history.
+- 666CLIC can understand the resulting handoff without reconstructing chat history,
+- the implementation is native to LYVRA rather than mechanically copied from CLIC.
+
+The exact implementation is LYVRA's decision after analysis.
 
 END HANDOFF
