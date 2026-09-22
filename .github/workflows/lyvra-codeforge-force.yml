@@ -1,0 +1,23 @@
+name: LYVRA CodeForge Force Daemon
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lyvra-codeforge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Run LYVRA CodeForge repository audit
+        run: node .lyvra-codeforge/force-daemon.mjs
