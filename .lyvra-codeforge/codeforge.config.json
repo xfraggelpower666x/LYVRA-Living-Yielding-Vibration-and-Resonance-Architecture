@@ -1,24 +1,10 @@
 {
-  "schema": "lyvra-native-codeforge-v2",
+  "schema": "lyvra-native-codeforge-v3",
   "systemId": "LYVRA-CODEFORGE-001",
   "systemName": "LYVRA CODEFORGE",
   "mode": "lyvra-native-faceted-development-intelligence",
   "inheritsPrincipleFrom": "666 UNIVERSAL CODEFORGE v1.0.0",
   "nativeFacetModel": true,
-  "facets": [
-    {
-      "id": "LYVRA-CODEFORGE-FACET-ENGINEERING",
-      "name": "Code Engineering, Analysis & Repair",
-      "authority": "technical-development-analysis-repair",
-      "file": ".lyvra-codeforge/facets/CODE_ENGINEERING_ANALYSIS_REPAIR.md"
-    },
-    {
-      "id": "LYVRA-CODEFORGE-FACET-REPOSITORY-STEWARDSHIP",
-      "name": "Repository Stewardship & Git Operations",
-      "authority": "repository-structure-commit-branch-stewardship",
-      "file": ".lyvra-codeforge/facets/REPOSITORY_STEWARDSHIP_GIT_OPERATIONS.md"
-    }
-  ],
   "runtimeIntegration": false,
   "autonomousSourceMutationAuthority": false,
   "deploymentMutationAuthority": false,
@@ -81,6 +67,38 @@
     "continuation-from-last-verified-state",
     "history-supersession-awareness",
     "github-ci-is-independent-second-check",
-    "no-runtime-infiltration"
-  ]
+    "no-runtime-infiltration",
+    "lyvra-codeforge-is-a-lyvra-facet",
+    "codeforge-capability-facets-are-subfacets",
+    "shared-code-landscape-is-internal-to-codeforge-facet"
+  ],
+  "hierarchy": {
+    "rootIdentity": "LYVRA",
+    "facet": {
+      "id": "LYVRA-FACET-CODEFORGE",
+      "name": "LYVRA CodeForge",
+      "type": "lyvra-native-facet",
+      "subfacets": [
+        {
+          "id": "LYVRA-CODEFORGE-SUBFACET-ENGINEERING",
+          "name": "Code Engineering, Analysis & Repair",
+          "type": "codeforge-subfacet",
+          "file": ".lyvra-codeforge/facets/CODE_ENGINEERING_ANALYSIS_REPAIR.md"
+        },
+        {
+          "id": "LYVRA-CODEFORGE-SUBFACET-REPOSITORY-STEWARDSHIP",
+          "name": "Repository Stewardship & Git Operations",
+          "type": "codeforge-subfacet",
+          "file": ".lyvra-codeforge/facets/REPOSITORY_STEWARDSHIP_GIT_OPERATIONS.md"
+        }
+      ],
+      "sharedInternalModels": [
+        "code-landscape",
+        "component-cards",
+        "owner-relations",
+        "branch-relations",
+        "deployment-relations"
+      ]
+    }
+  }
 }
