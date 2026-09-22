@@ -1,0 +1,29 @@
+{
+  "schema": "lyvra-native-codeforge-project-profile-v1",
+  "projectId": "LYVRA-GITHUB-001",
+  "projectName": "LYVRA — Living Yielding Vibration and Resonance Architecture",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "defaultBranch": "lyvra",
+  "activeMigrationBranch": "migration/rev241-github-current",
+  "productionBranches": ["lyvra"],
+  "productionRoots": ["current", "runtime", "web", "api"],
+  "testRoots": ["tests"],
+  "deploymentRoots": [".github/workflows"],
+  "protectedRoots": ["CURRENT_POINTER.json", "current", "runtime"],
+  "frameworkRuntimeForbiddenRoots": ["web", "api"],
+  "forbiddenRuntimeReferencePatterns": [".lyvra-codeforge/", "force-daemon.mjs"],
+  "mirrors": [],
+  "domains": {
+    "current-authority": ["CURRENT_POINTER.json", "current"],
+    "runtime-contracts": ["runtime"],
+    "references": ["references"],
+    "web": ["web"],
+    "api": ["api"],
+    "deployment": [".github/workflows"]
+  },
+  "requiredFiles": [
+    "runtime/LYVRA_LIVE_TRIGGER.md",
+    "runtime/UNIFIED_SAVE_REHYDRATION_CONTRACT.md"
+  ],
+  "requiredPackageScripts": []
+}
