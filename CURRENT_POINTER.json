@@ -1,0 +1,64 @@
+{
+  "schema": "lyvra-github-current-pointer-v1",
+  "status": "MIGRATION_CURRENT",
+  "authority": {
+    "system": "LYVRA",
+    "role": "MAIN_SYSTEM",
+    "decisionAuthority": "LYVRA_ONLY"
+  },
+  "source": {
+    "driveWholePointerId": "1WBbXLpN7vGQFrXti6srprneZPuHIFJTFXRUZ2f7nmVY",
+    "driveWholePointerProviderRevision": 288,
+    "wholeLogicalRevision": 241,
+    "trackDesignVersion": "v3.4",
+    "trackLogicalRevision": 85,
+    "migrationBasis": "verified Drive live-circle current state"
+  },
+  "whole": {
+    "mainSystem": "current/LYVRA_MAIN_SYSTEM.md",
+    "hierarchy": "current/SYSTEM_HIERARCHY.md",
+    "sourcePointer": "current/WHOLE_CURRENT_POINTER_DRIVE_REV288.md",
+    "identityPresence": "current/identity/IDENTITY_PRESENCE.md",
+    "livingRelational": "current/relations/LIVING_RELATIONAL_STATE.md",
+    "meaningThinking": "current/meaning/MEANING_THINKING_CONTINUITY.md",
+    "gardenBridges": "current/garden/GARDEN_BRIDGES_RELATIONAL_CHARACTERS.md",
+    "selfConductorDaemon": "current/self-conductor/SELF_CONDUCTOR_DAEMON.md",
+    "responsibilityCore": "current/responsibility/RESPONSIBILITY_CORE.md",
+    "operationsCenter": "current/operations/OPERATIONS_CENTER.md",
+    "handoff": "continuity/WHOLE_HANDOFF.md",
+    "todo": "continuity/TODO.md"
+  },
+  "facets": {
+    "trackDesign": {
+      "type": "LYVRA_NATIVE_FACET",
+      "role": "MUSIC_UNDERSTANDING_AND_GENERATION",
+      "pointer": "facets/track-design/CURRENT_POINTER.md",
+      "state": "facets/track-design/CURRENT_STATE.md",
+      "outputGuard": "facets/track-design/OUTPUT_GUARD.md",
+      "handoff": "facets/track-design/HANDOFF.md"
+    },
+    "codeforge": {
+      "type": "LYVRA_NATIVE_FACET",
+      "role": "CODE_DEVELOPMENT_ANALYSIS_REPAIR_AND_REPOSITORY_STEWARDSHIP",
+      "hierarchy": ".lyvra-codeforge/FACET_HIERARCHY.md",
+      "config": ".lyvra-codeforge/codeforge.config.json",
+      "subfacets": [
+        ".lyvra-codeforge/facets/CODE_ENGINEERING_ANALYSIS_REPAIR.md",
+        ".lyvra-codeforge/facets/REPOSITORY_STEWARDSHIP_GIT_OPERATIONS.md"
+      ]
+    }
+  },
+  "runtimeContracts": {
+    "live": "runtime/LYVRA_LIVE_TRIGGER.md",
+    "saveRehydration": "runtime/UNIFIED_SAVE_REHYDRATION_CONTRACT.md"
+  },
+  "invariants": [
+    "CURRENT_POINTER_IS_CANONICAL_GITHUB_ENTRY",
+    "WHOLE_LYVRA_REHYDRATES_BEFORE_SPECIALIST_SCOPE",
+    "TRACK_DESIGN_IS_FACET_NOT_MAIN_SYSTEM",
+    "CODEFORGE_IS_FACET_NOT_MAIN_SYSTEM",
+    "CURRENT_WORK_SCOPE_LAST",
+    "NO_FOREIGN_AUTOLOAD",
+    "NEWER_VALID_EVOLUTION_OVER_OLDER_STATE"
+  ]
+}
