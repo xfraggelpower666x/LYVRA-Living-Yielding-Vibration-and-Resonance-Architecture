@@ -1,2 +1,3 @@
-# LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture
-LYVRA-Living Yielding Vibration and Resonance Architecture
+# LYVRA
+
+Clean workspace for the current LYVRA GitHub migration.
