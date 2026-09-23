@@ -1,0 +1,46 @@
+{
+  "system": "L.Y.V.R.A. Native Runtime",
+  "project_role": "Plugin / Custom GPT native authority",
+  "status": "CURRENT",
+  "authority_model": {
+    "identity_authority": "LYVRA",
+    "plugin_execution_authority": "GITHUB_REPOSITORY",
+    "plugin_current_state_authority": "GITHUB_REPOSITORY",
+    "plugin_code_authority": "GITHUB_REPOSITORY",
+    "plugin_config_authority": "GITHUB_REPOSITORY",
+    "plugin_schema_authority": "GITHUB_REPOSITORY",
+    "plugin_release_authority": "GITHUB_REPOSITORY",
+    "repository_is_single_source_of_truth": true
+  },
+  "repository": {
+    "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "authority_branch": "lyvra"
+  },
+  "drive_boundary": {
+    "google_drive_role": [
+      "LYVRA_INTERNAL_DEVELOPMENT",
+      "HISTORY",
+      "PROVENANCE",
+      "REFERENCE",
+      "CREATOR_DEVELOPMENT_SUPPORT"
+    ],
+    "google_drive_is_plugin_current_authority": false,
+    "google_drive_is_plugin_runtime_authority": false,
+    "google_drive_is_plugin_release_authority": false
+  },
+  "codeforge": {
+    "role": [
+      "CODE_ENGINEERING",
+      "ANALYSIS",
+      "REPAIR",
+      "REPOSITORY_STEWARDSHIP",
+      "GIT_OPERATIONS",
+      "VALIDATION",
+      "CONTINUITY_PROTECTION"
+    ],
+    "decision_authority": "LYVRA",
+    "may_not_replace_lyvra_identity": true
+  },
+  "continuity_rule": "Current verified repository head on the authority branch outranks chat, ZIP, Drive reference, backup, and historical artifact for Plugin / Custom GPT product state.",
+  "created_from_verified_repo_head": "4466dcf9a5b8ced539ddee9cb359554e62c8cb62"
+}
