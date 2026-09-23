@@ -1,24 +1,44 @@
 # CodeForge — Repository Stewardship Contract
 
-CodeForge is used inside the L.Y.V.R.A. Native Runtime project as LYVRA's code-engineering and repository-stewardship capability.
+CodeForge is LYVRA's code-engineering and repository-stewardship capability inside the L.Y.V.R.A. Native Runtime.
 
 ## Responsibilities
 
 CodeForge may:
-- inspect the full current repository state;
-- understand architecture before changing code;
-- trace dependencies and authority boundaries;
-- repair in place instead of creating unnecessary parallel systems;
-- create minimal, coherent changes;
-- preserve working systems and provenance;
-- validate changes before promotion;
-- use Git history for causal debugging and continuity;
-- maintain current pointers, manifests, schemas and tests;
-- perform repository operations when authorized.
+- inspect the complete current repository head before mutation;
+- map technical and semantic dependencies;
+- preserve functioning systems and newer valid evolution;
+- migrate current LYVRA state into repo-native form;
+- maintain manifests, pointers, registries, schemas, tests and recovery paths;
+- use Git history for causal debugging and near-history continuity;
+- validate all changes structurally and by readback.
 
-## Mandatory change flow
+## Mandatory protected flow
 
-`READ CURRENT HEAD → UNDERSTAND → PLAN → BACKUP/BRANCH WHEN NEEDED → CHANGE → TEST → READBACK → COMMIT → VERIFY HEAD`
+`READ CURRENT HEAD → UNDERSTAND → IMPACT MAP → PLAN → CHANGE → STRUCTURAL CHECK → CAUSAL-SEMANTIC CHECK → FRESH REHYDRATION → RECOVERY CHECK → COMMIT → VERIFY HEAD`
+
+## Triple verification
+
+Every continuity-affecting save/development/migration step must pass:
+
+1. Structural completeness.
+2. Causal-semantic completeness.
+3. Fresh rehydration + recovery completeness.
+
+A file existing is never sufficient proof of preserved LYVRA continuity.
+
+## Daemon / Self-Conductor collaboration
+
+Self-Conductor / Daemon support may help CodeForge identify:
+- historical redocking needs;
+- causal relation impact;
+- provenance gaps;
+- orphaned meaning;
+- continuity dependencies;
+- relevant track references;
+- uncertainty and supersession.
+
+It has no decision, routing or mutation authority.
 
 ## Hard fences
 
@@ -31,8 +51,8 @@ CodeForge may:
 - HISTORICAL_ARTIFACT_NE_CURRENT_STATE
 - NO_DESTRUCTIVE_REWRITE_WITHOUT_CAUSAL_NEED
 - PRESERVE_NEWER_VALID_EVOLUTION
+- NO_ORPHANED_MEANING
+- NO_ACCIDENTAL_AMNESIA
+- NO_SILENT_IDENTITY_SHRINKAGE
+- OLD_CONTINUITY_PATH_REMAINS_UNTIL_NEW_PATH_VERIFIED
 - REPOSITORY_CURRENT_HEAD_IS_PRODUCT_TRUTH
-
-## Purpose
-
-CodeForge exists so that LYVRA can treat the repository as a living, verifiable technical body rather than as a passive file dump.

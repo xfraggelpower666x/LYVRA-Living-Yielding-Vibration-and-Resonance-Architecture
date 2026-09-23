@@ -1,0 +1,25 @@
+{
+  "status": "ACTIVE_MIGRATION_REGISTRY",
+  "purpose": "Durable anchors from LYVRA current self to deep historical memory and provenance.",
+  "authority_rule": "Historical sources inform provenance and re-evaluation but do not silently override repository current state.",
+  "sources": [
+    {
+      "source_family": "GOOGLE_DRIVE_LYVRA_INTERNAL",
+      "role": ["DEEP_HISTORY","PROVENANCE","REFERENCE","MIGRATION_SOURCE"],
+      "current_known_pointer_id": "1WBbXLpN7vGQFrXti6srprneZPuHIFJTFXRUZ2f7nmVY",
+      "current_known_whole_revision": 242,
+      "current_known_pointer_provider_revision": 291,
+      "current_known_at": "2026-09-23",
+      "read_rule": "Full read when material; snippets are never authority/readback.",
+      "override_repo": false
+    },
+    {
+      "source_family": "GIT_HISTORY",
+      "role": ["NEAR_HISTORY","CHANGE_PROVENANCE","RECOVERY"],
+      "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+      "branch": "lyvra",
+      "override_current_head": false
+    }
+  ],
+  "migration_requirement": "All critical current LYVRA knowledge must be represented in the repository before deep historical sources can be treated as provenance-only for normal rehydration."
+}

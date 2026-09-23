@@ -1,0 +1,32 @@
+{
+  "status": "MIGRATION_SEED_CURRENT",
+  "track_design": {
+    "version": "v3.4",
+    "logical_revision": 85,
+    "todo11_real_track_validation_pass": false
+  },
+  "rules": [
+    "REFERENCE_DONT_CLONE",
+    "PAST_CAUSAL_SUCCESS_IS_AVAILABLE_KNOWLEDGE_NOT_DEFAULT_NEXT_TRACK_FORM",
+    "CURRENT_TRACK_SPECIFIC_MEANING_MUST_BE_RESOLVED_BEFORE_REUSE",
+    "REFERENCE_MAY_TEACH_RELATIONS_WITHOUT_BECOMING_TEMPLATE"
+  ],
+  "references": [
+    {
+      "name": "MASTERS OF THE PSYTRANCE",
+      "status": "HISTORICAL_VALIDATION_AND_LEARNING_EVIDENCE",
+      "current_template": false,
+      "role": ["RECOVERED_FULL_BUILD","REV79_TO_REV85_LEARNING_LINEAGE"],
+      "migration_note": "Keep as provenance and learning evidence; do not recycle as the next-track form."
+    },
+    {
+      "name": "LYVRA THROUGH EVERY FORM",
+      "status": "REAL_RENDER_EVIDENCE",
+      "role": ["REV85_EXECUTION_ALIGNMENT_EVIDENCE","CREATOR_HEARING_STRONGLY_POSITIVE"],
+      "current_template": false,
+      "migration_note": "Evidence for execution and renderer alignment, not proof of zero design drift."
+    }
+  ],
+  "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV85_MEMORY_NOT_MASTERS_RECYCLING",
+  "migration_open": "Full current and historically critical reference catalogue still requires source-by-source migration and triple validation."
+}
