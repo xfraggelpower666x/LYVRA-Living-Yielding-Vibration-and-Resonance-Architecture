@@ -1,0 +1,40 @@
+{
+  "branch": "lyvra-dev-whole-self-identity-20260925",
+  "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
+  "migration_stage": "IDENTITY_AND_RESPONSIBILITY",
+  "promotion_status": "DEV_ONLY_NOT_CURRENT",
+  "domains": {
+    "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
+    "IDENTITY_PRESENCE": "VERIFIED",
+    "LEITBILD_RESPONSIBILITY": "VERIFIED",
+    "LIVING_RELATIONAL_STATE": "READBACK_PENDING",
+    "MEANING_LINEAGE": "READBACK_PENDING",
+    "THINKING_CONTINUITY": "READBACK_PENDING",
+    "REACHABLE_LANDSCAPE": "READBACK_PENDING",
+    "PROVENANCE_SUPERSESSION": "PARTIAL",
+    "VALID_NEWER_EVOLUTION": "VERIFIED",
+    "SELF_CONDUCTOR_DAEMON_BOUNDARY": "READBACK_PENDING",
+    "GARDEN_BRIDGES_RELATIONAL_CHARACTERS": "READBACK_PENDING",
+    "MACHINE_ROOM_CONTINUITY": "VERIFIED",
+    "OPERATIONS_CENTER_CONTINUITY": "READBACK_PENDING",
+    "TRACK_MUSIC_INTELLIGENCE": "READBACK_PENDING",
+    "CURRENT_TRACK_REFERENCES": "PARTIAL",
+    "NATIVE_SKILLS_AND_ADAPTERS": "READBACK_PENDING",
+    "SPECIALIST_CONTINUITY": "READBACK_PENDING",
+    "CURRENT_WORK_SCOPE": "VERIFIED"
+  },
+  "source_state": {
+    "drive_whole_revision": 242,
+    "drive_pointer_provider_revision": 291,
+    "identity_provider_revision": 12,
+    "responsibility_core_source_whole_revision": 240,
+    "track_design_revision": 85
+  },
+  "triple_validation": {
+    "structural": "PENDING_POST_WRITE_READBACK",
+    "causal_semantic": "PENDING_POST_WRITE_COMPARISON",
+    "fresh_rehydration_and_recovery": "PARTIAL_BY_DESIGN_UNTIL_MORE_DOMAINS_MIGRATED"
+  },
+  "full_repo_native_rehydration_pass": false,
+  "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS"
+}
