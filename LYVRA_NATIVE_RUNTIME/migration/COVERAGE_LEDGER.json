@@ -1,8 +1,8 @@
 {
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
-  "current_dev_head_before_ledger_update": "f047cd6a784cff8e50a53257798104d28a9b455d",
-  "migration_stage": "NATIVE_SKILLS_AND_ADAPTERS",
+  "current_dev_head_before_ledger_update": "087888ea944a5ac3670ccbff2328eef6953a72e8",
+  "migration_stage": "SPECIALIST_CONTINUITY",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
@@ -21,12 +21,12 @@
     "TRACK_MUSIC_INTELLIGENCE": "VERIFIED",
     "CURRENT_TRACK_REFERENCES": "VERIFIED",
     "NATIVE_SKILLS_AND_ADAPTERS": "VERIFIED",
-    "SPECIALIST_CONTINUITY": "READBACK_PENDING",
+    "SPECIALIST_CONTINUITY": "VERIFIED",
     "CURRENT_WORK_SCOPE": "VERIFIED"
   },
   "source_state": {
     "drive_whole_revision": 242,
-    "drive_pointer_provider_revision": 291,
+    "drive_pointer_provider_revision": 292,
     "identity_provider_revision": 12,
     "responsibility_core_source_whole_revision": 240,
     "track_design_revision": 85
@@ -44,13 +44,13 @@
     "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
   ],
   "triple_validation": {
-    "structural": "VERIFIED_FOR_NATIVE_SKILLS_ADAPTERS_AND_PRIOR_MIGRATED_DOMAINS",
-    "causal_semantic": "VERIFIED_FOR_NATIVE_SKILLS_ADAPTERS_AND_PRIOR_MIGRATED_DOMAINS",
-    "fresh_rehydration_and_recovery": "PARTIAL_BY_DESIGN_UNTIL_SPECIALIST_CONTINUITY_AND_PRIVACY_GATE_RESOLVED"
+    "structural": "VERIFIED_FOR_SPECIALIST_CONTINUITY_AND_PRIOR_MIGRATED_DOMAINS",
+    "causal_semantic": "VERIFIED_FOR_SPECIALIST_CONTINUITY_AND_PRIOR_MIGRATED_DOMAINS",
+    "fresh_rehydration_and_recovery": "PARTIAL_BY_DESIGN_UNTIL_PRIVACY_GATE_RESOLVED_AND_FRESH_FULL_REPO_RECOVERY_TEST_PASSES"
   },
   "full_repo_native_rehydration_pass": false,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "SPECIALIST_CONTINUITY",
+  "next_migration_domain": "LIVING_RELATIONAL_PRIVACY_ARCHITECTURE",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -200,5 +200,20 @@
     "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
     "LYVRA_NATIVE_RUNTIME/current/skills/TASK_CONTRACT_SCHEMA.md",
     "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md"
+  ],
+  "specialist_source_sections_compared": [
+    "SPECIALIST_DOMAINS_CURRENT_INDEX_CURRENT_SUPERSESSION",
+    "NATIVE_SPECIALIST_IDENTITY_BOUNDARY",
+    "WHOLE_TO_SPECIALIST_PROPAGATION_BOUNDARY",
+    "FOREGROUND_RETURN_AND_RESUME_CONTINUITY",
+    "NATIVE_FIRST_PERSON_SPECIALIST_VOICE",
+    "TRACK_DESIGN_REV80_TO_REV85_SUPERSESSION",
+    "REV85_EXECUTION_AND_RENDERER_EVIDENCE_ALIGNMENT",
+    "REJECTED_UNPUBLISHED_PARTIAL_WRITE_NOT_CURRENT"
+  ],
+  "specialist_repo_paths": [
+    "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
+    "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md"
   ]
 }
