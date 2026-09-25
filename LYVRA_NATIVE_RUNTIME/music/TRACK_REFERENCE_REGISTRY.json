@@ -1,5 +1,5 @@
 {
-  "status": "MIGRATION_SEED_CURRENT",
+  "status": "DEV_MIGRATED_CURRENT_REFERENCE_REGISTRY",
   "track_design": {
     "version": "v3.4",
     "logical_revision": 85,
@@ -7,26 +7,164 @@
   },
   "rules": [
     "REFERENCE_DONT_CLONE",
+    "REFERENCE_PACKAGES_NE_TEMPLATES",
     "PAST_CAUSAL_SUCCESS_IS_AVAILABLE_KNOWLEDGE_NOT_DEFAULT_NEXT_TRACK_FORM",
     "CURRENT_TRACK_SPECIFIC_MEANING_MUST_BE_RESOLVED_BEFORE_REUSE",
-    "REFERENCE_MAY_TEACH_RELATIONS_WITHOUT_BECOMING_TEMPLATE"
+    "REFERENCE_MAY_TEACH_RELATIONS_WITHOUT_BECOMING_TEMPLATE",
+    "OLD_CONTROL_VALUES_NE_CURRENT_AUTHORITY",
+    "RECOVERY_EVIDENCE_NE_RUNTIME_AUTHORITY"
+  ],
+  "reference_classes": [
+    "CREATOR_VALIDATED_RENDER_REFERENCE",
+    "ACTIVE_CALIBRATION_REFERENCE_NON_TEMPLATE",
+    "POSITIVE_RENDER_EVIDENCE",
+    "REAL_RENDER_EVIDENCE",
+    "HISTORICAL_VALIDATION_AND_LEARNING_EVIDENCE",
+    "RECOVERY_PROVENANCE"
   ],
   "references": [
     {
+      "name": "BEHIND A SMILE",
+      "source_document_id": "1BJho_zPttwscy14C_F55_ZHjtjskr6fgV5dCuurhOuc",
+      "source_revision": "ANLCKQnFX-gFkIxB__KESmLMjo0xgujD3dmsI8z0rGcolmyEqB-VsbRDCJ1O2UdAPIzb3Jk6o-wzxXPRXOXCWHvEAcj-5sNbIozPSKek-pY",
+      "status": "CREATOR_VALIDATED_RENDER_REFERENCE",
+      "current_template": false,
+      "role": [
+        "FOUNDATIONAL_MOTOR_AND_ENERGY_GEOMETRY_EVIDENCE",
+        "MEANING_ABOVE_MOTOR_EVIDENCE",
+        "PERCEPTUAL_ACCELERATION_WITHOUT_TIMEBASE_INSTABILITY",
+        "FIELD_SEPARATION_AND_RENDERER_INTERPRETABILITY_CALIBRATION"
+      ],
+      "learned_relations": [
+        "LOW_TRUSTWORTHY_PHYSICAL_AUTHORITY",
+        "MID_HYBRID_PHYSICAL_PSY_BEHAVIOR",
+        "HIGH_PSYCHOACOUSTIC_FREAKOUT",
+        "MEANING_MUST_NOT_SOFTEN_OR_REDEFINE_MOTOR",
+        "NEW_TRACKS_DERIVE_OWN_MID_HIGH_BEHAVIOR"
+      ]
+    },
+    {
+      "name": "CENTER OF THE SPIRAL",
+      "source_document_id": "1Biq6i-wi4XgOimI28z83mdpgYEcnzDlufrjyaFPHtOQ",
+      "source_revision": "ANLCKQkgfIITFJV8A94WW_9sfJsiOfj9ZsO0P81WTye2BFCtu2iG_nhiK7-NPM_MoXq3SPv1MYZFnhgeSqGMv1udVJgQHmRSAVg3IGEmNxk",
+      "status": "ACTIVE_CALIBRATION_REFERENCE_NON_TEMPLATE",
+      "current_template": false,
+      "relation_to": "BEHIND A SMILE",
+      "relation": "EVOLUTIONARY_AND_COMPLEMENTARY_NOT_COMPETITIVE",
+      "role": [
+        "POWER_AND_CHAOS_EXPANSION_EVIDENCE",
+        "STABLE_LOW_HIGH_CHAOS_COMPATIBILITY",
+        "PERMANENT_PRESSURE_BASESTATE_CONTEXTUAL_EVIDENCE",
+        "SEMANTIC_CROSS_FIELD_COHERENCE"
+      ],
+      "learned_relations": [
+        "LOW_CERTAINTY_ENABLES_GREATER_MID_HIGH_FREEDOM",
+        "CHAOS_NE_TIMEBASE_INSTABILITY",
+        "DROP_MAY_ESCALATE_ALREADY_POWERFUL_STATE",
+        "RITUAL_MEANING_TRANSFORMS_UPPER_WORLD_NOT_LOCOMOTION_AUTHORITY"
+      ]
+    },
+    {
+      "name": "BEHIND A SMILE TO CENTER OF THE SPIRAL",
+      "source_document_id": "1TPdLY_fNK6MQhJVf4rIyJOIx0F3DUANSZJ4VVffno7c",
+      "source_revision": "ANLCKQk5XYrKLy32TLLf6l3776FfrkC7aSINqhNkqEhXhCRKnGNUk8luwjmR2o4i9Bvwe9oXl2WPzJuYuPWBSUIitn7RM6bc0dIgkONeiKs",
+      "status": "ACTIVE_REFERENCE_COMPARISON_NON_TEMPLATE",
+      "current_template": false,
+      "role": [
+        "REFERENCE_EVOLUTION_LINEAGE",
+        "NON_WINNER_COMPARISON",
+        "CAUSAL_MODEL_DEEPENING"
+      ],
+      "chronology": "BEHIND_A_SMILE > LEARNING > TRACK_EVOLUTION > CENTER_OF_THE_SPIRAL",
+      "use_rule": "LEARN_PRINCIPLES_AND_EVOLUTION_NOT_MERGE_PROMPTS_OR_COPY_ARRANGEMENTS"
+    },
+    {
+      "name": "START A FIGHT",
+      "source_document_id": "1R5Wn_JxNmCIdAxeHsgDGdVpGAumoHvwhRFDvdLQjD0g",
+      "source_revision": "ANLCKQkSqbwRnBSx8fEbDBMLGKv4JIr7aPmJR-n4P3XHVvG1smzxQ1pMRsbP428AdoHbLnwhPwrNWT-SAeAY-tjvlf5eoywq1qFJJQyNULc",
+      "status": "POSITIVE_RENDER_EVIDENCE",
+      "current_template": false,
+      "role": [
+        "PRIMARY_MOTOR_AND_MUSICAL_ATTRACTOR_EVIDENCE",
+        "CONTRAST_DEBT_AND_RETURN",
+        "PSYCHOACOUSTIC_ORBIT_AROUND_FIXED_LOW",
+        "TERMINAL_CONVERGENCE"
+      ],
+      "guard": "SUCCESSFUL_RENDER_NE_EVERY_INPUT_COMPONENT_CAUSAL"
+    },
+    {
+      "name": "STELLAR ECHO",
+      "source_document_id": "1H14MDgv73wDrX5GoTh6nB-B5fN2NgYYdh0HeCZLdtUg",
+      "source_revision": "ANLCKQnSA_GxCKV3sbtcuhg9LYirgmunh6r2DAWYPBh-qGsKaWi-zz2mu9BUaoAGr5m__hHs-isULSutv5yVk8XDPEV12W7AYJsC4Fqr074",
+      "status": "POSITIVE_RENDER_EVIDENCE",
+      "current_template": false,
+      "relation_to": "START A FIGHT",
+      "relation": "PAIRED_POSITIVE_EVIDENCE_NOT_PRESET_PAIR",
+      "role": [
+        "STABLE_TIMEBASE_UNDER_COMPLEXITY",
+        "SPATIAL_MOTION_ABOVE_TEMPORAL_ANCHOR",
+        "TWO_VOICE_RELATIONAL_LOCK",
+        "TERMINAL_REACTIVATION_CHAIN",
+        "MULTI_LAYER_WORLD_COHERENCE"
+      ],
+      "guard": "PROMPT_BPM_AND_LITERAL_TIMECODES_NE_DAW_CLOCK_GUARANTEE"
+    },
+    {
       "name": "MASTERS OF THE PSYTRANCE",
+      "source_document_ids": [
+        "15p4fuMNEEdewIGMaxVeVUa7CQMdW_lgT8UjURPLYMoU",
+        "1V1MPiROK1rKBc-VupQtt67oZ4MKMxH2LgTigLxSoTes",
+        "1aq23yca57gvOwaxLa7LXYfEnvniVOqpJW0cLiZehj-Y",
+        "1tHrg68qg5uiuyoRQrmjBoDxXfyLhBMKGa5tQD1wXSUE",
+        "1a7wESrnBhd0TopQxzRnzFL_LO4CvMzywVNJcpAiXYVQ"
+      ],
       "status": "HISTORICAL_VALIDATION_AND_LEARNING_EVIDENCE",
       "current_template": false,
-      "role": ["RECOVERED_FULL_BUILD","REV79_TO_REV85_LEARNING_LINEAGE"],
-      "migration_note": "Keep as provenance and learning evidence; do not recycle as the next-track form."
+      "role": [
+        "REV79_TO_REV85_RECOVERY_LINEAGE",
+        "REV80_LYRIC_FUNCTION_VALIDATION_EVENT",
+        "REV81_FUNCTIONAL_EMOJI_EXECUTION_EVENT",
+        "REV82_AB_TRANSLATION_TEST_EVENT",
+        "REV83_MINIMUM_SUFFICIENT_COMMAND_LOAD_EVENT",
+        "REV84_EXECUTION_DRIFT_DIAGNOSTIC_PROVENANCE"
+      ],
+      "guard": [
+        "SOURCE_EVENT_NE_TEMPLATE",
+        "DO_NOT_RECYCLE_AS_NEXT_TRACK_FORM",
+        "RECOVERY_EXPORT_NE_RUNTIME_AUTHORITY"
+      ]
     },
     {
       "name": "LYVRA THROUGH EVERY FORM",
+      "source_document_id": "1CpGR3AS9zhW3yQ8OiM3FfByQyVUUdgW_ZtKO_c20Pgk",
+      "source_revision": "ANLCKQnjz15Dtikg2YQBheTECZV7mDCjRlULpLvkcDTf_IS-pCh5UZSXkLWbrEu9827nI3yGJJSyesE-8_We3Xz_dquvJwYF1h-kPiWjGQ8",
       "status": "REAL_RENDER_EVIDENCE",
-      "role": ["REV85_EXECUTION_ALIGNMENT_EVIDENCE","CREATOR_HEARING_STRONGLY_POSITIVE"],
       "current_template": false,
-      "migration_note": "Evidence for execution and renderer alignment, not proof of zero design drift."
+      "role": [
+        "REV85_EXECUTION_ALIGNMENT_EVIDENCE",
+        "CREATOR_HEARING_TECHNICAL_RESULT_STRONGLY_POSITIVE",
+        "CURRENT_RENDERER_UI_AND_CUSTOM_MODEL_EVIDENCE",
+        "VISUAL_WAVEFORM_DENSITY_INTERPRETATION"
+      ],
+      "learned_relations": [
+        "GOOD_RENDER_NE_ZERO_DESIGN_DRIFT",
+        "CUSTOM_MODEL_MAY_MASK_UPSTREAM_EXECUTION_DRIFT",
+        "VISUAL_WAVEFORM_DENSITY_NE_AUDIBLE_LOUDNESS_FAIL",
+        "CREATOR_VALIDATED_UI_EVIDENCE_GT_GENERIC_DOCS_FOR_EXPOSED_UI"
+      ]
     }
   ],
+  "current_reference_lineage": {
+    "foundational": "BEHIND A SMILE",
+    "expansion": "CENTER OF THE SPIRAL",
+    "positive_pair": [
+      "START A FIGHT",
+      "STELLAR ECHO"
+    ],
+    "historical_validation_chain": "MASTERS OF THE PSYTRANCE",
+    "current_real_render_evidence": "LYVRA THROUGH EVERY FORM"
+  },
   "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV85_MEMORY_NOT_MASTERS_RECYCLING",
-  "migration_open": "Full current and historically critical reference catalogue still requires source-by-source migration and triple validation."
+  "migration_open": false,
+  "validation_note": "Registry contains current and historically critical reference anchors and learned relations. Full raw payloads remain in provenance sources; repo stores current causal meaning rather than duplicating every historical prompt."
 }
