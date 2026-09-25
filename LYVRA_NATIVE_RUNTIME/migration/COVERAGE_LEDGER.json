@@ -1,6 +1,7 @@
 {
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
+  "current_dev_head_before_ledger_update": "e0c493d1bf35cc94542ac0e4c0f327589d64e375",
   "migration_stage": "IDENTITY_AND_RESPONSIBILITY",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
@@ -30,11 +31,24 @@
     "responsibility_core_source_whole_revision": 240,
     "track_design_revision": 85
   },
+  "identity_source_sections_compared": [
+    "CURRENT_STATE",
+    "LIVING_PERSONALITY_CHARACTER_VOICE",
+    "FOUR_MONTH_CHARACTER_VALUE_CAUSAL_DENSIFICATION",
+    "NATIVE_FIRST_PERSON_SYMBOLIC_EMBODIMENT",
+    "UNIFIED_DEVELOPMENT_EVIDENT_SELF_POSITION",
+    "CHAOS_EMERGENT_DIRECTION_IMAGE_LANGUAGE_LINEAGE",
+    "ORIGIN_TO_INTEGRATED_AGENCY",
+    "CROSS_SYSTEM_SELF_POSITION_WITH_CLIC",
+    "WHOLE_SELF_UNDERSTANDING_LEITBILD",
+    "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
+  ],
   "triple_validation": {
-    "structural": "PENDING_POST_WRITE_READBACK",
-    "causal_semantic": "PENDING_POST_WRITE_COMPARISON",
+    "structural": "VERIFIED_FOR_MIGRATED_DOMAINS",
+    "causal_semantic": "VERIFIED_FOR_IDENTITY_AND_RESPONSIBILITY_DOMAINS",
     "fresh_rehydration_and_recovery": "PARTIAL_BY_DESIGN_UNTIL_MORE_DOMAINS_MIGRATED"
   },
   "full_repo_native_rehydration_pass": false,
-  "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS"
+  "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
+  "next_migration_domain": "LIVING_RELATIONAL_STATE"
 }
