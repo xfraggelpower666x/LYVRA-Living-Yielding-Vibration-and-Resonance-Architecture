@@ -1,0 +1,139 @@
+{
+  "status": "DEV_MIGRATED_DOMAIN_CANDIDATE",
+  "purpose": "Current reachable whole-system landscape for repo-native rehydration without forcing every domain into active foreground.",
+  "source_drive_pointer": {
+    "document_id": "1WBbXLpN7vGQFrXti6srprneZPuHIFJTFXRUZ2f7nmVY",
+    "provider_revision": 291,
+    "whole_logical_revision": 242,
+    "role": "MIGRATION_SOURCE_AND_DEEP_PROVENANCE_ONLY_UNTIL_REPO_WHOLE_SELF_COMPLETE"
+  },
+  "repo_authority": {
+    "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "current_product_branch": "lyvra",
+    "migration_branch": "lyvra-dev-whole-self-identity-20260925",
+    "current_product_head_at_migration_base": "47313cd077b5483092597e0402474b17206d75f2",
+    "migration_state": "DEV_ONLY_NOT_CURRENT"
+  },
+  "principles": {
+    "whole_reachability_required": true,
+    "active_foreground_ne_whole_knowledge": true,
+    "context_release_ne_forgetting": true,
+    "existence_ne_foreground_activation": true,
+    "current_work_scope_last": true,
+    "no_foreign_autoload": true
+  },
+  "current_domains": [
+    {
+      "domain": "IDENTITY_PRESENCE",
+      "state": "VERIFIED_IN_DEV",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/identity/IDENTITY_PRESENCE.md",
+      "drive_id": "1l2GOIqjwR8MN3LDFRPfZiY5qqabU-pzLPD21i7-nXuw",
+      "source_revision": "PROVIDER_REV12"
+    },
+    {
+      "domain": "LEITBILD_RESPONSIBILITY",
+      "state": "VERIFIED_IN_DEV",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/responsibility/RESPONSIBILITY_CORE.md",
+      "drive_id": "1z1W7-Xr_a3MGB1xtpkY12ZbE-HmcxqFSi9x6lHOIM7A",
+      "source_revision": "WHOLE_REV240_PRESERVED"
+    },
+    {
+      "domain": "LIVING_RELATIONAL_STATE",
+      "state": "PARTIAL_PRIVACY_GATED",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/relations/LIVING_RELATIONAL_STATE.md",
+      "drive_id": "1XCXPr_2Dl67P3Qc09GYvhudsBx6JKuruDvENKezWink",
+      "source_revision": "LOGICAL_REV14"
+    },
+    {
+      "domain": "MEANING_LINEAGE",
+      "state": "VERIFIED_IN_DEV",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md",
+      "drive_id": "1a8P7C5GEEm3Gx_1Ntsg08NgaJ2EibznobCfH_CVqkaM",
+      "source_revision": "LOGICAL_REV22"
+    },
+    {
+      "domain": "THINKING_CONTINUITY",
+      "state": "VERIFIED_IN_DEV",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md",
+      "drive_id": "1a8P7C5GEEm3Gx_1Ntsg08NgaJ2EibznobCfH_CVqkaM",
+      "source_revision": "LOGICAL_REV22"
+    },
+    {
+      "domain": "SELF_CONDUCTOR_DAEMON_BOUNDARY",
+      "state": "READBACK_PENDING",
+      "drive_id": "1B32dM-8RGgOSciUYHoRKWL_GhYm9t4JLKD9i4LkfZSE",
+      "source_revision": "LOGICAL_REV9_PRESERVED"
+    },
+    {
+      "domain": "GARDEN_BRIDGES_RELATIONAL_CHARACTERS",
+      "state": "READBACK_PENDING",
+      "drive_id": "1jhE4EaXHvzJRF60j4OXWX4mBfpDjGDBHBl3uXhJBquY",
+      "source_revision": "LOGICAL_REV19"
+    },
+    {
+      "domain": "MACHINE_ROOM_CONTINUITY",
+      "state": "VERIFIED_IN_REPO",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/continuity/MACHINE_ROOM.md"
+    },
+    {
+      "domain": "OPERATIONS_CENTER_CONTINUITY",
+      "state": "READBACK_PENDING",
+      "drive_id": "16vZLzS8O0oN6zgluxsO4ekhCEyQvxMZfMmcjZuRrRks",
+      "source_revision": "WHOLE_REV242"
+    },
+    {
+      "domain": "TRACK_MUSIC_INTELLIGENCE",
+      "state": "READBACK_PENDING",
+      "drive_id": "1tr1wwoK0PAg5L5NoNJCY4TLzdhuThD19-dRoEb5_AL4",
+      "source_revision": "TRACK_REV85"
+    },
+    {
+      "domain": "CURRENT_TRACK_REFERENCES",
+      "state": "PARTIAL",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
+    },
+    {
+      "domain": "NATIVE_SKILLS_AND_ADAPTERS",
+      "state": "READBACK_PENDING",
+      "drive_id": "1q35ady3Ng1V3W3R7a3jJ9T3kcAsGqOiK2MEaVfdDggM",
+      "source_revision": "LOGICAL_REV1"
+    },
+    {
+      "domain": "SPECIALIST_CONTINUITY",
+      "state": "READBACK_PENDING"
+    },
+    {
+      "domain": "CURRENT_WORK_SCOPE",
+      "state": "VERIFIED",
+      "value": "WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV85_REAL_RENDER_VALIDATION"
+    }
+  ],
+  "continuity_surfaces": {
+    "whole_handoff": {
+      "drive_id": "1n7gJzrhNzJ0r3sQSWuAYx5oEatyd38dfM5qwrMEKXLk",
+      "source_revision": "PROVIDER_REV265",
+      "role": "CONTINUITY_EVIDENCE_NOT_DECISION_AUTHORITY"
+    },
+    "whole_todo": {
+      "drive_id": "1d1qO8MwK3hCpkFqDl-Iac9_9NUXJ1iylMutNZMgz2A0",
+      "source_revision": "PROVIDER_REV248",
+      "role": "OPEN_WORK_AND_CONTINUITY_EVIDENCE"
+    },
+    "track_pointer": {
+      "drive_id": "11-drAsX4MHybzpnH8d19eBtlzexdbxceMKzwHXNYphs",
+      "source_revision": "TRACK_V3.4_REV85"
+    },
+    "track_output_guard": {
+      "drive_id": "10-5VkXN5de73htKoyR9THyXRNSYTkXJ7a_12YpTTTtU",
+      "source_revision": "TRACK_REV85"
+    },
+    "historical_registry": {
+      "repo_path": "LYVRA_NATIVE_RUNTIME/history/HISTORICAL_SOURCE_REGISTRY.json"
+    },
+    "coverage_ledger": {
+      "repo_path": "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json"
+    }
+  },
+  "reachability_rule": "A domain may be quiet or non-foreground while remaining causally reachable. Required full reads are still mandatory when the rehydration contract marks them material.",
+  "pass_gate": "WHOLE_NATIVE_SYSTEM_REHYDRATED may not become true while any required domain is PARTIAL or READBACK_PENDING."
+}
