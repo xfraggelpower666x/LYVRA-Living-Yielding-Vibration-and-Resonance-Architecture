@@ -1,8 +1,8 @@
 {
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
-  "current_dev_head_before_ledger_update": "aad9aa8a15a2460c3669c865c4c3c666711d29cf",
-  "migration_stage": "MEANING_LINEAGE_AND_THINKING_CONTINUITY",
+  "current_dev_head_before_ledger_update": "f069504dd690470da06b2ce0935c0b42b23e56cd",
+  "migration_stage": "REACHABLE_LANDSCAPE_AND_PROVENANCE_SUPERSESSION",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
@@ -11,8 +11,8 @@
     "LIVING_RELATIONAL_STATE": "PARTIAL",
     "MEANING_LINEAGE": "VERIFIED",
     "THINKING_CONTINUITY": "VERIFIED",
-    "REACHABLE_LANDSCAPE": "READBACK_PENDING",
-    "PROVENANCE_SUPERSESSION": "PARTIAL",
+    "REACHABLE_LANDSCAPE": "VERIFIED",
+    "PROVENANCE_SUPERSESSION": "VERIFIED",
     "VALID_NEWER_EVOLUTION": "VERIFIED",
     "SELF_CONDUCTOR_DAEMON_BOUNDARY": "READBACK_PENDING",
     "GARDEN_BRIDGES_RELATIONAL_CHARACTERS": "READBACK_PENDING",
@@ -44,13 +44,13 @@
     "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
   ],
   "triple_validation": {
-    "structural": "VERIFIED_FOR_IDENTITY_RESPONSIBILITY_MEANING_THINKING_AND_PUBLIC_SAFE_RELATIONAL_CORE",
-    "causal_semantic": "VERIFIED_FOR_IDENTITY_RESPONSIBILITY_MEANING_THINKING_AND_PUBLIC_SAFE_RELATIONAL_CORE",
+    "structural": "VERIFIED_FOR_REACHABLE_LANDSCAPE_AND_PROVENANCE_PLUS_PRIOR_MIGRATED_DOMAINS",
+    "causal_semantic": "VERIFIED_FOR_REACHABLE_LANDSCAPE_AND_PROVENANCE_PLUS_PRIOR_MIGRATED_DOMAINS",
     "fresh_rehydration_and_recovery": "PARTIAL_BY_DESIGN_UNTIL_REMAINING_REQUIRED_DOMAINS_MIGRATED_AND_PRIVACY_GATE_RESOLVED"
   },
   "full_repo_native_rehydration_pass": false,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "REACHABLE_LANDSCAPE_AND_PROVENANCE_SUPERSESSION",
+  "next_migration_domain": "SELF_CONDUCTOR_DAEMON_BOUNDARY",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -94,5 +94,25 @@
     "LOGICAL_REV20_WHOLE_REACHABLE_INNER_OUTER_MYCEL",
     "LOGICAL_REV21_NON_LOSSY_CONTEXT_STEWARDSHIP",
     "LOGICAL_REV22_NATIVE_SKILL_TASK_CONTRACT_INTERFACE"
+  ],
+  "landscape_source_readback": {
+    "drive_pointer_provider_revision": 291,
+    "whole_handoff_provider_revision": 265,
+    "whole_todo_provider_revision": 248,
+    "repo_rehydration_manifest": "READ",
+    "repo_historical_source_registry": "READ",
+    "repo_continuity_model": "READ",
+    "repo_triple_validation_contract": "READ"
+  },
+  "supersession_rules_verified": [
+    "NEWER_VALID_EVOLUTION_GT_OLDER_VALID_STATE",
+    "SEARCH_RESULT_NE_READBACK",
+    "SEARCH_SNIPPET_NE_CURRENT_AUTHORITY",
+    "FOUND_NE_VERIFIED",
+    "READ_NE_REHYDRATED",
+    "SUPERSEDED_NE_DELETED",
+    "SUPERSEDED_NE_CURRENT",
+    "BACKUP_NE_CURRENT_AUTHORITY",
+    "RECOVERY_OF_REACHABILITY_NE_ROLLBACK"
   ]
 }
