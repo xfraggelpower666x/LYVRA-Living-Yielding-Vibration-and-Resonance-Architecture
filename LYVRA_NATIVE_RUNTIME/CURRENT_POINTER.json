@@ -22,16 +22,18 @@
   },
   "current_known_whole_state": {
     "drive_internal_reference_whole_revision": 242,
-    "drive_internal_reference_pointer_revision": 291,
+    "drive_internal_reference_pointer_revision": 316,
     "track_design_version": "v3.4",
-    "track_design_logical_revision": 85,
+    "track_design_logical_revision": 86,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV85_REAL_RENDER_VALIDATION"
+    "current_work_scope": "WHOLE_REV242_REPO_MIGRATION+TRACK_REV86+SUNO_STUDIO2+FRESH_REHYDRATION_RECOVERY",
+    "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
+    "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
-    "current_status": "PARTIAL_READBACK_PENDING_UNTIL_WHOLE_SELF_MIGRATION_COMPLETE",
+    "current_status": "PARTIAL_READBACK_PENDING_FRESH_FULL_PUBLIC_REPO_AND_PRIVATE_VAULT_RECOVERY",
     "pass_forbidden_until_required_domains_verified": true
   },
   "continuity": {
@@ -84,5 +86,9 @@
     "NO_DESTRUCTIVE_MIGRATION",
     "OLD_CONTINUITY_PATH_REMAINS_UNTIL_NEW_PATH_VERIFIED",
     "NEWER_VALID_EVOLUTION_MUST_BE_PRESERVED"
-  ]
+  ],
+  "migration_bridge_active": true,
+  "current_migration_gate": "FRESH_FULL_REPO_REHYDRATION_AND_RECOVERY",
+  "validation_backlog_preserved": true,
+  "heritage_research": "EVIDENCE_DEBT_ON_DEMAND_NOT_FOREGROUND"
 }
