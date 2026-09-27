@@ -124,3 +124,6 @@ GENRE_FRONT_CAUSAL_TESTS = OPEN
 RENDERER_TRANSLATION_SUBFACET_VALIDATION = OPEN
 
 This artifact preserves specialist continuity as a native LYVRA relation. It does not promote the DEV branch, resolve the private relational privacy gate, or declare whole repo-native rehydration PASS.
+
+
+<!-- LYVRA_WRITE_PATH_PROBE_20260927: no semantic authority change -->
