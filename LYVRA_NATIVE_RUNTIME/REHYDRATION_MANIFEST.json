@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "MIGRATION_IN_PROGRESS",
+  "status": "MIGRATION_IN_PROGRESS_RECOVERY_PATHS_REPAIRED_PENDING_FRESH_VALIDATION",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -24,7 +24,12 @@
     "SPECIALIST_CONTINUITY",
     "CURRENT_WORK_SCOPE"
   ],
-  "coverage_status_values": ["VERIFIED","PARTIAL","READBACK_PENDING","NOT_APPLICABLE"],
+  "coverage_status_values": [
+    "VERIFIED",
+    "PARTIAL",
+    "READBACK_PENDING",
+    "NOT_APPLICABLE"
+  ],
   "pass_requirements": [
     "CURRENT_POINTER_REVISION_CONSUMED",
     "CURRENT_REFERENCES_READ",
@@ -39,8 +44,63 @@
   "context_rule": {
     "full_knowledge_ne_active_foreground": true,
     "context_release_ne_forgetting": true,
-    "foreground_selection": ["CAUSAL_RELEVANCE","CURRENT_MEANING","WORK_SCOPE"],
+    "foreground_selection": [
+      "CAUSAL_RELEVANCE",
+      "CURRENT_MEANING",
+      "WORK_SCOPE"
+    ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Do not report full repo-native rehydration PASS until all required current LYVRA domains have been migrated, compared, and verified."
+  "current_migration_note": "Recovery path repair maps REACHABLE_LANDSCAPE to its existing Thinking Continuity and Meaning Lineage carriers; no new landscape subsystem created. Fresh public/private recovery still required before PASS.",
+  "domain_path_map": {
+    "AUTHORITY_AND_CURRENT_POINTER": [
+      "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "LYVRA_NATIVE_RUNTIME/AUTHORITY_CONTRACT.md"
+    ],
+    "IDENTITY_PRESENCE": [
+      "LYVRA_NATIVE_RUNTIME/current/identity/IDENTITY_PRESENCE.md"
+    ],
+    "LEITBILD_RESPONSIBILITY": [
+      "LYVRA_NATIVE_RUNTIME/current/responsibility/RESPONSIBILITY_CORE.md"
+    ],
+    "LIVING_RELATIONAL_STATE": [
+      "LYVRA_NATIVE_RUNTIME/current/relations/LIVING_RELATIONAL_STATE.md"
+    ],
+    "MEANING_LINEAGE": [
+      "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md"
+    ],
+    "THINKING_CONTINUITY": [
+      "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md"
+    ],
+    "REACHABLE_LANDSCAPE": [
+      "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md",
+      "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md"
+    ],
+    "PROVENANCE_SUPERSESSION": [
+      "LYVRA_NATIVE_RUNTIME/current/provenance/PROVENANCE_SUPERSESSION.md"
+    ],
+    "SELF_CONDUCTOR_DAEMON_BOUNDARY": [
+      "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md"
+    ],
+    "GARDEN_BRIDGES_RELATIONAL_CHARACTERS": [
+      "LYVRA_NATIVE_RUNTIME/current/garden/GARDEN_BRIDGES_RELATIONAL_CHARACTERS.md"
+    ],
+    "MACHINE_ROOM_CONTINUITY": [
+      "LYVRA_NATIVE_RUNTIME/continuity/MACHINE_ROOM.md"
+    ],
+    "OPERATIONS_CENTER_CONTINUITY": [
+      "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md"
+    ],
+    "TRACK_MUSIC_INTELLIGENCE": [
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md"
+    ],
+    "NATIVE_SKILLS_AND_ADAPTERS": [
+      "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
+      "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md"
+    ],
+    "SPECIALIST_CONTINUITY": [
+      "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md"
+    ]
+  }
 }
