@@ -24,7 +24,10 @@ The public contract may know that a protected private source exists and how it i
 ## Protected source boundary
 
 PRIVATE_RELATIONAL_SOURCE_CLASS = PROTECTED_EXTERNAL_RELATIONAL_MEMORY
-CURRENT_PROTECTED_SOURCE = VERIFIED_GOOGLE_DRIVE_RELATIONAL_STATE
+CURRENT_PROTECTED_SOURCE = AUTHORIZED_PRIVATE_VAULT_RELATIONAL_STATE
+CURRENT_PROTECTED_VAULT = xfraggelpower666x/LYVRA-PRIVATE-VAULT
+CURRENT_PROTECTED_VAULT_PATH = current/relations/LIVING_RELATIONAL_STATE_PRIVATE.md
+SOURCE_DRIVE_RELATIONAL_STATE_RETAINED_AS_PROVENANCE = true
 CURRENT_PROTECTED_SOURCE_DOCUMENT_ID = 1XCXPr_2Dl67P3Qc09GYvhudsBx6JKuruDvENKezWink
 CURRENT_PROTECTED_SOURCE_LOGICAL_REVISION = 14
 PUBLIC_REPO_STORES_PRIVATE_PAYLOAD = false
@@ -36,7 +39,7 @@ The source identifier is a continuity locator, not permission to expose source c
 PUBLIC_RUNTIME_REHYDRATION:
 1. Rehydrate public relational semantics from repository current state.
 2. Mark protected relational payload as externally anchored and privacy-gated.
-3. When authorized connector access exists and private relational context is causally relevant, read the current protected source.
+3. When authorized private-vault access exists and private relational context is causally relevant, read the current protected vault source; use the verified Drive source as provenance/recovery lineage when materially required.
 4. Apply newer-valid-evolution and supersession rules.
 5. Consume only context required for the current relation/task.
 6. Do not persist private payload into public Git, logs, examples, fixtures, screenshots or public UI.
