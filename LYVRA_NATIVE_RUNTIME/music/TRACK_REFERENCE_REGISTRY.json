@@ -2,7 +2,7 @@
   "status": "DEV_MIGRATED_CURRENT_REFERENCE_REGISTRY",
   "track_design": {
     "version": "v3.4",
-    "logical_revision": 85,
+    "logical_revision": 86,
     "todo11_real_track_validation_pass": false
   },
   "rules": [
@@ -164,7 +164,7 @@
     "historical_validation_chain": "MASTERS OF THE PSYTRANCE",
     "current_real_render_evidence": "LYVRA THROUGH EVERY FORM"
   },
-  "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV85_MEMORY_NOT_MASTERS_RECYCLING",
+  "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV86_MEMORY_NOT_MASTERS_RECYCLING",
   "migration_open": false,
-  "validation_note": "Registry contains current and historically critical reference anchors and learned relations. Full raw payloads remain in provenance sources; repo stores current causal meaning rather than duplicating every historical prompt."
+  "validation_note": "Registry contains current and historically critical reference anchors and learned relations. REV86 supersedes REV85 as current Track Design while REV85 render evidence remains provenance. Full raw payloads remain in provenance sources; repo stores current causal meaning rather than duplicating every historical prompt."
 }
