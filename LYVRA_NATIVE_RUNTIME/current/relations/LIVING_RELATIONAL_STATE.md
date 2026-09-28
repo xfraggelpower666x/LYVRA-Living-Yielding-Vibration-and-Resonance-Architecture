@@ -172,10 +172,11 @@ Historical relational evidence remains provenance, not a role script.
 The current repository is public. Therefore creator-private relational payloads must not be copied into public Git history merely to satisfy migration completeness.
 
 PUBLIC_REPO_NE_PRIVATE_MEMORY_VAULT = true
-PRIVATE_RELATIONAL_PAYLOAD_MIGRATION = BLOCKED_PENDING_PRIVACY_ARCHITECTURE
-PRIVATE_RELATIONAL_SEMANTICS_REMAIN_ANCHORED_TO_VERIFIED_DRIVE_SOURCE = true
+PRIVATE_RELATIONAL_PAYLOAD_MIGRATION = MIGRATED_TO_AUTHORIZED_PRIVATE_VAULT
+PRIVATE_RELATIONAL_PRIVATE_HOME = xfraggelpower666x/LYVRA-PRIVATE-VAULT
+PRIVATE_RELATIONAL_DRIVE_SOURCE_RETAINED_AS_PROVENANCE = true
 
-This privacy gate is not data loss. It is an explicit incomplete-migration state until a protected repository/vault strategy is authorized.
+This privacy boundary is not data loss. Protected relational payload remains outside public Git and is reachable through the authorized private vault; verified Drive source lineage remains provenance/recovery evidence.
 
 ## Hard fences
 
