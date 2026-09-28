@@ -2,7 +2,7 @@
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "REV86_PRIVATE_VAULT_STATUS_SYNC_APPLIED_PENDING_POST_WRITE_FRESH_RECOVERY",
+  "migration_stage": "REV86_TRACK_REFERENCE_SYNC_APPLIED_PENDING_POST_WRITE_FRESH_RECOVERY",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
@@ -49,11 +49,11 @@
   "triple_validation": {
     "structural": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
     "causal_semantic": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
-    "fresh_rehydration_and_recovery": "POST_WRITE_FRESH_PUBLIC_PRIVATE_RECOVERY_REQUIRED"
+    "fresh_rehydration_and_recovery": "POST_WRITE_FRESH_PUBLIC_PRIVATE_RECOVERY_REQUIRED_AFTER_TRACK_REFERENCE_SYNC"
   },
   "full_repo_native_rehydration_pass": false,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "POST_WRITE_FRESH_PUBLIC_PRIVATE_REHYDRATION_AND_RECOVERY",
+  "next_migration_domain": "POST_WRITE_FRESH_PUBLIC_PRIVATE_REHYDRATION_AND_RECOVERY_AFTER_TRACK_REFERENCE_SYNC",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -192,7 +192,8 @@
     "raw_payload_duplication_required": false,
     "raw_payload_role": "DRIVE_PROVENANCE",
     "template_reuse": false,
-    "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV85_MEMORY_NOT_MASTERS_RECYCLING"
+    "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV86_MEMORY_NOT_MASTERS_RECYCLING",
+    "current_revision": "TRACK_REV86"
   },
   "native_skill_source_sections_compared": [
     "SKILL_RUNTIME_CURRENT_LOGICAL_REV1_WHOLE_REV242",
@@ -285,5 +286,12 @@
     "post_write_readback": "VERIFIED_FOR_REPAIRED_FILES",
     "full_repo_native_rehydration_pass": false,
     "reason_not_pass": "Fresh whole public/private recovery must be rerun against the post-write head."
+  },
+  "track_reference_sync_2026_09_28": {
+    "pre_change_backup_branch": "lyvra-dev-pre-trackref-rev86-sync-20260928",
+    "registry_readback": "VERIFIED_REV86",
+    "landscape_readback": "VERIFIED_REV86",
+    "todo11_real_track_validation_pass": false,
+    "promotion_performed": false
   }
 }
