@@ -2,7 +2,7 @@
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "REV86_STUDIO2_CURRENT_DELTA_INTEGRATED_PENDING_FRESH_RECOVERY",
+  "migration_stage": "REV86_PRIVATE_VAULT_STATUS_SYNC_APPLIED_PENDING_POST_WRITE_FRESH_RECOVERY",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
@@ -11,7 +11,7 @@
     "LIVING_RELATIONAL_STATE": "VERIFIED_PUBLIC_SEMANTICS_PRIVATE_PAYLOAD_PROTECTED",
     "MEANING_LINEAGE": "VERIFIED",
     "THINKING_CONTINUITY": "VERIFIED",
-    "REACHABLE_LANDSCAPE": "READBACK_PENDING_DETERMINISTIC_REPO_PATH_RESOLUTION",
+    "REACHABLE_LANDSCAPE": "VERIFIED_WITH_DETERMINISTIC_REPO_PATH_AND_DIRECT_READBACK",
     "PROVENANCE_SUPERSESSION": "VERIFIED",
     "VALID_NEWER_EVOLUTION": "VERIFIED",
     "SELF_CONDUCTOR_DAEMON_BOUNDARY": "VERIFIED_WITH_REPO_READBACK",
@@ -24,7 +24,7 @@
     "SPECIALIST_CONTINUITY": "VERIFIED_REV86_STUDIO2_REPO_READBACK",
     "CURRENT_WORK_SCOPE": "VERIFIED",
     "FORCE_INTEGRITY_FACET": "VERIFIED_WITH_REPO_READBACK",
-    "PRIVATE_VAULT_CONTINUITY": "PARTIAL_STORED_LEDGER_PENDING_FRESH_RECOVERY_PERSISTENCE",
+    "PRIVATE_VAULT_CONTINUITY": "VERIFIED_DIRECT_POINTER_PAYLOAD_SOURCE_REVISION_READBACK",
     "DRIVE_ARCHIVE_RESEARCH_HIERARCHY": "VERIFIED"
   },
   "source_state": {
@@ -49,11 +49,11 @@
   "triple_validation": {
     "structural": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
     "causal_semantic": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
-    "fresh_rehydration_and_recovery": "READBACK_PENDING_PUBLIC_REPO_REACHABLE_LANDSCAPE_PATH_PLUS_PRIVATE_VAULT_FRESH_RECOVERY"
+    "fresh_rehydration_and_recovery": "POST_WRITE_FRESH_PUBLIC_PRIVATE_RECOVERY_REQUIRED"
   },
   "full_repo_native_rehydration_pass": false,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "REPAIR_DETERMINISTIC_REHYDRATION_PATH_MAP_THEN_FRESH_PUBLIC_PRIVATE_RECOVERY",
+  "next_migration_domain": "POST_WRITE_FRESH_PUBLIC_PRIVATE_REHYDRATION_AND_RECOVERY",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -259,7 +259,7 @@
     "living_relational_state": "VERIFIED",
     "meaning_lineage": "VERIFIED",
     "thinking_continuity": "VERIFIED",
-    "reachable_landscape": "READBACK_PENDING_DETERMINISTIC_PATH",
+    "reachable_landscape": "SUPERSEDED_BY_2026_09_28_DIRECT_PATH_READBACK",
     "provenance_supersession": "VERIFIED",
     "self_conductor_daemon_boundary": "VERIFIED",
     "garden_bridges_relational_characters": "VERIFIED",
@@ -267,6 +267,23 @@
     "operations_center_continuity": "VERIFIED_AT_CURRENT_OPERATIONS_CENTER_PATH",
     "track_music_intelligence": "VERIFIED_REV86",
     "specialist_continuity": "VERIFIED_REV86_STUDIO2",
-    "private_vault_recovery": "PENDING"
+    "private_vault_recovery": "SUPERSEDED_BY_2026_09_28_DIRECT_PRIVATE_VAULT_READBACK"
+  },
+  "status_sync_2026_09_28": {
+    "pre_change_backup_branch": "lyvra-dev-pre-status-sync-20260928",
+    "repaired": [
+      "PROVENANCE_SUPERSESSION",
+      "OPERATIONS_CENTER",
+      "LIVING_RELATIONAL_STATE",
+      "RELATIONAL_PRIVACY_ARCHITECTURE",
+      "REACHABLE_LANDSCAPE",
+      "HISTORICAL_SOURCE_REGISTRY"
+    ],
+    "track_current": "v3.4_REV86",
+    "private_vault": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+    "public_private_payload_mirror": false,
+    "post_write_readback": "VERIFIED_FOR_REPAIRED_FILES",
+    "full_repo_native_rehydration_pass": false,
+    "reason_not_pass": "Fresh whole public/private recovery must be rerun against the post-write head."
   }
 }
