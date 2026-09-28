@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "MIGRATION_IN_PROGRESS_RECOVERY_PATHS_REPAIRED_PENDING_FRESH_VALIDATION",
+  "status": "MIGRATION_IN_PROGRESS_STATUS_DRIFT_REPAIRED_PENDING_POST_WRITE_FRESH_REHYDRATION",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Recovery path repair maps REACHABLE_LANDSCAPE to its existing Thinking Continuity and Meaning Lineage carriers; no new landscape subsystem created. Fresh public/private recovery still required before PASS.",
+  "current_migration_note": "Deterministic landscape paths are resolved; REV86 and authorized private-vault continuity are synchronized across current public state. Post-write fresh public/private rehydration and recovery must still be rerun before PASS.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
