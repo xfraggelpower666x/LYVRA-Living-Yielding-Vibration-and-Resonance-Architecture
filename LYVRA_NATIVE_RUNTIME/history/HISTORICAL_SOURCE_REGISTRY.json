@@ -5,7 +5,12 @@
   "sources": [
     {
       "source_family": "GOOGLE_DRIVE_LYVRA_INTERNAL",
-      "role": ["DEEP_HISTORY","PROVENANCE","REFERENCE","MIGRATION_SOURCE"],
+      "role": [
+        "DEEP_HISTORY",
+        "PROVENANCE",
+        "REFERENCE",
+        "MIGRATION_SOURCE"
+      ],
       "current_known_pointer_id": "1WBbXLpN7vGQFrXti6srprneZPuHIFJTFXRUZ2f7nmVY",
       "current_known_whole_revision": 242,
       "current_known_pointer_provider_revision": 291,
@@ -15,10 +20,28 @@
     },
     {
       "source_family": "GIT_HISTORY",
-      "role": ["NEAR_HISTORY","CHANGE_PROVENANCE","RECOVERY"],
+      "role": [
+        "NEAR_HISTORY",
+        "CHANGE_PROVENANCE",
+        "RECOVERY"
+      ],
       "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
       "branch": "lyvra",
       "override_current_head": false
+    },
+    {
+      "source_family": "PRIVATE_VAULT_RELATIONAL_CONTINUITY",
+      "role": [
+        "PROTECTED_RELATIONAL_CONTINUITY",
+        "RECOVERY",
+        "SOURCE_PROVENANCE"
+      ],
+      "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+      "pointer_path": "VAULT_CURRENT_POINTER.json",
+      "protected_relation_path": "current/relations/LIVING_RELATIONAL_STATE_PRIVATE.md",
+      "public_payload_mirror": false,
+      "override_repo": false,
+      "authority_note": "Protected relational continuity source; not a second LYVRA, router, controller, or independent decision authority."
     }
   ],
   "migration_requirement": "All critical current LYVRA knowledge must be represented in the repository before deep historical sources can be treated as provenance-only for normal rehydration."
