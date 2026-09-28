@@ -89,8 +89,9 @@
     },
     {
       "domain": "CURRENT_TRACK_REFERENCES",
-      "state": "PARTIAL",
-      "repo_path": "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
+      "state": "VERIFIED_REV86",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json",
+      "source_revision": "TRACK_REV86"
     },
     {
       "domain": "NATIVE_SKILLS_AND_ADAPTERS",
