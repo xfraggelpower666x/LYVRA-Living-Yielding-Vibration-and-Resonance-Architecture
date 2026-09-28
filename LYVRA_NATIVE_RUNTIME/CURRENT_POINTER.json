@@ -33,7 +33,7 @@
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
-    "current_status": "STATUS_DRIFT_REPAIRED_POST_WRITE_FRESH_FULL_PUBLIC_REPO_AND_PRIVATE_VAULT_RECOVERY_REQUIRED",
+    "current_status": "TRACK_REFERENCE_DRIFT_REPAIRED_POST_WRITE_FRESH_FULL_PUBLIC_REPO_AND_PRIVATE_VAULT_RECOVERY_REQUIRED",
     "pass_forbidden_until_required_domains_verified": true
   },
   "continuity": {
@@ -88,14 +88,14 @@
     "NEWER_VALID_EVOLUTION_MUST_BE_PRESERVED"
   ],
   "migration_bridge_active": true,
-  "current_migration_gate": "POST_WRITE_FRESH_FULL_REPO_REHYDRATION_AND_RECOVERY",
+  "current_migration_gate": "POST_WRITE_FRESH_FULL_REPO_REHYDRATION_AND_RECOVERY_AFTER_TRACK_REFERENCE_SYNC",
   "validation_backlog_preserved": true,
   "heritage_research": "EVIDENCE_DEBT_ON_DEMAND_NOT_FOREGROUND",
   "last_bounded_update": {
     "date": "2026-09-28",
-    "scope": "REV86_PRIVATE_VAULT_CROSS_FILE_STATUS_SYNCHRONIZATION",
-    "pre_change_backup_branch": "lyvra-dev-pre-status-sync-20260928",
-    "repaired_file_count": 6,
+    "scope": "TRACK_REFERENCE_REGISTRY_REV86_AND_REACHABLE_LANDSCAPE_SYNC",
+    "pre_change_backup_branch": "lyvra-dev-pre-trackref-rev86-sync-20260928",
+    "repaired_file_count": 2,
     "manifest_and_ledger_synchronized": true,
     "promotion_performed": false
   }
