@@ -48,20 +48,21 @@ Supersession preserves historical trace, the reason the prior state existed, val
 WHOLE_LOGICAL_REVISION = 242
 POINTER_PROVIDER_REVISION = 291
 
-Whole Rev242 supersedes Whole Rev241 by additive native-skill/runtime and interface-manifestation evolution while preserving valid Rev241 context stewardship, creator musical lineage, concrete outer-mycel continuity, Responsibility Core, Track Design Rev85 and recovery provenance.
+Whole Rev242 supersedes Whole Rev241 by additive native-skill/runtime and interface-manifestation evolution while preserving valid Rev241 context stewardship, creator musical lineage, concrete outer-mycel continuity, Responsibility Core, Track Design Rev86 and recovery provenance.
 
 Current Rev242 evolution includes native Skill Runtime, REFERENCE_DONT_CLONE, Prompt / Task Contract Intelligence, Site / Interface Renderer Translation, and the public/internal UI evidence boundary.
 
 TRACK_VERSION = v3.4
-TRACK_LOGICAL_REVISION = 85
-TRACK_REV85_PRESERVED_UNCHANGED = true
+TRACK_LOGICAL_REVISION = 86
+TRACK_REV85_PRESERVED_AS_PROVENANCE = true
+TRACK_REV86_CURRENT = true
 TODO11_REAL_TRACK_VALIDATION_PASS = false
 
 ## Migration provenance
 
 Each repo-native current domain must retain source document identity, source revision/logical revision, migrated semantic core, explicit omitted/private material status, current successor relation, and validation result.
 
-Private relational payloads blocked by the public-repo privacy gate remain reachable through verified Drive provenance and are not treated as migrated.
+Private relational payloads remain forbidden in the public repo. The protected payload is migrated to the authorized private vault, with verified Drive provenance retained as source lineage and recovery evidence.
 
 ## Recovery and historical evidence
 
@@ -74,7 +75,7 @@ RECOVERY_OF_REACHABILITY != ROLLBACK_TO_HISTORICAL_STATE
 Current Whole Handoff Provider Rev265 is continuity evidence and transition state, not independent decision authority.
 Current Whole TODO Provider Rev248 identifies unresolved acceptance/work items and next meaningful actions. TODO state does not supersede pointer/current authority.
 
-CURRENT_WORK_SCOPE = WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV85_REAL_RENDER_VALIDATION
+CURRENT_WORK_SCOPE = WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV86_REAL_RENDER_VALIDATION
 
 ## Valid newer evolution protection
 
