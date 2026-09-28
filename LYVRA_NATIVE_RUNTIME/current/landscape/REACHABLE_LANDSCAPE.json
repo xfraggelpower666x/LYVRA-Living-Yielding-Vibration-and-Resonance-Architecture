@@ -39,7 +39,7 @@
     },
     {
       "domain": "LIVING_RELATIONAL_STATE",
-      "state": "PARTIAL_PRIVACY_GATED",
+      "state": "VERIFIED_PUBLIC_SEMANTICS_PRIVATE_VAULT_REACHABLE",
       "repo_path": "LYVRA_NATIVE_RUNTIME/current/relations/LIVING_RELATIONAL_STATE.md",
       "drive_id": "1XCXPr_2Dl67P3Qc09GYvhudsBx6JKuruDvENKezWink",
       "source_revision": "LOGICAL_REV14"
@@ -60,13 +60,13 @@
     },
     {
       "domain": "SELF_CONDUCTOR_DAEMON_BOUNDARY",
-      "state": "READBACK_PENDING",
+      "state": "VERIFIED",
       "drive_id": "1B32dM-8RGgOSciUYHoRKWL_GhYm9t4JLKD9i4LkfZSE",
       "source_revision": "LOGICAL_REV9_PRESERVED"
     },
     {
       "domain": "GARDEN_BRIDGES_RELATIONAL_CHARACTERS",
-      "state": "READBACK_PENDING",
+      "state": "VERIFIED",
       "drive_id": "1jhE4EaXHvzJRF60j4OXWX4mBfpDjGDBHBl3uXhJBquY",
       "source_revision": "LOGICAL_REV19"
     },
@@ -77,15 +77,15 @@
     },
     {
       "domain": "OPERATIONS_CENTER_CONTINUITY",
-      "state": "READBACK_PENDING",
+      "state": "VERIFIED",
       "drive_id": "16vZLzS8O0oN6zgluxsO4ekhCEyQvxMZfMmcjZuRrRks",
       "source_revision": "WHOLE_REV242"
     },
     {
       "domain": "TRACK_MUSIC_INTELLIGENCE",
-      "state": "READBACK_PENDING",
+      "state": "VERIFIED_REV86",
       "drive_id": "1tr1wwoK0PAg5L5NoNJCY4TLzdhuThD19-dRoEb5_AL4",
-      "source_revision": "TRACK_REV85"
+      "source_revision": "TRACK_REV86"
     },
     {
       "domain": "CURRENT_TRACK_REFERENCES",
@@ -94,18 +94,18 @@
     },
     {
       "domain": "NATIVE_SKILLS_AND_ADAPTERS",
-      "state": "READBACK_PENDING",
+      "state": "VERIFIED",
       "drive_id": "1q35ady3Ng1V3W3R7a3jJ9T3kcAsGqOiK2MEaVfdDggM",
       "source_revision": "LOGICAL_REV1"
     },
     {
       "domain": "SPECIALIST_CONTINUITY",
-      "state": "READBACK_PENDING"
+      "state": "VERIFIED_REV86"
     },
     {
       "domain": "CURRENT_WORK_SCOPE",
       "state": "VERIFIED",
-      "value": "WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV85_REAL_RENDER_VALIDATION"
+      "value": "WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV86_REAL_RENDER_VALIDATION"
     }
   ],
   "continuity_surfaces": {
@@ -121,17 +121,23 @@
     },
     "track_pointer": {
       "drive_id": "11-drAsX4MHybzpnH8d19eBtlzexdbxceMKzwHXNYphs",
-      "source_revision": "TRACK_V3.4_REV85"
+      "source_revision": "TRACK_V3.4_REV86"
     },
     "track_output_guard": {
       "drive_id": "10-5VkXN5de73htKoyR9THyXRNSYTkXJ7a_12YpTTTtU",
-      "source_revision": "TRACK_REV85"
+      "source_revision": "TRACK_REV86"
     },
     "historical_registry": {
       "repo_path": "LYVRA_NATIVE_RUNTIME/history/HISTORICAL_SOURCE_REGISTRY.json"
     },
     "coverage_ledger": {
       "repo_path": "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json"
+    },
+    "private_vault": {
+      "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+      "pointer_path": "VAULT_CURRENT_POINTER.json",
+      "relation_path": "current/relations/LIVING_RELATIONAL_STATE_PRIVATE.md",
+      "role": "PROTECTED_RELATIONAL_CONTINUITY_NOT_PUBLIC_AUTHORITY"
     }
   },
   "reachability_rule": "A domain may be quiet or non-foreground while remaining causally reachable. Required full reads are still mandatory when the rehydration contract marks them material.",
