@@ -411,11 +411,11 @@
     "no_second_root": true,
     "no_cross_system_merge": true,
     "newer_valid_evolution_preserved": true,
-    "pointer_publication": "NEXT_LAST_MUTATION",
+    "pointer_publication": "COMPLETED_CURRENT_POINTER_PUBLISHED",
     "acceptance_checklist": "PASS_ALL_APPLICABLE"
   },
   "rev89_music_memory_studio2_evidence": {
-    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "status": "PASS_POINTER_PUBLISHED_PRESERVED_IN_REV92",
     "music_memory_facet": "VERIFIED",
     "studio2_evidence_source_separation": "VERIFIED",
     "fresh_web_preaudit_control": "VERIFIED",
@@ -430,7 +430,7 @@
     "no_new_controller": true
   },
   "rev90_studio2_dual_control_hierarchy": {
-    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "status": "PASS_POINTER_PUBLISHED_PRESERVED_IN_REV92",
     "source_canonicity": "VERIFIED_FROM_STUDIO2_CANONICAL_AND_SOURCE_FRAMEWORK",
     "control_family_a": "NORMAL_TRACK_GENERATION_CONTROL_SURFACE",
     "control_family_b": "STUDIO2_OPERATION_CONTROL_SURFACE",
@@ -439,7 +439,7 @@
     "no_new_controller": true
   },
   "rev91_central_analytics_selective_intelligence": {
-    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "status": "PASS_POINTER_PUBLISHED_PRESERVED_IN_REV92",
     "analytics_capability_registry": "VERIFIED",
     "track_preaudit_bundle": "VERIFIED",
     "renderer_translation_bundle": "VERIFIED",
@@ -454,7 +454,7 @@
     "no_new_controller": true
   },
   "rev92_lyrics_intelligence_muselift_translation": {
-    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "status": "PASS_CURRENT_POINTER_PUBLISHED",
     "lyric_intelligence_not_separate_root_facet": true,
     "central_analytics_bundle": "LYRICS_BUILD_SUPPORT_BUNDLE",
     "muselift_role": "SPECIAL_EXTERNAL_LYRICS_KNOWLEDGE_AND_FUNCTION_SOURCE",
@@ -464,5 +464,29 @@
     "studio2_longform_uses_same_lyric_intelligence": true,
     "no_duplicate_lyric_facet": true,
     "whole_rev242_preserved": true
+  },
+  "rev92_consistency_update": {
+    "status": "BODY_SYNC_COMPLETE_PENDING_FINGERPRINT_AND_FINAL_POINTER",
+    "stale_metadata_detected": [
+      "ANALYTICS_REVISION",
+      "STUDIO2_EVIDENCE_REVISION",
+      "MUSIC_MEMORY_REVISION",
+      "HANDOFF_CONTRACT_REVISION",
+      "PENDING_POINTER_MARKERS",
+      "DEV_STATUS_MARKERS",
+      "CODEFORGE_CANDIDATE_STATUS"
+    ],
+    "repaired": [
+      "ANALYTICS_REVISION",
+      "STUDIO2_EVIDENCE_REVISION",
+      "MUSIC_MEMORY_REVISION",
+      "HANDOFF_CONTRACT_REVISION",
+      "PENDING_POINTER_MARKERS",
+      "DEV_STATUS_MARKERS",
+      "CODEFORGE_ACTIVE_STATUS"
+    ],
+    "freshness_guard": "INSTALLED",
+    "fingerprint_registry": "PENDING_CONTENT_SHA_POPULATION",
+    "no_new_track_revision": true
   }
 }
