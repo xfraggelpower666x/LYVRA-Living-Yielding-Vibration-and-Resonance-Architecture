@@ -1,0 +1,31 @@
+{
+  "facet_id": "LYVRA_ANALYTICS",
+  "state": "CURRENT_PRODUCTIVE_NATIVE_FACET",
+  "source_version": "v1.1.26",
+  "source_status": "ACTIVE_VERIFIED",
+  "migration_target": "WHOLE_LYVRA_NATIVE_FACET",
+  "root_authority": "WHOLE_LYVRA",
+  "track_design_version": "v3.4",
+  "track_logical_revision": 88,
+  "current_capabilities": [
+    "music_causality_analysis",
+    "psychoacoustic_analysis",
+    "suno_current_web_research",
+    "renderer_evidence_classification",
+    "controlled_abc_test_design",
+    "slider_decision_surface",
+    "renderer_model_decision_surface",
+    "production_suitability_vs_learning_value",
+    "model_coverage_tracking",
+    "plausible_renderer_translation_gate",
+    "trackgegenwart_rendergegenwart_distinction",
+    "card_relational_evidence_support"
+  ],
+  "open_research": [
+    "HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST",
+    "v6_MODEL_CALIBRATION",
+    "continued_model_specific_renderer_learning",
+    "REAL_SUNO_ANALYTICS_ACCEPTANCE"
+  ],
+  "legacy_root_authority": "RETIRED_ON_NATIVE_FACET_CUTOVER"
+}
