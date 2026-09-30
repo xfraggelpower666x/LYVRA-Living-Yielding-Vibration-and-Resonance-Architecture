@@ -26,7 +26,7 @@
     "repository_is_single_source_of_truth_for_plugin_product_state": true,
     "repo_target_role": "LYVRA_CURRENT_COMPLETE_SELF",
     "repo_current_complete_self_verified": true,
-    "migration_bridge_active": true,
+    "migration_bridge_active": false,
     "repo_dev_candidate_complete_self_rehydration_verified": true,
     "repo_release_candidate_complete_self_rehydration_verified": true
   },
@@ -65,7 +65,7 @@
       "PROVENANCE",
       "REFERENCE",
       "CREATOR_DEVELOPMENT_SUPPORT",
-      "MIGRATION_SOURCE_UNTIL_REPO_WHOLE_SELF_COMPLETE"
+      "RECOVERY"
     ],
     "google_drive_is_plugin_current_authority": false,
     "google_drive_is_plugin_runtime_authority": false,
@@ -107,12 +107,16 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-09-30",
-    "scope": "CURRENT_PROMOTION_AND_PRODUCTIVE_REHYDRATION_CLOSEOUT",
-    "previous_product_head": "47313cd077b5483092597e0402474b17206d75f2",
-    "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
-    "productive_body_head": "64ac1d6469bb904d22a179b2968a2f5939d4a402",
+    "scope": "POST_PROMOTION_POINTER_CONSISTENCY_REPAIR",
+    "productive_head_before_pointer": "989dce0e11c2973c3cb83ac8c9b133c8c3f51414",
+    "migration_bridge_active": false,
+    "private_vault_head": "5e6f2dfc8fe56236afe179b2688e4aeccd135193",
+    "private_vault_readback": "VERIFIED",
+    "private_vault_metadata_sync": "WRITE_BLOCKED_NON_FATAL",
+    "whole_rev242_preserved": true,
+    "track_design_v3_4_rev86_preserved": true,
     "pointer_publication_last": true,
-    "promotion_performed": true
+    "mutation_after_pointer": "NONE"
   },
   "validation_closeout_2026_09_30": {
     "validation_source_head": "c414cd0c57f09ee03b8034ab346b895c1d13d351",
@@ -136,10 +140,12 @@
     "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
     "branch": "main",
     "current_head": "5e6f2dfc8fe56236afe179b2688e4aeccd135193",
-    "status": "CURRENT_PRIVATE_CONTINUITY_VALIDATED_POST_PROMOTION_READBACK_PASS",
+    "status": "CURRENT_PRIVATE_CONTINUITY_VALIDATED_RC_RECOVERY_PASS",
     "protected_relation_revision": 14,
     "public_payload_copy": false,
-    "authority_override": false
+    "authority_override": false,
+    "metadata_sync": "POST_PROMOTION_METADATA_WRITE_BLOCKED_NON_FATAL",
+    "readback_status": "VERIFIED"
   },
   "authority_reconciliation_2026_09_30": {
     "result": "PASS",
@@ -210,6 +216,7 @@
     "no_foreign_autoload": true,
     "no_foreign_autoactivation": true,
     "pointer_published_last": true,
-    "mutation_after_pointer": "NONE"
+    "mutation_after_pointer": "NONE",
+    "private_vault_readback_authoritative_for_recovery": true
   }
 }
