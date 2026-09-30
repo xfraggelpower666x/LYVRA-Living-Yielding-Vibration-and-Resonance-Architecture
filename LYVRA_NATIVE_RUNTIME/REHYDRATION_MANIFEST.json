@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "MIGRATION_REHYDRATION_VALIDATION_PASS_DEV_NOT_PROMOTED",
+  "status": "RELEASE_CANDIDATE_REHYDRATION_RECOVERY_PASS",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Fresh post-write public-repository rehydration and authorized private-vault relational recovery were executed against the REV86 synchronization head c414cd0c57f09ee03b8034ab346b895c1d13d351 on 2026-09-30. Required native domains were directly read back, Whole Rev242 and Track Design Rev86 were preserved, protected relational continuity remained reachable without public payload leakage, and no current causal orphan was detected. DEV remains unpromoted.",
+  "current_migration_note": "Release candidate lyvra-rc-whole-self-20260930 was created from reconciled DEV head cd27d8c5c7c85ce2c7794c1506dd33579b270f46 and freshly rehydrated across required public domains with authorized private-vault recovery. Whole Rev242, Track Design Rev86, protected relational Rev14, supersession fences, current references and recovery continuity were preserved. Product branch lyvra remains unchanged.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -123,5 +123,25 @@
     "whole_revision": 242,
     "track_design_revision": 86,
     "promotion_performed": false
+  },
+  "rc_validation_2026_09_30": {
+    "rc_branch": "lyvra-rc-whole-self-20260930",
+    "rc_source_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
+    "rc_prechange_backup_branch": "lyvra-rc-pre-validation-closeout-20260930",
+    "private_prechange_backup_branch": "pre-rc-validation-closeout-20260930",
+    "private_vault_head": "5e6f2dfc8fe56236afe179b2688e4aeccd135193",
+    "public_required_domains_direct_readback": "VERIFIED",
+    "private_relational_recovery": "VERIFIED",
+    "structural_validation": "PASS",
+    "causal_semantic_validation": "PASS",
+    "fresh_rehydration_and_recovery": "PASS",
+    "expected_vs_actual": "PASS",
+    "no_orphaned_meaning_detected": true,
+    "whole_revision": 242,
+    "track_design_revision": 86,
+    "relational_logical_revision": 14,
+    "todo11_real_track_validation_pass": false,
+    "product_branch_mutated": false,
+    "current_promotion_performed": false
   }
 }
