@@ -7,7 +7,7 @@ ROOT_SYSTEM=WHOLE_LYVRA
 ROOT_AUTHORITY=WHOLE_LYVRA
 SOURCE_BASELINE=v1.1.26_ACTIVE_VERIFIED
 TRACK_DESIGN_VERSION=v3.4
-TRACK_LOGICAL_REVISION=88
+TRACK_LOGICAL_REVISION=91
 
 ## Mission
 Understand music, perception, renderer behavior and current Suno capabilities; extract causal relationships; preserve evidence; support Track Design, Cards, Suno Studio and LYVRA Development with reliable analysis.
@@ -44,3 +44,12 @@ FACET_MAY_DIRECTLY_MUTATE_CARDS=false
 FACET_MAY_DIRECTLY_MUTATE_SUNO_STUDIO=false
 
 Analytics output is analytical evidence, causal interpretation, renderer decision support, research result, development proposal or translation candidate. It is not root-system authority.
+
+
+## Rev91 selective intelligence access
+
+CAPABILITY_REGISTRY=LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md
+ANALYTICS_IS_CENTRAL_SHARED_FACET=true
+CALLER_FACETS_REQUEST_SELECTED_INTELLIGENCES=true
+FULL_ANALYTICS_ACTIVATION_BY_DEFAULT=false
+NO_DUPLICATE_ANALYTICS_LOGIC_IN_CALLER_FACETS=true
