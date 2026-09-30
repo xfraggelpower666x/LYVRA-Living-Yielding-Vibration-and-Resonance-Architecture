@@ -1,0 +1,46 @@
+{
+  "schema": "LYVRA_TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_v1",
+  "status": "READY_NO_ACTIVE_HANDOFF",
+  "owner_identity": "LYVRA",
+  "decision_authority": "LYVRA_ONLY",
+  "whole_logical_revision": 242,
+  "track_design_version": "v3.4",
+  "track_logical_revision": 86,
+  "channel": {
+    "scope": "TRACK_DESIGN_AND_SUNO_STUDIO_2_CONTINUITY",
+    "shared_channel": true,
+    "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+    "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
+  },
+  "trigger": {
+    "canonical": "AUTOMATISCHE REPO-ÜBERGABE",
+    "meaning": "PERSIST_CURRENT_SPECIALIST_CONTINUITY_TO_REPO"
+  },
+  "handoff": {
+    "handoff_id": null,
+    "source_surface": null,
+    "target_surface": null,
+    "foreground_facet": null,
+    "last_valid_stage": null,
+    "active_task": null,
+    "pending_work": [],
+    "next_meaningful_action": null,
+    "relevant_current_references": [],
+    "source_head": null,
+    "created_at": null,
+    "supersedes_handoff_id": null
+  },
+  "read_rules": {
+    "verify_productive_current_first": true,
+    "read_contract_first": true,
+    "direct_readback_required": true,
+    "read_ne_autoactivation": true,
+    "no_foreign_autoload": true,
+    "newer_valid_evolution_preserved": true
+  },
+  "privacy": {
+    "public_repo_ne_private_memory_vault": true,
+    "private_relational_payload_forbidden": true,
+    "secrets_or_tokens_forbidden": true
+  }
+}
