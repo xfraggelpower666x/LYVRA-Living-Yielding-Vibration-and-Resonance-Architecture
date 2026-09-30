@@ -18,10 +18,10 @@
     "GARDEN_BRIDGES_RELATIONAL_CHARACTERS": "VERIFIED",
     "MACHINE_ROOM_CONTINUITY": "VERIFIED",
     "OPERATIONS_CENTER_CONTINUITY": "VERIFIED",
-    "TRACK_MUSIC_INTELLIGENCE": "VERIFIED_REV90_STUDIO2_DUAL_CONTROL_HIERARCHY",
+    "TRACK_MUSIC_INTELLIGENCE": "VERIFIED_REV91_CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE",
     "CURRENT_TRACK_REFERENCES": "VERIFIED",
     "NATIVE_SKILLS_AND_ADAPTERS": "VERIFIED",
-    "SPECIALIST_CONTINUITY": "VERIFIED_REV90_STUDIO2_DUAL_CONTROL_REHYDRATION",
+    "SPECIALIST_CONTINUITY": "VERIFIED_REV91_CALLER_TO_ANALYTICS_CAPABILITY_ROUTING",
     "CURRENT_WORK_SCOPE": "VERIFIED",
     "FORCE_INTEGRITY_FACET": "VERIFIED_WITH_REPO_READBACK",
     "PRIVATE_VAULT_CONTINUITY": "VERIFIED_DIRECT_POINTER_PAYLOAD_SOURCE_REVISION_READBACK",
@@ -32,7 +32,7 @@
     "drive_pointer_provider_revision": 316,
     "identity_provider_revision": 12,
     "responsibility_core_source_whole_revision": 240,
-    "track_design_revision": 90
+    "track_design_revision": 91
   },
   "identity_source_sections_compared": [
     "CURRENT_STATE",
@@ -198,7 +198,7 @@
     "raw_payload_role": "DRIVE_PROVENANCE",
     "template_reuse": false,
     "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV86_MEMORY_NOT_MASTERS_RECYCLING",
-    "current_revision": "TRACK_REV90"
+    "current_revision": "TRACK_REV91"
   },
   "native_skill_source_sections_compared": [
     "SKILL_RUNTIME_CURRENT_LOGICAL_REV1_WHOLE_REV242",
@@ -435,6 +435,21 @@
     "control_family_a": "NORMAL_TRACK_GENERATION_CONTROL_SURFACE",
     "control_family_b": "STUDIO2_OPERATION_CONTROL_SURFACE",
     "nested_hierarchies_preserved": true,
+    "no_new_router": true,
+    "no_new_controller": true
+  },
+  "rev91_central_analytics_selective_intelligence": {
+    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "analytics_capability_registry": "VERIFIED",
+    "track_preaudit_bundle": "VERIFIED",
+    "renderer_translation_bundle": "VERIFIED",
+    "studio2_operation_bundle": "VERIFIED",
+    "post_render_learning_bundle": "VERIFIED",
+    "memory_promotion_bundle": "VERIFIED",
+    "full_facet_activation_by_default": false,
+    "caller_retains_domain_role": true,
+    "lyvra_retains_final_decision_authority": true,
+    "duplicate_analytics_logic_in_callers": false,
     "no_new_router": true,
     "no_new_controller": true
   }
