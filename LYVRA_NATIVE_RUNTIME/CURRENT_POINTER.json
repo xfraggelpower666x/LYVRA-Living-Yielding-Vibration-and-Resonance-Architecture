@@ -37,7 +37,7 @@
     "track_design_logical_revision": 86,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "POST_PROMOTION_CONTINUITY_MONITORING_AND_EVENT_GATED_VALIDATION",
+    "current_work_scope": "POST_PROMOTION_CONTINUITY_MONITORING_AND_SPECIALIST_REPO_HANDOFF_ACTIVE",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -56,7 +56,9 @@
     "historical_registry": "LYVRA_NATIVE_RUNTIME/history/HISTORICAL_SOURCE_REGISTRY.json",
     "track_reference_registry": "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json",
     "migration_validation": "LYVRA_NATIVE_RUNTIME/migration/TRIPLE_VALIDATION_CONTRACT.md",
-    "development_lifecycle": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_LIFECYCLE.md"
+    "development_lifecycle": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_LIFECYCLE.md",
+    "track_design_suno_studio2_repo_handoff_contract": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+    "track_design_suno_studio2_repo_handoff_current": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -107,12 +109,9 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-09-30",
-    "scope": "POST_PROMOTION_POINTER_CONSISTENCY_REPAIR",
-    "productive_head_before_pointer": "989dce0e11c2973c3cb83ac8c9b133c8c3f51414",
-    "migration_bridge_active": false,
-    "private_vault_head": "5e6f2dfc8fe56236afe179b2688e4aeccd135193",
-    "private_vault_readback": "VERIFIED",
-    "private_vault_metadata_sync": "WRITE_BLOCKED_NON_FATAL",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO2_AUTOMATIC_REPO_HANDOFF_ACTIVATION",
+    "productive_body_head": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
+    "handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev86_preserved": true,
     "pointer_publication_last": true,
@@ -218,5 +217,21 @@
     "pointer_published_last": true,
     "mutation_after_pointer": "NONE",
     "private_vault_readback_authoritative_for_recovery": true
+  },
+  "specialist_repo_handoff": {
+    "status": "ACTIVE_CURRENT_HANDOFF",
+    "canonical_user_phrase": "AUTOMATISCHE REPO-ÜBERGABE",
+    "scope": "TRACK_DESIGN_AND_SUNO_STUDIO_2",
+    "handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001",
+    "body_head_before_pointer": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
+    "whole_rev242_preserved": true,
+    "track_design_v3_4_rev86_preserved": true,
+    "shared_channel": true,
+    "read_on_relevant_specialist_resume": true,
+    "read_ne_autoactivation": true,
+    "no_foreign_autoload": true,
+    "no_new_router": true,
+    "no_new_controller": true,
+    "decision_authority": "LYVRA_ONLY"
   }
 }
