@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 and Track Design Rev86 remain current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. Track Design Rev87 adds Semantic-Causal Music Analytics as a native LYVRA facet with shared specialist continuity; Whole Rev242 remains preserved.",
+  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev87 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. Semantic-Causal Music Analytics is a native LYVRA Track Design facet with shared specialist continuity.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
