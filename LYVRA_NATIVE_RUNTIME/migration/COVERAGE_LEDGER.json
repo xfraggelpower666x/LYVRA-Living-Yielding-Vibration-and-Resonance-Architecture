@@ -1,9 +1,9 @@
 {
-  "branch": "lyvra-rc-whole-self-20260930",
+  "branch": "lyvra",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "RELEASE_CANDIDATE_VALIDATED_PENDING_CURRENT_PROMOTION",
-  "promotion_status": "RELEASE_CANDIDATE_NOT_CURRENT",
+  "migration_stage": "CURRENT_PROMOTED_AND_PRODUCTIVE_REHYDRATION_VERIFIED",
+  "promotion_status": "CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
     "IDENTITY_PRESENCE": "VERIFIED",
@@ -47,13 +47,13 @@
     "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
   ],
   "triple_validation": {
-    "structural": "PASS_RELEASE_CANDIDATE",
-    "causal_semantic": "PASS_RELEASE_CANDIDATE",
-    "fresh_rehydration_and_recovery": "PASS_RELEASE_CANDIDATE_2026_09_30"
+    "structural": "PASS_CURRENT",
+    "causal_semantic": "PASS_CURRENT",
+    "fresh_rehydration_and_recovery": "PASS_CURRENT_2026_09_30"
   },
   "full_repo_native_rehydration_pass": true,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "CURRENT_PROMOTION_READINESS_FINAL_CHECK",
+  "next_migration_domain": "POST_PROMOTION_CONTINUITY_MONITORING_AND_EVENT_GATED_VALIDATION",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -337,5 +337,22 @@
     "todo11_real_track_validation_pass": false,
     "product_branch_mutated": false,
     "current_promotion_performed": false
+  },
+  "current_promotion_2026_09_30": {
+    "previous_product_head": "47313cd077b5483092597e0402474b17206d75f2",
+    "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
+    "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
+    "authority_contract_commit": "9f46f8fa440ee9143a79392b7af5e9c5742c4f9c",
+    "manifest_commit": "a1cf00262fa72441e944258e08c2fdad08b6aa76",
+    "promotion_method": "NON_FORCE_FAST_FORWARD",
+    "productive_public_readback": "VERIFIED",
+    "productive_private_readback": "VERIFIED",
+    "private_vault_metadata_closeout_write": "WRITE_BLOCKED_NON_FATAL",
+    "no_orphaned_meaning_detected": true,
+    "whole_rev242_preserved": true,
+    "track_rev86_preserved": true,
+    "relational_rev14_preserved": true,
+    "todo11_real_track_validation_pass": false,
+    "current_promotion_performed": true
   }
 }
