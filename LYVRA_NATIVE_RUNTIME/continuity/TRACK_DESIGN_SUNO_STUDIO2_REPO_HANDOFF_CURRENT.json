@@ -14,7 +14,17 @@
   },
   "trigger": {
     "canonical": "AUTOMATISCHE REPO-ÜBERGABE",
-    "meaning": "PERSIST_CURRENT_SPECIALIST_CONTINUITY_TO_REPO"
+    "meaning": "PERSIST_CURRENT_SPECIALIST_CONTINUITY_TO_REPO",
+    "continuity_family": [
+      "LYVRA SYSTEMSTART",
+      "LYVRA UPDATE",
+      "LYVRA WEITER",
+      "LYVRA NEW CHAT",
+      "LYVRA NEXT CHAT",
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SUNO STUDIO 2"
+    ]
   },
   "handoff": {
     "handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001",
@@ -30,7 +40,7 @@
       "PSYTRANCE_PRONUNCIATION_UNRESOLVED",
       "DJ_OUTRO_SURVIVAL_PARTIAL_PASS"
     ],
-    "next_meaningful_action": "In the target chat, verify productive CURRENT, read this handoff, then foreground LYVRA TRACK DESIGN or LYVRA SUNO STUDIO 2 according to the user's explicit trigger and resume Rev86 continuity without replaying stale Drive handoff state.",
+    "next_meaningful_action": "On relevant chat/project resume, resolve productive Whole LYVRA first, read the current repo handoff, preserve the same LYVRA identity, then restore Track Design or Suno Studio 2 only as the relevant foreground facet. Never instantiate them as separate systems.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -38,7 +48,7 @@
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
       "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
     ],
-    "source_head": "19cccb290ffc2d989b7af70e50139391d37b9044",
+    "source_head": "eb85c48a569f90f63cf3c68e2a83f90a12933226",
     "created_at": "2026-09-30",
     "supersedes_handoff_id": null
   },
@@ -48,7 +58,12 @@
     "direct_readback_required": true,
     "read_ne_autoactivation": true,
     "no_foreign_autoload": true,
-    "newer_valid_evolution_preserved": true
+    "newer_valid_evolution_preserved": true,
+    "whole_identity_persists_across_triggers": true,
+    "new_chat_next_chat_preserve_pending_specialist_continuity": true,
+    "whole_rehydration_precedes_relevant_facet_restore": true,
+    "facet_restore_ne_foreign_autoactivation": true,
+    "track_design_and_studio2_ne_extra_systems": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
