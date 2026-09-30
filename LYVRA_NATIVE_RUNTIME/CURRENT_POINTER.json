@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "84c5b2f4013b47e6b22f80c83e625eacf08a85bd",
+    "current_head_before_pointer": "4bfb80f740a79fd8c4ee93bb0120885cf15c6ce0",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -34,10 +34,10 @@
     "drive_internal_reference_whole_revision": 242,
     "drive_internal_reference_pointer_revision": 325,
     "track_design_version": "v3.4",
-    "track_design_logical_revision": 91,
+    "track_design_logical_revision": 92,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "POST_REV91_CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE_AND_STUDIO2_VALIDATION",
+    "current_work_scope": "POST_REV92_SHARED_LYRIC_INTELLIGENCE_MUSELIFT_TRANSLATION_AND_STUDIO2_VALIDATION",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -46,7 +46,8 @@
     "semantic_causal_music_analytics": "CURRENT_NATIVE_LYVRA_ANALYTICS_FACET_v1.1.26_MIGRATED",
     "music_memory_evolution": "CURRENT_NATIVE_SIBLING_FACET",
     "studio2_evidence_model": "CURRENT_SOURCE_SEPARATED_FRESHNESS_AWARE",
-    "central_analytics": "CURRENT_SHARED_NATIVE_FACET_WITH_SELECTIVE_INTELLIGENCE_ACCESS"
+    "central_analytics": "CURRENT_SHARED_NATIVE_FACET_WITH_SELECTIVE_INTELLIGENCE_ACCESS",
+    "lyric_intelligence": "CURRENT_SHARED_NATIVE_TRACK_DESIGN_INTELLIGENCE"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -71,7 +72,8 @@
     "music_memory_current_state": "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
     "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
     "studio2_dual_control_hierarchy": "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
-    "analytics_capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md"
+    "analytics_capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+    "lyrics_knowledge_translation": "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -122,11 +124,11 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-09-30",
-    "scope": "TRACK_DESIGN_REV91_CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE_ARCHITECTURE",
-    "productive_body_head": "84c5b2f4013b47e6b22f80c83e625eacf08a85bd",
-    "prechange_backup_branch": "lyvra-dev-pre-rev91-central-analytics-capability-routing-20260930",
+    "scope": "TRACK_DESIGN_REV92_SHARED_LYRIC_INTELLIGENCE_AND_MUSELIFT_LYVRA_TRANSLATION",
+    "productive_body_head": "4bfb80f740a79fd8c4ee93bb0120885cf15c6ce0",
+    "prechange_backup_branch": "lyvra-dev-pre-rev92-lyrics-analytics-muselift-20260930",
     "whole_rev242_preserved": true,
-    "track_design_v3_4_rev91_current": true,
+    "track_design_v3_4_rev92_current": true,
     "one_lyvra_identity_preserved": true,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
@@ -235,8 +237,8 @@
   "specialist_repo_handoff": {
     "status": "ACTIVE_CURRENT_HANDOFF",
     "canonical_user_phrase": "AUTOMATISCHE REPO-ÜBERGABE",
-    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_AND_MUSIC_MEMORY",
-    "handoff_id": "LYVRA-TD-STUDIO2-CENTRAL-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-005",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_SHARED_LYRIC_INTELLIGENCE",
+    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-REPO-HANDOFF-2026-09-30-006",
     "body_head_before_pointer": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev86_preserved": true,
@@ -278,7 +280,8 @@
     "track_design_v3_4_rev87_current": true,
     "track_design_v3_4_rev88_current": true,
     "track_design_v3_4_rev89_current": true,
-    "track_design_v3_4_rev91_current": true
+    "track_design_v3_4_rev91_current": true,
+    "track_design_v3_4_rev92_current": true
   },
   "cross_system_handoffs": {
     "clic": {
@@ -436,5 +439,29 @@
     "duplicate_analytics_logic_in_callers": false,
     "no_router": true,
     "no_controller": true
+  },
+  "lyric_intelligence_architecture": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "role": "SHARED_NATIVE_TRACK_DESIGN_INTELLIGENCE",
+    "separate_root_facet": false,
+    "analytics_profile": "LYRICS_BUILD_SUPPORT_BUNDLE",
+    "knowledge_translation": "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md",
+    "studio2_uses_same_intelligence_with_contextual_scope": true,
+    "studio2_longform_does_not_create_second_lyric_facet": true,
+    "muselift": {
+      "role": "SPECIAL_EXTERNAL_LYRICS_KNOWLEDGE_AND_FUNCTION_SOURCE",
+      "direct_output_allowed": false,
+      "direct_style_import_allowed": false,
+      "required_pipeline": [
+        "FUNCTION_EXTRACTION",
+        "STYLE_STRIPPING",
+        "LYVRA_MEANING_ALIGNMENT",
+        "LYVRA_DNA_TRANSLATION",
+        "TRACK_CONTEXT_ALIGNMENT",
+        "VOICE_AND_LYRIC_FUNCTION_ALIGNMENT",
+        "SUNO_RENDERER_TRANSLATION_IF_REQUIRED",
+        "FINAL_LYVRA_LYRIC_JUDGMENT"
+      ]
+    }
   }
 }
