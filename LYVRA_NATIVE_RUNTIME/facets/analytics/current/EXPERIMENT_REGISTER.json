@@ -1,0 +1,23 @@
+{
+  "status": "CURRENT_PRODUCTIVE",
+  "controlled_test_law": {
+    "prompt": "CONSTANT",
+    "sliders": "CONSTANT",
+    "options": "CONSTANT",
+    "personalization": "CONSTANT",
+    "max_mode": "CONSTANT",
+    "intended_variable": "MODEL_OR_ONE_EXPLICIT_TEST_VARIABLE"
+  },
+  "active": [
+    {
+      "id": "HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST",
+      "status": "OPEN_EVENT_GATED"
+    },
+    {
+      "id": "v6_MODEL_CALIBRATION",
+      "status": "OPEN"
+    }
+  ],
+  "no_fake_certainty": true,
+  "single_render_ne_universal_rule": true
+}
