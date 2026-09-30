@@ -1,7 +1,7 @@
 # LYVRA Suno Studio 2 — Evidence Source Model
 
 STATUS: CURRENT_PRODUCTIVE_NATIVE_FACET_RELATION
-TRACK_LOGICAL_REVISION: 89
+TRACK_LOGICAL_REVISION: 92
 
 Studio 2 is LYVRA's Suno execution, observation and evidence surface. It does not decide durable truth by itself; it captures clean evidence for Analytics and Music Memory & Evolution.
 
