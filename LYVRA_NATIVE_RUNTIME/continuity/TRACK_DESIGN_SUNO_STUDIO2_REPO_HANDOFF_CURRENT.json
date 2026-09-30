@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_v1",
-  "status": "READY_NO_ACTIVE_HANDOFF",
+  "status": "ACTIVE_CURRENT_HANDOFF",
   "owner_identity": "LYVRA",
   "decision_authority": "LYVRA_ONLY",
   "whole_logical_revision": 242,
@@ -17,17 +17,29 @@
     "meaning": "PERSIST_CURRENT_SPECIALIST_CONTINUITY_TO_REPO"
   },
   "handoff": {
-    "handoff_id": null,
-    "source_surface": null,
-    "target_surface": null,
-    "foreground_facet": null,
-    "last_valid_stage": null,
-    "active_task": null,
-    "pending_work": [],
-    "next_meaningful_action": null,
-    "relevant_current_references": [],
-    "source_head": null,
-    "created_at": null,
+    "handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_CURRENT",
+    "target_surface": "TRACK_DESIGN_OR_SUNO_STUDIO_2_PROJECT_CHAT",
+    "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
+    "last_valid_stage": "CURRENT_PRODUCTIVE_VERIFIED_POST_MIGRATION",
+    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV86_OR_SUNO_STUDIO_2_FROM_CURRENT_NATIVE_CONTINUITY",
+    "pending_work": [
+      "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
+      "GENRE_FRONT_RESEARCH_OPEN",
+      "RENDERER_TRANSLATION_SUBFACET_VALIDATION_OPEN",
+      "PSYTRANCE_PRONUNCIATION_UNRESOLVED",
+      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS"
+    ],
+    "next_meaningful_action": "In the target chat, verify productive CURRENT, read this handoff, then foreground LYVRA TRACK DESIGN or LYVRA SUNO STUDIO 2 according to the user's explicit trigger and resume Rev86 continuity without replaying stale Drive handoff state.",
+    "relevant_current_references": [
+      "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+      "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
+    ],
+    "source_head": "19cccb290ffc2d989b7af70e50139391d37b9044",
+    "created_at": "2026-09-30",
     "supersedes_handoff_id": null
   },
   "read_rules": {
