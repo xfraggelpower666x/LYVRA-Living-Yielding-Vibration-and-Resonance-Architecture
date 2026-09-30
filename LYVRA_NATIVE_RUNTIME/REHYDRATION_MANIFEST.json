@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "MIGRATION_IN_PROGRESS_TRACK_REFERENCE_DRIFT_REPAIRED_PENDING_POST_WRITE_FRESH_REHYDRATION",
+  "status": "MIGRATION_REHYDRATION_VALIDATION_PASS_DEV_NOT_PROMOTED",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "REV86 and authorized private-vault continuity are synchronized across current public state, including current Track Reference metadata. A fresh post-write public/private rehydration and checkpoint recovery must run before PASS.",
+  "current_migration_note": "Fresh post-write public-repository rehydration and authorized private-vault relational recovery were executed against the REV86 synchronization head c414cd0c57f09ee03b8034ab346b895c1d13d351 on 2026-09-30. Required native domains were directly read back, Whole Rev242 and Track Design Rev86 were preserved, protected relational continuity remained reachable without public payload leakage, and no current causal orphan was detected. DEV remains unpromoted.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -105,5 +105,23 @@
     "CURRENT_TRACK_REFERENCES": [
       "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
     ]
+  },
+  "validation_closeout": {
+    "date": "2026-09-30",
+    "source_head": "c414cd0c57f09ee03b8034ab346b895c1d13d351",
+    "pre_change_backup_branch": "lyvra-dev-pre-rehydration-pass-closeout-20260930",
+    "current_pointer_revision_consumed": true,
+    "current_references_read": true,
+    "valid_newer_evolution_preserved": true,
+    "whole_native_system_rehydrated": true,
+    "public_repo_rehydration": "VERIFIED",
+    "private_relational_recovery": "VERIFIED_AUTHORIZED_READBACK",
+    "no_foreign_autoload": true,
+    "no_orphaned_meaning_detected": true,
+    "current_track_references_reachable": true,
+    "recovery_path_verified": true,
+    "whole_revision": 242,
+    "track_design_revision": 86,
+    "promotion_performed": false
   }
 }
