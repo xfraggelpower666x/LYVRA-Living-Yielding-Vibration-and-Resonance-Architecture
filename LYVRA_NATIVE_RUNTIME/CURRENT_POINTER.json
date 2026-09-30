@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "c55c65b76a2bb595a6cf9d34c95417f02c63c947",
+    "current_head_before_pointer": "aa732ba18bfe0b432ad7cb40988f4316c803bd04",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -112,7 +112,7 @@
   "last_bounded_update": {
     "date": "2026-09-30",
     "scope": "TRACK_DESIGN_REV87_SEMANTIC_CAUSAL_MUSIC_ANALYTICS_NATIVE_FACET",
-    "productive_body_head": "c55c65b76a2bb595a6cf9d34c95417f02c63c947",
+    "productive_body_head": "aa732ba18bfe0b432ad7cb40988f4316c803bd04",
     "prechange_backup_branch": "lyvra-dev-pre-music-analytics-facet-20260930",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev87": true,
@@ -308,6 +308,8 @@
     "no_new_identity": true,
     "no_new_router": true,
     "no_new_controller": true,
-    "no_foreign_autoactivation": true
+    "no_foreign_autoactivation": true,
+    "structural_readback": "VERIFIED_DIRECT_READBACK",
+    "causal_integration_readback": "VERIFIED_DIRECT_READBACK"
   }
 }
