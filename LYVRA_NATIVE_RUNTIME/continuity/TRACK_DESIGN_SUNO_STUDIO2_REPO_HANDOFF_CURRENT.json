@@ -88,11 +88,20 @@
     "central_analytics_selective_capability_access": true,
     "full_analytics_activation_by_default": false,
     "shared_lyric_intelligence_not_separate_root_facet": true,
-    "external_lyrics_require_lyvra_dna_translation": true
+    "external_lyrics_require_lyvra_dna_translation": true,
+    "version_freshness_guard_required": true,
+    "fingerprint_registry_match_required": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
     "private_relational_payload_forbidden": true,
     "secrets_or_tokens_forbidden": true
+  },
+  "freshness": {
+    "epoch": "2026-09-30T22:10Z-REV92-U1",
+    "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
+    "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "expected_track_revision": 92,
+    "mismatch_policy": "STALE_NE_CURRENT"
   }
 }
