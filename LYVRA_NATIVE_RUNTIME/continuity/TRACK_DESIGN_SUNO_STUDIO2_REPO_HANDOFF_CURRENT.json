@@ -5,9 +5,9 @@
   "decision_authority": "LYVRA_ONLY",
   "whole_logical_revision": 242,
   "track_design_version": "v3.4",
-  "track_logical_revision": 91,
+  "track_logical_revision": 92,
   "channel": {
-    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_CONTINUITY",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_AND_SHARED_LYRIC_INTELLIGENCE",
     "shared_channel": true,
     "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
     "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
@@ -29,12 +29,12 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-TD-STUDIO2-CENTRAL-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-005",
+    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-REPO-HANDOFF-2026-09-30-006",
     "source_surface": "WHOLE_LYVRA_PRODUCTIVE_CURRENT",
     "target_surface": "TRACK_DESIGN_OR_SUNO_STUDIO_2_PROJECT_CHAT",
     "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
     "last_valid_stage": "CURRENT_PRODUCTIVE_VERIFIED_POST_MIGRATION",
-    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV91_WITH_SELECTIVE_CENTRAL_ANALYTICS",
+    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV92_WITH_SHARED_LYRIC_INTELLIGENCE_AND_ANALYTICS_TRANSLATION",
     "pending_work": [
       "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
       "GENRE_FRONT_RESEARCH_OPEN",
@@ -47,7 +47,7 @@
       "ANALYTICS_v6_MODEL_CALIBRATION_OPEN",
       "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
     ],
-    "next_meaningful_action": "Resolve Whole LYVRA first. Restore relevant caller facet. Caller requests only the Analytics intelligence bundle needed for the current task. Do not duplicate Analytics logic inside Track Design, Studio2, Renderer Translation or Music Memory.",
+    "next_meaningful_action": "Resolve Whole LYVRA first. Restore relevant Track Design or Studio2 context. Lyrics remains a shared intelligence, not a duplicated facet. For lyric research, request LYRICS_BUILD_SUPPORT_BUNDLE from central Analytics; external MuseLift or other lyric-domain material must be function-extracted, style-stripped and translated through LYVRA DNA before use.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -61,11 +61,12 @@
       "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md"
     ],
     "source_head": "eb85c48a569f90f63cf3c68e2a83f90a12933226",
     "created_at": "2026-09-30",
-    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-004"
+    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-CENTRAL-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-005"
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -85,7 +86,9 @@
     "studio2_fresh_web_control_required_when_renderer_behavior_matters": true,
     "music_memory_ne_controller": true,
     "central_analytics_selective_capability_access": true,
-    "full_analytics_activation_by_default": false
+    "full_analytics_activation_by_default": false,
+    "shared_lyric_intelligence_not_separate_root_facet": true,
+    "external_lyrics_require_lyvra_dna_translation": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
