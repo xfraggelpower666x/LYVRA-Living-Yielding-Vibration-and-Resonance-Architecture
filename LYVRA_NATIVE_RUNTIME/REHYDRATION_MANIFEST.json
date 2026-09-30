@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev87 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. Semantic-Causal Music Analytics is a native LYVRA Track Design facet with shared specialist continuity.",
+  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev88 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -94,7 +94,16 @@
     "TRACK_MUSIC_INTELLIGENCE": [
       "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
-      "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md"
+      "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/RESEARCH_REGISTER.md",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/RENDERER_EVIDENCE_REGISTER.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/MODEL_COVERAGE_REGISTER.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/EXPERIMENT_REGISTER.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/OPEN_WORK.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/continuity/RECOVERY_STATE.json"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -160,5 +169,14 @@
     "no_foreign_autoload": true,
     "product_branch": "lyvra",
     "current_promotion_performed": true
+  },
+  "analytics_facet_migration": {
+    "status": "NATIVE_FACET_ACTIVE_PENDING_FINAL_POINTER",
+    "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
+    "track_revision": 88,
+    "root_authority": "WHOLE_LYVRA",
+    "legacy_drive_runtime": "PROVENANCE_HISTORY_RECOVERY_ONLY",
+    "local_rehydration_manifest": "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+    "whole_rehydration_precedes_facet_foreground": true
   }
 }
