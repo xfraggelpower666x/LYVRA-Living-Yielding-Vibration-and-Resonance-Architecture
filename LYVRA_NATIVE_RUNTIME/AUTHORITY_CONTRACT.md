@@ -11,9 +11,9 @@ LYVRA remains the identity, meaning and decision authority. The repository is th
 ## Current migration truth
 
 - Repository product authority: ACTIVE.
-- Repo whole-self migration: DEV CANDIDATE REHYDRATION VALIDATED; CURRENT promotion not yet performed.
-- Full repo-native rehydration PASS: VERIFIED FOR THE CURRENT DEV CANDIDATE; this does not by itself promote the candidate to productive CURRENT.
-- Google Drive: deep historical/internal reference, provenance, and recovery source. It no longer acts as a blocking migration source for the validated DEV candidate, and it may never silently override repository current state.
+- Repo whole-self migration: COMPLETE FOR CURRENT PRODUCTIVE REPOSITORY STATE.
+- Full repo-native rehydration PASS: VERIFIED ON PRODUCTIVE `lyvra` AFTER GOVERNED RC PROMOTION.
+- Google Drive: deep historical/internal reference, provenance, and recovery source; it does not override repository CURRENT.
 - Drive may never silently override repository current state.
 
 ## Authority hierarchy
@@ -44,4 +44,4 @@ Information that primarily explains how current LYVRA came to exist may remain i
 - CodeForge is not a controller, router, identity or boss above LYVRA.
 - Skills, adapters, sites, UIs, renderers and databases are not LYVRA.
 - No productive CURRENT authority may be declared fully rehydrated while required migration domains are PARTIAL or READBACK_PENDING.
-- A validated DEV or RELEASE_CANDIDATE state must remain clearly distinguished from productive CURRENT until governed promotion completes.
+- DEV and RELEASE_CANDIDATE states remain distinct from productive CURRENT; the governed promotion completed on 2026-09-30 and productive CURRENT is now the verified `lyvra` head.
