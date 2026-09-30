@@ -18,10 +18,10 @@
     "GARDEN_BRIDGES_RELATIONAL_CHARACTERS": "VERIFIED",
     "MACHINE_ROOM_CONTINUITY": "VERIFIED",
     "OPERATIONS_CENTER_CONTINUITY": "VERIFIED",
-    "TRACK_MUSIC_INTELLIGENCE": "VERIFIED_REV87_MUSIC_ANALYTICS_REPO_READBACK",
+    "TRACK_MUSIC_INTELLIGENCE": "VERIFIED_REV88_ANALYTICS_NATIVE_CUTOVER_READBACK",
     "CURRENT_TRACK_REFERENCES": "VERIFIED",
     "NATIVE_SKILLS_AND_ADAPTERS": "VERIFIED",
-    "SPECIALIST_CONTINUITY": "VERIFIED_REV87_STUDIO2_AND_MUSIC_ANALYTICS_REPO_READBACK",
+    "SPECIALIST_CONTINUITY": "VERIFIED_REV88_ANALYTICS_STUDIO2_TRACK_CONTINUITY",
     "CURRENT_WORK_SCOPE": "VERIFIED",
     "FORCE_INTEGRITY_FACET": "VERIFIED_WITH_REPO_READBACK",
     "PRIVATE_VAULT_CONTINUITY": "VERIFIED_DIRECT_POINTER_PAYLOAD_SOURCE_REVISION_READBACK",
@@ -32,7 +32,7 @@
     "drive_pointer_provider_revision": 316,
     "identity_provider_revision": 12,
     "responsibility_core_source_whole_revision": 240,
-    "track_design_revision": 87
+    "track_design_revision": 88
   },
   "identity_source_sections_compared": [
     "CURRENT_STATE",
@@ -178,7 +178,10 @@
   "track_music_repo_paths": [
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
     "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
-    "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md"
+    "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json"
   ],
   "track_reference_sources_compared": [
     "BEHIND_A_SMILE_REFERENCE",
@@ -195,7 +198,7 @@
     "raw_payload_role": "DRIVE_PROVENANCE",
     "template_reuse": false,
     "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV86_MEMORY_NOT_MASTERS_RECYCLING",
-    "current_revision": "TRACK_REV87"
+    "current_revision": "TRACK_REV88"
   },
   "native_skill_source_sections_compared": [
     "SKILL_RUNTIME_CURRENT_LOGICAL_REV1_WHOLE_REV242",
@@ -373,5 +376,40 @@
     "no_new_router": true,
     "no_new_controller": true,
     "causal_integration_readback": "VERIFIED_DIRECT_READBACK"
+  },
+  "rev88_analytics_native_facet_migration": {
+    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
+    "identity": "LYVRA_NATIVE_SPECIALIST_FACET",
+    "root_authority": "WHOLE_LYVRA",
+    "legacy_root_authority": "RETIRED_PROVENANCE_ONLY",
+    "required_carriers": {
+      "facet_contract": "VERIFIED",
+      "current_state": "VERIFIED",
+      "rehydration_manifest": "VERIFIED",
+      "research_register": "VERIFIED",
+      "renderer_evidence_register": "VERIFIED",
+      "model_coverage_register": "VERIFIED",
+      "experiment_register": "VERIFIED",
+      "open_work": "VERIFIED",
+      "recovery_state": "VERIFIED",
+      "interruption_state": "VERIFIED",
+      "proposal_queue": "VERIFIED",
+      "result_queue": "VERIFIED"
+    },
+    "preserved_capabilities": [
+      "SLIDER_DECISION_SURFACE",
+      "RENDERER_MODEL_DECISION_SURFACE",
+      "MODEL_COVERAGE",
+      "CONTROLLED_ABC_TESTING",
+      "TRACKGEGENWART_RENDERGEGENWART",
+      "PLAUSIBLE_RENDERER_TRANSLATION_GATE",
+      "PRODUCTION_SUITABILITY_VS_LEARNING_VALUE",
+      "USER_VERIFIED_RENDER_PRIORITY"
+    ],
+    "real_suno_acceptance": "OPEN_EVENT_GATED",
+    "no_second_root": true,
+    "no_cross_system_merge": true,
+    "newer_valid_evolution_preserved": true
   }
 }
