@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev88 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
+  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev89 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -103,7 +103,10 @@
       "LYVRA_NATIVE_RUNTIME/facets/analytics/current/MODEL_COVERAGE_REGISTER.json",
       "LYVRA_NATIVE_RUNTIME/facets/analytics/current/EXPERIMENT_REGISTER.json",
       "LYVRA_NATIVE_RUNTIME/facets/analytics/current/OPEN_WORK.json",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/continuity/RECOVERY_STATE.json"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/continuity/RECOVERY_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -178,5 +181,12 @@
     "legacy_drive_runtime": "PROVENANCE_HISTORY_RECOVERY_ONLY",
     "local_rehydration_manifest": "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
     "whole_rehydration_precedes_facet_foreground": true
+  },
+  "rev89_music_memory_and_studio_evidence": {
+    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "music_memory": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+    "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
+    "renderer_web_freshness_control": "CURRENT",
+    "whole_rev242_preserved": true
   }
 }
