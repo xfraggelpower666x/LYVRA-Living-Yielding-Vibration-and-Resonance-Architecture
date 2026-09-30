@@ -70,7 +70,8 @@
       "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md"
     ],
     "THINKING_CONTINUITY": [
-      "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md"
+      "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md",
+      "LYVRA_NATIVE_RUNTIME/current/thinking/CODEFORGE_TECHNICAL_SELF_UNDERSTANDING.md"
     ],
     "REACHABLE_LANDSCAPE": [
       "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md",
@@ -108,7 +109,10 @@
       "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
       "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -176,7 +180,7 @@
     "current_promotion_performed": true
   },
   "analytics_facet_migration": {
-    "status": "NATIVE_FACET_ACTIVE_PENDING_FINAL_POINTER",
+    "status": "NATIVE_FACET_ACTIVE_VERIFIED_CURRENT",
     "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
     "track_revision": 88,
     "root_authority": "WHOLE_LYVRA",
@@ -185,21 +189,21 @@
     "whole_rehydration_precedes_facet_foreground": true
   },
   "rev89_music_memory_and_studio_evidence": {
-    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_PRESERVED_IN_REV92",
     "music_memory": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
     "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
     "renderer_web_freshness_control": "CURRENT",
     "whole_rev242_preserved": true
   },
   "rev91_central_analytics": {
-    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_PRESERVED_IN_REV92",
     "capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
     "selective_intelligence_activation": true,
     "duplicate_caller_analytics_forbidden": true,
     "whole_rev242_preserved": true
   },
   "rev92_lyrics_intelligence": {
-    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "lyric_model": "SHARED_NATIVE_INTELLIGENCE_NOT_SEPARATE_ROOT_FACET",
     "analytics_bundle": "LYRICS_BUILD_SUPPORT_BUNDLE",
     "knowledge_translation": "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md",
@@ -207,5 +211,12 @@
     "muselift_requires_lyvra_dna_translation": true,
     "studio2_uses_same_lyric_intelligence": true,
     "whole_rev242_preserved": true
+  },
+  "rev92_consistency_update": {
+    "status": "BODY_SYNC_COMPLETE_PENDING_FINGERPRINT_AND_FINAL_POINTER",
+    "purpose": "SYNCHRONIZE_ACTIVE_CARRIERS_INSTALL_VERSION_FRESHNESS_GUARD_AND_REACTIVATE_CODEFORGE",
+    "track_revision": 92,
+    "codeforge_status": "CURRENT_PRODUCTIVE_NATIVE_FACET",
+    "no_new_track_revision": true
   }
 }
