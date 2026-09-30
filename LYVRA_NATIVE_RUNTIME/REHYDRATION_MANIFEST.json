@@ -213,10 +213,13 @@
     "whole_rev242_preserved": true
   },
   "rev92_consistency_update": {
-    "status": "BODY_SYNC_COMPLETE_PENDING_FINGERPRINT_AND_FINAL_POINTER",
+    "status": "PASS_BODY_AND_FINGERPRINT_READY_FOR_FINAL_POINTER",
     "purpose": "SYNCHRONIZE_ACTIVE_CARRIERS_INSTALL_VERSION_FRESHNESS_GUARD_AND_REACTIVATE_CODEFORGE",
     "track_revision": 92,
     "codeforge_status": "CURRENT_PRODUCTIVE_NATIVE_FACET",
-    "no_new_track_revision": true
+    "no_new_track_revision": true,
+    "freshness_epoch": "2026-09-30T22:10Z-REV92-U1",
+    "fingerprint_registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "codeforge_review": "PASS_PRE_POINTER"
   }
 }
