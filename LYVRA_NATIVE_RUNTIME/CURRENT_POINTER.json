@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "a1bc203329794b2a1386a5734fd56c9981c69b64",
+    "current_head_before_pointer": "1f397cdd6cadb2d8f192d0fafd1f3a5de8209f66",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -34,10 +34,10 @@
     "drive_internal_reference_whole_revision": 242,
     "drive_internal_reference_pointer_revision": 325,
     "track_design_version": "v3.4",
-    "track_design_logical_revision": 89,
+    "track_design_logical_revision": 90,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "POST_REV89_MUSIC_MEMORY_STUDIO2_EVIDENCE_FRESH_WEB_CONTROL_AND_EVENT_GATED_SUNO_VALIDATION",
+    "current_work_scope": "POST_REV90_STUDIO2_DUAL_CONTROL_HIERARCHY_AND_FRESH_EVIDENCE_VALIDATION",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -68,7 +68,8 @@
     "lyvra_analytics_rehydration_manifest": "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
     "music_memory_evolution": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
     "music_memory_current_state": "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
-    "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md"
+    "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
+    "studio2_dual_control_hierarchy": "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -119,12 +120,12 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-09-30",
-    "scope": "TRACK_DESIGN_REV89_MUSIC_MEMORY_STUDIO2_EVIDENCE_AND_FRESH_WEB_CONTROL",
-    "productive_body_head": "a1bc203329794b2a1386a5734fd56c9981c69b64",
-    "prechange_backup_branch": "lyvra-dev-pre-rev89-music-memory-studio-evidence-20260930",
+    "scope": "TRACK_DESIGN_REV90_STUDIO2_DUAL_CONTROL_HIERARCHY_RECONSTRUCTION",
+    "productive_body_head": "1f397cdd6cadb2d8f192d0fafd1f3a5de8209f66",
+    "prechange_backup_branch": "lyvra-dev-pre-rev90-dual-control-hierarchy-20260930",
+    "source_canonicity": "STUDIO2_CANONICAL_AND_SOURCE_FRAMEWORK_VERIFIED",
     "whole_rev242_preserved": true,
-    "track_design_v3_4_rev89_current": true,
-    "one_lyvra_identity_preserved": true,
+    "track_design_v3_4_rev90_current": true,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -373,5 +374,38 @@
     "community_is_signal_not_truth": true,
     "own_validated_render_highest_practical_observation": true,
     "muselift_is_special_external_domain_not_suno_authority": true
+  },
+  "studio2_control_architecture": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
+    "family_a": "NORMAL_TRACK_GENERATION_CONTROL_SURFACE",
+    "family_b": "STUDIO2_OPERATION_CONTROL_SURFACE",
+    "family_a_ne_family_b": true,
+    "nested_hierarchies_preserved": true,
+    "normal_track_controls": [
+      "MODEL",
+      "MAX_MODE",
+      "INSTRUMENTAL",
+      "PERSONALIZATION",
+      "VOICE_GENDER_IF_RELEVANT",
+      "EXCLUDED_STYLES_IF_RELEVANT",
+      "VARIETY",
+      "WEIRDNESS",
+      "STYLE_INFLUENCE",
+      "AUDIO_INFLUENCE_IF_APPLICABLE",
+      "TARGET_DURATION"
+    ],
+    "studio2_task_classes": [
+      "PRESERVE",
+      "REPAIR",
+      "CREATIVE_MUTATION",
+      "NEW_LAYER",
+      "TRANSITION",
+      "STEM_REBUILD",
+      "MIX_OPERATION",
+      "AUTOMATION_OPERATION",
+      "FX_OR_PLUGIN_OPERATION"
+    ],
+    "same_visible_parameter_ne_same_decision_context": true
   }
 }
