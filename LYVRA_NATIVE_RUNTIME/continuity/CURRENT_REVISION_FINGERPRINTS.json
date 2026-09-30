@@ -1,0 +1,13 @@
+{
+  "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
+  "schema": "LYVRA_REVISION_FRESHNESS_v1",
+  "freshness_epoch": "2026-09-30T22:10Z-REV92-U1",
+  "whole_revision": 242,
+  "track_design_revision": 92,
+  "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
+  "critical_carriers": {},
+  "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
+  "stale_policy": "MISMATCH_NE_CURRENT",
+  "pointer_publication": "PENDING_FINAL_UPDATE_POINTER",
+  "codeforge_review_required": true
+}
