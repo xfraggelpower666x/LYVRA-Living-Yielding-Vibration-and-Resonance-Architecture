@@ -378,7 +378,7 @@
     "causal_integration_readback": "VERIFIED_DIRECT_READBACK"
   },
   "rev88_analytics_native_facet_migration": {
-    "status": "PASS_PENDING_POINTER_PUBLICATION",
+    "status": "PASS_NATIVE_FACET_ACTIVE_VERIFIED",
     "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
     "identity": "LYVRA_NATIVE_SPECIALIST_FACET",
     "root_authority": "WHOLE_LYVRA",
@@ -410,6 +410,8 @@
     "real_suno_acceptance": "OPEN_EVENT_GATED",
     "no_second_root": true,
     "no_cross_system_merge": true,
-    "newer_valid_evolution_preserved": true
+    "newer_valid_evolution_preserved": true,
+    "pointer_publication": "NEXT_LAST_MUTATION",
+    "acceptance_checklist": "PASS_ALL_APPLICABLE"
   }
 }
