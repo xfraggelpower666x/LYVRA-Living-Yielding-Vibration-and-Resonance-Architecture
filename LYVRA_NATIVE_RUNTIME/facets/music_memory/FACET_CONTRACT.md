@@ -5,7 +5,7 @@ FACET_ID: LYVRA_MUSIC_MEMORY_EVOLUTION
 ROOT_SYSTEM: WHOLE_LYVRA
 DECISION_AUTHORITY: LYVRA_ONLY
 TRACK_DESIGN_VERSION: v3.4
-TRACK_LOGICAL_REVISION: 89
+TRACK_LOGICAL_REVISION: 91
 
 ## Role
 This facet is LYVRA's shared long-term musical memory and evolution surface. It is a sibling of General Track Design, Suno Studio 2 and LYVRA Analytics. It is not above them and is not a controller, router, composer or second identity.
@@ -55,3 +55,10 @@ NO_COMPOSITION_AUTHORITY = true
 NO_RENDERER_AUTHORITY = true
 NO_AUTOMATIC_RULE_PROMOTION = true
 NEWER_VALID_EVOLUTION_PRESERVED = true
+
+
+## Rev91 Analytics promotion gate
+
+ANALYTICS_CAPABILITY_REGISTRY = LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md
+MEMORY_PROMOTION_REQUIRES = MEMORY_PROMOTION_BUNDLE
+MUSIC_MEMORY_DOES_NOT_REIMPLEMENT_GENERALIZATION_LOGIC = true
