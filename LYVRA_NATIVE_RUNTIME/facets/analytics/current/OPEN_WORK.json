@@ -1,0 +1,26 @@
+{
+  "status": "CURRENT_PRODUCTIVE",
+  "items": [
+    {
+      "id": "ANL-001",
+      "state": "OPEN_EVENT_GATED",
+      "task": "HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST"
+    },
+    {
+      "id": "ANL-002",
+      "state": "OPEN",
+      "task": "v6_MODEL_CALIBRATION"
+    },
+    {
+      "id": "ANL-003",
+      "state": "OPEN",
+      "task": "continued_model_specific_renderer_learning"
+    },
+    {
+      "id": "ANL-004",
+      "state": "OPEN_EVENT_GATED",
+      "task": "REAL_SUNO_ANALYTICS_ACCEPTANCE"
+    }
+  ],
+  "open_work_last": true
+}
