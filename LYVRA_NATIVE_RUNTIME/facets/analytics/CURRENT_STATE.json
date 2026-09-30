@@ -6,7 +6,7 @@
   "migration_target": "WHOLE_LYVRA_NATIVE_FACET",
   "root_authority": "WHOLE_LYVRA",
   "track_design_version": "v3.4",
-  "track_logical_revision": 88,
+  "track_logical_revision": 92,
   "current_capabilities": [
     "music_causality_analysis",
     "psychoacoustic_analysis",
