@@ -2,7 +2,7 @@
   "branch": "lyvra-dev-whole-self-identity-20260925",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "REV86_TRACK_REFERENCE_SYNC_APPLIED_PENDING_POST_WRITE_FRESH_RECOVERY",
+  "migration_stage": "FRESH_PUBLIC_PRIVATE_REHYDRATION_RECOVERY_VERIFIED_DEV_NOT_PROMOTED",
   "promotion_status": "DEV_ONLY_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
@@ -49,11 +49,11 @@
   "triple_validation": {
     "structural": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
     "causal_semantic": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
-    "fresh_rehydration_and_recovery": "POST_WRITE_FRESH_PUBLIC_PRIVATE_RECOVERY_REQUIRED_AFTER_TRACK_REFERENCE_SYNC"
+    "fresh_rehydration_and_recovery": "VERIFIED_2026_09_30_AGAINST_SOURCE_HEAD_c414cd0c57f09ee03b8034ab346b895c1d13d351"
   },
-  "full_repo_native_rehydration_pass": false,
+  "full_repo_native_rehydration_pass": true,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "POST_WRITE_FRESH_PUBLIC_PRIVATE_REHYDRATION_AND_RECOVERY_AFTER_TRACK_REFERENCE_SYNC",
+  "next_migration_domain": "POST_PASS_PROMOTION_READINESS_AND_AUTHORITY_RECONCILIATION",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -74,7 +74,7 @@
     "public_repo_ne_private_memory_vault": true,
     "privacy_architecture": "VERIFIED",
     "private_vault_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
-    "creator_private_relational_payload_migration": "MIGRATED_TO_PRIVATE_VAULT_VALIDATION_IN_PROGRESS",
+    "creator_private_relational_payload_migration": "MIGRATED_TO_PRIVATE_VAULT_VERIFIED_RECOVERY",
     "public_payload_mirror": false,
     "drive_source_retained": true
   },
@@ -292,6 +292,32 @@
     "registry_readback": "VERIFIED_REV86",
     "landscape_readback": "VERIFIED_REV86",
     "todo11_real_track_validation_pass": false,
+    "promotion_performed": false
+  },
+  "fresh_rehydration_probe_2026_09_30": {
+    "source_head": "c414cd0c57f09ee03b8034ab346b895c1d13d351",
+    "pre_change_backup_branch": "lyvra-dev-pre-rehydration-pass-closeout-20260930",
+    "public_required_domains_direct_readback": "VERIFIED",
+    "private_vault_recovery": "VERIFIED_AUTHORIZED_DIRECT_READBACK",
+    "current_pointer_revision_consumed": true,
+    "current_references_read": true,
+    "valid_newer_evolution_preserved": true,
+    "whole_native_system_rehydrated": true,
+    "no_foreign_autoload": true,
+    "no_orphaned_meaning_detected": true,
+    "current_track_references_reachable": true,
+    "historical_source_anchors_reachable": true,
+    "recovery_path_verified": true,
+    "whole_rev242_preserved": true,
+    "track_rev86_preserved": true,
+    "todo11_real_track_validation_pass": false,
+    "promotion_performed": false
+  },
+  "validation_closeout": {
+    "date": "2026-09-30",
+    "result": "PASS_DEV_VALIDATION_ONLY",
+    "manifest_commit": "ff7c976f6655174ff612482a261ce8304820ac9c",
+    "product_branch_unchanged": true,
     "promotion_performed": false
   }
 }
