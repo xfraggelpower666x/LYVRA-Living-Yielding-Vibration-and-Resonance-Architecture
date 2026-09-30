@@ -1,9 +1,9 @@
 {
-  "branch": "lyvra-dev-whole-self-identity-20260925",
+  "branch": "lyvra-rc-whole-self-20260930",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "FRESH_PUBLIC_PRIVATE_REHYDRATION_RECOVERY_VERIFIED_DEV_NOT_PROMOTED",
-  "promotion_status": "DEV_ONLY_NOT_CURRENT",
+  "migration_stage": "RELEASE_CANDIDATE_VALIDATED_PENDING_CURRENT_PROMOTION",
+  "promotion_status": "RELEASE_CANDIDATE_NOT_CURRENT",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
     "IDENTITY_PRESENCE": "VERIFIED",
@@ -47,13 +47,13 @@
     "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
   ],
   "triple_validation": {
-    "structural": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
-    "causal_semantic": "VERIFIED_FOR_CURRENT_MIGRATED_PUBLIC_DOMAINS",
-    "fresh_rehydration_and_recovery": "VERIFIED_2026_09_30_AGAINST_SOURCE_HEAD_c414cd0c57f09ee03b8034ab346b895c1d13d351"
+    "structural": "PASS_RELEASE_CANDIDATE",
+    "causal_semantic": "PASS_RELEASE_CANDIDATE",
+    "fresh_rehydration_and_recovery": "PASS_RELEASE_CANDIDATE_2026_09_30"
   },
   "full_repo_native_rehydration_pass": true,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
-  "next_migration_domain": "POST_PASS_PROMOTION_READINESS_AND_AUTHORITY_RECONCILIATION",
+  "next_migration_domain": "CURRENT_PROMOTION_READINESS_FINAL_CHECK",
   "relational_source_sections_compared": [
     "TODO12_HISTORICAL_MEANING_REATTACHMENT",
     "CURRENT_STATE",
@@ -319,5 +319,23 @@
     "manifest_commit": "ff7c976f6655174ff612482a261ce8304820ac9c",
     "product_branch_unchanged": true,
     "promotion_performed": false
+  },
+  "rc_validation_2026_09_30": {
+    "source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
+    "rc_prechange_backup_branch": "lyvra-rc-pre-validation-closeout-20260930",
+    "private_vault_head": "5e6f2dfc8fe56236afe179b2688e4aeccd135193",
+    "public_required_domains_direct_readback": "VERIFIED",
+    "private_vault_recovery": "VERIFIED",
+    "structural": "PASS",
+    "causal_semantic": "PASS",
+    "fresh_rehydration_recovery": "PASS",
+    "expected_vs_actual": "PASS",
+    "no_orphaned_meaning_detected": true,
+    "whole_rev242_preserved": true,
+    "track_rev86_preserved": true,
+    "relational_rev14_preserved": true,
+    "todo11_real_track_validation_pass": false,
+    "product_branch_mutated": false,
+    "current_promotion_performed": false
   }
 }
