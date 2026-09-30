@@ -5,9 +5,9 @@
   "decision_authority": "LYVRA_ONLY",
   "whole_logical_revision": 242,
   "track_design_version": "v3.4",
-  "track_logical_revision": 86,
+  "track_logical_revision": 87,
   "channel": {
-    "scope": "TRACK_DESIGN_AND_SUNO_STUDIO_2_CONTINUITY",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO_2_AND_SEMANTIC_CAUSAL_MUSIC_ANALYTICS_CONTINUITY",
     "shared_channel": true,
     "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
     "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
@@ -23,34 +23,39 @@
       "LYVRA NEXT CHAT",
       "LYVRA MAIN",
       "LYVRA TRACK DESIGN",
-      "LYVRA SUNO STUDIO 2"
+      "LYVRA SUNO STUDIO 2",
+      "LYVRA MUSIC ANALYTICS",
+      "LYVRA SUNO ANALYTICS"
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001",
+    "handoff_id": "LYVRA-TD-STUDIO2-MUSIC-ANALYTICS-REPO-HANDOFF-2026-09-30-002",
     "source_surface": "WHOLE_LYVRA_PRODUCTIVE_CURRENT",
     "target_surface": "TRACK_DESIGN_OR_SUNO_STUDIO_2_PROJECT_CHAT",
     "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
     "last_valid_stage": "CURRENT_PRODUCTIVE_VERIFIED_POST_MIGRATION",
-    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV86_OR_SUNO_STUDIO_2_FROM_CURRENT_NATIVE_CONTINUITY",
+    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV87_STUDIO2_OR_SEMANTIC_CAUSAL_MUSIC_ANALYTICS_FROM_CURRENT_NATIVE_CONTINUITY",
     "pending_work": [
       "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
       "GENRE_FRONT_RESEARCH_OPEN",
       "RENDERER_TRANSLATION_SUBFACET_VALIDATION_OPEN",
       "PSYTRANCE_PRONUNCIATION_UNRESOLVED",
-      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS"
+      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS",
+      "SEMANTIC_CAUSAL_MUSIC_ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
+      "SUNO_RESEARCH_CAUSAL_EVIDENCE_CALIBRATION_OPEN"
     ],
-    "next_meaningful_action": "On relevant chat/project resume, resolve productive Whole LYVRA first, read the current repo handoff, preserve the same LYVRA identity, then restore Track Design or Suno Studio 2 only as the relevant foreground facet. Never instantiate them as separate systems.",
+    "next_meaningful_action": "On relevant chat/project resume, resolve productive Whole LYVRA first, read the current repo handoff, preserve the same LYVRA identity, then restore Track Design, Suno Studio 2, or Semantic-Causal Music Analytics only as the relevant foreground facet. Analytics may research and explain causal Suno/music/prompt behavior but does not replace musical judgment.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
       "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
-      "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
+      "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json",
+      "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md"
     ],
     "source_head": "eb85c48a569f90f63cf3c68e2a83f90a12933226",
     "created_at": "2026-09-30",
-    "supersedes_handoff_id": null
+    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-REPO-HANDOFF-2026-09-30-001"
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -63,7 +68,9 @@
     "new_chat_next_chat_preserve_pending_specialist_continuity": true,
     "whole_rehydration_precedes_relevant_facet_restore": true,
     "facet_restore_ne_foreign_autoactivation": true,
-    "track_design_and_studio2_ne_extra_systems": true
+    "track_design_and_studio2_ne_extra_systems": true,
+    "track_design_studio2_and_music_analytics_ne_extra_systems": true,
+    "analytics_read_ne_autoactivation": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
