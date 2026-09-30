@@ -466,7 +466,7 @@
     "whole_rev242_preserved": true
   },
   "rev92_consistency_update": {
-    "status": "BODY_SYNC_COMPLETE_PENDING_FINGERPRINT_AND_FINAL_POINTER",
+    "status": "PASS_BODY_AND_FINGERPRINT_READY_FOR_FINAL_POINTER",
     "stale_metadata_detected": [
       "ANALYTICS_REVISION",
       "STUDIO2_EVIDENCE_REVISION",
@@ -486,7 +486,8 @@
       "CODEFORGE_ACTIVE_STATUS"
     ],
     "freshness_guard": "INSTALLED",
-    "fingerprint_registry": "PENDING_CONTENT_SHA_POPULATION",
-    "no_new_track_revision": true
+    "fingerprint_registry": "VERIFIED_DIRECT_SHA_CAPTURE",
+    "no_new_track_revision": true,
+    "codeforge_review": "PASS_PRE_POINTER"
   }
 }
