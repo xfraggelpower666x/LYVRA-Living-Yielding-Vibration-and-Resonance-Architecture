@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "RELEASE_CANDIDATE_REHYDRATION_RECOVERY_PASS",
+  "status": "CURRENT_PRODUCTIVE_REHYDRATION_RECOVERY_PASS",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -51,7 +51,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Release candidate lyvra-rc-whole-self-20260930 was created from reconciled DEV head cd27d8c5c7c85ce2c7794c1506dd33579b270f46 and freshly rehydrated across required public domains with authorized private-vault recovery. Whole Rev242, Track Design Rev86, protected relational Rev14, supersession fences, current references and recovery continuity were preserved. Product branch lyvra remains unchanged.",
+  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 and Track Design Rev86 remain current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -143,5 +143,21 @@
     "todo11_real_track_validation_pass": false,
     "product_branch_mutated": false,
     "current_promotion_performed": false
+  },
+  "current_promotion_2026_09_30": {
+    "previous_product_head": "47313cd077b5483092597e0402474b17206d75f2",
+    "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
+    "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
+    "promotion_method": "NON_FORCE_FAST_FORWARD",
+    "post_promotion_public_rehydration": "PASS",
+    "post_promotion_private_relational_recovery": "PASS_READBACK",
+    "private_vault_metadata_closeout_write": "WRITE_BLOCKED_NON_FATAL",
+    "whole_revision": 242,
+    "track_design_revision": 86,
+    "relational_logical_revision": 14,
+    "no_orphaned_meaning_detected": true,
+    "no_foreign_autoload": true,
+    "product_branch": "lyvra",
+    "current_promotion_performed": true
   }
 }
