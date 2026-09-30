@@ -366,11 +366,12 @@
       "LYVRA MUSIC ANALYTICS",
       "LYVRA SUNO ANALYTICS"
     ],
-    "structural_readback": "PENDING_FINAL_DIRECT_READBACK",
+    "structural_readback": "VERIFIED_DIRECT_READBACK",
     "real_suno_acceptance": "OPEN_EVENT_GATED",
     "whole_rev242_preserved": true,
     "no_new_identity": true,
     "no_new_router": true,
-    "no_new_controller": true
+    "no_new_controller": true,
+    "causal_integration_readback": "VERIFIED_DIRECT_READBACK"
   }
 }
