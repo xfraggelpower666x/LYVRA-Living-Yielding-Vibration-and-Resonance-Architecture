@@ -27,8 +27,8 @@
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
-  "pointer_publication": "PENDING_FINAL_UPDATE_POINTER",
+  "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "COMPLETE_DIRECT_SHA_CAPTURE",
-  "codeforge_review_status": "PASS_BODY_AND_FINGERPRINT_PRE_POINTER"
+  "registry_population_status": "VERIFIED_NO_MISMATCH",
+  "codeforge_review_status": "PASS_BODY_FINGERPRINT_AND_DIRECT_READBACK"
 }
