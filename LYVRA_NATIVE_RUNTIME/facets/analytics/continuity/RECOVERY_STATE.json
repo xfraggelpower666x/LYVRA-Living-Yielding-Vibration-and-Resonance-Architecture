@@ -1,0 +1,15 @@
+{
+  "status": "CURRENT_PRODUCTIVE",
+  "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
+  "resume_rule": "WHOLE_LYVRA_CURRENT_RESOLUTION_THEN_ANALYTICS_FACET_REHYDRATION",
+  "preserve": [
+    "CURRENT_STATE",
+    "RESEARCH_REGISTER",
+    "RENDERER_EVIDENCE_REGISTER",
+    "MODEL_COVERAGE_REGISTER",
+    "EXPERIMENT_REGISTER",
+    "OPEN_WORK"
+  ],
+  "legacy_drive_runtime": "PROVENANCE_HISTORY_RECOVERY_ONLY",
+  "no_second_root_boot": true
+}
