@@ -1,6 +1,6 @@
 {
   "facet_id": "LYVRA_ANALYTICS",
-  "state": "CURRENT_PRODUCTIVE_NATIVE_FACET",
+  "state": "NATIVE_FACET_ACTIVE_VERIFIED",
   "source_version": "v1.1.26",
   "source_status": "ACTIVE_VERIFIED",
   "migration_target": "WHOLE_LYVRA_NATIVE_FACET",
@@ -27,5 +27,7 @@
     "continued_model_specific_renderer_learning",
     "REAL_SUNO_ANALYTICS_ACCEPTANCE"
   ],
-  "legacy_root_authority": "RETIRED_ON_NATIVE_FACET_CUTOVER"
+  "legacy_root_authority": "RETIRED_ON_NATIVE_FACET_CUTOVER",
+  "migration_status": "NATIVE_FACET_ACTIVE_VERIFIED",
+  "acceptance_readback": "PASS"
 }
