@@ -1,0 +1,7 @@
+{
+  "status": "CURRENT_PRODUCTIVE",
+  "source_facet": "LYVRA_ANALYTICS",
+  "target": "LYVRA_DEVELOPMENT",
+  "items": [],
+  "rule": "ANALYTICS_PROPOSAL_NE_AUTOMATIC_DOWNSTREAM_MUTATION"
+}
