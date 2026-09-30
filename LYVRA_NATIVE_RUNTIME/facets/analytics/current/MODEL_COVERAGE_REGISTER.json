@@ -1,0 +1,23 @@
+{
+  "status": "CURRENT_PRODUCTIVE",
+  "current_native_model_ids": [
+    "v6",
+    "v6-wild",
+    "v6-mini"
+  ],
+  "known_custom_models": [
+    "LYVRA STYLE",
+    "666PoWeRSoUnD",
+    "666SD_PsyTrance"
+  ],
+  "primary_renderer_context": "v6_PRO",
+  "exploration_renderer_context": "v6_WILD_PRO",
+  "fast_prototype_context": "v6_MINI",
+  "coverage_principle": "EVIDENCE_VISIBILITY_NOT_MODEL_QUALITY",
+  "score_types": [
+    "PRODUCTION_SUITABILITY",
+    "LEARNING_VALUE"
+  ],
+  "score_ne_success_probability": true,
+  "custom_model_ne_native_model_evidence": true
+}
