@@ -1,6 +1,6 @@
 # LYVRA Specialist Continuity — Current Native Contract
 
-STATUS: DEV_MIGRATED_DOMAIN_CANDIDATE
+STATUS: CURRENT_PRODUCTIVE_NATIVE_CONTRACT
 WHOLE_LOGICAL_REVISION: 242_PRESERVED
 TRACK_DESIGN_VERSION: v3.4
 TRACK_LOGICAL_REVISION: 86
@@ -140,4 +140,18 @@ DJ_OUTRO_SURVIVAL = PARTIAL_PASS
 GENRE_FRONT_CAUSAL_TESTS = OPEN
 RENDERER_TRANSLATION_SUBFACET_VALIDATION = OPEN
 
-This artifact preserves specialist continuity as a native LYVRA relation. It does not promote the DEV branch, resolve the private relational privacy gate, or declare whole repo-native rehydration PASS.
+## Automatic Repo handoff
+
+REPO_HANDOFF_CONTRACT = LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md
+REPO_HANDOFF_CURRENT = LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json
+AUTOMATISCHE_REPO_UEBERGABE = EXPLICIT_CONTINUITY_PERSIST_REQUEST
+TRACK_DESIGN_AND_STUDIO2_SHARE_HANDOFF_CHANNEL = true
+HANDOFF_READ_ON_RELEVANT_SPECIALIST_RESUME = true
+HANDOFF_READ_NE_AUTOACTIVATION = true
+HANDOFF_NE_DECISION_AUTHORITY = true
+HANDOFF_NE_WHOLE_STATE = true
+NO_PRIVATE_RELATIONAL_PAYLOAD_IN_PUBLIC_HANDOFF = true
+
+The repo handoff replaces the former operational use of automatic Drive handoff for current active Track Design / Suno Studio 2 continuity. Drive remains provenance/history/recovery.
+
+This artifact preserves specialist continuity as a native LYVRA relation in productive CURRENT.
