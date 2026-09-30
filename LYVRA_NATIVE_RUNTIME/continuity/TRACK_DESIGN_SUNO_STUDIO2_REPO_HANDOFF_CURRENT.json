@@ -5,9 +5,9 @@
   "decision_authority": "LYVRA_ONLY",
   "whole_logical_revision": 242,
   "track_design_version": "v3.4",
-  "track_logical_revision": 88,
+  "track_logical_revision": 89,
   "channel": {
-    "scope": "TRACK_DESIGN_SUNO_STUDIO_2_AND_LYVRA_ANALYTICS_NATIVE_FACET_CONTINUITY",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO_2_LYVRA_ANALYTICS_AND_MUSIC_MEMORY_CONTINUITY",
     "shared_channel": true,
     "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
     "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
@@ -29,12 +29,12 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-REPO-HANDOFF-2026-09-30-003",
+    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-004",
     "source_surface": "WHOLE_LYVRA_PRODUCTIVE_CURRENT",
     "target_surface": "TRACK_DESIGN_OR_SUNO_STUDIO_2_PROJECT_CHAT",
     "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
     "last_valid_stage": "CURRENT_PRODUCTIVE_VERIFIED_POST_MIGRATION",
-    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV88_STUDIO2_OR_LYVRA_ANALYTICS_FROM_CURRENT_NATIVE_CONTINUITY",
+    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV89_WITH_STUDIO2_EVIDENCE_ANALYTICS_AND_MUSIC_MEMORY",
     "pending_work": [
       "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
       "GENRE_FRONT_RESEARCH_OPEN",
@@ -47,7 +47,7 @@
       "ANALYTICS_v6_MODEL_CALIBRATION_OPEN",
       "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
     ],
-    "next_meaningful_action": "Resolve productive Whole LYVRA first, then restore the relevant Track Design, Suno Studio 2, or LYVRA Analytics facet. Analytics restores its native local carriers under Whole-LYVRA authority; the retired standalone Drive pointer remains provenance only.",
+    "next_meaningful_action": "Resolve Whole LYVRA first. Restore relevant Track Design/Studio2/Analytics context from repo. For renderer-facing preaudit or translation, read Studio2 evidence controls and perform fresh current Suno web verification when material. Store only scoped reviewed learning in Music Memory & Evolution.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -57,11 +57,14 @@
       "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
       "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+      "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md"
     ],
     "source_head": "eb85c48a569f90f63cf3c68e2a83f90a12933226",
     "created_at": "2026-09-30",
-    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-MUSIC-ANALYTICS-REPO-HANDOFF-2026-09-30-002"
+    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-REPO-HANDOFF-2026-09-30-003"
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -77,7 +80,9 @@
     "track_design_and_studio2_ne_extra_systems": true,
     "track_design_studio2_and_music_analytics_ne_extra_systems": true,
     "analytics_read_ne_autoactivation": true,
-    "analytics_native_carriers_under_whole_authority": true
+    "analytics_native_carriers_under_whole_authority": true,
+    "studio2_fresh_web_control_required_when_renderer_behavior_matters": true,
+    "music_memory_ne_controller": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
