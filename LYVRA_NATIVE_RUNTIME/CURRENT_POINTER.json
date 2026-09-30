@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "1f397cdd6cadb2d8f192d0fafd1f3a5de8209f66",
+    "current_head_before_pointer": "84c5b2f4013b47e6b22f80c83e625eacf08a85bd",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -34,10 +34,10 @@
     "drive_internal_reference_whole_revision": 242,
     "drive_internal_reference_pointer_revision": 325,
     "track_design_version": "v3.4",
-    "track_design_logical_revision": 90,
+    "track_design_logical_revision": 91,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "POST_REV90_STUDIO2_DUAL_CONTROL_HIERARCHY_AND_FRESH_EVIDENCE_VALIDATION",
+    "current_work_scope": "POST_REV91_CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE_AND_STUDIO2_VALIDATION",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -45,7 +45,8 @@
     "drive_internal_reference_heritage_checkpoint_revision": 12,
     "semantic_causal_music_analytics": "CURRENT_NATIVE_LYVRA_ANALYTICS_FACET_v1.1.26_MIGRATED",
     "music_memory_evolution": "CURRENT_NATIVE_SIBLING_FACET",
-    "studio2_evidence_model": "CURRENT_SOURCE_SEPARATED_FRESHNESS_AWARE"
+    "studio2_evidence_model": "CURRENT_SOURCE_SEPARATED_FRESHNESS_AWARE",
+    "central_analytics": "CURRENT_SHARED_NATIVE_FACET_WITH_SELECTIVE_INTELLIGENCE_ACCESS"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -69,7 +70,8 @@
     "music_memory_evolution": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
     "music_memory_current_state": "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
     "studio2_evidence_model": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_EVIDENCE_MODEL.md",
-    "studio2_dual_control_hierarchy": "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md"
+    "studio2_dual_control_hierarchy": "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
+    "analytics_capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -120,12 +122,12 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-09-30",
-    "scope": "TRACK_DESIGN_REV90_STUDIO2_DUAL_CONTROL_HIERARCHY_RECONSTRUCTION",
-    "productive_body_head": "1f397cdd6cadb2d8f192d0fafd1f3a5de8209f66",
-    "prechange_backup_branch": "lyvra-dev-pre-rev90-dual-control-hierarchy-20260930",
-    "source_canonicity": "STUDIO2_CANONICAL_AND_SOURCE_FRAMEWORK_VERIFIED",
+    "scope": "TRACK_DESIGN_REV91_CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE_ARCHITECTURE",
+    "productive_body_head": "84c5b2f4013b47e6b22f80c83e625eacf08a85bd",
+    "prechange_backup_branch": "lyvra-dev-pre-rev91-central-analytics-capability-routing-20260930",
     "whole_rev242_preserved": true,
-    "track_design_v3_4_rev90_current": true,
+    "track_design_v3_4_rev91_current": true,
+    "one_lyvra_identity_preserved": true,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -233,8 +235,8 @@
   "specialist_repo_handoff": {
     "status": "ACTIVE_CURRENT_HANDOFF",
     "canonical_user_phrase": "AUTOMATISCHE REPO-ÜBERGABE",
-    "scope": "TRACK_DESIGN_SUNO_STUDIO_2_LYVRA_ANALYTICS_AND_MUSIC_MEMORY",
-    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-004",
+    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_AND_MUSIC_MEMORY",
+    "handoff_id": "LYVRA-TD-STUDIO2-CENTRAL-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-005",
     "body_head_before_pointer": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev86_preserved": true,
@@ -275,7 +277,8 @@
     ],
     "track_design_v3_4_rev87_current": true,
     "track_design_v3_4_rev88_current": true,
-    "track_design_v3_4_rev89_current": true
+    "track_design_v3_4_rev89_current": true,
+    "track_design_v3_4_rev91_current": true
   },
   "cross_system_handoffs": {
     "clic": {
@@ -407,5 +410,31 @@
       "FX_OR_PLUGIN_OPERATION"
     ],
     "same_visible_parameter_ne_same_decision_context": true
+  },
+  "central_analytics_architecture": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "facet": "LYVRA Analytics",
+    "capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+    "role": "CENTRAL_SHARED_NATIVE_ANALYTICS_FACET",
+    "activation_model": "SELECTIVE_INTELLIGENCE_REQUEST_BY_CALLER_FACET",
+    "full_facet_activation_by_default": false,
+    "standard_bundles": {
+      "track_preaudit": "TRACK_PREAUDIT_BUNDLE",
+      "renderer_translation": "RENDERER_TRANSLATION_BUNDLE",
+      "studio2_operation": "STUDIO2_OPERATION_BUNDLE",
+      "post_render_learning": "POST_RENDER_LEARNING_BUNDLE",
+      "memory_promotion": "MEMORY_PROMOTION_BUNDLE"
+    },
+    "caller_facets": [
+      "GENERAL_TRACK_DESIGN",
+      "SUNO_STUDIO_2",
+      "RENDERER_TRANSLATION",
+      "MUSIC_MEMORY_EVOLUTION"
+    ],
+    "caller_retains_domain_role": true,
+    "lyvra_retains_final_decision_authority": true,
+    "duplicate_analytics_logic_in_callers": false,
+    "no_router": true,
+    "no_controller": true
   }
 }
