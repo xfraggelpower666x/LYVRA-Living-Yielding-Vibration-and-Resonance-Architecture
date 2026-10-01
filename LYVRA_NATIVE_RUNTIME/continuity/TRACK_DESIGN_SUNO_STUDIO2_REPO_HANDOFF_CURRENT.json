@@ -44,10 +44,10 @@
       "SEMANTIC_CAUSAL_MUSIC_ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
       "SUNO_RESEARCH_CAUSAL_EVIDENCE_CALIBRATION_OPEN",
       "ANALYTICS_HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST_EVENT_GATED",
-      "ANALYTICS_v6_MODEL_CALIBRATION_OPEN",
+      "ANALYTICS_v6_MODEL_CALIBRATION_PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
       "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
     ],
-    "next_meaningful_action": "Resolve Whole LYVRA first. Restore relevant Track Design or Studio2 context. Lyrics remains a shared intelligence, not a duplicated facet. For lyric research, request LYRICS_BUILD_SUPPORT_BUNDLE from central Analytics; external MuseLift or other lyric-domain material must be function-extracted, style-stripped and translated through LYVRA DNA before use.",
+    "next_meaningful_action": "Resolve Whole LYVRA first. Current v6/Studio2 web evidence is calibrated in V6_STUDIO2_CALIBRATION_2026-10-01.md. The next causal step is creator-validated real-render evidence using recorded model/control context, expected-vs-actual comparison, and no automatic rule promotion from web/community evidence.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -98,7 +98,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-09-30T22:10Z-REV92-U1",
+    "epoch": "2026-10-01-REV92-U2",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 92,
