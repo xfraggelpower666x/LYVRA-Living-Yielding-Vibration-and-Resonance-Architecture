@@ -1,0 +1,20 @@
+/* Additive Snapshot-Anzeige. Keine Live-Abfragen, keine Animationen. */
+.evolution-status{margin-top:48px;padding:clamp(20px,4vw,36px);min-width:0;border:1px solid #7cdbff40;border-radius:20px;background:linear-gradient(125deg,#0d192bed,#20132dec);box-shadow:0 16px 50px #0004}
+.evolution-status-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.evolution-status h3{font-size:clamp(1.5rem,4vw,2.4rem);margin:12px 0 0;line-height:1.25}
+.evolution-status-date{display:flex;flex-direction:column;gap:8px;color:#bfd0e6;font-size:.8rem}
+.evolution-status-date time{color:#a5efff;font-size:1rem;font-variant-numeric:tabular-nums}
+.evolution-status-notice{color:#c7d4e7;line-height:1.75;font-size:.95rem;max-width:78ch;margin:24px 0}
+.evolution-status-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0}
+.evolution-status-grid>div{padding:18px;border:1px solid #a5c6eb24;border-radius:12px;background:#060c1899;min-width:0}
+.evolution-status dt{font-size:.8rem;color:#b6c6df;margin-bottom:12px}
+.evolution-status dd{margin:0;color:#8af1ff;font-size:1.75rem;font-variant-numeric:tabular-nums}
+.evolution-status .evolution-status-commit{grid-column:1/-1}
+.evolution-status code{font-family:monospace;overflow-wrap:anywhere;white-space:normal;font-size:1rem}
+.evolution-status a{color:#9cedff;text-decoration:underline;text-underline-offset:4px}
+.evolution-status-verification{display:flex;flex-direction:column;gap:10px;margin:24px 0;padding:16px 18px;border:1px solid #ff83d345;border-radius:12px;background:#37152b44}
+.evolution-status-verification span{color:#d4c6da;font-size:.8rem}
+.evolution-status-verification strong{color:#ffb2e3;font-size:.85rem;line-height:1.65;overflow-wrap:anywhere}
+.evolution-status-source{display:inline-block;line-height:1.7;font-size:.9rem}
+.evolution-status a:focus-visible{outline:2px solid #7cf0ff;outline-offset:5px}
+@media(max-width:700px){.evolution-status-grid{grid-template-columns:1fr}.evolution-status-heading{gap:18px}.evolution-status-verification strong{font-size:.8rem}}

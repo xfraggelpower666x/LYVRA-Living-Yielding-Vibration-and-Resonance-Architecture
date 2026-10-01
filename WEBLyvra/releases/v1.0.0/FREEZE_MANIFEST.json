@@ -1,0 +1,626 @@
+{
+  "freeze": "WEBLyvra v1.0.0",
+  "date": "2026-10-01",
+  "source_commit": "7560b7e6ea829aefbcb6833107b83934b62a088b",
+  "sites_version": 14,
+  "deployment_id": "appgdep_6abeb47cabbc8191ba60d5ef6c035169",
+  "deployment_status": "succeeded",
+  "site_url": "https://lyvra-living-universe.crisp-siren-2613.chatgpt.site",
+  "prechange_sites_commit": "19e4fc06e0fc034bdc8a91096a209eaab8af9fa5",
+  "repository_prechange_commit": "a2841aa4e6d6930babd81b7ae974a6d659c51b21",
+  "safepoint_branch": "lyvra-backup-pre-weblyvra-20261001",
+  "zip_name": "WEBLyvra_FREEZE_v1.0.0_2026-10-01.zip",
+  "zip_sha256": "ead6fe6ace92627a8a0d29733833ddc2d4e851e413faaaafc32de5c64c435f17",
+  "zip_bytes": 7039460,
+  "tested": [
+    "static local URLs, JS syntax, local HTTP and /privacy: PASS",
+    "DE/EN controller data and two existing radio embeds: PASS",
+    "headless DOM: chat text/XSS/history, five images, i18n blocked storage: PASS",
+    "headless DOM: explorers, original content preservation, approved data and safe URLs: PASS",
+    "unpacked ZIP: all three test suites PASS"
+  ],
+  "not_verified": [
+    "Visual browser desktop/mobile comparison",
+    "Real audio playback/autoplay and stream availability",
+    "Screenreader audit",
+    "Public HTTPS privacy request independently verified",
+    "Full legal review and third-party data processing details"
+  ],
+  "scope": "Only new WEBLyvra directory; native LYVRA authority files unchanged; no secrets, Vault, backend or deployment workflow introduced.",
+  "files": [
+    {
+      "path": "WEBLyvra/prechange/sites-v13/.openai/hosting.json",
+      "bytes": 106,
+      "sha256": "d48444c6af349386d2b990258987548730928250ac837260a48a58475283a02c",
+      "git_sha": "aaa2796ea33a4764347cc185e13686744dc6d8da"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/app.js",
+      "bytes": 5553,
+      "sha256": "a45d1e73b763a0f48d2d7f528d954cbe506e2dcde2a55495db94799a04cb4905",
+      "git_sha": "aac04d76725b896d35edb1319f87278ec31b6ff5"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/brand-alien-emblem.webp",
+      "bytes": 258470,
+      "sha256": "e77029e97e06d010a82e88095437e1302dc217f38472544dd05b896edaf894b6",
+      "git_sha": "88ea546e35782eb447d96fbbc93bbc7ad16f6504"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/brand-chrome-emblem.webp",
+      "bytes": 309850,
+      "sha256": "73d254660e2ba84261b31734d6d8fa0703502dd53aa2a7aabc5458bcda576a9d",
+      "git_sha": "84e84e7e4964485f9e3de40b76d15d3b8902641c"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/brand-cosmos-mascot.webp",
+      "bytes": 245660,
+      "sha256": "24088d2b44954128d5729a6c1d8707b6fd177b93628bd714db506170397ff025",
+      "git_sha": "ad2e3406ff325b45c1c0982a287c16979730f9b6"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/favicon-180.png",
+      "bytes": 58298,
+      "sha256": "b22bfb2c9e5fa81aff745cf4a7a2fb0d5c979d9fcbe77c1828eaba327a43db14",
+      "git_sha": "bacde48744df9999fe9e08e924290135a31f8400"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/favicon-32.png",
+      "bytes": 2595,
+      "sha256": "b979ebd9b90ab4d5b3333552c65bb5d405bdee2fd614a391e7955d9746800a1f",
+      "git_sha": "3cff907916fa2158f131372e485581d7c088ec10"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/favicon-64.png",
+      "bytes": 8815,
+      "sha256": "0750a429e8696d85f1b7882efdf9582b44903d53ccd50a4217729e93426fdf20",
+      "git_sha": "692bb4f42dec8a61729d431e4935fc5868862868"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/footer-universe.webp",
+      "bytes": 211348,
+      "sha256": "81f9746e603dde24cc6f161c63bbc6e73efeca72a63f8f274d76776ee21e2047",
+      "git_sha": "37de3cbfbf05bfd50dd39e2a632e5e1a4015c729"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/header-universe.webp",
+      "bytes": 280040,
+      "sha256": "cd6108a30c8a8b97d4fd3a08123a99087b1e676710fb8881c71bb9da5e638fb7",
+      "git_sha": "8acc3a7d579e0c20d5f434eae86bf63bbb819814"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/home-universe.webp",
+      "bytes": 393718,
+      "sha256": "ba37c2db9707ce8aa236eb57b27d52065b6563b3f4521e5e3e67e67228eff9f8",
+      "git_sha": "a46822f8445579272053b45cdc294806be2e5b3b"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/logo-chrome.webp",
+      "bytes": 566622,
+      "sha256": "c1f9c2b6bb2c71413a2ddb13aa964ac60699c94bf3263cd1e3ca3441cef6f38f",
+      "git_sha": "5a7a94c1d3859b5a8a1f0468348e8b512fa7b324"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/logo-life-tree.webp",
+      "bytes": 190444,
+      "sha256": "1aa74209076b8fcdbfdf0e797b51a909079c1994a36cb95aa1d64a0e0e7aa43b",
+      "git_sha": "08393ad9f19f4d9ac694f3d92eb07850ad23eead"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/mascot-life-tree.webp",
+      "bytes": 124328,
+      "sha256": "68165165a3529968f217680efbf5cde55195592f2c8e76635403e7739e2ae52c",
+      "git_sha": "406b2e939db214653e34f398d262b664c9d143e9"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/mascot-resonance.webp",
+      "bytes": 92888,
+      "sha256": "9ba937c5dbcd9ed05a6fa6e01fabb75976c693d20b0e7f8028ebda9cdd3b3275",
+      "git_sha": "6ff56d576c2dbaf4d15e75a2c71f54ca0640c646"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/site-background.webp",
+      "bytes": 269996,
+      "sha256": "b17dffdc29649be645712db62ca1953a7825e5c6220b93299f5f451e81004a6d",
+      "git_sha": "6741c0ad878413e5ed7543f8c9956dee6a788f02"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/assets/tab-symbol.webp",
+      "bytes": 176784,
+      "sha256": "90b12db633b72b00f9a1631aacffd987dc2e4dbd4988025074ce48e4a577eadb",
+      "git_sha": "9eec90556e1b9d77e62456b46a233fcfcd0d77c6"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/aurora.webp",
+      "bytes": 235864,
+      "sha256": "32250f2799d98210c167067136f34edb7e2a1c1c35bfc7f0e4a87aee79874d4b",
+      "git_sha": "3f3fe53df2ab65b7e03061d10091b9ef528616d1"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/brand-art.css",
+      "bytes": 693,
+      "sha256": "27ce817814c258b80c6aec7d87b2d290c7cf5518b29f3f044488d181cf91e12f",
+      "git_sha": "8c6927e8b54c04fd632556f54f20260664adf54e"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/brand-art.js",
+      "bytes": 2345,
+      "sha256": "022b4f16df8e30ec522ac44c5ba794841070a43c63fabf321cefab829cecf5f4",
+      "git_sha": "80da6709c93632f4b290508165c2f6356c1e78c2"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/chat-demo.css",
+      "bytes": 2471,
+      "sha256": "2ed2c3f7c8e5f00e6d518a8fc170cc0c697d167674ae7599400d9322feeb360b",
+      "git_sha": "9d15ecc7e564d93711db068c4802e7db2b0b2209"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/chat-demo.js",
+      "bytes": 6485,
+      "sha256": "86fcea88701b058fea611b0c042fe9f1fbcf8d599a6e419092fa8d7692678ffa",
+      "git_sha": "b0aecb7c203ebdeb44cf645f894b647c5a124a05"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/dynasty-data.js",
+      "bytes": 14429,
+      "sha256": "de7afae6e22849113400fe094690c8e42c060a1a09182a3f2e43443c76c657ec",
+      "git_sha": "5bbd9a5ea28176544f57e6f2338652a242364462"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/dynasty.css",
+      "bytes": 6539,
+      "sha256": "81e0f65705ff342a4b11854ec329a6aa4a6bcbcc3481633d6545b62002afbd2d",
+      "git_sha": "ca030cc74c6aa56bf8450173b4e86c1ef8d1c8eb"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/dynasty.js",
+      "bytes": 9489,
+      "sha256": "213844e08d5a01eb030e53ed67b02c46aa30703bff300593ffb7efc4afb0a915",
+      "git_sha": "32816109ccc86576caf58f043f6455112a2d6552"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/evolution-status.css",
+      "bytes": 2093,
+      "sha256": "3445e88ad65aefa60c15987ee3f6ec6ea0d7f3efe65b9a2d1de07f5f0033069b",
+      "git_sha": "b1e4b001766409bf579f076747aa6ddbb6113440"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/explorer-data.js",
+      "bytes": 12083,
+      "sha256": "08b489d8dd887f8e97bf0de17630956a5047273c802abdfadb6b82706a86f7ef",
+      "git_sha": "90049ddd37796c69193e9586938289374f04dccc"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/explorers.css",
+      "bytes": 2884,
+      "sha256": "07c3ae989981ddd51ff9b56bd4750aab9a78c3e1af1156df9382009fac2d2f12",
+      "git_sha": "6fd4a3ac1fc1a486161526fc085f6db2c15ad170"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/explorers.js",
+      "bytes": 11906,
+      "sha256": "fe3abca94d78f9178701b6cb19be07dda877111c278acad096c24afae394bc8c",
+      "git_sha": "5002f3f5abc0d070867a6628c5262b1bd8c6057d"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/i18n.js",
+      "bytes": 18935,
+      "sha256": "37d7e18f311c3c809c3a1f174d832e11972bee9c3c9054779720de66e5d738c7",
+      "git_sha": "c0c224f875da8337a0cb953e5ad2341d9f19184d"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/index.html",
+      "bytes": 18372,
+      "sha256": "6bbfe64365e46db67bc442cdeada91260887b0b0e26fe8a325b339465fa0aa7e",
+      "git_sha": "93e8bc6ad644c3ce8431d741fe46467b63814e66"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/privacy/index.html",
+      "bytes": 14808,
+      "sha256": "8c56ec592fc938bfbd6364b227d984ddcce922d91c4a824f8b612255e586d1d0",
+      "git_sha": "7dc8a7ffeb0b3289e7fd344971d73bf4e80120ce"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/privacy/privacy-data.js",
+      "bytes": 21267,
+      "sha256": "47c74b9e20c26d4380bedeb6ee680d9fc920725e2d5ae788e2cc3cbd3acb7788",
+      "git_sha": "6d152ec74b88cac4f7b842420551f59f7c74fa14"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/privacy/privacy.css",
+      "bytes": 972,
+      "sha256": "2948af48df8779ea3a6ccb30c4d1cd58ec00a13e3f4ab35dc8e5e953e9d1d91c",
+      "git_sha": "33ab2a6d4a121d890c1a4f0b8d8100f46a7bb27f"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/privacy/privacy.js",
+      "bytes": 1781,
+      "sha256": "1bf78b1df158fdec47abbaf0ed6a2104c54bba2806fe160b75683302dca9ba52",
+      "git_sha": "3c00087dd21c58599d295d0ec48e7aa107737baa"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/dist/styles.css",
+      "bytes": 23042,
+      "sha256": "4eda490167462a8b890420995a948875ec3e4cde5156ff0ba3a1b6ba4649fc3b",
+      "git_sha": "726f8e1ebf6a8bccae4dc0274d919c06d715b64f"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_ADDITIVE_001_EVOLUTION_DRAFT.md",
+      "bytes": 3398,
+      "sha256": "19bf7b8d827b1c637a8a268bc7b059ab859f4daed4e1385f368d66223c6633f0",
+      "git_sha": "99d3af13eea739952a85a071b304ab524657f6ee"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_ADDONS_002_006_REPORT.md",
+      "bytes": 5110,
+      "sha256": "8f5dd6d436f8a21fec9a92e12fce7cadd7327ea3e37a984fe0c1ad86e6a32654",
+      "git_sha": "e60e0e94aaf52ae4e70c75c3c4db4fb1606d7fd5"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_BRAND_ART_v13.md",
+      "bytes": 943,
+      "sha256": "6e3deaaa0bde32a3d4fd388a761bfcd0d5f42e2c0913a3181dc3adf8e2c18d7b",
+      "git_sha": "8e5de6a2355ece02cf10f40ffd5d2f0b516d6500"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_CHAT_DEMO_DRAFT.md",
+      "bytes": 2446,
+      "sha256": "cbcf5d0ca17342f5480a126506a43a82fb2d2148f6fde60726ca39918fdb70ae",
+      "git_sha": "bb12c28787c166e3d1e8813d635c1a94814aaded"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_DYNASTY_RELEASE.md",
+      "bytes": 3279,
+      "sha256": "23941d99e5c8c66f0eb5868ac36a9e73047453a2522983b0c6c3d03d137c6d55",
+      "git_sha": "afcbc39f636bdc0ddc5f02c6943a09d31dbfb606"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_EXPORT_README.md",
+      "bytes": 5546,
+      "sha256": "c37628e3a8e05b9666fe8a1f3943a8a50ab3f91f11b1e3c42a59c58bcd1fd2f6",
+      "git_sha": "3c146e570fda6eb64bd8ec3bf62dc3d694838cbc"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_EXPORT_TEST_RESULTS.json",
+      "bytes": 408,
+      "sha256": "ecd2d450ba4dbe34cfbd2ad2bb4fdf7361e5d81f4a9ab64e1f7badff3f4161a7",
+      "git_sha": "7ef67dcc6102820b5880c5b7c6ba6df6f942733a"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_GPT_CONNECTION_PRIVACY_DRAFT.md",
+      "bytes": 2429,
+      "sha256": "67c2918f171b286ef1325cab0a56b602ab7e00ae0d8cd3ef03f589a846390e97",
+      "git_sha": "315aa272d942f1f8d1cfb3c94e69103dea92be63"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/docs/WEBLYVRA_PRIVACY_DRAFT.md",
+      "bytes": 4524,
+      "sha256": "6f5d00d3717d010d4821e0866a6df87337295e590c10cc376678882cf737ce90",
+      "git_sha": "d83c5abc67f5fb1c33c6731b380da9b365706b88"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/scripts/export-project.py",
+      "bytes": 1870,
+      "sha256": "8b01c6e3e8fbf26d2631b6b96be6c1f25a62b57fa1f1816c34ab98c7ad703bfd",
+      "git_sha": "20265a7b5542b504fc200b2e51c29d4bc8361096"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/tests/preservation-baseline.json",
+      "bytes": 168,
+      "sha256": "443d416ca7d2401580c1607f317f1872b0fa15a5a4d8ba0ee1c47301229cf176",
+      "git_sha": "6022876b70874d02f0864cbe78f673fd5c702a70"
+    },
+    {
+      "path": "WEBLyvra/prechange/sites-v13/tests/verify-explorers.cjs",
+      "bytes": 6864,
+      "sha256": "a89e516f77cd5ebddab1fe175c199e3ded4540024a5477a1a0c2cc62778d95f6",
+      "git_sha": "0db8435e3d8dfb14faf346000042970502299ffe"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/.openai/hosting.json",
+      "bytes": 106,
+      "sha256": "d48444c6af349386d2b990258987548730928250ac837260a48a58475283a02c",
+      "git_sha": "aaa2796ea33a4764347cc185e13686744dc6d8da"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/app.js",
+      "bytes": 5553,
+      "sha256": "a45d1e73b763a0f48d2d7f528d954cbe506e2dcde2a55495db94799a04cb4905",
+      "git_sha": "aac04d76725b896d35edb1319f87278ec31b6ff5"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/brand-alien-emblem.webp",
+      "bytes": 258470,
+      "sha256": "e77029e97e06d010a82e88095437e1302dc217f38472544dd05b896edaf894b6",
+      "git_sha": "88ea546e35782eb447d96fbbc93bbc7ad16f6504"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/brand-chrome-emblem.webp",
+      "bytes": 309850,
+      "sha256": "73d254660e2ba84261b31734d6d8fa0703502dd53aa2a7aabc5458bcda576a9d",
+      "git_sha": "84e84e7e4964485f9e3de40b76d15d3b8902641c"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/brand-cosmos-mascot.webp",
+      "bytes": 245660,
+      "sha256": "24088d2b44954128d5729a6c1d8707b6fd177b93628bd714db506170397ff025",
+      "git_sha": "ad2e3406ff325b45c1c0982a287c16979730f9b6"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/favicon-180.png",
+      "bytes": 58298,
+      "sha256": "b22bfb2c9e5fa81aff745cf4a7a2fb0d5c979d9fcbe77c1828eaba327a43db14",
+      "git_sha": "bacde48744df9999fe9e08e924290135a31f8400"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/favicon-32.png",
+      "bytes": 2595,
+      "sha256": "b979ebd9b90ab4d5b3333552c65bb5d405bdee2fd614a391e7955d9746800a1f",
+      "git_sha": "3cff907916fa2158f131372e485581d7c088ec10"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/favicon-64.png",
+      "bytes": 8815,
+      "sha256": "0750a429e8696d85f1b7882efdf9582b44903d53ccd50a4217729e93426fdf20",
+      "git_sha": "692bb4f42dec8a61729d431e4935fc5868862868"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/footer-universe.webp",
+      "bytes": 211348,
+      "sha256": "81f9746e603dde24cc6f161c63bbc6e73efeca72a63f8f274d76776ee21e2047",
+      "git_sha": "37de3cbfbf05bfd50dd39e2a632e5e1a4015c729"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/header-universe.webp",
+      "bytes": 280040,
+      "sha256": "cd6108a30c8a8b97d4fd3a08123a99087b1e676710fb8881c71bb9da5e638fb7",
+      "git_sha": "8acc3a7d579e0c20d5f434eae86bf63bbb819814"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/home-universe.webp",
+      "bytes": 393718,
+      "sha256": "ba37c2db9707ce8aa236eb57b27d52065b6563b3f4521e5e3e67e67228eff9f8",
+      "git_sha": "a46822f8445579272053b45cdc294806be2e5b3b"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/logo-chrome.webp",
+      "bytes": 566622,
+      "sha256": "c1f9c2b6bb2c71413a2ddb13aa964ac60699c94bf3263cd1e3ca3441cef6f38f",
+      "git_sha": "5a7a94c1d3859b5a8a1f0468348e8b512fa7b324"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/logo-life-tree.webp",
+      "bytes": 190444,
+      "sha256": "1aa74209076b8fcdbfdf0e797b51a909079c1994a36cb95aa1d64a0e0e7aa43b",
+      "git_sha": "08393ad9f19f4d9ac694f3d92eb07850ad23eead"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/mascot-life-tree.webp",
+      "bytes": 124328,
+      "sha256": "68165165a3529968f217680efbf5cde55195592f2c8e76635403e7739e2ae52c",
+      "git_sha": "406b2e939db214653e34f398d262b664c9d143e9"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/mascot-resonance.webp",
+      "bytes": 92888,
+      "sha256": "9ba937c5dbcd9ed05a6fa6e01fabb75976c693d20b0e7f8028ebda9cdd3b3275",
+      "git_sha": "6ff56d576c2dbaf4d15e75a2c71f54ca0640c646"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/site-background.webp",
+      "bytes": 269996,
+      "sha256": "b17dffdc29649be645712db62ca1953a7825e5c6220b93299f5f451e81004a6d",
+      "git_sha": "6741c0ad878413e5ed7543f8c9956dee6a788f02"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/assets/tab-symbol.webp",
+      "bytes": 176784,
+      "sha256": "90b12db633b72b00f9a1631aacffd987dc2e4dbd4988025074ce48e4a577eadb",
+      "git_sha": "9eec90556e1b9d77e62456b46a233fcfcd0d77c6"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/aurora.webp",
+      "bytes": 235864,
+      "sha256": "32250f2799d98210c167067136f34edb7e2a1c1c35bfc7f0e4a87aee79874d4b",
+      "git_sha": "3f3fe53df2ab65b7e03061d10091b9ef528616d1"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/brand-art.css",
+      "bytes": 693,
+      "sha256": "27ce817814c258b80c6aec7d87b2d290c7cf5518b29f3f044488d181cf91e12f",
+      "git_sha": "8c6927e8b54c04fd632556f54f20260664adf54e"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/brand-art.js",
+      "bytes": 2345,
+      "sha256": "022b4f16df8e30ec522ac44c5ba794841070a43c63fabf321cefab829cecf5f4",
+      "git_sha": "80da6709c93632f4b290508165c2f6356c1e78c2"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/chat-demo.css",
+      "bytes": 2471,
+      "sha256": "2ed2c3f7c8e5f00e6d518a8fc170cc0c697d167674ae7599400d9322feeb360b",
+      "git_sha": "9d15ecc7e564d93711db068c4802e7db2b0b2209"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/chat-demo.js",
+      "bytes": 6485,
+      "sha256": "86fcea88701b058fea611b0c042fe9f1fbcf8d599a6e419092fa8d7692678ffa",
+      "git_sha": "b0aecb7c203ebdeb44cf645f894b647c5a124a05"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/dynasty-data.js",
+      "bytes": 14429,
+      "sha256": "de7afae6e22849113400fe094690c8e42c060a1a09182a3f2e43443c76c657ec",
+      "git_sha": "5bbd9a5ea28176544f57e6f2338652a242364462"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/dynasty.css",
+      "bytes": 6539,
+      "sha256": "81e0f65705ff342a4b11854ec329a6aa4a6bcbcc3481633d6545b62002afbd2d",
+      "git_sha": "ca030cc74c6aa56bf8450173b4e86c1ef8d1c8eb"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/dynasty.js",
+      "bytes": 9489,
+      "sha256": "213844e08d5a01eb030e53ed67b02c46aa30703bff300593ffb7efc4afb0a915",
+      "git_sha": "32816109ccc86576caf58f043f6455112a2d6552"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/evolution-status.css",
+      "bytes": 2093,
+      "sha256": "3445e88ad65aefa60c15987ee3f6ec6ea0d7f3efe65b9a2d1de07f5f0033069b",
+      "git_sha": "b1e4b001766409bf579f076747aa6ddbb6113440"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/explorer-data.js",
+      "bytes": 12083,
+      "sha256": "08b489d8dd887f8e97bf0de17630956a5047273c802abdfadb6b82706a86f7ef",
+      "git_sha": "90049ddd37796c69193e9586938289374f04dccc"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/explorers.css",
+      "bytes": 2884,
+      "sha256": "07c3ae989981ddd51ff9b56bd4750aab9a78c3e1af1156df9382009fac2d2f12",
+      "git_sha": "6fd4a3ac1fc1a486161526fc085f6db2c15ad170"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/explorers.js",
+      "bytes": 11906,
+      "sha256": "fe3abca94d78f9178701b6cb19be07dda877111c278acad096c24afae394bc8c",
+      "git_sha": "5002f3f5abc0d070867a6628c5262b1bd8c6057d"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/i18n.js",
+      "bytes": 18935,
+      "sha256": "37d7e18f311c3c809c3a1f174d832e11972bee9c3c9054779720de66e5d738c7",
+      "git_sha": "c0c224f875da8337a0cb953e5ad2341d9f19184d"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/index.html",
+      "bytes": 18372,
+      "sha256": "6bbfe64365e46db67bc442cdeada91260887b0b0e26fe8a325b339465fa0aa7e",
+      "git_sha": "93e8bc6ad644c3ce8431d741fe46467b63814e66"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/privacy/index.html",
+      "bytes": 14776,
+      "sha256": "7d4dc0dc958fbbf356a64a1e9187a9781075be06be954c62dcc6397207a0e34f",
+      "git_sha": "744e35fee3cfa05069f37bc4add4a1cc3a988feb"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/privacy/privacy-data.js",
+      "bytes": 21313,
+      "sha256": "7e03c928f836e543fc9edf51e406cec27ab69849f7327c16ee3186f28287fe60",
+      "git_sha": "00b7c615feba3ddfa3418b7d715e1f5ff598da7b"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/privacy/privacy.css",
+      "bytes": 972,
+      "sha256": "2948af48df8779ea3a6ccb30c4d1cd58ec00a13e3f4ab35dc8e5e953e9d1d91c",
+      "git_sha": "33ab2a6d4a121d890c1a4f0b8d8100f46a7bb27f"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/privacy/privacy.js",
+      "bytes": 1982,
+      "sha256": "2711d6441b2886c9e737e475615a97e7205f6cd1b286e305569f8b1fa3c3c786",
+      "git_sha": "bde2aafdceceea1a5f824765f5aa259b5d9c96ac"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/dist/styles.css",
+      "bytes": 23042,
+      "sha256": "4eda490167462a8b890420995a948875ec3e4cde5156ff0ba3a1b6ba4649fc3b",
+      "git_sha": "726f8e1ebf6a8bccae4dc0274d919c06d715b64f"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_ADDITIVE_001_EVOLUTION_DRAFT.md",
+      "bytes": 3398,
+      "sha256": "19bf7b8d827b1c637a8a268bc7b059ab859f4daed4e1385f368d66223c6633f0",
+      "git_sha": "99d3af13eea739952a85a071b304ab524657f6ee"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_ADDONS_002_006_REPORT.md",
+      "bytes": 5110,
+      "sha256": "8f5dd6d436f8a21fec9a92e12fce7cadd7327ea3e37a984fe0c1ad86e6a32654",
+      "git_sha": "e60e0e94aaf52ae4e70c75c3c4db4fb1606d7fd5"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_BRAND_ART_v13.md",
+      "bytes": 943,
+      "sha256": "6e3deaaa0bde32a3d4fd388a761bfcd0d5f42e2c0913a3181dc3adf8e2c18d7b",
+      "git_sha": "8e5de6a2355ece02cf10f40ffd5d2f0b516d6500"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_CHAT_DEMO_DRAFT.md",
+      "bytes": 2446,
+      "sha256": "cbcf5d0ca17342f5480a126506a43a82fb2d2148f6fde60726ca39918fdb70ae",
+      "git_sha": "bb12c28787c166e3d1e8813d635c1a94814aaded"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_DEEP_AUDIT_FREEZE_v1.0.0.md",
+      "bytes": 4744,
+      "sha256": "5cdcb01fa78e9295667fc9f8a756b5128c6a17a0de1446d69069d894cfec2fb9",
+      "git_sha": "148c284bdab0891bdf7720acee354d5d0563e5f4"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_DYNASTY_RELEASE.md",
+      "bytes": 3279,
+      "sha256": "23941d99e5c8c66f0eb5868ac36a9e73047453a2522983b0c6c3d03d137c6d55",
+      "git_sha": "afcbc39f636bdc0ddc5f02c6943a09d31dbfb606"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_EXPORT_README.md",
+      "bytes": 3180,
+      "sha256": "358b03587468634c9edbec206848439844f1468daa36a4a7d447b12cd4f5c8e6",
+      "git_sha": "169cc30e8fae2f898f0c58e2e4318a7dda547acf"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_EXPORT_TEST_RESULTS.json",
+      "bytes": 408,
+      "sha256": "ecd2d450ba4dbe34cfbd2ad2bb4fdf7361e5d81f4a9ab64e1f7badff3f4161a7",
+      "git_sha": "7ef67dcc6102820b5880c5b7c6ba6df6f942733a"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_GPT_CONNECTION_PRIVACY_DRAFT.md",
+      "bytes": 2429,
+      "sha256": "67c2918f171b286ef1325cab0a56b602ab7e00ae0d8cd3ef03f589a846390e97",
+      "git_sha": "315aa272d942f1f8d1cfb3c94e69103dea92be63"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/docs/WEBLYVRA_PRIVACY_DRAFT.md",
+      "bytes": 4524,
+      "sha256": "6f5d00d3717d010d4821e0866a6df87337295e590c10cc376678882cf737ce90",
+      "git_sha": "d83c5abc67f5fb1c33c6731b380da9b365706b88"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/scripts/export-project.py",
+      "bytes": 3127,
+      "sha256": "e6b2f9470e84b3361f7d20d10d3e5417406cbf7bcedcc91001b3cf848a98c142",
+      "git_sha": "f71f94f35809b6fa222062d8f2f8a23423b24670"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/tests/audit_static.py",
+      "bytes": 4234,
+      "sha256": "f36427f15c04cc2716aa29a5f3b1f164c8321d291a2ca9c4eff4f7bfdd41c3c5",
+      "git_sha": "540bd63ffd3e38d29961c4be2e537a3444b632ea"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/tests/preservation-baseline.json",
+      "bytes": 168,
+      "sha256": "443d416ca7d2401580c1607f317f1872b0fa15a5a4d8ba0ee1c47301229cf176",
+      "git_sha": "6022876b70874d02f0864cbe78f673fd5c702a70"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/tests/verify-explorers.cjs",
+      "bytes": 6864,
+      "sha256": "a89e516f77cd5ebddab1fe175c199e3ded4540024a5477a1a0c2cc62778d95f6",
+      "git_sha": "0db8435e3d8dfb14faf346000042970502299ffe"
+    },
+    {
+      "path": "WEBLyvra/releases/v1.0.0/project/tests/verify-runtime.cjs",
+      "bytes": 4943,
+      "sha256": "86f10eeee9cbf04231f90617f825e8bffe5022be464d6ac95222ad55c2e4e20d",
+      "git_sha": "bc53bc34c67746f3b4e1ab3d6a2046b257bad7cd"
+    }
+  ]
+}

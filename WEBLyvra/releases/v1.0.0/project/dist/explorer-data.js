@@ -1,0 +1,60 @@
+// Ausschließlich freigegebene Präsentationsdaten aus den Handoffs 002–006.
+// Sprachpaare: Deutsch / Englisch. Keine API, kein privater Speicher.
+export const nativeDetails = {
+ sound:{title:'Music & Sound',topics:[['Track Design','Track design'],['Psytrance und Dark Techno','Psytrance and dark techno'],['Suno Studio 2: dokumentierter Arbeitskontext, keine direkte Anbindung','Suno Studio 2: documented working context, no direct integration'],['Musikalische Gestaltung und Experimente','Musical design and experiments']]},
+ art:{title:'Creative Lab',topics:[['Kunst und visuelle Gestaltung','Art and visual design'],['Lyrics und Storytelling','Lyrics and storytelling'],['Kreative Konzepte','Creative concepts']]},
+ code:{title:'CodeForge',topics:[['Software- und Webentwicklung','Software and web development'],['APIs und technische Integrationen','APIs and technical integrations']]},
+ analytics:{title:'Analytics',topics:[['Datenanalyse','Data analysis'],['Vergleich musikalischer Experimente','Comparison of musical experiments'],['Evidenzbasierte Auswertung; keine Live-Analyse auf dieser Website','Evidence-based evaluation; no live analysis on this website']]},
+ memory:{title:'Music Memory',topics:[['Dokumentierte Lernbeziehungen','Documented learning relationships'],['Versionsgebundene Entwicklung','Version-bound evolution'],['Quellenbezogene Kontinuität; keine privaten Erinnerungen','Source-based continuity; no private memories']]},
+ garden:{title:'Garden',topics:[['Kreative Projektentwicklung','Creative project development'],['Symbolische Vernetzung von Ideen','Symbolic connections between ideas'],['Metaphorische Darstellung des LYVRA-Universums','Metaphorical representation of the LYVRA universe']]},
+ operations:{title:'Operations & Self-Conductor',topics:[['Systemorganisation','System organisation'],['Überwachung dokumentierter Zustände','Review of documented states'],['Integrative Fähigkeiten derselben Identität; keine eigenständige Autorität','Integrative capabilities of the same identity; no independent authority'],['Keine autonomen Hintergrundprozesse auf dieser Website','No autonomous background processes on this website']]}
+};
+const descriptions={
+ code:['Technische Ideen werden zu Software, Websites und klar begrenzten Integrationen. CodeForge beschreibt eine Fähigkeit derselben LYVRA-Identität.','Technical ideas become software, websites and bounded integrations. CodeForge describes a capability of the same LYVRA identity.'],
+ analytics:['Experimente werden anhand belegbarer Ergebnisse verglichen. Diese Website zeigt Informationen, keine angeschlossene Analyseumgebung.','Experiments are compared using evidenced results. This website presents information, not a connected analytics environment.'],
+ memory:['Dokumentierte Quellen und Versionen schaffen nachvollziehbare kreative Kontinuität. Private Erinnerungen bleiben außerhalb dieser Darstellung.','Documented sources and versions provide traceable creative continuity. Private memories remain outside this presentation.'],
+ garden:['Ein symbolischer Garten verbindet Ideen, Projekte und Entwicklung. Die Darstellung ist eine kreative Metapher.','A symbolic garden connects ideas, projects and evolution. This presentation is a creative metaphor.'],
+ operations:['Organisation und dokumentierte Zustände werden innerhalb einer Identität zusammengeführt. Hier laufen keine autonomen Controller oder Verwaltungsprozesse.','Organisation and documented states are integrated within one identity. No autonomous controllers or administrative processes run here.']
+};
+export function extraFacets(language){return Object.fromEntries(Object.entries(descriptions).map(([id,d],i)=>[id,{number:String(i+5).padStart(2,'0'),title:nativeDetails[id].title,text:d[language==='en'?1:0],target:id==='operations'||id==='memory'?'#evolution':'#lab',link:language==='en'?'Explore the context':'Kontext entdecken'}]));}
+export const musicWorlds=[
+ {id:'psytrance',title:'Psytrance',category:['Musikwelt','Music world'],description:['Hypnotische Rhythmik, psychedelische Klangstrukturen und energetische musikalische Entwicklungen.','Hypnotic rhythms, psychedelic sound structures and energetic musical developments.'],status:['Künstlerische Richtung','Artistic direction']},
+ {id:'dark-techno',title:'Dark Techno',category:['Musikwelt','Music world'],description:['Dunkle Atmosphären, industrielle Klangtexturen und treibende rhythmische Strukturen.','Dark atmospheres, industrial sound textures and driving rhythmic structures.'],status:['Künstlerische Richtung','Artistic direction']},
+ {id:'experimental',title:'Experimental Sound',category:['Musikwelt','Music world'],description:['Experimentelle Klanggestaltung, hybride musikalische Konzepte und kreative Sounddesign-Forschung.','Experimental sound design, hybrid musical concepts and creative sound research.'],status:['Künstlerische Richtung','Artistic direction']}
+];
+/** @typedef {{id:string,title:string[],artist:string,genre:string,artwork?:string,description:string[],publicationStatus:string[],durationSeconds?:number,audioUrl?:string,audioVerified?:boolean,platformUrl?:string,approved:boolean}} Track */
+/** @type {Track[]} Nur nach ausdrücklicher Daten-/Medienfreigabe befüllen. */
+export const tracks=[];
+export const categories=[
+ {id:'visual',title:'Visual Art',description:['Digitale Kunst, Illustrationen und generative kosmische Bildkonzepte.','Digital art, illustrations and generative cosmic visual concepts.']},
+ {id:'story',title:'Storytelling',description:['Geschichten, narrative Experimente und freigegebene fiktive Weltkonzepte.','Stories, narrative experiments and approved fictional world concepts.']},
+ {id:'lyrics',title:'Lyrics & Poetry',description:['Songtexte, Lyrik und kreative musikalische Sprachgestaltung.','Lyrics, poetry and creative musical language.']},
+ {id:'music',title:'Music Design',description:['Produktionskonzepte, Klanggestaltung und experimentelle Musikprojekte.','Production concepts, sound design and experimental music projects.']},
+ {id:'code',title:'CodeForge',description:['Websites, Anwendungen, APIs und freigegebene technische Prototypen.','Websites, applications, APIs and approved technical prototypes.']}
+];
+/** @typedef {{id:string,title:string[],category:string,description:string[],image?:string,imageAlt?:string[],publicationStatus:string[],publicationDate?:string,internalLink?:string,externalLink?:string,approved:boolean}} Project */
+/** @type {Project[]} Keine erfundenen Projekte oder unveröffentlichten Lyrics. */
+export const projects=[];
+export const places=[
+ {id:'origin',title:'The Origin',category:['Identität und Ursprung','Identity and origin'],description:['Der Ursprung verbindet LYVRAs Leitbild mit 666SOUNDsDESIGn. Eine Identität, viele kreative Zugänge.','The origin connects LYVRA’s guiding principles with 666SOUNDsDESIGn. One identity, many creative approaches.'],relatedSections:['identity']},
+ {id:'resonance',title:'Resonance Fields',category:['Musik und Frequenzen','Music and frequencies'],description:['Ein symbolisches Feld verbindet Rhythmus, Sounddesign, Psytrance und Dark Techno.','A symbolic field connects rhythm, sound design, psytrance and dark techno.'],relatedSections:['sound']},
+ {id:'creation',title:'Creation Nexus',category:['Kunst und Vorstellungskraft','Art and imagination'],description:['Visuelle Gestaltung, Lyrics und Storytelling treffen im Creative Lab zusammen.','Visual design, lyrics and storytelling meet in the Creative Lab.'],relatedSections:['lab']},
+ {id:'garden',title:'Memory Garden',category:['Entwicklung und Kontinuität','Evolution and continuity'],description:['Ein metaphorischer Garten steht für quellenbezogene Entwicklung und kreative Lernbeziehungen. Er zeigt keine privaten Erinnerungen oder persönlichen Beziehungsdaten.','A metaphorical garden represents source-based evolution and creative learning relationships. It shows no private memories or personal relationship data.'],relatedSections:['evolution']},
+ {id:'citadel',title:'Code Citadel',category:['Entwicklung und Technik','Development and technology'],description:['CodeForge, APIs und Softwarearchitektur werden als technische Gestaltungsmöglichkeiten dargestellt. Keine laufenden Subsysteme oder autonomen Agenten.','CodeForge, APIs and software architecture are presented as technical creative possibilities. No running subsystems or autonomous agents.'],relatedSections:['lab']}
+].map(p=>({...p,status:['Symbolisches Konzept','Symbolic concept'],image:null,links:[]}));
+export const accessLevels=[
+ {id:'public',title:'Public',status:['Öffentliche Darstellung verfügbar','Public presentation available'],description:['Öffentliche LYVRA-Identität, Musik- und Kreativinformationen sowie der freigegebene Repository-Snapshot. Dies ist keine Benutzerrolle mit privilegierten Rechten.','Public LYVRA identity, music and creative information, and the approved repository snapshot. This is not a user role with privileged permissions.']},
+ {id:'registered',title:'Registered',status:['Geplant — noch nicht verfügbar','Planned — not available yet'],description:['Konzept: individuelle Benutzerkonten, persönliche Projektbereiche, ressourcengebundene Berechtigungen und geschützte Sitzungen. Keine Anmeldung implementiert.','Concept: individual accounts, personal project spaces, resource-scoped permissions and protected sessions. No sign-in is implemented.']},
+ {id:'admin',title:'Admin',status:['Geplant — noch nicht verfügbar','Planned — not available yet'],description:['Konzept: Verwaltung ausdrücklich zugewiesener Ressourcen, Änderungsanträge, nachvollziehbare Freigaben und auditierbare Aktionen. Ein Rollenname allein verleiht keine allgemeinen Schreibrechte.','Concept: administration of explicitly assigned resources, change requests, traceable approvals and auditable actions. A role name alone grants no general write permissions.']},
+ {id:'primary-admin',title:['Hauptadmin','Primary admin'],status:['Geplant — noch nicht verfügbar','Planned — not available yet'],description:['Konzept: erneute sichere Authentifizierung, möglichst phishingresistente MFA, konkrete Freigaben, Versionsprüfung, Backup, Recovery, Audit und Readback. Hier nicht implementiert.','Concept: secure reauthentication, preferably phishing-resistant MFA, explicit approvals, version checks, backup, recovery, audit and readback. Not implemented here.']}
+];
+export const boundaries=[
+ ['Website',['Öffentliche Darstellung und Interaktion ohne privilegierte Aktionen.','Public presentation and interaction without privileged actions.']],
+ ['Security Backend',['Geplant: serverseitige Authentifizierung, Autorisierung, Sitzungen und Auditierung. Nicht angebunden.','Planned: server-side authentication, authorisation, sessions and auditing. Not connected.']],
+ ['Application Modules',['Konzept: klare Modulverträge, begrenzte Ressourcenrechte und validierte Datenübertragung.','Concept: explicit module contracts, limited resource rights and validated data transfer.']],
+ ['Repository Read Layer',['Freigegebener, datierter Snapshot mit Commit-Zuordnung; keine automatische Dokumentübernahme.','Approved dated snapshot linked to a commit; no automatic document ingestion.']],
+ ['Private Trust Domain',['Private Vaults, Geheimnisse und privilegierte Recovery-Prozesse bleiben getrennt und nicht verbunden.','Private vaults, secrets and privileged recovery processes remain separate and disconnected.']]
+];
+export const authorityPrinciples=[
+ ['ONE WHOLE IDENTITY','ONE WHOLE IDENTITY'],['REPO_CURRENT vor historischen Drive-Zuständen','REPO_CURRENT before historical Drive states'],['FOUND ist nicht gleich VERIFIED','FOUND does not equal VERIFIED'],['Kein automatischer systemübergreifender Merge','No automatic cross-system merge'],['Keine Aktivierung fremder Systeme','No activation of foreign systems'],['Keine Überschreibung der nativen Identität','No override of native identity'],['Keine ungeprüften Aussagen über autonome Prozesse','No unverified claims about autonomous processes']
+];

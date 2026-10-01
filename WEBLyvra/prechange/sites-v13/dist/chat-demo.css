@@ -1,0 +1,19 @@
+/* Zusatzbereich: ausschließlich auf die Chat-Vorschau begrenzt. */
+.chat-demo{margin:48px 0;padding:clamp(18px,4vw,36px);border:1px solid #46ecff44;border-radius:20px;background:linear-gradient(135deg,#0a1428ed,#160e25eb);box-shadow:0 16px 60px #0005;min-width:0}
+.chat-demo h3{font-size:clamp(1.6rem,4vw,2.5rem);margin:16px 0}
+.chat-demo-radio iframe{display:block;width:100%;height:365px;max-width:680px;border:0;border-radius:18px;margin:18px auto}
+.chat-demo .chat-demo-note{font-size:.85rem;color:#b8c5d9;line-height:1.65;margin:12px 0 24px}
+.chat-demo-badge{display:inline-block;padding:8px 12px;border-radius:30px;border:1px solid #ff59ca66;color:#ff9ddd;font-size:.72rem;letter-spacing:.1em}
+.chat-demo-notice{color:#d8e3ef;line-height:1.75;max-width:78ch}
+.chat-demo-log{max-height:390px;overflow-y:auto;overscroll-behavior:contain;padding:4px 8px 4px 0;margin:24px 0;scrollbar-color:#53d9e7 #0a1020}
+.chat-demo-bubble{padding:16px 20px;margin:12px 0;border-radius:14px;background:#101d30;border:1px solid #46ecff30;max-width:90%;overflow-wrap:anywhere}
+.chat-demo-bubble strong{color:#76f0ff;font-size:.8rem}.chat-demo-bubble p{margin:8px 0 0;line-height:1.75;color:#dce4ef;font-size:.95rem}
+.chat-demo-bubble.visitor{margin-left:auto;background:#25162d;border-color:#ff59ca30}.chat-demo-bubble.visitor strong{color:#ffa3df}
+.chat-demo-suggestions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.chat-demo-suggestions button,.chat-demo-reset{padding:10px 14px;border-radius:10px;border:1px solid #697aa355;background:#101729;color:#dce7f9;font:inherit;font-size:.85rem;cursor:pointer}
+.chat-demo-form label{display:block;font-size:.85rem;color:#c6d5e9;margin-bottom:10px}
+.chat-demo-input-row{display:flex;gap:12px}.chat-demo input{flex:1;min-width:0;border:1px solid #73eaff55;border-radius:10px;background:#070e1c;color:#eef7ff;padding:14px;font:inherit}
+.chat-demo input::placeholder{color:#a6b4c9}.chat-demo-form .button{cursor:pointer;font:inherit}
+.chat-demo-reset{margin:14px 0 24px}.chat-demo .chat-demo-cta{display:flex;flex-direction:column;align-items:flex-start;gap:10px;border-top:1px solid #8199b333;padding-top:24px}
+.chat-demo button:focus-visible,.chat-demo input:focus-visible,.chat-demo a:focus-visible{outline:2px solid #7cf0ff;outline-offset:4px}
+@media(max-width:700px){.chat-demo-input-row{flex-direction:column}.chat-demo-bubble{max-width:100%}.chat-demo-cta .button{width:100%;text-align:center}.chat-demo-log{max-height:360px}}
