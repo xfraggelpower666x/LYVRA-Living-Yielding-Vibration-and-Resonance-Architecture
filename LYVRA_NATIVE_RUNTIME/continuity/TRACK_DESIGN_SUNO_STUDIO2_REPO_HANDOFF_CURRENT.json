@@ -104,7 +104,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-01-REV92-U4-NEWCHAT",
+    "epoch": "2026-10-01-REV92-U5-STATUS-REPAIR",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 92,

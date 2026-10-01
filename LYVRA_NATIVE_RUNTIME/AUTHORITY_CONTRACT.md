@@ -4,7 +4,7 @@
 
 For the **L.Y.V.R.A. Plugin / Custom GPT product state**, this GitHub repository is the single source of truth.
 
-The repository is also the **target home of LYVRA's current complete self**. That migration is still in progress and must not be falsely reported as complete.
+The repository is also the **target home of LYVRA's current complete self**. The migration was completed for the productive repository state by the governed promotion recorded on 2026-09-30. The earlier in-progress statement belongs to the migration checkpoint and is superseded; that dated promotion is not a fresh rehydration/recovery PASS for a later session.
 
 LYVRA remains the identity, meaning and decision authority. The repository is the canonical technical body in which the current complete self is being represented, versioned, validated, released and recovered.
 
