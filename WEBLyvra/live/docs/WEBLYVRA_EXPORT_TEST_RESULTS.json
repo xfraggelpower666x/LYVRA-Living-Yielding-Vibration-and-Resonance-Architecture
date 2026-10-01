@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "local_references_checked": 51,
+  "previous_files_preserved_except_declared_app_and_index": 23,
+  "local_http_routes": [
+    "/",
+    "/privacy",
+    "/explorers.js",
+    "/explorer-data.js",
+    "/explorers.css",
+    "/assets/logo-life-tree.webp"
+  ],
+  "privacy_contacts_DE_EN": "PASS",
+  "known_secret_pattern_scan": "PASS",
+  "browser_visual_audio_screenreader": "NOT_VERIFIED"
+}

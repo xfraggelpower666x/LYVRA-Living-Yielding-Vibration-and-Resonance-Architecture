@@ -1,31 +1,24 @@
-# WEBLyvra — preserved website source
+# WEBLyvra — Website, Live-Quelle und Freeze
 
-One LYVRA identity. This directory preserves the public presentation website; it does not replace native runtime authority.
+Aktueller Freeze: v1.1.0, 01.10.2026. Präsentationsdateien aus veröffentlichter Sites-Version 15 (`498c4b1bc41e53dde3d81d085ca1763e974ba353`). Eine LYVRA-Identität; keine native Authority ersetzt.
 
-Frozen release: v1.0.0, 2026-10-01. Sites version 14, source commit `7560b7e6ea829aefbcb6833107b83934b62a088b`, successfully published at https://lyvra-living-universe.crisp-siren-2613.chatgpt.site .
-
-- `releases/v1.0.0/project/`: exact original static source, assets, configuration, documentation, tests and exporter.
-- `releases/v1.0.0/FREEZE_MANIFEST.json`: source hashes, ZIP checksum and actual verification limits.
-- `prechange/sites-v13/`: complete pre-repair website source.
-- `CURRENT.json`: this website namespace's pointer, published only after release readback. Native LYVRA pointers remain unchanged.
-
-Repository safepoint: `lyvra-backup-pre-weblyvra-20261001` at `a2841aa4e6d6930babd81b7ae974a6d659c51b21`.
-
-## Local start and checks
+- `live/`: vollständige bearbeitbare Website-Quelle, Tests, Dokumentation und Exporter. Statisch aus `live/dist` deploybar.
+- `releases/v1.1.0/`: unveränderlicher neuer Freeze mit Prüfsummen und Auditbericht.
+- `releases/v1.0.0/` und `prechange/sites-v13/`: unverändert erhaltene frühere Sicherungen.
+- `deployment/`: konkrete Cloudflare-Pages-Git-Konfiguration und sichere Domain-Umstellung.
+- `CURRENT.json`: nur WEBLyvra-Release-Zeiger; native LYVRA-Pointer bleiben unberührt.
 
 ```sh
-cd releases/v1.0.0/project
+cd live
 python -m http.server 8080 --directory dist
-# In another terminal from the same project directory:
+# Prüfungen im selben Projektordner:
 python tests/audit_static.py
 node tests/verify-runtime.cjs
 node tests/verify-explorers.cjs
 ```
 
-Open http://localhost:8080/ and http://localhost:8080/privacy/ . This is plain static HTML/CSS/ES modules; no package installation or build is required. Hosting must support directory index routing at `/privacy` and serve `dist` at the domain root. `.openai/hosting.json` documents original Sites hosting; another hosting provider requires its own explicit deployment setup. No GitHub or Cloudflare deployment has been configured here.
+Zieldomain: https://weblyvra.666soundsdesign-broadcaster.com/ . Status: PREPARED_NOT_CONNECTED. Cloudflare-Account, Pages-Projekt, Git-Anbindung und Domain-Umschaltung sind noch nicht verifiziert oder eingerichtet. Noch keine automatische Veröffentlichung aus diesem Repository.
 
-External webradio, Google Fonts and the direct LYVRA-GPT link remain external dependencies. The local chat preview is explicitly a scripted demo, not an API connection. No API secrets or private data are included. See project export README and deep audit report for limits.
+Alle drei automatisierten Prüfgruppen PASS; Browser, realer Ton, Screenreader, öffentliches HTTPS und vollständige rechtliche Prüfung bleiben offen. Webradio, Google Fonts und GPT-Verknüpfung bleiben externe Dienste. Chat ist eine gekennzeichnete lokale Demo, keine Chat-API.
 
-Automated static and headless DOM checks pass, including checks from the unpacked ZIP. Browser visual, real audio, screenreader and full legal audits remain NOT VERIFIED. A successful Sites deployment is not evidence of those checks.
-
-Frozen files are append-only release material. Any future change must be a separately reviewed new release; never overwrite the prechange backup or native runtime files.
+Repository-Safepoint: `lyvra-backup-pre-weblyvra-v1-1-20261001`. Änderungen erst kontrolliert in live, anschließend neuer Freeze. Historische Releases nicht überschreiben. Keine privaten Vaults, Secrets oder neuen Admin-/Backend-Funktionen.

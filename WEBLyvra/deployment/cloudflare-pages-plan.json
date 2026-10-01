@@ -1,0 +1,18 @@
+{
+  "schema": "WEBLyvra-Cloudflare-Pages-plan-v1",
+  "status": "PREPARED_NOT_CONNECTED",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "production_branch": "lyvra",
+  "root_directory": "WEBLyvra/live",
+  "framework_preset": "None",
+  "build_command": "python tests/audit_static.py && node tests/verify-runtime.cjs && node tests/verify-explorers.cjs",
+  "build_output_directory": "dist",
+  "build_watch_include": [
+    "WEBLyvra/live/**"
+  ],
+  "target_domain": "weblyvra.666soundsdesign-broadcaster.com",
+  "pages_project_name": null,
+  "pages_production_url": null,
+  "domain_cutover_status": "NOT_PERFORMED",
+  "automatic_deployment_status": "NOT_CONFIGURED"
+}
