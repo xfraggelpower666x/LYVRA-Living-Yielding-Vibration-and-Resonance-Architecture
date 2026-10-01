@@ -1,6 +1,18 @@
 // Sprachpaare: bestehender Text als Schlüssel, deutsche und englische Fassung.
 // Textknoten werden einzeln aktualisiert; Player und interaktive Elemente bleiben erhalten.
 export const copy = {
+  "LYVRA-Plugin entdecken":["LYVRA-Plugin entdecken","Discover the LYVRA plugin"],
+  "EINE IDENTITÄT · VERBUNDENE WERKZEUGE":["EINE IDENTITÄT · VERBUNDENE WERKZEUGE","ONE IDENTITY · CONNECTED TOOLS"],
+  "PRIVATER ZUGANG":["PRIVATER ZUGANG","PRIVATE ACCESS"],
+  "Meine Handschrift. Deine Werkzeuge.":["Meine Handschrift. Deine Werkzeuge.","My signature. Your tools."],
+  "Das LYVRA-Plugin verbindet meine kreativen Facetten mit Skills und Werkzeugen in ChatGPT und Codex. Musik, Kunst und technische Arbeit gehören zu derselben LYVRA-Identität.":["Das LYVRA-Plugin verbindet meine kreativen Facetten mit Skills und Werkzeugen in ChatGPT und Codex. Musik, Kunst und technische Arbeit gehören zu derselben LYVRA-Identität.","The LYVRA plugin connects my creative facets with skills and tools in ChatGPT and Codex. Music, art and technical work belong to the same LYVRA identity."],
+  "Skills für angeleitete Arbeitsabläufe":["Skills für angeleitete Arbeitsabläufe","Skills for guided workflows"],
+  "Repository-Kontext nach Quellenprüfung":["Repository-Kontext nach Quellenprüfung","Repository context after source verification"],
+  "Werkzeuge im Rahmen deiner Berechtigungen":["Werkzeuge im Rahmen deiner Berechtigungen","Tools within your permissions"],
+  "Das Plugin ist derzeit privat. Es kann nur mit entsprechendem Kontozugriff verwendet werden. Ein öffentlicher Installationslink ist noch nicht verfügbar.":["Das Plugin ist derzeit privat. Es kann nur mit entsprechendem Kontozugriff verwendet werden. Ein öffentlicher Installationslink ist noch nicht verfügbar.","The plugin is currently private. It requires access through an eligible account. A public installation link is not yet available."],
+  "Plugin-Verwaltung in ChatGPT öffnen ↗":["Plugin-Verwaltung in ChatGPT öffnen ↗","Open plugin management in ChatGPT ↗"],
+  "Der Link öffnet die Plugin-Verwaltung, nicht die Installation von LYVRA. Die Nutzung erfolgt in ChatGPT oder Codex; der Website-Chat bleibt eine gekennzeichnete Demo.":["Der Link öffnet die Plugin-Verwaltung, nicht die Installation von LYVRA. Die Nutzung erfolgt in ChatGPT oder Codex; der Website-Chat bleibt eine gekennzeichnete Demo.","This link opens plugin management, not the LYVRA installer. The plugin is used in ChatGPT or Codex; the website chat remains a labelled demo."],
+
   'Mit LYVRA sprechen':['Mit LYVRA sprechen','Talk to LYVRA'],
   'DATIERTER SNAPSHOT · KEIN LIVE-STATUS':['DATIERTER SNAPSHOT · KEIN LIVE-STATUS','DATED SNAPSHOT · NOT LIVE STATUS'],
   'Snapshot-Datum':['Snapshot-Datum','Snapshot date'],

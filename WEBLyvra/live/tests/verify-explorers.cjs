@@ -40,7 +40,8 @@ const expectedFrame=`<iframe
 for(const frame of currentFrames)assert.equal(frame,expectedFrame);
 const oldFrames=JSON.parse(fs.readFileSync('tests/radio-embed-pre-v15.json','utf8'));
 let frameIndex=0;
-const preservationHtml=currentHtml.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
+const additiveHtml=currentHtml.replace('<link rel="stylesheet" href="plugin-access.css">','').replace(/<a class="button ghost hero-plugin-link"[\s\S]*?<\/a>/,'').replace(/<!-- LYVRA_PLUGIN_START -->[\s\S]*?<!-- LYVRA_PLUGIN_END -->\n/,'');
+const preservationHtml=additiveHtml.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
 assert.equal(hash(preservationHtml.replace('<link rel="stylesheet" href="explorers.css">','').replace('<link rel="stylesheet" href="brand-art.css">','').replace(/<a class="button primary hero-gpt-link"[\s\S]*?<\/a>/,'')),baseline.index);
 assert.equal(hash(fs.readFileSync('dist/evolution-status.css')),baseline.evolutionCss);
 console.log('PASS: existing HTML + Handoff 001 preserved; nine unique facets; music/filter/world/back/gateway interactions; DE/EN; safe URL rejection; approval filtering; future project detail and audio gating using non-shipped test fixtures. No browser/live verification.');
