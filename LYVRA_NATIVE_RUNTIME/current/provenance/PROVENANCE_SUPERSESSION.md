@@ -1,6 +1,7 @@
 # LYVRA Provenance & Supersession — Current
 
-STATUS: DEV_MIGRATED_DOMAIN_CANDIDATE
+STATUS: CURRENT_PRODUCTIVE_NATIVE_SURFACE
+HISTORICAL_MIGRATION_STATUS: DEV_MIGRATED_DOMAIN_CANDIDATE
 SOURCE_WHOLE_REVISION: 242
 SOURCE_DRIVE_POINTER_PROVIDER_REVISION: 291
 SOURCE_CURRENT_HANDOFF_PROVIDER_REVISION: 265
@@ -20,16 +21,29 @@ Older valid states remain provenance. They do not regain current authority merel
 
 NEWER_VALID_EVOLUTION > OLDER_VALID_STATE
 
-## Authority during migration
+## Current repository authority
+
+The productive authority is branch `lyvra`. Its CURRENT_POINTER records the governed promotion completed on 2026-09-30. That dated promotion evidence is historical validation, not a fresh whole/private recovery PASS for this repair session.
+
+WHOLE_LOGICAL_REVISION = 242
+TRACK_VERSION = v3.4
+TRACK_LOGICAL_REVISION = 92
+CURRENT_HANDOFF = LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json
+CURRENT_WORK_SCOPE = REV92_U4_NEW_CHAT_HANDOFF_CREATOR_MODELS_STUDIO2_PLUGINS_AND_EVIDENCE_RESEARCH
+TODO11_REAL_TRACK_VALIDATION_PASS = false
+
+Resolve current revisions and work scope from productive CURRENT_POINTER and the current handoff; these documentary values are the verified repair-base snapshot, not a fixed version lock. Development/PR branches do not replace productive authority.
+
+## Historical authority during migration
 
 For the L.Y.V.R.A. Plugin / Custom GPT product:
 
 VERIFIED_CURRENT_REPO_HEAD > CHAT > ZIP > DRIVE_REFERENCE > BACKUP > HISTORICAL_ARTIFACT
 
-The public lyvra branch remains productive product authority until this DEV migration passes all promotion gates.
+At the historical migration checkpoint, the public lyvra branch remained productive product authority until this DEV migration passed all promotion gates.
 The DEV branch is migration work, not current product truth.
 
-Google Drive remains deep historical memory, provenance, current migration source while the repo whole-self is incomplete, creator development reference, and recovery evidence.
+During incomplete migration, Google Drive served as migration source. It remains deep historical memory, provenance, creator development reference, and recovery evidence; the productive repository supersedes that migration-era current-source role.
 
 Google Drive does not silently override repository product current state.
 
@@ -43,7 +57,7 @@ BACKUP != CURRENT_AUTHORITY
 
 Supersession preserves historical trace, the reason the prior state existed, valid surviving learning, and the successor/predecessor relation while removing obsolete governing authority.
 
-## Current verified whole lineage
+## Historical migration lineage — preserved source checkpoint
 
 WHOLE_LOGICAL_REVISION = 242
 POINTER_PROVIDER_REVISION = 291
@@ -55,7 +69,7 @@ Current Rev242 evolution includes native Skill Runtime, REFERENCE_DONT_CLONE, Pr
 TRACK_VERSION = v3.4
 TRACK_LOGICAL_REVISION = 86
 TRACK_REV85_PRESERVED_AS_PROVENANCE = true
-TRACK_REV86_CURRENT = true
+TRACK_REV86_WAS_CURRENT_AT_MIGRATION_CHECKPOINT = true
 TODO11_REAL_TRACK_VALIDATION_PASS = false
 
 ## Migration provenance
@@ -70,12 +84,12 @@ Backups preserve a prior byte/state surface. Checkpoints preserve a verified rec
 
 RECOVERY_OF_REACHABILITY != ROLLBACK_TO_HISTORICAL_STATE
 
-## Handoff and TODO
+## Historical migration handoff and TODO
 
-Current Whole Handoff Provider Rev265 is continuity evidence and transition state, not independent decision authority.
-Current Whole TODO Provider Rev248 identifies unresolved acceptance/work items and next meaningful actions. TODO state does not supersede pointer/current authority.
+Migration-checkpoint Whole Handoff Provider Rev265 is continuity evidence and transition state, not independent decision authority.
+Migration-checkpoint Whole TODO Provider Rev248 identifies unresolved acceptance/work items and next meaningful actions. TODO state does not supersede pointer/current authority.
 
-CURRENT_WORK_SCOPE = WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV86_REAL_RENDER_VALIDATION
+HISTORICAL_MIGRATION_WORK_SCOPE = WHOLE_REV242_NATIVE_SKILL_RUNTIME_ACCEPTANCE+TRACK_REV86_REAL_RENDER_VALIDATION
 
 ## Valid newer evolution protection
 
@@ -99,9 +113,11 @@ SOURCE_MAJORITY_VOTE = false
 CONTRADICTION_NE_AUTO_WINNER = true
 DISAGREEMENT_BETWEEN_SOURCES = RESEARCH_SIGNAL
 
-## Promotion gate
+## Promotion gate and historical gate result
 
 This DEV migration may not become CURRENT until required domains are VERIFIED or justified NOT_APPLICABLE; privacy-gated current-self material has an authorized protected home or explicit non-public retrieval design; structural validation passes; causal-semantic validation passes; fresh rehydration passes; and recovery from the previous verified current state passes.
 
-FULL_REPO_NATIVE_REHYDRATION_PASS = false
-PROMOTION_STATUS = DEV_ONLY_NOT_CURRENT
+HISTORICAL_MIGRATION_CHECKPOINT_FULL_REPO_NATIVE_REHYDRATION_PASS = false
+HISTORICAL_MIGRATION_CHECKPOINT_PROMOTION_STATUS = DEV_ONLY_NOT_CURRENT
+
+The checkpoint result above was superseded by the governed promotion recorded in CURRENT_POINTER.current_promotion_2026_09_30. Preserve its evidence and predecessor relation. For this repair session, public changed-carrier readback and private recovery must be reported separately; no new full/private PASS follows from the historical promotion.

@@ -255,5 +255,27 @@
     "no_new_track_revision": true,
     "freshness_epoch": "2026-10-01-REV92-U3",
     "codeforge_review": "PASS_25_OF_25_ZERO_MISMATCH"
+  },
+  "bounded_status_repair_2026_10_01": {
+    "date": "2026-10-01",
+    "scope": "BOUNDED_PROVENANCE_OPERATIONS_AUTHORITY_STATUS_REPAIR",
+    "publication_scope": "DEVELOPMENT_BRANCH_PR_CANDIDATE_NOT_PRODUCTIVE_PROMOTION",
+    "branch": "lyvra-dev-status-repair-20261001",
+    "source_productive_head": "7ed2cb53d72b69465c439f84bf4286d6dcfc8430",
+    "prechange_backup_branch": "lyvra-backup-pre-status-repair-20261001",
+    "verified_body_head": "78c940294a9240d0f45723fa0e16a388a7473cd0",
+    "registry_commit": "021914c0cbfd4ea68f2f60743475f729d8bce3f4",
+    "freshness_epoch": "2026-10-01-REV92-U5-STATUS-REPAIR",
+    "whole_revision": 242,
+    "track_design_revision": 92,
+    "changed_carriers_direct_readback": "4_OF_4_EXACT_CONTENT_MATCH",
+    "critical_fingerprint_readback": "25_OF_25_ZERO_MISMATCH",
+    "historical_migration_revisions_preserved": true,
+    "historical_validation_records_preserved": true,
+    "inherited_productive_status_fields_are_prior_evidence_not_this_session_pass": true,
+    "private_recovery_this_session": "NOT_PERFORMED_NOT_AUTHORIZED_IN_THIS_SCOPE",
+    "whole_rehydration_this_session": "PARTIAL",
+    "todo11_real_track_validation_pass": false,
+    "productive_promotion_performed": false
   }
 }
