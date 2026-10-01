@@ -502,5 +502,16 @@
     "real_render_acceptance": "OPEN_EVENT_GATED",
     "no_fake_pass": true,
     "codeforge_review": "PASS_PRE_POINTER"
+  },
+  "rev92_u3_creator_studio_evidence": {
+    "status": "PASS_PENDING_FINGERPRINT_AND_POINTER",
+    "drive_evidence_drift_doc": "1CpGR3AS9zhW3yQ8OiM3FfByQyVUUdgW_ZtKO_c20Pgk",
+    "drive_studio2_handoff": "1raVdHTbDjSei8XrKxw1fjwWAENUemHO86e8qEYKzm4s",
+    "creator_visible_model_surface": "VERIFIED_v6_PRO_v6_WILD_PRO_v6_MINI",
+    "creator_custom_model_set": "VERIFIED_LYVRA_STYLE_666PoWeRSoUnD_666SD_PsyTrance",
+    "plugin_evidence": "VERIFIED_NIGHT_CANOPY_VOID_GRAVITY_PSY_ORBIT",
+    "custom_plugin_ledger": "CREATED",
+    "no_new_track_revision": true,
+    "codeforge_review": "PENDING_FINGERPRINT"
   }
 }
