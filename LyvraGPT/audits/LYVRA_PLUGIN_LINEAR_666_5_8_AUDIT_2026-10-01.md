@@ -64,3 +64,13 @@ The snapshot audit above remains pinned to its stated 2026-10-01 source HEAD. Th
 - Repo `LyvraGPT/` archive publication from PR #2 remains distinct from the account plugin's release storage. A new `lyvra-plugin/` mirror and independent PFS Plugin Backup require separate verified archive/write/readback workflows, and are **not** claimed here.
 
 This addendum preserves the original pin at productive GitHub commit `89db0978d0f62660986d27efd1d2005265811448` while recording newer backend release evolution without silently replacing old provenance.
+
+## Full-source backup feasibility and manifest verification (2026-10-02)
+
+A separate fresh Plugin Creator readback of release `pluginrel_6abed7676b5881918674b8d2c64e21af` confirms **0.13.0, USER/PRIVATE**. All 30 source entries were enumerated, with no pagination remaining. Nine relevant text files were directly retrieved and reviewed: the main `plugin.json`, `.codex-plugin/plugin.json`, `.app.json`, and six `skills/*/SKILL.md` files. Both plugin manifest JSON documents identify version `0.13.0`; the app configuration requires the GitHub connector, while the interface declares `skills` and `Write` capabilities. Declarations are **not** end-to-end OAuth/write verification.
+
+The file list contains **13 PNG asset/reference files**, including a distinct plugin icon, which were enumerated but not downloaded or byte-hashed. Plugin Creator issued a current original `current.tar.gz` release download reference; attempted use in the available execution environment was unsuccessful: the authorized file download service would not accept the URL as a viewed source, and direct public-network DNS resolution from the container was unavailable. A failed local download is **not** a failed Plugin Creator export.
+
+**Backup acceptance is explicitly OPEN:** no complete original archive bytes, archive SHA256, unpacked asset-byte comparison, independent `lyvra-plugin/` GitHub archive, remote restore test or 666PFS backup is claimed. Do not substitute a nine-text-file export for the original 30-file plugin archive, publish empty backup folders, publish short-lived signed download URLs, or copy private resources to the public repository without an explicit content/privacy check. The newest backend release remains source authority for plugin package state.
+
+Recommended future gate: obtain complete original release archive through an authorized binary-capable channel, locally validate its 30-file manifest and byte hashes, screen for secrets/private material, create a scoped feature-branch archive under `lyvra-plugin/`, conduct GitHub remote archive readback, and separately register the PFS backup only with its own authorized writer and remote evidence.
