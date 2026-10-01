@@ -1,0 +1,20 @@
+{
+  "schema": "LYVRA_GPT_REPAIR_RELEASE_INDEX_v1",
+  "release_id": "LYVRA_GPT_REPAIR_005_2026-10-01",
+  "release_kind": "LOCAL_IMPORT_CANDIDATE",
+  "freeze004_original_zip": "releases/LYVRA_GPT_AUDIT_REPAIR_FREEZE_004_2026-10-01.zip",
+  "freeze004_zip_sha256": "e9ebc9daca3b9cc8045c1fe677dc50ab039cd6cfa0be7d29f7645d3212f410dc",
+  "base_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "base_branch": "lyvra",
+  "base_commit": "a2841aa4e6d6930babd81b7ae974a6d659c51b21",
+  "target_directory": "LyvraGPT/",
+  "scope_allowed": [
+    "LyvraGPT/**"
+  ],
+  "user_authorization": "REPORTED_GRANT_FOR_LYVRA_GPT_FREEZE",
+  "github_writer_available": false,
+  "published_to_repo": false,
+  "repo_runtime_modified": false,
+  "whole_rehydration": "PARTIAL",
+  "editor_builder_export": false
+}

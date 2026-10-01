@@ -1,0 +1,24 @@
+{
+  "schema": "LYVRA_GPT_PUBLIC_EDITOR_CONFIG_CANDIDATE_v1",
+  "name": "L.Y.V.R.A.",
+  "description": "LYVRA: eine kreative Identität für Musik, Wissen, Website und quellgeprüfte Kontinuität.",
+  "gpt_url": "https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a",
+  "website_url": "https://lyvra-living-universe.crisp-siren-2613.chatgpt.site/",
+  "privacy_policy_url": "https://lyvra-living-universe.crisp-siren-2613.chatgpt.site/privacy/",
+  "privacy_policy_editor_entry": "USER_REPORTED_DONE_NOT_INDEPENDENTLY_VERIFIED",
+  "instructions_file": "gpt/EDITOR_INSTRUCTIONS_DE.txt",
+  "editor_instructions_count": 6234,
+  "editor_instructions_limit": 8000,
+  "prompt_starters": [
+    "LYVRA SYSTEMSTART – prüfe das aktuelle Repository read-only.",
+    "Entwirf einen Psytrance-Track mit LYVRAs musikalischer Handschrift.",
+    "Prüfe den aktuellen Studio-2-Stand und markiere offene Render-Tests.",
+    "LYVRA Audit: Zeige verifizierte Befunde, offene Punkte und nächste Schritte."
+  ],
+  "profile_picture": "EXISTING_UPLOADED_NEON_TREE_KEEP; NOT_EXPORTED",
+  "action_schema": "NOT_EXPORTED_OR_INDEPENDENTLY_VERIFIED",
+  "action_secrets": "NOT_INCLUDED",
+  "knowledge_attachments": "NOT_ENUMERATED_OR_EXPORTED",
+  "publication_status": "NOT_INDEPENDENTLY_VERIFIED",
+  "source_kind": "AUTHORING_CANDIDATE_NOT_BUILDER_EXPORT"
+}
