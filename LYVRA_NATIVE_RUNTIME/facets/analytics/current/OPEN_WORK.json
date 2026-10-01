@@ -8,12 +8,13 @@
     },
     {
       "id": "ANL-002",
-      "state": "OPEN",
-      "task": "v6_MODEL_CALIBRATION"
+      "state": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
+      "task": "v6_MODEL_CALIBRATION",
+      "evidence_snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md"
     },
     {
       "id": "ANL-003",
-      "state": "OPEN",
+      "state": "ACTIVE_CURRENT_RESEARCH_AND_RENDER_LEARNING",
       "task": "continued_model_specific_renderer_learning"
     },
     {
