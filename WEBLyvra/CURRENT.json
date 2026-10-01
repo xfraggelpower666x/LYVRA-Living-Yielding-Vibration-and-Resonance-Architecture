@@ -28,5 +28,19 @@
     "website": true,
     "privacy": true,
     "source": "Direct user message"
+  },
+  "live_additive_patch": {
+    "id": "WEBLYVRA_PLUGIN_ACCESS_001",
+    "version": "1.1.1",
+    "source_commit": "0d1de5b7231da94d948fa6b875e88039f3cb4d53",
+    "prechange_commit": "7ed2cb53d72b69465c439f84bf4286d6dcfc8430",
+    "prechange_branch": "lyvra-backup-pre-web-plugin-access-20261001",
+    "report_path": "WEBLyvra/live/docs/WEBLYVRA_PLUGIN_ACCESS_001.md",
+    "status": "REPOSITORY_VERIFIED_DEPLOYMENT_READBACK_PENDING",
+    "plugin_visibility": "PRIVATE",
+    "public_installation_link": "NOT_AVAILABLE",
+    "tests": "THREE_AUTOMATED_SUITES_PASS",
+    "frozen_release": "v1.1.0_UNCHANGED",
+    "pfs_backup": "PREVIOUS_SNAPSHOT_UNCHANGED"
   }
 }

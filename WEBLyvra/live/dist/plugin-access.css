@@ -1,0 +1,12 @@
+/* Additiver Plugin-Bereich; bestehendes Design bleibt unangetastet. */
+.plugin-access{margin-top:2.5rem;padding:clamp(1.25rem,4vw,2.5rem);border:1px solid rgba(83,231,255,.28);border-radius:18px;background:linear-gradient(135deg,rgba(17,31,47,.86),rgba(34,17,47,.8));scroll-margin-top:110px;overflow-wrap:anywhere}
+.plugin-access-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+.plugin-access h3{margin:.5rem 0 1rem;font-size:clamp(1.5rem,4vw,2.2rem)}
+.plugin-access-status{padding:.45rem .7rem;border:1px solid rgba(238,141,241,.4);border-radius:6px;font-size:.75rem;letter-spacing:.07em;color:#f0b7f4}
+.plugin-access-lead{font-size:1.15rem;color:#a7f3ff}
+.plugin-access p,.plugin-access li{line-height:1.7}
+.plugin-access-features{padding-left:1.25rem;margin:1.3rem 0;color:#e3e8f4}
+.plugin-access-note{font-size:.9rem;color:#c0c6da;max-width:75ch}
+.plugin-access .actions{margin:1.4rem 0;flex-wrap:wrap}
+.plugin-access a:focus-visible,.hero-plugin-link:focus-visible{outline:2px solid #a7f3ff;outline-offset:5px}
+@media(max-width:600px){.plugin-access .button{width:100%;white-space:normal;text-align:center}.plugin-access{padding:1.2rem}}
