@@ -1,0 +1,12 @@
+{
+  "schema": "WEBLyvra-freeze-pointer-v1",
+  "release": "v1.0.0",
+  "release_path": "WEBLyvra/releases/v1.0.0",
+  "verified_release_commit": "4f68a570d92b63a583fb09ce116b80c18e6d26fb",
+  "sites_version": 14,
+  "source_commit": "7560b7e6ea829aefbcb6833107b83934b62a088b",
+  "date": "2026-10-01",
+  "zip_sha256": "ead6fe6ace92627a8a0d29733833ddc2d4e851e413faaaafc32de5c64c435f17",
+  "scope": "Website presentation source only; native LYVRA authority unchanged",
+  "status": "FROZEN — automated checks PASS; browser/audio/legal NOT VERIFIED"
+}
