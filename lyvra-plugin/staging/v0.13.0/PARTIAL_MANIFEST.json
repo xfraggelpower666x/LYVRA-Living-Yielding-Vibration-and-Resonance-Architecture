@@ -165,11 +165,12 @@
     }
   ],
   "checks": {
-    "text_readback": "TO_VERIFY_AFTER_WRITE",
+    "text_readback": "PASS_17_OF_17_EXACT_SOURCE_CONTENT_COMPARISON",
     "source_text_secret_pattern_scan": "PASS_BASIC_NOT_SECURITY_AUDIT",
     "source_binary_archive_sha256": "NOT_AVAILABLE",
     "full_restore": "NOT_TESTED",
-    "pfs_child_backup": "NOT_VERIFIED"
+    "pfs_child_backup": "NOT_VERIFIED",
+    "remote_manifest_readback": "PENDING_FRESH_POSTWRITE"
   },
   "restrictions": [
     "Not a full plugin backup",
