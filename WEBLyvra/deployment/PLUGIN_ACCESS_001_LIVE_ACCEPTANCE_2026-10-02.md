@@ -55,3 +55,14 @@ The Pages hostname is an optional informational probe. Hashes are recorded for s
 - Open PR #4 repairs older native migration/Rev86 wording and touches protected LYVRA native current carriers; **requires separate governed native validation and owner approval**.
 - Open PR #5 is additive plugin audit evidence for Linear 666-5..666-8; **do not automatically merge with this website task**.
 - LYVRA remains the one native identity. WEBLyvra is a website surface, GPT/skills are related product/capability surfaces, and 666MAINSYSTEM is a shared layer only.
+
+## Executed offline regression and source-integrity validation
+
+An independent local execution reconstructed the **exact committed** Python script and its six-test suite from the authored source. Git blob SHAs of both locally reconstructed files were identical to the remote PR blobs:
+
+- `check_plugin_access_live.py`: `44eaadc1cca206b76d5a9bc28b7e0440dca8a92f`.
+- `tests/test_check_plugin_access_live.py`: `4045fc41bda319a756765024a9687c3998c0ed66`.
+
+Python syntax compilation succeeded, and `python -m unittest discover` executed **6 of 6 tests successfully (OK)**. Covered: correct homepage/sha response, 403 as INCONCLUSIVE, DNS failure as INCONCLUSIVE, visible plugin+privacy PASS, missing plugin FAIL, missing-network no false success.
+
+**Scope:** The offline tests validate decision logic only. They do not prove that Cloudflare currently serves the new plugin patch or that mobile/audio/legal acceptance has passed.
