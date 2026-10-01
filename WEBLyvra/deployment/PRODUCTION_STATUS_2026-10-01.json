@@ -1,0 +1,17 @@
+{
+  "checked_commit": "b163872347380b5e0795ea0b8fca1908571005ac",
+  "project": "weblyvra-live",
+  "provider_check_id": 110583270983,
+  "conclusion": "success",
+  "details_url": "https://dash.cloudflare.com/?to=/ec6eb64eeb787e1192f165cf7fa78510/pages/view/weblyvra-live/08b1ba88-3e03-4ef5-87b7-bf3c338cc9d6",
+  "summary": "<table><tr><td><strong>Latest commit:</strong> </td><td>\n<code>b163872</code>\n</td></tr>\n<tr><td><strong>Status:</strong></td><td>&nbsp;✅&nbsp; Deploy successful!</td></tr>\n<tr><td><strong>Preview URL:</strong></td><td>\n<a href='https://08b1ba88.weblyvra-live.pages.dev'>https://08b1ba88.weblyvra-live.pages.dev</a>\n</td></tr>\n<tr><td><strong>Branch Preview URL:</strong></td><td>\n<a href='https://docs-weblyvra-production-han.weblyvra-live.pages.dev'>https://docs-weblyvra-production-han.weblyvra-live.pages.dev</a>\n</td></tr>\n</table>\n\n[View logs](https://dash.cloudflare.com/?to=/ec6eb64eeb787e1192f165cf7fa78510/pages/view/weblyvra-live/08b1ba88-3e03-4ef5-87b7-bf3c338cc9d6)\n",
+  "operator_confirmation": {
+    "source": "Direct user message: alles erreichbar",
+    "date": "2026-10-01",
+    "scope": [
+      "Production website reachable",
+      "Privacy page reachable"
+    ],
+    "independent_agent_http_readback": "NOT_VERIFIED — requests blocked with HTTP 403"
+  }
+}

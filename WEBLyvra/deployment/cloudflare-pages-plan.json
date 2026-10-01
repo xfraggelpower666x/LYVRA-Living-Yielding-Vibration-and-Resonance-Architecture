@@ -1,6 +1,6 @@
 {
   "schema": "WEBLyvra-Cloudflare-Pages-plan-v1",
-  "status": "PREPARED_NOT_CONNECTED",
+  "status": "DEPLOYMENT_VERIFIED_USER_BROWSER_CONFIRMED",
   "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
   "production_branch": "lyvra",
   "root_directory": "WEBLyvra/live",
@@ -11,8 +11,11 @@
     "WEBLyvra/live/**"
   ],
   "target_domain": "weblyvra.666soundsdesign-broadcaster.com",
-  "pages_project_name": null,
-  "pages_production_url": null,
-  "domain_cutover_status": "NOT_PERFORMED",
-  "automatic_deployment_status": "NOT_CONFIGURED"
+  "pages_project_name": "weblyvra-live",
+  "pages_production_url": "https://weblyvra-live.pages.dev/",
+  "domain_cutover_status": "USER_BROWSER_CONFIRMED_REACHABLE",
+  "automatic_deployment_status": "REPOSITORY_DEPLOYMENT_VERIFIED_AUTOMATIC_TRIGGER_SETTINGS_NOT_READBACK",
+  "pages_production_url_evidence": "Project-name-derived canonical address; independent HTTP check not verified",
+  "dashboard_build_configuration_status": "NOT_READBACK — root/build/watch fields describe repository deployment plan",
+  "evidence_file": "WEBLyvra/deployment/PRODUCTION_STATUS_2026-10-01.json"
 }

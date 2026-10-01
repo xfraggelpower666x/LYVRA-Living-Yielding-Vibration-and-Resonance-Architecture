@@ -1,8 +1,12 @@
 # WEBLyvra — Repository-Deployment und Domain-Umstellung
 
-STATUS: VORBEREITET; Cloudflare-Zugang und Git-Verbindung noch nicht vorhanden. Kein Live-Deployment und keine DNS-Änderung behauptet.
+STATUS: DEPLOYMENT_VERIFIED · USER_BROWSER_CONFIRMED. Cloudflare Pages meldet für Commit `b163872347380b5e0795ea0b8fca1908571005ac` einen erfolgreichen Build/Deploy im Projekt `weblyvra-live`. Der Betreiber bestätigt am 01.10.2026 die Erreichbarkeit der Produktionswebsite und ihrer Datenschutzseite. Direkter Cloudflare-Dashboard-Zugang und unabhängiger HTTP-Readback sind weiterhin nicht verfügbar.
 
-## Ziel
+Produktionsadresse: https://weblyvra.666soundsdesign-broadcaster.com/
+Datenschutz: https://weblyvra.666soundsdesign-broadcaster.com/privacy
+Evidenz: `PRODUCTION_STATUS_2026-10-01.json`. Diese Aktualisierung ändert keine DNS-Einträge oder Website-Dateien.
+
+## Repository-Konfiguration und Betriebsplan
 
 Die vorhandene Website unverändert über Cloudflare Pages aus dem bestehenden Repository bereitstellen. Produktionsbranch: `lyvra`. Projektwurzel: `WEBLyvra/live`. Ausgabeverzeichnis: `dist`. Framework: None. Build-Befehl:
 
@@ -12,7 +16,9 @@ python tests/audit_static.py && node tests/verify-runtime.cjs && node tests/veri
 
 Die Tests brechen den Build bei einem Fehler ab. Git-Integration in Cloudflare einrichten; auf Änderungen in `WEBLyvra/live/**` begrenzen, damit native Runtime-Änderungen keinen Website-Build auslösen. Keine API-Schlüssel im Repository erforderlich. Ein Projektname/Account wird erst aus dem authentifizierten Cloudflare-Konto bestätigt, nicht erraten.
 
-## Kontrollierte Umstellung
+## Erhaltenes Umstellungs- und Rollback-Verfahren
+
+Die folgenden Schritte bleiben als Verfahren dokumentiert. Ihre Einzelheiten (DNS-Ziel, Zertifikat, Build-/Watch-Einstellungen und vollständige Funktionsprüfungen) wurden nicht direkt aus dem Cloudflare-Dashboard gelesen. Die bestätigte Erreichbarkeit ersetzt diese Einzelprüfungen nicht.
 
 1. Aktuelle Domain-Zuordnung, DNS-Eintrag und eventuelle Sites-Custom-Domain-Verbindung direkt im Konto prüfen und sichern.
 2. Bestehendes Pages-Projekt wiederverwenden, falls vorhanden und passend; andernfalls ein Git-integriertes Pages-Projekt für dieses Repository einrichten.

@@ -17,8 +17,8 @@ node tests/verify-runtime.cjs
 node tests/verify-explorers.cjs
 ```
 
-Zieldomain: https://weblyvra.666soundsdesign-broadcaster.com/ . Status: PREPARED_NOT_CONNECTED. Cloudflare-Account, Pages-Projekt, Git-Anbindung und Domain-Umschaltung sind noch nicht verifiziert oder eingerichtet. Noch keine automatische Veröffentlichung aus diesem Repository.
+Live-Adresse: https://weblyvra.666soundsdesign-broadcaster.com/ . Cloudflare Pages: DEPLOYMENT_VERIFIED für Commit `b163872347380b5e0795ea0b8fca1908571005ac`, Projekt `weblyvra-live`. Website und Datenschutzseite wurden am 01.10.2026 durch den Betreiber als erreichbar bestätigt (USER_BROWSER_CONFIRMED). Der unabhängige HTTP-Readback dieser Umgebung bleibt wegen HTTP 403 offen. Details: `deployment/PRODUCTION_STATUS_2026-10-01.json`.
 
-Alle drei automatisierten Prüfgruppen PASS; Browser, realer Ton, Screenreader, öffentliches HTTPS und vollständige rechtliche Prüfung bleiben offen. Webradio, Google Fonts und GPT-Verknüpfung bleiben externe Dienste. Chat ist eine gekennzeichnete lokale Demo, keine Chat-API.
+Alle drei automatisierten Prüfgruppen PASS. Erreichbarkeit von Website und Datenschutzseite: Betreiberbestätigung vorhanden. Vollständige Desktop-/Mobil-Interaktionen, realer Ton, Screenreader, unabhängige HTTPS-/Zertifikats- und Assetprüfung sowie vollständige rechtliche Prüfung bleiben offen. Webradio, Google Fonts und GPT-Verknüpfung bleiben externe Dienste. Chat ist eine gekennzeichnete lokale Demo, keine Chat-API.
 
 Repository-Safepoint: `lyvra-backup-pre-weblyvra-v1-1-20261001`. Änderungen erst kontrolliert in live, anschließend neuer Freeze. Historische Releases nicht überschreiben. Keine privaten Vaults, Secrets oder neuen Admin-/Backend-Funktionen.
