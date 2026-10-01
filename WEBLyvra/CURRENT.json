@@ -9,13 +9,24 @@
   "sites_version": 15,
   "site_assets_source_commit": "498c4b1bc41e53dde3d81d085ca1763e974ba353",
   "date": "2026-10-01",
-  "hosting_status": "PREPARED_NOT_CONNECTED",
+  "hosting_status": "DEPLOYMENT_VERIFIED_USER_BROWSER_CONFIRMED",
   "target_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
   "tests": "ALL_THREE_AUTOMATED_SUITES_PASS",
   "not_verified": [
-    "Cloudflare deployment and domain cutover",
-    "Browser/audio/screenreader",
+    "Independent agent HTTPS/DNS/certificate/asset readback",
+    "Complete desktop/mobile interactions, audio and screenreader checks",
+    "Cloudflare dashboard root/build/watch configuration and automatic trigger settings",
     "Full legal review"
   ],
-  "scope": "Only WEBLyvra website presentation. Native runtime and previous releases unchanged."
+  "scope": "Only WEBLyvra website presentation. Native runtime and previous releases unchanged.",
+  "pages_project_name": "weblyvra-live",
+  "deployed_source_commit": "b163872347380b5e0795ea0b8fca1908571005ac",
+  "deployment_evidence_path": "WEBLyvra/deployment/PRODUCTION_STATUS_2026-10-01.json",
+  "deployment_documentation_commit": "a0ed30eab5df455503cdf4e95c4b2f384640be99",
+  "operator_reachability_confirmation": {
+    "date": "2026-10-01",
+    "website": true,
+    "privacy": true,
+    "source": "Direct user message"
+  }
 }
