@@ -19,5 +19,18 @@
     "LEARNING_VALUE"
   ],
   "score_ne_success_probability": true,
-  "custom_model_ne_native_model_evidence": true
+  "custom_model_ne_native_model_evidence": true,
+  "current_calibration_date": "2026-10-01",
+  "current_calibration_snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md",
+  "native_model_roles": {
+    "v6": "CONTROL_PRODUCTION_CURRENT_PRIMARY",
+    "v6-wild": "EXPLORATION_UNPREDICTABILITY",
+    "v6-mini": "FAST_PROTOTYPE_LEARNING"
+  },
+  "official_current_controls": {
+    "variety": "ADJUSTS_AND_UPDATES_STYLE_PROMPTS_ZERO_RETAINS_STYLE_TAG_CONTROL",
+    "max_mode": "LONGER_THAN_TWO_MINUTES_SOURCE_ADHERENCE_STYLE_TRANSFER_STYLE_VOCAL_CONSISTENCY_HIGHER_CREDIT_COST"
+  },
+  "v6_max_generation_duration_minutes": 8,
+  "real_render_calibration_open": true
 }
