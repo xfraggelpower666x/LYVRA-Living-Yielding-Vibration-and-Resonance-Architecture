@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-01-REV92-U3",
+  "freshness_epoch": "2026-10-01-REV92-U4-NEWCHAT",
   "whole_revision": 242,
   "track_design_revision": 92,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -22,7 +22,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md": "920b9152d37d536697a24d34539df7bd34dfe8ec",
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json": "ef0c9a0a88ec2a5a5dce2674c8e4bf69e2241f7e",
     "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md": "2aec1b7ccb2a23fefb8d98f839822f9600a7f221",
-    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json": "2b0779087fcfdd4d21696e7d70356836524c57ad",
+    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json": "3e70c016a78eec66e0f0a7bbf58fe42b3dc9ea89",
     "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md": "fcc2e2ca4562217693a8e52ff5c13dcfbac620d5",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md": "0743afce6c6cc307e2a6c47ee42c4c807aeb8ab6",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/current/RESEARCH_REGISTER.md": "e301da9da18e932a7fde687ce0f331613be2574c",
@@ -36,7 +36,7 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "VERIFIED_25_OF_25_ZERO_MISMATCH",
+  "registry_population_status": "NEW_CHAT_HANDOFF_UPDATED_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_READBACK",
   "verified_carrier_count": 25,
   "verified_mismatch_count": 0
