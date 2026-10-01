@@ -21,7 +21,7 @@ Working branch: `lyvra-dev-linear-plugin-audit-20261001`.
 - The 25/25 SHA pass is a consistency check, NOT proof of full semantic whole-system rehydration or private recovery. Private vault deliberately not accessed.
 - Repo read capability is demonstrated; full OAuth/write permissions and a protected native write test were NOT demonstrated. Creation of this isolated audit record must not be confused with productive CURRENT mutation.
 - No plugin update, GPT Builder update, Cloudflare deployment, ZIP archive publication or remote restore test was executed in this audit step.
-- Freeze004 / Repair005 / Handoff006 remain candidates until uploaded originals and their hashes are independently verified.
+- **Historical audit-time statement superseded by later GitHub publication:** HANDOFF 006 was subsequently merged through PR #2 into productive `lyvra`, merge commit `2fbed34ecb66156fae3c1ac1ae23a7233ae8cea4`. Current remote `LyvraGPT/releases/` contains Freeze004 ZIP (Git blob SHA `6401a71390d6e5e85b3447658d1563ca120daf3d`, 16,163 bytes) and Repair005 ZIP (Git blob SHA `123167002b390e6323be17692b28faa728f0a77d`, 36,442 bytes); earlier original-file checksums were matched to these Git blobs. This confirms repository archive publication, **not** a complete live GPT Builder/server-side export, plugin-release acceptance, or a fresh private whole-recovery pass.
 - Do not promote this audit branch, update registry/epoch, or mutate CURRENT pointer from this document.
 - Linear issue 666-5: read-only scope evidenced; 666-6: functional write-path tests open; 666-7: existing skills inventoried, live trigger/website acceptance open; 666-8: full release verification open.
 
@@ -41,3 +41,6 @@ Working branch: `lyvra-dev-linear-plugin-audit-20261001`.
 - Public browser retrieval of WEBLyvra and Sites privacy did not succeed from the available tool. This does not establish site downtime; LIVE_WEB_ACCEPTANCE=OFFEN.
 - **Preservation:** no need to replace existing six working skills without identified defect; product Current, fingerprint registry, private vault, web deployment, original plugin release and Custom GPT Builder were not mutated.
 - Linear: 666-6 and 666-7 retain In Progress until operational acceptance; 666-8 cannot close before a verified full archive/restore and end-to-end check.
+
+## Post-audit freshness addendum (2026-10-02)
+The snapshot audit above remains pinned to its stated 2026-10-01 source HEAD. This addendum corrects only the subsequently superseded archive-publication statement. Live execution of plugin skills, privileged action acceptance, end-to-end write permission, and full hosted GPT configuration remain separately test-gated; do not infer them from git archive publication.
