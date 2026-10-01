@@ -170,7 +170,7 @@
     "source_binary_archive_sha256": "NOT_AVAILABLE",
     "full_restore": "NOT_TESTED",
     "pfs_child_backup": "NOT_VERIFIED",
-    "remote_manifest_readback": "PENDING_FRESH_POSTWRITE"
+    "remote_manifest_readback": "PASS_FRESH_READBACK_OF_PRIOR_MANIFEST_REVISION"
   },
   "restrictions": [
     "Not a full plugin backup",
