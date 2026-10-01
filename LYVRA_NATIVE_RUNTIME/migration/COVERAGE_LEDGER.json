@@ -489,5 +489,18 @@
     "fingerprint_registry": "VERIFIED_DIRECT_SHA_CAPTURE",
     "no_new_track_revision": true,
     "codeforge_review": "PASS_PRE_POINTER"
+  },
+  "rev92_v6_studio2_calibration": {
+    "status": "PASS_PRE_RENDER_EVIDENCE_CALIBRATION_REAL_RENDER_OPEN",
+    "snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md",
+    "official_sources": "VERIFIED_CURRENT",
+    "community_signals": "COMPARED_CONTRADICTORY_NOT_PROMOTED",
+    "variety_current_function": "VERIFIED_OFFICIAL",
+    "max_mode_current_function": "VERIFIED_OFFICIAL",
+    "v6_generation_duration": "VERIFIED_8_MINUTES_PER_GENERATION",
+    "studio2_separate_operation_surface": "PRESERVED",
+    "real_render_acceptance": "OPEN_EVENT_GATED",
+    "no_fake_pass": true,
+    "codeforge_review": "PASS_PRE_POINTER"
   }
 }
