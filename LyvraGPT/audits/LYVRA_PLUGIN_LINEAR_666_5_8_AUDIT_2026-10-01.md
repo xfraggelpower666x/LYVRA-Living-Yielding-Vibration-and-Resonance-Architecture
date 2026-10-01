@@ -44,3 +44,23 @@ Working branch: `lyvra-dev-linear-plugin-audit-20261001`.
 
 ## Post-audit freshness addendum (2026-10-02)
 The snapshot audit above remains pinned to its stated 2026-10-01 source HEAD. This addendum corrects only the subsequently superseded archive-publication statement. Live execution of plugin skills, privileged action acceptance, end-to-end write permission, and full hosted GPT configuration remain separately test-gated; do not infer them from git archive publication.
+
+## Live Plugin Creator readback addendum (2026-10-02)
+
+**Current backend plugin differs from audit snapshot:** Direct Plugin Creator metadata and complete current source-file listing for `plugin_06a4fc64dd848191982ca4a6ebdb2619` confirm:
+
+- Current plugin version: **0.13.0** (the original `0.12.0` evidence above remains valid as a *dated historical audit* only).
+- Current release ID: `pluginrel_6abed7676b5881918674b8d2c64e21af`.
+- `scope=USER`, `discoverability=PRIVATE`.
+- Current source listing: 30 files, including `.app.json`, `plugin.json`, the asset `assets/gpt-icon.png`, and six skill entry files:
+  - `skills/instructions/SKILL.md`
+  - `skills/rehydration-continuity/SKILL.md`
+  - `skills/repository-update-recovery/SKILL.md`
+  - `skills/track-design/SKILL.md`
+  - `skills/suno-studio-2/SKILL.md`
+  - `skills/music-analytics/SKILL.md`.
+- The plugin invocation in this session directly read the `instructions`, `rehydration-continuity`, and `repository-update-recovery` skills and the associated READ/WRITE reference.
+- These checks demonstrate *release inventory and skill readability*, **not** a verified public install link, a fresh real skill end-to-end action test, a successful native production update via the plugin, or an independent GPT Builder export.
+- Repo `LyvraGPT/` archive publication from PR #2 remains distinct from the account plugin's release storage. A new `lyvra-plugin/` mirror and independent PFS Plugin Backup require separate verified archive/write/readback workflows, and are **not** claimed here.
+
+This addendum preserves the original pin at productive GitHub commit `89db0978d0f62660986d27efd1d2005265811448` while recording newer backend release evolution without silently replacing old provenance.
