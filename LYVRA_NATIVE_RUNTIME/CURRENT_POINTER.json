@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "0dcfc34e066941ce004f7c93c1cc65c6896a02b0",
+    "current_head_before_pointer": "69166fcad81bc594bc47f2113102391935e405a6",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 92,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "POST_REV92_UPDATE_CONSISTENCY_FRESHNESS_GUARD_CODEFORGE_ACTIVE_AND_STUDIO2_VALIDATION",
+    "current_work_scope": "POST_REV92_V6_STUDIO2_PRE_RENDER_CALIBRATION_REAL_RENDER_EVIDENCE_OPEN",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -47,7 +47,8 @@
     "music_memory_evolution": "CURRENT_NATIVE_SIBLING_FACET",
     "studio2_evidence_model": "CURRENT_SOURCE_SEPARATED_FRESHNESS_AWARE",
     "central_analytics": "CURRENT_SHARED_NATIVE_FACET_WITH_SELECTIVE_INTELLIGENCE_ACCESS",
-    "lyric_intelligence": "CURRENT_SHARED_NATIVE_TRACK_DESIGN_INTELLIGENCE"
+    "lyric_intelligence": "CURRENT_SHARED_NATIVE_TRACK_DESIGN_INTELLIGENCE",
+    "v6_studio2_calibration": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -75,7 +76,8 @@
     "analytics_capability_registry": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
     "lyrics_knowledge_translation": "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md",
     "version_freshness_guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
-    "current_revision_fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json"
+    "current_revision_fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "v6_studio2_calibration_snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -134,17 +136,17 @@
   "validation_backlog_preserved": true,
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
-    "date": "2026-09-30",
-    "scope": "REV92_UPDATE_CONSISTENCY_REPAIR_VERSION_FRESHNESS_GUARD_AND_CODEFORGE_REACTIVATION",
-    "productive_body_head": "0dcfc34e066941ce004f7c93c1cc65c6896a02b0",
-    "prechange_backup_branch": "lyvra-dev-pre-rev92-update-consistency-20260930",
+    "date": "2026-10-01",
+    "scope": "REV92_V6_STUDIO2_CURRENT_WEB_CALIBRATION_AND_HANDOFF_ADVANCE",
+    "productive_body_head": "69166fcad81bc594bc47f2113102391935e405a6",
+    "prechange_backup_branch": "lyvra-dev-pre-v6-calibration-20261001",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev92_current": true,
     "no_new_track_revision": true,
-    "stale_metadata_repaired": true,
-    "freshness_guard_installed": true,
-    "fingerprint_registry_verified": true,
-    "codeforge_active": true,
+    "current_official_research": true,
+    "current_community_comparison": true,
+    "v6_model_calibration": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
+    "fingerprint_registry_verified": "23_OF_23_ZERO_MISMATCH",
     "codeforge_review": "PASS",
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
@@ -488,15 +490,15 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-09-30T22:10Z-REV92-U1",
+    "freshness_epoch": "2026-10-01-REV92-U2",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "192c173ad52391987c24d7510d451e7d02b96fbe",
+    "registry_content_sha": "bbe1fb043010d38f3e8c6b93dcc67452bf2cdff0",
     "expected_track_revision": 92,
-    "critical_carrier_count": 18,
+    "critical_carrier_count": 23,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_BODY_FINGERPRINT_AND_DIRECT_READBACK"
+    "codeforge_review": "PASS_FULL_DIRECT_READBACK"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -519,5 +521,22 @@
     "no_new_controller": true,
     "pointer_published_last": true,
     "mutation_after_pointer": "NONE"
+  },
+  "rev92_v6_studio2_calibration": {
+    "status": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
+    "snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md",
+    "official_current_checked": true,
+    "current_community_compared": true,
+    "current_findings": {
+      "v6_role": "CONTROL_PRODUCTION_CURRENT_PRIMARY",
+      "v6_wild_role": "EXPLORATION_UNPREDICTABILITY",
+      "v6_mini_role": "FAST_PROTOTYPE_LEARNING",
+      "variety": "ADJUSTS_STYLE_PROMPTS_ZERO_RETAINS_STYLE_TAG_CONTROL",
+      "max_mode": "LONGER_COMPLEX_SOURCE_ADHERENCE_STYLE_TRANSFER_STYLE_VOCAL_CONSISTENCY_HIGHER_CREDIT_COST",
+      "v6_max_generation_duration_minutes": 8
+    },
+    "community_status": "CONFLICTING_SIGNALS_TEST_CANDIDATES_ONLY",
+    "real_render_acceptance": "OPEN_EVENT_GATED",
+    "no_rule_promotion_from_web_alone": true
   }
 }
