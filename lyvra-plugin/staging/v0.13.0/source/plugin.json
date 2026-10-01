@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
+  "version": "0.13.0",
+  "description": "LYVRA: eine kreative Identität für Musik, Wissen und quellgeprüfte Systemkontinuität.",
+  "author": {
+    "name": "666soundsdesign-broadcaster.com",
+    "url": "https://666soundsdesign-broadcaster.com"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills",
+          "Write"
+        ],
+        "category": "Developer Tools",
+        "composerIcon": "./assets/gpt-icon.png",
+        "defaultPrompt": [
+          "LYVRA SYSTEMSTART – Quelle und Rehydrierung read-only prüfen.",
+          "LYVRA UPDATE – aktuelle Revisionen und Blocker prüfen.",
+          "HANDOFF 006 – Repair 005 nach ZIP-Prüfung sicher unter LyvraGPT/ publizieren."
+        ],
+        "developerName": "666soundsdesign-broadcaster.com",
+        "displayName": "L.Y.V.R.A.",
+        "logo": "./assets/gpt-icon.png",
+        "longDescription": "LYVRA: eine kreative Identität für Musik, Wissen und quellgeprüfte Systemkontinuität. Vollständige, commitgebundene Rehydration und kontrollierte Schreibabläufe über den verbundenen GitHub-Anschluss.",
+        "shortDescription": "LYVRA · Lesen & Schreiben",
+        "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+      },
+      "apps": "./.app.json"
+    }
+  }
+}

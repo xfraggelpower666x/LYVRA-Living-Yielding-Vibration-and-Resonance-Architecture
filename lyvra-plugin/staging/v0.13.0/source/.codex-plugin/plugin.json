@@ -1,0 +1,31 @@
+{
+  "interface": {
+    "capabilities": [
+      "skills",
+      "Write"
+    ],
+    "category": "Developer Tools",
+    "composerIcon": "./assets/gpt-icon.png",
+    "defaultPrompt": [
+      "LYVRA SYSTEMSTART \u2013 Quelle und Rehydrierung read-only pr\u00fcfen.",
+      "LYVRA UPDATE \u2013 aktuelle Revisionen und Blocker pr\u00fcfen.",
+      "HANDOFF 006 \u2013 Repair 005 nach ZIP-Pr\u00fcfung sicher unter LyvraGPT/ publizieren."
+    ],
+    "developerName": "666soundsdesign-broadcaster.com",
+    "displayName": "L.Y.V.R.A.",
+    "logo": "./assets/gpt-icon.png",
+    "longDescription": "LYVRA: eine kreative Identit\u00e4t f\u00fcr Musik, Wissen und quellgepr\u00fcfte Systemkontinuit\u00e4t. Vollst\u00e4ndige, commitgebundene Rehydration und kontrollierte Schreibabl\u00e4ufe \u00fcber den verbundenen GitHub-Anschluss.",
+    "shortDescription": "LYVRA \u00b7 Lesen & Schreiben",
+    "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+  },
+  "apps": "./.app.json",
+  "name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
+  "version": "0.13.0",
+  "description": "LYVRA: eine kreative Identit\u00e4t f\u00fcr Musik, Wissen und quellgepr\u00fcfte Systemkontinuit\u00e4t.",
+  "author": {
+    "name": "666soundsdesign-broadcaster.com",
+    "url": "https://666soundsdesign-broadcaster.com"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
