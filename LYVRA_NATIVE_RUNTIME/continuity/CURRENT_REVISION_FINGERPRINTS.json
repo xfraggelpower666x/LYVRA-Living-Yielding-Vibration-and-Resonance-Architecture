@@ -34,10 +34,10 @@
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
-  "pointer_publication": "PENDING_FINAL_CREATOR_EVIDENCE_POINTER",
+  "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "UPDATED_FOR_CREATOR_MODEL_PLUGIN_EVIDENCE",
-  "codeforge_review_status": "PASS_BODY_PRE_POINTER",
-  "verified_carrier_count": 23,
+  "registry_population_status": "VERIFIED_25_OF_25_ZERO_MISMATCH",
+  "codeforge_review_status": "PASS_FULL_DIRECT_READBACK",
+  "verified_carrier_count": 25,
   "verified_mismatch_count": 0
 }
