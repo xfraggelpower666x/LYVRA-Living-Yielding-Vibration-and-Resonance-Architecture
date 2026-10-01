@@ -68,7 +68,8 @@ def main() -> int:
     home = fetch(base, args.timeout)
     privacy = fetch(urljoin(base, "privacy/"), args.timeout)
     if home["status"] == "PASS":
-        missing = [m for m in REQUIRED_MARKERS if m not in home.pop("content")]
+        delivered_html = home.pop("content")
+        missing = [m for m in REQUIRED_MARKERS if m not in delivered_html]
         if missing:
             home.update(status="FAIL", reason="plugin access marker(s) absent in served HTML", missing_markers=missing)
         elif args.reference_index:
