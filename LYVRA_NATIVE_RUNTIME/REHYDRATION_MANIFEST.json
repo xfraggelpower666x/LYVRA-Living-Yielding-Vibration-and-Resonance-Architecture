@@ -235,7 +235,7 @@
     "no_rule_promotion_from_web_alone": true
   },
   "rev92_u3_creator_studio_evidence": {
-    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "creator_visible_models": [
       "v6 Pro",
       "v6-wild Pro",
@@ -252,6 +252,8 @@
       "PSY_ORBIT"
     ],
     "source_class": "VERIFIED_DRIVE_PROVENANCE_REDOCKED_TO_REPO_CURRENT",
-    "no_new_track_revision": true
+    "no_new_track_revision": true,
+    "freshness_epoch": "2026-10-01-REV92-U3",
+    "codeforge_review": "PASS_25_OF_25_ZERO_MISMATCH"
   }
 }
