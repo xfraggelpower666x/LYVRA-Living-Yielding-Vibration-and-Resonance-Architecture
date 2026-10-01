@@ -1,0 +1,131 @@
+# LYVRA Studio 2 / Track Design — Creator Custom Models & Plugin Evidence
+
+STATUS: CURRENT_CREATOR_EVIDENCE_RESTORED_FROM_VERIFIED_DRIVE_PROVENANCE
+DATE_LOCAL: 2026-10-01
+TRACK_DESIGN_REVISION: 92
+SOURCE_CLASS: CREATOR_VALIDATED_UI_AND_HISTORICAL_PRIMARY_DRIVE_EVIDENCE
+ROLE: operational account/UI evidence and creator-specific Studio 2 experience
+CURRENT_AUTHORITY: REPO_CURRENT
+DRIVE_ROLE: provenance/history/recovery evidence
+
+## Creator-visible model surface
+
+Verified primary evidence from:
+LYVRA TRACK DESIGN EVIDENCE DRIFT 3 SUNO MODEL AND CONTROL SURFACE 2026-09-19
+Drive ID: 1CpGR3AS9zhW3yQ8OiM3FfByQyVUUdgW_ZtKO_c20Pgk
+
+VISIBLE_MODEL_SURFACE =
+v6 Pro |
+v6-wild Pro |
+v6-mini
+
+MODEL_EVIDENCE_PRIORITY =
+CREATOR_VALIDATED_LIVE_UI >
+OFFICIAL_GENERIC_DOCS >
+COMMUNITY_GENERIC_REPORTS
+
+DO_NOT_NORMALIZE_PRO_LABELS_AWAY = true
+
+Official documentation currently uses generic names v6 / v6-wild / v6-mini. For the creator's actual account-facing UI, creator-validated visible labels remain operational truth when configuring the creator-facing surface.
+
+## Creator custom model set
+
+Verified Drive evidence:
+LYVRA STYLE
+666PoWeRSoUnD
+666SD_PsyTrance
+
+CURRENT_OBSERVED_CUSTOM_MODEL_SET =
+LYVRA_STYLE |
+666PoWeRSoUnD |
+666SD_PsyTrance
+
+CUSTOM_MODEL_NE_NATIVE_MODEL = true
+CUSTOM_MODEL_NE_TRACK_DESIGN_AUTHORITY = true
+CUSTOM_MODEL_NE_LYVRA_IDENTITY = true
+
+### 666SD_PsyTrance
+
+CUSTOM_MODEL_OWNER = CREATOR
+CUSTOM_MODEL_SOURCE = CREATOR_SELECTED_SUCCESSFUL_LYVRA_TRACKS
+CUSTOM_MODEL_ROLE = RENDERER_SIDE_LEARNED_CONTINUITY_SUPPORT
+MASTERBRAIN_DECIDES_CURRENT_TRACK_BEFORE_CUSTOM_MODEL_EXECUTION = true
+
+A strong result from a custom model does not by itself prove that upstream Track Design / prompt translation had no drift. Custom-model lineage may mask upstream execution weaknesses.
+
+## Studio 2 custom plugin evidence
+
+Verified source:
+LYVRA_SUNO_STUDIO_2_CURRENT_DEVELOPMENT_HANDOFF_2026-09-26
+Drive ID: 1raVdHTbDjSei8XrKxw1fjwWAENUemHO86e8qEYKzm4s
+
+CURRENT_STUDIO2_CUSTOM_PLUGIN_CAPABILITY = CREATOR_USED_AND_DOCUMENTED
+CUSTOM_PLUGIN_CAPABILITY_NE_THEORETICAL_ONLY = true
+
+Documented creator-built examples:
+
+### Night Canopy
+TYPE = AUDIO_EFFECT
+EVIDENCE =
+PROTECTED_MONO_LOWS |
+RHYTHMIC_CHOPPING |
+STUTTER |
+DELAY |
+REVERB |
+UPPER_BAND_SPACE |
+TEMPO_LOCKED
+
+### Void Gravity
+TYPE = AUDIO_EFFECT
+EVIDENCE =
+PROTECTED_LOWS |
+ANIMATED_HIGHS |
+FREEZE |
+KILL_INPUT |
+WET_TAIL_OUTPUT |
+VOID_MACRO |
+TRANSIENT_DUCKING
+
+### Psy Orbit
+TYPE = PSYCHOACOUSTIC_EFFECT
+EVIDENCE =
+PSYCHOACOUSTIC_WIDTH |
+ORBITING_ECHOES |
+WOBBLE |
+SATURATION |
+PSY_FX |
+3D_4D_6D_8D_MODES |
+4x_6x_MOTION
+
+KNOWN_LIMITATION =
+VISUAL_ORBITER_MISSING_IN_DOCUMENTED_BUILD
+
+PLUGIN_AUDIO_QUALITY_REQUIRES_CREATOR_HEARING = true
+
+## Evidence interpretation
+
+Suno official capability:
+Studio 2 chat bar can create unique plugins and synth presets; effects can be custom-designed via chat.
+
+Creator evidence:
+LYVRA has already used this capability and documented real custom plugin designs.
+
+Therefore:
+STUDIO2_CUSTOM_PLUGIN_CAPABILITY = VERIFIED_AVAILABLE_AND_CREATOR_USED
+
+But:
+PROMPTED_NE_PLANNED_NE_BUILT_NE_WIRED_CORRECTLY_NE_FUNCTIONALLY_WORKING_NE_MIX_SAFE_NE_MUSICALLY_GOOD = true
+
+Each plugin still requires its own capability/status evidence.
+
+## Current integration consequences
+
+TRACK_DESIGN_MODEL_SURFACE_MUST_PRESERVE_CREATOR_VISIBLE_LABELS = true
+STUDIO2_REHYDRATION_MUST_INCLUDE_CUSTOM_PLUGIN_HISTORY_WHEN_RELEVANT = true
+STUDIO2_PLUGIN_TASKS_MUST_NOT_BE_TREATED_AS_NEW_OR_HYPOTHETICAL_CAPABILITY = true
+PLUGIN_DESIGN_MAY_USE_CENTRAL_ANALYTICS_SELECTIVELY = true
+PLUGIN_LEARNING_MAY_PROMOTE_TO_MUSIC_MEMORY_ONLY_AFTER_CAUSAL_SCOPE_CHECK = true
+
+NO_NEW_SYSTEM = true
+NO_NEW_CONTROLLER = true
+NO_NEW_ROUTER = true
