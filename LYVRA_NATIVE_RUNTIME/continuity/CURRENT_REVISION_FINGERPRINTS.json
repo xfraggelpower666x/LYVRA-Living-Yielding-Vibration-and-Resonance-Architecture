@@ -32,8 +32,10 @@
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
-  "pointer_publication": "PENDING_FINAL_V6_CALIBRATION_POINTER",
+  "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "UPDATED_FOR_V6_CALIBRATION_AND_HANDOFF",
-  "codeforge_review_status": "PASS_V6_CALIBRATION_HANDOFF_PRE_POINTER"
+  "registry_population_status": "VERIFIED_23_OF_23_ZERO_MISMATCH",
+  "codeforge_review_status": "PASS_FULL_DIRECT_READBACK",
+  "verified_carrier_count": 23,
+  "verified_mismatch_count": 0
 }
