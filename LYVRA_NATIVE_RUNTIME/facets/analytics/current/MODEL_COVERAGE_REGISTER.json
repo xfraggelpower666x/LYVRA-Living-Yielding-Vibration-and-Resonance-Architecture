@@ -32,5 +32,23 @@
     "max_mode": "LONGER_THAN_TWO_MINUTES_SOURCE_ADHERENCE_STYLE_TRANSFER_STYLE_VOCAL_CONSISTENCY_HIGHER_CREDIT_COST"
   },
   "v6_max_generation_duration_minutes": 8,
-  "real_render_calibration_open": true
+  "real_render_calibration_open": true,
+  "creator_visible_native_model_labels": [
+    "v6 Pro",
+    "v6-wild Pro",
+    "v6-mini"
+  ],
+  "creator_custom_models": [
+    "LYVRA STYLE",
+    "666PoWeRSoUnD",
+    "666SD_PsyTrance"
+  ],
+  "creator_ui_evidence_source": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
+  "model_label_rule": "PRESERVE_CREATOR_VISIBLE_PRO_LABELS_FOR_CREATOR_FACING_SURFACE_WHILE_KEEPING_OFFICIAL_GENERIC_MODEL_IDENTITY_SEPARATE",
+  "custom_model_rule": "CUSTOM_MODELS_NE_NATIVE_MODELS_AND_NE_TRACK_DESIGN_AUTHORITY",
+  "custom_model_666SD_PsyTrance": {
+    "owner": "CREATOR",
+    "source": "CREATOR_SELECTED_SUCCESSFUL_LYVRA_TRACKS",
+    "role": "RENDERER_SIDE_LEARNED_CONTINUITY_SUPPORT"
+  }
 }
