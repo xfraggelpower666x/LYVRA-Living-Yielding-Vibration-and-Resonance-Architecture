@@ -112,7 +112,8 @@
       "LYVRA_NATIVE_RUNTIME/facets/analytics/LYRICS_KNOWLEDGE_TRANSLATION.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
       "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
-      "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json"
+      "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -221,5 +222,14 @@
     "freshness_epoch": "2026-09-30T22:10Z-REV92-U1",
     "fingerprint_registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "codeforge_review": "PASS_PRE_POINTER"
+  },
+  "rev92_v6_studio2_calibration": {
+    "status": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
+    "snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md",
+    "freshness_epoch": "2026-10-01-REV92-U2",
+    "official_current_checked": true,
+    "current_community_compared": true,
+    "own_render_validation": "OPEN_EVENT_GATED",
+    "no_rule_promotion_from_web_alone": true
   }
 }
