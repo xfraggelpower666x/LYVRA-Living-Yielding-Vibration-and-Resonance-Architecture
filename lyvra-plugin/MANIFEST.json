@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "name": "L.Y.V.R.A. Plugin Source Backup",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "release_id": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+  "version": "0.13.0",
+  "account_audience": "PRIVATE",
+  "account_scope": "USER",
+  "captured_at": "2026-10-01",
+  "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "repository_base_commit": "89db0978d0f62660986d27efd1d2005265811448",
+  "repository_path": "lyvra-plugin/",
+  "source_files": [
+    {
+      "path": ".app.json",
+      "bytes": 124,
+      "sha256": "c2e5790d1837c7bca7689a9445f9f359698b1cf55ca4fefb4373ce1c5f4da26e",
+      "git_blob_sha": "0d3cb57b72632872e87c5997dedebf7dac7df816"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "bytes": 1345,
+      "sha256": "60712689bbb21b86f4c11bb9efbacd9132aaf2fb3e0e0e29027d3b8aa461d6d7",
+      "git_blob_sha": "541b0807258f218ee0baf1fb302eba013fa82c88"
+    },
+    {
+      "path": "assets/gpt-icon.png",
+      "bytes": 492586,
+      "sha256": "152c232038761824f569ed40218e99680c57290ded3ac79a23afa01fd70b9839",
+      "git_blob_sha": "68647b31fdc741570ff07a8363d610ad9b538ece"
+    },
+    {
+      "path": "plugin.json",
+      "bytes": 1437,
+      "sha256": "5850755e2df746694e6e11c5115981726eb0007d5d39dd4b9af6f42c29727a13",
+      "git_blob_sha": "8aae35ca013a17f223d0137d3f98ef81b560398f"
+    },
+    {
+      "path": "skills/instructions/SKILL.md",
+      "bytes": 11088,
+      "sha256": "eb2a00866068f56b6277c0ec27369497d52e14a814088f8113f19dda391133df",
+      "git_blob_sha": "809eb1bf02c5bcedbb620a0c3ed209ba93676c5f"
+    },
+    {
+      "path": "skills/instructions/agents/openai.yaml",
+      "bytes": 246,
+      "sha256": "1cc80230e0ef010d1826f2508e54332aca6e2ade1ac1d698e2e7e83325b7e4f3",
+      "git_blob_sha": "9aa370d24e1a8654ca34dd79f8fa17f3f2eb1029"
+    },
+    {
+      "path": "skills/instructions/lookup/knowledge-index.json",
+      "bytes": 2395,
+      "sha256": "5e9090c5946e5b24d464d594db10630071364d58eea8f6b07c7a7c3e771bdffd",
+      "git_blob_sha": "9b0c1783d99a3b8bf0ae7387094cf2260b7dddb3"
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "bytes": 1308757,
+      "sha256": "10650b5dd139b4a91018afc80e26a0986b9a9c3e5e5d45275e51f71e1d79a52d",
+      "git_blob_sha": "9993828553cbbcbb3114737a5822fbd42b9debcc"
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "bytes": 1327854,
+      "sha256": "ebdcde606234648eed7b8695d8f95693bf5f42e9ff4a343cf22b3988e2b77e86",
+      "git_blob_sha": "7bd02057c1c17bf8445d85917015311fb70359b6"
+    },
+    {
+      "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+      "bytes": 2406663,
+      "sha256": "808c2db38b7c21bd3ad58a4a9224eff5751170a93347392c42e784de36f48df1",
+      "git_blob_sha": "6f513ae61e19f59394858164225d1622b0e39aa4"
+    },
+    {
+      "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+      "bytes": 2626397,
+      "sha256": "11ad6ba2a918ada148317624d6627e250ec21bcbf6ca056a23f48065c4c632f1",
+      "git_blob_sha": "7ac15ba8e1ee22237e3502fbec1c670576249f58"
+    },
+    {
+      "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+      "bytes": 1918985,
+      "sha256": "1b286a5fef6944915707c38a2f590abcb11a5d5919d2173f7190487eb9570dc9",
+      "git_blob_sha": "7253c56a977eb7cfc98203e134d2aa1079bd1f4e"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+      "bytes": 1818457,
+      "sha256": "9e63f1381838a2d848c1b2c6d7f6ef2436156ce03e618f366d541343e5dc8d94",
+      "git_blob_sha": "4ac3f3dd1c3c46bddc193b49bc1f946c4d273978"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "bytes": 2699385,
+      "sha256": "a75fa74f3dd56299cef535e564eeca7d1d454581c804563d3e6042f75f903492",
+      "git_blob_sha": "54de895f2e3831ae38445d46fef050d9adc08473"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "bytes": 2364103,
+      "sha256": "47ca055e6836a042f9f912ff28954bfcd7cc5a7d3bee58e228fd8e5512f4ff44",
+      "git_blob_sha": "935528d13174bfcf3732ad412991c8549101161b"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "bytes": 2340666,
+      "sha256": "097f27074c0928933ceac8d5c7464b85e2cd5d172bb82c479c21e4cb6c5f7e59",
+      "git_blob_sha": "7918ae375d2655f76e1d99c4eed1adebfc5dda26"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+      "bytes": 2201974,
+      "sha256": "d40f451f7da0eeed49b1a6c199c1a8045d78779e1bd3b3239372a380078c7ac9",
+      "git_blob_sha": "d20f0b66c13ae5b36ebe54373f82acc25f95fa64"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "bytes": 1713482,
+      "sha256": "7e83064dc3502a8b65dbabc3da0245c3751cec461b2dd54c747b1a735c962ea6",
+      "git_blob_sha": "fe2d3a69e21a0201ceded4b374198c1707d9f64c"
+    },
+    {
+      "path": "skills/instructions/references/READ_WRITE_REHYDRATION.md",
+      "bytes": 9170,
+      "sha256": "bffb4cfa471c2ddbf88168367242eae3416a6bb3a973cd2b2920503f1cc1bbc2",
+      "git_blob_sha": "0d8097427af94587dab447ed632a362353fa4b37"
+    },
+    {
+      "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "bytes": 43931,
+      "sha256": "1abbca5b22e8f2ea7f97a82ebd063fa9430d6b9f771386e0cfab1793f7880bb6",
+      "git_blob_sha": "375b4a4d51c2fb8d38aaaaa8ea7b49c809ca971c"
+    },
+    {
+      "path": "skills/music-analytics/SKILL.md",
+      "bytes": 4025,
+      "sha256": "5aa549d1050e8fb3dc46a285f8576e6650c62887e7393b8d1552adb121133f7b",
+      "git_blob_sha": "0d3af4b7171b1c07898c28a8d5c5f5d577dfe027"
+    },
+    {
+      "path": "skills/music-analytics/agents/openai.yaml",
+      "bytes": 249,
+      "sha256": "9a6aa4fbb9815b2aad1f85319c56b13dce92c1000f02151d1cde0708a5c939ec",
+      "git_blob_sha": "0c0fec85b665d26e686506784f36a3a36122cd7a"
+    },
+    {
+      "path": "skills/rehydration-continuity/SKILL.md",
+      "bytes": 3863,
+      "sha256": "05a50dc042ec3e3c9b7b84b86393532ab48017f5e734e53b994089dee2773885",
+      "git_blob_sha": "b602a21bc842abd943b7bc77f9dc26c3f8fe42be"
+    },
+    {
+      "path": "skills/rehydration-continuity/agents/openai.yaml",
+      "bytes": 264,
+      "sha256": "bda511bb2307ceef0550b5a7500692cd8dd6be43566ec3d20ffb99ed669afbb4",
+      "git_blob_sha": "d3755054ad91c64b9454ef72b65e384325f44bf8"
+    },
+    {
+      "path": "skills/repository-update-recovery/SKILL.md",
+      "bytes": 4726,
+      "sha256": "111322c51a46264476dbc6b98a9e9b792adbd93946cdc402591b32ef822ce5a1",
+      "git_blob_sha": "47b09c652e33bcfe31608fbba5050bd88cd45109"
+    },
+    {
+      "path": "skills/repository-update-recovery/agents/openai.yaml",
+      "bytes": 260,
+      "sha256": "6e0d674206715ac98b445af1b9bce0bef80cd3ee89806473478e6caf0066018f",
+      "git_blob_sha": "cecc0434b5a16b8d5fd7b1a833eb11677b53a6c2"
+    },
+    {
+      "path": "skills/suno-studio-2/SKILL.md",
+      "bytes": 4009,
+      "sha256": "c24e571deb19037a4651d140d9a61c8d7993ee4e031b229d6ef15ffc096342c4",
+      "git_blob_sha": "43dae40040b7ad3ba725deb9a6ed9acc701a826c"
+    },
+    {
+      "path": "skills/suno-studio-2/agents/openai.yaml",
+      "bytes": 244,
+      "sha256": "e21b3f0693371b6665db99efd43d23f5d44d818e52a2e5d5e412f3e36a35c44e",
+      "git_blob_sha": "376cfd3f78740d1b451c4d73984c619d1c06b35c"
+    },
+    {
+      "path": "skills/track-design/SKILL.md",
+      "bytes": 3632,
+      "sha256": "ed6a2a921dc25a84ca5d31ca80a7744cdd06b5cca1986aaa33ba57fa476fa0d6",
+      "git_blob_sha": "a366e6186b8ad72c2753518da73e24983932a366"
+    },
+    {
+      "path": "skills/track-design/agents/openai.yaml",
+      "bytes": 245,
+      "sha256": "6d77fc274491415718dd3c9b69b760e880e33973ce4d08bf3a476f42e2374d65",
+      "git_blob_sha": "fbfb18f3b14f976f00fe7991de0375bdbec0d63b"
+    }
+  ],
+  "source_file_count": 30,
+  "source_bytes": 23310562,
+  "archives": [
+    {
+      "path": "releases/v0.12.0/LYVRA_PLUGIN_v0.12.0_2026-10-01.tar.gz",
+      "bytes": 23126882,
+      "sha256": "788b2c61ec7b3e65594750ab954eb0fee0f45d2de020884783cb1cfddfa31d50",
+      "storage": "ORDERED_BINARY_PARTS",
+      "parts": [
+        {
+          "path": "releases/v0.12.0/LYVRA_PLUGIN_v0.12.0_2026-10-01.tar.gz.parts/part-000",
+          "bytes": 8388608,
+          "sha256": "d7923cf20cc6de0af444d77322d64fb7277392474b51038983fa3539b49567fd"
+        },
+        {
+          "path": "releases/v0.12.0/LYVRA_PLUGIN_v0.12.0_2026-10-01.tar.gz.parts/part-001",
+          "bytes": 8388608,
+          "sha256": "37f5d37e45a514ed2227a02f55ee277f2773f83dc812afe407cebd89f2f2f2d4"
+        },
+        {
+          "path": "releases/v0.12.0/LYVRA_PLUGIN_v0.12.0_2026-10-01.tar.gz.parts/part-002",
+          "bytes": 6349666,
+          "sha256": "32ed0fad722c53865a4be9d80a1b7d19da577e61831b732111e77cfd0ebc8876"
+        }
+      ]
+    },
+    {
+      "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.tar.gz",
+      "bytes": 23131047,
+      "sha256": "ded6d0553ddced2e4904cc94a803e2fd81f08a98255b75ed71cab82a18c39da5",
+      "storage": "ORDERED_BINARY_PARTS",
+      "parts": [
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.tar.gz.parts/part-000",
+          "bytes": 8388608,
+          "sha256": "61dcec2ae95b56b81948df04c6a6752a264cb8f7618f089d924332957e89aa9c"
+        },
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.tar.gz.parts/part-001",
+          "bytes": 8388608,
+          "sha256": "e1273a3b81cf934e77bdbb7347557917544949306b4b38ed23cba31360893b50"
+        },
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.tar.gz.parts/part-002",
+          "bytes": 6353831,
+          "sha256": "823fd6f619a9f390891ac513b6259d9c3f08189b70d9538f261aa1adb22b63f2"
+        }
+      ]
+    },
+    {
+      "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.zip",
+      "bytes": 23136489,
+      "sha256": "1baba52b0ee2495d0fc47eccbfa4559843b4bfdf16d527c7f33f39cf96d7cdcf",
+      "storage": "ORDERED_BINARY_PARTS",
+      "parts": [
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.zip.parts/part-000",
+          "bytes": 8388608,
+          "sha256": "65c25b5e69d12de038458b97341690a8184f07ff26aec7999c8aa603beca9c2a"
+        },
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.zip.parts/part-001",
+          "bytes": 8388608,
+          "sha256": "9a48d754a6010c7b6346164fdf8b697659d7e968c4902abe38958c62334e1c2f"
+        },
+        {
+          "path": "releases/v0.13.0/LYVRA_PLUGIN_v0.13.0_2026-10-01.zip.parts/part-002",
+          "bytes": 6359273,
+          "sha256": "35c51ed85ab8eaeb19f1ae160eebb1dd9b8c91c064de2d25b37aad5600d3a19c"
+        }
+      ]
+    }
+  ],
+  "pfs": {
+    "entry_id": "LYVRAPLUGIN-37001",
+    "child_system_id": "666PFS-LYVRA-PLUGIN-BACKUP-001",
+    "role": "BACKUP_SNAPSHOT_INTEGRITY_VERSIONING_RESTORE_ONLY",
+    "loadable": false,
+    "autoload": "FORBIDDEN",
+    "automatic_sync": "NONE",
+    "runtime_authority": "NONE",
+    "restore_requires_explicit_user_approval": true
+  },
+  "source_preservation": "EXACT_ACCOUNT_EXPORT_BYTES",
+  "native_lyvra_runtime_mutation": "NONE",
+  "functional_skills": [
+    "Rehydration & Continuity",
+    "Repository Update & Recovery",
+    "Track Design",
+    "Suno Studio 2",
+    "Music Analytics"
+  ],
+  "base_skill": "instructions",
+  "preserved_prior_release": {
+    "version": "0.12.0",
+    "release_id": "pluginrel_6abecfc87bcc81919c65c00c30a6e5e1",
+    "archive_sha256": "788b2c61ec7b3e65594750ab954eb0fee0f45d2de020884783cb1cfddfa31d50"
+  }
+}
