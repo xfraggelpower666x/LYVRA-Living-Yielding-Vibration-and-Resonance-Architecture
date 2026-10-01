@@ -113,7 +113,9 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md",
       "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
       "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -231,5 +233,25 @@
     "current_community_compared": true,
     "own_render_validation": "OPEN_EVENT_GATED",
     "no_rule_promotion_from_web_alone": true
+  },
+  "rev92_u3_creator_studio_evidence": {
+    "status": "CURRENT_PRODUCTIVE_PENDING_FINAL_POINTER",
+    "creator_visible_models": [
+      "v6 Pro",
+      "v6-wild Pro",
+      "v6-mini"
+    ],
+    "creator_custom_models": [
+      "LYVRA STYLE",
+      "666PoWeRSoUnD",
+      "666SD_PsyTrance"
+    ],
+    "documented_plugins": [
+      "NIGHT_CANOPY",
+      "VOID_GRAVITY",
+      "PSY_ORBIT"
+    ],
+    "source_class": "VERIFIED_DRIVE_PROVENANCE_REDOCKED_TO_REPO_CURRENT",
+    "no_new_track_revision": true
   }
 }
