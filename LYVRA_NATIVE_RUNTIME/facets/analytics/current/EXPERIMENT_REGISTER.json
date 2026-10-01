@@ -15,7 +15,8 @@
     },
     {
       "id": "v6_MODEL_CALIBRATION",
-      "status": "OPEN"
+      "status": "PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
+      "current_snapshot": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md"
     }
   ],
   "no_fake_certainty": true,
