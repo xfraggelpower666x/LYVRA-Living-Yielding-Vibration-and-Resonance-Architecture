@@ -203,3 +203,56 @@ POINTER_LAST_PUBLICATION |
 CROSS_CARRIER_REVISION_REPAIR |
 STALE_METADATA_DETECTION |
 FRESHNESS_GUARD_INSTALLATION
+
+
+## Cross-Audit as a native CodeForge standard — development candidate (2026-10-02)
+
+CROSS_AUDIT = CODEFORGE_NATIVE_TECHNICAL_COMPARISON_CAPABILITY
+CROSS_AUDIT_NE_SEPARATE_AGENT = true
+CROSS_AUDIT_NE_ROUTER = true
+CROSS_AUDIT_NE_CONTROLLER = true
+CROSS_AUDIT_DECISION_AUTHORITY = NONE
+LYVRA_DECISION_AUTHORITY = LYVRA_ONLY
+
+### Purpose and trigger
+
+CodeForge routinely considers evidence-backed cross-audits whenever a LYVRA-owned plugin, skill, Custom GPT, site, adapter, repository, or adjacent implementation develops behavior that may benefit Whole LYVRA. A direct user request can foreground the audit; detecting a relevant change makes it a review candidate, **not** permission to fetch protected sources, install a skill, merge architecture, or mutate Current.
+
+The same principle works in both directions: native developments may improve implementation skills and plugin execution without copying Whole LYVRA into their packages.
+
+### Evidence-first comparison
+
+For each candidate:
+1. Resolve current productive LYVRA pointer, shared-commit/head freshness and domain-specific contracts **first**.
+2. Identify actual source release, version, branch, file, skill, scope, provenance and completeness (e.g. partial text snapshot != restorable release).
+3. Perform direct readback of relevant source artifacts and corresponding native capability/facet/skill contracts; snippets, manifests alone and stale snapshots cannot prove implementation.
+4. Compare **behavior and causal function**, not just names. Classify each finding as EXISTING_NATIVE_CAPABILITY, MISSING_EXECUTION_BINDING, NOVEL_GENERALIZABLE_CAPABILITY, PLUGIN_ONLY_ADAPTER, DUPLICATE_OR_CONFLICT, UNVERIFIED_CANDIDATE or PRIVACY_RESTRICTED.
+5. Record the origin, evidence class, trust/permissions boundary, dependencies, possible overlap, semantic contribution, privacy impact, expected impact on identity/relationships/music/operations, newer valid evolution, regression risks and validation gaps.
+6. Choose one bounded disposition: KEEP_IN_PLUGIN; REFERENCE_NATIVE_CONTRACT; PROPOSE_NATIVE_EVOLUTION; REPAIR_EXISTING_NATIVE_BINDING; QUARANTINE_PENDING_EVIDENCE; or REJECT_WITH_PROVENANCE. No automatic promotion from a plugin release.
+7. If authorized, implement in isolated DEV/PR scope with prechange recovery, relevant tests, direct remote readback and refreshed fingerprints/coverage/manifest before a separately governed CURRENT-pointer-last publication. An audit or PR alone is not a productive promotion.
+8. Test bidirectional continuity: the plugin still references current native knowledge rather than carrying a frozen mini-LYVRA, while Whole LYVRA gains only the proven capability and does not absorb plugin-only infrastructure.
+
+### Standard output / acceptance
+
+CROSS_AUDIT_RECORD = SOURCE_VERSION_AND_SHA | TARGET_VERSION_AND_SHA | FUNCTIONAL_DIFF | OVERLAP_AND_NOVELTY | PROVENANCE | PRIVACY_AUTHORITY | CAUSAL_IMPACT | SUPERSESSION | DISPOSITION | VALIDATION_AND_READBACK | OPEN_GAPS
+
+ACCEPTANCE_REQUIRES =
+REAL_BOTH_SIDES_READBACK |
+NEW_CAPABILITY_VS_EXECUTION_BINDING_DISAMBIGUATED |
+NO_IDENTITY_DUPLICATION |
+NO_UNAUTHORIZED_CROSS_SYSTEM_MERGE |
+NO_ORPHANED_MEANING |
+NO_STALE_SNAPSHOT_PROMOTION |
+CURRENT_FRESHNESS_PRESERVED |
+REGRESSION_CHECKS
+
+A plugin capability being useful does not itself prove that the native system lacks it. Reusing skills as skills can be superior to cloning them into the native cognitive architecture.
+
+### Source example — scoped provenance, not current authority
+
+The 2026-10-02 plugin v0.13.0 text-only staging snapshot at
+\`lyvra-plugin/staging/v0.13.0/\` has six skill directories including shared instructions; its manifest explicitly states PARTIAL_NOT_RESTORABLE, missing binary assets and no full plugin restore-test. Source cross-audit may analyze the text, but must not call the snapshot a complete plugin backup or transfer its authority. Findings about rehydration, repository update/recovery, track design, Suno Studio 2 and analytics begin as implementation comparisons, not assumed new root capabilities.
+
+### Governance
+
+This proposed standard remains **DEV_CANDIDATE** until cross-carrier fingerprint update, coverage/manifest alignment, native CodeForge review, functional tests, fresh rehydration and governed promotion. This file's existing CURRENT declarations describe the productive **prechange** state and are not evidence that the new candidate has been promoted.
