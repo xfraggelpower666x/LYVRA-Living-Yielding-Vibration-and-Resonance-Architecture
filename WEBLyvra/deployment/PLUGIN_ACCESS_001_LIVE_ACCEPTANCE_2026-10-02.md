@@ -66,3 +66,13 @@ An independent local execution reconstructed the **exact committed** Python scri
 Python syntax compilation succeeded, and `python -m unittest discover` executed **6 of 6 tests successfully (OK)**. Covered: correct homepage/sha response, 403 as INCONCLUSIVE, DNS failure as INCONCLUSIVE, visible plugin+privacy PASS, missing plugin FAIL, missing-network no false success.
 
 **Scope:** The offline tests validate decision logic only. They do not prove that Cloudflare currently serves the new plugin patch or that mobile/audio/legal acceptance has passed.
+
+## Additional same-session public content check (2026-10-02)
+
+A fresh public website-text fetch of the custom-domain homepage returned the LYVRA page with navigation, music, universe and WebRadio sections. Searching that returned **extracted page** for `LYVRA-Plugin` and `chatgpt.com` produced no matches. By comparison, the latest GitHub `WEBLyvra/live/dist/index.html` contains the additive `id="lyvra-plugin"` section, `plugin-access.css`, and a direct LYVRA GPT link.
+
+**Interpretation:** this is a concrete **source-versus-observed-public-extraction discrepancy**. It supports `LIVE_DEPLOYMENT_READBACK_PENDING`, but is **not definitive byte-level proof of a stale Cloudflare deployment**, since the external fetch may use an older cache or omit information during HTML extraction. Independently served HTML/asset hashes and a current Cloudflare deployment ID are required.
+
+The same public fetch path could not provide reliable success for `/privacy/` or `weblyvra-live.pages.dev`. Neither failure proves a production outage.
+
+Plugin Creator separately returned the current private personal plugin version **0.13.0** with six skill entries. The v0.12.0 reference in the original website add-on report was evidence from its original authoring date, not the current backend release. This report does not alter plugin access or website source.
