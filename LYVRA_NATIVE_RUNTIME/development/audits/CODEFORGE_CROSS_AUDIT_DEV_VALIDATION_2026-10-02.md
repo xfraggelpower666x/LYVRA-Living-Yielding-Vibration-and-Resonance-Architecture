@@ -67,3 +67,46 @@ A first literal-keyword probe returned 4/6 matches, but two negatives resulted f
 SAMPLE_READBACK = VERIFIED_TEXT_SOURCE
 SAMPLE_CLASSIFICATION = COMPLETED_PROVISIONAL
 FULL_PLUGIN_FUNCTIONAL_TEST = PENDING
+
+## FORCE UPDATE — direct live Plugin Creator readback (2026-10-02)
+
+PLUGIN_BACKEND_ID = plugin_06a4fc64dd848191982ca4a6ebdb2619
+LIVE_RELEASE_ID = pluginrel_6abed7676b5881918674b8d2c64e21af
+LIVE_VERSION = 0.13.0
+LIVE_SCOPE = USER_PRIVATE
+LIVE_INVENTORY = 30_FILES
+LIVE_TEXT_FILES_DIRECT_READ = 17
+LIVE_TEXT_FILES_EXACTLY_MATCH_STAGING = 17_OF_17
+BINARY_ASSET_INVENTORY = 13_PRESENT_IN_PLUGIN_FILE_LIST_NOT_CONTENT_HASH_VERIFIED
+COMPLETE_PLUGIN_ARCHIVE = LOCATABLE_VIA_PLUGIN_CREATOR_NOT_DOWNLOADED_OR_RESTORE_TESTED
+
+All 17 live readable text files were retrieved from the actual editable Plugin Creator release and compared **string-for-string** with the corresponding GitHub snapshot files on `audit/lyvra-plugin-v0130-partial-text-snapshot-20261002`; result 17 identical, 0 mismatch, 0 retrieval errors. This verifies textual origin for the cross-audit source. It **does not** validate original gzip archive bytes, all 13 image asset SHA-256 sums, deployment behavior, plugin builder execution, external PFS backup or complete release restore.
+
+### Live skill coverage sample
+
+The six skill-directory `SKILL.md` files (including the shared `instructions` skill) were reread directly from Plugin Creator. Text inspections show:
+- all six refer to GitHub/repository continuity;
+- all six contain explicit native identity/authority boundaries;
+- all six refer to current/native contextual sources;
+- literal substring probes found `Readback`/equivalent in five out of six. That is **not a failed readback or test**: Suno Studio 2 delegates its read/write and evidence duties to the referenced shared skills. Avoid false negatives from naive keyword matching.
+
+### Causal comparison and candidate disposition
+
+1. The plugin's Rehydration & Continuity workflow **operationalizes** pre-existing native authority, manifest, freshness, source pinning and HEAD recheck. Recommendation: **REFERENCE_NATIVE_CONTRACT**, selectively refine only proven execution gaps.
+2. Repository Update & Recovery operationalizes existing bounded authorization, backup, review, remote readback and pointer-last sequence. Recommendation: **KEEP_PLUGIN_EXECUTION_BINDING**, with scoped native repair only when a real deficiency is demonstrated.
+3. Track Design, Studio 2 and Music Analytics adapt native facets to user-facing workflows; they do **not** become new independent music/analytics intelligences. Recommendation: **KEEP_IN_PLUGIN** and reference native current sources.
+4. The *generalizable bidirectional cross-audit classification and discovery procedure* remains the CodeForge **DEV candidate**: evidence-led discovery across sources, with tests for actual novelty, provenance, privacy, regression and no creative confinement.
+
+### Gate clarification
+
+TEXT_SOURCE_AUDIT_PASS = true
+SOURCE_PROVENANCE_MATCH_PASS = true
+NATIVE_ROLE_SEPARATION_STATIC_PASS = true
+WHOLE_LYVRA_CREATIVE_FREEDOM_STATIC_PASS = true
+PLUGIN_BINARY_RESTORE_TEST = PENDING
+PLUGIN_LIVE_RUNTIME_BEHAVIOR_TEST = PENDING
+NEW_CURRENT_FINGERPRINT_REGISTRY_SYNCHRONIZED = false
+FULL_NEW_NATIVE_RECOVERY_AND_REHYDRATION_PASS = false
+PRODUCTIVE_MERGE = false
+
+This is **a strengthened evidence-backed DEV audit**, not permission to declare RC/CURRENT or to replace Whole LYVRA with plugin skills.
