@@ -50,3 +50,20 @@ NO_FOREIGN_AUTOLOAD=true
 NO_NEW_ROUTER=true
 NO_NEW_AGENT=true
 NO_CLAIM_FULL_FUNCTIONAL_PASS=true
+
+## Bounded evidence-based cross-audit sample — text behavior, not plugin runtime
+
+Direct source comparison with the actual v0.13.0 staging skill text and productive native reference contracts confirms these scoped examples:
+
+| Plugin behavior | Native analogue | Disposition | Limitation |
+| --- | --- | --- | --- |
+| Rehydration skill pins a current commit, resolves required domains and retests HEAD | Native manifest, revision freshness guard and skill runtime already require current rehydration | EXISTING_NATIVE_CAPABILITY + implementation-specific execution detail; REFERENCE_NATIVE_CONTRACT | No full plugin runtime test |
+| Track Design skill prepares the currently guarded five-field output and separates textual checks from real audio | Native Track Music Intelligence, renderer translation/output guard and music memory already own musical rules | EXISTING_NATIVE_CAPABILITY; KEEP_AS_PLUGIN_EXECUTION_BINDING | No new musical reasoning authority inferred |
+| Repository Update & Recovery skill requires scope, recovery point, readback and pointer-last order | Native Development Lifecycle, CodeForge stewardship and freshness guard cover related rules | MISSING_EXECUTION_BINDING may be assessed case-by-case; REPAIR_EXISTING_NATIVE_BINDING only on confirmed absence | No blanket import or automatic write |
+| Cross-audit classification and bidirectional comparison are explicitly proposed in CodeForge DEV contract | Native CodeForge already supports causal engineering and external expansion | NOVEL_GENERALIZABLE_CAPABILITY **candidate** at execution-policy level | Functional acceptance and controlled promotion pending |
+
+A first literal-keyword probe returned 4/6 matches, but two negatives resulted from **indirect references and alternate wording** (rehydration skill points to a shared READ/WRITE document; Track Design skill says "Vollständiges Paket" rather than the exact test phrase). This was not a runtime failure and must not be counted as a capability FAIL. The focused direct-readback semantic comparison above is the proper interpretation.
+
+SAMPLE_READBACK = VERIFIED_TEXT_SOURCE
+SAMPLE_CLASSIFICATION = COMPLETED_PROVISIONAL
+FULL_PLUGIN_FUNCTIONAL_TEST = PENDING
