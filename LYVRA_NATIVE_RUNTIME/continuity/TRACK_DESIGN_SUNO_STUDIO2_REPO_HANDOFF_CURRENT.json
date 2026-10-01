@@ -29,12 +29,12 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-REPO-HANDOFF-2026-09-30-006",
-    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_CURRENT",
-    "target_surface": "TRACK_DESIGN_OR_SUNO_STUDIO_2_PROJECT_CHAT",
+    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-NEWCHAT-2026-10-01-007",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV92_U3",
+    "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_RELEVANT_TRACK_DESIGN_STUDIO2_ANALYTICS",
     "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
-    "last_valid_stage": "CURRENT_PRODUCTIVE_VERIFIED_POST_MIGRATION",
-    "active_task": "RESUME_TRACK_DESIGN_v3.4_REV92_WITH_SHARED_LYRIC_INTELLIGENCE_AND_ANALYTICS_TRANSLATION",
+    "last_valid_stage": "REV92_U3_CREATOR_MODEL_PLUGIN_EVIDENCE_REDOCKED",
+    "active_task": "CONTINUE_CREATOR_CUSTOM_MODEL_AND_STUDIO2_CUSTOM_PLUGIN_EVIDENCE_ANALYSIS_FROM_REV92_U3",
     "pending_work": [
       "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
       "GENRE_FRONT_RESEARCH_OPEN",
@@ -45,9 +45,13 @@
       "SUNO_RESEARCH_CAUSAL_EVIDENCE_CALIBRATION_OPEN",
       "ANALYTICS_HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST_EVENT_GATED",
       "ANALYTICS_v6_MODEL_CALIBRATION_PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN",
-      "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
+      "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
+      "DRIVE_STUDIO2_CUSTOM_PLUGIN_HISTORY_FURTHER_EVIDENCE_CHECK",
+      "CREATOR_MODEL_ACCOUNT_LABEL_PRESERVATION",
+      "V6_STUDIO2_COMMUNITY_RESEARCH_SINCE_LAUNCH",
+      "PLUGIN_AUDIO_VALIDATION_CREATOR_HEARING_OPEN"
     ],
-    "next_meaningful_action": "Resolve Whole LYVRA first. Preserve creator-validated v6 Pro / v6-wild Pro / v6-mini account labels and custom models LYVRA STYLE / 666PoWeRSoUnD / 666SD_PsyTrance. In Studio2, custom plugin capability is already creator-used; rehydrate Night Canopy, Void Gravity and Psy Orbit evidence when relevant. Current v6/Studio2 web calibration is pre-render complete; next causal renderer step remains creator-validated real-render evidence.",
+    "next_meaningful_action": "On LYVRA SYSTEMSTART in new chat, rehydrate Whole LYVRA current pointer and required domains first; verify freshness registry. Preserve account labels v6 Pro, v6-wild Pro, v6-mini, custom models LYVRA STYLE / 666PoWeRSoUnD / 666SD_PsyTrance. Reuse documented Studio2 creator-made plugins Night Canopy, Void Gravity, Psy Orbit (audio-quality acceptance not proven), and investigate remaining Drive evidence and v6/Studio2 community developments without inventing screenshot details. Resume relevant facet only after Whole.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -66,9 +70,9 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md"
     ],
-    "source_head": "eb85c48a569f90f63cf3c68e2a83f90a12933226",
-    "created_at": "2026-09-30",
-    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-CENTRAL-ANALYTICS-MEMORY-REPO-HANDOFF-2026-09-30-005"
+    "source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
+    "created_at": "2026-10-01",
+    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-REPO-HANDOFF-2026-09-30-006"
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -100,7 +104,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-01-REV92-U2",
+    "epoch": "2026-10-01-REV92-U4-NEWCHAT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 92,
