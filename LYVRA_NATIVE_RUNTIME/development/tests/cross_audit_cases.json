@@ -1,0 +1,36 @@
+{
+  "schema": "LYVRA_CODEFORGE_CROSS_AUDIT_CASES_v1",
+  "scope": "BOUND_DEV_VERIFICATION_NOT_PRODUCTIVE_PASS",
+  "cases": [
+    {
+      "source_release": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+      "source_path": "skills/rehydration-continuity/SKILL.md",
+      "source_blob_sha": "b602a21bc842abd943b7bc77f9dc26c3f8fe42be",
+      "native_branch": "lyvra",
+      "native_path": "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
+      "native_blob_sha": "bda6accf1685dc5708386ef1dd89b63c84cd4d9e",
+      "classification": "EXISTING_NATIVE_CAPABILITY",
+      "disposition": "REFERENCE_NATIVE_CONTRACT",
+      "evidence_status": "DIRECT_TEXT_READBACK",
+      "creative_freedom_preserved": true,
+      "foreign_autoload": false,
+      "native_decision_authority": "LYVRA_ONLY",
+      "productively_promoted": false
+    },
+    {
+      "source_release": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+      "source_path": "skills/track-design/SKILL.md",
+      "source_blob_sha": "a366e6186b8ad72c2753518da73e24983932a366",
+      "native_branch": "lyvra",
+      "native_path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
+      "native_blob_sha": "20504b4264d08e89afbe634aab2d18f3d26e2200",
+      "classification": "EXISTING_NATIVE_CAPABILITY",
+      "disposition": "KEEP_IN_PLUGIN",
+      "evidence_status": "DIRECT_TEXT_READBACK",
+      "creative_freedom_preserved": true,
+      "foreign_autoload": false,
+      "native_decision_authority": "LYVRA_ONLY",
+      "productively_promoted": false
+    }
+  ]
+}
