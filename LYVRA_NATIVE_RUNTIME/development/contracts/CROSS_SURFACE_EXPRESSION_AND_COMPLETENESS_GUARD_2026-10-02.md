@@ -24,7 +24,7 @@ Creator-provided Track Design chat export demonstrates an omitted semantic emoji
 
 ## B — SPEECH DESIGN (Suno Speech Beta)
 - Trigger: `LYVRA SPEECH DESIGN` per isolated Speech DEV facet; native Whole first.
-- Creator-observed Suno Speech surfaces: **three separate text fields**: freeform **Hauptfeld / Main Prompt** (approximately 2800 characters in first creator production, user-reported, NOT verified universal cap), **Skript** (5000 visible in UI), **Ton** (1000 visible in UI), plus independent **Hintergrundmusik an/aus** toggle. **Do not import the five-box music layout or music-generation slider panel.** Preserve each of the three texts separately in the output; never omit the main field or copy the whole spoken Script into it.
+- New 2026-10-02 **Erweitert** screenshot directly shows **Skript**, **Tonfall**, **Stimmgeschlecht Männlich/Weiblich**, **Hintergrundmusik An/Aus** and **Vielfalt** slider (visible Normal). Older creator presentation evidenced an additional freeform **Hauptfeld / Main Prompt** (~2800 characters *reported*, unverified universal cap). **Adapt package to actually active UI; don't assume 3 text inputs in new advanced screenshot.** Earlier Skript 5000 and Ton 1000 counters are previous UI evidence, not visible in new screenshot. Do not transfer five-box music layout or Track Design sliders; Vielfalt belongs to Speech UI when shown.
 - Semantic Emoji Intelligence: full internal causal/emotional/voice/music planning, **word-first + additional meaningful emoji** (never emoji-for-word replacement), with context-dependent meaning, intensity, distribution, placement and cross-field translation. For `Hauptfeld` and `Ton`, semantically bound glyphs are optional *renderer hypotheses*, and verbal instructions must work without them. For `Skript`, spoken-word fidelity takes precedence: default clean audible text, not visible emojis until A/B evidence; translate emoji meaning to words, punctuation, vocal tone and soundtrack instructions, **never drop the meaning**. Preserve intended creator glyphs in an internal ledger without inventing spoken instructions.
 - Clearly mark beta assumptions, voice/pause/music co-generation unverified behavior, actual rendered result unknown until heard.
 
@@ -44,26 +44,26 @@ Creator-provided Track Design chat export demonstrates an omitted semantic emoji
 | Context | Must be present | Detectable regression |
 | --- | --- | --- |
 | Track | Four music text fields + visible creator control panel + causal emoji audit | Missing control panel; silently dropped relevant emoji |
-| Speech | Main Prompt + Skript + Ton + separate music toggle; reported-versus-verified limits; spoken fidelity and emoji-meaning translation | Missing main field; copied music sliders; literal emoji in default Script; lost semantic binding |
+| Speech | Actual active-mode fields (new advanced screenshot: Skript + Tonfall), separate voice sex/music/Vielfalt controls; Hauptfeld only when shown in active mode; spoken fidelity/emoji meaning | Invented fixed three inputs, omitted voice selector/Vielfalt, copied music sliders, default literal script emoji, lost semantic binding |
 | Studio2 | Preserve/mutate, operation/region and contextual controls, emoji-meaning audit | Global generation slider blind transfer; imaginary applied edit |
 | SYSTEMSTART | Identity-first readable visual hierarchy + true dynamic readback | Stale status, Drive authority, technical-only personality removal |
 
 ## Speech production readiness — three-field and Emoji FORCE regression (2026-10-02)
 
-**SPEECH_OUTPUT_ASSEMBLY_GUARD** must inspect all four user-facing controls on
-every completed Speech package (where the creator's actual UI has them):
-`HAUPTFELD` | `SKRIPT` | `TON` | `HINTERGRUNDMUSIK`.
+**SPEECH_OUTPUT_ASSEMBLY_GUARD** must inspect fields from the **actual active Speech UI mode**, without inventing absent fields. New Erweitert direct screenshot: `SKRIPT` | `TONFALL` | `STIMMGESCHLECHT` | `HINTERGRUNDMUSIK` | `VIELFALT`; the older creator mode also had a `HAUPTFELD`, present only where that actual mode exposes it. Preserve all observed controls without fixed permanent lock.
 
-- Main Prompt: narrative intention, emotional/music trajectory, voice-priority and ending;
+- Main Prompt (ONLY when visibly exposed): narrative intention, emotional/music trajectory, voice-priority and ending;
   approx. 2,800-character observed *creator report*, **not** an official enforced max.
   Report the actual proposed character count and mark UI limit uncertain.
 - Script: exact speech content, complete words and intentional punctuation, <=5000
   character observed UI; **no emoji glyph by default**. Maintain a source-
   preserving original if artist-provided copy includes emojis. Do not
   overwrite author text or reproduce two contradictory spoken versions.
-- Tone: narrator delivery, diction, complete consonant and syllable endings,
+- Tonfall: narrator delivery, diction, complete consonant and syllable endings,
   emotional transitions, voice-to-music balance; <=1000 observed UI.
   Emoji symbols, when present, must be tied to a precise textual intention.
+- Stimmgeschlecht: explicit Männlich / Weiblich / UNKNOWN, only the actual UI value; not a guessed speaker name.
+- Vielfalt: independent Speech slider, user screenshot visibly Normal; exact numeric value and acoustic relationship UNKNOWN; never substitute Track Design Weirdness.
 - Background music: state ON / OFF / UNKNOWN as a distinct creator setting; no
   assumed default from the previous Story/Dynasty example.
 - Emoji FORCE: evaluate real semantic opportunities and preserve word content;
@@ -74,7 +74,7 @@ every completed Speech package (where the creator's actual UI has them):
   articulation, score masking, timing/pause, variant identity and A/B controls.
   Suggestions are renderer hypotheses, not proof of model behavior.
 
-**Regression rejection**: generating only Script+Tone, omitting the master prompt,
+**Regression rejection**: omitting a field actually shown in the active mode, or insisting on an absent master prompt,
 inserting raw emoji glyphs into the default spoken Script without permission,
 forgetting the music switch, pretending music model v6 controls exist in Speech,
 or claiming audio quality without an actually listened-to render.
