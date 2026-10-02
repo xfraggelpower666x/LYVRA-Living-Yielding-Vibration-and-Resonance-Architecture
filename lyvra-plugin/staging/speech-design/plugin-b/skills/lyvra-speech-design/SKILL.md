@@ -22,3 +22,8 @@ Creator's first speech report says words/phonemes may get swallowed; their audio
 
 ## Native update/release gate
 Use latest native DEV/RC/current state with protected writes, compare impact against both plugins, official GPT and conditional WebLYVRA, record handoff. An uninstalled SKILL.md cannot be presented as a published plugin release; only Plugin Creator guarded archive update and verified new release ID complete plugin propagation.
+
+## 2026-10-02 current UI and renderer reconciliation
+### Current advanced UI and two-WAV update (2026-10-02)
+The earlier 3-text-field layout was one creator-observed presentation, not a fixed feature. Updated browser screenshots: **Einfach** one freeform idea field; **Erweitert** `Skript`, `Tonfall`, `Stimmgeschlecht` Männlich/Weiblich, `Hintergrundmusik` Aus/An and `Vielfalt` slider showing Normal. Render only controls present in active mode; current crops do not show a third advanced Main field. Historical max values 5000 Script / 1000 Tone / ~2800 reported Main should be checked against actual active interface.
+Two PCM16 48kHz stereo WAVs provided: 391.473s and 393.917s. Archived `666.md` script available; no verified timecoded word-level mistakes or exact script-version-to-render map yet. Do not preserve old `audio pending` as current. First vary only Tonfall: consonant endings, syllable completeness, pauses, music masking. Only later, if specific timestamped word error is confirmed, propose a separately approved phonemic test variant; canonical original Script remains unchanged. Word-first emoji meaning and narrative richness preserved, literal spoken Script emojis experimental only.
