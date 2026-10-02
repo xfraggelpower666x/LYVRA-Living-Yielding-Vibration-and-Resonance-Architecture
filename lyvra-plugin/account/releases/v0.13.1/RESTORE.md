@@ -1,0 +1,3 @@
+# L.Y.V.R.A. account plugin 0.13.1 — TEXT SOURCE ONLY
+
+Verified 18/18 UTF-8 files current Plugin Creator 0.13.1 against this staging branch; seven skills including additive `666-visual-interface`. The ZIP in PFS is a RECONSTRUCTED TEXT-SOURCE ZIP, **not** a complete plugin archive: thirteen binary image/icon files are excluded; their names/sizes in PROVENANCE are not byte hashes. Keep historical v0.13.0 complete PFS ZIP/TAR unchanged. Before full restore, obtain authentic 0.13.1 binary assets/original Creator tar, verify byte hashes and use guarded release update. Never use this source-only archive to overwrite an existing installed plugin or alter native authority. No SYSTEMSTART/UPDATE hosted negative tests or PFS core pointer promotion are proven by this report.
