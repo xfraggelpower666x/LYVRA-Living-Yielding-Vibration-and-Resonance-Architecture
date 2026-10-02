@@ -152,7 +152,7 @@ class ReleaseOverlayTests(unittest.TestCase):
                 self.assertIn("LYVRA SPEECH DESIGN", speech)
                 self.assertIn("Einfach", speech)
                 self.assertIn("Erweitert", speech)
-                self.assertIn("NOT_INSTALLED", speech)
+                self.assertIn("RUNTIME_VERIFICATION_REQUIRED", speech)
 
     def test_overlay_file_set_is_small_and_additive(self):
         for key, role, old, proposal, slug in self.SPECS:
@@ -186,7 +186,17 @@ class ReleaseOverlayTests(unittest.TestCase):
                 existing_candidate = (ROOT / "lyvra-plugin" / "staging" / "speech-design" / key /
                                       "skills" / slug / "SKILL.md").read_bytes()
                 staged = (overlay / "skills" / slug / "SKILL.md").read_bytes()
-                self.assertEqual(existing_candidate, staged)
+                # Release-overlay skill may differ ONLY in dynamic status and
+                # provenance: an installed release must never claim "not installed".
+                baseline_version = old[1:]
+                decoded = staged.decode("utf-8")
+                decoded = decoded.replace(
+                    "STATUS: RELEASE_CAPABILITY_RUNTIME_VERIFICATION_REQUIRED",
+                    "STATUS: DEV_STAGED_SKILL_SOURCE_NOT_INSTALLED_IN_CURRENT_RELEASE")
+                decoded = decoded.replace(
+                    f"BASELINE_PLUGIN_VERSION_AT_OVERLAY_CREATION: {baseline_version}",
+                    f"PARENT_PLUGIN_RELEASE_CURRENT_20261002: {baseline_version}")
+                self.assertEqual(existing_candidate.decode("utf-8"), decoded)
 
 
 if __name__ == "__main__":
