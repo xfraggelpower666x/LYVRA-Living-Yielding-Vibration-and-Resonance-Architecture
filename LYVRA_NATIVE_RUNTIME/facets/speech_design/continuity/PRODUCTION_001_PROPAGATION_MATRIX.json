@@ -1,0 +1,76 @@
+{
+  "schema": "LYVRA_SPEECH_001_PROPAGATION_MATRIX_v1",
+  "date": "2026-10-02",
+  "status": "DEV_STAGED_TARGET_PROPAGATION_PENDING_RELEASE",
+  "root_authority": "lyvra",
+  "source_branch": "lyvra-dev-speech-design-beta-20261002",
+  "source_intent": "Speech beta 3-fields, native emoji intelligence, phonemic correction, creator-first official/community triangulation, runtime trigger",
+  "preserve": "ONE_LYVRA_WHOLE_SELF_AND_NATIVE_DECISION_AUTHORITY",
+  "targets": [
+    {
+      "id": "LYVRA_NATIVE_REPOSITORY",
+      "source": "GitHub LYVRA",
+      "impact": "REQUIRED",
+      "observed_state": "DEV_SPEECH_DESIGN_IMPLEMENTATION_PR10",
+      "required_change": "Release candidate review, reconcile community research and cross-surface contracts, fingerprints/coverage/manifest, fresh rehydration and controlled promotion",
+      "status": "DEV_PROPOSAL_NOT_PRODUCTIVE",
+      "readback": "DEV_BRANCH_DIRECT_FILE_READBACK",
+      "blocker": "NO_SUNO_SPEECH_AUDIO_ARTIFACT_REVIEW"
+    },
+    {
+      "id": "PLUGIN_A",
+      "backend_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "release_id": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+      "version": "0.13.0",
+      "impact": "REQUIRED",
+      "observed_state": "CURRENT_SKILLS_WITHOUT_SPEECH_WORKFLOW",
+      "required_change": "Add native speech-design Skill routing/whole-first, three creator inputs plus toggle, emoji meaning preservation, phonemic A/B plan and research triangulation; upgrade track/studio output preflight",
+      "status": "STAGING_HANDOFF_REQUIRED_NOT_UPDATED",
+      "readback": "LIVE_CURRENT_SKILL_FILES_READ",
+      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST"
+    },
+    {
+      "id": "PLUGIN_B",
+      "backend_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "release_id": "pluginrel_6abef83a76ec81918a62d300eb250430",
+      "version": "0.1.1",
+      "impact": "REQUIRED",
+      "observed_state": "NATIVE_RUNTIME_SKILLS_WITHOUT_SPEECH_TRIGGER",
+      "required_change": "Add LYVRA SPEECH DESIGN to native facet foreground, source-read rules and status; share same creator-first evidence and emoji/phonemic safeguards; no old Drive authority",
+      "status": "STAGING_HANDOFF_REQUIRED_NOT_UPDATED",
+      "readback": "LIVE_CURRENT_SKILL_FILES_READ",
+      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST"
+    },
+    {
+      "id": "LYVRA_CUSTOM_GPT",
+      "url": "https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a",
+      "impact": "REQUIRED",
+      "observed_state": "BUILDER_CONTENT_NOT_READ_IN_THIS_SESSION",
+      "required_change": "Prepare GPT Knowledge/instructions handoff on native Speech trigger; three fields plus toggle; creator-first community comparison; emoji and phonemic A/B; no fixed version",
+      "status": "HANDOFF_TO_PREPARE_GPT_BUILDER_UNVERIFIED",
+      "readback": "NO_GPT_BUILDER_CONNECTOR",
+      "blocker": "BUILDER_IMPORT_AND_ACTIVATION_NOT_VERIFIED"
+    },
+    {
+      "id": "WEBLYVRA",
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "impact": "CONDITIONAL",
+      "observed_state": "SPEECH_DEV_NOT_PRODUCTION",
+      "required_change": "Prepare optional beta capability card/link once native Speech is promoted and claimed functionality verified; avoid misleading CURRENT/public availability",
+      "status": "HOLD_PUBLIC_DEPLOY_UNTIL_VALIDATED",
+      "readback": "NO_SITE_DEPLOYMENT_ACTION",
+      "blocker": "NO_PRODUCTION_FACET_PROMOTION_AND_PUBLIC_WEB_SCOPE_DECISION"
+    }
+  ],
+  "acceptance": {
+    "all_target_impacts_resolved": true,
+    "core_productive": false,
+    "plugin_a_updated": false,
+    "plugin_b_updated": false,
+    "gpt_updated": false,
+    "website_deployed": false,
+    "creator_audible_problem_reported": true,
+    "audio_asset_reviewed": false
+  },
+  "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment."
+}
