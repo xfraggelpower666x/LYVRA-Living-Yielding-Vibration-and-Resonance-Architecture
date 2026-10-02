@@ -88,16 +88,54 @@ def inspect(draft: SpeechDraft) -> PreflightResult:
     return PreflightResult(tuple(errors), tuple(notes))
 
 
-def phoneme_candidate(original: str, proposed: str, *,
-                      verified_timecode: str = "", creator_approved: bool = False) -> tuple[str, str]:
-    """Return an alternative ONLY after a confirmed defect and approval.
+def _parse_timecode(timecode: str) -> float:
+    """Validate MM:SS or HH:MM:SS (optional decimal seconds)."""
+    parts = timecode.strip().split(":")
+    if len(parts) not in (2, 3):
+        raise ValueError("Timecode must be MM:SS or HH:MM:SS")
+    try:
+        if len(parts) == 2:
+            minutes, seconds = int(parts[0]), float(parts[1])
+            hours = 0
+        else:
+            hours, minutes, seconds = int(parts[0]), int(parts[1]), float(parts[2])
+        if (min(hours, minutes, seconds) < 0 or seconds >= 60
+                or (len(parts) == 3 and minutes >= 60)
+                or not __import__("math").isfinite(seconds)):
+            raise ValueError("Invalid timecode range")
+        return hours * 3600 + minutes * 60 + seconds
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("Invalid timecode syntax") from exc
 
-    This does not rewrite the original text, infer IPA or align waveforms.
+
+def phoneme_candidate(original: str, proposed: str, *,
+                      verified_timecode: str = "", creator_approved: bool = False,
+                      audio_ref: str = "", audio_duration_seconds: float = 0.0,
+                      heard_observation: str = "",
+                      original_script_matched: bool = False) -> tuple[str, str]:
+    """Return a NON-DESTRUCTIVE pronunciation test candidate.
+
+    The human review metadata is a prerequisite, but the function does not
+    listen to or verify audio itself. It MUST NOT be described as audio PASS.
     """
+    import math
+
+    if not isinstance(original, str) or not isinstance(proposed, str):
+        raise ValueError("Original and proposed text are required")
     if not original.strip() or not proposed.strip():
-        raise ValueError("Original and proposed spoken word both required")
-    if not verified_timecode.strip():
-        raise ValueError("A verified rendered-audio timecode is required")
-    if not creator_approved:
+        raise ValueError("Original and proposed spoken words both required")
+    seconds = _parse_timecode(verified_timecode)
+    if (not isinstance(audio_ref, str) or not audio_ref.strip()
+            or not isinstance(heard_observation, str)
+            or len(heard_observation.strip()) < 8):
+        raise ValueError("Specific audio version and concrete heard observation required")
+    if (type(audio_duration_seconds) not in (float, int)
+            or not math.isfinite(audio_duration_seconds)
+            or audio_duration_seconds <= 0
+            or seconds > audio_duration_seconds):
+        raise ValueError("Timecode must fall within this actual audio asset")
+    if original_script_matched is not True:
+        raise ValueError("Exact original spoken-script version not confirmed")
+    if creator_approved is not True:
         raise PermissionError("Creator approval required for a phonemic substitute")
     return (original, proposed)
