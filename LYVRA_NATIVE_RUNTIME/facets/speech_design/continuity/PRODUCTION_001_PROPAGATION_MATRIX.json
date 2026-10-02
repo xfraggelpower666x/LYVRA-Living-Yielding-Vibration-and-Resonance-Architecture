@@ -106,7 +106,13 @@
     "web_handoff_updated": true,
     "discord_bot_todo_queued": true,
     "current_native_head_preserved": true,
-    "older_dev_not_blindly_merged": true
+    "older_dev_not_blindly_merged": true,
+    "preflight_executable_tests_passed": 26,
+    "preflight_ci_run_url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37005778013",
+    "preflight_executable_source_commit": "d60dc2de30875a3cc22baf0656686d89822c3db8",
+    "two_wav_audio_sha_verified": true,
+    "phoneme_word_level_audit_pass": false,
+    "full_whole_native_rehydration_pass": false
   },
   "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment.",
   "mode_evidence": {
@@ -117,5 +123,19 @@
     "audio_v2_seconds": 393.917,
     "audio_word_level_verified": false
   },
-  "native_base_head": "d0d2894d11c069cc007b89df51586fcff314c27e"
+  "native_base_head": "d0d2894d11c069cc007b89df51586fcff314c27e",
+  "audio_fingerprints": {
+    "version_1": {
+      "file": "The Fraggle Dynasty [0m00s-6m31s].wav",
+      "sha256": "a5b64fa641a6fec01bf82edbc2e43f83d186960df2b9c7145a341ad75a294967",
+      "duration_seconds": 391.473
+    },
+    "version_2": {
+      "file": "The Fraggle Dynasty [0m00s-6m34s].wav",
+      "sha256": "979077c3d2371493c4689643deb198507b8801a813a2c988ac9728511a95d3c8",
+      "duration_seconds": 393.917
+    },
+    "raw_wav_git_publication": false,
+    "word_level_audio_analysis": "PENDING"
+  }
 }
