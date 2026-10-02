@@ -1,7 +1,7 @@
 {
   "schema": "LYVRA_SPEECH_001_PROPAGATION_MATRIX_v1",
   "date": "2026-10-02",
-  "status": "FRESH_NATIVE_HEAD_STAGED_TARGET_RELEASES_PENDING",
+  "status": "DEV_INTEGRATION_CODE_AND_GUARDS_TESTED_RELEASES_STILL_PENDING",
   "root_authority": "lyvra",
   "source_branch": "lyvra-dev-speech-update-20261002-fresh",
   "source_intent": "Speech beta 3-fields, native emoji intelligence, phonemic correction, creator-first official/community triangulation, runtime trigger",
@@ -107,12 +107,21 @@
     "discord_bot_todo_queued": true,
     "current_native_head_preserved": true,
     "older_dev_not_blindly_merged": true,
-    "preflight_executable_tests_passed": 26,
-    "preflight_ci_run_url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37005778013",
-    "preflight_executable_source_commit": "d60dc2de30875a3cc22baf0656686d89822c3db8",
+    "preflight_executable_tests_passed": 48,
+    "preflight_ci_run_url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37007539205",
+    "preflight_executable_source_commit": "76e20b3a07eae67482e892842d466f6e34f13fcb",
     "two_wav_audio_sha_verified": true,
     "phoneme_word_level_audit_pass": false,
-    "full_whole_native_rehydration_pass": false
+    "full_whole_native_rehydration_pass": false,
+    "speech_output_preflight_tests_passed": 33,
+    "cross_surface_propagation_tests_passed": 15,
+    "emoji_ab_word_equivalence_guard_verified": true,
+    "creator_script_variants_both_fingerprinted": true,
+    "creator_script_emoji_variant_only_emoji_change": false,
+    "productive_public_critical_fingerprint_matches": 25,
+    "productive_public_critical_fingerprint_expected": 25,
+    "private_pointer_head_matched_public_reference": true,
+    "private_full_recovery_rehydrated": false
   },
   "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment.",
   "mode_evidence": {
@@ -137,5 +146,27 @@
     },
     "raw_wav_git_publication": false,
     "word_level_audio_analysis": "PENDING"
+  },
+  "source_script_evidence": {
+    "source": "Creator-attached 666.md",
+    "script_plain": {
+      "block_id": "68321",
+      "sha256": "143efcb8e6ee3b6fb4f2d4885ffb49ae106f0babc4835a95458cef1e5b1238c2",
+      "words": 684,
+      "utf16_units": 4591
+    },
+    "script_emoji": {
+      "block_id": "68322",
+      "sha256": "b249ca4866c4f6c3a0c7bd182801f384a2ca93c58ba9e80729b771edf0bfa1b2",
+      "words": 641,
+      "utf16_units": 4736
+    },
+    "freeform_main": {
+      "block_id": "73921",
+      "sha256": "8e0e904c3a31d04297e1472b138b19d6f2a7c2efa9181d24ff9e4a4049b04e10",
+      "utf16_units": 2863,
+      "reported_2800_limit_globally_verified": false
+    },
+    "audio_to_script_mapping_verified": false
   }
 }
