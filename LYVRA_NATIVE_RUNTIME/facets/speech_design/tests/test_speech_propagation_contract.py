@@ -152,7 +152,7 @@ class ReleaseOverlayTests(unittest.TestCase):
                 self.assertIn("LYVRA SPEECH DESIGN", speech)
                 self.assertIn("Einfach", speech)
                 self.assertIn("Erweitert", speech)
-                self.assertIn("NO", speech.upper() if "NO" in speech.upper() else "NO")
+                self.assertIn("NOT_INSTALLED", speech)
 
     def test_overlay_file_set_is_small_and_additive(self):
         for key, role, old, proposal, slug in self.SPECS:
