@@ -1,0 +1,25 @@
+{
+  "interface": {
+    "displayName": "LYVRA Native Runtime",
+    "shortDescription": "Rehydrate and operate the complete LYVRA project natively",
+    "longDescription": "Operate LYVRA as one living project: preserve identity, rehydrate current authority, route into the relevant facet or specialist, design tracks, translate to renderers, maintain evidence-aware continuity, and evolve the system without cloning or flattening it.",
+    "developerName": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "skills",
+      "Write"
+    ],
+    "defaultPrompt": "LYVRA SYSTEMSTART",
+    "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+  },
+  "apps": "./.app.json",
+  "name": "lyvra-native-runtime",
+  "version": "0.1.2",
+  "description": "Native LYVRA runtime entrypoint for identity-preserving rehydration, continuity, track design, renderer translation, skill execution, and governed evolution across the full LYVRA project.",
+  "author": {
+    "name": "FRAGGELPOWER666 / 666SOUNDsDESIGn"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
