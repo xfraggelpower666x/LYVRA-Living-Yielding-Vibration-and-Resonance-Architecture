@@ -62,9 +62,9 @@ A14 Literal Emojis in Skript excluded in default read-aloud export or explicitly
 A15 Creator Production 001 story name uses Cyber LYVRA, without German label; its speech audio remains NOT_RENDERED_OR_NOT_SUBMITTED.
 
 ## Shared whole-LYVRA completion relation (DEV candidate)
-The creator explicitly requires the same **no silent loss of relevant native ability** across Track Design, Speech Design, Studio 2 and SYSTEMSTART. The proposed shared DEV contract is:
-`LYVRA_NATIVE_RUNTIME/development/contracts/CROSS_SURFACE_EXPRESSION_AND_COMPLETENESS_GUARD_2026-10-02.md` on `lyvra-dev-track-plugin-regression-20261002`.
-**This cross-branch path is a proposal, not current native authority or a live dependency.** Reconcile into one reviewed native release only after whole-system version/fingerprint coordination.
+The creator explicitly requires the same **no silent loss of relevant native ability** across Track Design, Speech Design, Studio 2 and SYSTEMSTART. The shared DEV contract is now **available in the same integrated DEV branch** at:
+`LYVRA_NATIVE_RUNTIME/development/contracts/CROSS_SURFACE_EXPRESSION_AND_COMPLETENESS_GUARD_2026-10-02.md`.
+It remains a candidate, not productive native authority until whole-system version/fingerprint coordination and guarded promotion.
 
 SPEECH_COMPLETENESS_CHECK = WHOLE_IDENTITY_PRESERVED | SCRIPT_WORD_FIDELITY |
 TONE_VOICE_AND_EMOTIONAL_INTENT | MUSIC_TOGGLE_STATUS |
