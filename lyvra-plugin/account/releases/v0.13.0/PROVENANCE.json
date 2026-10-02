@@ -1,0 +1,98 @@
+{
+  "schema": "LYVRA_ACCOUNT_PLUGIN_SOURCE_SNAPSHOT_v1",
+  "date": "2026-10-02",
+  "plugin_backend_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "plugin_version": "0.13.0",
+  "release_id": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+  "plugin_scope": "USER",
+  "discoverability": "PRIVATE",
+  "archive_kind": "AUTHENTICATED_TEXT_SOURCE_SNAPSHOT_NOT_ORIGINAL_TAR_OR_FULL_BINARY_RELEASE",
+  "source_base_commit": "6c69446c1f720a3f42b95e177d228b0dcb63cbf2",
+  "backup_branch": "lyvra-backup-pre-account-plugin-013-20261002",
+  "development_branch": "lyvra-dev-account-plugin-013-20261002",
+  "text_file_count": 17,
+  "text_file_git_blob_sha": {
+    ".app.json": "0d3cb57b72632872e87c5997dedebf7dac7df816",
+    ".codex-plugin/plugin.json": "541b0807258f218ee0baf1fb302eba013fa82c88",
+    "plugin.json": "8aae35ca013a17f223d0137d3f98ef81b560398f",
+    "skills/instructions/SKILL.md": "809eb1bf02c5bcedbb620a0c3ed209ba93676c5f",
+    "skills/instructions/agents/openai.yaml": "9aa370d24e1a8654ca34dd79f8fa17f3f2eb1029",
+    "skills/instructions/lookup/knowledge-index.json": "9b0c1783d99a3b8bf0ae7387094cf2260b7dddb3",
+    "skills/instructions/references/READ_WRITE_REHYDRATION.md": "0d8097427af94587dab447ed632a362353fa4b37",
+    "skills/music-analytics/SKILL.md": "0d3af4b7171b1c07898c28a8d5c5f5d577dfe027",
+    "skills/music-analytics/agents/openai.yaml": "0c0fec85b665d26e686506784f36a3a36122cd7a",
+    "skills/rehydration-continuity/SKILL.md": "b602a21bc842abd943b7bc77f9dc26c3f8fe42be",
+    "skills/rehydration-continuity/agents/openai.yaml": "d3755054ad91c64b9454ef72b65e384325f44bf8",
+    "skills/repository-update-recovery/SKILL.md": "47b09c652e33bcfe31608fbba5050bd88cd45109",
+    "skills/repository-update-recovery/agents/openai.yaml": "cecc0434b5a16b8d5fd7b1a833eb11677b53a6c2",
+    "skills/suno-studio-2/SKILL.md": "43dae40040b7ad3ba725deb9a6ed9acc701a826c",
+    "skills/suno-studio-2/agents/openai.yaml": "376cfd3f78740d1b451c4d73984c619d1c06b35c",
+    "skills/track-design/SKILL.md": "a366e6186b8ad72c2753518da73e24983932a366",
+    "skills/track-design/agents/openai.yaml": "fbfb18f3b14f976f00fe7991de0375bdbec0d63b"
+  },
+  "binary_assets_excluded": [
+    {
+      "path": "assets/gpt-icon.png",
+      "size_bytes": 492586
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "size_bytes": 1308757
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "size_bytes": 1327854
+    },
+    {
+      "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+      "size_bytes": 2406663
+    },
+    {
+      "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+      "size_bytes": 2626397
+    },
+    {
+      "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+      "size_bytes": 1918985
+    },
+    {
+      "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+      "size_bytes": 1818457
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "size_bytes": 2699385
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "size_bytes": 2364103
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "size_bytes": 2340666
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+      "size_bytes": 2201974
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "size_bytes": 1713482
+    },
+    {
+      "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "size_bytes": 43931
+    }
+  ],
+  "plugin_file_count": 30,
+  "full_binary_archive_held": false,
+  "restore_test_status": "OPEN",
+  "pfs_backup_status": "NOT_VERIFIED",
+  "native_pointer_mutated": false,
+  "reference_native_authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json on lyvra",
+  "notes": [
+    "Text sources read from Plugin Creator release with exact authenticated version match; 17/17 compare with GitHub text at development branch passed.",
+    "Asset filenames/sizes are inventory evidence only. Source snapshot does NOT contain any binary asset, icon, or source tarball.",
+    "No copy or disclosure of private vault payloads, tokens or credentials. 666PFS external registry not accessed."
+  ]
+}
