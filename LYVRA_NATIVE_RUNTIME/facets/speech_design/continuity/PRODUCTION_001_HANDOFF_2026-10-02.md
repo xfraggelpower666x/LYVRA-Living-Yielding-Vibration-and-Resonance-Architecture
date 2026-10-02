@@ -24,7 +24,7 @@ CREATOR_TITLE: THE FRAGGLE DYNASTY — THE ORIGIN OF OUR DNA
 1. Own reported symptom is first-priority for our production.
 2. Official Suno Speech beta (released 2026-10-01) documents early voice/accents/pauses limitations, not a guaranteed exact-pronunciation control.
 3. Contemporary early community reports indicate some glitchy diction and unpredictable music-on/off behavior; small, anecdotal and not prevalence estimates.
-4. Older Suno lyrical respelling tricks are legacy transferable *hypotheses*, not Speech Beta truth. The latest research source is `LYVRA_NATIVE_RUNTIME/development/EARLY_FEATURE_TRIANGULATION_STANDARD.md` on isolated `lyvra-dev-research-triangulation-20261002`; that cross-branch document is **NOT** productive current or yet merged into this branch.
+4. Older Suno lyrical respelling tricks are legacy transferable *hypotheses*, not Speech Beta truth. The latest research source is `LYVRA_NATIVE_RUNTIME/development/EARLY_FEATURE_TRIANGULATION_STANDARD.md`; it is now **included in the same integrated DEV branch**, not yet productive current.
 
 ## First controlled test when possible
 A. Hold main prompt, exact clean Script, background toggle and generator settings constant; alter ONLY Tone to ask for measured pace, full consonants, complete word endings and natural phrasing.
