@@ -17,6 +17,43 @@ MusicSetting = Literal["an", "aus", "unbekannt"]
 GLYPH_PATTERN = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF]")
 
 
+
+def ui_utf16_length(value: str) -> int:
+    """Count JavaScript UTF-16 code units as one possible UI counter.
+
+    Suno's actual counting algorithm is not confirmed; this count is
+    ONLY used when a creator-observed limit is passed explicitly.
+    """
+    return len(value.encode("utf-16-le")) // 2
+
+
+def _spoken_words(value: str) -> tuple[str, ...]:
+    """Word sequence comparison independent of emoji or line spacing."""
+    return tuple(w.casefold() for w in re.findall(
+        r"[^\\W\\d_]+(?:['’][^\\W\\d_]+)*", value, flags=re.UNICODE))
+
+
+@dataclass(frozen=True)
+class EmojiABCheck:
+    exact_spoken_words: bool
+    base_word_count: int
+    variant_word_count: int
+    first_changed_word_index: int | None
+    evidence_status: str = "TEXT_ONLY_NO_AUDIO_PROOF"
+
+
+def compare_emoji_ab(reference_script: str, emoji_candidate: str) -> EmojiABCheck:
+    """Isolate accidental WORD changes between baseline and emoji variant.
+
+    It does NOT validate punctuation/pause equivalence or acoustic effects.
+    """
+    a, b = _spoken_words(reference_script), _spoken_words(emoji_candidate)
+    idx = next((i for i in range(min(len(a), len(b))) if a[i] != b[i]), None)
+    if idx is None and len(a) != len(b):
+        idx = min(len(a), len(b))
+    return EmojiABCheck(a == b, len(a), len(b), idx)
+
+
 @dataclass(frozen=True)
 class SpeechDraft:
     mode: SpeechMode
@@ -82,7 +119,7 @@ def inspect(draft: SpeechDraft) -> PreflightResult:
         if field_name not in ("freeform", "script", "tonfall") or type(limit) is not int or limit < 1:
             errors.append("Invalid creator-confirmed UI limit")
             continue
-        if len(getattr(draft, field_name)) > limit:
+        if ui_utf16_length(getattr(draft, field_name)) > limit:
             errors.append(f"{field_name} exceeds observed active UI limit {limit}")
     notes.append("No audible pronunciation or renderer result is proven by this preflight")
     return PreflightResult(tuple(errors), tuple(notes))
