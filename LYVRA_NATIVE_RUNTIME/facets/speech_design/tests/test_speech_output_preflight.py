@@ -83,7 +83,8 @@ class EmojiAndPhonemeTests(unittest.TestCase):
 
     def test_script_emoji_explicit_optin_and_warning(self):
         r = inspect(SpeechDraft(mode="erweitert", script="💜 Our family.",
-                  tonfall="Warm", experiment_literal_script_emoji=True))
+                  tonfall="Warm", experiment_literal_script_emoji=True,
+                  reference_script="Our family."))
         self.assertTrue(r.ready)
         self.assertTrue(any("A/B" in n for n in r.notes))
 
@@ -170,6 +171,51 @@ class EmojiAndPhonemeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             phoneme_candidate("Fraggle", " ", verified_timecode="01:00",
                               creator_approved=True)
+
+
+    def test_utf16_surrogate_pairs_exceed_observed_limit(self):
+        self.assertEqual(module.ui_utf16_length("❤️⚡💜"), 5)
+        self.assertTrue(inspect(SpeechDraft(mode="einfach",
+            freeform="💜", observed_limits={"freeform":2})).ready)
+        self.assertFalse(inspect(SpeechDraft(mode="einfach",
+            freeform="💜", observed_limits={"freeform":1})).ready)
+
+    def test_emoji_ab_same_words_accepted(self):
+        x=module.compare_emoji_ab("Our family. Six. Six.",
+                                  "💜 Our family. ⚡ Six. Six.")
+        self.assertTrue(x.exact_spoken_words)
+        self.assertIsNone(x.first_changed_word_index)
+
+    def test_emoji_ab_rewritten_words_rejected(self):
+        x=module.compare_emoji_ab("Where sound becomes identity.",
+                                  "💜 Our sound creates identity.")
+        self.assertFalse(x.exact_spoken_words)
+        self.assertIsNotNone(x.first_changed_word_index)
+
+    def test_emoji_ab_removed_words_rejected(self):
+        x=module.compare_emoji_ab("Every memory holds meaning.",
+                                  "💜 Every memory.")
+        self.assertFalse(x.exact_spoken_words)
+        self.assertEqual(x.first_changed_word_index,2)
+
+    def test_emoji_ab_missing_reference_fails_closed(self):
+        r=inspect(SpeechDraft(mode="erweitert",
+                  script="💜 Our family.", tonfall="Warm",
+                  experiment_literal_script_emoji=True))
+        self.assertFalse(r.ready)
+
+    def test_emoji_ab_changed_script_fails_closed(self):
+        r=inspect(SpeechDraft(mode="erweitert", script="💜 Our joyful family.",
+                  tonfall="Warm", experiment_literal_script_emoji=True,
+                  reference_script="Our family."))
+        self.assertFalse(r.ready)
+
+    def test_emoji_ab_exact_script_passes_with_optin(self):
+        r=inspect(SpeechDraft(mode="erweitert", script="💜 Our family.",
+                  tonfall="Warm", experiment_literal_script_emoji=True,
+                  reference_script="Our family."))
+        self.assertTrue(r.ready)
+        self.assertTrue(any("A/B" in note for note in r.notes))
 
 
 if __name__ == "__main__":
