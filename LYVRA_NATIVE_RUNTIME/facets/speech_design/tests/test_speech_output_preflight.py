@@ -102,14 +102,69 @@ class EmojiAndPhonemeTests(unittest.TestCase):
 
     def test_phoneme_requires_creator_approval(self):
         with self.assertRaises(PermissionError):
-            phoneme_candidate("LYVRA", "Lai-vra", verified_timecode="02:14")
+            phoneme_candidate("LYVRA", "Lai-vra", verified_timecode="02:14",
+                audio_ref="render_v1.wav", audio_duration_seconds=391.473,
+                heard_observation="The narrator reads the name differently",
+                original_script_matched=True)
 
     def test_approved_candidate_does_not_change_origin(self):
         source="LYVRA"
         result=phoneme_candidate(source, "Lai-vra",
-                                 verified_timecode="02:14", creator_approved=True)
+            verified_timecode="02:14", creator_approved=True,
+            audio_ref="render_v1.wav", audio_duration_seconds=391.473,
+            heard_observation="Name pronounced with an unintended vowel",
+            original_script_matched=True)
         self.assertEqual(result, ("LYVRA", "Lai-vra"))
         self.assertEqual(source, "LYVRA")
+
+    def test_invalid_timecode_rejected(self):
+        for mark in ("about two", "2:60", "bad", "-1:40", "1:NaN", "1:inf", "2"):
+            with self.subTest(mark=mark), self.assertRaises(ValueError):
+                phoneme_candidate("LYVRA", "Lai-vra",
+                    verified_timecode=mark, creator_approved=True,
+                    audio_ref="render_v1.wav", audio_duration_seconds=391.473,
+                    heard_observation="Name mispronounced at this moment",
+                    original_script_matched=True)
+
+    def test_timestamp_must_be_inside_this_render(self):
+        with self.assertRaises(ValueError):
+            phoneme_candidate("LYVRA", "Lai-vra",
+                verified_timecode="06:35", creator_approved=True,
+                audio_ref="render_v1.wav", audio_duration_seconds=391.473,
+                heard_observation="Name mispronounced in recorded audio",
+                original_script_matched=True)
+
+    def test_requires_exact_asset_identity(self):
+        with self.assertRaises(ValueError):
+            phoneme_candidate("LYVRA", "Lai-vra",
+                verified_timecode="02:14", creator_approved=True,
+                audio_ref="", audio_duration_seconds=391.473,
+                heard_observation="Name pronounced unexpectedly in playback",
+                original_script_matched=True)
+
+    def test_requires_concrete_heard_observation(self):
+        with self.assertRaises(ValueError):
+            phoneme_candidate("LYVRA", "Lai-vra",
+                verified_timecode="02:14", creator_approved=True,
+                audio_ref="render_v1.wav", audio_duration_seconds=391.473,
+                heard_observation="bad",
+                original_script_matched=True)
+
+    def test_source_version_must_match(self):
+        with self.assertRaises(ValueError):
+            phoneme_candidate("LYVRA", "Lai-vra",
+                verified_timecode="02:14", creator_approved=True,
+                audio_ref="render_v2.wav", audio_duration_seconds=393.917,
+                heard_observation="Name pronounced unexpectedly in the recording",
+                original_script_matched=False)
+
+    def test_hh_mm_ss_decimal_timecode_supported(self):
+        result=phoneme_candidate("LYVRA", "Lai-vra",
+            verified_timecode="00:02:14.250", creator_approved=True,
+            audio_ref="render_v2.wav", audio_duration_seconds=393.917,
+            heard_observation="Unintended vowel sound in the spoken name",
+            original_script_matched=True)
+        self.assertEqual(result, ("LYVRA", "Lai-vra"))
 
     def test_empty_alternative_denied(self):
         with self.assertRaises(ValueError):
