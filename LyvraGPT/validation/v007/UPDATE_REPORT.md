@@ -23,3 +23,7 @@ Repository-Integrität, beide Archive, Originaldatei-Erhaltung, historische Snap
 Remote-Readback vor Veröffentlichung: READBACK_PENDING. Tatsächliche Commit-SHA, Testergebnisse und Remote-Readback werden im PR dokumentiert. Keine automatische Merge-/Promotion-Aktion.
 
 Whole-Rehydration bleibt PARTIAL; private Recovery und GPT-Action-End-to-End sind nicht Bestandteil dieses Updates.
+
+## Parallele additive Entwicklung
+
+Vor PR-Abschluss rückgelesen: Produktions-HEAD 0c748662ff0c3cd8e5ee5880876f41144b2195c8 ergänzt ausschließlich docs/PFS_EXTERNAL_BACKUP_EVIDENCE_2026-10-02.md. Dieses vorhandene Dokument wird bytegleich erhalten und in die Ergänzungsprüfsummenliste aufgenommen. Keine PFS-Aktivierung oder Mutation. Arbeitsbranch übernimmt den neuen Basisstand ohne Force-Push.
