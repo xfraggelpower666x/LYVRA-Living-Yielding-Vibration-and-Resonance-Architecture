@@ -24,7 +24,10 @@
       "tone_ui_chars": 1000,
       "music_toggle": "Hintergrundmusik an",
       "source_class": "USER_OBSERVED",
-      "global_contract": false
+      "global_contract": false,
+      "main_prompt_present": true,
+      "main_prompt_chars_creator_reported": 2800,
+      "main_prompt_limit_officially_confirmed": false
     },
     "community": {
       "status": "EARLY_ANECDOTAL_ONLY",
@@ -65,11 +68,14 @@
     }
   },
   "output": {
-    "field_count": 2,
+    "field_count": 3,
     "script_char_limit_ui": 5000,
     "tone_char_limit_ui": 1000,
     "background_music_toggle": true,
-    "no_default_five_box_assumption": true
+    "no_default_five_box_assumption": true,
+    "main_prompt_char_limit_reported": 2800,
+    "main_prompt_limit_verified_in_live_counter": false,
+    "no_default_two_field_assumption": true
   },
   "validation": {
     "official_source_read": true,
@@ -84,7 +90,11 @@
     "trigger_contract_present": true,
     "trigger_production_active": false,
     "emoji_native_contract_inherited": true,
-    "emoji_renderer_functional_pass": false
+    "emoji_renderer_functional_pass": false,
+    "creator_audible_observation_received": true,
+    "creator_audible_observation_class": "FIRST_PERSON_REPORT_NO_AUDIO_ASSET_OR_TIMESTAMPS",
+    "articulation_improved_by_instructions": false,
+    "audio_file_directly_audited": false
   },
   "open_work": [
     "Build and validate bounded speech package assembler",
@@ -93,6 +103,21 @@
     "Verify no unsupported v6 control transfer",
     "Review creative freedom non-shrinkage and Track Design inheritance",
     "Re-evaluate native pointer/fingerprint/manifest before promotion",
-    "Controlled emoji-on vs emoji-off speech tone and spoken script experiments before audio claim"
-  ]
+    "Controlled emoji-on vs emoji-off speech tone and spoken script experiments before audio claim",
+    "Collect example words plus timestamps from production 001 for articulation triage; assess against audio and controlled Tone A/B."
+  ],
+  "creator_listening_feedback": {
+    "date": "2026-10-02",
+    "project": "THE FRAGGLE DYNASTY — THE ORIGIN OF OUR DNA",
+    "report": "Some consonants, syllables or whole word endings are swallowed, with unnatural-sounding pronunciation.",
+    "evidence_type": "CREATOR_AUDIT_REPORT_DURING_LISTENING",
+    "quality_status": "ISSUE_REPORTED_NOT_AUDIO_FORENSICALLY_VERIFIED",
+    "suspected_causes_not_proven": [
+      "Speech beta diction instability",
+      "high narrative density / rapid sentence cadence",
+      "music-to-voice balance",
+      "name, number and invented term pronunciations"
+    ],
+    "trial": "Keep Script and Main Prompt identical, vary Tone toward complete consonants and syllables, slower unhurried clarity; compare actual result."
+  }
 }
