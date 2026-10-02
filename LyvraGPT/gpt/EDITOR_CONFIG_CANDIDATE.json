@@ -20,5 +20,14 @@
   "action_secrets": "NOT_INCLUDED",
   "knowledge_attachments": "NOT_ENUMERATED_OR_EXPORTED",
   "publication_status": "NOT_INDEPENDENTLY_VERIFIED",
-  "source_kind": "AUTHORING_CANDIDATE_NOT_BUILDER_EXPORT"
+  "source_kind": "AUTHORING_CANDIDATE_NOT_BUILDER_EXPORT",
+  "dashboard_integration": {
+    "asset_version": "0.3.2",
+    "complete_html_repository_path": "LyvraGPT/dashboard/index.html",
+    "html_sha256": "ea3543dd6a7d1e758b84d1af236a99c51dbbc323c775cfdca2d4862067c8c7bc",
+    "website_dashboard_url": "https://weblyvra.666soundsdesign-broadcaster.com/dashboard/",
+    "website_deployment_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "custom_gpt_editor_publication": "PENDING_SEPARATE_GPT_BUILDER_ACTION",
+    "note": "Repository candidate does not update Custom GPT Builder automatically; preserve the GPT identity and Actions."
+  }
 }
