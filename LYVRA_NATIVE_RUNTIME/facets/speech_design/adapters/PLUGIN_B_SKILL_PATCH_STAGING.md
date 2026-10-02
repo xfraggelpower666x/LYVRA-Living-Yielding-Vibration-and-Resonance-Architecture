@@ -19,3 +19,8 @@ Speech creator output: independent Main, Script, Tone and music toggle; render U
 Articulation defect handling: creator-audited word mistakes first, phonemic candidate selection after exact timestamps/audible verification, one-variable A/B, current official/community corroboration; don't claim trained speech correction or active listening without audio.
 
 Update requires current Plugin Creator release readback, guarded archive overlay with updated manifest (if required), test of new direct trigger, complete syntax/inventory and live release readback; prechange backup for recovery. This staging file is NOT an updated plugin release.
+
+## 2026-10-02 current UI and renderer reconciliation
+### New UI-and-render correction for the skill release packet
+Mode-aware Speech from latest creator screenshot: Einfach freeform, Erweitert Skript + Tonfall, selectable Stimmgeschlecht Männlich/Weiblich, Hintergrundmusik Aus/An and Vielfalt Normal visible; do not invent a Main field in active Erweitert screenshot or force v6 music model slider inheritance. Two original WAVs now available 391.473/393.917 seconds PCM16 stereo 48kHz, but actual swallowed words/phonemes/timestamps remain unverified. Source `666.md` recovered. Speech phonemic pipeline must accept creator-approved exact word+timestamp, then do Tone-only A/B followed by local variant only if confirmed.
+On actual Plugin B update, confirm native scope, skill registration + instruction/dependency consistency, installation, protected release and real readback; no source file staging equals a released plugin. Keep two plugin versions independent and native LYVRA authority singular.
