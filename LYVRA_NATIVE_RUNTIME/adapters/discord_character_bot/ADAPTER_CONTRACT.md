@@ -81,6 +81,25 @@ router, separate authority or independent bot self-improvement.
 A static command overview must never be mistaken for a full dynamic
 capability inventory.
 
+## Owner-supplied comparative source audit — second phase (2026-10-02)
+New references, **not LYVRA authority**:
+- `xfraggelpower666x/character.ai-bot`: historic unofficial Character.AI integration, global conversation session and old cookie-based provider auth — do not adopt as a native identity or provider credential route.
+- `xfraggelpower666x/Discord-Voice-Channel-Bot`: conceptual slash join/leave, STT, TTS and memory examples. Its public Git tree contains a tracked `.env`; do not read or copy values, ask creator to assess rotation/exposure.
+- `xfraggelpower666x/discord-ai-bot`: Go admin/role/image concepts; do not auto-import game, moderator or process-restart powers.
+- Ten user-provided ZIPs independently enumerated and risk-classified in the bot-DEV audit `research/USER_BOT_SOURCE_AUDIT_2026-10-02.md`. No archive executed, no external author code or binary imported. Keep license/provenance separate.
+
+**Implemented independently on the bot DEV branch**:
+- Fifteen-minute in-memory chat session per `(guild_id, channel_id)` with explicit owner `session start|stop|status`.
+- Default-OFF voice transport `voice join|leave|status` only for owner, voice-enabled configuration and allowlisted channel. Voice connection alone does not mean recording, listening, STT, TTS or AI audio content collection.
+- Dedicated pure session/voice gate tests and optional voice library dependency. User consent, privacy, Discord intents/permissions, costs and real channel readback gate any future voice-understanding phase.
+
+CURRENT_BOT_SOURCE_CLASS=USER_PROVIDED_REFERENCES_UNTRUSTED
+FOREIGN_CHARACTER_AI_COOKIE_LOGIN=NOT_IMPORTED
+VOICE_RECORDING_ENABLED=NO
+VOICE_JOIN_BY_DEFAULT=NO
+PRIVATE_LIVECIRCLE_EXPORTED=NO
+SHARED_NATIVE_PERSONALITY_OVERRIDDEN=NO
+
 ## Rollout and test gates
 - Offline native reader/LiveCircle tests and bot syntax.
 - Verified real GitHub source/diff readback; no stale Drive overwrite.
