@@ -18,3 +18,8 @@ Pronunciation: diagnose local language, names, word ends, syllables, reductions 
 Research cadence for new beta: creator's own listening first; fresh official release notes and independent dated community signals every material renderer research/change; distinguish anecdote from replicated experience.
 
 Before output: audit completeness, field separation, character caps, source freshness, semantic emoji preservation, privacy, no unsupported control assertions, test plan and NO-AUDIO-PASS fence. Observe CodeForge propagation to Plugin B, GPT and conditional WEBLYVRA after authorized release. No plugin update is made by this staging document.
+
+## 2026-10-02 current UI and renderer reconciliation
+### New UI-and-render correction for the skill release packet
+Replace old globally fixed three Speech text fields with active-mode rules: Einfach one description prompt; Erweitert Skript+Tonfall with Stimmgeschlecht, Hintergrundmusik and Vielfalt independent controls. Three-field historical source remains provenance; 2800 main reported, 5000 Script and 1000 Tone observed earlier, neither silently locked to new UI. Original two WAVs are now present (391.473s and 393.917s), but no timecoded word-level audit validated yet. Cross-check source `666.md`, preserve original text and use Tonfall-only A/B before any approved phonetic variants.
+When publishing plugin archive: update every relevant skill/dependency/manifest and router mapping (WITHOUT introducing new controller), run actual direct trigger and exemplar output regression; verify release ID and subsequent full-read. Track Design+Studio2+SYSTEMSTART semantic Emoji FORCE remain shared and contextual; ChatGPT GPT/website/Discord separately reviewed.
