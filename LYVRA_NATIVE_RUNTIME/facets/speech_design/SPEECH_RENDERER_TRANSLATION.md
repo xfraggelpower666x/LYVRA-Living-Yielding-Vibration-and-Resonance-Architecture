@@ -26,6 +26,30 @@ Resolve musical and narrative meaning freely before compressing to Speech UI. Th
 - Include meaningful pauses as **request** not timestamp guarantee.
 - Keep tone compact, context-specific, non-generic; count to <=1,000 characters (observed beta UI).
 
+## FORCE semantic emoji intelligence — renderer translation
+
+Inherit the entire functional Emoji Intelligence from productive Track Design dynamically; do not freeze or invent a new standalone emoji dictionary. Work through expressive associations for voice, story, timing, emotional inflection, humor, suspense, spoken mantra, soundtrack counterpoint and psychological depth.
+
+THREE_OUTPUT_VIEWS:
+1. **Internal creative score:** retain intentional emoji mapping at every relevant narrative/voice/music event, including repeated emojis if causally meaningful. Review omission decisions explicitly; never automatically thin for a density quota.
+2. **Suno Skript:** intended spoken words only by default; an emoji in this field risks audible literalization, silence, or unpredictable prosody. Do not promise a fixed interpretation. Preserve any original glyph in the internal ledger and translate its intended function into punctuation/word choice or Ton directions; a literal emoji experiment requires a separately identified A/B variant.
+3. **Suno Ton:** use short explicit language describing the intended emotional/prosodic/musical effect first. As a controlled beta hypothesis, add contextually meaningful emojis (e.g., 🫀 for intimate embodied pulse; 🌀 for spatial disorientation; ⚡ for a sharp intensity pivot; 🌌 for scale) **only when tied to a precise phrase**, within the screenshot-observed 1,000 characters. These are examples, not universal mappings or mandatory emojis.
+
+EMOJI_BINDING_SEQUENCE = MEANING_FIRST_THEN_INTENSITY_THEN_RENDERER_TRANSLATION
+TON_EMOJI_DENSITY = CONTEXT_DEPENDENT_NO_TARGET
+SPOKEN_SCRIPT_GLYPH_UNCERTAINTY = HIGH_UNTIL_CREATOR_RENDER
+NO_AUTO_DELETE_OF_USER_INTENDED_EMOJI_MEANING = true
+
+### Required controlled experiments
+
+- E1: Same literal script, music toggle and natural-language tone; compare Tone without emojis vs Tone with semantically bound emojis. Record voice effect and music balance.
+- E2: Same script and Tone direction, test one strategically placed emoji in Script against a plain-text control ONLY with explicit agreement to test a possible literal/spoken glitch. Record exact words and timestamp context.
+- E3: Match meaning but change emoji association (e.g. 🫀 vs ⚡), do not claim predictable acoustic differences without reproducible observations.
+- E4: Tone near character cap; assess whether emojis displace more useful instructions. Count actual Unicode codepoints and check actual UI acceptance; renderer may count differently.
+
+LITERAL_EMOJI_EFFECT_UNVERIFIED = true
+REAL_RENDER_PASS = false
+
 ## Evidence boundaries
 OFFICIAL 2026-10-01: speech + soundtrack generated together; release described on Suno official blog and release notes.
 USER-OBSERVED: German-language UI screenshots with character caps and background music option.
