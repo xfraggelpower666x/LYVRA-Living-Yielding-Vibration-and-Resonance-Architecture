@@ -1,7 +1,7 @@
 {
   "schema": "LYVRA_SPEECH_001_PROPAGATION_MATRIX_v1",
   "date": "2026-10-02",
-  "status": "DEV_INTEGRATION_CODE_AND_GUARDS_TESTED_RELEASES_STILL_PENDING",
+  "status": "DEV_SPEECH_PLUGIN_OVERLAY_ZIPS_BUILT_AND_CI_60_PASS_INSTALL_PENDING",
   "root_authority": "lyvra",
   "source_branch": "lyvra-dev-speech-update-20261002-fresh",
   "source_intent": "Speech beta 3-fields, native emoji intelligence, phonemic correction, creator-first official/community triangulation, runtime trigger",
@@ -107,21 +107,26 @@
     "discord_bot_todo_queued": true,
     "current_native_head_preserved": true,
     "older_dev_not_blindly_merged": true,
-    "preflight_executable_tests_passed": 48,
-    "preflight_ci_run_url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37007539205",
-    "preflight_executable_source_commit": "76e20b3a07eae67482e892842d466f6e34f13fcb",
+    "preflight_executable_tests_passed": 60,
+    "preflight_ci_run_url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37009498014",
+    "preflight_executable_source_commit": "988954d6f2cc0cfc6ce54c4c8256ba5fdee9beb8",
     "two_wav_audio_sha_verified": true,
     "phoneme_word_level_audit_pass": false,
     "full_whole_native_rehydration_pass": false,
     "speech_output_preflight_tests_passed": 33,
-    "cross_surface_propagation_tests_passed": 15,
+    "cross_surface_propagation_tests_passed": 23,
     "emoji_ab_word_equivalence_guard_verified": true,
     "creator_script_variants_both_fingerprinted": true,
     "creator_script_emoji_variant_only_emoji_change": false,
     "productive_public_critical_fingerprint_matches": 25,
     "productive_public_critical_fingerprint_expected": 25,
     "private_pointer_head_matched_public_reference": true,
-    "private_full_recovery_rehydrated": false
+    "private_full_recovery_rehydrated": false,
+    "plugin_overlay_archive_tests_passed": 4,
+    "plugin_archive_artifact_verified": true,
+    "plugin_archive_artifact_id": 11226998801,
+    "plugin_archive_artifact_expires": "2026-10-16T12:54:07Z",
+    "native_current_pointer_modified": false
   },
   "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment.",
   "mode_evidence": {
@@ -168,5 +173,27 @@
       "reported_2800_limit_globally_verified": false
     },
     "audio_to_script_mapping_verified": false
+  },
+  "release_overlay_previews": {
+    "schema": "LYVRA_SPEECH_RELEASE_OVERLAY_PROPOSAL_ONLY",
+    "ci_run": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37009498014",
+    "artifact_page": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37009498014/artifacts/11226998801",
+    "artifact_id": 11226998801,
+    "expires_at": "2026-10-16T12:54:07Z",
+    "plugin_a": {
+      "current": "0.13.1",
+      "proposal": "0.13.2",
+      "guard_current_release_id": "pluginrel_6abf5fbe0acc8191ba395c6d17f0725e",
+      "installation_verified": false
+    },
+    "plugin_b": {
+      "current": "0.1.3",
+      "proposal": "0.1.4",
+      "guard_current_release_id": "pluginrel_6abf5fc5cf808191b4fd0d4beae8bcce",
+      "installation_verified": false
+    },
+    "payload": "only new Speech Skill, plugin.json, .codex-plugin/plugin.json; overlay preserves omitted assets",
+    "artifact_retention_days": 14,
+    "not_a_plugin_release": true
   }
 }
