@@ -53,3 +53,9 @@ Required guards for any future bot-routed radio action:
 
 ## Provenance/supersession
 This captures newer verifiable external security work without replacing LYVRA's already newer publicly committed Web/Plugin evolution. Earlier v0.13.0 and Native v0.1.1 snapshots are provenance, **not** the present plugins (0.13.1, 0.1.3). Re-resolve all live versions at next system start. This document is intentionally a DEV candidate, not system boot authority.
+
+## RadioBotAI security update — later verified DEV
+
+New RadioBotAI PR #3 head: `9666b7228e56dd91e9c61c21e7d417163de37e32`. Offline CI run `37007369895` completed successfully. Scope: credentialed admin requests require HTTPS and a matching configured host; redirect following and false-positive skip confirmations are prevented; NowPlaying with Basic authentication is not sent over HTTP. Additional negative tests cover transport, overrides and response verification.
+
+Important: radio production still uses an HTTP admin URL. Consequently the protected DEV configuration will refuse admin actions until a genuinely secure upstream route is established and validated. PR #3 is not merged or deployed; no live skip success is claimed. LYVRA PR #24 remains documentation-only. Native pointer and both installed plugins remain unchanged by this handoff.
