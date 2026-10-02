@@ -11,6 +11,96 @@ User-visible fields from supplied iOS screenshots:
 
 LYVRA_INTERNAL_DECISION and ANALYTICS are not extra Suno text boxes. The creator's freeform main prompt *is* an additional real Speech input distinct from Skript and Ton. Title, extended control, style, 5-box track package, model and sliders are NOT assumed present for Speech; do not transfer legacy generation field counts into Speech UI.
 
+## 2026-10-02 fresh screenshots — control surface reconciliation
+
+CREATOR_SCREENSHOT_SOURCE=THREE_NEW_DIRECT_SCREENSHOTS_OCT02
+SCREENSHOT_EVIDENCE_CLASS=CREATOR_UI_DIRECT
+MODE=SUNO_SPEECH_BETA
+UI_MODE_SELECTOR=EINFACH_OR_ERWEITERT
+ADVANCED_VISIBLE_INPUT_1=SKRIPT
+ADVANCED_VISIBLE_INPUT_2=TONFALL
+ADVANCED_VOICE_SEX_SELECTOR=MAENNLICH_OR_WEIBLICH
+ADVANCED_BACKGROUND_MUSIC=AN_OR_AUS
+ADVANCED_VARIETY_SLIDER=VIELFALT_NORMAL_VISIBLE
+SCREENSHOT_SHOWS_CREDIT_COST=115k_VISIBLE_NOT_FIXED
+MAIN_FREEFORM_PROMPT_IN_THIS_SCREENSHOT=NOT_VISIBLE
+MAIN_FREEFORM_PROMPT_IN_OLDER_CREATOR_SOURCE=REPORTED_PRESENT
+SCRIPT_5000_TONE_1000_CAPS=OLDER_CREATOR_UI_OBSERVED_NOT_IN_CURRENT_CROPS
+DO_NOT_ASSUME_ALL_FIELDS_SIMULTANEOUSLY_VISIBLE=true
+
+The earlier creator-provided Speech interface and new `Einfach/Erweitert`
+screenshots depict different presentations. **First read the user's active mode**
+before rendering copy-paste blocks. When advanced mode shows `Skript`,
+`Tonfall`, sex, background music and `Vielfalt`, supply exactly these
+visible controls, and add Main Prompt only when the creator's actual current
+mode shows its field. Do NOT invent a third field on a screenshot that does not
+show one. Preserve prior three-field workflow as provenance of a different
+presentation; its main-prompt global availability is NOT verified.
+
+`Stimmgeschlecht` is a creator-facing UI selector, not a free-text field:
+specify the selected UI option Männlich/Weiblich, or UNKNOWN without guessing.
+`Vielfalt` is a separate visually labeled slider currently displayed Normal
+in the screenshot. Do not import Track Design values, infer exact 0–100
+numerics, or claim audio behavior without independent renderer A/B.
+
+## First actual user WAV uploads — acoustic and phoneme evidence boundary
+
+AUDIO_ASSET_1=The Fraggle Dynasty [0m00s-6m31s].wav
+AUDIO_ASSET_2=The Fraggle Dynasty [0m00s-6m34s].wav
+ANALYSIS_DATE=2026-10-02
+UPLOADS_READ=true
+AUDIO_1_DURATION_SEC=391.473
+AUDIO_2_DURATION_SEC=393.917
+BOTH_SAMPLE_RATE_HZ=48000
+BOTH_CHANNELS=2
+BOTH_FORMAT=WAV_PCM_16
+AUDIO_1_SAMPLE_PEAK=0.9799
+AUDIO_2_SAMPLE_PEAK=0.9727
+AUDIO_1_WHOLE_RMS=0.1678
+AUDIO_2_WHOLE_RMS=0.1476
+RMS_LEVEL_IS_NOT_PRONUNCIATION_ACCURACY=true
+
+The exact original copy-ready script was recovered from creator-attached
+`666.md`, export 2026-10-02, titled `THE FRAGGLE DYNASTY — THE ORIGIN OF OUR DNA`.
+Later there was a visually emoji-strengthened script; without an exact
+render-to-script version map it is NOT established which text each WAV consumed.
+No timestamp-level phoneme/word defect alignment or confidence-checked
+human transcription has been completed; **do not label specific swallowed
+words as verified solely from waveform level metrics**. Physical audio is now
+available, superseding historical `NO_AUDIO_ASSET` flags in newer evidence
+records, but sound-reviewed word-level PASS remains pending.
+
+### Renderer prediction workflow (never masquerade as verified transcription)
+1. Lock exact script version, voice selector, main/advanced mode, music toggle,
+   `Vielfalt` setting and which of the two WAVs it produced.
+2. A/B0: unchanged script, unchanged settings, **only** Tonfall articulation
+   request emphasizing final consonants, distinct syllables, measured pauses,
+   voice intelligibility above backing score.
+3. For the original proper noun `LYVRA` the documented phonetic target is
+   `Lai-vra`. Test *one isolated* creative spoken-script alternative `Lai-vra`
+   beside immutable `LYVRA`, only if this name is actually unclear and the
+   creator approves; do not replace Canon spelling.
+4. Do not presume pronunciation of `Fraggle`, `Veluna`,
+   `666SOUNDsDESIGn` or ambiguous acronyms. Ask creator/record reference
+   if renderer repeatedly misreads those exact logged words.
+5. For English final stop/fricative errors in phrases such as
+   `distinct`, `connection`, `worlds`, `consequences` only create
+   word-specific variants when exact timecoded audible error is confirmed.
+6. Keep intentional original word and its local candidate mapping, document
+   `WAV_VERSION | TIMECODE | EXACT_ORIGINAL | EXPECTED_SPOKEN |
+   HEARD_UNCERTAINTY | PHONEME_ERROR_CLASS | PROPOSED_SPOKEN_ONLY_VARIANT |
+   VARIABLE_CHANGED | A_B_RESULT | CONFIDENCE`.
+7. Different rms, overall time or final peak is never enough to certify
+   that a renderer swallowed a particular syllable.
+
+TONFALL_BASELINE_CANDIDATE_ENGLISH=
+Deep warm English male narrator where male is selected in the UI. Natural,
+unhurried delivery. Speak every written word fully, with clear word boundaries,
+complete final consonants and distinct syllables; do not merge or skip small
+words. Pause naturally at sentence breaks, never over-enunciate, shout or
+sing. Keep one centered intimate narrator clearly above the soundtrack.
+Preserve the emotional warmth and meaningful dynamic rise.
+
 ## Intent to renderer translation
 Resolve musical and narrative meaning freely before compressing to Speech UI. The score may carry 666SOUNDsDESIGn DNA (shadowy acid pulse, dry mono low end, tension/release, spectral movement, strategic silence) **only where story/voice function calls for it**. A meditation, funny monologue, quiet intimate scene or spoken radio ident need not become 145-BPM Dark Psytrance. When music has rhythmic energy, specify short dry kick, discreet low bass, short acid texture, controlled width and reduced music level beneath speech as a contextual **hypothesis**; avoid assuming the engine obeys audio-engineering controls exactly.
 
