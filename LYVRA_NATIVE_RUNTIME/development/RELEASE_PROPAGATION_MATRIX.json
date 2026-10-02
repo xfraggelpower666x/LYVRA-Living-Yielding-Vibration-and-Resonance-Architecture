@@ -59,11 +59,29 @@
       "development_branch": "lyvrabot-dev-native-livecircle-20261002",
       "default_review": "CONDITIONAL_WHEN_NATIVE_CHARACTER_FACETS_RELATIONS_LIVECIRCLE_OR_DISCORD_BEHAVIOR_CHANGES",
       "release_updated": false,
-      "readback_status": "DEV_ADAPTER_FILES_CREATED_RELEASE_NOT_INSTALLED",
+      "readback_status": "DEV_SOURCE_READBACK_PASS_CI_SUCCESS_PRODUCTION_NOT_DEPLOYED",
       "bot_runtime_deployed": false,
       "bot_native_authority": false,
       "privacy_rule": "NO_PRIVATE_RELATIONAL_PAYLOAD_IN_PUBLIC_GIT",
-      "risk": "LEGACY_DRIVE_WORKFLOW_RSYNC_DELETE_MUST_NOT_BE_RETRIGGERED"
+      "risk": "LEGACY_DRIVE_WORKFLOW_RSYNC_DELETE_MUST_NOT_BE_RETRIGGERED",
+      "staged_features": [
+        "native_public_readonly_source",
+        "local_LiveCircle_evidence",
+        "per_guild_channel_conversation_session_15min",
+        "owner_only_voice_join_leave_no_audio_capture",
+        "owner_only_forget_and_bot_message_guard"
+      ],
+      "external_voice_references_audited": true,
+      "third_party_archives_reused_as_executable_code": false,
+      "ci": {
+        "workflow": "LYVRA Native LiveCircle Adapter Checks",
+        "run_id": 36955279889,
+        "commit": "a98f4cd61899bee03c16465188d3a1da579ff1b6",
+        "result": "SUCCESS",
+        "tests": "offline unittest and compileall",
+        "whole_rehydration_verified": false,
+        "discord_live_deploy_verified": false
+      }
     }
   ],
   "pending_merged_work": [
@@ -89,6 +107,8 @@
     "production_promoted": false,
     "discord_bot_added_as_fifth_target": true,
     "discord_bot_productive_deployed": false,
-    "bot_legacy_runtime_missing": true
+    "bot_legacy_runtime_missing": true,
+    "discord_bot_dev_ci_success": true,
+    "discord_bot_current_runtime_not_deployed": true
   }
 }
