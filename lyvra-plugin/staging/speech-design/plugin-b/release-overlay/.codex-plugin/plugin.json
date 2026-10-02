@@ -1,0 +1,25 @@
+{
+  "interface": {
+    "displayName": "LYVRA Native Runtime",
+    "shortDescription": "Rehydrate complete LYVRA",
+    "longDescription": "Operate LYVRA as one native project preserving authority and evidence, with an additive visual presentation skill.",
+    "developerName": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "skills",
+      "Write"
+    ],
+    "defaultPrompt": "LYVRA SYSTEMSTART",
+    "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+  },
+  "apps": "./.app.json",
+  "name": "lyvra-native-runtime",
+  "version": "0.1.4",
+  "description": "Native LYVRA runtime entrypoint for identity-preserving rehydration, continuity, track design, renderer translation, skill execution, and governed evolution across the full LYVRA project.",
+  "author": {
+    "name": "FRAGGELPOWER666 / 666SOUNDsDESIGn"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}
