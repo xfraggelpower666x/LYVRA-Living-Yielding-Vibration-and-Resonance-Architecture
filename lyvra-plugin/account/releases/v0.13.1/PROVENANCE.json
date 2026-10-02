@@ -1,0 +1,98 @@
+{
+  "schema": "LYVRA_ACCOUNT_PLUGIN_TEXT_SOURCE_BACKUP_v0.13.1",
+  "date": "2026-10-02",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "plugin_version": "0.13.1",
+  "release_id": "pluginrel_6abf5fbe0acc8191ba395c6d17f0725e",
+  "pinned_base": "79dccce16de841c35d923c4607c8300e9b5d6c34",
+  "staging_branch": "lyvra-dev-plugin-visual-refresh-20261002",
+  "source_text_count": 18,
+  "source_blob_sha1": {
+    ".app.json": "0d3cb57b72632872e87c5997dedebf7dac7df816",
+    ".codex-plugin/plugin.json": "78a959dcd3794592c73917878527e001a305cf07",
+    "plugin.json": "7e5fdf8805207a73b0ea1c3a43dbfafecb14b2bd",
+    "skills/666-visual-interface/SKILL.md": "d30619dddc1b3c113d2301cbd7d6b704412425bb",
+    "skills/instructions/SKILL.md": "809eb1bf02c5bcedbb620a0c3ed209ba93676c5f",
+    "skills/instructions/agents/openai.yaml": "9aa370d24e1a8654ca34dd79f8fa17f3f2eb1029",
+    "skills/instructions/lookup/knowledge-index.json": "9b0c1783d99a3b8bf0ae7387094cf2260b7dddb3",
+    "skills/instructions/references/READ_WRITE_REHYDRATION.md": "0d8097427af94587dab447ed632a362353fa4b37",
+    "skills/music-analytics/SKILL.md": "0d3af4b7171b1c07898c28a8d5c5f5d577dfe027",
+    "skills/music-analytics/agents/openai.yaml": "0c0fec85b665d26e686506784f36a3a36122cd7a",
+    "skills/rehydration-continuity/SKILL.md": "b602a21bc842abd943b7bc77f9dc26c3f8fe42be",
+    "skills/rehydration-continuity/agents/openai.yaml": "d3755054ad91c64b9454ef72b65e384325f44bf8",
+    "skills/repository-update-recovery/SKILL.md": "47b09c652e33bcfe31608fbba5050bd88cd45109",
+    "skills/repository-update-recovery/agents/openai.yaml": "cecc0434b5a16b8d5fd7b1a833eb11677b53a6c2",
+    "skills/suno-studio-2/SKILL.md": "43dae40040b7ad3ba725deb9a6ed9acc701a826c",
+    "skills/suno-studio-2/agents/openai.yaml": "376cfd3f78740d1b451c4d73984c619d1c06b35c",
+    "skills/track-design/SKILL.md": "a366e6186b8ad72c2753518da73e24983932a366",
+    "skills/track-design/agents/openai.yaml": "fbfb18f3b14f976f00fe7991de0375bdbec0d63b"
+  },
+  "binary_images_excluded": [
+    {
+      "path": "assets/gpt-icon.png",
+      "size": 492586
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "size": 1308757
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "size": 1327854
+    },
+    {
+      "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+      "size": 2406663
+    },
+    {
+      "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+      "size": 2626397
+    },
+    {
+      "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+      "size": 1918985
+    },
+    {
+      "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+      "size": 1818457
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "size": 2699385
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "size": 2364103
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "size": 2340666
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+      "size": 2201974
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "size": 1713482
+    },
+    {
+      "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "size": 43931
+    }
+  ],
+  "new_skill": "skills/666-visual-interface/SKILL.md",
+  "changed_vs_prior": [
+    "plugin.json",
+    ".codex-plugin/plugin.json"
+  ],
+  "pfs_doc": "17lWp9EuLSTX660JGuLgv5TVJ0Di-_WgfSNSHvRePHsI",
+  "pfs_source_zip_primary": "12ow1njzlxFefbhDMOGVFYv2emHb7sH0n",
+  "pfs_source_zip_backup": "1Bugm8eTCdm0HS_WTSxXt-p4dTvVfeZ-9",
+  "pfs_source_zip_sha256": "552c867dbf0b4e6493d7edf59929bd778d643426c62d6c1d40e68cacc5491140",
+  "source_text_restore": "18_OF_18_PASS",
+  "binary_creator_original_sha": "NOT_VERIFIED",
+  "original_tar_restore": "OPEN",
+  "host_E2E": "OPEN",
+  "runtime_authority_mutated": false
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "LYVRA · Repository Update & Recovery"
+  short_description: "LYVRA-Änderungen sichern, schreiben und zurücklesen"
+  default_prompt: "Nutze $repository-update-recovery für den konkret freigegebenen LYVRA-Repository-Updateumfang."
