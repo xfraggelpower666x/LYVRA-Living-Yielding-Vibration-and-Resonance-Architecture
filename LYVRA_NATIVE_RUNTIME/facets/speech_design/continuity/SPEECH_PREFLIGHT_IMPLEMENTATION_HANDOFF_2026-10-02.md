@@ -53,7 +53,11 @@ regression tests; user-controlled original WAV word/timecode phoneme
 alignment, Tone-only A/B renders, actual external target releases after
 governed approval and independent readback.
 
-TEST_RESULT=PASS_20_OF_20
+TEST_RESULT_AT_CREATION=PASS_20_OF_20
+SUPERSEDED_BY_TEST_RESULT=PASS_26_OF_26
+SUPERSEDING_CI_RUN=https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/37005778013
+SUPERSEDING_SOURCE_COMMIT=d60dc2de30875a3cc22baf0656686d89822c3db8
+NOTE=20_CASE_RESULT_HISTORICAL_26_CASE_IS_LATEST_VERIFIED_AT_UPDATE
 PLUGIN_A_RELEASE_CHANGED=false
 PLUGIN_B_RELEASE_CHANGED=false
 GPT_BUILDER_CHANGED=false
