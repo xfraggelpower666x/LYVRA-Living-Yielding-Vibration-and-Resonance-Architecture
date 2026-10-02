@@ -30,11 +30,37 @@
       "main_prompt_limit_officially_confirmed": false
     },
     "community": {
-      "status": "EARLY_ANECDOTAL_ONLY",
-      "limits": [
-        "pronunciation",
-        "pause_consistency"
-      ]
+      "status": "CURRENT_BETA_REPORTS_DIRECTLY_RESEARCHED_NOT_REPLICATED",
+      "as_of": "2026-10-02",
+      "direct_speech": [
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1wve1wx/sunocom_introducing_speech_beta/",
+          "date": "2026-10-02",
+          "claim": "Single commentator reports glitchy diction and common English word mispronunciation",
+          "evidence_level": "ANECDOTAL_SINGLE_REPORT"
+        },
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1wvfh2y/new_feature_speech/",
+          "date": "2026-10-02",
+          "claim": "Early commentators report trouble obtaining narration without background music",
+          "evidence_level": "FEW_UNVERIFIED_REPORTS"
+        }
+      ],
+      "historical_other_models": [
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1uhayxo/unable_to_pronounce/",
+          "claim": "Some Suno music users attempt phonetic spelling for hard words",
+          "transferability": "UNPROVEN_FOR_SPEECH_BETA"
+        },
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1tdnc4o/day_2_of_resharing_my_suno_ai_dirty_tricks/",
+          "claim": "Community tutorial advocates phonetic replacements",
+          "transferability": "UNPROVEN_FOR_SPEECH_BETA"
+        }
+      ],
+      "official_comparison": "Suno publicly acknowledges roaming accents and exaggerated pauses in 2026-10-01 beta announcement",
+      "own_observation_priority": "Creator reported swallowed phonemes; audio file and timestamps pending; no fix yet confirmed",
+      "next_control": "keep script/main/music toggle identical; change tone articulation instruction only; compare output before phonetic edits"
     }
   },
   "native": {
@@ -94,7 +120,9 @@
     "creator_audible_observation_received": true,
     "creator_audible_observation_class": "FIRST_PERSON_REPORT_NO_AUDIO_ASSET_OR_TIMESTAMPS",
     "articulation_improved_by_instructions": false,
-    "audio_file_directly_audited": false
+    "audio_file_directly_audited": false,
+    "current_official_community_triangulation_read": true,
+    "creator_diction_fix_verified": false
   },
   "open_work": [
     "Build and validate bounded speech package assembler",
@@ -104,7 +132,8 @@
     "Review creative freedom non-shrinkage and Track Design inheritance",
     "Re-evaluate native pointer/fingerprint/manifest before promotion",
     "Controlled emoji-on vs emoji-off speech tone and spoken script experiments before audio claim",
-    "Collect example words plus timestamps from production 001 for articulation triage; assess against audio and controlled Tone A/B."
+    "Collect example words plus timestamps from production 001 for articulation triage; assess against audio and controlled Tone A/B.",
+    "Refresh contemporary Suno Speech community evidence alongside own listening whenever beta production defects recur; record date, sources, uncertainties."
   ],
   "creator_listening_feedback": {
     "date": "2026-10-02",
