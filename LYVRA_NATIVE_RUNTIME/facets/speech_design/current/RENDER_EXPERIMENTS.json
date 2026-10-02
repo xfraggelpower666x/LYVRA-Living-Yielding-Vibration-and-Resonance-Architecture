@@ -1,0 +1,38 @@
+{
+  "schema": "LYVRA_SPEECH_EXPERIMENTS_v1",
+  "source_date": "2026-10-02",
+  "status": "PRE_RENDER_EXAMPLES_ONLY",
+  "limits_source": "USER_IOS_UI_SCREENSHOTS",
+  "tests": [
+    {
+      "id": "SPEECH_DE_001_LABEL_INTRO",
+      "language": "de",
+      "purpose": "666SOUNDsDESIGn radio ident with psy pressure and restrained voice priority",
+      "script": "Du hörst nicht nur Musik. Du betrittst einen Raum aus Puls, Erinnerung und Energie. Hier spricht LYVRA. Und jetzt? Jetzt gehört der nächste Moment dir.",
+      "tone": "Natürliche, klare weibliche Erzählstimme, nah und ruhig, souverän statt pathetisch. Zu Beginn trocken und zentriert, am Ende ein leichtes Lächeln und geheimnisvolle Vorfreude. Leise, dunkle Psytrance-Atmosphäre als Originalhintergrund: sparsamer tiefer Puls, feines Acid-Flirren und kurze spektrale Akzente. Musik unter der Sprache halten, keine gesungene Melodie. Kurze sinnvolle Atempausen, deutliche Aussprache deutscher Worte.",
+      "background_music": true,
+      "actual_render_status": "NOT_GENERATED",
+      "expected": "Clear German spoken narration, original pressure soundtrack under intelligible voice",
+      "assumptions": [
+        "The model may not obey exact voice quality or score dynamics"
+      ],
+      "script_characters": 151,
+      "tone_characters": 430
+    },
+    {
+      "id": "SPEECH_DE_002_MINIMAL_OFF",
+      "language": "de",
+      "purpose": "control render for word fidelity with music disabled",
+      "script": "Manchmal genügt ein einziger Satz, um eine Geschichte zu öffnen. Hör genau hin. Dieser Moment ist der Anfang.",
+      "tone": "Klare, ruhige deutschsprachige Stimme. Natürliches Gesprächsgefühl, sanfte Wärme, bewusst gesetzte kurze Pausen. Keine Gesangsstimme, keine übertriebene Theaterstimme.",
+      "background_music": false,
+      "actual_render_status": "NOT_GENERATED",
+      "expected": "Spoken-only German rendition, stable word order",
+      "assumptions": [
+        "Music OFF effect must be verified on actual output"
+      ],
+      "script_characters": 109,
+      "tone_characters": 167
+    }
+  ]
+}
