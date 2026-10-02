@@ -24,6 +24,10 @@ No direct LAB → CURRENT promotion.
 
 `READ CURRENT HEAD → UNDERSTAND → IMPACT MAP → PLAN → CHANGE → STRUCTURAL CHECK → CAUSAL-SEMANTIC CHECK → FRESH REHYDRATION → RECOVERY CHECK → COMMIT → VERIFY HEAD`
 
+## New/rapidly changing feature: mandatory evidence triangulation — DEV PROPOSAL
+
+When a renderer, external technology, UI, model or plugin is new, beta or changing quickly, evaluate **creator's own observed render first**, **dated official product descriptions second**, and **recent community reports** for corroboration, disagreement, pitfalls and testable remedies. Distinguish direct real render evidence, official capabilities, community anecdotes, and general production assumptions. Refresh official/community research when unexpected output triggers corrective design; do not turn one Reddit trick into proven Speech behavior. The candidate contract is `LYVRA_NATIVE_RUNTIME/development/EARLY_FEATURE_TRIANGULATION_STANDARD.md` (not yet productive Current). Preserve LYVRA creativity: discovery aids thinking, does not prescribe a global cognitive pipeline.
+
 ## Branching
 
 The authority branch is `lyvra`.
