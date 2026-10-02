@@ -25,9 +25,11 @@
       "impact": "REQUIRED",
       "observed_state": "CURRENT_SKILLS_WITHOUT_SPEECH_WORKFLOW",
       "required_change": "Add native speech-design Skill routing/whole-first, three creator inputs plus toggle, emoji meaning preservation, phonemic A/B plan and research triangulation; upgrade track/studio output preflight",
-      "status": "STAGING_HANDOFF_REQUIRED_NOT_UPDATED",
-      "readback": "LIVE_CURRENT_SKILL_FILES_READ",
-      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST"
+      "status": "SKILL_SOURCE_CANDIDATE_REMOTE_READBACK_PASS_RELEASE_NOT_UPDATED",
+      "readback": "DEV_SKILL_FILE_READ_DIRECTLY_CURRENT_PLUGIN_SKILL_STILL_OLD",
+      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST",
+      "required_skill_source": "lyvra-plugin/staging/speech-design/plugin-a/skills/speech-design/SKILL.md",
+      "candidate_installed": false
     },
     {
       "id": "PLUGIN_B",
@@ -37,9 +39,11 @@
       "impact": "REQUIRED",
       "observed_state": "NATIVE_RUNTIME_SKILLS_WITHOUT_SPEECH_TRIGGER",
       "required_change": "Add LYVRA SPEECH DESIGN to native facet foreground, source-read rules and status; share same creator-first evidence and emoji/phonemic safeguards; no old Drive authority",
-      "status": "STAGING_HANDOFF_REQUIRED_NOT_UPDATED",
-      "readback": "LIVE_CURRENT_SKILL_FILES_READ",
-      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST"
+      "status": "SKILL_SOURCE_CANDIDATE_REMOTE_READBACK_PASS_RELEASE_NOT_UPDATED",
+      "readback": "DEV_SKILL_FILE_READ_DIRECTLY_CURRENT_PLUGIN_SKILL_STILL_OLD",
+      "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST",
+      "required_skill_source": "lyvra-plugin/staging/speech-design/plugin-b/skills/lyvra-speech-design/SKILL.md",
+      "candidate_installed": false
     },
     {
       "id": "LYVRA_CUSTOM_GPT",
@@ -70,7 +74,11 @@
     "gpt_updated": false,
     "website_deployed": false,
     "creator_audible_problem_reported": true,
-    "audio_asset_reviewed": false
+    "audio_asset_reviewed": false,
+    "candidate_skill_a_staged": true,
+    "candidate_skill_b_staged": true,
+    "candidate_skill_structure_tests": "11_OF_11_PASS",
+    "integrated_ci_pass": false
   },
   "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment."
 }
