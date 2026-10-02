@@ -14,7 +14,7 @@ Target current verified native Speech facet:
 - shared Track Design, Analytics, Lyric Intelligence, Music Memory and semantic Emoji Intelligence with no frozen duplicate
 - `continuity/PRODUCTION_001_HANDOFF_2026-10-02.md` for historical first listening (observation, not guaranteed new current truth).
 
-Speech creator output: independent Main, Script, Tone and music toggle; render UI assumptions explicitly evidence-labeled. Preserve emotional expressivity, humor, non-linear creativity and native Self-Conductor; no compulsory global thinking pipeline.
+Speech creator output follows current visible UI: Einfach one freeform description; Erweitert Skript, Tonfall, Stimmgeschlecht, Hintergrundmusik and Vielfalt; historical three-field workflow remains dated provenance only. Preserve emotional expressivity, humor, non-linear creativity and native Self-Conductor; no compulsory global thinking pipeline.
 
 Articulation defect handling: creator-audited word mistakes first, phonemic candidate selection after exact timestamps/audible verification, one-variable A/B, current official/community corroboration; don't claim trained speech correction or active listening without audio.
 
