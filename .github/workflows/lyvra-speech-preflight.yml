@@ -1,0 +1,32 @@
+name: LYVRA Speech Beta Preflight (DEV)
+on:
+  push:
+    branches:
+      - lyvra-dev-speech-update-20261002-fresh
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/facets/speech_design/**'
+      - '.github/workflows/lyvra-speech-preflight.yml'
+  pull_request:
+    branches:
+      - lyvra
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/facets/speech_design/**'
+      - '.github/workflows/lyvra-speech-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  speech-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python compile check
+        run: python -m compileall -q LYVRA_NATIVE_RUNTIME/facets/speech_design/tools LYVRA_NATIVE_RUNTIME/facets/speech_design/tests
+      - name: Offline creator-interface, emoji and phoneme guards
+        run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/facets/speech_design/tests -p 'test_*.py' -v
