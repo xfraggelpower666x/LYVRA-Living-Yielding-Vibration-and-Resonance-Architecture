@@ -76,6 +76,30 @@ HYPOTHESIS: how well speech respects word order, chosen voices, persona, music d
 FIRST-DAY COMMUNITY: early single anecdotal complaints of glitchy pronunciation; signal only, not global truth.
 UNTESTED: speech integration with studio, FX, specific v6 models, existing Voice profiles, stereo/panning rendering, bespoke timing tags, musical sliders, custom models.
 
+## Creator production 001 — Articulation repair experiment
+
+SOURCE_CLASS: FIRST_HAND_CREATOR_LISTENING_REPORT
+SOURCE_DATE: 2026-10-02
+OBSERVATION: Some English syllables or word-final consonants are dropped, blended or unclear in rendered speech.
+AUDIO_FILE_AVAILABLE_TO_CODEFORGE: NO
+TIMESTAMPS: NOT_YET_PROVIDED
+KNOWN_ACTUAL_GENERATION: CREATOR_IS_LISTENING
+QUALITY_STATUS: AUDIBLE_ISSUE_REPORTED_NOT_YET_DIRECTLY_AUDITED
+
+Speech editing strategy (single-variable A/B):
+- Keep exactly the same *Script* and *main freeform prompt*, identical music toggle, same voice/music intent.
+- Change **only Tone**, asking for complete word endings and consonants, careful syllable separation, relaxed pacing, natural pauses and no swallowing or merging of words. Don't over-enunciate or make it robotic.
+- For repeatedly mispronounced names/numerals, test a second controlled Script variant adjusting punctuation and splitting sentences/phonetic spellings *only where the producer approves a changed spoken form*.
+- Measure exact failures by quoted word/phrase and timestamp, compare the original rendering and rerender, note naturalness and emotional warmth.
+- If the voice is masked by backing score, test voice-priority mix instructions and optionally a separate background-music-OFF reference; don't assume Tone prompt directly controls levels.
+- Keep emoji meaning in internal plan; literal glyph-heavy Script may be a separate potential confound, not a proven cause of swallowed words.
+
+Suggested English Tone variant:
+"Deep, warm, emotionally expressive English narrator with clear, natural diction. Preserve every word, full consonants, complete syllables and word endings. Never swallow, blur, merge or skip words. Use relaxed measured pacing, short meaningful pauses and natural breath. Sound human, intimate and emotionally alive, not robotic or overacted. Give names and repeated 'Six' phrases distinct enunciation. Maintain centered intelligible narration above the backing music. Build intensity with emotion rather than speed or shouting."
+
+ARTICULATION_FIX_CONFIRMED = false
+REAL_WORLD_AUDIO_AB_PASS = false
+
 ## Real-render test plan
 A. Same exact 10–30-second narrative, background music OFF vs ON, tone otherwise constant. Verify word fidelity, clarity, overall background balance.
 B. Same script/music toggle, change one tone element (dry delivery vs intimate breath/pace). Measure observed qualitative compliance.
