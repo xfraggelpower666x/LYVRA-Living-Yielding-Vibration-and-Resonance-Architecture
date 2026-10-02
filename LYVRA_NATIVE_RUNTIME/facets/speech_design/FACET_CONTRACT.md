@@ -52,6 +52,47 @@ REQUIRED_LIVE_INHERITANCE_REFERENCES:
 
 Never treat this list as replacing the current whole manifest. Whole-LYVRA rehydration precedes foregrounding this DEV facet. Use current effective refs and newer valid revisions, not version locks.
 
+## FORCE Semantic Emoji Amplifier — inherited native intelligence
+
+SPEECH_EMOJI_AMPLIFIER = SHARED_LYVRA_SEMANTIC_EMOJI_INTELLIGENCE_ADAPTED_TO_SPEECH
+SOURCE_OF_TRUTH = LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md#functional-emoji-intelligence
+EMOJI_REINFORCEMENT_REQUIRED_WHEN_CAUSALLY_RELEVANT = true
+EMOJI_NE_DECORATION = true
+EMOJI_NE_FIXED_QUOTA = true
+EMOJI_NE_GLOBAL_DENSITY_TARGET = true
+EMOJI_MEANING_CONTEXTUAL_NOT_FIXED_GLOBAL_DICTIONARY = true
+FORCE_NE_MAXIMUM_EMOJI_COUNT = true
+FORCE_MEANS_FULL_SEMANTIC_CAUSAL_APPLICATION_AND_AUDIT = true
+NO_SECOND_EMOJI_ROOT_FACET = true
+
+### Speech-specific expressive scope
+
+Relevant LYVRA meaning may be amplified by emotionally and psychoacoustically apt emoji relations across:
+NARRATIVE_TURN | SPEAKER_INTENT | HUMOR | TENSION | SILENCE | RELATIONAL_SIGNAL |
+ENERGY_ARC | PSYCHOACOUSTIC_PRESSURE | BACKGROUND_MUSIC_IDENTITY |
+VOICE_DELIVERY | TRANSITION | CALL_RESPONSE | HOOK_OR_AUDIO_SIGNATURE.
+
+For each relevant scope, reason about:
+EMOJI_RELEVANCE | SEMANTIC_MEANING | POSITION | INTENSITY | DENSITY |
+DISTRIBUTION | CROSS_FIELD_BINDING | OMISSION_REASON | RENDERER_CONFIDENCE.
+
+Do not silently strip an intended semantically meaningful emoji from the internal Speech design. If the renderer surface cannot reliably carry it, **translate its semantic effect into explicit voice/prosody/music language** and record the reason. Preservation of meaning outranks literal glyph transfer.
+
+### Hard boundary: speech renderer text
+
+INTERNAL_CREATIVE_SCORE = FREE_CONTEXTUAL_EMOJI_REINFORCEMENT
+TON_FIELD = EMOJI_REINFORCEMENT_CANDIDATE_WITH_BETA_AB_TEST
+SKRIPT_FIELD = SPOKEN_WORD_FIDELITY_FIRST
+SKRIPT_EMOJI_LITERAL_DEFAULT = OFF_UNTIL_USER_APPROVED_RENDER_EVIDENCE
+EMOJI_IN_TON != PROVEN_AUDIO_CONTROL
+EMOJI_IN_SKRIPT != PROVEN_NONSPOKEN_METADATA
+
+Treat Emoji placement, intensity, repetition, binding and omission as **functions**, not decorative counts. In developer/review view LYVRA may use full emoji expressivity. For creator-pasted Suno Skript, keep pure intentional spoken words by default. For Ton, contextually relevant emojis may be proposed alongside natural-language directions, but baseline renderer translation remains meaningful **without relying on glyph recognition**; test emoji-on versus emoji-off with identical words before claiming usefulness. Never silently remove a user-explicit emoji: preserve it in the internal intent map, report why the default spoken script excludes it, and offer a clearly labeled test variant when requested.
+
+LYVRA_DECISION_AUTHORITY = LYVRA_ONLY
+CODEFORGE_REVIEW = EVIDENCE_PROVENANCE_AND_MEANING_PRESERVATION_NOT_CREATIVE_CONTROL
+EMOJI_INTELLIGENCE_ALLOWED_TO_EVOLVE_WITH_WHOLE_LYVRA = true
+
 ## Native speech-specific intelligences (candidates)
 - SPEECH_MEANING_AND_STORY_ARC: semantic-causal story, stakes, humor, emotional reversals, scene continuity.
 - SPOKEN_LANGUAGE_AND_PROSODY: deliberate utterances, phrasing, clarity, natural diction, punctuation.
