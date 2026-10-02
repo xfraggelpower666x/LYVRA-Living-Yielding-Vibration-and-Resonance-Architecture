@@ -1,0 +1,44 @@
+// Protokolltests mit ausdrücklich synthetischen Pegeldaten, ohne Live-Audiobehauptung.
+const fs = require('fs'), vm = require('vm'), assert = require('assert/strict');
+const radioOrigin = 'https://webradio.666soundsdesign-broadcaster.com';
+const siteOrigin = 'https://weblyvra.666soundsdesign-broadcaster.com';
+let clock = 0, language = 'de';
+const listeners = {}, docListeners = {}, frameEvents = {}, audioEvents = {}, radioEvents = {};
+const styles = {}, messages = [], timerFns = new Map(); let timerId = 0;
+const button = { attrs: {}, addEventListener(k, f) { this[k] = f; }, setAttribute(k, v) { this.attrs[k] = v; } };
+const status = {}, title = {}, note = {};
+const panel = { querySelector: s => ({ button, h3: title, '[data-neon-status]': status, '[data-neon-note]': note })[s] };
+const layer = { dataset: {}, style: { setProperty(k, v) { styles[k] = v; } } };
+const motion = { matches: false, addEventListener(k, f) { this[k] = f; } };
+const radioWindow = { postMessage(data, origin) { messages.push({ data, origin }); } };
+const frame = { src: `${radioOrigin}/embed/miniplayer.html`, contentWindow: radioWindow, addEventListener(k, f) { frameEvents[k] = f; } };
+const document = { hidden: false, querySelectorAll: () => [frame], querySelector: s => s === '#audio-neon-controls' ? panel : layer, addEventListener(k, f) { docListeners[k] = f; } };
+const ctx = vm.createContext({ document, window: { addEventListener(k, f) { listeners[k] = f; } }, getLanguage: () => language, matchMedia: () => motion, performance: { now: () => clock }, setInterval(f) { timerFns.set(++timerId, f); return timerId; }, clearInterval(id) { timerFns.delete(id); } });
+vm.runInContext(fs.readFileSync('dist/audio-neon.js', 'utf8').replace(/^import .*;\n/, ''), ctx);
+assert.equal(layer.dataset.active, 'false'); assert.equal(messages.length, 0);
+button.click(); assert.equal(button.attrs['aria-pressed'], 'true'); assert.equal(messages.at(-1).origin, radioOrigin);
+const valid = { type: 'lyvra:audio:levels', version: 1, sequence: 1, playing: true, bass: .8, mid: .5, high: .3, energy: .6 };
+const dispatch = (data, origin = radioOrigin, source = radioWindow) => listeners.message({ data, origin, source });
+dispatch(valid, 'https://evil.test'); dispatch(valid, radioOrigin, {}); dispatch({ ...valid, bass: NaN }); dispatch({ ...valid, energy: 2 }); dispatch({ ...valid, playing: 'yes' });
+assert.equal(layer.dataset.active, 'false'); dispatch(valid); assert.equal(styles['--audio-bass'], '.8'.replace('.', '0.')); assert.equal(layer.dataset.active, 'true');
+dispatch({ ...valid, bass: 0 }); assert.equal(styles['--audio-bass'], '0.8'); // Replay wird verworfen.
+clock = 1600; [...timerFns.values()][0](); assert.equal(layer.dataset.active, 'false'); assert.equal(styles['--audio-energy'], '0');
+dispatch({ ...valid, sequence: 2, playing: false }); assert.equal(layer.dataset.active, 'false');
+language = 'en'; docListeners['lyvra:languagechange'](); assert.equal(title.textContent, 'Sound becomes light.');
+motion.matches = true; motion.change(); assert.equal(timerFns.size, 0); assert.equal(button.disabled, true); assert.equal(messages.at(-1).data.enabled, false); dispatch({ ...valid, sequence: 3 }); assert.equal(layer.dataset.active, 'false');
+motion.matches = false; motion.change(); document.hidden = true; docListeners.visibilitychange(); assert.equal(timerFns.size, 0);
+document.hidden = false; docListeners.visibilitychange(); frameEvents.load(); button.click(); assert.equal(timerFns.size, 0); assert.equal(messages.at(-1).data.enabled, false);
+// Sender nutzt vorhandene Frequenzdaten und prüft Origin UND Parent-Identität.
+const sent = [], parent = { postMessage(data, target) { sent.push({ data, target }); } };
+const audio = { paused: false, readyState: 4, volume: .5, muted: false, addEventListener(k, f) { audioEvents[k] = f; } };
+const radioDoc = { hidden: false, getElementById: () => audio, addEventListener(k, f) { radioEvents[k] = f; } };
+const win = { parent, addEventListener(k, f) { radioEvents[k] = f; } };
+vm.runInNewContext(fs.readFileSync('docs/integration/radio-audio-levels.js', 'utf8'), { window: win, document: radioDoc, performance: { now: () => clock } });
+const request = (origin, source = parent, enabled = true) => radioEvents.message({ origin, source, data: { type: 'lyvra:audio:subscribe', version: 1, enabled } });
+request('https://evil.test'); request(siteOrigin, {}); assert.equal(sent.length, 0);
+request(siteOrigin); assert.equal(sent.at(-1).target, siteOrigin); assert.equal(sent.at(-1).data.playing, false);
+const bins = new Uint8Array(1024).fill(255); win.S666AudioLevels.publish(audio, { fftSize: 2048 }, bins, 48000); assert.equal(sent.at(-1).data.bass, .5); assert.equal(sent.at(-1).data.playing, true);
+const count = sent.length; win.S666AudioLevels.publish(audio, { fftSize: 2048 }, bins, 48000); assert.equal(sent.length, count);
+clock += 60; audio.muted = true; win.S666AudioLevels.publish(audio, { fftSize: 2048 }, bins, 48000); assert.equal(sent.at(-1).data.energy, 0);
+audioEvents.pause(); assert.equal(sent.at(-1).data.playing, false); request(siteOrigin, parent, false); clock += 60; const stopped = sent.length; win.S666AudioLevels.publish(audio, { fftSize: 2048 }, bins, 48000); assert.equal(sent.length, stopped);
+console.log('PASS: origin/source/schema/replay guards, stale signal, pause, opt-in/off, DE/EN, reduced motion, visibility, bounded read-only RMS bridge, muted audio and 20 Hz throttle. Synthetic protocol tests; live audio not tested.');
