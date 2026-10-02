@@ -29,7 +29,7 @@ def ui_utf16_length(value: str) -> int:
 
 def _spoken_words(value: str) -> tuple[str, ...]:
     """Word sequence comparison independent of emoji or line spacing."""
-    return tuple(w.casefold() for w in re.findall(
+    return tuple(w for w in re.findall(
         r"[^\\W\\d_]+(?:['’][^\\W\\d_]+)*", value, flags=re.UNICODE))
 
 
@@ -65,6 +65,7 @@ class SpeechDraft:
     variety: str = ""
     # Explicit creator-approved experiment; user original must be separately kept.
     experiment_literal_script_emoji: bool = False
+    reference_script: str = ""  # Immutable baseline for glyph-only A/B.
     # Optional, creator-confirmed CURRENT UI counters; no permanent default.
     observed_limits: dict[str, int] = field(default_factory=dict)
 
@@ -114,6 +115,10 @@ def inspect(draft: SpeechDraft) -> PreflightResult:
             if not draft.experiment_literal_script_emoji:
                 errors.append("Literal emoji in spoken Skript requires explicit experimental opt-in")
             else:
+                if not draft.reference_script.strip():
+                    errors.append("Emoji A/B experiment needs immutable reference_script")
+                elif not compare_emoji_ab(draft.reference_script, draft.script).exact_spoken_words:
+                    errors.append("Emoji A/B changes spoken words; not a controlled glyph-only test")
                 notes.append("Experimental literal emoji: Suno may speak or mishandle glyphs; A/B needed")
     for field_name, limit in draft.observed_limits.items():
         if field_name not in ("freeform", "script", "tonfall") or type(limit) is not int or limit < 1:
