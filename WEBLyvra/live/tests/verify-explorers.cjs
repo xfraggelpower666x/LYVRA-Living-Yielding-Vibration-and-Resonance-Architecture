@@ -40,7 +40,9 @@ const expectedFrame=`<iframe
 for(const frame of currentFrames)assert.equal(frame,expectedFrame);
 const oldFrames=JSON.parse(fs.readFileSync('tests/radio-embed-pre-v15.json','utf8'));
 let frameIndex=0;
-const additiveHtml=currentHtml.replace('<link rel="stylesheet" href="plugin-access.css">','').replace(/<a class="button ghost hero-plugin-link"[\s\S]*?<\/a>/,'').replace(/<!-- LYVRA_PLUGIN_START -->[\s\S]*?<!-- LYVRA_PLUGIN_END -->\n/,'');
+const withoutNeon=currentHtml.replace('<link rel="stylesheet" href="audio-neon.css"><script type="module" src="audio-neon.js"></script>\n','').replace(/<aside id="audio-neon-controls"[\s\S]*?<\/aside>/,'').replace(/<div id="audio-neon-layer"[\s\S]*?<\/div>\n/,'');
+assert(currentHtml.includes('id="audio-neon-controls"'));
+const additiveHtml=withoutNeon.replace('<link rel="stylesheet" href="plugin-access.css">','').replace(/<a class="button ghost hero-plugin-link"[\s\S]*?<\/a>/,'').replace(/<!-- LYVRA_PLUGIN_START -->[\s\S]*?<!-- LYVRA_PLUGIN_END -->\n/,'');
 const preservationHtml=additiveHtml.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
 assert.equal(hash(preservationHtml.replace('<link rel="stylesheet" href="explorers.css">','').replace('<link rel="stylesheet" href="brand-art.css">','').replace(/<a class="button primary hero-gpt-link"[\s\S]*?<\/a>/,'')),baseline.index);
 assert.equal(hash(fs.readFileSync('dist/evolution-status.css')),baseline.evolutionCss);
