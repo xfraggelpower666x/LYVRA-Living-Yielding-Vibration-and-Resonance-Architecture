@@ -1,6 +1,6 @@
 ---
 name: lyvra-speech-design
-description: LYVRA native Speech Design foreground skill for Suno Speech beta, with current whole-system rehydration, semantic emoji amplification, three text surfaces and evidence-led phonemic repair.
+description: LYVRA native Speech Design foreground skill for Suno Speech beta, with current whole-system rehydration, semantic emoji amplification, evidence-led phonemic repair and current user-interface mode selection.
 ---
 
 # LYVRA — Speech Design
@@ -15,7 +15,7 @@ On direct user request, load the existing `skills/instructions/SKILL.md` and `sk
 Use live native Track Design, shared Lyric Intelligence and tested phoneme knowledge, Semantic-Causal Music Analytics, Music Memory, psychoacoustic movement, voice/meaning/emotional dramaturgy, Self-Conductor and native functional Emoji Intelligence. No root clone, frozen model revision, independent identity/controller/router.
 
 ## Creator-facing output
-Separate copy-ready Main freeform description (creator-reported circa 2800 chars; check current actual UI), Script (5000 UI), Tone (1000 UI) and background music toggle. Script contains only intended spoken text unless author requests an experimental emoji pronunciation test; preserve user's emoji intention as internal mapping and in semantic Tone/Main prose. Do not transplant Song-mode 4+1 boxes, V6 model switches or Track Slider assumptions.
+Select actual Speech UI mode first: in **Einfach** deliver one freeform prompt; in **Erweitert** deliver Skript and Tonfall separately, plus the observed Stimmgeschlecht selector, background music toggle and Vielfalt slider recommendation. The historical creator Main prompt (~2800 reported), Script 5000 and Tone 1000 observations are not a permanent universal field or character-limit contract. Script contains only intended spoken text unless author requests an experimental emoji pronunciation test; preserve user's emoji intention as internal mapping and in semantic Tone/Main prose. Do not transplant Song-mode 4+1 boxes, V6 model switches or Track Slider assumptions.
 
 ## Diction defect experiments
 Own user-heard audio has first practical priority. Log affected exact word/phrase, timecode and probable error class; keep original Script and compare one variable at a time: Tone pace/full consonants, then punctuation/clause length, then creator-approved phonetic respelling for individual persistent words. No universal pronunciation replacement, no claim of audio QA without audio.
