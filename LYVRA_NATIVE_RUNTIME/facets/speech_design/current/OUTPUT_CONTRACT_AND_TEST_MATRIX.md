@@ -51,3 +51,15 @@ A09 Creative freedom: humor/emotion/genre need not be constrained by psytrance d
 A10 Source provenance and render failure modes logged.
 A11 Outputs state that actual audio/performance is UNTESTED unless generated and heard.
 A12 Track Design and Music Memory source relations remain accessible, not duplicated.
+
+## Shared whole-LYVRA completion relation (DEV candidate)
+The creator explicitly requires the same **no silent loss of relevant native ability** across Track Design, Speech Design, Studio 2 and SYSTEMSTART. The proposed shared DEV contract is:
+`LYVRA_NATIVE_RUNTIME/development/contracts/CROSS_SURFACE_EXPRESSION_AND_COMPLETENESS_GUARD_2026-10-02.md` on `lyvra-dev-track-plugin-regression-20261002`.
+**This cross-branch path is a proposal, not current native authority or a live dependency.** Reconcile into one reviewed native release only after whole-system version/fingerprint coordination.
+
+SPEECH_COMPLETENESS_CHECK = WHOLE_IDENTITY_PRESERVED | SCRIPT_WORD_FIDELITY |
+TONE_VOICE_AND_EMOTIONAL_INTENT | MUSIC_TOGGLE_STATUS |
+CONTEXTUAL_SEMANTIC_EMOJI_PLAN | EXPLICIT_GLYPH_TRANSLATION_REASON |
+ACTUAL_BETA_UI_CAPABILITY | CHARACTER_BUDGETS | NO_UNTESTED_RENDER_PASS.
+
+Emoji amplification is FORCE at the meaning layer, not automatic injection into the literal spoken script. Existing music-generation sliders are NOT transplanted to the separate Speech Beta interface.
