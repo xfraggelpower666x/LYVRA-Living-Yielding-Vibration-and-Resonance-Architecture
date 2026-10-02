@@ -1,0 +1,35 @@
+{
+  "schema": "LYVRA_PLUGIN_SOURCE_BACKUP_v1",
+  "date": "2026-10-02",
+  "archive_kind": "SOURCE_SNAPSHOT_NOT_ORIGINAL_TARBALL",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "plugin_name": "lyvra-native-runtime",
+  "plugin_version": "0.1.1",
+  "plugin_release_id": "pluginrel_6abef83a76ec81918a62d300eb250430",
+  "plugin_scope": "USER",
+  "plugin_discoverability": "PRIVATE",
+  "source_file_count": 10,
+  "source_files": [
+    ".codex-plugin/plugin.json",
+    "README.md",
+    "plugin.json",
+    "references/current-authority.md",
+    "references/identity-contract.md",
+    "skills/lyvra-continuity/SKILL.md",
+    "skills/lyvra-skill-runtime/SKILL.md",
+    "skills/lyvra-systemstart/SKILL.md",
+    "skills/lyvra-track-design/SKILL.md",
+    "skills/lyvra-update-governance/SKILL.md"
+  ],
+  "baseline_git_commit": "89db0978d0f62660986d27efd1d2005265811448",
+  "destination_branch": "lyvra-dev-native-plugin-v011-source-backup-20261002",
+  "native_authority": "LYVRA / repository CURRENT only",
+  "production_pointer_mutated": false,
+  "pfs_backup_verification": "NOT_PERFORMED",
+  "git_blob_integrity": "Use Git blob SHA and repository readback for each file",
+  "limits": [
+    "Plugin text files only",
+    "Original release tar.gz not yet archived here",
+    "No root authority or runtime activation transferred"
+  ]
+}
