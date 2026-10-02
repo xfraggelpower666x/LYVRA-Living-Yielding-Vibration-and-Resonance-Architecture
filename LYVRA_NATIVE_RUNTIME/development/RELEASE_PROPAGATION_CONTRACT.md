@@ -34,8 +34,8 @@ A completed native code update does **not** automatically prove updates to plugi
 8. Record a handoff for incomplete targets in continuity or Linear and keep it open across NEW/NEXT CHAT. If one target is unavailable, continue safe independent work; do not block native creativity and unrelated development.
 
 ## Known current evidence and unknowns at authoring
-- Plugin A was directly observed in prior authorized audit as USER/PRIVATE v0.13.0, release `pluginrel_6abed7676b5881918674b8d2c64e21af`. Treat as dated evidence and refetch at each update.
-- Plugin B was shown by user as a **second older runtime** and preferred boot screenshot, but its exact backend plugin ID and current editable release have **not** been verified. Do not guess an ID from a chat label or confuse two plugins.
+- Plugin A directly verified through Plugin Creator: backend ID `plugin_06a4fc64dd848191982ca4a6ebdb2619`, USER/PRIVATE v0.13.0, release `pluginrel_6abed7676b5881918674b8d2c64e21af`, 30 source files. Refetch before each update.
+- Plugin B **now directly verified through Plugin Creator**: `lyvra-native-runtime`, backend ID `plugins_6ab3a345db308191b8ad7ef6311f8a29`, USER/PRIVATE release v0.1.1 `pluginrel_6abef83a76ec81918a62d300eb250430`, 10 source files. Its old presentation/Drive history cannot supersede repo current authority. Refetch both plugins before future edits.
 - LYVRA GPT exists at creator-supplied `https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a`. Repository backup files do not prove changes imported into the GPT Builder. No automatic GPT edit claim.
 - WEBLyvra: `https://weblyvra.666soundsdesign-broadcaster.com/`; site deployment check required only on materially affected changes; repo commit is not proof of Pages live deployment.
 
