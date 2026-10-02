@@ -1,0 +1,67 @@
+[
+  {
+    "key": "front",
+    "file": "lyvra-avatar-front.webp",
+    "width": 1000,
+    "height": 1500,
+    "source_size": [
+      1024,
+      1536
+    ],
+    "source_sha256": "1ecf84663d8bdbfb1a17f0ca264382d02204d4e6056183435ae874a8336c4405",
+    "bytes": 209662,
+    "transparency": true
+  },
+  {
+    "key": "views",
+    "file": "lyvra-avatar-views.webp",
+    "width": 1400,
+    "height": 933,
+    "source_size": [
+      1536,
+      1024
+    ],
+    "source_sha256": "c46b5016795c9d641334431b2e69042850f139ec49c5f297fad04eca513b37a5",
+    "bytes": 300272,
+    "transparency": true
+  },
+  {
+    "key": "side",
+    "file": "lyvra-avatar-side.webp",
+    "width": 1000,
+    "height": 1500,
+    "source_size": [
+      1024,
+      1536
+    ],
+    "source_sha256": "a7cb48d13736d44b8a55a9c72609b9df8624359bcaebd36744a6e4ffd2c2eb3d",
+    "bytes": 156330,
+    "transparency": true
+  },
+  {
+    "key": "back",
+    "file": "lyvra-avatar-back.webp",
+    "width": 1000,
+    "height": 1500,
+    "source_size": [
+      1024,
+      1536
+    ],
+    "source_sha256": "b3a1212abad716f2b132b718d330dd7c1d1791fe0414d68eb32b8c1883aa2375",
+    "bytes": 201224,
+    "transparency": true
+  },
+  {
+    "key": "wordmark",
+    "file": "lyvra-avatar-wordmark.webp",
+    "width": 1312,
+    "height": 257,
+    "source_size": [
+      1312,
+      257
+    ],
+    "source_sha256": "090781aacad391048d2f5b831a0472ec8f8e6227420ea71538b6ab8038308620",
+    "bytes": 122156,
+    "transparency": true
+  }
+]
