@@ -1,7 +1,7 @@
 # LYVRA — Mandatory Development Propagation Review
 STATUS=DEV_CANDIDATE_NOT_CURRENT
 DATE=2026-10-02
-CREATOR_REQUIREMENT=EVERY_RELEVANT_LYVRA_DEVELOPMENT_CHECKS_TWO_PLUGINS_GPT_AND_WEBLYVRA
+CREATOR_REQUIREMENT=EVERY_RELEVANT_LYVRA_DEVELOPMENT_CHECKS_TWO_PLUGINS_GPT_WEBLYVRA_AND_DISCORD_CHARACTER_BOT
 NATIVE_IDENTITY=LYVRA_ONLY
 AUTHORITY_BRANCH=lyvra
 
@@ -10,8 +10,8 @@ Whenever LYVRA evolves (identity, relations, meaning, creative intelligence, fac
 - PLUGIN_A: current editable official private LYVRA plugin, authenticated backend identity and release checked each run.
 - PLUGIN_B: creator's second/older Drive-era plugin, **identity and editable release must be discovered and verified before any write**; Google Drive is not current LYVRA root authority.
 - LYVRA_GPT: official custom GPT, builder configuration and Knowledge/Actions, when a permitted GPT builder/edit interface is actually available.
-- WEBLYVRA: official production site and repository/deployment, **when changes affect UI, navigation, plugin links, documentation, privacy/legal text, feature explanation or availability**.
-All four targets must get an explicit relevance determination, not necessarily an update.
+- WEBLYVRA: official production site and repository/deployment, **when changes affect UI, navigation, plugin links, documentation, privacy/legal text, feature explanation or availability**.\n- DISCORD_CHARACTER_BOT: xfraggelpower666x/666LYVRACHARAKTERBOTAI, branch lyvrabot, when native identity/personality/facets/LiveCircle/privacy/Discord features or relevant cross-surface behavior evolve. Adapter remains non-authoritative; separate bot release/Discord deployment/real runtime readback is required.
+All **five** currently known presentation/adapter targets must get an explicit relevance determination, not necessarily an update. Additional valid future adapters join this matrix dynamically; no frozen permanent target count.
 
 ## Mandatory propagation matrix on every materially relevant development
 For each target record:
@@ -21,7 +21,7 @@ CHANGE_DESCRIPTION | AUTHORITY_PERMISSION | REQUIRED_ARTIFACT |
 DEPENDENCIES | TEST | REMOTE_READBACK | RELEASE_STATUS |
 DEPLOYMENT_STATUS | OPEN_BLOCKERS | PROVENANCE.
 
-A completed native code update does **not** automatically prove updates to plugins, GPT builder, website deployment, Linear, PFS backup or other repositories. Keep separate source release numbers, checksums, PR/deploy URLs and readback claims for each.
+A completed native code update does **not** automatically prove updates to plugins, GPT builder, website deployment, Discord bot runtime, Linear, PFS backup or other repositories. Keep separate source release numbers, checksums, PR/deploy URLs and readback claims for each.
 
 ## Execution order — event-gated, not fixed creative cognition
 1. Rehydrate whole current LYVRA and preserve all newer valid evolution before technical changes. Do not reduce meaning/humor/creative freedom to checkboxes.
@@ -47,7 +47,7 @@ A completed native code update does **not** automatically prove updates to plugi
 ## Prohibitions
 NO_FORCED_UPDATE_WHEN_NOT_APPLICABLE=true
 NO_SECOND_LYVRA_IDENTITY=true
-NO_NEW_ROUTER=true
+NO_NEW_ROUTER=true\nNO_BOT_LOCAL_MEMORY_AS_NATIVE_LIVECIRCLE_AUTHORITY=true\nNO_LEGACY_DRIVE_BOT_AUTOIMPORT=true
 NO_AUTOMATIC_FOREIGN_ACTIVATION=true
 NO_PLUGIN_ROOT_AUTHORITY=true
 NO_GPT_BUILDER_UPDATE_CLAIM_WITHOUT_BUILDER_READBACK=true
