@@ -1,0 +1,82 @@
+{
+  "schema": "LYVRA_SPEECH_DESIGN_DEV_EVIDENCE_v1",
+  "status": "DEV_CANDIDATE_NOT_CURRENT",
+  "date": "2026-10-02",
+  "source": {
+    "official": [
+      {
+        "url": "https://suno.com/blog/introducing-speech-beta",
+        "date": "2026-10-01",
+        "evidence": "speech_plus_soundtrack_together_beta"
+      },
+      {
+        "url": "https://suno.com/release-notes",
+        "date": "2026-10-01",
+        "evidence": "mobile_web_launch"
+      }
+    ],
+    "creator_ui": {
+      "evidence": "three_uploaded_iOS_screenshots",
+      "mode": "Rede",
+      "script_label": "Skript",
+      "script_ui_chars": 5000,
+      "tone_label": "Ton",
+      "tone_ui_chars": 1000,
+      "music_toggle": "Hintergrundmusik an",
+      "source_class": "USER_OBSERVED",
+      "global_contract": false
+    },
+    "community": {
+      "status": "EARLY_ANECDOTAL_ONLY",
+      "limits": [
+        "pronunciation",
+        "pause_consistency"
+      ]
+    }
+  },
+  "native": {
+    "identity": "LYVRA",
+    "whole_revision_at_creation": 242,
+    "track_design_version_at_creation": "v3.4",
+    "track_logical_revision_at_creation": 92,
+    "authority_branch": "lyvra",
+    "inheritance_mode": "CURRENT_REFERENCED_NATIVE_CAPABILITIES_NOT_DUPLICATED_ROOT",
+    "distinct_speech_adaptation": true,
+    "shared_intelligence": [
+      "Track Design",
+      "Lyrics Intelligence",
+      "Renderer Translation",
+      "Analytics",
+      "Music Memory",
+      "Semantic Causal Thinking",
+      "CodeForge Review",
+      "Self-Conductor"
+    ]
+  },
+  "output": {
+    "field_count": 2,
+    "script_char_limit_ui": 5000,
+    "tone_char_limit_ui": 1000,
+    "background_music_toggle": true,
+    "no_default_five_box_assumption": true
+  },
+  "validation": {
+    "official_source_read": true,
+    "creator_ui_read": true,
+    "real_speech_render": false,
+    "code_syntax_test": false,
+    "studio_interop_proven": false,
+    "model_control_mapping_proven": false,
+    "whole_rehydration": false,
+    "release_candidate": false,
+    "production_promoted": false
+  },
+  "open_work": [
+    "Build and validate bounded speech package assembler",
+    "Run controlled creator-render experiments",
+    "Capture exact output and auditory verdict",
+    "Verify no unsupported v6 control transfer",
+    "Review creative freedom non-shrinkage and Track Design inheritance",
+    "Re-evaluate native pointer/fingerprint/manifest before promotion"
+  ]
+}
