@@ -24,8 +24,8 @@ Creator-provided Track Design chat export demonstrates an omitted semantic emoji
 
 ## B — SPEECH DESIGN (Suno Speech Beta)
 - Trigger: `LYVRA SPEECH DESIGN` per isolated Speech DEV facet; native Whole first.
-- Screenshot-observed Suno fields: Skript (5000 character UI) and Ton (1000), plus independent background-music on/off toggle. **Do not import the five-box music layout or music-generation slider panel.**
-- Semantic Emoji Intelligence: full internal causal/emotional/voice/music planning. For `Ton`, optionally reinforce contextually with clearly bound emojis as a **renderer hypothesis**; directions must stand independently. For `Skript`, spoken word fidelity first; do not inject visible emoji by default without tests, because the beta renderer might speak glyphs. Preserve intended emotional effect via phrasing/tone, not omission.
+- Creator-observed Suno Speech surfaces: **three separate text fields**: freeform **Hauptfeld / Main Prompt** (approximately 2800 characters in first creator production, user-reported, NOT verified universal cap), **Skript** (5000 visible in UI), **Ton** (1000 visible in UI), plus independent **Hintergrundmusik an/aus** toggle. **Do not import the five-box music layout or music-generation slider panel.** Preserve each of the three texts separately in the output; never omit the main field or copy the whole spoken Script into it.
+- Semantic Emoji Intelligence: full internal causal/emotional/voice/music planning, **word-first + additional meaningful emoji** (never emoji-for-word replacement), with context-dependent meaning, intensity, distribution, placement and cross-field translation. For `Hauptfeld` and `Ton`, semantically bound glyphs are optional *renderer hypotheses*, and verbal instructions must work without them. For `Skript`, spoken-word fidelity takes precedence: default clean audible text, not visible emojis until A/B evidence; translate emoji meaning to words, punctuation, vocal tone and soundtrack instructions, **never drop the meaning**. Preserve intended creator glyphs in an internal ledger without inventing spoken instructions.
 - Clearly mark beta assumptions, voice/pause/music co-generation unverified behavior, actual rendered result unknown until heard.
 
 ## C — SUNO STUDIO 2
@@ -44,9 +44,45 @@ Creator-provided Track Design chat export demonstrates an omitted semantic emoji
 | Context | Must be present | Detectable regression |
 | --- | --- | --- |
 | Track | Four music text fields + visible creator control panel + causal emoji audit | Missing control panel; silently dropped relevant emoji |
-| Speech | Script + Tone + music toggle + spoken fidelity/emoji translation | Music-slider contamination; literal emoji script leak |
+| Speech | Main Prompt + Skript + Ton + separate music toggle; reported-versus-verified limits; spoken fidelity and emoji-meaning translation | Missing main field; copied music sliders; literal emoji in default Script; lost semantic binding |
 | Studio2 | Preserve/mutate, operation/region and contextual controls, emoji-meaning audit | Global generation slider blind transfer; imaginary applied edit |
 | SYSTEMSTART | Identity-first readable visual hierarchy + true dynamic readback | Stale status, Drive authority, technical-only personality removal |
+
+## Speech production readiness — three-field and Emoji FORCE regression (2026-10-02)
+
+**SPEECH_OUTPUT_ASSEMBLY_GUARD** must inspect all four user-facing controls on
+every completed Speech package (where the creator's actual UI has them):
+`HAUPTFELD` | `SKRIPT` | `TON` | `HINTERGRUNDMUSIK`.
+
+- Main Prompt: narrative intention, emotional/music trajectory, voice-priority and ending;
+  approx. 2,800-character observed *creator report*, **not** an official enforced max.
+  Report the actual proposed character count and mark UI limit uncertain.
+- Script: exact speech content, complete words and intentional punctuation, <=5000
+  character observed UI; **no emoji glyph by default**. Maintain a source-
+  preserving original if artist-provided copy includes emojis. Do not
+  overwrite author text or reproduce two contradictory spoken versions.
+- Tone: narrator delivery, diction, complete consonant and syllable endings,
+  emotional transitions, voice-to-music balance; <=1000 observed UI.
+  Emoji symbols, when present, must be tied to a precise textual intention.
+- Background music: state ON / OFF / UNKNOWN as a distinct creator setting; no
+  assumed default from the previous Story/Dynasty example.
+- Emoji FORCE: evaluate real semantic opportunities and preserve word content;
+  produce mapping `intent → relevant word/phrase → optional glyph →
+  renderer field/explicit translation → omission reason/renderer uncertainty`.
+  No quota or mandatory global fixed mapping; symbolic meanings may evolve.
+- Before an audio PASS: verify creator's real render, missing words, pronunciation,
+  articulation, score masking, timing/pause, variant identity and A/B controls.
+  Suggestions are renderer hypotheses, not proof of model behavior.
+
+**Regression rejection**: generating only Script+Tone, omitting the master prompt,
+inserting raw emoji glyphs into the default spoken Script without permission,
+forgetting the music switch, pretending music model v6 controls exist in Speech,
+or claiming audio quality without an actually listened-to render.
+
+**Scope discipline**: the functional cross-surface guard is a shared native LYVRA
+expression/assembly principle, **NOT** a separate Emoji AI, native router,
+second identity, or fixed thinking pipeline. The check remains a DEV candidate
+until real skill integration, whole-native readback and controlled user output test.
 
 ## DEV only: gate status
 RENDERED_AUDIO_PASS=false
