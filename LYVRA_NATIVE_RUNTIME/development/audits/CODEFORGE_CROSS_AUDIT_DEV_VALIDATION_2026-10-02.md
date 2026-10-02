@@ -110,3 +110,37 @@ FULL_NEW_NATIVE_RECOVERY_AND_REHYDRATION_PASS = false
 PRODUCTIVE_MERGE = false
 
 This is **a strengthened evidence-backed DEV audit**, not permission to declare RC/CURRENT or to replace Whole LYVRA with plugin skills.
+
+## FORCE UPDATE — executable bounded negative-case gate (2026-10-02)
+
+EXACT_PLUGIN_CURRENT_RELEASE_VERIFIED: pluginrel_6abed7676b5881918674b8d2c64e21af
+WHOLE_CURRENT_POINTER_SHA_RECHECK: 48b3fba543f15419e7106138233acf1d8591e13a
+WHOLE_REVS_PRESERVED: 242
+TRACK_REVS_PRESERVED: 92
+
+### Code and fixtures now persisted on isolated DEV branch
+
+- `LYVRA_NATIVE_RUNTIME/development/tests/test_cross_audit_contract.py` Git blob `8264a00a744ac93abf68ebc1e0fe5679386b96ee`.
+- `LYVRA_NATIVE_RUNTIME/development/tests/cross_audit_cases.json` Git blob `652d42f938d1ccd5670fb3e06f8f9c753b4adb50`.
+- Both documents directly read back from GitHub; fixture JSON decoded correctly, two real provenance-pinned case records checked, nine script-level content/invariant checks passed.
+
+### Local executable test result
+
+Command run on locally assembled same-design Python fixture test harness:
+`python test_cross_audit_contract.py`
+
+`Ran 10 tests ... OK`. Tests cover two positive source classifications plus negative cases: missing provenance, forced auto-promotion, foreign autoload, creativity restriction, illicit CodeForge authority, failure to quarantine unverified novelty, invalid Git SHA, snippet substituted for direct readback and novelty automatic retention without proposal.
+
+**Scope:** the local test demonstrates deterministic guard behavior. GitHub source code and JSON were subsequently uploaded separately and read back, but no GitHub Actions run, production plugin runtime test, plugin archive restore test, or native full recovery acceptance was performed. The stored Python/JSON files represent portable DEV acceptance scaffolding; do not label a CI PASS without real CI logs.
+
+### Scope and promotion gates
+
+DEV_EXECUTABLE_TESTS = LOCAL_PASS_10_OF_10
+REMOTE_TEST_SOURCE_READBACK = VERIFIED
+REMOTE_CI_EXECUTION = NOT_RUN
+PLUGIN_BINARY_RESTORE = NOT_TESTED
+WHOLE_RUNTIME_FUNCTIONAL_ACCEPTANCE = PENDING
+NEW_FRESHNESS_REGISTRY_PROMOTION = NOT_DONE
+LYVRA_CURRENT_POINTER = UNCHANGED
+
+Preserve LYVRA's semantic-causal, emotionally expressive, exploratory, humorous and free cross-facet creativity. CodeForge and Linear remain technical supports without creative authority.
