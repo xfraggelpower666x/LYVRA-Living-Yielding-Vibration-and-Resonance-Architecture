@@ -100,6 +100,27 @@ Suggested English Tone variant:
 ARTICULATION_FIX_CONFIRMED = false
 REAL_WORLD_AUDIO_AB_PASS = false
 
+## Pronunciation and phoneme repair — DEV policy from creator feedback (2026-10-02)
+
+LYVRA_SPEECH_PHONEMIC_CORRECTION = CONTEXTUAL_ADAPTATION_OF_NATIVE_LYRIC_PHONETIC_INTELLIGENCE
+SOURCE_PRIORITY = CREATOR_ACTUAL_LISTENING > REPEATED_CONTROLLED_SPEECH_RENDER > FRESH_OFFICIAL_SPEECH_DOCS > CURRENT_SPEECH_COMMUNITY > LEGACY_SUNO_LYRICS_TECHNIQUE
+RENDERER_DIFFICULTY_IS_HYPOTHESIS_UNTIL_REPLICATED = true
+ARTIFACT_AND_TIMESTAMPS = PENDING_CREATOR_SUBMISSION
+NO_AUDIO_AVAILABLE_NE_IMPLY_AUDITED_AUDIO = true
+NEVER_REPLACE_USER_INTENDED_PRONUNCIATION_WITH_UNTESTED_RESPelling = true
+
+### Phoneme-aware, speech-specific adaptation
+Preserve original written Script as immutable semantic reference while testing candidate pronunciations. LYVRA may consider orthographic clusters, word-boundary coarticulation, elision, final consonants, stressed vowels, names, initialisms, numerals and unusual brand spellings. Only selectively choose one variable for each A/B: **Tone articulation and pace first**; if insufficient, **punctuation/shorter clauses**; if a specific name still mispronounced, **explicit phonetic or respelled local variant** with intended pronunciation confirmed by creator. Put pronunciation experiments in the actual `Skript` only in separately labeled variants, as ordinary spoken text rather than untested phonetic meta-tags.
+
+For challenging proper names such as Fraggle, Veluna, Cyber LYVRA, or 666SOUNDsDESIGn, no automatic universal phonetic string is authoritative; producer hearing and correct pronunciation govern. Preserve stable exact words when fidelity outranks accent adaptation. Emoji-bearing scripts should have a plain-script control to isolate effects; do not simultaneously change tempo, narrator, word spelling, music and Emojis.
+
+### Phonemic failure ledger
+`RENDER_ID | CREATOR_TIMESTAMP | EXPECTED_EXACT_WORD | HEARD_OUTPUT_DESCRIPTION | ERROR_CLASS | SCRIPT_CONTEXT | LANGUAGE_ACCENT | TONE_VERSION | MAIN_PROMPT_VERSION | MUSIC_TOGGLE | CANDIDATE_VARIANT | OWN_AUDIO_COMPARISON_RESULT | COMMUNITY_OFFICIAL_CORROBORATION | CONFIDENCE | NEXT_TEST`.
+
+ERROR_CLASS = `ONSET_DROPPED | FINAL_CONSONANT_DROPPED | SYLLABLE_COLLAPSE | WORD_JOINING | MISSING_WORD | MISSTRESS | PROPER_NAME | NUMBER_OR_ABBREVIATION | MUSIC_MASKING | UNCERTAIN`.
+
+No permanent Speech phoneme rule is promoted without controlled hearing tests. Creator can provide audio later; until then record candidate risks and test plan without asking them to stop producing.
+
 ## Real-render test plan
 A. Same exact 10–30-second narrative, background music OFF vs ON, tone otherwise constant. Verify word fidelity, clarity, overall background balance.
 B. Same script/music toggle, change one tone element (dry delivery vs intimate breath/pace). Measure observed qualitative compliance.
