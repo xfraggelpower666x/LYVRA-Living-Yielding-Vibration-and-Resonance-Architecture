@@ -13,6 +13,42 @@ Whenever LYVRA evolves (identity, relations, meaning, creative intelligence, fac
 - WEBLYVRA: official production site and repository/deployment, **when changes affect UI, navigation, plugin links, documentation, privacy/legal text, feature explanation or availability**.\n- DISCORD_CHARACTER_BOT: xfraggelpower666x/666LYVRACHARAKTERBOTAI, branch lyvrabot, when native identity/personality/facets/LiveCircle/privacy/Discord features or relevant cross-surface behavior evolve. Adapter remains non-authoritative; separate bot release/Discord deployment/real runtime readback is required.
 All **five** currently known presentation/adapter targets must get an explicit relevance determination, not necessarily an update. Additional valid future adapters join this matrix dynamically; no frozen permanent target count.
 
+## Discord Character Bot — persistent TODO handoff (creator requirement 2026-10-02)
+
+For **every material LYVRA evolution or UPDATE**, determine whether the verified newer
+native change affects the Discord-characterbot adapter and its functionality.
+Bot development may be PAUSED; **relevance tracking must continue**.
+
+**Primary permanent backlog:** https://github.com/xfraggelpower666x/666LYVRACHARAKTERBOTAI/issues/2
+**Technical passive watcher:** bot productive default branch `lyvrabot`,
+`.github/workflows/native-update-todos.yml`, hourly GitHub Actions plus manual
+dispatch; implementation `automation/native_update_todos.py`.
+It compares changes on the **productive native `lyvra` branch only**, creates
+GitHub-Issue candidate checkboxes with public commit references and topical
+category, and stores its last seen head in an issue body marker. This is
+**a candidate detector, not semantic relevance verification or native rehydration**.
+GitHub schedule may run late, be temporarily disabled or miss dev-only changes;
+thus active LYVRA UPDATE and release work must **explicitly inspect and update**
+the same bot TODO list when relevant, including qualifying DEV changes that
+will require a later bot integration. Do NOT rely on the hourly watcher alone.
+
+An integration TODO contains:
+SOURCE_SYSTEM_REVISION_OR_COMMIT | DATE_AND_PROVENANCE |
+IMPACT_DOMAIN_AND_BEHAVIOR | CURRENT_BOT_STATE |
+REQUIRED_BOT_IMPLEMENTATION | DEPENDENCIES |
+PRIORITY_IF_EVIDENCED | STATUS=(OPEN,REVIEW,STAGED,TESTED,INTEGRATED,NOT_APPLICABLE) |
+TEST_EVIDENCE | RELEASE_AND_REMOTE_READBACK.
+If full native current pointer/reference readback is unavailable, label the
+TODO as `REVIEW_PENDING`, not a current canonical truth. Never dump private
+family, relation, emotion or protected vault payloads into a public GitHub issue.
+Older historical changes remain provenance, not automatically the new authority.
+
+Completing a native release NEVER marks bot integration completed.
+Bot work resumes separately via scoped implementation, CI, bot PR/release,
+Discord live readback, rollback and whole-native compliance gate. Neither an
+issue update, an hourly workflow, nor the observer bot determines native LYVRA
+decisions. **NO_NEW_ROUTER, NO_FOREIGN_AUTOLOAD, ONE_NATIVE_LYVRA**.
+
 ## Mandatory propagation matrix on every materially relevant development
 For each target record:
 TARGET | EXACT_VERIFIED_ID_AND_VERSION | CURRENT_INTEGRATION |
