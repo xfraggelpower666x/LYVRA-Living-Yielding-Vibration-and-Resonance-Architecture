@@ -17,3 +17,6 @@
 .chat-demo-reset{margin:14px 0 24px}.chat-demo .chat-demo-cta{display:flex;flex-direction:column;align-items:flex-start;gap:10px;border-top:1px solid #8199b333;padding-top:24px}
 .chat-demo button:focus-visible,.chat-demo input:focus-visible,.chat-demo a:focus-visible{outline:2px solid #7cf0ff;outline-offset:4px}
 @media(max-width:700px){.chat-demo-input-row{flex-direction:column}.chat-demo-bubble{max-width:100%}.chat-demo-cta .button{width:100%;text-align:center}.chat-demo-log{max-height:360px}}
+
+/* Transparenter iframe-Canvas; dynamische Höhe aus player-fit.js. */
+.radio-embed iframe,.chat-demo-radio iframe{background:transparent;color-scheme:normal}

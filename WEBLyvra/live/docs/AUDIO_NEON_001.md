@@ -26,3 +26,9 @@ Im Webradio-Repository sind ausschließlich die Script-Einbindung, der optionale
 - Echte Live-Audioausgabe, visuelle Desktop-/Mobilansicht und Screenreader: noch nicht verifiziert.
 
 Freigabeprüfung: Beide Partneränderungen zusammen bereitstellen; MiniPlayer starten, Effekte einschalten, Bass/Mitten/Höhen beobachten, pausieren, stummschalten, Tab wechseln, DE/EN wechseln und reduzierte Bewegung prüfen. Browser können eine manuelle Play-Geste verlangen. Stream-/Analyser-Verfügbarkeit bleibt Voraussetzung.
+
+## Ergänzung: kompakter iframe ohne schwarzen Leerbereich
+
+`player-fit.js` und die Partnerdatei `/js/embed-fit.js` koppeln die Höhe an die sichtbare Player-Karte. ResizeObserver reagiert auf Responsive Layout und geöffnete EQ-/Messenger-Panels. Messung über Kartenunterkante statt Dokumenthöhe verhindert Resize-Schleifen. Sender und Empfänger prüfen Origin und Window-Identität; erlaubt sind ganzzahlige Höhen von 120 bis 1000 Pixeln. Transparenter Canvas mit normalem Root-Farbschema, dunkle Formulare innerhalb der Player-Karte. Auf Mobilgeräten erhält der LYVRA-Link Platz oberhalb der Controls.
+
+Zusätzlicher Test `verify-player-fit.cjs`: PASS für Origin/Source/Wertebereich, initialen Handshake, Expand/Collapse und doppelte Werte. Visuelle Live-Prüfung bleibt offen; beide Partneränderungen sind Entwürfe.

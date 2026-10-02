@@ -1,0 +1,18 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const origin='https://webradio.666soundsdesign-broadcaster.com';
+const messages=[],events={},frameEvents={},frame={src:origin+'/embed/miniplayer.html',style:{},contentWindow:{postMessage:(data,target)=>messages.push({data,target})},addEventListener:(k,f)=>frameEvents[k]=f};
+vm.runInNewContext(fs.readFileSync('dist/player-fit.js','utf8'),{document:{querySelectorAll:()=>[frame]},window:{addEventListener:(k,f)=>events[k]=f}});
+assert.equal(messages[0].target,origin);
+const send=(height,source=frame.contentWindow,o=origin)=>events.message({origin:o,source,data:{type:'lyvra:embed:resize',version:1,height}});
+send(220,{},origin);send(220,frame.contentWindow,'https://evil.test');send(119);send(1001);send(NaN);send(200.5);assert.equal(frame.style.height,undefined);
+send(220);assert.equal(frame.style.height,'220px');send(420);assert.equal(frame.style.height,'420px');send(220);assert.equal(frame.style.height,'220px');frameEvents.load();assert.equal(messages.length,2);
+const parent={postMessage:(data,target)=>messages.push({data,target})},senderEvents={},raf=[];
+let bottom=218,observer;
+const player={getBoundingClientRect:()=>({bottom}),addEventListener:(k,f)=>senderEvents[k]=f};
+const win={parent,addEventListener:(k,f)=>senderEvents[k]=f};
+vm.runInNewContext(fs.readFileSync('docs/integration/radio-embed-fit.js','utf8'),{document:{querySelector:()=>player,body:{},fonts:null},window:win,getComputedStyle:()=>({paddingBottom:'4px'}),requestAnimationFrame:f=>raf.push(f),ResizeObserver:class{constructor(f){observer=f}observe(){}}});
+senderEvents.message({source:{},origin:'https://weblyvra.666soundsdesign-broadcaster.com',data:{type:'lyvra:embed:subscribe',version:1}});assert.equal(raf.length,0);
+senderEvents.message({source:parent,origin:'https://weblyvra.666soundsdesign-broadcaster.com',data:{type:'lyvra:embed:subscribe',version:1}});raf.shift()();assert.equal(messages.at(-1).data.height,224);
+bottom=410;observer();raf.shift()();assert.equal(messages.at(-1).data.height,416);bottom=218;observer();raf.shift()();assert.equal(messages.at(-1).data.height,224);
+const count=messages.length;observer();raf.shift()();assert.equal(messages.length,count);
+console.log('PASS: source/origin/bounded integer height; iframe load handshake; card-based resize, expand/collapse and duplicate guard. Headless protocol test.');

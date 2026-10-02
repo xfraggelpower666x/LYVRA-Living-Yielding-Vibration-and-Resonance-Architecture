@@ -26,3 +26,6 @@ body{background-color:#070911;background-image:linear-gradient(#070911d9,#070911
 .footer-shell{background:#050711}.footer-art{display:block;width:100%;max-width:1800px;height:auto;margin-inline:auto}.footer-shell .footer{border-top:0}
 @media(max-width:1000px){.image-brand img{height:65px;width:auto}.hero-art{background-position:center}}
 @media(max-width:700px){body{background-attachment:scroll;background-size:auto 1800px;background-repeat:repeat-y}.image-brand img{height:60px;max-width:90px}.identity-logo{width:min(260px,100%)}.hero-shade{background:linear-gradient(90deg,#070911d9,#07091175),linear-gradient(0deg,#070911,transparent 30%)}.hero-art{background-size:auto 100%;background-position:center}.site-banner img,.footer-art{object-fit:contain}}
+
+/* Transparenter iframe-Canvas; dynamische Höhe aus player-fit.js. */
+.radio-embed iframe,.chat-demo-radio iframe{background:transparent;color-scheme:normal}
