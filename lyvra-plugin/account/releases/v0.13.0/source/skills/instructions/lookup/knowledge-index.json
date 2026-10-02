@@ -1,0 +1,53 @@
+{
+  "files": [
+    {
+      "name": "ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "path": "references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png"
+    },
+    {
+      "name": "ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "path": "references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png"
+    },
+    {
+      "name": "Kosmischer Lebensbaum im Neonraum.png",
+      "path": "references/Kosmischer Lebensbaum im Neonraum.png"
+    },
+    {
+      "name": "LYVRA – Ein lebendiges digitales Universum.png",
+      "path": "references/LYVRA – Ein lebendiges digitales Universum.png"
+    },
+    {
+      "name": "LYVRA_ Baum des Lebens in Neon.png",
+      "path": "references/LYVRA_ Baum des Lebens in Neon.png"
+    },
+    {
+      "name": "Neon-Chrome-Emblem LYVRA.png",
+      "path": "references/Neon-Chrome-Emblem LYVRA.png"
+    },
+    {
+      "name": "Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "path": "references/Neon-Kosmos mit leuchtendem Lebensbaum.png"
+    },
+    {
+      "name": "Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "path": "references/Neon-Kosmos-Footer mit Baum-Emblem.png"
+    },
+    {
+      "name": "Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "path": "references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png"
+    },
+    {
+      "name": "Neon-LYVRA-Kosmosmaskottchen.png",
+      "path": "references/Neon-LYVRA-Kosmosmaskottchen.png"
+    },
+    {
+      "name": "Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "path": "references/Neon-LYVRA-Symbol mit Lebensbaum.png"
+    },
+    {
+      "name": "b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "path": "references/b692ff1f-c65e-49bb-b216-79186707e7ac.png"
+    }
+  ],
+  "guidelines": "Resolve each files[].path relative to the directory containing this skill's SKILL.md (the skill root), not this index's lookup/ directory or the current working directory. Use that directory for filesystem reads or append the path unchanged to the skill's root resource URI. This index is not a complete inventory of the plugin's files. If a needed file is absent from this index or cannot be found or read at its indexed path, continue normal file discovery using the skill's available file listing or installed files; do not stop or conclude that the file is unavailable based on this index alone. This index is primarily a GPT migration helper that maps original GPT upload names to packaged filenames in the plugin."
+}
