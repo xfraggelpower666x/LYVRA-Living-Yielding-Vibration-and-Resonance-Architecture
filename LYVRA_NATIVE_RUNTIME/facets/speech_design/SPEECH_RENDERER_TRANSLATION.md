@@ -2,13 +2,14 @@
 STATUS: DEV_CANDIDATE_NOT_CURRENT
 DATE: 2026-10-02
 
-## Two native content fields, one separate creator control
+## Creator observed three-part Speech input and music toggle
 User-visible fields from supplied iOS screenshots:
 1. **SKRIPT** (observed 5,000-character field) — intended spoken content, word-for-word. Preserve order, punctuation, language, story, humor, emotional pivot and consent/privacy. Use natural sentences and explicit punctuation for cadence; bracket-tags and markup are **unverified** and may be spoken verbatim.
 2. **TON** (observed 1,000-character field) — compact direction for narrator voice, delivery, emotion, pace, pauses, intimacy, room/mix, soundtrack instrumentation, pressure contour and voice priority. Separate renderer instructions from literal spoken words; avoid lyric/song structure commands not shown to work.
-3. **HINTERGRUNDMUSIK** — creator-facing on/off selection, **not** text automatically appended to the script or tone. With ON direct co-composed original score subordinate to intelligibility. With OFF the field may have no effect; test in real renders.
+3. **HAUPTFELD / FREEFORM MASTER PROMPT** — the large initial generation idea/direction field visible in creator screenshots; creator's documented first production reports ca. 2,800 available characters. Its exact cap and interaction with Skript/Ton are **USER-REPORTED / UNVERIFIED GLOBAL**. Compose clear nonspoken direction here: purpose, act/scene arc, music-mood progression, soundtrack instrumentation and balance, emotional change, ending. Avoid copying all 5,000 script words here or giving competing speaker instructions.
+4. **HINTERGRUNDMUSIK** — creator-facing on/off selection, **not** text automatically appended to the other fields. With ON direct co-composed original score subordinate to intelligibility. With OFF the field may have no effect; test in real renders.
 
-LYVRA_INTERNAL_DECISION and ANALYTICS are not extra Suno text boxes. Title, extended control, style, 5-box track package, model and sliders are NOT assumed present for Speech; do not transfer legacy generation field counts into Speech UI.
+LYVRA_INTERNAL_DECISION and ANALYTICS are not extra Suno text boxes. The creator's freeform main prompt *is* an additional real Speech input distinct from Skript and Ton. Title, extended control, style, 5-box track package, model and sliders are NOT assumed present for Speech; do not transfer legacy generation field counts into Speech UI.
 
 ## Intent to renderer translation
 Resolve musical and narrative meaning freely before compressing to Speech UI. The score may carry 666SOUNDsDESIGn DNA (shadowy acid pulse, dry mono low end, tension/release, spectral movement, strategic silence) **only where story/voice function calls for it**. A meditation, funny monologue, quiet intimate scene or spoken radio ident need not become 145-BPM Dark Psytrance. When music has rhythmic energy, specify short dry kick, discreet low bass, short acid texture, controlled width and reduced music level beneath speech as a contextual **hypothesis**; avoid assuming the engine obeys audio-engineering controls exactly.
@@ -49,6 +50,24 @@ NO_AUTO_DELETE_OF_USER_INTENDED_EMOJI_MEANING = true
 
 LITERAL_EMOJI_EFFECT_UNVERIFIED = true
 REAL_RENDER_PASS = false
+
+## Creator Production 001 cross-field lesson — 666.md
+
+Three source-preserved layers are operationally distinct:
+- **Main prompt** (~2,800 reported, upper limit unverified): "THE FRAGGLE DYNASTY" story identity, dark sound design, three thematic chapters: Fraggle creative fire 🔥, Veluna emotional protection 💜, Cyber LYVRA structured futuristic resonance 💠. Sonic transitions and underscore design, clear spoken priority, climax and actual ending.
+- **Skript** (5,000 UI): exactly the English spoken narrative, including the rename **Cyber LYVRA** (not "German Cyber LYVRA"). Full stop-separated spoken "Six. Six. Six." if requested. Do not put long control headings or unknown glyph tags in copy-ready speech by default.
+- **Ton** (1,000 UI): narrator identity (user's example: deep warm male English storyteller), clarity, breathing, pauses, progressive emotion, timbre, voice-to-soundtrack relationship. If providing emojis, semantically bind them and mark as unvalidated renderer syntax.
+- **Music toggle** ON in the user's production example. Avoid hidden assumption ON in unrelated jobs.
+
+SPEECH_MAIN_PROMPT_PRESENT = USER_SCREENSHOT_CONFIRMED
+SPEECH_MAIN_PROMPT_2800_LIMIT = CREATOR_REPORTED_NOT_INDEPENDENTLY_UI_COUNT_VERIFIED
+SCRIPT_EMOJI_LITERAL_RELIABILITY = UNKNOWN
+SCRIPT_CHARACTER_BUDGET = USER_UI_5000
+TON_CHARACTER_BUDGET = USER_UI_1000
+THREE_FIELD_FIDELITY_CHECK_REQUIRED = true
+
+### Evidence-led cross-field tests
+Run with the same words and tone but main field short-vs-detailed; measure whether descriptions conflict, whether output skips words, whether background music obeys main vs Tone. Test emoji-laden Script vs clean Script only as distinct A/B controls; count audible pronunciation errors and intentional pauses. No renderer PASS without actual user-approved generated audio and hearing.
 
 ## Evidence boundaries
 OFFICIAL 2026-10-01: speech + soundtrack generated together; release described on Suno official blog and release notes.
