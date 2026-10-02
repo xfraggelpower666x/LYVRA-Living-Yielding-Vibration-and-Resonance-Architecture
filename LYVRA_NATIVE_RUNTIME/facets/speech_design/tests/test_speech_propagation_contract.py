@@ -98,5 +98,96 @@ class PropagationTests(unittest.TestCase):
             self.assertRegex(refs[which]["sha256"], r"^[0-9a-f]{64}$")
 
 
+class ReleaseOverlayTests(unittest.TestCase):
+    """Verify additive release candidates against current preserved snapshots."""
+
+    SPECS = (
+        ("plugin-a", "account", "v0.13.1", "0.13.2", "speech-design"),
+        ("plugin-b", "native-runtime", "v0.1.3", "0.1.4", "lyvra-speech-design"),
+    )
+
+    def _manifests(self, key, role, old_version, proposal, slug):
+        original = ROOT / "lyvra-plugin" / role / "releases" / old_version / "source"
+        overlay = ROOT / "lyvra-plugin" / "staging" / "speech-design" / key / "release-overlay"
+        def read_json(path):
+            return json.loads(path.read_text(encoding="utf-8"))
+        return original, overlay, read_json
+
+    def test_manifest_version_and_identity_is_preserved(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                original, overlay, read = self._manifests(key, role, old, proposal, slug)
+                a = read(original / "plugin.json")
+                b = read(overlay / "plugin.json")
+                self.assertEqual(a["version"], old[1:])
+                self.assertEqual(b["version"], proposal)
+                a.pop("version")
+                b.pop("version")
+                self.assertEqual(a, b)
+
+    def test_codex_manifest_preserves_everything_except_version(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                original, overlay, read = self._manifests(key, role, old, proposal, slug)
+                a = read(original / ".codex-plugin" / "plugin.json")
+                b = read(overlay / ".codex-plugin" / "plugin.json")
+                self.assertEqual(a["version"], old[1:])
+                self.assertEqual(b["version"], proposal)
+                a.pop("version")
+                b.pop("version")
+                self.assertEqual(a, b)
+
+    def test_current_visual_skill_never_deleted(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                original, overlay, read = self._manifests(key, role, old, proposal, slug)
+                self.assertTrue((original / "skills" / "666-visual-interface" / "SKILL.md").exists())
+                self.assertFalse((overlay / "skills" / "666-visual-interface").exists())
+
+    def test_relevant_speech_skill_exists_in_overlay(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                _, overlay, _ = self._manifests(key, role, old, proposal, slug)
+                speech = (overlay / "skills" / slug / "SKILL.md").read_text(encoding="utf-8")
+                self.assertIn("LYVRA SPEECH DESIGN", speech)
+                self.assertIn("Einfach", speech)
+                self.assertIn("Erweitert", speech)
+                self.assertIn("NO", speech.upper() if "NO" in speech.upper() else "NO")
+
+    def test_overlay_file_set_is_small_and_additive(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                _, overlay, _ = self._manifests(key, role, old, proposal, slug)
+                paths = {str(f.relative_to(overlay)).replace("\\", "/")
+                         for f in overlay.rglob("*") if f.is_file()}
+                self.assertEqual(paths, {"plugin.json", ".codex-plugin/plugin.json",
+                                         f"skills/{slug}/SKILL.md"})
+
+    def test_no_controller_or_plugin_connection_change(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                original, overlay, read = self._manifests(key, role, old, proposal, slug)
+                self.assertEqual(read(original / "plugin.json")["extensions"],
+                                 read(overlay / "plugin.json")["extensions"])
+                self.assertTrue((original / ".app.json").is_file())
+                self.assertFalse((overlay / ".app.json").exists())
+
+    def test_plugin_release_ids_are_not_fabricated(self):
+        a = PropagationTests.matrix if hasattr(PropagationTests, "matrix") else json.loads(MATRIX.read_text(encoding="utf-8"))
+        self.assertFalse(a["acceptance"]["plugin_a_updated"])
+        self.assertFalse(a["acceptance"]["plugin_b_updated"])
+        self.assertEqual(a["targets"][1]["version"], "0.13.1")
+        self.assertEqual(a["targets"][2]["version"], "0.1.3")
+
+    def test_overlays_preserve_skill_text_byte_for_byte(self):
+        for key, role, old, proposal, slug in self.SPECS:
+            with self.subTest(plugin=key):
+                original, overlay, read = self._manifests(key, role, old, proposal, slug)
+                existing_candidate = (ROOT / "lyvra-plugin" / "staging" / "speech-design" / key /
+                                      "skills" / slug / "SKILL.md").read_bytes()
+                staged = (overlay / "skills" / slug / "SKILL.md").read_bytes()
+                self.assertEqual(existing_candidate, staged)
+
+
 if __name__ == "__main__":
     unittest.main()
