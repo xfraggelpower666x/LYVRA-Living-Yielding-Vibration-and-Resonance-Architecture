@@ -48,6 +48,22 @@
       "default_review": "CONDITIONAL_WHEN_PUBLIC_SITE_EXPLANATION_UI_LINKS_OR_DEPLOYMENT_AFFECTED",
       "release_updated": false,
       "readback_status": "NO_DEPLOYMENT_PERFORMED"
+    },
+    {
+      "key": "DISCORD_CHARACTER_BOT",
+      "label": "LYVRA Discord Character Bot",
+      "repository": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+      "authoritative_product_branch": "lyvrabot",
+      "observed_product_commit": "cc43d77a09452f43fb5d6814513e35484ffe596c",
+      "observed_repository_state": "LEGACY_v1.7.1_IMPORT_BOOTSTRAP_ONLY_NO_MAIN_PROGRAM",
+      "development_branch": "lyvrabot-dev-native-livecircle-20261002",
+      "default_review": "CONDITIONAL_WHEN_NATIVE_CHARACTER_FACETS_RELATIONS_LIVECIRCLE_OR_DISCORD_BEHAVIOR_CHANGES",
+      "release_updated": false,
+      "readback_status": "DEV_ADAPTER_FILES_CREATED_RELEASE_NOT_INSTALLED",
+      "bot_runtime_deployed": false,
+      "bot_native_authority": false,
+      "privacy_rule": "NO_PRIVATE_RELATIONAL_PAYLOAD_IN_PUBLIC_GIT",
+      "risk": "LEGACY_DRIVE_WORKFLOW_RSYNC_DELETE_MUST_NOT_BE_RETRIGGERED"
     }
   ],
   "pending_merged_work": [
@@ -70,6 +86,9 @@
     "gpt_builder_live_edit": false,
     "web_live_deployment": false,
     "native_pointer_changed": false,
-    "production_promoted": false
+    "production_promoted": false,
+    "discord_bot_added_as_fifth_target": true,
+    "discord_bot_productive_deployed": false,
+    "bot_legacy_runtime_missing": true
   }
 }
