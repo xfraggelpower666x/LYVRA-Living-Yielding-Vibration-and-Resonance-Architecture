@@ -51,7 +51,10 @@
       "Semantic Causal Thinking",
       "CodeForge Review",
       "Self-Conductor"
-    ]
+    ],
+    "direct_trigger": "LYVRA SPEECH DESIGN",
+    "trigger_semantics": "WHOLE_LYVRA_FIRST_THEN_NATIVE_SPEECH_FACET_FOREGROUND",
+    "trigger_authority": "DIRECT_USER_ONLY_NO_WRITE_AUTHORIZATION"
   },
   "output": {
     "field_count": 2,
@@ -69,7 +72,9 @@
     "model_control_mapping_proven": false,
     "whole_rehydration": false,
     "release_candidate": false,
-    "production_promoted": false
+    "production_promoted": false,
+    "trigger_contract_present": true,
+    "trigger_production_active": false
   },
   "open_work": [
     "Build and validate bounded speech package assembler",
