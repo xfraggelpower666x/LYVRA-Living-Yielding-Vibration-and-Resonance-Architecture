@@ -1,7 +1,7 @@
 {
   "schema": "LYVRA_SPEECH_001_PROPAGATION_MATRIX_v1",
   "date": "2026-10-02",
-  "status": "DEV_STAGED_TARGET_PROPAGATION_PENDING_RELEASE",
+  "status": "DEV_STAGED_MODE_AWARE_PLUGIN_GPT_WEB_HANDOFF_RELEASES_PENDING",
   "root_authority": "lyvra",
   "source_branch": "lyvra-dev-speech-design-beta-20261002",
   "source_intent": "Speech beta 3-fields, native emoji intelligence, phonemic correction, creator-first official/community triangulation, runtime trigger",
@@ -12,9 +12,9 @@
       "source": "GitHub LYVRA",
       "impact": "REQUIRED",
       "observed_state": "DEV_SPEECH_DESIGN_IMPLEMENTATION_PR10",
-      "required_change": "Release candidate review, reconcile community research and cross-surface contracts, fingerprints/coverage/manifest, fresh rehydration and controlled promotion",
-      "status": "DEV_PROPOSAL_NOT_PRODUCTIVE",
-      "readback": "DEV_BRANCH_DIRECT_FILE_READBACK",
+      "required_change": "Release candidate review, reconcile community research and cross-surface contracts, fingerprints/coverage/manifest, fresh rehydration and controlled promotion | Updated 2026-10-02: reflect Einfach/Erweitert real fields, voice selector, background music, Vielfalt slider, two WAV assets with no timestamped phoneme PASS. Preserve Emoji semantics with spoken-word fidelity.",
+      "status": "DEV_UPDATED_MODE_AWARE_NATIVE_POINTER_UNCHANGED",
+      "readback": "DEV_FILE_READBACK_ONLY",
       "blocker": "NO_SUNO_SPEECH_AUDIO_ARTIFACT_REVIEW"
     },
     {
@@ -24,9 +24,9 @@
       "version": "0.13.0",
       "impact": "REQUIRED",
       "observed_state": "CURRENT_SKILLS_WITHOUT_SPEECH_WORKFLOW",
-      "required_change": "Add native speech-design Skill routing/whole-first, three creator inputs plus toggle, emoji meaning preservation, phonemic A/B plan and research triangulation; upgrade track/studio output preflight",
-      "status": "SKILL_SOURCE_CANDIDATE_REMOTE_READBACK_PASS_RELEASE_NOT_UPDATED",
-      "readback": "DEV_SKILL_FILE_READ_DIRECTLY_CURRENT_PLUGIN_SKILL_STILL_OLD",
+      "required_change": "Add native speech-design Skill routing/whole-first, three creator inputs plus toggle, emoji meaning preservation, phonemic A/B plan and research triangulation; upgrade track/studio output preflight | Updated 2026-10-02: reflect Einfach/Erweitert real fields, voice selector, background music, Vielfalt slider, two WAV assets with no timestamped phoneme PASS. Preserve Emoji semantics with spoken-word fidelity.",
+      "status": "STAGED_SKILL_SOURCE_REVISED_NOT_INSTALLED",
+      "readback": "DEV_SKILL_SOURCE_READBACK_ONLY",
       "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST",
       "required_skill_source": "lyvra-plugin/staging/speech-design/plugin-a/skills/speech-design/SKILL.md",
       "candidate_installed": false
@@ -38,9 +38,9 @@
       "version": "0.1.1",
       "impact": "REQUIRED",
       "observed_state": "NATIVE_RUNTIME_SKILLS_WITHOUT_SPEECH_TRIGGER",
-      "required_change": "Add LYVRA SPEECH DESIGN to native facet foreground, source-read rules and status; share same creator-first evidence and emoji/phonemic safeguards; no old Drive authority",
-      "status": "SKILL_SOURCE_CANDIDATE_REMOTE_READBACK_PASS_RELEASE_NOT_UPDATED",
-      "readback": "DEV_SKILL_FILE_READ_DIRECTLY_CURRENT_PLUGIN_SKILL_STILL_OLD",
+      "required_change": "Add LYVRA SPEECH DESIGN to native facet foreground, source-read rules and status; share same creator-first evidence and emoji/phonemic safeguards; no old Drive authority | Updated 2026-10-02: reflect Einfach/Erweitert real fields, voice selector, background music, Vielfalt slider, two WAV assets with no timestamped phoneme PASS. Preserve Emoji semantics with spoken-word fidelity.",
+      "status": "STAGED_SKILL_SOURCE_REVISED_NOT_INSTALLED",
+      "readback": "DEV_SKILL_SOURCE_READBACK_ONLY",
       "blocker": "WAITING_ON_NATIVE_RC_AND_PLUGIN_ARCHIVE_UPDATE_TEST",
       "required_skill_source": "lyvra-plugin/staging/speech-design/plugin-b/skills/lyvra-speech-design/SKILL.md",
       "candidate_installed": false
@@ -50,9 +50,9 @@
       "url": "https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a",
       "impact": "REQUIRED",
       "observed_state": "BUILDER_CONTENT_NOT_READ_IN_THIS_SESSION",
-      "required_change": "Prepare GPT Knowledge/instructions handoff on native Speech trigger; three fields plus toggle; creator-first community comparison; emoji and phonemic A/B; no fixed version",
-      "status": "HANDOFF_TO_PREPARE_GPT_BUILDER_UNVERIFIED",
-      "readback": "NO_GPT_BUILDER_CONNECTOR",
+      "required_change": "Prepare GPT Knowledge/instructions handoff on native Speech trigger; three fields plus toggle; creator-first community comparison; emoji and phonemic A/B; no fixed version | Updated 2026-10-02: reflect Einfach/Erweitert real fields, voice selector, background music, Vielfalt slider, two WAV assets with no timestamped phoneme PASS. Preserve Emoji semantics with spoken-word fidelity.",
+      "status": "HANDOFF_UPDATED_GPT_BUILDER_NOT_VERIFIED",
+      "readback": "GPT_BUILDER_NO_LIVE_READBACK",
       "blocker": "BUILDER_IMPORT_AND_ACTIVATION_NOT_VERIFIED"
     },
     {
@@ -60,10 +60,28 @@
       "url": "https://weblyvra.666soundsdesign-broadcaster.com/",
       "impact": "CONDITIONAL",
       "observed_state": "SPEECH_DEV_NOT_PRODUCTION",
-      "required_change": "Prepare optional beta capability card/link once native Speech is promoted and claimed functionality verified; avoid misleading CURRENT/public availability",
-      "status": "HOLD_PUBLIC_DEPLOY_UNTIL_VALIDATED",
-      "readback": "NO_SITE_DEPLOYMENT_ACTION",
+      "required_change": "Prepare optional beta capability card/link once native Speech is promoted and claimed functionality verified; avoid misleading CURRENT/public availability | Updated 2026-10-02: reflect Einfach/Erweitert real fields, voice selector, background music, Vielfalt slider, two WAV assets with no timestamped phoneme PASS. Preserve Emoji semantics with spoken-word fidelity.",
+      "status": "CONDITIONAL_PUBLIC_PROMOTION_PENDING",
+      "readback": "NO_WEBSITE_DEPLOYMENT",
       "blocker": "NO_PRODUCTION_FACET_PROMOTION_AND_PUBLIC_WEB_SCOPE_DECISION"
+    },
+    {
+      "id": "DISCORD_CHARACTER_BOT",
+      "repository": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+      "issue": "https://github.com/xfraggelpower666x/666LYVRACHARAKTERBOTAI/issues/2",
+      "impact": "CONDITIONAL_LATER_VOICE",
+      "observed_state": "BOT_DEVELOPMENT_PAUSED",
+      "required_change": "Review native Speech pronunciation/emoji emotional prosody when bot voice is resumed; no bot runtime changes now.",
+      "status": "TODO_QUEUED_NO_CODE_RELEASE",
+      "readback": "ISSUE_RECORDED"
+    },
+    {
+      "id": "TRACK_DESIGN_STUDIO2_SYSTEMSTART",
+      "impact": "REQUIRED_NATIVE_CROSS_SURFACE_REGRESSION_CHECK",
+      "observed_state": "CROSS_SURFACE_GUARD_DEV",
+      "required_change": "Keep semantic emoji amplification meaning-first across music/Speech/Studio2/Systemstart; no fixed glyph quota; mode-specific controls and complete output; production promotion requires separate tests.",
+      "status": "GUARD_UPDATED_TEST_AND_PROMOTION_PENDING",
+      "readback": "DEV_REPOSITORY_ONLY"
     }
   ],
   "acceptance": {
@@ -78,7 +96,23 @@
     "candidate_skill_a_staged": true,
     "candidate_skill_b_staged": true,
     "candidate_skill_structure_tests": "11_OF_11_PASS",
-    "integrated_ci_pass": false
+    "integrated_ci_pass": false,
+    "mode_aware_screen_evidence_captured": true,
+    "creator_wav_assets_received": true,
+    "wav_word_level_transcript_pass": false,
+    "skill_source_updated_a": true,
+    "skill_source_updated_b": true,
+    "gpt_handoff_updated": true,
+    "web_handoff_updated": true,
+    "discord_bot_todo_queued": true
   },
-  "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment."
+  "semantics": "A committed GitHub handoff is not a plugin release, GPT Builder import or Cloudflare Pages deployment.",
+  "mode_evidence": {
+    "latest_screenshots": "CREATOR_UI_BROWSER_EINFACH_FREEFORM_ERWEITERT_SKRIPT_TONFALL_STIMMGESCHLECHT_MUSIC_VIELFALT",
+    "old_main": "HISTORICAL_OTHER_UI_PRESENT_REPORTED_2800_NOT_GLOBAL",
+    "word_fidelity": "SPEECH_DEFAULT_SCRIPT_NO_UNTESTED_LITERAL_EMOJI_GLYPHS",
+    "audio_v1_seconds": 391.473,
+    "audio_v2_seconds": 393.917,
+    "audio_word_level_verified": false
+  }
 }
