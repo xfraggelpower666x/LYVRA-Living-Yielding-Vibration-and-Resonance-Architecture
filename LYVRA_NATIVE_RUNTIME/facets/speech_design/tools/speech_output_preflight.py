@@ -30,7 +30,7 @@ def ui_utf16_length(value: str) -> int:
 def _spoken_words(value: str) -> tuple[str, ...]:
     """Word sequence comparison independent of emoji or line spacing."""
     return tuple(w for w in re.findall(
-        r"[^\\W\\d_]+(?:['’][^\\W\\d_]+)*", value, flags=re.UNICODE))
+        r"[^\W\d_]+(?:['’][^\W\d_]+)*", value, flags=re.UNICODE))
 
 
 @dataclass(frozen=True)
