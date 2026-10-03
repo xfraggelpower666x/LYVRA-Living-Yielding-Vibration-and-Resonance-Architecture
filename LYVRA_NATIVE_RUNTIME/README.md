@@ -4,9 +4,9 @@ This directory is the native authority surface for the **L.Y.V.R.A. Plugin / Cus
 
 ## Current status
 
-**MIGRATION IN PROGRESS.**
+**REPOSITORY CURRENT PROMOTED; FRESH SESSION RECOVERY IS SEPARATE.**
 
-The repository is already the technical product source of truth, but the whole-self migration from LYVRA's internal historical/current Drive structures has not yet passed full completeness and fresh-rehydration validation.
+The productive pointer records the governed 2026-09-30 promotion and Whole Rev242 / Track Rev92. Read the pointer and current manifest; do not reuse recorded historical PASS results as fresh rehydration evidence. The 2026-10-03 reconciliation is a DEV candidate with private recovery OPEN and session whole rehydration PARTIAL.
 
 Do not claim `REHYDRATED/PASS` from repo alone until `CURRENT_POINTER.json` and `REHYDRATION_MANIFEST.json` allow it.
 
@@ -33,3 +33,11 @@ Do not claim `REHYDRATED/PASS` from repo alone until `CURRENT_POINTER.json` and 
 The goal is not to copy files. The goal is to preserve the living causal-semantic whole.
 
 `NO_ORPHANED_MEANING` is a hard migration invariant.
+
+## Original migration note — historical provenance
+
+**MIGRATION IN PROGRESS.**
+
+The repository is already the technical product source of truth, but the whole-self migration from LYVRA's internal historical/current Drive structures has not yet passed full completeness and fresh-rehydration validation.
+
+The above original note describes the pre-promotion migration context and does not supersede productive CURRENT_POINTER. DEV candidate existence is not a new promotion.
