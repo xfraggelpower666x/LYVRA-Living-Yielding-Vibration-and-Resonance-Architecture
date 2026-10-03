@@ -28,3 +28,15 @@ NO_AUTOLOAD=true
 NO_GITHUB_CURRENT_POINTER_MUTATION=true
 NO_PFS_CLIC_MUTATION=true
 PRIVATE_VAULT_NOT_READ=true
+
+
+## Additive security review — 2026-10-03
+
+The candidate initially relied on urllib's redirect-following default. This violated the *fixed-host* intent. DEV repair added `NoRedirectHandler`, so HTTP 3xx is reported locally as `HTTP_ERROR` instead of sending follow-up requests to any `Location` host. The two allowed initial request paths remain GET-only, and no token, secret, signed ticket or authority value is sent.
+
+Offline tests: `python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v`.
+Cases cover redirect rejection, bounded successful JSON classification that explicitly is *not* signed verification, HTTP 302 classification without follow-up, invalid/oversize responses, and endpoint unavailability. The test module uses only mocked openers and never performs real network access. These tests are supplied as a candidate; **execution evidence is pending** until actually run in a trusted runtime.
+
+SECURITY_REVIEW=REDIRECT_BOUNDARY_REPAIRED_IN_DEV
+OFFLINE_TEST_EXECUTION=PENDING
+PRODUCTION_PROMOTION=NOT_AUTHORIZED_BY_TEST_SOURCE_ALONE
