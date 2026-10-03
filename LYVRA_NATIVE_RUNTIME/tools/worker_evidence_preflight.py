@@ -5,6 +5,7 @@ No automatic invocation, credentials, ticket issuance, writes or authority chang
 Usage: python LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py
 """
 import json
+import socket
 import urllib.error
 import urllib.request
 
@@ -14,13 +15,24 @@ TIMEOUT_SECONDS = 5
 MAX_BYTES = 65536
 
 
+class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """Prevent an untrusted redirect from changing the fixed Worker host."""
+    def redirect_request(self, request, fp, code, msg, headers, newurl):
+        return None
+
+
+def build_opener():
+    return urllib.request.build_opener(NoRedirectHandler())
+
+
+
 def classify(path):
     request = urllib.request.Request(BASE + path, headers={
         "Accept": "application/json",
         "User-Agent": "LYVRA-optional-evidence-preflight/1.0",
     }, method="GET")
     try:
-        with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
+        with build_opener().open(request, timeout=TIMEOUT_SECONDS) as response:
             status = response.status
             raw = response.read(MAX_BYTES + 1)
             if len(raw) > MAX_BYTES:
@@ -37,7 +49,7 @@ def classify(path):
                     "evidence_authentication": "NOT_TESTED"}
     except urllib.error.HTTPError as exc:
         return {"path": path, "state": "HTTP_ERROR", "http": exc.code}
-    except (urllib.error.URLError, TimeoutError, OSError) as exc:
+    except (urllib.error.URLError, TimeoutError, socket.timeout, OSError) as exc:
         return {"path": path, "state": "WORKER_ENDPOINT_UNAVAILABLE",
                 "error_class": type(exc).__name__}
 
