@@ -1,0 +1,43 @@
+name: LYVRA Speech Beta Preflight (DEV)
+on:
+  push:
+    branches:
+      - lyvra-dev-speech-update-20261002-fresh
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/facets/speech_design/**'
+      - 'lyvra-plugin/staging/speech-design/**'
+      - '.github/workflows/lyvra-speech-preflight.yml'
+  pull_request:
+    branches:
+      - lyvra
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/facets/speech_design/**'
+      - 'lyvra-plugin/staging/speech-design/**'
+      - '.github/workflows/lyvra-speech-preflight.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  speech-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Python compile check
+        run: python -m compileall -q LYVRA_NATIVE_RUNTIME/facets/speech_design/tools LYVRA_NATIVE_RUNTIME/facets/speech_design/tests
+      - name: Offline creator-interface, emoji and phoneme guards
+        run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/facets/speech_design/tests -p 'test_*.py' -v
+      - name: Build guarded Speech plugin preview ZIPs
+        run: python LYVRA_NATIVE_RUNTIME/facets/speech_design/tools/build_plugin_release_overlays.py --output-dir dist/lyvra-speech-plugin-previews
+      - name: Upload preview artifacts (NOT installed)
+        uses: actions/upload-artifact@v4
+        with:
+          name: lyvra-speech-plugin-overlays-preview
+          path: dist/lyvra-speech-plugin-previews/*
+          if-no-files-found: error
+          retention-days: 14
