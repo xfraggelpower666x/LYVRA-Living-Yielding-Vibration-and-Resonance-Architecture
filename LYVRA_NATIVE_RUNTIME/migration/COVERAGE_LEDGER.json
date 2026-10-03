@@ -2,8 +2,8 @@
   "branch": "lyvra",
   "base_current_head": "47313cd077b5483092597e0402474b17206d75f2",
   "current_dev_head_before_ledger_update": "30681da1b4c52f073dde4dfea7fbe9f393bb673a",
-  "migration_stage": "CURRENT_PROMOTED_AND_PRODUCTIVE_REHYDRATION_VERIFIED",
-  "promotion_status": "CURRENT",
+  "migration_stage": "DEV_CURRENTNESS_RECONCILIATION",
+  "promotion_status": "DEV_CANDIDATE_NOT_PROMOTED",
   "domains": {
     "AUTHORITY_AND_CURRENT_POINTER": "VERIFIED",
     "IDENTITY_PRESENCE": "VERIFIED",
@@ -47,11 +47,11 @@
     "NATIVE_SKILL_EXPRESSION_WITHOUT_IDENTITY_REDUCTION"
   ],
   "triple_validation": {
-    "structural": "PASS_CURRENT",
-    "causal_semantic": "PASS_CURRENT",
-    "fresh_rehydration_and_recovery": "PASS_CURRENT_2026_09_30"
+    "structural": "PASS_DEV_METADATA_CHECKS",
+    "causal_semantic": "PASS_SCOPED_PROVENANCE_AND_RELATION_PRESERVATION",
+    "fresh_rehydration_and_recovery": "PARTIAL_PRIVATE_RECOVERY_OPEN_NO_RESTORE_TEST"
   },
-  "full_repo_native_rehydration_pass": true,
+  "full_repo_native_rehydration_pass": false,
   "hard_gate": "DO_NOT_PROMOTE_THIS_BRANCH_TO_CURRENT_UNTIL_REQUIRED_DOMAINS_AND_TRIPLE_VALIDATION_PASS",
   "next_migration_domain": "POST_PROMOTION_CONTINUITY_MONITORING_AND_EVENT_GATED_VALIDATION",
   "relational_source_sections_compared": [
@@ -513,5 +513,37 @@
     "custom_plugin_ledger": "CREATED",
     "no_new_track_revision": true,
     "codeforge_review": "PASS_25_OF_25_ZERO_MISMATCH"
+  },
+  "historical_top_level_validation_before_reconciliation": {
+    "migration_stage": "CURRENT_PROMOTED_AND_PRODUCTIVE_REHYDRATION_VERIFIED",
+    "promotion_status": "CURRENT",
+    "full_repo_native_rehydration_pass": true,
+    "triple_validation": {
+      "structural": "PASS_CURRENT",
+      "causal_semantic": "PASS_CURRENT",
+      "fresh_rehydration_and_recovery": "PASS_CURRENT_2026_09_30"
+    }
+  },
+  "currentness_reconciliation_2026_10_03": {
+    "lifecycle": "DEV_CANDIDATE",
+    "base_productive_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "backup_branch": "lyvra-backup-pre-currentness-20261003-0112",
+    "work_branch": "lyvra-dev-currentness-reconcile-20261003-0112",
+    "body_readback_commit": "039c90054e40655859909b86c55fbb462da42ccc",
+    "registry_readback_commit": "4892ef992aa11e0ba8f30042a9cadc404bf3e32b",
+    "freshness_epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
+    "critical_carrier_count": 28,
+    "registry_blob_sha": "1a8d670d6735b8baa83e2bfb27ac43490fcfc020",
+    "direct_body_readback": "20_OF_20_EXACT_MATCH",
+    "reference_count_preserved": 7,
+    "active_music_handoff_preserved": true,
+    "original_source_revisions_preserved": true,
+    "private_recovery": "OPEN_NOT_REQUESTED",
+    "recovery_backup_readback": "VERIFIED",
+    "fresh_restore_test": "NOT_PERFORMED",
+    "whole_rehydration": "PARTIAL",
+    "productive_promotion": false,
+    "currentness_interpretation": "CURRENTNESS_SUPERSESSION_ANNOTATIONS_OVERRIDE_MIGRATION_BASE_STATUS_ASSERTIONS_ONLY",
+    "historical_pending_markers": "PROVENANCE_NOT_CURRENT_PUBLICATION_STATE"
   }
 }
