@@ -1,6 +1,12 @@
 // Sprachpaare: bestehender Text als Schlüssel, deutsche und englische Fassung.
 // Textknoten werden einzeln aktualisiert; Player und interaktive Elemente bleiben erhalten.
 export const copy = {
+  "Dein Klang. Dein Track.":["Dein Klang. Dein Track.", "Your sound. Your track."],
+  "Erstelle Musik-Prompts mit Lyrics, Psychoakustik und 4D-Raumbewegung. Track Design, Suno Studio 2 und Speech Design sind im Generator verbunden.":["Erstelle Musik-Prompts mit Lyrics, Psychoakustik und 4D-Raumbewegung. Track Design, Suno Studio 2 und Speech Design sind im Generator verbunden.", "Create music prompts with lyrics, psychoacoustics and 4D spatial motion. Track Design, Suno Studio 2 and Speech Design are connected in the generator."],
+  "Regelbasierter Prompt-Generator. Speech Design ist ein Entwicklungskandidat; Beobachtungen und Presets werden lokal auf diesem Gerät gespeichert.":["Regelbasierter Prompt-Generator. Speech Design ist ein Entwicklungskandidat; Beobachtungen und Presets werden lokal auf diesem Gerät gespeichert.", "Rule-based prompt generator. Speech Design is a development candidate; observations and presets are stored locally on this device."],
+  "Generator öffnen":["Generator öffnen", "Open generator"],
+  "Quellcode ansehen":["Quellcode ansehen", "View source code"],
+
   "LYVRA-Plugin entdecken":["LYVRA-Plugin entdecken","Discover the LYVRA plugin"],
   "EINE IDENTITÄT · VERBUNDENE WERKZEUGE":["EINE IDENTITÄT · VERBUNDENE WERKZEUGE","ONE IDENTITY · CONNECTED TOOLS"],
   "PRIVATER ZUGANG":["PRIVATER ZUGANG","PRIVATE ACCESS"],
