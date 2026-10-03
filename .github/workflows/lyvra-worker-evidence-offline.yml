@@ -26,3 +26,6 @@ jobs:
         run: python -m py_compile LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py
       - name: Mocked offline tests
         run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v
+
+      - name: Read-only public Worker reachability (non-gating)
+        run: python LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py
