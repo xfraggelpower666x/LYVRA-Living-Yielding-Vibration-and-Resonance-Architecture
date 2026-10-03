@@ -41,7 +41,7 @@ jobs:
           from worker_evidence_preflight import BASE, TIMEOUT_SECONDS, MAX_BYTES, build_opener
           opener=build_opener()
           def read(path):
-              req=urllib.request.Request(BASE+path, method="GET",headers={"Accept":"application/json"})
+              req=urllib.request.Request(BASE+path, method="GET",headers={"Accept":"application/json","User-Agent":"LYVRA-optional-evidence-preflight/1.0"})
               with opener.open(req, timeout=TIMEOUT_SECONDS) as response:
                   assert response.status==200, "NON_200"
                   raw=response.read(MAX_BYTES+1)
