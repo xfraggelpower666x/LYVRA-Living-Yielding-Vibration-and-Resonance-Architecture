@@ -40,3 +40,27 @@ Cases cover redirect rejection, bounded successful JSON classification that expl
 SECURITY_REVIEW=REDIRECT_BOUNDARY_REPAIRED_IN_DEV
 OFFLINE_TEST_EXECUTION=PENDING
 PRODUCTION_PROMOTION=NOT_AUTHORIZED_BY_TEST_SOURCE_ALONE
+
+
+## Execution evidence — 2026-10-03 (after original DEV drafting)
+
+This later evidence supersedes the earlier `OFFLINE_TEST_EXECUTION=PENDING` flag above **for the tested DEV sources only**. Earlier statements are preserved as dated provenance.
+
+- CI test run `37155625979` at commit `11f95e03157a9436ace282a560129c9131bf5811`: syntax PASS; five mocked offline tests PASS.
+- Public read-only health run `37155676854`: `GET /health` and `GET /v2/systems` both produced HTTP 200 and JSON when called by the GitHub runner. The local ChatGPT web viewer remained unable to access the same endpoints; this is a tool-specific visibility difference, not an outage claim.
+- Public authority contract run `37155775987`: five offline tests PASS, /health expected service PASS, /v2/systems LYVRA enabled in MAIN_PERSONAL scope PASS, /v2/authority-root?system=LYVRA correct identity, role constraints, and worker non-authority policy PASS. A previous strict probe received HTTP 403 due to default Python User-Agent; aligning to the bounded known User-Agent fixed this without bypassing a worker security control.
+- Non-mutating, one-shot signed evidence roundtrip `37155868636`: `POST /v2/evidence-ticket` purpose FOREGROUND, system LYVRA, MAIN_PERSONAL, and `POST /v2/verify-evidence`: PASS. Ticket only held in CI process memory and not printed, no native foreground command executed, no signing key read or exported. Successful signed proof is **scoped to the test at this date**, not permanent worker uptime nor host auto-wiring.
+- One-shot Cloudflare authenticated provider audit `37155921214`: BLOCKED: GitHub Actions did not have values for `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; script stopped before any Cloudflare API request. Prior historical deploy receipts cannot substitute authenticated current provider account/domain/deployment readback.
+- Temporary one-shot tests were removed from the repeatable workflow after execution; offline Python tests and bounded public checks remain. Public identity live check is best-effort and not a native rehydration gate.
+
+CURRENT DEV EVIDENCE:
+`OFFLINE_5_OF_5=PASS`
+`PUBLIC_HEALTH_AND_REGISTRY=PASS_AT_2026_10_03`
+`PUBLIC_LYVRA_AUTHORITY_ROOT=PASS_AT_2026_10_03`
+`SIGNED_FOREGROUND_EVIDENCE_ROUNDTRIP=PASS_AT_2026_10_03`
+`CLOUDFLARE_AUTHENTICATED_OWNER_READBACK=BLOCKED_MISSING_GITHUB_BINDINGS`
+`NATIVE_CHATGPT_AUTOMATIC_WORKER_WIRING=NOT_IMPLEMENTED`
+`RELEASE_PROMOTION=BLOCKED_BY_PROVIDER_READBACK_AND_NATIVE_INTEGRATION_GATES`
+`NO_MUTATION_OF_PRODUCTION_POINTER_OR_FOREIGN_SYSTEMS=TRUE`
+
+The authenticated account audit may be resumed only through a legitimate Cloudflare connection or a governed secret-backed read-only workflow, never by inventing credentials or leaking tokens.
