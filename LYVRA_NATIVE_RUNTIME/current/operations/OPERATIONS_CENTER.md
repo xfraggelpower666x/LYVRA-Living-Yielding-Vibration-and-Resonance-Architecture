@@ -1,5 +1,23 @@
 # LYVRA Operations Center — Current
 
+## Currentness reconciliation — 2026-10-03
+
+RECONCILIATION_LIFECYCLE = DEV_CANDIDATE_PENDING_RC_RECOVERY
+AUTHORITY_SOURCE = LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json
+VERIFIED_PRODUCTIVE_BASE_COMMIT = cb2004407a1993fc63d2cd65b80a82dbc28033de
+WHOLE_REVISION = 242
+TRACK_DESIGN_VERSION = v3.4
+TRACK_REVISION = 92
+SOURCE_MIGRATION_STATUS_IS_PROVENANCE = true
+CURRENT_SOURCE_AUTHORITY = PRODUCTIVE_GITHUB_BRANCH_LYVRA
+SESSION_WHOLE_REHYDRATION = PARTIAL
+SESSION_PRIVATE_RECOVERY = OPEN_NOT_REQUESTED
+HISTORICAL_PASS_NE_SESSION_PASS = true
+
+This annotation reconciles currentness metadata only. Original source revisions, native meaning, learned relations and acceptance limitations remain attached to their provenance. Candidate branch existence does not perform productive promotion.
+
+The "Current whole references" and "Current open acceptance" sections below retain the migration-base Rev86 snapshot. For current revision and work scope consume CURRENT_POINTER.current_known_whole_state and the verified current handoff. Open render/skill acceptance is preserved; no new functional or private-recovery PASS is claimed.
+
 STATUS: CURRENT_PRODUCTIVE_NATIVE_SURFACE
 SOURCE_WHOLE_REVISION: 242
 SOURCE_DRIVE_DOCUMENT_ID: 16vZLzS8O0oN6zgluxsO4ekhCEyQvxMZfMmcjZuRrRks

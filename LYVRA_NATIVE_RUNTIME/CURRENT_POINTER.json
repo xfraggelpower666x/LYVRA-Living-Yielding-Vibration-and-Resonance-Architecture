@@ -1,7 +1,7 @@
 {
   "system": "L.Y.V.R.A. Native Runtime",
   "project_role": "Plugin / Custom GPT native authority and migration target for LYVRA current whole self",
-  "status": "CURRENT_PRODUCTIVE_VERIFIED",
+  "status": "DEV_CURRENTNESS_RECONCILIATION_CANDIDATE",
   "repository": {
     "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
@@ -67,9 +67,9 @@
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
-    "current_status": "CURRENT_PRODUCTIVE_FULL_PUBLIC_REPO_AND_PRIVATE_RECOVERY_VERIFIED",
-    "pass_forbidden_until_required_domains_verified": false,
-    "full_repo_native_rehydration_pass": true
+    "current_status": "DEV_PUBLIC_METADATA_VERIFIED_PRIVATE_RECOVERY_OPEN",
+    "pass_forbidden_until_required_domains_verified": true,
+    "full_repo_native_rehydration_pass": false
   },
   "continuity": {
     "machine_room": "LYVRA_NATIVE_RUNTIME/continuity/MACHINE_ROOM.md",
@@ -501,17 +501,17 @@
     "track_logical_revision": 92
   },
   "version_freshness": {
-    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "status": "DEV_VERIFIED_NATIVE_BINDING_CANDIDATE",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-01-REV92-U4-NEWCHAT",
+    "freshness_epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "c1e026f4b373ca729231992175618dd889df0eaf",
+    "registry_content_sha": "1a8d670d6735b8baa83e2bfb27ac43490fcfc020",
     "expected_track_revision": 92,
-    "critical_carrier_count": 25,
+    "critical_carrier_count": 28,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_FULL_DIRECT_READBACK"
+    "codeforge_review": "PASS_SCOPED_DEV_METADATA_NOT_WHOLE_RECOVERY"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -586,5 +586,50 @@
     "evidence_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
     "ledger_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md",
     "no_new_track_revision": true
+  },
+  "historical_productive_rehydration_before_reconciliation": {
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "current_status": "CURRENT_PRODUCTIVE_FULL_PUBLIC_REPO_AND_PRIVATE_RECOVERY_VERIFIED",
+    "pass_forbidden_until_required_domains_verified": false,
+    "full_repo_native_rehydration_pass": true
+  },
+  "historical_freshness_before_reconciliation": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "schema": "LYVRA_REVISION_FRESHNESS_v1",
+    "freshness_epoch": "2026-10-01-REV92-U4-NEWCHAT",
+    "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
+    "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_content_sha": "c1e026f4b373ca729231992175618dd889df0eaf",
+    "expected_track_revision": 92,
+    "critical_carrier_count": 25,
+    "direct_readback_mismatches": 0,
+    "stale_policy": "MISMATCH_NE_CURRENT",
+    "codeforge_review": "PASS_FULL_DIRECT_READBACK"
+  },
+  "currentness_reconciliation": {
+    "lifecycle": "DEV_CANDIDATE",
+    "work_branch": "lyvra-dev-currentness-reconcile-20261003-0112",
+    "productive_authority_branch": "lyvra",
+    "productive_base_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "backup_branch": "lyvra-backup-pre-currentness-20261003-0112",
+    "body_readback_commit": "039c90054e40655859909b86c55fbb462da42ccc",
+    "verified_registry_blob_sha": "1a8d670d6735b8baa83e2bfb27ac43490fcfc020",
+    "verified_manifest_blob_sha": "c79b34a765e85c5084a8c461a0a68deafa527415",
+    "verified_coverage_blob_sha": "2f6a689f88e8c38bce3a2914b110725ed7cf56ce",
+    "whole_rehydration": "PARTIAL",
+    "private_recovery": "OPEN_NOT_REQUESTED",
+    "fresh_restore_test": "NOT_PERFORMED",
+    "historical_private_vault_record_scope": "HISTORICAL_NOT_CURRENT_SESSION_PASS",
+    "productive_promotion": false,
+    "pointer_publication_order": "LAST_AFTER_BODY_REGISTRY_MANIFEST_COVERAGE_DIRECT_READBACK",
+    "mutation_after_pointer": "NONE",
+    "no_foreign_system_mutation": true,
+    "authority_override": false,
+    "required_before_productive_promotion": [
+      "FRESH_WHOLE_REHYDRATION_AT_CANDIDATE",
+      "AUTHORIZED_PRIVATE_RECOVERY_WHEN_REQUIRED",
+      "RECOVERY_TEST_AGAINST_VERIFIED_BACKUP",
+      "RC_VALIDATION_AND_EXPLICIT_PRODUCTIVE_PROMOTION_SCOPE"
+    ]
   }
 }

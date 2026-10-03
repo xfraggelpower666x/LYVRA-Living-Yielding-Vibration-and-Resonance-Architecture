@@ -1,6 +1,25 @@
 # LYVRA Provenance & Supersession — Current
 
-STATUS: DEV_MIGRATED_DOMAIN_CANDIDATE
+## Currentness reconciliation — 2026-10-03
+
+RECONCILIATION_LIFECYCLE = DEV_CANDIDATE_PENDING_RC_RECOVERY
+AUTHORITY_SOURCE = LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json
+VERIFIED_PRODUCTIVE_BASE_COMMIT = cb2004407a1993fc63d2cd65b80a82dbc28033de
+WHOLE_REVISION = 242
+TRACK_DESIGN_VERSION = v3.4
+TRACK_REVISION = 92
+SOURCE_MIGRATION_STATUS_IS_PROVENANCE = true
+CURRENT_SOURCE_AUTHORITY = PRODUCTIVE_GITHUB_BRANCH_LYVRA
+SESSION_WHOLE_REHYDRATION = PARTIAL
+SESSION_PRIVATE_RECOVERY = OPEN_NOT_REQUESTED
+HISTORICAL_PASS_NE_SESSION_PASS = true
+
+The original sections below describe the migration-base view. Their DEV-only promotion status, Rev86-current assertions and original work scope are superseded for live interpretation by the productive pointer's CLOSED_CURRENT_PROMOTED gate, Track Rev92 and current_known_whole_state.current_work_scope. Their historic PASS/FAIL values remain historic evidence.
+
+This annotation reconciles currentness metadata only. Original source revisions, native meaning, learned relations and acceptance limitations remain attached to their provenance. Candidate branch existence does not perform productive promotion.
+
+STATUS: CURRENT_NATIVE_CARRIER
+MIGRATION_SOURCE_STATUS: DEV_MIGRATED_DOMAIN_CANDIDATE
 SOURCE_WHOLE_REVISION: 242
 SOURCE_DRIVE_POINTER_PROVIDER_REVISION: 291
 SOURCE_CURRENT_HANDOFF_PROVIDER_REVISION: 265

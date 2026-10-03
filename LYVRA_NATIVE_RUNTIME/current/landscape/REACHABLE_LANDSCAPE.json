@@ -142,5 +142,26 @@
     }
   },
   "reachability_rule": "A domain may be quiet or non-foreground while remaining causally reachable. Required full reads are still mandatory when the rehydration contract marks them material.",
-  "pass_gate": "WHOLE_NATIVE_SYSTEM_REHYDRATED may not become true while any required domain is PARTIAL or READBACK_PENDING."
+  "pass_gate": "WHOLE_NATIVE_SYSTEM_REHYDRATED may not become true while any required domain is PARTIAL or READBACK_PENDING.",
+  "currentness_supersession": {
+    "status": "DEV_CANDIDATE_DIRECT_READBACK_REQUIRED",
+    "authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+    "whole_revision": 242,
+    "track_revision": 92,
+    "verified_base_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "supersedes_live_interpretation_of": [
+      "status",
+      "repo_authority.migration_state",
+      "current_domains[].state",
+      "current_domains[].source_revision",
+      "continuity_surfaces.*.source_revision"
+    ],
+    "historical_semantics": "Original migration-base and Drive revision fields remain provenance; not runtime-current authority",
+    "freshness_epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
+    "session_whole_rehydration": "PARTIAL",
+    "private_recovery": "OPEN_NOT_REQUESTED",
+    "migration_gate": "CLOSED_CURRENT_PROMOTED_IN_PRODUCTIVE_BASE",
+    "historical_source_fields_remain_provenance": true,
+    "native_manifest_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json"
+  }
 }
