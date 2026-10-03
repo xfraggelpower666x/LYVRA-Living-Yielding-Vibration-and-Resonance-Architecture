@@ -116,3 +116,39 @@ jobs:
           print("ONE_SHOT_NO_NATIVE_OPERATION_EXECUTED=TRUE")
           print("TICKET_AND_SIGNING_SECRET_LOGGED=FALSE")
           PY
+
+      - name: One-shot authenticated Cloudflare Worker ownership audit (read only)
+        if: github.event_name == 'push' && github.event.head_commit.message == 'one-shot-cloudflare-authenticated-worker-readback'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          token=os.environ.get("CLOUDFLARE_API_TOKEN") or ""
+          account=os.environ.get("CLOUDFLARE_ACCOUNT_ID") or ""
+          assert token and account, "CLOUDFLARE_AUTH_BINDINGS_NOT_PRESENT"
+          base="https://api.cloudflare.com/client/v4/accounts/"+account+"/workers"
+          def read(path):
+              req=urllib.request.Request(base+path, headers={
+                  "Accept":"application/json",
+                  "Authorization":"Bearer "+token,
+                  "User-Agent":"LYVRA-Worker-Authority-Readback/1.0"}, method="GET")
+              with urllib.request.urlopen(req,timeout=10) as response:
+                  assert response.status==200, "CLOUDFLARE_HTTP_FAILURE"
+                  raw=response.read(1048577)
+              assert len(raw)<=1048576, "CLOUDFLARE_RESPONSE_TOO_LARGE"
+              data=json.loads(raw.decode("utf-8"))
+              assert data.get("success") is True, "CLOUDFLARE_API_FAILURE"
+              return data.get("result") or []
+          scripts=read("/scripts")
+          assert any(s.get("id")=="lyvrasystem" for s in scripts if isinstance(s,dict)), "WORKER_SCRIPT_NOT_FOUND"
+          print("CLOUDFLARE_LYVRASYSTEM_SCRIPT_AUTHENTICATED=PASS")
+          domains=read("/domains")
+          matches=[x for x in domains if isinstance(x,dict) and x.get("hostname")=="lyvrasystem.666soundsdesign-broadcaster.com"]
+          assert len(matches)==1, "CLOUDFLARE_CUSTOM_DOMAIN_UNRESOLVED"
+          assert matches[0].get("service")=="lyvrasystem", "CLOUDFLARE_DOMAIN_TARGET_MISMATCH"
+          print("CLOUDFLARE_LYVRA_WORKER_DOMAIN_OWNER_AUTHENTICATED=PASS")
+          print("CLOUDFLARE_TOKENS_LOGGED=FALSE")
+          PY
