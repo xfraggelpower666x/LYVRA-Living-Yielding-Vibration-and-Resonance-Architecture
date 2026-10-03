@@ -74,7 +74,7 @@ jobs:
           PY
 
       - name: One-shot signed LYVRA evidence roundtrip (no token logs)
-        if: github.event_name == 'push' && github.event.head_commit.message == 'test: one-shot LYVRA signed evidence roundtrip'
+        if: github.event_name == 'push' && github.event.head_commit.message == 'one-shot-signed-evidence-check'
         shell: bash
         run: |
           python - <<'PY'
