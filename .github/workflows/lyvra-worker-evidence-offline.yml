@@ -1,0 +1,28 @@
+name: LYVRA Worker Evidence Offline Tests (DEV)
+
+on:
+  push:
+    branches:
+      - lyvra-worker-evidence-preflight-20261003
+    paths:
+      - "LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py"
+      - "LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py"
+      - ".github/workflows/lyvra-worker-evidence-offline.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  no-network-offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Syntax verification
+        run: python -m py_compile LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py
+      - name: Mocked offline tests
+        run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v
