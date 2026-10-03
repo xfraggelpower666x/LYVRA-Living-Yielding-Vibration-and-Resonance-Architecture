@@ -72,3 +72,47 @@ jobs:
           print("LYVRA_AUTHORITY_CONTEXT_PUBLIC=PASS")
           print("SIGNED_TICKET_CRYPTOGRAPHY=NOT_TESTED")
           PY
+
+      - name: One-shot signed LYVRA evidence roundtrip (no token logs)
+        if: github.event_name == 'push' && github.event.head_commit.message == 'test: one-shot LYVRA signed evidence roundtrip'
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.request
+          import sys
+          sys.path.insert(0, "LYVRA_NATIVE_RUNTIME/tools")
+          from worker_evidence_preflight import BASE, TIMEOUT_SECONDS, MAX_BYTES, build_opener
+          opener=build_opener()
+          def post(path,payload):
+              raw=json.dumps(payload,separators=(",",":")).encode("utf-8")
+              request=urllib.request.Request(BASE+path,data=raw,method="POST",headers={
+                  "Accept":"application/json",
+                  "Content-Type":"application/json",
+                  "User-Agent":"LYVRA-optional-evidence-preflight/1.0"})
+              with opener.open(request,timeout=TIMEOUT_SECONDS) as response:
+                  assert response.status==200, "NON_200"
+                  result_bytes=response.read(MAX_BYTES+1)
+              assert len(result_bytes)<=MAX_BYTES, "OVERSIZE"
+              obj=json.loads(result_bytes.decode("utf-8"))
+              assert isinstance(obj,dict) and obj.get("ok") is True, "NO_PASS"
+              return obj
+          issued=post("/v2/evidence-ticket",{
+              "system_id":"LYVRA",
+              "purpose":"FOREGROUND",
+              "branch_class":"MAIN_PERSONAL",
+              "authority_context":"LYVRA_MAIN_PERSONAL",
+              "host_id":"CHATGPT_EXECUTION_LAYER",
+              "request_context":{"purpose":"ONE_SHOT_NON_MUTATING_VALIDATION"}})
+          token=issued.get("ticket")
+          assert isinstance(token,str) and len(token)>40, "MISSING_TICKET"
+          assert issued.get("worker_status")=="WORKER_VERIFIED", "ISSUE_STATUS"
+          assert issued.get("signing_secret_exposed") is False, "SECRET_EXPOSURE"
+          verified=post("/v2/verify-evidence",{"ticket":token})
+          assert verified.get("valid") is True and verified.get("worker_status")=="WORKER_VERIFIED", "VERIFY_FAILED"
+          assert verified.get("purpose")=="FOREGROUND", "PURPOSE_MISMATCH"
+          assert verified.get("system",{}).get("system_id")=="LYVRA", "SYSTEM_MISMATCH"
+          assert verified.get("root_checksum")==issued.get("root_checksum"), "CHECKSUM_CHANGED"
+          print("LYVRA_SIGNED_EVIDENCE_ISSUE_VERIFY=PASS")
+          print("ONE_SHOT_NO_NATIVE_OPERATION_EXECUTED=TRUE")
+          print("TICKET_AND_SIGNING_SECRET_LOGGED=FALSE")
+          PY
