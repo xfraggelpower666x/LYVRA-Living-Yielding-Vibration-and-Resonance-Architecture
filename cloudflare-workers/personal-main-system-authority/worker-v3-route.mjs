@@ -103,14 +103,50 @@ export class NativeV3NonceGate {
    !Number.isSafeInteger(p.expires))return respond(400,"INVALID_NONCE");
   const now=Math.floor(Date.now()/1000);
   if(p.expires<=now||p.expires>now+180)return respond(400,"INVALID_EXPIRY");
+  // Both the nonce and its expiry index are committed atomically.
+  // Scheduling the alarm is part of the same transaction: a failed alarm cannot
+  // leave an uncollected nonce behind and still report success.
+  const expiryIndex="EXP:"+String(p.expires).padStart(12,"0")+":"+p.key;
   let consumed=false;
   try{
    await this.state.storage.transaction(async tx=>{
     if(await tx.get(p.key)!==undefined)return;
-    await tx.put(p.key,{expires:p.expires});consumed=true;
+    if(typeof tx.setAlarm!=="function"||typeof tx.getAlarm!=="function")
+      throw Error("TRANSACTIONAL_ALARMS_REQUIRED");
+    await tx.put(p.key,{expires:p.expires});
+    await tx.put(expiryIndex,p.key);
+    const scheduled=await tx.getAlarm();
+    const wanted=p.expires*1000+1000;
+    if(scheduled===null||scheduled>wanted)await tx.setAlarm(wanted);
+    consumed=true;
    });
   }catch{return respond(503,"REPLAY_STORE_UNAVAILABLE");}
   return new Response(JSON.stringify({consumed}),{status:200,
    headers:{"content-type":"application/json","cache-control":"no-store"}});
+ }
+ async alarm(){
+  // Sorted expiry index means a bounded scan always visits oldest entries.
+  // A backlog is drained by a near-term alarm; an unexpired entry schedules
+  // the next expiry. Never remove a live nonce.
+  const storage=this.state.storage;
+  const now=Date.now();
+  const rows=await storage.list({prefix:"EXP:",limit:128});
+  if(!(rows instanceof Map))throw Error("EXPIRY_INDEX_UNAVAILABLE");
+  let next=null,processed=0;
+  for(const [index,nonceKey] of rows){
+   if(!/^EXP:[0-9]{12}:LYVRA:(?:V:)?[a-zA-Z0-9_-]{24,128}$/.test(index)||
+      typeof nonceKey!=="string")throw Error("EXPIRY_INDEX_CORRUPTED");
+   const expires=Number(index.slice(4,16));
+   if(expires*1000+1000>now){next=expires*1000+1000;break;}
+   await storage.transaction(async tx=>{
+    await tx.delete(index);
+    await tx.delete(nonceKey);
+   });
+   processed++;
+  }
+  if(next!==null)await storage.setAlarm(next);
+  else if(rows.size===128)await storage.setAlarm(now+1000);
+  // If no rows remain, the current alarm can complete without rescheduling.
+  return {processed,next};
  }
 }
