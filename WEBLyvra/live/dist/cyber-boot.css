@@ -1,0 +1,23 @@
+/* LYVRA cyber-boot: self-contained, nonintrusive full-screen intro. */
+#lyvra-cyber-boot{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;padding:24px;box-sizing:border-box;background:radial-gradient(ellipse at 50% 42%,#150b2a 0%,#080713 52%,#030309 100%);color:#f5eaff;font-family:system-ui,-apple-system,sans-serif;opacity:1;transition:opacity .45s ease;isolation:isolate}
+#lyvra-cyber-boot[hidden]{display:none!important}
+#lyvra-cyber-boot.lyvra-boot-exit{opacity:0;pointer-events:none}
+#lyvra-cyber-boot::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0px,transparent 3px,#c573ff08 4px);pointer-events:none}
+.lyvra-boot-panel{position:relative;box-sizing:border-box;width:min(94vw,560px);padding:clamp(25px,5vw,46px) clamp(17px,4vw,38px) 26px;text-align:center;border:1px solid #ab58e077;clip-path:polygon(0 13px,13px 0,calc(100% - 13px) 0,100% 13px,100% calc(100% - 13px),calc(100% - 13px) 100%,13px 100%,0 calc(100% - 13px));background:linear-gradient(145deg,#1a1135e8,#080816fa 74%);box-shadow:0 0 40px #ae48ff30,inset 0 0 30px #7b36c51a}
+.lyvra-boot-kicker{font-size:.68rem;letter-spacing:.26em;color:#c19adc;font-weight:700}
+.lyvra-boot-title{font-size:clamp(1.3rem,5vw,2.2rem);letter-spacing:.2em;margin:12px 0 7px;font-weight:500;text-shadow:0 0 22px #e18aff}
+.lyvra-boot-state{font-size:.7rem;letter-spacing:.15em;color:#b8a4d8;min-height:1.5em}
+.lyvra-boot-glyph{width:54px;height:54px;margin:18px auto;border:1px solid #9855d3;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 22px #b63aff66;color:#dcb3ff;font-size:25px}
+.lyvra-boot-glyph span{animation:lyvra-boot-pulse 1.4s ease-in-out infinite}
+.lyvra-boot-track{height:10px;border:1px solid #9651c4;display:block;overflow:hidden;background:#150e25}
+.lyvra-boot-fill{height:100%;width:0;background:linear-gradient(90deg,#7d42da,#e890fa,#78f4fa);box-shadow:0 0 17px #c261ff;transition:width .12s linear}
+.lyvra-boot-meter{display:flex;justify-content:space-between;align-items:center;font-size:.66rem;letter-spacing:.13em;color:#cdb8e5;margin:9px 0 17px}
+.lyvra-boot-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:18px}
+.lyvra-boot-step{display:grid;justify-items:center;gap:7px;font-size:.57rem;letter-spacing:.08em;color:#897aa2}
+.lyvra-boot-dot{width:9px;height:9px;transform:rotate(45deg);border:1px solid #8e72bd}
+.lyvra-boot-step[data-done="true"]{color:#e1b8ff}
+.lyvra-boot-step[data-done="true"] .lyvra-boot-dot{background:#c56dff;box-shadow:0 0 10px #c56dff}
+.lyvra-boot-skip{margin-top:24px;padding:8px 15px;border:1px solid #9d78b4;border-radius:4px;background:#190f28;color:#dfc3ed;font:inherit;font-size:.72rem;letter-spacing:.09em;cursor:pointer}
+.lyvra-boot-skip:focus-visible{outline:2px solid #7df4fa;outline-offset:4px}
+@keyframes lyvra-boot-pulse{50%{opacity:.55;transform:scale(.8)}}
+@media(prefers-reduced-motion:reduce){#lyvra-cyber-boot{transition:none}.lyvra-boot-glyph span{animation:none}.lyvra-boot-fill{transition:none}}
