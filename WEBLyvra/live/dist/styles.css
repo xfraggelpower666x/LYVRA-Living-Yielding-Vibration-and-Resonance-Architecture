@@ -35,3 +35,12 @@ html{width:100%;max-width:100%;overflow-x:clip}
 body{width:100%;max-width:1440px;margin-inline:auto;overflow-x:clip}
 body>header,body>main,body>.footer-shell{max-width:100%}
 img,video{max-width:100%}
+
+/* Mobile hero: the bottom caption must follow the full button stack, never overlay it. */
+@media(max-width:700px){
+  #home.hero{display:block;height:auto;min-height:0;padding-bottom:26px}
+  #home .hero-content{padding-bottom:0}
+  #home .hero-bottom{position:relative;inset:auto;bottom:auto;margin-top:32px;align-items:flex-start;gap:14px}
+  #home .hero-bottom>span{max-width:48%;overflow-wrap:break-word}
+  #home .hero-bottom a{margin-left:auto;text-align:right;max-width:48%}
+}
