@@ -1,5 +1,7 @@
-/* LYVRA animated topic boundaries: centered in the visible stage. */
-.lyvra-topic-banner{width:100%;max-width:100%;margin-inline:auto;padding:16px clamp(12px,2vw,28px);display:flex;justify-content:center;align-items:center;overflow:hidden;background:#070911;pointer-events:none}
-.lyvra-topic-banner video{display:block;width:min(100%,832px);height:auto;aspect-ratio:832/464;object-fit:contain;border:0;pointer-events:none}
-@media(max-width:700px){.lyvra-topic-banner{padding:10px 8px}}
-@media(prefers-reduced-motion:reduce){.lyvra-topic-banner video{animation:none}}
+/* One slim divider per topic; shared animation pair is attached only nearby. */
+.lyvra-topic-transition{width:100%;max-width:100%;height:clamp(30px,5vw,60px);margin:0 auto;display:flex;align-items:center;justify-content:center;overflow:hidden;border-block:1px solid #6fe7f322;background:linear-gradient(90deg,transparent,#0e173080,transparent)}
+.lyvra-topic-transition.is-active{height:clamp(112px,18vw,236px);transition:height .2s ease}
+.lyvra-topic-transition-pair{width:min(100%,1000px);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(4px,1.5vw,20px);padding:6px}
+.lyvra-topic-transition-pair video{width:100%;max-height:210px;aspect-ratio:832/464;object-fit:contain;display:block;background:transparent}
+@media(max-width:700px){.lyvra-topic-transition{height:28px}.lyvra-topic-transition.is-active{height:clamp(85px,25vw,135px)}.lyvra-topic-transition-pair{gap:4px;padding:3px}.lyvra-topic-transition-pair video{max-height:120px}}
+@media(prefers-reduced-motion:reduce){.lyvra-topic-transition.is-active{transition:none}}
