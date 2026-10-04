@@ -1,0 +1,42 @@
+name: LYVRA Worker v3 Standalone Development Security Tests
+on:
+  push:
+    branches:
+      - worker-v3-native-context-dev-20261004
+    paths:
+      - "cloudflare-workers/personal-main-system-authority/**"
+      - ".github/workflows/worker-v3-native-context-dev-tests.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-v3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax Worker entry and legacy main
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          node --input-type=module --check < worker.js
+          node --input-type=module --check < worker-runtime-adapter.js
+          for js in worker-native-context.mjs worker-native-v3.mjs worker-v3-route.mjs; do node --check "$js"; done
+          grep -Fx 'name = "lyvrasystem"' wrangler.toml
+          grep -Fx 'main = "worker-runtime-adapter.js"' wrangler.toml
+          grep -F 'WORKER_SCOPE = "MAIN_PERSONAL_ONLY"' wrangler.toml
+          grep -F 'PORTABLE_WORKER_BINDING = "DISABLED"' wrangler.toml
+      - name: Native v3 mocked issue/verify/DO replay regression
+        shell: bash
+        run: node --test cloudflare-workers/personal-main-system-authority/worker-v3-route.test.mjs
+      - name: Assert migration stays disabled
+        shell: bash
+        run: |
+          set -euo pipefail
+          ! grep -Eq '^NATIVE_V3_ENABLED[[:space:]]*=[[:space:]]*"true"' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          ! grep -Eq '^\[\[durable_objects.bindings\]\]' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          echo "V3_DEPLOYMENT=NOT_ACTIVATED"
