@@ -49,3 +49,36 @@ SECRET_BINDINGS=UNVERIFIED
 - Preserve worker root_revision separate from native GitHub commit and never promote Worker to LYVRA authority.
 
 CONCLUSION=DEV_VERIFIED_WITH_BLOCKED_PRODUCTION_GATES
+
+
+## FORCE maximal integration extension — GitHub Actions 37244042608
+
+STATUS=DEV_LOCAL_SQLITE_DO_INTEGRATION_VERIFIED
+NODE_TESTS=24/24_PASS
+WRANGLER_4_111_0_DRY_RUN=PASS
+STAGING_V1_V2_AND_WRANGLER_IDENTICAL_TO_CURRENT_BRANCH=PASS
+LOCAL_CLOUDFLARE_WRANGLER_DEV=PASS
+LOCAL_SQLITE_DURABLE_OBJECT_BINDING=TEMPORARY_CI_ONLY
+LOCAL_AUTHENTICATED_TICKET_ISSUE_VERIFY=PASS
+LOCAL_NONCE_REPLAY_REJECTED=PASS
+LOCAL_32_CONCURRENT_SAME_NONCE=ONE_SUCCESS_31_REPLAY_DENIAL
+WORKFLOW_HAS_CLOUDFLARE_DEPLOY=FALSE
+WRANGLER_PRODUCTION_CONFIG_UNCHANGED=TRUE
+NO_PRODUCTION_SECRETS_USED=TRUE
+TEMPORARY_RUNNER_KEYS_ONLY=TRUE
+HOST_NATIVE_GITHUB_REHYDRATION_SIGNATURE_END_TO_END=NOT_IMPLEMENTED
+PRODUCTION_CLOUDFLARE_DEPLOYMENT=NOT_EXECUTED
+
+### Additional modifications
+- Cloudflare SQLite Durable Object alarm scheduling now rechecks existing alarm transactionally and never overwrites an earlier future alarm created concurrently.
+- Unit tests cover the concurrent-earlier-alarm and obsolete-fired-alarm cases.
+- New dynamic CI gate fetches the current Worker staging branch, refuses differences in original worker.js or wrangler.toml, and preserves newer valid staging evolution.
+- New runner-local-only Wrangler dev config provisions a temporary SQLite Durable Object and v3 activation with ephemeral per-run secrets; generated config and secrets are deleted by a shell trap and NEVER committed.
+- New local smoke script exercises HTTP /health, authenticated v3 ticket issue/verify, issuance replay, verification replay, purpose signature mismatch and a 32-way real local Durable Object race; no production request is made.
+- All status claims are bound to run 37244042608, not to Cloudflare production.
+
+### Release blockers remain
+- Actual Cloudflare account namespace provisioning and live alarm/persistence behaviors NOT verified.
+- Cloudflare production identity, binding ownership and secrets not audited.
+- Trusted native host origin / independently full-read and semantically rehydrated GitHub proof not wired. Signed claims are still caller-bound, not independent Worker GitHub read evidence.
+- Native pointer publication, PR merge and Worker production deployment require separate authorized RC review. Private recovery remains separate.
