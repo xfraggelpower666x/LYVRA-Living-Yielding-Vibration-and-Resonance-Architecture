@@ -39,6 +39,7 @@ export async function issueNativeContextTicket({
  if(typeof clientSecret!=="string"||clientSecret.length<32||typeof ticketSecret!=="string"||ticketSecret.length<32||clientSecret===ticketSecret)return fail("AUTH_NOT_CONFIGURED");
  if(typeof consumeNonce!=="function")return fail("ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
  try {validateNativeEnvelope(body.envelope);}catch{return fail("NATIVE_CONTEXT_INVALID");}
+ if(body.envelope.request_nonce!==nonce)return fail("NONCE_CONTEXT_MISMATCH");
  const signed=requestPreimage(timestamp,nonce,body);
  if(!(await verifyMac(clientSecret,signed,proof)))return fail("CLIENT_NOT_AUTHENTICATED");
  // A globally atomic server-controlled nonce store must return true only once.
