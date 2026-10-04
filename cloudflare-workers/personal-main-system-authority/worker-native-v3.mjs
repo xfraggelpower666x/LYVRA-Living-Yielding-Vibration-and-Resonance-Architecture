@@ -33,6 +33,14 @@ function signInput(h,p){return b64(bytes(JSON.stringify(h)))+"."+b64(bytes(JSON.
 export async function makeNativeClientProof({timestamp,nonce,body,clientSecret,path="/v3/native-evidence"}){
  return b64(await mac(clientSecret,requestPreimage(timestamp,nonce,body,path)));
 }
+export async function verifyNativeClientProof({path,timestamp,nonce,body,proof,clientSecret,now=Math.floor(Date.now()/1000)}) {
+ if(path!=="/v3/native-evidence"&&path!=="/v3/verify-native-evidence")return false;
+ if(!Number.isSafeInteger(timestamp)||!Number.isSafeInteger(now)||Math.abs(now-timestamp)>TIMESTAMP_SKEW)return false;
+ if(typeof nonce!=="string"||!NONCE_PATTERN.test(nonce)||typeof proof!=="string")return false;
+ if(!plain(body)||typeof clientSecret!=="string"||clientSecret.length<32)return false;
+ try{return await verifyMac(clientSecret,requestPreimage(timestamp,nonce,body,path),proof);}
+ catch{return false;}
+}
 export async function issueNativeContextTicket({
  body,timestamp,nonce,proof,clientSecret,ticketSecret,consumeNonce,now=Math.floor(Date.now()/1000)
 }){
