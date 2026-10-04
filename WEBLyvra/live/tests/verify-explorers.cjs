@@ -44,7 +44,12 @@ assert(currentHtml.includes('<a href="/dashboard/" aria-label="LYVRA Neon Dashbo
 const withoutNeon=currentHtml.replace('<link rel="stylesheet" href="psy-engine-entry.css">','').replace(/\n  <article class="psy-engine-entry"[\s\S]*?<\/article>/,'').replace('<a href="/dashboard/" aria-label="LYVRA Neon Dashboard öffnen">Dashboard ↗</a>','').replace('<link rel="stylesheet" href="avatar-presence.css"><script type="module" src="avatar-presence.js"></script>\n','').replace('<script defer src="player-fit.js"></script>\n','').replace('<link rel="stylesheet" href="audio-neon.css"><script type="module" src="audio-neon.js"></script>\n','').replace(/<aside id="audio-neon-controls"[\s\S]*?<\/aside>/,'').replace(/<div id="audio-neon-layer"[\s\S]*?<\/div>\n/,'');
 assert(currentHtml.includes('id="audio-neon-controls"'));
 const additiveHtml=withoutNeon.replace('<link rel="stylesheet" href="plugin-access.css">','').replace(/<a class="button ghost hero-plugin-link"[\s\S]*?<\/a>/,'').replace(/<!-- LYVRA_PLUGIN_START -->[\s\S]*?<!-- LYVRA_PLUGIN_END -->\n/,'');
-const preservationHtml=additiveHtml.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
+assert(currentHtml.includes('id="lyvra-video-loop"'));
+assert(currentHtml.includes('<video autoplay muted loop playsinline'));
+assert(currentHtml.includes('src="assets/lyvra-visual-loop.mp4"'));
+assert(currentHtml.includes('#lyvra-video-loop{display:flex;align-items:center;justify-content:center;'));
+const withoutVideo=additiveHtml.replace(/\n<style id="lyvra-video-loop-style">[\s\S]*?<\/style>\n/,'').replace(/<div id="lyvra-video-loop"[^>]*><video[\s\S]*?<\/video><\/div>\n/,'');
+const preservationHtml=withoutVideo.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
 assert.equal(hash(preservationHtml.replace('<link rel="stylesheet" href="explorers.css">','').replace('<link rel="stylesheet" href="brand-art.css">','').replace(/<a class="button primary hero-gpt-link"[\s\S]*?<\/a>/,'')),baseline.index);
 assert.equal(hash(fs.readFileSync('dist/evolution-status.css')),baseline.evolutionCss);
 console.log('PASS: existing HTML + Handoff 001 preserved; nine unique facets; music/filter/world/back/gateway interactions; DE/EN; safe URL rejection; approval filtering; future project detail and audio gating using non-shipped test fixtures. No browser/live verification.');
