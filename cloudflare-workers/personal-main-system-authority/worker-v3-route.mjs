@@ -3,7 +3,7 @@
  * No mutation to legacy/v2 Worker routes. Never writes LYVRA native state.
  * The signing secret / client key are ONLY Cloudflare server-side bindings.
  */
-import {issueNativeContextTicket,verifyNativeContextTicket} from "./worker-native-v3.mjs";
+import {issueNativeContextTicket,verifyNativeContextTicket,verifyNativeClientProof} from "./worker-native-v3.mjs";
 const MAX_BYTES=8192;
 const ALLOWED=new Set(["/v3/native-evidence","/v3/verify-native-evidence"]);
 function respond(status,state,extra={}) {
@@ -69,6 +69,12 @@ export async function handleNativeV3Route(request,env={}) {
  }
  if(Object.keys(payload).sort().join("|")!=="expectedEnvelope|expectedPurpose|ticket")
    return respond(400,"INVALID_VERIFY_REQUEST");
+ const timestamp=Number(request.headers.get("x-lyvra-timestamp"));
+ const nonce=request.headers.get("x-lyvra-nonce");
+ const proof=request.headers.get("x-lyvra-proof");
+ const authenticated=await verifyNativeClientProof({path:pathname,timestamp,nonce,body:payload,
+   proof,clientSecret:env.NATIVE_V3_CLIENT_SECRET});
+ if(!authenticated)return respond(403,"CLIENT_NOT_AUTHENTICATED");
  const result=await verifyNativeContextTicket({ticket:payload.ticket,expectedEnvelope:payload.expectedEnvelope,
     expectedPurpose:payload.expectedPurpose,ticketSecret:env.NATIVE_V3_TICKET_SECRET});
  return respond(result.ok?200:403,result.state,result.ok?{context_digest:result.context_digest,
