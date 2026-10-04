@@ -107,3 +107,21 @@ PUBLIC_WORKER_READONLY=PASS_AT_RUN_37238757278
 HOST_AUTO_WIRING=NOT_VERIFIED
 SIGNED_GITHUB_COMMITMENT=NOT_IMPLEMENTED
 DEPLOYMENT_EXECUTED=FALSE
+
+
+## 2026-10-04 UPDATE: GitHub carrier snapshot consistency (DEV)
+
+Added two source files:
+- `LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.mjs`: read-only consistency guard for complete Git tree structure, exact repository/branch, required native anchor carriers, full critical-carrier Git blob fingerprint registry and pinned envelope's SHA fields; validates complete native domain envelope. Returns `CARRIER_SNAPSHOT_CONSISTENT` with `verified:false` intentionally — caller-supplied evidence is NOT independent source readback.
+- `LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.test.mjs`: ten tests of positive consistency, truncated tree, missing anchor, mismatched critical SHA, stale/forged commit and pointer, foreign repo/branch, malformed/duplicate tree nodes, empty registry, incomplete domain.
+
+GitHub Actions readback:
+RUN_ID=37239261362
+CONCLUSION=SUCCESS
+NODE_TESTS=23/23
+PYTHON_TESTS=5/5
+PUBLIC_WORKER_READ_ONLY_HEALTH=PASS
+PUBLIC_WORKER_READ_ONLY_AUTHORITY_CONTEXT=PASS
+
+No live worker mutation, production promotion or credentials. This stage closes structural consistency gaps, NOT authenticated caller identity, independently fetched native source, complete semantic rehydration, signed GitHub context ticket, host-automatic startup or Cloudflare deployment readback.
+STATUS=DEV_TESTED_NOT_PRODUCTION
