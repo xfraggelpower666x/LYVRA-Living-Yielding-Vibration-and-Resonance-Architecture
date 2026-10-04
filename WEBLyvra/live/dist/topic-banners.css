@@ -1,7 +1,5 @@
-/* Collapsed until an actual decoded video frame is available; no blank 464px panels. */
-.lyvra-topic-banner{box-sizing:border-box;position:relative;width:100%;max-width:100%;height:8px;min-height:8px;padding:0;margin:0 auto;overflow:hidden;display:flex;justify-content:center;align-items:center;background:transparent;pointer-events:none}
-.lyvra-topic-banner video{display:block;opacity:0;width:min(100%,832px);height:auto;aspect-ratio:832/464;object-fit:contain;border:0;pointer-events:none}
-.lyvra-topic-banner.is-ready{height:auto;min-height:0;padding:12px clamp(8px,2vw,24px)}
-.lyvra-topic-banner.is-ready video{opacity:1}
-.lyvra-topic-banner.is-failed{height:0;min-height:0;padding:0}
-@media(max-width:700px){.lyvra-topic-banner.is-ready{padding:8px 6px}}
+/* Compact topic divider slots; only one shared video exists in the whole document. */
+.lyvra-topic-banner{height:clamp(88px,15vw,176px);width:100%;max-width:100%;margin:0 auto;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(90deg,transparent,#10152880,transparent);border-block:1px solid #6fe7f315;pointer-events:none}
+.lyvra-topic-banner video{display:block;width:min(100%,832px);height:100%;object-fit:contain;border:0;pointer-events:none}
+.lyvra-topic-banner.is-failed{height:16px;border-color:transparent;background:transparent}
+@media(max-width:700px){.lyvra-topic-banner{height:clamp(76px,26vw,130px)}}
