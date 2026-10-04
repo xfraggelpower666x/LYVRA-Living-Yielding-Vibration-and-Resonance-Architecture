@@ -1,0 +1,102 @@
+/**
+ * OPTIONAL LYVRA Worker v3 route. Disabled unless NATIVE_V3_ENABLED=="true".
+ * No mutation to legacy/v2 Worker routes. Never writes LYVRA native state.
+ * The signing secret / client key are ONLY Cloudflare server-side bindings.
+ */
+import {issueNativeContextTicket,verifyNativeContextTicket} from "./worker-native-v3.mjs";
+const MAX_BYTES=8192;
+const ALLOWED=new Set(["/v3/native-evidence","/v3/verify-native-evidence"]);
+function respond(status,state,extra={}) {
+ return new Response(JSON.stringify({ok:status>=200&&status<300,state,...extra}),{
+ status,headers:{"content-type":"application/json; charset=utf-8","cache-control":"no-store","x-content-type-options":"nosniff"}});
+}
+async function boundedJson(request) {
+ const length=Number(request.headers.get("content-length")||0);
+ if(!Number.isFinite(length)||length>MAX_BYTES)throw Error("BODY_TOO_LARGE");
+ const reader=request.body?.getReader();
+ if(!reader)throw Error("BODY_REQUIRED");
+ let total=0,bytes=[];
+ try {
+  while(true){const {done,value}=await reader.read();if(done)break;total+=value.byteLength;
+   if(total>MAX_BYTES)throw Error("BODY_TOO_LARGE");bytes.push(value);}
+ }finally{reader.releaseLock();}
+ const merged=new Uint8Array(total);let offset=0;
+ for(const part of bytes){merged.set(part,offset);offset+=part.byteLength;}
+ const value=JSON.parse(new TextDecoder("utf-8",{fatal:true}).decode(merged));
+ if(!value||Array.isArray(value)||typeof value!=="object")throw Error("BAD_JSON");
+ return value;
+}
+function replayConsumer(env){
+ if(!env.NATIVE_V3_NONCES||typeof env.NATIVE_V3_NONCES.idFromName!=="function"||
+    typeof env.NATIVE_V3_NONCES.get!=="function") return null;
+ return async (key,expires)=> {
+  const stub=env.NATIVE_V3_NONCES.get(env.NATIVE_V3_NONCES.idFromName("LYVRA_MAIN_PERSONAL_V3"));
+  const response=await stub.fetch("https://native-v3-internal/consume",{
+   method:"POST",headers:{"content-type":"application/json"},
+   body:JSON.stringify({key,expires})});
+  if(!response.ok)return false;
+  const data=await response.json();
+  return data?.consumed===true;
+ };
+}
+export async function handleNativeV3Route(request,env={}) {
+ const pathname=new URL(request.url).pathname;
+ if(!ALLOWED.has(pathname))return null;
+ if(env.NATIVE_V3_ENABLED!=="true")return respond(404,"V3_DISABLED");
+ if(request.method!=="POST")return respond(405,"METHOD_NOT_ALLOWED");
+ if(!request.headers.get("content-type")?.toLowerCase().startsWith("application/json"))
+  return respond(415,"JSON_REQUIRED");
+ if(request.headers.get("origin"))return respond(403,"BROWSER_ORIGIN_REJECTED");
+ if(typeof env.NATIVE_V3_CLIENT_SECRET!=="string"||typeof env.NATIVE_V3_TICKET_SECRET!=="string"||
+    env.NATIVE_V3_CLIENT_SECRET.length<32||env.NATIVE_V3_TICKET_SECRET.length<32||
+    env.NATIVE_V3_CLIENT_SECRET===env.NATIVE_V3_TICKET_SECRET)
+   return respond(503,"AUTH_NOT_CONFIGURED");
+ let payload;
+ try {payload=await boundedJson(request);}
+ catch {return respond(400,"BAD_OR_OVERSIZED_JSON");}
+ if(pathname==="/v3/native-evidence"){
+  const consumeNonce=replayConsumer(env);
+  if(!consumeNonce)return respond(503,"ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
+  const timestamp=Number(request.headers.get("x-lyvra-timestamp"));
+  const nonce=request.headers.get("x-lyvra-nonce");
+  const proof=request.headers.get("x-lyvra-proof");
+  const result=await issueNativeContextTicket({body:payload,timestamp,nonce,proof,
+    clientSecret:env.NATIVE_V3_CLIENT_SECRET,ticketSecret:env.NATIVE_V3_TICKET_SECRET,
+    consumeNonce});
+  return respond(result.ok?200:403,result.state,result.ok?{ticket:result.ticket,
+    expires_at:result.expires_at,context_digest:result.context_digest,
+    native_rehydration_verified_by_worker:false}:{});
+ }
+ if(Object.keys(payload).sort().join("|")!=="expectedEnvelope|expectedPurpose|ticket")
+   return respond(400,"INVALID_VERIFY_REQUEST");
+ const result=await verifyNativeContextTicket({ticket:payload.ticket,expectedEnvelope:payload.expectedEnvelope,
+    expectedPurpose:payload.expectedPurpose,ticketSecret:env.NATIVE_V3_TICKET_SECRET});
+ return respond(result.ok?200:403,result.state,result.ok?{context_digest:result.context_digest,
+    expires_at:result.expires_at,native_rehydration_verified_by_worker:false}:{});
+}
+
+/** Backend for a future Cloudflare Durable Object binding; NOT enabled in wrangler yet.
+ * Cloudflare serializes storage transactions inside one DO instance.
+ */
+export class NativeV3NonceGate {
+ constructor(state){this.state=state;}
+ async fetch(request){
+  if(new URL(request.url).pathname!=="/consume"||request.method!=="POST")
+   return respond(404,"NOT_FOUND");
+  let p;
+  try{p=await request.json();}catch{return respond(400,"BAD_JSON");}
+  if(typeof p?.key!=="string"||!/^LYVRA:[a-zA-Z0-9_-]{24,128}$/.test(p.key)||
+   !Number.isSafeInteger(p.expires))return respond(400,"INVALID_NONCE");
+  const now=Math.floor(Date.now()/1000);
+  if(p.expires<=now||p.expires>now+180)return respond(400,"INVALID_EXPIRY");
+  let consumed=false;
+  try{
+   await this.state.storage.transaction(async tx=>{
+    if(await tx.get(p.key)!==undefined)return;
+    await tx.put(p.key,{expires:p.expires});consumed=true;
+   });
+  }catch{return respond(503,"REPLAY_STORE_UNAVAILABLE");}
+  return new Response(JSON.stringify({consumed}),{status:200,
+   headers:{"content-type":"application/json","cache-control":"no-store"}});
+ }
+}
