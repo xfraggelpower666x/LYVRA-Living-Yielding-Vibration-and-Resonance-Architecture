@@ -17,14 +17,20 @@ function req(path="/v3/native-evidence",data=body(),extra={}) {return new Reques
 function env(overrides={}) {return {NATIVE_V3_ENABLED:"true",NATIVE_V3_CLIENT_SECRET:client,
  NATIVE_V3_TICKET_SECRET:signer,...overrides};}
 function makeMockDOStorage(){
- const seen=new Map();let alarm=null;
+ const seen=new Map();let alarm=null;let tail=Promise.resolve();
  const storage={
-  transaction:async fn=>fn({
-   get:async key=>seen.get(key),
-   put:async(key,value)=>{seen.set(key,value);},
-   delete:async key=>seen.delete(key),
-   getAlarm:async()=>alarm,setAlarm:async ms=>{alarm=ms;}
-  }),
+  // Serialize each transaction to approximate single-actor DO storage behavior.
+  transaction:async fn=>{
+   let unlock;const prior=tail;tail=new Promise(resolve=>{unlock=resolve;});
+   await prior;
+   const backup=new Map(seen),priorAlarm=alarm;
+   try{return await fn({});}
+   catch(e){seen.clear();for(const [k,v] of backup)seen.set(k,v);alarm=priorAlarm;throw e;}
+   finally{unlock();}
+  },
+  get:async key=>seen.get(key),
+  put:async(key,value)=>{seen.set(key,value);},
+  delete:async key=>seen.delete(key),
   list:async({prefix,limit})=>new Map([...seen].filter(([key])=>key.startsWith(prefix)).sort((a,b)=>a[0].localeCompare(b[0])).slice(0,limit)),
   setAlarm:async ms=>{alarm=ms;},getAlarm:async()=>alarm,
   snapshot:()=>new Map(seen)
@@ -191,4 +197,38 @@ test("storage lacking transactional alarms is fail-closed",async()=>{
  const r=await gate.fetch(new Request("https://native-v3-internal/consume",{
  method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key:"LYVRA:"+nonce,expires})}));
  assert.equal(r.status,503);assert.equal((await r.json()).state,"REPLAY_STORE_UNAVAILABLE");
+});
+
+test("concurrent identical nonce issue requests commit exactly once",async()=>{
+ const store=nonceStore(),data=body(),headers=await signedHeaders(data);
+ const results=await Promise.all(Array.from({length:32},()=>handleNativeV3Route(req("/v3/native-evidence",data,headers),env({NATIVE_V3_NONCES:store}))));
+ const codes=results.map(x=>x.status);assert.equal(codes.filter(x=>x===200).length,1);
+ assert.equal(codes.filter(x=>x===403).length,31);
+ assert.equal([...store.storage.snapshot().keys()].filter(x=>x.startsWith("EXP:")).length,1);
+});
+test("expiry alarm drains a multi-page backlog without deleting live nonces",async()=>{
+ const storage=makeMockDOStorage(),gate=new NativeV3NonceGate({storage});
+ const fixed=Math.floor(Date.now()/1000),base=Date.now;
+ for(let i=0;i<260;i++){
+   const key="LYVRA:"+("nonce-abcdefghijklmnopqrstuv"+String(i).padStart(6,"0"));
+   const expires=fixed+(i<258?2:100);
+   const r=await gate.fetch(new Request("https://native-v3-internal/consume",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+   assert.equal((await r.json()).consumed,true);
+ }
+ Date.now=()=> (fixed+4)*1000;
+ try {
+   let count=0;for(let k=0;k<4;k++){const v=await gate.alarm();count+=v.processed;if(count===258)break;}
+   assert.equal(count,258);
+ } finally{Date.now=base;}
+ assert.equal([...storage.snapshot().keys()].filter(k=>k.startsWith("EXP:")).length,2);
+ assert.equal([...storage.snapshot().keys()].filter(k=>k.startsWith("LYVRA:")).length,2);
+});
+test("failed alarm write atomically rolls back nonce and its expiry index",async()=>{
+ const storage=makeMockDOStorage();
+ storage.setAlarm=async()=>{throw Error("ALARM_UNAVAILABLE");};
+ const gate=new NativeV3NonceGate({storage});
+ const key="LYVRA:"+nonce,expires=Math.floor(Date.now()/1000)+60;
+ const r=await gate.fetch(new Request("https://native-v3-internal/consume",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+ assert.equal(r.status,503);
+ assert.equal(storage.snapshot().size,0);
 });
