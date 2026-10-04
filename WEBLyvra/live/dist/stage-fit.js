@@ -4,7 +4,7 @@
   const WIDTH = 1440;
   const viewport = document.querySelector('meta[name="viewport"]');
   // A wide layout viewport lets mobile browsers fit the entire reference canvas.
-  if (viewport) viewport.setAttribute('content', 'width=1440, initial-scale=1');
+  if (viewport) viewport.setAttribute('content', 'width=1440');
   const root = document.documentElement;
   const body = document.body;
   body.style.width = WIDTH + 'px';
