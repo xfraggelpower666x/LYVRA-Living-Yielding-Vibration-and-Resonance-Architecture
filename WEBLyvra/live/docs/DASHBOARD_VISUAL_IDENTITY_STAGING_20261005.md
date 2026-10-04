@@ -19,3 +19,11 @@ Procedure: Freshly clone latest productive lyvra. Create isolated branch. Extrac
 Evidence: Local static structural check passed; five referenced JPEGs present. Chromium file scheme preview blocked by environment. No binary assets uploaded and no visual or live acceptance established.
 
 Safety: ONE_LYVRA_IDENTITY, NO_NEW_ROUTER, preserve newer evolution, production unchanged.
+
+## 2026-10-05 V3 hardening (safe artifact)
+- New conversation artifact: LYVRA_DASHBOARD_NATIVE_SAFE_V3_20261005.zip.
+- Removed an extra newline introduced by previous PowerShell insertion.
+- Added fail-closed compare proving that removing the two newly injected blocks reconstructs the complete preexisting dashboard HTML exactly.
+- Added original JPEG checksum verification both before and after insertion; exact one style, one section, one reference per original image.
+- Local archived-baseline dry-run PASS and independent 5-image static validator PASS.
+- Caveat: Windows PowerShell execution, screenshot visual inspection, and live website deployment NOT verified. Original JPEG binaries still NOT on GitHub. Do not confuse this documentation update with feature release.
