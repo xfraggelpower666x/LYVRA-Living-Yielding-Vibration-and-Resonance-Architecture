@@ -125,3 +125,56 @@ PUBLIC_WORKER_READ_ONLY_AUTHORITY_CONTEXT=PASS
 
 No live worker mutation, production promotion or credentials. This stage closes structural consistency gaps, NOT authenticated caller identity, independently fetched native source, complete semantic rehydration, signed GitHub context ticket, host-automatic startup or Cloudflare deployment readback.
 STATUS=DEV_TESTED_NOT_PRODUCTION
+
+
+## 2026-10-04 UPDATE: authenticated v3 native-context signing prototype
+
+SOURCE_FILES:
+- `LYVRA_NATIVE_RUNTIME/tools/worker-native-v3.mjs`
+- `LYVRA_NATIVE_RUNTIME/tools/worker-native-v3.test.mjs`
+
+SOURCE_STATUS=DEV_TESTED_STANDALONE_NOT_ROUTED_NOT_DEPLOYED
+FEATURE_FLAG=NOT_CONNECTED_TO_WORKER_ADAPTER
+WORKER_V1_V2=UNCHANGED
+PRODUCTION_LYVRA=UNCHANGED
+CRYPTO_WEBCRYPTO=HMAC_SHA256_EXPLICIT
+CLIENT_SIGNING_SEPARATION=TRUE
+TICKET_VALIDITY_SECONDS=90
+CLOCK_SKEW_SECONDS=60
+ATOMIC_REPLAY_STORE_REQUIRED=TRUE
+ATOMIC_REPLAY_STORE_PRODUCTION_IMPLEMENTATION=NONE
+HOST_AUTHENTICATED_CALLER=NONE
+INDEPENDENT_GITHUB_REHYDRATION_PROOF=NOT_IMPLEMENTED
+PRODUCTION_SECRET_BINDINGS=NOT_CONFIGURED_OR_VERIFIED
+
+The standalone v3 module supplies makeNativeClientProof(), issueNativeContextTicket()
+and verifyNativeContextTicket() with a versioned token, tightly scoped LYVRA/
+MAIN_PERSONAL identity, separate client-auth and ticket-signature secrets, a
+request+envelope nonce match, short-lived tickets, replay-store hard-fail and
+constant-time WebCrypto signature verification. The issuer signs a
+caller-provided native context commitment: **it does not independently verify
+repository HEAD, whole-system domain rehydration or trust the caller by name**.
+
+CRITICAL DEPLOYMENT GUARDS:
+1. Do not deploy v3 until there is a trusted authenticated server-side client
+   and separately provisioned secrets in the appropriate Cloudflare environment.
+2. Implement a globally atomic nonce consumption backend (e.g. correctly
+   serialized Durable Object), **not Cloudflare KV alone**.
+3. Integrate a new versioned route in the existing Worker with strict body
+   size limits, host binding and exception control. Preserve v1/v2 paths.
+4. Bind real native GitHub full readback to the caller independently; require
+   its own trusted read evidence before any higher-level verified status.
+5. Verify issued tickets against matching current pinned context, test replay,
+   rate limits, wrong host, wrong identity, wrong purpose, expiry, rollback.
+6. Secure deployment via Wrangler requires independent GitHub Actions/Cloudflare
+   credential audit; do not infer from WebRadio repo secrets.
+7. No pointer update, native authority transfer or auto-activation of CLIC/PFS.
+
+GitHub Actions run `37239803055` completed SUCCESS after correcting
+WebCrypto HMAC import to explicitly use SHA-256. Tests: 35/35 Node and 5/5
+Python; public Worker health and authority-root read checks PASS.
+No claim of production v3 evidence issuance or authenticated host wiring.
+
+STATE=DEV_CRYPTOGRAPHIC_PROTOCOL_TEST_PASS
+WORKER_LIVE_V3=FALSE
+REHYDRATION_AUTO_HOOK=NOT_VERIFIED
