@@ -82,17 +82,17 @@
         const d=Math.abs(rect.top-mid);
         if(d<distance){distance=d;best=m;}
       }
-      if(!best||distance>Math.max(380,innerHeight*.8)){
-        videos.forEach(v=>v.pause());
-        if(selected){selected.classList.remove('is-active');selected=null;}
-        return;
-      }
+      // Keep the paired divider present at the nearest topic boundary.
+      // Only pause decoding when far away; never remove the pair on scroll.
+      if(!best)return;
       if(selected!==best){
         if(selected)selected.classList.remove('is-active');
         selected=best;
         best.classList.add('is-active');
         best.appendChild(pair);
       }
+      const visibleDistance = Math.max(380, innerHeight * .8);
+      if(distance > visibleDistance) { videos.forEach(v=>v.pause()); return; }
       for(const v of videos){
         const playing=v.play();
         if(playing&&typeof playing.catch==='function')playing.catch(()=>{});
