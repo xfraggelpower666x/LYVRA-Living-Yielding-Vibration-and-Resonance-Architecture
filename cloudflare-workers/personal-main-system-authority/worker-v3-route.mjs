@@ -34,9 +34,10 @@ function replayConsumer(env){
   const response=await stub.fetch("https://native-v3-internal/consume",{
    method:"POST",headers:{"content-type":"application/json"},
    body:JSON.stringify({key,expires})});
-  if(!response.ok)return false;
+  if(!response.ok)throw Error("REPLAY_BACKEND_HTTP_FAILURE");
   const data=await response.json();
-  return data?.consumed===true;
+  if(typeof data?.consumed!=="boolean")throw Error("REPLAY_BACKEND_INVALID_RESPONSE");
+  return data.consumed;
  };
 }
 export async function handleNativeV3Route(request,env={}) {
@@ -63,7 +64,8 @@ export async function handleNativeV3Route(request,env={}) {
   const result=await issueNativeContextTicket({body:payload,timestamp,nonce,proof,
     clientSecret:env.NATIVE_V3_CLIENT_SECRET,ticketSecret:env.NATIVE_V3_TICKET_SECRET,
     consumeNonce});
-  return respond(result.ok?200:403,result.state,result.ok?{ticket:result.ticket,
+  const serverFailure=["REPLAY_STORE_UNAVAILABLE","ATOMIC_REPLAY_STORE_NOT_CONFIGURED","AUTH_NOT_CONFIGURED"].includes(result.state);
+  return respond(result.ok?200:serverFailure?503:403,result.state,result.ok?{ticket:result.ticket,
     expires_at:result.expires_at,context_digest:result.context_digest,
     native_rehydration_verified_by_worker:false}:{});
  }
