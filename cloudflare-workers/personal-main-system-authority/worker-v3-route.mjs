@@ -150,9 +150,17 @@ export class NativeV3NonceGate {
    });
    processed++;
   }
-  if(next!==null)await storage.setAlarm(next);
-  else if(rows.size===128)await storage.setAlarm(now+1000);
-  // If no rows remain, the current alarm can complete without rescheduling.
+  // An issuance may have scheduled an earlier alarm while this scan ran.
+  // Re-arm with a serial storage transaction; never overwrite earlier future work.
+  const desired=next!==null?next:(rows.size===128?now+1000:null);
+  if(desired!==null){
+   await storage.transaction(async()=>{
+    const current=await storage.getAlarm();
+    if(current===null||current<=now||current>desired)
+      await storage.setAlarm(desired);
+   });
+  }
+  // If no rows remain, this invocation can complete without rescheduling.
   return {processed,next};
  }
 }
