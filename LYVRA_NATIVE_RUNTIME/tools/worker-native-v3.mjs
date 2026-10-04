@@ -16,9 +16,9 @@ function bytes(s){return coder.encode(s);}
 function b64(s) {return btoa(String.fromCharCode(...s)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");}
 function fromB64(s) {if(!/^[a-zA-Z0-9_-]+$/.test(s)) throw Error("MALFORMED_TOKEN"); const pad=s.replace(/-/g,"+").replace(/_/g,"/");return Uint8Array.from(atob(pad+"=".repeat((4-pad.length%4)%4)),c=>c.charCodeAt(0));}
 function plain(o){return o!==null&&typeof o==="object"&&!Array.isArray(o);}
-async function mac(key,text){if(typeof key!=="string"||key.length<32)throw Error("SECRET_NOT_CONFIGURED");const k=await crypto.subtle.importKey("raw",bytes(key),"HMAC",false,["sign"]);return new Uint8Array(await crypto.subtle.sign("HMAC",k,bytes(text)));}
+async function mac(key,text){if(typeof key!=="string"||key.length<32)throw Error("SECRET_NOT_CONFIGURED");const k=await crypto.subtle.importKey("raw",bytes(key),{name:"HMAC",hash:"SHA-256"},false,["sign"]);return new Uint8Array(await crypto.subtle.sign("HMAC",k,bytes(text)));}
 async function verifyMac(key,text,signature){if(typeof key!=="string"||key.length<32)return false;
-  try {const k=await crypto.subtle.importKey("raw",bytes(key),"HMAC",false,["verify"]);return await crypto.subtle.verify("HMAC",k,fromB64(signature),bytes(text));}
+  try {const k=await crypto.subtle.importKey("raw",bytes(key),{name:"HMAC",hash:"SHA-256"},false,["verify"]);return await crypto.subtle.verify("HMAC",k,fromB64(signature),bytes(text));}
   catch{return false;}}
 const fail=(code)=>Object.freeze({ok:false,state:code});
 function describeBody(b){
