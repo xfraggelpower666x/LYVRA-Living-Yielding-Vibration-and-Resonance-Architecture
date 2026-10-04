@@ -109,16 +109,20 @@ export class NativeV3NonceGate {
   const expiryIndex="EXP:"+String(p.expires).padStart(12,"0")+":"+p.key;
   let consumed=false;
   try{
-   await this.state.storage.transaction(async tx=>{
-    if(await tx.get(p.key)!==undefined)return;
-    if(typeof tx.setAlarm!=="function"||typeof tx.getAlarm!=="function")
-      throw Error("TRANSACTIONAL_ALARMS_REQUIRED");
-    await tx.put(p.key,{expires:p.expires});
-    await tx.put(expiryIndex,p.key);
-    const scheduled=await tx.getAlarm();
-    const wanted=p.expires*1000+1000;
-    if(scheduled===null||scheduled>wanted)await tx.setAlarm(wanted);
-    consumed=true;
+   const storage=this.state.storage;
+   if(typeof storage.transaction!=="function"||typeof storage.get!=="function"||
+      typeof storage.put!=="function"||typeof storage.getAlarm!=="function"||
+      typeof storage.setAlarm!=="function")throw Error("SQLITE_STORAGE_API_REQUIRED");
+   // SQLite-backed DO transactions include operations on ctx.storage directly.
+   // The transaction callback's txn object does not expose alarm operations.
+   await storage.transaction(async ()=>{
+     if(await storage.get(p.key)!==undefined)return;
+     await storage.put(p.key,{expires:p.expires});
+     await storage.put(expiryIndex,p.key);
+     const scheduled=await storage.getAlarm();
+     const wanted=p.expires*1000+1000;
+     if(scheduled===null||scheduled>wanted)await storage.setAlarm(wanted);
+     consumed=true;
    });
   }catch{return respond(503,"REPLAY_STORE_UNAVAILABLE");}
   return new Response(JSON.stringify({consumed}),{status:200,
@@ -138,9 +142,11 @@ export class NativeV3NonceGate {
       typeof nonceKey!=="string")throw Error("EXPIRY_INDEX_CORRUPTED");
    const expires=Number(index.slice(4,16));
    if(expires*1000+1000>now){next=expires*1000+1000;break;}
-   await storage.transaction(async tx=>{
-    await tx.delete(index);
-    await tx.delete(nonceKey);
+   await storage.transaction(async ()=>{
+     // Do not delete a nonce if the expiry index was changed by another event.
+     if(await storage.get(index)!==nonceKey)return;
+     await storage.delete(index);
+     await storage.delete(nonceKey);
    });
    processed++;
   }
