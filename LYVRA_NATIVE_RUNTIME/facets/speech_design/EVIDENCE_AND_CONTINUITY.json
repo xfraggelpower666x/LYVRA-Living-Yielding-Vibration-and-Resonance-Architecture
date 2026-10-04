@@ -1,0 +1,152 @@
+{
+  "schema": "LYVRA_SPEECH_DESIGN_DEV_EVIDENCE_v1",
+  "status": "DEV_CANDIDATE_NOT_CURRENT",
+  "date": "2026-10-02",
+  "source": {
+    "official": [
+      {
+        "url": "https://suno.com/blog/introducing-speech-beta",
+        "date": "2026-10-01",
+        "evidence": "speech_plus_soundtrack_together_beta"
+      },
+      {
+        "url": "https://suno.com/release-notes",
+        "date": "2026-10-01",
+        "evidence": "mobile_web_launch"
+      }
+    ],
+    "creator_ui": {
+      "evidence": "three_uploaded_iOS_screenshots",
+      "mode": "Rede",
+      "script_label": "Skript",
+      "script_ui_chars": 5000,
+      "tone_label": "Ton",
+      "tone_ui_chars": 1000,
+      "music_toggle": "Hintergrundmusik an",
+      "source_class": "USER_OBSERVED",
+      "global_contract": false,
+      "main_prompt_present": true,
+      "main_prompt_chars_creator_reported": 2800,
+      "main_prompt_limit_officially_confirmed": false
+    },
+    "community": {
+      "status": "CURRENT_BETA_REPORTS_DIRECTLY_RESEARCHED_NOT_REPLICATED",
+      "as_of": "2026-10-02",
+      "direct_speech": [
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1wve1wx/sunocom_introducing_speech_beta/",
+          "date": "2026-10-02",
+          "claim": "Single commentator reports glitchy diction and common English word mispronunciation",
+          "evidence_level": "ANECDOTAL_SINGLE_REPORT"
+        },
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1wvfh2y/new_feature_speech/",
+          "date": "2026-10-02",
+          "claim": "Early commentators report trouble obtaining narration without background music",
+          "evidence_level": "FEW_UNVERIFIED_REPORTS"
+        }
+      ],
+      "historical_other_models": [
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1uhayxo/unable_to_pronounce/",
+          "claim": "Some Suno music users attempt phonetic spelling for hard words",
+          "transferability": "UNPROVEN_FOR_SPEECH_BETA"
+        },
+        {
+          "url": "https://www.reddit.com/r/SunoAI/comments/1tdnc4o/day_2_of_resharing_my_suno_ai_dirty_tricks/",
+          "claim": "Community tutorial advocates phonetic replacements",
+          "transferability": "UNPROVEN_FOR_SPEECH_BETA"
+        }
+      ],
+      "official_comparison": "Suno publicly acknowledges roaming accents and exaggerated pauses in 2026-10-01 beta announcement",
+      "own_observation_priority": "Creator reported swallowed phonemes; audio file and timestamps pending; no fix yet confirmed",
+      "next_control": "keep script/main/music toggle identical; change tone articulation instruction only; compare output before phonetic edits"
+    }
+  },
+  "native": {
+    "identity": "LYVRA",
+    "whole_revision_at_creation": 242,
+    "track_design_version_at_creation": "v3.4",
+    "track_logical_revision_at_creation": 92,
+    "authority_branch": "lyvra",
+    "inheritance_mode": "CURRENT_REFERENCED_NATIVE_CAPABILITIES_NOT_DUPLICATED_ROOT",
+    "distinct_speech_adaptation": true,
+    "shared_intelligence": [
+      "Track Design",
+      "Lyrics Intelligence",
+      "Renderer Translation",
+      "Analytics",
+      "Music Memory",
+      "Semantic Causal Thinking",
+      "CodeForge Review",
+      "Self-Conductor"
+    ],
+    "direct_trigger": "LYVRA SPEECH DESIGN",
+    "trigger_semantics": "WHOLE_LYVRA_FIRST_THEN_NATIVE_SPEECH_FACET_FOREGROUND",
+    "trigger_authority": "DIRECT_USER_ONLY_NO_WRITE_AUTHORIZATION",
+    "emoji_amplifier": {
+      "source": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+      "inheritance": "SHARED_SEMANTIC_EMOJI_INTELLIGENCE_NOT_DUPLICATED_ROOT",
+      "force_semantics": "FULL_RELEVANCE_INTENSITY_PLACEMENT_BINDING_OMISSION_AUDIT_NOT_FORCED_HIGH_GLYPH_COUNT",
+      "speech_script": "WORD_FIDELITY_DEFAULT_NO_LITERAL_GLYPH_UNTIL_VERIFIED",
+      "speech_tone": "CONTEXTUAL_EMOJI_BINDING_BETA_HYPOTHESIS",
+      "creative_intent_preserved": true
+    }
+  },
+  "output": {
+    "field_count": 3,
+    "script_char_limit_ui": 5000,
+    "tone_char_limit_ui": 1000,
+    "background_music_toggle": true,
+    "no_default_five_box_assumption": true,
+    "main_prompt_char_limit_reported": 2800,
+    "main_prompt_limit_verified_in_live_counter": false,
+    "no_default_two_field_assumption": true
+  },
+  "validation": {
+    "official_source_read": true,
+    "creator_ui_read": true,
+    "real_speech_render": false,
+    "code_syntax_test": false,
+    "studio_interop_proven": false,
+    "model_control_mapping_proven": false,
+    "whole_rehydration": false,
+    "release_candidate": false,
+    "production_promoted": false,
+    "trigger_contract_present": true,
+    "trigger_production_active": false,
+    "emoji_native_contract_inherited": true,
+    "emoji_renderer_functional_pass": false,
+    "creator_audible_observation_received": true,
+    "creator_audible_observation_class": "FIRST_PERSON_REPORT_NO_AUDIO_ASSET_OR_TIMESTAMPS",
+    "articulation_improved_by_instructions": false,
+    "audio_file_directly_audited": false,
+    "current_official_community_triangulation_read": true,
+    "creator_diction_fix_verified": false
+  },
+  "open_work": [
+    "Build and validate bounded speech package assembler",
+    "Run controlled creator-render experiments",
+    "Capture exact output and auditory verdict",
+    "Verify no unsupported v6 control transfer",
+    "Review creative freedom non-shrinkage and Track Design inheritance",
+    "Re-evaluate native pointer/fingerprint/manifest before promotion",
+    "Controlled emoji-on vs emoji-off speech tone and spoken script experiments before audio claim",
+    "Collect example words plus timestamps from production 001 for articulation triage; assess against audio and controlled Tone A/B.",
+    "Refresh contemporary Suno Speech community evidence alongside own listening whenever beta production defects recur; record date, sources, uncertainties."
+  ],
+  "creator_listening_feedback": {
+    "date": "2026-10-02",
+    "project": "THE FRAGGLE DYNASTY — THE ORIGIN OF OUR DNA",
+    "report": "Some consonants, syllables or whole word endings are swallowed, with unnatural-sounding pronunciation.",
+    "evidence_type": "CREATOR_AUDIT_REPORT_DURING_LISTENING",
+    "quality_status": "ISSUE_REPORTED_NOT_AUDIO_FORENSICALLY_VERIFIED",
+    "suspected_causes_not_proven": [
+      "Speech beta diction instability",
+      "high narrative density / rapid sentence cadence",
+      "music-to-voice balance",
+      "name, number and invented term pronunciations"
+    ],
+    "trial": "Keep Script and Main Prompt identical, vary Tone toward complete consonants and syllables, slower unhurried clarity; compare actual result."
+  }
+}

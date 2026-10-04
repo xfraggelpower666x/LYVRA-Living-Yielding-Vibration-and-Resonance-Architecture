@@ -1,0 +1,114 @@
+{
+  "schema": "LYVRA_RELEASE_PROPAGATION_MATRIX_v1",
+  "status": "DEV_REVIEW_CANDIDATE_NOT_CURRENT",
+  "observed_date": "2026-10-02",
+  "authority_branch": "lyvra",
+  "authority_head_at_capture": "89db0978d0f62660986d27efd1d2005265811448",
+  "whole_rev_at_capture": 242,
+  "trigger": "EVERY_MATERIALLY_RELEVANT_DEVELOPMENT",
+  "decider": "LYVRA_ONLY",
+  "rule": "CHECK_ALL_CURRENT_TARGETS_EACH_CHANGE_PROMOTE_ONLY_AFFECTED_WITH_PROOF",
+  "targets": [
+    {
+      "key": "PLUGIN_A",
+      "label": "LYVRA plugin v0.13.0",
+      "backend_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "observed_version": "0.13.0",
+      "observed_release_id": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+      "observed_files": 30,
+      "visibility": "USER_PRIVATE",
+      "default_review": "REQUIRED_FOR_NATIVE_SKILL_OR_SURFACE_IMPACT",
+      "release_updated": false,
+      "readback_status": "BASELINE_ONLY_NOT_CHANGED"
+    },
+    {
+      "key": "PLUGIN_B",
+      "label": "LYVRA Native Runtime",
+      "backend_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "observed_version": "0.1.1",
+      "observed_release_id": "pluginrel_6abef83a76ec81918a62d300eb250430",
+      "observed_files": 10,
+      "visibility": "USER_PRIVATE",
+      "default_review": "REQUIRED_FOR_NATIVE_SKILL_OR_SYSTEMSTART_IMPACT",
+      "release_updated": false,
+      "readback_status": "BASELINE_ONLY_NOT_CHANGED"
+    },
+    {
+      "key": "LYVRA_GPT",
+      "label": "official LYVRA Custom GPT",
+      "url": "https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a",
+      "default_review": "REQUIRED_IF_INSTRUCTIONS_KNOWLEDGE_ACTIONS_OR_PRESENTATION_AFFECTED",
+      "release_updated": false,
+      "readback_status": "GPT_BUILDER_NOT_CONNECTED_FOR_UPDATE"
+    },
+    {
+      "key": "WEBLYVRA",
+      "label": "WebLYVRA site",
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "default_review": "CONDITIONAL_WHEN_PUBLIC_SITE_EXPLANATION_UI_LINKS_OR_DEPLOYMENT_AFFECTED",
+      "release_updated": false,
+      "readback_status": "NO_DEPLOYMENT_PERFORMED"
+    },
+    {
+      "key": "DISCORD_CHARACTER_BOT",
+      "label": "LYVRA Discord Character Bot",
+      "repository": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+      "authoritative_product_branch": "lyvrabot",
+      "observed_product_commit": "cc43d77a09452f43fb5d6814513e35484ffe596c",
+      "observed_repository_state": "LEGACY_v1.7.1_IMPORT_BOOTSTRAP_ONLY_NO_MAIN_PROGRAM",
+      "development_branch": "lyvrabot-dev-native-livecircle-20261002",
+      "default_review": "CONDITIONAL_WHEN_NATIVE_CHARACTER_FACETS_RELATIONS_LIVECIRCLE_OR_DISCORD_BEHAVIOR_CHANGES",
+      "release_updated": false,
+      "readback_status": "DEV_SOURCE_READBACK_PASS_CI_SUCCESS_PRODUCTION_NOT_DEPLOYED",
+      "bot_runtime_deployed": false,
+      "bot_native_authority": false,
+      "privacy_rule": "NO_PRIVATE_RELATIONAL_PAYLOAD_IN_PUBLIC_GIT",
+      "risk": "LEGACY_DRIVE_WORKFLOW_RSYNC_DELETE_MUST_NOT_BE_RETRIGGERED",
+      "staged_features": [
+        "native_public_readonly_source",
+        "local_LiveCircle_evidence",
+        "per_guild_channel_conversation_session_15min",
+        "owner_only_voice_join_leave_no_audio_capture",
+        "owner_only_forget_and_bot_message_guard"
+      ],
+      "external_voice_references_audited": true,
+      "third_party_archives_reused_as_executable_code": false,
+      "ci": {
+        "workflow": "LYVRA Native LiveCircle Adapter Checks",
+        "run_id": 36955279889,
+        "commit": "a98f4cd61899bee03c16465188d3a1da579ff1b6",
+        "result": "SUCCESS",
+        "tests": "offline unittest and compileall",
+        "whole_rehydration_verified": false,
+        "discord_live_deploy_verified": false
+      }
+    }
+  ],
+  "pending_merged_work": [
+    {
+      "kind": "CODEFORGE_CROSS_AUDIT",
+      "pr": 8
+    },
+    {
+      "kind": "TRACK_PLUGIN_ASSEMBLY_AND_SYSTEMSTART",
+      "pr": 9
+    },
+    {
+      "kind": "SPEECH_DESIGN_EMOJI",
+      "pr": 10
+    }
+  ],
+  "verification_flags": {
+    "all_targets_identified": true,
+    "both_plugin_baselines_direct_read": true,
+    "gpt_builder_live_edit": false,
+    "web_live_deployment": false,
+    "native_pointer_changed": false,
+    "production_promoted": false,
+    "discord_bot_added_as_fifth_target": true,
+    "discord_bot_productive_deployed": false,
+    "bot_legacy_runtime_missing": true,
+    "discord_bot_dev_ci_success": true,
+    "discord_bot_current_runtime_not_deployed": true
+  }
+}
