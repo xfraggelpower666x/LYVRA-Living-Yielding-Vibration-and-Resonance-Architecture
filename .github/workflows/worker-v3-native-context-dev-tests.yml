@@ -64,3 +64,50 @@ jobs:
             exit 1
           fi
           echo "WRANGLER_BUNDLE_DRY_RUN=PASS; DEPLOYMENT=FALSE"
+
+      - name: Isolated loopback Wrangler SQLite Durable Object integration (never deploy)
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          test ! -e .dev.vars
+          CLIENT="$(openssl rand -hex 40)"
+          TICKET="$(openssl rand -hex 40)"
+          export CI_NATIVE_V3_CLIENT_SECRET="$CLIENT"
+          printf 'NATIVE_V3_CLIENT_SECRET=%s\nNATIVE_V3_TICKET_SECRET=%s\n' "$CLIENT" "$TICKET" > .dev.vars
+          cat > .wrangler-v3-ci.toml <<'TOML'
+          name = "lyvrasystem-v3-ci-local-only"
+          main = "worker-runtime-adapter.js"
+          compatibility_date = "2026-04-09"
+          workers_dev = false
+          [vars]
+          WORKER_SCOPE = "MAIN_PERSONAL_ONLY"
+          PORTABLE_WORKER_BINDING = "DISABLED"
+          NATIVE_V3_ENABLED = "true"
+          [[durable_objects.bindings]]
+          name = "NATIVE_V3_NONCES"
+          class_name = "NativeV3NonceGate"
+          [[migrations]]
+          tag = "ci-new-sqlite-nonce-gate"
+          new_sqlite_classes = ["NativeV3NonceGate"]
+          TOML
+          cleanup() {
+            if [[ -n "${SERVER_PID:-}" ]]; then kill "$SERVER_PID" 2>/dev/null || true; wait "$SERVER_PID" 2>/dev/null || true; fi
+            rm -f .dev.vars .wrangler-v3-ci.toml
+          }
+          trap cleanup EXIT
+          npx --yes wrangler@4.111.0 dev --local --config .wrangler-v3-ci.toml --ip 127.0.0.1 --port 8789 > /tmp/lyvra-v3-local-test.log 2>&1 &
+          SERVER_PID=$!
+          ready=false
+          for i in $(seq 1 35); do
+            if curl --silent --fail --max-time 1 http://127.0.0.1:8789/health >/dev/null; then ready=true; break; fi
+            if ! kill -0 "$SERVER_PID" 2>/dev/null; then break; fi
+            sleep 1
+          done
+          if [[ "$ready" != "true" ]]; then
+            echo "::error::Local-only Wrangler DO worker did not start"
+            tail -n 45 /tmp/lyvra-v3-local-test.log
+            exit 1
+          fi
+          node worker-v3-local-smoke.mjs
+          echo "LOCAL_DURABLE_OBJECT_INTEGRATION=PASS; NO_DEPLOYMENT=TRUE"
