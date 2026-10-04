@@ -105,3 +105,44 @@ test("stale verify timestamp is rejected",async()=>{
  "x-lyvra-timestamp":String(timestamp),"x-lyvra-nonce":nonce,"x-lyvra-proof":p}),env());
  assert.equal(r.status,403);assert.equal((await r.json()).state,"CLIENT_NOT_AUTHENTICATED");
 });
+
+test("replayed signed verify request fails after first successful verification",async()=>{
+ const replay=nonceStore(),data=body();
+ const issued=await handleNativeV3Route(req("/v3/native-evidence",data,await signedHeaders(data)),
+  env({NATIVE_V3_NONCES:replay}));
+ assert.equal(issued.status,200);
+ const ticket=(await issued.json()).ticket;
+ const verifyBody={ticket,expectedEnvelope:data.envelope,expectedPurpose:"BOOT"};
+ const at=Math.floor(Date.now()/1000);
+ const proof=await makeNativeClientProof({path:"/v3/verify-native-evidence",timestamp:at,
+   nonce,body:verifyBody,clientSecret:client});
+ const headers={"x-lyvra-timestamp":String(at),"x-lyvra-nonce":nonce,"x-lyvra-proof":proof};
+ const first=await handleNativeV3Route(req("/v3/verify-native-evidence",verifyBody,headers),
+  env({NATIVE_V3_NONCES:replay}));
+ const second=await handleNativeV3Route(req("/v3/verify-native-evidence",verifyBody,headers),
+  env({NATIVE_V3_NONCES:replay}));
+ assert.equal(first.status,200);
+ assert.equal(second.status,403);
+ assert.equal((await second.json()).state,"REPLAY_DETECTED");
+});
+test("verify fails closed without nonce store even for a valid signed ticket",async()=>{
+ const replay=nonceStore(),data=body();
+ const issued=await handleNativeV3Route(req("/v3/native-evidence",data,await signedHeaders(data)),
+  env({NATIVE_V3_NONCES:replay}));
+ const ticket=(await issued.json()).ticket;
+ const verifyBody={ticket,expectedEnvelope:data.envelope,expectedPurpose:"BOOT"};
+ const at=Math.floor(Date.now()/1000);
+ const proof=await makeNativeClientProof({path:"/v3/verify-native-evidence",timestamp:at,
+   nonce,body:verifyBody,clientSecret:client});
+ const response=await handleNativeV3Route(req("/v3/verify-native-evidence",verifyBody,
+ {"x-lyvra-timestamp":String(at),"x-lyvra-nonce":nonce,"x-lyvra-proof":proof}),env());
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).state,"ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
+});
+test("nonce gate refuses an invalid verification-prefixed key",async()=>{
+ const gate=new NativeV3NonceGate({storage:{transaction:async()=>{throw Error("should not persist");}}});
+ const body={key:"LYVRA:V:bad",expires:Math.floor(Date.now()/1000)+90};
+ const r=await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}));
+ assert.equal(r.status,400);
+});
