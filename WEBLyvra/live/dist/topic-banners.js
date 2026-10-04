@@ -5,6 +5,14 @@
   link.href='topic-banners.css';
   document.head.appendChild(link);
   function boot(){
+    // Avoid the legacy standalone intro video: it leaves a giant black rectangle
+    // when Safari does not paint a decoded frame. The two topic videos replace it.
+    const oldIntro = document.getElementById('lyvra-video-loop');
+    if (oldIntro) {
+      const oldVideo = oldIntro.querySelector('video');
+      if (oldVideo) { oldVideo.pause(); oldVideo.removeAttribute('autoplay'); oldVideo.preload = 'none'; }
+      oldIntro.style.setProperty('display', 'none', 'important');
+    }
     const sections=[...document.querySelectorAll('main > section[id]')];
     if(!sections.length)return;
     const markers=sections.map(section=>{
