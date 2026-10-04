@@ -1,6 +1,6 @@
 import baseWorker from "./worker.js";
 import {handleNativeV3Route} from "./worker-v3-route.mjs";
-export {NativeV3NonceGate} from "./worker-v3-route.mjs";
+export {NativeV3NonceGate} from "./worker-v3-do.mjs";
 
 const CAPABILITY_REVISION = "FOREGROUND_RECOVERY_CONTEXT_V1";
 const MAX_CONTEXT_VALUE = 160;
