@@ -47,8 +47,13 @@ test("valid v3 ticket verifies against the exact native context",async()=>{
  env({NATIVE_V3_NONCES:replay}));
  assert.equal(issued.status,200);
  const v=await issued.json();assert.equal(v.state,"SIGNED_NATIVE_CONTEXT_CLAIM");assert.equal(v.native_rehydration_verified_by_worker,false);
- const checked=await handleNativeV3Route(req("/v3/verify-native-evidence",{
- ticket:v.ticket,expectedEnvelope:data.envelope,expectedPurpose:"BOOT"}),env({NATIVE_V3_NONCES:replay}));
+ const verifyBody={ticket:v.ticket,expectedEnvelope:data.envelope,expectedPurpose:"BOOT"};
+ const verifyTime=Math.floor(Date.now()/1000);
+ const verifyProof=await makeNativeClientProof({path:"/v3/verify-native-evidence",timestamp:verifyTime,
+   nonce,body:verifyBody,clientSecret:client});
+ const checked=await handleNativeV3Route(req("/v3/verify-native-evidence",verifyBody,{
+ "x-lyvra-timestamp":String(verifyTime),"x-lyvra-nonce":nonce,"x-lyvra-proof":verifyProof
+ }),env({NATIVE_V3_NONCES:replay}));
  assert.equal(checked.status,200);assert.equal((await checked.json()).state,"NATIVE_CONTEXT_TICKET_VERIFIED");
 });
 test("replayed native nonce rejected by atomic store",async()=>{
@@ -77,4 +82,26 @@ test("object transaction prevents duplicate tickets in serial backend",async()=>
  method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}));
  const a=await(await make()).json(),b=await(await make()).json();
  assert.equal(a.consumed,true);assert.equal(b.consumed,false);
+});
+
+test("verify endpoint rejects absent client HMAC proof",async()=>{
+ const payload={ticket:"fake.ticket.value",expectedEnvelope:body().envelope,expectedPurpose:"BOOT"};
+ const r=await handleNativeV3Route(req("/v3/verify-native-evidence",payload),env());
+ assert.equal(r.status,403);assert.equal((await r.json()).state,"CLIENT_NOT_AUTHENTICATED");
+});
+test("issue proof cannot be replayed at verify path",async()=>{
+ const payload={ticket:"fake.ticket.value",expectedEnvelope:body().envelope,expectedPurpose:"BOOT"};
+ const timestamp=Math.floor(Date.now()/1000);
+ const other=await makeNativeClientProof({timestamp,nonce,body:payload,clientSecret:client,path:"/v3/native-evidence"});
+ const r=await handleNativeV3Route(req("/v3/verify-native-evidence",payload,{
+ "x-lyvra-timestamp":String(timestamp),"x-lyvra-nonce":nonce,"x-lyvra-proof":other}),env());
+ assert.equal(r.status,403);assert.equal((await r.json()).state,"CLIENT_NOT_AUTHENTICATED");
+});
+test("stale verify timestamp is rejected",async()=>{
+ const payload={ticket:"fake.ticket.value",expectedEnvelope:body().envelope,expectedPurpose:"BOOT"};
+ const timestamp=Math.floor(Date.now()/1000)-70;
+ const p=await makeNativeClientProof({timestamp,nonce,body:payload,clientSecret:client,path:"/v3/verify-native-evidence"});
+ const r=await handleNativeV3Route(req("/v3/verify-native-evidence",payload,{
+ "x-lyvra-timestamp":String(timestamp),"x-lyvra-nonce":nonce,"x-lyvra-proof":p}),env());
+ assert.equal(r.status,403);assert.equal((await r.json()).state,"CLIENT_NOT_AUTHENTICATED");
 });
