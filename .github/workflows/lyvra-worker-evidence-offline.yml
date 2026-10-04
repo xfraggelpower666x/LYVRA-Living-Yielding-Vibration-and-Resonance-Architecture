@@ -12,6 +12,8 @@ on:
       - "LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs"
       - "LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.mjs"
       - "LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.test.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.test.mjs"
   workflow_dispatch:
 
 permissions:
@@ -32,7 +34,7 @@ jobs:
         run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v
 
       - name: Canonical native context regression tests (Node 22)
-        run: node --test LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.test.mjs
+        run: node --test LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.test.mjs
 
       - name: Read-only public Worker reachability (non-gating)
         run: python LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py
