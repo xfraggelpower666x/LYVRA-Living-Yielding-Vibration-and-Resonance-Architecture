@@ -80,3 +80,30 @@ PRODUCTION_DEPLOYMENT=NONE
 AUTO_SYSTEMSTART_WIRING=NONE
 
 The next gated implementation is secure client authentication + versioned Worker endpoint and independent snapshot verification, with full compatibility/replay/rollback acceptance. Do not merge solely based on schema and digest tests.
+
+
+## Read-only host bridge DEV increment — 2026-10-04
+
+Added `LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.mjs` plus `worker-native-bridge.test.mjs`.
+The bridge requires an externally verified native GitHub readback flag and structurally
+valid canonical envelope before making any HTTP request. It calls **only** public
+`GET /v2/authority-root?system=LYVRA` using bounded response and timeout rules.
+It checks LYVRA namespace, authority context, MAIN_PERSONAL scope, execution host,
+non-ownership and failure policy. Network/HTTP/response failures do not erase
+native-rehydration evidence, grant fallback authority, or claim signed proof.
+No ticket generation, secrets, authentication, Cloudflare mutation or GitHub CURRENT mutation.
+The `nativeReadbackVerified` flag MUST be derived from the independent trusted native
+caller; passing it is not proof by itself and the bridge is not auto-installed in host.
+
+GitHub Actions run 37238757278: SUCCESS, 13/13 Node tests and 5/5 Python tests.
+Read-only public Worker health/authority GET checks passed in that run.
+All tests are DEV evidence. **No end-to-end host startup hook and no signed native-context
+roundtrip are established.** The earlier security and provider ownership gates remain.
+
+DEV_READONLY_BRIDGE=IMPLEMENTED_TESTED
+NODE_REGRESSIONS=13_PASS
+PYTHON_REGRESSIONS=5_PASS
+PUBLIC_WORKER_READONLY=PASS_AT_RUN_37238757278
+HOST_AUTO_WIRING=NOT_VERIFIED
+SIGNED_GITHUB_COMMITMENT=NOT_IMPLEMENTED
+DEPLOYMENT_EXECUTED=FALSE
