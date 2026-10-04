@@ -15,7 +15,7 @@
 
 <style id="lyvra-video-loop-style">
 /* WEBLyvra: isolated centered silent continuous animation */
-#lyvra-video-loop{display:flex;align-items:center;justify-content:center;width:100%;padding:clamp(12px,3vw,36px) 16px;background:#070911}
+#lyvra-video-loop{display:none;align-items:center;justify-content:center;width:100%;padding:clamp(12px,3vw,36px) 16px;background:#070911}\n#lyvra-video-loop.is-playing{display:flex}
 #lyvra-video-loop video{display:block;width:min(100%,676px);height:auto;object-fit:contain;border-radius:18px;box-shadow:0 0 38px rgba(139,45,255,.24)}
 </style>
 </head>
@@ -30,7 +30,17 @@
   <button class="menu" aria-controls="navigation" aria-expanded="false" aria-label="Menü öffnen"><span></span><span></span></button></div>
 </header>
 <main id="main">
-<div id="lyvra-video-loop" role="region" aria-label="LYVRA visual animation"><video autoplay muted loop playsinline preload="metadata" width="676" height="512" aria-label="LYVRA visual loop"><source src="assets/lyvra-visual-loop.mp4" type="video/mp4"></video></div>
+<div id="lyvra-video-loop" role="region" aria-label="LYVRA visual animation"><video autoplay muted loop playsinline preload="metadata" width="676" height="512" aria-label="LYVRA visual loop"><source src="assets/lyvra-visual-loop.mp4" type="video/mp4"></video></div><script>
+(() => {
+  const frame = document.getElementById('lyvra-video-loop');
+  const video = frame?.querySelector('video');
+  if (!video) return;
+  video.addEventListener('playing', () => frame.classList.add('is-playing'));
+  video.addEventListener('error', () => frame.classList.remove('is-playing'));
+  video.querySelector('source')?.addEventListener('error', () => frame.classList.remove('is-playing'));
+  video.addEventListener('pause', () => frame.classList.remove('is-playing'));
+})();
+</script>
 <div class="site-banner"><img src="assets/header-universe.webp" alt="LYVRA — A Living Digital Universe" width="2048" height="682" fetchpriority="high"></div>
 <section id="home" class="hero">
   <div class="hero-art" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
