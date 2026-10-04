@@ -16,10 +16,24 @@ function req(path="/v3/native-evidence",data=body(),extra={}) {return new Reques
  method:"POST",headers:{"content-type":"application/json",...extra},body:JSON.stringify(data)});}
 function env(overrides={}) {return {NATIVE_V3_ENABLED:"true",NATIVE_V3_CLIENT_SECRET:client,
  NATIVE_V3_TICKET_SECRET:signer,...overrides};}
-function nonceStore(){const seen=new Map();const storage={transaction:async fn=>fn({get:async key=>seen.get(key),
- put:async(key,value)=>{seen.set(key,value);}})};
- const gate=new NativeV3NonceGate({storage});
- return {idFromName:name=>name,get:()=>({fetch:(url,options)=>gate.fetch(new Request(url,options))})};}
+function makeMockDOStorage(){
+ const seen=new Map();let alarm=null;
+ const storage={
+  transaction:async fn=>fn({
+   get:async key=>seen.get(key),
+   put:async(key,value)=>{seen.set(key,value);},
+   delete:async key=>seen.delete(key),
+   getAlarm:async()=>alarm,setAlarm:async ms=>{alarm=ms;}
+  }),
+  list:async({prefix,limit})=>new Map([...seen].filter(([key])=>key.startsWith(prefix)).sort((a,b)=>a[0].localeCompare(b[0])).slice(0,limit)),
+  setAlarm:async ms=>{alarm=ms;},getAlarm:async()=>alarm,
+  snapshot:()=>new Map(seen)
+ };
+ return storage;
+}
+function nonceStore(){const storage=makeMockDOStorage();const gate=new NativeV3NonceGate({storage});
+ return {idFromName:name=>name,get:()=>({fetch:(url,options)=>gate.fetch(new Request(url,options))}),
+   storage,gate};}
 async function signedHeaders(data=body(),now=Math.floor(Date.now()/1000)){
  return {"x-lyvra-timestamp":String(now),"x-lyvra-nonce":nonce,
  "x-lyvra-proof":await makeNativeClientProof({timestamp:now,nonce,body:data,clientSecret:client})};}
@@ -75,8 +89,7 @@ test("a missing binding never becomes writable fallback",async()=>{
  assert.equal(x.status,503);
 });
 test("object transaction prevents duplicate tickets in serial backend",async()=>{
- const storage=new Map();const gate=new NativeV3NonceGate({storage:{transaction:async cb=>cb({
- get:async key=>storage.get(key),put:async(key,value)=>storage.set(key,value)})}});
+ const storage=makeMockDOStorage();const gate=new NativeV3NonceGate({storage});
  const body={key:"LYVRA:"+nonce,expires:Math.floor(Date.now()/1000)+90};
  const make=()=>gate.fetch(new Request("https://native-v3-internal/consume",{
  method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}));
@@ -145,4 +158,37 @@ test("nonce gate refuses an invalid verification-prefixed key",async()=>{
  const r=await gate.fetch(new Request("https://native-v3-internal/consume",{
  method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}));
  assert.equal(r.status,400);
+});
+
+test("transactional nonce store creates expiry index and schedules cleanup alarm",async()=>{
+ const storage=makeMockDOStorage(),gate=new NativeV3NonceGate({storage});
+ const expires=Math.floor(Date.now()/1000)+90,key="LYVRA:"+nonce;
+ const r=await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+ assert.equal((await r.json()).consumed,true);
+ assert.equal(storage.snapshot().get(key).expires,expires);
+ assert.ok([...storage.snapshot().keys()].some(x=>x.startsWith("EXP:")));
+ assert.equal(await storage.getAlarm(),expires*1000+1000);
+});
+test("alarm keeps unexpired nonces and deletes once expired",async()=>{
+ const storage=makeMockDOStorage(),gate=new NativeV3NonceGate({storage});
+ const expires=Math.floor(Date.now()/1000)+80,key="LYVRA:"+nonce;
+ await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+ const before=await gate.alarm();
+ assert.equal(before.processed,0);assert.ok(storage.snapshot().has(key));
+ // Emulate a scheduled alarm firing after expiration without wall-clock waits.
+ const realNow=Date.now; Date.now=()=>expires*1000+2000;
+ try{const after=await gate.alarm();assert.equal(after.processed,1);}
+ finally{Date.now=realNow;}
+ assert.equal(storage.snapshot().has(key),false);
+ assert.equal([...storage.snapshot().keys()].filter(x=>x.startsWith("EXP:")).length,0);
+});
+test("storage lacking transactional alarms is fail-closed",async()=>{
+ const gate=new NativeV3NonceGate({storage:{transaction:async fn=>fn({
+ get:async()=>undefined,put:async()=>{}})}});
+ const expires=Math.floor(Date.now()/1000)+90;
+ const r=await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key:"LYVRA:"+nonce,expires})}));
+ assert.equal(r.status,503);assert.equal((await r.json()).state,"REPLAY_STORE_UNAVAILABLE");
 });
