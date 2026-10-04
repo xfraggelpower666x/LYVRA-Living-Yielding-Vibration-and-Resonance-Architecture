@@ -45,6 +45,22 @@ assert.equal(twice.payload.state,"REPLAY_DETECTED");
 const bad=await post("/v3/native-evidence",{...data,purpose:"RECOVERY"},now,auth);
 assert.equal(bad.status,403,JSON.stringify(bad.payload));
 assert.equal(bad.payload.state,"CLIENT_NOT_AUTHENTICATED");
+const raceNonce=randomBytes(24).toString("base64url");
+const raceEnvelope={...envelope,request_nonce:raceNonce};
+const raceData={purpose:"BOOT",envelope:raceEnvelope};
+const raceAt=Math.floor(Date.now()/1000);
+const raceProof=await makeNativeClientProof({timestamp:raceAt,nonce:raceNonce,body:raceData,clientSecret:client});
+const race=await Promise.all(Array.from({length:32},async()=>{
+ const r=await fetch(base+"/v3/native-evidence",{method:"POST",headers:{
+ "content-type":"application/json","x-lyvra-timestamp":String(raceAt),
+ "x-lyvra-nonce":raceNonce,"x-lyvra-proof":raceProof},
+ body:JSON.stringify(raceData),signal:AbortSignal.timeout(10000)});
+ return {status:r.status,data:await r.json()};
+}));
+assert.equal(race.filter(x=>x.status===200).length,1,"exactly one local DO issuance is required");
+assert.equal(race.filter(x=>x.status===403&&x.data.state==="REPLAY_DETECTED").length,31,
+ "other concurrent identical requests must be blocked atomically");
+console.log("LOCAL_SQLITE_DO_32_PARALLEL_NONCE_RACE=PASS");
 console.log("LOCAL_WRANGLER_DO_ISSUE_VERIFY_REPLAY=PASS");
 console.log("LOCAL_WORKER_NATIVE_GITHUB_READBACK=NOT_VERIFIED");
 console.log("PRODUCTION_DEPLOYMENT=FALSE");
