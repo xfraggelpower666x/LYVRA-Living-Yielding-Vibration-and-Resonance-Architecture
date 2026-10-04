@@ -38,7 +38,7 @@ test("invalid hash, missing nonce and unexpected fields rejected",()=>{
  }
  const x=envelope();x.extra="a";assert.throws(()=>validateNativeEnvelope(x),/ENVELOPE_SCHEMA_INVALID/);
 });
-test("NOT_APPLICABLE is explicit per domain, not silent",()=>{
+test("unjustified NOT_APPLICABLE is rejected",()=>{
  const a=envelope();a.domain_coverage.CURRENT_TRACK_REFERENCES="NOT_APPLICABLE";
- assert.doesNotThrow(()=>validateNativeEnvelope(a));
+ assert.throws(()=>validateNativeEnvelope(a),/DOMAIN_NOT_VERIFIED/);
 });
