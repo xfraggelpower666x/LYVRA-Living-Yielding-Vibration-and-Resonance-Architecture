@@ -1,0 +1,5 @@
+/* LYVRA animated topic boundaries: centered in the visible stage. */
+.lyvra-topic-banner{width:100%;max-width:100%;margin-inline:auto;padding:16px clamp(12px,2vw,28px);display:flex;justify-content:center;align-items:center;overflow:hidden;background:#070911;pointer-events:none}
+.lyvra-topic-banner video{display:block;width:min(100%,832px);height:auto;aspect-ratio:832/464;object-fit:contain;border:0;pointer-events:none}
+@media(max-width:700px){.lyvra-topic-banner{padding:10px 8px}}
+@media(prefers-reduced-motion:reduce){.lyvra-topic-banner video{animation:none}}

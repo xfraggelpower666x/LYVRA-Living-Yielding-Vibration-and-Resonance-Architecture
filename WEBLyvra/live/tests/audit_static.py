@@ -22,6 +22,10 @@ for path in web.rglob('*.html'):
     assert all('alt' in im and im.get('width') and im.get('height') for im in page.images)
     assert all('noopener' in a.get('rel','') and 'noreferrer' in a.get('rel','') for a in page.links if a.get('target')=='_blank')
     parsed[path]=page
+# Topic transition videos are release-required assets; an HTML-only build is insufficient.
+for name in ('topic-banner-start.mp4', 'topic-banner-end.mp4'):
+    item=web/'assets'/name
+    assert item.is_file() and item.stat().st_size>1000, f'Missing topic animation: {name}'
 main=parsed[web/'index.html'];privacy=parsed[web/'privacy/index.html']
 assert all(i in main.ids for i in ['home','identity','universe','sound','lab','world','radio','evolution','lyvra-system-evolution','lyvra-chat-demo'])
 assert len(main.frames)==2 and not privacy.frames
