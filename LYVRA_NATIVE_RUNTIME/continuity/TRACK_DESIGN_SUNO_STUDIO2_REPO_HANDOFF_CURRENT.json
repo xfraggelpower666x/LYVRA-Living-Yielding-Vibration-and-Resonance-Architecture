@@ -104,10 +104,26 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
+    "epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
+    "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
+    "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "expected_track_revision": 92,
+    "mismatch_policy": "STALE_NE_CURRENT"
+  },
+  "historical_freshness_before_currentness_reconciliation": {
     "epoch": "2026-10-01-REV92-U4-NEWCHAT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 92,
     "mismatch_policy": "STALE_NE_CURRENT"
+  },
+  "currentness_reconciliation": {
+    "lifecycle": "DEV_CANDIDATE",
+    "base_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "backup_branch": "lyvra-backup-pre-currentness-20261003-0112",
+    "active_music_handoff_preserved": true,
+    "foreground_activation": false,
+    "private_recovery": "OPEN_NOT_REQUESTED",
+    "whole_rehydration": "PARTIAL"
   }
 }

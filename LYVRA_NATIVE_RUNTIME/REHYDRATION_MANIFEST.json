@@ -1,6 +1,6 @@
 {
   "name": "LYVRA Whole Rehydration Manifest",
-  "status": "CURRENT_PRODUCTIVE_REHYDRATION_RECOVERY_PASS",
+  "status": "DEV_CURRENTNESS_RECONCILIATION_PRIVATE_RECOVERY_OPEN",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
@@ -75,7 +75,8 @@
     ],
     "REACHABLE_LANDSCAPE": [
       "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md",
-      "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md"
+      "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md",
+      "LYVRA_NATIVE_RUNTIME/current/landscape/REACHABLE_LANDSCAPE.json"
     ],
     "PROVENANCE_SUPERSESSION": [
       "LYVRA_NATIVE_RUNTIME/current/provenance/PROVENANCE_SUPERSESSION.md"
@@ -255,5 +256,18 @@
     "no_new_track_revision": true,
     "freshness_epoch": "2026-10-01-REV92-U3",
     "codeforge_review": "PASS_25_OF_25_ZERO_MISMATCH"
+  },
+  "historical_status_before_reconciliation": "CURRENT_PRODUCTIVE_REHYDRATION_RECOVERY_PASS",
+  "currentness_reconciliation": {
+    "lifecycle": "DEV_CANDIDATE",
+    "base_productive_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "freshness_epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
+    "critical_carrier_count": 28,
+    "fingerprint_registry_blob_sha": "1a8d670d6735b8baa83e2bfb27ac43490fcfc020",
+    "domain_order_preserved": true,
+    "private_recovery": "OPEN_NOT_REQUESTED",
+    "whole_rehydration": "PARTIAL",
+    "historical_pass_ne_session_pass": true,
+    "productive_promotion": false
   }
 }

@@ -166,5 +166,23 @@
   },
   "next_track_rule": "FRESH_CLEAN_CIRCLE_WITH_REV86_MEMORY_NOT_MASTERS_RECYCLING",
   "migration_open": false,
-  "validation_note": "Registry contains current and historically critical reference anchors and learned relations. REV86 supersedes REV85 as current Track Design while REV85 render evidence remains provenance. Full raw payloads remain in provenance sources; repo stores current causal meaning rather than duplicating every historical prompt."
+  "validation_note": "Registry contains current and historically critical reference anchors and learned relations. REV86 supersedes REV85 as current Track Design while REV85 render evidence remains provenance. Full raw payloads remain in provenance sources; repo stores current causal meaning rather than duplicating every historical prompt.",
+  "currentness_supersession": {
+    "status": "DEV_CANDIDATE_DIRECT_READBACK_REQUIRED",
+    "authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+    "whole_revision": 242,
+    "track_revision": 92,
+    "verified_base_commit": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+    "supersedes_live_interpretation_of": [
+      "status",
+      "track_design.logical_revision",
+      "next_track_rule",
+      "validation_note"
+    ],
+    "reference_source_revisions_preserved": true,
+    "real_track_validation_pass": false,
+    "freshness_epoch": "2026-10-03-REV92-CURRENTNESS-DEV-0112",
+    "session_whole_rehydration": "PARTIAL",
+    "private_recovery": "OPEN_NOT_REQUESTED"
+  }
 }
