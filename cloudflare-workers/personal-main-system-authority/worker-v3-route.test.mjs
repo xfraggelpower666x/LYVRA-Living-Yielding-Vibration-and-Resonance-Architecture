@@ -232,3 +232,33 @@ test("failed alarm write atomically rolls back nonce and its expiry index",async
  assert.equal(r.status,503);
  assert.equal(storage.snapshot().size,0);
 });
+
+test("expiry alarm preserves earlier alarm added concurrently by a new issuance",async()=>{
+ const storage=makeMockDOStorage(),gate=new NativeV3NonceGate({storage});
+ const expires=Math.floor(Date.now()/1000)+80,key="LYVRA:"+nonce;
+ const response=await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+ assert.equal(response.status,200);
+ const earlier=expires*1000-5000;
+ const originalList=storage.list;
+ storage.list=async args=>{
+   const rows=await originalList(args);
+   // Simulate a different issuance changing the current DO alarm during the scan.
+   await storage.setAlarm(earlier);
+   return rows;
+ };
+ const result=await gate.alarm();
+ assert.equal(result.processed,0);
+ assert.equal(await storage.getAlarm(),earlier);
+ assert.equal(storage.snapshot().has(key),true);
+});
+test("expiry alarm replaces an obsolete elapsed alarm with next live expiry",async()=>{
+ const storage=makeMockDOStorage(),gate=new NativeV3NonceGate({storage});
+ const expires=Math.floor(Date.now()/1000)+80,key="LYVRA:"+nonce;
+ await gate.fetch(new Request("https://native-v3-internal/consume",{
+ method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({key,expires})}));
+ await storage.setAlarm(Date.now()-10000);
+ const result=await gate.alarm();
+ assert.equal(result.processed,0);
+ assert.equal(await storage.getAlarm(),expires*1000+1000);
+});
