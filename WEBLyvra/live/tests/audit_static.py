@@ -33,6 +33,7 @@ boot=boot_js.read_text()
 assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Boot module not imported'
 assert all(x in boot for x in ('CONNECT','IDENTITY','UNIVERSE','READY','BOOT COMPLETE')), 'Boot phases incomplete'
 assert 'sessionStorage' in boot and 'prefers-reduced-motion' in boot, 'Session or motion guard missing'
+assert "css.addEventListener('load'" in boot and 'if(!cssReady)return' in boot, 'Boot must wait for stylesheet'
 assert 'lyvra-boot-skip' in boot and "addEventListener('click',finish)" in boot, 'Skip action missing'
 assert "setTimeout(finish,7000)" in boot, 'Boot fail-open timeout missing'
 assert 'lyvra-visual-loop.mp4' not in boot, 'Boot must not control existing intro media'
