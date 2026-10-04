@@ -6,7 +6,16 @@
   const DURATION=reduced?450:3400;
   const css=document.createElement('link');
   css.rel='stylesheet';css.href=new URL('./cyber-boot.css',import.meta.url).href;
+  // Render the overlay only after its CSS is ready; never show an unstyled overlay.
+  let cssReady=false;
+  css.addEventListener('load',()=>{ cssReady=true; begin(); },{once:true});
+  css.addEventListener('error',()=>{ css.remove(); },{once:true});
   document.head.appendChild(css);
+  function begin(){
+    if(!cssReady)return;
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
+    else boot();
+  }
   function boot(){
     if(document.getElementById('lyvra-cyber-boot'))return;
     const root=document.createElement('div');
@@ -47,6 +56,5 @@
     // Fail open if tab throttling or animation is interrupted.
     setTimeout(finish,7000);
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
-  else boot();
+  // CSS load event controls initialization; an unavailable stylesheet leaves the site usable.
 })();
