@@ -77,8 +77,16 @@ export async function handleNativeV3Route(request,env={}) {
  if(!authenticated)return respond(403,"CLIENT_NOT_AUTHENTICATED");
  const result=await verifyNativeContextTicket({ticket:payload.ticket,expectedEnvelope:payload.expectedEnvelope,
     expectedPurpose:payload.expectedPurpose,ticketSecret:env.NATIVE_V3_TICKET_SECRET});
- return respond(result.ok?200:403,result.state,result.ok?{context_digest:result.context_digest,
-    expires_at:result.expires_at,native_rehydration_verified_by_worker:false}:{});
+ if(!result.ok)return respond(403,result.state);
+ // A verification proof is a one-time request, independently of issuance nonce scope.
+ const consumeNonce=replayConsumer(env);
+ if(!consumeNonce)return respond(503,"ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
+ let consumed=false;
+ try {consumed=await consumeNonce("LYVRA:V:"+nonce,Math.floor(Date.now()/1000)+90);}
+ catch {return respond(503,"REPLAY_STORE_UNAVAILABLE");}
+ if(consumed!==true)return respond(403,"REPLAY_DETECTED");
+ return respond(200,result.state,{context_digest:result.context_digest,
+    expires_at:result.expires_at,native_rehydration_verified_by_worker:false});
 }
 
 /** Backend for a future Cloudflare Durable Object binding; NOT enabled in wrangler yet.
@@ -91,7 +99,7 @@ export class NativeV3NonceGate {
    return respond(404,"NOT_FOUND");
   let p;
   try{p=await request.json();}catch{return respond(400,"BAD_JSON");}
-  if(typeof p?.key!=="string"||!/^LYVRA:[a-zA-Z0-9_-]{24,128}$/.test(p.key)||
+  if(typeof p?.key!=="string"||!/^LYVRA:(?:V:)?[a-zA-Z0-9_-]{24,128}$/.test(p.key)||
    !Number.isSafeInteger(p.expires))return respond(400,"INVALID_NONCE");
   const now=Math.floor(Date.now()/1000);
   if(p.expires<=now||p.expires>now+180)return respond(400,"INVALID_EXPIRY");
