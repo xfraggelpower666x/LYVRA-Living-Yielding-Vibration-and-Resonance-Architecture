@@ -13,7 +13,7 @@
     root.id='lyvra-cyber-boot';
     root.setAttribute('role','status');
     root.setAttribute('aria-live','off');
-    root.innerHTML=`<div class="lyvra-boot-panel"><div class="lyvra-boot-kicker">666SOUNDsDESIGn · LYVRA SYSTEM</div><div class="lyvra-boot-title">CYBER BOOTING</div><div class="lyvra-boot-state">INITIALIZING LYVRA UNIVERSE</div><div class="lyvra-boot-glyph" aria-hidden="true"><span>✦</span></div><div class="lyvra-boot-track" aria-hidden="true"><div class="lyvra-boot-fill"></div></div><div class="lyvra-boot-meter"><span class="lyvra-boot-message">CONNECTING SYSTEMS</span><span class="lyvra-boot-percent">0%</span></div><div class="lyvra-boot-steps"><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>CONNECT</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>AUDIO</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>SYSTEMS</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>PLAYER</div></div><button type="button" class="lyvra-boot-skip" aria-label="Startanimation überspringen">ÜBERSPRINGEN ↗</button></div>`;
+    root.innerHTML=`<div class="lyvra-boot-panel"><div class="lyvra-boot-kicker">666SOUNDsDESIGn · LYVRA SYSTEM</div><div class="lyvra-boot-title">CYBER BOOTING</div><div class="lyvra-boot-state">INITIALIZING LYVRA UNIVERSE</div><div class="lyvra-boot-glyph" aria-hidden="true"><span>✦</span></div><div class="lyvra-boot-track" aria-hidden="true"><div class="lyvra-boot-fill"></div></div><div class="lyvra-boot-meter"><span class="lyvra-boot-message">CONNECTING SYSTEMS</span><span class="lyvra-boot-percent">0%</span></div><div class="lyvra-boot-steps"><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>CONNECT</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>IDENTITY</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>UNIVERSE</div><div class="lyvra-boot-step"><span class="lyvra-boot-dot"></span>READY</div></div><button type="button" class="lyvra-boot-skip" aria-label="Startanimation überspringen">ÜBERSPRINGEN ↗</button></div>`;
     document.body.append(root);
     const fill=root.querySelector('.lyvra-boot-fill');
     const percent=root.querySelector('.lyvra-boot-percent');
@@ -31,7 +31,7 @@
       setTimeout(()=>root.remove(),reduced?0:460);
     }
     root.querySelector('.lyvra-boot-skip').addEventListener('click',finish);
-    const phases=['CONNECTING SYSTEMS','INITIALIZING AUDIO','SYNCING LYVRA','OPENING UNIVERSE'];
+    const phases=['ESTABLISHING CONNECTION','RECOGNIZING IDENTITY','AWAKENING UNIVERSE','LYVRA READY'];
     function step(t){
       if(finished)return;
       const p=Math.min(1,(t-started)/DURATION);
