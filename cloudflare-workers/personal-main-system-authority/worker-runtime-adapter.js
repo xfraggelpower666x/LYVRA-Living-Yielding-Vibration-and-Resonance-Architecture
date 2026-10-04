@@ -1,4 +1,6 @@
 import baseWorker from "./worker.js";
+import {handleNativeV3Route} from "./worker-v3-route.mjs";
+export {NativeV3NonceGate} from "./worker-v3-route.mjs";
 
 const CAPABILITY_REVISION = "FOREGROUND_RECOVERY_CONTEXT_V1";
 const MAX_CONTEXT_VALUE = 160;
@@ -6,6 +8,11 @@ const MAX_CONTEXT_VALUE = 160;
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+    // v3 is opt-in and fail-closed; existing v1/v2 handlers remain unchanged.
+    if (url.pathname.startsWith("/v3/")) {
+      const v3 = await handleNativeV3Route(request, env);
+      if (v3) return v3;
+    }
 
     if (request.method === "POST" && url.pathname === "/v2/foreground-evidence") {
       return issuePurposeEvidence(request, env, ctx, "FOREGROUND");
