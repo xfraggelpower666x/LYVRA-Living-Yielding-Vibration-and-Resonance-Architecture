@@ -4,7 +4,7 @@
  * Checks object consistency; never claims it fetched those objects itself.
  * Full native semantic rehydration and private recovery remain separate gates.
  */
-import { NATIVE_EXPECTED_REPOSITORY } from "./worker-native-context.mjs";
+import { NATIVE_EXPECTED_REPOSITORY, validateNativeEnvelope } from "./worker-native-context.mjs";
 const sha40 = /^[0-9a-f]{40}$/;
 const REQUIRED = [
  "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -33,6 +33,7 @@ export function verifyGitHubCarrierSnapshot({repository, branch, headSha, tree, 
     if(!sha40.test(expected) || carrierMap.get(path) !== expected) return failed("CRITICAL_SHA_MISMATCH:"+path);
   }
   if(!goodRecord(envelope)) return failed("ENVELOPE_MISSING");
+  try { validateNativeEnvelope(envelope); } catch { return failed("INVALID_NATIVE_ENVELOPE"); }
   if(envelope.repository !== repository || envelope.branch !== branch || envelope.commit_sha !== headSha) return failed("HEAD_ENVELOPE_MISMATCH");
   for (const [key,path] of [
     ["pointer_blob_sha","LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json"],
