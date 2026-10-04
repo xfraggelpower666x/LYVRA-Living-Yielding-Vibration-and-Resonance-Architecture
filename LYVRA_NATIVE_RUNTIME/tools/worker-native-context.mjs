@@ -8,7 +8,7 @@ const REPO = "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Ar
 const SHA40 = /^[a-f0-9]{40}$/;
 const NONCE = /^[A-Za-z0-9_-]{24,128}$/;
 const EPOCH = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$/;
-const ALLOWED_DOMAIN_STATUS = new Set(["VERIFIED", "NOT_APPLICABLE"]);
+const ALLOWED_DOMAIN_STATUS = new Set(["VERIFIED"]);
 const REQUIRED_DOMAINS = Object.freeze([
   "AUTHORITY_AND_CURRENT_POINTER", "IDENTITY_PRESENCE", "LEITBILD_RESPONSIBILITY",
   "LIVING_RELATIONAL_STATE", "MEANING_LINEAGE", "THINKING_CONTINUITY",
