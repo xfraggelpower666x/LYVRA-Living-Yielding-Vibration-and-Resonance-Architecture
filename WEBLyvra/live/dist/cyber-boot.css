@@ -21,3 +21,9 @@
 .lyvra-boot-skip:focus-visible{outline:2px solid #7df4fa;outline-offset:4px}
 @keyframes lyvra-boot-pulse{50%{opacity:.55;transform:scale(.8)}}
 @media(prefers-reduced-motion:reduce){#lyvra-cyber-boot{transition:none}.lyvra-boot-glyph span{animation:none}.lyvra-boot-fill{transition:none}}
+
+/* iPhone/Edge: center against the visible viewport, not a page or content column. */
+#lyvra-cyber-boot{left:0;right:0;top:0;bottom:0;width:100%;max-width:none;margin:0;display:flex;align-items:center;justify-content:center;padding-inline:max(12px,env(safe-area-inset-left)) max(12px,env(safe-area-inset-right));overflow:hidden}
+#lyvra-cyber-boot .lyvra-boot-panel{flex:0 1 560px;width:100%;max-width:560px;min-width:0;margin-inline:auto;overflow:hidden}
+#lyvra-cyber-boot .lyvra-boot-title,#lyvra-cyber-boot .lyvra-boot-kicker{overflow-wrap:anywhere}
+@media(max-width:420px){#lyvra-cyber-boot .lyvra-boot-panel{padding-inline:16px}#lyvra-cyber-boot .lyvra-boot-step{font-size:.51rem;letter-spacing:0}}
