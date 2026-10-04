@@ -61,7 +61,11 @@
       v.autoplay=true;
       v.loop=true;
       v.playsInline=true;
-      v.preload='metadata';
+      v.preload='auto';
+      v.controls=false;
+      v.removeAttribute('controls');
+      v.setAttribute('autoplay','');
+      v.setAttribute('loop','');
       v.setAttribute('muted','');
       v.setAttribute('playsinline','');
       v.setAttribute('webkit-playsinline','');
@@ -71,6 +75,13 @@
     // Previous subject ends (left), next subject starts (right).
     const videos=[movie('assets/topic-banner-end.mp4'),movie('assets/topic-banner-start.mp4')];
     pair.append(...videos);
+    for (const v of videos) {
+      v.addEventListener('canplay', () => {
+        if (document.hidden || !v.paused) return;
+        const result=v.play();
+        if(result && typeof result.catch==='function')result.catch(()=>{});
+      });
+    }
     let selected=null, scheduled=false;
     function refresh(){
       scheduled=false;
@@ -82,18 +93,19 @@
         const d=Math.abs(rect.top-mid);
         if(d<distance){distance=d;best=m;}
       }
-      if(!best||distance>Math.max(380,innerHeight*.8)){
-        videos.forEach(v=>v.pause());
-        if(selected){selected.classList.remove('is-active');selected=null;}
-        return;
-      }
+      // Keep the paired divider present at the nearest topic boundary.
+      // Only pause decoding when far away; never remove the pair on scroll.
+      if(!best)return;
       if(selected!==best){
         if(selected)selected.classList.remove('is-active');
         selected=best;
         best.classList.add('is-active');
         best.appendChild(pair);
       }
+      // Keep the two already-loaded, muted decorative loops playing while
+      // the page is visible. Offscreen pause caused native iOS play overlays.
       for(const v of videos){
+        if (!v.paused) continue;
         const playing=v.play();
         if(playing&&typeof playing.catch==='function')playing.catch(()=>{});
       }
