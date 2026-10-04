@@ -40,3 +40,18 @@ jobs:
           ! grep -Eq '^NATIVE_V3_ENABLED[[:space:]]*=[[:space:]]*"true"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           ! grep -Eq '^\[\[durable_objects.bindings\]\]' cloudflare-workers/personal-main-system-authority/wrangler.toml
           echo "V3_DEPLOYMENT=NOT_ACTIVATED"
+
+      - name: Bundle existing lyvrasystem worker with Wrangler without deployment
+        shell: bash
+        env:
+          CI: "true"
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          npx --yes wrangler@4.111.0 deploy --dry-run --outdir=/tmp/lyvra-v3-wrangler-build
+          test -d /tmp/lyvra-v3-wrangler-build
+          if grep -R -E 'NATIVE_V3_ENABLED[[:space:]]*=[[:space:]]*"true"' wrangler.toml; then
+            echo "::error::V3 deployment was unexpectedly activated in config."
+            exit 1
+          fi
+          echo "WRANGLER_BUNDLE_DRY_RUN=PASS; DEPLOYMENT=FALSE"
