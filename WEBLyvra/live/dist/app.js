@@ -1,3 +1,4 @@
+import './topic-banners.js';
 import { installBrandArt } from './brand-art.js';
 import { extendFacetTabs, installExplorers } from './explorers.js';
 import { extraFacets } from './explorer-data.js';
