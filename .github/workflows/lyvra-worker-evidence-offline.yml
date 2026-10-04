@@ -8,6 +8,8 @@ on:
       - "LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py"
       - "LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py"
       - ".github/workflows/lyvra-worker-evidence-offline.yml"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-context.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs"
   workflow_dispatch:
 
 permissions:
@@ -26,6 +28,9 @@ jobs:
         run: python -m py_compile LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py
       - name: Mocked offline tests
         run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v
+
+      - name: Canonical native context regression tests (Node 22)
+        run: node --test LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs
 
       - name: Read-only public Worker reachability (non-gating)
         run: python LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py
