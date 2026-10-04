@@ -1,69 +1,70 @@
-// One shared video element for all 16 topic boundaries. Never 16 simultaneous decoders.
+// LYVRA: one shared two-video transition, reused at each section boundary.
 (() => {
-  const css = document.createElement('link');
-  css.rel = 'stylesheet';
-  css.href = 'topic-banners.css';
-  document.head.append(css);
-  const paths = {
-    start: 'assets/topic-banner-start.mp4',
-    end: 'assets/topic-banner-end.mp4'
-  };
-  function boot() {
-    const markers=[];
-    for (const section of document.querySelectorAll('main > section[id]')) {
-      if(section.previousElementSibling?.classList.contains('lyvra-topic-banner')) continue;
-      for (const type of ['start','end']) {
-        const el=document.createElement('div');
-        el.className='lyvra-topic-banner';
-        el.dataset.topic=section.id;
-        el.dataset.marker=type;
-        el.setAttribute('aria-hidden','true');
-        if(type==='start') section.before(el); else section.after(el);
-        markers.push(el);
-      }
+  const link=document.createElement('link');
+  link.rel='stylesheet';
+  link.href='topic-banners.css';
+  document.head.appendChild(link);
+  function boot(){
+    const sections=[...document.querySelectorAll('main > section[id]')];
+    if(!sections.length)return;
+    const markers=sections.map(section=>{
+      const marker=document.createElement('div');
+      marker.className='lyvra-topic-transition';
+      marker.dataset.topic=section.id;
+      marker.setAttribute('aria-hidden','true');
+      section.before(marker);
+      return marker;
+    });
+    const pair=document.createElement('div');
+    pair.className='lyvra-topic-transition-pair';
+    function movie(src){
+      const v=document.createElement('video');
+      v.src=src;
+      v.muted=true;
+      v.defaultMuted=true;
+      v.autoplay=true;
+      v.loop=true;
+      v.playsInline=true;
+      v.preload='metadata';
+      v.setAttribute('muted','');
+      v.setAttribute('playsinline','');
+      v.setAttribute('webkit-playsinline','');
+      v.disablePictureInPicture=true;
+      return v;
     }
-    if(!markers.length) return;
-    const video=document.createElement('video');
-    video.autoplay=true;
-    video.muted=true;
-    video.defaultMuted=true;
-    video.playsInline=true;
-    video.loop=true;
-    video.preload='metadata';
-    video.disablePictureInPicture=true;
-    video.setAttribute('muted','');
-    video.setAttribute('playsinline','');
-    video.setAttribute('webkit-playsinline','');
-    let current=null, frame=0;
-    video.addEventListener('error',()=>{if(current)current.classList.add('is-failed');});
-    function update() {
-      frame=0;
-      if(document.hidden){video.pause();return;}
-      const vh=window.innerHeight;
+    // Previous subject ends (left), next subject starts (right).
+    const videos=[movie('assets/topic-banner-end.mp4'),movie('assets/topic-banner-start.mp4')];
+    pair.append(...videos);
+    let selected=null, scheduled=false;
+    function refresh(){
+      scheduled=false;
+      if(document.hidden){videos.forEach(v=>v.pause());return;}
+      const mid=innerHeight/2;
       let best=null, distance=Infinity;
-      for(const marker of markers){
-        const box=marker.getBoundingClientRect();
-        const delta=box.top>vh?box.top-vh:box.bottom<0?-box.bottom:0;
-        if(delta<distance){distance=delta;best=marker;}
+      for(const m of markers){
+        const rect=m.getBoundingClientRect();
+        const d=Math.abs(rect.top-mid);
+        if(d<distance){distance=d;best=m;}
       }
-      if(!best||distance>250){video.pause();return;}
-      if(best!==current){
-        if(current)current.classList.remove('is-active');
-        current=best;
-        current.classList.add('is-active');
-        current.replaceChildren(video);
-        const file=paths[current.dataset.marker];
-        if(video.getAttribute('src')!==file) {
-          video.setAttribute('src',file);
-          video.load();
-        }
+      if(!best||distance>Math.max(380,innerHeight*.8)){
+        videos.forEach(v=>v.pause());
+        if(selected){selected.classList.remove('is-active');selected=null;}
+        return;
       }
-      const playback=video.play();
-      if(playback && typeof playback.catch==='function') playback.catch(()=>{});
+      if(selected!==best){
+        if(selected)selected.classList.remove('is-active');
+        selected=best;
+        best.classList.add('is-active');
+        best.appendChild(pair);
+      }
+      for(const v of videos){
+        const playing=v.play();
+        if(playing&&typeof playing.catch==='function')playing.catch(()=>{});
+      }
     }
-    function schedule(){if(!frame)frame=requestAnimationFrame(update);}
-    window.addEventListener('scroll',schedule,{passive:true});
-    window.addEventListener('resize',schedule,{passive:true});
+    function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(refresh);}}
+    addEventListener('scroll',schedule,{passive:true});
+    addEventListener('resize',schedule,{passive:true});
     document.addEventListener('visibilitychange',schedule);
     document.addEventListener('pointerdown',schedule,{passive:true});
     schedule();
