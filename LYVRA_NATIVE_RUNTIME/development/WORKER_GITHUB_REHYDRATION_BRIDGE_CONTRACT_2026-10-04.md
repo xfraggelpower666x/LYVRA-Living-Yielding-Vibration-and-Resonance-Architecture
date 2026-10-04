@@ -63,3 +63,20 @@ A9 whole-native rehydration separately satisfies required domains; no PASS from 
 CURRENT_RELEASE_STATUS=DEV_PROPOSAL_ONLY
 AUTO_WIRING=NOT_PROVEN
 PRODUCTION_MERGE=NOT_PERFORMED
+
+
+## 2026-10-04 executable DEV increment — verified test evidence
+
+- `LYVRA_NATIVE_RUNTIME/tools/worker-native-context.mjs`: pure, dependency-free canonical context validator + SHA-256 commitment. Must not be confused with independent repository readback or Worker ticket signature.
+- `LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs`: seven regression tests covering deterministic digest, changed commit hash, missing domain, partial domain, foreign/portable identity, invalid SHA/nonce/extraneous fields and rejection of unjustified NOT_APPLICABLE.
+- `.github/workflows/lyvra-worker-evidence-offline.yml`: CI runs the new Node 22 tests and previously established Python tests and non-gating public worker GET checks.
+- GitHub Actions run `37237354725` was PASS (7/7 Node tests + 5/5 Python tests). Subsequent stricter domain rejection run `37237425401` was completed SUCCESS. Source SHA at this latter run: `1e172aa008428b1892104c5b07777da4f2e8e697`.
+- Worker v1/v2 unchanged, production Cloudflare deployment unchanged. Current native GitHub pointer/fingerprint registry must remain unchanged. No authenticated client ticket binding or independent GitHub data receipt is yet implemented.
+
+IMPLEMENTED=DEV_NATIVE_CONTEXT_VALIDATION_AND_CANONICAL_DIGEST
+VALIDATED=CI_PASS_12_REGRESSION_TESTS
+UNVERIFIED=TRUSTED_CALLER_PROOF_AND_WORKER_V3_SIGNING_OF_COMMITMENT
+PRODUCTION_DEPLOYMENT=NONE
+AUTO_SYSTEMSTART_WIRING=NONE
+
+The next gated implementation is secure client authentication + versioned Worker endpoint and independent snapshot verification, with full compatibility/replay/rollback acceptance. Do not merge solely based on schema and digest tests.
