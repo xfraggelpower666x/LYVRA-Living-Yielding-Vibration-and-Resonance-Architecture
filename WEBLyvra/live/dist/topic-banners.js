@@ -1,5 +1,9 @@
 // LYVRA topic bookends: additive, repeatable, silent, inline animation.
 (() => {
+  const stylesheet = document.createElement('link');
+  stylesheet.rel = 'stylesheet';
+  stylesheet.href = 'topic-banners.css';
+  document.head.appendChild(stylesheet);
   const markers = [
     {kind:'start', src:'assets/topic-banner-start.mp4', label:'Beginn des Themenbereichs'},
     {kind:'end', src:'assets/topic-banner-end.mp4', label:'Ende des Themenbereichs'}
