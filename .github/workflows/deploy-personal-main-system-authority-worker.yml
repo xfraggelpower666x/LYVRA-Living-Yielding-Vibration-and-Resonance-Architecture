@@ -32,8 +32,11 @@ jobs:
           set -euo pipefail
           test -f cloudflare-workers/personal-main-system-authority/worker.js
           test -f cloudflare-workers/personal-main-system-authority/wrangler.toml
+          test -f cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
           node --check cloudflare-workers/personal-main-system-authority/worker.js
-          grep -F 'name = "666-main-system-authority-evidence"' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          node --check cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
+          grep -Fx 'name = "lyvrasystem"' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          grep -Fx 'main = "worker-runtime-adapter.js"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           grep -F 'WORKER_SCOPE = "MAIN_PERSONAL_ONLY"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           grep -F 'PORTABLE_WORKER_BINDING = "DISABLED"' cloudflare-workers/personal-main-system-authority/wrangler.toml
 
