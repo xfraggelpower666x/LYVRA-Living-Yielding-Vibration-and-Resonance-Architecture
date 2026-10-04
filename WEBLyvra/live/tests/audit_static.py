@@ -26,6 +26,17 @@ for path in web.rglob('*.html'):
 for name in ('topic-banner-start.mp4', 'topic-banner-end.mp4'):
     item=web/'assets'/name
     assert item.is_file() and item.stat().st_size>1000, f'Missing topic animation: {name}'
+# LYVRA Cyber Boot: static safety/continuity checks (browser behavior still needs mobile acceptance).
+boot_js=web/'cyber-boot.js';boot_css=web/'cyber-boot.css'
+assert boot_js.is_file() and boot_css.is_file(), 'Missing LYVRA cyber-boot assets'
+boot=boot_js.read_text()
+assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Boot module not imported'
+assert all(x in boot for x in ('CONNECT','IDENTITY','UNIVERSE','READY','BOOT COMPLETE')), 'Boot phases incomplete'
+assert 'sessionStorage' in boot and 'prefers-reduced-motion' in boot, 'Session or motion guard missing'
+assert "css.addEventListener('load'" in boot and 'if(!cssReady)return' in boot, 'Boot must wait for stylesheet'
+assert 'lyvra-boot-skip' in boot and "addEventListener('click',finish)" in boot, 'Skip action missing'
+assert "setTimeout(finish,7000)" in boot, 'Boot fail-open timeout missing'
+assert 'lyvra-visual-loop.mp4' not in boot, 'Boot must not control existing intro media'
 main=parsed[web/'index.html'];privacy=parsed[web/'privacy/index.html']
 assert all(i in main.ids for i in ['home','identity','universe','sound','lab','world','radio','evolution','lyvra-system-evolution','lyvra-chat-demo'])
 assert len(main.frames)==2 and not privacy.frames
