@@ -1,5 +1,7 @@
-/* LYVRA animated topic boundaries: centered in the visible stage. */
-.lyvra-topic-banner{width:100%;max-width:100%;margin-inline:auto;padding:16px clamp(12px,2vw,28px);display:flex;justify-content:center;align-items:center;overflow:hidden;background:#070911;pointer-events:none}
-.lyvra-topic-banner video{display:block;width:min(100%,832px);height:auto;aspect-ratio:832/464;object-fit:contain;border:0;pointer-events:none}
-@media(max-width:700px){.lyvra-topic-banner{padding:10px 8px}}
-@media(prefers-reduced-motion:reduce){.lyvra-topic-banner video{animation:none}}
+/* Collapsed until an actual decoded video frame is available; no blank 464px panels. */
+.lyvra-topic-banner{box-sizing:border-box;position:relative;width:100%;max-width:100%;height:8px;min-height:8px;padding:0;margin:0 auto;overflow:hidden;display:flex;justify-content:center;align-items:center;background:transparent;pointer-events:none}
+.lyvra-topic-banner video{display:block;opacity:0;width:min(100%,832px);height:auto;aspect-ratio:832/464;object-fit:contain;border:0;pointer-events:none}
+.lyvra-topic-banner.is-ready{height:auto;min-height:0;padding:12px clamp(8px,2vw,24px)}
+.lyvra-topic-banner.is-ready video{opacity:1}
+.lyvra-topic-banner.is-failed{height:0;min-height:0;padding:0}
+@media(max-width:700px){.lyvra-topic-banner.is-ready{padding:8px 6px}}
