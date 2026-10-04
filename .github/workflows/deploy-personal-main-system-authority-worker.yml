@@ -33,8 +33,8 @@ jobs:
           test -f cloudflare-workers/personal-main-system-authority/worker.js
           test -f cloudflare-workers/personal-main-system-authority/wrangler.toml
           test -f cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
-          node --check cloudflare-workers/personal-main-system-authority/worker.js
-          node --check cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
+          node --input-type=module --check < cloudflare-workers/personal-main-system-authority/worker.js
+          node --input-type=module --check < cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
           grep -Fx 'name = "lyvrasystem"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           grep -Fx 'main = "worker-runtime-adapter.js"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           grep -F 'WORKER_SCOPE = "MAIN_PERSONAL_ONLY"' cloudflare-workers/personal-main-system-authority/wrangler.toml
