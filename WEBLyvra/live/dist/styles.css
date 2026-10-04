@@ -29,3 +29,9 @@ body{background-color:#070911;background-image:linear-gradient(#070911d9,#070911
 
 /* Transparenter iframe-Canvas; dynamische Höhe aus player-fit.js. */
 .radio-embed iframe,.chat-demo-radio iframe{background:transparent;color-scheme:normal}
+
+/* LYVRA visible-stage guard: centered, bounded viewport, no sideways page movement. */
+html{width:100%;max-width:100%;overflow-x:clip}
+body{width:100%;max-width:1440px;margin-inline:auto;overflow-x:clip}
+body>header,body>main,body>.footer-shell{max-width:100%}
+img,video{max-width:100%}
