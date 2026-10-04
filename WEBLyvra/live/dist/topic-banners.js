@@ -5,13 +5,41 @@
   link.href='topic-banners.css';
   document.head.appendChild(link);
   function boot(){
-    // Avoid the legacy standalone intro video: it leaves a giant black rectangle
-    // when Safari does not paint a decoded frame. The two topic videos replace it.
-    const oldIntro = document.getElementById('lyvra-video-loop');
-    if (oldIntro) {
-      const oldVideo = oldIntro.querySelector('video');
-      if (oldVideo) { oldVideo.pause(); oldVideo.removeAttribute('autoplay'); oldVideo.preload = 'none'; }
-      oldIntro.style.setProperty('display', 'none', 'important');
+    // Preserve the original intro video, but do not reserve a giant black panel.
+    // Keep it in layout with zero height while decoding (display:none can prevent
+    // loading on Safari). Reveal only after real frame data becomes available.
+    const intro = document.getElementById('lyvra-video-loop');
+    const introVideo = intro?.querySelector('video');
+    if (intro && introVideo) {
+      intro.style.height = '0';
+      intro.style.minHeight = '0';
+      intro.style.padding = '0';
+      intro.style.overflow = 'hidden';
+      intro.style.opacity = '0';
+      introVideo.muted = true;
+      introVideo.playsInline = true;
+      introVideo.preload = 'auto';
+      introVideo.setAttribute('playsinline', '');
+      introVideo.setAttribute('webkit-playsinline', '');
+      let ready = false;
+      const show = () => {
+        if (ready || introVideo.readyState < 2) return;
+        ready = true;
+        intro.style.height = '';
+        intro.style.minHeight = '';
+        intro.style.padding = '';
+        intro.style.overflow = '';
+        intro.style.opacity = '';
+      };
+      introVideo.addEventListener('loadeddata', show);
+      introVideo.addEventListener('playing', show);
+      introVideo.addEventListener('error', () => { if(!ready) intro.style.height = '0'; });
+      if (introVideo.readyState >= 2) show();
+      const promise = introVideo.play();
+      if (promise && typeof promise.catch === 'function') promise.catch(() => {});
+      document.addEventListener('pointerdown', () => {
+        if (!ready && introVideo.paused) introVideo.play().catch(() => {});
+      }, {passive:true});
     }
     const sections=[...document.querySelectorAll('main > section[id]')];
     if(!sections.length)return;
