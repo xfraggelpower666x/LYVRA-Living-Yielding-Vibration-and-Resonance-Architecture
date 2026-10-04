@@ -25,10 +25,13 @@ function describeBody(b){
  if(!plain(b)||Object.keys(b).sort().join("|")!=="envelope|purpose")return false;
  return ["BOOT","FOREGROUND","RECOVERY"].includes(b.purpose);
 }
-function requestPreimage(timestamp,nonce,body){return stableStringify({context:ctx,method:"POST",path:"/v3/native-evidence",timestamp,nonce,body});}
+function requestPreimage(timestamp,nonce,body,path){
+ if(path!=="/v3/native-evidence"&&path!=="/v3/verify-native-evidence")throw Error("UNSUPPORTED_CLIENT_PROOF_PATH");
+ return stableStringify({context:ctx,method:"POST",path,timestamp,nonce,body});
+}
 function signInput(h,p){return b64(bytes(JSON.stringify(h)))+"."+b64(bytes(JSON.stringify(p)));}
-export async function makeNativeClientProof({timestamp,nonce,body,clientSecret}){
- return b64(await mac(clientSecret,requestPreimage(timestamp,nonce,body)));
+export async function makeNativeClientProof({timestamp,nonce,body,clientSecret,path="/v3/native-evidence"}){
+ return b64(await mac(clientSecret,requestPreimage(timestamp,nonce,body,path)));
 }
 export async function issueNativeContextTicket({
  body,timestamp,nonce,proof,clientSecret,ticketSecret,consumeNonce,now=Math.floor(Date.now()/1000)
@@ -40,7 +43,7 @@ export async function issueNativeContextTicket({
  if(typeof consumeNonce!=="function")return fail("ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
  try {validateNativeEnvelope(body.envelope);}catch{return fail("NATIVE_CONTEXT_INVALID");}
  if(body.envelope.request_nonce!==nonce)return fail("NONCE_CONTEXT_MISMATCH");
- const signed=requestPreimage(timestamp,nonce,body);
+ const signed=requestPreimage(timestamp,nonce,body,"/v3/native-evidence");
  if(!(await verifyMac(clientSecret,signed,proof)))return fail("CLIENT_NOT_AUTHENTICATED");
  // A globally atomic server-controlled nonce store must return true only once.
  let consumed=false;
