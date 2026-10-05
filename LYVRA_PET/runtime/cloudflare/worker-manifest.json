@@ -1,0 +1,19 @@
+{
+  "schema": "LYVRA_PET_CLOUDFLARE_WORKER_v1",
+  "status": "NOT_DEPLOYED",
+  "planned_worker_name": "lyvra-pet-plugin-ui",
+  "account_name": "666SOUNDsDESIGn",
+  "cost_policy": "FREE_ONLY",
+  "storage_dependencies": [],
+  "paid_dependencies": [],
+  "authority": "LYVRA_PET/",
+  "source_path": "LYVRA_PET/runtime/cloudflare/worker/",
+  "ui_path": "LYVRA_PET/runtime/ui/",
+  "required_readback": [
+    "worker_exists",
+    "workers.dev_or_bound_route",
+    "mcp_endpoint",
+    "plugin_connection",
+    "app_view_render"
+  ]
+}
