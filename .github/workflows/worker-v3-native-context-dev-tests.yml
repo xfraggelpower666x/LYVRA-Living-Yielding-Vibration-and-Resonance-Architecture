@@ -26,6 +26,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Enforce no Cloudflare writes or remote Wrangler in offline CI
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          wf=Path(".github/workflows/worker-v3-native-context-dev-tests.yml").read_text()
+          lines=wf.splitlines()
+          assert 'CLOUDFLARE_API_TOKEN: ""' in wf and 'CLOUDFLARE_ACCOUNT_ID: ""' in wf
+          forbidden=("cloudflare/wrangler-action", "cloudflare/pages-action", "wrangler secret put",
+                     "wrangler deploy --env", "wrangler publish", "wrangler versions deploy")
+          for term in forbidden:
+              assert term not in wf, f"Forbidden Cloudflare command/action: {term}"
+          for line in lines:
+              if re.search(r'\\bwrangler(?:@[^ ]+)?\\s+deploy\\b',line) and not line.lstrip().startswith("#"):
+                  assert "--dry-run" in line, f"Non-dry-run Wrangler deploy: {line}"
+              if re.search(r'\\bwrangler(?:@[^ ]+)?\\s+dev\\b',line) and not line.lstrip().startswith("#"):
+                  assert "--local" in line and "--ip 127.0.0.1" in line, f"Remote Wrangler dev: {line}"
+          print("ZERO_ADDITIONAL_CLOUDFLARE_COST_OFFLINE_CI_FENCE=PASS")
+          PY
       - name: Syntax Worker entry and legacy main
         shell: bash
         run: |
