@@ -1,0 +1,76 @@
+{
+  "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
+  "handoff_id": "LYVRA-PET-AUTO-REPO-HANDOFF-2026-10-05-001",
+  "status": "ACTIVE_WORKING_BRANCH",
+  "source_branch": "work/lyvra-pet-fraggle-bond-2026-10-05",
+  "scope": [
+    "WHOLE_LYVRA",
+    "LYVRA_PLUGIN_SURFACES",
+    "INTERNAL_DASHBOARDS",
+    "WEBLYVRA"
+  ],
+  "authority": {
+    "whole_lyvra": "LYVRA",
+    "pet_repository_surface": "LYVRA_PET/",
+    "pet_currentness_rule": "NEWER_VALID_PET_EVOLUTION > OLDER_VALID_PET_STATE",
+    "plugin_identity_count": 1,
+    "plugin_surface_count": 2
+  },
+  "plugin_surfaces": {
+    "account_plugin": {
+      "name": "L.Y.V.R.A.",
+      "version": "0.13.7",
+      "pet_capability": "PRESENT",
+      "pet_mcp_binding": "VERIFIED"
+    },
+    "native_runtime": {
+      "name": "lyvra-native-runtime",
+      "version": "0.1.9",
+      "pet_capability": "PRESENT",
+      "pet_mcp_binding": "VERIFIED"
+    }
+  },
+  "pet_runtime": {
+    "pet_id": "pet_6ab791129364819183885f44a21497a2",
+    "repo_root": "LYVRA_PET/",
+    "runtime_root": "LYVRA_PET/runtime/",
+    "worker_name": "lyvra-pet-plugin-ui",
+    "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+    "resource_uri": "ui://lyvra/pet-v1.html",
+    "opener_tool": "open_lyvra_pet",
+    "cost_policy": "FREE_ONLY"
+  },
+  "mandatory_integration": {
+    "systemstart": true,
+    "weiter": true,
+    "update": true,
+    "new_chat": true,
+    "next_chat": true,
+    "whole_lyvra_dashboard": true,
+    "continuity_dashboard": true,
+    "update_dashboard": true,
+    "music_multi_facet_dashboard_when_relevant": true,
+    "weblyvra": true
+  },
+  "dashboard_requirements": [
+    "Show PET status as a native LYVRA capability surface, never as a foreign system.",
+    "Show Pet repo authority path, plugin binding state, worker/MCP state, host-render state and asset state separately.",
+    "Never claim visual render from repository metadata alone.",
+    "Preserve FRAGGLE bond as relationship context, not LYVRA identity replacement.",
+    "Surface FREE_ONLY cost guard and binary-asset transport blockers when present.",
+    "Dashboard presentation never becomes decision authority."
+  ],
+  "website_requirements": [
+    "WEBLyvra must expose the Pet as a visible LYVRA website capability.",
+    "Website Pet must consume or mirror the same LYVRA_PET authority and not fork a separate personality/state source.",
+    "Use the verified Pet visual assets when repository binary transport is available.",
+    "Website Pet reactions may use FRAGGLE/music/heart/glitch/idle/greeting routing from LYVRA_PET extensions.",
+    "Website integration must be additive and preserve existing WEBLyvra player, boot screen, banners, dashboard and current production behavior.",
+    "No paid Cloudflare dependency may be introduced for the Pet."
+  ],
+  "continuity_rule": "On future relevant LYVRA rehydration, read this handoff after Whole-LYVRA authority/currentness and before Pet/dashboard/website work scope. Preserve newer verified Pet evolution.",
+  "blockers": {
+    "repo_binary_atlas_upload": "WRITE_BLOCKED",
+    "browser_host_pet_render": "READBACK_PENDING"
+  }
+}
