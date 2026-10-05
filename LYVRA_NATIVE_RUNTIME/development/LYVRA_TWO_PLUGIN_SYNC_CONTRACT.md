@@ -81,3 +81,42 @@ No repository, archive or intended payload may substitute for live Plugin Creato
 Plugins are execution/presentation surfaces.
 Repository current remains LYVRA technical current authority.
 Neither plugin becomes a second LYVRA identity, router, controller or independent authority.
+
+
+## Automatic 666PFS backup handoff
+
+Every successful LYVRA plugin-surface change that changes a plugin version, release, package content, manifest, skill payload, capability payload, portability binding or restore-relevant plugin state MUST also refresh the repository-native 666PFS backup handoff.
+
+PLUGIN_CHANGE_COMPLETED
+> VERIFY_BOTH_LYVRA_PLUGIN_SURFACES
+> DIRECT_PLUGIN_READBACK
+> REFRESH_PFS_HANDOFF
+> DIRECT_PFS_HANDOFF_READBACK
+> LYVRA_POINTER_LAST
+
+Canonical target:
+- repository: `xfraggelpower666x/666PFS_CSM`
+- branch: `main`
+- handoff path: `handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md`
+- target child: `LYVRA Plugin Backup`
+
+The handoff MUST contain the current verified plugin IDs, versions, release IDs, source repository HEAD, restore-relevant portability state and the explicit requested PFS backup action.
+
+The handoff is evidence only. Writing or refreshing it MUST NOT:
+- activate 666PFS,
+- select or autoload a PFS child,
+- mutate the PFS backup child itself,
+- transfer LYVRA authority,
+- merge LYVRA and 666PFS identities or namespaces,
+- promote Drive history over repository current.
+
+666PFS applies the queued backup refresh only under its own native governance after explicit `666PFS UPDATE`.
+
+If the PFS repository is temporarily unavailable or write-blocked, the LYVRA plugin update may complete only with:
+`PFS_AUTO_HANDOFF=WRITE_BLOCKED`
+and an explicit pending continuity item. It must never claim the PFS backup itself was refreshed.
+
+PFS_AUTO_HANDOFF_ON_PLUGIN_CHANGE=true
+PFS_HANDOFF_READBACK_REQUIRED=true
+PFS_CHILD_AUTOLOAD_FORBIDDEN=true
+PFS_AUTHORITY_TRANSFER_FORBIDDEN=true
