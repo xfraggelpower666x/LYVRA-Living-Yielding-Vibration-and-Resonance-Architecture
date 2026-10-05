@@ -1,0 +1,25 @@
+{
+  "extension_id": "lyvra-fraggle-bond-v1",
+  "display_name": "L.Y.V.R.A. × FRAGGLE Bond Layer",
+  "integration_mode": "additive_non_destructive",
+  "base_pet_id": "lyvra-cyber",
+  "depends_on": [
+    "lyvra-reaction-music-v1"
+  ],
+  "base_assets_modified": false,
+  "status": "WORKING",
+  "identity_contract": {
+    "lyvra_identity_preserved": true,
+    "fraggle_is_relationship_context": true,
+    "personality_replacement": false
+  },
+  "state_fallbacks": {
+    "fraggle-greeting": "waving",
+    "fraggle-playful": "jumping",
+    "fraggle-curious": "look-row-9",
+    "fraggle-thinking": "review",
+    "fraggle-heart-resonance": "idle",
+    "fraggle-psytrance-sync": "jumping",
+    "fraggle-recovery": "idle"
+  }
+}
