@@ -90,6 +90,20 @@ test("valid v3 ticket verifies against the exact native context",async()=>{
  }),env({NATIVE_V3_NONCES:replay}));
  assert.equal(checked.status,200);assert.equal((await checked.json()).state,"NATIVE_CONTEXT_TICKET_VERIFIED");
 });
+test("verify transport failure is 503, not a replay accusation",async()=>{
+ const issuedStore=nonceStore(), data=body();
+ const issue=await handleNativeV3Route(req("/v3/native-evidence",data,await signedHeaders(data)),env({NATIVE_V3_NONCES:issuedStore}));
+ assert.equal(issue.status,200);
+ const ticket=(await issue.json()).ticket;
+ const v={ticket,expectedEnvelope:data.envelope,expectedPurpose:"BOOT"};
+ const timestamp=Math.floor(Date.now()/1000);
+ const proof=await makeNativeClientProof({path:"/v3/verify-native-evidence",timestamp,nonce,body:v,clientSecret:client});
+ const failed={idFromName:()=> "test",get:()=>({fetch:async()=>new Response("backend down",{status:503})})};
+ const response=await handleNativeV3Route(req("/v3/verify-native-evidence",v,{
+  "x-lyvra-timestamp":String(timestamp),"x-lyvra-nonce":nonce,"x-lyvra-proof":proof}),env({NATIVE_V3_NONCES:failed}));
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).state,"REPLAY_STORE_UNAVAILABLE");
+});
 test("replayed native nonce rejected by atomic store",async()=>{
  const replay=nonceStore();const data=body(),headers=await signedHeaders(data);
  const a=await handleNativeV3Route(req("/v3/native-evidence",data,headers),env({NATIVE_V3_NONCES:replay}));
