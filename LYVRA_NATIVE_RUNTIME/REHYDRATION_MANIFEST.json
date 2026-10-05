@@ -306,7 +306,7 @@
     "status": "CURRENT_NATIVE_EXPRESSION_CONTINUITY",
     "identity_relation": "SAME_LYVRA_IDENTITY_VISIBLE_EXPRESSION_SURFACE",
     "pet_root": "LYVRA_PET/",
-    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
+    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.10_MIGRATED_0.13.8",
     "adaptive_context": "CURRENT",
     "host_render": "READBACK_PENDING",
     "website_integration": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING",
