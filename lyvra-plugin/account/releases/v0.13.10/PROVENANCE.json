@@ -1,0 +1,185 @@
+{
+  "status": "CURRENT_VERIFIED_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-05",
+  "surface": "L.Y.V.R.A. Account Plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.10",
+  "release_id": "pluginrel_6ac4074419cc81918f854dd986c214f4",
+  "creator_release_is_current": true,
+  "creator_archive": {
+    "retrieval_method": "Plugin Creator get_owned_plugin_archive(plugin_id, release_id optional/current)",
+    "file_name": "current.tar.gz",
+    "mime_type": "application/gzip",
+    "direct_archive_access_verified": true,
+    "signed_download_url_persisted": false,
+    "byte_sha256": "READBACK_PENDING_BINARY_TRANSFER_NOT_AVAILABLE_IN_GITHUB_TEXT_WRITER"
+  },
+  "file_count": 38,
+  "file_inventory": [
+    {
+      "path": ".app.json",
+      "size_bytes": 124
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "size_bytes": 1648
+    },
+    {
+      "path": ".mcp.json",
+      "size_bytes": 23
+    },
+    {
+      "path": "assets/gpt-icon.png",
+      "size_bytes": 492586
+    },
+    {
+      "path": "dashboard/index.html",
+      "size_bytes": 7858135
+    },
+    {
+      "path": "mcp.json",
+      "size_bytes": 95
+    },
+    {
+      "path": "plugin.json",
+      "size_bytes": 1737
+    },
+    {
+      "path": "references/pet-authority.md",
+      "size_bytes": 996
+    },
+    {
+      "path": "skills/666-visual-interface/SKILL.md",
+      "size_bytes": 2627
+    },
+    {
+      "path": "skills/instructions/SKILL.md",
+      "size_bytes": 11088
+    },
+    {
+      "path": "skills/instructions/agents/openai.yaml",
+      "size_bytes": 246
+    },
+    {
+      "path": "skills/instructions/lookup/knowledge-index.json",
+      "size_bytes": 2395
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "size_bytes": 1308757
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "size_bytes": 1327854
+    },
+    {
+      "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+      "size_bytes": 2406663
+    },
+    {
+      "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+      "size_bytes": 2626397
+    },
+    {
+      "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+      "size_bytes": 1918985
+    },
+    {
+      "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+      "size_bytes": 1818457
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "size_bytes": 2699385
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "size_bytes": 2364103
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "size_bytes": 2340666
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+      "size_bytes": 2201974
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "size_bytes": 1713482
+    },
+    {
+      "path": "skills/instructions/references/READ_WRITE_REHYDRATION.md",
+      "size_bytes": 9170
+    },
+    {
+      "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "size_bytes": 43931
+    },
+    {
+      "path": "skills/lyvra-dashboard/SKILL.md",
+      "size_bytes": 1891
+    },
+    {
+      "path": "skills/lyvra-pet/SKILL.md",
+      "size_bytes": 1420
+    },
+    {
+      "path": "skills/music-analytics/SKILL.md",
+      "size_bytes": 1336
+    },
+    {
+      "path": "skills/music-analytics/agents/openai.yaml",
+      "size_bytes": 249
+    },
+    {
+      "path": "skills/rehydration-continuity/SKILL.md",
+      "size_bytes": 1267
+    },
+    {
+      "path": "skills/rehydration-continuity/agents/openai.yaml",
+      "size_bytes": 264
+    },
+    {
+      "path": "skills/repair/SKILL.md",
+      "size_bytes": 1466
+    },
+    {
+      "path": "skills/repository-update-recovery/SKILL.md",
+      "size_bytes": 1187
+    },
+    {
+      "path": "skills/repository-update-recovery/agents/openai.yaml",
+      "size_bytes": 260
+    },
+    {
+      "path": "skills/suno-studio-2/SKILL.md",
+      "size_bytes": 1347
+    },
+    {
+      "path": "skills/suno-studio-2/agents/openai.yaml",
+      "size_bytes": 244
+    },
+    {
+      "path": "skills/track-design/SKILL.md",
+      "size_bytes": 1244
+    },
+    {
+      "path": "skills/track-design/agents/openai.yaml",
+      "size_bytes": 245
+    }
+  ],
+  "source_snapshot": {
+    "exact_utf8_files_mirrored": 24,
+    "path": "SOURCE_SNAPSHOT.json",
+    "external_original_archive_files": 14
+  },
+  "preservation": {
+    "plugin_identity_preserved": true,
+    "release_identity_preserved": true,
+    "binary_assets_not_reencoded": true,
+    "dashboard_not_reencoded": true,
+    "historical_releases_preserved": true
+  },
+  "restore_gate": "FULL_BYTE_IDENTICAL_RESTORE_REQUIRES_ORIGINAL_PLUGIN_CREATOR_ARCHIVE_FOR_EXTERNAL_FILES"
+}
