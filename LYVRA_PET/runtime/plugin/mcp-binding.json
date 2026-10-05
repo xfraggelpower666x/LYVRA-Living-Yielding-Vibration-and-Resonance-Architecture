@@ -8,7 +8,21 @@
     "global",
     "thread"
   ],
-  "status": "DEPLOYED_PLUGIN_BINDING_PENDING",
+  "status": "PLUGIN_RELEASE_BINDING_VERIFIED_HOST_UI_PENDING",
   "cost_policy": "FREE_ONLY",
-  "authority": "LYVRA_PET/"
+  "authority": "LYVRA_PET/",
+  "plugin_surfaces": {
+    "L.Y.V.R.A.": {
+      "version": "0.13.7",
+      "release_id": "pluginrel_6ac3e98a6678819193384c6f4a9a1b46",
+      "mcp_json_readback": "VERIFIED"
+    },
+    "lyvra-native-runtime": {
+      "version": "0.1.9",
+      "release_id": "pluginrel_6ac3e97d00e081918b6345e799ee67db",
+      "mcp_json_readback": "VERIFIED"
+    }
+  },
+  "startup_contract": "attempt open_lyvra_pet once; failure/non-support is non-fatal and must not be reported as rendered",
+  "host_end_to_end": "READBACK_PENDING"
 }
