@@ -343,7 +343,12 @@
       "no_identity_merge": true,
       "no_foreign_autoactivation": true,
       "worker_functional_evidence": "VERIFIED_FUNCTIONAL_ISSUE_VERIFY_2026-10-05",
-      "branch_stewardship_handoff": "OPEN_RESPONSE_PENDING"
+      "branch_stewardship_handoff": "OPEN_RESPONSE_PENDING",
+      "current_verified_head": "3d18d86e27a96eebee145f1c17a0c5573471003c",
+      "private_recovery": "VERIFIED_OWNER_ONLY_ROTATED_POINTER_BOUND_TO_BODY_HEAD",
+      "security_review": "PARTIAL_HISTORICAL_METADATA_EXPOSURE_CONTAINED_CURRENT_ACCESS_OWNER_ONLY",
+      "isolated_restore": "BLOCKED_BYTE_EXACT_ARCHIVE_AND_NONPRODUCTION_RESTORE_PATH",
+      "full_native_semantic_coverage": "OPEN"
     }
   },
   "semantic_causal_music_analytics": {
