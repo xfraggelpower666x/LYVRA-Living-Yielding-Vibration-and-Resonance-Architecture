@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-REPAIR-CODEFORGE-PHASE3-VERIFIED",
+  "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-CODEFORGE-PHASE3-MOBILE-REINDEX-VERIFIED",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -59,13 +59,13 @@
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE2_2026-10-05.json": "a2d16cfe8b5557c1cb8507d51ad7846c7d36e6f5",
     "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json": "e6f1b90df0b09cdb5f2eb129178e5f0c1de216a4",
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json": "de9dca7ea88f1e64fdd039bd6a9a032bf7722d61",
-    "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json": "e4ec6b2a76c71540532766bb46c8dff7ddac279d"
+    "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json": "112c36b5aa3dbe6756994d55969532c5d0ff54b8"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "PLUGIN_PORTABILITY_CODEFORGE_PHASE3_AND_HOST_REINDEX_SYNC_VERIFIED_PENDING_FINAL_POINTER",
+  "registry_population_status": "PLUGIN_PORTABILITY_CODEFORGE_PHASE3_CHAT_AND_MOBILE_REINDEX_VERIFIED_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_TREE_READBACK",
   "verified_carrier_count": 54,
   "verified_mismatch_count": 0,
@@ -137,7 +137,7 @@
     "prechange_commit_anchor": "9f1f1ac3954b626e9a12960968162ba54be99805"
   },
   "plugin_portability_repair": {
-    "status": "VERIFIED_CURRENT_PACKAGE_AND_CHAT_SURFACE",
+    "status": "VERIFIED_CURRENT_PACKAGE_CHAT_AND_MOBILE",
     "carrier": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json",
     "native_runtime": "0.1.11",
     "migrated_plugin": "0.13.10",
@@ -146,7 +146,7 @@
     "plugin_local_mcp_servers_each": 0,
     "external_pet_worker_preserved": true,
     "chat_surface_invocation_verified": true,
-    "mobile_surface_reappearance": "PENDING_POST_REPAIR_USER_TEST",
+    "mobile_surface_reappearance": "VERIFIED",
     "semantic_status_classification": "FRESHNESS_MISMATCH_IS_PARTIAL_UNTIL_REGISTRY_SYNC; CONFLICT_QUARANTINE_ONLY_FOR_UNRESOLVED_SHA_MISMATCH",
     "host_reindex_carrier": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json"
   },
@@ -167,5 +167,12 @@
     "missing_prior_carriers": 0,
     "host_reindex_carrier_added": true,
     "registered_carriers_after_host_readback": 54
+  },
+  "mobile_reindex_closeout": {
+    "status": "VERIFIED",
+    "carrier": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json",
+    "carrier_sha": "112c36b5aa3dbe6756994d55969532c5d0ff54b8",
+    "recovery_branch": "lyvra-pre-mobile-reindex-closeout-20261005",
+    "prechange_head": "9e4646a48250d534538d325f3fc25d8c44b268a3"
   }
 }
