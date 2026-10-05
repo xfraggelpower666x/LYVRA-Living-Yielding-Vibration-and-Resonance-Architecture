@@ -15,5 +15,12 @@
     "SUNO_STUDIO_2",
     "LYVRA_ANALYTICS"
   ],
-  "current_policy": "STORE_SCOPED_CAUSAL_RELATIONS_WITH_PROVENANCE_AND_GENERALIZATION_LIMITS"
+  "current_policy": "STORE_SCOPED_CAUSAL_RELATIONS_WITH_PROVENANCE_GENERALIZATION_LIMITS_AND_ADDITIVE_EVOLUTION",
+  "reference_preservation": {
+    "root": "/Lyvra/References/Music/2026-10-05",
+    "registry": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
+    "image_pdf_markdown_json_zip_supported": true,
+    "reference_ne_current_authority": true,
+    "new_reference_ne_silent_replacement": true
+  }
 }
