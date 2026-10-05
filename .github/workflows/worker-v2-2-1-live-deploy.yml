@@ -1,0 +1,53 @@
+name: LYVRA Worker v2.1 One-Time Live Deploy
+
+on:
+  push:
+    branches:
+      - worker-v2-2-1-live-deploy-20261005
+    paths:
+      - ".github/workflows/worker-v2-2-1-live-deploy.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      WRANGLER_SEND_METRICS: "false"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify required deploy credentials are present
+        run: |
+          set -euo pipefail
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+
+      - name: Re-run v2.1 regression suite
+        run: node --test cloudflare-workers/personal-main-system-authority/worker-v2-hardening.test.mjs
+
+      - name: Assert stateless v2-only runtime
+        run: |
+          set -euo pipefail
+          ! grep -R -E "NATIVE_V3|worker-v3|durable_objects|new_sqlite_classes|NATIVE_V3_NONCES"             cloudflare-workers/personal-main-system-authority/worker.js             cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js             cloudflare-workers/personal-main-system-authority/wrangler.toml
+          echo "STATELESS_V2_ONLY=PASS"
+
+      - name: Wrangler dry-run
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          npx --yes wrangler@4.111.0 deploy             --dry-run             --outdir=/tmp/lyvra-v2-1-live-build             --keep-vars             --experimental-provision=false             --experimental-auto-create=false
+
+      - name: Deploy v2.1 to existing lyvrasystem only
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          npx --yes wrangler@4.111.0 deploy             --keep-vars             --experimental-provision=false             --experimental-auto-create=false             --message "LYVRA Worker v2.1 hardening; existing lyvrasystem only; no new resources"
