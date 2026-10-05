@@ -1,5 +1,5 @@
 {
-  "status": "CHAT_SURFACE_REINDEX_VERIFIED_MOBILE_RECHECK_PENDING",
+  "status": "CHAT_AND_MOBILE_SURFACE_REINDEX_VERIFIED",
   "date": "2026-10-05",
   "scope": "DUAL_LYVRA_PLUGIN_HOST_REINDEX_READBACK_AFTER_PORTABILITY_REPAIR",
   "evidence": {
@@ -19,15 +19,22 @@
       "native_runtime_skills_visible": true,
       "migrated_plugin_skills_visible": true,
       "pet_skills_visible_on_both": true
+    },
+    "mobile_post_repair_user_confirmation": {
+      "platform": "MOBILE",
+      "result": "BOTH_LYVRA_PLUGINS_VISIBLE_AGAIN",
+      "source": "DIRECT_USER_HOST_OBSERVATION",
+      "date": "2026-10-05"
     }
   },
   "conclusion": {
     "chat_plugin_surface_reappearance": "VERIFIED",
     "plugin_backend_objects": "PRESERVED",
     "plugin_ids": "PRESERVED",
-    "desktop_only_main_plugin_classification_blocker": "RESOLVED_FOR_CHAT_SURFACE",
-    "mobile_post_repair_recheck": "PENDING",
-    "pet_visual_host_render": "READBACK_PENDING"
+    "desktop_only_main_plugin_classification_blocker": "RESOLVED_FOR_CHAT_AND_MOBILE_SURFACES",
+    "mobile_post_repair_recheck": "VERIFIED",
+    "pet_visual_host_render": "READBACK_PENDING",
+    "plugin_availability": "VERIFIED_WEB_CHAT_AND_MOBILE"
   },
   "no_repo_authority_change": true,
   "no_identity_change": true,
