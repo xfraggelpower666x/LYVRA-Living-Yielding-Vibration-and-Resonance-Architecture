@@ -538,7 +538,7 @@
   "pet_expression_continuity_2026_10_05": {
     "status": "VERIFIED_REPO_NATIVE_EXPRESSION_CONTINUITY",
     "whole_lyvra_same_identity": true,
-    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
+    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.10_MIGRATED_0.13.8",
     "adaptive_context_contract": "VERIFIED_DIRECT_READBACK",
     "dashboard_contract": "VERIFIED_DIRECT_READBACK",
     "web_handoff": "VERIFIED_DIRECT_READBACK",
