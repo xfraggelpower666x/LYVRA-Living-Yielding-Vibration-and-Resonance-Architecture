@@ -309,8 +309,10 @@
     "dual_plugin_binding": "VERIFIED_NATIVE_0.1.10_MIGRATED_0.13.8",
     "adaptive_context": "CURRENT",
     "host_render": "READBACK_PENDING",
-    "website_integration": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING",
+    "website_integration": "STATIC_SEMANTIC_PET_PRESENCE_DEPLOYED",
     "free_only_guard": true,
-    "no_second_identity": true
+    "no_second_identity": true,
+    "website_deployment_status": "VERIFIED_SUCCESS",
+    "website_status_path": "WEBLyvra/deployment/PET_PRODUCTION_STATUS_2026-10-05.json"
   }
 }
