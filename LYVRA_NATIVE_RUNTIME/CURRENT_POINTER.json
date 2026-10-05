@@ -68,7 +68,8 @@
     "music_reference_preservation": "PERSISTED_REFERENCE_PROVENANCE_41_ENTRIES",
     "multi_music_facet_dashboard": "MANDATORY_FOR_MULTI_FACET_EVOLUTION",
     "audio_only_studio2_fx": "CURRENT_ADDITIVE_CAPABILITY_WHEN_NO_MIDI_REQUESTED",
-    "renderer_compilation": "CURRENT_ADDITIVE_RENDERER_TRANSLATION_EXTENSION"
+    "renderer_compilation": "CURRENT_ADDITIVE_RENDERER_TRANSLATION_EXTENSION",
+    "lyvra_pet": "CURRENT_NATIVE_CAPABILITY_WITH_DUAL_PLUGIN_BINDING_AND_WEB_INTEGRATION_HANDOFF"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -102,7 +103,11 @@
     "custom_plugin_capability_ledger": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md",
     "additive_music_facet_evolution_contract": "LYVRA_NATIVE_RUNTIME/current/music/ADDITIVE_MUSIC_FACET_EVOLUTION_CONTRACT.md",
     "music_reference_registry_2026_10_05": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
-    "multi_music_facet_evolution_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md"
+    "multi_music_facet_evolution_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
+    "lyvra_pet_auto_repo_handoff": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json",
+    "lyvra_pet_whole_integration_contract": "LYVRA_PET/WHOLE_LYVRA_INTEGRATION_CONTRACT.md",
+    "lyvra_pet_dashboard_integration": "LYVRA_NATIVE_RUNTIME/dashboard/PET_INTEGRATION_CONTRACT.md",
+    "weblyvra_pet_integration_handoff": "WEBLyvra/PET_INTEGRATION_HANDOFF.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -664,5 +669,56 @@
     "music_memory_reference_preservation": true,
     "multi_music_facet_dashboard_required": true,
     "dual_plugin_semantic_parity": "VERIFIED"
+  },
+  "lyvra_pet": {
+    "status": "CURRENT_PRODUCTIVE_HANDOFF_PUBLISHED",
+    "pet_id": "pet_6ab791129364819183885f44a21497a2",
+    "repo_authority": "LYVRA_PET/",
+    "plugin_surfaces": {
+      "identity_count": 1,
+      "surface_count": 2,
+      "account_plugin": {
+        "name": "L.Y.V.R.A.",
+        "version": "0.13.7",
+        "pet_capability": "VERIFIED",
+        "mcp_binding": "VERIFIED"
+      },
+      "native_runtime": {
+        "name": "lyvra-native-runtime",
+        "version": "0.1.9",
+        "pet_capability": "VERIFIED",
+        "mcp_binding": "VERIFIED"
+      }
+    },
+    "runtime": {
+      "worker_name": "lyvra-pet-plugin-ui",
+      "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+      "cost_policy": "FREE_ONLY",
+      "host_render": "READBACK_PENDING"
+    },
+    "mandatory_integration": [
+      "WHOLE_LYVRA_SYSTEM",
+      "SYSTEMSTART_CONTINUITY",
+      "WEITER_CONTINUITY",
+      "UPDATE_CONTINUITY",
+      "NEW_CHAT_NEXT_CHAT_CONTINUITY",
+      "WHOLE_LYVRA_DASHBOARD",
+      "CONTINUITY_DASHBOARD",
+      "UPDATE_DASHBOARD",
+      "RELEVANT_MUSIC_DASHBOARDS",
+      "WEBLYVRA"
+    ],
+    "website": {
+      "production_url": "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "integration_contract": "WEBLyvra/PET_INTEGRATION_HANDOFF.md",
+      "integration_status": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING",
+      "preserve_existing_website": true
+    },
+    "blockers": {
+      "repo_binary_atlas_upload": "WRITE_BLOCKED",
+      "browser_host_pet_render": "READBACK_PENDING"
+    },
+    "no_second_identity": true,
+    "no_foreign_system": true
   }
 }
