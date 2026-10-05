@@ -1,0 +1,17 @@
+{
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-05",
+  "surface": "LYVRA Native Runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.11",
+  "release_id": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
+  "creator_release_is_current": true,
+  "creator_archive_access": "VERIFIED",
+  "creator_archive_file": "current.tar.gz",
+  "creator_archive_mime": "application/gzip",
+  "file_count": 20,
+  "public_repo_payload_copy": false,
+  "plugin_discoverability": "PRIVATE",
+  "byte_sha256": "READBACK_PENDING_BINARY_TRANSFER",
+  "restore_rule": "Retrieve exact current release from Plugin Creator by plugin_id/release_id; do not publish private archive bytes to public repository."
+}
