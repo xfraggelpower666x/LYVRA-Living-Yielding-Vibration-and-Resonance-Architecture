@@ -95,6 +95,14 @@ jobs:
           test -n "$(find /tmp/lyvra-v3-staging-bundle -type f -print -quit)"
           echo "ISOLATED_STAGING_BUNDLE=PASS; PRODUCTION_UNTOUCHED=TRUE; DEPLOYMENT=FALSE"
 
+      - name: Preserve isolated staging bundle as CI artifact (not a deployment)
+        uses: actions/upload-artifact@v4
+        with:
+          name: lyvrasystem-v3-staging-bundle-${{ github.sha }}
+          path: /tmp/lyvra-v3-staging-bundle/
+          if-no-files-found: error
+          retention-days: 7
+
       - name: Isolated loopback Wrangler SQLite Durable Object integration (never deploy)
         shell: bash
         run: |
