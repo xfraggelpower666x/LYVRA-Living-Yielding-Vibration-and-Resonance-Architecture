@@ -1,0 +1,30 @@
+{
+  "schema": "LYVRA_MUSIC_REFERENCE_REGISTRY_V1",
+  "date": "2026-10-05",
+  "status": "PERSISTED_REFERENCE_PROVENANCE",
+  "library_root": "/Lyvra/References/Music/2026-10-05",
+  "originals_root": "/Lyvra/References/Music/2026-10-05/Originals",
+  "source_uploads_root": "/Lyvra/References/Music/2026-10-05/SourceUploads",
+  "role": "REFERENCE_PROVENANCE_EVIDENCE_ONLY_NOT_CURRENT_AUTHORITY",
+  "original_reference_file_count": 35,
+  "source_upload_count": 6,
+  "total_persisted_reference_entries": 41,
+  "types": ["jpg", "pdf", "md", "json", "zip"],
+  "systemsicherung_zip": {
+    "name": "LYVRA_CREATIVE_PRODUCTION_ORCHESTRATOR_ADDON_v1.4.1_SYSTEMSICHERUNG_WITH_EFFECT_WORKFLOW_REFERENCE.zip",
+    "size_bytes": 4139698,
+    "sha256": "c7195600a47e4021bec64ce590fba3649f28455d69b50bc67cfce6722354bb9a",
+    "contained_original_reference_directory": "99_ORIGINAL_REFERENCES",
+    "contained_reference_types": ["jpg", "pdf", "md", "json"]
+  },
+  "source_upload_sha256": {
+    "SUNO_Studio_Prompting_2026-10-05_18-32-04.md": "ec35bc2735a595934707caaa3558d168c7e2ef0b097e3b02c3786597b0f12afb",
+    "Suno_Psytrance_Tracks_Bauen_2026-10-05_17-57-24.md": "20757a3f1f2496f20b05680b59ab9bc7f8b6a9747683e2d35c1af0097c9e7097",
+    "AI_Song_Generator_Analyse_2026-10-05_17-57-05.md": "2d4e2e05a43e13323a0fa1ae77015ce89d572b298ed063503fc24d938935980a",
+    "Suno_Studio_Prompts_2026-10-05_17-56-02.md": "f3bf6b632554a50dcab60f7223ff44e0f0474ca48afe412ee8cd41ca1c82c3e1",
+    "SUNO_Studio_Prompting_2026-10-05_17-55-29.md": "57e961e8c0aae43a758d6f365b549da71c891852015bda29641265b0a4d31b32"
+  },
+  "additive_policy": "PRESERVE_COMPARE_RELATE_ADD_TEST_PROMOTE",
+  "reference_ne_current_authority": true,
+  "reference_ne_automatic_rule": true
+}
