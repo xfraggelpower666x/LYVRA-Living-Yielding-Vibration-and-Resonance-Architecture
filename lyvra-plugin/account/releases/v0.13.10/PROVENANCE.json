@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_VERIFIED_PLUGIN_RELEASE_EVIDENCE",
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
   "date": "2026-10-05",
   "surface": "L.Y.V.R.A. Account Plugin",
   "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
@@ -12,7 +12,7 @@
     "mime_type": "application/gzip",
     "direct_archive_access_verified": true,
     "signed_download_url_persisted": false,
-    "byte_sha256": "READBACK_PENDING_BINARY_TRANSFER_NOT_AVAILABLE_IN_GITHUB_TEXT_WRITER"
+    "byte_sha256": "READBACK_PENDING_BINARY_TRANSFER"
   },
   "file_count": 38,
   "file_inventory": [
@@ -170,9 +170,9 @@
     }
   ],
   "source_snapshot": {
-    "exact_utf8_files_mirrored": 24,
-    "path": "SOURCE_SNAPSHOT.json",
-    "external_original_archive_files": 14
+    "exact_utf8_source_access_verified": 24,
+    "copied_to_public_repo": false,
+    "reason": "PRIVATE_PLUGIN_CONTENT_NOT_BLINDLY_PUBLISHED_TO_PUBLIC_REPOSITORY"
   },
   "preservation": {
     "plugin_identity_preserved": true,
@@ -181,5 +181,10 @@
     "dashboard_not_reencoded": true,
     "historical_releases_preserved": true
   },
-  "restore_gate": "FULL_BYTE_IDENTICAL_RESTORE_REQUIRES_ORIGINAL_PLUGIN_CREATOR_ARCHIVE_FOR_EXTERNAL_FILES"
+  "restore_gate": "FULL_BYTE_IDENTICAL_RESTORE_REQUIRES_ORIGINAL_PLUGIN_CREATOR_ARCHIVE_FOR_EXTERNAL_FILES",
+  "privacy": {
+    "plugin_discoverability": "PRIVATE",
+    "public_repo_payload_copy": false,
+    "safe_public_evidence_only": true
+  }
 }
