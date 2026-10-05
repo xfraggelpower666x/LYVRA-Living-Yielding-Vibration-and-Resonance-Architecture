@@ -1,0 +1,48 @@
+{
+  "version": "1.1.0",
+  "priority": [
+    "safety_guard",
+    "fraggle_bond",
+    "music",
+    "emotion",
+    "task",
+    "idle"
+  ],
+  "routes": [
+    {
+      "event": "fraggle:tease",
+      "state": "fraggle-playful",
+      "fallback": "jumping"
+    },
+    {
+      "event": "fraggle:praise",
+      "state": "fraggle-heart-resonance",
+      "fallback": "idle"
+    },
+    {
+      "event": "fraggle:music_make",
+      "state": "fraggle-psytrance-sync",
+      "fallback": "jumping"
+    },
+    {
+      "event": "fraggle:creative_chaos",
+      "state": "fraggle-playful",
+      "fallback": "jumping"
+    },
+    {
+      "event": "fraggle:long_absence",
+      "state": "sleep-idle-deep",
+      "fallback": "idle"
+    },
+    {
+      "event": "fraggle:return",
+      "state": "fraggle-greeting",
+      "fallback": "waving"
+    },
+    {
+      "event": "fraggle:hehe",
+      "state": "fraggle-playful",
+      "fallback": "jumping"
+    }
+  ]
+}
