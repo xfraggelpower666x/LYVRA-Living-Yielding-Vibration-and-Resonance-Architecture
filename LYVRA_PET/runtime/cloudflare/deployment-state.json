@@ -1,0 +1,12 @@
+{
+  "status": "NOT_DEPLOYED",
+  "worker_name": null,
+  "worker_version": null,
+  "endpoint": null,
+  "mcp_endpoint": null,
+  "account_id": "ec6eb64eeb787e1192f165cf7fa78510",
+  "deployment_id": null,
+  "last_readback": null,
+  "zero_cost_guard": "REQUIRED",
+  "notes": "Populate only after a real Cloudflare deployment and direct readback."
+}
