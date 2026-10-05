@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-CODEFORGE-PHASE3-MOBILE-REINDEX-AUTO-PFS-HANDOFF",
+  "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-CODEFORGE-PHASE3-MOBILE-REINDEX-AUTO-PFS-HANDOFF-RELEASE-EVIDENCE",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -60,15 +60,19 @@
     "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json": "e6f1b90df0b09cdb5f2eb129178e5f0c1de216a4",
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json": "de9dca7ea88f1e64fdd039bd6a9a032bf7722d61",
     "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json": "112c36b5aa3dbe6756994d55969532c5d0ff54b8",
-    "LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md": "f86b781aa2b8e2bb88dcf6525490cfea9dd23530"
+    "LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md": "f86b781aa2b8e2bb88dcf6525490cfea9dd23530",
+    "lyvra-plugin/account/releases/v0.13.10/PROVENANCE.json": "05fba7aaa2f69e93b5f97ef103b0eb1d14b8c3b7",
+    "lyvra-plugin/account/releases/v0.13.10/RESTORE.md": "ed0a53b7ad4b097be0e6d84a8e363242e651eca9",
+    "lyvra-plugin/native-runtime/releases/v0.1.11/PROVENANCE.json": "8f7c49436e49a4f4adca6cd217067182d09491cb",
+    "lyvra-plugin/native-runtime/releases/v0.1.11/RESTORE.md": "5fa3dba09fab758b3f1b6b12e9867246225f281b"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "AUTO_PFS_HANDOFF_CONTRACT_BOUND_PENDING_FINAL_POINTER",
+  "registry_population_status": "CURRENT_PLUGIN_RELEASE_PROVENANCE_BOUND_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_TREE_READBACK",
-  "verified_carrier_count": 55,
+  "verified_carrier_count": 59,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -189,5 +193,26 @@
     "apply_requires_explicit_666pfs_update": true,
     "pfs_repo_handoff_readback": "VERIFIED_CURRENT_PENDING",
     "current_pfs_handoff_blob": "79de6ed84ac2b2e4307a7f418e8fd4d4bc32c3e8"
+  },
+  "plugin_release_backup_evidence": {
+    "status": "PARTIAL_SECURE_BACKUP_EVIDENCE",
+    "account": {
+      "version": "0.13.10",
+      "release_id": "pluginrel_6ac4074419cc81918f854dd986c214f4",
+      "provenance": "lyvra-plugin/account/releases/v0.13.10/PROVENANCE.json",
+      "restore": "lyvra-plugin/account/releases/v0.13.10/RESTORE.md",
+      "creator_archive_access": "VERIFIED",
+      "archive_sha256": "READBACK_PENDING_BINARY_TRANSFER"
+    },
+    "native_runtime": {
+      "version": "0.1.11",
+      "release_id": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
+      "provenance": "lyvra-plugin/native-runtime/releases/v0.1.11/PROVENANCE.json",
+      "restore": "lyvra-plugin/native-runtime/releases/v0.1.11/RESTORE.md",
+      "creator_archive_access": "VERIFIED",
+      "archive_sha256": "READBACK_PENDING_BINARY_TRANSFER"
+    },
+    "public_repo_private_payload_copy": false,
+    "privacy_reason": "PRIVATE_PLUGIN_CONTENT_NOT_BLINDLY_PUBLISHED_TO_PUBLIC_REPOSITORY"
   }
 }
