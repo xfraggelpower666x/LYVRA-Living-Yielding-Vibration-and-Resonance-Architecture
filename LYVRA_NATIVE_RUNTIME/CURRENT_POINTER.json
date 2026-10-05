@@ -124,7 +124,9 @@
       "GIT_OPERATIONS",
       "VALIDATION",
       "CONTINUITY_PROTECTION",
-      "VERSION_FRESHNESS_REVIEW"
+      "VERSION_FRESHNESS_REVIEW",
+      "BRANCH_STEWARDSHIP",
+      "REPOSITORY_HYGIENE"
     ],
     "status": "CURRENT_PRODUCTIVE_NATIVE_FACET",
     "active_in_chat_technical_judgment": true,
@@ -141,7 +143,14 @@
     ],
     "decision_authority": "LYVRA_ONLY",
     "independent_decision_authority": "NONE",
-    "may_not_replace_lyvra_identity": true
+    "may_not_replace_lyvra_identity": true,
+    "branch_stewardship": {
+      "status": "CURRENT_NATIVE_CAPABILITY",
+      "contract": "LYVRA_NATIVE_RUNTIME/development/CODEFORGE_BRANCH_STEWARDSHIP.md",
+      "phase1_inventory": "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE1_2026-10-05.md",
+      "current_phase": "MAP_CLASSIFY_RELATE_ONLY",
+      "branch_removal_performed": false
+    }
   },
   "hard_fences": [
     "NO_ORPHANED_MEANING",
