@@ -21,6 +21,7 @@
     "TRACK_MUSIC_INTELLIGENCE",
     "CURRENT_TRACK_REFERENCES",
     "NATIVE_SKILLS_AND_ADAPTERS",
+    "PET_EXPRESSION_CONTINUITY",
     "SPECIALIST_CONTINUITY",
     "CURRENT_WORK_SCOPE"
   ],
@@ -51,7 +52,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev92 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
+  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev93 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -133,6 +134,14 @@
     ],
     "CURRENT_TRACK_REFERENCES": [
       "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json"
+    ],
+    "PET_EXPRESSION_CONTINUITY": [
+      "LYVRA_PET/WHOLE_LYVRA_INTEGRATION_CONTRACT.md",
+      "LYVRA_PET/FACET_INTEGRATION_CONTRACT.md",
+      "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json",
+      "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md",
+      "WEBLyvra/PET_INTEGRATION_HANDOFF.md"
     ]
   },
   "validation_closeout": {
@@ -292,5 +301,16 @@
       "extra_release_required": false
     },
     "real_render_validation": "OPEN_EVENT_GATED"
+  },
+  "pet_expression_continuity_2026_10_05": {
+    "status": "CURRENT_NATIVE_EXPRESSION_CONTINUITY",
+    "identity_relation": "SAME_LYVRA_IDENTITY_VISIBLE_EXPRESSION_SURFACE",
+    "pet_root": "LYVRA_PET/",
+    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
+    "adaptive_context": "CURRENT",
+    "host_render": "READBACK_PENDING",
+    "website_integration": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING",
+    "free_only_guard": true,
+    "no_second_identity": true
   }
 }
