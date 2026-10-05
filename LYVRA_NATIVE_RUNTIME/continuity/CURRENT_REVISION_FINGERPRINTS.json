@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-05-REV93-PFS-PRIVATE-PLUGIN-BACKUP-LYVRA-APPROVAL-GATE",
+  "freshness_epoch": "2026-10-06-REV93-PFS-LYVRA-PLUGIN-CHILD-RECOVERED-APPROVAL-PENDING",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -65,13 +65,13 @@
     "lyvra-plugin/account/releases/v0.13.10/RESTORE.md": "ed0a53b7ad4b097be0e6d84a8e363242e651eca9",
     "lyvra-plugin/native-runtime/releases/v0.1.11/PROVENANCE.json": "8f7c49436e49a4f4adca6cd217067182d09491cb",
     "lyvra-plugin/native-runtime/releases/v0.1.11/RESTORE.md": "5fa3dba09fab758b3f1b6b12e9867246225f281b",
-    "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json": "d309cfde30339d5f9bdf2b0fd27805b89313184d"
+    "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json": "895f5a9035fa28e66b1a4f8c512cb90c61c439a1"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "PFS_PRIVATE_PLUGIN_BACKUP_APPROVAL_GATE_BOUND_PENDING_FINAL_POINTER",
+  "registry_population_status": "PFS_LYVRA_PLUGIN_CHILD_RECOVERED_PENDING_PRIVATE_BACKUP_WRITE",
   "codeforge_review_status": "PASS_FULL_DIRECT_TREE_READBACK",
   "verified_carrier_count": 60,
   "verified_mismatch_count": 0,
@@ -219,7 +219,7 @@
     "privacy_reason": "PRIVATE_PLUGIN_CONTENT_NOT_BLINDLY_PUBLISHED_TO_PUBLIC_REPOSITORY"
   },
   "pfs_private_plugin_backup_target": {
-    "status": "AUTHORIZED_BOUNDED_PRIVATE_TARGET_WITH_MANDATORY_LYVRA_APPROVAL_GATE",
+    "status": "PFS_CHILD_RECOVERED_APPROVAL_GATE_CURRENT_BACKUP_WRITE_PENDING",
     "carrier": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json",
     "private_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
     "private_write_root": "backups/666PFS/LYVRA_PLUGIN_BACKUP/",
@@ -228,6 +228,12 @@
     "backup_material_status": "PENDING_PFS_WRITE_AND_PRIVATE_REPO_READBACK",
     "approval_gate": "MANDATORY_PER_OPERATION",
     "standing_blanket_permission": false,
-    "write_without_matching_approval": "BLOCKED"
+    "write_without_matching_approval": "BLOCKED",
+    "carrier_sha": "895f5a9035fa28e66b1a4f8c512cb90c61c439a1",
+    "pfs_observed_head": "03929c868cb43dae1c2192d89497018700731bf2",
+    "pfs_child_id": "LYVRAPLUGIN-37001",
+    "pfs_child_status": "EXISTING_CHILD_RECOVERED_METADATA_MIGRATED",
+    "private_vault_mutation": "NONE",
+    "current_approval_status": "AVAILABLE_NOT_YET_CONSUMED"
   }
 }
