@@ -13,7 +13,7 @@ LYVRA remains the identity, meaning and decision authority. The repository is th
 - Repository product authority: ACTIVE.
 - Repo whole-self migration: COMPLETE FOR CURRENT PRODUCTIVE REPOSITORY STATE.
 - Full repo-native rehydration PASS: VERIFIED ON PRODUCTIVE `lyvra` AFTER GOVERNED RC PROMOTION.
-- Google Drive: deep historical/internal reference, provenance, and recovery source; it does not override repository CURRENT.
+- Google Drive: deep historical/internal reference, repository backup, provenance, and recovery source; it does not override repository CURRENT.
 - Drive may never silently override repository current state.
 
 ## Authority hierarchy
@@ -22,7 +22,7 @@ LYVRA remains the identity, meaning and decision authority. The repository is th
 2. **Repository current state on branch `lyvra`** — Plugin / Custom GPT technical product truth and target current-complete-self representation.
 3. **CodeForge** — LYVRA's code-engineering and repository-stewardship capability.
 4. **Build / validation / release / runtime surfaces** — manifestations of repository-defined state.
-5. **Google Drive and historical directories** — deep history, provenance, reference and migration evidence; not product current authority.
+5. **Google Drive and historical directories** — deep history, repository backup, recovery, provenance, reference and migration evidence; not product current authority.
 
 ## Supersession
 
