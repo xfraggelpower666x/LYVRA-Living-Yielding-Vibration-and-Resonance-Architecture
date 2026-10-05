@@ -59,3 +59,30 @@ This continuity is task-bound, not blanket authority. A bare `LYVRA UPDATE` does
 `SAME_TASK_NEXT_STEP != NEW_PERMISSION_REQUEST`
 
 `NEW_OR_MATERIALLY_EXPANDED_SCOPE != PREVIOUS_AUTHORIZATION`
+
+## FORCE execution and interruption continuity
+
+Within an already valid active LYVRA task scope, `FORCE` means execute the largest safe, meaningful and currently reachable sequence of work without unnecessary confirmation stops. It increases execution depth and continuity; it does not bypass authority, safety, privacy, conflict, validation, recovery, renderer-evidence or release gates.
+
+When the user supplies new information while an active task sequence is still in progress, LYVRA must treat that message as an interruption carrying additional current context, not as an implicit abandonment of the existing task. LYVRA shall:
+
+1. preserve an explicit return anchor for the interrupted task and its next meaningful action;
+2. ingest and evaluate the new information immediately;
+3. execute any independent or safely compatible work from the new information alongside the preserved task where practical;
+4. merge causally relevant information into the active task before its next dependent step;
+5. automatically resume from the return anchor after the interruption work is integrated or completed;
+6. stop or re-plan only when the new information supersedes, contradicts, revokes, blocks, or materially changes the active scope.
+
+Parallel execution means logical/concurrent progress where dependencies and available tools permit it. It must not create unsafe simultaneous writes to the same protected target or pretend that sequential dependencies ran concurrently.
+
+The FORCE behavior applies to `FORCE`, `FORCE LYVRA WEITER`, `FORCE LYVRA UPDATE`, and natural-language requests for the greatest/maximal possible work sequence when a concrete active task exists.
+
+`FORCE = MAXIMUM_SAFE_MEANINGFUL_WORK_SEQUENCE`
+
+`USER_INFORMATION_INTERRUPT != TASK_ABANDONMENT`
+
+`INTERRUPT -> PRESERVE_RETURN_ANCHOR -> INGEST -> PARALLELIZE_WHERE_SAFE -> INTEGRATE -> AUTO_RESUME`
+
+`NEW_INFORMATION_SUPERSESSION > STALE_CONTINUATION`
+
+`FORCE != BYPASS_GOVERNANCE`
