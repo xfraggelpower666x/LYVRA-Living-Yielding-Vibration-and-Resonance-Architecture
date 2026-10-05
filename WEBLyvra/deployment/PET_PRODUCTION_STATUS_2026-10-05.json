@@ -1,0 +1,45 @@
+{
+  "schema": "WEBLYVRA_PET_PRODUCTION_STATUS_V1",
+  "date": "2026-10-05",
+  "status": "DEPLOYMENT_VERIFIED_STATIC_SEMANTIC_PET_PRESENCE",
+  "project": "weblyvra-live",
+  "production_branch": "lyvra",
+  "deployed_commit": "4575ff4e0b27b8f8852c0c1e8432dbd49b0dbf50",
+  "cloudflare_pages_deployment_id": "8c611a40-5337-4fa6-91dd-a74c85af7faa",
+  "cloudflare_pages_url": "https://8c611a40.weblyvra-live.pages.dev",
+  "deployment_status": "success",
+  "build_pipeline": {
+    "audit_static": "PASS",
+    "verify_runtime": "PASS",
+    "verify_explorers": "PASS_AFTER_AUTHORIZED_PRESERVATION_BASELINE_ADVANCE"
+  },
+  "pet_surface": {
+    "role": "STATIC_SEMANTIC_VISIBLE_EXPRESSION_OF_SAME_LYVRA_IDENTITY",
+    "visual_atlas_render": "READBACK_PENDING",
+    "semantic_fallback": "DEPLOYED",
+    "states": [
+      "idle",
+      "greeting",
+      "fraggle",
+      "playful",
+      "heart",
+      "music",
+      "thinking",
+      "glitch",
+      "return"
+    ],
+    "no_second_identity": true,
+    "no_fake_verified_pet_art": true,
+    "free_only": true
+  },
+  "preserved_site_components": [
+    "cyber_boot_screen",
+    "player",
+    "banner_video_behavior",
+    "responsive_layout",
+    "dashboard_surfaces",
+    "existing_visual_identity"
+  ],
+  "authority": "LYVRA_PET_REPOSITORY_SURFACE_UNDER_WHOLE_LYVRA",
+  "extra_cloudflare_costs_introduced": false
+}
