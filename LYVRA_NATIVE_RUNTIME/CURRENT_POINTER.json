@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "6c7026780ef6d21f81b9e7071359f6b782e563dd",
+    "current_head_before_pointer": "d4e5be67e9ce204026ccd066e2655424c68d3341",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "REV93_MULTI_MUSIC_PET_WEBLYVRA_CODEFORGE_PHASE2_PLUS_CLIC_PFS_FAILBACK_RELATION",
+    "current_work_scope": "REV93_MULTI_MUSIC_PET_WEBLYVRA_CODEFORGE_PHASE3_READONLY_PLUS_PLUGIN_PORTABILITY_REPAIR_PLUS_CLIC_PFS_FAILBACK_RELATION",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -120,7 +120,8 @@
     "weblyvra_pet_production_status": "WEBLyvra/deployment/PET_PRODUCTION_STATUS_2026-10-05.json",
     "codeforge_branch_stewardship_phase2": "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE2_2026-10-05.md",
     "codeforge_branch_stewardship_phase2_inventory": "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE2_2026-10-05.json",
-    "codeforge_recovery_point_policy": "LYVRA_NATIVE_RUNTIME/development/CODEFORGE_RECOVERY_POINT_POLICY.md"
+    "codeforge_recovery_point_policy": "LYVRA_NATIVE_RUNTIME/development/CODEFORGE_RECOVERY_POINT_POLICY.md",
+    "plugin_portability_repair_2026_10_05": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -204,21 +205,21 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-05",
-    "scope": "CLIC_PFS_FAILBACK_RELATION_SYNC",
-    "productive_body_head": "6c7026780ef6d21f81b9e7071359f6b782e563dd",
+    "scope": "LYVRA_PLUGIN_PORTABILITY_REPAIR",
+    "productive_body_head": "d4e5be67e9ce204026ccd066e2655424c68d3341",
     "prechange_recovery": {
-      "commit_anchor": "9f1f1ac3954b626e9a12960968162ba54be99805",
-      "named_branch_created": false,
-      "policy_basis": "R1_COMMIT_ANCHOR_LOW_RISK_BOUNDED_METADATA"
+      "commit_anchor": "0cfc945d960034161a2f9a955ebce6b5b937694f",
+      "named_branch_created": true,
+      "named_branch": "lyvra-pre-plugin-portability-repair-20261005",
+      "policy_basis": "R2_NAMED_RECOVERY_MATERIAL_PLUGIN_PACKAGING_CHANGE"
     },
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "music_state_changed": false,
-    "pet_state_changed": false,
-    "plugin_versions_changed": false,
-    "clic_observed_head": "60d346ca006a2d7bbb7ab98f4ad2b93e0e079881",
-    "clic_pfs_failback_relation": "VERIFIED_READ_ONLY",
-    "critical_carrier_readback": "51_CARRIERS_ZERO_MISMATCH",
+    "pet_identity_changed": false,
+    "plugin_versions_changed": true,
+    "plugin_package_readback": "VERIFIED",
+    "host_reindex_pending": true,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -589,7 +590,7 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-05-REV93-CODEFORGE-PHASE2-CLIC-PFS-FAILBACK-SYNC",
+    "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-REPAIR-CODEFORGE-PHASE3-READONLY",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "registry_content_sha": "",
@@ -597,7 +598,7 @@
     "critical_carrier_count": 51,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_CLIC_PFS_FAILBACK_RELATION_51_CARRIERS_ZERO_MISMATCH"
+    "codeforge_review": "PASS_PLUGIN_PORTABILITY_RELATION_UPDATED_PHASE3_READONLY_CONTINUES"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -680,8 +681,8 @@
     "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK",
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.10",
-      "release": "pluginrel_6ac3edb9f010819193e2a6847fc57355",
+      "version": "0.1.11",
+      "release": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -689,12 +690,16 @@
       "suno_studio_2_skill": "VERIFIED",
       "audio_only_fx_semantics": "VERIFIED",
       "rev93_semantic_compatibility": "VERIFIED_NO_RELEASE_CHANGE_REQUIRED",
-      "pet_dashboard_semantics": "VERIFIED"
+      "pet_dashboard_semantics": "VERIFIED",
+      "pet_skill": "VERIFIED_PRESERVED",
+      "plugin_local_mcp_binding": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY",
+      "mcp_servers_declared": 0,
+      "host_reappearance": "PENDING_HOST_REINDEX_TEST"
     },
     "migrated_gpt_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.8",
-      "release": "pluginrel_6ac3edc91a08819186ab34fcfa5bb469",
+      "version": "0.13.10",
+      "release": "pluginrel_6ac4074419cc81918f854dd986c214f4",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -702,7 +707,11 @@
       "suno_studio_2_skill": "VERIFIED",
       "audio_only_fx_semantics": "VERIFIED",
       "rev93_semantic_compatibility": "VERIFIED_NO_RELEASE_CHANGE_REQUIRED",
-      "pet_dashboard_semantics": "VERIFIED"
+      "pet_dashboard_semantics": "VERIFIED",
+      "pet_skill": "VERIFIED_PRESERVED",
+      "plugin_local_mcp_binding": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY",
+      "mcp_servers_declared": 0,
+      "host_reappearance": "PENDING_HOST_REINDEX_TEST"
     }
   },
   "music_additive_evolution_2026_10_05": {
@@ -737,22 +746,25 @@
       "surface_count": 2,
       "account_plugin": {
         "name": "L.Y.V.R.A.",
-        "version": "0.13.8",
-        "pet_capability": "VERIFIED",
-        "mcp_binding": "VERIFIED"
+        "version": "0.13.10",
+        "pet_capability": "VERIFIED_PRESERVED",
+        "mcp_binding": "REMOVED_FROM_MAIN_PLUGIN_FOR_CROSS_SURFACE_PORTABILITY"
       },
       "native_runtime": {
         "name": "lyvra-native-runtime",
-        "version": "0.1.10",
-        "pet_capability": "VERIFIED",
-        "mcp_binding": "VERIFIED"
+        "version": "0.1.11",
+        "pet_capability": "VERIFIED_PRESERVED",
+        "mcp_binding": "REMOVED_FROM_MAIN_PLUGIN_FOR_CROSS_SURFACE_PORTABILITY"
       }
     },
     "runtime": {
       "worker_name": "lyvra-pet-plugin-ui",
       "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
       "cost_policy": "FREE_ONLY",
-      "host_render": "READBACK_PENDING"
+      "host_render": "READBACK_PENDING",
+      "main_plugin_mcp_binding": false,
+      "worker_preserved": true,
+      "semantic_pet_capability": "VERIFIED_PRESERVED"
     },
     "mandatory_integration": [
       "WHOLE_LYVRA_SYSTEM",
@@ -790,7 +802,8 @@
     },
     "blockers": {
       "repo_binary_atlas_upload": "WRITE_BLOCKED",
-      "browser_host_pet_render": "READBACK_PENDING"
+      "browser_host_pet_render": "READBACK_PENDING",
+      "plugin_host_reindex": "PENDING_USER_HOST_TEST_AFTER_PORTABILITY_REPAIR"
     },
     "no_second_identity": true,
     "no_foreign_system": true,
@@ -829,5 +842,31 @@
     },
     "dual_plugin_check": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
     "extra_plugin_release_required": false
+  },
+  "plugin_portability_repair_2026_10_05": {
+    "result": "PASS_PACKAGE_READBACK_HOST_REINDEX_PENDING",
+    "prechange_recovery_branch": "lyvra-pre-plugin-portability-repair-20261005",
+    "prechange_head": "0cfc945d960034161a2f9a955ebce6b5b937694f",
+    "body_head_before_pointer": "d4e5be67e9ce204026ccd066e2655424c68d3341",
+    "continuity_carrier": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json",
+    "root_cause": "PLUGIN_LOCAL_PET_MCP_DECLARATION_TRIGGERED_DESKTOP_ONLY_HOST_CLASSIFICATION",
+    "repair": "REMOVE_MAIN_PLUGIN_MCP_DECLARATIONS_PRESERVE_PET_SKILLS_AND_EXTERNAL_WORKER",
+    "native_runtime_version": "0.1.11",
+    "migrated_gpt_plugin_version": "0.13.10",
+    "native_runtime_release": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
+    "migrated_gpt_plugin_release": "pluginrel_6ac4074419cc81918f854dd986c214f4",
+    "mcp_servers_declared_each": 0,
+    "pet_skills_preserved": true,
+    "plugin_ids_preserved": true,
+    "historical_releases_preserved": true,
+    "whole_rev242_preserved": true,
+    "track_design_v3_4_rev93_preserved": true,
+    "music_state_changed": false,
+    "pet_identity_changed": false,
+    "repo_authority_changed": false,
+    "host_permission_state": "NOT_INSTALLED_REINDEX_PENDING",
+    "web_mobile_reappearance": "PENDING_USER_HOST_TEST",
+    "pointer_published_last": true,
+    "mutation_after_pointer": "NONE"
   }
 }
