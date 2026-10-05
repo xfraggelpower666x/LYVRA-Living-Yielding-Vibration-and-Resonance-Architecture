@@ -67,7 +67,7 @@
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
-    "current_status": "CURRENT_PRODUCTIVE_FULL_PUBLIC_REPO_AND_PRIVATE_RECOVERY_VERIFIED",
+    "current_status": "CANDIDATE_PUBLIC_CURRENTNESS_REVIEW_PRIVATE_RECOVERY_PENDING",
     "pass_forbidden_until_required_domains_verified": false,
     "full_repo_native_rehydration_pass": true
   },
@@ -503,15 +503,15 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-01-REV92-U4-NEWCHAT",
+    "freshness_epoch": "2026-10-05-REV92-U5-OPS-ALIGN-CANDIDATE",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "c1e026f4b373ca729231992175618dd889df0eaf",
+    "registry_content_sha": "fc250361d6db87c5bda443324e066555eee2873b",
     "expected_track_revision": 92,
     "critical_carrier_count": 25,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_FULL_DIRECT_READBACK"
+    "codeforge_review": "CANDIDATE_DIRECT_READBACK_PARTIAL_PRIVATE_RECOVERY_NOT_RERUN"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -586,5 +586,13 @@
     "evidence_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
     "ledger_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md",
     "no_new_track_revision": true
+  },
+  "last_operations_alignment_candidate": {
+    "date": "2026-10-05",
+    "scope": "OPERATIONS_CENTER_REV86_TEXT_SUPERSEDED_BY_REV92_U4",
+    "original_production_head": "92f6935467db3fc25b7cf53b84186430fcb301ec",
+    "backup_branch": "lyvra-backup-pre-operations-rev92-20261005",
+    "promotion_performed": false,
+    "private_recovery_not_rerun": true
   }
 }
