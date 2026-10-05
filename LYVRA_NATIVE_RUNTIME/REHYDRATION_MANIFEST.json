@@ -118,7 +118,11 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md",
       "LYVRA_NATIVE_RUNTIME/current/music/ADDITIVE_MUSIC_FACET_EVOLUTION_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
-      "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md"
+      "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -269,5 +273,24 @@
     "replacement_mode": false,
     "additive_preservation": true,
     "dual_plugin_semantic_parity": "VERIFIED_NATIVE_0.1.7_MIGRATED_0.13.5"
+  },
+  "rev93_multi_music_evolution": {
+    "status": "CURRENT_PRODUCTIVE_ADDITIVE",
+    "track_design_version": "v3.4",
+    "track_logical_revision": 93,
+    "whole_revision": 242,
+    "preserves_rev92": true,
+    "carriers": [
+      "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md"
+    ],
+    "plugin_semantic_check": {
+      "native_runtime": "0.1.9_VERIFIED_COMPATIBLE",
+      "migrated_plugin": "0.13.7_VERIFIED_COMPATIBLE",
+      "extra_release_required": false
+    },
+    "real_render_validation": "OPEN_EVENT_GATED"
   }
 }
