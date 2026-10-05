@@ -134,4 +134,27 @@ Use the LYVRA internal visual language:
 - no fake green
 - compact evidence-first panels
 
+### LYVRA neon palette
+
+LYVRA_NEON_PINK = primary identity/accent energy
+LYVRA_NEON_PURPLE = depth / intelligence / relational context
+LYVRA_NEON_TURQUOISE_CYAN = verified signal / live connection / active evidence
+LYVRA_NEON_RED = critical / blocked / danger / conflict only
+DARK_GRAPHITE_BLACK = base surface
+SOFT_WHITE = primary readable text
+
+COLOR_SEMANTICS:
+- VERIFIED / CONNECTED -> turquoise/cyan emphasis
+- ACTIVE / FOREGROUND -> neon pink emphasis
+- RELATIONAL / THINKING / CONTEXT -> neon purple emphasis
+- BLOCKED / CRITICAL / CONFLICT_QUARANTINE -> neon red emphasis
+- PARTIAL / READBACK_PENDING / OPEN -> neutral-dark surface with restrained neon indicator, never fake green
+
+NEON_USAGE_RULES:
+- glow is decorative support only, never the sole carrier of meaning
+- status must always have readable text labels in addition to color
+- avoid full-surface high-saturation backgrounds
+- preserve accessible contrast and mobile readability
+- public website styling may share LYVRA identity colors, but internal ops layouts and diagnostic semantics remain private
+
 END_CONTRACT
