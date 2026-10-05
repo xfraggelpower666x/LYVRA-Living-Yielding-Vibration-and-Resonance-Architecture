@@ -1,16 +1,16 @@
 {
-  "status": "CURRENT_VERIFIED_PFS_PRIVATE_PLUGIN_BACKUP_TARGET_AUTHORIZATION",
+  "status": "CURRENT_VERIFIED_PFS_PRIVATE_PLUGIN_BACKUP_TARGET_WITH_MANDATORY_LYVRA_APPROVAL_GATE",
   "date": "2026-10-05",
   "private_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
   "private_branch": "main",
   "private_write_root": "backups/666PFS/LYVRA_PLUGIN_BACKUP/",
   "private_contract": "contracts/666PFS_LYVRA_PLUGIN_BACKUP_WRITE_CONTRACT.md",
   "private_pointer": "VAULT_CURRENT_POINTER.json",
-  "private_pointer_blob": "98a1e5e238d57c7d1cef5115dabfb35e0879754f",
-  "private_head_after_authorization": "03dd5ba1c3a448bd01cd015ef1f7565bac600827",
+  "private_pointer_blob": "f566cd6d772bded02386af87d4b9eb8b0c582496",
+  "private_head_after_authorization": "dd1dc583e700adcc6bdda64688c1239ec9d46275",
   "pfs_handoff_repository": "xfraggelpower666x/666PFS_CSM",
   "pfs_handoff_path": "handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md",
-  "pfs_handoff_blob": "3fc7bff3fb0b78dedc0066bbc1c7fd2393adc87c",
+  "pfs_handoff_blob": "2ec42d4c4b1bf5ff52326d71c15c6afd9bbe871b",
   "pfs_write_scope": "PLUGIN_BACKUP_ARTIFACTS_ONLY",
   "child_autoload": false,
   "authority_transfer": false,
@@ -20,5 +20,13 @@
     "account_plugin": "0.13.10",
     "native_runtime": "0.1.11"
   },
-  "backup_material_status": "PENDING_PFS_WRITE_AND_PRIVATE_REPO_READBACK"
+  "backup_material_status": "PENDING_PFS_WRITE_AND_PRIVATE_REPO_READBACK",
+  "approval_gate": {
+    "mandatory_per_operation": true,
+    "approval_path": "approvals/666PFS_LYVRA_PLUGIN_BACKUP_CURRENT.json",
+    "current_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-05-001",
+    "standing_blanket_permission": false,
+    "write_without_current_matching_approval": "BLOCKED",
+    "new_approval_required_for_every_later_mutation": true
+  }
 }
