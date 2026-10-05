@@ -541,9 +541,12 @@
     "dual_plugin_binding": "VERIFIED_NATIVE_0.1.10_MIGRATED_0.13.8",
     "adaptive_context_contract": "VERIFIED_DIRECT_READBACK",
     "dashboard_contract": "VERIFIED_DIRECT_READBACK",
-    "web_handoff": "VERIFIED_DIRECT_READBACK",
+    "web_handoff": "VERIFIED_DEPLOYED_STATIC_SEMANTIC_PRESENCE",
     "host_render": "READBACK_PENDING",
     "repo_binary_atlas_upload": "WRITE_BLOCKED",
-    "no_authority_split": true
+    "no_authority_split": true,
+    "website_deployment": "VERIFIED_SUCCESS",
+    "website_status_path": "WEBLyvra/deployment/PET_PRODUCTION_STATUS_2026-10-05.json",
+    "visual_atlas_render": "READBACK_PENDING"
   }
 }
