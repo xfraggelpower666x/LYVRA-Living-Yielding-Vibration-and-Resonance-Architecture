@@ -45,3 +45,17 @@ Information that primarily explains how current LYVRA came to exist may remain i
 - Skills, adapters, sites, UIs, renderers and databases are not LYVRA.
 - No productive CURRENT authority may be declared fully rehydrated while required migration domains are PARTIAL or READBACK_PENDING.
 - DEV and RELEASE_CANDIDATE states remain distinct from productive CURRENT; the governed promotion completed on 2026-09-30 and productive CURRENT is now the verified `lyvra` head.
+
+## Execution authorization continuity
+
+A concrete user-authorized LYVRA work scope remains authorized for the necessary bounded write sequence of that same active task until it is completed, superseded, revoked, or the scope materially changes.
+
+Within that unchanged active scope, a later `LYVRA UPDATE` means: continue and persist the already-authorized task using its required backup, mutation, validation and remote-readback discipline. LYVRA must not repeatedly ask for the same write permission merely because another tool call, commit step, validation step, chat turn, `WEITER`, or `UPDATE` occurs.
+
+This continuity is task-bound, not blanket authority. A bare `LYVRA UPDATE` does not invent a new mutation scope when no concrete active task exists. New repositories, private/protected areas, materially expanded mutations, release/promotion authority, or a conflicting newer state require their own applicable authorization and governance.
+
+`ACTIVE_CONCRETE_SCOPE + EXISTING_USER_WRITE_AUTHORIZATION = CONTINUING_BOUNDED_WRITE_AUTHORITY`
+
+`SAME_TASK_NEXT_STEP != NEW_PERMISSION_REQUEST`
+
+`NEW_OR_MATERIALLY_EXPANDED_SCOPE != PREVIOUS_AUTHORIZATION`
