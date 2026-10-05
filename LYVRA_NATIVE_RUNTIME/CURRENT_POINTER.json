@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "e807f55a2740c6fee50892e1746d12c8e589d252",
+    "current_head_before_pointer": "037449588ccb562619c4314a3d35983721d064f5",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "REV93_MULTI_MUSIC_PET_WEBLYVRA_CODEFORGE_PHASE3_VERIFIED_PLUS_PLUGIN_PORTABILITY_PLUS_CHAT_MOBILE_REINDEX_VERIFIED_PLUS_AUTO_PFS_PLUGIN_BACKUP_HANDOFF_PLUS_CLIC_PFS_FAILBACK_RELATION",
+    "current_work_scope": "REV93_MULTI_MUSIC_PET_WEBLYVRA_CODEFORGE_PHASE3_VERIFIED_PLUS_PLUGIN_PORTABILITY_PLUS_CHAT_MOBILE_REINDEX_VERIFIED_PLUS_AUTO_PFS_PLUGIN_BACKUP_HANDOFF_PLUS_CURRENT_PLUGIN_RELEASE_EVIDENCE",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -212,24 +212,18 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-05",
-    "scope": "LYVRA_AUTO_PFS_PLUGIN_BACKUP_HANDOFF_CONTRACT",
-    "productive_body_head": "e807f55a2740c6fee50892e1746d12c8e589d252",
-    "prechange_recovery": {
-      "commit_anchor": "3e2a625818faf16f61728bc13394377132438dfd",
-      "named_branch_created": true,
-      "named_branch": "lyvra-pre-auto-pfs-handoff-contract-20261005",
-      "policy_basis": "R2_NAMED_RECOVERY_CROSS_REPO_CONTINUITY_CONTRACT"
-    },
+    "scope": "LYVRA_PLUGIN_RELEASE_EVIDENCE_PFS_HANDOFF_REFRESH",
+    "productive_body_head": "037449588ccb562619c4314a3d35983721d064f5",
+    "prechange_recovery_branch": "lyvra-pre-plugin-release-archive-evidence-20261005",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "music_state_changed": false,
     "pet_identity_changed": false,
     "plugin_versions_changed": false,
-    "pfs_handoff_contract_changed": true,
-    "pfs_child_autoload": false,
-    "authority_transfer": false,
-    "verified_carrier_count": 55,
+    "verified_carrier_count": 59,
     "direct_readback_mismatches": 0,
+    "pfs_handoff_refreshed": true,
+    "private_archive_byte_sha256_pending": true,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -600,15 +594,15 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-CODEFORGE-PHASE3-MOBILE-REINDEX-AUTO-PFS-HANDOFF",
+    "freshness_epoch": "2026-10-05-REV93-PLUGIN-PORTABILITY-CODEFORGE-PHASE3-MOBILE-REINDEX-AUTO-PFS-HANDOFF-RELEASE-EVIDENCE",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "408d1b3eb4b17ced447aea6265c8cd7dd239e104",
+    "registry_content_sha": "acf16766cd1a370114855a9d38b24aa2b321ce7d",
     "expected_track_revision": 93,
-    "critical_carrier_count": 55,
+    "critical_carrier_count": 59,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_55_CARRIERS_ZERO_MISMATCH_TREE_NOT_TRUNCATED",
+    "codeforge_review": "PASS_59_CARRIERS_ZERO_MISMATCH_TREE_NOT_TRUNCATED",
     "semantic_parity": "VERIFIED_BOTH_PLUGIN_SURFACES_USE_PARTIAL_FOR_STALE_EPOCH_ONLY_AND_CONFLICT_QUARANTINE_FOR_REAL_UNRESOLVED_SHA_OR_AUTHORITY_CONFLICT"
   },
   "rev92_update_2026_09_30": {
@@ -931,7 +925,7 @@
     "target_branch": "main",
     "target_path": "handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md",
     "target_child": "LYVRA Plugin Backup",
-    "current_handoff_blob": "79de6ed84ac2b2e4307a7f418e8fd4d4bc32c3e8",
+    "current_handoff_blob": "dd4cc272691e975246dcdb20d8ebb3456f1ff22b",
     "current_pfs_pointer_head_after_initial_handoff": "1ee5627a152cce8d3c24b1f1616ffb8fbccb8403",
     "behavior": "REFRESH_HANDOFF_AUTOMATICALLY_AFTER_PLUGIN_CHANGE_READBACK",
     "handoff_only": true,
@@ -940,5 +934,16 @@
     "authority_transfer": false,
     "pfs_application_requires_explicit_666pfs_update": true,
     "write_blocked_policy": "PLUGIN_UPDATE_MAY_COMPLETE_WITH_EXPLICIT_PENDING_PFS_HANDOFF_BLOCKER_BUT_MUST_NOT_CLAIM_PFS_BACKUP_REFRESHED"
+  },
+  "plugin_release_evidence_status": {
+    "account_version": "0.13.10",
+    "native_version": "0.1.11",
+    "creator_release_access": "VERIFIED",
+    "public_repo_provenance": "VERIFIED",
+    "private_archive_byte_sha256": "READBACK_PENDING",
+    "public_private_payload_copy": false,
+    "pfs_handoff_refreshed": true,
+    "pfs_child_registration_pending": true,
+    "private_binary_backup_target_pending": true
   }
 }
