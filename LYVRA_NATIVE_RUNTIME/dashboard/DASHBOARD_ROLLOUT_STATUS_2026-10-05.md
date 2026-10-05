@@ -138,3 +138,35 @@ REASON=NO_AUTHENTICATED_CLIC_NAMESPACE_EVIDENCE_FLOW_EXECUTED
 NEXT_REQUIRED_EVIDENCE=CLIC namespace BOOT ticket issue+verify; TTL<=300; issuer/subject/namespace/system_id/authority_context checks; no secret or ticket exposure
 CLIC_PRIMARY_SOURCE=GITHUB_REPO_CURRENT
 DRIVE_ROLE=HISTORY|REPO_BACKUP|RECOVERY|PROVENANCE
+
+
+## CLIC semantic census evolution sync — 2026-10-05 16:34 CEST
+
+CLIC_PREVIOUS_SYNC_HEAD=6475ea2b4ab9a6fca6271d5a6b38987d7adde606
+CLIC_CURRENT_VERIFIED_HEAD=6a7f7702febc3319f4028fddeb19dc5929046c42
+
+NEW_VERIFIED_CLIC_EVOLUTION:
+- expanded LYVRA required productive domain census
+- required-domain freshness classification
+- preserved semantic mycel/bridge relation
+- integrated LYVRA facet responsibility and newer evolution census
+- refreshed LYVRA presentation-evolution card
+- refreshed LYVRA relation head without authority inflation
+- registered partial-very-high semantic census
+- expanded LYVRA facet census
+- pointer-last publication preserved
+
+AUTHORITY_INFLATION=FALSE
+LYVRA_IDENTITY_SPLIT=FALSE
+LYVRA_PLUGIN_SURFACE_COUNT=2_PRESERVED
+REPO_CURRENT_REMAINS_LYVRA_AUTHORITY=true
+
+UNCHANGED_OPEN_ITEMS:
+- CLIC_WORKER_FUNCTIONAL_TEST=BLOCKED
+- CLIC_PLUGIN_SYNC=PARTIAL_BLOCKED_ARCHIVE_TRANSFER
+- CLIC_PLUGIN_LIVE_VERSION=0.1.4
+- CLIC_PLUGIN_PLANNED_VERSION=0.1.5
+- CLIC_DASHBOARD_REPO_CONTRACT=IMPLEMENTED
+- TWO_LYVRA_PLUGIN_MAPPING=ACCEPTED_MAPPED
+
+RESULT=CLIC_LYVRA_SEMANTIC_MAPPING_DEEPENED_WITHOUT_AUTHORITY_INFLATION; OPEN_WORKER_AND_PLUGIN_GATES_PRESERVED
