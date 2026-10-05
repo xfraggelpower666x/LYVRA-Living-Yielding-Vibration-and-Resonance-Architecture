@@ -11,9 +11,9 @@
 
 const CONFIG = Object.freeze({
   service: "666_MAIN_SYSTEM_AUTHORITY_EVIDENCE_GATE",
-  version: "2.0.0",
+  version: "2.1.0",
   issuer: "lyvrasystem.666soundsdesign-broadcaster.com",
-  ticketLifetimeSeconds: 900,
+  ticketLifetimeSeconds: 300,
   maxBodyBytes: 8192,
   purposes: ["BOOT", "FOREGROUND", "RECOVERY"]
 });
@@ -373,7 +373,21 @@ async function verifyEvidenceTicket(request, env, registry) {
   const p = verification.payload;
   const root = authorityRoot(c);
   const checksum = await sha256Base64Url(stableStringify(root));
+  const now = Math.floor(Date.now() / 1000);
+  const temporalClaimsOk =
+    Number.isSafeInteger(p.iat) &&
+    Number.isSafeInteger(p.nbf) &&
+    Number.isSafeInteger(p.exp) &&
+    p.nbf === p.iat &&
+    p.iat <= now + 30 &&
+    p.exp > p.iat &&
+    p.exp - p.iat <= CONFIG.ticketLifetimeSeconds;
   const claimsOk =
+    p.iss === CONFIG.issuer &&
+    p.sub === "MAIN_SYSTEM_AUTHORITY_EVIDENCE" &&
+    temporalClaimsOk &&
+    typeof p.jti === "string" &&
+    p.jti.length >= 16 &&
     p.system_id === c.system_id &&
     p.namespace === c.namespace &&
     p.authority_context === c.authority_context &&
@@ -469,9 +483,26 @@ function getRegistry(env) {
     const supplied = JSON.parse(env.MAIN_SYSTEM_REGISTRY_JSON);
     if (!supplied || Array.isArray(supplied) || typeof supplied !== "object") return merged;
 
+    // Core built-in authority contexts are immutable. Server-side registry data
+    // may extend the registry, but it may not replace or alias LYVRA / 666CLIC.
+    const immutable = new Set();
+    for (const key of ["LYVRA", "666CLIC"]) {
+      const base = REGISTRY[key];
+      immutable.add(normalizeIdentifier(key));
+      immutable.add(normalizeIdentifier(base.system_id));
+      immutable.add(normalizeIdentifier(base.namespace));
+    }
+
     for (const [key, raw] of Object.entries(supplied)) {
       const c = sanitizeRegistryContext(raw);
-      if (c) merged[normalizeIdentifier(key)] = c;
+      if (!c) continue;
+      const ids = [
+        normalizeIdentifier(key),
+        normalizeIdentifier(c.system_id),
+        normalizeIdentifier(c.namespace)
+      ];
+      if (ids.some(id => immutable.has(id))) continue;
+      merged[normalizeIdentifier(key)] = c;
     }
   } catch {
     // Invalid server-side config never silently rewrites built-in authority.
