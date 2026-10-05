@@ -6,7 +6,7 @@
   "migration_target": "WHOLE_LYVRA_NATIVE_FACET",
   "root_authority": "WHOLE_LYVRA",
   "track_design_version": "v3.4",
-  "track_logical_revision": 92,
+  "track_logical_revision": 93,
   "current_capabilities": [
     "music_causality_analysis",
     "psychoacoustic_analysis",
@@ -47,5 +47,13 @@
     "reference_registry": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
     "multi_facet_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
     "reference_ne_current_authority": true
+  },
+  "rev93": {
+    "status": "CURRENT_ADDITIVE_MULTI_FACET_ANALYTICS",
+    "longform_story": true,
+    "studio_project_chat": true,
+    "renderer_compilation": true,
+    "additive_conflict_check": true,
+    "reference_promotion_guard": true
   }
 }
