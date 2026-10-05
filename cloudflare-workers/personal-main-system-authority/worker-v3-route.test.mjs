@@ -51,6 +51,20 @@ test("opt-in with missing client secrets must fail closed",async()=>{
  const x=await handleNativeV3Route(req(),{NATIVE_V3_ENABLED:"true"});
  assert.equal(x.status,503);assert.equal((await x.json()).state,"AUTH_NOT_CONFIGURED");
 });
+test("replay backend HTTP failure is unavailable, never replay denial",async()=>{
+ const data=body(),headers=await signedHeaders(data);
+ const broken={idFromName:()=>"test",get:()=>({fetch:async()=>new Response("failure",{status:503})})};
+ const response=await handleNativeV3Route(req("/v3/native-evidence",data,headers),env({NATIVE_V3_NONCES:broken}));
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).state,"REPLAY_STORE_UNAVAILABLE");
+});
+test("malformed replay backend reply fails closed as unavailable",async()=>{
+ const data=body(),headers=await signedHeaders(data);
+ const broken={idFromName:()=>"test",get:()=>({fetch:async()=>new Response(JSON.stringify({other:true}),{status:200,headers:{"content-type":"application/json"}})})};
+ const response=await handleNativeV3Route(req("/v3/native-evidence",data,headers),env({NATIVE_V3_NONCES:broken}));
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).state,"REPLAY_STORE_UNAVAILABLE");
+});
 test("no replay backend means no ticket issuance",async()=>{
  const x=await handleNativeV3Route(req(),env());assert.equal(x.status,503);
  assert.equal((await x.json()).state,"ATOMIC_REPLAY_STORE_NOT_CONFIGURED");
