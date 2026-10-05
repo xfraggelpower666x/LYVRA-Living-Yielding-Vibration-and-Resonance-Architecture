@@ -334,5 +334,27 @@
       "path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-BRANCH-STEWARDSHIP-RESPONSE-20261005-01.md",
       "status": "READY_CONSUMED"
     }
+  },
+  "cross_system_clic_2026_10_05": {
+    "status": "CURRENT_READ_ONLY_RELATION",
+    "observed_head": "60d346ca006a2d7bbb7ab98f4ad2b93e0e079881",
+    "branch_stewardship_response": "CONSUMED_PHASE2_EXECUTED",
+    "pfs_cutover_failback": {
+      "status": "VERIFIED_CLIC_CURRENT_RELATION",
+      "role": "INFORMATIONAL_CROSS_SYSTEM_RELATION_NOT_LYVRA_AUTHORITY",
+      "state_machine": [
+        "PREPARED",
+        "SWITCHED",
+        "VERIFIED",
+        "FAILBACK_REQUIRED",
+        "QUARANTINED"
+      ],
+      "zero_blind_window_required": true,
+      "failback_requires_last_verified_recovery_anchor": true,
+      "pfs_native_authority_switch_requires_666PFS_UPDATE": true,
+      "source_pointer": "666CLIC_NATIVE_RUNTIME/CURRENT_POINTER.json"
+    },
+    "foreign_mutation": false,
+    "authority_transfer": false
   }
 }
