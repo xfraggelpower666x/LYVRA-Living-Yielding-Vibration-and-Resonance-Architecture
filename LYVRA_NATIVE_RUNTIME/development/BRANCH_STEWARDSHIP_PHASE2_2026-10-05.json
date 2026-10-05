@@ -1,0 +1,1452 @@
+{
+  "schema": "LYVRA_CODEFORGE_BRANCH_STEWARDSHIP_PHASE2_V1",
+  "status": "CURRENT_PHASE2_COMPLETE_CLASSIFICATION_NO_DELETION",
+  "date": "2026-10-05",
+  "summary": {
+    "source_authority": "GITHUB_REPO_CURRENT",
+    "execution_head_before_phase2_write": "dec30b2ba7f810ec70bad85fc2784d3a4285d643",
+    "recovery_anchor_branch": "backup/codeforge-phase2-20261005",
+    "total_branches": 133,
+    "protected_branches": 0,
+    "unprotected_branches": 133,
+    "exact_duplicate_sha_groups": 11,
+    "branches_in_duplicate_sha_groups": 25,
+    "keep": 58,
+    "hold_review": 75,
+    "cleanup_candidate": 0,
+    "branch_removal_performed": false
+  },
+  "rules": {
+    "age_ne_cleanup_authority": true,
+    "exact_sha_duplication_ne_cleanup_authority": true,
+    "cleanup_requires_supersession_and_recovery_proof": true,
+    "current_authority_ne_cleanup_candidate": true,
+    "foreign_cleanup_authority": false
+  },
+  "duplicate_groups": [
+    {
+      "sha": "89db0978d0f62660986d27efd1d2005265811448",
+      "count": 4,
+      "branches": [
+        "lyvra-backup-pre-linear-plugin-audit-20261001",
+        "lyvra-backup-pre-plugin-source-20261001",
+        "lyvra-backup-pre-plugin-text-staging-20261002",
+        "lyvra-backup-status-repair-web-delta-20261001"
+      ]
+    },
+    {
+      "sha": "3a1d167a1cbeac0a3c314ecf29182cbc4fe4da45",
+      "count": 3,
+      "branches": [
+        "lyvra-backup-pre-mobile-hero-spacing-20261004",
+        "lyvra-dev-dashboard-visual-identity-20261004",
+        "lyvra-worker-deploy-pre-fix-backup-20261004"
+      ]
+    },
+    {
+      "sha": "0507b5bec7eaa61e306a22235a07282795b8f859",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-native-plugin-012-20261002",
+        "lyvra-backup-pre-suno-speech-delta-20261002"
+      ]
+    },
+    {
+      "sha": "0774e664733655907c7fc072f99e01e7a7f79eef",
+      "count": 2,
+      "branches": [
+        "backup/lyvra-pet-current-2026-10-05-1947",
+        "lyvra-backup-pre-track-rev93-multifacet-20261005"
+      ]
+    },
+    {
+      "sha": "4415940bfa68f54348f9ac67b9bcce78ef7e5897",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-pr27-sync-prod-20261003-1241",
+        "lyvra-backup-pre-video-loop-20261004"
+      ]
+    },
+    {
+      "sha": "7ed2cb53d72b69465c439f84bf4286d6dcfc8430",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-status-repair-20261001",
+        "lyvra-backup-pre-web-plugin-access-20261001"
+      ]
+    },
+    {
+      "sha": "92f6935467db3fc25b7cf53b84186430fcb301ec",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-operations-rev92-20261005",
+        "lyvra-backup-pre-write-scope-continuity-20261005"
+      ]
+    },
+    {
+      "sha": "a91949802d56ca2ab0aa7bf0c728358935c1f1c2",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-analyzer-plugin-parity-20261005",
+        "lyvra-backup-pre-two-plugin-sync-contract-20261005"
+      ]
+    },
+    {
+      "sha": "b2caf061bbbf31e487d89f192cc303e4cfc363da",
+      "count": 2,
+      "branches": [
+        "lyvra-backup-pre-generator-icon-20261004",
+        "lyvra-backup-pre-topic-banners-20261004"
+      ]
+    },
+    {
+      "sha": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
+      "count": 2,
+      "branches": [
+        "lyvra-dev-whole-self-identity-20260925",
+        "lyvra-rc-pre-validation-closeout-20260930"
+      ]
+    },
+    {
+      "sha": "dec30b2ba7f810ec70bad85fc2784d3a4285d643",
+      "count": 2,
+      "branches": [
+        "backup/codeforge-phase2-20261005",
+        "lyvra"
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "name": "audit/lyvra-plugin-v0130-partial-text-snapshot-20261002",
+      "sha": "8f2f0c734e85b31266a24545becdefdb9d71590e",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "audit/lyvra-radiobotai-cross-surface-handoff-20261002",
+      "sha": "ac4ee07f53a68ca8b18b374ab3241510e83698b8",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "audit/weblyvra-plugin-access-live-readback-20261002",
+      "sha": "7089c9c73e2ec6d7c15177ad1e3bf1d072d63835",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "backup-pre-weblyvra-release-20261002-f9b68ab",
+      "sha": "f9b68ab4f37d5f501b7f572c4537fd2b944d014e",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "backup/codeforge-phase2-20261005",
+      "sha": "dec30b2ba7f810ec70bad85fc2784d3a4285d643",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "backup/lyvra-pet-auto-handoff-prod-2026-10-05",
+      "sha": "1ad88cbfe4fd9b0bf4f03a7cf8f16b7d72fd8a84",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "backup/lyvra-pet-current-2026-10-05-1947",
+      "sha": "0774e664733655907c7fc072f99e01e7a7f79eef",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "backup/lyvra-pet-facet-evolution-2026-10-05",
+      "sha": "f52bcbd1494fc84319e8f9648d51d7443c5656d1",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "backup/pr24-before-radio-auth-v123-update-20261002",
+      "sha": "2c7691473a27b7b43a785d6baab8cfda5d784f22",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "backup/weblyvra-pet-20261005",
+      "sha": "212bae5f9ef2f03d3db0661b41fc69c06df06963",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "chore/lyvra-gpt-handoff-006-20261001",
+      "sha": "e7dc1d425b94284087e2fcf8c62de1c2e835807c",
+      "protected": false,
+      "role": "UNCLASSIFIED_REVIEW",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "PROVISIONAL_NAME_BASED",
+      "reason": "Requires causal/supersession review before cleanup.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "chore/lyvra-gpt-validation-007-20261002",
+      "sha": "aa5e86ddc548219ec529f6512781aea0c5c1ec94",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "docs/weblyvra-production-handoff-001-20261001",
+      "sha": "aa2cba7d20b906d42f2324cefdfc5cfd6548dcb7",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra",
+      "sha": "dec30b2ba7f810ec70bad85fc2784d3a4285d643",
+      "protected": false,
+      "role": "CURRENT_AUTHORITY",
+      "disposition": "KEEP",
+      "confidence": "VERIFIED",
+      "reason": "Productive authority branch.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-account-plugin-013-20261002",
+      "sha": "6c69446c1f720a3f42b95e177d228b0dcb63cbf2",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-additive-music-facet-evolution-20261005",
+      "sha": "32a84dec7879a9e6fc8717bc10ed6f2534be7cdd",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-analyzer-plugin-parity-20261005",
+      "sha": "a91949802d56ca2ab0aa7bf0c728358935c1f1c2",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-banner-visibility-20261004",
+      "sha": "7b5b96d78df1b0027bcbe1129e4ae6a88558708a",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-clic-plugin-worker-sync-20261005",
+      "sha": "363bec57d024b97ecfbb0646183f34d75f9decd6",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-clic-recovery-sync-20261005-1817",
+      "sha": "92c10ff09f6ab02904e2bffa60fca8baa0bd0275",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-codeforge-branch-stewardship-20261005",
+      "sha": "ee5378d5468731b2dbe670d352ba8e7e5fc413a6",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-currentness-20261003-0112",
+      "sha": "cb2004407a1993fc63d2cd65b80a82dbc28033de",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-cyber-boot-20261005",
+      "sha": "cacf48e1fac9ff4f9d47a64bab65601f496f15d0",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-drive-repo-backup-role-20261005",
+      "sha": "fe335f0afa9fc02e693867194c4629c8e4b59d63",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-fixed-stage-20261004",
+      "sha": "0aa0f9ad8a7f0745ae9c6f0d00f0e8809401697d",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-force-workflow-20261005",
+      "sha": "d4b5ff98f8d1711f05fd6836cb44de08ec1ba6a5",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-generator-icon-20261004",
+      "sha": "b2caf061bbbf31e487d89f192cc303e4cfc363da",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-gpt-archive-proof-20261002",
+      "sha": "0874c970c9a72365d5f70199446c78064ad19ad2",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-gpt-validation-007-20261002",
+      "sha": "b61606f1d61d96628b67a4807fa54f76dfc7d950",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-ios-banner-repair-20261004",
+      "sha": "29c992812a7f3df874fb8f5796ca68349c8f7ed2",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-linear-plugin-audit-20261001",
+      "sha": "89db0978d0f62660986d27efd1d2005265811448",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 4
+    },
+    {
+      "name": "lyvra-backup-pre-mobile-hero-spacing-20261004",
+      "sha": "3a1d167a1cbeac0a3c314ecf29182cbc4fe4da45",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 3
+    },
+    {
+      "name": "lyvra-backup-pre-native-plugin-012-20261002",
+      "sha": "0507b5bec7eaa61e306a22235a07282795b8f859",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-new-chat-handoff-20261001",
+      "sha": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-operations-rev92-20261005",
+      "sha": "92f6935467db3fc25b7cf53b84186430fcb301ec",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-plugin-regression-addendum-20261001",
+      "sha": "303aeffef14da0de7196df1aa434b68e6ce5d642",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-plugin-source-20261001",
+      "sha": "89db0978d0f62660986d27efd1d2005265811448",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 4
+    },
+    {
+      "name": "lyvra-backup-pre-plugin-text-staging-20261002",
+      "sha": "89db0978d0f62660986d27efd1d2005265811448",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 4
+    },
+    {
+      "name": "lyvra-backup-pre-plugin-visual-refresh-20261002",
+      "sha": "79dccce16de841c35d923c4607c8300e9b5d6c34",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-pr13-propagation-fix-20261002",
+      "sha": "dcd147e31592104c082de2d247c0abf0ff794ce1",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-pr27-sync-dev-20261003-1241",
+      "sha": "f89282462ba0c0233d01a866bbd1704079f32b87",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-pr27-sync-prod-20261003-1241",
+      "sha": "4415940bfa68f54348f9ac67b9bcce78ef7e5897",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-psy-engine-hud-20261003",
+      "sha": "0922287f3ec156ac9637992f674b6f5e80023f60",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-rev93-pet-currentness-sync-20261005",
+      "sha": "ad9ae5978a6b0395d6993ef1b0de425cd044347b",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-status-repair-20261001",
+      "sha": "7ed2cb53d72b69465c439f84bf4286d6dcfc8430",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-suno-speech-delta-20261002",
+      "sha": "0507b5bec7eaa61e306a22235a07282795b8f859",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-topic-banners-20261004",
+      "sha": "b2caf061bbbf31e487d89f192cc303e4cfc363da",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-track-rev93-multifacet-20261005",
+      "sha": "0774e664733655907c7fc072f99e01e7a7f79eef",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-two-plugin-sync-contract-20261005",
+      "sha": "a91949802d56ca2ab0aa7bf0c728358935c1f1c2",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-video-loop-20261004",
+      "sha": "4415940bfa68f54348f9ac67b9bcce78ef7e5897",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-web-plugin-access-20261001",
+      "sha": "7ed2cb53d72b69465c439f84bf4286d6dcfc8430",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-pre-weblyvra-20261001",
+      "sha": "a2841aa4e6d6930babd81b7ae974a6d659c51b21",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-weblyvra-deployment-status-20261001",
+      "sha": "b163872347380b5e0795ea0b8fca1908571005ac",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-weblyvra-v1-1-20261001",
+      "sha": "07bbaef30a81a6f0688554ae80caa2b6a6fb6566",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-backup-pre-write-scope-continuity-20261005",
+      "sha": "92f6935467db3fc25b7cf53b84186430fcb301ec",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-backup-status-repair-web-delta-20261001",
+      "sha": "89db0978d0f62660986d27efd1d2005265811448",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 4
+    },
+    {
+      "name": "lyvra-backup-weblyvra-prewrite-v1-1-20261001",
+      "sha": "2fbed34ecb66156fae3c1ac1ae23a7233ae8cea4",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dashboard-handoff-supersession-20261003",
+      "sha": "4adf92282d6bee9865bc84989353f7ba706b347f",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dashboard-integration-20261002",
+      "sha": "2ffaa0ee85dc5df333105284a987a0e45f300b92",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dashboard-runtime-audit-20261003",
+      "sha": "ce0e56cc89cd3cb3fedb29152691ee8aa7d08290",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dashboard-v032-backup-20261002",
+      "sha": "d5faf2b0dfe51e30c634c9756b9eeb77b7d833d1",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dashboard-website-native-gpt-20261002",
+      "sha": "decd9fb6ebb609756625b8fc293493eedf7e9d81",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-account-plugin-013-20261002",
+      "sha": "e5158cbd60b0b59daafa4448c1ae29ac0347c4d3",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-banner-visibility-20261004",
+      "sha": "4d0585fe226b095ab2d88ddf26c9b26eb8ac5ded",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-codeforge-cross-audit-standard-20261002",
+      "sha": "70eac1b46a9d824ed83b8dcadd93968fbde1ad30",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-consolidated-update-20261002",
+      "sha": "0b5be06b9c544d4e215ff046b1b6ee2843d809c0",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-currentness-reconcile-20261003-0112",
+      "sha": "bbad2f63bd923c5fe983cf66904ed13384adadc7",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-cyber-boot-20261005",
+      "sha": "4c9f66a03c562f2ee35def75ca5b90a70c12e39e",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-dashboard-visual-identity-20261004",
+      "sha": "3a1d167a1cbeac0a3c314ecf29182cbc4fe4da45",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 3
+    },
+    {
+      "name": "lyvra-dev-dashboard-visual-only-20261005",
+      "sha": "b352fe57ed74b191cfa7536828ccf0364edfa584",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-dashboard-visual-rebase-20261005",
+      "sha": "1b68d4c00ccdfea0edbcb52002b341375a9d8446",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-discord-characterbot-20261002",
+      "sha": "a2f6ac50911e29bdc3a6ea651de9df53bab3abc5",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-fixed-stage-20261004",
+      "sha": "d5bb84ddf2e5603cbc601ec32ce2eacd9ddee0d1",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-generator-icon-20261004",
+      "sha": "f7e9e2ed0679c737ca784f0c9c95e7c79cadb3f9",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-ios-banner-repair-20261004",
+      "sha": "3e47e58ab671fd2c59a4cbc8ad6546120f08f3cc",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-linear-plugin-audit-20261001",
+      "sha": "13abe219e1ef01106b276178244a49e5ddc770ef",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-mobile-hero-spacing-20261004",
+      "sha": "88b0f0ff1f48d052670ddc4edd41c795a08f9b79",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-native-plugin-012-20261002",
+      "sha": "ef4d73c4913cf18a0a3492f4dd8f154713703bf7",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-native-plugin-v011-source-backup-20261002",
+      "sha": "a6b4039ce08be084bfd11ae49f8a50b3c899cd1b",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-operations-rev92-align-20261005",
+      "sha": "bcf7f674ede1c8941c9be7f24378743c5d5040c1",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-plugin-source-v0120-20261001",
+      "sha": "821e95d7b4168910c3794df6436b4ab33d8ef14b",
+      "protected": false,
+      "role": "RELEASE_CANDIDATE_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Release/freeze provenance requires review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-plugin-visual-refresh-20261002",
+      "sha": "235c89dd2d06fa6cd933e1af475ec66d07e39a5c",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-analytics-native-migration-20260930",
+      "sha": "f5be532b3f002f331b6e9703202ab822b217484b",
+      "protected": false,
+      "role": "MIGRATION_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Migration provenance requires supersession review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-authority-reconcile-20260930",
+      "sha": "6b40c69fceb975c4bcbdc8e423f9012553202042",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-music-analytics-facet-20260930",
+      "sha": "583228b17754b0972d167744cbfc4964885bb292",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-recovery-path-repair-20260927",
+      "sha": "7c134df32e97c75b257d65860123526ef5db3b7f",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rehydration-pass-closeout-20260930",
+      "sha": "c414cd0c57f09ee03b8034ab346b895c1d13d351",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev86-studio2-backup-20260927",
+      "sha": "bdcfd7d539629332eff3c473912a9bf64e6a3b4d",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev89-music-memory-studio-evidence-20260930",
+      "sha": "2cd0fba069a5c7c58a22eff3eb6a5df0e31a1d28",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev90-dual-control-hierarchy-20260930",
+      "sha": "47b6f71e105bb983130987316bce63a87004061e",
+      "protected": false,
+      "role": "RELEASE_CANDIDATE_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Release/freeze provenance requires review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev91-central-analytics-capability-routing-20260930",
+      "sha": "7d2259ef574c6107ab9470bf6cd99eeb03a35d00",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev92-lyrics-analytics-muselift-20260930",
+      "sha": "92c2a5e938fc1b4561e1c238702f7ec3e9ab7aee",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev92-u3-creator-studio-evidence-20261001",
+      "sha": "8a8c4d3a1aee124ad68f93e4ab2cddeb80fc43f9",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-rev92-update-consistency-20260930",
+      "sha": "a717a84300eded2ece6e372af4d55829b21303c8",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-status-sync-20260928",
+      "sha": "a41ba9c65df017040121496b07f534d764d47389",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-trackref-rev86-sync-20260928",
+      "sha": "0466edeac7137a5f3e4745dc5a297c9208d7f2c4",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-pre-v6-calibration-20261001",
+      "sha": "4ccdf12688a8748476a239573ba8a50058985242",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-release-propagation-matrix-20261002",
+      "sha": "478d535670d83df14a570546bcf8c5e99b3f076e",
+      "protected": false,
+      "role": "RELEASE_CANDIDATE_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Release/freeze provenance requires review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-research-triangulation-20261002",
+      "sha": "cddedfd14784078a21a4c557a784f37ebc290b57",
+      "protected": false,
+      "role": "RELEASE_CANDIDATE_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Release/freeze provenance requires review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-speech-design-beta-20261002",
+      "sha": "4e67c441e6c91621ef81918b137b6643682021c9",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-speech-studio2-creator-learning-20261003",
+      "sha": "522911a8780aa2f737c3fcc5eb583a7d42144216",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-speech-update-20261002-fresh",
+      "sha": "b6d918480214f44f7c0ef7a68ce4624f9b85ddc7",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-status-repair-20261001",
+      "sha": "655fce28a2632aa1f530ac5198f8d1bb5d9a2d03",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-suno-speech-evidence-20261002",
+      "sha": "45e55744c612a6ed01bcc090a3c7f06245c22186",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-topic-banners-20261004",
+      "sha": "a6750621481dfd5a9c3d79e0a1950abaeba939e5",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-track-plugin-regression-20261002",
+      "sha": "b1a44e24364dacfe5402adce7ff0471c316b8bb7",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-web-video-loop-20261004",
+      "sha": "bb13709b29d9a5c0b8b71b3079f817fa60172758",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-dev-whole-self-identity-20260925",
+      "sha": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-newchat-worker-bridge-recovery-20261005",
+      "sha": "3d6c950723b1e39fa2297a8a8ffc94bde8d50519",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-auto-trigger-dashboard-policy-20261005-1544",
+      "sha": "824b82da81e2491cc44ca82748c860108b81a346",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-clic-66of67-sync-20261005-1649",
+      "sha": "3236a6a802523bbb993fad79f44496fe713c3769",
+      "protected": false,
+      "role": "PRECHANGE_OR_CONTINUITY_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Possible continuity/prechange role; review before cleanup.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-clic-census-sync-20261005-1634",
+      "sha": "85df04ab07734a279b4c980d5ba49998216de972",
+      "protected": false,
+      "role": "PRECHANGE_OR_CONTINUITY_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Possible continuity/prechange role; review before cleanup.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-clic-response-sync-20261005-1627",
+      "sha": "98a4dd413298652ce84a25af3f78219831182220",
+      "protected": false,
+      "role": "PRECHANGE_OR_CONTINUITY_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Possible continuity/prechange role; review before cleanup.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-clic-runtime-inventory-sync-20261005-1641",
+      "sha": "e025562da52813b71b485b18b926085ecccfc074",
+      "protected": false,
+      "role": "PRECHANGE_OR_CONTINUITY_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Possible continuity/prechange role; review before cleanup.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-dashboard-neon-palette-20261005-1540",
+      "sha": "edffbfc12f193d111ddc3c692382df8da414833a",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-dashboard-rollout-checkpoint-20261005-1555",
+      "sha": "47c6f3f195e0360aab1ac090c20f39f323373e8e",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-gpt-plugin-dashboard-sync-20261005-1551",
+      "sha": "d9befce237958572a4c40cac894749ccfff64dde",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-pre-internal-facet-dashboard-contract-20261005-1539",
+      "sha": "0e80d0a9cf3ec785bc91555873eb7ef661310f3f",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-rc-pre-validation-closeout-20260930",
+      "sha": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
+      "protected": false,
+      "role": "AUDIT",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Audit/validation provenance may remain meaningful.",
+      "duplicate_group_size": 2
+    },
+    {
+      "name": "lyvra-rc-whole-self-20260930",
+      "sha": "8da2529cc7266829bb55c988df39cedbfcb71e40",
+      "protected": false,
+      "role": "RELEASE_CANDIDATE_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Release/freeze provenance requires review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-update-pfs-gpt-backup-evidence-20261002",
+      "sha": "3ecfb6a29b07089944ccc6225b2703cc04b1d423",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "lyvra-worker-deploy-pre-fix-backup-20261004",
+      "sha": "3a1d167a1cbeac0a3c314ecf29182cbc4fe4da45",
+      "protected": false,
+      "role": "RECOVERY_BACKUP",
+      "disposition": "KEEP",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Recovery/prechange role preserved until equivalent recovery and supersession are proven.",
+      "duplicate_group_size": 3
+    },
+    {
+      "name": "lyvra-worker-evidence-preflight-20261003",
+      "sha": "a45b3c4475074b74aff5ad2233420d37b980ee4f",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "migration/rev241-github-current",
+      "sha": "24111fcfc728ab7170d66ba37d8c7d5ff7de89f5",
+      "protected": false,
+      "role": "MIGRATION_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "HIGH_NAME_ROLE",
+      "reason": "Migration provenance requires supersession review.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "weblyvra-audio-neon-20261002",
+      "sha": "7ffbe217a7aae5b6be94fef0ed43cadd8d36cfbe",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "weblyvra-psy-engine-hud-20261003",
+      "sha": "2bef9835da87d3448adfcdb6755b6843b08c79ed",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "work/lyvra-pet-fraggle-bond-2026-10-05",
+      "sha": "551ae15563a4f54d4ac2e8faf344d17133b58fe1",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-2-1-live-deploy-20261005",
+      "sha": "b9c56ae1da10610e983b740de7e15e5039f42e1a",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-hardening-2-1-dev-20261005",
+      "sha": "604f25f28346d2c6f56d591f8ddc7c8d1be3e868",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-main-system-authority",
+      "sha": "cb863b13a24230d45894bab2ad8edb7f4b6e0d0b",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-pre-base-ci-hardening-20261005",
+      "sha": "8fa23527ccd7ee71e309e9fe3f4036e2e635a476",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-pre-clic-roundtrip-checkpoint-20261005-1519",
+      "sha": "ab24c0b4480ea8078e11a8dc741777bdf028b5dc",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    },
+    {
+      "name": "worker-v2-pre-hardening-2-1-20261005",
+      "sha": "f26c15a262c830bda67b752c6b59725e31c160a8",
+      "protected": false,
+      "role": "DEV_OR_DEPLOYMENT_HISTORY",
+      "disposition": "HOLD_REVIEW",
+      "confidence": "MEDIUM_NAME_ROLE",
+      "reason": "Development/deployment state requires branch-specific supersession proof.",
+      "duplicate_group_size": 1
+    }
+  ],
+  "next_phase": "BRANCH_SPECIFIC_SUPERSESSION_AND_RECOVERY_PROOF_FOR_HOLD_REVIEW_ONLY"
+}
