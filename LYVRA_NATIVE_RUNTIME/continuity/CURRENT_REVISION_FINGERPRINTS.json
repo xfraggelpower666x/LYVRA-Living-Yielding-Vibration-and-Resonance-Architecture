@@ -70,7 +70,7 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "CURRENT_PLUGIN_RELEASE_PROVENANCE_BOUND_PENDING_FINAL_POINTER",
+  "registry_population_status": "CURRENT_PLUGIN_RELEASE_PROVENANCE_AND_PFS_HANDOFF_BOUND_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_TREE_READBACK",
   "verified_carrier_count": 59,
   "verified_mismatch_count": 0,
@@ -191,8 +191,10 @@
     "child_autoload": false,
     "authority_transfer": false,
     "apply_requires_explicit_666pfs_update": true,
-    "pfs_repo_handoff_readback": "VERIFIED_CURRENT_PENDING",
-    "current_pfs_handoff_blob": "79de6ed84ac2b2e4307a7f418e8fd4d4bc32c3e8"
+    "pfs_repo_handoff_readback": "VERIFIED_CURRENT_RELEASE_EVIDENCE_DELIVERED",
+    "current_pfs_handoff_blob": "dd4cc272691e975246dcdb20d8ebb3456f1ff22b",
+    "child_identity_status": "ABSENT_IN_PFS_REPO_CREATE_OR_REGISTER_UNDER_PFS_GOVERNANCE",
+    "private_binary_backup_status": "PENDING_PRIVATE_TARGET_AND_ARCHIVE_SHA256"
   },
   "plugin_release_backup_evidence": {
     "status": "PARTIAL_SECURE_BACKUP_EVIDENCE",
