@@ -100,6 +100,7 @@
     "google_drive_role": [
       "LYVRA_DEEP_HISTORICAL_MEMORY",
       "HISTORY",
+      "REPO_BACKUP",
       "PROVENANCE",
       "REFERENCE",
       "CREATOR_DEVELOPMENT_SUPPORT",
@@ -109,7 +110,9 @@
     "google_drive_is_plugin_runtime_authority": false,
     "google_drive_is_plugin_release_authority": false,
     "drive_may_be_read_for_historical_or_migration_rehydration": true,
-    "drive_may_not_silently_override_repo": true
+    "drive_may_not_silently_override_repo": true,
+    "google_drive_is_repo_backup": true,
+    "repo_backup_role": "SECONDARY_BACKUP_RECOVERY_CARRIER_NOT_CURRENT_AUTHORITY"
   },
   "codeforge": {
     "role": [
