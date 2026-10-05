@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-05-REV93-PET-EXPRESSION-SYNC",
+  "freshness_epoch": "2026-10-05-REV93-PET-WEBLYVRA-DEPLOYED",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,9 +35,9 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "1df931dd2a1fd7c871078d43b715225969930e56",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "a0b8b58c4275bc4472a559b1f81a0bc6aaa3ac86",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "a84ffe2507a939da3c608f23d88955793b54b3cb",
-    "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "b23078e4a845670869224c8703c70e683ddb15f7",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "08378d72a8b08b7229b3bb646ac45aca238345ce",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "795f75582269aa87a310b732160cdd8368f451ac",
+    "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "5c8e5dc8101bd127c587935c66250b8e9929098e",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "8da8d8fdae39645238217baf26bd75c41965b831",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md": "dd646789f16f9267b598225e2c0c4656bdd60656",
@@ -47,15 +47,20 @@
     "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md": "7a5631fd783f57cdd3541a8c6e1bd559072a1702",
     "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md": "62da7e66e8e321901493752c082a39453b7c5e99",
     "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "1efe9dfece5646528b863dbe6e2b3bb76ff73cf6",
-    "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "46c06f2e5b159872df734f027425bdb0b178176d"
+    "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "f81c319784581274b30da1bc80378b0a7ef45fa9",
+    "WEBLyvra/live/dist/index.html": "76a2e10e0033a21cda1d20c894024736ca9c05d8",
+    "WEBLyvra/live/dist/pet-presence.css": "0ef46bdb51ebf4b5893c94c21e34e6250051ca8b",
+    "WEBLyvra/live/dist/pet-presence.js": "c117f8baaed0146b757d5967ed2d27e8716bf19a",
+    "WEBLyvra/live/tests/preservation-baseline.json": "a7b6cfbb3fe5c8adc2bec324baec51596e01c154",
+    "WEBLyvra/deployment/PET_PRODUCTION_STATUS_2026-10-05.json": "79fae81a5c331ff9d68c25715a23c0a5ff546801"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "REV93_PET_EXPRESSION_SYNC_VERIFIED_PENDING_FINAL_POINTER",
+  "registry_population_status": "REV93_PET_WEBLYVRA_DEPLOYMENT_VERIFIED_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_READBACK",
-  "verified_carrier_count": 42,
+  "verified_carrier_count": 47,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "CURRENT_NATIVE_CAPABILITY",
@@ -94,5 +99,15 @@
     "dual_plugin_binding": "VERIFIED_NATIVE_0.1.10_MIGRATED_0.13.8",
     "host_render": "READBACK_PENDING",
     "website_integration": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING"
+  },
+  "weblyvra_pet_deployment": {
+    "status": "VERIFIED_PRE_POINTER",
+    "deployed_commit": "4575ff4e0b27b8f8852c0c1e8432dbd49b0dbf50",
+    "cloudflare_pages_deployment": "8c611a40-5337-4fa6-91dd-a74c85af7faa",
+    "deployment_result": "SUCCESS",
+    "semantic_fallback": "DEPLOYED",
+    "visual_atlas_render": "READBACK_PENDING",
+    "free_only": true,
+    "extra_cloudflare_costs": false
   }
 }
