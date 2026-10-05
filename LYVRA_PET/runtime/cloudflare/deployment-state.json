@@ -1,12 +1,16 @@
 {
-  "status": "NOT_DEPLOYED",
-  "worker_name": null,
-  "worker_version": null,
-  "endpoint": null,
-  "mcp_endpoint": null,
+  "status": "DEPLOYED_HOST_READBACK_PENDING",
+  "worker_name": "lyvra-pet-plugin-ui",
+  "worker_tag": "bdd1c9e1a1f4407ab49f7a82f321eac0",
+  "deployment_id": "a91a865b1cc34afeb8828ff9a2f6be68",
+  "endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev",
+  "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
   "account_id": "ec6eb64eeb787e1192f165cf7fa78510",
-  "deployment_id": null,
-  "last_readback": null,
-  "zero_cost_guard": "REQUIRED",
-  "notes": "Populate only after a real Cloudflare deployment and direct readback."
+  "account_name": "666SOUNDsDESIGn",
+  "workers_dev_subdomain_enabled": true,
+  "zero_cost_guard": "FREE_ONLY",
+  "paid_dependencies": [],
+  "cloudflare_api_readback": "VERIFIED",
+  "external_http_readback": "READBACK_PENDING",
+  "source_authority": "LYVRA_PET/runtime/cloudflare/worker/index.js"
 }
