@@ -76,6 +76,15 @@ jobs:
           set -euo pipefail
           ! grep -Eq '^NATIVE_V3_ENABLED[[:space:]]*=[[:space:]]*"true"' cloudflare-workers/personal-main-system-authority/wrangler.toml
           ! grep -Eq '^\[\[durable_objects.bindings\]\]' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          ! grep -Eq '^\\[\\[migrations\\]\\]|new_sqlite_classes|NATIVE_V3_NONCES|sqlite' cloudflare-workers/personal-main-system-authority/wrangler.toml
+          # Legacy routes remain operable without any v3/nonces/storage binding.
+          node --input-type=module - <<'JS'
+          import worker from './cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js';
+          const req=new Request('https://worker.invalid/v3/native-evidence',{method:'POST',body:'{}'});
+          const res=await worker.fetch(req,{},{});
+          if(res.status!==404 || (await res.json()).state!=='V3_DISABLED') process.exit(1);
+          console.log('OPTIONAL_V3=DISABLED; SQLITE_BINDING=NOT_REQUIRED');
+          JS
           echo "V3_DEPLOYMENT=NOT_ACTIVATED"
 
       - name: Bundle existing lyvrasystem worker with Wrangler without deployment
