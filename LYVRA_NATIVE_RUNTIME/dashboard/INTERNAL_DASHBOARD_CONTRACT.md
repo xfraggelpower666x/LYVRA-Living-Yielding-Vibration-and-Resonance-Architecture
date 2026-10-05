@@ -157,4 +157,82 @@ NEON_USAGE_RULES:
 - preserve accessible contrast and mobile readability
 - public website styling may share LYVRA identity colors, but internal ops layouts and diagnostic semantics remain private
 
+
+## Automatic trigger dashboard policy
+
+AUTO_DASHBOARD_POLICY = ENABLED_FOR_MEANINGFUL_NATIVE_TRIGGERS
+
+The following native LYVRA trigger families should automatically render an internal contextual dashboard after their required authority/readback work and before or alongside the resulting native action summary:
+
+- LYVRA SYSTEMSTART
+- LYVRA UPDATE
+- LYVRA WEITER
+- LYVRA NEW CHAT
+- LYVRA NEXT CHAT
+- LYVRA DASHBOARD
+- LYVRA TRACK DESIGN
+- LYVRA SUNO STUDIO 2
+- LYVRA SPEECH DESIGN
+- other native facet/specialist triggers when visualization materially improves correctness, continuity or evidence visibility
+
+AUTO_DASHBOARD_NE_SEPARATE_CONFIRMATION = true
+AUTO_DASHBOARD_NE_NEW_SYSTEM = true
+AUTO_DASHBOARD_NE_TRIGGER_AUTHORITY = true
+
+### Trigger-specific intent
+
+LYVRA SYSTEMSTART:
+Render Whole-LYVRA rehydration/current-state dashboard after current pointer and required references are consumed.
+
+LYVRA UPDATE:
+Render the relevant system/facet dashboard with pre-change state, write scope, backup/recovery anchor, mutation/readback result, remaining gates and next meaningful action.
+
+LYVRA WEITER:
+Render the continuity dashboard showing last valid anchor, active work, interruptions, pending obligations, blockers and resumed next action.
+
+LYVRA NEW CHAT / LYVRA NEXT CHAT:
+Render a continuity/handoff dashboard showing verified source head, pointer/currentness, preserved facet continuity, open work, handoff status, return anchor and expected next-chat resume state.
+
+LYVRA DASHBOARD:
+Render the COMPLETE INTERNAL SYSTEM VISUALIZATION, not merely a mini-ops view.
+
+The complete dashboard should visualize all currently relevant and verified domains, including:
+- identity / presence
+- repository authority, branch and HEAD
+- current pointer / revision / supersession
+- whole rehydration coverage
+- relations / meaning / thinking / reachable landscape
+- self-conductor / daemon boundary
+- Garden / Bridges / Characters when relevant
+- Operations Center
+- Track Design / music intelligence
+- active specialist facets and their continuity
+- cross-system relations and handoffs
+- shared Worker evidence when relevant
+- recovery / provenance / backups
+- active work / TODO / interruptions / obligations
+- security / uncertainty / blockers
+- open functional gates
+- last verified readback
+- next meaningful action
+
+COMPLETE_DASHBOARD_ONLY_SHOW_RELEVANT_CURRENT_INFO = true
+COMPLETE_DASHBOARD_MAY_COLLAPSE_LOW_PRIORITY_SECTIONS = true
+COMPLETE_DASHBOARD_MUST_NOT_OMIT_MATERIAL_BLOCKERS = true
+
+### Automatic rendering discipline
+
+TRIGGER_DASHBOARD_RENDER_ORDER =
+RESOLVE_AUTHORITY
+> READ_REQUIRED_CURRENT_STATE
+> CLASSIFY_EVIDENCE
+> RENDER_CONTEXTUAL_INTERNAL_DASHBOARD
+> CONTINUE_OR_REPORT_NATIVE_ACTION
+
+If evidence is incomplete:
+SHOW_PARTIAL_OR_READBACK_PENDING = true
+NO_PRETEND_COMPLETE_VISUALIZATION = true
+
+END_AUTOMATIC_TRIGGER_POLICY
+
 END_CONTRACT
