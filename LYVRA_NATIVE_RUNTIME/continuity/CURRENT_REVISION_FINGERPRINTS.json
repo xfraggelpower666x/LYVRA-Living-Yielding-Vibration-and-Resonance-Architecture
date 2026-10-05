@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-05-REV93-CODEFORGE-BRANCH-PHASE2",
+  "freshness_epoch": "2026-10-05-REV93-CODEFORGE-PHASE2-CLIC-PFS-FAILBACK-SYNC",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,9 +35,9 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "1df931dd2a1fd7c871078d43b715225969930e56",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "f1a09745803d17a5f2f02e23c4e36189457aaf47",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "70f32673ac376200e6ddd3a7604299ef4e3239fe",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "5cb896c529234b28a72139cdb648f16bc92ce844",
-    "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "076e6b634b4daa98f9fe9f4efe5daaf541e2fd36",
+    "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "8da8d8fdae39645238217baf26bd75c41965b831",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md": "dd646789f16f9267b598225e2c0c4656bdd60656",
@@ -62,7 +62,7 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "CODEFORGE_BRANCH_PHASE2_VERIFIED_PENDING_FINAL_POINTER",
+  "registry_population_status": "CLIC_PFS_FAILBACK_RELATION_SYNC_VERIFIED_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_READBACK",
   "verified_carrier_count": 51,
   "verified_mismatch_count": 0,
@@ -123,5 +123,13 @@
     "visual_atlas_render": "READBACK_PENDING",
     "free_only": true,
     "extra_cloudflare_costs": false
+  },
+  "cross_system_clic": {
+    "status": "VERIFIED_PRE_POINTER",
+    "observed_head": "60d346ca006a2d7bbb7ab98f4ad2b93e0e079881",
+    "pfs_failback_relation": "VERIFIED_READ_ONLY",
+    "authority_transfer": false,
+    "foreign_mutation": false,
+    "prechange_commit_anchor": "9f1f1ac3954b626e9a12960968162ba54be99805"
   }
 }
