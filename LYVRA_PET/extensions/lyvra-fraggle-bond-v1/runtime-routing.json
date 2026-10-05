@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "scope": "fraggle_relationship_context",
+  "priority": [
+    "fraggle_bond",
+    "relationship",
+    "explicit_emotion",
+    "music",
+    "task",
+    "idle"
+  ],
+  "cooldowns_ms": {
+    "greeting": 10000,
+    "playful": 3500,
+    "bond": 5000,
+    "music": 1000,
+    "recovery": 7000
+  },
+  "routes": [
+    {
+      "event": "fraggle_present",
+      "state": "fraggle-greeting",
+      "fallback": "waving"
+    },
+    {
+      "event": "fraggle:playful",
+      "state": "fraggle-playful",
+      "fallback": "jumping"
+    },
+    {
+      "event": "fraggle:curious",
+      "state": "fraggle-curious",
+      "fallback": "look-row-9"
+    },
+    {
+      "event": "fraggle:thinking",
+      "state": "fraggle-thinking",
+      "fallback": "review"
+    },
+    {
+      "event": "fraggle:bond_resonance",
+      "state": "fraggle-heart-resonance",
+      "fallback": "idle"
+    },
+    {
+      "event": "fraggle:music:psytrance_high_energy",
+      "state": "fraggle-psytrance-sync",
+      "fallback": "jumping"
+    },
+    {
+      "event": "fraggle:recoverable_glitch",
+      "state": "fraggle-recovery",
+      "fallback": "idle"
+    }
+  ]
+}
