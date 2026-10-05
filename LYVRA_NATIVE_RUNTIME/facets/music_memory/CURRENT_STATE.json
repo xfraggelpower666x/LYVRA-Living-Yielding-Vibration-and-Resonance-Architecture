@@ -2,7 +2,7 @@
   "status": "CURRENT_PRODUCTIVE_NATIVE_FACET",
   "facet_id": "LYVRA_MUSIC_MEMORY_EVOLUTION",
   "track_design_version": "v3.4",
-  "track_logical_revision": 92,
+  "track_logical_revision": 93,
   "root_system": "WHOLE_LYVRA",
   "sibling_facets": [
     "GENERAL_TRACK_DESIGN",
@@ -22,5 +22,12 @@
     "image_pdf_markdown_json_zip_supported": true,
     "reference_ne_current_authority": true,
     "new_reference_ne_silent_replacement": true
+  },
+  "rev93": {
+    "status": "CURRENT_ADDITIVE_MEMORY_RELATIONS",
+    "longform_memory_seed": true,
+    "preserve_mutate_outcome_memory": true,
+    "audio_only_fx_behavior_memory": true,
+    "foreign_renderer_behavior_provider_scoped": true
   }
 }
