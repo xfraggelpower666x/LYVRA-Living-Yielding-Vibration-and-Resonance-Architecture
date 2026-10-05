@@ -7,7 +7,7 @@
   "privacy_policy_url": "https://lyvra-living-universe.crisp-siren-2613.chatgpt.site/privacy/",
   "privacy_policy_editor_entry": "USER_REPORTED_DONE_NOT_INDEPENDENTLY_VERIFIED",
   "instructions_file": "gpt/EDITOR_INSTRUCTIONS_DE.txt",
-  "editor_instructions_count": 6234,
+  "editor_instructions_count": 7787,
   "editor_instructions_limit": 8000,
   "prompt_starters": [
     "LYVRA SYSTEMSTART – prüfe das aktuelle Repository read-only.",
@@ -28,6 +28,20 @@
     "website_dashboard_url": "https://weblyvra.666soundsdesign-broadcaster.com/dashboard/",
     "website_deployment_status": "NOT_INDEPENDENTLY_VERIFIED",
     "custom_gpt_editor_publication": "PENDING_SEPARATE_GPT_BUILDER_ACTION",
-    "note": "Repository candidate does not update Custom GPT Builder automatically; preserve the GPT identity and Actions."
+    "note": "Repository candidate does not update Custom GPT Builder automatically; preserve the GPT identity and Actions.",
+    "internal_trigger_dashboard_policy": "ENABLED_IN_REPO_EDITOR_CANDIDATE",
+    "internal_dashboard_publication": "INTERNAL_HOST_SURFACE_ONLY_NOT_PUBLIC_WEBSITE",
+    "trigger_families": [
+      "SYSTEMSTART",
+      "UPDATE",
+      "WEITER",
+      "NEW CHAT",
+      "NEXT CHAT",
+      "DASHBOARD",
+      "TRACK DESIGN",
+      "SUNO STUDIO 2",
+      "SPEECH DESIGN",
+      "MEANINGFUL_NATIVE_FACETS"
+    ]
   }
 }
