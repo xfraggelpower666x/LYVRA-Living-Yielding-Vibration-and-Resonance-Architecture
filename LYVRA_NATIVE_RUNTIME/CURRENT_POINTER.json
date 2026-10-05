@@ -113,7 +113,10 @@
     "longform_story_architecture_rev93": "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md",
     "studio2_project_chat_mix_director_rev93": "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
     "studio2_audio_only_fx_rev93": "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
-    "renderer_compilation_rev93": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md"
+    "renderer_compilation_rev93": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
+    "lyvra_pet_facet_contract": "LYVRA_PET/FACET_INTEGRATION_CONTRACT.md",
+    "lyvra_pet_context_contract": "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md",
+    "lyvra_pet_context_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -728,7 +731,10 @@
       "browser_host_pet_render": "READBACK_PENDING"
     },
     "no_second_identity": true,
-    "no_foreign_system": true
+    "no_foreign_system": true,
+    "contextual_facet_support": "ALL_NATIVE_LYVRA_FACETS",
+    "context_contract": "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md",
+    "context_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md"
   },
   "rev93_multi_music_evolution": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
