@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED_LOCAL_SOURCE_RECOVERED",
+  "file": "spritesheet-extended.png",
+  "dimensions": [
+    1536,
+    2288
+  ],
+  "mode": "RGBA",
+  "size_bytes": 1961745,
+  "sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+  "matches_pet_readback_local_sha256": true,
+  "repo_binary_transport": "WRITE_BLOCKED_CONNECTOR_NO_LOCAL_BINARY_UPLOAD_PATH"
+}
