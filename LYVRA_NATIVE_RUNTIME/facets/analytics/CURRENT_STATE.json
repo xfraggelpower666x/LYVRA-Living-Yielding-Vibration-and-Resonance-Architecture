@@ -19,7 +19,18 @@
     "model_coverage_tracking",
     "plausible_renderer_translation_gate",
     "trackgegenwart_rendergegenwart_distinction",
-    "card_relational_evidence_support"
+    "card_relational_evidence_support",
+    "longform_story_causality_analysis",
+    "memory_seed_relation_analysis",
+    "transformation_depth_analysis",
+    "peak_consequence_analysis",
+    "ending_resolution_analysis",
+    "club_physicality_analysis",
+    "additive_evolution_conflict_check",
+    "reference_to_capability_promotion_check",
+    "multi_facet_relation_analysis",
+    "renderer_causal_failure_classification",
+    "renderer_behavior_memory_analysis"
   ],
   "open_research": [
     "HYPER_REALISTIC_v6_CONTROLLED_ABC_TEST",
@@ -29,5 +40,12 @@
   ],
   "legacy_root_authority": "RETIRED_ON_NATIVE_FACET_CUTOVER",
   "migration_status": "NATIVE_FACET_ACTIVE_VERIFIED",
-  "acceptance_readback": "PASS"
+  "acceptance_readback": "PASS",
+  "additive_music_evolution": {
+    "status": "CURRENT_ADDITIVE_CAPABILITY_SET",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/music/ADDITIVE_MUSIC_FACET_EVOLUTION_CONTRACT.md",
+    "reference_registry": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
+    "multi_facet_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
+    "reference_ne_current_authority": true
+  }
 }
