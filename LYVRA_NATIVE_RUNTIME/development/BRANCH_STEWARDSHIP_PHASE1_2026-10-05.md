@@ -1,0 +1,47 @@
+# CodeForge Branch Stewardship — Phase 1 Inventory
+
+STATUS=PHASE_1_CLASSIFICATION_ONLY
+SOURCE_HEAD=ee5378d5468731b2dbe670d352ba8e7e5fc413a6
+TOTAL_BRANCHES=120
+PROTECTED_BRANCHES=0
+EXACT_DUPLICATE_SHA_GROUPS=8
+BRANCHES_IN_DUPLICATE_SHA_GROUPS=19
+
+## Observed classes
+
+AUDIT=3
+RECOVERY_BACKUP=38
+CHORE_HISTORY=2
+DOCS_HISTORY=1
+CURRENT_AUTHORITY=1
+DASHBOARD_HISTORY_OR_DEV=5
+DEV_OR_HISTORICAL_DEV=46
+CONTINUITY_RECOVERY=1
+PRECHANGE_RECOVERY=9
+RELEASE_CANDIDATE_OR_RC_HISTORY=2
+UPDATE_HISTORY=1
+UNCLASSIFIED_REVIEW=2
+MIGRATION_HISTORY=1
+WEB_DEV_OR_HISTORY=2
+WORKER_DEV_OR_DEPLOY_HISTORY=6
+
+## Exact duplicate SHA groups
+
+- 89db0978d0f62660986d27efd1d2005265811448 — 4 branches
+- 3a1d167a1cbeac0a3c314ecf29182cbc4fe4da45 — 3 branches
+- b2caf061bbbf31e487d89f192cc303e4cfc363da — 2 branches
+- 0507b5bec7eaa61e306a22235a07282795b8f859 — 2 branches
+- 92f6935467db3fc25b7cf53b84186430fcb301ec — 2 branches
+- 4415940bfa68f54348f9ac67b9bcce78ef7e5897 — 2 branches
+- 7ed2cb53d72b69465c439f84bf4286d6dcfc8430 — 2 branches
+- cd27d8c5c7c85ce2c7794c1506dd33579b270f46 — 2 branches
+
+## Stewardship interpretation
+
+Exact SHA duplication is a redundancy signal, not an instruction to remove a branch.
+Current authority and valid recovery anchors remain protected by role.
+Historical branches preserve provenance until supersession and recovery value are verified elsewhere.
+
+PHASE_1_ACTION=MAP_CLASSIFY_RELATE_ONLY
+BRANCH_REMOVAL_PERFORMED=false
+NEXT_PHASE=VERIFY_SUPERSESSION_RECOVERY_AND_PREPARE_CLEANUP_PROPOSALS
