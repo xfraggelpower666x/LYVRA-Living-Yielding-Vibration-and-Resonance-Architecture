@@ -1,21 +1,44 @@
 {
-  "recorded_at": "2026-10-05T18:04:42Z",
+  "recorded_at": "2026-10-05T18:18:00Z",
   "branch": "work/lyvra-pet-fraggle-bond-2026-10-05",
   "repo_pet_authority_present": true,
-  "plugin_pet_capability": {
-    "account_plugin_version": "0.13.6",
-    "native_runtime_version": "0.1.8",
-    "shared_authority": "LYVRA_PET/"
+  "verified_atlas_recovered": {
+    "dimensions": [
+      1536,
+      2288
+    ],
+    "mode": "RGBA",
+    "size_bytes": 1961745,
+    "sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+    "repository_binary_upload": "WRITE_BLOCKED"
   },
   "cloudflare": {
-    "account_name": "666SOUNDsDESIGn",
-    "existing_worker_inventory_read": true,
-    "pet_worker_created": false,
-    "zero_cost_policy_required": true
+    "worker_name": "lyvra-pet-plugin-ui",
+    "worker_tag": "bdd1c9e1a1f4407ab49f7a82f321eac0",
+    "deployment_id": "a91a865b1cc34afeb8828ff9a2f6be68",
+    "workers_dev_subdomain_enabled": true,
+    "api_deployment_readback": "VERIFIED",
+    "external_http_readback": "READBACK_PENDING",
+    "zero_cost_policy": "FREE_ONLY"
+  },
+  "plugin_pet_capability": {
+    "account_plugin": {
+      "version": "0.13.7",
+      "release_id": "pluginrel_6ac3e98a6678819193384c6f4a9a1b46",
+      "mcp_binding": "VERIFIED"
+    },
+    "native_runtime": {
+      "version": "0.1.9",
+      "release_id": "pluginrel_6ac3e97d00e081918b6345e799ee67db",
+      "mcp_binding": "VERIFIED"
+    },
+    "shared_authority": "LYVRA_PET/"
   },
   "ui": {
-    "app_view_created": false,
+    "mcp_resource": "ui://lyvra/pet-v1.html",
+    "opener_tool": "open_lyvra_pet",
+    "startup_attempt_contract": "VERIFIED_IN_PLUGIN_SOURCE",
     "host_render_verified": false
   },
-  "overall_status": "PREPARED_NOT_DEPLOYED"
+  "overall_status": "DEPLOYED_AND_PLUGIN_BOUND_HOST_E2E_READBACK_PENDING"
 }
