@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-10-05T18:04:42Z",
+  "branch": "work/lyvra-pet-fraggle-bond-2026-10-05",
+  "repo_pet_authority_present": true,
+  "plugin_pet_capability": {
+    "account_plugin_version": "0.13.6",
+    "native_runtime_version": "0.1.8",
+    "shared_authority": "LYVRA_PET/"
+  },
+  "cloudflare": {
+    "account_name": "666SOUNDsDESIGn",
+    "existing_worker_inventory_read": true,
+    "pet_worker_created": false,
+    "zero_cost_policy_required": true
+  },
+  "ui": {
+    "app_view_created": false,
+    "host_render_verified": false
+  },
+  "overall_status": "PREPARED_NOT_DEPLOYED"
+}
