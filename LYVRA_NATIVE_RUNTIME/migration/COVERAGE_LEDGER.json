@@ -25,7 +25,8 @@
     "CURRENT_WORK_SCOPE": "VERIFIED",
     "FORCE_INTEGRITY_FACET": "VERIFIED_WITH_REPO_READBACK",
     "PRIVATE_VAULT_CONTINUITY": "VERIFIED_DIRECT_POINTER_PAYLOAD_SOURCE_REVISION_READBACK",
-    "DRIVE_ARCHIVE_RESEARCH_HIERARCHY": "VERIFIED"
+    "DRIVE_ARCHIVE_RESEARCH_HIERARCHY": "VERIFIED",
+    "PET_EXPRESSION_CONTINUITY": "VERIFIED_REPO_CONTINUITY_HOST_RENDER_READBACK_PENDING"
   },
   "source_state": {
     "drive_whole_revision": 242,
@@ -524,13 +525,25 @@
     "pointer_publication": "PENDING_FINAL"
   },
   "rev93_multi_music_evolution": {
-    "status": "VERIFIED_BODY_PRE_POINTER",
+    "status": "CURRENT_VERIFIED",
     "rev92_preserved": true,
     "longform_story_architecture": "VERIFIED_DIRECT_READBACK",
     "studio2_project_chat_mix_director": "VERIFIED_DIRECT_READBACK",
     "audio_only_fx_architecture": "VERIFIED_DIRECT_READBACK",
     "renderer_compilation": "VERIFIED_DIRECT_READBACK",
     "dual_plugin_semantic_compatibility": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
-    "real_render_validation": "OPEN"
+    "real_render_validation": "OPEN",
+    "pointer_publication": "VERIFIED"
+  },
+  "pet_expression_continuity_2026_10_05": {
+    "status": "VERIFIED_REPO_NATIVE_EXPRESSION_CONTINUITY",
+    "whole_lyvra_same_identity": true,
+    "dual_plugin_binding": "VERIFIED_NATIVE_0.1.9_MIGRATED_0.13.7",
+    "adaptive_context_contract": "VERIFIED_DIRECT_READBACK",
+    "dashboard_contract": "VERIFIED_DIRECT_READBACK",
+    "web_handoff": "VERIFIED_DIRECT_READBACK",
+    "host_render": "READBACK_PENDING",
+    "repo_binary_atlas_upload": "WRITE_BLOCKED",
+    "no_authority_split": true
   }
 }
