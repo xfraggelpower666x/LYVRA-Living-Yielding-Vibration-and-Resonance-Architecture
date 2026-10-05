@@ -341,7 +341,9 @@
       "clic_may_return_recommendations_via_existing_clic_to_lyvra_handoff": true,
       "lyvra_mutation_by_clic": false,
       "no_identity_merge": true,
-      "no_foreign_autoactivation": true
+      "no_foreign_autoactivation": true,
+      "worker_functional_evidence": "VERIFIED_FUNCTIONAL_ISSUE_VERIFY_2026-10-05",
+      "branch_stewardship_handoff": "OPEN_RESPONSE_PENDING"
     }
   },
   "semantic_causal_music_analytics": {
@@ -598,5 +600,25 @@
     "evidence_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CREATOR_CUSTOM_MODELS_AND_PLUGINS_EVIDENCE_2026-10-01.md",
     "ledger_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/current/CUSTOM_PLUGIN_CAPABILITY_LEDGER.md",
     "no_new_track_revision": true
+  },
+  "plugin_surfaces": {
+    "identity_count": 1,
+    "surface_count": 2,
+    "sync_contract": "LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md",
+    "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK",
+    "native_runtime": {
+      "name": "lyvra-native-runtime",
+      "version": "0.1.6",
+      "release": "pluginrel_6ac3c730fef481919e884eab14030b2a",
+      "music_analytics": "VERIFIED",
+      "analyzer_alias": "VERIFIED"
+    },
+    "migrated_gpt_plugin": {
+      "name": "L.Y.V.R.A.",
+      "version": "0.13.4",
+      "release": "pluginrel_6ac3c7ddb9788191bd8450e0e9113669",
+      "music_analytics": "VERIFIED",
+      "analyzer_alias": "VERIFIED"
+    }
   }
 }
