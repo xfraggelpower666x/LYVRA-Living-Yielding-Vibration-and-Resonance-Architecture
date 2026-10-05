@@ -246,3 +246,33 @@ MULTI_MUSIC_FACET_DASHBOARD_MUST_SHOW = PREVIOUS_VALID_STATE|NEW_REFERENCE_OR_EV
 MULTI_MUSIC_FACET_DASHBOARD_MUST_SHOW_DUAL_PLUGIN_PARITY = true
 MULTI_MUSIC_FACET_DASHBOARD_MUST_DISTINGUISH_REFERENCE_FROM_CURRENT_CAPABILITY = true
 MULTI_MUSIC_FACET_DASHBOARD_MUST_DISTINGUISH_ADDITIVE_IMPROVEMENT_FROM_REPLACEMENT = true
+
+
+## LYVRA Pet expression surface
+
+PET_DASHBOARD_ROLE = VISIBLE_EXPRESSION_OF_THE_SAME_LYVRA_IDENTITY
+PET_NE_SECOND_IDENTITY = true
+PET_NE_CONTROLLER = true
+PET_NE_ROUTER = true
+PET_NE_DECISION_AUTHORITY = true
+
+Whole-LYVRA, UPDATE, WEITER, continuity and materially relevant music/facet dashboards must include Pet state when the Pet is relevant to the current evolution or continuity.
+
+Minimum Pet visibility:
+- Pet authority path
+- Pet ID when available
+- current contextual/facet expression
+- relationship context when relevant
+- adaptive-learning state: observations/candidates/tested/accepted/rejected/superseded
+- dual-plugin binding state
+- Worker/MCP runtime state
+- host-render evidence state
+- WEBLyvra integration state
+- visual asset state
+- FREE_ONLY guard
+- blockers/readback pending
+
+PET_CONTEXT_SWITCH_NE_PET_IDENTITY_SWITCH = true
+PET_FACET_EXPRESSION_MAY_REFLECT_CURRENT_LYVRA_DEVELOPMENT = true
+PET_VISUAL_STATE_CLAIM_REQUIRES_RENDER_EVIDENCE = true
+PET_WEBSITE_PRESENTATION_NE_INTERNAL_OPS_DASHBOARD = true
