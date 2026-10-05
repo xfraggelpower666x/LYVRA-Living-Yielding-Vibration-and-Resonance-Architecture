@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_VERIFIED_PFS_PRIVATE_PLUGIN_BACKUP_TARGET_WITH_MANDATORY_LYVRA_APPROVAL_GATE",
+  "status": "CURRENT_VERIFIED_PFS_PRIVATE_PLUGIN_BACKUP_TARGET_WITH_RECOVERED_PFS_CHILD_AND_MANDATORY_LYVRA_APPROVAL_GATE",
   "date": "2026-10-05",
   "private_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
   "private_branch": "main",
@@ -27,6 +27,20 @@
     "current_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-05-001",
     "standing_blanket_permission": false,
     "write_without_current_matching_approval": "BLOCKED",
-    "new_approval_required_for_every_later_mutation": true
+    "new_approval_required_for_every_later_mutation": true,
+    "current_approval_status": "AVAILABLE_NOT_YET_CONSUMED",
+    "current_approval_consumed": false
+  },
+  "pfs_current": {
+    "observed_head": "03929c868cb43dae1c2192d89497018700731bf2",
+    "child_id": "LYVRAPLUGIN-37001",
+    "child_name": "LYVRA Plugin Backup",
+    "child_status": "EXISTING_CHILD_RECOVERED_METADATA_MIGRATED",
+    "source_binding_tree": "f40ff2e6b3493e727e8983072bbcc22e392a283e",
+    "inventory_blob": "227161f35b03d0805fa66df6fa278e8267610892",
+    "requested_account_version": "0.13.10",
+    "requested_native_version": "0.1.11",
+    "private_vault_mutation": "NONE",
+    "refresh_status": "EXISTING_CHILD_REFRESH_PENDING"
   }
 }
