@@ -1,0 +1,13 @@
+{
+  "name": "lyvra-pet-ui",
+  "transport": "streamable-http",
+  "planned_url": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+  "tool": "open_lyvra_pet",
+  "resource_uri": "ui://lyvra/pet-v1.html",
+  "entrypoints": [
+    "global",
+    "thread"
+  ],
+  "status": "SOURCE_PREPARATION",
+  "cost_policy": "FREE_ONLY"
+}
