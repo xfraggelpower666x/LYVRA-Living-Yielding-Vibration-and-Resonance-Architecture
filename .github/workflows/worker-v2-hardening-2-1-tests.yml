@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - worker-v2-hardening-2-1-dev-20261005
+      - worker-v2-main-system-authority
     paths:
       - "cloudflare-workers/personal-main-system-authority/**"
       - ".github/workflows/worker-v2-hardening-2-1-tests.yml"
@@ -31,6 +32,15 @@ jobs:
           node --input-type=module --check < cloudflare-workers/personal-main-system-authority/worker-runtime-adapter.js
       - name: v2.1 hardening regression
         run: node --test cloudflare-workers/personal-main-system-authority/worker-v2-hardening.test.mjs
+      - name: Build current v2.1 Worker with Wrangler without deployment
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          npx --yes wrangler@4.111.0 deploy --dry-run --outdir=/tmp/lyvra-v2-1-build
+          test -d /tmp/lyvra-v2-1-build
+          test -n "$(find /tmp/lyvra-v2-1-build -type f -print -quit)"
+          echo "V2_1_WRANGLER_DRY_RUN=PASS; DEPLOYMENT=FALSE"
+
       - name: Assert no v3 or stateful storage dependency
         run: |
           set -euo pipefail
