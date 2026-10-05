@@ -58,15 +58,16 @@
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE2_2026-10-05.md": "01aca591e576fad83ad7a78eb51b7d106cd355af",
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE2_2026-10-05.json": "a2d16cfe8b5557c1cb8507d51ad7846c7d36e6f5",
     "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_PORTABILITY_REPAIR_2026-10-05.json": "e6f1b90df0b09cdb5f2eb129178e5f0c1de216a4",
-    "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json": "de9dca7ea88f1e64fdd039bd6a9a032bf7722d61"
+    "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json": "de9dca7ea88f1e64fdd039bd6a9a032bf7722d61",
+    "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json": "e4ec6b2a76c71540532766bb46c8dff7ddac279d"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "READY_FOR_FINAL_POINTER_PUBLICATION",
   "codeforge_review_required": true,
-  "registry_population_status": "PLUGIN_PORTABILITY_AND_CODEFORGE_PHASE3_DIRECT_TREE_SYNC_VERIFIED_PENDING_FINAL_POINTER",
+  "registry_population_status": "PLUGIN_PORTABILITY_CODEFORGE_PHASE3_AND_HOST_REINDEX_SYNC_VERIFIED_PENDING_FINAL_POINTER",
   "codeforge_review_status": "PASS_FULL_DIRECT_TREE_READBACK",
-  "verified_carrier_count": 53,
+  "verified_carrier_count": 54,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -145,8 +146,9 @@
     "plugin_local_mcp_servers_each": 0,
     "external_pet_worker_preserved": true,
     "chat_surface_invocation_verified": true,
-    "mobile_surface_reappearance": "NOT_YET_REVERIFIED_AFTER_REPAIR",
-    "semantic_status_classification": "FRESHNESS_MISMATCH_IS_PARTIAL_UNTIL_REGISTRY_SYNC; CONFLICT_QUARANTINE_ONLY_FOR_UNRESOLVED_SHA_MISMATCH"
+    "mobile_surface_reappearance": "PENDING_POST_REPAIR_USER_TEST",
+    "semantic_status_classification": "FRESHNESS_MISMATCH_IS_PARTIAL_UNTIL_REGISTRY_SYNC; CONFLICT_QUARANTINE_ONLY_FOR_UNRESOLVED_SHA_MISMATCH",
+    "host_reindex_carrier": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json"
   },
   "semantic_parity": {
     "status": "VERIFIED_CURRENT",
@@ -162,6 +164,8 @@
     "tree_truncated": false,
     "prior_registered_carriers": 51,
     "new_registered_carriers": 2,
-    "missing_prior_carriers": 0
+    "missing_prior_carriers": 0,
+    "host_reindex_carrier_added": true,
+    "registered_carriers_after_host_readback": 54
   }
 }
