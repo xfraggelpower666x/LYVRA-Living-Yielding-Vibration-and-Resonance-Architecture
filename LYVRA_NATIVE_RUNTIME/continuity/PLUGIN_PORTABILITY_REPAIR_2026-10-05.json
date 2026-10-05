@@ -1,0 +1,64 @@
+{
+  "status": "CURRENT_VERIFIED_PLUGIN_PORTABILITY_REPAIR",
+  "date": "2026-10-05",
+  "scope": "DUAL_LYVRA_PLUGIN_PORTABILITY_REPAIR_AFTER_PET_MCP_DESKTOP_ONLY_CLASSIFICATION",
+  "identity_invariant": {
+    "one_lyvra_identity": true,
+    "plugin_ids_preserved": true,
+    "no_new_plugin_created": true,
+    "pet_is_same_lyvra_expression": true
+  },
+  "prechange_recovery": {
+    "branch": "lyvra-pre-plugin-portability-repair-20261005",
+    "head": "0cfc945d960034161a2f9a955ebce6b5b937694f"
+  },
+  "root_cause": {
+    "trigger": "Pet integration added plugin-local MCP declarations",
+    "observed_host_effect": "Mobile surfaced desktop-app-only availability; web/plugin selection became unavailable or inconsistent",
+    "repair": "Remove plugin-local lyvra-pet-ui MCP declarations from both main LYVRA plugin surfaces while preserving Pet skills and external Worker endpoint"
+  },
+  "plugin_surfaces": {
+    "native_runtime": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.11",
+      "release": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
+      "previous_version": "0.1.10",
+      "previous_release": "pluginrel_6ac3edb9f010819193e2a6847fc57355",
+      "mcp_servers_declared": 0,
+      "pet_skill_preserved": true
+    },
+    "migrated_gpt_plugin": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.10",
+      "release": "pluginrel_6ac4074419cc81918f854dd986c214f4",
+      "previous_version": "0.13.9",
+      "previous_release": "pluginrel_6ac40284c1a48191b6d3f4b9d72d87f4",
+      "mcp_servers_declared": 0,
+      "pet_skill_preserved": true
+    }
+  },
+  "pet_runtime": {
+    "worker_name": "lyvra-pet-plugin-ui",
+    "endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+    "worker_preserved": true,
+    "main_plugin_binding": false,
+    "semantic_pet_capability_preserved": true,
+    "visual_host_render": "READBACK_PENDING",
+    "cost_policy": "FREE_ONLY"
+  },
+  "host_readback": {
+    "plugin_package_readback": "VERIFIED",
+    "mcp_declarations_empty": "VERIFIED",
+    "pet_skills_present": "VERIFIED",
+    "chatgpt_permission_installation_state": "NOT_INSTALLED_REINDEX_PENDING",
+    "web_mobile_reappearance": "PENDING_USER_HOST_REINDEX_TEST"
+  },
+  "preserved": {
+    "whole_lyvra_identity": true,
+    "track_design_v3_4_rev93": true,
+    "music_state_unchanged": true,
+    "pet_identity_unchanged": true,
+    "repo_authority_unchanged": true,
+    "historical_plugin_releases_preserved": true
+  }
+}
