@@ -1,0 +1,47 @@
+name: LYVRA Dashboard Visual Dev Integration
+on:
+  push:
+    branches:
+      - lyvra-dev-dashboard-visual-rebase-20261005
+    paths:
+      - WEBLyvra/live/tools/insert_visual_identity.py
+      - .github/workflows/lyvra-dashboard-dev-visual.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate-visual-identity:
+    if: github.ref == 'refs/heads/lyvra-dev-dashboard-visual-rebase-20261005'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout isolated development branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Insert existing original art into current dashboard
+        run: python3 WEBLyvra/live/tools/insert_visual_identity.py
+      - name: Validate exact visual integration
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("WEBLyvra/live/dist/dashboard/index.html")
+          s = p.read_text(encoding="utf-8")
+          assert s.count('id="lyvra-identity-extension-style"') == 1
+          assert s.count('<section class="lyvraVisualIdentity"') == 1
+          for name in ('lyvra-avatar-front.webp','brand-chrome-emblem.webp','lyvra-avatar-wordmark.webp','brand-cosmos-mascot.webp'):
+              assert ('../assets/' + name) in s
+              assert (p.parent.parent / 'assets' / name).is_file()
+          print("PASS: existing LYVRA assets integrated into dashboard")
+          PY
+          git diff --check
+      - name: Commit only the dashboard on dev
+        run: |
+          git add WEBLyvra/live/dist/dashboard/index.html
+          if git diff --cached --quiet; then
+            echo "No changes: visual integration already present"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "feat: integrate existing LYVRA artwork into dashboard (dev only)"
+          git push origin "HEAD:lyvra-dev-dashboard-visual-rebase-20261005"
