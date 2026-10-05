@@ -65,6 +65,36 @@ jobs:
           fi
           echo "WRANGLER_BUNDLE_DRY_RUN=PASS; DEPLOYMENT=FALSE"
 
+      - name: Build isolated v3 staging release bundle without deploy
+        shell: bash
+        env:
+          CI: "true"
+        run: |
+          set -euo pipefail
+          cd cloudflare-workers/personal-main-system-authority
+          cat > .wrangler-v3-staging-ci.toml <<'TOML'
+          name = "lyvrasystem-v3-staging"
+          main = "worker-runtime-adapter.js"
+          compatibility_date = "2026-04-09"
+          workers_dev = false
+          [vars]
+          WORKER_SCOPE = "MAIN_PERSONAL_ONLY"
+          PORTABLE_WORKER_BINDING = "DISABLED"
+          NATIVE_V3_ENABLED = "true"
+          [[durable_objects.bindings]]
+          name = "NATIVE_V3_NONCES"
+          class_name = "NativeV3NonceGate"
+          [[migrations]]
+          tag = "lyvra-v3-staging-sqlite-v1"
+          new_sqlite_classes = ["NativeV3NonceGate"]
+          TOML
+          trap 'rm -f .wrangler-v3-staging-ci.toml' EXIT
+          ! grep -q 'name = "lyvrasystem"' .wrangler-v3-staging-ci.toml
+          npx --yes wrangler@4.111.0 deploy --dry-run --config .wrangler-v3-staging-ci.toml --outdir=/tmp/lyvra-v3-staging-bundle
+          test -d /tmp/lyvra-v3-staging-bundle
+          test -n "$(find /tmp/lyvra-v3-staging-bundle -type f -print -quit)"
+          echo "ISOLATED_STAGING_BUNDLE=PASS; PRODUCTION_UNTOUCHED=TRUE; DEPLOYMENT=FALSE"
+
       - name: Isolated loopback Wrangler SQLite Durable Object integration (never deploy)
         shell: bash
         run: |
