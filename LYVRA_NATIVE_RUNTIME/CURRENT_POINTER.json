@@ -5,12 +5,12 @@
   "repository": {
     "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
-    "previous_verified_head": "ad9ae5978a6b0395d6993ef1b0de425cd044347b",
+    "previous_verified_head": "212bae5f9ef2f03d3db0661b41fc69c06df06963",
     "current_dev_head_before_pointer": "3e834a416642c42fa14a944f144f1ba2f26505ec",
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "5cd1d8e9df03751d0dc82d274a23faabb89c9bd5",
+    "current_head_before_pointer": "398e40d619b4710286708659bb9fa637423780bd",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "REV93_MULTI_MUSIC_PLUS_PET_EXPRESSION_CONTINUITY",
+    "current_work_scope": "REV93_MULTI_MUSIC_PLUS_PET_EXPRESSION_AND_WEBLYVRA_DEPLOYMENT",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -69,7 +69,7 @@
     "multi_music_facet_dashboard": "MANDATORY_FOR_MULTI_FACET_EVOLUTION",
     "audio_only_studio2_fx": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "renderer_compilation": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
-    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_SAME_IDENTITY",
+    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_WITH_DEPLOYED_WEB_SEMANTIC_PRESENCE",
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93"
   },
@@ -116,7 +116,8 @@
     "renderer_compilation_rev93": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
     "lyvra_pet_facet_contract": "LYVRA_PET/FACET_INTEGRATION_CONTRACT.md",
     "lyvra_pet_context_contract": "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md",
-    "lyvra_pet_context_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md"
+    "lyvra_pet_context_dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md",
+    "weblyvra_pet_production_status": "WEBLyvra/deployment/PET_PRODUCTION_STATUS_2026-10-05.json"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -188,17 +189,18 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-05",
-    "scope": "REV93_PET_EXPRESSION_CURRENTNESS_AND_DUAL_PLUGIN_DASHBOARD_SYNC",
-    "productive_body_head": "5cd1d8e9df03751d0dc82d274a23faabb89c9bd5",
-    "prechange_backup_branch": "lyvra-backup-pre-rev93-pet-currentness-sync-20261005",
+    "scope": "REV93_PET_WEBLYVRA_SEMANTIC_PRESENCE_DEPLOYMENT",
+    "productive_body_head": "398e40d619b4710286708659bb9fa637423780bd",
+    "prechange_backup_branch": "backup/weblyvra-pet-20261005",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_current": true,
     "pet_same_identity_expression_current": true,
-    "dual_plugin_versions": {
-      "native_runtime": "0.1.10",
-      "migrated_gpt_plugin": "0.13.8"
-    },
-    "critical_carrier_readback": "42_CARRIERS_ZERO_MISMATCH",
+    "weblyvra_pet_semantic_presence": "DEPLOYED_VERIFIED",
+    "cloudflare_pages_deployment": "8c611a40-5337-4fa6-91dd-a74c85af7faa",
+    "visual_atlas_render": "READBACK_PENDING",
+    "free_only": true,
+    "extra_cloudflare_costs": false,
+    "critical_carrier_readback": "47_CARRIERS_ZERO_MISMATCH",
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -376,7 +378,7 @@
       "security_review": "PARTIAL_HISTORICAL_METADATA_EXPOSURE_CONTAINED_CURRENT_ACCESS_OWNER_ONLY",
       "isolated_restore": "BLOCKED_BYTE_EXACT_ARCHIVE_AND_NONPRODUCTION_RESTORE_PATH",
       "full_native_semantic_coverage": "OPEN",
-      "current_observed_head": "276b6ffae33e194a04085121e921759df67783d1"
+      "current_observed_head": "38022e845d86bba000e0f7966946b680c7143753"
     }
   },
   "semantic_causal_music_analytics": {
@@ -550,15 +552,15 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-05-REV93-PET-EXPRESSION-SYNC",
+    "freshness_epoch": "2026-10-05-REV93-PET-WEBLYVRA-DEPLOYED",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "registry_content_sha": "",
     "expected_track_revision": 93,
-    "critical_carrier_count": 42,
+    "critical_carrier_count": 47,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_REV93_PET_EXPRESSION_42_CARRIERS_ZERO_MISMATCH"
+    "codeforge_review": "PASS_REV93_PET_WEBLYVRA_47_CARRIERS_ZERO_MISMATCH"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -690,7 +692,7 @@
     "dual_plugin_semantic_parity": "VERIFIED"
   },
   "lyvra_pet": {
-    "status": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_VERIFIED_REPO_CONTINUITY",
+    "status": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_WITH_WEB_SEMANTIC_DEPLOYMENT",
     "pet_id": "pet_6ab791129364819183885f44a21497a2",
     "repo_authority": "LYVRA_PET/",
     "plugin_surfaces": {
@@ -730,8 +732,24 @@
     "website": {
       "production_url": "https://weblyvra.666soundsdesign-broadcaster.com/",
       "integration_contract": "WEBLyvra/PET_INTEGRATION_HANDOFF.md",
-      "integration_status": "HANDOFF_PUBLISHED_IMPLEMENTATION_PENDING",
-      "preserve_existing_website": true
+      "integration_status": "STATIC_SEMANTIC_PET_PRESENCE_DEPLOYED_VERIFIED",
+      "preserve_existing_website": true,
+      "deployed_commit": "4575ff4e0b27b8f8852c0c1e8432dbd49b0dbf50",
+      "cloudflare_pages_deployment": "8c611a40-5337-4fa6-91dd-a74c85af7faa",
+      "semantic_states": [
+        "IDLE",
+        "GREETING",
+        "FRAGGLE",
+        "PLAYFUL",
+        "HEART",
+        "MUSIC",
+        "THINKING",
+        "RECOVERABLE_GLITCH",
+        "RETURN"
+      ],
+      "visual_atlas_render": "READBACK_PENDING",
+      "semantic_fallback": "DEPLOYED",
+      "extra_cloudflare_costs": false
     },
     "blockers": {
       "repo_binary_atlas_upload": "WRITE_BLOCKED",
