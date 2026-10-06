@@ -640,5 +640,31 @@
     "speech_core_changed": false,
     "facet_roles_changed": false,
     "plugin_release_change_required": false
+  },
+  "plugin_topology_workspace_parity_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "native_runtime": {
+      "version": "0.1.15",
+      "release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+      "readback": "VERIFIED"
+    },
+    "account_plugin": {
+      "version": "0.13.15",
+      "release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
+      "readback": "VERIFIED"
+    },
+    "repository_topology_workspace_semantics": "VERIFIED_BOTH_SURFACES",
+    "repository_project_dashboard_semantics": "VERIFIED_BOTH_SURFACES",
+    "pfs_handoff": {
+      "status": "REFRESHED_CURRENT_RELEASE_EVIDENCE_DELIVERED",
+      "repository": "xfraggelpower666x/666PFS_CSM",
+      "head": "725ff992830bc1877669f4bb0f60b3e579911a68",
+      "blob": "55cf4f2ceb8b7fb344f70ae1d4d7d18306582824",
+      "child_mutation_by_lyvra": false,
+      "fresh_approval_required": true
+    },
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "facet_roles_changed": false
   }
 }
