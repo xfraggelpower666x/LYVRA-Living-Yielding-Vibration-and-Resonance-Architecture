@@ -716,5 +716,14 @@
     "exact_historical_v3_zip_identity": "UNRESOLVED",
     "system_completion_blocker": false,
     "tests_deferred": true
+  },
+  "non_test_residual_classification_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "pfs_plugin_backup_current_action": "REQUIRES_DIRECT_666PFS_UPDATE",
+    "branch_cleanup_current_action": "REQUIRES_SEPARATE_DESTRUCTIVE_AUTHORIZATION",
+    "pet_historical_v3_zip_current_action": "OPTIONAL_PROVENANCE_RECOVERY",
+    "private_vault_metadata_sync_current_action": "NONE",
+    "clic_current_action": "NONE_IN_LYVRA",
+    "no_open_non_test_lyvra_system_blocker": true
   }
 }
