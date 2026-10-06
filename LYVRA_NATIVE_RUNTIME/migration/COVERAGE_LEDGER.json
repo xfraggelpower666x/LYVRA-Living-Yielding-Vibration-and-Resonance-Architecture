@@ -582,7 +582,7 @@
     "clic_recommendation_consumed": true
   },
   "facet_boundary_repair_2026_10_06": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_BOUNDARY_REPAIR_POST_POINTER_VERIFIED",
     "rev80_85_track_core_preserved": true,
     "track_revision": 93,
     "studio2_track_child_placement": "SUPERSEDED_PROVENANCE_ONLY",
@@ -593,7 +593,9 @@
     "silent_development_loss_forbidden": true,
     "speech_status_at_boundary_repair": "ACCEPTED_PENDING_PROMOTION",
     "speech_status_now": "PROMOTED_CURRENT",
-    "snapshot_role": "HISTORICAL_PRE_SPEECH_PROMOTION_BOUNDARY_REPAIR"
+    "snapshot_role": "HISTORICAL_PRE_SPEECH_PROMOTION_BOUNDARY_REPAIR",
+    "original_status": "VERIFIED_PRE_POINTER",
+    "present_current_authority": false
   },
   "speech_design_promotion_2026_10_06": {
     "status": "VERIFIED_CURRENT_POST_POINTER_READBACK_PRESERVED",
@@ -613,7 +615,7 @@
     "account_migrated_plugin_surface": "0.13.14_CORE_AND_TEXTUAL_PARITY_VERIFIED"
   },
   "semantic_currentness_closeout_2026_10_06": {
-    "status": "VERIFIED_BODY_AND_PLUGIN_PRE_POINTER",
+    "status": "HISTORICAL_CLOSEOUT_POST_POINTER_VERIFIED",
     "whole_revision": 242,
     "track_revision": 93,
     "music_core_changed": false,
@@ -623,7 +625,10 @@
     "handoff_current_provenance_bound": true,
     "pfs_handoff_readback": "VERIFIED",
     "pfs_handoff_blob": "5626700fcfe977c0990213361ee5b7e7abafea93",
-    "pfs_child_mutation": false
+    "pfs_child_mutation": false,
+    "original_status": "VERIFIED_BODY_AND_PLUGIN_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "plugin_surface_parity_2026_10_06": {
     "native_runtime": "0.1.14_VERIFIED",
