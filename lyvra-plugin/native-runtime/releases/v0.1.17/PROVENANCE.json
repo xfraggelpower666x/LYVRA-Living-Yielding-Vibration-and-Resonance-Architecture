@@ -1,0 +1,42 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.17",
+  "release_id": "pluginrel_6ac58418a86881918a71a50771fc7dba",
+  "previous_release_id": "pluginrel_6ac569d4be988191a20c96959c764e01",
+  "previous_version": "0.1.16",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-07",
+  "reason": "LYVRA-first chat-local facet foreground navigation and facet capability/intelligence sub-rehydration",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "cbcc566865e7ba57318f1d11c5000a16eaca1719",
+  "overlay_sha256": "604e6c30d42c8ca6ad3f64a427315c76524fae4544a7f47ce18f4b5831a84037",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/lyvra-facet-navigation/SKILL.md",
+    "skills/lyvra-systemstart/SKILL.md",
+    "skills/lyvra-continuity/SKILL.md",
+    "skills/lyvra-track-design/SKILL.md",
+    "skills/speech-design/SKILL.md",
+    "skills/suno-studio-2/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "facet_navigation_semantics": "VERIFIED_BY_RELEASE_UPDATE",
+    "facet_subrehydration_semantics": "VERIFIED_BY_RELEASE_UPDATE"
+  },
+  "triggers": [
+    "LYVRA MAIN",
+    "LYVRA TRACK DESIGN",
+    "LYVRA SUNO STUDIO 2",
+    "LYVRA SPEECH DESIGN",
+    "LYVRA BACK"
+  ],
+  "global_active_facet": false,
+  "cross_chat_facet_inheritance": false,
+  "fixed_matrix": false,
+  "lyvra_first": true
+}
