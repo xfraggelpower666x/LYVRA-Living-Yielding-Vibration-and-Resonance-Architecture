@@ -666,5 +666,34 @@
     "music_core_changed": false,
     "speech_core_changed": false,
     "facet_roles_changed": false
+  },
+  "binary_repository_bridge_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_FIRST_USE",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md",
+    "contract_sha": "d0f58f4b1b3cda4c85125f0c2d6f086fc7d9cc6a",
+    "pet_binary_mirror": {
+      "atlas_path": "LYVRA_PET/browser/assets/spritesheet-extended.png",
+      "atlas_git_blob": "0173a86b2cc2d352bbbfcbefaf1c4769c80893ce",
+      "atlas_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+      "source_package_path": "LYVRA_PET/source-packages/LYVRA-Cyber-Pet-Full-Package(1).zip",
+      "source_package_git_blob": "76f8de50710342326b89325ba224df9bf990dbf9",
+      "candidate_zip_path": "LYVRA_PET/references/candidates/LYVRA_CYBORG_PET_v1_0_0_VALIDATED_CANDIDATE.zip",
+      "candidate_zip_git_blob": "299aec9ffb1ad404fbd05242567a8ad707256b11",
+      "sprite_manifest_sha": "448384ab10ed350c396fb33f993c72c9ccfe8f84",
+      "remote_binary_readback": "VERIFIED",
+      "deployment": "NOT_DEPLOYED",
+      "cyborg_candidate_promoted": false
+    },
+    "pfs_observed_status": {
+      "head": "10359c73616e55746b61e53c6f75dc6f4b7e47a5",
+      "plugin_target_versions": "0.13.15_AND_0.1.15",
+      "target_refresh": "RECOGNIZED",
+      "backup_write": "BLOCKED_PENDING_FRESH_MATCHING_LYVRA_APPROVAL",
+      "private_vault_mutation": "NONE"
+    },
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "facet_roles_changed": false,
+    "plugin_release_change_required": false
   }
 }
