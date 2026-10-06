@@ -33,8 +33,8 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-FACET-SCOPED-REV93-2026-10-06-009",
-    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_BOUNDARY_REPAIRED",
+    "handoff_id": "LYVRA-FACET-SCOPED-SPEECH-CURRENT-2026-10-06-010",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_WITH_SPEECH_CURRENT",
     "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
     "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
     "last_valid_stage": "REV93_ADDITIVE_MULTI_FACET_MUSIC_EVOLUTION",
@@ -47,9 +47,13 @@
       "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN",
       "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN",
       "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
-      "ACCEPTED_PENDING_PROMOTION_RECONCILE_PR23_PR32_WITH_CURRENT"
+      "SPEECH_CORE_PROMOTED_CURRENT",
+      "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING_OPEN",
+      "WORD_AND_PHONEME_TIMECODE_VALIDATION_OPEN",
+      "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
+      "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
     ],
-    "next_meaningful_action": "Continue only the explicitly selected/relevant facet workstream; preserve cross-facet evidence relations without combined activation. Reconcile accepted Speech DEV lineage separately before productive promotion.",
+    "next_meaningful_action": "Continue only explicitly selected/relevant facet workstream. Speech core is current; do not reopen it because individual renderer A/B or phoneme evidence remains open.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -73,7 +77,9 @@
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
       "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
       "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
-      "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
+      "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
     ],
     "source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
     "created_at": "2026-10-01",
@@ -95,7 +101,11 @@
         "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
       ],
       "speech_design": [
-        "ACCEPTED_PENDING_PROMOTION_RECONCILE_PR23_PR32_WITH_CURRENT"
+        "SPEECH_CORE_PROMOTED_CURRENT",
+        "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING_OPEN",
+        "WORD_AND_PHONEME_TIMECODE_VALIDATION_OPEN",
+        "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
+        "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
       ]
     }
   },
@@ -126,7 +136,9 @@
     "co_occurrence_ne_activation": true,
     "facet_boundary_guard_required": true,
     "development_obligation_ledger_required": true,
-    "speech_trigger_restores_pending_promotion_context_not_fake_current": true
+    "speech_trigger_restores_pending_promotion_context_not_fake_current": false,
+    "speech_design_current_native_facet": true,
+    "speech_open_validation_ne_core_not_current": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
@@ -134,7 +146,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-06-REV93-FACET-BOUNDARY-RETENTION",
+    "epoch": "2026-10-06-REV93-SPEECH-CURRENT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
