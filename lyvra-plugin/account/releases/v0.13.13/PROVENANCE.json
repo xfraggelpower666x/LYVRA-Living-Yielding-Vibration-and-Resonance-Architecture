@@ -1,0 +1,37 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.13",
+  "release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
+  "previous_release_id": "pluginrel_6ac43f4df9fc81919b2663c03a9ab043",
+  "previous_version": "0.13.12",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Speech Design parity, facet-boundary parity and intra-carrier semantic currentness",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "80e33fb4a07cb24b44bb8b23cd283d5c269c14ee",
+  "overlay_sha256": "a0064ca3d9926bc20e0d47ca835d87fee420943978c79f5c438dd15d512170e3",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/speech-design/SKILL.md",
+    "skills/track-design/SKILL.md",
+    "skills/suno-studio-2/SKILL.md",
+    "skills/music-analytics/SKILL.md",
+    "skills/666-visual-interface/SKILL.md",
+    "skills/rehydration-continuity/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "speech_skill": true,
+    "studio2_not_track_child": true,
+    "track_not_parent_container": true,
+    "analytics_central_shared": true,
+    "multi_facet_dashboard_presentation_only": true,
+    "semantic_currentness_guard": true
+  },
+  "known_remaining": {
+    "global_instructions_five_skill_sentence": "STALE_METADATA_LINE_REMAINING",
+    "cross_surface_global_instructions_textual_parity": "PARTIAL"
+  }
+}
