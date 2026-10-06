@@ -5,12 +5,12 @@
   "repository": {
     "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
-    "previous_verified_head": "40648c2726828882f231688ad45736c20f08c127",
+    "previous_verified_head": "6138013868b7fda20238924c1150f84e6970f927",
     "current_dev_head_before_pointer": "3e834a416642c42fa14a944f144f1ba2f26505ec",
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "40648c2726828882f231688ad45736c20f08c127",
+    "current_head_before_pointer": "6138013868b7fda20238924c1150f84e6970f927",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "FACET_BOUNDARY_PROMOTION_RETENTION_REPAIR_VERIFIED_PLUS_EXISTING_CURRENT_SCOPE",
+    "current_work_scope": "SPEECH_DESIGN_CURRENT_PROMOTION_VERIFIED_PLUS_EXISTING_FACET_SCOPED_WORKSTREAMS",
     "suno_studio_2": "CURRENT_NATIVE_STUDIO_OPERATION_FACET_MAY_CONSUME_TRACK_DESIGN_CAPABILITIES_NOT_TRACK_CHILD",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -73,9 +73,21 @@
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "facet_boundary_model": "TRACK_DESIGN|SPEECH_DESIGN|SUNO_STUDIO_2|CENTRAL_ANALYTICS|MUSIC_MEMORY",
-    "speech_design": "ACCEPTED_PENDING_PROMOTION_RECONCILE_VALID_PR23_PR32_WITH_CURRENT",
+    "speech_design": "CURRENT_PRODUCTIVE_NATIVE_FACET_RECONCILED_FROM_VALID_PR23_PR32_LINEAGE",
     "input_authority_guard": "NEW_INPUT_DEFAULT_REFERENCE_OR_CANDIDATE_LYVRA_DECIDES_PROMOTION",
-    "development_retention_guard": "NO_SILENT_PROMOTION_NO_SILENT_DEVELOPMENT_LOSS"
+    "development_retention_guard": "NO_SILENT_PROMOTION_NO_SILENT_DEVELOPMENT_LOSS",
+    "speech_design_trigger": "LYVRA SPEECH DESIGN",
+    "speech_design_variants": [
+      "LYVRA SPEECH DESIGN ERWEITERT",
+      "LYVRA SPEECH DESIGN EINFACH",
+      "LYVRA SPEECH DESIGN REPAIR"
+    ],
+    "speech_design_open_validation": [
+      "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+      "WORD_AND_PHONEM_TIMECODE_VALIDATION",
+      "LITERAL_EMOJI_RENDERER_EFFECT",
+      "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
+    ]
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -137,7 +149,9 @@
     "pre_rehydration_oversteer_guard": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md",
     "repo_native_write_governance": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
     "facet_boundary_and_promotion_guard": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
-    "development_obligation_ledger": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
+    "development_obligation_ledger": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+    "speech_design_facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+    "speech_design_renderer_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -210,6 +224,16 @@
       "diverged_hold_review": 31,
       "preserve_history_or_provenance": 33,
       "delete_authorized": false
+    },
+    "native_runtime_plugin_current": {
+      "version": "0.1.14",
+      "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+      "speech_skill_readback": "VERIFIED",
+      "facet_boundary_skill_readback": "VERIFIED"
+    },
+    "account_migrated_plugin_surface": {
+      "status": "READBACK_PENDING_TARGET_NOT_RESOLVED",
+      "mutation_performed": false
     }
   },
   "hard_fences": [
@@ -231,22 +255,24 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-06",
-    "scope": "FACET_BOUNDARY_PROMOTION_RETENTION_AND_SPEECH_CONTINUITY_REPAIR",
-    "productive_body_head": "40648c2726828882f231688ad45736c20f08c127",
-    "prechange_recovery_branch": "lyvra-pre-facet-boundary-promotion-retention-repair-20261006",
+    "scope": "SPEECH_DESIGN_RECONCILED_CURRENT_PROMOTION_AND_NATIVE_PLUGIN_TRIGGER_BINDING",
+    "productive_body_head": "6138013868b7fda20238924c1150f84e6970f927",
+    "prechange_recovery_branch": "lyvra-pre-speech-current-promotion-20261006",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "music_core_changed": false,
-    "facet_boundary_authority_repaired": true,
-    "rev86_studio2_child_placement": "HISTORICAL_PROVENANCE_ONLY",
-    "rev87_analytics_track_placement": "HISTORICAL_PROVENANCE_ONLY_SUPERSEDED_BY_REV91",
-    "shared_handoff_active_work_unit": false,
-    "speech_design_status": "ACCEPTED_PENDING_PROMOTION",
-    "speech_blind_merge": false,
-    "input_default": "REFERENCE_OR_CANDIDATE",
-    "no_silent_promotion": true,
-    "no_silent_development_loss": true,
-    "plugin_release_change_required": false,
+    "speech_design_promoted_current": true,
+    "speech_track_parentage": false,
+    "speech_studio2_parentage": false,
+    "speech_analytics_profile": "SPEECH_DESIGN_ANALYTICS_BUNDLE",
+    "valid_pr23_pr32_lineage_preserved": true,
+    "blind_merge": false,
+    "real_longform_render_evidence_preserved": true,
+    "open_renderer_validation_scoped_not_core_blocker": true,
+    "native_runtime_plugin_version": "0.1.14",
+    "native_runtime_plugin_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+    "native_runtime_plugin_readback": "VERIFIED",
+    "account_migrated_plugin_surface": "READBACK_PENDING_TARGET_NOT_RESOLVED",
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -1021,5 +1047,10 @@
     "drive_normal_update_dependency": false,
     "drive_lock_registry_dependency": "RETIRED_LEGACY",
     "pointer_last": true
+  },
+  "development_obligations": {
+    "carrier": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+    "speech_design": "PROMOTED_CURRENT",
+    "no_silent_development_loss": true
   }
 }
