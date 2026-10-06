@@ -1,0 +1,14 @@
+{
+  "status": "CANDIDATE_ONLY_NOT_CURRENT",
+  "source_zip": "LYVRA_CYBORG_PET_v1_0_0_VALIDATED_CANDIDATE.zip",
+  "zip_sha256": "d48ed998cbe7ca54d264d4d163f512f8150a188827ad4aa1ba0563583bf42b81",
+  "target_pet_id": "pet_6ab791129364819183885f44a21497a2",
+  "atlas": {
+    "encoded_sha256": "2db1215e11f1cf9c04e76602b26caaf45fa4f335be525c9ff199cbd743929459",
+    "width": 1536,
+    "height": 2288,
+    "mode": "RGBA",
+    "frames": 73
+  },
+  "authority_guard": "MUST_NOT_PROMOTE_WITHOUT_EXPLICIT_VERIFIED_CURRENT_REPLACEMENT_AUTHORIZATION"
+}
