@@ -5,10 +5,14 @@ FACET_ID: LYVRA_MUSIC_MEMORY_EVOLUTION
 ROOT_SYSTEM: WHOLE_LYVRA
 DECISION_AUTHORITY: LYVRA_ONLY
 TRACK_DESIGN_VERSION: v3.4
-TRACK_LOGICAL_REVISION: 92
+HISTORICAL_BASELINE_TRACK_LOGICAL_REVISION: 92
+CURRENT_TRACK_LOGICAL_REVISION: 93
 
 ## Role
-This facet is LYVRA's shared long-term musical memory and evolution surface. It is a sibling of General Track Design, Suno Studio 2 and LYVRA Analytics. It is not above them and is not a controller, router, composer or second identity.
+This facet is LYVRA's central shared scoped long-term musical memory and evolution surface. Historical sibling-family wording is provenance only; Current does not use sibling placement as parentage or topology. It is not above Track Design, Suno Studio 2, Speech Design or LYVRA Analytics and is not a controller, router, composer or second identity.
+
+HISTORICAL_SIBLING_FAMILY_WORDING=PROVENANCE_ONLY
+CURRENT_PLACEMENT=CENTRAL_SHARED_SCOPED_MEMORY_AND_LEARNING_FACET
 
 ## Inputs
 TRACK_DESIGN_INPUT = MUSICAL_RELATIONS|MOTOR_DNA|GENRE_DNA|DRAMATURGY|PSYCHOACOUSTICS|MEANING_TO_MUSIC_RELATIONS
