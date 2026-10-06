@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-WORKSPACE-CONTINUITY-V2-PLUGINS-0.1.16-0.13.16",
+  "freshness_epoch": "2026-10-06-REV93-WORKSPACE-CONTINUITY-V2-PLUGINS-0.1.16-0.13.16-FINAL",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "d5e86792dc2f890b6b4963f1c68652a77a3888d6",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "61beb761e27ebfe64a5f8f3fb0bfe9af20e626f8",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "28b904c08132c494131ae577c5d9f357062d58ec",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "8da8d8fdae39645238217baf26bd75c41965b831",
@@ -510,7 +510,7 @@
     "core_changed": false
   },
   "workspace_continuity_v2_2026_10_06": {
-    "status": "VERIFIED_BODY_PRE_MANIFEST_POINTER",
+    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_FULL_CARRIER_READBACK",
     "systemstart_without_suffix": "WHOLE_LYVRA_NATIVE_RUNTIME",
     "systemstart_with_workspace": "WHOLE_FIRST_THEN_REQUESTED_WORKSPACE_HANDOFF_ONLY",
     "new_next_chat": "WORKSPACE_AND_LINEAGE_SCOPED_NO_GLOBAL_LAST_WORKSPACE",
@@ -529,6 +529,8 @@
     "track_revision": 93,
     "no_new_router": true,
     "no_new_trigger_family": true,
-    "core_changed": false
+    "core_changed": false,
+    "manifest_blob": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
+    "coverage_blob": "28b904c08132c494131ae577c5d9f357062d58ec"
   }
 }
