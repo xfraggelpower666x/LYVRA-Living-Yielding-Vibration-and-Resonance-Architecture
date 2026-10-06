@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-METADATA-CLOSEOUT-2026-10-06-002",
+  "handoff_id": "LYVRA-PET-CURRENT-BROWSER-RENDERER-2026-10-06-003",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -42,7 +42,12 @@
     "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
     "resource_uri": "ui://lyvra/pet-v1.html",
     "opener_tool": "open_lyvra_pet",
-    "cost_policy": "FREE_ONLY"
+    "cost_policy": "FREE_ONLY",
+    "browser_root": "LYVRA_PET/browser/",
+    "browser_renderer_status": "VERIFIED_REPOSITORY_CURRENT",
+    "browser_renderer_asset_status": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "browser_host_binding": "NONE",
+    "deployment_status": "NOT_DEPLOYED"
   },
   "mandatory_integration": {
     "systemstart": true,
@@ -74,8 +79,8 @@
   ],
   "continuity_rule": "On future relevant LYVRA rehydration, read Whole-LYVRA authority/currentness first, then this Pet continuity carrier. Preserve newer verified Pet evolution. Do not treat the optional binary repository mirror as Pet capability loss or as a Whole-LYVRA system-completion blocker.",
   "blockers": {
-    "repo_binary_atlas_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT_OPTIONAL",
-    "browser_host_pet_render": "DEFERRED_VALIDATION"
+    "repo_binary_atlas_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "browser_host_pet_render": "READY_NOT_DEPLOYED"
   },
   "asset_status": {
     "source_asset_availability": "VERIFIED_LIBRARY_READBACK",
@@ -85,6 +90,9 @@
     "dimensions": "IDENTICAL",
     "exact_historical_v3_zip_identity": "UNRESOLVED",
     "repository_binary_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
-    "system_completion_blocker": false
+    "system_completion_blocker": false,
+    "browser_renderer_code": "VERIFIED_REPOSITORY_CURRENT",
+    "browser_renderer_local_http_test": "PASS",
+    "cyborg_candidate_promoted": false
   }
 }
