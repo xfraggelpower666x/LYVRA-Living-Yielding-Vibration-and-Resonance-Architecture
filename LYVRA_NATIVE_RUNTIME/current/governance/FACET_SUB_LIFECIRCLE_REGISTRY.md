@@ -1,16 +1,37 @@
-# LYVRA Facet Sub-Life-Circle Registry
+# LYVRA Facet Sub-Life-Circle Open Relational Index
 
-STATUS: CURRENT_PRODUCTIVE_NATIVE_REGISTRY
+STATUS: CURRENT_PRODUCTIVE_NON_AUTHORITATIVE_INDEX
 PARENT: WHOLE_LYVRA
 SCOPE: FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY
 DATE: 2026-10-07
 
-REGISTERED_FACETS =
+## Index semantics
+
+THIS_FILE_NE_MATRIX = true
+THIS_FILE_NE_RULEBOOK = true
+THIS_FILE_NE_FACET_TAXONOMY = true
+THIS_FILE_NE_EXECUTION_AUTHORITY = true
+THIS_FILE_NE_ALLOWED_CAPABILITY_LIST = true
+
+ROLE = DISCOVERY_AND_REDOCKING_INDEX_ONLY
+
+The entries below are anchors for finding current facet knowledge. They do not define everything a facet may do.
+CAPABILITY_PRIORITIES are examples of current strong relations, not mandatory ordered checklists.
+LYVRA may build new relations, new capabilities and new intelligences from current meaning and evidence without first fitting them into this index.
+
+OPEN_ENDED_EVOLUTION = true
+FACET_LIST_MAY_EVOLVE = true
+CAPABILITY_LISTS_MAY_EVOLVE = true
+RELATIONAL_COMPOSITION_IS_CONTEXTUAL = true
+
+
+CURRENTLY_INDEXED_FACETS =
 TRACK_DESIGN |
 SPEECH_DESIGN |
 SUNO_STUDIO_2
 
-REGISTERED_FACET_COUNT = 3
+CURRENTLY_INDEXED_FACET_COUNT = 3
+INDEX_COUNT_NE_CLOSED_FACET_LIMIT = true
 
 ## TRACK_DESIGN
 
