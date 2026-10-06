@@ -1,6 +1,6 @@
 {
   "status": "CURRENT_VERIFIED_PFS_PRIVATE_PLUGIN_BACKUP_TARGET_WITH_RECOVERED_PFS_CHILD_AND_MANDATORY_LYVRA_APPROVAL_GATE",
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "private_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
   "private_branch": "main",
   "private_write_root": "backups/666PFS/LYVRA_PLUGIN_BACKUP/",
@@ -10,17 +10,17 @@
   "private_head_after_authorization": "dd1dc583e700adcc6bdda64688c1239ec9d46275",
   "pfs_handoff_repository": "xfraggelpower666x/666PFS_CSM",
   "pfs_handoff_path": "handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md",
-  "pfs_handoff_blob": "2ec42d4c4b1bf5ff52326d71c15c6afd9bbe871b",
+  "pfs_handoff_blob": "5626700fcfe977c0990213361ee5b7e7abafea93",
   "pfs_write_scope": "PLUGIN_BACKUP_ARTIFACTS_ONLY",
   "child_autoload": false,
   "authority_transfer": false,
   "public_payload_copy": false,
   "target_child": "LYVRA Plugin Backup",
   "current_requested_versions": {
-    "account_plugin": "0.13.10",
-    "native_runtime": "0.1.11"
+    "account_plugin": "0.13.13",
+    "native_runtime": "0.1.14"
   },
-  "backup_material_status": "PENDING_PFS_WRITE_AND_PRIVATE_REPO_READBACK",
+  "backup_material_status": "STALE_PREVIOUS_RELEASE_SET_NEW_APPROVAL_REQUIRED_FOR_CURRENT_RELEASES",
   "approval_gate": {
     "mandatory_per_operation": true,
     "approval_path": "approvals/666PFS_LYVRA_PLUGIN_BACKUP_CURRENT.json",
@@ -28,19 +28,20 @@
     "standing_blanket_permission": false,
     "write_without_current_matching_approval": "BLOCKED",
     "new_approval_required_for_every_later_mutation": true,
-    "current_approval_status": "AVAILABLE_NOT_YET_CONSUMED",
+    "current_approval_status": "NOT_VALID_FOR_CURRENT_RELEASE_SET",
     "current_approval_consumed": false
   },
   "pfs_current": {
     "observed_head": "03929c868cb43dae1c2192d89497018700731bf2",
     "child_id": "LYVRAPLUGIN-37001",
     "child_name": "LYVRA Plugin Backup",
-    "child_status": "EXISTING_CHILD_RECOVERED_METADATA_MIGRATED",
+    "child_status": "EXISTING_CHILD_REFRESH_REQUIRED_FOR_NEW_RELEASE_SET",
     "source_binding_tree": "f40ff2e6b3493e727e8983072bbcc22e392a283e",
     "inventory_blob": "227161f35b03d0805fa66df6fa278e8267610892",
-    "requested_account_version": "0.13.10",
-    "requested_native_version": "0.1.11",
+    "requested_account_version": "0.13.13",
+    "requested_native_version": "0.1.14",
     "private_vault_mutation": "NONE",
     "refresh_status": "EXISTING_CHILD_REFRESH_PENDING"
-  }
+  },
+  "current_release_set_requires_new_approval": true
 }
