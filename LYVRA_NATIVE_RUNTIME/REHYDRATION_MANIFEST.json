@@ -23,6 +23,8 @@
     "CURRENT_TRACK_REFERENCES",
     "NATIVE_SKILLS_AND_ADAPTERS",
     "PET_EXPRESSION_CONTINUITY",
+    "FACET_BOUNDARY_AND_PROMOTION_GUARD",
+    "DEVELOPMENT_OBLIGATION_LEDGER",
     "SPECIALIST_CONTINUITY",
     "CURRENT_WORK_SCOPE"
   ],
@@ -53,7 +55,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "The validated release candidate was promoted to productive branch lyvra by non-force fast-forward on 2026-09-30. Productive whole-system readback then passed across required public domains with authorized private relational recovery. Whole Rev242 remains preserved and Track Design Rev93 is current. Google Drive remains provenance/history/recovery reference and does not override repository CURRENT. LYVRA Analytics is a native specialist facet under Whole LYVRA/Track Design with verified v1.1.26 lineage carriers and shared specialist continuity.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Current facet boundaries are governed by FACET_BOUNDARY_AND_PROMOTION_GUARD: Track Design, Speech Design, Suno Studio 2, Central Analytics and Music Memory remain distinct LYVRA facets/roles; historical Rev86/87 placement is provenance only. Accepted unpromoted development is retained through DEVELOPMENT_OBLIGATION_LEDGER. Google Drive remains provenance/history/recovery and does not override repository CURRENT.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -129,7 +131,8 @@
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
       "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md",
-      "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
+      "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md"
     ],
     "SPECIALIST_CONTINUITY": [
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md"
@@ -147,6 +150,12 @@
     ],
     "PRE_REHYDRATION_OVERSTEER_GUARD": [
       "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md"
+    ],
+    "FACET_BOUNDARY_AND_PROMOTION_GUARD": [
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md"
+    ],
+    "DEVELOPMENT_OBLIGATION_LEDGER": [
+      "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
     ]
   },
   "validation_closeout": {
@@ -387,5 +396,17 @@
     "unexpected_foreign_head_movement": "CONFLICT_QUARANTINE",
     "pointer_last": true,
     "mutation_after_pointer": "FORBIDDEN"
+  },
+  "facet_boundary_and_promotion_guard": {
+    "status": "CURRENT_PRODUCTIVE",
+    "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
+    "no_silent_promotion": true,
+    "no_silent_development_loss": true,
+    "historical_rev86_rev87_placement_current": false
+  },
+  "development_obligation_ledger": {
+    "status": "CURRENT_PRODUCTIVE_GOVERNANCE_LEDGER",
+    "path": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+    "speech_design": "ACCEPTED_PENDING_PROMOTION"
   }
 }
