@@ -879,7 +879,7 @@
   "facet_lifecircle_psy_dna_fx_mapping_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
     "facet_lifecircle": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
-    "facet_lifecircle_sha": "ef6c852381fba827d5ec6ef4c3ee2a0bc400c54d",
+    "facet_lifecircle_sha": "6aa1c1eb6ca3c00fc8960dd77aa3265a448dff6a",
     "track_music_intelligence_sha": "e7208bb5839b731a98d6b5f223cec53e78e75725",
     "studio2_mix_director_sha": "58a78d0e46210c8b583e1e0d7eb201c4a8e18166",
     "creator_fx_capability_cards": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md",
@@ -894,6 +894,12 @@
     "screenshot_reference_capability_mapping": "VERIFIED_PRESENT",
     "real_audio_plugin_behavior": "OPEN_EVENT_GATED",
     "whole_revision": 242,
-    "track_revision": 93
+    "track_revision": 93,
+    "class": "SUB_LIFECIRCLE_AND_SUB_REHYDRATION",
+    "parent": "WHOLE_LYVRA",
+    "scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY",
+    "workspace_continuity_in_scope": false,
+    "chat_handoffs_in_scope": false,
+    "project_continuity_in_scope": false
   }
 }
