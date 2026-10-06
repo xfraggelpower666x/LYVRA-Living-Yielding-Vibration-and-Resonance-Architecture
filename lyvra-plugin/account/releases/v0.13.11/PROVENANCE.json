@@ -1,0 +1,19 @@
+{
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-06",
+  "surface": "L.Y.V.R.A. Account Plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.11",
+  "release_id": "pluginrel_6ac43de64bd8819190b7417d23831e0c",
+  "creator_release_is_current": true,
+  "change": "PRE_REHYDRATION_OVERSTEER_GUARD",
+  "current_source_readback": "VERIFIED",
+  "drive_role": "HISTORY_BACKUP_RECOVERY_ONLY",
+  "public_repo_payload_copy": false,
+  "plugin_discoverability": "PRIVATE",
+  "preservation": {
+    "plugin_identity_preserved": true,
+    "unchanged_files_overlay_preserved": true,
+    "historical_releases_preserved": true
+  }
+}
