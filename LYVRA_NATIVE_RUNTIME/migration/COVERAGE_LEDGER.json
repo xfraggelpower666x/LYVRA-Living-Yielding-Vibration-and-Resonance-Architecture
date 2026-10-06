@@ -706,5 +706,15 @@
     "music_core_changed": false,
     "speech_core_changed": false,
     "plugin_release_change_required": false
+  },
+  "pet_current_metadata_closeout_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "pet_current_continuity": "VERIFIED",
+    "current_plugin_surfaces": "0.13.14_AND_0.1.14",
+    "source_asset_availability": "VERIFIED",
+    "repo_binary_mirror": "OPTIONAL_BLOCKED_TRANSPORT",
+    "exact_historical_v3_zip_identity": "UNRESOLVED",
+    "system_completion_blocker": false,
+    "tests_deferred": true
   }
 }
