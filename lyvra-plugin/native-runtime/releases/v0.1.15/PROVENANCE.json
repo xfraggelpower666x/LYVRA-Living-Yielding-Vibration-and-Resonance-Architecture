@@ -1,0 +1,36 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.15",
+  "release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+  "previous_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+  "previous_version": "0.1.14",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Repository topology, chat-local workspace governance and repository/project dashboard parity",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "8e794cfde6e22ac559c258537a55a0f74cbe94fa",
+  "reconciled_newer_repo_head_before_provenance": "79246af6a1b60c8f6d291a910c8a2a3d36bb042a",
+  "overlay_sha256": "0a29b50b4238eb36e0424b56aff5ead540d88e540f8b3ad0ee867885674db6f2",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/lyvra-systemstart/SKILL.md",
+    "skills/lyvra-continuity/SKILL.md",
+    "skills/lyvra-dashboard/SKILL.md",
+    "skills/666-visual-interface/SKILL.md",
+    "references/current-authority.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "topology_workspace_semantics": "VERIFIED",
+    "project_dashboard_semantics": "VERIFIED"
+  },
+  "no_new_trigger": true,
+  "no_new_router": true,
+  "no_second_lyvra_system": true,
+  "music_core_changed": false,
+  "speech_core_changed": false
+}
