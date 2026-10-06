@@ -561,5 +561,14 @@
     "browser_host_render": "DEFERRED_VALIDATION",
     "music_core_changed": false,
     "speech_core_changed": false
+  },
+  "non_test_residual_classification_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "pfs_plugin_backup": "SEPARATE_GOVERNANCE_BLOCKED_UNTIL_DIRECT_666PFS_UPDATE",
+    "branch_cleanup": "OPTIONAL_DESTRUCTIVE_MAINTENANCE",
+    "pet_historical_v3_zip": "OPTIONAL_PROVENANCE_GAP",
+    "private_vault_metadata_sync": "HISTORICAL_NON_FATAL",
+    "clic_followup": "SEPARATE_CLIC_OWNED",
+    "no_open_non_test_lyvra_system_blocker": true
   }
 }
