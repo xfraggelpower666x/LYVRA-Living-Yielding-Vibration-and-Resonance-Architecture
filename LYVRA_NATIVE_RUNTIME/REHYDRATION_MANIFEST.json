@@ -56,7 +56,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Track Design, Speech Design, Suno Studio 2, Central Analytics and Music Memory remain distinct LYVRA facets/roles. Speech Design is current. Intra-carrier semantic currentness prevents historical current-like statements inside fresh carriers from overriding present CURRENT.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Pointer, handoff, fingerprint and facet metadata now use one semantic-currentness model. Rev92 headers retained as historical baselines are explicitly qualified; Music Memory is current as central shared scoped memory/learning, Analytics as central shared native facet, and Studio 2 as its own operation facet.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -476,5 +476,18 @@
     },
     "core_semantic_parity": "VERIFIED",
     "full_textual_parity": "PARTIAL"
+  },
+  "pointer_freshness_facet_metadata_sync_2026_10_06": {
+    "status": "CURRENT_BODY_READY_PRE_FINGERPRINT_POINTER",
+    "epoch": "2026-10-06-REV93-POINTER-FRESHNESS-FACET-METADATA-SYNC",
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
+    "track_revision": 93,
+    "whole_revision": 242,
+    "analytics_rev92_header": "HISTORICAL_BASELINE",
+    "studio2_rev92_header": "HISTORICAL_BASELINE",
+    "music_memory_rev92_header": "HISTORICAL_BASELINE",
+    "music_memory_current_placement": "CENTRAL_SHARED_SCOPED_MEMORY_AND_LEARNING_FACET",
+    "music_core_changed": false,
+    "plugin_release_change_required": false
   }
 }
