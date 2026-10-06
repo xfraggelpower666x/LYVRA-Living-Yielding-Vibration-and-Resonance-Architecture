@@ -1,0 +1,33 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.16",
+  "release_id": "pluginrel_6ac569e321c48191949e4951f18c29c1",
+  "previous_release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
+  "previous_version": "0.13.15",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Parallel-safe workspace handoffs, explicit SYSTEMSTART workspace selection and additive workspace-preserving UPDATE",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "31694ab199286a3e2aecdd488f2e3a74ce6df2bb",
+  "overlay_sha256": "cf68ab3fd39245ac24ba057695ca7d2f27ef863af8865d820914f842d07368ea",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/rehydration-continuity/SKILL.md",
+    "skills/repository-update-recovery/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "systemstart_workspace_semantics": "VERIFIED",
+    "parallel_handoff_semantics": "VERIFIED",
+    "additive_update_semantics": "VERIFIED"
+  },
+  "no_new_trigger": true,
+  "no_new_router": true,
+  "no_second_lyvra_system": true,
+  "music_core_changed": false,
+  "speech_core_changed": false
+}
