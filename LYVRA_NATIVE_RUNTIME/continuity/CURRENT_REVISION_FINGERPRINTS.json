@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC",
+  "freshness_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC-FINAL",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "28b904c08132c494131ae577c5d9f357062d58ec",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "1dcbdeba309313b854f80c48f2d67c118f387060",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "dfebcdd8be35147459fe57898cb6700e8a95542e",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "8da8d8fdae39645238217baf26bd75c41965b831",
@@ -543,7 +543,7 @@
     }
   },
   "weblyvra_freshness_sync_2026_10_07": {
-    "status": "BODY_UPDATED_PRE_MANIFEST_COVERAGE_POINTER",
+    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
     "source_head": "84724b415dfaeeb6513171eb171038dc87243054",
     "recovery_branch": "lyvra-pre-weblyvra-freshness-sync-20261007-0034",
     "updated_carrier": "WEBLyvra/live/dist/index.html",
@@ -553,6 +553,8 @@
     "track_revision": 93,
     "plugins_preserved": "0.13.16_AND_0.1.16",
     "workspace_continuity_v2_preserved": true,
-    "core_changed": false
+    "core_changed": false,
+    "manifest_blob": "1dcbdeba309313b854f80c48f2d67c118f387060",
+    "coverage_blob": "dfebcdd8be35147459fe57898cb6700e8a95542e"
   }
 }
