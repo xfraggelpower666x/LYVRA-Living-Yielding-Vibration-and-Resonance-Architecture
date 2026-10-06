@@ -17,7 +17,7 @@
     {
       "id": "SPEECH_DESIGN_RECOVERY_2026_10_06",
       "domain": "SPEECH_DESIGN",
-      "state": "ACCEPTED_PENDING_PROMOTION",
+      "state": "PROMOTED_CURRENT",
       "canonical_trigger": "LYVRA SPEECH DESIGN",
       "variants": [
         "LYVRA SPEECH DESIGN ERWEITERT",
@@ -31,7 +31,10 @@
         ],
         "real_render_evidence": true,
         "offline_test_evidence": "60_CASE_PASS_IN_PR23_HISTORY",
-        "productive_current_carrier_present": false
+        "productive_current_carrier_present": true,
+        "current_facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+        "current_renderer_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
+        "promotion_reconciled_against_current": true
       },
       "preserve": [
         "SCRIPT_TONFALL_SEPARATION",
@@ -51,7 +54,14 @@
         "SILENT_DROP",
         "AUTO_PROMOTION_WITHOUT_CURRENT_RECONCILIATION"
       ],
-      "next_action": "RECONCILE_VALID_PR23_PR32_SPEECH_CAPABILITIES_WITH_NEWER_CURRENT_AND_PROMOTE_ONLY_AFTER_GOVERNED_CURRENT_READBACK"
+      "next_action": "CONTINUE_ONLY_OPEN_REAL_RENDER_VALIDATION_ITEMS_WITHOUT_REOPENING_PROMOTED_SPEECH_CORE",
+      "promoted_on": "2026-10-06",
+      "remaining_open": [
+        "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+        "WORD_AND_PHONEME_TIMECODE_VALIDATION",
+        "LITERAL_EMOJI_RENDERER_EFFECT",
+        "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
+      ]
     }
   ]
 }
