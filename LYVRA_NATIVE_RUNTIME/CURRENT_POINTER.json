@@ -13,7 +13,9 @@
     "current_head_before_pointer": "25503338e62fff9962c8b4446c11c63e8ab4804f",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
-    "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
+    "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
+    "pet_update_base_head": "8e794cfde6e22ac559c258537a55a0f74cbe94fa",
+    "pet_update_body_head_before_pointer": "85a1acc5cb453f7010d2c5cfd21d5811e43ab3db"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -69,7 +71,7 @@
     "multi_music_facet_dashboard": "PRESENTATION_ONLY_FOR_GENUINE_MULTI_FACET_EVOLUTION_NOT_SHARED_RUNTIME",
     "audio_only_studio2_fx": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "renderer_compilation": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
-    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_WITH_DEPLOYED_WEB_SEMANTIC_PRESENCE",
+    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_BROWSER_RENDERER_REPO_CURRENT_BINARY_MIRROR_WRITE_BLOCKED_NOT_DEPLOYED",
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "facet_boundary_model": "TRACK_DESIGN|SPEECH_DESIGN|SUNO_STUDIO_2|CENTRAL_ANALYTICS|MUSIC_MEMORY",
@@ -91,7 +93,11 @@
     "semantic_currentness_guard": "FRESH_CARRIER_NE_ALL_STATEMENTS_CURRENT_POINTER_AND_LATEST_EXPLICIT_CURRENT_WIN",
     "repository_topology": "CURRENT_PRODUCTIVE",
     "workspace_governance": "ONE_PRIMARY_WORKSPACE_PER_CHAT_WHOLE_LYVRA_ALWAYS_PRESENT",
-    "repository_project_dashboard": "CURRENT_INTERNAL_PRESENTATION_SURFACE"
+    "repository_project_dashboard": "CURRENT_INTERNAL_PRESENTATION_SURFACE",
+    "lyvra_pet_browser_renderer": "VERIFIED_REPOSITORY_CURRENT",
+    "lyvra_pet_browser_asset": "VERIFIED_LOCAL_ACTIVE_ATLAS_REPO_BINARY_WRITE_BLOCKED",
+    "lyvra_pet_main_plugin_binding": "NONE",
+    "lyvra_pet_deployment": "NOT_DEPLOYED"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
