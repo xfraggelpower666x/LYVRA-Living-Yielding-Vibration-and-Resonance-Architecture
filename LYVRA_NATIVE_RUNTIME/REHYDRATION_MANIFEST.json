@@ -63,7 +63,13 @@
     "repository_head_ne_workspace_selection": true,
     "project_ne_facet": true,
     "product_surface_ne_whole_authority": true,
-    "dashboard_ne_activation": true
+    "dashboard_ne_activation": true,
+    "systemstart_without_suffix": "WHOLE_LYVRA_NATIVE_RUNTIME",
+    "systemstart_with_workspace": "WHOLE_FIRST_THEN_EXACT_REQUESTED_WORKSPACE",
+    "global_last_workspace_wins": false,
+    "workspace_handoffs_parallel_safe": true,
+    "workspace_handoff_scope": "WORKSPACE_AND_LINEAGE",
+    "update_mode": "ADDITIVE_CURRENT_REFRESH_PRESERVE_ACTIVE_WORKSPACE_AND_WORK"
   },
   "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers.",
   "domain_path_map": {
@@ -174,7 +180,8 @@
     "REPOSITORY_TOPOLOGY_AND_WORKSPACE": [
       "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
       "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
-      "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md"
+      "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md"
     ]
   },
   "validation_closeout": {
@@ -560,7 +567,8 @@
     "migration_bridge_active": false,
     "music_core_changed": false,
     "speech_core_changed": false,
-    "plugin_release_change_required": false
+    "plugin_release_change_required": false,
+    "dual_plugin_workspace_continuity_v2": "VERIFIED_0.1.16_AND_0.13.16"
   },
   "pet_current_metadata_closeout_2026_10_06": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -644,24 +652,23 @@
   "plugin_topology_workspace_parity_2026_10_06": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "native_runtime": {
-      "version": "0.1.15",
-      "release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+      "version": "0.1.16",
+      "release_id": "pluginrel_6ac569d4be988191a20c96959c764e01",
       "readback": "VERIFIED"
     },
     "account_plugin": {
-      "version": "0.13.15",
-      "release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
+      "version": "0.13.16",
+      "release_id": "pluginrel_6ac569e321c48191949e4951f18c29c1",
       "readback": "VERIFIED"
     },
     "repository_topology_workspace_semantics": "VERIFIED_BOTH_SURFACES",
-    "repository_project_dashboard_semantics": "VERIFIED_BOTH_SURFACES",
+    "workspace_handoff_v2_semantics": "VERIFIED_BOTH_SURFACES",
+    "additive_update_semantics": "VERIFIED_BOTH_SURFACES",
+    "repository_project_dashboard_semantics": "PRESERVED",
     "pfs_handoff": {
-      "status": "REFRESHED_CURRENT_RELEASE_EVIDENCE_DELIVERED",
-      "repository": "xfraggelpower666x/666PFS_CSM",
-      "head": "725ff992830bc1877669f4bb0f60b3e579911a68",
-      "blob": "55cf4f2ceb8b7fb344f70ae1d4d7d18306582824",
-      "child_mutation_by_lyvra": false,
-      "fresh_approval_required": true
+      "status": "TARGET_METADATA_REFRESHED_ONLY_NO_PFS_MUTATION",
+      "fresh_approval_required": true,
+      "target_versions": "0.13.16_AND_0.1.16"
     },
     "music_core_changed": false,
     "speech_core_changed": false,
@@ -716,5 +723,21 @@
     "core_changed": false,
     "facet_boundaries_changed": false,
     "plugin_release_change_required": false
+  },
+  "workspace_continuity_v2_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_PRE_POINTER",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "contract_sha": "b29a36180c7a98ae9f422b7229f388307f8906fb",
+    "governance_sha": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
+    "specialist_contract_sha": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
+    "systemstart_without_suffix": "WHOLE_LYVRA_NATIVE_RUNTIME",
+    "systemstart_with_workspace": "WHOLE_FIRST_THEN_REQUESTED_WORKSPACE_HANDOFF_ONLY",
+    "new_next_chat": "IMMUTABLE_WORKSPACE_AND_LINEAGE_SCOPED_HANDOFFS",
+    "same_workspace_parallel_chats": "SEPARATE_LINEAGES_IF_DIVERGED",
+    "update": "ADDITIVE_REFRESH_PRESERVE_ACTIVE_WORKSPACE_AND_WORK",
+    "plugin_release_set": "NATIVE_0.1.16_ACCOUNT_0.13.16",
+    "no_global_workspace_pointer": true,
+    "no_new_router": true,
+    "no_new_trigger_family": true
   }
 }
