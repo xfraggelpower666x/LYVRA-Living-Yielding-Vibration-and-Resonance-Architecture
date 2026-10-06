@@ -1,4 +1,4 @@
-import './cyber-boot.js';
+import './cyber-boot.js?v=cyber-intro-v1.9-r4-20261007';
 import './topic-banners.js';
 import { installBrandArt } from './brand-art.js';
 import { extendFacetTabs, installExplorers } from './explorers.js';
