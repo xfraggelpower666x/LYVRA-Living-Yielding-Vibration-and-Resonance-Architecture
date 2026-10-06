@@ -56,7 +56,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Pointer, handoff and fingerprints share semantic currentness. Migrated L.Y.V.R.A. plugin 0.13.14 now has full textual parity for the common specialist-skill list, including Speech Design; Native Runtime remains 0.1.14.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -500,5 +500,16 @@
     "speech_design_link": true,
     "native_runtime_release_change_required": false,
     "music_core_changed": false
+  },
+  "pointer_legacy_snapshot_closeout_2026_10_06": {
+    "status": "CURRENT_BODY_READY_PRE_FINGERPRINT_POINTER",
+    "epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
+    "speech_current": "PROMOTED_CURRENT",
+    "migrated_plugin_version": "0.13.14",
+    "native_runtime_version": "0.1.14",
+    "dual_plugin_full_textual_parity": "VERIFIED",
+    "pfs_backup_target_current_release_set_requires_fresh_approval": true,
+    "music_core_changed": false,
+    "speech_core_changed": false
   }
 }
