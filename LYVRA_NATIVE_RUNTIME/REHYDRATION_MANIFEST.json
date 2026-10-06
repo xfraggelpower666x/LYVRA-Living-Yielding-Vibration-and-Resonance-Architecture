@@ -502,7 +502,7 @@
     "music_core_changed": false
   },
   "pointer_legacy_snapshot_closeout_2026_10_06": {
-    "status": "CURRENT_BODY_READY_PRE_FINGERPRINT_POINTER",
+    "status": "POST_POINTER_VERIFIED_COMPLETE",
     "epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
     "speech_current": "PROMOTED_CURRENT",
     "migrated_plugin_version": "0.13.14",
@@ -510,6 +510,16 @@
     "dual_plugin_full_textual_parity": "VERIFIED",
     "pfs_backup_target_current_release_set_requires_fresh_approval": true,
     "music_core_changed": false,
-    "speech_core_changed": false
+    "speech_core_changed": false,
+    "pointer_publication_readback": "VERIFIED",
+    "superseded_pre_pointer_status": true
+  },
+  "post_pointer_metadata_closeout_2026_10_06": {
+    "status": "CURRENT_BODY_READY_PRE_FINAL_POINTER",
+    "epoch": "2026-10-06-REV93-POST-POINTER-METADATA-CLOSEOUT",
+    "prior_pre_pointer_markers_closed": true,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "plugin_release_change_required": false
   }
 }
