@@ -174,3 +174,25 @@ CENTRAL_ANALYTICS_SELECTIVE_INTELLIGENCE = true
 MUSIC_MEMORY_EVOLUTION_SHARED = true
 STUDIO2_DUAL_CONTROL_HIERARCHY_REQUIRED = true
 CODEFORGE_REPO_REVIEW_REQUIRED = true
+
+## 2026-10-06 continuity boundary correction
+
+CANONICAL_BOUNDARY_GUARD = LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md
+DEVELOPMENT_OBLIGATION_LEDGER = LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json
+
+OLDER_STUDIO2_TRACK_DESIGN_CHILD_WORDING = HISTORICAL_PROVENANCE_ONLY
+OLDER_ANALYTICS_TRACK_DESIGN_CHILD_WORDING = HISTORICAL_PROVENANCE_ONLY
+ONE_SHARED_HANDOFF_CHANNEL_NE_ONE_SHARED_ACTIVE_WORK_UNIT = true
+HANDOFF_RELATION_NE_FACET_ACTIVATION = true
+PENDING_WORK_MUST_BE_SCOPED_BY_OWNER_FACET = true
+
+CURRENT_RELATION:
+- Track Design remains its own LYVRA music-construction facet.
+- Suno Studio 2 remains its own LYVRA studio-operation facet and may consume current Track Design capabilities/results when relevant.
+- Analytics is one central shared LYVRA facet with selectively requested capabilities.
+- Music Memory is shared scoped memory/learning, not a foreground controller.
+- Speech Design is its own LYVRA facet; while productive reconciliation is pending, its direct trigger restores the accepted-development obligation rather than pretending DEV is Current.
+
+LYVRA_SPEECH_DESIGN_TRIGGER = LYVRA SPEECH DESIGN
+SPEECH_TRIGGER_NE_AUTOPROMOTION = true
+SPEECH_DEV_NE_CURRENT_UNTIL_GOVERNED_PROMOTION = true
