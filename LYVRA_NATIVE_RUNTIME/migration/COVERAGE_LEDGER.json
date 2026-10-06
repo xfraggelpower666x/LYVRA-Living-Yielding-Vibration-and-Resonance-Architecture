@@ -610,19 +610,28 @@
     "native_plugin_version": "0.1.14",
     "native_plugin_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
     "native_plugin_readback": "VERIFIED",
-    "account_migrated_plugin_surface": "TARGET_RESOLVED_VERSION_0_13_12_PARITY_UPDATE_IN_PROGRESS"
+    "account_migrated_plugin_surface": "0.13.13_CORE_PARITY_VERIFIED_GLOBAL_INSTRUCTIONS_TEXT_PARTIAL"
   },
   "semantic_currentness_closeout_2026_10_06": {
-    "status": "BODY_VERIFIED_PRE_PLUGIN_PARITY_AND_POINTER",
-    "track_revision": 93,
+    "status": "VERIFIED_BODY_AND_PLUGIN_PRE_POINTER",
     "whole_revision": 242,
+    "track_revision": 93,
     "music_core_changed": false,
     "speech_core_changed": false,
-    "stale_current_like_metadata_time_scoped": true,
     "fresh_carrier_ne_all_statements_current": true,
-    "current_pointer_precedence": true,
-    "handoff_present_provenance_bound": true,
-    "migrated_plugin_target_resolved": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-    "migrated_plugin_preupdate_version": "0.13.12"
+    "historical_current_time_scoped": true,
+    "handoff_current_provenance_bound": true,
+    "pfs_handoff_readback": "VERIFIED",
+    "pfs_handoff_blob": "5626700fcfe977c0990213361ee5b7e7abafea93",
+    "pfs_child_mutation": false
+  },
+  "plugin_surface_parity_2026_10_06": {
+    "native_runtime": "0.1.14_VERIFIED",
+    "migrated_gpt": "0.13.13_VERIFIED_CORE_BOUNDARY_SPEECH",
+    "migrated_release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
+    "migrated_global_instructions_five_skill_sentence": "STALE_TEXTUAL_METADATA_REMAINING",
+    "core_semantic_parity": "VERIFIED",
+    "full_textual_parity": "PARTIAL",
+    "no_fake_full_parity_claim": true
   }
 }
