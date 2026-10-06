@@ -795,5 +795,24 @@
     "no_new_trigger": true,
     "no_new_router": true,
     "no_second_lyvra_system": true
+  },
+  "binary_repository_bridge_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "classification": "SAFE",
+    "bridge_contract": "VERIFIED",
+    "pet_atlas_repo_binary": "VERIFIED_REMOTE_READBACK",
+    "pet_source_package_repo_binary": "VERIFIED_PRESENT",
+    "pet_candidate_zip_repo_binary": "VERIFIED_PRESENT",
+    "sprite_manifest": "VERIFIED_CURRENT",
+    "deployment": "NOT_DEPLOYED",
+    "cyborg_candidate_promoted": false,
+    "pfs_plugin_target_versions": "0.13.15_AND_0.1.15",
+    "pfs_backup_write": "BLOCKED_PENDING_FRESH_MATCHING_LYVRA_APPROVAL",
+    "pfs_private_vault_mutation": "NONE",
+    "no_cross_system_merge": true,
+    "no_new_trigger": true,
+    "no_new_router": true,
+    "music_core_changed": false,
+    "speech_core_changed": false
   }
 }
