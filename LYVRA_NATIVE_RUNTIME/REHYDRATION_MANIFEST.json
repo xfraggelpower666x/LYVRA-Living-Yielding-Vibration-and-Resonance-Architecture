@@ -774,6 +774,14 @@
     "plugin_behavior_validation": "OPEN_EVENT_GATED",
     "no_new_router": true,
     "no_new_controller": true,
-    "no_new_identity": true
+    "no_new_identity": true,
+    "class": "SUB_LIFECIRCLE_AND_SUB_REHYDRATION",
+    "parent_lifecircle": "WHOLE_LYVRA",
+    "parent_rehydration": "WHOLE_LYVRA_REHYDRATION",
+    "scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY",
+    "workspace_continuity_in_scope": false,
+    "chat_continuity_in_scope": false,
+    "handoff_authority": false,
+    "project_continuity_in_scope": false
   }
 }
