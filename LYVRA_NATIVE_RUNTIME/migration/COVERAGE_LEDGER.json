@@ -814,5 +814,30 @@
     "no_new_router": true,
     "music_core_changed": false,
     "speech_core_changed": false
+  },
+  "pet_worker_v2_freshness_repair_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "source_head": "99a8b5812b159d9a8e5c13fc87720bf990b1e077",
+    "recovery_branch": "lyvra-pre-pet-freshness-repair-20261006-2057",
+    "fingerprint_registry": {
+      "blob": "7981bb65a9379a61e3a88437f8d3ac373dbbcdba",
+      "epoch": "2026-10-06-REV93-PET-WORKER-V2-FRESHNESS-REPAIR",
+      "verified_carrier_count": 86,
+      "verified_mismatch_count": 0
+    },
+    "updated_carriers": {
+      "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "96ed8639229b76fa94faca4ada6bf1ad8640a60f"
+    },
+    "manifest_blob": "85e8858dc5b53568c6623e89c17ed28b8465c751",
+    "pet_binary_bridge": "PASS_REMOTE_BINARY_READBACK",
+    "pet_worker_v2_api_readback": "PASS",
+    "public_http_readback": "PENDING",
+    "host_visual_render": "READBACK_PENDING",
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "plugin_versions_preserved": "0.13.15_AND_0.1.15",
+    "no_foreign_autoload": true,
+    "no_core_repair_required": true
   }
 }
