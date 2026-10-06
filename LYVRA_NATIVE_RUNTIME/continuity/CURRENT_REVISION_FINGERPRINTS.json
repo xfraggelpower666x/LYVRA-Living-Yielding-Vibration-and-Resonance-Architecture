@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-WHOLE-SYSTEM-COMPLETE",
+  "freshness_epoch": "2026-10-06-REV93-PET-CURRENT-METADATA-CLOSEOUT",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,18 +35,18 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "1df931dd2a1fd7c871078d43b715225969930e56",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "aa3769f4a024e71f8dfb085f282090c4805c77f1",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "7c3c0be334f8b5e4ddbeaaa0d9985204f04808cf",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "d5cc91f5ac79899caccd49d2d339c6403a7c2f13",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "b1ace6504a7c2c72baafed4326b65f30ff2836a1",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "8da8d8fdae39645238217baf26bd75c41965b831",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md": "dd646789f16f9267b598225e2c0c4656bdd60656",
     "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md": "10977b2d69065543090aac5b93ada16406bfca9f",
-    "LYVRA_PET/WHOLE_LYVRA_INTEGRATION_CONTRACT.md": "3372e993a849e656d30c76af0d6b3fc4905be62e",
+    "LYVRA_PET/WHOLE_LYVRA_INTEGRATION_CONTRACT.md": "145a45b24abf8133bdbbc5f08d1f9f5b69fdf02c",
     "LYVRA_PET/FACET_INTEGRATION_CONTRACT.md": "d443d434c4e265b0daa807614b9637c340ef0a01",
     "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md": "7a5631fd783f57cdd3541a8c6e1bd559072a1702",
     "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md": "62da7e66e8e321901493752c082a39453b7c5e99",
-    "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "1efe9dfece5646528b863dbe6e2b3bb76ff73cf6",
+    "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "48c0cbc74328dc1cd097193f5e1f459415c50952",
     "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "f81c319784581274b30da1bc80378b0a7ef45fa9",
     "WEBLyvra/live/dist/index.html": "76a2e10e0033a21cda1d20c894024736ca9c05d8",
     "WEBLyvra/live/dist/pet-presence.css": "0ef46bdb51ebf4b5893c94c21e34e6250051ca8b",
@@ -78,15 +78,16 @@
     "lyvra-plugin/account/releases/v0.13.13/PROVENANCE.json": "36546ec3e99a1b896f08d8e2c074e1549242e84e",
     "lyvra-plugin/account/releases/v0.13.13/RESTORE.md": "4bead2e1d0a4913fdff45a52cd97214cc3c2494f",
     "lyvra-plugin/account/releases/v0.13.14/PROVENANCE.json": "e055d42323bb3824661f093324f423e8fa3b66b1",
-    "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f"
+    "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f",
+    "LYVRA_PET/ASSET_STATUS.md": "b65e5ad808526a0d0e98e2c6318d45bb084f1fc9"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "POST_POINTER_VERIFIED_COMPLETE",
   "codeforge_review_required": true,
-  "registry_population_status": "WHOLE_LYVRA_SYSTEM_COMPLETION_VERIFIED",
-  "codeforge_review_status": "PASS_SYSTEM_COMPLETION_BODY_AND_CURRENTNESS",
-  "verified_carrier_count": 73,
+  "registry_population_status": "PET_CURRENT_METADATA_CLOSEOUT_VERIFIED",
+  "codeforge_review_status": "PASS_PET_CURRENT_METADATA_AND_ASSET_PROVENANCE",
+  "verified_carrier_count": 74,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -393,5 +394,14 @@
     "no_open_non_test_system_blocker": true,
     "music_core_changed": false,
     "speech_core_changed": false
+  },
+  "pet_current_metadata_closeout_2026_10_06": {
+    "status": "VERIFIED_PRE_FINAL_POINTER",
+    "pet_id": "pet_6ab791129364819183885f44a21497a2",
+    "plugin_versions": "0.13.14_AND_0.1.14",
+    "source_asset_availability": "VERIFIED",
+    "active_rgba_readback": "VERIFIED_IDENTICAL",
+    "repo_binary_mirror": "OPTIONAL_BLOCKED_TRANSPORT",
+    "system_completion_blocker": false
   }
 }
