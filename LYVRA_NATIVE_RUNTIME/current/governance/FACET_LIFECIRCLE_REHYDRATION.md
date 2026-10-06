@@ -1,68 +1,117 @@
-# LYVRA Facet Life-Circle & Rehydration Contract
+# LYVRA Facet Sub-Life-Circle & Sub-Rehydration Contract
 
 STATUS: CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE
 ROOT_IDENTITY: LYVRA
+PARENT_LIFECIRCLE: WHOLE_LYVRA
+PARENT_REHYDRATION: WHOLE_LYVRA_REHYDRATION
 DECISION_AUTHORITY: LYVRA_ONLY
-SCOPE: FACET_CONTINUITY_REHYDRATION_AND_LIFECYCLE
+CLASS: SUB_LIFECIRCLE_AND_SUB_REHYDRATION
+SCOPE: FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY
 DATE: 2026-10-07
 
 ## Purpose
 
-This contract prevents repeated loss of creator intent, facet DNA, capability maps, evidence context and open validation state across chats and facet activation.
+This contract exists only to preserve and rehydrate the abilities and intelligences that belong to LYVRA facets.
 
-A facet life-circle is a continuity mechanism of Whole LYVRA. It is NOT a new root system, agent, controller, router, identity or independent authority.
+It is a SUB-LIFE-CIRCLE under Whole LYVRA and a SUB-REHYDRATION inside Whole LYVRA rehydration.
+
+It MUST NOT become:
+- a second LYVRA lifecycle
+- a workspace lifecycle
+- a chat-continuity system
+- a project-continuity system
+- a handoff authority
+- a root system
+- an agent
+- a controller
+- a router
+- a separate identity
+- an independent decision authority
 
 WHOLE_LYVRA_ALWAYS_PRESENT = true
+WHOLE_LYVRA_LIFECIRCLE_IS_PARENT = true
+WHOLE_LYVRA_REHYDRATION_IS_PARENT = true
+FACET_SUB_LIFECIRCLE_IS_CHILD_CAPABILITY_LAYER = true
+FACET_SUB_REHYDRATION_IS_CHILD_CAPABILITY_REHYDRATION = true
 FACET_NE_IDENTITY = true
-FACET_LIFECIRCLE_NE_CONTROLLER = true
-FACET_LIFECIRCLE_NE_ROUTER = true
-FACET_REHYDRATION_NE_GLOBAL_AUTOACTIVATION = true
+FACET_NE_AGENT = true
+FACET_SUB_LIFECIRCLE_NE_CONTROLLER = true
+FACET_SUB_LIFECIRCLE_NE_ROUTER = true
+FACET_SUB_REHYDRATION_NE_WORKSPACE_REHYDRATION = true
+FACET_SUB_REHYDRATION_NE_CHAT_HANDOFF_REHYDRATION = true
 NO_FOREIGN_AUTOLOAD = true
 
-## Facet lifecycle
+## Scope hard fence
 
-FACET_LIFECIRCLE =
-DISCOVER_CURRENT >
-RESOLVE_FACET >
-REHYDRATE_DNA >
-REHYDRATE_CURRENT_CARRIERS >
-REHYDRATE_REFERENCE_MAPS >
-REHYDRATE_CAPABILITY_MAPS >
-REHYDRATE_OPEN_GATES >
-RESTORE_SCOPED_CONTINUITY >
-EXECUTE >
-OBSERVE >
-CLASSIFY_EVIDENCE >
-PERSIST_SCOPED_EVOLUTION >
-FREEZE_CURRENT >
-READBACK
+IN_SCOPE =
+FACET_CAPABILITIES |
+FACET_INTELLIGENCES |
+FACET_RELATIONS_REQUIRED_TO_USE_THOSE_CAPABILITIES |
+FACET_SPECIFIC_DNA |
+FACET_SPECIFIC_REFERENCE_MAPS |
+FACET_SPECIFIC_CAPABILITY_MAPS |
+FACET_SPECIFIC_EVIDENCE |
+FACET_SPECIFIC_OPEN_VALIDATION_GATES |
+FACET_SPECIFIC_RENDERER_TRANSLATION
 
-No phase may promote history, reference screenshots, plugin presence or prior chat claims into current truth without current evidence.
+OUT_OF_SCOPE =
+WHOLE_IDENTITY |
+WHOLE_AUTHORITY |
+GLOBAL_WORKSPACE_SELECTION |
+CHAT_CONTINUITY |
+NEW_NEXT_CHAT_HANDOFFS |
+PROJECT_CONTINUITY |
+ROOT_POINTER_AUTHORITY |
+GLOBAL_ROUTING |
+GLOBAL_LIFECIRCLE |
+FOREIGN_SYSTEMS
 
-## Rehydration bundle required for every activated facet
+Workspace/lineage/handoff continuity remains governed by Whole LYVRA repository/workspace continuity contracts and MUST NOT be duplicated here.
 
-Each explicitly activated facet must restore, when relevant:
+## Sub-Life-Circle
 
-- Whole LYVRA authority and current pointer
-- current facet contract and current carriers
-- creator hard rules / DNA relevant to the facet
-- renderer/output guards relevant to the facet
-- current reference registries
-- capability maps derived from creator references
-- preserve/mutate rules
-- evidence hierarchy and provenance
-- current open validation gates
-- last valid facet-scoped handoff/workstream
-- newer valid evolution since that handoff
+FACET_SUB_LIFECIRCLE =
+WHOLE_LYVRA_CONTEXT_PRESENT >
+RESOLVE_REQUESTED_FACET >
+LOAD_FACET_CAPABILITIES >
+LOAD_FACET_INTELLIGENCES >
+LOAD_REQUIRED_RELATIONS >
+LOAD_FACET_DNA >
+LOAD_REFERENCE_AND_CAPABILITY_MAPS >
+LOAD_FACET_EVIDENCE >
+LOAD_OPEN_VALIDATION_GATES >
+EXECUTE_FACET_FUNCTION >
+OBSERVE_FACET_RESULT >
+CLASSIFY_FACET_EVIDENCE >
+EVOLVE_CAPABILITY_OR_INTELLIGENCE_IF_JUSTIFIED >
+READBACK_FACET_STATE
 
-FACET_FOUND_NE_REHYDRATED = true
+The Sub-Life-Circle operates only inside the already-authoritative Whole LYVRA lifecycle.
+
+## Facet Sub-Rehydration
+
+FACET_SUB_REHYDRATION_REQUIRED_BUNDLE =
+FACET_CONTRACT |
+CURRENT_CAPABILITY_SET |
+CURRENT_INTELLIGENCE_SET |
+CURRENT_CAPABILITY_RELATIONS |
+FACET_DNA |
+REFERENCE_MAPS |
+CAPABILITY_MAPS |
+RENDERER_TRANSLATION_WHEN_RELEVANT |
+EVIDENCE_STATUS |
+OPEN_VALIDATION_GATES
+
+FACET_FOUND_NE_SUB_REHYDRATED = true
 REFERENCE_PRESENT_NE_CAPABILITY_MAPPED = true
-PLUGIN_PRESENT_NE_AUDIO_PASS = true
 SCREENSHOT_PRESENT_NE_OPERATIONAL_KNOWLEDGE = true
+PLUGIN_PRESENT_NE_AUDIO_PASS = true
+
+FACET_SUB_REHYDRATED = true only when the required capability/intelligence bundle is reconstructed from current verified carriers without inventing missing behavior.
 
 ## Music facet hard inheritance
 
-For TRACK_DESIGN and SUNO_STUDIO_2, rehydration MUST include the creator Psytrance-first DNA before any external input is interpreted.
+For TRACK_DESIGN and SUNO_STUDIO_2, the facet Sub-Rehydration MUST load the current creator music DNA before interpreting external musical input.
 
 MUSIC_DNA_PRIORITY =
 LYVRA_FRAGGLE_DNA >
@@ -70,7 +119,7 @@ CURRENT_TRACK_MEANING >
 CURRENT_CREATOR_REFERENCES >
 EXTERNAL_INPUT_STYLE
 
-Required creator DNA:
+Required creator music capability state:
 PSYTRANCE_PRIMARY = true
 MAXIMUM_USABLE_POWER = true
 MAXIMUM_DRY_KICK_IMPACT = true
@@ -80,29 +129,28 @@ MAXIMUM_PSYCHOACOUSTIC_CAUSALITY = true
 ANTI_POP_DRIFT = true
 EMOJI_REINFORCEMENT_STYLE_AND_LYRICS = true
 
-External input may contribute story, text, emotion, motifs, voice roles, arrangement candidates and sound references. It may not silently replace the motor, genre foundation, kick/bass architecture, energy geometry or psychoacoustic identity.
+External input may supply story, lyric material, emotion, motifs, voice roles, arrangement candidates or sound references. It may not replace the current LYVRA/Fraggle motor, genre foundation, kick/bass architecture, energy geometry or psychoacoustic identity.
 
-## Studio 2 required rehydration
+## Suno Studio 2 facet bundle
 
-SUNO_STUDIO_2 must restore:
-- TRACK_MUSIC_INTELLIGENCE current hard DNA guard
+SUNO_STUDIO_2_SUB_REHYDRATION must include the capabilities/intelligences represented by:
+- TRACK_MUSIC_INTELLIGENCE creator DNA relation
 - STUDIO2_EVIDENCE_MODEL
 - DUAL_CONTROL_HIERARCHY
 - PROJECT_CHAT_MIX_DIRECTOR current
 - AUDIO_ONLY_FX_ARCHITECTURE current
 - CREATOR_EFFECT_REFERENCE_REGISTRY
 - CREATOR_FX_CAPABILITY_CARDS
-- renderer compilation / current Suno evidence when material
-- current open real-operation and plugin-behavior validation gates
+- current renderer compilation/evidence when material
+- current real-operation/plugin-behavior validation gates
 
-Studio 2 must not treat imported genre/style labels as authority.
-Studio 2 must prefer targeted section/stem/plugin operations over whole-track regeneration when a local repair suffices.
+This does not make Track Design the parent of Studio 2. It is bounded capability consumption between LYVRA facets.
 
-## Capability-card requirement
+## Creator FX capability mapping
 
 Creator-supplied plugin/effect screenshots and reference files must not remain image-only evidence when they contain operationally useful information.
 
-For each identifiable effect/plugin, create or maintain a capability card with:
+Each identifiable effect/plugin capability card should carry:
 PLUGIN_ID_OR_NAME
 SOURCE_CLASS
 FAMILY
@@ -117,63 +165,58 @@ LIMITS_AVOID
 EVIDENCE_STATUS
 REAL_AUDIO_VALIDATION_STATUS
 
-Unknown or unreadable parameters remain OPEN. Never invent controls or behavior from a name alone.
+Unknown or unreadable controls remain OPEN.
+Never invent a parameter, behavior or range from a plugin name alone.
+
+## Intelligence relation
+
+FACET_INTELLIGENCE = CAPABILITY_WITHIN_A_FACET
+INTELLIGENCE_NE_FACET = true
+INTELLIGENCE_NE_AGENT = true
+
+A facet may contain multiple intelligences. Sub-Rehydration reconstructs the currently valid intelligences needed for the requested facet function without turning them into independent actors.
+
+Cross-facet intelligence exchange is allowed only when causally relevant.
+RELATION_NE_PARENTAGE = true
+RELATION_NE_AUTOACTIVATION = true
+RELATION_NE_SCOPE_TRANSFER = true
 
 ## Evidence and learning
 
 OWN_VALIDATED_RENDER > OWN_REPEATED_TEST > OWN_SINGLE_RENDER > OFFICIAL_CURRENT > REPEATED_CURRENT_COMMUNITY > SINGLE_COMMUNITY > GENERAL_AUDIO_KNOWLEDGE > HYPOTHESIS
 
-Facet execution evidence may be passed to Central Analytics.
-Only reviewed causal learning may enter scoped Music Memory.
-A successful one-off render is not automatically a global rule.
-
-## Continuity
-
-Facet continuity is scoped by facet + workspace + lineage.
-No global "last facet wins" state is allowed.
-
-FACET_HANDOFF_MUST_PRESERVE =
-FACET_ID |
-WORKSPACE_ID |
-LINEAGE_ID |
-CURRENT_DNA_REVISION |
-CURRENT_CAPABILITY_MAP_REVISION |
-ACTIVE_TASK |
-PENDING_WORK |
-OPEN_GATES |
-RELEVANT_REFERENCES |
-SOURCE_HEAD |
-SUPERSEDES_WHEN_APPLICABLE
-
-NEWER_VALID_EVOLUTION_GT_OLDER_VALID_STATE = true
-HISTORY_NE_BOOT_AUTHORITY = true
-
-## Activation behavior
-
-Explicit current user intent activates the requested facet after Whole current resolution.
-Rehydrated relations may inform the facet but do not autoactivate sibling facets.
-Cross-facet reads are allowed when causally necessary; cross-facet mutation requires explicit bounded justification.
+Facet evidence may be interpreted by Central Analytics.
+Reviewed causal learning may be stored by Music Memory within its own facet capability scope.
+A successful one-off result is not automatically promoted to a global rule.
 
 ## Failure behavior
 
-If required current carriers or capability maps are missing:
+If a required capability/intelligence carrier or capability map is missing:
 STATUS = PARTIAL
 DO_NOT_GUESS = true
-RECOVER_FROM_VERIFIED_REFERENCE_OR_CURRENT_REPO = true
 
 If source evidence exists but capability mapping is incomplete:
 STATUS = CAPABILITY_MAPPING_REQUIRED
-The system should map the evidence before pretending the facet is fully operational.
 
-## Completion
+The facet remains usable only to the degree supported by verified current capability/intelligence evidence.
 
-FACET_REHYDRATED = true only when:
-- Whole authority/current is resolved
-- facet identity/boundary is resolved
-- required DNA is loaded
-- current carriers are read
-- relevant references are reachable
-- required capability maps are loaded
-- open gates are known
-- scoped continuity is restored or explicitly absent
-- no newer valid evolution is ignored
+## Parent boundary
+
+Whole LYVRA owns:
+IDENTITY |
+AUTHORITY |
+GLOBAL_LIFECIRCLE |
+GLOBAL_REHYDRATION |
+WORKSPACE_GOVERNANCE |
+CHAT_CONTINUITY |
+HANDOFF_GOVERNANCE |
+CROSS_FACET_DECISION
+
+Facet Sub-Life-Circle owns only:
+FACET_CAPABILITY_CONTINUITY |
+FACET_INTELLIGENCE_CONTINUITY |
+FACET_CAPABILITY_EVOLUTION |
+FACET_INTELLIGENCE_EVOLUTION |
+FACET_CAPABILITY_SUB_REHYDRATION
+
+PARENT_ALWAYS_WINS_ON_BOUNDARY_CONFLICT = true
