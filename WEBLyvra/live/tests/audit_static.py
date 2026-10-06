@@ -30,7 +30,7 @@ for name in ('topic-banner-start.mp4', 'topic-banner-end.mp4'):
 boot_js=web/'cyber-boot.js';boot_css=web/'cyber-boot.css'
 assert boot_js.is_file() and boot_css.is_file(), 'Missing LYVRA cyber-intro assets'
 boot=boot_js.read_text(); boot_style=boot_css.read_text()
-assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Cyber intro module not imported'
+assert "import './cyber-boot.js?v=cyber-intro-v1.9-r3-20261006';" in (web/'app.js').read_text(), 'Cyber intro module import must be cache-busted'
 for name in ('intro-background.jpg','intro-brand.png','center-emblem.png'):
     item=web/'assets'/'cyber-intro'/name
     assert item.is_file() and item.stat().st_size>1000, f'Missing cyber-intro artwork: {name}'
@@ -50,7 +50,7 @@ dash_text=dashboard.read_text()
 assert dashboard.stat().st_size < 100_000, 'Dashboard regressed to oversized inline build'
 assert 'data:image' not in dash_text, 'Dashboard must keep images as local files'
 assert 'https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html' in dash_text, 'Dashboard radio iframe changed'
-assert 'href="/dashboard/"' in (web/'index.html').read_text(), 'Main site dashboard route missing'
+assert 'href="https://dashboard.666soundsdesign-broadcaster.com/"' in (web/'index.html').read_text(), 'Dedicated dashboard domain link missing'
 dashboard_assets=[
     'assets/lyvra-identity/666soundsdesign-neon.png',
     'assets/lyvra-identity/lyvra-core.png',
