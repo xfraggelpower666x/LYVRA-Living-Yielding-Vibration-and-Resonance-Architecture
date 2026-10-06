@@ -1,0 +1,82 @@
+{
+  "schema": "LYVRA_PET_BROWSER_SPRITE_MANIFEST_V1",
+  "status": "PREPARED_NO_ACTIVE_BINARY",
+  "cell": {
+    "width": 192,
+    "height": 208
+  },
+  "atlas": {
+    "columns": 8,
+    "rows": 11
+  },
+  "states": {
+    "idle": {
+      "row": 0,
+      "frames": 6,
+      "fps": 5
+    },
+    "running-right": {
+      "row": 1,
+      "frames": 8,
+      "fps": 10
+    },
+    "running-left": {
+      "row": 2,
+      "frames": 8,
+      "fps": 10
+    },
+    "waving": {
+      "row": 3,
+      "frames": 4,
+      "fps": 6
+    },
+    "jumping": {
+      "row": 4,
+      "frames": 5,
+      "fps": 8
+    },
+    "failed": {
+      "row": 5,
+      "frames": 8,
+      "fps": 8
+    },
+    "waiting": {
+      "row": 6,
+      "frames": 6,
+      "fps": 4
+    },
+    "running": {
+      "row": 7,
+      "frames": 6,
+      "fps": 10
+    },
+    "review": {
+      "row": 8,
+      "frames": 6,
+      "fps": 5
+    },
+    "look-row-9": {
+      "row": 9,
+      "frames": 8,
+      "fps": 5
+    },
+    "look-row-10": {
+      "row": 10,
+      "frames": 8,
+      "fps": 5
+    }
+  },
+  "routing": {
+    "greeting": "waving",
+    "fraggle": "waving",
+    "heart": "idle",
+    "music": "jumping",
+    "thinking": "review",
+    "glitch": "failed",
+    "idle": "idle"
+  },
+  "asset": {
+    "path": "/assets/spritesheet-extended.png",
+    "current_binary_status": "READBACK_PENDING"
+  }
+}
