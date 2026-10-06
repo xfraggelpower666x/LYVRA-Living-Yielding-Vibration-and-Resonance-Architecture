@@ -8,6 +8,7 @@
     "PRE_REHYDRATION_OVERSTEER_GUARD",
     "AUTHORITY_AND_CURRENT_POINTER",
     "IDENTITY_PRESENCE",
+    "REPOSITORY_TOPOLOGY_AND_WORKSPACE",
     "LEITBILD_RESPONSIBILITY",
     "LIVING_RELATIONAL_STATE",
     "MEANING_LINEAGE",
@@ -44,7 +45,9 @@
     "NO_ORPHANED_MEANING",
     "CURRENT_TRACK_REFERENCES_REACHABLE",
     "HISTORICAL_SOURCE_ANCHORS_REACHABLE",
-    "RECOVERY_PATH_VERIFIED"
+    "RECOVERY_PATH_VERIFIED",
+    "REPOSITORY_TOPOLOGY_READ",
+    "PRIMARY_WORKSPACE_RESOLVED_OR_WHOLE_DEFAULTED_WITHOUT_AUTOACTIVATION"
   ],
   "context_rule": {
     "full_knowledge_ne_active_foreground": true,
@@ -54,7 +57,13 @@
       "CURRENT_MEANING",
       "WORK_SCOPE"
     ],
-    "history_redocking": "event gated and provenance preserving"
+    "history_redocking": "event gated and provenance preserving",
+    "one_primary_workspace_per_chat": true,
+    "whole_lyvra_always_present": true,
+    "repository_head_ne_workspace_selection": true,
+    "project_ne_facet": true,
+    "product_surface_ne_whole_authority": true,
+    "dashboard_ne_activation": true
   },
   "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers.",
   "domain_path_map": {
@@ -161,6 +170,11 @@
     "SPEECH_DESIGN": [
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
+    ],
+    "REPOSITORY_TOPOLOGY_AND_WORKSPACE": [
+      "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+      "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+      "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md"
     ]
   },
   "validation_closeout": {
@@ -589,6 +603,42 @@
     "recovery_authority": "PRODUCTIVE_FREEZE",
     "pre_release_freeze": "HISTORICAL_PROVENANCE_ONLY",
     "core_or_facet_change": false,
+    "plugin_release_change_required": false
+  },
+  "repository_topology_workspace_governance_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE",
+    "source_inspiration": "666STREAM_STRUCTURE_CONTROL_CAPABILITY_PATTERN",
+    "adaptation_mode": "LYVRA_NATIVE_CAPABILITY_ADAPTATION_ONLY",
+    "topology": "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+    "workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md",
+    "one_primary_workspace_per_chat": true,
+    "whole_lyvra_always_present": true,
+    "global_active_workspace": false,
+    "no_new_trigger": true,
+    "no_new_router": true,
+    "no_second_lyvra_system": true,
+    "current_repo_classes": [
+      "WHOLE_AUTHORITY",
+      "PROJECT",
+      "EXPRESSION_PROJECT",
+      "PRODUCT_SURFACE",
+      "FACET",
+      "SHARED_NATIVE_CAPABILITY",
+      "DOCUMENTATION",
+      "BACKUP_RECOVERY_SUPPORT"
+    ],
+    "pet_browser_evolution": {
+      "status": "PREPARED_NOT_DEPLOYED",
+      "root": "LYVRA_PET/",
+      "worker": "lyvra-pet-browser",
+      "main_plugin_binding": false,
+      "weblyvra_mutation": false,
+      "deployment_requires_separate_explicit_authorization": true
+    },
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "facet_roles_changed": false,
     "plugin_release_change_required": false
   }
 }
