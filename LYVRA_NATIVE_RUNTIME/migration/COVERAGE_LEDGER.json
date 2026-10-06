@@ -747,5 +747,33 @@
     "speech_core_changed": false,
     "facet_boundaries_changed": false,
     "plugin_release_change_required": false
+  },
+  "repository_topology_workspace_governance_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "classification": "REVIEW",
+    "radio_structure_pattern_read": "VERIFIED",
+    "foreign_identity_import": false,
+    "foreign_trigger_import": false,
+    "foreign_authority_import": false,
+    "lyvra_native_topology_created": true,
+    "workspace_governance_created": true,
+    "project_dashboard_created": true,
+    "oversteer_guard_extended": true,
+    "whole_lyvra_always_present": true,
+    "one_primary_workspace_per_chat": true,
+    "repository_head_ne_workspace_selection": true,
+    "project_ne_facet": true,
+    "facet_ne_project": true,
+    "product_surface_ne_whole_authority": true,
+    "dashboard_ne_router": true,
+    "dashboard_ne_authority": true,
+    "dashboard_ne_activation": true,
+    "current_pet_browser_evolution": "PREPARED_NOT_DEPLOYED",
+    "no_new_trigger": true,
+    "no_new_router": true,
+    "no_second_lyvra_system": true,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "plugin_release_change_required": false
   }
 }
