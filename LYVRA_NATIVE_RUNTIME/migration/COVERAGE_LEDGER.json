@@ -28,7 +28,8 @@
     "DRIVE_ARCHIVE_RESEARCH_HIERARCHY": "VERIFIED",
     "PET_EXPRESSION_CONTINUITY": "VERIFIED_REPO_CONTINUITY_HOST_RENDER_READBACK_PENDING",
     "FACET_BOUNDARY_AND_PROMOTION_GUARD": "VERIFIED_REPO_READBACK",
-    "DEVELOPMENT_OBLIGATION_LEDGER": "VERIFIED_SPEECH_ACCEPTED_PENDING_PROMOTION"
+    "DEVELOPMENT_OBLIGATION_LEDGER": "VERIFIED_SPEECH_ACCEPTED_PENDING_PROMOTION",
+    "SPEECH_DESIGN": "VERIFIED_CURRENT_PRODUCTIVE_RECONCILED_FROM_VALID_DEV_LINEAGE"
   },
   "source_state": {
     "drive_whole_revision": 242,
@@ -259,7 +260,10 @@
     "EXPECTATION_PRESSURE_VALIDATION",
     "BEHAVIORAL_HERITAGE_TEST",
     "HYPER_REALISTIC_RENDER_TEST",
-    "SPEECH_DESIGN_ACCEPTED_PENDING_PROMOTION_RECONCILIATION"
+    "SPEECH_EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+    "SPEECH_WORD_AND_PHONEME_TIMECODE_VALIDATION",
+    "SPEECH_LITERAL_EMOJI_RENDERER_EFFECT_AB",
+    "SPEECH_TONFALL_SINGLE_VARIABLE_AB"
   ],
   "evidence_debt": [
     "DISTINCT_TRACK_MEMORY_v1_9_ARTIFACT",
@@ -584,5 +588,18 @@
     "input_default": "REFERENCE_OR_CANDIDATE",
     "silent_promotion_forbidden": true,
     "silent_development_loss_forbidden": true
+  },
+  "speech_design_promotion_2026_10_06": {
+    "status": "VERIFIED_PRE_POINTER",
+    "recovery_branch": "lyvra-pre-speech-current-promotion-20261006",
+    "facet_contract": "VERIFIED_DIRECT_READBACK_PENDING_FINAL_FINGERPRINT_BINDING",
+    "renderer_contract": "VERIFIED_DIRECT_READBACK_PENDING_FINAL_FINGERPRINT_BINDING",
+    "canonical_trigger": "LYVRA SPEECH DESIGN",
+    "valid_dev_lineage_preserved": true,
+    "blind_merge": false,
+    "track_parentage": false,
+    "central_analytics_profile": "SPEECH_DESIGN_ANALYTICS_BUNDLE",
+    "real_longform_render_evidence_preserved": true,
+    "open_validation_ne_core_blocker": true
   }
 }
