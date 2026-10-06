@@ -847,7 +847,6 @@
     "workspace_governance": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
     "workspace_handoff_contract": "b29a36180c7a98ae9f422b7229f388307f8906fb",
     "specialist_handoff_contract": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
-    "fingerprint_registry": "055bb87567d695e88b3c68747d0b0723588cfcca",
     "rehydration_manifest": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
     "systemstart_without_suffix": "WHOLE_ONLY",
     "systemstart_workspace_suffix": "EXACT_REQUESTED_WORKSPACE_ONLY",
@@ -858,6 +857,8 @@
     "no_last_writer_wins": true,
     "whole_rev242_preserved": true,
     "track_rev93_preserved": true,
-    "no_foreign_autoload": true
+    "no_foreign_autoload": true,
+    "fingerprint_registry_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "final_registry_closeout": "PENDING_AT_COVERAGE_PHASE_REGISTRY_MUST_BIND_FINAL_MANIFEST_AND_COVERAGE_BLOBS"
   }
 }
