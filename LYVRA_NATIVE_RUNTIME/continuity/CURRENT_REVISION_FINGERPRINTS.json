@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-NEW-CHAT-WHOLE-CURRENT",
+  "freshness_epoch": "2026-10-06-REV93-PET-WORKER-V2-FRESHNESS-REPAIR",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -46,7 +46,7 @@
     "LYVRA_PET/FACET_INTEGRATION_CONTRACT.md": "d443d434c4e265b0daa807614b9637c340ef0a01",
     "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md": "7a5631fd783f57cdd3541a8c6e1bd559072a1702",
     "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md": "62da7e66e8e321901493752c082a39453b7c5e99",
-    "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "ef303480353d1a512ebccbe9769a6082d1d92341",
+    "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "96ed8639229b76fa94faca4ada6bf1ad8640a60f",
     "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "f81c319784581274b30da1bc80378b0a7ef45fa9",
     "WEBLyvra/live/dist/index.html": "76a2e10e0033a21cda1d20c894024736ca9c05d8",
     "WEBLyvra/live/dist/pet-presence.css": "0ef46bdb51ebf4b5893c94c21e34e6250051ca8b",
@@ -79,7 +79,7 @@
     "lyvra-plugin/account/releases/v0.13.13/RESTORE.md": "4bead2e1d0a4913fdff45a52cd97214cc3c2494f",
     "lyvra-plugin/account/releases/v0.13.14/PROVENANCE.json": "e055d42323bb3824661f093324f423e8fa3b66b1",
     "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f",
-    "LYVRA_PET/ASSET_STATUS.md": "b65e5ad808526a0d0e98e2c6318d45bb084f1fc9",
+    "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
     "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json": "0d888faf271e2742d777e914a66cb224c89fd043",
     "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "0163594acc0bbb137a98f7ee768cb401f317d443",
     "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md": "1df0eb9cee0cac055df5eac749c9dee48bf7b631",
@@ -491,5 +491,19 @@
     "primary_workspace": "WHOLE_LYVRA_NATIVE_RUNTIME",
     "cross_chat_workspace_inheritance": false,
     "uncommitted_development": false
+  },
+  "pet_freshness_repair_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_MANIFEST_POINTER",
+    "source_head": "99a8b5812b159d9a8e5c13fc87720bf990b1e077",
+    "recovery_branch": "lyvra-pre-pet-freshness-repair-20261006-2057",
+    "updated_carriers": {
+      "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "96ed8639229b76fa94faca4ada6bf1ad8640a60f"
+    },
+    "pet_worker_v2": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
+    "binary_bridge": "REMOTE_BINARY_READBACK_VERIFIED",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "core_changed": false
   }
 }
