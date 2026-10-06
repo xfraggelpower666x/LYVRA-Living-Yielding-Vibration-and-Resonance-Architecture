@@ -444,7 +444,7 @@
     "account_migrated_plugin_surface": "VERSION_0_13_14_FULL_TEXTUAL_AND_CORE_PARITY_VERIFIED"
   },
   "semantic_currentness_closeout_2026_10_06": {
-    "status": "CURRENT_BODY_READY_PRE_POINTER",
+    "status": "HISTORICAL_CLOSEOUT_POST_POINTER_VERIFIED",
     "fresh_carrier_ne_all_statements_current": true,
     "precedence": [
       "CURRENT_POINTER_STATE",
@@ -455,7 +455,10 @@
     "stale_handoff_parentage_time_scoped": true,
     "stale_speech_pending_status_closed": true,
     "track_revision": 93,
-    "music_core_changed": false
+    "music_core_changed": false,
+    "original_status": "CURRENT_BODY_READY_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "plugin_surface_parity_2026_10_06": {
     "native_runtime": {
