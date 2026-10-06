@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-BROWSER-RENDERER-2026-10-06-003",
+  "handoff_id": "LYVRA-PET-CURRENT-BROWSER-RENDERER-PLUGIN-SYNC-2026-10-06-004",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -19,17 +19,17 @@
   "plugin_surfaces": {
     "account_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.14",
-      "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
-      "pet_capability": "VERIFIED_PRESERVED",
+      "version": "0.13.15",
+      "release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
+      "pet_capability": "VERIFIED_PRESERVED_CURRENT_RELEASE",
       "main_plugin_mcp_binding": false,
       "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     },
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.14",
-      "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
-      "pet_capability": "VERIFIED_PRESERVED",
+      "version": "0.1.15",
+      "release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+      "pet_capability": "VERIFIED_PRESERVED_CURRENT_RELEASE",
       "main_plugin_mcp_binding": false,
       "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     }
@@ -94,5 +94,11 @@
     "browser_renderer_code": "VERIFIED_REPOSITORY_CURRENT",
     "browser_renderer_local_http_test": "PASS",
     "cyborg_candidate_promoted": false
+  },
+  "plugin_sync_2026_10_06": {
+    "topology_workspace_release_set": "0.13.15_AND_0.1.15",
+    "direct_plugin_readback": "VERIFIED",
+    "main_plugin_mcp_binding": false,
+    "pet_runtime_files_omitted_and_preserved": true
   }
 }
