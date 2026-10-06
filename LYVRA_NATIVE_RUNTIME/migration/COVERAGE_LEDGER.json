@@ -775,5 +775,25 @@
     "music_core_changed": false,
     "speech_core_changed": false,
     "plugin_release_change_required": false
+  },
+  "plugin_topology_workspace_parity_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "native_runtime_version": "0.1.15",
+    "native_runtime_release": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+    "account_plugin_version": "0.13.15",
+    "account_plugin_release": "pluginrel_6ac54d435b788191adf894c109db2118",
+    "direct_plugin_readback": "VERIFIED_BOTH",
+    "topology_workspace_semantics": "VERIFIED_BOTH",
+    "dashboard_semantics": "VERIFIED_BOTH",
+    "pfs_handoff_readback": "VERIFIED",
+    "pfs_handoff_blob": "55cf4f2ceb8b7fb344f70ae1d4d7d18306582824",
+    "pfs_child_mutation": false,
+    "pfs_fresh_approval_required": true,
+    "newer_pet_current_preserved": true,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "no_new_trigger": true,
+    "no_new_router": true,
+    "no_second_lyvra_system": true
   }
 }
