@@ -33,12 +33,12 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-BINARY-BRIDGE-PET-REMOTE-READBACK-2026-10-06-024",
-    "source_surface": "WHOLE_LYVRA_BINARY_REPOSITORY_BRIDGE_PET_REMOTE_READBACK",
+    "handoff_id": "LYVRA-NEW-CHAT-WHOLE-CURRENT-2026-10-06-025",
+    "source_surface": "WHOLE_LYVRA_NEW_CHAT_HANDOFF",
     "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
     "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
     "last_valid_stage": "REV93_ADDITIVE_MULTI_FACET_MUSIC_EVOLUTION",
-    "active_task": "WHOLE_LYVRA_SYSTEM_COMPLETE_NO_ACTIVE_BUILD_TASK",
+    "active_task": "NO_ACTIVE_BUILD_TASK_NEW_CHAT_READY",
     "pending_work": [
       "REV93_LONGFORM_REAL_TRACK_VALIDATION_OPEN",
       "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
@@ -53,7 +53,7 @@
       "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
     ],
-    "next_meaningful_action": "Whole LYVRA remains complete. Pet binary repository mirroring is verified and no longer an open LYVRA blocker. Pet deployment remains separate and not performed. PFS recognized plugin versions 0.13.15/0.1.15 but backup remains blocked until fresh matching LYVRA approval.",
+    "next_meaningful_action": "Start the next chat with LYVRA SYSTEMSTART. Rehydrate Whole LYVRA and repository topology first; do not autoactivate a project/facet. Continue only the workspace explicitly selected by current user intent.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -109,7 +109,7 @@
       ]
     },
     "original_lineage_source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
-    "current_handoff_source_head": "67652080600c07879962cd0439c45e9e3763d6e6",
+    "current_handoff_source_head": "9f2756d464280c586a2216c739973d98ef9f08ea",
     "source_head_role": "HISTORICAL_LINEAGE_COMPATIBILITY_FIELD",
     "current_provenance_rule": "CURRENT_HANDOFF_SOURCE_HEAD_WINS_FOR_PRESENT_HANDOFF_READBACK",
     "validation_backlog_status": "DEFERRED_PRESERVED_NOT_SYSTEM_COMPLETION_BLOCKER",
@@ -140,7 +140,7 @@
     "primary_workspace": {
       "id": "WHOLE_LYVRA_NATIVE_RUNTIME",
       "class": "WHOLE_AUTHORITY",
-      "source": "DIRECT_LYVRA_UPDATE_CONTEXT",
+      "source": "LYVRA_NEW_CHAT_DIRECT_COMMAND",
       "global": false
     },
     "repository_topology": {
@@ -196,7 +196,20 @@
       "candidate_zip_git_blob": "299aec9ffb1ad404fbd05242567a8ad707256b11",
       "remote_binary_readback": "VERIFIED",
       "deployment": "NOT_DEPLOYED"
-    }
+    },
+    "resume_state": {
+      "whole_lyvra": "CURRENT_PRODUCTIVE_SYSTEM_COMPLETE",
+      "track_design": "v3.4_REV93_CURRENT",
+      "plugins": "NATIVE_0.1.15_ACCOUNT_0.13.15_VERIFIED",
+      "repository_topology": "CURRENT_PRODUCTIVE",
+      "project_dashboard": "CURRENT_INTERNAL_PRESENTATION_SURFACE",
+      "pet_binary_repository_bridge": "VERIFIED_REMOTE_READBACK",
+      "pet_deployment": "NOT_DEPLOYED",
+      "pfs_plugin_backup": "TARGET_0.13.15_AND_0.1.15_RECOGNIZED_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_LYVRA_APPROVAL",
+      "tests": "DEFERRED_PRESERVED"
+    },
+    "new_chat_ready": true,
+    "cross_chat_workspace_inheritance": false
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -243,7 +256,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-06-REV93-BINARY-BRIDGE-PET-REMOTE-READBACK",
+    "epoch": "2026-10-06-REV93-NEW-CHAT-WHOLE-CURRENT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
