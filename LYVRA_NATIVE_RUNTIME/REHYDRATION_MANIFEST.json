@@ -515,11 +515,12 @@
     "superseded_pre_pointer_status": true
   },
   "post_pointer_metadata_closeout_2026_10_06": {
-    "status": "CURRENT_BODY_READY_PRE_FINAL_POINTER",
+    "status": "POST_POINTER_VERIFIED_COMPLETE",
     "epoch": "2026-10-06-REV93-POST-POINTER-METADATA-CLOSEOUT",
     "prior_pre_pointer_markers_closed": true,
     "music_core_changed": false,
     "speech_core_changed": false,
-    "plugin_release_change_required": false
+    "plugin_release_change_required": false,
+    "pointer_publication_readback": "VERIFIED"
   }
 }
