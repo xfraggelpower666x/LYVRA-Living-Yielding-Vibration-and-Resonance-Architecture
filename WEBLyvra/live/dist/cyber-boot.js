@@ -47,7 +47,7 @@
           <p class="lyvra-intro-eyebrow">666SOUNDsDESIGn · LYVRA interface</p>
           <h1 class="lyvra-intro-title" id="lyvra-intro-title">CYBER BOOTING</h1>
           <div class="lyvra-intro-brand" aria-label="LYVRA · Sound becomes feeling · 666SOUNDsDESIGn">
-            <img class="lyvra-intro-brand-image" src="${asset('intro-brand.png')}" width="800" height="338" decoding="async" fetchpriority="high" alt="LYVRA · Sound becomes feeling · 666SOUNDsDESIGn">
+            <img class="lyvra-intro-brand-image" src="${asset('intro-brand.png')}" width="600" height="253" decoding="async" fetchpriority="high" alt="LYVRA · Sound becomes feeling · 666SOUNDsDESIGn">
           </div>
           <p class="lyvra-intro-status">INITIALIZING INTERFACE</p>
           <div class="lyvra-intro-core" aria-hidden="true"></div>
@@ -68,7 +68,7 @@
             <div class="hud-circuit hud-circuit-left"></div><div class="hud-circuit hud-circuit-right"></div>
             <div class="hud-label hud-label-left" data-text="666SOUNDsDESIGn">666SOUNDsDESIGn</div>
             <div class="hud-label hud-label-right" data-text="© FRAGGLEPOWER666">© FRAGGLEPOWER666</div>
-            <div class="hud-center-logo-wrap" aria-label="LYVRA Center Emblem"><img class="hud-center-art" src="${asset('center-emblem.png')}" width="600" height="750" decoding="async" alt="666SOUNDsDESIGn · Sound becomes feeling · L.Y.V.R.A."></div>
+            <div class="hud-center-logo-wrap" aria-label="LYVRA Center Emblem"><img class="hud-center-art" src="${asset('center-emblem.png')}" width="420" height="525" decoding="async" alt="666SOUNDsDESIGn · Sound becomes feeling · L.Y.V.R.A."></div>
             <div class="hud-system-online" aria-live="polite">SYSTEM ONLINE</div>
             <div class="hud-scanline"></div><div class="hud-reactor-ring"></div>
           </section>
