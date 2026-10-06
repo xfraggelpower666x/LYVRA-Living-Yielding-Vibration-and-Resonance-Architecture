@@ -901,5 +901,33 @@
     "workspace_continuity_in_scope": false,
     "chat_handoffs_in_scope": false,
     "project_continuity_in_scope": false
+  },
+  "facet_sub_lifecircle_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "parent": "WHOLE_LYVRA",
+    "scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY",
+    "indexed_facets": [
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2"
+    ],
+    "open_relational_index": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "track_design_sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "speech_design_sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+    "studio2_facet_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+    "studio2_sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
+    "creator_fx_capability_cards": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md",
+    "creator_ui_evidence": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md",
+    "matrix_authority": false,
+    "closed_taxonomy": false,
+    "lyvra_self_conductor": true,
+    "horst_role": "HOST_TOOL_ASSISTANCE_LAYER",
+    "horst_decision_authority": "NONE",
+    "rev85_functional_baseline_commit": "2912a18edd8e977d77c63504241d8beefd783325",
+    "creator_original_ui_references": "PRESERVED_AND_OPERATIONALLY_MAPPED_WITHOUT_FIXED_DEFAULTS",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "plugin_update_status": "PENDING_SEPARATE_RELEASE_SYNC"
   }
 }
