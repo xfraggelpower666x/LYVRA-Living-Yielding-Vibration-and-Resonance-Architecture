@@ -929,5 +929,29 @@
     "whole_revision": 242,
     "track_revision": 93,
     "plugin_update_status": "PENDING_SEPARATE_RELEASE_SYNC"
+  },
+  "facet_foreground_navigation_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+    "triggers": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA BACK"
+    ],
+    "semantics": "CHAT_LOCAL_FOREGROUND_CHANGE_ONLY",
+    "preserves_rehydrated_idle_facets": true,
+    "reset_on_switch": false,
+    "overwrite_on_switch": false,
+    "cross_chat_inheritance": false,
+    "global_active_facet": false,
+    "native_plugin_version": "0.1.17",
+    "native_plugin_release_id": "pluginrel_6ac58418a86881918a71a50771fc7dba",
+    "account_plugin_version": "0.13.17",
+    "account_plugin_release_id": "pluginrel_6ac584288c6481919f5fa6ef1334bf40",
+    "plugin_readback": "PASS",
+    "whole_revision": 242,
+    "track_revision": 93
   }
 }
