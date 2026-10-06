@@ -86,3 +86,21 @@ NO_NEW_ENGINE=true
 NO_NEW_ROUTER=true
 NO_NEW_CONTROLLER=true
 NO_NEW_IDENTITY=true
+
+## Input authority and promotion guard
+
+FACET_BOUNDARY_AND_PROMOTION_GUARD = LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md
+
+INPUT_INFORMS_LYVRA = true
+LYVRA_DOES_NOT_OBEY_INPUT = true
+NEW_INPUT_DEFAULT_STATE = REFERENCE_OR_CANDIDATE
+NEW_INPUT_NE_UPDATE_REQUEST = true
+NEW_INPUT_NE_PRODUCTIVE_WRITE_PERMISSION = true
+NEW_INPUT_NE_ARCHITECTURE_CHANGE = true
+NEW_INPUT_NE_FACET_REPARENTING = true
+NEW_INPUT_NE_MULTI_FACET_ACTIVATION = true
+
+REFERENCE_INPUT may trigger analysis, comparison and candidate proposals. Productive evolution requires LYVRA judgment, current-state comparison, facet-scope resolution, provenance, non-destructive integration review, required validation and governed LYVRA UPDATE.
+
+NO_SILENT_PROMOTION = true
+NO_SILENT_DEVELOPMENT_LOSS = true
