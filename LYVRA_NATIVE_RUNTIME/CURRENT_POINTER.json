@@ -5,12 +5,12 @@
   "repository": {
     "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
-    "previous_verified_head": "d7d06b8282086c77dd68bb132093b57264226016",
+    "previous_verified_head": "aaf1fb0359b1323813badb6fb2e580714c2f8862",
     "current_dev_head_before_pointer": "3e834a416642c42fa14a944f144f1ba2f26505ec",
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "d7d06b8282086c77dd68bb132093b57264226016",
+    "current_head_before_pointer": "aaf1fb0359b1323813badb6fb2e580714c2f8862",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "MIGRATED_PLUGIN_FULL_TEXTUAL_PARITY_COMPLETE_PLUS_FACET_SCOPED_OPEN_VALIDATION",
+    "current_work_scope": "POINTER_LEGACY_SNAPSHOT_CLOSEOUT_COMPLETE_PLUS_FACET_SCOPED_OPEN_VALIDATION",
     "suno_studio_2": "CURRENT_NATIVE_STUDIO_OPERATION_FACET_NOT_TRACK_CHILD",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -268,29 +268,27 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-06",
-    "scope": "MIGRATED_PLUGIN_FULL_TEXTUAL_PARITY_AND_BACKUP_EVIDENCE_REFRESH",
-    "productive_body_head": "d7d06b8282086c77dd68bb132093b57264226016",
-    "prechange_recovery_branch": "lyvra-pre-migrated-plugin-textual-parity-20261006",
+    "scope": "POINTER_LEGACY_TOP_LEVEL_SNAPSHOT_CLOSEOUT",
+    "productive_body_head": "aaf1fb0359b1323813badb6fb2e580714c2f8862",
+    "prechange_recovery_branch": "lyvra-pre-pointer-legacy-snapshot-closeout-20261006",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "track_revision_changed": false,
     "music_core_changed": false,
     "speech_core_changed": false,
-    "pet_identity_changed": false,
+    "plugin_release_change_required": false,
     "migrated_plugin_version": "0.13.14",
-    "migrated_plugin_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
     "native_runtime_plugin_version": "0.1.14",
-    "native_runtime_release_changed": false,
-    "stale_five_skill_sentence_closed": true,
-    "full_textual_parity": "VERIFIED",
-    "handoff_id": "LYVRA-FACET-SCOPED-PLUGIN-TEXTUAL-PARITY-2026-10-06-013",
-    "handoff_blob": "557ef79c173c1d817211941bc32825d3ea3e6be6",
-    "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
-    "pfs_child_mutation": false,
-    "private_backup_write": false,
-    "private_backup_current_release_set_requires_fresh_approval": true,
-    "freshness_epoch": "2026-10-06-REV93-MIGRATED-PLUGIN-TEXTUAL-PARITY",
-    "fingerprint_blob": "527576464a7fd7e37b3f0a64723587414f605adc",
+    "speech_promotion_snapshot_currentized": true,
+    "migrated_plugin_target_snapshot_currentized": true,
+    "dual_plugin_parity_snapshot_currentized": true,
+    "pfs_target_snapshot_currentized": true,
+    "plugin_backup_evidence_snapshot_currentized": true,
+    "historical_snapshots_preserved": true,
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-LEGACY-SNAPSHOT-CLOSEOUT-2026-10-06-014",
+    "handoff_blob": "53ba3a72617d85c6046c5ed13bf2e2efddce3838",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
+    "fingerprint_blob": "84432f283a12bc9e27be191829cf44474ec9d28e",
     "critical_carrier_count": 73,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
@@ -399,13 +397,13 @@
   "specialist_repo_handoff": {
     "status": "ACTIVE_CURRENT_HANDOFF",
     "schema": "LYVRA_FACET_SCOPED_REPO_HANDOFF_v2",
-    "handoff_id": "LYVRA-FACET-SCOPED-PLUGIN-TEXTUAL-PARITY-2026-10-06-013",
-    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_MIGRATED_PLUGIN_FULL_TEXTUAL_PARITY",
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-LEGACY-SNAPSHOT-CLOSEOUT-2026-10-06-014",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_POINTER_LEGACY_SNAPSHOT_CLOSEOUT",
     "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
     "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
-    "current_handoff_source_head": "dc6b4a5484af5dddb09e25f332ec3ffd8da77e10",
-    "handoff_blob": "557ef79c173c1d817211941bc32825d3ea3e6be6",
-    "freshness_epoch": "2026-10-06-REV93-MIGRATED-PLUGIN-TEXTUAL-PARITY",
+    "current_handoff_source_head": "e918d241cd9618f5605f9e9dca966a59ef77c844",
+    "handoff_blob": "53ba3a72617d85c6046c5ed13bf2e2efddce3838",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
     "shared_channel": true,
     "shared_active_work_unit": false,
     "active_task": "FACET_SCOPED_CONTINUITY_ONLY_NO_COMBINED_ACTIVE_TASK",
@@ -447,7 +445,7 @@
       "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
     ],
-    "next_meaningful_action": "Continue only explicitly selected or evidence-relevant facet workstream after Whole CURRENT rehydration. Both plugin surfaces now have verified core semantic parity and migrated-plugin common-instructions textual parity.",
+    "next_meaningful_action": "Continue only explicitly selected or evidence-relevant facet workstream after Whole CURRENT rehydration. Legacy pointer snapshots are historicalized; current Speech, plugin, PFS-target and parity values must come from present carriers only.",
     "continuity_trigger_family": [
       "LYVRA SYSTEMSTART",
       "LYVRA UPDATE",
@@ -705,10 +703,10 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-06-REV93-MIGRATED-PLUGIN-TEXTUAL-PARITY",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "527576464a7fd7e37b3f0a64723587414f605adc",
+    "registry_content_sha": "84432f283a12bc9e27be191829cf44474ec9d28e",
     "expected_track_revision": 93,
     "critical_carrier_count": 73,
     "direct_readback_mismatches": 0,
@@ -1171,14 +1169,19 @@
     "status": "CURRENT_TARGET_METADATA_REFRESHED_BACKUP_WRITE_PENDING_FRESH_APPROVAL",
     "carrier": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json",
     "carrier_sha": "a5691052546137e941ccda21243086d4052d1b65",
+    "private_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+    "private_write_root": "backups/666PFS/LYVRA_PLUGIN_BACKUP/",
     "current_requested_versions": {
       "account_plugin": "0.13.14",
       "native_runtime": "0.1.14"
     },
     "backup_material_status": "STALE_PREVIOUS_RELEASE_SET_NEW_APPROVAL_REQUIRED_FOR_CURRENT_RELEASES",
+    "approval_gate": "MANDATORY_PER_OPERATION",
     "current_approval_status": "NOT_VALID_FOR_CURRENT_RELEASE_SET",
     "current_release_set_requires_new_approval": true,
     "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
+    "pfs_child_id": "LYVRAPLUGIN-37001",
+    "pfs_child_status": "EXISTING_CHILD_REFRESH_REQUIRED_FOR_NEW_RELEASE_SET",
     "private_vault_mutation": "NONE"
   },
   "dual_plugin_parity_2026_10_06": {
@@ -1200,5 +1203,101 @@
     "full_textual_parity": "VERIFIED",
     "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
     "pfs_child_mutation": false
+  },
+  "historical_pointer_snapshots_2026_10_06": {
+    "pfs_private_plugin_backup_target": {
+      "status": "HISTORICAL_PROVENANCE_ONLY",
+      "superseded_by": "POINTER_LEGACY_SNAPSHOT_CLOSEOUT_2026_10_06",
+      "snapshot": {
+        "status": "CURRENT_TARGET_METADATA_REFRESHED_BACKUP_WRITE_PENDING_FRESH_APPROVAL",
+        "carrier": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json",
+        "carrier_sha": "a5691052546137e941ccda21243086d4052d1b65",
+        "current_requested_versions": {
+          "account_plugin": "0.13.14",
+          "native_runtime": "0.1.14"
+        },
+        "backup_material_status": "STALE_PREVIOUS_RELEASE_SET_NEW_APPROVAL_REQUIRED_FOR_CURRENT_RELEASES",
+        "current_approval_status": "NOT_VALID_FOR_CURRENT_RELEASE_SET",
+        "current_release_set_requires_new_approval": true,
+        "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
+        "private_vault_mutation": "NONE"
+      }
+    },
+    "dual_plugin_parity_2026_10_06": {
+      "status": "HISTORICAL_PROVENANCE_ONLY",
+      "superseded_by": "POINTER_LEGACY_SNAPSHOT_CLOSEOUT_2026_10_06",
+      "snapshot": {
+        "native_runtime": {
+          "version": "0.1.14",
+          "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+          "core_semantic_parity": "VERIFIED",
+          "textual_parity": "VERIFIED"
+        },
+        "migrated_gpt": {
+          "version": "0.13.14",
+          "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+          "core_boundary_and_speech": "VERIFIED",
+          "global_instructions_textual_parity": "VERIFIED",
+          "six_skill_sentence": "VERIFIED",
+          "speech_design_link": "VERIFIED"
+        },
+        "core_semantic_parity": "VERIFIED",
+        "full_textual_parity": "VERIFIED",
+        "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
+        "pfs_child_mutation": false
+      }
+    }
+  },
+  "plugin_release_backup_evidence": {
+    "status": "PARTIAL_SECURE_BACKUP_EVIDENCE_CURRENT_RELEASE_SET",
+    "account": {
+      "version": "0.13.14",
+      "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+      "provenance": "lyvra-plugin/account/releases/v0.13.14/PROVENANCE.json",
+      "restore": "lyvra-plugin/account/releases/v0.13.14/RESTORE.md",
+      "creator_archive_access": "VERIFIED",
+      "archive_sha256": "READBACK_PENDING_BINARY_TRANSFER"
+    },
+    "native_runtime": {
+      "version": "0.1.14",
+      "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+      "provenance": "lyvra-plugin/native-runtime/releases/v0.1.14/PROVENANCE.json",
+      "restore": "lyvra-plugin/native-runtime/releases/v0.1.14/RESTORE.md",
+      "creator_archive_access": "VERIFIED",
+      "archive_sha256": "READBACK_PENDING_BINARY_TRANSFER"
+    },
+    "public_repo_private_payload_copy": false,
+    "privacy_reason": "PRIVATE_PLUGIN_CONTENT_NOT_BLINDLY_PUBLISHED_TO_PUBLIC_REPOSITORY",
+    "byte_complete_backup_status": "PENDING_FRESH_PFS_APPROVAL_AND_PRIVATE_ARCHIVE_READBACK"
+  },
+  "facet_boundary_promotion_retention": {
+    "status": "VERIFIED_CURRENT",
+    "recovery_branch": "lyvra-pre-facet-boundary-promotion-retention-repair-20261006",
+    "track_core_preserved": true,
+    "historical_placement_superseded": true,
+    "handoff_workstreams_scoped": true,
+    "speech_design": "PROMOTED_CURRENT",
+    "input_guard": true,
+    "development_retention_guard": true
+  },
+  "speech_design_current": {
+    "status": "CURRENT_PRODUCTIVE_NATIVE_FACET_VERIFIED",
+    "own_native_facet": true,
+    "track_parentage": false,
+    "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+    "renderer_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
+    "analytics_profile": "SPEECH_DESIGN_ANALYTICS_BUNDLE",
+    "obligation_state": "PROMOTED_CURRENT",
+    "native_plugin_version": "0.1.14",
+    "native_plugin_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+    "native_plugin_readback": "VERIFIED",
+    "account_migrated_plugin_surface": "0.13.14_CORE_AND_FULL_TEXTUAL_PARITY_VERIFIED",
+    "account_migrated_plugin_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+    "open_real_validation": [
+      "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+      "WORD_AND_PHONEME_TIMECODE_VALIDATION",
+      "LITERAL_EMOJI_RENDERER_EFFECT",
+      "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
+    ]
   }
 }
