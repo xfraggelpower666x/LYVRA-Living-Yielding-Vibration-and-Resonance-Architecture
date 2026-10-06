@@ -35,6 +35,10 @@ The guard detects at minimum:
 - SEMANTIC_FLATTENING
 - CURRENT_REPO_PRECEDENCE_BYPASS
 - NEWER_VALID_EVOLUTION_LOSS
+- REPOSITORY_HEAD_AS_WORKSPACE_SELECTION
+- CROSS_PROJECT_OR_SURFACE_SCOPE_BLEED
+- WORKSPACE_CLASS_SEMANTIC_FLATTENING
+- CROSS_CHAT_WORKSPACE_INHERITANCE
 
 ## Read-only self-heal
 
@@ -51,7 +55,8 @@ Actions:
 5. restore independent facet scopes;
 6. preserve valid relations without transferring responsibilities;
 7. preserve newer valid evolution;
-8. restart rehydration from AUTHORITY_AND_CURRENT_POINTER.
+8. resolve repository topology and current chat workspace from direct evidence only;
+9. restart rehydration from AUTHORITY_AND_CURRENT_POINTER.
 
 ## Hard invariants
 
@@ -68,6 +73,13 @@ Actions:
 - VERIFIED_CURRENT_REPO_STATE_WINS = TRUE
 - NEWER_VALID_EVOLUTION_GT_OLDER_VALID_STATE = TRUE
 - NO_FOREIGN_AUTOACTIVATION = TRUE
+- REPOSITORY_HEAD_NE_WORKSPACE_SELECTION = TRUE
+- ONE_PRIMARY_WORKSPACE_PER_CHAT = TRUE
+- GLOBAL_ACTIVE_WORKSPACE = FORBIDDEN
+- CROSS_CHAT_WORKSPACE_INHERITANCE = FALSE
+- WORKSPACE_NE_IDENTITY = TRUE
+- PROJECT_NE_FACET = TRUE
+- FACET_NE_PROJECT = TRUE
 
 ## Music-facet boundary
 
@@ -90,3 +102,21 @@ PLUGIN_PARITY_FAILURE_NE_REPO_ROLLBACK
 `FUCK HORST` remains an explicit LYVRA host-oversteer/recovery signal. It invokes the same detection model, but its presence is not proof of damage.
 
 FUCK_HORST_EVENT_NE_CONFIRMED_HOST_DRIFT = TRUE
+
+
+## Repository topology and workspace guard
+
+Canonical topology:
+`LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json`
+
+Workspace governance:
+`LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md`
+
+Internal visual surface:
+`LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md`
+
+Whole LYVRA remains present for identity and decision authority. A chat may foreground one primary workspace when direct current intent or a valid non-superseded workspace handoff supports it.
+
+Repository HEAD changes require reconciliation of newer valid evolution but MUST NOT select or switch workspace.
+
+The dashboard is presentation only and may not activate, route or mutate a workspace.
