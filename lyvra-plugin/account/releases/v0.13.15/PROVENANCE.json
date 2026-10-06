@@ -1,0 +1,34 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.15",
+  "release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
+  "previous_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+  "previous_version": "0.13.14",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Repository topology, chat-local workspace governance and repository/project dashboard parity",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "8e794cfde6e22ac559c258537a55a0f74cbe94fa",
+  "reconciled_newer_repo_head_before_provenance": "79246af6a1b60c8f6d291a910c8a2a3d36bb042a",
+  "overlay_sha256": "f033eaf7b23ed49a4755756abc22db2bc16c330f15aa1d284ea5db0efd0515a2",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/rehydration-continuity/SKILL.md",
+    "skills/lyvra-dashboard/SKILL.md",
+    "skills/666-visual-interface/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "topology_workspace_semantics": "VERIFIED",
+    "project_dashboard_semantics": "VERIFIED"
+  },
+  "no_new_trigger": true,
+  "no_new_router": true,
+  "no_second_lyvra_system": true,
+  "music_core_changed": false,
+  "speech_core_changed": false
+}
