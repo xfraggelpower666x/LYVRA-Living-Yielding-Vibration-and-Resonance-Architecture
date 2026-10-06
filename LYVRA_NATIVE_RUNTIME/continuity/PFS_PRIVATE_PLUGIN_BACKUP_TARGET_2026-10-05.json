@@ -10,14 +10,14 @@
   "private_head_after_authorization": "dd1dc583e700adcc6bdda64688c1239ec9d46275",
   "pfs_handoff_repository": "xfraggelpower666x/666PFS_CSM",
   "pfs_handoff_path": "handoff/LYVRA_PLUGIN_BACKUP_HANDOFF_CURRENT.md",
-  "pfs_handoff_blob": "5626700fcfe977c0990213361ee5b7e7abafea93",
+  "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
   "pfs_write_scope": "PLUGIN_BACKUP_ARTIFACTS_ONLY",
   "child_autoload": false,
   "authority_transfer": false,
   "public_payload_copy": false,
   "target_child": "LYVRA Plugin Backup",
   "current_requested_versions": {
-    "account_plugin": "0.13.13",
+    "account_plugin": "0.13.14",
     "native_runtime": "0.1.14"
   },
   "backup_material_status": "STALE_PREVIOUS_RELEASE_SET_NEW_APPROVAL_REQUIRED_FOR_CURRENT_RELEASES",
@@ -38,7 +38,7 @@
     "child_status": "EXISTING_CHILD_REFRESH_REQUIRED_FOR_NEW_RELEASE_SET",
     "source_binding_tree": "f40ff2e6b3493e727e8983072bbcc22e392a283e",
     "inventory_blob": "227161f35b03d0805fa66df6fa278e8267610892",
-    "requested_account_version": "0.13.13",
+    "requested_account_version": "0.13.14",
     "requested_native_version": "0.1.14",
     "private_vault_mutation": "NONE",
     "refresh_status": "EXISTING_CHILD_REFRESH_PENDING"
