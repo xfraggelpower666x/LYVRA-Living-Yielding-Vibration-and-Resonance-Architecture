@@ -1,0 +1,34 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.16",
+  "release_id": "pluginrel_6ac569d4be988191a20c96959c764e01",
+  "previous_release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
+  "previous_version": "0.1.15",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Parallel-safe workspace handoffs, explicit SYSTEMSTART workspace selection and additive workspace-preserving UPDATE",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "31694ab199286a3e2aecdd488f2e3a74ce6df2bb",
+  "overlay_sha256": "d7c01a85534f22c8f047c8af8900159f09046b4689afe9b182dceae202cec940",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/lyvra-systemstart/SKILL.md",
+    "skills/lyvra-continuity/SKILL.md",
+    "skills/lyvra-update-governance/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "systemstart_workspace_semantics": "VERIFIED",
+    "parallel_handoff_semantics": "VERIFIED",
+    "additive_update_semantics": "VERIFIED"
+  },
+  "no_new_trigger": true,
+  "no_new_router": true,
+  "no_second_lyvra_system": true,
+  "music_core_changed": false,
+  "speech_core_changed": false
+}
