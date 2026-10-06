@@ -1511,7 +1511,7 @@
     "plugin_release_change_required": false
   },
   "pet_browser_evolution_2026_10_06": {
-    "status": "PREPARED_NOT_DEPLOYED",
+    "status": "RENDERER_VERIFIED_BINARY_MIRROR_WRITE_BLOCKED_NOT_DEPLOYED",
     "project_class": "EXPRESSION_PROJECT",
     "identity_relation": "SAME_LYVRA_IDENTITY_VISIBLE_EXPRESSION",
     "roots": {
@@ -1525,7 +1525,11 @@
     "weblyvra_mutation": false,
     "custom_domain_mutation": false,
     "deployment_requires_separate_explicit_authorization": true,
-    "binary_asset_status": "READBACK_PENDING",
-    "newer_valid_evolution_preserved": true
+    "binary_asset_status": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "newer_valid_evolution_preserved": true,
+    "browser_renderer_status": "VERIFIED_REPOSITORY_CURRENT",
+    "browser_renderer_local_http_test": "PASS",
+    "active_atlas_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+    "cyborg_candidate_promoted": false
   }
 }
