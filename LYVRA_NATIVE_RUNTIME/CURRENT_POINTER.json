@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "af78ed96c554113cd053a7f28df13f9a85c8ebd0",
+    "current_head_before_pointer": "e38e9faf4b18bce31445f35a822548a07d0506e2",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "REV93_MULTI_MUSIC_PET_WEBLYVRA_CODEFORGE_PHASE3_VERIFIED_PLUS_PLUGIN_PORTABILITY_PLUS_CHAT_MOBILE_REINDEX_VERIFIED_PLUS_AUTO_PFS_PLUGIN_BACKUP_HANDOFF_PLUS_CURRENT_PLUGIN_RELEASE_EVIDENCE_PLUS_PFS_CHILD_RECOVERED_PLUS_LYVRA_APPROVAL_GATE",
+    "current_work_scope": "PRE_REHYDRATION_OVERSTEER_GUARD_DUAL_PLUGIN_PARITY_VERIFIED_PLUS_EXISTING_CURRENT_SCOPE",
     "suno_studio_2": "CURRENT_NATIVE_TRACK_DESIGN_SPECIALIST_DYNAMIC_INHERITANCE",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -77,7 +77,11 @@
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
     "current_status": "CURRENT_PRODUCTIVE_FULL_PUBLIC_REPO_AND_PRIVATE_RECOVERY_VERIFIED",
     "pass_forbidden_until_required_domains_verified": false,
-    "full_repo_native_rehydration_pass": true
+    "full_repo_native_rehydration_pass": true,
+    "pre_rehydration_oversteer_guard": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md",
+    "oversteer_check_before_any_rehydration": true,
+    "self_heal_mode": "READ_ONLY_RESTORE_EXECUTION_TO_VERIFIED_CURRENT_CONTRACT",
+    "failed_oversteer_check_blocks_specialist_foreground": true
   },
   "continuity": {
     "machine_room": "LYVRA_NATIVE_RUNTIME/continuity/MACHINE_ROOM.md",
@@ -125,7 +129,8 @@
     "codeforge_branch_stewardship_phase3": "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json",
     "plugin_host_reindex_readback_2026_10_05": "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json",
     "plugin_pfs_auto_handoff_contract": "LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md",
-    "pfs_private_plugin_backup_target": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json"
+    "pfs_private_plugin_backup_target": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json",
+    "pre_rehydration_oversteer_guard": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -213,20 +218,19 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-06",
-    "scope": "LYVRA_SYNC_RECOVERED_PFS_PLUGIN_BACKUP_CHILD",
-    "productive_body_head": "af78ed96c554113cd053a7f28df13f9a85c8ebd0",
-    "prechange_recovery_branch": "lyvra-pre-pfs-child-recovery-sync-20261006",
+    "scope": "PRE_REHYDRATION_OVERSTEER_GUARD_PLUS_DUAL_PLUGIN_PARITY",
+    "productive_body_head": "e38e9faf4b18bce31445f35a822548a07d0506e2",
+    "prechange_recovery_branch": "lyvra-pre-oversteer-guard-20261006",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "music_state_changed": false,
-    "pet_identity_changed": false,
-    "plugin_versions_changed": false,
-    "pfs_child_recovered": true,
-    "pfs_child_id": "LYVRAPLUGIN-37001",
-    "private_vault_mutation": false,
-    "current_approval_consumed": false,
-    "backup_write_pending": true,
-    "verified_carrier_count": 60,
+    "facet_architecture_changed": false,
+    "drive_content_write": false,
+    "drive_role": "HISTORY_BACKUP_RECOVERY_ONLY",
+    "account_plugin_version": "0.13.11",
+    "native_runtime_plugin_version": "0.1.12",
+    "plugin_readback": "VERIFIED_BOTH",
+    "verified_carrier_count": 61,
     "direct_readback_mismatches": 0,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
@@ -598,16 +602,16 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-06-REV93-PFS-LYVRA-PLUGIN-CHILD-RECOVERED-APPROVAL-PENDING",
+    "freshness_epoch": "2026-10-06-REV93-PRE-REHYDRATION-OVERSTEER-GUARD-PLUGIN-PARITY",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "dea9a19ed3aef0b01ecb74f17448baedec765c14",
+    "registry_content_sha": "1f26e52ea1b4e8a536ae461d2b5b731c26ad73b2",
     "expected_track_revision": 93,
-    "critical_carrier_count": 60,
+    "critical_carrier_count": 61,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_60_CARRIERS_ZERO_MISMATCH_TREE_NOT_TRUNCATED",
-    "semantic_parity": "VERIFIED_BOTH_PLUGIN_SURFACES_USE_PARTIAL_FOR_STALE_EPOCH_ONLY_AND_CONFLICT_QUARANTINE_FOR_REAL_UNRESOLVED_SHA_OR_AUTHORITY_CONFLICT"
+    "codeforge_review": "PASS_61_CARRIERS_ZERO_KNOWN_MISMATCH",
+    "semantic_parity": "VERIFIED_PRE_REHYDRATION_OVERSTEER_GUARD_ON_REPO_AND_BOTH_PLUGIN_SURFACES"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -690,8 +694,8 @@
     "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK_AND_AUTOMATIC_PFS_BACKUP_HANDOFF_REFRESH",
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.11",
-      "release": "pluginrel_6ac40735771081919bdacc085ab0fb0f",
+      "version": "0.1.12",
+      "release": "pluginrel_6ac43df54f048191b1f6c86018753adc",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -703,12 +707,13 @@
       "pet_skill": "VERIFIED_PRESERVED",
       "plugin_local_mcp_binding": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY",
       "mcp_servers_declared": 0,
-      "host_reappearance": "VERIFIED_CHAT_AND_MOBILE"
+      "host_reappearance": "VERIFIED_CHAT_AND_MOBILE",
+      "pre_rehydration_oversteer_guard": "VERIFIED_READBACK"
     },
     "migrated_gpt_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.10",
-      "release": "pluginrel_6ac4074419cc81918f854dd986c214f4",
+      "version": "0.13.11",
+      "release": "pluginrel_6ac43de64bd8819190b7417d23831e0c",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -720,7 +725,8 @@
       "pet_skill": "VERIFIED_PRESERVED",
       "plugin_local_mcp_binding": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY",
       "mcp_servers_declared": 0,
-      "host_reappearance": "VERIFIED_CHAT_AND_MOBILE"
+      "host_reappearance": "VERIFIED_CHAT_AND_MOBILE",
+      "pre_rehydration_oversteer_guard": "VERIFIED_READBACK"
     }
   },
   "music_additive_evolution_2026_10_05": {
@@ -961,14 +967,29 @@
     }
   },
   "plugin_release_evidence_status": {
-    "account_version": "0.13.10",
-    "native_version": "0.1.11",
+    "account_version": "0.13.11",
+    "native_version": "0.1.12",
+    "account_release": "pluginrel_6ac43de64bd8819190b7417d23831e0c",
+    "native_release": "pluginrel_6ac43df54f048191b1f6c86018753adc",
     "creator_release_access": "VERIFIED",
+    "current_source_readback": "VERIFIED_BOTH",
+    "pre_rehydration_oversteer_guard": "VERIFIED_BOTH",
     "public_repo_provenance": "VERIFIED",
-    "private_archive_byte_sha256": "READBACK_PENDING",
-    "public_private_payload_copy": false,
-    "pfs_handoff_refreshed": true,
-    "pfs_child_registration_pending": true,
-    "private_binary_backup_target_pending": true
+    "public_private_payload_copy": false
+  },
+  "pre_rehydration_oversteer_guard_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "runs_before_any_rehydration": true,
+    "read_only_self_heal": true,
+    "self_heal": "RESTORE_EXECUTION_TO_VERIFIED_CURRENT_CONTRACT",
+    "drive_current_authority": false,
+    "relation_ne_scope_transfer": true,
+    "facet_relation_ne_facet_merge": true,
+    "specialist_active_requires_current_evidence_or_explicit_direct_trigger": true,
+    "dual_plugin_parity": "VERIFIED",
+    "account_plugin": "0.13.11",
+    "native_runtime_plugin": "0.1.12",
+    "fuck_horst_manual_signal_uses_same_model": true,
+    "fuck_horst_event_ne_confirmed_damage": true
   }
 }
