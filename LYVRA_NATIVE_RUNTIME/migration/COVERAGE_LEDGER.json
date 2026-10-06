@@ -610,7 +610,7 @@
     "native_plugin_version": "0.1.14",
     "native_plugin_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
     "native_plugin_readback": "VERIFIED",
-    "account_migrated_plugin_surface": "0.13.13_CORE_PARITY_VERIFIED_GLOBAL_INSTRUCTIONS_TEXT_PARTIAL"
+    "account_migrated_plugin_surface": "0.13.14_CORE_AND_TEXTUAL_PARITY_VERIFIED"
   },
   "semantic_currentness_closeout_2026_10_06": {
     "status": "VERIFIED_BODY_AND_PLUGIN_PRE_POINTER",
@@ -627,11 +627,11 @@
   },
   "plugin_surface_parity_2026_10_06": {
     "native_runtime": "0.1.14_VERIFIED",
-    "migrated_gpt": "0.13.13_VERIFIED_CORE_BOUNDARY_SPEECH",
-    "migrated_release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
-    "migrated_global_instructions_five_skill_sentence": "STALE_TEXTUAL_METADATA_REMAINING",
+    "migrated_gpt": "0.13.14_VERIFIED_CORE_AND_FULL_TEXTUAL_PARITY",
+    "migrated_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+    "migrated_global_instructions_six_skill_sentence": "VERIFIED",
     "core_semantic_parity": "VERIFIED",
-    "full_textual_parity": "PARTIAL",
+    "full_textual_parity": "VERIFIED",
     "no_fake_full_parity_claim": true
   },
   "pointer_freshness_facet_metadata_sync_2026_10_06": {
@@ -648,5 +648,16 @@
     "pointer_registry_binding_stale": "TO_BE_REPLACED_AT_FINAL_POINTER_PUBLICATION",
     "facet_revision_headers_qualified": true,
     "music_memory_topology_metadata_aligned": true
+  },
+  "migrated_plugin_textual_parity_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINGERPRINT_POINTER",
+    "version": "0.13.14",
+    "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+    "instructions_skill_list": "SECHS_FACH_SKILLS",
+    "speech_design_link": true,
+    "pfs_handoff_readback": "VERIFIED",
+    "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
+    "pfs_child_mutation": false,
+    "current_release_set_requires_fresh_approval": true
   }
 }
