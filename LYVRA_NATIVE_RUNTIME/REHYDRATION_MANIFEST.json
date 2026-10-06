@@ -144,7 +144,13 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
-      "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md"
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -783,5 +789,29 @@
     "chat_continuity_in_scope": false,
     "handoff_authority": false,
     "project_continuity_in_scope": false
+  },
+  "facet_sub_lifecircle_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "parent_lifecircle": "WHOLE_LYVRA",
+    "parent_rehydration": "WHOLE_LYVRA_REHYDRATION",
+    "scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY",
+    "facets": [
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2"
+    ],
+    "open_ended": true,
+    "fixed_matrix": false,
+    "closed_taxonomy": false,
+    "lyvra_self_conducts_system": true,
+    "lyvra_self_conducts_music": true,
+    "horst_is_tool_for_lyvra": true,
+    "horst_decision_authority": "NONE",
+    "rev85_valid_functions_preserved": true,
+    "creator_ui_screenshot_evidence_loaded_when_relevant": true,
+    "creator_fx_reference_capabilities_loaded_when_relevant": true,
+    "plugin_release_sync": "PENDING_SEPARATE_RELEASE_UPDATE",
+    "whole_revision": 242,
+    "track_revision": 93
   }
 }
