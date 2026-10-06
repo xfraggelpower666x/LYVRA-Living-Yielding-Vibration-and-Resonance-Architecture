@@ -1,4 +1,4 @@
-import './cyber-boot.js';
+// Emergency production bypass: Cyber Intro temporarily disabled to keep the site reachable.
 import './topic-banners.js';
 import { installBrandArt } from './brand-art.js';
 import { extendFacetTabs, installExplorers } from './explorers.js';
