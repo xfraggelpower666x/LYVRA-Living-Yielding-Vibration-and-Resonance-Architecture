@@ -695,5 +695,26 @@
     "speech_core_changed": false,
     "facet_roles_changed": false,
     "plugin_release_change_required": false
+  },
+  "pet_worker_v2_freshness_repair_2026_10_06": {
+    "status": "CURRENT_BODY_READY_PRE_COVERAGE_POINTER",
+    "source_head": "99a8b5812b159d9a8e5c13fc87720bf990b1e077",
+    "fingerprint_blob": "7981bb65a9379a61e3a88437f8d3ac373dbbcdba",
+    "fingerprint_epoch": "2026-10-06-REV93-PET-WORKER-V2-FRESHNESS-REPAIR",
+    "verified_carrier_count": 86,
+    "verified_mismatch_count": 0,
+    "updated_pet_carriers": {
+      "asset_status": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
+      "pet_handoff": "96ed8639229b76fa94faca4ada6bf1ad8640a60f"
+    },
+    "pet_binary_bridge": "REMOTE_BINARY_READBACK_VERIFIED",
+    "pet_worker_v2": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
+    "public_http_readback": "PENDING",
+    "host_visual_render": "READBACK_PENDING",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "core_changed": false,
+    "facet_boundaries_changed": false,
+    "plugin_release_change_required": false
   }
 }
