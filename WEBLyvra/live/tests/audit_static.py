@@ -34,7 +34,8 @@ assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Cyber intro m
 for name in ('intro-background.jpg','intro-brand.png','center-emblem.png'):
     item=web/'assets'/'cyber-intro'/name
     assert item.is_file() and item.stat().st_size>1000, f'Missing cyber-intro artwork: {name}'
-assert "lyvra-cyber-boot-v2" in boot and 'sessionStorage' in boot, 'New cyber-intro session guard missing'
+assert "cyber-intro-v1.9-r2-20261006" in boot, 'Cyber intro release token missing'
+assert 'sessionStorage' not in boot, 'Cyber intro must run on every full page load'
 assert "css.addEventListener('load'" in boot and "if(!cssReady) return" in boot, 'Cyber intro must wait for stylesheet'
 assert all(x in boot for x in ('4200','1100','5400','2000','18000')), 'Cyber intro timing contract incomplete'
 assert all(x in boot for x in ('SYSTEM ONLINE','system-online-sequence','lyvra:system-start')), 'Cyber intro handoff contract incomplete'
