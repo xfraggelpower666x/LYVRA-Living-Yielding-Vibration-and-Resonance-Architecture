@@ -977,7 +977,9 @@
       "semantic_currentness": "VERIFIED",
       "full_textual_parity": "VERIFIED",
       "global_instructions_six_skill_sentence": "VERIFIED"
-    }
+    },
+    "native_runtime_version": "0.1.17",
+    "account_plugin_version": "0.13.17"
   },
   "music_additive_evolution_2026_10_05": {
     "status": "CURRENT_PRODUCTIVE_ADDITIVE_EVOLUTION",
@@ -1739,10 +1741,10 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-LYVRA-FIRST-DIRECT-SELF-EXECUTION-FINAL",
+    "epoch": "2026-10-07-REV93-FACET-FOREGROUND-NAVIGATION-PLUGIN-0.1.17-0.13.17-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
-    "verified_carrier_count": 98,
+    "verified_carrier_count": 101,
     "verified_mismatch_count": 0,
     "full_tree_readback": "PASS"
   },
@@ -1808,5 +1810,27 @@
     "horst_decision_authority": "NONE",
     "fixed_matrix": false,
     "facet_sub_lifecircle_scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY"
+  },
+  "facet_foreground_navigation_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+    "triggers": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA BACK"
+    ],
+    "facet_switch": "FOREGROUND_CHANGE_ONLY",
+    "rehydrated_idle_preserved": true,
+    "global_active_facet": false,
+    "cross_chat_inheritance": false,
+    "native_plugin_version": "0.1.17",
+    "native_plugin_release_id": "pluginrel_6ac58418a86881918a71a50771fc7dba",
+    "account_plugin_version": "0.13.17",
+    "account_plugin_release_id": "pluginrel_6ac584288c6481919f5fa6ef1334bf40",
+    "plugin_readback": "PASS",
+    "lyvra_first": true,
+    "fixed_matrix": false
   }
 }
