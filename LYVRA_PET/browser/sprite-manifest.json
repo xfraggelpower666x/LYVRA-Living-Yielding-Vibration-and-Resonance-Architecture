@@ -1,82 +1,21 @@
 {
-  "schema": "LYVRA_PET_BROWSER_SPRITE_MANIFEST_V1",
-  "status": "PREPARED_NO_ACTIVE_BINARY",
-  "cell": {
-    "width": 192,
-    "height": 208
-  },
-  "atlas": {
-    "columns": 8,
-    "rows": 11
-  },
+  "schema": "LYVRA_PET_BROWSER_SPRITE_MANIFEST_V2",
+  "status": "VERIFIED_ACTIVE_BINARY_LOCAL_RENDERER_READY_REPO_BINARY_PENDING",
+  "pet_id": "pet_6ab791129364819183885f44a21497a2",
+  "cell": {"width":192,"height":208},
+  "atlas": {"width":1536,"height":2288,"columns":8,"rows":11,"sha256":"f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba","path":"assets/spritesheet-extended.png","repo_binary_status":"WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT"},
   "states": {
-    "idle": {
-      "row": 0,
-      "frames": 6,
-      "fps": 5
-    },
-    "running-right": {
-      "row": 1,
-      "frames": 8,
-      "fps": 10
-    },
-    "running-left": {
-      "row": 2,
-      "frames": 8,
-      "fps": 10
-    },
-    "waving": {
-      "row": 3,
-      "frames": 4,
-      "fps": 6
-    },
-    "jumping": {
-      "row": 4,
-      "frames": 5,
-      "fps": 8
-    },
-    "failed": {
-      "row": 5,
-      "frames": 8,
-      "fps": 8
-    },
-    "waiting": {
-      "row": 6,
-      "frames": 6,
-      "fps": 4
-    },
-    "running": {
-      "row": 7,
-      "frames": 6,
-      "fps": 10
-    },
-    "review": {
-      "row": 8,
-      "frames": 6,
-      "fps": 5
-    },
-    "look-row-9": {
-      "row": 9,
-      "frames": 8,
-      "fps": 5
-    },
-    "look-row-10": {
-      "row": 10,
-      "frames": 8,
-      "fps": 5
-    }
+    "idle":{"row":0,"frames":6,"fps":5},
+    "running-right":{"row":1,"frames":8,"fps":10},
+    "running-left":{"row":2,"frames":8,"fps":10},
+    "waving":{"row":3,"frames":4,"fps":6},
+    "jumping":{"row":4,"frames":5,"fps":8},
+    "failed":{"row":5,"frames":8,"fps":8},
+    "waiting":{"row":6,"frames":6,"fps":4},
+    "running":{"row":7,"frames":6,"fps":10},
+    "review":{"row":8,"frames":6,"fps":5},
+    "look-row-9":{"row":9,"frames":8,"fps":5},
+    "look-row-10":{"row":10,"frames":8,"fps":5}
   },
-  "routing": {
-    "greeting": "waving",
-    "fraggle": "waving",
-    "heart": "idle",
-    "music": "jumping",
-    "thinking": "review",
-    "glitch": "failed",
-    "idle": "idle"
-  },
-  "asset": {
-    "path": "/assets/spritesheet-extended.png",
-    "current_binary_status": "READBACK_PENDING"
-  }
+  "routing":{"greeting":"waving","fraggle":"waving","heart":"idle","music":"jumping","thinking":"review","glitch":"failed","idle":"idle","return":"waving","playful":"jumping"}
 }
