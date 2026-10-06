@@ -543,7 +543,7 @@
     }
   },
   "weblyvra_freshness_sync_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "source_head": "84724b415dfaeeb6513171eb171038dc87243054",
     "recovery_branch": "lyvra-pre-weblyvra-freshness-sync-20261007-0034",
     "updated_carrier": "WEBLyvra/live/dist/index.html",
@@ -555,6 +555,15 @@
     "workspace_continuity_v2_preserved": true,
     "core_changed": false,
     "manifest_blob": "1dcbdeba309313b854f80c48f2d67c118f387060",
-    "coverage_blob": "dfebcdd8be35147459fe57898cb6700e8a95542e"
+    "coverage_blob": "dfebcdd8be35147459fe57898cb6700e8a95542e",
+    "full_carrier_tree_readback": {
+      "source_head": "975df66ba15ef570edd06bbe876869f6b7f422fe",
+      "tree_sha": "360f903b5aace83c3889c69ff233092fa6fe2ddb",
+      "checked": 89,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
