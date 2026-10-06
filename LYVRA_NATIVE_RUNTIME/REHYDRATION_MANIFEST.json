@@ -434,6 +434,13 @@
       "WORD_AND_PHONEME_TIMECODE_VALIDATION",
       "LITERAL_EMOJI_RENDERER_EFFECT",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
-    ]
+    ],
+    "native_plugin": {
+      "version": "0.1.14",
+      "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+      "speech_skill_readback": "VERIFIED",
+      "track_studio_boundary_skill_readback": "VERIFIED"
+    },
+    "account_migrated_plugin_surface": "READBACK_PENDING_TARGET_NOT_RESOLVED"
   }
 }
