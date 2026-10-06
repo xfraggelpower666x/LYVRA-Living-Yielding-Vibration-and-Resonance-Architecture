@@ -42,6 +42,29 @@ assert 'hudSystemOnlineTripleFade' in boot_style and '5.4s ease-in-out 1 forward
 assert './assets/cyber-intro/' in boot and './assets/cyber-intro/intro-background.jpg' in boot_style, 'Cyber intro must use local assets'
 assert 'lyvra-visual-loop.mp4' not in boot, 'Cyber intro must not control existing intro media'
 assert 'lyvra-boot-skip' not in boot, 'Old simple boot UI leaked into v1.9 replacement'
+# Dashboard integration freeze checks.
+dashboard=web/'dashboard'/'index.html'
+assert dashboard.is_file(), 'Dashboard entry missing'
+dash_text=dashboard.read_text()
+assert dashboard.stat().st_size < 100_000, 'Dashboard regressed to oversized inline build'
+assert 'data:image' not in dash_text, 'Dashboard must keep images as local files'
+assert 'https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html' in dash_text, 'Dashboard radio iframe changed'
+assert 'href="/dashboard/"' in (web/'index.html').read_text(), 'Main site dashboard route missing'
+dashboard_assets=[
+    'assets/lyvra-identity/666soundsdesign-neon.png',
+    'assets/lyvra-identity/lyvra-core.png',
+    'assets/lyvra-identity/lyvra-neutral.png',
+    'assets/lyvra-identity/lyvra-versus-fraggle.png',
+    'assets/lyvra-identity/lyvra-wordmark.png',
+    'assets/runtime-visuals/dashboard-brand.png',
+    'assets/runtime-visuals/lyvra-avatar-angle-a.png',
+    'assets/runtime-visuals/lyvra-avatar-angle-b.png',
+    'assets/runtime-visuals/lyvra-avatar-front.png',
+    'assets/runtime-visuals/lyvra-avatar-turnaround.png',
+]
+for rel in dashboard_assets:
+    item=web/'dashboard'/rel
+    assert item.is_file() and item.stat().st_size>1000, f'Missing dashboard asset: {rel}'
 main=parsed[web/'index.html'];privacy=parsed[web/'privacy/index.html']
 assert all(i in main.ids for i in ['home','identity','universe','sound','lab','world','radio','evolution','lyvra-system-evolution','lyvra-chat-demo'])
 assert len(main.frames)==2 and not privacy.frames
