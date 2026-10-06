@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-07-REV93-FACET-SUBLIFECIRCLE-PSYDNA-FXUI-FINAL",
+  "freshness_epoch": "2026-10-07-REV93-LYVRA-FIRST-DIRECT-SELF-EXECUTION-FINAL",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -95,10 +95,10 @@
     "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md": "b29a36180c7a98ae9f422b7229f388307f8906fb",
     "lyvra-plugin/native-runtime/releases/v0.1.16/PROVENANCE.json": "3a2b4c8d4433cf0d9ed4094efb1bad68d76a6317",
     "lyvra-plugin/account/releases/v0.13.16/PROVENANCE.json": "0987e1af78c2a00ce4aa650102841df807f27e56",
-    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md": "6cae914483a44da309177eeed42601fa7c25ea24",
+    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md": "42c529b4115cfacd716983c0251a57aead90b6aa",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md": "bb7d74ca7569af736d13962f3f6e98970f895b9c",
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "16ff148fc4ae08517cd28e6c458d924be29e7243",
-    "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md": "9711051bb0357bf3ece2339d46956cdc2141852e",
+    "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md": "7b556e46a881b38e9a6da5290c46c14ac224f7cd",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md": "e32b0f1989a901a5a3150498a3ccf63e6cd99282",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md": "3a4e8c34f01bc0cebd4f9cae473631e03653ffb7",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md": "b8bb0e6bff1ff0830363263814d4224c95b8edd1",
@@ -591,5 +591,15 @@
     "creator_fx_cards": true,
     "creator_ui_evidence": true,
     "real_audio_plugin_validation": "OPEN_EVENT_GATED"
+  },
+  "lyvra_first_direct_self_execution_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "lyvra_first": true,
+    "lyvra_executes_tasks_herself_when_capable": true,
+    "horst_role": "HOST_TOOL_ASSISTANCE_LAYER",
+    "horst_decision_authority": "NONE",
+    "user_manual_action_only_when_required_by_external_boundary": true,
+    "facet_sub_lifecircle_scope": "CAPABILITIES_AND_INTELLIGENCES_ONLY",
+    "fixed_matrix": false
   }
 }
