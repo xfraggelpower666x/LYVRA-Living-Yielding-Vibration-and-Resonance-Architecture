@@ -128,7 +128,8 @@
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
-      "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md"
+      "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
     ],
     "SPECIALIST_CONTINUITY": [
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md"
@@ -371,5 +372,20 @@
     "plugin_parity_required": true,
     "manual_recovery_signal": "FUCK HORST",
     "manual_signal_ne_confirmed_damage": true
+  },
+  "repo_native_write_governance_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE",
+    "normal_current_flow": "REPOSITORY_ONLY",
+    "drive_role": [
+      "HISTORY",
+      "BACKUP",
+      "RECOVERY"
+    ],
+    "drive_lock_registry_dependency": "RETIRED_LEGACY",
+    "concurrency_model": "REPO_NATIVE_OPTIMISTIC_HEAD_AND_BLOB_SHA",
+    "prechange_recovery": "GITHUB_BRANCH_OR_IMMUTABLE_COMMIT_ANCHOR",
+    "unexpected_foreign_head_movement": "CONFLICT_QUARANTINE",
+    "pointer_last": true,
+    "mutation_after_pointer": "FORBIDDEN"
   }
 }
