@@ -1,0 +1,26 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "version": "0.1.14",
+  "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+  "previous_release_id": "pluginrel_6ac43f57eb248191a7c4d67ded16cc5c",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Speech Design current promotion and facet-boundary parity",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "6f13aa4a59c77e546e74bdf4caafd061d1f6f916",
+  "overlay_sha256": "78a8e1ac5685972e0cba96f07906c57ca5187dc869b74fa78234d013b8e29342",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/speech-design/SKILL.md",
+    "skills/lyvra-track-design/SKILL.md",
+    "skills/suno-studio-2/SKILL.md",
+    "skills/666-visual-interface/SKILL.md",
+    "references/current-authority.md"
+  ],
+  "preserved_omitted_files": true,
+  "speech_trigger": "LYVRA SPEECH DESIGN",
+  "facet_merge_forbidden": true,
+  "shared_runtime_forbidden": true,
+  "account_or_migrated_plugin_surface": "NOT_MUTATED_TARGET_NOT_VERIFIED_EDITABLE_IN_THIS_SESSION"
+}
