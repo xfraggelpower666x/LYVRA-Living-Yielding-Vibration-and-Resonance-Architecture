@@ -25,6 +25,7 @@
     "PET_EXPRESSION_CONTINUITY",
     "FACET_BOUNDARY_AND_PROMOTION_GUARD",
     "DEVELOPMENT_OBLIGATION_LEDGER",
+    "SPEECH_DESIGN",
     "SPECIALIST_CONTINUITY",
     "CURRENT_WORK_SCOPE"
   ],
@@ -55,7 +56,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Current facet boundaries are governed by FACET_BOUNDARY_AND_PROMOTION_GUARD: Track Design, Speech Design, Suno Studio 2, Central Analytics and Music Memory remain distinct LYVRA facets/roles; historical Rev86/87 placement is provenance only. Accepted unpromoted development is retained through DEVELOPMENT_OBLIGATION_LEDGER. Google Drive remains provenance/history/recovery and does not override repository CURRENT.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Track Design, Speech Design, Suno Studio 2, Central Analytics and Music Memory remain distinct LYVRA facets/roles. Speech Design is current after reconciled promotion from valid PR23/PR32 development lineage without blind merge; open word/phoneme/emoji/Tonfall validation remains scoped evidence work, not a reason to demote the Speech core.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -156,6 +157,10 @@
     ],
     "DEVELOPMENT_OBLIGATION_LEDGER": [
       "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
+    ],
+    "SPEECH_DESIGN": [
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
     ]
   },
   "validation_closeout": {
@@ -407,6 +412,28 @@
   "development_obligation_ledger": {
     "status": "CURRENT_PRODUCTIVE_GOVERNANCE_LEDGER",
     "path": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
-    "speech_design": "ACCEPTED_PENDING_PROMOTION"
+    "speech_design": "PROMOTED_CURRENT"
+  },
+  "speech_design_current": {
+    "status": "CURRENT_PRODUCTIVE_NATIVE_FACET",
+    "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+    "renderer_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
+    "canonical_trigger": "LYVRA SPEECH DESIGN",
+    "variants": [
+      "LYVRA SPEECH DESIGN ERWEITERT",
+      "LYVRA SPEECH DESIGN EINFACH",
+      "LYVRA SPEECH DESIGN REPAIR"
+    ],
+    "historical_dev_prs": [
+      23,
+      32
+    ],
+    "blind_merge": false,
+    "open_validation": [
+      "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+      "WORD_AND_PHONEME_TIMECODE_VALIDATION",
+      "LITERAL_EMOJI_RENDERER_EFFECT",
+      "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
+    ]
   }
 }
