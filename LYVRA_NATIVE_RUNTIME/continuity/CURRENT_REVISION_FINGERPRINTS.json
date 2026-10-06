@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-TERMINAL-POST-POINTER-CLOSEOUT",
+  "freshness_epoch": "2026-10-06-REV93-HISTORICAL-MARKER-NORMALIZATION",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -84,8 +84,8 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "POST_POINTER_VERIFIED_COMPLETE",
   "codeforge_review_required": true,
-  "registry_population_status": "TERMINAL_POST_POINTER_CLOSEOUT_VERIFIED",
-  "codeforge_review_status": "PASS_TERMINAL_COMPLETION_MARKER_READBACK",
+  "registry_population_status": "HISTORICAL_MARKER_NORMALIZATION_VERIFIED",
+  "codeforge_review_status": "PASS_HISTORICAL_MARKER_NORMALIZATION",
   "verified_carrier_count": 73,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
@@ -107,17 +107,20 @@
     "next_phase": "OPTIONAL_GOVERNED_CLEANUP_ONLY_WITH_SEPARATE_DESTRUCTIVE_AUTHORIZATION"
   },
   "music_additive_evolution": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "reference_entries_persisted": 41,
     "additive_preservation": true,
     "multi_facet_dashboard": true,
     "native_plugin": "0.1.7",
     "migrated_plugin": "0.13.5",
-    "dual_plugin_readback": "VERIFIED"
+    "dual_plugin_readback": "VERIFIED",
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "expected_track_revision": 93,
   "rev93_multi_music": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "rev92_preserved": true,
     "body_head": "165bc8d4da1396be47a55dbe664497a8d099a598",
     "changed_carrier_count": 15,
@@ -126,7 +129,10 @@
       "migrated_plugin": "0.13.7_VERIFIED_COMPATIBLE",
       "release_change_required": false
     },
-    "real_render_validation": "OPEN"
+    "real_render_validation": "OPEN",
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "pet_expression_continuity": {
     "status": "VERIFIED_CURRENT",
@@ -138,22 +144,28 @@
     "website_integration": "STATIC_SEMANTIC_PET_PRESENCE_DEPLOYED_VERIFIED"
   },
   "weblyvra_pet_deployment": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "deployed_commit": "4575ff4e0b27b8f8852c0c1e8432dbd49b0dbf50",
     "cloudflare_pages_deployment": "8c611a40-5337-4fa6-91dd-a74c85af7faa",
     "deployment_result": "SUCCESS",
     "semantic_fallback": "DEPLOYED",
     "visual_atlas_render": "READBACK_PENDING",
     "free_only": true,
-    "extra_cloudflare_costs": false
+    "extra_cloudflare_costs": false,
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "cross_system_clic": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "observed_head": "60d346ca006a2d7bbb7ab98f4ad2b93e0e079881",
     "pfs_failback_relation": "VERIFIED_READ_ONLY",
     "authority_transfer": false,
     "foreign_mutation": false,
-    "prechange_commit_anchor": "9f1f1ac3954b626e9a12960968162ba54be99805"
+    "prechange_commit_anchor": "9f1f1ac3954b626e9a12960968162ba54be99805",
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "plugin_portability_repair": {
     "status": "VERIFIED_CURRENT_PACKAGE_CHAT_AND_MOBILE",
@@ -250,17 +262,21 @@
     "current_approval_status": "AVAILABLE_NOT_YET_CONSUMED"
   },
   "facet_boundary_promotion_retention": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "recovery_branch": "lyvra-pre-facet-boundary-promotion-retention-repair-20261006",
     "track_core_preserved": true,
     "historical_placement_superseded": true,
     "handoff_workstreams_scoped": true,
-    "speech_design": "ACCEPTED_PENDING_PROMOTION",
+    "speech_design": "PROMOTED_CURRENT",
     "input_guard": true,
-    "development_retention_guard": true
+    "development_retention_guard": true,
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false,
+    "historical_speech_status_at_repair": "ACCEPTED_PENDING_PROMOTION"
   },
   "speech_design_current": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "own_native_facet": true,
     "track_parentage": false,
     "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
@@ -270,22 +286,29 @@
     "native_plugin_version": "0.1.14",
     "native_plugin_release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
     "native_plugin_readback": "VERIFIED",
-    "account_migrated_plugin_surface": "READBACK_PENDING_TARGET_NOT_RESOLVED",
+    "account_migrated_plugin_surface": "0.13.14_CORE_AND_FULL_TEXTUAL_PARITY_VERIFIED",
     "open_real_validation": [
       "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
       "WORD_AND_PHONEM_TIMECODE_VALIDATION",
       "LITERAL_EMOJI_RENDERER_EFFECT",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY"
-    ]
+    ],
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false,
+    "account_migrated_plugin_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b"
   },
   "semantic_currentness_closeout": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "fresh_carrier_ne_all_statements_current": true,
     "historical_current_ne_present_current": true,
     "current_pointer_precedence": true,
     "handoff_present_provenance_bound": true,
     "track_revision": 93,
-    "music_core_changed": false
+    "music_core_changed": false,
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "dual_plugin_parity_2026_10_06": {
     "native_runtime": {
@@ -305,7 +328,7 @@
     "pfs_child_mutation": false
   },
   "pointer_freshness_facet_metadata_sync_2026_10_06": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "handoff_id": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
     "handoff_blob": "b67cac715d84290585b283d04a7a9db4cfec2318",
     "native_plugin_version": "0.1.14",
@@ -317,10 +340,13 @@
     "studio2_current_placement": "OWN_NATIVE_STUDIO_OPERATION_FACET",
     "historical_rev92_headers_qualified": true,
     "music_core_changed": false,
-    "plugin_release_change_required": false
+    "plugin_release_change_required": false,
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "migrated_plugin_textual_parity_2026_10_06": {
-    "status": "VERIFIED_PRE_POINTER",
+    "status": "HISTORICAL_UPDATE_PHASE_POST_POINTER_VERIFIED",
     "migrated_plugin_version": "0.13.14",
     "migrated_plugin_release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
     "native_runtime_version": "0.1.14",
@@ -331,7 +357,10 @@
     "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
     "pfs_child_mutation": false,
     "private_backup_write": false,
-    "music_core_changed": false
+    "music_core_changed": false,
+    "original_status": "VERIFIED_PRE_POINTER",
+    "snapshot_role": "HISTORICAL_UPDATE_PHASE_RECORD",
+    "present_current_authority": false
   },
   "pointer_legacy_snapshot_closeout_2026_10_06": {
     "status": "POST_POINTER_VERIFIED_COMPLETE",
