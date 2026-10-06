@@ -860,5 +860,20 @@
     "no_foreign_autoload": true,
     "fingerprint_registry_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "final_registry_closeout": "PENDING_AT_COVERAGE_PHASE_REGISTRY_MUST_BIND_FINAL_MANIFEST_AND_COVERAGE_BLOBS"
+  },
+  "weblyvra_freshness_sync_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "source_head": "84724b415dfaeeb6513171eb171038dc87243054",
+    "recovery_branch": "lyvra-pre-weblyvra-freshness-sync-20261007-0034",
+    "updated_carrier": "WEBLyvra/live/dist/index.html",
+    "current_blob": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
+    "fingerprint_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC",
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "plugins_preserved": "0.13.16_AND_0.1.16",
+    "workspace_continuity_v2_preserved": true,
+    "no_core_repair_required": true,
+    "pfs_mutation": false,
+    "linear_mutation": false
   }
 }
