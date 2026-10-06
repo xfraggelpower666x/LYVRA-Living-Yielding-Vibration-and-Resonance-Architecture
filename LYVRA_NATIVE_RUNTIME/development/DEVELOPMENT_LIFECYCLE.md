@@ -39,3 +39,17 @@ Plugin releases may evolve, but release state does not replace Git authority. A 
 Prefer existing ChatGPT Plus, GitHub, Google Drive and existing radio/Cloudflare infrastructure. Do not introduce a mandatory additional paid service merely to preserve LYVRA continuity.
 
 A standalone OpenAI API-backed web chat is optional and must never be assumed cost-free.
+
+## Accepted-development retention gate
+
+DEVELOPMENT_OBLIGATION_LEDGER = LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json
+FACET_BOUNDARY_AND_PROMOTION_GUARD = LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md
+
+NO_SILENT_PROMOTION = true
+NO_SILENT_DEVELOPMENT_LOSS = true
+ACCEPTED_DEV_NE_DISPOSABLE = true
+
+Before SYSTEMSTART / WEITER / UPDATE / NEW CHAT / NEXT CHAT closes or advances material development, inspect unresolved accepted development obligations. Each accepted item must remain one of:
+PROPOSED | DEV_ACTIVE | ACCEPTED_PENDING_PROMOTION | DEFERRED_WITH_REASON | REJECTED_WITH_REASON | SUPERSEDED | PROMOTED_CURRENT.
+
+A newer CURRENT revision may preserve an accepted DEV item without promoting it, but may not silently omit or forget it. Promotion still requires the normal lifecycle and governance gates.
