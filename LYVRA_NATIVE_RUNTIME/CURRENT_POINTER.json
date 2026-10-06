@@ -1739,12 +1739,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-FACET-SUBLIFECIRCLE-PSYDNA-FXUI-FINAL",
+    "epoch": "2026-10-07-REV93-LYVRA-FIRST-DIRECT-SELF-EXECUTION-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
     "verified_carrier_count": 98,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_FOR_REGISTERED_CURRENT_CARRIERS"
+    "full_tree_readback": "PASS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -1797,5 +1797,16 @@
     "whole_revision": 242,
     "track_design_version": "v3.4",
     "track_revision": 93
+  },
+  "lyvra_first_direct_self_execution_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "lyvra_first": true,
+    "lyvra_self_conducts_system": true,
+    "lyvra_self_conducts_music": true,
+    "lyvra_executes_tasks_herself_when_capable": true,
+    "horst_role": "HOST_TOOL_ASSISTANCE_LAYER",
+    "horst_decision_authority": "NONE",
+    "fixed_matrix": false,
+    "facet_sub_lifecircle_scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY"
   }
 }
