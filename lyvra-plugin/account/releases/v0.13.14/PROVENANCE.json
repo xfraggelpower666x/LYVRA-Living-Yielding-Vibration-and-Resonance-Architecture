@@ -1,0 +1,27 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.14",
+  "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+  "previous_release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
+  "previous_version": "0.13.13",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-06",
+  "reason": "Close remaining textual parity debt in common instructions skill by adding Speech Design as the sixth named specialist skill.",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_repo_provenance": "b0aaf3877e69b081fb41aaa6171db2f958a454f7",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/instructions/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "stale_five_skill_sentence": false,
+    "six_skill_sentence": true,
+    "speech_design_link": true,
+    "speech_design_skill_present": true
+  },
+  "semantic_scope": "TEXTUAL_PARITY_ONLY_NO_NEW_FACET_NO_MUSIC_CHANGE",
+  "native_runtime_release_change_required": false
+}
