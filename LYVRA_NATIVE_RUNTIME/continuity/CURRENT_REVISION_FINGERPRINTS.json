@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-WORKSPACE-CONTINUITY-V2-PLUGINS-0.1.16-0.13.16-FINAL",
+  "freshness_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -48,7 +48,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md": "62da7e66e8e321901493752c082a39453b7c5e99",
     "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "96ed8639229b76fa94faca4ada6bf1ad8640a60f",
     "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "f81c319784581274b30da1bc80378b0a7ef45fa9",
-    "WEBLyvra/live/dist/index.html": "76a2e10e0033a21cda1d20c894024736ca9c05d8",
+    "WEBLyvra/live/dist/index.html": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
     "WEBLyvra/live/dist/pet-presence.css": "0ef46bdb51ebf4b5893c94c21e34e6250051ca8b",
     "WEBLyvra/live/dist/pet-presence.js": "c117f8baaed0146b757d5967ed2d27e8716bf19a",
     "WEBLyvra/live/tests/preservation-baseline.json": "a7b6cfbb3fe5c8adc2bec324baec51596e01c154",
@@ -541,5 +541,18 @@
       "tree_truncated": false,
       "result": "PASS"
     }
+  },
+  "weblyvra_freshness_sync_2026_10_07": {
+    "status": "BODY_UPDATED_PRE_MANIFEST_COVERAGE_POINTER",
+    "source_head": "84724b415dfaeeb6513171eb171038dc87243054",
+    "recovery_branch": "lyvra-pre-weblyvra-freshness-sync-20261007-0034",
+    "updated_carrier": "WEBLyvra/live/dist/index.html",
+    "previous_blob": "76a2e10e0033a21cda1d20c894024736ca9c05d8",
+    "current_blob": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "plugins_preserved": "0.13.16_AND_0.1.16",
+    "workspace_continuity_v2_preserved": true,
+    "core_changed": false
   }
 }
