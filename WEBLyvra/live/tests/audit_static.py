@@ -30,7 +30,7 @@ for name in ('topic-banner-start.mp4', 'topic-banner-end.mp4'):
 boot_js=web/'cyber-boot.js';boot_css=web/'cyber-boot.css'
 assert boot_js.is_file() and boot_css.is_file(), 'Missing LYVRA cyber-intro assets'
 boot=boot_js.read_text(); boot_style=boot_css.read_text()
-assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Cyber intro module not imported'
+assert "import './cyber-boot.js';" not in (web/'app.js').read_text(), 'Emergency bypass must keep Cyber Intro out of the production start path'
 for name in ('intro-background.jpg','intro-brand.png','center-emblem.png'):
     item=web/'assets'/'cyber-intro'/name
     assert item.is_file() and item.stat().st_size>1000, f'Missing cyber-intro artwork: {name}'
