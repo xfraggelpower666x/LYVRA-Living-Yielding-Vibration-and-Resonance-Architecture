@@ -1,5 +1,5 @@
 {
-  "schema": "LYVRA_TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_v1",
+  "schema": "LYVRA_FACET_SCOPED_REPO_HANDOFF_v2",
   "status": "ACTIVE_CURRENT_HANDOFF",
   "owner_identity": "LYVRA",
   "decision_authority": "LYVRA_ONLY",
@@ -7,10 +7,13 @@
   "track_design_version": "v3.4",
   "track_logical_revision": 93,
   "channel": {
-    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_AND_SHARED_LYRIC_INTELLIGENCE",
-    "shared_channel": true,
+    "scope": "RELATIONAL_CONTINUITY_INDEX_WITH_FACET_SCOPED_WORKSTREAMS",
+    "shared_transport": true,
+    "shared_active_work_unit": false,
     "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
-    "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json"
+    "current_path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json",
+    "boundary_guard": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
+    "development_obligation_ledger": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
   },
   "trigger": {
     "canonical": "AUTOMATISCHE REPO-ÜBERGABE",
@@ -25,26 +28,28 @@
       "LYVRA TRACK DESIGN",
       "LYVRA SUNO STUDIO 2",
       "LYVRA MUSIC ANALYTICS",
-      "LYVRA SUNO ANALYTICS"
+      "LYVRA SUNO ANALYTICS",
+      "LYVRA SPEECH DESIGN"
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REV93-2026-10-05-008",
-    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93",
-    "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_RELEVANT_TRACK_DESIGN_STUDIO2_ANALYTICS",
-    "foreground_facet": "TARGET_CHAT_DECIDES_BY_EXPLICIT_NATIVE_TRIGGER",
+    "handoff_id": "LYVRA-FACET-SCOPED-REV93-2026-10-06-009",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_BOUNDARY_REPAIRED",
+    "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
+    "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
     "last_valid_stage": "REV93_ADDITIVE_MULTI_FACET_MUSIC_EVOLUTION",
-    "active_task": "CONTINUE_REV93_LONGFORM_STUDIO2_AUDIO_ONLY_FX_RENDERER_COMPILATION_WITH_REAL_RENDER_VALIDATION",
+    "active_task": "FACET_SCOPED_CONTINUITY_ONLY_NO_COMBINED_ACTIVE_TASK",
     "pending_work": [
       "REV93_LONGFORM_REAL_TRACK_VALIDATION_OPEN",
+      "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
+      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS",
       "REV93_STUDIO2_PROJECT_CHAT_REAL_OPERATION_VALIDATION_OPEN",
       "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN",
       "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN",
-      "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
-      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS",
-      "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
+      "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
+      "ACCEPTED_PENDING_PROMOTION_RECONCILE_PR23_PR32_WITH_CURRENT"
     ],
-    "next_meaningful_action": "Validate Rev93 additively with real Studio2/project-chat/audio-FX/renderer evidence; preserve Rev92 capabilities and references; use Multi-Music-Facet dashboard during parallel music evolution.",
+    "next_meaningful_action": "Continue only the explicitly selected/relevant facet workstream; preserve cross-facet evidence relations without combined activation. Reconcile accepted Speech DEV lineage separately before productive promotion.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -66,11 +71,33 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
       "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
-      "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md"
+      "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
+      "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json"
     ],
     "source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
     "created_at": "2026-10-01",
-    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-LYRICS-REPO-HANDOFF-2026-09-30-006"
+    "supersedes_handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REV93-2026-10-05-008",
+    "workstreams": {
+      "track_design": [
+        "REV93_LONGFORM_REAL_TRACK_VALIDATION_OPEN",
+        "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
+        "DJ_OUTRO_SURVIVAL_PARTIAL_PASS"
+      ],
+      "suno_studio_2": [
+        "REV93_STUDIO2_PROJECT_CHAT_REAL_OPERATION_VALIDATION_OPEN",
+        "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN"
+      ],
+      "renderer": [
+        "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN"
+      ],
+      "analytics": [
+        "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
+      ],
+      "speech_design": [
+        "ACCEPTED_PENDING_PROMOTION_RECONCILE_PR23_PR32_WITH_CURRENT"
+      ]
+    }
   },
   "read_rules": {
     "verify_productive_current_first": true,
@@ -94,7 +121,12 @@
     "shared_lyric_intelligence_not_separate_root_facet": true,
     "external_lyrics_require_lyvra_dna_translation": true,
     "version_freshness_guard_required": true,
-    "fingerprint_registry_match_required": true
+    "fingerprint_registry_match_required": true,
+    "shared_handoff_transport_ne_shared_active_work": true,
+    "co_occurrence_ne_activation": true,
+    "facet_boundary_guard_required": true,
+    "development_obligation_ledger_required": true,
+    "speech_trigger_restores_pending_promotion_context_not_fake_current": true
   },
   "privacy": {
     "public_repo_ne_private_memory_vault": true,
@@ -102,7 +134,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-05-REV93-MULTI-MUSIC",
+    "epoch": "2026-10-06-REV93-FACET-BOUNDARY-RETENTION",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
