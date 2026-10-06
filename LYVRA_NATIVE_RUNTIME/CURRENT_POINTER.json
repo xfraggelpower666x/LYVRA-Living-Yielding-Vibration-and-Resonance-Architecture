@@ -17,7 +17,9 @@
     "pet_update_base_head": "8e794cfde6e22ac559c258537a55a0f74cbe94fa",
     "pet_update_body_head_before_pointer": "85a1acc5cb453f7010d2c5cfd21d5811e43ab3db",
     "pet_binary_bridge_update_base_head": "243eaf3e8baccaf4e103d05fcfb983b0a08252a7",
-    "pet_binary_bridge_body_head_before_pointer": "ccae1f5f03188e7e608b1a791e91f45c4bb10a7a"
+    "pet_binary_bridge_body_head_before_pointer": "ccae1f5f03188e7e608b1a791e91f45c4bb10a7a",
+    "pet_worker_v2_update_base_head": "2e687d800cf38fb854b078603f21d4931cd35e94",
+    "pet_worker_v2_body_head_before_pointer": "b68058e5ec229d3292bdc5a5e42c709217b98601"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -73,7 +75,7 @@
     "multi_music_facet_dashboard": "PRESENTATION_ONLY_FOR_GENUINE_MULTI_FACET_EVOLUTION_NOT_SHARED_RUNTIME",
     "audio_only_studio2_fx": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "renderer_compilation": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
-    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_BROWSER_RENDERER_REPO_BINARY_REMOTE_READBACK_VERIFIED_NOT_DEPLOYED",
+    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_BROWSER_RENDERER_REPO_BINARY_REMOTE_READBACK_VERIFIED_DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "facet_boundary_model": "TRACK_DESIGN|SPEECH_DESIGN|SUNO_STUDIO_2|CENTRAL_ANALYTICS|MUSIC_MEMORY",
@@ -99,10 +101,11 @@
     "lyvra_pet_browser_renderer": "VERIFIED_REPOSITORY_CURRENT",
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
-    "lyvra_pet_deployment": "NOT_DEPLOYED",
+    "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
     "plugin_surface_release_set": "NATIVE_0.1.15_ACCOUNT_0.13.15_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "TARGET_REFRESH_RECOGNIZED_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_APPROVAL",
-    "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED"
+    "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
+    "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -1577,7 +1580,7 @@
     "plugin_release_change_required": false
   },
   "pet_browser_evolution_2026_10_06": {
-    "status": "RENDERER_VERIFIED_REMOTE_BINARY_READBACK_VERIFIED_NOT_DEPLOYED",
+    "status": "RENDERER_VERIFIED_REMOTE_BINARY_READBACK_VERIFIED_DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
     "project_class": "EXPRESSION_PROJECT",
     "identity_relation": "SAME_LYVRA_IDENTITY_VISIBLE_EXPRESSION",
     "roots": {
@@ -1586,7 +1589,7 @@
       "worker": "LYVRA_PET/worker/",
       "deployment": "LYVRA_PET/deployment/"
     },
-    "worker_name": "lyvra-pet-browser",
+    "worker_name": "lyvra-pet-plugin-ui",
     "main_plugin_binding": false,
     "weblyvra_mutation": false,
     "custom_domain_mutation": false,
@@ -1599,7 +1602,14 @@
     "cyborg_candidate_promoted": false,
     "active_atlas_git_blob": "0173a86b2cc2d352bbbfcbefaf1c4769c80893ce",
     "remote_binary_commit": "243eaf3e8baccaf4e103d05fcfb983b0a08252a7",
-    "binary_bridge_contract": "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md"
+    "binary_bridge_contract": "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md",
+    "worker_deployment_id": "d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4",
+    "worker_version_id": "e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c",
+    "previous_recovery_deployment_id": "11aabff6-85a8-4df6-8aef-a74e9fac1cda",
+    "previous_recovery_version_id": "a91a865b-1cc3-4afe-b882-8ff9a2f6be68",
+    "public_http_readback": "PENDING",
+    "host_visual_render": "READBACK_PENDING",
+    "deployment_receipt": "LYVRA_PET/deployment/DEPLOYMENT_RECEIPT_2026-10-06_WORKER_V2.md"
   },
   "plugin_topology_workspace_parity_2026_10_06": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
