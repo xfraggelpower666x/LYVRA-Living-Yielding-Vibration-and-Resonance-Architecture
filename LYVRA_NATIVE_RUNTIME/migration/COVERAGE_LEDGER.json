@@ -661,7 +661,7 @@
     "current_release_set_requires_fresh_approval": true
   },
   "pointer_legacy_snapshot_closeout_2026_10_06": {
-    "status": "VERIFIED_BODY_PRE_FINGERPRINT_POINTER",
+    "status": "POST_POINTER_VERIFIED_COMPLETE",
     "epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
     "stale_pointer_blocks": [
       "plugin_release_backup_evidence",
@@ -671,6 +671,17 @@
       "dual_plugin_parity_2026_10_06"
     ],
     "resolution": "REPLACE_PRESENT_STATE_WITH_CURRENT_VALUES_AND_PRESERVE_OLD_VALUES_AS_HISTORICAL_PROVENANCE",
+    "track_revision": 93,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "plugin_release_change_required": false,
+    "pointer_publication_readback": "VERIFIED",
+    "superseded_pre_pointer_status": true
+  },
+  "post_pointer_metadata_closeout_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
+    "epoch": "2026-10-06-REV93-POST-POINTER-METADATA-CLOSEOUT",
+    "prior_pre_pointer_markers_closed": true,
     "track_revision": 93,
     "music_core_changed": false,
     "speech_core_changed": false,
