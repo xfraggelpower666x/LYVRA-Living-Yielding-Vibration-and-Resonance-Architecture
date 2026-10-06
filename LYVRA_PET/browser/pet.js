@@ -1,12 +1,1 @@
-const label=document.getElementById("stateLabel");
-const core=document.getElementById("petCore");
-const allowed=new Set(["idle","greeting","fraggle","heart","music","thinking","glitch","return","playful"]);
-function setState(next){
-  const state=allowed.has(next)?next:"idle";
-  core.dataset.state=state;
-  label.textContent=state.toUpperCase();
-}
-document.querySelectorAll("[data-state]").forEach(btn=>{
-  btn.addEventListener("click",()=>setState(btn.dataset.state));
-});
-setState("idle");
+const sprite=document.getElementById("sprite");const label=document.getElementById("state");let manifest=null,timer=null,frame=0;async function boot(){manifest=await fetch("sprite-manifest.json").then(r=>r.json());setSemanticState("idle");document.querySelectorAll("[data-state]").forEach(b=>b.addEventListener("click",()=>setSemanticState(b.dataset.state)));}function setSemanticState(semantic){const target=manifest.routing[semantic]||"idle";const cfg=manifest.states[target]||manifest.states.idle;frame=0;clearInterval(timer);sprite.dataset.effect=(semantic==="heart"||semantic==="glitch")?semantic:"";label.textContent=semantic.toUpperCase()+" → "+target.toUpperCase();draw(cfg);timer=setInterval(()=>{frame=(frame+1)%cfg.frames;draw(cfg)},1000/cfg.fps);}function draw(cfg){sprite.style.backgroundPosition=`-${frame*manifest.cell.width}px -${cfg.row*manifest.cell.height}px`;}boot().catch(err=>{label.textContent="RENDERER ERROR";console.error(err)});
