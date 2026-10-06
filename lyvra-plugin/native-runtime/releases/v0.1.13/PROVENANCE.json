@@ -1,0 +1,26 @@
+{
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-06",
+  "surface": "LYVRA Native Runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.13",
+  "release_id": "pluginrel_6ac43f57eb248191a7c4d67ded16cc5c",
+  "creator_release_is_current": true,
+  "change": "REPO_NATIVE_WRITE_GOVERNANCE_DRIVE_LOCK_RETIREMENT",
+  "current_source_readback": "VERIFIED",
+  "drive_role": [
+    "HISTORY",
+    "BACKUP",
+    "RECOVERY"
+  ],
+  "drive_normal_update_dependency": false,
+  "drive_lock_registry_dependency": "RETIRED_LEGACY",
+  "concurrency_model": "REPO_HEAD_PLUS_BLOB_SHA_AND_PLUGIN_EXPECTED_RELEASE_ID",
+  "public_repo_payload_copy": false,
+  "plugin_discoverability": "PRIVATE",
+  "preservation": {
+    "plugin_identity_preserved": true,
+    "unchanged_files_overlay_preserved": true,
+    "historical_releases_preserved": true
+  }
+}
