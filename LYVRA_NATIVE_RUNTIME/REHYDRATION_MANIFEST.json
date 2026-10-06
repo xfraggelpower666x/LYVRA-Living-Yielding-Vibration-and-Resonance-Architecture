@@ -547,5 +547,19 @@
     "music_core_changed": false,
     "speech_core_changed": false,
     "plugin_release_change_required": false
+  },
+  "pet_current_metadata_closeout_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "pet_id": "pet_6ab791129364819183885f44a21497a2",
+    "account_plugin_version": "0.13.14",
+    "native_runtime_version": "0.1.14",
+    "source_asset_availability": "VERIFIED_LIBRARY_READBACK",
+    "active_artwork_rgba_readback": "VERIFIED_IDENTICAL",
+    "repository_binary_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT_OPTIONAL",
+    "exact_historical_v3_zip_identity": "UNRESOLVED",
+    "system_completion_blocker": false,
+    "browser_host_render": "DEFERRED_VALIDATION",
+    "music_core_changed": false,
+    "speech_core_changed": false
   }
 }
