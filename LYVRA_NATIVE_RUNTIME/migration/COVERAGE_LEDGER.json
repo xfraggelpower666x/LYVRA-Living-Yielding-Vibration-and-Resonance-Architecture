@@ -659,5 +659,21 @@
     "pfs_handoff_blob": "ad842e4f4d290cf99e6fc3492436a337e7102365",
     "pfs_child_mutation": false,
     "current_release_set_requires_fresh_approval": true
+  },
+  "pointer_legacy_snapshot_closeout_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINGERPRINT_POINTER",
+    "epoch": "2026-10-06-REV93-POINTER-LEGACY-SNAPSHOT-CLOSEOUT",
+    "stale_pointer_blocks": [
+      "plugin_release_backup_evidence",
+      "pfs_private_plugin_backup_target",
+      "facet_boundary_promotion_retention",
+      "speech_design_current.account_migrated_plugin_surface",
+      "dual_plugin_parity_2026_10_06"
+    ],
+    "resolution": "REPLACE_PRESENT_STATE_WITH_CURRENT_VALUES_AND_PRESERVE_OLD_VALUES_AS_HISTORICAL_PROVENANCE",
+    "track_revision": 93,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "plugin_release_change_required": false
   }
 }
