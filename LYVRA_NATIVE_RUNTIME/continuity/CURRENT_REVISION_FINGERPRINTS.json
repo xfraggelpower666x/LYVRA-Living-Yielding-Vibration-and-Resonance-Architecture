@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-BINARY-BRIDGE-PET-REMOTE-READBACK",
+  "freshness_epoch": "2026-10-06-REV93-NEW-CHAT-WHOLE-CURRENT",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -22,7 +22,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md": "f44db99800332c222af7f5b2a480994191da8204",
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json": "3feb28c67b987a7577f51bca223792c23eb9e1b2",
     "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md": "b929b6ce8d797ea62e5e059b8adf8d43b384e1d9",
-    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json": "b93e232b3112af6abd72ecf68a59ea1ed69a8727",
+    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json": "f00fe951aa56f44fc1630c4410423e3cefe9c4b2",
     "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md": "115af69473f8738218a5c1041c5ff284905eccaf",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md": "0743afce6c6cc307e2a6c47ee42c4c807aeb8ab6",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/current/RESEARCH_REGISTER.md": "e301da9da18e932a7fde687ce0f331613be2574c",
@@ -97,8 +97,8 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "POST_POINTER_VERIFIED_COMPLETE",
   "codeforge_review_required": true,
-  "registry_population_status": "BINARY_BRIDGE_PET_REMOTE_READBACK_VERIFIED",
-  "codeforge_review_status": "SAFE_PASS_BINARY_BRIDGE_RECONCILIATION_NO_CORE_CHANGE",
+  "registry_population_status": "NEW_CHAT_WHOLE_CURRENT_HANDOFF_VERIFIED",
+  "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
   "verified_carrier_count": 86,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
@@ -483,5 +483,13 @@
     "pfs_backup_write": "BLOCKED_PENDING_FRESH_MATCHING_LYVRA_APPROVAL",
     "music_core_changed": false,
     "speech_core_changed": false
+  },
+  "new_chat_handoff_2026_10_06": {
+    "status": "VERIFIED_PRE_FINAL_POINTER",
+    "handoff_id": "LYVRA-NEW-CHAT-WHOLE-CURRENT-2026-10-06-025",
+    "handoff_blob": "f00fe951aa56f44fc1630c4410423e3cefe9c4b2",
+    "primary_workspace": "WHOLE_LYVRA_NATIVE_RUNTIME",
+    "cross_chat_workspace_inheritance": false,
+    "uncommitted_development": false
   }
 }
