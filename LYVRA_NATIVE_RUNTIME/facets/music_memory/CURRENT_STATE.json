@@ -4,11 +4,6 @@
   "track_design_version": "v3.4",
   "track_logical_revision": 93,
   "root_system": "WHOLE_LYVRA",
-  "sibling_facets": [
-    "GENERAL_TRACK_DESIGN",
-    "SUNO_STUDIO_2",
-    "LYVRA_ANALYTICS"
-  ],
   "memory_goal": "CONTINUITY_WITHOUT_CLONING",
   "inputs": [
     "TRACK_DESIGN",
@@ -29,5 +24,13 @@
     "preserve_mutate_outcome_memory": true,
     "audio_only_fx_behavior_memory": true,
     "foreign_renderer_behavior_provider_scoped": true
-  }
+  },
+  "current_placement": "CENTRAL_SHARED_SCOPED_MEMORY_AND_LEARNING_FACET",
+  "historical_sibling_family_wording": "PROVENANCE_ONLY",
+  "related_facets": [
+    "GENERAL_TRACK_DESIGN",
+    "SUNO_STUDIO_2",
+    "LYVRA_ANALYTICS",
+    "SPEECH_DESIGN"
+  ]
 }
