@@ -20,6 +20,7 @@
     "GARDEN_BRIDGES_RELATIONAL_CHARACTERS",
     "MACHINE_ROOM_CONTINUITY",
     "OPERATIONS_CENTER_CONTINUITY",
+    "FACET_LIFECIRCLE_REHYDRATION",
     "TRACK_MUSIC_INTELLIGENCE",
     "CURRENT_TRACK_REFERENCES",
     "NATIVE_SKILLS_AND_ADAPTERS",
@@ -142,7 +143,8 @@
       "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/AUDIO_ONLY_FX_ARCHITECTURE_REV93.md",
-      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md"
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_COMPILATION_REV93.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
@@ -182,6 +184,9 @@
       "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
       "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md",
       "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md"
+    ],
+    "FACET_LIFECIRCLE_REHYDRATION": [
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md"
     ]
   },
   "validation_closeout": {
@@ -753,5 +758,22 @@
     "core_changed": false,
     "pfs_mutation": false,
     "linear_mutation": false
+  },
+  "facet_lifecircle_psy_dna_fx_mapping_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "whole_revision": 242,
+    "track_design_version": "v3.4",
+    "track_revision": 93,
+    "contract": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "creator_fx_cards": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md",
+    "creator_reference_registry": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
+    "studio2_rehydrates_track_dna_before_input_style": true,
+    "lyvra_fraggle_dna_gt_input_style": true,
+    "psytrance_primary": true,
+    "emoji_reinforcement_style_and_lyrics": true,
+    "plugin_behavior_validation": "OPEN_EVENT_GATED",
+    "no_new_router": true,
+    "no_new_controller": true,
+    "no_new_identity": true
   }
 }
