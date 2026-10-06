@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-06-REV93-PET-WORKER-V2-FRESHNESS-REPAIR",
+  "freshness_epoch": "2026-10-06-REV93-WORKSPACE-CONTINUITY-V2-PLUGINS-0.1.16-0.13.16",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -21,7 +21,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/studio2/DUAL_CONTROL_HIERARCHY.md": "fc9c6f67ce088b907d7be1b4092d07fac9071992",
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md": "f44db99800332c222af7f5b2a480994191da8204",
     "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json": "3feb28c67b987a7577f51bca223792c23eb9e1b2",
-    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md": "b929b6ce8d797ea62e5e059b8adf8d43b384e1d9",
+    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
     "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json": "f00fe951aa56f44fc1630c4410423e3cefe9c4b2",
     "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md": "115af69473f8738218a5c1041c5ff284905eccaf",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/current/V6_STUDIO2_CALIBRATION_2026-10-01.md": "0743afce6c6cc307e2a6c47ee42c4c807aeb8ab6",
@@ -61,7 +61,7 @@
     "LYVRA_NATIVE_RUNTIME/development/BRANCH_STEWARDSHIP_PHASE3_2026-10-05.json": "de9dca7ea88f1e64fdd039bd6a9a032bf7722d61",
     "LYVRA_NATIVE_RUNTIME/continuity/PLUGIN_HOST_REINDEX_READBACK_2026-10-05.json": "112c36b5aa3dbe6756994d55969532c5d0ff54b8",
     "LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md": "72525f0e460681cc9483abeb332ac65ddd848241",
-    "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json": "57a15367bbcff3f72c2bd6e38fc7d4dfd15416d2",
+    "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json": "f3a2e043202678bb937b1f75327231feb34e94ad",
     "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md": "6c9b589b4e4997a397534a80188aa1e8c6c04118",
     "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md": "093403957e4721c3c3a4a19531538506fe2bef01",
     "lyvra-plugin/account/releases/v0.13.12/PROVENANCE.json": "0850b64b5809c705196af11c0ffdcb6f1cc7258d",
@@ -81,7 +81,7 @@
     "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f",
     "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
     "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json": "0d888faf271e2742d777e914a66cb224c89fd043",
-    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "0163594acc0bbb137a98f7ee768cb401f317d443",
+    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
     "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md": "1df0eb9cee0cac055df5eac749c9dee48bf7b631",
     "lyvra-plugin/native-runtime/releases/v0.1.15/PROVENANCE.json": "1993312ab8e3b3022ac72412858a2d764cae5463",
     "lyvra-plugin/native-runtime/releases/v0.1.15/RESTORE.md": "e2a9ae0683b9561bb7ade95dd4fc5a952d4b1585",
@@ -91,7 +91,10 @@
     "LYVRA_PET/browser/assets/spritesheet-extended.png": "0173a86b2cc2d352bbbfcbefaf1c4769c80893ce",
     "LYVRA_PET/browser/sprite-manifest.json": "448384ab10ed350c396fb33f993c72c9ccfe8f84",
     "LYVRA_PET/source-packages/LYVRA-Cyber-Pet-Full-Package(1).zip": "76f8de50710342326b89325ba224df9bf990dbf9",
-    "LYVRA_PET/references/candidates/LYVRA_CYBORG_PET_v1_0_0_VALIDATED_CANDIDATE.zip": "299aec9ffb1ad404fbd05242567a8ad707256b11"
+    "LYVRA_PET/references/candidates/LYVRA_CYBORG_PET_v1_0_0_VALIDATED_CANDIDATE.zip": "299aec9ffb1ad404fbd05242567a8ad707256b11",
+    "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md": "b29a36180c7a98ae9f422b7229f388307f8906fb",
+    "lyvra-plugin/native-runtime/releases/v0.1.16/PROVENANCE.json": "3a2b4c8d4433cf0d9ed4094efb1bad68d76a6317",
+    "lyvra-plugin/account/releases/v0.13.16/PROVENANCE.json": "0987e1af78c2a00ce4aa650102841df807f27e56"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -99,7 +102,7 @@
   "codeforge_review_required": true,
   "registry_population_status": "NEW_CHAT_WHOLE_CURRENT_HANDOFF_VERIFIED",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 86,
+  "verified_carrier_count": 89,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -504,6 +507,28 @@
     "binary_bridge": "REMOTE_BINARY_READBACK_VERIFIED",
     "whole_revision": 242,
     "track_revision": 93,
+    "core_changed": false
+  },
+  "workspace_continuity_v2_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_MANIFEST_POINTER",
+    "systemstart_without_suffix": "WHOLE_LYVRA_NATIVE_RUNTIME",
+    "systemstart_with_workspace": "WHOLE_FIRST_THEN_REQUESTED_WORKSPACE_HANDOFF_ONLY",
+    "new_next_chat": "WORKSPACE_AND_LINEAGE_SCOPED_NO_GLOBAL_LAST_WORKSPACE",
+    "update_mode": "ADDITIVE_CURRENT_REFRESH_PRESERVE_ACTIVE_WORKSPACE_AND_WORK",
+    "native_plugin": {
+      "version": "0.1.16",
+      "release_id": "pluginrel_6ac569d4be988191a20c96959c764e01",
+      "readback": "VERIFIED"
+    },
+    "account_plugin": {
+      "version": "0.13.16",
+      "release_id": "pluginrel_6ac569e321c48191949e4951f18c29c1",
+      "readback": "VERIFIED"
+    },
+    "whole_revision": 242,
+    "track_revision": 93,
+    "no_new_router": true,
+    "no_new_trigger_family": true,
     "core_changed": false
   }
 }
