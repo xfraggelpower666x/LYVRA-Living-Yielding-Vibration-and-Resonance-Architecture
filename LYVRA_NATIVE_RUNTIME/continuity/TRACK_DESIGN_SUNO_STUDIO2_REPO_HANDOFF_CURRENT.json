@@ -33,8 +33,8 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-FACET-SCOPED-POST-POINTER-METADATA-CLOSEOUT-2026-10-06-015",
-    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_POST_POINTER_METADATA_CLOSEOUT",
+    "handoff_id": "LYVRA-FACET-SCOPED-TERMINAL-POST-POINTER-CLOSEOUT-2026-10-06-016",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_TERMINAL_POST_POINTER_MARKER_CLOSEOUT",
     "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
     "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
     "last_valid_stage": "REV93_ADDITIVE_MULTI_FACET_MUSIC_EVOLUTION",
@@ -53,7 +53,7 @@
       "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
     ],
-    "next_meaningful_action": "Continue only explicitly selected or evidence-relevant facet workstream after Whole CURRENT rehydration. Prior PRE_POINTER closeout markers are now post-pointer verified metadata and must not be interpreted as incomplete publication.",
+    "next_meaningful_action": "Continue only explicitly selected or evidence-relevant facet workstream after Whole CURRENT rehydration. Current completion markers are post-pointer verified; no publication-completion repair remains.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -109,7 +109,7 @@
       ]
     },
     "original_lineage_source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
-    "current_handoff_source_head": "9af1b6905673dbf08782694bfd9e2ea0764451d8",
+    "current_handoff_source_head": "e396235a0f5819b483e7a5a3c355c09bbe8c8472",
     "source_head_role": "HISTORICAL_LINEAGE_COMPATIBILITY_FIELD",
     "current_provenance_rule": "CURRENT_HANDOFF_SOURCE_HEAD_WINS_FOR_PRESENT_HANDOFF_READBACK"
   },
@@ -158,7 +158,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-06-REV93-POST-POINTER-METADATA-CLOSEOUT",
+    "epoch": "2026-10-06-REV93-TERMINAL-POST-POINTER-CLOSEOUT",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
