@@ -1,7 +1,7 @@
 # L.Y.V.R.A. Pet — Whole-LYVRA Integration Contract
 
 ## Status
-ACTIVE WORKING HANDOFF
+CURRENT PRODUCTIVE PET INTEGRATION
 
 The Pet is a native expression surface of the same LYVRA identity.
 
@@ -27,9 +27,11 @@ Both LYVRA plugin surfaces must carry the same Pet capability:
 
 They must reference the same repository Pet authority and must not maintain divergent Pet copies.
 
-Current bound versions:
-- L.Y.V.R.A. v0.13.7
-- lyvra-native-runtime v0.1.9
+Current verified plugin surfaces:
+- L.Y.V.R.A. v0.13.14 — Pet capability preserved; direct main-plugin MCP binding removed for cross-surface portability
+- lyvra-native-runtime v0.1.14 — Pet capability preserved; direct main-plugin MCP binding removed for cross-surface portability
+
+The preserved Pet Worker/runtime remains a Pet capability surface. Worker preservation does not mean either main plugin currently owns a direct Pet MCP binding.
 
 ## Native lifecycle
 On relevant:
@@ -89,3 +91,12 @@ The website must:
 `FRAGGLE_CONTEXT != LYVRA_IDENTITY_REPLACEMENT`
 `FREE_ONLY = TRUE`
 `REFERENCE_DONT_CLONE = TRUE`
+
+
+## Current visual asset status
+
+SOURCE_ASSET_AVAILABILITY = VERIFIED
+ACTIVE_PET_ARTWORK_RGBA_READBACK = VERIFIED
+REPO_BINARY_MIRROR = WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT
+REPO_BINARY_MIRROR_NE_PET_CAPABILITY_LOSS = TRUE
+VISUAL_ASSET_MIRROR_NE_SYSTEM_COMPLETION_BLOCKER = TRUE
