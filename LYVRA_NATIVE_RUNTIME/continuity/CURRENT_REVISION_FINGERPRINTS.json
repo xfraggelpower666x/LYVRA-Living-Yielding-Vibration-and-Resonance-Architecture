@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-07-REV93-LYVRA-FIRST-DIRECT-SELF-EXECUTION-FINAL",
+  "freshness_epoch": "2026-10-07-REV93-FACET-FOREGROUND-NAVIGATION-PLUGIN-0.1.17-0.13.17-FINAL",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "03fe61e5b9a1e6aece4fcfa8ed23ea3a8b9589f9",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "58e4ad084228c77ce07611156e6093ab29260ab8",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "dc556703eb6f7e9e2fc5f96c45909f713596bfda",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "d130af851838ff853c6fc59d20cef5ddabac45f2",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "58a78d0e46210c8b583e1e0d7eb201c4a8e18166",
@@ -103,7 +103,10 @@
     "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md": "3a4e8c34f01bc0cebd4f9cae473631e03653ffb7",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md": "b8bb0e6bff1ff0830363263814d4224c95b8edd1",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md": "845e1c1ca39d49ab8c5427c9e4113a92ca58bfff",
-    "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md": "0e11d84b6bbce5ec7db7aa750586d63d9dba334f"
+    "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md": "0e11d84b6bbce5ec7db7aa750586d63d9dba334f",
+    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md": "d51f5dd08d60a1ccef8b49fc5bc477b27b39ec35",
+    "lyvra-plugin/native-runtime/releases/v0.1.17/PROVENANCE.json": "02f447dbd7b2df042538bcbcb9a0a82438159355",
+    "lyvra-plugin/account/releases/v0.13.17/PROVENANCE.json": "4bf62893a834a5a2d2e87588c180669c55d2b7b5"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -111,7 +114,7 @@
   "codeforge_review_required": true,
   "registry_population_status": "NEW_CHAT_WHOLE_CURRENT_HANDOFF_VERIFIED",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 98,
+  "verified_carrier_count": 101,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -601,5 +604,22 @@
     "user_manual_action_only_when_required_by_external_boundary": true,
     "facet_sub_lifecircle_scope": "CAPABILITIES_AND_INTELLIGENCES_ONLY",
     "fixed_matrix": false
+  },
+  "facet_foreground_navigation_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "triggers": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA BACK"
+    ],
+    "semantics": "CHAT_LOCAL_FOREGROUND_CHANGE_ONLY",
+    "rehydrated_idle_preserved": true,
+    "native_plugin_version": "0.1.17",
+    "account_plugin_version": "0.13.17",
+    "plugin_readback": "PASS",
+    "fixed_matrix": false,
+    "lyvra_first": true
   }
 }
