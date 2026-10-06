@@ -1,0 +1,42 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.17",
+  "release_id": "pluginrel_6ac584288c6481919f5fa6ef1334bf40",
+  "previous_release_id": "pluginrel_6ac569e321c48191949e4951f18c29c1",
+  "previous_version": "0.13.16",
+  "scope": "USER_PRIVATE",
+  "update_date": "2026-10-07",
+  "reason": "LYVRA-first chat-local facet foreground navigation and facet capability/intelligence sub-rehydration",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "cbcc566865e7ba57318f1d11c5000a16eaca1719",
+  "overlay_sha256": "33ccab19f983d447ce3fff0fb8956cddb6d27c548be80433ad7399cab551c739",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/facet-navigation/SKILL.md",
+    "skills/instructions/SKILL.md",
+    "skills/rehydration-continuity/SKILL.md",
+    "skills/track-design/SKILL.md",
+    "skills/speech-design/SKILL.md",
+    "skills/suno-studio-2/SKILL.md"
+  ],
+  "preserved_omitted_files": true,
+  "readback": {
+    "version": "VERIFIED",
+    "release_id": "VERIFIED",
+    "facet_navigation_semantics": "VERIFIED_BY_RELEASE_UPDATE",
+    "facet_subrehydration_semantics": "VERIFIED_BY_RELEASE_UPDATE"
+  },
+  "triggers": [
+    "LYVRA MAIN",
+    "LYVRA TRACK DESIGN",
+    "LYVRA SUNO STUDIO 2",
+    "LYVRA SPEECH DESIGN",
+    "LYVRA BACK"
+  ],
+  "global_active_facet": false,
+  "cross_chat_facet_inheritance": false,
+  "fixed_matrix": false,
+  "lyvra_first": true
+}
