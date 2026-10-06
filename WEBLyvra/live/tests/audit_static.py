@@ -50,7 +50,7 @@ dash_text=dashboard.read_text()
 assert dashboard.stat().st_size < 100_000, 'Dashboard regressed to oversized inline build'
 assert 'data:image' not in dash_text, 'Dashboard must keep images as local files'
 assert 'https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html' in dash_text, 'Dashboard radio iframe changed'
-assert 'href="/dashboard/"' in (web/'index.html').read_text(), 'Main site dashboard route missing'
+assert 'href="https://dashboard.666soundsdesign-broadcaster.com/"' in (web/'index.html').read_text(), 'Main site dashboard domain link missing'
 dashboard_assets=[
     'assets/lyvra-identity/666soundsdesign-neon.png',
     'assets/lyvra-identity/lyvra-core.png',
