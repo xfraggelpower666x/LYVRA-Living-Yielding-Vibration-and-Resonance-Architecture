@@ -33,8 +33,8 @@
     ]
   },
   "handoff": {
-    "handoff_id": "LYVRA-WEBLYVRA-CURRENT-RECONCILIATION-2026-10-06-021",
-    "source_surface": "WHOLE_LYVRA_CURRENT_PRODUCTIVE_SYSTEM_COMPLETE_PLUS_WEBLYVRA_PRODUCTIVE_FREEZE",
+    "handoff_id": "LYVRA-REPOSITORY-TOPOLOGY-WORKSPACE-GOVERNANCE-2026-10-06-022",
+    "source_surface": "WHOLE_LYVRA_REPOSITORY_TOPOLOGY_AND_WORKSPACE_GOVERNANCE",
     "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
     "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
     "last_valid_stage": "REV93_ADDITIVE_MULTI_FACET_MUSIC_EVOLUTION",
@@ -53,7 +53,7 @@
       "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
       "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
     ],
-    "next_meaningful_action": "Whole LYVRA remains system-complete. WEBLyvra productive evolution is now part of Current continuity. Deferred tests remain preserved; no foreign system is activated.",
+    "next_meaningful_action": "Use the repository/project dashboard to see LYVRA-owned projects, facets and surfaces and foreground only the workspace explicitly relevant to the user's next task. Display does not activate or mutate a workspace.",
     "relevant_current_references": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md",
@@ -109,7 +109,7 @@
       ]
     },
     "original_lineage_source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
-    "current_handoff_source_head": "b220581fd4c60cd7f1c4c82b81f91655431041bd",
+    "current_handoff_source_head": "02b4dba7442ed7c7b97f183f6ff03de1ae472bbb",
     "source_head_role": "HISTORICAL_LINEAGE_COMPATIBILITY_FIELD",
     "current_provenance_rule": "CURRENT_HANDOFF_SOURCE_HEAD_WINS_FOR_PRESENT_HANDOFF_READBACK",
     "validation_backlog_status": "DEFERRED_PRESERVED_NOT_SYSTEM_COMPLETION_BLOCKER",
@@ -136,6 +136,27 @@
       "cloudflare_production_status": "SUCCESS",
       "production_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
       "core_or_facet_change": false
+    },
+    "primary_workspace": {
+      "id": "WHOLE_LYVRA_NATIVE_RUNTIME",
+      "class": "WHOLE_AUTHORITY",
+      "source": "DIRECT_LYVRA_UPDATE_CONTEXT",
+      "global": false
+    },
+    "repository_topology": {
+      "status": "CURRENT_PRODUCTIVE",
+      "topology": "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+      "workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+      "dashboard": "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md",
+      "one_primary_workspace_per_chat": true,
+      "whole_lyvra_always_present": true,
+      "dashboard_presentation_only": true
+    },
+    "pet_browser_evolution": {
+      "status": "PREPARED_NOT_DEPLOYED",
+      "worker_name": "lyvra-pet-browser",
+      "no_main_plugin_binding": true,
+      "separate_deployment_authorization_required": true
     }
   },
   "read_rules": {
@@ -183,7 +204,7 @@
     "secrets_or_tokens_forbidden": true
   },
   "freshness": {
-    "epoch": "2026-10-06-REV93-WEBLYVRA-PRODUCTIVE-CURRENT",
+    "epoch": "2026-10-06-REV93-REPOSITORY-TOPOLOGY-WORKSPACE-GOVERNANCE",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
