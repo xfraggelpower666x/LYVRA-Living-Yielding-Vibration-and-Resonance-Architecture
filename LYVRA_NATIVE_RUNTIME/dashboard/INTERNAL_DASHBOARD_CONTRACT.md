@@ -276,3 +276,34 @@ PET_CONTEXT_SWITCH_NE_PET_IDENTITY_SWITCH = true
 PET_FACET_EXPRESSION_MAY_REFLECT_CURRENT_LYVRA_DEVELOPMENT = true
 PET_VISUAL_STATE_CLAIM_REQUIRES_RENDER_EVIDENCE = true
 PET_WEBSITE_PRESENTATION_NE_INTERNAL_OPS_DASHBOARD = true
+
+
+## Repository / project topology dashboard
+
+REPOSITORY_PROJECT_DASHBOARD_PATH = LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md
+REPOSITORY_PROJECT_DASHBOARD = CURRENT_INTERNAL_PRESENTATION_SURFACE
+REPOSITORY_PROJECT_DASHBOARD_SOURCE = LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json
+
+The repository/project dashboard SHOULD be shown when Whole-LYVRA work materially involves repository structure, project selection, workspace continuation, cross-project relations, or when the user asks what LYVRA projects/surfaces exist and how they can be worked on.
+
+It SHOULD show:
+- Whole LYVRA authority
+- repository projects
+- expression projects
+- product surfaces
+- native facets
+- shared native capabilities
+- current primary workspace when resolved
+- class and repository roots
+- relation-only dependencies
+- blockers / readback-pending state
+- safe edit scope / next meaningful entry point
+
+PROJECT_DASHBOARD_NE_ROUTER = true
+PROJECT_DASHBOARD_NE_CONTROLLER = true
+PROJECT_DASHBOARD_NE_AUTHORITY = true
+PROJECT_DASHBOARD_NE_ACTIVATION = true
+PROJECT_VISIBLE_NE_ACTIVE = true
+WHOLE_LYVRA_ALWAYS_PRESENT = true
+ONE_PRIMARY_WORKSPACE_PER_CHAT = true
+REPOSITORY_HEAD_NE_WORKSPACE_SELECTION = true
