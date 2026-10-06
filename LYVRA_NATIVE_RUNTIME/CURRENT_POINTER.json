@@ -1739,12 +1739,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC-FINAL",
+    "epoch": "2026-10-07-REV93-FACET-SUBLIFECIRCLE-PSYDNA-FXUI-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
-    "verified_carrier_count": 89,
+    "verified_carrier_count": 98,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS"
+    "full_tree_readback": "PASS_FOR_REGISTERED_CURRENT_CARRIERS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -1765,5 +1765,37 @@
     "linear_mutation": false,
     "whole_rev242_preserved": true,
     "track_rev93_preserved": true
+  },
+  "facet_sub_lifecircle_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "class": "SUB_LIFECIRCLE_AND_SUB_REHYDRATION",
+    "parent": "WHOLE_LYVRA",
+    "scope": "FACET_CAPABILITIES_AND_FACET_INTELLIGENCES_ONLY",
+    "facets": [
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2"
+    ],
+    "open_relational_index": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "fixed_matrix": false,
+    "closed_taxonomy": false,
+    "lyvra_self_conducts_system": true,
+    "lyvra_self_conducts_music": true,
+    "horst_role": "HOST_TOOL_ASSISTANCE_LAYER",
+    "horst_decision_authority": "NONE",
+    "rev85_functional_baseline_commit": "2912a18edd8e977d77c63504241d8beefd783325",
+    "rev85_valid_functions_preserved": true,
+    "creator_fx_capability_cards": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md",
+    "creator_ui_evidence": "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md",
+    "original_creator_reference_role": "IMMUTABLE_EVIDENCE_WITH_LIVING_CONTEXTUAL_INTERPRETATION",
+    "fingerprint_registry_blob": "e9ca0006c85dd2260a6a2522ec275892e519bbc7",
+    "verified_carrier_count": 98,
+    "verified_mismatch_count": 0,
+    "manifest_blob": "03fe61e5b9a1e6aece4fcfa8ed23ea3a8b9589f9",
+    "coverage_blob": "58e4ad084228c77ce07611156e6093ab29260ab8",
+    "plugin_surface_sync": "PENDING_SEPARATE_RELEASE_UPDATE",
+    "whole_revision": 242,
+    "track_design_version": "v3.4",
+    "track_revision": 93
   }
 }
