@@ -29,7 +29,8 @@
     "PET_EXPRESSION_CONTINUITY": "VERIFIED_REPO_CONTINUITY_HOST_RENDER_READBACK_PENDING",
     "FACET_BOUNDARY_AND_PROMOTION_GUARD": "VERIFIED_REPO_READBACK",
     "DEVELOPMENT_OBLIGATION_LEDGER": "VERIFIED_SPEECH_PROMOTED_CURRENT",
-    "SPEECH_DESIGN": "VERIFIED_CURRENT_PRODUCTIVE_RECONCILED_FROM_VALID_DEV_LINEAGE"
+    "SPEECH_DESIGN": "VERIFIED_CURRENT_PRODUCTIVE_RECONCILED_FROM_VALID_DEV_LINEAGE",
+    "REPOSITORY_TOPOLOGY_AND_WORKSPACE": "VERIFIED_WITH_PARALLEL_SAFE_WORKSPACE_HANDOFF_V2"
   },
   "source_state": {
     "drive_whole_revision": 242,
@@ -778,15 +779,15 @@
   },
   "plugin_topology_workspace_parity_2026_10_06": {
     "status": "VERIFIED_BODY_PRE_FINAL_POINTER",
-    "native_runtime_version": "0.1.15",
-    "native_runtime_release": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
-    "account_plugin_version": "0.13.15",
-    "account_plugin_release": "pluginrel_6ac54d435b788191adf894c109db2118",
+    "native_runtime_version": "0.1.16",
+    "native_runtime_release": "pluginrel_6ac569d4be988191a20c96959c764e01",
+    "account_plugin_version": "0.13.16",
+    "account_plugin_release": "pluginrel_6ac569e321c48191949e4951f18c29c1",
     "direct_plugin_readback": "VERIFIED_BOTH",
     "topology_workspace_semantics": "VERIFIED_BOTH",
-    "dashboard_semantics": "VERIFIED_BOTH",
-    "pfs_handoff_readback": "VERIFIED",
-    "pfs_handoff_blob": "55cf4f2ceb8b7fb344f70ae1d4d7d18306582824",
+    "workspace_handoff_v2_semantics": "VERIFIED_BOTH",
+    "additive_update_semantics": "VERIFIED_BOTH",
+    "pfs_target_metadata": "REFRESHED_0.13.16_AND_0.1.16_NO_PFS_MUTATION",
     "pfs_child_mutation": false,
     "pfs_fresh_approval_required": true,
     "newer_pet_current_preserved": true,
@@ -839,5 +840,24 @@
     "plugin_versions_preserved": "0.13.15_AND_0.1.15",
     "no_foreign_autoload": true,
     "no_core_repair_required": true
+  },
+  "workspace_continuity_v2_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "recovery_branch": "lyvra-pre-workspace-continuity-v2-20261006-2331",
+    "workspace_governance": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
+    "workspace_handoff_contract": "b29a36180c7a98ae9f422b7229f388307f8906fb",
+    "specialist_handoff_contract": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
+    "fingerprint_registry": "055bb87567d695e88b3c68747d0b0723588cfcca",
+    "rehydration_manifest": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
+    "systemstart_without_suffix": "WHOLE_ONLY",
+    "systemstart_workspace_suffix": "EXACT_REQUESTED_WORKSPACE_ONLY",
+    "new_next_chat": "WORKSPACE_AND_LINEAGE_SCOPED",
+    "update": "ADDITIVE_PRESERVE_ACTIVE_WORKSPACE_AND_WORK",
+    "plugin_versions": "0.1.16_AND_0.13.16",
+    "no_global_workspace_pointer": true,
+    "no_last_writer_wins": true,
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "no_foreign_autoload": true
   }
 }
