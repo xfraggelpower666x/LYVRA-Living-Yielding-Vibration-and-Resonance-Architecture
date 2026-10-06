@@ -56,7 +56,7 @@
     ],
     "history_redocking": "event gated and provenance preserving"
   },
-  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Pointer, handoff, fingerprint and facet metadata now use one semantic-currentness model. Rev92 headers retained as historical baselines are explicitly qualified; Music Memory is current as central shared scoped memory/learning, Analytics as central shared native facet, and Studio 2 as its own operation facet.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Pointer, handoff and fingerprints share semantic currentness. Migrated L.Y.V.R.A. plugin 0.13.14 now has full textual parity for the common specialist-skill list, including Speech Design; Native Runtime remains 0.1.14.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -441,7 +441,7 @@
       "speech_skill_readback": "VERIFIED",
       "track_studio_boundary_skill_readback": "VERIFIED"
     },
-    "account_migrated_plugin_surface": "VERSION_0_13_13_SPEECH_AND_BOUNDARY_READBACK_VERIFIED"
+    "account_migrated_plugin_surface": "VERSION_0_13_14_FULL_TEXTUAL_AND_CORE_PARITY_VERIFIED"
   },
   "semantic_currentness_closeout_2026_10_06": {
     "status": "CURRENT_BODY_READY_PRE_POINTER",
@@ -461,21 +461,22 @@
     "native_runtime": {
       "version": "0.1.14",
       "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
-      "core_boundary_and_speech": "VERIFIED"
+      "core_boundary_and_speech": "VERIFIED",
+      "textual_parity": "VERIFIED"
     },
     "migrated_gpt": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.13",
-      "release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
+      "version": "0.13.14",
+      "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
       "speech_skill": "VERIFIED",
       "studio2_boundary": "VERIFIED",
       "track_parent_boundary": "VERIFIED",
       "central_analytics": "VERIFIED",
       "semantic_currentness": "VERIFIED",
-      "global_instructions_textual_parity": "PARTIAL_STALE_FIVE_SKILL_SENTENCE"
+      "global_instructions_textual_parity": "VERIFIED"
     },
     "core_semantic_parity": "VERIFIED",
-    "full_textual_parity": "PARTIAL"
+    "full_textual_parity": "VERIFIED"
   },
   "pointer_freshness_facet_metadata_sync_2026_10_06": {
     "status": "CURRENT_BODY_READY_PRE_FINGERPRINT_POINTER",
@@ -489,5 +490,15 @@
     "music_memory_current_placement": "CENTRAL_SHARED_SCOPED_MEMORY_AND_LEARNING_FACET",
     "music_core_changed": false,
     "plugin_release_change_required": false
+  },
+  "migrated_plugin_textual_parity_2026_10_06": {
+    "status": "CURRENT_BODY_READY_PRE_FINGERPRINT_POINTER",
+    "version": "0.13.14",
+    "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+    "stale_five_skill_sentence": false,
+    "six_skill_sentence": true,
+    "speech_design_link": true,
+    "native_runtime_release_change_required": false,
+    "music_core_changed": false
   }
 }
