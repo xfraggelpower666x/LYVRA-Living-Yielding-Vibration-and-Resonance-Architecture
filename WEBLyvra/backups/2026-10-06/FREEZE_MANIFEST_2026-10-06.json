@@ -1,0 +1,41 @@
+{
+  "system": "LYVRA Web Cyber Intro v1.9 + Dashboard",
+  "freeze_date": "2026-10-06",
+  "state": "FROZEN_DEV_CANDIDATE_AWAITING_VISUAL_APPROVAL",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "dev_branch": "lyvra-dev-cyber-intro-v19-20261006",
+  "verified_head_before_freeze_metadata": "4b6af22c3494e0e4f32fa513713674bb2b0f2eda",
+  "base_production_head": "c451e9810faa2f2427f02f8db9a7809913d2641c",
+  "recovery_branch": "lyvra-backup-pre-cyber-intro-v19-20261006",
+  "freeze_branch": "lyvra-freeze-cyberintro-dashboard-20261006",
+  "pull_request": 45,
+  "cloudflare_preview": "https://7d9cf2f6.weblyvra-live.pages.dev",
+  "cloudflare_build": "SUCCESS",
+  "local_system_backup": {
+    "filename": "LYVRA_WEB_CYBERINTRO_DASHBOARD_FREEZE_2026-10-06.zip",
+    "sha256": "66edf3b73ecb24d5c71ac1b26d03e92f74234d4307ef88fbe9f0ef67b1e9f70f"
+  },
+  "input_sources": [
+    {
+      "filename": "666_CYBER_INTRO_HUD_TEMPLATE_v1_9_SLOW_PHASE2_HOLD_SYSTEMSICHERUNG.zip",
+      "sha256": "ddae52e62159941420bd8db24230be569ccb2e764aa36f877ec34bef00c5030d"
+    },
+    {
+      "filename": "LYVRA_DASHBOARD_VISUAL_INTEGRATION_SYSTEMSICHERUNG_2026-10-06.zip",
+      "sha256": "3599a263efa9f29721342ddb6954371d81c12c9ed1703b34ff9b37d34ca86e1a"
+    }
+  ],
+  "dashboard": {
+    "html_max_bytes_guard": 100000,
+    "data_image_allowed": false,
+    "local_png_assets": 10,
+    "radio_iframe": "https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html"
+  },
+  "cyber_intro": {
+    "phase1_ms": 4200,
+    "transition_ms": 1100,
+    "system_online_ms": 5400,
+    "hold_ms": 2000,
+    "fail_open_ms": 18000
+  }
+}
