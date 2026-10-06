@@ -1,8 +1,8 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-AUTO-REPO-HANDOFF-2026-10-05-001",
-  "status": "ACTIVE_WORKING_BRANCH",
-  "source_branch": "work/lyvra-pet-fraggle-bond-2026-10-05",
+  "handoff_id": "LYVRA-PET-CURRENT-METADATA-CLOSEOUT-2026-10-06-002",
+  "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
+  "source_branch": "lyvra",
   "scope": [
     "WHOLE_LYVRA",
     "LYVRA_PLUGIN_SURFACES",
@@ -19,15 +19,19 @@
   "plugin_surfaces": {
     "account_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.7",
-      "pet_capability": "PRESENT",
-      "pet_mcp_binding": "VERIFIED"
+      "version": "0.13.14",
+      "release_id": "pluginrel_6ac4ecbc35208191ba1b76832930184b",
+      "pet_capability": "VERIFIED_PRESERVED",
+      "main_plugin_mcp_binding": false,
+      "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     },
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.9",
-      "pet_capability": "PRESENT",
-      "pet_mcp_binding": "VERIFIED"
+      "version": "0.1.14",
+      "release_id": "pluginrel_6ac4540900788191900933ce918b6f8e",
+      "pet_capability": "VERIFIED_PRESERVED",
+      "main_plugin_mcp_binding": false,
+      "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     }
   },
   "pet_runtime": {
@@ -68,9 +72,19 @@
     "Website integration must be additive and preserve existing WEBLyvra player, boot screen, banners, dashboard and current production behavior.",
     "No paid Cloudflare dependency may be introduced for the Pet."
   ],
-  "continuity_rule": "On future relevant LYVRA rehydration, read this handoff after Whole-LYVRA authority/currentness and before Pet/dashboard/website work scope. Preserve newer verified Pet evolution.",
+  "continuity_rule": "On future relevant LYVRA rehydration, read Whole-LYVRA authority/currentness first, then this Pet continuity carrier. Preserve newer verified Pet evolution. Do not treat the optional binary repository mirror as Pet capability loss or as a Whole-LYVRA system-completion blocker.",
   "blockers": {
-    "repo_binary_atlas_upload": "WRITE_BLOCKED",
-    "browser_host_pet_render": "READBACK_PENDING"
+    "repo_binary_atlas_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT_OPTIONAL",
+    "browser_host_pet_render": "DEFERRED_VALIDATION"
+  },
+  "asset_status": {
+    "source_asset_availability": "VERIFIED_LIBRARY_READBACK",
+    "active_atlas_local_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+    "active_stored_sha256": "41bf3f1b943bfebcf470232e9a8db4b79142eed330959f552531f5ca5042886d",
+    "rgba_pixels": "IDENTICAL",
+    "dimensions": "IDENTICAL",
+    "exact_historical_v3_zip_identity": "UNRESOLVED",
+    "repository_binary_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "system_completion_blocker": false
   }
 }
