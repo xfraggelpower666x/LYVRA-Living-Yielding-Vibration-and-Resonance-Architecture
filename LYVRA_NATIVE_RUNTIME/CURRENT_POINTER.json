@@ -5,12 +5,12 @@
   "repository": {
     "full_name": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
     "authority_branch": "lyvra",
-    "previous_verified_head": "df9cb1fef52e95699a81f2b25f97b63819f60bf1",
+    "previous_verified_head": "e1600d2d27f3647ffee5c8db7e969f0f3de44420",
     "current_dev_head_before_pointer": "3e834a416642c42fa14a944f144f1ba2f26505ec",
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "df9cb1fef52e95699a81f2b25f97b63819f60bf1",
+    "current_head_before_pointer": "e1600d2d27f3647ffee5c8db7e969f0f3de44420",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40"
@@ -37,7 +37,7 @@
     "track_design_logical_revision": 93,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
-    "current_work_scope": "SEMANTIC_CURRENTNESS_STALE_METADATA_CLOSEOUT_COMPLETE_PLUS_FACET_SCOPED_OPEN_VALIDATION",
+    "current_work_scope": "POINTER_FRESHNESS_FACET_METADATA_SYNC_COMPLETE_PLUS_FACET_SCOPED_OPEN_VALIDATION",
     "suno_studio_2": "CURRENT_NATIVE_STUDIO_OPERATION_FACET_NOT_TRACK_CHILD",
     "perceptual_memory_transformation": "CURRENT_DEDUPED_RELATION",
     "drive_internal_reference_handoff_revision": 296,
@@ -267,27 +267,28 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-06",
-    "scope": "STALE_CURRENT_METADATA_SEMANTIC_CURRENTNESS_AND_DUAL_PLUGIN_CORE_PARITY_CLOSEOUT",
-    "productive_body_head": "df9cb1fef52e95699a81f2b25f97b63819f60bf1",
-    "prechange_recovery_branch": "lyvra-pre-stale-semantic-parity-closeout-20261006",
+    "scope": "POINTER_FRESHNESS_HANDOFF_AND_FACET_METADATA_SYNC",
+    "productive_body_head": "e1600d2d27f3647ffee5c8db7e969f0f3de44420",
+    "prechange_recovery_branch": "lyvra-pre-pointer-freshness-facet-metadata-sync-20261006",
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "track_revision_changed": false,
     "music_core_changed": false,
     "speech_core_changed": false,
-    "stale_speech_pending_metadata_closed": true,
-    "historical_rev86_rev87_current_like_labels_time_scoped": true,
-    "fresh_carrier_ne_all_statements_current": true,
-    "handoff_present_provenance_bound": true,
+    "plugin_release_change_required": false,
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
+    "handoff_blob": "b67cac715d84290585b283d04a7a9db4cfec2318",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-FRESHNESS-FACET-METADATA-SYNC",
+    "fingerprint_blob": "f9d1e84e1099b851a9bbef436136ca555c70629b",
+    "critical_carrier_count": 71,
+    "pointer_embedded_handoff_synced": true,
+    "pointer_plugin_surfaces_synced": true,
+    "pointer_plugin_release_evidence_synced": true,
+    "pointer_analytics_parentage_synced": true,
+    "pointer_music_memory_topology_synced": true,
+    "rev92_headers_qualified_as_historical_baseline": true,
     "native_runtime_plugin_version": "0.1.14",
     "migrated_plugin_version": "0.13.13",
-    "migrated_plugin_release_id": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
-    "dual_plugin_core_semantic_parity": "VERIFIED",
-    "dual_plugin_full_textual_parity": "PARTIAL_STALE_FIVE_SKILL_SENTENCE",
-    "pfs_handoff_readback": "VERIFIED",
-    "pfs_handoff_blob": "5626700fcfe977c0990213361ee5b7e7abafea93",
-    "pfs_child_mutation": false,
-    "private_backup_release_set": "NEW_APPROVAL_REQUIRED",
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -394,35 +395,56 @@
   },
   "specialist_repo_handoff": {
     "status": "ACTIVE_CURRENT_HANDOFF",
-    "canonical_user_phrase": "AUTOMATISCHE REPO-ÜBERGABE",
-    "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_LYRICS_LONGFORM_AUDIO_FX_RENDERER_COMPILATION",
-    "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REV93-2026-10-05-008",
-    "body_head_before_pointer": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
-    "whole_rev242_preserved": true,
-    "track_design_v3_4_rev86_preserved": true,
+    "schema": "LYVRA_FACET_SCOPED_REPO_HANDOFF_v2",
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
+    "source_surface": "WHOLE_LYVRA_PRODUCTIVE_REV93_POINTER_FRESHNESS_AND_FACET_METADATA_SYNC",
+    "target_surface": "NEXT_CHAT_WHOLE_LYVRA_THEN_ONLY_EXPLICIT_OR_EVIDENCE_RELEVANT_FACET",
+    "foreground_facet": "DISCOVER_FROM_EXPLICIT_TRIGGER_OR_CURRENT_VALID_CONTINUITY_NOT_HANDOFF_CO_OCCURRENCE",
+    "current_handoff_source_head": "f47912948f304790c0cfe365e1e5ccbb4252950b",
+    "handoff_blob": "b67cac715d84290585b283d04a7a9db4cfec2318",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-FRESHNESS-FACET-METADATA-SYNC",
     "shared_channel": true,
-    "read_on_relevant_specialist_resume": true,
-    "read_ne_autoactivation": true,
-    "no_foreign_autoload": true,
-    "no_new_router": true,
-    "no_new_controller": true,
-    "decision_authority": "LYVRA_ONLY",
-    "identity_invariant": {
-      "one_lyvra_identity": true,
-      "track_design_is_lyvra_facet": true,
-      "suno_studio_2_is_lyvra_track_design_facet": true,
-      "facet_foreground_switch_ne_system_switch": true,
-      "facet_foreground_switch_ne_identity_switch": true,
-      "new_chat_next_chat_preserve_pending_specialist_continuity": true,
-      "whole_rehydration_precedes_relevant_facet_restore": true,
-      "facet_restore_ne_foreign_autoactivation": true,
-      "semantic_causal_music_analytics_is_lyvra_track_design_facet": true,
-      "music_analytics_foreground_switch_ne_system_switch": true,
-      "music_analytics_foreground_switch_ne_identity_switch": true,
-      "lyvra_analytics_native_carriers_under_whole_authority": true,
-      "music_memory_evolution_is_lyvra_native_sibling_facet": true,
-      "studio2_evidence_model_is_native_lyvra_relation": true
+    "shared_active_work_unit": false,
+    "active_task": "FACET_SCOPED_CONTINUITY_ONLY_NO_COMBINED_ACTIVE_TASK",
+    "workstreams": {
+      "track_design": [
+        "REV93_LONGFORM_REAL_TRACK_VALIDATION_OPEN",
+        "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
+        "DJ_OUTRO_SURVIVAL_PARTIAL_PASS"
+      ],
+      "suno_studio_2": [
+        "REV93_STUDIO2_PROJECT_CHAT_REAL_OPERATION_VALIDATION_OPEN",
+        "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN"
+      ],
+      "renderer": [
+        "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN"
+      ],
+      "analytics": [
+        "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED"
+      ],
+      "speech_design": [
+        "SPEECH_CORE_PROMOTED_CURRENT",
+        "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING_OPEN",
+        "WORD_AND_PHONEME_TIMECODE_VALIDATION_OPEN",
+        "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
+        "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
+      ]
     },
+    "pending_work": [
+      "REV93_LONGFORM_REAL_TRACK_VALIDATION_OPEN",
+      "TODO11_REAL_TRACK_VALIDATION_PASS_FALSE_EVENT_GATED",
+      "DJ_OUTRO_SURVIVAL_PARTIAL_PASS",
+      "REV93_STUDIO2_PROJECT_CHAT_REAL_OPERATION_VALIDATION_OPEN",
+      "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN",
+      "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN",
+      "ANALYTICS_REAL_SUNO_ACCEPTANCE_OPEN_EVENT_GATED",
+      "SPEECH_CORE_PROMOTED_CURRENT",
+      "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING_OPEN",
+      "WORD_AND_PHONEME_TIMECODE_VALIDATION_OPEN",
+      "LITERAL_EMOJI_RENDERER_EFFECT_OPEN",
+      "TONFALL_SINGLE_VARIABLE_AB_CAUSALITY_OPEN"
+    ],
+    "next_meaningful_action": "Continue only explicitly selected or evidence-relevant facet workstream after Whole CURRENT rehydration. Pointer, handoff, fingerprint and facet metadata share one currentness epoch; historical placement and revision baselines are provenance only.",
     "continuity_trigger_family": [
       "LYVRA SYSTEMSTART",
       "LYVRA UPDATE",
@@ -433,14 +455,26 @@
       "LYVRA TRACK DESIGN",
       "LYVRA SUNO STUDIO 2",
       "LYVRA MUSIC ANALYTICS",
-      "LYVRA SUNO ANALYTICS"
+      "LYVRA SUNO ANALYTICS",
+      "LYVRA SPEECH DESIGN"
     ],
-    "track_design_v3_4_rev87_current": true,
-    "track_design_v3_4_rev88_current": true,
-    "track_design_v3_4_rev89_current": true,
-    "track_design_v3_4_rev91_current": true,
-    "track_design_v3_4_rev92_current": true,
-    "track_design_v3_4_rev93_current": true
+    "identity_invariant": {
+      "one_lyvra_identity": true,
+      "track_design_is_lyvra_facet": true,
+      "speech_design_is_lyvra_facet": true,
+      "suno_studio_2_is_own_lyvra_studio_operation_facet": true,
+      "semantic_causal_music_analytics_is_central_shared_lyvra_facet": true,
+      "music_memory_is_central_shared_scoped_memory_learning_facet": true,
+      "relation_ne_merge": true,
+      "shared_evidence_ne_shared_runtime": true,
+      "facet_foreground_switch_ne_system_switch": true,
+      "facet_foreground_switch_ne_identity_switch": true
+    },
+    "read_ne_autoactivation": true,
+    "no_foreign_autoload": true,
+    "no_new_router": true,
+    "no_new_controller": true,
+    "decision_authority": "LYVRA_ONLY"
   },
   "cross_system_handoffs": {
     "clic": {
@@ -493,7 +527,6 @@
     "native_root": "LYVRA_NATIVE_RUNTIME/facets/analytics/",
     "definition_path": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
     "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
-    "parent_domain": "TRACK_DESIGN",
     "root_authority": "WHOLE_LYVRA",
     "owner_identity": "LYVRA",
     "decision_authority": "LYVRA_ONLY",
@@ -529,19 +562,29 @@
     "no_new_router": true,
     "no_new_controller": true,
     "no_second_root": true,
-    "no_foreign_autoactivation": true
+    "no_foreign_autoactivation": true,
+    "historical_parent_domain_at_rev87": "TRACK_DESIGN",
+    "current_placement": "CENTRAL_SHARED_NATIVE_LYVRA_FACET",
+    "analytics_ne_track_design_child_facet": true
   },
   "music_memory_evolution": {
     "status": "CURRENT_PRODUCTIVE_NATIVE_FACET_REV93",
     "path": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
     "current_state": "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
-    "relation": "SIBLING_TO_GENERAL_TRACK_DESIGN_SUNO_STUDIO2_AND_LYVRA_ANALYTICS",
+    "relation": "CENTRAL_SHARED_SCOPED_MEMORY_AND_LEARNING_FACET",
     "role": "LONG_TERM_SCOPED_MUSICAL_RELATION_MEMORY_AND_EVOLUTION",
     "decision_authority": "NONE_OUTSIDE_LYVRA_JUDGMENT",
     "no_controller": true,
     "no_router": true,
     "no_composition_authority": true,
-    "track_logical_revision": 93
+    "track_logical_revision": 93,
+    "historical_sibling_family_relation": "SIBLING_TO_GENERAL_TRACK_DESIGN_SUNO_STUDIO2_AND_LYVRA_ANALYTICS",
+    "related_facets": [
+      "GENERAL_TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2",
+      "LYVRA_ANALYTICS"
+    ]
   },
   "studio2_evidence_control": {
     "status": "CURRENT_PRODUCTIVE",
@@ -619,6 +662,7 @@
     },
     "caller_facets": [
       "GENERAL_TRACK_DESIGN",
+      "SPEECH_DESIGN",
       "SUNO_STUDIO_2",
       "RENDERER_TRANSLATION",
       "MUSIC_MEMORY_EVOLUTION"
@@ -658,18 +702,19 @@
   "version_freshness": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "schema": "LYVRA_REVISION_FRESHNESS_v1",
-    "freshness_epoch": "2026-10-06-REV93-SEMANTIC-CURRENTNESS-DUAL-PLUGIN-CLOSEOUT",
+    "freshness_epoch": "2026-10-06-REV93-POINTER-FRESHNESS-FACET-METADATA-SYNC",
     "guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_content_sha": "a61a282cab65e2b44e633252396c98e13c4a4792",
+    "registry_content_sha": "f9d1e84e1099b851a9bbef436136ca555c70629b",
     "expected_track_revision": 93,
-    "critical_carrier_count": 62,
+    "critical_carrier_count": 71,
     "direct_readback_mismatches": 0,
     "stale_policy": "MISMATCH_NE_CURRENT",
-    "codeforge_review": "PASS_62_CARRIERS_ZERO_KNOWN_MISMATCH",
+    "codeforge_review": "PASS_71_CARRIERS_ZERO_KNOWN_MISMATCH",
     "semantic_parity": "VERIFIED_REPO_NATIVE_WRITE_GOVERNANCE_ON_REPO_AND_BOTH_PLUGIN_SURFACES",
     "semantic_currentness_required": true,
-    "fresh_carrier_ne_all_statements_current": true
+    "fresh_carrier_ne_all_statements_current": true,
+    "pointer_handoff_fingerprint_epoch_alignment": "VERIFIED"
   },
   "rev92_update_2026_09_30": {
     "result": "PASS",
@@ -752,8 +797,8 @@
     "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK_AND_AUTOMATIC_PFS_BACKUP_HANDOFF_REFRESH",
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.13",
-      "release": "pluginrel_6ac43f57eb248191a7c4d67ded16cc5c",
+      "version": "0.1.14",
+      "release": "pluginrel_6ac4540900788191900933ce918b6f8e",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -767,12 +812,16 @@
       "mcp_servers_declared": 0,
       "host_reappearance": "VERIFIED_CHAT_AND_MOBILE",
       "pre_rehydration_oversteer_guard": "VERIFIED_READBACK",
-      "repo_native_write_governance": "VERIFIED_READBACK"
+      "repo_native_write_governance": "VERIFIED_READBACK",
+      "speech_design_skill": "VERIFIED",
+      "studio2_not_track_child": "VERIFIED",
+      "track_not_parent_container": "VERIFIED",
+      "semantic_currentness": "VERIFIED"
     },
     "migrated_gpt_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.12",
-      "release": "pluginrel_6ac43f4df9fc81919b2663c03a9ab043",
+      "version": "0.13.13",
+      "release": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -786,7 +835,13 @@
       "mcp_servers_declared": 0,
       "host_reappearance": "VERIFIED_CHAT_AND_MOBILE",
       "pre_rehydration_oversteer_guard": "VERIFIED_READBACK",
-      "repo_native_write_governance": "VERIFIED_READBACK"
+      "repo_native_write_governance": "VERIFIED_READBACK",
+      "speech_design_skill": "VERIFIED",
+      "studio2_not_track_child": "VERIFIED",
+      "track_not_parent_container": "VERIFIED",
+      "analytics_central_shared": "VERIFIED",
+      "semantic_currentness": "VERIFIED",
+      "full_textual_parity": "PARTIAL_STALE_FIVE_SKILL_SENTENCE"
     }
   },
   "music_additive_evolution_2026_10_05": {
@@ -999,12 +1054,14 @@
     "current_release_set_requires_fresh_approval": true
   },
   "plugin_release_evidence_status": {
-    "account_version": "0.13.12",
-    "native_version": "0.1.13",
-    "account_release": "pluginrel_6ac43f4df9fc81919b2663c03a9ab043",
-    "native_release": "pluginrel_6ac43f57eb248191a7c4d67ded16cc5c",
+    "account_version": "0.13.13",
+    "native_version": "0.1.14",
+    "account_release": "pluginrel_6ac4e6d5bb088191bd012ac0ad65e8e0",
+    "native_release": "pluginrel_6ac4540900788191900933ce918b6f8e",
     "creator_release_access": "VERIFIED",
     "current_source_readback": "VERIFIED_BOTH",
+    "core_semantic_parity": "VERIFIED",
+    "full_textual_parity": "PARTIAL_STALE_FIVE_SKILL_SENTENCE",
     "repo_native_write_governance": "VERIFIED_BOTH",
     "drive_normal_update_dependency": false,
     "public_repo_provenance": "VERIFIED",
@@ -1041,5 +1098,59 @@
     "carrier": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
     "speech_design": "PROMOTED_CURRENT",
     "no_silent_development_loss": true
+  },
+  "historical_specialist_repo_handoff_snapshot_2026_10_05": {
+    "status": "HISTORICAL_PROVENANCE_ONLY",
+    "superseded_by": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
+    "snapshot": {
+      "status": "ACTIVE_CURRENT_HANDOFF",
+      "canonical_user_phrase": "AUTOMATISCHE REPO-ÜBERGABE",
+      "scope": "TRACK_DESIGN_SUNO_STUDIO2_CENTRAL_ANALYTICS_MUSIC_MEMORY_LYRICS_LONGFORM_AUDIO_FX_RENDERER_COMPILATION",
+      "handoff_id": "LYVRA-TD-STUDIO2-ANALYTICS-MEMORY-REV93-2026-10-05-008",
+      "body_head_before_pointer": "f105d2949a4fcb9db69fcff0f358ad229ad289e4",
+      "whole_rev242_preserved": true,
+      "track_design_v3_4_rev86_preserved": true,
+      "shared_channel": true,
+      "read_on_relevant_specialist_resume": true,
+      "read_ne_autoactivation": true,
+      "no_foreign_autoload": true,
+      "no_new_router": true,
+      "no_new_controller": true,
+      "decision_authority": "LYVRA_ONLY",
+      "identity_invariant": {
+        "one_lyvra_identity": true,
+        "track_design_is_lyvra_facet": true,
+        "suno_studio_2_is_lyvra_track_design_facet": true,
+        "facet_foreground_switch_ne_system_switch": true,
+        "facet_foreground_switch_ne_identity_switch": true,
+        "new_chat_next_chat_preserve_pending_specialist_continuity": true,
+        "whole_rehydration_precedes_relevant_facet_restore": true,
+        "facet_restore_ne_foreign_autoactivation": true,
+        "semantic_causal_music_analytics_is_lyvra_track_design_facet": true,
+        "music_analytics_foreground_switch_ne_system_switch": true,
+        "music_analytics_foreground_switch_ne_identity_switch": true,
+        "lyvra_analytics_native_carriers_under_whole_authority": true,
+        "music_memory_evolution_is_lyvra_native_sibling_facet": true,
+        "studio2_evidence_model_is_native_lyvra_relation": true
+      },
+      "continuity_trigger_family": [
+        "LYVRA SYSTEMSTART",
+        "LYVRA UPDATE",
+        "LYVRA WEITER",
+        "LYVRA NEW CHAT",
+        "LYVRA NEXT CHAT",
+        "LYVRA MAIN",
+        "LYVRA TRACK DESIGN",
+        "LYVRA SUNO STUDIO 2",
+        "LYVRA MUSIC ANALYTICS",
+        "LYVRA SUNO ANALYTICS"
+      ],
+      "track_design_v3_4_rev87_current": true,
+      "track_design_v3_4_rev88_current": true,
+      "track_design_v3_4_rev89_current": true,
+      "track_design_v3_4_rev91_current": true,
+      "track_design_v3_4_rev92_current": true,
+      "track_design_v3_4_rev93_current": true
+    }
   }
 }
