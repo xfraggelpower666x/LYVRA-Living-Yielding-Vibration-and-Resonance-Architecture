@@ -5,6 +5,7 @@
   "authority_source": "repository current state on branch lyvra",
   "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
   "required_order": [
+    "PRE_REHYDRATION_OVERSTEER_GUARD",
     "AUTHORITY_AND_CURRENT_POINTER",
     "IDENTITY_PRESENCE",
     "LEITBILD_RESPONSIBILITY",
@@ -142,6 +143,9 @@
       "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json",
       "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md",
       "WEBLyvra/PET_INTEGRATION_HANDOFF.md"
+    ],
+    "PRE_REHYDRATION_OVERSTEER_GUARD": [
+      "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md"
     ]
   },
   "validation_closeout": {
@@ -356,5 +360,16 @@
     },
     "foreign_mutation": false,
     "authority_transfer": false
+  },
+  "pre_rehydration_oversteer_guard_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE",
+    "runs_before_any_rehydration": true,
+    "self_heal": "READ_ONLY_RESTORE_EXECUTION_TO_VERIFIED_CURRENT_CONTRACT",
+    "drive_current_override": false,
+    "facet_merge_from_relation": false,
+    "specialist_foreground_requires_current_evidence_or_explicit_direct_trigger": true,
+    "plugin_parity_required": true,
+    "manual_recovery_signal": "FUCK HORST",
+    "manual_signal_ne_confirmed_damage": true
   }
 }
