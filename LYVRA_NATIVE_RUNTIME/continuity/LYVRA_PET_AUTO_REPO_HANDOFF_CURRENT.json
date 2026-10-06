@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-BROWSER-RENDERER-PLUGIN-SYNC-2026-10-06-004",
+  "handoff_id": "LYVRA-PET-CURRENT-BINARY-BRIDGE-CLOSEOUT-2026-10-06-005",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -45,7 +45,7 @@
     "cost_policy": "FREE_ONLY",
     "browser_root": "LYVRA_PET/browser/",
     "browser_renderer_status": "VERIFIED_REPOSITORY_CURRENT",
-    "browser_renderer_asset_status": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "browser_renderer_asset_status": "REMOTE_BINARY_READBACK_VERIFIED",
     "browser_host_binding": "NONE",
     "deployment_status": "NOT_DEPLOYED"
   },
@@ -79,7 +79,7 @@
   ],
   "continuity_rule": "On future relevant LYVRA rehydration, read Whole-LYVRA authority/currentness first, then this Pet continuity carrier. Preserve newer verified Pet evolution. Do not treat the optional binary repository mirror as Pet capability loss or as a Whole-LYVRA system-completion blocker.",
   "blockers": {
-    "repo_binary_atlas_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "repo_binary_atlas_mirror": "RESOLVED_REMOTE_BINARY_READBACK_VERIFIED",
     "browser_host_pet_render": "READY_NOT_DEPLOYED"
   },
   "asset_status": {
@@ -89,16 +89,29 @@
     "rgba_pixels": "IDENTICAL",
     "dimensions": "IDENTICAL",
     "exact_historical_v3_zip_identity": "UNRESOLVED",
-    "repository_binary_mirror": "WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT",
+    "repository_binary_mirror": "REMOTE_BINARY_READBACK_VERIFIED",
     "system_completion_blocker": false,
     "browser_renderer_code": "VERIFIED_REPOSITORY_CURRENT",
     "browser_renderer_local_http_test": "PASS",
-    "cyborg_candidate_promoted": false
+    "cyborg_candidate_promoted": false,
+    "remote_binary_commit": "243eaf3e8baccaf4e103d05fcfb983b0a08252a7",
+    "active_atlas_git_blob": "0173a86b2cc2d352bbbfcbefaf1c4769c80893ce",
+    "full_package_git_blob": "76f8de50710342326b89325ba224df9bf990dbf9",
+    "cyborg_candidate_git_blob": "299aec9ffb1ad404fbd05242567a8ad707256b11"
   },
   "plugin_sync_2026_10_06": {
     "topology_workspace_release_set": "0.13.15_AND_0.1.15",
     "direct_plugin_readback": "VERIFIED",
     "main_plugin_mcp_binding": false,
     "pet_runtime_files_omitted_and_preserved": true
+  },
+  "binary_bridge": {
+    "status": "CURRENT_NATIVE_CAPABILITY_VERIFIED_FIRST_USE",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md",
+    "bridge_version": "1.0.0",
+    "bridge_remote_readback": "PASS",
+    "pointer_mutation_by_bridge": false,
+    "plugin_mutation_by_bridge": false,
+    "deployment_by_bridge": false
   }
 }
