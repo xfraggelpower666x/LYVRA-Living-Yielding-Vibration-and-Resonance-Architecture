@@ -1,0 +1,26 @@
+{
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-06",
+  "surface": "L.Y.V.R.A. Account Plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.12",
+  "release_id": "pluginrel_6ac43f4df9fc81919b2663c03a9ab043",
+  "creator_release_is_current": true,
+  "change": "REPO_NATIVE_WRITE_GOVERNANCE_DRIVE_LOCK_RETIREMENT",
+  "current_source_readback": "VERIFIED",
+  "drive_role": [
+    "HISTORY",
+    "BACKUP",
+    "RECOVERY"
+  ],
+  "drive_normal_update_dependency": false,
+  "drive_lock_registry_dependency": "RETIRED_LEGACY",
+  "concurrency_model": "REPO_HEAD_PLUS_BLOB_SHA_AND_PLUGIN_EXPECTED_RELEASE_ID",
+  "public_repo_payload_copy": false,
+  "plugin_discoverability": "PRIVATE",
+  "preservation": {
+    "plugin_identity_preserved": true,
+    "unchanged_files_overlay_preserved": true,
+    "historical_releases_preserved": true
+  }
+}
