@@ -200,3 +200,21 @@ SPEECH_GOVERNED_PROMOTION = COMPLETED
 SPEECH_CURRENT = true
 SPEECH_DEV_LINEAGE = HISTORICAL_PROVENANCE
 OPEN_SPEECH_VALIDATION_NE_CORE_DEMOTION = true
+
+
+## Workspace continuity v2 supersession
+
+Generic cross-chat workspace continuity is governed by:
+`LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md`
+
+This specialist contract remains valid for Track Design / Studio 2 / Analytics specialist continuity inside the selected workspace, but it is NOT the global NEW CHAT / NEXT CHAT workspace selector.
+
+SYSTEMSTART_WITHOUT_SUFFIX = WHOLE_LYVRA_NATIVE_RUNTIME
+SYSTEMSTART_WITH_WORKSPACE_SUFFIX = WHOLE_FIRST_THEN_REQUESTED_WORKSPACE
+GENERIC_WORKSPACE_HANDOFF_PRECEDES_SPECIALIST_HANDOFF_SELECTION = true
+SPECIALIST_HANDOFF_MAY_NOT_SELECT_UNREQUESTED_WORKSPACE = true
+PARALLEL_WORKSPACE_HANDOFF_LINES_MUST_NOT_OVERWRITE_EACH_OTHER = true
+GLOBAL_LAST_WORKSPACE_WINS = FORBIDDEN
+UPDATE_PRESERVES_CURRENT_CHAT_WORKSPACE = true
+
+Historical wording in this file that implies a single shared cross-chat handoff for all workspaces is superseded by the generic workspace-handoff contract. Specialist continuity remains scoped evidence only.
