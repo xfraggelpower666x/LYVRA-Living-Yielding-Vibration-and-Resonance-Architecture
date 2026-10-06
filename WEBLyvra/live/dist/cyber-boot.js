@@ -2,8 +2,7 @@
 // Replaces the previous simple cyber boot while preserving the existing site underneath.
 (() => {
   'use strict';
-  const KEY='lyvra-cyber-boot-v2';
-  try { if (sessionStorage.getItem(KEY)==='done') return; } catch {}
+  const RELEASE='cyber-intro-v1.9-r2-20261006';
 
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const INTRO_MS = reduced ? 700 : 4200;
@@ -13,7 +12,7 @@
   const FAIL_OPEN_MS = reduced ? 4000 : 18000;
 
   const base = new URL('.', import.meta.url);
-  const asset = name => new URL(`./assets/cyber-intro/${name}`, base).href;
+  const asset = name => { const u=new URL(`./assets/cyber-intro/${name}`, base); u.searchParams.set('v',RELEASE); return u.href; };
   ['intro-background.jpg','intro-brand.png','center-emblem.png'].forEach((name, i) => {
     const link=document.createElement('link');
     link.rel='preload'; link.as='image'; link.href=asset(name);
@@ -22,7 +21,7 @@
   });
 
   const css=document.createElement('link');
-  css.rel='stylesheet'; css.href=new URL('./cyber-boot.css', base).href;
+  css.rel='stylesheet'; { const u=new URL('./cyber-boot.css', base); u.searchParams.set('v',RELEASE); css.href=u.href; }
   let cssReady=false;
   css.addEventListener('load',()=>{ cssReady=true; begin(); },{once:true});
   css.addEventListener('error',()=>{ css.remove(); },{once:true});
@@ -97,7 +96,6 @@
     }
     function finishSite(){
       if(ended) return; ended=true; cancelAnimationFrame(raf);
-      try{sessionStorage.setItem(KEY,'done')}catch{}
       root.classList.add('system-started');
       window.dispatchEvent(new CustomEvent('lyvra:system-start',{detail:{root}}));
       host.classList.add('lyvra-host-exit');
