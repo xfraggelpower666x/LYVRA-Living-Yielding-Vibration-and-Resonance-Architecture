@@ -739,5 +739,19 @@
     "no_global_workspace_pointer": true,
     "no_new_router": true,
     "no_new_trigger_family": true
+  },
+  "weblyvra_freshness_sync_2026_10_07": {
+    "status": "CURRENT_BODY_READY_PRE_COVERAGE_POINTER",
+    "source_head": "84724b415dfaeeb6513171eb171038dc87243054",
+    "updated_carrier": "WEBLyvra/live/dist/index.html",
+    "current_blob": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
+    "fingerprint_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "plugins_preserved": "0.13.16_AND_0.1.16",
+    "workspace_continuity_v2_preserved": true,
+    "core_changed": false,
+    "pfs_mutation": false,
+    "linear_mutation": false
   }
 }
