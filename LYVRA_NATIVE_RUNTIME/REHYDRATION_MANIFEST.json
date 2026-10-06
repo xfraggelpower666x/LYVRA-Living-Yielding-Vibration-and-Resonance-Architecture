@@ -21,6 +21,7 @@
     "MACHINE_ROOM_CONTINUITY",
     "OPERATIONS_CENTER_CONTINUITY",
     "FACET_LIFECIRCLE_REHYDRATION",
+    "FACET_FOREGROUND_NAVIGATION",
     "TRACK_MUSIC_INTELLIGENCE",
     "CURRENT_TRACK_REFERENCES",
     "NATIVE_SKILLS_AND_ADAPTERS",
@@ -193,6 +194,9 @@
     ],
     "FACET_LIFECIRCLE_REHYDRATION": [
       "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md"
+    ],
+    "FACET_FOREGROUND_NAVIGATION": [
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md"
     ]
   },
   "validation_closeout": {
@@ -813,5 +817,26 @@
     "plugin_release_sync": "PENDING_SEPARATE_RELEASE_UPDATE",
     "whole_revision": 242,
     "track_revision": 93
+  },
+  "facet_foreground_navigation_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "scope": "CHAT_LOCAL_FACET_FOREGROUND_ONLY",
+    "whole_always_present": true,
+    "triggers": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA BACK"
+    ],
+    "facet_switch_ne_reset": true,
+    "facet_switch_ne_overwrite": true,
+    "facet_switch_ne_rehydration_loss": true,
+    "rehydrated_idle_preserved": true,
+    "global_active_facet": false,
+    "cross_chat_inheritance": false,
+    "native_plugin": "0.1.17",
+    "account_plugin": "0.13.17",
+    "plugin_readback": "PASS"
   }
 }
