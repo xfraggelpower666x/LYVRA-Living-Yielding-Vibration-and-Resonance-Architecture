@@ -510,7 +510,7 @@
     "core_changed": false
   },
   "workspace_continuity_v2_2026_10_06": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_FULL_CARRIER_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "systemstart_without_suffix": "WHOLE_LYVRA_NATIVE_RUNTIME",
     "systemstart_with_workspace": "WHOLE_FIRST_THEN_REQUESTED_WORKSPACE_HANDOFF_ONLY",
     "new_next_chat": "WORKSPACE_AND_LINEAGE_SCOPED_NO_GLOBAL_LAST_WORKSPACE",
@@ -531,6 +531,15 @@
     "no_new_trigger_family": true,
     "core_changed": false,
     "manifest_blob": "8d2b877bd4bcc32e925d3d5bcb8c73ce92dda1c1",
-    "coverage_blob": "28b904c08132c494131ae577c5d9f357062d58ec"
+    "coverage_blob": "28b904c08132c494131ae577c5d9f357062d58ec",
+    "full_carrier_tree_readback": {
+      "source_head": "ec9b6b2c7d72711402571b08985e60a253db7df3",
+      "tree_sha": "b0f8392285d5b18bb891c06b8be192699f439978",
+      "checked": 89,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
