@@ -1,0 +1,19 @@
+{
+  "status": "CURRENT_VERIFIED_PRIVATE_PLUGIN_RELEASE_EVIDENCE",
+  "date": "2026-10-06",
+  "surface": "LYVRA Native Runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.12",
+  "release_id": "pluginrel_6ac43df54f048191b1f6c86018753adc",
+  "creator_release_is_current": true,
+  "change": "PRE_REHYDRATION_OVERSTEER_GUARD",
+  "current_source_readback": "VERIFIED",
+  "drive_role": "HISTORY_BACKUP_RECOVERY_ONLY",
+  "public_repo_payload_copy": false,
+  "plugin_discoverability": "PRIVATE",
+  "preservation": {
+    "plugin_identity_preserved": true,
+    "unchanged_files_overlay_preserved": true,
+    "historical_releases_preserved": true
+  }
+}
