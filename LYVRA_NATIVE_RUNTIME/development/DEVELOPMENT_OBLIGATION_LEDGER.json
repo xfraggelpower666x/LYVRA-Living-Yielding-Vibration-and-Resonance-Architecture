@@ -1,0 +1,57 @@
+{
+  "schema": "LYVRA_DEVELOPMENT_OBLIGATION_LEDGER_v1",
+  "status": "CURRENT_PRODUCTIVE_GOVERNANCE_LEDGER",
+  "updated_at": "2026-10-06",
+  "authority": "LYVRA_ONLY",
+  "rule": "NO_SILENT_PROMOTION_AND_NO_SILENT_DEVELOPMENT_LOSS",
+  "allowed_states": [
+    "PROPOSED",
+    "DEV_ACTIVE",
+    "ACCEPTED_PENDING_PROMOTION",
+    "DEFERRED_WITH_REASON",
+    "REJECTED_WITH_REASON",
+    "SUPERSEDED",
+    "PROMOTED_CURRENT"
+  ],
+  "obligations": [
+    {
+      "id": "SPEECH_DESIGN_RECOVERY_2026_10_06",
+      "domain": "SPEECH_DESIGN",
+      "state": "ACCEPTED_PENDING_PROMOTION",
+      "canonical_trigger": "LYVRA SPEECH DESIGN",
+      "variants": [
+        "LYVRA SPEECH DESIGN ERWEITERT",
+        "LYVRA SPEECH DESIGN EINFACH",
+        "LYVRA SPEECH DESIGN REPAIR"
+      ],
+      "evidence": {
+        "dev_prs": [
+          23,
+          32
+        ],
+        "real_render_evidence": true,
+        "offline_test_evidence": "60_CASE_PASS_IN_PR23_HISTORY",
+        "productive_current_carrier_present": false
+      },
+      "preserve": [
+        "SCRIPT_TONFALL_SEPARATION",
+        "MODE_AWARE_SPEECH_UI",
+        "SEMANTIC_EMOJI_MEANING_PRESERVATION",
+        "SPEECH_RENDERER_TRANSLATION",
+        "REAL_RENDER_EVIDENCE",
+        "VALID_TEST_ASSETS"
+      ],
+      "rehome": [
+        "TRACK_DESIGN_CHILD_PLACEMENT_IF_PRESENT"
+      ],
+      "forbid": [
+        "BLIND_MERGE_PR23",
+        "BLIND_MERGE_PR32",
+        "REBUILD_FROM_SCRATCH",
+        "SILENT_DROP",
+        "AUTO_PROMOTION_WITHOUT_CURRENT_RECONCILIATION"
+      ],
+      "next_action": "RECONCILE_VALID_PR23_PR32_SPEECH_CAPABILITIES_WITH_NEWER_CURRENT_AND_PROMOTE_ONLY_AFTER_GOVERNED_CURRENT_READBACK"
+    }
+  ]
+}
