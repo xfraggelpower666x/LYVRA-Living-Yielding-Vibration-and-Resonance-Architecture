@@ -1,0 +1,209 @@
+{
+  "schema": "LYVRA_REPOSITORY_TOPOLOGY_V1",
+  "status": "CURRENT_PRODUCTIVE",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "authority_branch": "lyvra",
+  "identity_authority": "WHOLE_LYVRA",
+  "purpose": "Classify repository roots by architectural role so project, facet, product surface, shared capability, documentation and recovery remain distinct without creating a second LYVRA system.",
+  "invariants": {
+    "WHOLE_LYVRA_ALWAYS_PRESENT": true,
+    "ONE_PRIMARY_WORKSPACE_PER_CHAT": true,
+    "GLOBAL_ACTIVE_WORKSPACE": false,
+    "REPOSITORY_HEAD_NE_WORKSPACE_SELECTION": true,
+    "WORKSPACE_NE_IDENTITY": true,
+    "PROJECT_NE_FACET": true,
+    "FACET_NE_PROJECT": true,
+    "PRODUCT_SURFACE_NE_WHOLE_AUTHORITY": true,
+    "SHARED_CAPABILITY_NE_PARENTAGE": true,
+    "RELATION_NE_SCOPE_TRANSFER": true,
+    "CO_OCCURRENCE_NE_ACTIVATION": true,
+    "CROSS_CHAT_WORKSPACE_INHERITANCE": false,
+    "NO_NEW_TRIGGER": true,
+    "NO_NEW_ROUTER": true,
+    "NO_SECOND_LYVRA_SYSTEM": true
+  },
+  "classes": [
+    "WHOLE_AUTHORITY",
+    "PROJECT",
+    "EXPRESSION_PROJECT",
+    "PRODUCT_SURFACE",
+    "FACET",
+    "SHARED_NATIVE_CAPABILITY",
+    "DOCUMENTATION",
+    "BACKUP_RECOVERY_SUPPORT"
+  ],
+  "repository_roots": [
+    {
+      "id": "WHOLE_LYVRA_NATIVE_RUNTIME",
+      "class": "WHOLE_AUTHORITY",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/"
+      ],
+      "role": "Whole-LYVRA current authority, governance, rehydration, continuity and native facet host.",
+      "workspace_selectable": true,
+      "identity_relation": "WHOLE_LYVRA"
+    },
+    {
+      "id": "WEBLYVRA",
+      "class": "PROJECT",
+      "roots": [
+        "WEBLyvra/"
+      ],
+      "aliases": [
+        "weblyvra",
+        "website",
+        "dashboard",
+        "cyber intro",
+        "web"
+      ],
+      "role": "LYVRA website product and deployment project.",
+      "workspace_selectable": true,
+      "identity_relation": "LYVRA_OWNED_PROJECT_NOT_WHOLE_IDENTITY",
+      "current_relation": "CURRENT_PRODUCTIVE_VERIFIED"
+    },
+    {
+      "id": "LYVRA_PET",
+      "class": "EXPRESSION_PROJECT",
+      "roots": [
+        "LYVRA_PET/"
+      ],
+      "aliases": [
+        "pet",
+        "lyvra pet",
+        "cyber pet"
+      ],
+      "role": "Visible expression project of the same LYVRA identity with its own browser/runtime/deployment scope.",
+      "workspace_selectable": true,
+      "identity_relation": "SAME_LYVRA_IDENTITY_VISIBLE_EXPRESSION",
+      "browser_runtime_relation": "PREPARED_INDEPENDENT_BROWSER_SURFACE_NOT_MAIN_PLUGIN_BINDING",
+      "cross_project_mutation_default": false
+    },
+    {
+      "id": "LYVRA_PLUGIN_SURFACES",
+      "class": "PRODUCT_SURFACE",
+      "roots": [
+        "lyvra-plugin/account/",
+        "lyvra-plugin/native-runtime/"
+      ],
+      "aliases": [
+        "plugin",
+        "plugins",
+        "account plugin",
+        "native runtime plugin"
+      ],
+      "role": "Packaged execution surfaces of LYVRA current capability.",
+      "workspace_selectable": true,
+      "identity_relation": "EXECUTION_SURFACES_NOT_SEPARATE_IDENTITY"
+    },
+    {
+      "id": "LYVRAGPT",
+      "class": "PRODUCT_SURFACE",
+      "roots": [
+        "LyvraGPT/"
+      ],
+      "aliases": [
+        "lyvragpt",
+        "gpt surface"
+      ],
+      "role": "GPT/host-facing product surface and release history.",
+      "workspace_selectable": true,
+      "identity_relation": "PRODUCT_SURFACE_NOT_WHOLE_AUTHORITY"
+    },
+    {
+      "id": "ROOT_MUSIC_LANGUAGE_SYSTEM",
+      "class": "SHARED_NATIVE_CAPABILITY",
+      "roots": [
+        "LYVRA_ROOT_MUSIC_LANGUAGE_SYSTEM/"
+      ],
+      "aliases": [
+        "root music language",
+        "music language"
+      ],
+      "role": "Shared native music/language capability consumed selectively by LYVRA domains.",
+      "workspace_selectable": false,
+      "identity_relation": "SHARED_CAPABILITY_NOT_FACET_PARENT"
+    },
+    {
+      "id": "REPOSITORY_DOCUMENTATION",
+      "class": "DOCUMENTATION",
+      "roots": [
+        "docs/"
+      ],
+      "workspace_selectable": false,
+      "authority": false
+    },
+    {
+      "id": "REPOSITORY_BACKUPS",
+      "class": "BACKUP_RECOVERY_SUPPORT",
+      "roots": [
+        "backups/"
+      ],
+      "workspace_selectable": false,
+      "authority": false
+    }
+  ],
+  "native_facets": [
+    {
+      "id": "TRACK_DESIGN",
+      "class": "FACET",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/current/music/",
+        "LYVRA_NATIVE_RUNTIME/music/"
+      ],
+      "role": "Track and music construction.",
+      "workspace_selectable": true
+    },
+    {
+      "id": "SPEECH_DESIGN",
+      "class": "FACET",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/facets/speech_design/"
+      ],
+      "role": "Speech, narrative, prosody and speech renderer translation.",
+      "workspace_selectable": true
+    },
+    {
+      "id": "SUNO_STUDIO_2",
+      "class": "FACET",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/facets/studio2/"
+      ],
+      "role": "Studio/project/edit/mix/FX operation.",
+      "workspace_selectable": true
+    },
+    {
+      "id": "CENTRAL_ANALYTICS",
+      "class": "FACET",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/facets/analytics/"
+      ],
+      "role": "Shared causal analysis with caller-specific capability access.",
+      "workspace_selectable": true
+    },
+    {
+      "id": "MUSIC_MEMORY",
+      "class": "FACET",
+      "roots": [
+        "LYVRA_NATIVE_RUNTIME/facets/music_memory/"
+      ],
+      "role": "Shared scoped musical memory and learning.",
+      "workspace_selectable": true
+    }
+  ],
+  "workspace_resolution": {
+    "selection_authority": "DIRECT_CURRENT_USER_INTENT_OR_VALID_NON_SUPERSEDED_WORKSPACE_HANDOFF",
+    "default_when_no_workspace_evidence": "WHOLE_LYVRA_WITHOUT_ARTIFICIAL_SPECIALIST_OR_PROJECT_FOREGROUND",
+    "head_movement_behavior": "RECONCILE_NEWER_VALID_EVOLUTION_WITHOUT_SWITCHING_WORKSPACE",
+    "relation_behavior": "LOAD_RELATIONS_AS_CONTEXT_ONLY_UNLESS_CURRENT_TASK_REQUIRES_BOUNDED_CROSS_WORKSPACE_CHANGE",
+    "codeforge_visibility": "WHOLE_REPOSITORY",
+    "codeforge_mutation_scope": "PRIMARY_WORKSPACE_PLUS_EXPLICITLY_JUSTIFIED_RELATIONAL_TARGETS_ONLY"
+  },
+  "provenance": {
+    "inspiration": "Capability pattern adapted from verified 666STREAM_STRUCTURE_CONTROL repository topology/session-scope design.",
+    "import_mode": "CAPABILITY_ADAPTATION_ONLY",
+    "foreign_identity_import": false,
+    "foreign_trigger_import": false,
+    "foreign_authority_import": false,
+    "foreign_namespace_import": false
+  }
+}
