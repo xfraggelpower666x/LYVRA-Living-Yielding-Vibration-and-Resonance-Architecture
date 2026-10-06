@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "9d21ee042dde08a8608f683e0d5d6d1685a28d0c",
+    "current_head_before_pointer": "4556d817c7992dd30b115115afc64fa08a8b0e45",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -19,7 +19,8 @@
     "pet_binary_bridge_update_base_head": "243eaf3e8baccaf4e103d05fcfb983b0a08252a7",
     "pet_binary_bridge_body_head_before_pointer": "ccae1f5f03188e7e608b1a791e91f45c4bb10a7a",
     "pet_worker_v2_update_base_head": "2e687d800cf38fb854b078603f21d4931cd35e94",
-    "pet_worker_v2_body_head_before_pointer": "b68058e5ec229d3292bdc5a5e42c709217b98601"
+    "pet_worker_v2_body_head_before_pointer": "b68058e5ec229d3292bdc5a5e42c709217b98601",
+    "pet_freshness_repair_body_head_before_pointer": "4556d817c7992dd30b115115afc64fa08a8b0e45"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -289,25 +290,29 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-06",
-    "scope": "NEW_CHAT_WHOLE_CURRENT_HANDOFF",
+    "scope": "PET_WORKER_V2_FRESHNESS_REPAIR",
     "classification": "SAFE",
-    "productive_body_head": "9d21ee042dde08a8608f683e0d5d6d1685a28d0c",
-    "prechange_recovery_branch": "lyvra-pre-new-chat-handoff-20261006",
+    "productive_body_head": "4556d817c7992dd30b115115afc64fa08a8b0e45",
+    "prechange_recovery_branch": "lyvra-pre-pet-freshness-repair-20261006-2057",
     "uncommitted_development": false,
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "plugin_versions_preserved": "0.1.15_AND_0.13.15",
     "repository_topology_preserved": true,
     "pet_binary_bridge_preserved": true,
-    "pet_deployment_performed": false,
-    "tests_deferred_preserved": true,
+    "pet_worker_v2_preserved": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
+    "pet_public_http_readback": "PENDING",
+    "pet_host_visual_render": "READBACK_PENDING",
     "pfs_backup_state_preserved": "PENDING_FRESH_MATCHING_LYVRA_APPROVAL",
     "no_foreign_system_activation": true,
-    "handoff_id": "LYVRA-NEW-CHAT-WHOLE-CURRENT-2026-10-06-025",
-    "handoff_blob": "f00fe951aa56f44fc1630c4410423e3cefe9c4b2",
-    "freshness_epoch": "2026-10-06-REV93-NEW-CHAT-WHOLE-CURRENT",
-    "fingerprint_blob": "338d1824d9d5d971763b0877ffcd477f9a5bb18a",
+    "pet_handoff_id": "LYVRA-PET-CURRENT-WORKER-V2-DEPLOY-2026-10-06-006",
+    "pet_handoff_blob": "96ed8639229b76fa94faca4ada6bf1ad8640a60f",
+    "freshness_epoch": "2026-10-06-REV93-PET-WORKER-V2-FRESHNESS-REPAIR",
+    "fingerprint_blob": "7981bb65a9379a61e3a88437f8d3ac373dbbcdba",
+    "rehydration_manifest_blob": "85e8858dc5b53568c6623e89c17ed28b8465c751",
+    "coverage_ledger_blob": "74170fe6dcfb93b2f550c58bf8c4aa7cc75aa8b1",
     "critical_carrier_count": 86,
+    "verified_mismatch_count": 0,
     "pointer_publication_last": true,
     "mutation_after_pointer": "NONE"
   },
@@ -1670,5 +1675,19 @@
     "resume_command": "LYVRA SYSTEMSTART",
     "tests": "DEFERRED_PRESERVED",
     "pfs_backup": "TARGET_0.13.15_AND_0.1.15_RECOGNIZED_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_LYVRA_APPROVAL"
+  },
+  "pet_freshness_repair_2026_10_06": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "updated_carriers": {
+      "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "96ed8639229b76fa94faca4ada6bf1ad8640a60f"
+    },
+    "fingerprint_registry": "7981bb65a9379a61e3a88437f8d3ac373dbbcdba",
+    "manifest": "85e8858dc5b53568c6623e89c17ed28b8465c751",
+    "coverage": "74170fe6dcfb93b2f550c58bf8c4aa7cc75aa8b1",
+    "worker_v2_api_readback": "PASS",
+    "public_http_readback": "PENDING",
+    "visual_readback": "READBACK_PENDING",
+    "core_changed": false
   }
 }
