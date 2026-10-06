@@ -633,5 +633,20 @@
     "core_semantic_parity": "VERIFIED",
     "full_textual_parity": "PARTIAL",
     "no_fake_full_parity_claim": true
+  },
+  "pointer_freshness_facet_metadata_sync_2026_10_06": {
+    "status": "VERIFIED_BODY_PRE_FINGERPRINT_POINTER",
+    "epoch": "2026-10-06-REV93-POINTER-FRESHNESS-FACET-METADATA-SYNC",
+    "handoff_id": "LYVRA-FACET-SCOPED-POINTER-FRESHNESS-SYNC-2026-10-06-012",
+    "whole_revision": 242,
+    "track_revision": 93,
+    "music_core_changed": false,
+    "speech_core_changed": false,
+    "plugin_release_change_required": false,
+    "pointer_embedded_handoff_stale": "TO_BE_REPLACED_AT_FINAL_POINTER_PUBLICATION",
+    "pointer_plugin_surface_versions_stale": "TO_BE_REPLACED_AT_FINAL_POINTER_PUBLICATION",
+    "pointer_registry_binding_stale": "TO_BE_REPLACED_AT_FINAL_POINTER_PUBLICATION",
+    "facet_revision_headers_qualified": true,
+    "music_memory_topology_metadata_aligned": true
   }
 }
