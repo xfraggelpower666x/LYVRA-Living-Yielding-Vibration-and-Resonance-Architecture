@@ -1,6 +1,6 @@
 # LYVRA ↔ CLIC ↔ 666PFS Coupled Plugin Backup Circle
 
-STATUS: CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE
+STATUS: CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE_V2_PARITY_AWARE
 OWNER_OF_THIS_CONTRACT: LYVRA
 PURPOSE: COUPLE_LYVRA_PLUGIN_BACKUP_EVENTS_TO_CLIC_PLUGIN_BACKUP_EVENTS_WITHOUT_AUTHORITY_MERGE
 DATE: 2026-10-07
@@ -37,11 +37,11 @@ LYVRA:
 - Approved source head for current LYVRA backup request: 8a88575e1a0d160416d2e79ec0eb6410dc9caa62
 
 CLIC:
-- Native plugin: 0.1.5 / pluginrel_6ac3bd798a748191816c9aef71adc919
+- Native plugin: 0.1.7 / pluginrel_6ac65a350e9481919591e60b91bdca70
 - Plugin ID: plugins_6abfb2e08fdc8191920dcdc4349c69c8
 - Current authority repo: xfraggelpower666x/666CLICPRO
 - Current authority branch: clic-migration-rev79-staging
-- Current authority head observed: fa6767dc9d48d8fe00232c62805e5a6c4c0200ec
+- Current authority head observed: ee795a0fdf52b8cfc660658e0f58e0f989e87cff
 
 These are observed values, not permanent boot values. PFS and each native system must re-read Current at every later backup round.
 
@@ -141,3 +141,59 @@ BACKUP_REQUEST != APPROVAL
 APPROVAL != BACKUP_WRITE
 BACKUP_WRITE != READBACK
 ONE_LEG_PASS != ROUND_COMPLETE
+
+
+## V2 parity preflight
+
+Before any native backup leg may enter ARTIFACT_CAPTURE_OR_VERIFIED_REUSE, PFS must verify the system's own parity evidence.
+
+Required evidence classes:
+- LIVE_PLUGIN_CURRENT
+- REPO_PLUGIN_CURRENT_POINTER_OR_EQUIVALENT
+- IMMUTABLE_RELEASE_SNAPSHOT
+- NATIVE_RUNTIME_OR_SYSTEM_CURRENT
+- SEMANTIC_PARITY_OR_EXPLICIT_NOT_APPLICABLE_DECISION
+
+For CLIC current evidence:
+- live plugin: 0.1.7 / pluginrel_6ac65a350e9481919591e60b91bdca70
+- repo plugin pointer: 666clic-plugin/current/PLUGIN_CURRENT.json
+- repo source mirror: 666clic-plugin/source
+- immutable snapshot: 666clic-plugin/releases/v0.1.7/source
+- sync contract: 666clic-plugin/PLUGIN_SYNC_CONTRACT.md
+- parity evidence: 666CLIC_NATIVE_RUNTIME/migration/PLUGIN_REPO_ARCHITECTURE_AND_PARITY_2026-10-07.md
+- current source file parity: PASS_14_OF_14
+- current semantic parity: VERIFIED_CURRENT_RUNTIME_SCOPE
+
+CLIC rule learned and generalized for backup preflight:
+EVERY_SEMANTIC_RUNTIME_EVOLUTION_REQUIRES_PLUGIN_IMPACT_CHECK = true
+RUNTIME_RELEVANT_CHANGE_REQUIRES_PLUGIN_PARITY_BEFORE_UPDATE_CLOSEOUT = true
+
+Backup consequence:
+PLUGIN_BACKUP_MAY_NOT_FREEZE_A_RELEASE_WITH_UNRESOLVED_LIVE_REPO_PARITY = true
+
+For LYVRA, equivalent evidence may use its own two-plugin sync/provenance/release carriers. The circle does not require identical repository layout across systems.
+
+## V2 freshness race guard
+
+A backup leg must bind:
+- native authority head at authorization,
+- live plugin release id,
+- repo plugin pointer/snapshot evidence,
+- artifact hash.
+
+If any of those change before private write/readback:
+BACKUP_LEG = SUPERSEDED_RELEASE_SET
+and a fresh native authorization is required when the native policy requires it.
+
+LATEST_RELEASE_NE_AUTHORIZED_RELEASE = true
+FOUND_RELEASE_NE_BACKUP_SAFE_RELEASE = true
+
+## V2 restore contract
+
+A stored archive or repo snapshot is recovery evidence, not automatic current authority.
+
+RESTORE_REQUIRES_CURRENT_NATIVE_PARITY_CHECK = true
+VALID_SNAPSHOT_NE_AUTOMATIC_CURRENT_RUNTIME_PARITY = true
+NO_SILENT_PLUGIN_ROLLBACK = true
+
+PFS may restore bytes only into a recovery candidate; native current authority must validate promotion/publication.
