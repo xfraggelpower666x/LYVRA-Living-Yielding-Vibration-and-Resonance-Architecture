@@ -1,0 +1,28 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.28",
+  "release_id": "pluginrel_6ac5ae0e910881918c9fe2fedd417556",
+  "previous_version": "0.13.27",
+  "previous_release_id": "pluginrel_6ac5ad01745c819187bac61f14b77aa0",
+  "update_date": "2026-10-07",
+  "reason": "Studio 2 plugin self-execution, no Extended field, 8–10 minute long-form workflow, automation-aware custom-plugin operation",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "ce0f43c3bdb787aef127e5051147c5c03f342871",
+  "changed": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/suno-studio-2/SKILL.md"
+  ],
+  "plugin_readback": "VERIFIED",
+  "studio2_extended_field": "NONE",
+  "studio2_text_surfaces": [
+    "STYLE",
+    "LYRICS"
+  ],
+  "longform_target": "8_TO_10_MINUTES",
+  "plugin_card_selection": "LYVRA_DECIDES",
+  "automatic_modulation": "USE_WHEN_EXPOSED_AND_CAUSALLY_USEFUL",
+  "automation_lane": "USE_FOR_TIME_VARYING_PARAMETERS",
+  "user_manual_tuning": "FALLBACK_ONLY_FOR_IRREDUCIBLE_EXTERNAL_BOUNDARY"
+}
