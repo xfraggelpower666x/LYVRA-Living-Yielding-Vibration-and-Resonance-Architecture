@@ -1,0 +1,15 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.32",
+  "release_id": "pluginrel_6ac6647fd4988191aba55443163134af",
+  "previous_version": "0.1.31",
+  "previous_release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746",
+  "update_date": "2026-10-07",
+  "reason": "Automatic semantic plugin-impact evolution and fingerprint-bound backup approval governance",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "e9383a01f0f53588edfc39b1bc93e271ed2c9784",
+  "changed_skill": "skills/lyvra-update-governance/SKILL.md",
+  "plugin_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL",
+  "runtime_plugin_state_fingerprint": "a96835a2ebe203398432df97799dc540a6aeb88dbb7ef3aef0cc118b1118d549"
+}
