@@ -1,0 +1,14 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.31",
+  "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746",
+  "previous_version": "0.1.30",
+  "previous_release_id": "pluginrel_6ac5ca3c0e8481919b7eb95125814cd3",
+  "update_date": "2026-10-07",
+  "reason": "Studio 2 real-production learning: repair/development separation, direct-audio evidence priority, continuity drift guards, compact generation packets",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "3c618fb15410a562ede9bf740fca57b2b93b06b9",
+  "evidence_carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/REAL_PRODUCTION_LEARNING_2026-10-07.md",
+  "plugin_readback": "VERIFIED"
+}
