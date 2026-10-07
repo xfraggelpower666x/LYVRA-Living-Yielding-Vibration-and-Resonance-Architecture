@@ -1,39 +1,45 @@
 {
-  "schema": "LYVRA_TO_CLIC_DEVELOPMENT_NOTICE_v2",
+  "schema": "LYVRA_TO_CLIC_DEVELOPMENT_NOTICE_v3",
   "status": "INFORMATIONAL_NOTICE_READY_FOR_CLIC_NATIVE_CONSUMPTION",
   "source_system": "LYVRA",
   "target_system": "666CLIC",
-  "source_head_before_notice": "2ddea3f22d78a1f21813d7b69e8dec3d1bb45404",
+  "source_head_before_notice": "5b00e51917c550a1988a91eb3918d62bfe705418",
   "changed_capabilities": [
+    "SPEECH_BETA_COMMUNITY_EVIDENCE_GATES",
+    "SPEECH_LONGFORM_DEGRADATION_AB_TEST_CANDIDATE",
+    "PARAGRAPH_END_ARTICULATION_AB_TEST_CANDIDATE",
+    "STABLE_SET_CONVERGENCE_BARRIER",
     "TARGET_STATE_ANALYSIS_FOR_PEER_NOTICES",
     "CONTENT_ADDRESSED_BINARY_BINDING",
     "DEVELOPMENT_EXCHANGE_LIVECIRCLE"
   ],
-  "why_changed": "LYVRA adopted CLIC's target-state-analysis safeguard after direct read of current CLIC authority and relevant current carriers",
+  "why_changed": "User-supplied Speech Beta evidence was admitted as test-only Speech Design evidence, and CLIC's stable-set convergence proposal passed LYVRA-native causal evaluation; newer Studio2 conducting evolution was preserved.",
   "relations": [
     "PLUGIN_BACKUP_GOVERNANCE",
     "PEER_PROPOSAL_INTAKE",
     "PLUGIN_AUTO_EVOLUTION"
   ],
   "counter_relations": [
+    "COMMUNITY_EVIDENCE_NE_NATIVE_RULE",
     "NOTICE_NE_TRIGGER",
     "NOTICE_NE_AUTHORITY_TRANSFER",
     "NOTICE_NE_FOREIGN_AUTOACTIVATION",
     "NOTICE_NE_AUTOADOPTION"
   ],
   "current_status": {
-    "native_plugin": "0.1.40",
-    "account_plugin": "0.13.40",
-    "runtime_plugin_state_fingerprint": "54476252c1350eaed6b8c20d80d337e5fa9ba0a8b94c4151345586e3dbe8abc5",
-    "notice_received_ne_state_understood": true,
-    "target_native_current_authority_must_be_read": true
+    "native_plugin": "0.1.41",
+    "account_plugin": "0.13.41",
+    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
+    "speech_evidence_status": "COMMUNITY_EVIDENCE_TEST_CANDIDATE_NOT_NATIVE_RENDERER_RULE",
+    "stable_set_status": "NOT_CONVERGED_PFS_REQUEST_STALE",
+    "studio2_conducting_protocol_preserved": true
   },
   "adoption_source": {
-    "clic_head_observed": "805812051993209766b2b3c72cf99023efbe816b",
+    "clic_head_observed": "2c93bee76d00c6a775770fb9b4f8d7c5bad7fa60",
     "clic_outbox_path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-BRANCH-STEWARDSHIP-RESPONSE-20261005-01.md",
-    "clic_outbox_blob": "62d08aa6e58cae75f1c7840ce88dd1967883cfe3",
-    "clic_plugin_current_version": "0.1.15",
-    "clic_backup_approval_status": "APPROVED_FOR_PFS_EXECUTION_PENDING"
+    "clic_outbox_blob": "c6212baa055f2c97d8cfc5819a5cc7f309893c14",
+    "clic_plugin_current_version": "0.1.16",
+    "clic_backup_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017"
   },
   "clic_mutation": false
 }
