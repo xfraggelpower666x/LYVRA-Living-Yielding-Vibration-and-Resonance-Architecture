@@ -1133,5 +1133,35 @@
     "private_vault_pointer_blob": "1c4edbbb39b2d596b748a4b1411693f5f2863fe9",
     "no_foreign_clic_mutation": true,
     "no_pfs_repo_mutation": true
+  },
+  "semantic_causal_lyric_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "scope": "TRACK_DESIGN_BASE_WITH_FACET_ADAPTATION_BY_REFERENCE",
+    "track_design_version": "v3.5",
+    "track_design_logical_revision": 94,
+    "canonical_carrier": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+    "must_restore": [
+      "SOURCE_MEANING_TO_SEMANTIC_CORE",
+      "CAUSAL_LYRIC_RESTRUCTURING",
+      "CALL_RESPONSE_PARENTHESES",
+      "CAUSAL_FX_SFX_PSYCHOACOUSTIC_EVENTS",
+      "SEMANTIC_EMOJI_IN_LYRIC_TEXT",
+      "TRACK_STRUCTURE_BUILD_RELEASE",
+      "APPROXIMATE_TEMPORAL_ARCHITECTURE",
+      "RELATIONAL_CARD_GRAPH_CONNECTIONS",
+      "AUTONOMOUS_DIVERSITY_AND_ANTI_MEMORY",
+      "DURATION_AND_ENDING_RELATIONS",
+      "LOW_TIME_AUTHORITY_AND_MOTION_GUARD",
+      "STYLE_PROMPT_FIELD_RESPONSIBILITY",
+      "SEMANTIC_CAUSAL_SIGNAL_BUS",
+      "DIFFERENTIAL_LEARNING"
+    ],
+    "no_fixed_template": true,
+    "no_fixed_seconds_grid": true,
+    "speech_adaptation_by_reference": true,
+    "studio2_adaptation_by_reference": true,
+    "native_plugin_version": "0.1.33",
+    "account_plugin_version": "0.13.33",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
