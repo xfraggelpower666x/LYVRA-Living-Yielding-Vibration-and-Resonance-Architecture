@@ -1239,5 +1239,19 @@
     "plugin_runtime_change": false,
     "plugin_impact": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
     "foreign_native_mutation": false
+  },
+  "native_plugin_branding_sync_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "native_plugin": "0.1.36",
+    "account_plugin": "0.13.35",
+    "display_name": "LYVRA",
+    "technical_slug": "lyvra-native-runtime",
+    "logo_readback": "VERIFIED_PRESENT",
+    "runtime_semantic_change": false,
+    "plugin_package_change": true,
+    "fingerprint": "514284f76b08a353f53b372ef15679f6f399a4c87c721e50b99a167b50cc4f76",
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true,
+    "foreign_native_mutation": false
   }
 }
