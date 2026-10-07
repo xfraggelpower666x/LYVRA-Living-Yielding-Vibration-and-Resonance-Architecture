@@ -937,7 +937,7 @@
     }
   },
   "plugin_auto_evolution_and_backup_fingerprint_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "native_plugin_version": "0.1.32",
     "native_release_id": "pluginrel_6ac6647fd4988191aba55443163134af",
     "account_plugin_version": "0.13.32",
@@ -949,6 +949,15 @@
     "clic_native_authorization": "PENDING",
     "private_vault_head": "ad042657518f50bff2d7ef2e116ab7c83ab2f84f",
     "private_vault_pointer_blob": "1c4edbbb39b2d596b748a4b1411693f5f2863fe9",
-    "no_foreign_mutation": true
+    "no_foreign_mutation": true,
+    "full_carrier_tree_readback": {
+      "source_head": "57be1eec8efc2edf6102210d2b9775348e4d6ea2",
+      "tree_sha": "ca3d939497429ed87cc999cbfe62ef08dc46f88b",
+      "checked": 124,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
