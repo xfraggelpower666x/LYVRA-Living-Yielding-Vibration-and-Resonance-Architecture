@@ -909,7 +909,7 @@
     }
   },
   "coupled_plugin_backup_circle_v2_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "clic_version": "0.1.7",
     "clic_release_id": "pluginrel_6ac65a350e9481919591e60b91bdca70",
     "clic_authority_head": "ee795a0fdf52b8cfc660658e0f58e0f989e87cff",
@@ -922,6 +922,15 @@
     "pfs_native_consumption": "PENDING",
     "clic_native_backup_authorization": "PENDING",
     "no_cross_system_merge": true,
-    "foreign_native_mutation": false
+    "foreign_native_mutation": false,
+    "full_carrier_tree_readback": {
+      "source_head": "afc11426deaa9ceb17edca2dd4515245e62beba9",
+      "tree_sha": "75e76e73e726e65dbd5c7f4fea3b2b6625f08748",
+      "checked": 121,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
