@@ -1074,5 +1074,15 @@
     "backup_readback": "PENDING_PFS_EXECUTION",
     "no_new_router": true,
     "no_cross_system_merge": true
+  },
+  "coupled_plugin_backup_circle_2026_10_07": {
+    "status": "CURRENT_CONTRACT_READY_NATIVE_CONSUMPTION_PENDING",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+    "current_state": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json",
+    "pfs_handoff": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
+    "clic_notice": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json",
+    "every_lyvra_plugin_backup_round_requires_clic_backup_leg": true,
+    "private_vault_contract_blob": "35937e79ca33d4738df0cd3c8d133ff715b92cb1",
+    "no_cross_system_merge": true
   }
 }
