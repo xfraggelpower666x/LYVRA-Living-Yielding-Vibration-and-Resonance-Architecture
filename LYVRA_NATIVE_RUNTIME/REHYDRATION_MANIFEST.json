@@ -49,7 +49,8 @@
     "HISTORICAL_SOURCE_ANCHORS_REACHABLE",
     "RECOVERY_PATH_VERIFIED",
     "REPOSITORY_TOPOLOGY_READ",
-    "PRIMARY_WORKSPACE_RESOLVED_OR_WHOLE_DEFAULTED_WITHOUT_AUTOACTIVATION"
+    "PRIMARY_WORKSPACE_RESOLVED_OR_WHOLE_DEFAULTED_WITHOUT_AUTOACTIVATION",
+    "SEMANTIC_VISUAL_CONTRACT_REHYDRATED_WHEN_RELEVANT"
   ],
   "context_rule": {
     "full_knowledge_ne_active_foreground": true,
@@ -203,6 +204,16 @@
     ],
     "FACET_FOREGROUND_NAVIGATION": [
       "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md"
+    ],
+    "SEMANTIC_VISUAL_LOCAL_LEARNING": [
+      "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/SEMANTIC_VISUAL_FACET_LIFECIRCLE_STANDARD.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/SHARED_DAEMON_LIFECIRCLE_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json"
     ]
   },
   "validation_closeout": {
@@ -1464,5 +1475,19 @@
     "track_rev95_preserved": true,
     "whole_rev242_preserved": true,
     "foreign_native_mutation": false
+  },
+  "semantic_visual_learning": {
+    "status": "CURRENT_PRODUCTIVE_ADDITIVE",
+    "semantic_cyber_field_base": "V01.2",
+    "local_adaptive_extension": "V01.3",
+    "whole_local_learning": true,
+    "facet_local_learning": true,
+    "peer_notice_required_on_material_additive_visual_change": true,
+    "peer_targets": [
+      "666CLIC",
+      "666PFS"
+    ],
+    "target_native_validation_required": true,
+    "shared_semantics_ne_shared_memory": true
   }
 }
