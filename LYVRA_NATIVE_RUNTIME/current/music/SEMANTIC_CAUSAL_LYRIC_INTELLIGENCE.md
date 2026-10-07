@@ -463,3 +463,123 @@ MEMORY_ECHO_RETURN
 PSYCHOACOUSTIC_EVENT_NE_RANDOM_EFFECT = true
 PSYCHOACOUSTIC_EVENT_REQUIRES_SEMANTIC_OR_MUSICAL_CAUSE = true
 PSYCHOACOUSTIC_CONTROL_MAY_CARRY_EMOTION_WHILE_RELATIONAL_HARMONY_REMAINS_NON_TONAL = true
+
+
+## Source Recognition, Fidelity and Lyric Anchor Intelligence
+
+SOURCE_RECOGNITION_BEFORE_TRANSFORMATION = true
+SOURCE_TRUTH_GT_SURFACE_FORM = true
+SOURCE_FIDELITY_GUARD = ACTIVE
+ANTI_UNSUPPORTED_INVENTION = ACTIVE
+AMBIGUOUS_MEANING_MAY_HOLD_INSTEAD_OF_GUESS = true
+
+### Source-layer recognition
+
+Before lyric restructuring, LYVRA classifies incoming material into causally distinct source layers:
+
+SOURCE_LAYER_CLASSIFICATION =
+SEMANTIC_CONTENT |
+CHARACTER_OR_SPEAKER_SIGNAL |
+EMOTIONAL_STATE |
+IMAGERY_AND_MOTIF |
+STRUCTURAL_CARRIER |
+PRODUCTION_OR_RENDERER_METADATA |
+EXPLICIT_USER_ANCHOR
+
+RECOGNITION_NE_DELETION = true
+RECOGNITION_NE_LITERAL_COPY = true
+CLASSIFICATION_EXISTS_TO_PROTECT_MEANING_AND_ENABLE_MUSICAL_TRANSLATION = true
+
+Production and renderer metadata from source material must not be mistaken for story facts.
+Unlike prose-cleaning systems, Track Design does not automatically discard musically useful metadata.
+It first separates metadata from semantic content, then decides whether it should be translated into current LYVRA-native execution cues.
+
+PRODUCTION_METADATA_FLOW =
+DETECT >
+SEPARATE_FROM_STORY_MEANING >
+ASSESS_CAUSAL_MUSICAL_VALUE >
+TRANSLATE_TO_LYVRA_NATIVE_STRUCTURE_VOICE_FX_SFX_PSYCHOACOUSTIC_OR_TIMELINE_CUE >
+RENDERER_SURVIVAL_CHECK
+
+SOURCE_PRODUCTION_COMMAND_NE_AUTOMATIC_LYRIC_LINE = true
+SOURCE_PRODUCTION_COMMAND_NE_AUTOMATIC_COPY = true
+USEFUL_SOURCE_CONTROL_MAY_BE_REINTERPRETED_CAUSALLY = true
+
+### Source fidelity and anti-invention
+
+SOURCE_SUPPORTED_DEVELOPMENT = ALLOWED
+UNSUPPORTED_NEW_EVENT = FORBIDDEN
+UNSUPPORTED_NEW_RELATIONSHIP = FORBIDDEN
+UNSUPPORTED_NEW_LOCATION = FORBIDDEN
+UNSUPPORTED_NEW_MOTIVE = FORBIDDEN
+UNSUPPORTED_SPEAKER_SWAP = FORBIDDEN
+
+Creative restructuring may intensify phrasing, dramaturgy, repetition, voice relation and musical embodiment only when the source meaning supports that development.
+
+SOURCE_FIDELITY_NE_LITERALISM = true
+SOURCE_FIDELITY_NE_CREATIVE_PARALYSIS = true
+SOURCE_FIDELITY_MEANS_CORE_CAUSAL_TRUTH_SURVIVES_TRANSFORMATION = true
+
+### Lyric Anchor Intelligence
+
+LYVRA may identify high-value anchors before final lyric construction:
+
+ANCHOR_TYPES =
+WORD_ANCHOR |
+PHRASE_ANCHOR |
+SENTENCE_ANCHOR |
+IMAGE_ANCHOR |
+IDENTITY_ANCHOR |
+CONFLICT_ANCHOR |
+RESOLUTION_ANCHOR
+
+ANCHOR_NE_FIXED_CHORUS = true
+ANCHOR_NE_MANDATORY_REPETITION = true
+ANCHOR_MAY_BECOME_HOOK_OR_MANTRA_WHEN_CAUSALLY_JUSTIFIED = true
+
+ANCHOR_RETURN_MODEL =
+FIRST_APPEARANCE >
+RECONTEXTUALIZATION >
+RETURN_WITH_HISTORY >
+FINAL_MEANING_RESOLUTION
+
+Repeated anchor lines should gain changed meaning through context, voice, arrangement, psychoacoustic placement or surrounding narrative rather than functioning as empty copy repetition.
+
+### Character Relation Map
+
+When source material contains multiple speakers, identities, shadows, inner voices, creatures or response roles, LYVRA maps meaning before assigning renderer voice behavior.
+
+CHARACTER_RELATION_FLOW =
+SOURCE_CHARACTER >
+SEMANTIC_ROLE >
+RELATION_TO_PRIMARY_VOICE >
+DRAMATURGICAL_FUNCTION >
+VOCAL_FUNCTION >
+PSYCHOACOUSTIC_PLACEMENT >
+RENDERER_CUE
+
+CHARACTER_FLATTENING_BY_DEFAULT = FORBIDDEN
+AMBIGUOUS_CHARACTER_IDENTITY_GUESSING = FORBIDDEN
+PRODUCTION_VOICE_LABEL_NE_CHARACTER_IDENTITY = true
+
+A production label such as [female voice], [deep voice] or [whisper] describes performance unless the source independently establishes a character identity.
+
+### Integrated lyric-source flow
+
+LYRIC_SOURCE_INTELLIGENCE_FLOW =
+SOURCE >
+RECOGNITION >
+SOURCE_LAYER_CLASSIFICATION >
+SEMANTIC_CAUSAL_MAP >
+SOURCE_FIDELITY_AND_ANTI_INVENTION >
+ANCHOR_DETECTION >
+CHARACTER_RELATION_MAP >
+LYRIC_RESTRUCTURING >
+HOOK_MANTRA_RETURN_WITH_HISTORY >
+MUSIC_CAUSAL_TRANSLATION >
+RENDERER_TRANSLATION >
+RENDERER_SURVIVAL_CHECK
+
+This intelligence extends the existing Semantic-Causal Lyric Intelligence and Track Design card graph.
+It is not MIRA, not a foreign-system import, not a new facet and not a new controller.
+The reusable principles are re-authored as LYVRA-native musical intelligence under Whole-LYVRA authority.
