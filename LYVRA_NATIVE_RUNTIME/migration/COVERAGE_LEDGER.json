@@ -1294,5 +1294,19 @@
     "whole_rev242_preserved": true,
     "track_rev95_preserved": true,
     "foreign_native_mutation": false
+  },
+  "binary_binding_development_exchange_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "current_plugins": "0.13.39|0.1.39",
+    "runtime_plugin_state_fingerprint": "336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b",
+    "hybrid_binary_binding": "VERIFIED_GOVERNANCE_PRESENT",
+    "development_exchange_notice": "VERIFIED_LYVRA_OWNED_INFORMATIONAL_HANDOFF",
+    "pfs_request_freshness": "SUPERSEDED_0.13.37_0.1.37",
+    "clic_native_backup_leg": "BLOCKED_LIVE_0.1.14_REPO_APPROVAL_0.1.12",
+    "private_write": "BLOCKED",
+    "foreign_autoactivation": false,
+    "foreign_native_mutation": false,
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true
   }
 }
