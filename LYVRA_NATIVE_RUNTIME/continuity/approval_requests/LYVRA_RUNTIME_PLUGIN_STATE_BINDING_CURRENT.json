@@ -2,9 +2,9 @@
   "schema": "LYVRA_RUNTIME_PLUGIN_STATE_FINGERPRINT_v1",
   "status": "CURRENT_VERIFIED_LIVE_PLUGIN_READBACK",
   "generated_date": "2026-10-07",
-  "source_head_observed_for_provenance": "ed9de05c23bf6e908e379740bfd28725a4257200",
+  "source_head_observed_for_provenance": "0b1922022bfa8ce9a1b9e1fc78b97b8b4f880a26",
   "fingerprint_algorithm": "SHA256_CANONICAL_JSON_SORTED_KEYS",
-  "runtime_plugin_state_fingerprint": "84943ea077690d964c3c625bd0100bb4ee07d0a92548b60d3ad23e240f2a9613",
+  "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
   "bound_state": {
     "native_plugin": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
@@ -14,9 +14,9 @@
     },
     "account_plugin": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.36",
-      "release_id": "pluginrel_6ac693a97b2c81918d4251326f3a561e",
-      "live_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL"
+      "version": "0.13.37",
+      "release_id": "pluginrel_6ac694bfead081918426d933fb788358",
+      "live_readback": "VERIFIED_METADATA_CHANGED_SKILL_AND_BRANDING_ASSET"
     },
     "semantic_carriers": {
       "approval_contract_blob": "f41310baf7f534b667849581f36e53a9de48c9c4",
@@ -25,10 +25,18 @@
       "repo_native_write_governance_blob": "22cdb1f3addd1961a55218c527fb6da331ba8f48"
     },
     "branding": {
-      "technical_name": "lyvra-native-runtime",
-      "display_name": "LYVRA",
-      "logo_path": "assets/lyvra-logo.png",
-      "logo_size_bytes": 1913401
+      "native": {
+        "technical_name": "lyvra-native-runtime",
+        "display_name": "LYVRA",
+        "logo_path": "assets/lyvra-logo.png",
+        "logo_size_bytes": 1913401
+      },
+      "account": {
+        "technical_name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
+        "display_name": "L.Y.V.R.A. ALIVE",
+        "logo_path": "assets/gpt-icon.png",
+        "logo_size_bytes": 2988467
+      }
     }
   },
   "excluded_from_validity_binding": [
