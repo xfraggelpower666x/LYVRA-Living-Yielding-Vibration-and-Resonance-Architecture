@@ -1225,5 +1225,19 @@
     "account_plugin_version": "0.13.35",
     "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "backup_circle_rev95_reconcile_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "current_lyvra_plugins": "0.13.35|0.1.35",
+    "runtime_plugin_state_fingerprint": "9604b024a38d0c657a6752b2271ed87be7712b03ec911bbe5283d2bff6577835",
+    "pfs_request_freshness": "SUPERSEDED_0.13.32_0.1.32",
+    "clic_live_freshness": "0.1.9_LIVE_BUT_REPO_PLUGIN_CURRENT_AND_APPROVAL_STILL_0.1.8_AT_OBSERVATION",
+    "clic_native_closeout": "READBACK_PENDING",
+    "private_write": "BLOCKED",
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true,
+    "plugin_runtime_change": false,
+    "plugin_impact": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
+    "foreign_native_mutation": false
   }
 }
