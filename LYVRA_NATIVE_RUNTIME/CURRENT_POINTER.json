@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "55013ae13e9561a261e229e86c463d0c3c7f1f6c",
+    "current_head_before_pointer": "bfc204b36781e060deaf7c29caeef843b58fcfc5",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -36,7 +36,8 @@
     "binary_binding_development_exchange_body_head_before_pointer": "abe60e9e8bb5a7ae9e14410478783601232b9cca",
     "target_state_analysis_body_head_before_pointer": "426c4b041ba3554a6369b3e93e82725e7156409b",
     "clic_016_backup_readiness_reconcile_body_head_before_pointer": "c3aa518adb5f88e7d9113a06db9059fc7a1d1d2d",
-    "studio2_conducting_protocol_body_head_before_pointer": "55013ae13e9561a261e229e86c463d0c3c7f1f6c"
+    "studio2_conducting_protocol_body_head_before_pointer": "55013ae13e9561a261e229e86c463d0c3c7f1f6c",
+    "lyric_source_intelligence_rev96_body_head_before_pointer": "bfc204b36781e060deaf7c29caeef843b58fcfc5"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -57,7 +58,7 @@
     "drive_internal_reference_whole_revision": 242,
     "drive_internal_reference_pointer_revision": 325,
     "track_design_version": "v3.6",
-    "track_design_logical_revision": 95,
+    "track_design_logical_revision": 96,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
     "current_work_scope": "WHOLE_LYVRA_NEW_CHAT_READY_CURRENT_PRODUCTIVE_VALIDATION_DEFERRED",
@@ -154,7 +155,14 @@
     "peer_target_state_analysis": "CURRENT_NOTICE_RECEIVED_NE_STATE_UNDERSTOOD",
     "clic_runtime_plugin_state_fingerprint": "6160e20b0e24e5219c8efd2a63815455dc2a8050bd3c1113cf9b3f830e86d677",
     "studio2_conducting_protocol": "CURRENT_PRODUCTIVE_ADDITIVE_TWO_PHASE_CROSS_PASS_PSYCHOACOUSTIC_PLUGIN_NEED_GATE",
-    "studio2_conducting_protocol_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md"
+    "studio2_conducting_protocol_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
+    "lyric_source_intelligence": "CURRENT_PRODUCTIVE_NATIVE_REV96",
+    "lyric_source_recognition_before_transformation": true,
+    "lyric_source_fidelity_guard": "ACTIVE",
+    "lyric_anti_unsupported_invention": "ACTIVE",
+    "lyric_anchor_intelligence": "WORD|PHRASE|SENTENCE|IMAGE|IDENTITY|CONFLICT|RESOLUTION",
+    "lyric_character_relation_mapping": "ACTIVE",
+    "production_metadata_translation_policy": "SEPARATE_THEN_CAUSALLY_TRANSLATE"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -2337,5 +2345,41 @@
     "account_plugin_version": "0.13.35",
     "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
     "plugin_readback": "PASS_BOTH"
+  },
+  "lyric_source_intelligence_rev96_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_REPO_AND_NATIVE_PLUGIN",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 96,
+    "canonical_carrier": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+    "sub_rehydration_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "evolution_record": "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md",
+    "source_reference": "MIRA_EXTERNAL_REFERENCE_ONLY",
+    "foreign_authority_imported": false,
+    "source_recognition_before_transformation": true,
+    "source_fidelity_guard": "ACTIVE",
+    "anti_unsupported_invention": "ACTIVE",
+    "production_metadata_policy": "SEPARATE_THEN_CAUSALLY_TRANSLATE_NOT_BLIND_DELETE_OR_COPY",
+    "anchor_intelligence": [
+      "WORD",
+      "PHRASE",
+      "SENTENCE",
+      "IMAGE",
+      "IDENTITY",
+      "CONFLICT",
+      "RESOLUTION"
+    ],
+    "anchor_return_with_history": true,
+    "character_relation_mapping_before_voice_assignment": true,
+    "whole_lyvra_authority_preserved": true,
+    "track_design_master_base_preserved": true,
+    "new_facet": false,
+    "new_router": false,
+    "new_controller": false,
+    "native_plugin_version": "0.1.42",
+    "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450",
+    "native_plugin_readback": "VERIFIED",
+    "account_plugin_parity": "NOT_VERIFIED_IN_THIS_UPDATE",
+    "pointer_publication_order": "LAST",
+    "post_pointer_mutation_allowed": false
   }
 }
