@@ -1101,5 +1101,26 @@
     "whole_rev242_preserved": true,
     "track_rev93_preserved": true,
     "studio2_031_preserved": true
+  },
+  "coupled_plugin_backup_circle_v2_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "clic_plugin_version": "0.1.7",
+    "clic_plugin_release_id": "pluginrel_6ac65a350e9481919591e60b91bdca70",
+    "clic_authority_head": "ee795a0fdf52b8cfc660658e0f58e0f989e87cff",
+    "clic_source_parity": "PASS_14_OF_14",
+    "clic_semantic_parity": "VERIFIED_CURRENT_RUNTIME_SCOPE",
+    "parity_preflight_required": true,
+    "unresolved_live_repo_parity_blocks_backup_freeze": true,
+    "restore_requires_native_parity_check": true,
+    "private_vault_v2_contract": "VERIFIED_POINTER_LAST",
+    "pfs_native_consumption": "PENDING",
+    "clic_native_backup_authorization": "PENDING",
+    "lyvra_leg": "APPROVED_CURRENT_RELEASE_SET_PFS_EXECUTION_PENDING",
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "studio2_031_preserved": true,
+    "workspace_continuity_v2_preserved": true,
+    "no_cross_system_merge": true,
+    "foreign_native_mutation": false
   }
 }
