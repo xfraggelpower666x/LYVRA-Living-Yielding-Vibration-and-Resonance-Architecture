@@ -1,0 +1,12 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.40",
+  "release_id": "pluginrel_6ac69efba2448191b86cbda652b7d15c",
+  "previous_version": "0.1.39",
+  "update_date": "2026-10-07",
+  "change_class": "TARGET_STATE_ANALYSIS_GOVERNANCE",
+  "adopted_rule": "NOTICE_RECEIVED_NE_STATE_UNDERSTOOD",
+  "logo_preserved_sha256": "1423681dcca2cfe2a6d0ff045b9694a3df76b4761d513f114d7b8b723cf025b5",
+  "live_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL"
+}
