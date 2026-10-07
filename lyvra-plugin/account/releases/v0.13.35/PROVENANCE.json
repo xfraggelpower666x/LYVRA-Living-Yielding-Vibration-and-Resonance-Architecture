@@ -1,0 +1,12 @@
+{
+  "plugin": "L.Y.V.R.A. account plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.35",
+  "release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
+  "previous_version": "0.13.34",
+  "update_date": "2026-10-07",
+  "reason": "Psychoacoustic high-priority control and emotion/harmony anti-musical drift guard",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "69cd731c65c1c16b209382ecd7941da155934897",
+  "plugin_readback": "VERIFIED"
+}
