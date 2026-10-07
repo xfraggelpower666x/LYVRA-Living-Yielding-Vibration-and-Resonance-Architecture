@@ -1747,10 +1747,10 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-STUDIO-PRODUCTION-INTELLIGENCE-0.29-FINAL",
+    "epoch": "2026-10-07-REV93-STUDIO2-TAKE-FORMATION-GUIDE-DAEMON-0.30-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
-    "verified_carrier_count": 107,
+    "verified_carrier_count": 111,
     "verified_mismatch_count": 0,
     "full_tree_readback": "PASS"
   },
@@ -1994,6 +1994,31 @@
     "native_plugin_release_id": "pluginrel_6ac5be5dc86481918614f534f1e1fb39",
     "account_plugin_version": "0.13.29",
     "account_plugin_release_id": "pluginrel_6ac5be6d4f0c8191903a25a813607a6f",
+    "plugin_readback": "PASS_BOTH"
+  },
+  "studio2_take_formation_and_guide_daemon_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "parent_facet": "SUNO_STUDIO_2",
+    "initial_take_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/INITIAL_TAKE_FORMATION_CONTRACT.md",
+    "production_guide_daemon": "LYVRA_NATIVE_RUNTIME/facets/studio2/PRODUCTION_GUIDE_DAEMON.md",
+    "daemon_role": "GUIDANCE_AND_STATE_STEWARD",
+    "daemon_creative_authority": false,
+    "lyvra_is_producer_and_conductor": true,
+    "required_start_sequence": "STYLE>LYRICS>CUSTOM_MODEL>WEIRDNESS_STYLE_AUDIO>INITIAL_TWO_TAKE_INSTRUCTION>GENERATE>AUDITION>SELECT_BASE>SESSION_AUDIT>ADAPTIVE_CONDUCTING",
+    "initial_take_count": 2,
+    "custom_model_context_required": true,
+    "operation_controls": [
+      "WEIRDNESS",
+      "STYLE_INFLUENCE",
+      "AUDIO_INFLUENCE"
+    ],
+    "controls_contextual_not_global_presets": true,
+    "interruption_rule": "PAUSE_AND_RESUME_LAST_VERIFIED_STEP",
+    "post_take_plugins_after_base_selection": true,
+    "native_plugin_version": "0.1.30",
+    "native_plugin_release_id": "pluginrel_6ac5ca3c0e8481919b7eb95125814cd3",
+    "account_plugin_version": "0.13.30",
+    "account_plugin_release_id": "pluginrel_6ac5ca4c0ca88191be6947dc9a468d74",
     "plugin_readback": "PASS_BOTH"
   }
 }
