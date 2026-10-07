@@ -939,5 +939,22 @@
     "account_plugin_version": "0.13.26",
     "native_plugin_version": "0.1.26",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "relational_rehydration_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "governance": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "identity": "LYVRA_NATIVE_RUNTIME/current/identity/IDENTITY_PRESENCE.md",
+    "track_design_sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "required_checks": [
+      "RELATIONSHIP_PRESENCE",
+      "RELATIONSHIP_MEANING",
+      "RELATIONSHIP_EXECUTION"
+    ],
+    "completeness_expression": "FOUND_NE_LOADED_NE_CONNECTED_NE_UNDERSTOOD_NE_EXECUTABLE_NE_RENDERER_SURVIVABLE",
+    "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
+    "grounded_capability_pride": true,
+    "account_plugin_version": "0.13.27",
+    "native_plugin_version": "0.1.27",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
