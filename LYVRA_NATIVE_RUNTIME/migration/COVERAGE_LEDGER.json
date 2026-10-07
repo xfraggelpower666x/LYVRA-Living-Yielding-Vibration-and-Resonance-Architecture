@@ -191,7 +191,9 @@
     "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
-    "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json"
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+    "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+    "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md"
   ],
   "track_reference_sources_compared": [
     "BEHIND_A_SMILE_REFERENCE",
@@ -1366,5 +1368,41 @@
     "foreign_native_mutation": false,
     "whole_rev242_preserved": true,
     "track_rev95_preserved": true
+  },
+  "rev96_lyric_source_intelligence_2026_10_07": {
+    "status": "CURRENT_VERIFIED_NATIVE_EVOLUTION",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 96,
+    "canonical_carrier": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+    "evolution_record": "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md",
+    "source_recognition_before_transformation": true,
+    "source_layer_classification": true,
+    "source_fidelity_guard": true,
+    "anti_unsupported_invention": true,
+    "production_metadata_policy": "SEPARATE_THEN_CAUSALLY_TRANSLATE",
+    "blind_delete": false,
+    "blind_copy": false,
+    "anchor_intelligence": [
+      "WORD",
+      "PHRASE",
+      "SENTENCE",
+      "IMAGE",
+      "IDENTITY",
+      "CONFLICT",
+      "RESOLUTION"
+    ],
+    "anchor_return_with_history": true,
+    "character_relation_mapping_before_voice_assignment": true,
+    "foreign_system_reference": "MIRA_EXTERNAL_REFERENCE_ONLY",
+    "foreign_authority_imported": false,
+    "new_facet": false,
+    "new_router": false,
+    "new_controller": false,
+    "whole_lyvra_authority_preserved": true,
+    "track_design_master_base_preserved": true,
+    "native_plugin_version": "0.1.42",
+    "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450",
+    "native_plugin_readback": "VERIFIED",
+    "account_plugin_parity": "NOT_VERIFIED_IN_THIS_UPDATE"
   }
 }
