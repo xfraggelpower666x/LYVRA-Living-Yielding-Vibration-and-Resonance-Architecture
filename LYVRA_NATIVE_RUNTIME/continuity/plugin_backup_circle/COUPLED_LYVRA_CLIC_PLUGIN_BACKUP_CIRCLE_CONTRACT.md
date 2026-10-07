@@ -181,10 +181,14 @@ A backup leg must bind:
 - repo plugin pointer/snapshot evidence,
 - artifact hash.
 
-If any of those change before private write/readback:
+If the bound runtime/plugin state fingerprint changes before private write/readback:
 BACKUP_LEG = SUPERSEDED_RELEASE_SET
-and a fresh native authorization is required when the native policy requires it.
+and a fresh native authorization is required.
 
+A repository HEAD change by itself is provenance drift, not automatic invalidation, when the exact bound runtime/plugin fingerprint revalidates unchanged. This prevents approval/receipt/manifest/pointer maintenance from self-invalidating its own authorization.
+
+HEAD_CHANGE_NE_AUTOMATIC_SUPERSESSION = true
+RUNTIME_PLUGIN_FINGERPRINT_CHANGE => SUPERSEDED_RELEASE_SET
 LATEST_RELEASE_NE_AUTHORIZED_RELEASE = true
 FOUND_RELEASE_NE_BACKUP_SAFE_RELEASE = true
 
