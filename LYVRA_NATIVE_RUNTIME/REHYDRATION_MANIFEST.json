@@ -1213,5 +1213,31 @@
     "native_plugin_version": "0.1.35",
     "account_plugin_version": "0.13.35",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "backup_circle_rev95_reconcile_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY_PRE_POINTER",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
+    "native_plugin": {
+      "version": "0.1.35",
+      "release_id": "pluginrel_6ac68220c07c81918364e07f21df7c8e"
+    },
+    "account_plugin": {
+      "version": "0.13.35",
+      "release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1"
+    },
+    "runtime_plugin_state_fingerprint": "9604b024a38d0c657a6752b2271ed87be7712b03ec911bbe5283d2bff6577835",
+    "pfs_observed_head": "e298f559b4fda06960849addc40c84bdea10fecb",
+    "pfs_request_observed": "0.13.32|0.1.32",
+    "pfs_request_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
+    "clic_live_observed": "0.1.9",
+    "clic_repo_plugin_current_observed": "0.1.8",
+    "clic_existing_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-018",
+    "clic_existing_approval_version": "0.1.8",
+    "clic_status": "FRESHNESS_PENDING_NATIVE_CLOSEOUT",
+    "private_backup_write": "BLOCKED",
+    "plugin_impact": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
+    "foreign_native_mutation": false,
+    "newer_valid_rev95_preserved": true
   }
 }
