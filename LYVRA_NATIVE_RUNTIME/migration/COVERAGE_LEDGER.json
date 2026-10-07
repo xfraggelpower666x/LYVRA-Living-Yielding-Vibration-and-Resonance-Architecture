@@ -1084,5 +1084,22 @@
     "workspace_continuity_v2_preserved": true,
     "no_new_router": true,
     "no_cross_system_merge": true
+  },
+  "coupled_plugin_backup_circle_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
+    "lyvra_leg": "APPROVED_CURRENT_RELEASE_SET_PFS_EXECUTION_PENDING",
+    "clic_leg": "CURRENT_RELEASE_OBSERVED_NATIVE_AUTHORIZATION_PENDING",
+    "pfs_handoff": "READY_FOR_NATIVE_CONSUMPTION",
+    "clic_notice": "READY_FOR_NATIVE_CONSUMPTION",
+    "private_vault_contract": "VERIFIED",
+    "private_vault_pointer_last": true,
+    "pfs_self_approval": false,
+    "lyvra_approves_clic": false,
+    "no_cross_system_merge": true,
+    "foreign_native_mutation": false,
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "studio2_031_preserved": true
   }
 }
