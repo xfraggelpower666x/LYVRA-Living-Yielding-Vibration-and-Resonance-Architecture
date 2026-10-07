@@ -1,0 +1,20 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.29",
+  "release_id": "pluginrel_6ac5be6d4f0c8191903a25a813607a6f",
+  "previous_version": "0.13.28",
+  "previous_release_id": "pluginrel_6ac5ae0e910881918c9fe2fedd417556",
+  "update_date": "2026-10-07",
+  "reason": "Adaptive Studio Production Intelligence: project state, adaptive passes, result locks, plugin experience, long-form development and causal evidence return",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "5cef098fb4ad81fd1f4bcd887cb73447155ddc26",
+  "studio_production_intelligence": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO_PRODUCTION_INTELLIGENCE.md",
+  "studio2_extended_field": "NONE",
+  "longform_target": "8_TO_10_MINUTES",
+  "adaptive_passes": true,
+  "result_locks": true,
+  "plugin_experience_learning": true,
+  "relational_rehydration": true,
+  "plugin_readback": "VERIFIED"
+}
