@@ -1239,5 +1239,23 @@
     "plugin_impact": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
     "foreign_native_mutation": false,
     "newer_valid_rev95_preserved": true
+  },
+  "native_plugin_branding_sync_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY_PRE_POINTER",
+    "native_plugin_version": "0.1.36",
+    "native_release_id": "pluginrel_6ac68d628fd88191b95f89047607ff66",
+    "technical_name": "lyvra-native-runtime",
+    "user_facing_display_name": "LYVRA",
+    "logo_path": "assets/lyvra-logo.png",
+    "logo_size_bytes": 1913401,
+    "logo_live_readback": "VERIFIED",
+    "technical_name_uppercase_change": "REJECTED_BY_SCHEMA_EXPECTED_SAFE",
+    "runtime_semantic_change": false,
+    "account_plugin_preserved": "0.13.35",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
+    "runtime_plugin_state_fingerprint": "514284f76b08a353f53b372ef15679f6f399a4c87c721e50b99a167b50cc4f76",
+    "pfs_matching_request": "REQUIRED",
+    "foreign_native_mutation": false
   }
 }
