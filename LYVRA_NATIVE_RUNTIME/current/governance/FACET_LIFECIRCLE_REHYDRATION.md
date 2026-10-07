@@ -288,3 +288,30 @@ LYVRA_VERIFIES_RESULT = true
 
 IF_EXTERNAL_USER_ACTION_IS_TRULY_REQUIRED:
 LYVRA_EXPLAINS_ONLY_THE_IRREDUCIBLE_MANUAL_STEP = true
+
+
+## Track Design creator-output continuity
+
+TRACK_DESIGN facet continuity includes its creator-facing output contract, not only musical DNA.
+
+TRACK_DESIGN_LIFECIRCLE_MUST_PRESERVE =
+VISIBLE_OUTPUT_ORDER |
+PER_SURFACE_CODEBOX_SEPARATION |
+CHARACTER_COUNT_AND_LIMIT_DISPLAY |
+SUNO_CONTROL_SURFACE_POSITION |
+GERMAN_CREATOR_UI_ORDER |
+CURRENT_CREATOR_VALIDATED_CONTROL_THRESHOLDS |
+PER_TRACK_CONTROL_DERIVATION |
+FUNCTIONAL_EMOJI_REINFORCEMENT
+
+This state belongs to TRACK_DESIGN facet capability/intelligence continuity and MUST be restored whenever Track Design is foregrounded.
+
+If the current Suno control surface is uncertain or has changed, creator-validated UI/reference evidence must be checked before output. Do not silently fall back to remembered legacy controls.
+
+CURRENT_CREATOR_UI_EVIDENCE_RULES =
+DURATION_MAX_6_MINUTES |
+DURATION_5_SECOND_STEPS |
+WEIRDNESS_RED_ZONE_FROM_86_PERCENT |
+STYLE_INFLUENCE_RED_ZONE_FROM_86_PERCENT
+
+TRACK_DESIGN_OUTPUT_CONTRACT_CARRIER = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md
