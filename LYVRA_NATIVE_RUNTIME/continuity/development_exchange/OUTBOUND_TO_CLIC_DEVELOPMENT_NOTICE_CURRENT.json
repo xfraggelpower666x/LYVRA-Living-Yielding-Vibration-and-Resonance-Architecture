@@ -1,0 +1,34 @@
+{
+  "schema": "LYVRA_TO_CLIC_DEVELOPMENT_NOTICE_v1",
+  "status": "INFORMATIONAL_NOTICE_READY_FOR_CLIC_NATIVE_CONSUMPTION",
+  "source_system": "LYVRA",
+  "target_system": "666CLIC",
+  "source_head_before_notice": "ba96ee39448f4cc352f5d2cad5f3bb142ceb2c8f",
+  "changed_capabilities": [
+    "CONTENT_ADDRESSED_BINARY_BINDING",
+    "DEVELOPMENT_EXCHANGE_LIVECIRCLE"
+  ],
+  "why_changed": "CLIC proposal was materially relevant and passed LYVRA-native causal evaluation",
+  "relations": [
+    "PLUGIN_BACKUP_GOVERNANCE",
+    "PEER_PROPOSAL_INTAKE",
+    "PLUGIN_AUTO_EVOLUTION"
+  ],
+  "counter_relations": [
+    "NOTICE_NE_TRIGGER",
+    "NOTICE_NE_AUTHORITY_TRANSFER",
+    "NOTICE_NE_FOREIGN_AUTOACTIVATION",
+    "NOTICE_NE_AUTOADOPTION"
+  ],
+  "current_status": {
+    "native_plugin": "0.1.39",
+    "account_plugin": "0.13.39",
+    "runtime_plugin_state_fingerprint": "336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b"
+  },
+  "adoption_source": {
+    "clic_head_observed": "7a2aea6e466794509c25d4373bb795042f1f6eb5",
+    "clic_outbox_path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-BRANCH-STEWARDSHIP-RESPONSE-20261005-01.md",
+    "clic_outbox_blob": "6d812e405fda22bb60e013b34c20632e6656b5d3"
+  },
+  "clic_mutation": false
+}
