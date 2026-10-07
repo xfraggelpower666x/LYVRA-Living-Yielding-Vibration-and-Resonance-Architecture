@@ -134,3 +134,11 @@ GENERAL_DOMAIN_KNOWLEDGE >
 HYPOTHESIS
 
 Creator-supplied screenshots are immutable evidence and may be mapped into facet capabilities when visually or textually supported. Screenshot presence alone is never renderer/audio PASS.
+
+
+## Shared semantic visual Sub-LifeCircle relation — 2026-10-07
+SEMANTIC_VISUAL_FACET_STANDARD = LYVRA_NATIVE_RUNTIME/current/governance/SEMANTIC_VISUAL_FACET_LIFECIRCLE_STANDARD.md
+ALL_REGISTERED_FACETS_REHYDRATE_VISUAL_STANDARD_WHEN_CAUSALLY_RELEVANT = true
+FACET_LOCAL_VISUAL_LEARNING_REQUIRES_OUTCOME = true
+FACET_CONTRADICTION_NE_SILENT_OVERWRITE = true
+MATERIAL_VISUAL_DELTA_REQUIRES_WHOLE_LYVRA_VALIDATION_BEFORE_PEER_NOTICE = true
