@@ -1,0 +1,14 @@
+{
+  "plugin": "L.Y.V.R.A. ALIVE",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.41",
+  "release_id": "pluginrel_6ac6a534aa748191b4fff3bd83aa162d",
+  "previous_version": "0.13.40",
+  "update_date": "2026-10-07",
+  "change_class": "SPEECH_EVIDENCE_GATES_AND_STABLE_SET_CONVERGENCE",
+  "speech_evidence_class": "COMMUNITY_EVIDENCE_TEST_CANDIDATE",
+  "stable_set_convergence": true,
+  "logo_preserved": true,
+  "studio2_parallel_newer_evolution_preserved": "STUDIO2_CONDUCTING_PROTOCOL_2026-10-07",
+  "live_readback": "VERIFIED_METADATA_UPDATE_SKILL_AND_SPEECH_SKILL"
+}
