@@ -1,19 +1,16 @@
 {
-  "schema": "LYVRA_TO_CLIC_DEVELOPMENT_NOTICE_v3",
+  "schema": "LYVRA_TO_CLIC_DEVELOPMENT_NOTICE_v4",
   "status": "INFORMATIONAL_NOTICE_READY_FOR_CLIC_NATIVE_CONSUMPTION",
   "source_system": "LYVRA",
   "target_system": "666CLIC",
-  "source_head_before_notice": "5b00e51917c550a1988a91eb3918d62bfe705418",
+  "source_head_before_notice": "b97958ea9b667d8ac783b44bcc5ede8998ec66bd",
   "changed_capabilities": [
-    "SPEECH_BETA_COMMUNITY_EVIDENCE_GATES",
-    "SPEECH_LONGFORM_DEGRADATION_AB_TEST_CANDIDATE",
-    "PARAGRAPH_END_ARTICULATION_AB_TEST_CANDIDATE",
-    "STABLE_SET_CONVERGENCE_BARRIER",
-    "TARGET_STATE_ANALYSIS_FOR_PEER_NOTICES",
-    "CONTENT_ADDRESSED_BINARY_BINDING",
-    "DEVELOPMENT_EXCHANGE_LIVECIRCLE"
+    "TRACK_DESIGN_REV96_LYRIC_SOURCE_INTELLIGENCE",
+    "ACCOUNT_PLUGIN_REV96_PARITY_REPAIR",
+    "SPEECH_BETA_COMMUNITY_EVIDENCE_GATES_PRESERVED",
+    "STABLE_SET_CONVERGENCE_REEVALUATED"
   ],
-  "why_changed": "User-supplied Speech Beta evidence was admitted as test-only Speech Design evidence, and CLIC's stable-set convergence proposal passed LYVRA-native causal evaluation; newer Studio2 conducting evolution was preserved.",
+  "why_changed": "Newer valid Track Design Rev96 and Speech Beta evidence were preserved; Account plugin parity was repaired to Rev96 while Native 0.1.45 remained current. Coupled backup stable-set re-evaluation found PFS request stale and CLIC live surface ahead of CLIC native repo approval.",
   "relations": [
     "PLUGIN_BACKUP_GOVERNANCE",
     "PEER_PROPOSAL_INTAKE",
@@ -27,12 +24,15 @@
     "NOTICE_NE_AUTOADOPTION"
   ],
   "current_status": {
-    "native_plugin": "0.1.41",
-    "account_plugin": "0.13.41",
-    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
+    "native_plugin": "0.1.45",
+    "account_plugin": "0.13.42",
+    "track_design_revision": 96,
+    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
     "speech_evidence_status": "COMMUNITY_EVIDENCE_TEST_CANDIDATE_NOT_NATIVE_RENDERER_RULE",
-    "stable_set_status": "NOT_CONVERGED_PFS_REQUEST_STALE",
-    "studio2_conducting_protocol_preserved": true
+    "stable_set_status": "NOT_CONVERGED",
+    "pfs_request_status": "STALE_0.13.41_0.1.41",
+    "clic_live_surface": "0.1.19",
+    "clic_native_repo_current": "0.1.16"
   },
   "adoption_source": {
     "clic_head_observed": "2c93bee76d00c6a775770fb9b4f8d7c5bad7fa60",
