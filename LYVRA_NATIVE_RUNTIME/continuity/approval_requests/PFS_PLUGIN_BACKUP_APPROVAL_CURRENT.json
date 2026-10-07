@@ -1,45 +1,55 @@
 {
-  "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v2",
-  "status": "SUPERSEDED_AWAITING_MATCHING_PFS_REQUEST_FOR_CURRENT_RUNTIME_PLUGIN_STATE",
-  "previous_approval": {
-    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
-    "approval_blob": "c396dd587cde3e4e0d7159a503af2f5585d01598",
-    "approved_source": {
-      "lyvra_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
-      "account_version": "0.13.31",
-      "account_release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
-      "native_runtime_version": "0.1.31",
-      "native_runtime_release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
-    },
-    "supersession_reason": "BOUND_RUNTIME_PLUGIN_STATE_CHANGED_FROM_0.13.31_0.1.31_TO_0.13.32_0.1.32"
+  "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v3",
+  "status": "APPROVED_CURRENT_RUNTIME_PLUGIN_STATE_PFS_EXECUTION_PENDING_CLIC_LEG_BLOCKED",
+  "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-036",
+  "authority": "LYVRA_LIVE_REPOSITORY",
+  "decision_authority": "LYVRA_ONLY",
+  "approved_request": {
+    "source_repository": "xfraggelpower666x/666PFS_CSM",
+    "source_branch": "main",
+    "source_repository_head": "07518c07f8d1c76753a2bc74c209fb448ea24041",
+    "request_path": "handoff/OUTBOUND_LYVRA_PLUGIN_BACKUP_APPROVAL_REQUEST_CURRENT.md",
+    "request_blob": "8875d466170f7e91bbf6112e098a2269e068de8e"
   },
-  "current_state": {
-    "runtime_plugin_state_fingerprint": "a96835a2ebe203398432df97799dc540a6aeb88dbb7ef3aef0cc118b1118d549",
+  "approved_state": {
+    "runtime_plugin_state_fingerprint": "514284f76b08a353f53b372ef15679f6f399a4c87c721e50b99a167b50cc4f76",
     "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
-    "account_version": "0.13.32",
-    "account_release_id": "pluginrel_6ac6648d05c081919b9b87102d68932a",
-    "native_runtime_version": "0.1.32",
-    "native_runtime_release_id": "pluginrel_6ac6647fd4988191aba55443163134af",
-    "source_head_observed_for_provenance": "5830f4a763d1c90e7177c1855f2bcdd92407c4b6",
-    "live_plugin_readback": "VERIFIED_BOTH_SURFACES"
+    "source_head_observed_for_provenance": "ea20237697fc511296a5dcb915a5b913fac6ad05",
+    "account": {
+      "version": "0.13.35",
+      "release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1"
+    },
+    "native": {
+      "version": "0.1.36",
+      "release_id": "pluginrel_6ac68d628fd88191b95f89047607ff66"
+    },
+    "native_branding": {
+      "display_name": "LYVRA",
+      "technical_name": "lyvra-native-runtime",
+      "logo_path": "assets/lyvra-logo.png",
+      "restore_relevant": true
+    }
   },
-  "approval_semantics": {
-    "bind_to_runtime_plugin_state_fingerprint": true,
-    "head_is_provenance_not_automatic_supersession": true,
-    "governance_only_head_advance_may_preserve_identical_binding": true,
-    "fingerprint_change_supersedes": true
-  },
-  "matching_pfs_request": {
-    "required": true,
-    "observed_pfs_head": "cdcac9c37a2d1d594d355aad1ada0ba3ed6addd5",
-    "prior_request_blob": "a48ace7e3e5745f233796a442d309d4799416eef",
-    "prior_request_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
-    "required_account_version": "0.13.32",
-    "required_native_version": "0.1.32",
-    "required_runtime_plugin_state_fingerprint": "a96835a2ebe203398432df97799dc540a6aeb88dbb7ef3aef0cc118b1118d549"
-  },
-  "pfs_may_self_approve": false,
+  "approved_scope": "WRITE_PLUGIN_BACKUP_HASH_READBACK_RECEIPT",
+  "backup_target_role": "PLUGIN_BACKUP_STORAGE_ONLY",
+  "preserve_old_backup_provenance": true,
   "pfs_may_mutate_lyvra_live": false,
-  "backup_write_status": "BLOCKED_UNTIL_MATCHING_PFS_REQUEST_AND_NEW_LYVRA_APPROVAL",
-  "cross_system_merge": false
+  "pfs_self_approval": false,
+  "cross_system_merge": false,
+  "blanket_permission": false,
+  "valid_for_exact_request_blob": true,
+  "valid_for_exact_runtime_plugin_state_fingerprint": true,
+  "head_change_alone_supersedes": false,
+  "fingerprint_change_supersedes": true,
+  "approval_ne_backup_write": true,
+  "backup_execution_owner": "666PFS",
+  "coupled_circle_rule": "ROUND_COMPLETE_REQUIRES_SEPARATE_FRESH_CLIC_NATIVE_AUTHORIZATION",
+  "clic_authorization_by_lyvra": false,
+  "clic_leg_observation": {
+    "version": "0.1.11",
+    "status": "BLOCKED_CONFIRMED_V0_1_11_BINARY_PARITY_MISMATCH",
+    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-020",
+    "execution_allowed": false
+  },
+  "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH"
 }
