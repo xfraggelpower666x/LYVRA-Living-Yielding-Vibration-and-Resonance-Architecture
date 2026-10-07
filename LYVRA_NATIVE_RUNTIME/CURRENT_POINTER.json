@@ -110,7 +110,8 @@
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
     "workspace_continuity_v2": "SYSTEMSTART_BARE_WHOLE_SYSTEMSTART_SUFFIX_EXACT_WORKSPACE_NEW_NEXT_LINEAGE_SCOPED_UPDATE_ADDITIVE",
-    "weblyvra_freshness": "CURRENT_PRODUCTIVE_VERIFIED_89_OF_89"
+    "weblyvra_freshness": "CURRENT_PRODUCTIVE_VERIFIED_89_OF_89",
+    "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_REHYDRATES_WITH_TRACK_DESIGN"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -1832,5 +1833,21 @@
     "plugin_readback": "PASS",
     "lyvra_first": true,
     "fixed_matrix": false
+  },
+  "track_design_creator_output_surface_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "track_revision": 93,
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "lifecircle": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "output_order": "TITLE>EXTENDED>SUNO_CONTROLS>STYLE>LYRIC_PROMPT>LYRICS",
+    "separate_codeboxes": true,
+    "character_count_limits": true,
+    "german_suno_ui": true,
+    "duration_step_seconds": 5,
+    "duration_max": "6:00",
+    "weirdness_red_from_percent": 86,
+    "style_influence_red_from_percent": 86,
+    "controls_contextual_per_track": true,
+    "emoji_reinforcement_required": true
   }
 }
