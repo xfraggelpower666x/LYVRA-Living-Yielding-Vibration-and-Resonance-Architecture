@@ -105,7 +105,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.27_ACCOUNT_0.13.27_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.31_ACCOUNT_0.13.31_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "TARGET_0.13.16_AND_0.1.16_REFRESHED_METADATA_ONLY_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_APPROVAL",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
@@ -116,7 +116,8 @@
     "track_design_recovered_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED",
     "style_prompt_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED",
     "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
-    "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE"
+    "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
+    "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
