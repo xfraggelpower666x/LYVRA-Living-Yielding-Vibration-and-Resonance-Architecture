@@ -1,0 +1,16 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.45",
+  "release_id": "pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29",
+  "update_date": "2026-10-07",
+  "change_class": "VALID_NEWER_LIVE_PLUGIN_STATE_DIRECT_READBACK",
+  "previous_release": "NOT_INFERRED_FROM_INCOMPLETE_PROVENANCE",
+  "includes": [
+    "SPEECH_EVIDENCE_GATES",
+    "STABLE_SET_CONVERGENCE",
+    "TRACK_DESIGN_REV96_SOURCE_INTELLIGENCE",
+    "NATIVE_VISUAL_LOCAL_LEARNING"
+  ],
+  "live_readback": "VERIFIED_METADATA_UPDATE_TRACK_SPEECH_AND_NATIVE_VISUAL_LOCAL_LEARNING_SURFACES"
+}
