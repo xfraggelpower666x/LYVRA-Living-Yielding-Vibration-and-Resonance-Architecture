@@ -886,7 +886,7 @@
     }
   },
   "coupled_plugin_backup_circle_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
     "lyvra_leg": "APPROVED_CURRENT_RELEASE_SET_PFS_EXECUTION_PENDING",
     "clic_leg": "OBSERVED_0.1.5_NATIVE_AUTHORIZATION_PENDING",
@@ -897,6 +897,15 @@
     "private_vault_contract_blob": "35937e79ca33d4738df0cd3c8d133ff715b92cb1",
     "no_cross_system_merge": true,
     "no_new_router": true,
-    "foreign_native_mutation": false
+    "foreign_native_mutation": false,
+    "full_carrier_tree_readback": {
+      "source_head": "e140a05b265a8374da5730275d6c21043d7dab43",
+      "tree_sha": "578c4ceec04d45000fbd5a2f817c31361d41d705",
+      "checked": 121,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
