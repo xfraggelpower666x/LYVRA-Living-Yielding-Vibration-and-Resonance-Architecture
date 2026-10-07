@@ -4,7 +4,7 @@
   "source_system": "666PFS",
   "source_repository": "xfraggelpower666x/666PFS_CSM",
   "source_branch": "main",
-  "source_repository_head": "5a68033880af14ad99696b95e37904ad3aeee19a",
+  "source_repository_head": "7dee34361758e92800aee3bdfe4af8a89925538e",
   "source_request_path": "handoff/OUTBOUND_LYVRA_PLUGIN_BACKUP_APPROVAL_REQUEST_CURRENT.md",
   "source_request_blob": "0a8c5eefad77f7194ac4f653c8ac805e95e48f44",
   "target_authority": "LYVRA_LIVE_REPOSITORY",
@@ -30,10 +30,9 @@
   "clic_observed": {
     "version": "0.1.16",
     "release_id": "pluginrel_6ac69f9432e4819194f58caa66a28271",
-    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-016",
+    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017",
     "approval_status": "APPROVED_FOR_PFS_EXECUTION_PENDING",
-    "hybrid_snapshot": "VERIFIED",
-    "runtime_plugin_state_fingerprint": "6160e20b0e24e5219c8efd2a63815455dc2a8050bd3c1113cf9b3f830e86d677",
+    "runtime_plugin_state_fingerprint": "78cfc46edbfbef7288af9ef31866546130a361f0b5345b75009ae931c740ac5e",
     "execution_allowed": true
   },
   "validation": {
@@ -47,15 +46,15 @@
     "no_clic_mutation": true
   },
   "current_lyvra_state": {
-    "runtime_plugin_state_fingerprint": "54476252c1350eaed6b8c20d80d337e5fa9ba0a8b94c4151345586e3dbe8abc5",
+    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
     "account": {
-      "version": "0.13.40",
-      "release_id": "pluginrel_6ac69f09dfdc8191aa2fc35b87d994b4"
+      "version": "0.13.41",
+      "release_id": "pluginrel_6ac6a534aa748191b4fff3bd83aa162d"
     },
     "native_runtime": {
-      "version": "0.1.40",
-      "release_id": "pluginrel_6ac69efba2448191b86cbda652b7d15c"
+      "version": "0.1.41",
+      "release_id": "pluginrel_6ac6a5263cf88191a58ad3f99884a38b"
     }
   },
-  "stale_reason": "PFS_REQUEST_TARGETS_0.13.37_0.1.37_BUT_CURRENT_IS_0.13.40_0.1.40"
+  "stale_reason": "PFS_REQUEST_TARGETS_0.13.37_0.1.37_BUT_CURRENT_IS_0.13.41_0.1.41"
 }
