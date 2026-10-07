@@ -73,7 +73,7 @@
     "workspace_handoff_scope": "WORKSPACE_AND_LINEAGE",
     "update_mode": "ADDITIVE_CURRENT_REFRESH_PRESERVE_ACTIVE_WORKSPACE_AND_WORK"
   },
-  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers.",
+  "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers. Track Design Rev96 adds LYVRA-native lyric source recognition, source-fidelity/anti-invention, anchor intelligence and character-relation mapping without importing MIRA authority.",
   "domain_path_map": {
     "AUTHORITY_AND_CURRENT_POINTER": [
       "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
@@ -151,7 +151,9 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md",
-      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md"
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
