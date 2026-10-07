@@ -1419,5 +1419,48 @@
     "custom_plugin": "OPTIONAL_CAUSAL_NEED_GATE",
     "execution": "PREVIEW_APPLY_OBSERVE_REVIEW_LOCK_OR_REPAIR",
     "plugin_impact": "NO_PLUGIN_TEXT_CHANGE_REQUIRED_DYNAMIC_REPO_RESOLUTION"
+  },
+  "speech_beta_stable_set_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY_PRE_POINTER",
+    "native_plugin": {
+      "version": "0.1.41",
+      "release_id": "pluginrel_6ac6a5263cf88191a58ad3f99884a38b",
+      "readback": "PASS"
+    },
+    "account_plugin": {
+      "version": "0.13.41",
+      "release_id": "pluginrel_6ac6a534aa748191b4fff3bd83aa162d",
+      "readback": "PASS"
+    },
+    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
+    "speech_beta_evidence": {
+      "carrier": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_BETA_COMMUNITY_EVIDENCE_2026-10-07.md",
+      "status": "COMMUNITY_EVIDENCE_TEST_CANDIDATE",
+      "longform_degradation_ab": "OPEN",
+      "paragraph_end_articulation_ab": "OPEN",
+      "hard_two_minute_limit": false,
+      "production_rule": false
+    },
+    "stable_set": {
+      "required_before_coupled_execution": true,
+      "members": [
+        "LYVRA_ACCOUNT",
+        "LYVRA_NATIVE",
+        "CLIC"
+      ],
+      "current_status": "NOT_CONVERGED",
+      "reason": "PFS_REQUEST_STALE_AND_MATCHING_LYVRA_APPROVAL_MISSING",
+      "clic_version": "0.1.16",
+      "clic_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017",
+      "clic_runtime_plugin_state_fingerprint": "78cfc46edbfbef7288af9ef31866546130a361f0b5345b75009ae931c740ac5e"
+    },
+    "pfs_request_status": "SUPERSEDED_0.13.37_0.1.37",
+    "private_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED",
+    "development_notice": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_CLIC_DEVELOPMENT_NOTICE_CURRENT.json",
+    "studio2_conducting_protocol_preserved": true,
+    "studio2_conducting_protocol_blob": "034df712a8642824dd824245fd0e252058ed7d6d",
+    "track_rev95_preserved": true,
+    "whole_rev242_preserved": true,
+    "foreign_native_mutation": false
   }
 }
