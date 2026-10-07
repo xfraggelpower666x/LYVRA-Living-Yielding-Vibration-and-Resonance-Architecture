@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-07-REV93-STUDIO2-031-EIGHT-CARRIER-FRESHNESS-REPAIR",
+  "freshness_epoch": "2026-10-07-REV93-STUDIO2-031-EIGHT-CARRIER-FRESHNESS-REPAIR-FINAL",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "41d66796a12114dcb2a3cd64baab9f968027a5d5",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "1eff513624e5f93af0f95c0a1d2db7c60550f446",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "addb09663d75d5e74694e175a5e9d9685881315b",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "5a62978efae80a8447996140176ab3c8799bf827",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "b281b4a0e530dcc1ff71a0a5874c1c7d88ca3c3a",
@@ -832,7 +832,7 @@
     "plugin_readback": "VERIFIED_BOTH"
   },
   "studio2_031_freshness_repair_2026_10_07": {
-    "status": "BODY_UPDATED_PRE_MANIFEST_COVERAGE_POINTER",
+    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
     "source_head": "4cf6828f6fe2810b39e7c40ff5323b68cb0142ca",
     "recovery_branch": "lyvra-pre-studio2-031-freshness-repair-20261007-0746",
     "repaired_carrier_count": 8,
@@ -842,6 +842,8 @@
     "whole_revision": 242,
     "track_revision": 93,
     "workspace_continuity_v2_preserved": true,
-    "core_content_mutation": false
+    "core_content_mutation": false,
+    "manifest_blob": "addb09663d75d5e74694e175a5e9d9685881315b",
+    "coverage_blob": "5a62978efae80a8447996140176ab3c8799bf827"
   }
 }
