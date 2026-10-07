@@ -78,5 +78,22 @@
     "private_vault_mutation_by_lyvra": false,
     "backup_execution_owner": "666PFS",
     "backup_readback_status": "PENDING_PFS_EXECUTION"
+  },
+  "coupled_backup_circle": {
+    "status": "REQUIRED_ON_EVERY_LYVRA_PLUGIN_BACKUP_ROUND",
+    "current_state": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+    "pfs_handoff": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
+    "clic_notice": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json",
+    "private_vault_contract": "contracts/666PFS_COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE.md",
+    "private_vault_pointer_blob": "1ac1844fb77780d65d0bddd45cd9c0080f6bdf88",
+    "clic_observed_plugin": {
+      "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+      "version": "0.1.5",
+      "release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919"
+    },
+    "clic_native_authorization": "PENDING",
+    "pfs_circle_implementation": "PENDING_NATIVE_PFS_CONSUMPTION",
+    "round_complete_without_clic_leg": "FORBIDDEN"
   }
 }
