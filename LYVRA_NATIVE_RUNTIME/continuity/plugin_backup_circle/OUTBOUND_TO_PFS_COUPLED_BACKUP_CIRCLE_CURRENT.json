@@ -1,6 +1,6 @@
 {
-  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v6",
-  "status": "OUTBOUND_HANDOFF_CURRENT_0.13.36_0.1.37_FRESH_REQUEST_REQUIRED_CLIC_0.1.11_BLOCKED",
+  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v7",
+  "status": "OUTBOUND_HANDOFF_CURRENT_0.13.37_0.1.37_FRESH_REQUEST_REQUIRED_CLIC_0.1.11_BLOCKED",
   "source_system": "LYVRA",
   "target_system": "666PFS",
   "purpose": "DEVELOP_AND_OPERATE_COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE",
@@ -8,18 +8,18 @@
   "lyvra_current": {
     "plugin_set": {
       "account": {
-        "version": "0.13.36",
-        "release_id": "pluginrel_6ac693a97b2c81918d4251326f3a561e"
+        "version": "0.13.37",
+        "release_id": "pluginrel_6ac694bfead081918426d933fb788358"
       },
       "native": {
         "version": "0.1.37",
         "release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6"
       }
     },
-    "runtime_plugin_state_fingerprint": "84943ea077690d964c3c625bd0100bb4ee07d0a92548b60d3ad23e240f2a9613",
+    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
     "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
     "live_readback": "VERIFIED_BOTH_SURFACES",
-    "current_backup_approval_status": "SUPERSEDED_AWAITING_FRESH_PFS_REQUEST_FOR_0.13.36_0.1.37",
+    "current_backup_approval_status": "SUPERSEDED_AWAITING_FRESH_PFS_REQUEST_FOR_0.13.37_0.1.37",
     "previous_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
     "previous_approval_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
     "approval_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json",
@@ -51,7 +51,7 @@
   "pfs_may_mutate_lyvra_live": false,
   "pfs_may_mutate_clic_live": false,
   "private_target_role": "BACKUP_STORAGE_ONLY",
-  "pfs_action_required": "UNDER_666PFS_NATIVE_UPDATE_REFRESH_REQUEST_TO_LYVRA_0.13.36_0.1.37_FINGERPRINT_AND_RECHECK_CLIC_0.1.11_NATIVE_BINARY_PARITY_BEFORE_PRIVATE_WRITE",
+  "pfs_action_required": "UNDER_666PFS_NATIVE_UPDATE_REFRESH_REQUEST_TO_LYVRA_0.13.37_0.1.37_FINGERPRINT_AND_RECHECK_CLIC_0.1.11_BINARY_PARITY",
   "foreign_mutation_by_lyvra": false,
   "pfs_v2_requirements": [
     "RUN_PER_SYSTEM_PARITY_PREFLIGHT_BEFORE_ARTIFACT_FREEZE",
@@ -89,5 +89,12 @@
     "REQUIRE_CLIC_0.1.11_BINARY_PARITY_AND_FRESH_NATIVE_APPROVAL",
     "PRIVATE_WRITE_REMAINS_BLOCKED_UNTIL_BOTH_NATIVE_LEGS_ARE_FRESH"
   ],
-  "proposal_intake_note": "LYVRA UPDATE now checks relevant peer handoff/outbox carriers for improvement proposals by default; proposal presence never auto-adopts foreign state."
+  "proposal_intake_note": "LYVRA UPDATE now checks relevant peer handoff/outbox carriers for improvement proposals by default; proposal presence never auto-adopts foreign state.",
+  "pfs_v7_requirements": [
+    "SUPERSEDE_REQUEST_FOR_0.13.35_AND_0.1.36",
+    "BIND_NEW_LYVRA_REQUEST_TO_RUNTIME_PLUGIN_STATE_FINGERPRINT_e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
+    "PRESERVE_ACCOUNT_DISPLAY_NAME_L.Y.V.R.A._ALIVE_AND_LOGO_AS_RESTORE_RELEVANT_ASSET",
+    "REQUIRE_CLIC_0.1.11_BINARY_PARITY_AND_FRESH_NATIVE_APPROVAL",
+    "PRIVATE_WRITE_REMAINS_BLOCKED_UNTIL_BOTH_NATIVE_LEGS_ARE_FRESH"
+  ]
 }
