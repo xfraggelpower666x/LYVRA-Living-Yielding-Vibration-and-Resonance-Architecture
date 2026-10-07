@@ -157,7 +157,11 @@
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
       "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md",
       "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
-      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md"
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_REQUEST_CURRENT.json",
+      "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json",
+      "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json"
     ],
     "SPECIALIST_CONTINUITY": [
       "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md"
@@ -1049,5 +1053,26 @@
     "track_revision": 93,
     "workspace_continuity_v2_preserved": true,
     "core_content_mutation": false
+  },
+  "pfs_plugin_backup_approval_channel_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_APPROVED_PFS_EXECUTION_PENDING",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CONTRACT.md",
+    "contract_sha": "09c4790cc282ffe0bc8b595c00def26430ecfc11",
+    "inbound_request": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_REQUEST_CURRENT.json",
+    "inbound_request_sha": "e5f5c825d2bbae16ab8eafc076d960af7a8f1b40",
+    "approval": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json",
+    "approval_sha": "c396dd587cde3e4e0d7159a503af2f5585d01598",
+    "target_carrier": "LYVRA_NATIVE_RUNTIME/continuity/PFS_PRIVATE_PLUGIN_BACKUP_TARGET_2026-10-05.json",
+    "target_carrier_sha": "7612cd7f33dbdf4e1f80dac6b1265d3507a7eb71",
+    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+    "approved_release_set": "ACCOUNT_0.13.31_NATIVE_0.1.31",
+    "approved_lyvra_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
+    "request_source_head": "cdcac9c37a2d1d594d355aad1ada0ba3ed6addd5",
+    "pfs_mutation_by_lyvra": false,
+    "private_vault_mutation_by_lyvra": false,
+    "backup_execution_owner": "666PFS",
+    "backup_readback": "PENDING_PFS_EXECUTION",
+    "no_new_router": true,
+    "no_cross_system_merge": true
   }
 }
