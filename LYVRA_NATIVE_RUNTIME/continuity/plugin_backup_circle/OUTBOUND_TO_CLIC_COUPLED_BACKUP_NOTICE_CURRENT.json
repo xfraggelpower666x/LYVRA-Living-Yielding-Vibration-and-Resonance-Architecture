@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_TO_CLIC_COUPLED_PLUGIN_BACKUP_NOTICE_v2",
-  "status": "OUTBOUND_NOTICE_REFRESHED_FROM_VERIFIED_CLIC_0.1.7_PARITY_ARCHITECTURE",
+  "status": "OUTBOUND_NOTICE_V3_RECOMMENDATION_RUNTIME_FINGERPRINT_APPROVAL",
   "source_system": "LYVRA",
   "target_system": "666CLIC",
   "purpose": "INFORM_CLIC_AND_REQUEST_CLIC_NATIVE_BACKUP_APPROVAL_PATH_FOR_PFS_COUPLED_ROUNDS",
@@ -34,5 +34,17 @@
     "PASS_14_OF_14_SOURCE_PARITY",
     "SEMANTIC_PARITY_BEFORE_UPDATE_CLOSEOUT",
     "NO_SILENT_PLUGIN_ROLLBACK"
-  ]
+  ],
+  "lyvra_recommendation_2026_10_07": {
+    "recommendation_class": "GENERALIZED_GOVERNANCE_PATTERN_FOR_CLIC_NATIVE_EVALUATION",
+    "problem": "EXACT_REPO_HEAD_APPROVAL_CAN_SELF_INVALIDATE_WHEN_APPROVAL_OR_POINTER_WRITE_ADVANCES_SAME_REPO_HEAD",
+    "suggested_rule": "BIND_BACKUP_APPROVAL_TO_VERIFIED_RUNTIME_PLUGIN_STATE_FINGERPRINT_AND_KEEP_HEAD_AS_PROVENANCE",
+    "head_change_ne_automatic_supersession": true,
+    "fingerprint_change_supersedes": true,
+    "governance_only_head_advance_may_preserve_approval_when_bound_state_revalidates": true,
+    "automatic_plugin_impact_check_recommended": true,
+    "automatic_plugin_evolution_when_runtime_semantics_change_recommended": true,
+    "clic_decides_native_adoption": true,
+    "lyvra_does_not_mutate_clic": true
+  }
 }
