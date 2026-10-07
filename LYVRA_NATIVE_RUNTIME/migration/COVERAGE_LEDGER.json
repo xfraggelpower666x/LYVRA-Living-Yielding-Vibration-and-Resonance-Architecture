@@ -1345,5 +1345,26 @@
     "sub_rehydration_bound": true,
     "project_chat_bound": true,
     "plugin_surface_impact": "DYNAMIC_RUNTIME_REFERENCE_NO_RELEASE_REQUIRED"
+  },
+  "speech_beta_stable_set_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "plugins": "0.13.41|0.1.41",
+    "runtime_plugin_state_fingerprint": "55c0826a1e433083b5f68ba8db2fe21b62f2773ffcdae6e30c8ebe8a7514cc50",
+    "speech_evidence": "COMMUNITY_EVIDENCE_TEST_CANDIDATE_REACHABLE",
+    "speech_longform_ab": "OPEN",
+    "paragraph_end_articulation_ab": "OPEN",
+    "stable_set_status": "NOT_CONVERGED",
+    "stable_set_required": true,
+    "clic_current": "0.1.16",
+    "clic_approval": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017",
+    "pfs_request_freshness": "SUPERSEDED_0.13.37_0.1.37",
+    "private_write": "BLOCKED",
+    "development_notice": "VERIFIED_LYVRA_OWNED_INFORMATIONAL_HANDOFF",
+    "studio2_parallel_evolution": "PRESERVED",
+    "studio2_conducting_protocol_blob": "034df712a8642824dd824245fd0e252058ed7d6d",
+    "foreign_autoactivation": false,
+    "foreign_native_mutation": false,
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true
   }
 }
