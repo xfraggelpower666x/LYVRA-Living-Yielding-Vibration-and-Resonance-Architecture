@@ -1489,5 +1489,35 @@
     ],
     "target_native_validation_required": true,
     "shared_semantics_ne_shared_memory": true
+  },
+  "speech_beta_rev96_plugin_reconcile_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY_PRE_POINTER",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 96,
+    "speech_evidence": {
+      "carrier": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_BETA_COMMUNITY_EVIDENCE_2026-10-07.md",
+      "status": "COMMUNITY_EVIDENCE_TEST_CANDIDATE",
+      "native_rule": false,
+      "production_rule": false,
+      "longform_degradation_ab": "OPEN",
+      "paragraph_end_articulation_ab": "OPEN"
+    },
+    "plugins": {
+      "native": {
+        "version": "0.1.45",
+        "release_id": "pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29"
+      },
+      "account": {
+        "version": "0.13.42",
+        "release_id": "pluginrel_6ac6bc473d248191957b18b991ae0d37"
+      }
+    },
+    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
+    "account_rev96_parity": "VERIFIED",
+    "native_newer_valid_state_preserved": true,
+    "pfs_request_status": "SUPERSEDED_0.13.41_0.1.41",
+    "clic_stable_set_status": "NOT_CONVERGED_LIVE_0.1.19_NATIVE_REPO_0.1.16",
+    "private_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED",
+    "foreign_native_mutation": false
   }
 }
