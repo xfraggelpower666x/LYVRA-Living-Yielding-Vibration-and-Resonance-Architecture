@@ -667,5 +667,17 @@
     "native_release_id": "pluginrel_6ac5941ba3a881918704c60e9eb6fea9",
     "track_design_output_contract_readback": "VERIFIED_BOTH",
     "semantic_parity": "VERIFIED_TRACK_DESIGN_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT"
+  },
+  "track_design_dependency_links_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "relational_card_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "speech_design_by_reference": true,
+    "studio2_by_reference": true,
+    "speech_scope": "SELECTIVE_RELEVANT_CAPABILITIES_NO_TRACK_UI_IMPORT",
+    "studio2_scope": "TRACK_DNA_MANTRA_EMOJI_CARDS_RENDERER_LYRICS_STYLE_EXTENDED_PSYCHOACOUSTICS",
+    "stale_copy_authority": false,
+    "account_plugin_version": "0.13.21",
+    "native_plugin_version": "0.1.21",
+    "plugin_readback": "PASS_BOTH"
   }
 }
