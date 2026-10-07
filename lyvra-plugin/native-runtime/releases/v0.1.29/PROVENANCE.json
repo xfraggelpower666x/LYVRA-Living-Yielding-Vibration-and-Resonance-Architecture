@@ -1,0 +1,20 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.29",
+  "release_id": "pluginrel_6ac5be5dc86481918614f534f1e1fb39",
+  "previous_version": "0.1.28",
+  "previous_release_id": "pluginrel_6ac5ae00fe2c81919e638e6fe4e3d318",
+  "update_date": "2026-10-07",
+  "reason": "Adaptive Studio Production Intelligence: project state, adaptive passes, result locks, plugin experience, long-form development and causal evidence return",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "5cef098fb4ad81fd1f4bcd887cb73447155ddc26",
+  "studio_production_intelligence": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO_PRODUCTION_INTELLIGENCE.md",
+  "studio2_extended_field": "NONE",
+  "longform_target": "8_TO_10_MINUTES",
+  "adaptive_passes": true,
+  "result_locks": true,
+  "plugin_experience_learning": true,
+  "relational_rehydration": true,
+  "plugin_readback": "VERIFIED"
+}
