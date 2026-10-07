@@ -6,6 +6,7 @@
     "RESOLVE_ANALYTICS_FACET_REGISTRATION",
     "READ_FACET_CONTRACT",
     "READ_FACET_CURRENT_STATE",
+    "READ_SEMANTIC_VISUAL_FACET_STANDARD",
     "READ_RESEARCH_REGISTER",
     "READ_RENDERER_EVIDENCE_REGISTER",
     "READ_MODEL_COVERAGE_REGISTER",
@@ -22,5 +23,12 @@
     "AUTO_MUTATE_TRACK_DESIGN",
     "AUTO_MUTATE_CARDS"
   ],
-  "whole_lyvra_rehydration_precedes_facet_foreground": true
+  "whole_lyvra_rehydration_precedes_facet_foreground": true,
+  "semantic_visual_learning": {
+    "standard": "LYVRA_NATIVE_RUNTIME/current/governance/SEMANTIC_VISUAL_FACET_LIFECIRCLE_STANDARD.md",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "outcome_required": true,
+    "contradiction_ne_overwrite": true,
+    "peer_notice_requires_whole_lyvra_validation": true
+  }
 }
