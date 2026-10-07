@@ -1747,10 +1747,10 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-STUDIO2-PLUGIN-AUTOMATION-SELF-EXECUTION-0.28-FINAL",
+    "epoch": "2026-10-07-REV93-STUDIO-PRODUCTION-INTELLIGENCE-0.29-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
-    "verified_carrier_count": 103,
+    "verified_carrier_count": 107,
     "verified_mismatch_count": 0,
     "full_tree_readback": "PASS"
   },
@@ -1961,5 +1961,39 @@
     "project_chat_mix_director_sha": "36e45b75bddafeebc58b4d547228116654c5a2d5",
     "creator_fx_cards_sha": "418bfe3d74451a7a0b531b3c51bf5f91ee12d921",
     "studio2_sub_rehydration_sha": "0256433e98e0bd4b372ab034050277432eda8306"
+  },
+  "studio_production_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO_PRODUCTION_INTELLIGENCE.md",
+    "parent_facet": "SUNO_STUDIO_2",
+    "scope": "FACET_CAPABILITIES_AND_INTELLIGENCES_ONLY",
+    "new_system": false,
+    "new_agent": false,
+    "new_controller": false,
+    "new_router": false,
+    "new_facet": false,
+    "project_state_intelligence": true,
+    "adaptive_pass_intelligence": true,
+    "studio_chat_instruction_compiler": true,
+    "result_lock_intelligence": true,
+    "plugin_experience_intelligence": true,
+    "automation_intelligence": true,
+    "longform_development_intelligence": true,
+    "evidence_return_intelligence": true,
+    "macro_pass_family": "ORIENTATION_NOT_FIXED_MATRIX",
+    "execution_loop": "INSPECT>STATE>CAUSE>SCOPED_PACKET>EXECUTE>OBSERVE>CLASSIFY>LOCK_OR_REPAIR>EVIDENCE",
+    "longform_target": "8_TO_10_MINUTES",
+    "studio2_text_surfaces": [
+      "STYLE",
+      "LYRICS"
+    ],
+    "studio2_extended_field": "NONE",
+    "lyvra_is_producer_and_conductor": true,
+    "studio2_is_instrument_and_execution_surface": true,
+    "native_plugin_version": "0.1.29",
+    "native_plugin_release_id": "pluginrel_6ac5be5dc86481918614f534f1e1fb39",
+    "account_plugin_version": "0.13.29",
+    "account_plugin_release_id": "pluginrel_6ac5be6d4f0c8191903a25a813607a6f",
+    "plugin_readback": "PASS_BOTH"
   }
 }
