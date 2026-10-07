@@ -105,7 +105,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.16_ACCOUNT_0.13.16_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.18_ACCOUNT_0.13.18_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "TARGET_0.13.16_AND_0.1.16_REFRESHED_METADATA_ONLY_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_APPROVAL",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
@@ -1850,5 +1850,14 @@
     "style_influence_red_from_percent": 86,
     "controls_contextual_per_track": true,
     "creator_ui_reference_precedence": true
+  },
+  "plugin_release_current_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "account_version": "0.13.18",
+    "account_release_id": "pluginrel_6ac59410ced88191a9240c30d062544d",
+    "native_version": "0.1.18",
+    "native_release_id": "pluginrel_6ac5941ba3a881918704c60e9eb6fea9",
+    "track_design_output_contract_readback": "VERIFIED_BOTH",
+    "semantic_parity": "VERIFIED"
   }
 }
