@@ -1,0 +1,16 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.32",
+  "release_id": "pluginrel_6ac6648d05c081919b9b87102d68932a",
+  "previous_version": "0.13.31",
+  "previous_release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
+  "update_date": "2026-10-07",
+  "reason": "Automatic semantic plugin-impact evolution and fingerprint-bound backup approval governance",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_plugin_release": "e9383a01f0f53588edfc39b1bc93e271ed2c9784",
+  "changed_skill": "skills/repository-update-recovery/SKILL.md",
+  "added_skill_reference": "skills/instructions/PLUGIN_AUTO_EVOLUTION.md",
+  "plugin_readback": "VERIFIED_METADATA_AND_CHANGED_SKILLS",
+  "runtime_plugin_state_fingerprint": "a96835a2ebe203398432df97799dc540a6aeb88dbb7ef3aef0cc118b1118d549"
+}
