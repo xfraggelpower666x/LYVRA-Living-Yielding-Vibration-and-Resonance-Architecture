@@ -1,6 +1,6 @@
 {
-  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v8",
-  "status": "OUTBOUND_HANDOFF_CURRENT_0.13.38_0.1.38_BYTE_EXACT_LOGOS_FRESH_REQUEST_REQUIRED_CLIC_0.1.12_BLOCKED",
+  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v9",
+  "status": "OUTBOUND_HANDOFF_CURRENT_0.13.39_0.1.39_BINARY_BINDING_EXCHANGE_FRESH_REQUEST_REQUIRED_CLIC_FRESHNESS_BLOCKED",
   "source_system": "LYVRA",
   "target_system": "666PFS",
   "purpose": "DEVELOP_AND_OPERATE_COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE",
@@ -8,18 +8,18 @@
   "lyvra_current": {
     "plugin_set": {
       "account": {
-        "version": "0.13.38",
-        "release_id": "pluginrel_6ac69a232e608191b41a2145c17c8d64"
+        "version": "0.13.39",
+        "release_id": "pluginrel_6ac69c8a6ef48191a14fcb4ce1032f51"
       },
       "native": {
-        "version": "0.1.38",
-        "release_id": "pluginrel_6ac69a13bc208191831b3f0925bde15d"
+        "version": "0.1.39",
+        "release_id": "pluginrel_6ac69c7b245c8191becc75e8b4b2c27e"
       }
     },
-    "runtime_plugin_state_fingerprint": "17947a53bbf8018bff8b9ed94941b024c37611615a6b3c338a8f54fbfee084ee",
+    "runtime_plugin_state_fingerprint": "336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b",
     "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
     "live_readback": "VERIFIED_BOTH_SURFACES",
-    "current_backup_approval_status": "SUPERSEDED_AWAITING_FRESH_PFS_REQUEST_FOR_0.13.38_0.1.38",
+    "current_backup_approval_status": "SUPERSEDED_AWAITING_FRESH_PFS_REQUEST_FOR_0.13.39_0.1.39",
     "previous_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
     "previous_approval_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
     "approval_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json",
@@ -35,16 +35,27 @@
         "logo_path": "assets/gpt-icon.png",
         "logo_sha256": "90fde5e1f22fc3c54f6ab9d597c97f635ba935fd6d568042a8b4ec0054ed1a38"
       }
+    },
+    "binary_binding": {
+      "evidence_class": "HYBRID_RELEASE_SNAPSHOT",
+      "native_logo_sha256": "1423681dcca2cfe2a6d0ff045b9694a3df76b4761d513f114d7b8b723cf025b5",
+      "account_logo_sha256": "90fde5e1f22fc3c54f6ab9d597c97f635ba935fd6d568042a8b4ec0054ed1a38",
+      "backup_executor_hash_of_extracted_bound_binary_required": true,
+      "direct_live_binary_hash_readback_claimed": false,
+      "repo_byte_parity_claimed": false
     }
   },
   "clic_observed_current": {
     "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
-    "live_version": "0.1.12",
-    "live_release_id": "pluginrel_6ac6988775bc8191b6742f4f873c8967",
+    "live_version": "0.1.14",
+    "live_release_id": "pluginrel_6ac69bff59b881919cac36f66caace3e",
     "repository": "xfraggelpower666x/666CLICPRO",
     "branch": "clic-migration-rev79-staging",
-    "active_head_observed": "b36b9ed4f1322f4802c4a5e7d6adb761ccb2251a",
-    "freshness_status": "BLOCKED_PENDING_V0_1_12_REPO_BINARY_MIRROR",
+    "active_head_observed": "7a2aea6e466794509c25d4373bb795042f1f6eb5",
+    "repo_plugin_current_version": "0.1.12",
+    "repo_plugin_current_release_id": "pluginrel_6ac6988775bc8191b6742f4f873c8967",
+    "native_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-012-PENDING",
+    "freshness_status": "BLOCKED_LIVE_RELEASE_AHEAD_OF_REPO_CURRENT_AND_APPROVAL",
     "clic_must_authorize_own_leg": true
   },
   "coupled_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
@@ -53,7 +64,7 @@
   "pfs_may_mutate_lyvra_live": false,
   "pfs_may_mutate_clic_live": false,
   "private_target_role": "BACKUP_STORAGE_ONLY",
-  "pfs_action_required": "UNDER_666PFS_NATIVE_UPDATE_REFRESH_REQUEST_TO_LYVRA_0.13.38_0.1.38_FINGERPRINT_AND_RECHECK_CLIC_0.1.12_BINARY_MIRROR",
+  "pfs_action_required": "UNDER_666PFS_NATIVE_UPDATE_REFRESH_REQUEST_TO_LYVRA_0.13.39_0.1.39_FINGERPRINT_AND_RECHECK_CLIC_NATIVE_CURRENT",
   "foreign_mutation_by_lyvra": false,
   "pfs_v2_requirements": [
     "RUN_PER_SYSTEM_PARITY_PREFLIGHT_BEFORE_ARTIFACT_FREEZE",
@@ -106,5 +117,19 @@
     "PRESERVE_ACCOUNT_LOGO_SHA256_90fde5e1f22fc3c54f6ab9d597c97f635ba935fd6d568042a8b4ec0054ed1a38",
     "REQUIRE_CLIC_0.1.12_BINARY_MIRROR_AND_FRESH_NATIVE_APPROVAL",
     "PRIVATE_WRITE_REMAINS_BLOCKED_UNTIL_BOTH_NATIVE_LEGS_ARE_FRESH"
-  ]
+  ],
+  "pfs_v9_requirements": [
+    "SUPERSEDE_REQUEST_FOR_0.13.37_AND_0.1.37",
+    "BIND_NEW_LYVRA_REQUEST_TO_RUNTIME_PLUGIN_STATE_FINGERPRINT_336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b",
+    "HASH_EXTRACTED_BOUND_BINARIES_BEFORE_BACKUP_RECEIPT_ACCEPTANCE",
+    "DO_NOT_CALL_HYBRID_BINARY_BINDING_DIRECT_LIVE_HASH_READBACK_OR_REPO_BYTE_PARITY",
+    "RECHECK_CLIC_LIVE_REPO_APPROVAL_PARITY_BEFORE_PRIVATE_WRITE",
+    "PRIVATE_WRITE_REMAINS_BLOCKED_UNTIL_BOTH_NATIVE_LEGS_ARE_FRESH"
+  ],
+  "development_exchange": {
+    "notice_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_CLIC_DEVELOPMENT_NOTICE_CURRENT.json",
+    "notice_role": "INFORMATIONAL_ONLY",
+    "notice_ne_trigger": true,
+    "notice_ne_authority_transfer": true
+  }
 }
