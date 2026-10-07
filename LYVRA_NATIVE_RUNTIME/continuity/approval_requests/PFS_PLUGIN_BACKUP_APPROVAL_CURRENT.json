@@ -51,5 +51,14 @@
     "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-020",
     "execution_allowed": false
   },
-  "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH"
+  "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH",
+  "backup_write_status": "BLOCKED_CURRENT_PLUGIN_STATE_CHANGED",
+  "superseded_by": {
+    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
+    "account_version": "0.13.37",
+    "account_release_id": "pluginrel_6ac694bfead081918426d933fb788358",
+    "native_version": "0.1.37",
+    "native_release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6",
+    "reason": "VALID_NEWER_ACCOUNT_PLUGIN_PRESENTATION_EVOLUTION"
+  }
 }
