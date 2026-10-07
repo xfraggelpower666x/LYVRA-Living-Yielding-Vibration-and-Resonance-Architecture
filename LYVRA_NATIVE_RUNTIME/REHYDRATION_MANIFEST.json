@@ -838,5 +838,38 @@
     "native_plugin": "0.1.17",
     "account_plugin": "0.13.17",
     "plugin_readback": "PASS"
+  },
+  "track_design_creator_output_surface_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "whole_revision": 242,
+    "track_design_version": "v3.4",
+    "track_revision": 93,
+    "sub_rehydration_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "facet_lifecircle_carrier": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "required_visible_output_order": [
+      "TITLE_CODEBOX",
+      "EXTENDED_PROMPT_CODEBOX",
+      "SUNO_CONTROL_SURFACE",
+      "STYLE_PROMPT_CODEBOX",
+      "LYRIC_PROMPT_CODEBOX",
+      "LYRICS_CODEBOX"
+    ],
+    "own_codebox_per_text_surface": true,
+    "heading_and_character_counter_required": true,
+    "suno_controls_between_extended_and_style": true,
+    "ui_language": "DE",
+    "duration_step_seconds": 5,
+    "duration_max": "6:00",
+    "weirdness_red_zone_start_percent": 86,
+    "style_influence_red_zone_start_percent": 86,
+    "control_values_recalculated_per_track": true,
+    "emoji_reinforcement_required_in": [
+      "EXTENDED_PROMPT",
+      "STYLE_PROMPT",
+      "LYRIC_PROMPT",
+      "LYRICS"
+    ],
+    "creator_validated_ui_evidence_required_when_uncertain": true,
+    "no_guessing_missing_controls": true
   }
 }
