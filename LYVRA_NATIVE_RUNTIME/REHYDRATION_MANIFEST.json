@@ -885,5 +885,18 @@
     "native_release_id": "pluginrel_6ac5941ba3a881918704c60e9eb6fea9",
     "track_design_skill_readback": "VERIFIED_BOTH",
     "track_design_output_contract": "SUNO_ALIGNED_FOUR_VISIBLE_CODEBOXES_WITH_UI_ORDER"
+  },
+  "track_design_dependency_links_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "relational_card_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "speech_design_subrehydration": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+    "studio2_subrehydration": "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
+    "speech_consumes_track_design_by_reference": true,
+    "studio2_consumes_track_design_by_reference": true,
+    "no_forked_track_design_intelligence": true,
+    "current_track_design_carriers_outrank_stale_copies": true,
+    "account_plugin_version": "0.13.21",
+    "native_plugin_version": "0.1.21",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
