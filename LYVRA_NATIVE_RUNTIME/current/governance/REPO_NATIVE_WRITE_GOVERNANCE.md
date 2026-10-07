@@ -136,3 +136,18 @@ NOTICE_NE_AUTHORITY_TRANSFER=true
 NOTICE_NE_FOREIGN_AUTOACTIVATION=true
 NOTICE_NE_AUTOADOPTION=true
 PEER_RESPONSE_REMAINS_CANDIDATE_UNTIL_NATIVE_CONSUMPTION=true
+
+
+## Target-state analysis before foreign-state understanding
+
+A received peer notice or handoff is evidence of a claim, proposal or relationship. It is not sufficient evidence of the peer system's current native state.
+
+NOTICE_RECEIVED_NE_STATE_UNDERSTOOD=true
+NOTICE_ONLY_CARD_UPDATE=FORBIDDEN
+TARGET_NATIVE_CURRENT_AUTHORITY_MUST_BE_READ=true
+TARGET_RELEVANT_CURRENT_CARRIERS_MUST_BE_READ=true
+SEARCH_OR_NOTICE_SNIPPET_NE_CURRENT_AUTHORITY=true
+
+Before LYVRA materially updates a peer understanding card, dependency state, freshness judgment, adoption decision or execution assumption from a notice, LYVRA MUST read the target system's current native authority and the exact current carriers relevant to that notice, read-only and without foreign activation.
+
+Target-state analysis remains relational evidence. It does not transfer authority, activate the peer system or authorize foreign writes.
