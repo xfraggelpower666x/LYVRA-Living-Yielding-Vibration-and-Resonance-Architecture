@@ -1,20 +1,24 @@
 {
   "schema": "LYVRA_COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT_v2",
-  "status": "CURRENT_V2_PARITY_AWARE_LYVRA_APPROVED_CLIC_0.1.7_VERIFIED_PARITY_NATIVE_BACKUP_AUTH_PENDING_PFS_DEVELOPMENT_PENDING",
+  "status": "CURRENT_V2_FINGERPRINT_AWARE_LYVRA_0.13.32_0.1.32_REQUEST_PENDING_CLIC_AUTH_PENDING",
   "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
   "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
   "lyvra_leg": {
-    "approval_status": "APPROVED_CURRENT_RELEASE_SET",
-    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+    "approval_status": "PENDING_MATCHING_PFS_REQUEST_AND_NEW_LYVRA_APPROVAL",
+    "previous_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+    "previous_approval_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
+    "runtime_plugin_state_fingerprint": "a96835a2ebe203398432df97799dc540a6aeb88dbb7ef3aef0cc118b1118d549",
+    "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
     "account": {
-      "version": "0.13.31",
-      "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427"
+      "version": "0.13.32",
+      "release_id": "pluginrel_6ac6648d05c081919b9b87102d68932a"
     },
     "native": {
-      "version": "0.1.31",
-      "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+      "version": "0.1.32",
+      "release_id": "pluginrel_6ac6647fd4988191aba55443163134af"
     },
-    "execution_status": "PFS_PENDING"
+    "live_readback": "VERIFIED_BOTH_SURFACES",
+    "execution_status": "BLOCKED_PENDING_MATCHING_PFS_REQUEST"
   },
   "clic_leg": {
     "observed_plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
@@ -36,7 +40,7 @@
   },
   "pfs_handoff": {
     "path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
-    "status": "READY_FOR_666PFS_NATIVE_CONSUMPTION",
+    "status": "REFRESH_REQUIRED_FOR_0.13.32_0.1.32_AND_FINGERPRINT",
     "pfs_may_develop_internal_mechanics": true
   },
   "clic_notice": {
@@ -68,6 +72,9 @@
     ],
     "unresolved_parity_blocks_backup_freeze": true,
     "release_race_result": "SUPERSEDED_RELEASE_SET",
-    "restore_requires_native_parity_check": true
+    "restore_requires_native_parity_check": true,
+    "approval_binding": "RUNTIME_PLUGIN_STATE_FINGERPRINT",
+    "head_change_alone_supersedes": false,
+    "fingerprint_change_supersedes": true
   }
 }
