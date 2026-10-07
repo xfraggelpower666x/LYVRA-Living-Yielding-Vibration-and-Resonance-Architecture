@@ -1417,5 +1417,19 @@
     "private_write": "BLOCKED",
     "no_foreign_autoactivation": true,
     "foreign_native_mutation": false
+  },
+  "pfs_r02_lyvra_leg_approval_2026_10_08": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "current_plugins": "0.13.42|0.1.45",
+    "lyvra_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
+    "lyvra_native_approval": "APPROVED_045",
+    "pfs_round": "R02",
+    "pfs_lyvra_binding": "PASS",
+    "pfs_clic_binding": "FAIL_STALE",
+    "clic_current": "0.1.20|APPROVAL_022|bd542c3192bd07af098463187eecd83c373d2010c1508352aa1b1239f66a1af4",
+    "stable_set": "NOT_CONVERGED",
+    "private_write": "BLOCKED",
+    "proposal_intake": "PASS_NO_NEW_UNADOPTED_PROPOSAL",
+    "foreign_native_mutation": false
   }
 }
