@@ -1189,5 +1189,29 @@
     "native_plugin_version": "0.1.34",
     "account_plugin_version": "0.13.34",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "emotion_harmony_psychoacoustic_priority_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
+    "restore": [
+      "EMOTION_NE_HARMONY",
+      "RELATIONAL_HARMONY",
+      "HARMONY_RISK_COUNTERRELATION",
+      "ANTI_MUSICAL_RENDERER_GUARD",
+      "PSYCHOACOUSTIC_HIGH_PRIORITY_CONTROL",
+      "PSYCHOACOUSTIC_MEANING_EMOTION_MOTION_SPACE_PRESSURE_VOICE_RELATION",
+      "MOTOR_TIME_AUTHORITY_PRESERVATION",
+      "LYRIC_PSYCHOACOUSTIC_CAUSALITY",
+      "CARD_PSYCHOACOUSTIC_PRIORITY",
+      "STUDIO2_BY_REFERENCE_PRESERVATION",
+      "SPEECH_BY_REFERENCE_PRESERVATION"
+    ],
+    "psychoacoustics_ne_fx_afterthought": true,
+    "no_conventional_harmony_default": true,
+    "no_pop_ballad_or_musical_theatre_drift": true,
+    "native_plugin_version": "0.1.35",
+    "account_plugin_version": "0.13.35",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
