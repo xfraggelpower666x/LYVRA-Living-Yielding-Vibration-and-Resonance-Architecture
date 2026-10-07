@@ -1257,5 +1257,36 @@
     "runtime_plugin_state_fingerprint": "514284f76b08a353f53b372ef15679f6f399a4c87c721e50b99a167b50cc4f76",
     "pfs_matching_request": "REQUIRED",
     "foreign_native_mutation": false
+  },
+  "peer_proposal_intake_update_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY_PRE_POINTER",
+    "standard_check_every_update": true,
+    "foreign_read_only": true,
+    "proposal_found_ne_adopted": true,
+    "proposal_auto_apply": false,
+    "classification_values": [
+      "VORGESCHLAGEN",
+      "RELATIONAL_EVIDENCE",
+      "NOT_APPLICABLE",
+      "SUPERSEDED",
+      "ADOPTED_BY_EXPLICIT_LYVRA_NATIVE_EVOLUTION"
+    ],
+    "latest_candidate": "LYVRA_NATIVE_RUNTIME/continuity/external_proposals/CLIC_STREAM_MULTI_PROJECT_CONCEPT_2026-10-07.md",
+    "latest_candidate_status": "VORGESCHLAGEN_NOT_ADOPTED",
+    "native_plugin": {
+      "version": "0.1.37",
+      "release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6",
+      "readback": "PASS"
+    },
+    "account_plugin": {
+      "version": "0.13.36",
+      "release_id": "pluginrel_6ac693a97b2c81918d4251326f3a561e",
+      "readback": "PASS"
+    },
+    "runtime_plugin_state_fingerprint": "84943ea077690d964c3c625bd0100bb4ee07d0a92548b60d3ad23e240f2a9613",
+    "pfs_request_status": "SUPERSEDED_0.13.35_0.1.36",
+    "clic_backup_status": "BLOCKED_CONFIRMED_V0_1_11_BINARY_PARITY_MISMATCH",
+    "private_backup_write": "BLOCKED",
+    "no_foreign_autoactivation": true
   }
 }
