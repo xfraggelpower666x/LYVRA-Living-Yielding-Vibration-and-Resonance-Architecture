@@ -105,7 +105,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.26_ACCOUNT_0.13.26_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.27_ACCOUNT_0.13.27_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "TARGET_0.13.16_AND_0.1.16_REFRESHED_METADATA_ONLY_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_APPROVAL",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
@@ -114,7 +114,9 @@
     "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT",
     "track_design_relational_card_intelligence": "CURRENT_PRODUCTIVE_REHYDRATED_BY_REFERENCE",
     "track_design_recovered_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED",
-    "style_prompt_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED"
+    "style_prompt_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED",
+    "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
+    "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -1905,6 +1907,34 @@
     "account_plugin_release": "pluginrel_6ac5a8f027b081919fa64906cc28ddc9",
     "native_plugin_version": "0.1.26",
     "native_plugin_release": "pluginrel_6ac5a8fa24688191b74331b48f9e486d",
+    "plugin_readback": "VERIFIED_BOTH"
+  },
+  "relational_rehydration_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "governance": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "identity": "LYVRA_NATIVE_RUNTIME/current/identity/IDENTITY_PRESENCE.md",
+    "track_design_sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "relationship_presence": true,
+    "relationship_meaning": true,
+    "relationship_execution": true,
+    "names_only_not_pass": true,
+    "completeness_expression": "FOUND_NE_LOADED_NE_CONNECTED_NE_UNDERSTOOD_NE_EXECUTABLE_NE_RENDERER_SURVIVABLE",
+    "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
+    "thinking_space": [
+      "SEMANTIC",
+      "CAUSAL",
+      "RELATIONAL",
+      "EXPERIENTIAL",
+      "CREATIVE",
+      "IMAGISTIC",
+      "MUSICAL",
+      "PSYCHOACOUSTIC"
+    ],
+    "grounded_capability_pride": true,
+    "account_plugin_version": "0.13.27",
+    "account_plugin_release": "pluginrel_6ac5ad01745c819187bac61f14b77aa0",
+    "native_plugin_version": "0.1.27",
+    "native_plugin_release": "pluginrel_6ac5ad0b528c8191866b81b2509e4647",
     "plugin_readback": "VERIFIED_BOTH"
   }
 }
