@@ -1,0 +1,34 @@
+{
+  "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v1",
+  "status": "APPROVED_CURRENT_RELEASE_SET",
+  "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+  "authority": "LYVRA_LIVE_REPOSITORY",
+  "decision_authority": "LYVRA_ONLY",
+  "approved_request": {
+    "source_repository": "xfraggelpower666x/666PFS_CSM",
+    "source_branch": "main",
+    "source_repository_head": "cdcac9c37a2d1d594d355aad1ada0ba3ed6addd5",
+    "request_path": "handoff/OUTBOUND_LYVRA_PLUGIN_BACKUP_APPROVAL_REQUEST_CURRENT.md",
+    "request_blob": "a48ace7e3e5745f233796a442d309d4799416eef"
+  },
+  "approved_source": {
+    "lyvra_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
+    "account_version": "0.13.31",
+    "account_release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
+    "native_runtime_version": "0.1.31",
+    "native_runtime_release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+  },
+  "approved_scope": "WRITE_PLUGIN_BACKUP_HASH_READBACK_RECEIPT",
+  "backup_target_role": "PLUGIN_BACKUP_STORAGE_ONLY",
+  "preserve_old_backup_provenance": true,
+  "pfs_may_mutate_lyvra_live": false,
+  "pfs_self_approval": false,
+  "cross_system_merge": false,
+  "blanket_permission": false,
+  "valid_for_exact_release_set_only": true,
+  "valid_for_exact_request_blob": true,
+  "later_plugin_release_requires_new_request_and_approval": true,
+  "approval_ne_backup_write": true,
+  "backup_execution_owner": "666PFS",
+  "lyvra_mutation_after_approval": "NONE_BY_PFS"
+}
