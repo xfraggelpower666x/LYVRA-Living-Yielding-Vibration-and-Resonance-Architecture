@@ -977,5 +977,28 @@
     "native_plugin_version": "0.1.28",
     "account_plugin_version": "0.13.28",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio_production_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO_PRODUCTION_INTELLIGENCE.md",
+    "parent_facet": "SUNO_STUDIO_2",
+    "relational_rehydration_required": true,
+    "restore": [
+      "PROJECT_STATE_INTELLIGENCE",
+      "ADAPTIVE_PASS_INTELLIGENCE",
+      "STUDIO_CHAT_INSTRUCTION_COMPILER",
+      "RESULT_LOCK_INTELLIGENCE",
+      "PLUGIN_EXPERIENCE_INTELLIGENCE",
+      "AUTOMATION_INTELLIGENCE",
+      "LONGFORM_DEVELOPMENT_INTELLIGENCE",
+      "EVIDENCE_RETURN_INTELLIGENCE"
+    ],
+    "macro_pass_family": "ORIENTATION_NOT_FIXED_MATRIX",
+    "execution_loop": "STATE>CAUSE>SCOPED_PACKET>EXECUTE>OBSERVE>CLASSIFY>LOCK_OR_REPAIR>EVIDENCE",
+    "longform_target": "8_TO_10_MINUTES",
+    "studio2_extended_field": "NONE",
+    "native_plugin_version": "0.1.29",
+    "account_plugin_version": "0.13.29",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
