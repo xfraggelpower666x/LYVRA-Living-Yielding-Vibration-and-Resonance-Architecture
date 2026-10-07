@@ -1000,5 +1000,24 @@
     "native_plugin_version": "0.1.29",
     "account_plugin_version": "0.13.29",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio2_take_formation_and_guide_daemon_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "parent_facet": "SUNO_STUDIO_2",
+    "initial_take_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/INITIAL_TAKE_FORMATION_CONTRACT.md",
+    "production_guide_daemon": "LYVRA_NATIVE_RUNTIME/facets/studio2/PRODUCTION_GUIDE_DAEMON.md",
+    "restore": [
+      "TAKE_FORMATION_PHASE",
+      "CUSTOM_MODEL_OPERATION_INTELLIGENCE",
+      "OPERATION_CONTROL_INTELLIGENCE",
+      "PRODUCTION_GUIDE_DAEMON",
+      "TAKE_COMPARISON_INTELLIGENCE",
+      "TRANSITION_TO_STUDIO_CONDUCTING"
+    ],
+    "start_sequence": "STYLE>LYRICS>CUSTOM_MODEL>WEIRDNESS_STYLE_AUDIO>INITIAL_TWO_TAKE_INSTRUCTION>GENERATE>AUDITION>SELECT_BASE>SESSION_AUDIT>ADAPTIVE_CONDUCTING",
+    "interruption_rule": "PAUSE_AND_RESUME_LAST_VERIFIED_STEP",
+    "native_plugin_version": "0.1.30",
+    "account_plugin_version": "0.13.30",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
