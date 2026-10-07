@@ -1,0 +1,12 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.37",
+  "release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6",
+  "previous_version": "0.1.36",
+  "update_date": "2026-10-07",
+  "reason": "Standard peer improvement-proposal intake on every LYVRA UPDATE",
+  "plugin_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL",
+  "display_name": "LYVRA",
+  "logo_preserved": true
+}
