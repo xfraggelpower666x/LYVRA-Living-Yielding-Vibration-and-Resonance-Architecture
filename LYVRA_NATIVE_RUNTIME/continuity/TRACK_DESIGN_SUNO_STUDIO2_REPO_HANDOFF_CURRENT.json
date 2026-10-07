@@ -79,7 +79,8 @@
       "LYVRA_NATIVE_RUNTIME/current/governance/FACET_BOUNDARY_AND_PROMOTION_GUARD.md",
       "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
-      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_TO_STUDIO2_HANDOFF_2026-10-07.md"
     ],
     "source_head": "5f43c6feff59fd8e856e42f56dc330fe0e7808f5",
     "created_at": "2026-10-01",
@@ -92,7 +93,11 @@
       ],
       "suno_studio_2": [
         "REV93_STUDIO2_PROJECT_CHAT_REAL_OPERATION_VALIDATION_OPEN",
-        "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN"
+        "REV93_AUDIO_ONLY_FX_REAL_PLUGIN_BEHAVIOR_VALIDATION_OPEN",
+        "CONSUME_TRACK_DESIGN_RECOVERED_INTELLIGENCE_BY_REFERENCE",
+        "EXPAND_COMPACT_5_6_MIN_TRACK_TO_CAUSAL_7_9_MIN_LONGFORM_WHEN_RELEVANT",
+        "USE_DETAILED_STUDIO2_WORKCHAT_FOR_TIMED_EFFECT_VOICE_MOTION_AND_TRANSITION_CONTROL",
+        "RETURN_RENDER_EVIDENCE_TO_TRACK_DESIGN_AND_MUSIC_MEMORY"
       ],
       "renderer": [
         "REV93_FOREIGN_RENDERER_COMPILATION_CONTROLLED_TEST_OPEN"
@@ -209,7 +214,18 @@
       "tests": "DEFERRED_PRESERVED"
     },
     "new_chat_ready": true,
-    "cross_chat_workspace_inheritance": false
+    "cross_chat_workspace_inheritance": false,
+    "studio2_handoff_2026_10_07": {
+      "status": "CURRENT_PRODUCTIVE",
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_TO_STUDIO2_HANDOFF_2026-10-07.md",
+      "track_design_role": "COMPACT_5_TO_6_MINUTE_MUSICAL_AUTHORITY",
+      "studio2_role": "LONGFORM_EXPANSION_EDIT_PRODUCTION_VALIDATION",
+      "typical_longform": "7_TO_9_MINUTES_CONTEXTUAL",
+      "track_design_limits_do_not_cap_studio2_workchat": true,
+      "workchat_mode": "LONG_DETAILED_CAUSAL_PRODUCTION_INSTRUCTIONS",
+      "edit_model": "SMALL_CAUSALLY_RELATED_CHANGE_SETS",
+      "return_evidence_to_relational_learning": true
+    }
   },
   "read_rules": {
     "verify_productive_current_first": true,
