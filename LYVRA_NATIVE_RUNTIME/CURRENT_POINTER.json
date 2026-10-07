@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "a03c752d2dba8d67fb891d8cf6796c7e98b3e7ab",
+    "current_head_before_pointer": "d69922a0a5dd0311980a5b75d2323bc9f6bde853",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -24,7 +24,8 @@
     "workspace_continuity_v2_body_head_before_pointer": "259ae88367d32764b9a41b8c45791541f9f984a4",
     "weblyvra_freshness_sync_body_head_before_pointer": "6c288bf5dce7b030b22c249e42ce302b49dd9def",
     "studio2_031_freshness_repair_body_head_before_pointer": "c8746386c9b68d9ee0ae320160be660b32d4376c",
-    "pfs_live_approval_channel_body_head_before_pointer": "a03c752d2dba8d67fb891d8cf6796c7e98b3e7ab"
+    "pfs_live_approval_channel_body_head_before_pointer": "a03c752d2dba8d67fb891d8cf6796c7e98b3e7ab",
+    "coupled_plugin_backup_circle_body_head_before_pointer": "d69922a0a5dd0311980a5b75d2323bc9f6bde853"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -121,7 +122,9 @@
     "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
     "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED",
     "freshness_registry": "CURRENT_PRODUCTIVE_114_OF_114_VERIFIED",
-    "pfs_plugin_backup_approval_channel": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE"
+    "pfs_plugin_backup_approval_channel": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE",
+    "coupled_plugin_backup_circle": "CURRENT_CONTRACT_READY_NATIVE_CONSUMPTION_PENDING",
+    "clic_plugin_backup_relation": "CLIC_0.1.5_OBSERVED_NATIVE_AUTHORIZATION_PENDING"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -309,28 +312,29 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-07",
-    "scope": "PFS_PLUGIN_BACKUP_LIVE_APPROVAL_CHANNEL",
+    "scope": "COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE",
     "classification": "SAFE",
-    "productive_body_head": "a03c752d2dba8d67fb891d8cf6796c7e98b3e7ab",
-    "prechange_recovery_branch": "lyvra-pre-pfs-live-approval-channel-20261007-1604",
+    "productive_body_head": "d69922a0a5dd0311980a5b75d2323bc9f6bde853",
+    "prechange_recovery_branch": "lyvra-pre-coupled-plugin-backup-circle-20261007-1614",
     "uncommitted_development": false,
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
     "studio2_031_preserved": true,
     "plugin_versions_preserved": "0.1.31_AND_0.13.31",
     "workspace_continuity_v2_preserved": true,
-    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
-    "approved_release_set": "ACCOUNT_0.13.31_NATIVE_0.1.31",
-    "approved_lyvra_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
-    "pfs_execution": "PENDING",
-    "pfs_mutation_by_lyvra": false,
-    "private_vault_mutation_by_lyvra": false,
+    "clic_observed_plugin": "0.1.5",
+    "persistent_coupling_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
+    "pfs_native_consumption": "PENDING",
+    "clic_native_consumption": "PENDING",
+    "private_vault_contract_ready": true,
+    "private_vault_artifact_write": "PENDING_PFS_NATIVE_EXECUTION",
     "no_foreign_system_activation": true,
-    "freshness_epoch": "2026-10-07-REV93-PFS-LIVE-APPROVAL-CHANNEL-031-FINAL",
-    "fingerprint_blob": "ff928066ec94ec7dd4ab945b4576955916704af0",
-    "rehydration_manifest_blob": "07dd02673ff06792101025861e95e786e035bca4",
-    "coverage_ledger_blob": "21bbcef6b566a1fe91b693f7ac80b905d4b99791",
-    "critical_carrier_count": 117,
+    "no_cross_system_merge": true,
+    "freshness_epoch": "2026-10-07-REV93-COUPLED-LYVRA-CLIC-PLUGIN-BACKUP-CIRCLE-FINAL",
+    "fingerprint_blob": "ea66cde35417cf9caaace2c28a8983607cfd7ef4",
+    "rehydration_manifest_blob": "1ca8c99f7a4c27af26c528fdf2f156208d078741",
+    "coverage_ledger_blob": "5cbdedc9321a41b7eba184c289f1aeba2e0121e3",
+    "critical_carrier_count": 121,
     "verified_mismatch_count": 0,
     "full_carrier_tree_readback": "PASS",
     "pointer_publication_last": true,
@@ -1756,10 +1760,10 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-PFS-LIVE-APPROVAL-CHANNEL-031-FINAL",
+    "epoch": "2026-10-07-REV93-COUPLED-LYVRA-CLIC-PLUGIN-BACKUP-CIRCLE-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
-    "verified_carrier_count": 117,
+    "verified_carrier_count": 121,
     "verified_mismatch_count": 0,
     "full_tree_readback": "PASS"
   },
@@ -2110,5 +2114,40 @@
     "backup_readback_status": "PENDING",
     "later_plugin_release_requires_new_request_and_approval": true,
     "no_cross_system_merge": true
+  },
+  "coupled_plugin_backup_circle_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_CONTRACT_READY",
+    "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+    "current_state": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json",
+    "pfs_handoff": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
+    "clic_notice": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json",
+    "lyvra_leg": {
+      "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+      "account_version": "0.13.31",
+      "native_version": "0.1.31",
+      "execution": "PFS_PENDING"
+    },
+    "clic_leg": {
+      "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+      "version": "0.1.5",
+      "release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919",
+      "authority_repo": "xfraggelpower666x/666CLICPRO",
+      "authority_branch": "clic-migration-rev79-staging",
+      "authority_head_observed": "fa6767dc9d48d8fe00232c62805e5a6c4c0200ec",
+      "native_authorization": "PENDING_666CLIC_NATIVE_CONSUMPTION"
+    },
+    "private_vault": {
+      "head": "5d3f86702097632d27fc9d8d79c96362a1c83eae",
+      "pointer_blob": "1ac1844fb77780d65d0bddd45cd9c0080f6bdf88",
+      "contract_blob": "35937e79ca33d4738df0cd3c8d133ff715b92cb1",
+      "role": "BACKUP_STORAGE_ONLY"
+    },
+    "pfs_native_consumption": "PENDING_666PFS_UPDATE",
+    "clic_native_consumption": "PENDING_666CLIC_UPDATE",
+    "round_complete_without_clic_leg": false,
+    "no_cross_system_merge": true,
+    "no_new_router": true,
+    "foreign_native_mutation": false
   }
 }
