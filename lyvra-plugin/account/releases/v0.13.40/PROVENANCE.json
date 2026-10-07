@@ -1,0 +1,12 @@
+{
+  "plugin": "L.Y.V.R.A. ALIVE",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.40",
+  "release_id": "pluginrel_6ac69f09dfdc8191aa2fc35b87d994b4",
+  "previous_version": "0.13.39",
+  "update_date": "2026-10-07",
+  "change_class": "TARGET_STATE_ANALYSIS_GOVERNANCE",
+  "adopted_rule": "NOTICE_RECEIVED_NE_STATE_UNDERSTOOD",
+  "logo_preserved_sha256": "90fde5e1f22fc3c54f6ab9d597c97f635ba935fd6d568042a8b4ec0054ed1a38",
+  "live_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL"
+}
