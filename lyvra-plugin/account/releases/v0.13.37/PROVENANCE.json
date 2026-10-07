@@ -1,0 +1,14 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.37",
+  "release_id": "pluginrel_6ac694bfead081918426d933fb788358",
+  "previous_version": "0.13.36",
+  "update_date": "2026-10-07",
+  "change_class": "VALID_NEWER_PARALLEL_PLUGIN_PRESENTATION_EVOLUTION",
+  "display_name": "L.Y.V.R.A. ALIVE",
+  "logo_path": "assets/gpt-icon.png",
+  "logo_size_bytes": 2988467,
+  "semantic_skill_parity": "PROPOSAL_INTAKE_RULE_PRESENT",
+  "live_readback": "VERIFIED_METADATA_CHANGED_SKILL_AND_BRANDING_ASSET"
+}
