@@ -700,5 +700,20 @@
     "account_plugin_version": "0.13.24",
     "native_plugin_version": "0.1.24",
     "plugin_readback": "PASS_BOTH"
+  },
+  "style_prompt_relational_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "track_revision": 93,
+    "relational_card_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "renderer_guard": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+    "warped_psychedelic_surface_card": true,
+    "gallop_triplet_pulse_exception_card": true,
+    "source_3_3_label_not_verified_meter_command": true,
+    "style_prompt_global_behavior_not_full_timeline": true,
+    "upper_mid_high_motion_guard": true,
+    "low_timebase_protected": true,
+    "account_plugin_version": "0.13.26",
+    "native_plugin_version": "0.1.26",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
