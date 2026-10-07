@@ -82,3 +82,26 @@ Both active LYVRA plugin surfaces must use the same boundary:
 
 LEGACY_DRIVE_LOCK_REGISTRY_MAY_REMAIN_AS_HISTORY = TRUE
 LEGACY_DRIVE_LOCK_REGISTRY_MUST_NOT_BE_USED_BY_NORMAL_CURRENT_FLOW = TRUE
+
+
+## Standard improvement-proposal intake on LYVRA UPDATE
+
+Every `LYVRA UPDATE` MUST check relevant reachable peer-system handoff/outbox carriers for newer improvement proposals when such relations exist.
+
+This check is read-only toward foreign native systems.
+
+EXTERNAL_IMPROVEMENT_PROPOSAL_CHECK_ON_EVERY_UPDATE=true
+PROPOSAL_FOUND_NE_ADOPTED=true
+PROPOSAL_READ_NE_FOREIGN_ACTIVATION=true
+PROPOSAL_READ_NE_AUTHORITY_TRANSFER=true
+PROPOSAL_READ_NE_AUTO_MERGE=true
+
+Each proposal is classified as one of:
+- VORGESCHLAGEN / CANDIDATE
+- RELATIONAL_EVIDENCE
+- NOT_APPLICABLE
+- SUPERSEDED
+- ADOPTED_BY_EXPLICIT_LYVRA_NATIVE_EVOLUTION
+
+Adoption requires LYVRA-native causal evaluation against identity, current architecture, boundaries, provenance/supersession, plugin impact and current work scope.
+Foreign proposals may improve LYVRA, but never become Current merely because they exist.
