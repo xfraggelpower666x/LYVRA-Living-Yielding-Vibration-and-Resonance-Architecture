@@ -1,0 +1,39 @@
+{
+  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v1",
+  "status": "OUTBOUND_HANDOFF_READY_FOR_PFS_NATIVE_CONSUMPTION",
+  "source_system": "LYVRA",
+  "target_system": "666PFS",
+  "purpose": "DEVELOP_AND_OPERATE_COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE",
+  "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+  "lyvra_current": {
+    "plugin_set": {
+      "account": {
+        "version": "0.13.31",
+        "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427"
+      },
+      "native": {
+        "version": "0.1.31",
+        "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+      }
+    },
+    "current_backup_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+    "approval_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json"
+  },
+  "clic_observed_current": {
+    "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+    "version": "0.1.5",
+    "release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919",
+    "repository": "xfraggelpower666x/666CLICPRO",
+    "branch": "clic-migration-rev79-staging",
+    "observed_head": "fa6767dc9d48d8fe00232c62805e5a6c4c0200ec",
+    "clic_must_authorize_own_leg": true
+  },
+  "coupled_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
+  "pfs_may_develop_internal_mechanics": true,
+  "pfs_may_self_approve_native_systems": false,
+  "pfs_may_mutate_lyvra_live": false,
+  "pfs_may_mutate_clic_live": false,
+  "private_target_role": "BACKUP_STORAGE_ONLY",
+  "pfs_action_required": "CONSUME_UNDER_666PFS_NATIVE_UPDATE_AND_IMPLEMENT_AS_PFS_OWN_BACKUP_CIRCLE",
+  "foreign_mutation_by_lyvra": false
+}
