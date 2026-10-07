@@ -626,27 +626,36 @@
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
     "lifecircle": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "visible_standard_codebox_count": 4,
     "output_order": [
       "TITLE",
       "EXTENDED_PROMPT",
       "SUNO_CONTROL_SURFACE",
+      "DRIFT_FORECAST",
       "STYLE_PROMPT",
-      "LYRIC_PROMPT",
-      "LYRICS"
+      "LYRICS_STRUCTURE"
     ],
-    "separate_codeboxes": true,
-    "character_count_and_limits": true,
-    "german_ui_order": true,
+    "suno_ui_order": [
+      "STILE_AUSSCHLIESSEN",
+      "STIMMGESCHLECHT",
+      "DAUER",
+      "MAX_MODUS",
+      "SELTSAMKEIT",
+      "STILEINFLUSS",
+      "VIELFALT",
+      "PERSONALISIEREN"
+    ],
+    "extra_numbered_lyric_prompt_box": false,
+    "exact_character_counts": true,
     "duration_max": "6:00",
     "duration_step_seconds": 5,
     "weirdness_red_zone_start_percent": 86,
     "style_influence_red_zone_start_percent": 86,
-    "controls_recalculated_per_track": true,
+    "control_values_recalculated_per_track": true,
     "emoji_reinforcement": [
       "EXTENDED_PROMPT",
       "STYLE_PROMPT",
-      "LYRIC_PROMPT",
-      "LYRICS"
+      "LYRICS_STRUCTURE"
     ],
     "track_revision": 93
   }
