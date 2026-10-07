@@ -105,13 +105,14 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.18_ACCOUNT_0.13.18_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.21_ACCOUNT_0.13.21_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "TARGET_0.13.16_AND_0.1.16_REFRESHED_METADATA_ONLY_BACKUP_BLOCKED_PENDING_FRESH_MATCHING_APPROVAL",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
     "workspace_continuity_v2": "SYSTEMSTART_BARE_WHOLE_SYSTEMSTART_SUFFIX_EXACT_WORKSPACE_NEW_NEXT_LINEAGE_SCOPED_UPDATE_ADDITIVE",
     "weblyvra_freshness": "CURRENT_PRODUCTIVE_VERIFIED_89_OF_89",
-    "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT"
+    "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT",
+    "track_design_relational_card_intelligence": "CURRENT_PRODUCTIVE_REHYDRATED_BY_REFERENCE"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -1859,5 +1860,15 @@
     "native_release_id": "pluginrel_6ac5941ba3a881918704c60e9eb6fea9",
     "track_design_output_contract_readback": "VERIFIED_BOTH",
     "semantic_parity": "VERIFIED"
+  },
+  "track_design_dependency_links_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "relational_card_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "speech_design_consumes_by_reference": true,
+    "studio2_consumes_by_reference": true,
+    "stale_copy_authority": false,
+    "account_plugin_version": "0.13.21",
+    "native_plugin_version": "0.1.21",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
