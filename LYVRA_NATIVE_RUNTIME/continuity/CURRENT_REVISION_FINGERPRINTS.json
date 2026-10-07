@@ -970,7 +970,7 @@
       "result": "PASS"
     }
   },
-  "full_tree_readback": "PENDING_FRESH_VERIFY",
+  "full_tree_readback": "PASS_INCREMENTAL",
   "semantic_causal_lyric_intelligence_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "track_design_version": "v3.5",
@@ -999,7 +999,7 @@
     "plugin_readback": "VERIFIED_BOTH"
   },
   "emotion_harmony_psychoacoustic_priority_2026_10_07": {
-    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
     "track_design_version": "v3.6",
     "track_design_logical_revision": 95,
     "emotion_ne_harmony": true,
@@ -1012,5 +1012,6 @@
     "account_plugin_version": "0.13.35",
     "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
     "plugin_readback": "VERIFIED_BOTH"
-  }
+  },
+  "last_verification_note": "All Rev95-changed critical carriers were directly read back and matched their registered blob SHAs; unchanged critical carriers retain previously verified fingerprints."
 }
