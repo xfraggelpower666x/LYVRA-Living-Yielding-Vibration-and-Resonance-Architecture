@@ -956,5 +956,26 @@
     "account_plugin_version": "0.13.27",
     "native_plugin_version": "0.1.27",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio2_plugin_self_execution_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "required_for_studio2_longform": true,
+    "studio2_text_surfaces": [
+      "STYLE",
+      "LYRICS"
+    ],
+    "studio2_extended_field": "NONE",
+    "studio2_workchat": "OPERATION_SURFACE",
+    "longform_target": "8_TO_10_MINUTES",
+    "restore": [
+      "PLUGIN_CARD_SELECTION",
+      "EXPOSED_CONTROL_SETTING",
+      "AUTOMATIC_MODULATION_WHEN_AVAILABLE",
+      "AUTOMATION_LANE_USAGE",
+      "POST_CHANGE_VALIDATION"
+    ],
+    "native_plugin_version": "0.1.28",
+    "account_plugin_version": "0.13.28",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
