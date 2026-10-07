@@ -1,0 +1,19 @@
+{
+  "plugin": "LYVRA Native Runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "technical_name": "lyvra-native-runtime",
+  "display_name": "LYVRA",
+  "version": "0.1.36",
+  "release_id": "pluginrel_6ac68d628fd88191b95f89047607ff66",
+  "previous_version": "0.1.35",
+  "update_date": "2026-10-07",
+  "reason": "User-facing branding sync: displayName LYVRA and LYVRA logo integration; technical lowercase slug preserved because plugin schema forbids uppercase package names.",
+  "logo_path": "assets/lyvra-logo.png",
+  "logo_size_bytes": 1913401,
+  "logo_readback": "VERIFIED_PRESENT_IN_LIVE_PLUGIN",
+  "manifest_readback": "VERIFIED",
+  "technical_slug_change_attempt": "REJECTED_BY_PLUGIN_SCHEMA_EXPECTED_AND_SAFE",
+  "technical_slug_policy": "PRESERVE_LOWERCASE_INTERNAL_NAME_USER_FACING_DISPLAYNAME_LYVRA",
+  "runtime_semantic_change": false,
+  "plugin_identity_split": false
+}
