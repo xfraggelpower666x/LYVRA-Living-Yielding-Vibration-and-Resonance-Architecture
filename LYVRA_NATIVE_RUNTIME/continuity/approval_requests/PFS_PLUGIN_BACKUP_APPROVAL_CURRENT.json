@@ -52,13 +52,13 @@
     "execution_allowed": false
   },
   "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH",
-  "backup_write_status": "BLOCKED_CURRENT_PLUGIN_STATE_CHANGED",
+  "backup_write_status": "BLOCKED_CURRENT_LYVRA_PLUGIN_STATE_CHANGED",
   "superseded_by": {
-    "runtime_plugin_state_fingerprint": "336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b",
-    "account_version": "0.13.39",
-    "account_release_id": "pluginrel_6ac69c8a6ef48191a14fcb4ce1032f51",
-    "native_version": "0.1.39",
-    "native_release_id": "pluginrel_6ac69c7b245c8191becc75e8b4b2c27e",
-    "reason": "NATIVE_GOVERNANCE_EVOLUTION_FROM_PEER_PROPOSAL"
+    "runtime_plugin_state_fingerprint": "54476252c1350eaed6b8c20d80d337e5fa9ba0a8b94c4151345586e3dbe8abc5",
+    "account_version": "0.13.40",
+    "account_release_id": "pluginrel_6ac69f09dfdc8191aa2fc35b87d994b4",
+    "native_version": "0.1.40",
+    "native_release_id": "pluginrel_6ac69efba2448191b86cbda652b7d15c",
+    "reason": "TARGET_STATE_ANALYSIS_GOVERNANCE_EVOLUTION"
   }
 }
