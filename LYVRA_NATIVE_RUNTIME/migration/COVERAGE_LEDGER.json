@@ -1404,5 +1404,18 @@
     "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450",
     "native_plugin_readback": "VERIFIED",
     "account_plugin_parity": "NOT_VERIFIED_IN_THIS_UPDATE"
+  },
+  "speech_beta_rev96_plugin_reconcile_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "track_revision": 96,
+    "speech_beta_evidence": "VERIFIED_TEST_CANDIDATE_NOT_NATIVE_RULE",
+    "current_plugins": "0.13.42|0.1.45",
+    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
+    "account_rev96_parity": "PASS",
+    "pfs_request_freshness": "STALE_0.13.41_0.1.41",
+    "clic_stable_set_member": "FAIL_LIVE_0.1.19_NATIVE_REPO_0.1.16",
+    "private_write": "BLOCKED",
+    "no_foreign_autoactivation": true,
+    "foreign_native_mutation": false
   }
 }
