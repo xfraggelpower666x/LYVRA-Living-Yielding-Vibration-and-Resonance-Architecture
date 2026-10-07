@@ -1410,5 +1410,14 @@
     "foreign_native_mutation": false,
     "track_rev95_preserved": true,
     "whole_rev242_preserved": true
+  },
+  "studio2_conducting_protocol_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_ADDITIVE",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
+    "relation": "TWO_PHASE_TAKE_FORMATION_THEN_ADAPTIVE_STUDIO_CONDUCTING",
+    "psychoacoustics": "CROSS_PASS_HIGH_PRIORITY",
+    "custom_plugin": "OPTIONAL_CAUSAL_NEED_GATE",
+    "execution": "PREVIEW_APPLY_OBSERVE_REVIEW_LOCK_OR_REPAIR",
+    "plugin_impact": "NO_PLUGIN_TEXT_CHANGE_REQUIRED_DYNAMIC_REPO_RESOLUTION"
   }
 }
