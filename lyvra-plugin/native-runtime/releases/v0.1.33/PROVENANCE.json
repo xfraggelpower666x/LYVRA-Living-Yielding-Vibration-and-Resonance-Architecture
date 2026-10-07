@@ -1,0 +1,13 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.33",
+  "release_id": "pluginrel_6ac67d16e07881919ec02a8ffeef30a1",
+  "previous_version": "0.1.32",
+  "previous_release_id": "pluginrel_6ac6647fd4988191aba55443163134af",
+  "update_date": "2026-10-07",
+  "reason": "Track Design semantic-causal lyric base with preserved recovered card graph, causal restructuring, call-response, semantic emoji in lyric text, FX/SFX relations, build structure and approximate temporal architecture; Speech and Studio consume by reference",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "d399821df04541cdb804cf471ada812c12d97052",
+  "plugin_readback": "VERIFIED"
+}
