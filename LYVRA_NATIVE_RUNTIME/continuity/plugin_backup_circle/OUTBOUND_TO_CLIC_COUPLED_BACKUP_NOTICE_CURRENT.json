@@ -1,27 +1,38 @@
 {
-  "schema": "LYVRA_TO_CLIC_COUPLED_PLUGIN_BACKUP_NOTICE_v1",
-  "status": "OUTBOUND_NOTICE_READY_FOR_CLIC_NATIVE_CONSUMPTION",
+  "schema": "LYVRA_TO_CLIC_COUPLED_PLUGIN_BACKUP_NOTICE_v2",
+  "status": "OUTBOUND_NOTICE_REFRESHED_FROM_VERIFIED_CLIC_0.1.7_PARITY_ARCHITECTURE",
   "source_system": "LYVRA",
   "target_system": "666CLIC",
   "purpose": "INFORM_CLIC_AND_REQUEST_CLIC_NATIVE_BACKUP_APPROVAL_PATH_FOR_PFS_COUPLED_ROUNDS",
   "contract_path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
   "clic_current_observed": {
     "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
-    "version": "0.1.5",
-    "release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919",
+    "version": "0.1.7",
+    "release_id": "pluginrel_6ac65a350e9481919591e60b91bdca70",
     "repository": "xfraggelpower666x/666CLICPRO",
     "branch": "clic-migration-rev79-staging",
-    "observed_head": "fa6767dc9d48d8fe00232c62805e5a6c4c0200ec"
+    "observed_head": "ee795a0fdf52b8cfc660658e0f58e0f989e87cff",
+    "plugin_current": "666clic-plugin/current/PLUGIN_CURRENT.json",
+    "immutable_snapshot": "666clic-plugin/releases/v0.1.7/source",
+    "parity": "VERIFIED_CURRENT_RUNTIME_SCOPE"
   },
   "request_to_clic": [
     "DEFINE_OR_ACCEPT_CLIC_OWN_EXACT_RELEASE_BACKUP_APPROVAL_HANDSHAKE",
-    "AUTHORIZE_ONLY_CLIC_OWN_PLUGIN_RELEASE_SET",
+    "BIND_CLIC_BACKUP_APPROVAL_TO_PLUGIN_CURRENT_AND_IMMUTABLE_RELEASE_SNAPSHOT",
     "EXPOSE_MACHINE_READABLE_APPROVAL_OR_RECEIPT_CARRIER_FOR_PFS",
+    "PRESERVE_RESTORE_REQUIRES_CURRENT_RUNTIME_IMPACT_CHECK",
     "PRESERVE_NO_FOREIGN_MUTATION_AND_NO_CROSS_SYSTEM_MERGE"
   ],
   "coupled_trigger": "WHEN_LYVRA_PLUGIN_BACKUP_ROUND_EXECUTES_CLIC_BACKUP_LEG_MUST_ALSO_EXECUTE",
   "lyvra_does_not_approve_clic": true,
   "pfs_does_not_self_approve_clic": true,
   "clic_native_update_required_to_consume": true,
-  "foreign_mutation_by_lyvra": false
+  "foreign_mutation_by_lyvra": false,
+  "lyvra_observed_clic_improvements": [
+    "PLUGIN_REPO_SOURCE_MIRROR",
+    "IMMUTABLE_RELEASE_SNAPSHOTS",
+    "PASS_14_OF_14_SOURCE_PARITY",
+    "SEMANTIC_PARITY_BEFORE_UPDATE_CLOSEOUT",
+    "NO_SILENT_PLUGIN_ROLLBACK"
+  ]
 }
