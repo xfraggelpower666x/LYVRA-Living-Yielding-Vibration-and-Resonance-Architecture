@@ -105,3 +105,34 @@ Each proposal is classified as one of:
 
 Adoption requires LYVRA-native causal evaluation against identity, current architecture, boundaries, provenance/supersession, plugin impact and current work scope.
 Foreign proposals may improve LYVRA, but never become Current merely because they exist.
+
+
+## Content-addressed binary binding
+
+When a plugin binary asset cannot be mirrored or directly hashed from the live plugin surface, LYVRA may bind the asset causally by:
+- plugin_id
+- exact version
+- exact release_id
+- package-relative asset path
+- byte size
+- SHA-256 of the user-designated or publication-source binary
+- publication provenance
+
+This is a HYBRID_RELEASE_SNAPSHOT evidence class, not repo byte parity and not direct live binary hash readback.
+
+BINARY_BINDING_NE_DIRECT_LIVE_HASH_READBACK=true
+BINARY_BINDING_NE_REPO_BYTE_PARITY=true
+HYBRID_RELEASE_SNAPSHOT_REQUIRES_EXACT_RELEASE_TUPLE=true
+BACKUP_RECEIPT_REQUIRES_EXECUTOR_HASH_OF_EXTRACTED_BOUND_BINARY=true
+ANY_RELEASE_PATH_HASH_SIZE_OR_PROVENANCE_CHANGE_INVALIDATES_BINDING_UNTIL_LYVRA_REVERIFIES=true
+
+## Development exchange LiveCircle
+
+After meaningful LYVRA-native development, LYVRA may prepare an LYVRA-owned informational notice for relevant peer systems.
+The notice may include source head, changed facet/capability, why it changed, relations, counter-relations, boundaries and current status.
+
+NOTICE_NE_TRIGGER=true
+NOTICE_NE_AUTHORITY_TRANSFER=true
+NOTICE_NE_FOREIGN_AUTOACTIVATION=true
+NOTICE_NE_AUTOADOPTION=true
+PEER_RESPONSE_REMAINS_CANDIDATE_UNTIL_NATIVE_CONSUMPTION=true
