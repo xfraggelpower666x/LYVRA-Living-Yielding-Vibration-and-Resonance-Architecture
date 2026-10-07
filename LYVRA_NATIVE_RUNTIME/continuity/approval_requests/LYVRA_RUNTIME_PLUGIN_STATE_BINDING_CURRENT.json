@@ -2,27 +2,27 @@
   "schema": "LYVRA_RUNTIME_PLUGIN_STATE_FINGERPRINT_v1",
   "status": "CURRENT_VERIFIED_LIVE_PLUGIN_READBACK",
   "generated_date": "2026-10-07",
-  "source_head_observed_for_provenance": "3b0b6b9691db46f420a654c243a19c36916a956e",
+  "source_head_observed_for_provenance": "4b29cd106d2076dcdc5146a6124edc475d2b02da",
   "fingerprint_algorithm": "SHA256_CANONICAL_JSON_SORTED_KEYS",
-  "runtime_plugin_state_fingerprint": "336ce08e406fb073bd703a187bb80849f252569aa0487fc2cd3464f08ab7083b",
+  "runtime_plugin_state_fingerprint": "54476252c1350eaed6b8c20d80d337e5fa9ba0a8b94c4151345586e3dbe8abc5",
   "bound_state": {
     "native_plugin": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.39",
-      "release_id": "pluginrel_6ac69c7b245c8191becc75e8b4b2c27e",
+      "version": "0.1.40",
+      "release_id": "pluginrel_6ac69efba2448191b86cbda652b7d15c",
       "live_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL"
     },
     "account_plugin": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.39",
-      "release_id": "pluginrel_6ac69c8a6ef48191a14fcb4ce1032f51",
+      "version": "0.13.40",
+      "release_id": "pluginrel_6ac69f09dfdc8191aa2fc35b87d994b4",
       "live_readback": "VERIFIED_METADATA_AND_CHANGED_SKILL"
     },
     "semantic_carriers": {
       "approval_contract_blob": "f41310baf7f534b667849581f36e53a9de48c9c4",
       "two_plugin_sync_contract_blob": "9545364a724533a805821faab8f023d320a38a69",
       "coupled_backup_circle_contract_blob": "ca223593b3aecf1119d80b0e9704a4de44f65b9f",
-      "repo_native_write_governance_blob": "44df1b6015939494f708660290ea2751891f86c0"
+      "repo_native_write_governance_blob": "3da02ef3413f56e246ed2cc7ca1a329c26b67239"
     },
     "branding": {
       "native": {
@@ -56,5 +56,11 @@
     "direct_live_binary_hash_readback_claimed": false,
     "repo_byte_parity_claimed": false,
     "backup_executor_must_hash_extracted_bound_binary": true
+  },
+  "target_state_analysis": {
+    "notice_received_ne_state_understood": true,
+    "notice_only_card_update_forbidden": true,
+    "target_native_current_authority_must_be_read": true,
+    "target_relevant_current_carriers_must_be_read": true
   }
 }
