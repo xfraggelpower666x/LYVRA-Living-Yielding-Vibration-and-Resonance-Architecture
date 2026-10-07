@@ -1,5 +1,5 @@
 {
-  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v1",
+  "schema": "LYVRA_TO_PFS_COUPLED_PLUGIN_BACKUP_CIRCLE_v2",
   "status": "OUTBOUND_HANDOFF_READY_FOR_PFS_NATIVE_CONSUMPTION",
   "source_system": "LYVRA",
   "target_system": "666PFS",
@@ -21,11 +21,16 @@
   },
   "clic_observed_current": {
     "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
-    "version": "0.1.5",
-    "release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919",
+    "version": "0.1.7",
+    "release_id": "pluginrel_6ac65a350e9481919591e60b91bdca70",
     "repository": "xfraggelpower666x/666CLICPRO",
     "branch": "clic-migration-rev79-staging",
-    "observed_head": "fa6767dc9d48d8fe00232c62805e5a6c4c0200ec",
+    "observed_head": "ee795a0fdf52b8cfc660658e0f58e0f989e87cff",
+    "plugin_current": "666clic-plugin/current/PLUGIN_CURRENT.json",
+    "immutable_snapshot": "666clic-plugin/releases/v0.1.7/source",
+    "parity_evidence": "666CLIC_NATIVE_RUNTIME/migration/PLUGIN_REPO_ARCHITECTURE_AND_PARITY_2026-10-07.md",
+    "source_file_parity": "PASS_14_OF_14",
+    "semantic_parity": "VERIFIED_CURRENT_RUNTIME_SCOPE",
     "clic_must_authorize_own_leg": true
   },
   "coupled_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
@@ -34,6 +39,13 @@
   "pfs_may_mutate_lyvra_live": false,
   "pfs_may_mutate_clic_live": false,
   "private_target_role": "BACKUP_STORAGE_ONLY",
-  "pfs_action_required": "CONSUME_UNDER_666PFS_NATIVE_UPDATE_AND_IMPLEMENT_AS_PFS_OWN_BACKUP_CIRCLE",
-  "foreign_mutation_by_lyvra": false
+  "pfs_action_required": "CONSUME_UNDER_666PFS_NATIVE_UPDATE_AND_EVOLVE_PFS_BACKUP_CIRCLE_TO_PARITY_AWARE_V2",
+  "foreign_mutation_by_lyvra": false,
+  "pfs_v2_requirements": [
+    "RUN_PER_SYSTEM_PARITY_PREFLIGHT_BEFORE_ARTIFACT_FREEZE",
+    "BIND_AUTHORITY_HEAD_RELEASE_POINTER_SNAPSHOT_AND_HASH",
+    "FAIL_CLOSED_ON_RELEASE_OR_HEAD_RACE",
+    "ALLOW_VERIFIED_IMMUTABLE_REUSE_WITH_NEW_ROUND_RECEIPT",
+    "RESTORE_ONLY_AS_CANDIDATE_UNTIL_NATIVE_PARITY_VALIDATION"
+  ]
 }
