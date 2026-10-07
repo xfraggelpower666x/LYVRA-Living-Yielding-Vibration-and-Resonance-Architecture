@@ -1,0 +1,14 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.41",
+  "release_id": "pluginrel_6ac6a5263cf88191a58ad3f99884a38b",
+  "previous_version": "0.1.40",
+  "update_date": "2026-10-07",
+  "change_class": "SPEECH_EVIDENCE_GATES_AND_STABLE_SET_CONVERGENCE",
+  "speech_evidence_class": "COMMUNITY_EVIDENCE_TEST_CANDIDATE",
+  "stable_set_convergence": true,
+  "logo_preserved": true,
+  "studio2_parallel_newer_evolution_preserved": "STUDIO2_CONDUCTING_PROTOCOL_2026-10-07",
+  "live_readback": "VERIFIED_METADATA_UPDATE_SKILL_AND_SPEECH_SKILL"
+}
