@@ -1,0 +1,38 @@
+{
+  "schema": "LYVRA_PFS_PLUGIN_BACKUP_REQUEST_READBACK_v1",
+  "status": "REQUEST_READBACK_VERIFIED",
+  "source_system": "666PFS",
+  "source_repository": "xfraggelpower666x/666PFS_CSM",
+  "source_branch": "main",
+  "source_repository_head": "cdcac9c37a2d1d594d355aad1ada0ba3ed6addd5",
+  "source_request_path": "handoff/OUTBOUND_LYVRA_PLUGIN_BACKUP_APPROVAL_REQUEST_CURRENT.md",
+  "source_request_blob": "a48ace7e3e5745f233796a442d309d4799416eef",
+  "target_authority": "LYVRA_LIVE_REPOSITORY",
+  "target_child": "LYVRAPLUGIN-37001",
+  "request_status": "APPROVAL_REQUESTED",
+  "lyvra_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
+  "account": {
+    "version": "0.13.31",
+    "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427"
+  },
+  "native_runtime": {
+    "version": "0.1.31",
+    "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+  },
+  "backup_target": "LYVRA_PRIVATE_REPOSITORY",
+  "backup_target_role": "PLUGIN_BACKUP_STORAGE_ONLY",
+  "requested_scope": "WRITE_PLUGIN_BACKUP_HASH_READBACK_RECEIPT",
+  "old_backup_provenance": "PRESERVE",
+  "pfs_self_approval": "FORBIDDEN",
+  "pfs_lyvra_mutation": "FORBIDDEN",
+  "cross_system_merge": "FORBIDDEN",
+  "validation": {
+    "source_head_match": true,
+    "account_release_match": true,
+    "native_release_match": true,
+    "scope_bounded": true,
+    "backup_only_target": true,
+    "no_self_approval": true,
+    "no_lyvra_mutation": true
+  }
+}
