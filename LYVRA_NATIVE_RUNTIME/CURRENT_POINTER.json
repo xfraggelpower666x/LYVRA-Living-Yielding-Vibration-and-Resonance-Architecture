@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "6c288bf5dce7b030b22c249e42ce302b49dd9def",
+    "current_head_before_pointer": "c8746386c9b68d9ee0ae320160be660b32d4376c",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -22,7 +22,8 @@
     "pet_worker_v2_body_head_before_pointer": "b68058e5ec229d3292bdc5a5e42c709217b98601",
     "pet_freshness_repair_body_head_before_pointer": "4556d817c7992dd30b115115afc64fa08a8b0e45",
     "workspace_continuity_v2_body_head_before_pointer": "259ae88367d32764b9a41b8c45791541f9f984a4",
-    "weblyvra_freshness_sync_body_head_before_pointer": "6c288bf5dce7b030b22c249e42ce302b49dd9def"
+    "weblyvra_freshness_sync_body_head_before_pointer": "6c288bf5dce7b030b22c249e42ce302b49dd9def",
+    "studio2_031_freshness_repair_body_head_before_pointer": "c8746386c9b68d9ee0ae320160be660b32d4376c"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -117,7 +118,8 @@
     "style_prompt_relational_intelligence": "CURRENT_PRODUCTIVE_VERIFIED",
     "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
     "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
-    "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED"
+    "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED",
+    "freshness_registry": "CURRENT_PRODUCTIVE_114_OF_114_VERIFIED"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -305,24 +307,23 @@
   "heritage_research": "CLOSED_FOR_CURRENT_CAUSAL_COMPLETENESS_REOPEN_ONLY_ON_NEW_CAUSALLY_RELEVANT_PRIMARY_EVIDENCE",
   "last_bounded_update": {
     "date": "2026-10-07",
-    "scope": "WEBLYVRA_FRESHNESS_SYNC",
+    "scope": "STUDIO2_031_EIGHT_CARRIER_FRESHNESS_REPAIR",
     "classification": "SAFE",
-    "productive_body_head": "6c288bf5dce7b030b22c249e42ce302b49dd9def",
-    "prechange_recovery_branch": "lyvra-pre-weblyvra-freshness-sync-20261007-0034",
+    "productive_body_head": "c8746386c9b68d9ee0ae320160be660b32d4376c",
+    "prechange_recovery_branch": "lyvra-pre-studio2-031-freshness-repair-20261007-0746",
     "uncommitted_development": false,
     "whole_rev242_preserved": true,
     "track_design_v3_4_rev93_preserved": true,
-    "plugin_versions_preserved": "0.1.16_AND_0.13.16",
+    "plugin_versions_preserved": "0.1.31_AND_0.13.31",
     "workspace_continuity_v2_preserved": true,
-    "weblyvra_index_blob": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
-    "pfs_mutation": false,
-    "linear_mutation": false,
+    "repaired_carrier_count": 8,
+    "no_core_content_mutation": true,
     "no_foreign_system_activation": true,
-    "freshness_epoch": "2026-10-07-REV93-WEBLYVRA-FRESHNESS-SYNC-FINAL",
-    "fingerprint_blob": "477aefb3a67c8366f1a43bc0cf48a17126de18ef",
-    "rehydration_manifest_blob": "1dcbdeba309313b854f80c48f2d67c118f387060",
-    "coverage_ledger_blob": "dfebcdd8be35147459fe57898cb6700e8a95542e",
-    "critical_carrier_count": 89,
+    "freshness_epoch": "2026-10-07-REV93-STUDIO2-031-EIGHT-CARRIER-FRESHNESS-REPAIR-FINAL",
+    "fingerprint_blob": "3f83f09673dcdd57f0b845962dbcaebb1ceb1d24",
+    "rehydration_manifest_blob": "addb09663d75d5e74694e175a5e9d9685881315b",
+    "coverage_ledger_blob": "5a62978efae80a8447996140176ab3c8799bf827",
+    "critical_carrier_count": 114,
     "verified_mismatch_count": 0,
     "full_carrier_tree_readback": "PASS",
     "pointer_publication_last": true,
@@ -1748,7 +1749,7 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV93-STUDIO2-REAL-PRODUCTION-LEARNING-0.31-FINAL",
+    "epoch": "2026-10-07-REV93-STUDIO2-031-EIGHT-CARRIER-FRESHNESS-REPAIR-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 93,
     "verified_carrier_count": 114,
@@ -2047,5 +2048,29 @@
     "account_plugin_version": "0.13.31",
     "account_plugin_release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
     "plugin_readback": "PASS_BOTH"
+  },
+  "studio2_031_freshness_repair_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "source_head_before_repair": "4cf6828f6fe2810b39e7c40ff5323b68cb0142ca",
+    "recovery_branch": "lyvra-pre-studio2-031-freshness-repair-20261007-0746",
+    "repaired_carrier_count": 8,
+    "carrier_count": 114,
+    "mismatch_count": 0,
+    "fingerprint_registry_blob": "3f83f09673dcdd57f0b845962dbcaebb1ceb1d24",
+    "rehydration_manifest_blob": "addb09663d75d5e74694e175a5e9d9685881315b",
+    "coverage_ledger_blob": "5a62978efae80a8447996140176ab3c8799bf827",
+    "full_tree_readback": "PASS",
+    "native_plugin": {
+      "version": "0.1.31",
+      "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+    },
+    "account_plugin": {
+      "version": "0.13.31",
+      "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427"
+    },
+    "workspace_continuity_v2_preserved": true,
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "core_content_mutation": false
   }
 }
