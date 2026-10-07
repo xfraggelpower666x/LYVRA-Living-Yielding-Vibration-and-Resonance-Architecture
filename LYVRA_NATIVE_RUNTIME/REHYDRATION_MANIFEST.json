@@ -1019,5 +1019,23 @@
     "native_plugin_version": "0.1.30",
     "account_plugin_version": "0.13.30",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio2_real_production_learning_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_PRE_POINTER",
+    "parent_facet": "SUNO_STUDIO_2",
+    "evidence_carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/REAL_PRODUCTION_LEARNING_2026-10-07.md",
+    "restore": [
+      "REPAIR_NE_DEVELOPMENT",
+      "AUDIT_PASS_NE_CREATIVE_COMPLETENESS",
+      "DIRECT_AUDIO_EVIDENCE_PRIORITY",
+      "CONTINUITY_MODE_SEPARATION",
+      "BEAT_AND_CORE_SOUND_DRIFT_FAILURE",
+      "GENERATION_PACKET_COMPRESSION",
+      "BEST_MATCHING_CANDIDATE_RESTORE"
+    ],
+    "exact_control_values_remain_track_local": true,
+    "native_plugin_version": "0.1.31",
+    "account_plugin_version": "0.13.31",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
