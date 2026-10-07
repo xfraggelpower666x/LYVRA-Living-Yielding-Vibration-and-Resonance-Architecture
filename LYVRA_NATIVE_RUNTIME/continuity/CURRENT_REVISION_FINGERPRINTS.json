@@ -859,7 +859,7 @@
     }
   },
   "pfs_plugin_backup_approval_channel_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
     "approved_release_set": "ACCOUNT_0.13.31_NATIVE_0.1.31",
     "approved_source_head": "8a88575e1a0d160416d2e79ec0eb6410dc9caa62",
@@ -870,6 +870,15 @@
     "private_vault_mutation_by_lyvra": false,
     "whole_revision": 242,
     "track_revision": 93,
-    "studio2_031_preserved": true
+    "studio2_031_preserved": true,
+    "full_carrier_tree_readback": {
+      "source_head": "168146af7e8d4611570d5db13bcca749a421cd79",
+      "tree_sha": "6928d62f351ba9872cc3b05464931b1d05af5cb3",
+      "checked": 117,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
