@@ -1,0 +1,14 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.38",
+  "release_id": "pluginrel_6ac69a13bc208191831b3f0925bde15d",
+  "previous_version": "0.1.37",
+  "update_date": "2026-10-07",
+  "change_class": "USER_DESIGNATED_LOGO_BYTE_EXACT_SYNC",
+  "display_name": "LYVRA",
+  "logo_path": "assets/lyvra-logo.png",
+  "logo_size_bytes": 1913401,
+  "logo_sha256": "1423681dcca2cfe2a6d0ff045b9694a3df76b4761d513f114d7b8b723cf025b5",
+  "live_readback": "VERIFIED_METADATA_MANIFEST_AND_ASSET_SIZE"
+}
