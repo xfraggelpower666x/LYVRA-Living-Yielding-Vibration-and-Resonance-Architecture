@@ -977,5 +977,35 @@
     "account_plugin_version": "0.13.28",
     "account_plugin_release_id": "pluginrel_6ac5ae0e910881918c9fe2fedd417556",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio_production_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO_PRODUCTION_INTELLIGENCE.md",
+    "parent_facet": "SUNO_STUDIO_2",
+    "new_system": false,
+    "new_agent": false,
+    "new_controller": false,
+    "new_router": false,
+    "new_facet": false,
+    "project_state_intelligence": true,
+    "adaptive_pass_intelligence": true,
+    "studio_chat_instruction_compiler": true,
+    "result_lock_intelligence": true,
+    "plugin_experience_intelligence": true,
+    "automation_intelligence": true,
+    "longform_development_intelligence": true,
+    "evidence_return_intelligence": true,
+    "macro_pass_family": "ORIENTATION_NOT_FIXED_MATRIX",
+    "longform_target": "8_TO_10_MINUTES",
+    "studio2_text_surfaces": [
+      "STYLE",
+      "LYRICS"
+    ],
+    "extended_field": "NONE",
+    "native_plugin_version": "0.1.29",
+    "native_plugin_release_id": "pluginrel_6ac5be5dc86481918614f534f1e1fb39",
+    "account_plugin_version": "0.13.29",
+    "account_plugin_release_id": "pluginrel_6ac5be6d4f0c8191903a25a813607a6f",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
