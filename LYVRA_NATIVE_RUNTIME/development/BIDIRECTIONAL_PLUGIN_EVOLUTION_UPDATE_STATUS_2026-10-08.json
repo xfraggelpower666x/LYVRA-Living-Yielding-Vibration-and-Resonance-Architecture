@@ -37,5 +37,21 @@
     "peer_notice_delivery": "LYVRA_REPOSITORY_ONLY",
     "pointer_publication": "BLOCKED_PENDING_PARITY_AND_FINGERPRINT_REFRESH",
     "note": "Do not publish whole Current pointer as if plugin parity passed. No foreign activation or mutation."
+  },
+  "repair_diagnosis": {
+    "status": "SECOND_PLUGIN_EDIT_AUTHORITY_UNRESOLVED",
+    "verified_native_plugin": "plugins_6ab3a345db308191b8ad7ef6311f8a29@0.1.46",
+    "owned_personal_plugin_listing": "SECOND_LYVRA_SURFACE_ABSENT",
+    "interpretation": "ABSENCE_NE_NONEXISTENCE_AND_ABSENCE_NE_WRITE_PERMISSION",
+    "safe_repair": "Resolve actual backend ID and current release of migrated account plugin using authorized editor; run release-bound update; independent readback; re-evaluate live plugin impact and backup approval; refresh fingerprints/manifest/coverage; publish pointer last.",
+    "prohibited": [
+      "INVENT_PLUGIN_ID",
+      "CREATE_DUPLICATE_PLUGIN_AS_REPLACEMENT",
+      "ASSUME_ACCOUNT_RELEASE_READBACK",
+      "FALSE_PARITY_PASS",
+      "POINTER_EARLY",
+      "FOREIGN_SYSTEM_AUTOACTIVATION"
+    ],
+    "remaining": "WRITE_BLOCKED_SECOND_PLUGIN_PARITY_PENDING"
   }
 }
