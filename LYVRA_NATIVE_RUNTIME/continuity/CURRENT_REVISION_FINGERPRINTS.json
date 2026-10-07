@@ -832,7 +832,7 @@
     "plugin_readback": "VERIFIED_BOTH"
   },
   "studio2_031_freshness_repair_2026_10_07": {
-    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "status": "FINAL_REGISTRY_CLOSEOUT_VERIFIED",
     "source_head": "4cf6828f6fe2810b39e7c40ff5323b68cb0142ca",
     "recovery_branch": "lyvra-pre-studio2-031-freshness-repair-20261007-0746",
     "repaired_carrier_count": 8,
@@ -844,6 +844,15 @@
     "workspace_continuity_v2_preserved": true,
     "core_content_mutation": false,
     "manifest_blob": "addb09663d75d5e74694e175a5e9d9685881315b",
-    "coverage_blob": "5a62978efae80a8447996140176ab3c8799bf827"
+    "coverage_blob": "5a62978efae80a8447996140176ab3c8799bf827",
+    "full_carrier_tree_readback": {
+      "source_head": "9f31eb4604bbcabe6e27721aa61c73557ce5bcd3",
+      "tree_sha": "d34da4770671be83cdadf0f19cc956ba04699e2d",
+      "checked": 114,
+      "mismatches": 0,
+      "missing": 0,
+      "tree_truncated": false,
+      "result": "PASS"
+    }
   }
 }
