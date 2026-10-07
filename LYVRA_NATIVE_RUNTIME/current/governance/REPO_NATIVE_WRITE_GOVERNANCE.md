@@ -151,3 +151,27 @@ SEARCH_OR_NOTICE_SNIPPET_NE_CURRENT_AUTHORITY=true
 Before LYVRA materially updates a peer understanding card, dependency state, freshness judgment, adoption decision or execution assumption from a notice, LYVRA MUST read the target system's current native authority and the exact current carriers relevant to that notice, read-only and without foreign activation.
 
 Target-state analysis remains relational evidence. It does not transfer authority, activate the peer system or authorize foreign writes.
+
+
+## Stable-set convergence barrier — 2026-10-07
+
+A coupled LYVRA/CLIC plugin-backup round MUST NOT become executable until the relevant runtime/plugin set converges and directly revalidates as one stable candidate set.
+
+STABLE_SET_MEMBERS = LYVRA_ACCOUNT | LYVRA_NATIVE | CLIC
+STABLE_SET_REQUIRES = EXACT_PLUGIN_VERSION | EXACT_RELEASE_ID | RUNTIME_PLUGIN_STATE_FINGERPRINT | NATIVE_APPROVAL_STATUS | BINARY_BINDING_OR_EQUIVALENT_EVIDENCE
+
+STABLE_SET_REQUIRED_BEFORE_COUPLED_EXECUTION = true
+FINGERPRINT_CHANGE_BREAKS_SET = true
+PLUGIN_RELEASE_CHANGE_BREAKS_SET = true
+NATIVE_APPROVAL_SUPERSESSION_BREAKS_SET = true
+GOVERNANCE_ONLY_HEAD_ADVANCE_NE_SET_BREAK_IF_FINGERPRINT_REVALIDATES_UNCHANGED = true
+
+ROUND_EXECUTABLE_NE_ROUND_DISCOVERED = true
+ROUND_EXECUTABLE_NE_SINGLE_LEG_READY = true
+ONE_LEG_READY_NE_COUPLED_STABLE_SET = true
+NEW_CANDIDATE_SET_SUPERSEDES_RACING_OLDER_SET = true
+
+PFS_MAY_REQUEST_REFRESH_DURING_CONVERGENCE = true
+PFS_MAY_EXECUTE_ONLY_AFTER_STABLE_SET_AND_MATCHING_NATIVE_APPROVALS = true
+NO_FOREIGN_SELF_APPROVAL = true
+NO_CROSS_SYSTEM_MERGE = true
