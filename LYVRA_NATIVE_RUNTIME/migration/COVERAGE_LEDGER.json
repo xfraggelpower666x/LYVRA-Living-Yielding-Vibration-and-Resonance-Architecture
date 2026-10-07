@@ -1047,5 +1047,18 @@
     "account_plugin_version": "0.13.31",
     "account_plugin_release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "studio2_031_freshness_repair_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "source_head": "4cf6828f6fe2810b39e7c40ff5323b68cb0142ca",
+    "recovery_branch": "lyvra-pre-studio2-031-freshness-repair-20261007-0746",
+    "repaired_carrier_count": 8,
+    "native_plugin_version": "0.1.31",
+    "account_plugin_version": "0.13.31",
+    "whole_rev242_preserved": true,
+    "track_rev93_preserved": true,
+    "workspace_continuity_v2_preserved": true,
+    "no_core_content_mutation": true,
+    "no_foreign_autoload": true
   }
 }
