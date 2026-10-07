@@ -24,5 +24,18 @@
   "fingerprint_registry": "NEEDS_REFRESH_AFTER_CROSS_SURFACE_CONVERGENCE",
   "pointer": "UNCHANGED_INTENTIONALLY_UNTIL_GOVERNED_CLOSEOUT",
   "backup_approval": "REVALIDATE_AFTER_NATIVE_PLUGIN_RELEASE_CHANGE",
-  "next_safe_action": "Resolve second plugin editable release authority, integrate and verify, refresh fingerprints manifest and coverage, publish Current pointer last."
+  "next_safe_action": "Resolve second plugin editable release authority, integrate and verify, refresh fingerprints manifest and coverage, publish Current pointer last.",
+  "latest_bounded_recheck": {
+    "status": "PARTIAL_PLUGIN_PARITY_PENDING",
+    "native_plugin_live_release": "pluginrel_6ac6d81b11208191831852d02d3b1938",
+    "native_plugin_version": "0.1.46",
+    "second_account_plugin": "NOT_IN_CURRENT_EDITABLE_PERSONAL_PLUGIN_LIST",
+    "second_plugin_release": "READBACK_PENDING",
+    "clic_repository_read": "VERIFIED_HEAD_ONLY",
+    "pfs_repository_read": "VERIFIED_HEAD_ONLY",
+    "peer_native_adoption": "NOT_VERIFIED",
+    "peer_notice_delivery": "LYVRA_REPOSITORY_ONLY",
+    "pointer_publication": "BLOCKED_PENDING_PARITY_AND_FINGERPRINT_REFRESH",
+    "note": "Do not publish whole Current pointer as if plugin parity passed. No foreign activation or mutation."
+  }
 }
