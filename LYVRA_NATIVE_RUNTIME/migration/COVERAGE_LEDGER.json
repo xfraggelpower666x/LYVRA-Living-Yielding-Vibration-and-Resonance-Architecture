@@ -1268,5 +1268,17 @@
     "foreign_autoactivation": false,
     "track_rev95_preserved": true,
     "whole_rev242_preserved": true
+  },
+  "account_plugin_01337_reconcile_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "current_plugins": "0.13.37|0.1.37",
+    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
+    "pfs_request_freshness": "SUPERSEDED_0.13.35_0.1.36",
+    "clic_native_backup_leg": "BLOCKED_V0_1_11_BINARY_PARITY_MISMATCH",
+    "proposal_intake": "PASS",
+    "private_write": "BLOCKED",
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true,
+    "foreign_native_mutation": false
   }
 }
