@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PFS_PLUGIN_BACKUP_REQUEST_READBACK_v2",
-  "status": "REQUEST_READBACK_VERIFIED_CURRENT_MATCH",
+  "status": "REQUEST_READBACK_VERIFIED_STALE_FOR_CURRENT_RUNTIME_PLUGIN_STATE",
   "source_system": "666PFS",
   "source_repository": "xfraggelpower666x/666PFS_CSM",
   "source_branch": "main",
@@ -35,13 +35,25 @@
     "approval_status": "BLOCKED_CONFIRMED_V0_1_11_BINARY_PARITY_MISMATCH"
   },
   "validation": {
-    "runtime_plugin_state_fingerprint_match": true,
-    "account_release_match": true,
-    "native_release_match": true,
+    "runtime_plugin_state_fingerprint_match": false,
+    "account_release_match": false,
+    "native_release_match": false,
     "scope_bounded": true,
     "backup_only_target": true,
     "no_self_approval": true,
     "no_lyvra_mutation": true,
     "no_clic_mutation": true
-  }
+  },
+  "current_lyvra_state": {
+    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
+    "account": {
+      "version": "0.13.37",
+      "release_id": "pluginrel_6ac694bfead081918426d933fb788358"
+    },
+    "native_runtime": {
+      "version": "0.1.37",
+      "release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6"
+    }
+  },
+  "stale_reason": "PFS_REQUEST_TARGETS_0.13.35_0.1.36_BUT_CURRENT_IS_0.13.37_0.1.37"
 }
