@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "8df6247b922c158b8a4b041741fdfe8fda127e9f",
+    "current_head_before_pointer": "85216c4933a36f752ee107a0dab20c932627110b",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -47,8 +47,8 @@
   "current_known_whole_state": {
     "drive_internal_reference_whole_revision": 242,
     "drive_internal_reference_pointer_revision": 325,
-    "track_design_version": "v3.5",
-    "track_design_logical_revision": 94,
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
     "responsibility_core_preserved": true,
     "native_skill_runtime_revision": 1,
     "current_work_scope": "WHOLE_LYVRA_NEW_CHAT_READY_CURRENT_PRODUCTIVE_VALIDATION_DEFERRED",
@@ -110,7 +110,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.34_ACCOUNT_0.13.34_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.35_ACCOUNT_0.13.35_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "CURRENT_PLUGIN_STATE_REQUIRES_MATCHING_PFS_REQUEST_BEFORE_NEW_APPROVAL",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
@@ -130,7 +130,9 @@
     "plugin_auto_evolution": "CURRENT_PRODUCTIVE_AUTOMATIC_PLUGIN_IMPACT_AND_EVOLUTION",
     "track_design_master_music_base": "CURRENT_PRODUCTIVE_VERIFIED",
     "shared_guidance_daemon": "CURRENT_PRODUCTIVE_SHARED_CHILD_LIFECIRCLE_REHYDRATION",
-    "facet_rehydration_model": "MASTER_BASE_BY_REFERENCE_PLUS_FACET_SPECIFIC_INTELLIGENCE_PLUS_SHARED_DAEMON_ADAPTER"
+    "facet_rehydration_model": "MASTER_BASE_BY_REFERENCE_PLUS_FACET_SPECIFIC_INTELLIGENCE_PLUS_SHARED_DAEMON_ADAPTER",
+    "psychoacoustic_control_priority": "VERY_HIGH_CURRENT_PRODUCTIVE",
+    "emotion_harmony_relation": "EMOTION_NE_HARMONY_RELATIONAL_COHERENCE_GUARD_CURRENT"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -1772,12 +1774,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV94-TRACK-MASTER-BASE-SHARED-DAEMON-V1-FINAL",
+    "epoch": "2026-10-07-REV95-PSYCHOACOUSTIC-PRIORITY-EMOTION-HARMONY-GUARD-FINAL",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "expected_track_revision": 94,
-    "verified_carrier_count": 132,
+    "expected_track_revision": 95,
+    "verified_carrier_count": 134,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS"
+    "full_tree_readback": "PASS_INCREMENTAL"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -2290,6 +2292,27 @@
     "native_plugin_release_id": "pluginrel_6ac67f0de264819196effeb85aeb3596",
     "account_plugin_version": "0.13.34",
     "account_plugin_release_id": "pluginrel_6ac67f215dac8191a1b5208c15799fd8",
+    "plugin_readback": "PASS_BOTH"
+  },
+  "emotion_harmony_psychoacoustic_priority_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
+    "emotion_ne_harmony": true,
+    "lyvra_harmony": "RELATIONAL_COHERENCE_NOT_CONVENTIONAL_TONAL_SWEETNESS",
+    "harmony_is_renderer_drift_risk_when_misread": true,
+    "psychoacoustic_control_priority": "VERY_HIGH",
+    "psychoacoustics_ne_decorative_fx": true,
+    "psychoacoustics_is_compositional_perceptual_control": true,
+    "motor_time_authority_preserved": true,
+    "anti_pop_and_anti_musical_drift_guard": true,
+    "lyric_intelligence_bound": true,
+    "card_intelligence_bound": true,
+    "renderer_guard_bound": true,
+    "native_plugin_version": "0.1.35",
+    "native_plugin_release_id": "pluginrel_6ac68220c07c81918364e07f21df7c8e",
+    "account_plugin_version": "0.13.35",
+    "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
     "plugin_readback": "PASS_BOTH"
   }
 }
