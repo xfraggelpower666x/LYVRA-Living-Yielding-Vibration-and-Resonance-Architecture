@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "81789c547f9bf66a0c99869b00ad187e906c72fa",
+    "current_head_before_pointer": "8ecb16571eefc8a520ec7e52e9a3ec191f5ac1f0",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -30,7 +30,8 @@
     "plugin_auto_evolution_fingerprint_v3_body_head_before_pointer": "aeb59d7aac164a88bd5cb8bb37cbe9dac44775ba",
     "backup_circle_rev95_reconcile_body_head_before_pointer": "289de6f5f40268ff5e353c7e5251db8b17e9a600",
     "native_plugin_branding_sync_body_head_before_pointer": "91ccf25d5410dbfa39f5bee7b4b8687aab386615",
-    "peer_proposal_intake_update_body_head_before_pointer": "81789c547f9bf66a0c99869b00ad187e906c72fa"
+    "peer_proposal_intake_update_body_head_before_pointer": "81789c547f9bf66a0c99869b00ad187e906c72fa",
+    "account_plugin_01337_reconcile_body_head_before_pointer": "8ecb16571eefc8a520ec7e52e9a3ec191f5ac1f0"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -113,8 +114,8 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.37_ACCOUNT_0.13.36_CURRENT_VERIFIED",
-    "pfs_plugin_backup_handoff": "PFS_REQUEST_0.13.35_0.1.36_SUPERSEDED_FRESH_REQUEST_REQUIRED_FOR_0.13.36_0.1.37",
+    "plugin_surface_release_set": "NATIVE_0.1.37_ACCOUNT_0.13.37_CURRENT_VERIFIED",
+    "pfs_plugin_backup_handoff": "PFS_REQUEST_0.13.35_0.1.36_SUPERSEDED_FRESH_REQUEST_REQUIRED_FOR_0.13.37_0.1.37",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
     "workspace_continuity_v2": "SYSTEMSTART_BARE_WHOLE_SYSTEMSTART_SUFFIX_EXACT_WORKSPACE_NEW_NEXT_LINEAGE_SCOPED_UPDATE_ADDITIVE",
@@ -126,9 +127,9 @@
     "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
     "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
     "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED",
-    "freshness_registry": "CURRENT_PRODUCTIVE_138_OF_138_VERIFIED",
+    "freshness_registry": "CURRENT_PRODUCTIVE_139_OF_139_VERIFIED",
     "pfs_plugin_backup_approval_channel": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE",
-    "coupled_plugin_backup_circle": "CURRENT_V5_PFS_REQUEST_REFRESH_REQUIRED_CLIC_0.1.11_BINARY_PARITY_BLOCKED",
+    "coupled_plugin_backup_circle": "CURRENT_V6_ACCOUNT_0.13.37_NATIVE_0.1.37_PFS_REQUEST_STALE_CLIC_0.1.11_BINARY_PARITY_BLOCKED",
     "clic_plugin_backup_relation": "CLIC_0.1.11_BINARY_PARITY_BLOCKED_FRESH_NATIVE_APPROVAL_REQUIRED",
     "plugin_auto_evolution": "CURRENT_PRODUCTIVE_AUTOMATIC_PLUGIN_IMPACT_AND_EVOLUTION",
     "track_design_master_music_base": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -136,11 +137,12 @@
     "facet_rehydration_model": "MASTER_BASE_BY_REFERENCE_PLUS_FACET_SPECIFIC_INTELLIGENCE_PLUS_SHARED_DAEMON_ADAPTER",
     "psychoacoustic_control_priority": "VERY_HIGH_CURRENT_PRODUCTIVE",
     "emotion_harmony_relation": "EMOTION_NE_HARMONY_RELATIONAL_COHERENCE_GUARD_CURRENT",
-    "runtime_plugin_state_fingerprint": "84943ea077690d964c3c625bd0100bb4ee07d0a92548b60d3ad23e240f2a9613",
+    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
     "plugin_impact_last_update": "APPLICABLE_PLUGIN_PACKAGE_BRANDING_CHANGED_NO_RUNTIME_SEMANTIC_CHANGE",
     "native_plugin_branding": "USER_FACING_NAME_LYVRA_LOGO_VERIFIED_TECHNICAL_SLUG_PRESERVED",
     "peer_improvement_proposal_intake": "CURRENT_STANDARD_CHECK_ON_EVERY_LYVRA_UPDATE",
-    "latest_external_improvement_candidate": "CLIC_STREAM_MULTI_PROJECT_CONCEPT_VORGESCHLAGEN_NOT_ADOPTED"
+    "latest_external_improvement_candidate": "CLIC_STREAM_MULTI_PROJECT_CONCEPT_VORGESCHLAGEN_NOT_ADOPTED",
+    "account_plugin_branding": "DISPLAY_NAME_L.Y.V.R.A._ALIVE_LOGO_VERIFIED"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
