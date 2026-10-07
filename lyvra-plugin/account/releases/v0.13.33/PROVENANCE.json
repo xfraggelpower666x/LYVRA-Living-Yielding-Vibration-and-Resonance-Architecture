@@ -1,0 +1,13 @@
+{
+  "plugin": "L.Y.V.R.A. account plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.33",
+  "release_id": "pluginrel_6ac67d2886f48191adc5120a526c0154",
+  "previous_version": "0.13.32",
+  "previous_release_id": "pluginrel_6ac6648d05c081919b9b87102d68932a",
+  "update_date": "2026-10-07",
+  "reason": "Track Design semantic-causal lyric base with preserved recovered card graph, causal restructuring, call-response, semantic emoji in lyric text, FX/SFX relations, build structure and approximate temporal architecture; Speech and Studio consume by reference",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "d399821df04541cdb804cf471ada812c12d97052",
+  "plugin_readback": "VERIFIED"
+}
