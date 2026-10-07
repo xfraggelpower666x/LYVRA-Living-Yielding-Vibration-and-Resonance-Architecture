@@ -1338,5 +1338,12 @@
     "foreign_native_mutation": false,
     "whole_rev242_preserved": true,
     "track_rev95_preserved": true
+  },
+  "studio2_conducting_protocol_2026_10_07": {
+    "status": "VERIFIED",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
+    "sub_rehydration_bound": true,
+    "project_chat_bound": true,
+    "plugin_surface_impact": "DYNAMIC_RUNTIME_REFERENCE_NO_RELEASE_REQUIRED"
   }
 }
