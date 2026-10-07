@@ -10,7 +10,7 @@
     "release_candidate_branch": "lyvra-rc-whole-self-20260930",
     "release_candidate_source_dev_head": "cd27d8c5c7c85ce2c7794c1506dd33579b270f46",
     "release_candidate_body_head_before_pointer": "c735f3f7c788884d71c7dbb4bd1625da7c669955",
-    "current_head_before_pointer": "bfc204b36781e060deaf7c29caeef843b58fcfc5",
+    "current_head_before_pointer": "08e2f1a311f09c720d9cf46d7edbde6486a398cf",
     "previous_product_head_before_promotion": "47313cd077b5483092597e0402474b17206d75f2",
     "promoted_rc_branch": "lyvra-rc-whole-self-20260930",
     "promoted_rc_head": "8da2529cc7266829bb55c988df39cedbfcb71e40",
@@ -2379,6 +2379,32 @@
     "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450",
     "native_plugin_readback": "VERIFIED",
     "account_plugin_parity": "NOT_VERIFIED_IN_THIS_UPDATE",
+    "pointer_publication_order": "LAST",
+    "post_pointer_mutation_allowed": false
+  },
+  "semantic_cyber_field_visual_learning_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_REPOSITORY_READBACK",
+    "change_id": "LYVRA-VISUAL-20261007-001",
+    "semantic_cyber_field_base": "V01.2",
+    "local_adaptive_extension": "V01.3",
+    "whole_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "facet_lifecircle_standard": "LYVRA_NATIVE_RUNTIME/current/governance/SEMANTIC_VISUAL_FACET_LIFECIRCLE_STANDARD.md",
+    "daemon_integration": true,
+    "facet_registry_integration": true,
+    "track_design_subrehydration": true,
+    "studio2_subrehydration": true,
+    "speech_design_subrehydration": true,
+    "analytics_rehydration": true,
+    "whole_rehydration": true,
+    "outbound_notice": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_VISUAL_DEVELOPMENT_NOTICE_CURRENT.md",
+    "peer_targets": [
+      "666CLIC",
+      "666PFS"
+    ],
+    "target_native_validation_required": true,
+    "shared_semantics_ne_shared_memory": true,
+    "learning_ne_write_authority": true,
+    "prechange_recovery_branch": "lyvra-backup-pre-semantic-cyber-field-local-visual-learning-20261007-2330",
     "pointer_publication_order": "LAST",
     "post_pointer_mutation_allowed": false
   }
