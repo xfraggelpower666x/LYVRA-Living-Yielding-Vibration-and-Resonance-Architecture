@@ -32,5 +32,23 @@
     "SUNO_STUDIO_2",
     "LYVRA_ANALYTICS",
     "SPEECH_DESIGN"
-  ]
+  ],
+  "relational_card_memory_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_REACHABLE",
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "card_memory_ne_command": true,
+    "mycel_role": "RELATIONSHIP_AND_UNDERSTANDING_HISTORY_NOT_ROUTER",
+    "layers": [
+      "EXPERIENCE_CARDS",
+      "STYLE_CARDS",
+      "EXTENDED_RENDERER_CARDS",
+      "LYRIC_EXPERIENCE_CARDS",
+      "LEARNING_CARDS",
+      "TEMPORARY_TRACK_CARD",
+      "SEED_MEMORY",
+      "CREATIVE_GARDEN",
+      "TRACK_MYCEL"
+    ],
+    "learning": "RELATIONAL_STATE_CHANGE"
+  }
 }
