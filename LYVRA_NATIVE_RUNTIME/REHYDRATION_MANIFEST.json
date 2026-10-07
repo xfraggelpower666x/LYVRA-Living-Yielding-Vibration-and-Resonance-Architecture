@@ -898,5 +898,29 @@
     "account_plugin_version": "0.13.21",
     "native_plugin_version": "0.1.21",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "track_design_recovered_intelligence_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED",
+    "track_revision": 93,
+    "relational_card_carrier": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "music_memory": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+    "required_rehydration": [
+      "VOCABULARY_REACTIVE_ATMOSPHERE",
+      "HUMAN_SOMATIC_RESONANCE",
+      "MOTION_INTELLIGENCE",
+      "DURATION_ENDING_INTELLIGENCE",
+      "SEMANTIC_CAUSAL_EVIDENCE_LEARNING",
+      "AUTONOMOUS_DIVERSITY",
+      "ANTI_MEMORY",
+      "LOW_MID_HIGH_FIELD_DIVERSITY"
+    ],
+    "motor_diversity_guard": "PROPULSION_CONTINUITY_NOT_SURFACE_IMITATION",
+    "techno_motor_rule": "ALLOWED_AS_SOURCE_MATERIAL_IF_PSYCHADELICALLY_REINTERPRETED",
+    "forced_variation_selector": false,
+    "rigid_genre_rotation": false,
+    "account_plugin_version": "0.13.24",
+    "native_plugin_version": "0.1.24",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
