@@ -1253,5 +1253,20 @@
     "whole_rev242_preserved": true,
     "track_rev95_preserved": true,
     "foreign_native_mutation": false
+  },
+  "peer_proposal_intake_update_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "proposal_check_standard": true,
+    "latest_candidate_status": "VORGESCHLAGEN_NOT_ADOPTED",
+    "native_plugin": "0.1.37",
+    "account_plugin": "0.13.36",
+    "runtime_plugin_state_fingerprint": "84943ea077690d964c3c625bd0100bb4ee07d0a92548b60d3ad23e240f2a9613",
+    "plugin_readback": "PASS_BOTH",
+    "pfs_request_freshness": "SUPERSEDED_0.13.35_0.1.36",
+    "clic_native_backup_leg": "BLOCKED_V0_1_11_BINARY_PARITY_MISMATCH",
+    "private_write": "BLOCKED",
+    "foreign_autoactivation": false,
+    "track_rev95_preserved": true,
+    "whole_rev242_preserved": true
   }
 }
