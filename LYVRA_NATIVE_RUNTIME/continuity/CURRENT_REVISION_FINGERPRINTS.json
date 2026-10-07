@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PRODUCTIVE_NATIVE_REGISTRY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-07-REV93-COUPLED-LYVRA-CLIC-PLUGIN-BACKUP-CIRCLE",
+  "freshness_epoch": "2026-10-07-REV93-COUPLED-LYVRA-CLIC-PLUGIN-BACKUP-CIRCLE-V2-PARITY",
   "whole_revision": 242,
   "track_design_revision": 93,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "1ca8c99f7a4c27af26c528fdf2f156208d078741",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "5cbdedc9321a41b7eba184c289f1aeba2e0121e3",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "556a3fc1c8e75a301e67bbf798d353d883cbe3d9",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "fae28629c14bbaef526e8aa4d75cc3a7a2831d90",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "b281b4a0e530dcc1ff71a0a5874c1c7d88ca3c3a",
@@ -123,10 +123,10 @@
     "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CONTRACT.md": "09c4790cc282ffe0bc8b595c00def26430ecfc11",
     "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_REQUEST_CURRENT.json": "e5f5c825d2bbae16ab8eafc076d960af7a8f1b40",
     "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json": "c396dd587cde3e4e0d7159a503af2f5585d01598",
-    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md": "618eb56712e83efb974af7943d8fdfff0ddb8dcf",
-    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json": "b59cb5a488548bfa51fc1c499fa3833f39ec4a22",
-    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json": "b354e9addccb838ea0f5a56f32b575e89059a12d",
-    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json": "c3deb75834408144e2ef34a19a9aeecedfa4eab1"
+    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md": "bcfa109c06d4fa6c3b0554014a7f0c2a078f6e63",
+    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json": "903b5a794027ba55511ea9bdb8301d98e10f21d4",
+    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json": "a54dcd7a4599bd74195ca6ecf2b22967d26fe1c1",
+    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json": "c1df0e212163d6be6cd498dce3cbc80dda73e011"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -907,5 +907,21 @@
       "tree_truncated": false,
       "result": "PASS"
     }
+  },
+  "coupled_plugin_backup_circle_v2_2026_10_07": {
+    "status": "FINAL_REGISTRY_CLOSEOUT_PENDING_TREE_READBACK",
+    "clic_version": "0.1.7",
+    "clic_release_id": "pluginrel_6ac65a350e9481919591e60b91bdca70",
+    "clic_authority_head": "ee795a0fdf52b8cfc660658e0f58e0f989e87cff",
+    "clic_source_parity": "PASS_14_OF_14",
+    "clic_semantic_parity": "VERIFIED_CURRENT_RUNTIME_SCOPE",
+    "parity_preflight_required": true,
+    "private_vault_head": "558c399da3af57933519f9d666e49d142dabcd17",
+    "private_vault_pointer_blob": "a831fb7bc4d8d737cae9370a792732783549a7b2",
+    "private_vault_contract_blob": "a8ad7a6e216c6d3f5e3c094384f9d4987f5ea65d",
+    "pfs_native_consumption": "PENDING",
+    "clic_native_backup_authorization": "PENDING",
+    "no_cross_system_merge": true,
+    "foreign_native_mutation": false
   }
 }
