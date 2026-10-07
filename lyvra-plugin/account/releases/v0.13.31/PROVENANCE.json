@@ -1,0 +1,14 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.31",
+  "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427",
+  "previous_version": "0.13.30",
+  "previous_release_id": "pluginrel_6ac5ca4c0ca88191be6947dc9a468d74",
+  "update_date": "2026-10-07",
+  "reason": "Studio 2 real-production learning: repair/development separation, direct-audio evidence priority, continuity drift guards, compact generation packets",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "3c618fb15410a562ede9bf740fca57b2b93b06b9",
+  "evidence_carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/REAL_PRODUCTION_LEARNING_2026-10-07.md",
+  "plugin_readback": "VERIFIED"
+}
