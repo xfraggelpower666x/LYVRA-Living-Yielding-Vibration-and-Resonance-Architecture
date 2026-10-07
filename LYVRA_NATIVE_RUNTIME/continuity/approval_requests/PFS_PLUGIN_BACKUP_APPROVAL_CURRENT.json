@@ -1,64 +1,40 @@
 {
-  "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v3",
-  "status": "SUPERSEDED_AWAITING_FRESH_MATCHING_PFS_REQUEST",
-  "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-036",
+  "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v4",
+  "status": "APPROVED_LYVRA_LEG_COUPLED_EXECUTION_BLOCKED_PENDING_PFS_CLIC_REFRESH",
+  "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
   "authority": "LYVRA_LIVE_REPOSITORY",
   "decision_authority": "LYVRA_ONLY",
   "approved_request": {
     "source_repository": "xfraggelpower666x/666PFS_CSM",
-    "source_branch": "main",
-    "source_repository_head": "07518c07f8d1c76753a2bc74c209fb448ea24041",
-    "request_path": "handoff/OUTBOUND_LYVRA_PLUGIN_BACKUP_APPROVAL_REQUEST_CURRENT.md",
-    "request_blob": "8875d466170f7e91bbf6112e098a2269e068de8e"
+    "source_repository_head": "364339e440ef03273a519b3dabf8e8c19e0c236a",
+    "request_blob": "83dac6d257a2a464e610cac0185d36305c4dd00e",
+    "round_id": "PFS-MANAGED-PLUGIN-ROUND-2026-10-08-R02",
+    "round_manifest_blob": "710df4acbf8e7ad5a28b9ce9c939c36f0a1d34d9"
   },
   "approved_state": {
-    "runtime_plugin_state_fingerprint": "514284f76b08a353f53b372ef15679f6f399a4c87c721e50b99a167b50cc4f76",
-    "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
-    "source_head_observed_for_provenance": "ea20237697fc511296a5dcb915a5b913fac6ad05",
-    "account": {
-      "version": "0.13.35",
-      "release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1"
-    },
-    "native": {
-      "version": "0.1.36",
-      "release_id": "pluginrel_6ac68d628fd88191b95f89047607ff66"
-    },
-    "native_branding": {
-      "display_name": "LYVRA",
-      "technical_name": "lyvra-native-runtime",
-      "logo_path": "assets/lyvra-logo.png",
-      "restore_relevant": true
-    }
+    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
+    "account": {"version":"0.13.42","release_id":"pluginrel_6ac6bc473d248191957b18b991ae0d37"},
+    "native": {"version":"0.1.45","release_id":"pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29"}
   },
   "approved_scope": "WRITE_PLUGIN_BACKUP_HASH_READBACK_RECEIPT",
-  "backup_target_role": "PLUGIN_BACKUP_STORAGE_ONLY",
-  "preserve_old_backup_provenance": true,
-  "pfs_may_mutate_lyvra_live": false,
-  "pfs_self_approval": false,
-  "cross_system_merge": false,
-  "blanket_permission": false,
-  "valid_for_exact_request_blob": true,
-  "valid_for_exact_runtime_plugin_state_fingerprint": true,
-  "head_change_alone_supersedes": false,
-  "fingerprint_change_supersedes": true,
   "approval_ne_backup_write": true,
   "backup_execution_owner": "666PFS",
-  "coupled_circle_rule": "ROUND_COMPLETE_REQUIRES_SEPARATE_FRESH_CLIC_NATIVE_AUTHORIZATION",
+  "pfs_self_approval": false,
+  "cross_system_merge": false,
+  "head_change_alone_supersedes": false,
+  "fingerprint_change_supersedes": true,
   "clic_authorization_by_lyvra": false,
-  "clic_leg_observation": {
-    "version": "0.1.11",
-    "status": "BLOCKED_CONFIRMED_V0_1_11_BINARY_PARITY_MISMATCH",
-    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-020",
-    "execution_allowed": false
+  "clic_direct_readback": {
+    "version":"0.1.20",
+    "release_id":"pluginrel_6ac6bcf153c881919715b6bc3028e726",
+    "approval_id":"CLIC-PFS-PLUGIN-BACKUP-2026-10-08-022",
+    "fingerprint":"bd542c3192bd07af098463187eecd83c373d2010c1508352aa1b1239f66a1af4"
   },
-  "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH",
-  "backup_write_status": "BLOCKED_STABLE_SET_NOT_CONVERGED",
-  "superseded_by": {
-    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
-    "account_version": "0.13.42",
-    "account_release_id": "pluginrel_6ac6bc473d248191957b18b991ae0d37",
-    "native_version": "0.1.45",
-    "native_release_id": "pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29",
-    "reason": "TRACK_DESIGN_REV96_ACCOUNT_PARITY_REPAIR_AND_NEWER_NATIVE_LIVE_STATE"
-  }
+  "pfs_round_clic_binding": {
+    "approval_id":"CLIC-PFS-PLUGIN-BACKUP-2026-10-08-021",
+    "fingerprint":"7c064ab52afe63fc268b57423f33a9ac3e1c5807880ecd7b8ecfd42c35d396f9"
+  },
+  "stable_set_converged": false,
+  "pfs_execution_status": "BLOCKED_UNTIL_PFS_REFRESHES_CLIC_BINDING_AND_REVALIDATES",
+  "private_write_status": "BLOCKED_STABLE_SET_NOT_CONVERGED"
 }
