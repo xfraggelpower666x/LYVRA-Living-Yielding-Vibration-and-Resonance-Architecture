@@ -1,0 +1,53 @@
+{
+  "schema": "LYVRA_COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT_v1",
+  "status": "CURRENT_CONTRACT_READY_LYVRA_LEG_APPROVED_CLIC_NATIVE_CONSUMPTION_PENDING_PFS_DEVELOPMENT_PENDING",
+  "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+  "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
+  "lyvra_leg": {
+    "approval_status": "APPROVED_CURRENT_RELEASE_SET",
+    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
+    "account": {
+      "version": "0.13.31",
+      "release_id": "pluginrel_6ac5d9555ea88191b9c195c65c758427"
+    },
+    "native": {
+      "version": "0.1.31",
+      "release_id": "pluginrel_6ac5d944ae9081918d4a201ae0b2d746"
+    },
+    "execution_status": "PFS_PENDING"
+  },
+  "clic_leg": {
+    "observed_plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+    "observed_version": "0.1.5",
+    "observed_release_id": "pluginrel_6ac3bd798a748191816c9aef71adc919",
+    "authority_repository": "xfraggelpower666x/666CLICPRO",
+    "authority_branch": "clic-migration-rev79-staging",
+    "authority_head_observed": "fa6767dc9d48d8fe00232c62805e5a6c4c0200ec",
+    "native_authorization_status": "PENDING_CLIC_NATIVE_CONSUMPTION",
+    "lyvra_may_approve_clic": false,
+    "pfs_may_self_approve_clic": false
+  },
+  "pfs_handoff": {
+    "path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
+    "status": "READY_FOR_666PFS_NATIVE_CONSUMPTION",
+    "pfs_may_develop_internal_mechanics": true
+  },
+  "clic_notice": {
+    "path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json",
+    "status": "READY_FOR_666CLIC_NATIVE_CONSUMPTION"
+  },
+  "private_vault": {
+    "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+    "branch": "main",
+    "head": "5d3f86702097632d27fc9d8d79c96362a1c83eae",
+    "pointer_blob": "1ac1844fb77780d65d0bddd45cd9c0080f6bdf88",
+    "contract": "contracts/666PFS_COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE.md",
+    "contract_blob": "35937e79ca33d4738df0cd3c8d133ff715b92cb1",
+    "role": "BACKUP_STORAGE_ONLY",
+    "actual_artifact_write": "PENDING_PFS_NATIVE_EXECUTION"
+  },
+  "completion_rule": "ROUND_COMPLETE_REQUIRES_LYVRA_AND_CLIC_READBACK_VERIFIED_OR_VERIFIED_IMMUTABLE_REUSE",
+  "no_cross_system_merge": true,
+  "no_new_router": true,
+  "no_foreign_autoactivation": true
+}
