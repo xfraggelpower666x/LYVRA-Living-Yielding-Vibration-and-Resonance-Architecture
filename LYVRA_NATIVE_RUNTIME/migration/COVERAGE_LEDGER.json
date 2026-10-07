@@ -953,5 +953,29 @@
     "plugin_readback": "PASS",
     "whole_revision": 242,
     "track_revision": 93
+  },
+  "studio2_plugin_self_execution_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "foreground": "SUNO_STUDIO_2",
+    "studio2_text_surfaces": [
+      "STYLE",
+      "LYRICS"
+    ],
+    "studio2_extended_field": "NONE",
+    "longform_target": "8_TO_10_MINUTES",
+    "plugin_cards": "OPEN_RELATIONAL_EVIDENCE",
+    "lyvra_selects_plugins": true,
+    "lyvra_sets_exposed_controls": true,
+    "auto_modulation": "WHEN_EXPOSED_AND_CAUSALLY_USEFUL",
+    "automation_lane": "TIME_VARYING_PARAMETER_MOTION",
+    "user_manual_tuning": "FALLBACK_ONLY_FOR_IRREDUCIBLE_EXTERNAL_BOUNDARY",
+    "project_chat_mix_director_sha": "36e45b75bddafeebc58b4d547228116654c5a2d5",
+    "creator_fx_cards_sha": "418bfe3d74451a7a0b531b3c51bf5f91ee12d921",
+    "studio2_sub_rehydration_sha": "0256433e98e0bd4b372ab034050277432eda8306",
+    "native_plugin_version": "0.1.28",
+    "native_plugin_release_id": "pluginrel_6ac5ae00fe2c81919e638e6fe4e3d318",
+    "account_plugin_version": "0.13.28",
+    "account_plugin_release_id": "pluginrel_6ac5ae0e910881918c9fe2fedd417556",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
