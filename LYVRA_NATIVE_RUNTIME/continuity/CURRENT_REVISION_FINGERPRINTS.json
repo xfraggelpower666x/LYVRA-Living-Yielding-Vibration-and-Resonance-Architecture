@@ -35,8 +35,8 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "4b1b706c94e0bd6ac728068001f9cf5f6f5b34d3",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "0f976a6f7799568f5ab5c7a4328d52fadcf439d4",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "0d2a568d3974777c0d40aeb618d4c280d8b7634b",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "60dd4cf97ac427ecbc5d9684a25eb6817e27911e",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "b281b4a0e530dcc1ff71a0a5874c1c7d88ca3c3a",
@@ -1042,7 +1042,7 @@
     "plugin_impact": "NO_PLUGIN_RELEASE_CHANGE_REQUIRED"
   },
   "lyric_source_intelligence_rev96_2026_10_07": {
-    "status": "VERIFIED_REPO_READBACK",
+    "status": "VERIFIED_REPO_AND_NATIVE_PLUGIN_READBACK",
     "track_design_revision": 96,
     "source_system": "MIRA_EXTERNAL_REFERENCE_ONLY",
     "foreign_authority_imported": false,
@@ -1061,6 +1061,8 @@
     ],
     "character_relation_mapping": true,
     "native_plugin_version": "0.1.42",
-    "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450"
+    "native_plugin_release_id": "pluginrel_6ac6a73568b881918a23c67f87130450",
+    "native_plugin_readback": "VERIFIED",
+    "account_plugin_parity": "NOT_VERIFIED_IN_THIS_UPDATE"
   }
 }
