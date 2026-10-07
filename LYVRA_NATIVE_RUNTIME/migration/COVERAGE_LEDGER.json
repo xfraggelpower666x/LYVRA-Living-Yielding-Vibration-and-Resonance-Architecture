@@ -1202,5 +1202,28 @@
     "account_plugin_version": "0.13.34",
     "account_plugin_release_id": "pluginrel_6ac67f215dac8191a1b5208c15799fd8",
     "plugin_readback": "VERIFIED_BOTH"
+  },
+  "emotion_harmony_psychoacoustic_priority_2026_10_07": {
+    "status": "CURRENT_PRODUCTIVE_VERIFIED_BODY",
+    "scope": "TRACK_DESIGN_MASTER_BASE_WITH_BY_REFERENCE_FACET_CONSUMPTION",
+    "track_design_version": "v3.6",
+    "track_design_logical_revision": 95,
+    "emotion_ne_harmony": true,
+    "harmony_risk_guard": true,
+    "lyvra_harmony": "RELATIONAL_COHERENCE_NOT_CONVENTIONAL_TONAL_SWEETNESS",
+    "psychoacoustic_control_priority": "VERY_HIGH",
+    "psychoacoustics_ne_decorative_fx": true,
+    "psychoacoustics_as_compositional_perceptual_control": true,
+    "anti_pop_and_anti_musical_drift": true,
+    "lyric_intelligence_bound": true,
+    "card_intelligence_bound": true,
+    "renderer_guard_bound": true,
+    "studio2_consumes_by_reference": true,
+    "speech_consumes_by_reference": true,
+    "native_plugin_version": "0.1.35",
+    "native_plugin_release_id": "pluginrel_6ac68220c07c81918364e07f21df7c8e",
+    "account_plugin_version": "0.13.35",
+    "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
+    "plugin_readback": "VERIFIED_BOTH"
   }
 }
