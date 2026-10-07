@@ -1,0 +1,13 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.34",
+  "release_id": "pluginrel_6ac67f0de264819196effeb85aeb3596",
+  "previous_version": "0.1.33",
+  "previous_release_id": "pluginrel_6ac67d16e07881919ec02a8ffeef30a1",
+  "update_date": "2026-10-07",
+  "reason": "Track Design Master Music Base + shared Guidance Daemon Life-Circle/Rehydration + facet adapters",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "143237ebb4265962228910da49d65f4c549033f2",
+  "plugin_readback": "VERIFIED"
+}
