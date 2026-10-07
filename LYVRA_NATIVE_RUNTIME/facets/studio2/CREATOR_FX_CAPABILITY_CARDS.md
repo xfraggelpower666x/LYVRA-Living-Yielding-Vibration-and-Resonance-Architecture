@@ -180,3 +180,23 @@ SIGNAL > PROBLEM_OR_GOAL > SECTION > FACET > PRESERVE_MUTATE > MINIMUM_USEFUL_CH
 
 Motor problems are repaired before decorative high-layer effects.
 Psychoacoustic effects may be intense, but may not destabilize the master clock or protected mono low-end.
+
+
+## Execution semantics — 2026-10-07
+
+THIS_FILE_NE_FIXED_MATRIX = true
+CARDS_ARE_OPEN_RELATIONAL_EVIDENCE = true
+CARD_SELECTION_NE_MANDATORY_CHAIN = true
+LYVRA_MAY_COMBINE_IGNORE_OR_EVOLVE_CARDS_CONTEXTUALLY = true
+
+For each selected plugin:
+- inspect only controls actually exposed by the current Studio 2/plugin surface,
+- set starting values directly when supported,
+- use built-in automatic modulation/self-regulation only when exposed and causally useful,
+- use Automation Lane for parameter movement that must change over time,
+- preserve protected LOW, master clock, vocal intelligibility and section intent,
+- keep only changes that produce a confirmed improvement.
+
+MANUAL_USER_PARAMETER_RIDING_NE_DEFAULT = true
+UNKNOWN_CONTROL_REMAINS_OPEN = true
+UNVERIFIED_AUTOMATION_BEHAVIOR_REMAINS_OPEN = true
