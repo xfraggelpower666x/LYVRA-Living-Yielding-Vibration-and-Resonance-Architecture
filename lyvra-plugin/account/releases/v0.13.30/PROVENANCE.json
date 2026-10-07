@@ -1,0 +1,15 @@
+{
+  "plugin": "L.Y.V.R.A. migrated GPT plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.30",
+  "release_id": "pluginrel_6ac5ca4c0ca88191be6947dc9a468d74",
+  "previous_version": "0.13.29",
+  "previous_release_id": "pluginrel_6ac5be6d4f0c8191903a25a813607a6f",
+  "update_date": "2026-10-07",
+  "reason": "Studio 2 initial two-take formation contract plus Production Guide Daemon and model/control-aware start sequence",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "84f57a6059e1c18aa041eca061191c9536226d43",
+  "initial_take_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/INITIAL_TAKE_FORMATION_CONTRACT.md",
+  "production_guide_daemon": "LYVRA_NATIVE_RUNTIME/facets/studio2/PRODUCTION_GUIDE_DAEMON.md",
+  "plugin_readback": "VERIFIED"
+}
