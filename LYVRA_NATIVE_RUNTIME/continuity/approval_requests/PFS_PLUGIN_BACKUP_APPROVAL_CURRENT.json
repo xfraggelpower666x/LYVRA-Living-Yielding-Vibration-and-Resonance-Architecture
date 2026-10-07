@@ -54,11 +54,11 @@
   "private_write_status": "BLOCKED_UNTIL_CLIC_NATIVE_LEG_FRESH",
   "backup_write_status": "BLOCKED_CURRENT_PLUGIN_STATE_CHANGED",
   "superseded_by": {
-    "runtime_plugin_state_fingerprint": "e20dff275a7a8f255fed3dfc5e0790d3c1bfc109c22d32eb705f93f075a24866",
-    "account_version": "0.13.37",
-    "account_release_id": "pluginrel_6ac694bfead081918426d933fb788358",
-    "native_version": "0.1.37",
-    "native_release_id": "pluginrel_6ac6939b312481918f4677642cb6e9e6",
-    "reason": "VALID_NEWER_ACCOUNT_PLUGIN_PRESENTATION_EVOLUTION"
+    "runtime_plugin_state_fingerprint": "17947a53bbf8018bff8b9ed94941b024c37611615a6b3c338a8f54fbfee084ee",
+    "account_version": "0.13.38",
+    "account_release_id": "pluginrel_6ac69a232e608191b41a2145c17c8d64",
+    "native_version": "0.1.38",
+    "native_release_id": "pluginrel_6ac69a13bc208191831b3f0925bde15d",
+    "reason": "USER_DESIGNATED_DUAL_LOGO_BYTE_SYNC_CHANGED_PLUGIN_RELEASES"
   }
 }
