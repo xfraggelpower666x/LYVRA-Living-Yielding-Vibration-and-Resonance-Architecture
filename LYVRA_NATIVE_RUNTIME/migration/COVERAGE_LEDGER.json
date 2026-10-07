@@ -1308,5 +1308,19 @@
     "foreign_native_mutation": false,
     "whole_rev242_preserved": true,
     "track_rev95_preserved": true
+  },
+  "target_state_analysis_2026_10_07": {
+    "status": "VERIFIED_BODY_PRE_POINTER",
+    "current_plugins": "0.13.40|0.1.40",
+    "runtime_plugin_state_fingerprint": "54476252c1350eaed6b8c20d80d337e5fa9ba0a8b94c4151345586e3dbe8abc5",
+    "target_state_analysis": "VERIFIED_GOVERNANCE_PRESENT",
+    "notice_only_update": "FORBIDDEN",
+    "pfs_request_freshness": "SUPERSEDED_0.13.37_0.1.37",
+    "clic_native_backup_leg": "APPROVED_0.1.15_HYBRID_SNAPSHOT_VERIFIED",
+    "private_write": "BLOCKED_PENDING_FRESH_LYVRA_REQUEST",
+    "foreign_autoactivation": false,
+    "foreign_native_mutation": false,
+    "whole_rev242_preserved": true,
+    "track_rev95_preserved": true
   }
 }
