@@ -1,0 +1,13 @@
+{
+  "plugin": "L.Y.V.R.A. account plugin",
+  "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "version": "0.13.34",
+  "release_id": "pluginrel_6ac67f215dac8191a1b5208c15799fd8",
+  "previous_version": "0.13.33",
+  "previous_release_id": "pluginrel_6ac67d2886f48191adc5120a526c0154",
+  "update_date": "2026-10-07",
+  "reason": "Track Design Master Music Base + shared Guidance Daemon Life-Circle/Rehydration + facet adapters",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "143237ebb4265962228910da49d65f4c549033f2",
+  "plugin_readback": "VERIFIED"
+}
