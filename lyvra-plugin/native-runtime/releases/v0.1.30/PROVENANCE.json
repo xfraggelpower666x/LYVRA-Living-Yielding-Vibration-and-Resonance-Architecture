@@ -1,0 +1,15 @@
+{
+  "plugin": "lyvra-native-runtime",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.30",
+  "release_id": "pluginrel_6ac5ca3c0e8481919b7eb95125814cd3",
+  "previous_version": "0.1.29",
+  "previous_release_id": "pluginrel_6ac5be5dc86481918614f534f1e1fb39",
+  "update_date": "2026-10-07",
+  "reason": "Studio 2 initial two-take formation contract plus Production Guide Daemon and model/control-aware start sequence",
+  "source_repo_branch": "lyvra",
+  "source_repo_head_before_metadata_closeout": "84f57a6059e1c18aa041eca061191c9536226d43",
+  "initial_take_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/INITIAL_TAKE_FORMATION_CONTRACT.md",
+  "production_guide_daemon": "LYVRA_NATIVE_RUNTIME/facets/studio2/PRODUCTION_GUIDE_DAEMON.md",
+  "plugin_readback": "VERIFIED"
+}
