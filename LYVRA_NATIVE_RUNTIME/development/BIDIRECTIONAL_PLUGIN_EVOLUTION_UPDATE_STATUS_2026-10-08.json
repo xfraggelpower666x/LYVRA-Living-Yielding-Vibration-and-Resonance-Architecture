@@ -1,32 +1,32 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "DUAL_RELEASE_VERIFIED_PET_BINDING_REFRESHED_FULL_COVERAGE_PENDING",
+  "status": "CURRENT_DUAL_RELEASE_VERIFIED_BRANDED_PET_CURRENT_BACKUP_REVALIDATION_PENDING",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
   "contract": "LYVRA_NATIVE_RUNTIME/development/BIDIRECTIONAL_PLUGIN_NATIVE_EVOLUTION_LIFECIRCLE.md",
   "native_plugin": {
     "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-    "version": "0.1.47",
-    "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000",
+    "version": "0.1.49",
+    "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
     "readback": "VERIFIED"
   },
   "account_plugin": {
     "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-    "version": "0.13.44",
-    "release_id": "pluginrel_6ac709929c9481918c17feac7195b315",
+    "version": "0.13.46",
+    "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791",
     "readback": "VERIFIED",
-    "pet_skill": "PRESERVED"
+    "pet_skill": "PRESERVED_AND_BRANDED_APP_BOUND"
   },
   "peer_notices": [
     "LYVRA_NATIVE_RUNTIME/development/peer_notices/BIDIRECTIONAL_PLUGIN_EVOLUTION_TO_CLIC_2026-10-08.md",
     "LYVRA_NATIVE_RUNTIME/development/peer_notices/BIDIRECTIONAL_PLUGIN_EVOLUTION_TO_PFS_2026-10-08.md"
   ],
   "peer_delivery": "LYVRA_REPO_ONLY_NOT_NATIVE_PEER_CONSUMED",
-  "fingerprint_registry": "NEEDS_REFRESH_AFTER_CROSS_SURFACE_CONVERGENCE",
-  "pointer": "UNCHANGED_INTENTIONALLY_UNTIL_GOVERNED_CLOSEOUT",
-  "backup_approval": "REVALIDATE_AFTER_NATIVE_PLUGIN_RELEASE_CHANGE",
-  "next_safe_action": "Resolve second plugin editable release authority, integrate and verify, refresh fingerprints manifest and coverage, publish Current pointer last.",
+  "fingerprint_registry": "PARTIAL_REVALIDATION_REQUIRED_FOR_BACKUP_STABLE_SET",
+  "pointer": "READY_FOR_GOVERNED_FRESHNESS_CLOSEOUT",
+  "backup_approval": "HISTORICAL_045_SUPERSEDED_NEW_APPROVAL_NOT_GRANTED",
+  "next_safe_action": "Refresh current fingerprint bindings for changed carriers, preserve backup block until CLIC/PFS stable-set convergence, then publish pointer last.",
   "latest_bounded_recheck": {
     "status": "PARTIAL_PLUGIN_PARITY_PENDING",
     "native_plugin_live_release": "pluginrel_6ac6d81b11208191831852d02d3b1938",
@@ -131,21 +131,20 @@
   },
   "force_update": {
     "adapter": "VERIFIED",
-    "pointer": "PENDING",
-    "fingerprints": "PENDING",
-    "backup_approval": "REVALIDATION_REQUIRED",
-    "recovery": "lyvra-pre-alive-bidirectional-plugin-20261008"
+    "pointer": "READY_AFTER_CURRENT_CARRIER_RECONCILE",
+    "fingerprints": "PARTIAL_REVALIDATION_REQUIRED",
+    "backup_approval": "HISTORICAL_045_SUPERSEDED",
+    "recovery": "lyvra-backup-pre-update-reconcile-20261008-0655"
   },
   "verified_release_freshness": {
-    "native_version": "0.1.48",
-    "native_release": "pluginrel_6ac71d9412cc8191b1cbd96b5189300d",
-    "account_version": "0.13.45",
-    "account_release": "pluginrel_6ac70d31145c81918386ef96b49aeab4",
-    "pet_binding_commit": "481f87256a7341ee36a4d0fb9ea2df2d5396b1c3",
-    "pet_binding_readback": "VERIFIED",
-    "whole_pointer": "UNCHANGED",
-    "full_registry_check": "PENDING",
-    "backup_convergence": "PENDING"
+    "native_version": "0.1.49",
+    "native_release": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+    "account_version": "0.13.46",
+    "account_release": "pluginrel_6ac736ef43cc819194986077f88bd791",
+    "pet_app_binding": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "pet_branding": "VERIFIED",
+    "full_registry_check": "PARTIAL_REVALIDATION_CURRENT_CARRIERS_ONLY",
+    "backup_convergence": "NOT_CONVERGED"
   },
   "backup_approval_reconciliation": {
     "status": "HISTORICAL_045_SUPERSEDED_CURRENT_BACKUP_BLOCKED",
@@ -153,8 +152,8 @@
     "approval_blob": "3de7ac890972b8c87d5e8750daf3f9eeb7b211eb",
     "current_native_version": "0.1.49",
     "current_account_version": "0.13.46",
-    "pointer_legacy_approval_field": "HISTORICAL_ONLY_NOT_EXECUTABLE",
-    "fingerprints": "PENDING_REVALIDATION",
+    "pointer_legacy_approval_field": "MUST_BE_RECONCILED_TO_HISTORICAL_ONLY",
+    "fingerprints": "PARTIAL_REVALIDATION_REQUIRED",
     "clic_pfs_convergence": "PENDING",
     "backup_write": "BLOCKED",
     "no_foreign_activation": true
