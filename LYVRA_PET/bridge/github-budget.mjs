@@ -35,6 +35,8 @@ export class PetGithubBudget {
 export function petBudgetedFetcher(env,underlyingFetch=fetch) {
  return async (url,init={})=>{
   const parsed=typeof url==='string'?new URL(url):url instanceof URL?url:url instanceof Request?new URL(url.url):null;
+  if(!parsed)throw Error('PET_INVALID_FETCH_TARGET');
+  if(parsed.hostname==='api.github.com'&&parsed.protocol!=='https:')throw Error('PET_INSECURE_GITHUB_REQUEST');
   const isGithubRest=parsed?.protocol==='https:'&&parsed.hostname==='api.github.com'&&parsed.port===''&&parsed.pathname.startsWith('/repos/');
   if(isGithubRest) {
    if(!env?.LYVRA_PET_GITHUB_BUDGET)throw Error('PET_GLOBAL_BUDGET_NOT_CONFIGURED');
