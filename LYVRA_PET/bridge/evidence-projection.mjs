@@ -2,7 +2,7 @@ import {expressionFor} from "./expression-effects.mjs";
 // Beobachtete Ereignisse projizieren; keine eigene Persönlichkeit oder Erinnerungswurzel.
 export async function projectVerifiedEvidence(event,{verifyEvidence,revision,now=Date.now()}={}){
  const fallback={status:"UNVERIFIED",expression:expressionFor(),source_revision:null};
- if(typeof verifyEvidence!=="function"||!event||!revision||event.source_revision!==revision||!Number.isFinite(Date.parse(event.observed_at))||Date.parse(event.observed_at)>now||now-Date.parse(event.observed_at)>300000)return fallback;
+ if(typeof verifyEvidence!=="function"||!event||typeof revision!=="string"||! /^[a-f0-9]{40}$/i.test(revision)||event.source_revision!==revision||!Number.isFinite(Date.parse(event.observed_at))||Date.parse(event.observed_at)>now||now-Date.parse(event.observed_at)>300000)return fallback;
  const snapshot=Object.freeze({source_revision:event.source_revision,observed_at:event.observed_at,evidence_id:event.evidence_id,kind:event.kind,relation:event.relation,facet:event.facet,sensitive:event.sensitive===true});
  if(typeof snapshot.evidence_id!=="string"||!snapshot.evidence_id.trim())return fallback;
  let trusted=false;try{trusted=await verifyEvidence(snapshot);}catch{}
@@ -20,3 +20,4 @@ export async function projectVerifiedEvidence(event,{verifyEvidence,revision,now
  }
  return Object.freeze({status:"VERIFIED_EVENT_PROJECTION",expression:expressionFor(input),render_input:Object.freeze({...input}),source_revision:revision,evidence_id:snapshot.evidence_id,observed_at:snapshot.observed_at,inference:"BOUNDED_EVENT_MAPPING",memory_written:false});
 }
+
