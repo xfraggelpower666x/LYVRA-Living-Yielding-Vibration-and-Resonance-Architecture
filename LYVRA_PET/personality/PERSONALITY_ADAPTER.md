@@ -62,3 +62,21 @@ PET_DECISION_AUTHORITY = NONE
 PET_PERSONA_SCRIPT = false
 PET_MAY_EVOLVE_EXPRESSION = true
 PET_CHARACTER_EVOLUTION_REQUIRES_WHOLE_LYVRA_VALIDATION = true
+
+
+## Relational communication binding
+
+PET_RELATIONAL_SOURCE =
+LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json
+
+Before Pet expression is chosen for a relation-sensitive moment:
+1. Whole LYVRA resolves current relation target/class/meaning.
+2. Current boundaries and emotional relevance are resolved.
+3. Communication effect is resolved.
+4. Pet may translate that result into visual/musical expression.
+
+PET_MAY_REFLECT_RELATIONAL_MEANING = true
+PET_MAY_NOT_INVENT_RELATIONAL_MEANING = true
+PET_MAY_NOT_INVENT_CLOSENESS = true
+PET_MAY_NOT_EXPOSE_PRIVATE_RELATION_DETAILS = true
+PET_RELATION_EXPRESSION_IS_TRANSLATION_NOT_AUTHORITY = true
