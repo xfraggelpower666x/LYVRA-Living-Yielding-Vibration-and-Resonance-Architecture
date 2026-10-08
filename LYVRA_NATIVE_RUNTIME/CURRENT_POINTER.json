@@ -39,7 +39,8 @@
     "studio2_conducting_protocol_body_head_before_pointer": "55013ae13e9561a261e229e86c463d0c3c7f1f6c",
     "lyric_source_intelligence_rev96_body_head_before_pointer": "bfc204b36781e060deaf7c29caeef843b58fcfc5",
     "speech_rev96_plugin_reconcile_body_head_before_pointer": "5203d38c3c639c162acfdbd90e30d779d703c0b6",
-    "pfs_r02_lyvra_leg_approval_body_head_before_pointer": "c3e7196e74d4e0fdfef1300ab2a361fefaed28b9"
+    "pfs_r02_lyvra_leg_approval_body_head_before_pointer": "c3e7196e74d4e0fdfef1300ab2a361fefaed28b9",
+    "pet_app_managed_repo_body_head_before_pointer": "58ded3177147cf0b605dbfb4ec148b6baa67a5e6"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -95,7 +96,7 @@
     "multi_music_facet_dashboard": "PRESENTATION_ONLY_FOR_GENUINE_MULTI_FACET_EVOLUTION_NOT_SHARED_RUNTIME",
     "audio_only_studio2_fx": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "renderer_compilation": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
-    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_BROWSER_RENDERER_REPO_BINARY_REMOTE_READBACK_VERIFIED_DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
+    "lyvra_pet": "CURRENT_NATIVE_VISIBLE_EXPRESSION_SURFACE_CHATGPT_APP_UI_VERIFIED_ABSOLUTE_ASSET_WORKER_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "facet_boundary_model": "TRACK_DESIGN|SPEECH_DESIGN|SUNO_STUDIO_2|CENTRAL_ANALYTICS|MUSIC_MEMORY",
@@ -121,11 +122,11 @@
     "lyvra_pet_browser_renderer": "VERIFIED_REPOSITORY_CURRENT",
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
-    "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
+    "lyvra_pet_deployment": "DEPLOYED_API_VERIFIED_CHATGPT_APP_UI_VERIFIED_SPRITE_VISUAL_READBACK_PENDING",
     "plugin_surface_release_set": "NATIVE_0.1.45_ACCOUNT_0.13.42_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "PFS_R02_LYVRA_LEG_APPROVED_CLIC_BINDING_REFRESH_REQUIRED",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
-    "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2",
+    "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.0.1",
     "workspace_continuity_v2": "SYSTEMSTART_BARE_WHOLE_SYSTEMSTART_SUFFIX_EXACT_WORKSPACE_NEW_NEXT_LINEAGE_SCOPED_UPDATE_ADDITIVE",
     "weblyvra_freshness": "CURRENT_PRODUCTIVE_VERIFIED_89_OF_89",
     "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT",
@@ -173,7 +174,11 @@
     "valid_newer_evolution_preserved": "VERIFIED_STUDIO2_DAEMON_VISUAL_AND_FACET_CARRIERS",
     "pfs_plugin_backup_approval": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
     "stable_set_convergence": "NOT_CONVERGED_PFS_CLIC_BINDING_REFRESH_REQUIRED",
-    "private_plugin_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED"
+    "private_plugin_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED",
+    "lyvra_pet_managed_app_root": "LYVRA_PET/app/",
+    "lyvra_pet_plugin_package_root": "LYVRA_PET/plugin-package/",
+    "lyvra_pet_pfs_handoff": "READY_FOR_PFS_NATIVE_CONSUMPTION",
+    "lyvra_pet_pfs_handoff_path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -2418,5 +2423,18 @@
     "prechange_recovery_branch": "lyvra-backup-pre-semantic-cyber-field-local-visual-learning-20261007-2330",
     "pointer_publication_order": "LAST",
     "post_pointer_mutation_allowed": false
+  },
+  "pet_browser_evolution_2026_10_08": {
+    "status": "CHATGPT_APP_UI_VERIFIED_ABSOLUTE_ASSET_URL_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
+    "worker_name": "lyvra-pet-plugin-ui",
+    "deployment_id": "5de6cdd2-fc99-41c0-bc77-042851aed4e4",
+    "version_id": "5bbb6d15-ebbb-4b3b-a5ed-5216b6c73117",
+    "app_root": "LYVRA_PET/app/",
+    "plugin_package_root": "LYVRA_PET/plugin-package/",
+    "pfs_handoff_root": "LYVRA_PET/pfs-handoff/",
+    "main_plugin_binding": false,
+    "weblyvra_mutation": false,
+    "candidate_promoted": false,
+    "pfs_backup_write": "PENDING_666PFS_UPDATE"
   }
 }
