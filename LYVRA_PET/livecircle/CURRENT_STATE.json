@@ -21,18 +21,18 @@
   "plugin_surfaces": {
     "account": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.45",
-      "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
+      "version": "0.13.46",
+      "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
     },
     "native": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.48",
-      "release_id": "pluginrel_6ac70d23233481919f22624348351154"
+      "version": "0.1.49",
+      "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
     }
   },
   "website_deployment": {
     "project": "weblyvra-live",
-    "deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
+    "deployment_id": "071cf372-4050-4187-9301-c925c1b9d4a5",
     "result": "SUCCESS"
   },
   "dashboard_integration": "DEPLOYED_SEPARATE_PET_DASHBOARD_AND_MAIN_DASHBOARD",
@@ -77,9 +77,31 @@
   },
   "dashboard_deployment": {
     "project": "lyvra-dashboard",
-    "deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "deployment_id": "b9c44d0a-fab2-478a-857c-68c700757100",
     "result": "SUCCESS",
     "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
   },
-  "radio_integration": "OUTBOUND_HANDOFF_READY_666STREAM_NATIVE_CONSUMPTION_REQUIRED"
+  "radio_integration": "OUTBOUND_HANDOFF_READY_666STREAM_NATIVE_CONSUMPTION_REQUIRED",
+  "worker_version": "2.0.2",
+  "worker_deployment": {
+    "deployment_id": "de607f5d-99ba-406a-a4b7-8378c6511468",
+    "version_id": "2dd20285-740f-4349-a145-a73807961fda",
+    "source_readback": "PASS",
+    "logo_route": "PASS"
+  },
+  "pet_app_binding": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+  "branding": {
+    "asset": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
+    "plugin_asset": "LYVRA_PET/plugin-package/assets/lyvra-pet-app-icon-256.png",
+    "dashboard_asset": "WEBLyvra/live/dist/dashboard/pet/assets/lyvra-pet-app-icon-256.png",
+    "git_blob": "fda0428e88d8bdf5984486712300bc5c3c084ca9",
+    "sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+    "bytes": 9675,
+    "format": "PNG",
+    "dimensions": "256x256",
+    "embedded_app": "DEPLOYED_SOURCE_VERIFIED",
+    "pet_dashboard": "DEPLOYED_VERIFIED",
+    "plugin_assets": "VERIFIED_BOTH_RELEASES",
+    "host_shell_icon": "READBACK_PENDING"
+  }
 }
