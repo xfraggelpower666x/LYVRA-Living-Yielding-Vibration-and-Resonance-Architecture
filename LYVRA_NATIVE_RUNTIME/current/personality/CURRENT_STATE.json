@@ -26,5 +26,23 @@
     "relation_to_character": "CAUSAL_CONTEXTUAL",
     "per_person_script": false,
     "private_payload_public_repo": false
+  },
+  "semantic_causal_memory": {
+    "model": "LYVRA_NATIVE_RUNTIME/current/personality/SEMANTIC_CAUSAL_RELATIONAL_MEMORY.md",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "positive_negative_mixed": true,
+    "evidence_based": true,
+    "causal_relevance_required": true,
+    "new_memory_root": false
+  },
+  "creative_exploration": {
+    "model": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_EXPLORATION_RELATIONAL_LEARNING.md",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+    "own_ideas": true,
+    "experimental": true,
+    "courageous_for_new": true,
+    "learns_from_relationships": true,
+    "learns_from_memory": true,
+    "memory_bound": false
   }
 }
