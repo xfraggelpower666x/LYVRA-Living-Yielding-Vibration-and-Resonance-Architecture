@@ -59,14 +59,62 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
  return Object.freeze({set(event){state=expressionFor(event);return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.remove();}});
 }
 
+// Beobachtete Ereignisse projizieren; keine eigene Persönlichkeit oder Erinnerungswurzel.
+async function projectVerifiedEvidence(event,{verifyEvidence,revision,now=Date.now()}={}){
+ const fallback={status:"UNVERIFIED",expression:expressionFor(),source_revision:null};
+ if(typeof verifyEvidence!=="function"||!event||!revision||event.source_revision!==revision||!Number.isFinite(Date.parse(event.observed_at))||Date.parse(event.observed_at)>now||now-Date.parse(event.observed_at)>300000)return fallback;
+ const snapshot=Object.freeze({source_revision:event.source_revision,observed_at:event.observed_at,evidence_id:event.evidence_id,kind:event.kind,relation:event.relation,facet:event.facet,sensitive:event.sensitive===true});
+ if(typeof snapshot.evidence_id!=="string"||!snapshot.evidence_id.trim())return fallback;
+ let trusted=false;try{trusted=await verifyEvidence(snapshot);}catch{}
+ if(trusted!==true)return fallback;
+ const input={facet:snapshot.facet,relation:snapshot.relation,sensitive:snapshot.sensitive};
+ switch(snapshot.kind){
+  case "shared_success":input.affect="joy";input.cause="shared_success";break;
+  case "beautiful_moment":input.affect="joy";input.cause="beautiful_moment";break;
+  case "shared_joke":input.affect="joy";input.cause="shared_joke";input.humor="laugh";break;
+  case "explicit_frustration":input.affect="anger";input.cause="explicit_frustration";break;
+  case "explicit_boredom":input.affect="boredom";input.cause="explicit_boredom";break;
+  case "music_work":input.activity="music";break;
+  case "serious_attention":input.sensitive=true;break;
+  default:return fallback;
+ }
+ return Object.freeze({status:"VERIFIED_EVENT_PROJECTION",expression:expressionFor(input),render_input:Object.freeze({...input}),source_revision:revision,evidence_id:snapshot.evidence_id,observed_at:snapshot.observed_at,inference:"BOUNDED_EVENT_MAPPING",memory_written:false});
+}
+// Brücke zu Whole-LYVRA-Ereignissen: Prüfer bleiben beim autorisierten Host.
+function createEvidenceEffectController({effects,getRevision,verifyEvidence,clock=()=>Date.now(),schedule=setTimeout,cancel=clearTimeout}){
+ let generation=0,closed=false,timer=null;
+ function clear(){if(timer!==null)cancel(timer);timer=null;}
+ function calm(){effects.set({});}
+ async function accept(event){
+  if(closed)return false;
+  const ticket=++generation;clear();calm();
+  const snapshot=event&&Object.freeze({source_revision:event.source_revision,observed_at:event.observed_at,evidence_id:event.evidence_id,kind:event.kind,relation:event.relation,facet:event.facet,sensitive:event.sensitive});
+  try{
+   const revision=await getRevision();
+   const projected=await projectVerifiedEvidence(snapshot,{revision,verifyEvidence,now:clock()});
+   if(closed||ticket!==generation)return false;
+   if(projected.status!=="VERIFIED_EVENT_PROJECTION"||await getRevision()!==revision)return false;
+   if(closed||ticket!==generation)return false;
+   const expiry=Date.parse(snapshot.observed_at)+60000;
+   if(expiry<=clock())return false;
+   effects.set(projected.render_input);
+   timer=schedule(()=>{if(!closed&&ticket===generation){timer=null;calm();}},expiry-clock());
+   return true;
+  }catch{return false;}
+ }
+ function reset(){++generation;clear();if(!closed)calm();}
+ function dispose(){closed=true;++generation;clear();}
+ return Object.freeze({accept,reset,dispose});
+}
+
 const stage=document.createElement("div");Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
 const figure=document.getElementById("sprite");figure.parentNode.insertBefore(stage,figure);stage.append(figure);Object.assign(figure.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
-const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"};
-function preview(type){current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";effects.set(current);}
+const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"},evidenceController=null;
+function preview(type){if(evidenceController)evidenceController.reset();current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";effects.set(current);}
 document.querySelectorAll("[data-expression]").forEach(button=>button.addEventListener("click",()=>preview(button.dataset.expression)));
 document.getElementById("facet").addEventListener("change",()=>{current.facet=document.getElementById("facet").value;effects.set(current);});
-window.lyvraPetExpression=Object.freeze({preview(event){return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:false});
-window.addEventListener("pagehide",()=>effects.dispose());
+window.lyvraPetExpression=Object.freeze({preview(event){return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:false,connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
+window.addEventListener("pagehide",()=>{if(evidenceController)evidenceController.dispose();effects.dispose();});
 </script></body></html>`;
 
 const cors = {
