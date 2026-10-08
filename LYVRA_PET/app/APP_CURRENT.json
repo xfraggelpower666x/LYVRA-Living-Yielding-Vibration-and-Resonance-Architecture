@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_CHATGPT_APP_CURRENT_v1",
-  "status": "CURRENT",
+  "status": "CURRENT_CHATGPT_APP_AND_WEB_INTEGRATED",
   "pet_id": "pet_6ab791129364819183885f44a21497a2",
   "worker": "lyvra-pet-plugin-ui",
   "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
@@ -11,5 +11,24 @@
   "main_plugin_binding": false,
   "free_only": true,
   "browser_portable": true,
-  "candidate_promoted": false
+  "candidate_promoted": false,
+  "worker_version": "2.0.1",
+  "chatgpt_app_ui": "USER_VISIBLE_VERIFIED",
+  "sprite_visual_readback": "PENDING_USER_CONFIRMATION",
+  "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
+  "dashboard": "https://dashboard.666soundsdesign-broadcaster.com/",
+  "weblyvra_pages_deployment": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+  "weblyvra_deployment_result": "SUCCESS",
+  "plugin_surfaces": {
+    "account": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.43",
+      "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+    },
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.47",
+      "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+    }
+  }
 }
