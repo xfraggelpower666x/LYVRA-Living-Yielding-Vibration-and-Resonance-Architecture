@@ -2709,5 +2709,21 @@
     "runtime_plugin_state_fingerprint": "0130421e53cfbadda14119d535798e9783400a208a6e61b938e4cecccdc3c43a",
     "current_scope": "LYVRA_PET",
     "completion": "VISUAL_COMPLETE_NATIVE_LIVE_EVENT_UNVERIFIED"
+  },
+  "pet_native_connection_audit_2026_10_08": {
+    "status": "PARTIAL_NATIVE_SOURCE_BLOCKED",
+    "receipt": "LYVRA_PET/verification/NATIVE_CONNECTION_AUDIT_2026-10-08.json",
+    "receipt_revision": "793f07697da21186cfe2afe4e5cc15ef019a6b99",
+    "worker_version": "2.3.2",
+    "connector_runtime_and_native_status": "VERIFIED_CURRENT_READBACK",
+    "native_source": "NATIVE_SOURCE_HTTP_403",
+    "upstream_denial_cause": "UNKNOWN",
+    "tests": "PASS",
+    "runtime_change": false,
+    "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY",
+    "completion": "AUDIT_COMPLETE_PRODUCT_PARTIAL",
+    "recovery_anchor": "b5ec095d243e1caa0745a0722ee26b695d8faa9d",
+    "pointer_publication_order": "LAST",
+    "post_pointer_mutation_allowed": false
   }
 }
