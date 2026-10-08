@@ -1,5 +1,7 @@
 import {LOGO_ASSETS} from "../../assets/logo-assets.mjs";
 import {produceRepositoryEnvelope,publicNativeSourceFailure} from "../../bridge/repository-event-source.mjs";
+import {petBudgetedFetcher,PetGithubBudget} from "../../bridge/github-budget.mjs";
+export {PetGithubBudget};
 const PET_ID = "pet_6ab791129364819183885f44a21497a2";
 const RESOURCE_URI = "ui://lyvra/pet-v1.html";
 const WORKER_ORIGIN = "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev";
@@ -285,7 +287,7 @@ export default {
 
     if(url.pathname==="/native-expression"){
       if(request.method!=="GET")return json({status:"METHOD_NOT_ALLOWED"},405);
-      try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN}));}
+      try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)}));}
       catch(e){return json(publicNativeSourceFailure(e),503);}
     }
     if(url.pathname.startsWith('/asset/poses/')){
@@ -350,7 +352,7 @@ export default {
       return rpc(id,{contents:[{uri:RESOURCE_URI,mimeType:"text/html;profile=mcp-app",text:renderedUI,_meta:{ui:{prefersBorder:true,domain:WORKER_ORIGIN,csp:{connectDomains:[WORKER_ORIGIN],resourceDomains:[WORKER_ORIGIN]}},"openai/ui":{availableDisplayModes:["inline","fullscreen","pip"]}}}]});
     }
     if(method==="tools/call" && params?.name==="open_lyvra_pet"){
-      let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN});}catch(e){nativeExpression=publicNativeSourceFailure(e);}
+      let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)});}catch(e){nativeExpression=publicNativeSourceFailure(e);}
       return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.4",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
     }
     return json({jsonrpc:"2.0",id,error:{code:-32601,message:"Method not found"}});
