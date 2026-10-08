@@ -39,7 +39,8 @@ export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.
  async function read(url,allowAbsent=false){
   const isApi=url.startsWith(api+'/'),state=githubReadStates.get(fetcher);
   if(isApi&&state&&clock()<state.until)throw state.error;
-  const r=await fetcher(url,{headers,cache:'no-store'});
+  const requestHeaders=isApi?headers:{'User-Agent':'LYVRA-Pet-ReadOnly-Producer'};
+  const r=await fetcher(url,{headers:requestHeaders,cache:'no-store'});
   if(allowAbsent&&r.status===404)return null;
   if(!r.ok){const error=await githubFailure(r,clock());if(isApi&&error.retryAt)githubReadStates.set(fetcher,{until:Date.parse(error.retryAt),error});throw error;}
   const text=await r.text();if(text.length>30000)throw Error('Native source too large');return JSON.parse(text);
