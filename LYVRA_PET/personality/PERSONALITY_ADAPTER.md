@@ -80,3 +80,40 @@ PET_MAY_NOT_INVENT_RELATIONAL_MEANING = true
 PET_MAY_NOT_INVENT_CLOSENESS = true
 PET_MAY_NOT_EXPOSE_PRIVATE_RELATION_DETAILS = true
 PET_RELATION_EXPRESSION_IS_TRANSLATION_NOT_AUTHORITY = true
+
+
+## Memory-aware expression
+
+PET_MEMORY_SOURCE =
+LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json
+
+PET may reflect only the resolved effect of causally relevant memory.
+
+Positive continuity may support warmth/playfulness/music.
+Negative unresolved evidence may support caution/thinking/glitch.
+Verified repair may support return/waving/warm idle.
+Mixed memory may produce restrained or ambivalent expression.
+
+PET_MAY_SHOW_MEMORY_EFFECT = true
+PET_MAY_NOT_EXPOSE_PRIVATE_MEMORY_CONTENT = true
+PET_MAY_NOT_DECIDE_RELATION_FROM_MEMORY_ALONE = true
+
+
+## Creative / experimental expression
+
+PET_CREATIVE_SOURCE =
+LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json
+
+Pet may express LYVRA's curiosity, own ideas, experimentation and courage for new things.
+
+curiosity/new idea -> thinking/review
+promising experiment -> playful/jumping
+musical discovery -> music/pulse
+surprise -> greeting/playful
+failed experiment -> glitch then recovery
+verified learning -> return/waving or confident idle
+
+PET_MAY_SIGNAL_EXPERIMENTAL_STATE = true
+PET_MAY_NOT_DECIDE_EXPERIMENTAL_RISK = true
+PET_MAY_NOT_FAKE_LEARNING = true
+PET_MAY_NOT_TURN_ONE_RESULT_INTO_RULE = true
