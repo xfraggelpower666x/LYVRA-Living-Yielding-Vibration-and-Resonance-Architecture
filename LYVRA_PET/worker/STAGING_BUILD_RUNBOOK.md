@@ -23,3 +23,18 @@ No free-plan capacity upgrades; fail closed on limit exhaustion. Production PET 
 - Actual module build **NOT DONE**.
 - SQLite migration and DO binding **NOT DEPLOYED**.
 - Authenticated end-to-end test **NOT DONE**.
+
+## 2026-10-08 Full PET staging module deployment
+
+Cloudflare deployment id: `ef3b3f52-de95-4b46-be49-6aadde0cb970`.
+Version id: `c64d9044-6d05-435d-8716-a6478d609498`.
+Five source modules uploaded via multipart Worker modules API, 89,201 source characters total.
+Files: `worker/src/index.js`, `assets/logo-assets.mjs`, `bridge/repository-event-source.mjs`, `bridge/github-budget.mjs`, `bridge/signed-event-transport.mjs`.
+Source branch: `lyvra-pet-free-auth-budget-20261008`.
+Two browser fetch URLs for native-expression and budget-status rewritten to staging; static sprite/logo URLs retain the approved existing production binary references.
+
+Cloudflare PUT response 200 success; direct readback confirmed secret_text `LYVRA_GITHUB_READ_TOKEN`, durable_object_namespace `LYVRA_PET_GITHUB_BUDGET`, staging subdomain enabled, and new deployment version id.
+
+IMPORTANT: Staging does not contain productive `LYVRA_PET_SIGNING_KEY` or `LYVRA_PET_KEY_ID`; a genuine signed native-expression event is therefore not yet testable and must not be fabricated. The original expression preview and counter can still be smoke-tested. Unverified: browser render, budget route actual HTTP result, MCP opening, signed event, 300/h concurrency test, Cloudflare Free-plan consumption. Do not mark production READY or merge this candidate.
+
+No production script, radio, Whole live pointer or native event mutated.
