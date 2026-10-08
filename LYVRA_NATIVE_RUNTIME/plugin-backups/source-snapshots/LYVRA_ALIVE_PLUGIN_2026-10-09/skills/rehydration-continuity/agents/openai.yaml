@@ -1,0 +1,4 @@
+interface:
+  display_name: "LYVRA · Rehydration & Continuity"
+  short_description: "LYVRA vollständig rehydrieren und Arbeit wiederaufnehmen"
+  default_prompt: "Nutze $rehydration-continuity für LYVRA SYSTEMSTART und prüfe den vollständigen aktuellen Stand."
