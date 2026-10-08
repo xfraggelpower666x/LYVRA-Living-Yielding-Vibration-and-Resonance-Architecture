@@ -1,0 +1,49 @@
+{
+  "schema": "LYVRA_PET_WHOLE_FACET_INTEGRATION_CANDIDATE_V1",
+  "status": "DESIGNATED_NOT_NATIVE_PROMOTED",
+  "native_owner": "WHOLE_LYVRA",
+  "free_only": true,
+  "source_branch": "lyvra-pet-free-auth-budget-20261008",
+  "backup_ref": "backup/lyvra-pet-approved-staging-20261008",
+  "new_capabilities": [
+    "Automatic Detector Intelligence: context-driven preview with native verified facet precedence",
+    "Neon pink L.Y.V.R.A. and neon cyan full name",
+    "Read-only 300/h GitHub REST budget UI; DO-backed shared quota and cooldown",
+    "Authenticated private server-side GitHub repository reads"
+  ],
+  "native_facets": [
+    "whole",
+    "track_design",
+    "speech_design",
+    "suno_studio_2"
+  ],
+  "native_authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+  "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+  "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+  "whole_rehydration": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+  "surfaces": [
+    "lyvra-pet-plugin-ui",
+    "lyvra-pet-read-staging",
+    "weblyvra-live",
+    "lyvra-dashboard",
+    "PET-Dashboard"
+  ],
+  "integration_rule": "Whole authority first, personality and relation context, facet current evidence, PET expression adapter, sites/dashboard status; do not infer semantic understanding from deterministic UI labels",
+  "site_status": "EXISTING_LINKS_CONFIRMED_UPDATED_DEPLOYMENT_NOT_VERIFIED",
+  "native_livecircle_status": "CURRENT_OLD_VERSION_NEW_CAPABILITIES_NOT_REGISTERED",
+  "pfs_backup": {
+    "repo": "xfraggelpower666x/666PFS_CSM",
+    "candidate_branch": "feature/pfs-update-triple-backup-20261008",
+    "child": "PFS-CHILD-LYVRA-PET-BACKUP-20261008",
+    "state": "CANDIDATE_NOT_NATIVE_CURRENT"
+  },
+  "promotion_gates": [
+    "Validate all native current references and unmodified Whole pointers",
+    "Additive updates to PET/Whole/facet live circles and rehydration manifests only after owner approval and expected revisions",
+    "Verify website and dashboard live deployments individually",
+    "Execute full test suite, signing and budget stress tests",
+    "Verify hashes and new repo snapshot then PFS child backup",
+    "Native pointers last with direct readback"
+  ],
+  "production_updated": false
+}
