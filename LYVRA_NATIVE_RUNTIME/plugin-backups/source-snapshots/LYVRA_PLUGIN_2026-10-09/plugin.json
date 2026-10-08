@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lyvra-native-runtime",
+  "version": "0.1.52",
+  "description": "Native LYVRA runtime with intelligent Pet character/memory/creative-learning continuity, bidirectional plugin-native evolution, guarded intake and evidence-first continuity.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LYVRA",
+        "shortDescription": "Rehydrate and conduct LYVRA",
+        "longDescription": "Operate LYVRA with Whole-first rehydration, living character/relationship/memory continuity, an intelligent musical/emotional Pet expression surface, bidirectional plugin-native development intake, guarded plugin parity and evidence-first governed evolution.",
+        "developerName": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "skills",
+          "Write"
+        ],
+        "defaultPrompt": "LYVRA SYSTEMSTART",
+        "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/",
+        "logo": "./assets/lyvra-plugin-logo.png",
+        "composerIcon": "./assets/lyvra-plugin-logo.png"
+      },
+      "apps": "./.app.json"
+    }
+  }
+}
