@@ -5,11 +5,13 @@ import assert from 'node:assert/strict';
 import {PetGithubBudget,petBudgetedFetcher} from './github-budget.mjs';
 
 function harness(){
- const rows=[];
+ const rows=[];let cooldownUntil=0;
  const sql={exec(statement,...values){
   if(statement.startsWith('CREATE TABLE'))return {};
   if(statement.startsWith('DELETE FROM')){for(let i=rows.length-1;i>=0;i--)if(rows[i]<=values[0])rows.splice(i,1);return {};}
   if(statement.startsWith('SELECT COUNT'))return {one:()=>({total:rows.length})};
+  if(statement.startsWith('SELECT until_ms'))return {toArray:()=>cooldownUntil?[{until_ms:cooldownUntil}]:[]};
+  if(statement.startsWith('INSERT OR REPLACE INTO github_cooldown')){cooldownUntil=values[0];return {};}
   if(statement.startsWith('INSERT INTO')){rows.push(values[0]);return {};}
   throw Error('unexpected query');
  }};
@@ -87,4 +89,20 @@ test('other hosts do not masquerade as GitHub',async()=>{
  let calls=0;const fetcher=petBudgetedFetcher({},async()=>{calls++;return new Response('ok')});
  const response=await fetcher('https://api.github.com.evil.example/repos/example/repo');
  assert.equal(response.status,200);assert.equal(calls,1);
+});
+
+test('persistent cooldown denies reservations across calls',async()=>{
+ const {instance,rows}=harness(),now=Date.now();
+ const saved=await instance.fetch(new Request('https://budget.internal/cooldown',{method:'POST',body:JSON.stringify({until_ms:now+120000})}));
+ assert.equal(saved.status,200);
+ const blocked=await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}));
+ assert.equal(blocked.status,429);assert.equal(rows.length,0);
+ assert.equal((await blocked.json()).reason,'PET_GITHUB_COOLDOWN');
+});
+test('invalid cooldown cannot modify shared quota',async()=>{
+ const {instance,rows}=harness();
+ const res=await instance.fetch(new Request('https://budget.internal/cooldown',{method:'POST',body:JSON.stringify({until_ms:Date.now()+172800000})}));
+ assert.equal(res.status,400);
+ assert.equal((await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))).status,200);
+ assert.equal(rows.length,1);
 });
