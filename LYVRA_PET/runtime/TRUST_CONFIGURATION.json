@@ -1,0 +1,9 @@
+{
+  "schema": "lyvra.pet.trust.v1",
+  "key_id": "lyvra-whole-20261008-v1",
+  "public_spki": "MCowBQYDK2VwAyEAS2d0QoYpOn+jzb9zkFe8E5T3pBEBkuyS5ZBODHUIYcM=",
+  "private_key_location": "CLOUDFLARE_SECRET_KEY_SIGN_ONLY",
+  "private_key_exported_to_repository": false,
+  "expiry_seconds": 60,
+  "write_endpoint": false
+}

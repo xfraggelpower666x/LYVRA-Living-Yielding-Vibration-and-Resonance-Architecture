@@ -1,0 +1,10 @@
+{
+  "production_head": "321e0fcdab8d744cc977b90499399a54b317656c",
+  "production_tree": "52baa43dff466d0b01130dc7697e3c5f204db269",
+  "worker_version": "2dd20285-740f-4349-a145-a73807961fda",
+  "plugins": {
+    "native-runtime": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+    "account": "pluginrel_6ac736ef43cc819194986077f88bd791"
+  },
+  "changes": "ADD_ONLY_PET_EXTENSION_PRESERVE_ALL_OTHER_PRODUCTION_FILES"
+}

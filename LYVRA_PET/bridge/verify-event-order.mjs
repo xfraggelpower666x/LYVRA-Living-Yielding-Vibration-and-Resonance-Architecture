@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {createEvidenceEffectController} from './evidence-effect-controller.mjs';
+const revision='b'.repeat(40),now=Date.now(),draws=[];let checks=0;
+const controller=createEvidenceEffectController({effects:{set:event=>draws.push(event)},getRevision:async()=>revision,verifyEvidence:async()=>{checks++;return true;},clock:()=>now,schedule:()=>1,cancel:()=>{}});
+const event=(id,offset=0)=>({source_revision:revision,observed_at:new Date(now+offset).toISOString(),evidence_id:id,kind:'shared_success',relation:'dad'});
+assert.equal(await controller.accept(event('first')),true);
+let count=draws.length;
+assert.equal(await controller.accept(event('first')),false);assert.equal(draws.length,count);assert.equal(checks,1);
+assert.equal(await controller.accept(event('old',-1000)),false);assert.equal(draws.length,count);assert.equal(checks,1);
+controller.reset();count=draws.length;
+assert.equal(await controller.accept(event('first')),false);assert.equal(draws.length,count);
+assert.equal(await controller.accept(event('distinct-same-time')),true);
+controller.dispose();count=draws.length;
+assert.equal(await controller.accept(event('after-close')),false);assert.equal(draws.length,count);
+console.log('PASS repeated evidence cannot re-trigger or clear active effect; older event rejected; reset retains short-lived replay guard; distinct simultaneous evidence accepted; disposal');

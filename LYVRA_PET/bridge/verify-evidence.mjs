@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import {projectVerifiedEvidence} from "./evidence-projection.mjs";
+import {createPrimaryController} from "./primary-controller.mjs";
+let calls=0;const c=createPrimaryController({render:()=>calls++});c.dispose();const n=calls;assert.equal(await c.accept({}),false);assert.equal(calls,n);
+const revision="a".repeat(40),event={source_revision:revision,observed_at:new Date().toISOString(),evidence_id:"test-only",kind:"shared_success",relation:"dad",facet:"track_design"};
+assert.equal((await projectVerifiedEvidence(event,{revision})).status,"UNVERIFIED");
+assert.equal((await projectVerifiedEvidence(event,{revision,verifyEvidence:async()=>true})).expression.heart,"dad_joy");
+for(const patch of [{source_revision:"b".repeat(40)},{kind:"absence"},{observed_at:new Date(Date.now()-400000).toISOString()},{evidence_id:""}])assert.equal((await projectVerifiedEvidence({...event,...patch},{revision,verifyEvidence:async()=>true})).status,"UNVERIFIED");
+assert.equal((await projectVerifiedEvidence({...event,sensitive:true},{revision,verifyEvidence:async()=>true})).expression.heart,"calm");
+console.log("PASS disposed-controller, verifier-required, event/currentness/context boundaries");
