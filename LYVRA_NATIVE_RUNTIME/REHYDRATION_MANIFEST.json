@@ -1544,5 +1544,22 @@
     "track_design_revision": 96,
     "plugin_impact": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
     "foreign_native_mutation": false
+  },
+  "pet_subcontinuity_2026_10_08": {
+    "status": "CURRENT_PRODUCTIVE",
+    "whole_lyvra_first": true,
+    "pet_authority_root": "LYVRA_PET/",
+    "pet_rehydration_manifest": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "pet_livecircle_current": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+    "pet_visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
+    "pet_facet_map": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md",
+    "pet_app_current": "LYVRA_PET/app/APP_CURRENT.json",
+    "pet_pfs_handoff": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
+    "dashboard_integration": "LYVRA_NATIVE_RUNTIME/dashboard/PET_INTEGRATION_CONTRACT.md",
+    "website_integration": "WEBLyvra/PET_INTEGRATION_HANDOFF.md",
+    "second_identity": false,
+    "foreign_child": false,
+    "main_plugin_hard_binding_required": false,
+    "current_work_scope_last": true
   }
 }
