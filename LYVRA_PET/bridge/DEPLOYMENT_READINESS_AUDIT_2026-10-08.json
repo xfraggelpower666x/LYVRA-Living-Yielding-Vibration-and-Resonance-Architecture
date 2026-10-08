@@ -1,0 +1,39 @@
+{
+  "status": "PARTIAL",
+  "checked_at": "2026-10-08T06:29:00Z",
+  "production_head_observed": "45cffb7279250d3f8956322572772afc8ddfedbd",
+  "production_changes": [
+    "LYVRA_NATIVE_RUNTIME/development/BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_2026-10-08.json",
+    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json"
+  ],
+  "renderer_overlap": false,
+  "native_plugin_verified": {
+    "version": "0.1.49",
+    "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
+  },
+  "repository_pet_native_reference": "0.1.48",
+  "reference_drift": "OBSERVED_NOT_REPAIRED",
+  "worker_verified": {
+    "name": "lyvra-pet-plugin-ui",
+    "active_version": "5bbb6d15-ebbb-4b3b-a5ed-5216b6c73117",
+    "bindings_count": 0
+  },
+  "candidate_bundle": {
+    "builder": "LYVRA_PET/bridge/build-worker-bundle.mjs",
+    "output": "LYVRA_PET/worker/build/worker-bundle.mjs",
+    "validation": [
+      "NO_EXTERNAL_IMPORTS",
+      "BOTH_PNG_HASHES_MATCH",
+      "MCP_INITIALIZE_TOOLS_RESOURCES_PASS"
+    ],
+    "uploaded": false,
+    "deployed": false
+  },
+  "remaining": [
+    "AUTHENTICATED_EVENT_PRODUCER",
+    "ORIGINAL_NEW_GESTURE_FRAMES",
+    "REAL_BROWSER_HOST_VERIFICATION",
+    "PLUGIN_PARITY_AND_PROMOTION"
+  ],
+  "production_mutated": false
+}
