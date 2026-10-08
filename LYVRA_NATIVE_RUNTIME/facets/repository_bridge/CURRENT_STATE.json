@@ -1,0 +1,32 @@
+{
+  "schema": "LYVRA_REPOSITORY_BRIDGE_FACET_CURRENT_v1",
+  "status": "ADDITIVE_CAPABILITY_DOCUMENTED_IMPLEMENTATION_NOT_YET_RUNTIME_VERIFIED",
+  "facet_id": "REPOSITORY_BRIDGE_INTELLIGENCE",
+  "parent": "WHOLE_LYVRA",
+  "authority": "LYVRA_ONLY",
+  "source_branch": "lyvra",
+  "prior_verified_examples": [
+    {
+      "name": "PET_COMPLETE_ZIP",
+      "github_commit": "f4feb5e54c2fbedc521f54a5bfead2f42a36b9c1",
+      "snapshot_files": 10,
+      "original_zip": true,
+      "remote_blob_bytes_verified_from_prior_work": "REPORTED"
+    },
+    {
+      "name": "LYVRA_PLUGIN_COMPLETE_ZIP",
+      "github_commit": "f1406b6d1d4f4d299842a53544bbe0f2b202d12f",
+      "snapshot_files": 31,
+      "original_zip": true,
+      "remote_blob_bytes_verified": "PENDING_CURRENT_SESSION"
+    }
+  ],
+  "alive_backup": "NOT_CLAIMED_PASS",
+  "original_zip": "RETAIN_UNMODIFIED",
+  "source_snapshot": "IMMUTABLE_SEPARATE_PATHS",
+  "windows_line_endings": "GIT_BLOB_READBACK_NOT_WORKTREE",
+  "new_facet_runtime_test": "PENDING",
+  "no_pointer_write": true,
+  "no_foreign_mutation": true,
+  "child_systems": "INFORMATIONAL_NOTICE_ONLY"
+}
