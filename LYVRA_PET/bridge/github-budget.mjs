@@ -9,6 +9,9 @@ export class PetGithubBudget {
  }
  async fetch(request) {
   const path=new URL(request.url).pathname;
+  if(path==='/status'&&request.method==='GET'){
+   try{const now=Date.now(),sql=this.ctx.storage.sql;const used=sql.exec('SELECT COUNT(*) AS total FROM github_calls WHERE at_ms > ?',now-3600000).one().total;const cooldown_until=sql.exec('SELECT until_ms FROM github_cooldown WHERE id=1').toArray()[0]?.until_ms||0;return Response.json({status:'OK',limit:300,used,remaining:Math.max(0,300-used),window_seconds:3600,cooldown_until:cooldown_until>now?new Date(cooldown_until).toISOString():null},{headers:{'Cache-Control':'no-store'}})}catch{return Response.json({status:'UNAVAILABLE'},{status:503})}
+  }
   if(request.method!=='POST'||!['/reserve','/cooldown'].includes(path))return new Response('not found',{status:404});
   try {
    const now=Date.now(),sql=this.ctx.storage.sql;
