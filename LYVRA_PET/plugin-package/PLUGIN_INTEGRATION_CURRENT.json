@@ -11,7 +11,7 @@
   "native_plugin": {
     "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
     "version": "0.1.48",
-    "release_id": "pluginrel_6ac70d23233481919f22624348351154"
+    "release_id": "pluginrel_6ac71d9412cc8191b1cbd96b5189300d"
   },
   "pet_skill": "skills/lyvra-pet/SKILL.md",
   "pet_authority_reference": "references/pet-authority.md",
@@ -23,5 +23,13 @@
   "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
   "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
   "pet_personality_adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
-  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
+  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+  "release_freshness_2026_10_08": {
+    "source": "PLUGIN_CREATOR_LIVE_METADATA",
+    "verified_native_version": "0.1.48",
+    "verified_account_version": "0.13.45",
+    "native_release_updated": true,
+    "scope": "RELEASE_REFERENCE_ONLY",
+    "preserve_pet_identity": true
+  }
 }
