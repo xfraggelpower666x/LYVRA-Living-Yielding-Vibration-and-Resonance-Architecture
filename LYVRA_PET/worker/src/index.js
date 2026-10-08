@@ -222,11 +222,11 @@ function createSignedEffectConnection({effects,getRevision,trustedKeys,expectedP
 const stage=document.createElement("div");stage.dataset.poseBase="/asset/poses/";Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
 const figure=document.getElementById("sprite");figure.parentNode.insertBefore(stage,figure);stage.append(figure);Object.assign(figure.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
 const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"},evidenceController=null;
-function preview(type){if(evidenceController)evidenceController.reset();current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";if(["smirk","wink","shrug","laugh"].includes(type))current.humor=type;effects.set(current);}
+function preview(type){if(evidenceController)evidenceController.reset();nativeTicket++;current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";if(["smirk","wink","shrug","laugh"].includes(type))current.humor=type;effects.set(current);}
 document.querySelectorAll("[data-expression]").forEach(button=>button.addEventListener("click",()=>preview(button.dataset.expression)));
-document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();current.facet=document.getElementById("facet").value;effects.set(current);});
-document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();effects.set({facet:document.getElementById("facet").value});}));
-window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:true,connectSignedEvidence({getRevision,trustedKeys}){if(evidenceController)evidenceController.dispose();evidenceController=createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId:"pet_6ab791129364819183885f44a21497a2"});return evidenceController;},connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
+document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;current.facet=document.getElementById("facet").value;effects.set(current);});
+document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;effects.set({facet:document.getElementById("facet").value});}));
+window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();nativeTicket++;return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:true,connectSignedEvidence({getRevision,trustedKeys}){if(evidenceController)evidenceController.dispose();evidenceController=createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId:"pet_6ab791129364819183885f44a21497a2"});return evidenceController;},connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
 let nativeClosed=false,nativeTicket=0,nativeRevision=null,nativeConnection=null;
 const nativeStatus=document.getElementById("native-status"),nativeConfig=__LYVRA_NATIVE_TRUST__;
 async function refreshNative(){
@@ -333,7 +333,7 @@ export default {
     catch { return json({error:"invalid json"},400); }
 
     const {id,method,params} = body;
-    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.1"}});
+    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.2"}});
     if(method==="notifications/initialized") return new Response(null,{status:204,headers:cors});
     if(method==="tools/list") return rpc(id,{tools:[tool()]});
     if(method==="resources/list") return rpc(id,{resources:[resource()]});
@@ -343,7 +343,7 @@ export default {
     }
     if(method==="tools/call" && params?.name==="open_lyvra_pet"){
       let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID});}catch(e){nativeExpression={status:"SOURCE_UNAVAILABLE",reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(e.message)?e.message:"NATIVE_SOURCE_OR_APPROVAL_REJECTED"};}
-      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.1",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
+      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.2",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
     }
     return json({jsonrpc:"2.0",id,error:{code:-32601,message:"Method not found"}});
   }
