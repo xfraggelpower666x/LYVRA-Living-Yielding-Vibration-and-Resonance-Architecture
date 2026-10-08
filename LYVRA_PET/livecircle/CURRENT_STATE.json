@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_LIVECIRCLE_CURRENT_v1",
-  "status": "CURRENT",
+  "status": "CURRENT_PRODUCTIVE",
   "parent_authority": "WHOLE_LYVRA",
   "pet_id": "pet_6ab791129364819183885f44a21497a2",
   "authority_root": "LYVRA_PET/",
@@ -17,5 +17,25 @@
   "candidate_promoted": false,
   "free_only": true,
   "host_render_state": "CHATGPT_APP_UI_VERIFIED_SPRITE_VISUAL_READBACK_PENDING",
-  "foreign_autoactivation": false
+  "foreign_autoactivation": false,
+  "plugin_surfaces": {
+    "account": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.43",
+      "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+    },
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.47",
+      "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+    }
+  },
+  "website_deployment": {
+    "project": "weblyvra-live",
+    "deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "result": "SUCCESS"
+  },
+  "dashboard_integration": "DEPLOYED_WITH_WEBLYVRA",
+  "facets_integration": "BOUND_BY_REFERENCE",
+  "whole_rehydration_registration": "CURRENT"
 }
