@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_PET_DELTA_VERIFIED_PREEXISTING_NON_PET_FINGERPRINT_DRIFT",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-08-PET-BRANDED-PLUGIN-0149-01346-BACKUP-REVALIDATION-PENDING",
+  "freshness_epoch": "2026-10-08-PET-2.3.4-RATE-LIMIT-REPAIR",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -129,7 +129,7 @@
     "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json": "0e787d89cc4245e59926b6c92fd09f67c9fc9c51",
     "lyvra-plugin/native-runtime/releases/v0.1.32/PROVENANCE.json": "4ccf7f23f3d5bd805932300a31043bbd7d04fecf",
     "lyvra-plugin/account/releases/v0.13.32/PROVENANCE.json": "fdb043a2e9d5ba2dffc4d3877eb610db0a3c7d1b",
-    "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json": "b20299133569fa9a9aa2cd9d7ce1d671110569c0",
+    "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json": "58bfb75b48dc74ed79266b3685d6c0ee0b06b6ff",
     "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md": "d14b0687f048e1a4e8b615c36719d8331ad2a617",
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md": "4ec3f3f52acafb444e168f511ec4300a1573ad4e",
     "lyvra-plugin/native-runtime/releases/v0.1.33/PROVENANCE.json": "3af105c03c0fedf5c013b9dfb7541d6f5cdd1293",
@@ -162,9 +162,9 @@
     "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md": "a6cac5c50d15f827169322a9e2dc969282dbd24a",
     "lyvra-plugin/account/releases/v0.13.42/PROVENANCE.json": "6343444a2a142d6c8495d88a7c423b7f37e5c9f8",
     "lyvra-plugin/native-runtime/releases/v0.1.45/PROVENANCE.json": "525c8f2123fc032c096b58dfa95c981c85ed48cd",
-    "LYVRA_PET/app/APP_CURRENT.json": "abd03bdceea187762a2a1c33613e48d6013e9404",
-    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json": "3e09755f38ee6ff616913a1051ffba8d1df409fd",
-    "LYVRA_PET/livecircle/CURRENT_STATE.json": "bf984a4284654e6d187fd5220d222a5e2ef594d5",
+    "LYVRA_PET/app/APP_CURRENT.json": "f78f02bd48c888ae19659c784b5025eb25f4dca2",
+    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json": "97cf863425eefb118386d0b739619c061c2e7140",
+    "LYVRA_PET/livecircle/CURRENT_STATE.json": "bf7690fbc8293468fdfb2b862d012bd62100021a",
     "LYVRA_PET/assets/logo-assets.mjs": "f963b5a85ea8658542e5207126fd14e8bd38802b",
     "LYVRA_PET/assets/poses/MANIFEST.json": "c45749f1139b8a654835b87dc08437b36ac94854",
     "LYVRA_PET/assets/poses/conductor.png": "2f8428b22255cbaea9dbc1ca8c304d6ad02f35a9",
@@ -174,7 +174,7 @@
     "LYVRA_PET/bridge/EXPRESSION_EXTENSION_v0.4.md": "ad9206a37d91f5481d30b452e7f8a4e1136be799",
     "LYVRA_PET/bridge/PRIMARY_NATIVE_SECONDARY_GPT_CONCEPT.md": "e83d6198d81f5dbbc0ed49d455669c851a56668a",
     "LYVRA_PET/bridge/build-offline-preview.mjs": "3dfb7b9269918340a1a2123e29401bd51e31689c",
-    "LYVRA_PET/bridge/build-worker-bundle.mjs": "cf0c22e01fe012815a293c502713f905dac3a10b",
+    "LYVRA_PET/bridge/build-worker-bundle.mjs": "01784a4904c53cf26564db315a798554d81d9855",
     "LYVRA_PET/bridge/build-worker-runtime.mjs": "16dfade230070d8b782e1cec43d47e27a897c180",
     "LYVRA_PET/bridge/context-source.mjs": "dcea93ada00d9db6760505cf5361abbdfae83835",
     "LYVRA_PET/bridge/evidence-effect-controller.mjs": "1acad953a517f09b588ccc18978054d7a7560053",
@@ -183,7 +183,7 @@
     "LYVRA_PET/bridge/expression-effects.mjs": "231ad55566eadac990c38c6c8dea5366edc57c9f",
     "LYVRA_PET/bridge/pose-runtime.mjs": "4bf16caaa504ad83cb6828fc666882d4b0d1387b",
     "LYVRA_PET/bridge/primary-controller.mjs": "132ee2ba8d5d79ec94b6b842f899ed8d7a4b74e3",
-    "LYVRA_PET/bridge/repository-event-source.mjs": "ba33356a7064eac5034d9b460e5f99fa70f922c9",
+    "LYVRA_PET/bridge/repository-event-source.mjs": "c36daff3bfec1bc7fa05b1db8a146f63d74b6b2a",
     "LYVRA_PET/bridge/signed-effect-connection.mjs": "21f3b3d0df4938b38f363e111dcb568f139db1ee",
     "LYVRA_PET/bridge/signed-event-transport.mjs": "cabffcd41dc84e66a5aabb473445661ca400af5d",
     "LYVRA_PET/bridge/verify-browser-lifecycle.mjs": "4bbaa40c2e7e64016632ab833fbaa9d517a30b79",
@@ -191,13 +191,13 @@
     "LYVRA_PET/bridge/verify-evidence.mjs": "4c5ccc6556c37a30842ae4deb14d3d6dfe1c8f83",
     "LYVRA_PET/bridge/verify-final.mjs": "6f0ef0a72dfc0e26d78f1fd011ad8da8ee4310b8",
     "LYVRA_PET/bridge/verify-preview-interruption.mjs": "9435eb8bd7f29719e29d80ef81d2b701f8efd8c0",
-    "LYVRA_PET/bridge/verify-repository-events.mjs": "182a5afae98d3a346391508349c6e6936644d0bb",
+    "LYVRA_PET/bridge/verify-repository-events.mjs": "fd166bdb5eebed7f588be6ff9daaa5cf8be5acd1",
     "LYVRA_PET/bridge/verify-signed-events.mjs": "45320fdd47499805c959e26373f318c95f92bbaf",
     "LYVRA_PET/browser/pet.js": "39ea3364110225eb6354ae81295e7ecb1f317023",
     "LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json": "8526324251a90d193a15d5f8cd0f0e0506384ecf",
     "LYVRA_PET/runtime/NATIVE_EXPRESSION_PUBLICATION.md": "819c1eebfa98a3a268e756223258a112c1c0af7b",
     "LYVRA_PET/runtime/README.md": "9ff570383cfc06140ff1ecfb7b2ed91cd0858f5a",
-    "LYVRA_PET/worker/src/index.js": "8b87884180aae72d56486ce0559c574322c91eed",
+    "LYVRA_PET/worker/src/index.js": "81ab9adf408ac16388a6ae124905d8df5e9228b9",
     "lyvra-plugin/account/releases/v0.13.47/PROVENANCE.json": "2378e676e026994e0467f33fe50b682a16caa668",
     "lyvra-plugin/account/releases/v0.13.47/source/.codex-plugin/plugin.json": "bddd466293518ed696f3945a9a9010c9b590cd1d",
     "lyvra-plugin/account/releases/v0.13.47/source/plugin.json": "348b351e0e477c4c590705581d7d77ec37dc1d92",
@@ -211,9 +211,11 @@
     "LYVRA_PET/runtime/TRUST_CONFIGURATION.json": "36b7dca7015beca87c570fde95bf30d36dfa7ce8",
     "LYVRA_PET/bridge/recovery/PRODUCTION_PRE_2_3_0.json": "4c17d02240590f27efe18a0a690fac23b6cbf6d8",
     "LYVRA_PET/verification/EXTENSION_CLOSEOUT_2026-10-08.json": "1a6e9df2d249f305da554012489d70b3fefa5180",
-    "LYVRA_PET/bridge/verify-native-refresh.mjs": "69d2e014d8ffa6527fe6dc9c17068e2f67d84e04",
-    "LYVRA_PET/README_DE.md": "6908eef7b7f4bd14b32f2c3623ec3a703139ddd8",
-    "LYVRA_PET/FINAL_STATUS.json": "651d45b1df264f7049a6171f88eda0b287769850"
+    "LYVRA_PET/bridge/verify-native-refresh.mjs": "171cbfa41323c62adea36c24991ad3bebfe8d568",
+    "LYVRA_PET/README_DE.md": "7802e7189af38f6d011b2dd1e9edf279bf192b1a",
+    "LYVRA_PET/FINAL_STATUS.json": "e29b2295b54c4fd21ba5eedee0d8379dd8bb3d68",
+    "LYVRA_PET/worker/build/worker-bundle.mjs": "3a105eae89382e3908830f758e8f11e23fd7302c",
+    "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json": "3a0b4fc948597cd149e22c178b854a9ced6f3356"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -221,7 +223,7 @@
   "codeforge_review_required": true,
   "registry_population_status": "NEW_CHAT_WHOLE_CURRENT_HANDOFF_VERIFIED",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 198,
+  "verified_carrier_count": 200,
   "verified_mismatch_count": 10,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -1087,7 +1089,7 @@
     "account_plugin_release_id": "pluginrel_6ac6823263cc81919c8685f2cb3314a1",
     "plugin_readback": "VERIFIED_BOTH"
   },
-  "last_verification_note": "Pet delta and Git tree bindings verified; preexisting non-Pet fingerprint drift retained explicitly; not a full Whole semantic audit.",
+  "last_verification_note": "Pet 2.3.4 changed carriers directly read back; new runtime binding and relevant Git blobs refreshed. 10 pre-existing non-Pet mismatches retained; no full Whole semantic repair claimed.",
   "studio2_conducting_protocol_2026_10_07": {
     "status": "CURRENT_VERIFIED",
     "carrier": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
@@ -1157,5 +1159,13 @@
       "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md"
     ],
     "no_foreign_mutation": true
+  },
+  "pet_rate_limit_repair_2026_10_08": {
+    "receipt": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json",
+    "metadata_source": "1e65dd935ea2892d18127521b834a0fa14428911",
+    "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea",
+    "worker_version": "2.3.4",
+    "status": "TRANSPORT_REPAIR_VERIFIED_UPSTREAM_PRIMARY_RATE_LIMIT_BLOCKED",
+    "plugin_releases_changed": false
   }
 }
