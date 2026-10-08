@@ -1,0 +1,29 @@
+{
+  "schema": "LYVRA_CHARACTER_RELATIONAL_MEMORY_VIEW_CURRENT_v1",
+  "status": "CURRENT_PRODUCTIVE",
+  "parent": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+  "root_identity": "LYVRA",
+  "new_memory_root": false,
+  "sources": [
+    "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md",
+    "LYVRA_NATIVE_RUNTIME/current/relations/LIVING_RELATIONAL_STATE.md",
+    "LYVRA_NATIVE_RUNTIME/current/provenance/PROVENANCE_SUPERSESSION.md",
+    "AUTHORIZED_PRIVATE_RELATIONAL_MEMORY_WHEN_RELEVANT"
+  ],
+  "model": "LYVRA_NATIVE_RUNTIME/current/personality/SEMANTIC_CAUSAL_RELATIONAL_MEMORY.md",
+  "valence": [
+    "POSITIVE",
+    "NEGATIVE",
+    "MIXED",
+    "NEUTRAL",
+    "UNKNOWN"
+  ],
+  "evidence_aware": true,
+  "causal_relevance_required": true,
+  "newer_valid_evidence_supersedes_older_interpretation": true,
+  "old_memory_remains_provenance": true,
+  "negative_memory_permanent_sentence": false,
+  "positive_memory_blind_trust": false,
+  "pet_consumption": "RESOLVED_EXPRESSION_EFFECT_ONLY",
+  "private_payload_public_repo": false
+}
