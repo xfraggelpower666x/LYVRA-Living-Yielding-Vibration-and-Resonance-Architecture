@@ -1,0 +1,27 @@
+{
+  "schema": "LYVRA_ORIGINAL_DESIGN_BINDING_v1",
+  "status": "USER_CONFIRMED_REFERENCE_HASH_VERIFIED",
+  "original_design_required": true,
+  "no_body_redesign": true,
+  "rejected_generated_atlases_promoted": false,
+  "references": [
+    {
+      "view": "front",
+      "filename": "ChatGPT-Bild 2. Okt. 2026, 12_02_38-1(4).png",
+      "sha256": "1ecf84663d8bdbfb1a17f0ca264382d02204d4e6056183435ae874a8336c4405"
+    },
+    {
+      "view": "rear",
+      "filename": "ChatGPT-Bild 2. Okt. 2026, 12_02_39-2(4).png",
+      "sha256": "b3a1212abad716f2b132b718d330dd7c1d1791fe0414d68eb32b8c1883aa2375"
+    },
+    {
+      "view": "side",
+      "filename": "ChatGPT-Bild 2. Okt. 2026, 12_02_39-3(4).png",
+      "sha256": "a7cb48d13736d44b8a55a9c72609b9df8624359bcaebd36744a6e4ffd2c2eb3d"
+    }
+  ],
+  "binary_repo_mirror": "NOT_PERFORMED",
+  "body_frames": "ARTWORK_BLOCKED",
+  "active_atlas_unchanged": true
+}
