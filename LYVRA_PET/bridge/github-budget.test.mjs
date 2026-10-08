@@ -54,3 +54,21 @@ test('non-REST raw assets do not consume the REST budget',async()=>{
 
 test('301 concurrent reservations never exceed 300',async()=>{const {instance,rows}=harness();const responses=await Promise.all(Array.from({length:301},()=>instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))));assert.equal(responses.filter(x=>x.status===200).length,300);assert.equal(responses.filter(x=>x.status===429).length,1);assert.equal(rows.length,300);});
 test('invalid method cannot reserve budget',async()=>{const {instance,rows}=harness();assert.equal((await instance.fetch(new Request('https://budget.internal/reserve'))).status,404);assert.equal(rows.length,0);});
+
+test('expired reservations are released after the rolling hour',async()=>{
+ const {instance,rows}=harness(),actualNow=Date.now;
+ try {
+  Date.now=()=>10000000;
+  for(let i=0;i<300;i++)assert.equal((await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))).status,200);
+  Date.now=()=>13600001;
+  assert.equal((await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))).status,200);
+  assert.equal(rows.length,1);
+ } finally {Date.now=actualNow;}
+});
+test('broken SQLite storage fails closed with no reservation',async()=>{
+ const {instance}=harness();
+ instance.ctx.storage.sql.exec=()=>{throw Error('storage down')};
+ const response=await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}));
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).allowed,false);
+});
