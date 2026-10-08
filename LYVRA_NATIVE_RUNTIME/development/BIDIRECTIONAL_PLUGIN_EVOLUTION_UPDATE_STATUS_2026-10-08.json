@@ -100,5 +100,17 @@
     "status": "PARTIAL_ALIVE_RUNTIME_READBACK_PENDING",
     "writes_reported": 0,
     "adoption": "EVIDENCE_INTAKE_ONLY_NOT_RUNTIME_ACCEPTANCE"
+  },
+  "alive_second_direct_function_test": {
+    "source": "USER_SUPPLIED_ALIVE_DIRECT_BRIDGE_FUNCTION_TEST_2026_10_08",
+    "reported_head": "6fd0494b4c35f7fecfffccb3ccd0e924f47c48b0",
+    "repo_file_reads": "PASS_SEVEN_FILES_IN_CHAT",
+    "host_plugin_execution": "UNRESOLVED",
+    "runtime_semantic": "NATIVE_COMPATIBLE_ALIVE_UNPROVEN",
+    "inbound": "SIMULATED_NOT_DELIVERED",
+    "release_parity": "PENDING",
+    "disposition": "EVIDENCE_RECORDED_NO_REPEATED_IDENTICAL_PROBE",
+    "next": "Continue normal repo-authorized native developments; require ALIVE host provenance for runtime parity; do not delay safe independent native work",
+    "classification": "PARTIAL_READBACK_PENDING"
   }
 }
