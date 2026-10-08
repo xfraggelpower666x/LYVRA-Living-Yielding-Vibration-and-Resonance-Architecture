@@ -47,3 +47,11 @@ CRLF/LF tests pass via raw blobs on Windows.
 Concurrency & conflict no-clobber; failed push/remote drift BLOCKED.
 1+N readback matches original package manifest.
 Native CLIC adoption/versioned facet continuity acknowledged explicitly.
+
+## UPDATE 2026-10-09: ALIVE Bridge v3 field-tested and GitHub-confirmed
+- LYVRA ALIVE original archive plus 46 extracted files arrived on branch lyvra, commit `90ab1fb6d0232c74ea68c0e1609e3d0422c709b7`. GitHub tree shows 47/47 backup objects; full independent SHA-256 byte readback not claimed in this notice.
+- Failure 1 after local PASS 47: PowerShell function named `Git` shadowed case-insensitive native `git`, recursively overflowed call depth. Rename wrapper `Invoke-GitSafe` and resolve explicit `git.exe` binary.
+- Failure 2 after local PASS 47 and clone: `Already on 'lyvra'` on stderr was a normal Git checkout message, but PowerShell treated native stderr as terminating. Evaluate process exit code, not stderr presence. Preserve stderr evidence in receipts; only non-zero exit code or missing verified effect is failure.
+- v3 completed user-side bridge; commit/tree independently confirmed. Promote both failures into CLIC's mandatory Windows bridge acceptance tests.
+- The CLIC implementation should independently prove precise 47/47 SHA-256 content readback, and test under Windows PowerShell native-command streams.
+- No CLIC auto-activation, cross-repo writes, pointer mutation, or assumption of accepted native CLIC facet.
