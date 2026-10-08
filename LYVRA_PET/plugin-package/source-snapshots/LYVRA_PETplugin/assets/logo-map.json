@@ -1,0 +1,15 @@
+{
+  "schema": "LYVRA_PET_LOGO_ASSET_MAP_v1",
+  "plugin_logo": "assets/plugin-logo.png",
+  "app_logo": "assets/app-logo.webp",
+  "plugin_logo_role": "outer ChatGPT app/plugin icon source",
+  "app_logo_role": "L.Y.V.R.A. Pet in-app branding source",
+  "app_logo_jpeg_fallback": "assets/app-logo.jpg",
+  "app_logo_dimensions": [
+    256,
+    256
+  ],
+  "app_logo_size_bytes": 9056,
+  "app_logo_status": "PREPARED_APP_METADATA_NOT_UPDATED",
+  "legacy_app_logo": "assets/app-logo.png"
+}

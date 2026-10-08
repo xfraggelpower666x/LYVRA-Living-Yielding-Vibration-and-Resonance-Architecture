@@ -1,0 +1,26 @@
+{
+  "name": "dev-6ac6fbaed2a481919fad519862e7b7f0",
+  "version": "1.0.3",
+  "description": "Independent L.Y.V.R.A. Pet browser surface",
+  "author": {
+    "name": "App developer"
+  },
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "capabilities": [],
+        "category": "Other",
+        "defaultPrompt": null,
+        "developerName": "App developer",
+        "displayName": "L.Y.V.R.A. Pet",
+        "longDescription": "Independent L.Y.V.R.A. Pet browser surface",
+        "shortDescription": "Independent L.Y.V.R.A. Pet browser surface",
+        "logo": "./assets/plugin-logo.png",
+        "composerIcon": "./assets/plugin-logo.png",
+        "websiteURL": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/"
+      }
+    }
+  }
+}
