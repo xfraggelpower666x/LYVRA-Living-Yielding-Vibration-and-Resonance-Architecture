@@ -1,20 +1,27 @@
 {
   "schema": "LYVRA_PET_PLUGIN_INTEGRATION_CURRENT_v1",
-  "status": "VERIFIED",
+  "status": "VERIFIED_INTELLIGENT_PET_SKILL_CURRENT",
   "main_plugin_mcp_hard_binding": false,
   "pet_mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
   "account_plugin": {
     "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-    "version": "0.13.43",
-    "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+    "version": "0.13.45",
+    "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
   },
   "native_plugin": {
     "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-    "version": "0.1.47",
-    "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+    "version": "0.1.48",
+    "release_id": "pluginrel_6ac70d23233481919f22624348351154"
   },
   "pet_skill": "skills/lyvra-pet/SKILL.md",
   "pet_authority_reference": "references/pet-authority.md",
   "continuity_rule": "PET_SUB_LIVECIRCLE_AND_REHYDRATION_BY_REFERENCE",
-  "browser_portability_preserved": true
+  "browser_portability_preserved": true,
+  "canonical_skill_contract": "LYVRA_NATIVE_RUNTIME/current/skills/LYVRA_PET_SKILL_CONTRACT.md",
+  "character_personality": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+  "relational_communication": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+  "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+  "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+  "pet_personality_adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
+  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
 }
