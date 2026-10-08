@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_TO_PFS_BACKUP_HANDOFF_v1",
-  "status": "READY_FOR_PFS_NATIVE_CONSUMPTION_COMPLETE_PET_SURFACE",
+  "status": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
   "source_system": "LYVRA",
   "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
   "source_branch": "lyvra",
@@ -51,5 +51,23 @@
     "facet_integration": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md"
   },
   "consumption_trigger": "666PFS UPDATE",
-  "foreign_autoactivation": false
+  "foreign_autoactivation": false,
+  "pfs_result": {
+    "pfs_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
+    "recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
+    "backup_manifest": "recovery/external/LYVRA_PET/2026-10-08/BACKUP_MANIFEST.json",
+    "manifest_status": "PARTIAL_TRANSPORT_BLOCKED",
+    "source_files": 38,
+    "source_total_bytes": 102386502,
+    "text_source_count": 35,
+    "text_mirrored_blob_identical": 9,
+    "text_remaining": 26,
+    "binary_mirror": "WRITE_BLOCKED_CONNECTOR_TRANSPORT",
+    "active_atlas_identity_preserved": true,
+    "full_package_identity_preserved": true,
+    "candidate_identity_preserved": true,
+    "lyvra_authority_unchanged": true,
+    "no_new_child": true
+  },
+  "next": "PFS_MAY_CONTINUE_PARTIAL_MIRROR_WHEN_AUTHORIZED_TRANSPORT_AVAILABLE"
 }
