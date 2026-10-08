@@ -122,3 +122,10 @@ test('unsupported fetch targets fail closed',async()=>{
  await assert.rejects(()=>fetcher({url:'https://api.github.com/repos/example/repo'}),/INVALID_FETCH_TARGET/);
  assert.equal(upstream,0);
 });
+
+test('budget UI status is read-only and cannot consume quota',async()=>{
+ const {instance,rows}=harness();
+ const request=new Request('https://budget.internal/status');
+ for(let n=0;n<5;n++){const response=await instance.fetch(request);assert.equal(response.status,200);const result=await response.json();assert.equal(result.status,'OK');assert.equal(result.used,0);assert.equal(result.remaining,300);}
+ assert.equal(rows.length,0);
+});
