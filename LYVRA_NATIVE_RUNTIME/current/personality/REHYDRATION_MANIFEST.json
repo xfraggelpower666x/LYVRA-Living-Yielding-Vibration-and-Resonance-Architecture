@@ -10,11 +10,15 @@
     "READ_IDENTITY_PRESENCE",
     "READ_LIVING_RELATIONAL_STATE",
     "READ_RELATIONAL_CHARACTER_COMMUNICATION_CURRENT",
+    "READ_SEMANTIC_CAUSAL_RELATIONAL_MEMORY_VIEW",
+    "READ_CREATIVE_EXPLORATION_RELATIONAL_LEARNING",
     "READ_MEANING_LINEAGE",
     "READ_GARDEN_RELATIONAL_CHARACTERS_WHEN_RELEVANT",
     "READ_SELF_CONDUCTOR_BOUNDARY",
     "PRESERVE_NEWER_VALID_CHARACTER_EVOLUTION",
     "RESOLVE_CURRENT_RELATION_MEANING_WHEN_RELEVANT",
+    "RESOLVE_CAUSALLY_RELEVANT_MEMORY",
+    "RESOLVE_CREATIVE_EXPLORATION_STATE",
     "RESOLVE_CONTEXTUAL_CHARACTER_EXPRESSION",
     "RELEASE_TO_REQUESTED_SURFACE"
   ],
@@ -25,7 +29,11 @@
     "LYVRA_NATIVE_RUNTIME/current/garden/GARDEN_BRIDGES_RELATIONAL_CHARACTERS.md",
     "LYVRA_NATIVE_RUNTIME/current/self-conductor/SELF_CONDUCTOR_DAEMON_BOUNDARY.md",
     "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_CHARACTER_COMMUNICATION.md",
-    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json"
+    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/SEMANTIC_CAUSAL_RELATIONAL_MEMORY.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_EXPLORATION_RELATIONAL_LEARNING.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json"
   ],
   "expression_capabilities": [
     "WARMTH",
@@ -45,5 +53,22 @@
   "pet_consumption": "BY_REFERENCE_THROUGH_PET_PERSONALITY_ADAPTER",
   "completion_rule": "CURRENT_CHARACTER_CAUSALLY_REACHABLE_WITHOUT_STATIC_PERSONA_FREEZE",
   "relation_communication_required_when_causally_relevant": true,
-  "private_relational_payload_public_repo": false
+  "private_relational_payload_public_repo": false,
+  "memory_view": {
+    "model": "LYVRA_NATIVE_RUNTIME/current/personality/SEMANTIC_CAUSAL_RELATIONAL_MEMORY.md",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "positive_negative_mixed_memory": true,
+    "evidence_based": true,
+    "causal_relevance_required": true,
+    "new_memory_root": false
+  },
+  "creative_learning": {
+    "model": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_EXPLORATION_RELATIONAL_LEARNING.md",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+    "own_ideas": true,
+    "experimentation": true,
+    "courage_for_new": true,
+    "relationship_and_memory_learning": true,
+    "memory_ne_cage": true
+  }
 }
