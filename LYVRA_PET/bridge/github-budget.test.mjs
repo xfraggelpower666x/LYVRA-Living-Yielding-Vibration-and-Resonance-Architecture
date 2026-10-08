@@ -129,3 +129,23 @@ test('budget UI status is read-only and cannot consume quota',async()=>{
  for(let n=0;n<5;n++){const response=await instance.fetch(request);assert.equal(response.status,200);const result=await response.json();assert.equal(result.status,'OK');assert.equal(result.used,0);assert.equal(result.remaining,300);}
  assert.equal(rows.length,0);
 });
+
+test('status reports actual usage without reserving an API call',async()=>{
+ const {instance,rows}=harness();
+ await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}));
+ const before=rows.length;
+ const response=await instance.fetch(new Request('https://budget.internal/status'));
+ assert.equal(response.status,200);
+ const state=await response.json();
+ assert.equal(state.status,'OK');assert.equal(state.limit,300);assert.equal(state.used,1);assert.equal(state.remaining,299);
+ assert.equal(state.window_seconds,3600);assert.equal(rows.length,before);
+});
+test('status reveals cooldown deadline but not secret contents',async()=>{
+ const {instance}=harness(),until=Date.now()+90000;
+ const saved=await instance.fetch(new Request('https://budget.internal/cooldown',{method:'POST',body:JSON.stringify({until_ms:until})}));
+ assert.equal(saved.status,200);
+ const response=await instance.fetch(new Request('https://budget.internal/status'));
+ const state=await response.json();assert.equal(state.status,'OK');
+ assert.equal(state.cooldown_until,new Date(until).toISOString());
+ assert.deepEqual(Object.keys(state).sort(),['cooldown_until','limit','remaining','status','used','window_seconds'].sort());
+});
