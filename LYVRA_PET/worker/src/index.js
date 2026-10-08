@@ -227,9 +227,11 @@ document.querySelectorAll("[data-expression]").forEach(button=>button.addEventLi
 document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;current.facet=document.getElementById("facet").value;effects.set(current);});
 document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;effects.set({facet:document.getElementById("facet").value});}));
 window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();nativeTicket++;return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:true,connectSignedEvidence({getRevision,trustedKeys}){if(evidenceController)evidenceController.dispose();evidenceController=createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId:"pet_6ab791129364819183885f44a21497a2"});return evidenceController;},connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
-let nativeClosed=false,nativeTicket=0,nativeRevision=null,nativeConnection=null;
+let nativeClosed=false,nativeTicket=0,nativeRevision=null,nativeConnection=null,nativeRetryAt=0;
 const nativeStatus=document.getElementById("native-status"),nativeConfig=__LYVRA_NATIVE_TRUST__;
 async function refreshNative(){
+ if(nativeClosed)return;
+ if(Date.now()<nativeRetryAt){nativeStatus.textContent="GitHub-Abrufpause bis "+new Date(nativeRetryAt).toLocaleTimeString()+" · Vorschau bleibt nutzbar";return;}
  const ticket=++nativeTicket;nativeStatus.textContent="Whole-Verbindung wird geprüft";
  try{
   if(!nativeConfig?.spki||!nativeConfig?.key_id){nativeStatus.textContent="Lokale Ausdrucksvorschau";return;}
@@ -239,6 +241,7 @@ async function refreshNative(){
   if(!response.ok||result.status==="SOURCE_UNAVAILABLE"){
    nativeRevision=null;nativeConnection.reset();
    const limited=result.diagnostic?.category?.includes("RATE_LIMIT"),until=Date.parse(result.retry_at);
+   nativeRetryAt=Number.isFinite(until)?until:0;
    nativeStatus.textContent=limited?"GitHub-Abruflimit · "+(Number.isFinite(until)?"erneut ab "+new Date(until).toLocaleTimeString():"bitte später aktualisieren")+" · Vorschau bleibt nutzbar":"Whole-Quelle nicht erreichbar · Vorschau bleibt nutzbar";return;
   }
   if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
@@ -338,7 +341,7 @@ export default {
     catch { return json({error:"invalid json"},400); }
 
     const {id,method,params} = body;
-    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.3"}});
+    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.4"}});
     if(method==="notifications/initialized") return new Response(null,{status:204,headers:cors});
     if(method==="tools/list") return rpc(id,{tools:[tool()]});
     if(method==="resources/list") return rpc(id,{resources:[resource()]});
@@ -348,7 +351,7 @@ export default {
     }
     if(method==="tools/call" && params?.name==="open_lyvra_pet"){
       let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID});}catch(e){nativeExpression=publicNativeSourceFailure(e);}
-      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.3",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
+      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.4",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
     }
     return json({jsonrpc:"2.0",id,error:{code:-32601,message:"Method not found"}});
   }
