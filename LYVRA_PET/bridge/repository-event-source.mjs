@@ -4,11 +4,45 @@ const REPO='xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Arch
 const PET='pet_6ab791129364819183885f44a21497a2';
 const KINDS=['shared_success','beautiful_moment','shared_joke','explicit_frustration','explicit_boredom','music_work','serious_attention'];
 const FACETS=['whole','track_design','speech_design','suno_studio_2'];
+// Nur numerische Rate-Limit-Evidenz veröffentlichen; keine Antworttexte oder URLs.
+const githubReadStates=new WeakMap();
+function numericHeader(response,name){const value=response.headers.get(name);return value!==null&&/^[0-9]+$/.test(value)&&Number.isSafeInteger(Number(value))?Number(value):null;}
+export function publicNativeSourceFailure(error){
+ if(error?.nativeDiagnostic)return {status:'SOURCE_UNAVAILABLE',reason:error.message,diagnostic:error.nativeDiagnostic,retry_at:error.retryAt};
+ return {status:'SOURCE_UNAVAILABLE',reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(error?.message||'')?error.message:'NATIVE_SOURCE_OR_APPROVAL_REJECTED'};
+}
+async function githubFailure(response,now){
+ const remaining=numericHeader(response,'x-ratelimit-remaining'),reset=numericHeader(response,'x-ratelimit-reset'),retry=numericHeader(response,'retry-after');
+ let category='GITHUB_HTTP_REJECTED';
+ if([403,429].includes(response.status)){
+  if(remaining===0)category='GITHUB_PRIMARY_RATE_LIMIT';
+  else{let message='';try{const reader=response.body?.getReader();if(reader){const first=await reader.read();await reader.cancel();message=new TextDecoder().decode(first.value||new Uint8Array()).slice(0,4096);}}catch{}
+   category=retry!==null||/secondary rate limit|abuse detection/i.test(message)?'GITHUB_SECONDARY_RATE_LIMIT':response.status===429?'GITHUB_RATE_LIMIT':'GITHUB_FORBIDDEN';}
+ }
+ const error=Error('NATIVE_SOURCE_HTTP_'+response.status);
+ error.nativeDiagnostic={category,http_status:response.status};
+ if(remaining!==null)error.nativeDiagnostic.rate_limit_remaining=remaining;
+ if(reset!==null)error.nativeDiagnostic.rate_limit_reset=reset;
+ if(retry!==null)error.nativeDiagnostic.retry_after_seconds=retry;
+ // Kein Retry-Loop: dieselbe Isolate pausiert bis zum bestätigten Reset/Retry-After.
+ if([403,429].includes(response.status)){
+  const deadline=Math.max(now+60000,remaining===0&&reset!==null?reset*1000+1000:0,retry!==null?now+retry*1000:0);
+  if(Number.isFinite(deadline)&&deadline<=8640000000000000)error.retryAt=new Date(deadline).toISOString();
+ }
+ return error;
+}
 // Read-only attestation: only a dedicated, current Whole-approved repository commit
 // may produce an envelope. This endpoint accepts no event supplied by a caller.
 export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.now()}={}){
  const api='https://api.github.com/repos/'+REPO,headers={'User-Agent':'LYVRA-Pet-ReadOnly-Producer','Accept':'application/vnd.github+json'};
- async function read(url,allowAbsent=false){const r=await fetcher(url,{headers,cache:'no-store'});if(allowAbsent&&r.status===404)return null;if(!r.ok)throw Error('NATIVE_SOURCE_HTTP_'+r.status);const text=await r.text();if(text.length>30000)throw Error('Native source too large');return JSON.parse(text);}
+ async function read(url,allowAbsent=false){
+  const isApi=url.startsWith(api+'/'),state=githubReadStates.get(fetcher);
+  if(isApi&&state&&clock()<state.until)throw state.error;
+  const r=await fetcher(url,{headers,cache:'no-store'});
+  if(allowAbsent&&r.status===404)return null;
+  if(!r.ok){const error=await githubFailure(r,clock());if(isApi&&error.retryAt)githubReadStates.set(fetcher,{until:Date.parse(error.retryAt),error});throw error;}
+  const text=await r.text();if(text.length>30000)throw Error('Native source too large');return JSON.parse(text);
+ }
  const first=await read(api+'/branches/lyvra'),head=first.commit?.sha;
  if(!/^[a-f0-9]{40}$/.test(head||''))throw Error('Invalid native HEAD');
  const carrier=await read('https://raw.githubusercontent.com/'+REPO+'/'+head+'/'+EXPRESSION_CARRIER,true);

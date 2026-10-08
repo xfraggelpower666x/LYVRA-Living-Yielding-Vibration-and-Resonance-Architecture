@@ -1,5 +1,5 @@
 import {LOGO_ASSETS} from "../../assets/logo-assets.mjs";
-import {produceRepositoryEnvelope} from "../../bridge/repository-event-source.mjs";
+import {produceRepositoryEnvelope,publicNativeSourceFailure} from "../../bridge/repository-event-source.mjs";
 const PET_ID = "pet_6ab791129364819183885f44a21497a2";
 const RESOURCE_URI = "ui://lyvra/pet-v1.html";
 const WORKER_ORIGIN = "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev";
@@ -235,7 +235,12 @@ async function refreshNative(){
   if(!nativeConfig?.spki||!nativeConfig?.key_id){nativeStatus.textContent="Lokale Ausdrucksvorschau";return;}
   if(!nativeConnection){const publicKey=await crypto.subtle.importKey("spki",Uint8Array.from(atob(nativeConfig.spki),c=>c.charCodeAt(0)),"Ed25519",false,["verify"]);if(nativeClosed||ticket!==nativeTicket)return;nativeConnection=window.lyvraPetExpression.connectSignedEvidence({getRevision:()=>nativeRevision,trustedKeys:{[nativeConfig.key_id]:publicKey}});}
   const response=await fetch("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/native-expression",{cache:"no-store"});
-  if(!response.ok)throw Error("Native Quelle derzeit nicht verfügbar");const result=await response.json();if(nativeClosed||ticket!==nativeTicket)return;
+  const result=await response.json();if(nativeClosed||ticket!==nativeTicket)return;
+  if(!response.ok||result.status==="SOURCE_UNAVAILABLE"){
+   nativeRevision=null;nativeConnection.reset();
+   const limited=result.diagnostic?.category?.includes("RATE_LIMIT"),until=Date.parse(result.retry_at);
+   nativeStatus.textContent=limited?"GitHub-Abruflimit · "+(Number.isFinite(until)?"erneut ab "+new Date(until).toLocaleTimeString():"bitte später aktualisieren")+" · Vorschau bleibt nutzbar":"Whole-Quelle nicht erreichbar · Vorschau bleibt nutzbar";return;
+  }
   if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
   nativeRevision=result.envelope.event.source_revision;const accepted=await nativeConnection.accept(result.envelope);if(nativeClosed||ticket!==nativeTicket)return;
   nativeStatus.textContent=accepted?"Verifizierter Ausdruck von Whole LYVRA":"Ereignis bereits verarbeitet oder nicht mehr aktuell";
@@ -278,7 +283,7 @@ export default {
     if(url.pathname==="/native-expression"){
       if(request.method!=="GET")return json({status:"METHOD_NOT_ALLOWED"},405);
       try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID}));}
-      catch{return json({status:"SOURCE_UNAVAILABLE"},503);}
+      catch(e){return json(publicNativeSourceFailure(e),503);}
     }
     if(url.pathname.startsWith('/asset/poses/')){
       const name=url.pathname.slice('/asset/poses/'.length).replace(/\.png$/,'');
@@ -333,7 +338,7 @@ export default {
     catch { return json({error:"invalid json"},400); }
 
     const {id,method,params} = body;
-    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.2"}});
+    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.3"}});
     if(method==="notifications/initialized") return new Response(null,{status:204,headers:cors});
     if(method==="tools/list") return rpc(id,{tools:[tool()]});
     if(method==="resources/list") return rpc(id,{resources:[resource()]});
@@ -342,8 +347,8 @@ export default {
       return rpc(id,{contents:[{uri:RESOURCE_URI,mimeType:"text/html;profile=mcp-app",text:renderedUI,_meta:{ui:{prefersBorder:true,domain:WORKER_ORIGIN,csp:{connectDomains:[WORKER_ORIGIN],resourceDomains:[WORKER_ORIGIN]}},"openai/ui":{availableDisplayModes:["inline","fullscreen","pip"]}}}]});
     }
     if(method==="tools/call" && params?.name==="open_lyvra_pet"){
-      let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID});}catch(e){nativeExpression={status:"SOURCE_UNAVAILABLE",reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(e.message)?e.message:"NATIVE_SOURCE_OR_APPROVAL_REJECTED"};}
-      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.2",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
+      let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID});}catch(e){nativeExpression=publicNativeSourceFailure(e);}
+      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.3",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
     }
     return json({jsonrpc:"2.0",id,error:{code:-32601,message:"Method not found"}});
   }
