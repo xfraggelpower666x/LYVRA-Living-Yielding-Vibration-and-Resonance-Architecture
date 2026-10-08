@@ -37,5 +37,15 @@
   },
   "dashboard_integration": "DEPLOYED_WITH_WEBLYVRA",
   "facets_integration": "BOUND_BY_REFERENCE",
-  "whole_rehydration_registration": "CURRENT"
+  "whole_rehydration_registration": "CURRENT",
+  "pfs_backup": {
+    "status": "PARTIAL_TRANSPORT_BLOCKED_KEEP_REACHABLE",
+    "pfs_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
+    "recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
+    "mirrored_text": "9_OF_35_BLOB_IDENTICAL",
+    "text_remaining": 26,
+    "binary_transport": "WRITE_BLOCKED",
+    "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
+    "authority_transfer": false
+  }
 }
