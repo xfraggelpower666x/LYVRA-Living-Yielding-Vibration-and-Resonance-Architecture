@@ -3,6 +3,11 @@
 Relevant LYVRA dashboards must show Pet state when the Pet is active or relevant.
 
 Minimum fields:
+- Pet LiveCircle status
+- Pet rehydration coverage/status
+- Pet visual-interface status
+- App/MCP/Worker state
+- Website/dashboard deployment state
 - foreground LYVRA facet
 - current Pet contextual expression
 - active Pet relationship context
