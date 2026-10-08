@@ -18,5 +18,5 @@ export async function projectVerifiedEvidence(event,{verifyEvidence,revision,now
   case "serious_attention":input.sensitive=true;break;
   default:return fallback;
  }
- return Object.freeze({status:"VERIFIED_EVENT_PROJECTION",expression:expressionFor(input),source_revision:revision,evidence_id:snapshot.evidence_id,observed_at:snapshot.observed_at,inference:"BOUNDED_EVENT_MAPPING",memory_written:false});
+ return Object.freeze({status:"VERIFIED_EVENT_PROJECTION",expression:expressionFor(input),render_input:Object.freeze({...input}),source_revision:revision,evidence_id:snapshot.evidence_id,observed_at:snapshot.observed_at,inference:"BOUNDED_EVENT_MAPPING",memory_written:false});
 }
