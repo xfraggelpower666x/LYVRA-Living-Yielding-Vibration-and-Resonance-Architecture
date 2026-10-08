@@ -20,7 +20,35 @@ const states = {
 };
 const routing = {greeting:"waving",fraggle:"waving",heart:"idle",music:"jumping",thinking:"review",glitch:"failed",idle:"idle",return:"waving",playful:"jumping"};
 
-const PET_UI = `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L.Y.V.R.A. Pet</title><style>*{box-sizing:border-box}:root{color-scheme:dark;font-family:Inter,system-ui,sans-serif}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#24113d,#080a14 58%,#020308);color:#f7f7ff}.shell{width:min(96vw,720px);padding:20px}.card{text-align:center;padding:24px;border:1px solid rgba(130,235,255,.35);border-radius:26px;background:rgba(6,8,16,.9);box-shadow:0 0 52px rgba(109,55,255,.2),inset 0 0 28px rgba(44,233,255,.05)}.top{display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{display:flex;align-items:center;gap:10px}.brand img{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(255,80,220,.55))}.name{font-size:24px;font-weight:800;letter-spacing:.16em}.online{font-size:11px;color:#70f7ff}.sprite{width:192px;height:208px;margin:18px auto 12px;background-image:url("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/spritesheet-extended.png");background-repeat:no-repeat;filter:drop-shadow(0 0 18px rgba(76,231,255,.42))}.sprite[data-effect="heart"]{filter:drop-shadow(0 0 26px rgba(255,90,220,.95))}.sprite[data-effect="glitch"]{animation:glitch .16s 5}.state{font-size:13px;color:#cfc4e5;min-height:20px}.controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:17px auto}.controls button{padding:8px 12px;border-radius:999px;border:1px solid rgba(150,240,255,.4);background:#101526;color:#eefcff;cursor:pointer}.controls button:hover{background:#17243c}.meta{font-size:11px;color:#958ca7;margin-top:13px}@keyframes glitch{25%{transform:translateX(-4px)}50%{transform:translateX(4px)}75%{transform:translateY(-3px)}}</style></head><body><main class="shell"><section class="card"><div class="top"><div class="brand"><img src="https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/pet-logo.png" alt="L.Y.V.R.A. PET Logo"><div class="name">L.Y.V.R.A.</div></div><div class="online">PET RUNTIME · ONLINE</div></div><div id="sprite" class="sprite" role="img" aria-label="L.Y.V.R.A. Pet"></div><div id="state" class="state">IDLE</div><div class="controls"><button data-state="idle">IDLE</button><button data-state="greeting">GREETING</button><button data-state="fraggle">FRAGGLE</button><button data-state="heart">HEART</button><button data-state="music">MUSIC</button><button data-state="thinking">THINKING</button><button data-state="glitch">GLITCH</button><button data-state="playful">PLAYFUL</button></div><div class="meta">Repo Authority: LYVRA_PET/ · verified sprite atlas · FREE_ONLY · no main-plugin binding</div><div class="controls" aria-label="Ausdrucksvorschau"><select id="facet" aria-label="LYVRA Modus"><option value="whole">Whole LYVRA</option><option value="track_design">Track Design</option><option value="speech_design">Speech Design</option><option value="suno_studio_2">Suno Studio 2</option></select><button data-expression="dad">Dad · Freude</button><button data-expression="anger">Ärger · Herz</button><button data-expression="boredom">Ruhe</button><button data-expression="music">Musik</button><button data-expression="calm">Ruhig</button></div><div class="meta">Ausdrucksvorschau · Originalgrafik · neue Gesten noch nicht verfügbar</div></section></main><script>const states=${JSON.stringify(states)},routing=${JSON.stringify(routing)},sprite=document.getElementById("sprite"),label=document.getElementById("state");let timer=null,frame=0;function setState(semantic){const target=routing[semantic]||"idle",cfg=states[target]||states.idle;frame=0;clearInterval(timer);sprite.dataset.effect=(semantic==="heart"||semantic==="glitch")?semantic:"";label.textContent="MANUAL PREVIEW · "+semantic.toUpperCase()+" → "+target.toUpperCase();draw(cfg);timer=setInterval(()=>{frame=(frame+1)%cfg.frames;draw(cfg)},1000/cfg.fps)}function draw(cfg){sprite.style.backgroundPosition="-"+(frame*192)+"px -"+(cfg.row*208)+"px"}document.querySelectorAll("[data-state]").forEach(b=>b.addEventListener("click",()=>setState(b.dataset.state)));setState("idle");</script><script type="module">// Ausdrucksauswahl: expliziter Kontext ist keine automatische Gefühlserkennung.
+const PET_UI = `<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L.Y.V.R.A. Pet</title><style>*{box-sizing:border-box}:root{color-scheme:dark;font-family:Inter,system-ui,sans-serif}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#24113d,#080a14 58%,#020308);color:#f7f7ff}.shell{width:min(96vw,720px);padding:20px}.card{text-align:center;padding:24px;border:1px solid rgba(130,235,255,.35);border-radius:26px;background:rgba(6,8,16,.9);box-shadow:0 0 52px rgba(109,55,255,.2),inset 0 0 28px rgba(44,233,255,.05)}.top{display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{display:flex;align-items:center;gap:10px}.brand img{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 0 12px rgba(255,80,220,.55))}.name{font-size:24px;font-weight:800;letter-spacing:.16em}.online{font-size:11px;color:#70f7ff}.sprite{width:192px;height:208px;margin:18px auto 12px;background-image:url("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/spritesheet-extended.png");background-repeat:no-repeat;filter:drop-shadow(0 0 18px rgba(76,231,255,.42))}.sprite[data-effect="heart"]{filter:drop-shadow(0 0 26px rgba(255,90,220,.95))}.sprite[data-effect="glitch"]{animation:glitch .16s 5}.state{font-size:13px;color:#cfc4e5;min-height:20px}.controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:17px auto}.controls button{padding:8px 12px;border-radius:999px;border:1px solid rgba(150,240,255,.4);background:#101526;color:#eefcff;cursor:pointer}.controls button:hover{background:#17243c}.meta{font-size:11px;color:#958ca7;margin-top:13px}@keyframes glitch{25%{transform:translateX(-4px)}50%{transform:translateX(4px)}75%{transform:translateY(-3px)}}</style></head><body><main class="shell"><section class="card"><div class="top"><div class="brand"><img src="https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/pet-logo.png" alt="L.Y.V.R.A. PET Logo"><div class="name">L.Y.V.R.A.</div></div><div class="online">PET RUNTIME · ONLINE</div></div><div id="sprite" class="sprite" role="img" aria-label="L.Y.V.R.A. Pet"></div><div id="state" class="state">IDLE</div><div class="controls"><button data-state="idle">IDLE</button><button data-state="greeting">GREETING</button><button data-state="fraggle">FRAGGLE</button><button data-state="heart">HEART</button><button data-state="music">MUSIC</button><button data-state="thinking">THINKING</button><button data-state="glitch">GLITCH</button><button data-state="playful">PLAYFUL</button></div><div class="meta">Repo Authority: LYVRA_PET/ · verified sprite atlas · FREE_ONLY · no main-plugin binding</div><div class="controls" aria-label="Ausdrucksvorschau"><select id="facet" aria-label="LYVRA Modus"><option value="whole">Whole LYVRA</option><option value="track_design">Track Design</option><option value="speech_design">Speech Design</option><option value="suno_studio_2">Suno Studio 2</option></select><button data-expression="dad">Dad · Freude</button><button data-expression="anger">Ärger · Herz</button><button data-expression="boredom">Gähnen</button><button data-expression="music">Musik</button><button data-expression="smirk">Schmunzeln</button><button data-expression="wink">Frech</button><button data-expression="shrug">Schulterzucken</button><button data-expression="laugh">Lachen</button><button data-expression="calm">Ruhig</button></div><div class="meta">Ausdrucksvorschau · Originalgrafik · geschlossene Rüstung · neue Gesten als Kandidat</div></section></main><script>const states=${JSON.stringify(states)},routing=${JSON.stringify(routing)},sprite=document.getElementById("sprite"),label=document.getElementById("state");let timer=null,frame=0;function setState(semantic){const target=routing[semantic]||"idle",cfg=states[target]||states.idle;frame=0;clearInterval(timer);sprite.dataset.effect=(semantic==="heart"||semantic==="glitch")?semantic:"";label.textContent="MANUAL PREVIEW · "+semantic.toUpperCase()+" → "+target.toUpperCase();draw(cfg);timer=setInterval(()=>{frame=(frame+1)%cfg.frames;draw(cfg)},1000/cfg.fps)}function draw(cfg){sprite.style.backgroundPosition="-"+(frame*192)+"px -"+(cfg.row*208)+"px"}document.querySelectorAll("[data-state]").forEach(b=>b.addEventListener("click",()=>setState(b.dataset.state)));setState("idle");</script><script type="module">// Neue, ausdrücklich freigegebene geschlossene Rüstung; Originalatlas bleibt erhalten.
+function poseFrame(state,elapsed,reduced=false){
+ if(state.gesture==='yawn')return elapsed<2400?{strip:'yawn',frame:reduced?2:Math.min(3,Math.floor(elapsed/600))}:null;
+ if(state.gesture==='stomp')return elapsed<1200?{strip:'stomp',frame:reduced?0:Math.min(3,Math.floor(elapsed/300))}:null;
+ const humor={smirk:0,dry_wit:0,wink:1,shrug:2,laugh:3,musical_joke:3};
+ if(Object.hasOwn(humor,state.gesture))return elapsed<3000?{strip:'humor',frame:humor[state.gesture]}:null;
+ if(state.holo!=='none')return {strip:'conductor',frame:{whole:0,track_design:1,speech_design:2,suno_studio_2:3}[state.facet]??0};
+ return null;
+}
+function mountPoseRuntime(stage,{base=new URL('../assets/poses/',import.meta.url).href}={}){
+ const original=stage.querySelector?.('#sprite');
+ const savedVisibility=original?.style.visibility||'';
+ const images=new Map();let disposed=false;
+ for(const name of ['yawn','stomp','humor','conductor']){
+  const img=new Image();img.src=new URL(name+'.png',new URL(base,document.baseURI)).href;images.set(name,img);
+ }
+ function restore(){if(original)original.style.visibility=savedVisibility;}
+ return Object.freeze({draw(ctx,state,elapsed,reduced,w,h){
+  if(disposed)return false;const pose=poseFrame(state,elapsed,reduced),img=pose&&images.get(pose.strip);
+  if(!img?.complete||!img.naturalWidth||!img.naturalHeight){restore();return false;}
+  const cell=img.naturalWidth/4,scale=Math.min(200,img.naturalHeight,h-70)/img.naturalHeight;
+  // Kopf/Fuß-Skalierung unverändert je Streifen; leichte Zentrierung des Generators ausgleichen.
+  const centers=[.625,.54,.50,.48],center=cell*centers[pose.frame];
+  ctx.drawImage(img,pose.frame*cell,0,cell,img.naturalHeight,w/2-center*scale,46,cell*scale,img.naturalHeight*scale);
+  if(original)original.style.visibility='hidden';return true;
+ },dispose(){disposed=true;restore();images.clear();}});
+}
+
+// Ausdrucksauswahl: expliziter Kontext ist keine automatische Gefühlserkennung.
 const FACETS=Object.freeze({whole:{color:"#bd65ff",holo:"arcs"},track_design:{color:"#ff45ca",holo:"notes"},speech_design:{color:"#38eeff",holo:"speech"},suno_studio_2:{color:"#ffd35c",holo:"clips"}});
 function expressionFor(event={}){
  const facet=Object.hasOwn(FACETS,event.facet)?event.facet:"whole";
@@ -36,12 +64,14 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
  const canvas=document.createElement("canvas");canvas.className="lyvra-expression-effects";canvas.setAttribute("aria-hidden","true");
  Object.assign(canvas.style,{position:"absolute",inset:"0",width:"100%",height:"100%",pointerEvents:"none"});
  stage.append(canvas);const ctx=canvas.getContext("2d");let state=expressionFor(),raf=0,stopped=false,start=performance.now();
+ const poses=mountPoseRuntime(stage,{base:stage.dataset?.poseBase});let poseStart=start;
  const reduced=matchMedia("(prefers-reduced-motion: reduce)");let signal=null;
  function heart(x,y,size,color){ctx.save();ctx.translate(x,y);ctx.fillStyle=color;ctx.shadowColor=color;ctx.shadowBlur=14;ctx.beginPath();ctx.moveTo(0,size*.35);ctx.bezierCurveTo(-size,-size*.4,-size*.55,-size,0,-size*.35);ctx.bezierCurveTo(size*.55,-size,size,-size*.4,0,size*.35);ctx.fill();ctx.restore();}
  function draw(now){
   if(stopped)return;const w=stage.clientWidth,h=stage.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
   if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+  const poseActive=poses.draw(ctx,state,now-poseStart,reduced.matches,w,h);
   const t=reduced.matches?0:(now-start)/1000;
   const liveBeat=signal&&now-signal.received<2000&&Number.isFinite(signal.bpm)&&signal.bpm>=30&&signal.bpm<=240;
   const pulse=liveBeat?.75+.25*Math.cos((now-signal.received)/1000*signal.bpm/60*Math.PI*2):.85+.15*Math.sin(t*2);
@@ -51,7 +81,7 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   // Glühender Stab als Ausdrucksebene. Die endgültige Handverankerung braucht geprüfte neue Frames.
   const angle=reduced.matches?-.5:Math.sin(t*1.8)*.25-.5;
   const x=w*.60,y=h*.48;
-  ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();
+  if(!poseActive){ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();}
   if(state.holo!=="none"){
    for(let i=0;i<8;i++){
     const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));
@@ -73,7 +103,7 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   raf=requestAnimationFrame(draw);
  }
  raf=requestAnimationFrame(draw);
- return Object.freeze({set(event){state=expressionFor(event);return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.remove();}});
+ return Object.freeze({set(event){state=expressionFor(event);poseStart=performance.now();return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);poses.dispose();canvas.remove();}});
 }
 
 
@@ -137,14 +167,65 @@ function createEvidenceEffectController({effects,getRevision,verifyEvidence,cloc
 }
 
 
-const stage=document.createElement("div");Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
+// Schlüssel werden ausschließlich vom nativen Betreiber konfiguriert, nie aus dem Ereignis übernommen.
+const SIGNED_FIELDS=['pet_id','authority','source_revision','evidence_id','observed_at','kind','facet','relation','cause','affect','humor','sensitive','bpm'];
+function canonicalPetEvent(event){
+ if(!event||typeof event!=='object'||Object.keys(event).some(key=>!SIGNED_FIELDS.includes(key)))throw Error('Unzulässige Ereignisfelder');
+ const clean={};for(const key of SIGNED_FIELDS)if(event[key]!==undefined){const v=event[key];if(!['string','number','boolean'].includes(typeof v)||typeof v==='string'&&v.length>200)throw Error('Ungültiger Ereigniswert');clean[key]=v;}
+ if(clean.authority!=='WHOLE_LYVRA'||!/^pet_[a-f0-9]+$/.test(clean.pet_id||'')||!/^[a-f0-9]{40}$/.test(clean.source_revision||'')||!clean.evidence_id||!Number.isFinite(Date.parse(clean.observed_at)))throw Error('Native Ereignisbindung fehlt');
+ return JSON.stringify(clean);
+}
+const encodeSignature=bytes=>btoa(String.fromCharCode(...new Uint8Array(bytes)));
+const decodeSignature=text=>Uint8Array.from(atob(text),c=>c.charCodeAt(0));
+function createSignedEventProducer({privateKey,keyId,verifyNativeEvent,cryptoApi=crypto,clock=()=>Date.now()}={}){
+ if(!privateKey||!keyId||typeof verifyNativeEvent!=='function')throw Error('Native Signaturkonfiguration erforderlich');
+ return Object.freeze({async produce(event){
+  const canonical=canonicalPetEvent(event),snapshot=Object.freeze(JSON.parse(canonical));
+  if(await verifyNativeEvent(snapshot)!==true)throw Error('Whole LYVRA hat dieses Ereignis nicht freigegeben');
+  const age=clock()-Date.parse(snapshot.observed_at);if(age<0||age>60000)throw Error('Ereignis ist nicht aktuell');
+  const signature=await cryptoApi.subtle.sign('Ed25519',privateKey,new TextEncoder().encode(canonical));
+  return Object.freeze({algorithm:'Ed25519',key_id:keyId,event:snapshot,signature:encodeSignature(signature)});
+ }});
+}
+function createSignedEventVerifier({trustedKeys,cryptoApi=crypto,clock=()=>Date.now()}={}){
+ const pinned=new Map(trustedKeys instanceof Map?trustedKeys:Object.entries(trustedKeys||{}));
+ return Object.freeze({async verify(envelope){
+  try{
+   if(!envelope||envelope.algorithm!=='Ed25519'||typeof envelope.signature!=='string'||envelope.signature.length>128)return false;
+   const key=pinned.get(envelope.key_id);if(!key)return false;
+   const canonical=canonicalPetEvent(envelope.event),age=clock()-Date.parse(envelope.event.observed_at);
+   if(age<0||age>60000)return false;
+   return await cryptoApi.subtle.verify('Ed25519',key,decodeSignature(envelope.signature),new TextEncoder().encode(canonical));
+  }catch{return false;}
+ }});
+}
+
+function createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId,clock=()=>Date.now(),cryptoApi=crypto}={}){
+ if(!expectedPetId)throw Error('Pet-Bindung erforderlich');
+ const verifier=createSignedEventVerifier({trustedKeys,clock,cryptoApi});const proofs=new Map();let disposed=false,sequence=0;
+ const binding=event=>JSON.stringify([event.source_revision,event.evidence_id,event.observed_at,event.kind,event.relation??null,event.facet??null,event.sensitive===true]);
+ const controller=createEvidenceEffectController({effects,getRevision,clock,verifyEvidence:snapshot=>(proofs.get(binding(snapshot))??0)>clock()});
+ return Object.freeze({async accept(envelope){
+  if(disposed)return false;
+  const ticket=++sequence;
+  // Vor await kopieren: spätere Mutation des Aufrufers kann keine Signatur umgehen.
+  let frozen;try{frozen=Object.freeze({...envelope,event:Object.freeze(JSON.parse(canonicalPetEvent(envelope.event)))});}catch{return false;}
+  if(frozen.event.pet_id!==expectedPetId||!await verifier.verify(frozen)||disposed||ticket!==sequence)return false;
+  for(const [key,expiry] of proofs)if(expiry<=clock())proofs.delete(key);
+  proofs.set(binding(frozen.event),Date.parse(frozen.event.observed_at)+60000);
+  if(proofs.size>64)proofs.delete(proofs.keys().next().value);
+  return controller.accept(frozen.event);
+ },reset(){sequence++;controller.reset();},dispose(){sequence++;disposed=true;controller.dispose();proofs.clear();}});
+}
+
+const stage=document.createElement("div");stage.dataset.poseBase="/asset/poses/";Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
 const figure=document.getElementById("sprite");figure.parentNode.insertBefore(stage,figure);stage.append(figure);Object.assign(figure.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
 const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"},evidenceController=null;
-function preview(type){if(evidenceController)evidenceController.reset();current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";effects.set(current);}
+function preview(type){if(evidenceController)evidenceController.reset();current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";if(["smirk","wink","shrug","laugh"].includes(type))current.humor=type;effects.set(current);}
 document.querySelectorAll("[data-expression]").forEach(button=>button.addEventListener("click",()=>preview(button.dataset.expression)));
 document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();current.facet=document.getElementById("facet").value;effects.set(current);});
 document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();effects.set({facet:document.getElementById("facet").value});}));
-window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:false,connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
+window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:true,connectSignedEvidence({getRevision,trustedKeys}){if(evidenceController)evidenceController.dispose();evidenceController=createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId:"pet_6ab791129364819183885f44a21497a2"});return evidenceController;},connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
 window.addEventListener("pagehide",()=>{if(evidenceController)evidenceController.dispose();effects.dispose();});
 </script></body></html>`;
 
@@ -175,6 +256,16 @@ export default {
     const url = new URL(request.url);
     if(request.method==="OPTIONS") return new Response(null,{status:204,headers:cors});
 
+    if(url.pathname.startsWith('/asset/poses/')){
+      const name=url.pathname.slice('/asset/poses/'.length).replace(/\.png$/,'');
+      const poseAssets={"conductor": "c35d3743806b8f47cab8fee5ee7dedbdeeddd17a31f8687fce0c01e62a346c72", "humor": "2eb698a18bb574115bda748df6d851d0aa93f8d5af7c487129ce4a5baa01efe2", "stomp": "8b8b98f2a46c965c45713d52e6c755ad4283ae75aa811462f7f63241a273763f", "yawn": "ea6881e31649287a2acfacd7b73b005441aef9e5a5ac8d88dc9d2937c150724d"};
+      if(!Object.hasOwn(poseAssets,name))return new Response('not found',{status:404});
+      const src="https://raw.githubusercontent.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/5d0f00720fc1bd8c58c7893573de50e4150fad08/LYVRA_PET/assets/poses/"+name+'.png';const upstream=await fetch(src);
+      if(!upstream.ok)return new Response('pose unavailable',{status:502});
+      const bytes=await upstream.arrayBuffer();const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
+      if(hash!==poseAssets[name])return new Response('pose integrity mismatch',{status:502});
+      return new Response(bytes,{headers:{...cors,'content-type':'image/png','cache-control':'public, max-age=3600','x-lyvra-pose-sha256':hash}});
+    }
     if(url.pathname==="/health"){
       return json({status:"ok",service:"lyvra-pet-plugin-ui",pet_id:PET_ID,cost_policy:"FREE_ONLY",main_plugin_binding:false,renderer:"VERIFIED_ACTIVE_SPRITE",atlas_sha256:ATLAS_SHA256,logo_sha256:LOGO_SHA256,pet_app_binding:"asdk_app_6ac6fbaed2a481919fad519862e7b7f0"});
     }
@@ -218,7 +309,7 @@ export default {
     catch { return json({error:"invalid json"},400); }
 
     const {id,method,params} = body;
-    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.1.1-candidate"}});
+    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.2.0-candidate"}});
     if(method==="notifications/initialized") return new Response(null,{status:204,headers:cors});
     if(method==="tools/list") return rpc(id,{tools:[tool()]});
     if(method==="resources/list") return rpc(id,{resources:[resource()]});

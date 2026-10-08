@@ -1,0 +1,11 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import vm from 'node:vm';
+const root=new URL('../',import.meta.url);
+const source=await readFile(new URL('worker/src/index.js',root),'utf8');
+const evaluated=source.replace(/^import[^\n]*\n/gm,'').replace('export default {','const unusedWorker = {');
+let html=vm.runInNewContext(evaluated+'\n;PET_UI',{LOGO_ASSETS:{}});
+html=html.replaceAll('https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/spritesheet-extended.png','../assets/original-sprites.png').replaceAll('https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/pet-logo.png','../assets/plugin-logo.png').replace('stage.dataset.poseBase="/asset/poses/"','stage.dataset.poseBase="../assets/poses/"').replace('PET RUNTIME · ONLINE','LOKALE KANDIDATENVORSCHAU');
+await writeFile(new URL('preview/index.html',root),html);
+const scripts=[...html.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(x=>x[1]);
+for(const script of scripts)new vm.Script(script.replaceAll('import.meta.url','"https://example.test/bridge/pose-runtime.mjs"'));
+console.log('PASS generated self-contained offline preview and inline script syntax');

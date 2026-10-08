@@ -1,0 +1,36 @@
+{
+  "status": "CANDIDATE",
+  "outfit": "USER_AUTHORIZED_CLOSED_SUIT",
+  "source_commit": "5d0f00720fc1bd8c58c7893573de50e4150fad08",
+  "strips": [
+    {
+      "name": "conductor",
+      "bytes": 1621372,
+      "sha256": "c35d3743806b8f47cab8fee5ee7dedbdeeddd17a31f8687fce0c01e62a346c72",
+      "git_blob": "2f8428b22255cbaea9dbc1ca8c304d6ad02f35a9"
+    },
+    {
+      "name": "humor",
+      "bytes": 1351312,
+      "sha256": "2eb698a18bb574115bda748df6d851d0aa93f8d5af7c487129ce4a5baa01efe2",
+      "git_blob": "e9c08ca388ce39b3665fdde110a47b66b016afcb"
+    },
+    {
+      "name": "stomp",
+      "bytes": 1443753,
+      "sha256": "8b8b98f2a46c965c45713d52e6c755ad4283ae75aa811462f7f63241a273763f",
+      "git_blob": "40e751a33844a7c596dce952a3fd6dd1ab544f8a"
+    },
+    {
+      "name": "yawn",
+      "bytes": 1357878,
+      "sha256": "ea6881e31649287a2acfacd7b73b005441aef9e5a5ac8d88dc9d2937c150724d",
+      "git_blob": "c46190b24fffc091c85056aaefdf20879b1b29b9"
+    }
+  ],
+  "notes": [
+    "Four equal horizontal cells per PNG",
+    "Humor and conducting are held poses, not interpolated body-motion cycles",
+    "Generator edge and alignment quality requires visual host validation"
+  ]
+}

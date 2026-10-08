@@ -1,0 +1,27 @@
+{
+  "status": "PARTIAL",
+  "package_version": "1.1.0-candidate",
+  "worker_version": "2.2.0-candidate",
+  "primary": "OWN_LYVRA_PET",
+  "secondary": "OPTIONAL_GPT_PET",
+  "assets": "USER_AUTHORIZED_CLOSED_SUIT_ADDITIVE",
+  "verified": [
+    "FOUR_POSE_STRIPS_WITH_ALPHA",
+    "CANVAS_PIXEL_RENDER_AND_ORIGINAL_RESTORE",
+    "ED25519_SIGNATURE_AND_TAMPER_REJECTION",
+    "UNKNOWN_KEY_AND_EXPIRY_REJECTION",
+    "SIGNED_CONNECTION_RESET_REPLAY_DISPOSAL",
+    "BROWSER_VM_LIFECYCLE",
+    "INLINE_PREVIEW_SYNTAX",
+    "WORKER_MODULE_PARITY"
+  ],
+  "not_verified": [
+    "REAL_CANDIDATE_BROWSER_AND_PLUGIN_HOST_RENDER",
+    "DEFINITE_ONE_EYE_WINK"
+  ],
+  "not_installed": [
+    "NATIVE_SIGNING_KEY_AND_PRODUCER",
+    "PINNED_BROWSER_TRUST_KEYS"
+  ],
+  "live_deployed": false
+}

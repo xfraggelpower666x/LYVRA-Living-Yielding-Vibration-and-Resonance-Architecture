@@ -1,3 +1,4 @@
+import {mountPoseRuntime} from "./pose-runtime.mjs";
 // Ausdrucksauswahl: expliziter Kontext ist keine automatische Gefühlserkennung.
 export const FACETS=Object.freeze({whole:{color:"#bd65ff",holo:"arcs"},track_design:{color:"#ff45ca",holo:"notes"},speech_design:{color:"#38eeff",holo:"speech"},suno_studio_2:{color:"#ffd35c",holo:"clips"}});
 export function expressionFor(event={}){
@@ -14,12 +15,14 @@ export function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
  const canvas=document.createElement("canvas");canvas.className="lyvra-expression-effects";canvas.setAttribute("aria-hidden","true");
  Object.assign(canvas.style,{position:"absolute",inset:"0",width:"100%",height:"100%",pointerEvents:"none"});
  stage.append(canvas);const ctx=canvas.getContext("2d");let state=expressionFor(),raf=0,stopped=false,start=performance.now();
+ const poses=mountPoseRuntime(stage,{base:stage.dataset?.poseBase});let poseStart=start;
  const reduced=matchMedia("(prefers-reduced-motion: reduce)");let signal=null;
  function heart(x,y,size,color){ctx.save();ctx.translate(x,y);ctx.fillStyle=color;ctx.shadowColor=color;ctx.shadowBlur=14;ctx.beginPath();ctx.moveTo(0,size*.35);ctx.bezierCurveTo(-size,-size*.4,-size*.55,-size,0,-size*.35);ctx.bezierCurveTo(size*.55,-size,size,-size*.4,0,size*.35);ctx.fill();ctx.restore();}
  function draw(now){
   if(stopped)return;const w=stage.clientWidth,h=stage.clientHeight,dpr=Math.min(devicePixelRatio||1,2);
   if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+  const poseActive=poses.draw(ctx,state,now-poseStart,reduced.matches,w,h);
   const t=reduced.matches?0:(now-start)/1000;
   const liveBeat=signal&&now-signal.received<2000&&Number.isFinite(signal.bpm)&&signal.bpm>=30&&signal.bpm<=240;
   const pulse=liveBeat?.75+.25*Math.cos((now-signal.received)/1000*signal.bpm/60*Math.PI*2):.85+.15*Math.sin(t*2);
@@ -29,7 +32,7 @@ export function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   // Glühender Stab als Ausdrucksebene. Die endgültige Handverankerung braucht geprüfte neue Frames.
   const angle=reduced.matches?-.5:Math.sin(t*1.8)*.25-.5;
   const x=w*.60,y=h*.48;
-  ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();
+  if(!poseActive){ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();}
   if(state.holo!=="none"){
    for(let i=0;i<8;i++){
     const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));
@@ -51,5 +54,6 @@ export function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   raf=requestAnimationFrame(draw);
  }
  raf=requestAnimationFrame(draw);
- return Object.freeze({set(event){state=expressionFor(event);return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.remove();}});
+ return Object.freeze({set(event){state=expressionFor(event);poseStart=performance.now();return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);poses.dispose();canvas.remove();}});
 }
+
