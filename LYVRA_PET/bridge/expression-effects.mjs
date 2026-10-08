@@ -28,11 +28,25 @@ export function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   heart(w*heartX,h*heartY,w*.032,color);ctx.globalAlpha=1;
   // Glühender Stab als Ausdrucksebene. Die endgültige Handverankerung braucht geprüfte neue Frames.
   const angle=reduced.matches?-.5:Math.sin(t*1.8)*.25-.5;
-  const x=w*.69,y=h*.42;
+  const x=w*.60,y=h*.48;
   ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();
   if(state.holo!=="none"){
-   const symbols=state.holo==="notes"?["♪","♫","♬"]:state.holo==="speech"?["a","…","∿"]:state.holo==="clips"?["▰","∿","▱"]:["⌒","∿"];
-   for(let i=0;i<8;i++){const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));ctx.save();ctx.translate(w*.5+Math.cos(a)*r,h*.48+Math.sin(a)*h*.22);ctx.fillStyle=i%2?"#ff45ca":"#38eeff";ctx.shadowColor=ctx.fillStyle;ctx.shadowBlur=10;ctx.globalAlpha=.45+.4*Math.sin(i+t)**2;ctx.font=(w*.065)+"px system-ui";ctx.fillText(symbols[i%symbols.length],0,0);ctx.restore();}
+   for(let i=0;i<8;i++){
+    const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));
+    let px=w*.5+Math.cos(a)*r,py=h*.48+Math.sin(a)*h*.22;
+    if(px>w*.38&&px<w*.62&&py<h*.66)px=px<w*.5?w*.32:w*.68;
+    ctx.save();ctx.translate(px,py);ctx.strokeStyle=ctx.fillStyle=i%2?"#ff45ca":"#38eeff";ctx.shadowColor=ctx.fillStyle;ctx.shadowBlur=10;ctx.lineWidth=1.5;ctx.globalAlpha=.45+.4*Math.sin(i+t)**2;
+    if(state.holo==="notes"){
+     ctx.beginPath();ctx.ellipse(0,0,3.5,2.5,-.35,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.moveTo(3,-1);ctx.lineTo(3,-14);ctx.lineTo(10,-10);ctx.stroke();
+    }else if(state.holo==="speech"){
+     ctx.beginPath();for(let j=0;j<=20;j++){const yy=Math.sin(j*.7+t)*3; j?ctx.lineTo(j-10,yy):ctx.moveTo(j-10,yy);}ctx.stroke();
+    }else if(state.holo==="clips"){
+     ctx.strokeRect(-10,-5,20,10);ctx.beginPath();for(let j=0;j<16;j++){const yy=Math.sin(j*1.1)*3;j?ctx.lineTo(j-8,yy):ctx.moveTo(j-8,yy);}ctx.stroke();
+    }else{
+     ctx.beginPath();ctx.arc(0,0,9,Math.PI*.15,Math.PI*.85);ctx.stroke();
+    }
+    ctx.restore();
+   }
   }
   raf=requestAnimationFrame(draw);
  }
