@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import vm from 'node:vm';
+import worker from '../worker/src/index.js';
+import {mountExpressionEffects,expressionFor} from './expression-effects.mjs';
+const html=await(await worker.fetch(new Request('https://test.invalid/pet'))).text();
+assert.ok(html.includes('Dad · Freude'));assert.ok(html.includes('newGestureFramesAvailable:false'));
+for(const match of html.matchAll(/<script(?:[^>]*)>([\s\S]*?)<\/script>/g))new vm.Script(match[1]);
+const response=await worker.fetch(new Request('https://test.invalid/mcp',{method:'POST',body:JSON.stringify({id:1,method:'tools/list'})}));assert.equal((await response.json()).result.tools[0].name,'open_lyvra_pet');
+const draws=[];let callback,removed=false;
+const ctx=new Proxy({}, {get:(target,key)=>key==='fillText'?((...args)=>draws.push(args)):target[key]||(()=>{}),set:(target,key,value)=>(target[key]=value,true)});
+globalThis.document={createElement:()=>({style:{},setAttribute(){},getContext:()=>ctx,remove(){removed=true;}})};
+globalThis.matchMedia=()=>({matches:false});globalThis.devicePixelRatio=1;globalThis.requestAnimationFrame=fn=>(callback=fn,1);globalThis.cancelAnimationFrame=()=>{};
+const fx=mountExpressionEffects({clientWidth:320,clientHeight:300,append(){}});
+fx.set({facet:'track_design',activity:'music',relation:'dad',affect:'joy',cause:'shared_success'});callback(performance.now()+1500);assert.equal(draws.length,8);assert.ok(draws.every(x=>['♪','♫','♬'].includes(x[0])));
+draws.length=0;fx.set({facet:'speech_design',activity:'music'});callback(performance.now()+1600);assert.ok(draws.every(x=>['a','…','∿'].includes(x[0])));
+fx.dispose();assert.equal(removed,true);
+assert.equal(expressionFor({relation:'dad',affect:'joy'}).heart,'calm');assert.equal(expressionFor({affect:'boredom',cause:'absence'}).gesture,'idle');assert.equal(expressionFor({sensitive:true,humor:'laugh'}).gesture,'attentive');
+console.log('PASS worker HTML/scripts/MCP; canvas notes/speech/disposal; expression context boundaries');
