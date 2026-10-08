@@ -21,13 +21,13 @@
   "plugin_surfaces": {
     "account": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.43",
-      "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+      "version": "0.13.45",
+      "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
     },
     "native": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.47",
-      "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+      "version": "0.1.48",
+      "release_id": "pluginrel_6ac70d23233481919f22624348351154"
     }
   },
   "website_deployment": {
@@ -50,6 +50,9 @@
   },
   "character_personality": {
     "source": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "relational_communication": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+    "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
     "adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
     "expression_model": "LYVRA_PET/personality/CURRENT_EXPRESSION_MODEL.json",
     "relation": "REFERENCE_ONLY",
@@ -57,8 +60,19 @@
       "INTELLIGENT",
       "FRECH",
       "MUSICAL",
-      "EMOTIONAL"
+      "EMOTIONAL",
+      "CREATIVE",
+      "EXPERIMENTAL",
+      "MEMORY_AWARE"
     ],
     "static_persona": false
+  },
+  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+  "surface_navigation": {
+    "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "dashboard": "https://dashboard.666soundsdesign-broadcaster.com/",
+    "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+    "radio": "https://webradio.666soundsdesign-broadcaster.com/",
+    "pet_app": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/pet"
   }
 }
