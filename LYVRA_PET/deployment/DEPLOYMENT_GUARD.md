@@ -1,21 +1,23 @@
 # LYVRA Pet Browser Deployment Guard
 
-Status: DEPLOYED_API_VERIFIED / PUBLIC_HTTP_READBACK_PENDING
+Status: DEPLOYED_API_VERIFIED / CHATGPT_APP_UI_VERIFIED / SPRITE_VISUAL_READBACK_PENDING
 
 Purpose: operate the Pet as an independent browser surface without changing LYVRA main-plugin availability.
 
 Current Worker:
 - name: `lyvra-pet-plugin-ui`
 - workers.dev origin: `https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev`
-- current deployment id: `d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4`
-- current version id: `e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c`
-- previous recovery deployment: `11aabff6-85a8-4df6-8aef-a74e9fac1cda`
-- previous recovery version: `a91a865b-1cc3-4afe-b882-8ff9a2f6be68`
+- current deployment id: `5de6cdd2-fc99-41c0-bc77-042851aed4e4`
+- current version id: `5bbb6d15-ebbb-4b3b-a5ed-5216b6c73117`
+- previous recovery deployment: `d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4`
+- previous recovery version: `e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c`
 
 Verified by Cloudflare API:
 - worker upload accepted
 - new deployment active at 100%
 - deployed source readback contains verified sprite renderer
+- embedded ChatGPT App UI uses absolute Worker asset URL
+- ChatGPT App UI itself has been user-visible in ChatGPT Web; sprite visual readback remains pending
 - verified atlas SHA-256 is `f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba`
 - atlas source is pinned to immutable GitHub commit `243eaf3e8baccaf4e103d05fcfb983b0a08252a7`
 
