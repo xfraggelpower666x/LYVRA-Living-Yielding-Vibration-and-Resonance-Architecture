@@ -1,0 +1,15 @@
+{
+  "schema": "LYVRA_PET_CHATGPT_APP_CURRENT_v1",
+  "status": "CURRENT",
+  "pet_id": "pet_6ab791129364819183885f44a21497a2",
+  "worker": "lyvra-pet-plugin-ui",
+  "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+  "resource_uri": "ui://lyvra/pet-v1.html",
+  "opener_tool": "open_lyvra_pet",
+  "active_asset": "LYVRA_PET/browser/assets/spritesheet-extended.png",
+  "active_asset_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+  "main_plugin_binding": false,
+  "free_only": true,
+  "browser_portable": true,
+  "candidate_promoted": false
+}
