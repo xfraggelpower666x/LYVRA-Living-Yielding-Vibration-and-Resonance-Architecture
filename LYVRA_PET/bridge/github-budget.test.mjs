@@ -106,3 +106,19 @@ test('invalid cooldown cannot modify shared quota',async()=>{
  assert.equal((await instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))).status,200);
  assert.equal(rows.length,1);
 });
+
+test('all GitHub REST endpoints require a budget reservation',async()=>{
+ let upstream=0;const fetcher=petBudgetedFetcher({},async()=>{upstream++;return new Response('unexpected')});
+ await assert.rejects(()=>fetcher('https://api.github.com/rate_limit'),/NOT_CONFIGURED/);
+ assert.equal(upstream,0);
+});
+test('insecure GitHub API URL cannot be used',async()=>{
+ let upstream=0;const fetcher=petBudgetedFetcher({},async()=>{upstream++;return new Response('unexpected')});
+ await assert.rejects(()=>fetcher('http://api.github.com/repos/example/repo'),/INSECURE_GITHUB_REQUEST/);
+ assert.equal(upstream,0);
+});
+test('unsupported fetch targets fail closed',async()=>{
+ let upstream=0;const fetcher=petBudgetedFetcher({},async()=>{upstream++;return new Response('unexpected')});
+ await assert.rejects(()=>fetcher({url:'https://api.github.com/repos/example/repo'}),/INVALID_FETCH_TARGET/);
+ assert.equal(upstream,0);
+});
