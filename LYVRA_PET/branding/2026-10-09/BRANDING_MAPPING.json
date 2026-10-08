@@ -1,0 +1,46 @@
+{
+  "schema": "LYVRA_PET_DUAL_BRANDING_BRIDGE_2026_10_09",
+  "status": "BINARY_IMPORT_PENDING",
+  "roles": {
+    "plugin": "first supplied image (robot PET)",
+    "app": "second supplied image (rounded square mushroom PET)"
+  },
+  "no_auto_host_icon_claim": true,
+  "app_id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+  "previous_head_verified": "fe93280ac90990ace9f4d69804394f664fb8a71e",
+  "policy": "ASSET_ONLY_IMPORT_NO_POINTER_NO_DEPLOY",
+  "files": {
+    "LYVRA_PET/branding/2026-10-09/plugin-logo-original.png": {
+      "sha256": "bf714cb5f070fad62416d12fd225859b94cd774a233d3f6126e67c9a97a15a28",
+      "bytes": 2125873
+    },
+    "LYVRA_PET/branding/2026-10-09/plugin-logo-256.png": {
+      "sha256": "9035e007dda0e7fcb8265b61adf5dce37295d2167020cda4f41134114eca7144",
+      "bytes": 108883
+    },
+    "LYVRA_PET/branding/2026-10-09/plugin-logo-512.png": {
+      "sha256": "b385142160a035bb39b067e547094d15cecb562a88b59c1243a33c3baaecc9a6",
+      "bytes": 365611
+    },
+    "LYVRA_PET/branding/2026-10-09/app-logo-original.png": {
+      "sha256": "249ae0c4a2c3cd4fc18101a74cf5e3de712875b22a6602d575ea83fc2016d193",
+      "bytes": 2976920
+    },
+    "LYVRA_PET/branding/2026-10-09/app-logo-256.png": {
+      "sha256": "74444a8fe98351bf9219954b2ae6b6fa0426c3313cf9da0264af253533f3047d",
+      "bytes": 134176
+    },
+    "LYVRA_PET/branding/2026-10-09/app-logo-512.png": {
+      "sha256": "8c6c17cf166ac220796b53bf11e57506d3e998beccff24811b179d5aa711b3eb",
+      "bytes": 471624
+    },
+    "LYVRA_PET/plugin-package/assets/lyvra-pet-plugin-logo-256.png": {
+      "sha256": "9035e007dda0e7fcb8265b61adf5dce37295d2167020cda4f41134114eca7144",
+      "bytes": 108883
+    },
+    "LYVRA_PET/app/assets/lyvra-pet-app-logo-256.png": {
+      "sha256": "74444a8fe98351bf9219954b2ae6b6fa0426c3313cf9da0264af253533f3047d",
+      "bytes": 134176
+    }
+  }
+}
