@@ -43,7 +43,8 @@
     "pet_app_managed_repo_body_head_before_pointer": "58ded3177147cf0b605dbfb4ec148b6baa67a5e6",
     "pet_livecircle_visual_integration_body_head_before_pointer": "9420a72323ea68d1edbc1b7d618ea1e63b07eb92",
     "pet_pfs_backup_reconcile_body_head_before_pointer": "648cb0b3e278b7269c9bdea06a6b43287ef7cacd",
-    "pet_intelligent_character_memory_creative_dashboard_body_head_before_pointer": "60c696569d756a265b0715b240d19b074d7c380e"
+    "pet_intelligent_character_memory_creative_dashboard_body_head_before_pointer": "60c696569d756a265b0715b240d19b074d7c380e",
+    "pet_branded_app_plugin_worker_body_head_before_pointer": "98ceedcf80a9a3352b3865687ac75c1093a83231"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -99,7 +100,7 @@
     "multi_music_facet_dashboard": "PRESENTATION_ONLY_FOR_GENUINE_MULTI_FACET_EVOLUTION_NOT_SHARED_RUNTIME",
     "audio_only_studio2_fx": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "renderer_compilation": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
-    "lyvra_pet": "CURRENT_INTELLIGENT_FRECH_MUSICAL_EMOTIONAL_CREATIVE_MEMORY_AWARE_EXPRESSION_SURFACE",
+    "lyvra_pet": "CURRENT_INTELLIGENT_FRECH_MUSICAL_EMOTIONAL_CREATIVE_MEMORY_AWARE_BRANDED_EXPRESSION_SURFACE",
     "longform_story_architecture": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "studio2_project_chat_mix_director": "CURRENT_PRODUCTIVE_ADDITIVE_REV93",
     "facet_boundary_model": "TRACK_DESIGN|SPEECH_DESIGN|SUNO_STUDIO_2|CENTRAL_ANALYTICS|MUSIC_MEMORY",
@@ -126,10 +127,10 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "CHATGPT_APP_UI_VERIFIED_WEBLYVRA_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.48_ACCOUNT_0.13.45_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.49_ACCOUNT_0.13.46_CURRENT_VERIFIED",
     "pfs_plugin_backup_handoff": "PFS_R02_LYVRA_LEG_APPROVED_CLIC_BINDING_REFRESH_REQUIRED",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
-    "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.0.1",
+    "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.0.2",
     "workspace_continuity_v2": "SYSTEMSTART_BARE_WHOLE_SYSTEMSTART_SUFFIX_EXACT_WORKSPACE_NEW_NEXT_LINEAGE_SCOPED_UPDATE_ADDITIVE",
     "weblyvra_freshness": "CURRENT_PRODUCTIVE_VERIFIED_89_OF_89",
     "track_design_creator_output_surface": "CURRENT_PRODUCTIVE_VERIFIED_SUNO_ALIGNED_FOUR_CODEBOX_CONTRACT",
@@ -150,7 +151,7 @@
     "psychoacoustic_control_priority": "VERY_HIGH_CURRENT_PRODUCTIVE",
     "emotion_harmony_relation": "EMOTION_NE_HARMONY_RELATIONAL_COHERENCE_GUARD_CURRENT",
     "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
-    "plugin_impact_last_update": "APPLIED_NATIVE_0.1.48_ACCOUNT_0.13.45_DIRECT_READBACK_VERIFIED",
+    "plugin_impact_last_update": "APPLIED_NATIVE_0.1.49_ACCOUNT_0.13.46_APP_BINDING_AND_PET_LOGO_DIRECT_READBACK_VERIFIED",
     "native_plugin_branding": "DISPLAY_NAME_LYVRA_LOGO_BYTE_BOUND_SHA256_1423681dcca2cfe2a6d0ff045b9694a3df76b4761d513f114d7b8b723cf025b5",
     "peer_improvement_proposal_intake": "CURRENT_STANDARD_CHECK_COMPLETE_NO_NEW_UNADOPTED_PROPOSAL_THIS_CYCLE",
     "latest_external_improvement_candidate": "CLIC_TARGET_STATE_ANALYSIS_ADOPTED_BY_EXPLICIT_LYVRA_NATIVE_EVOLUTION",
@@ -173,22 +174,22 @@
     "speech_longform_degradation_ab": "OPEN",
     "paragraph_end_articulation_ab": "OPEN",
     "account_rev96_plugin_parity": "VERIFIED_0.13.42",
-    "native_plugin_current": "VERIFIED_0.1.48_INTELLIGENT_PET_SKILL",
+    "native_plugin_current": "VERIFIED_0.1.49_PET_APP_BINDING_BRANDED",
     "valid_newer_evolution_preserved": "VERIFIED_STUDIO2_DAEMON_VISUAL_AND_FACET_CARRIERS",
     "pfs_plugin_backup_approval": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
     "stable_set_convergence": "NOT_CONVERGED_PFS_CLIC_BINDING_REFRESH_REQUIRED",
     "private_plugin_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED",
     "lyvra_pet_managed_app_root": "LYVRA_PET/app/",
     "lyvra_pet_plugin_package_root": "LYVRA_PET/plugin-package/",
-    "lyvra_pet_pfs_handoff": "NEW_PET_EVOLUTION_PENDING_PFS_BACKUP_AFTER_PREVIOUS_PARTIAL",
+    "lyvra_pet_pfs_handoff": "NEW_BRANDED_PET_APP_PLUGIN_EVOLUTION_PENDING_PFS_BACKUP",
     "lyvra_pet_pfs_handoff_path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
     "lyvra_pet_livecircle": "CURRENT_PRODUCTIVE",
     "lyvra_pet_rehydration": "CURRENT_PRODUCTIVE_SUB_REHYDRATION",
     "lyvra_pet_visual_interface": "CURRENT_SHARED_VISUAL_STANDARD_PET_ADAPTER",
     "lyvra_pet_facet_integration": "BOUND_BY_REFERENCE_TO_ANALYTICS_MUSIC_MEMORY_SPEECH_STUDIO2",
-    "lyvra_pet_dashboard": "DEPLOYED_DEDICATED_PET_DASHBOARD",
-    "lyvra_pet_website": "DEPLOYED_PET_NAVIGATION_AND_VERIFIED_ATLAS_SOURCE",
-    "account_plugin_current": "VERIFIED_0.13.45_INTELLIGENT_PET_SKILL",
+    "lyvra_pet_dashboard": "DEPLOYED_DEDICATED_BRANDED_PET_DASHBOARD",
+    "lyvra_pet_website": "DEPLOYED_BRANDED_PET_SURFACES",
+    "account_plugin_current": "VERIFIED_0.13.46_PET_APP_BINDING_BRANDED",
     "lyvra_pet_pfs_backup": "PARTIAL_9_OF_35_TEXT_BLOB_IDENTICAL_BINARY_TRANSPORT_BLOCKED",
     "lyvra_pet_pfs_backup_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
     "lyvra_pet_pfs_backup_recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
@@ -198,12 +199,19 @@
     "relational_character_communication": "CURRENT_PRODUCTIVE_CAUSAL_CONTEXTUAL",
     "semantic_causal_relational_memory": "CURRENT_PRODUCTIVE_VIEW_POSITIVE_NEGATIVE_MIXED_EVIDENCE_AWARE",
     "creative_exploration_learning": "CURRENT_PRODUCTIVE_OWN_IDEAS_EXPERIMENTAL_COURAGE_RELATIONAL_LEARNING",
-    "lyvra_pet_skill": "CURRENT_PRODUCTIVE_DUAL_PLUGIN_NATIVE_SKILL",
+    "lyvra_pet_skill": "CURRENT_PRODUCTIVE_DUAL_PLUGIN_NATIVE_SKILL_APP_BOUND_BRANDED",
     "lyvra_pet_dashboard_url": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
-    "lyvra_pet_dashboard_deployment": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
-    "lyvra_pet_website_deployment": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
+    "lyvra_pet_dashboard_deployment": "b9c44d0a-fab2-478a-857c-68c700757100",
+    "lyvra_pet_website_deployment": "071cf372-4050-4187-9301-c925c1b9d4a5",
     "lyvra_pet_surface_navigation": "WEBSITE_MAIN_DASHBOARD_PET_DASHBOARD_PET_APP_LINKED_RADIO_HANDOFF_READY",
-    "lyvra_pet_radio_handoff": "READY_FOR_666STREAM_NATIVE_CONSUMPTION"
+    "lyvra_pet_radio_handoff": "READY_FOR_666STREAM_NATIVE_CONSUMPTION",
+    "lyvra_pet_app_binding": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "lyvra_pet_branding": "CURRENT_PET_SCOPED_MAIN_LYVRA_BRANDING_PRESERVED",
+    "lyvra_pet_logo_sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+    "lyvra_pet_logo_repo_path": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
+    "lyvra_pet_worker_deployment": "de607f5d-99ba-406a-a4b7-8378c6511468",
+    "lyvra_pet_worker_version_id": "2dd20285-740f-4349-a145-a73807961fda",
+    "lyvra_pet_host_shell_icon": "READBACK_PENDING"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -2547,6 +2555,62 @@
     "radio_mutation": false,
     "pfs_new_evolution_backup": "PENDING_666PFS_UPDATE",
     "freeze_receipt": "LYVRA_PET/recovery/PET_INTELLIGENT_CHARACTER_MEMORY_CREATIVE_DASHBOARD_FREEZE_2026-10-08.md",
+    "free_only": true
+  },
+  "pet_branding_evolution_2026_10_08": {
+    "status": "CURRENT_PRODUCTIVE",
+    "scope": "PET_APP_PLUGIN_WORKER_DASHBOARD_BRANDING",
+    "main_lyvra_logo_replaced": false,
+    "pet_app_id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "pet_logo": {
+      "repo_path": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
+      "plugin_repo_path": "LYVRA_PET/plugin-package/assets/lyvra-pet-app-icon-256.png",
+      "dashboard_path": "WEBLyvra/live/dist/dashboard/pet/assets/lyvra-pet-app-icon-256.png",
+      "git_blob": "fda0428e88d8bdf5984486712300bc5c3c084ca9",
+      "sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+      "bytes": 9675,
+      "dimensions": "256x256"
+    },
+    "plugins": {
+      "native": {
+        "version": "0.1.49",
+        "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+        "app_binding": "PASS",
+        "pet_logo_asset": "PASS"
+      },
+      "account": {
+        "version": "0.13.46",
+        "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791",
+        "app_binding": "PASS",
+        "pet_logo_asset": "PASS"
+      }
+    },
+    "worker": {
+      "version": "2.0.2",
+      "deployment_id": "de607f5d-99ba-406a-a4b7-8378c6511468",
+      "version_id": "2dd20285-740f-4349-a145-a73807961fda",
+      "source_readback": "PASS",
+      "logo_route": "/asset/pet-logo.png",
+      "logo_route_source_readback": "PASS"
+    },
+    "web": {
+      "deployment_id": "071cf372-4050-4187-9301-c925c1b9d4a5",
+      "build": "PASS",
+      "deploy": "PASS"
+    },
+    "dashboard": {
+      "deployment_id": "b9c44d0a-fab2-478a-857c-68c700757100",
+      "build": "PASS",
+      "deploy": "PASS",
+      "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+      "logo_file_deployed": "PASS"
+    },
+    "host_visual": {
+      "embedded_app_logo_source": "VERIFIED_DEPLOYED",
+      "shell_icon": "READBACK_PENDING"
+    },
+    "pfs_backup": "PENDING_666PFS_UPDATE",
+    "freeze_receipt": "LYVRA_PET/recovery/PET_BRANDED_APP_PLUGIN_WORKER_FREEZE_2026-10-08.md",
     "free_only": true
   }
 }
