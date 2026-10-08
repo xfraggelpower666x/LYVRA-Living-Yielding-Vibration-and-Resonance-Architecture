@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_TO_PFS_BACKUP_HANDOFF_v1",
-  "status": "READY_FOR_PFS_NATIVE_CONSUMPTION",
+  "status": "READY_FOR_PFS_NATIVE_CONSUMPTION_COMPLETE_PET_SURFACE",
   "source_system": "LYVRA",
   "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
   "source_branch": "lyvra",
@@ -14,7 +14,11 @@
     "LYVRA_PET/recovery/",
     "LYVRA_PET/source-packages/",
     "LYVRA_PET/references/",
-    "LYVRA_PET/verification/"
+    "LYVRA_PET/verification/",
+    "LYVRA_PET/livecircle/",
+    "LYVRA_PET/rehydration/",
+    "LYVRA_PET/visual/",
+    "LYVRA_PET/integration/"
   ],
   "authority": {
     "live_functional": "LYVRA_REPOSITORY",
@@ -29,7 +33,22 @@
     "worker": "lyvra-pet-plugin-ui",
     "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
     "active_asset_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
-    "candidate_promoted": false
+    "candidate_promoted": false,
+    "plugin_surfaces": {
+      "account": {
+        "version": "0.13.43",
+        "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+      },
+      "native": {
+        "version": "0.1.47",
+        "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+      }
+    },
+    "weblyvra_deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+    "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "pet_visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
+    "facet_integration": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md"
   },
   "consumption_trigger": "666PFS UPDATE",
   "foreign_autoactivation": false
