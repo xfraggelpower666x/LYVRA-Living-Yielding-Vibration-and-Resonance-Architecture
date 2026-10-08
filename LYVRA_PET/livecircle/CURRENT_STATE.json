@@ -1,0 +1,21 @@
+{
+  "schema": "LYVRA_PET_LIVECIRCLE_CURRENT_v1",
+  "status": "CURRENT",
+  "parent_authority": "WHOLE_LYVRA",
+  "pet_id": "pet_6ab791129364819183885f44a21497a2",
+  "authority_root": "LYVRA_PET/",
+  "rehydration_manifest": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+  "visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
+  "app_state": "LYVRA_PET/app/APP_CURRENT.json",
+  "runtime_worker": "lyvra-pet-plugin-ui",
+  "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+  "active_asset": "LYVRA_PET/browser/assets/spritesheet-extended.png",
+  "active_asset_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+  "adaptive_learning": "LYVRA_PET/evolution/ADAPTIVE_LEARNING_CONTRACT.md",
+  "pfs_handoff": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
+  "main_plugin_binding": false,
+  "candidate_promoted": false,
+  "free_only": true,
+  "host_render_state": "CHATGPT_APP_UI_VERIFIED_SPRITE_VISUAL_READBACK_PENDING",
+  "foreign_autoactivation": false
+}
