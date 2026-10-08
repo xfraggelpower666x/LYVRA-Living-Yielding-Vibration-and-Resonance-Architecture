@@ -41,7 +41,8 @@
     "speech_rev96_plugin_reconcile_body_head_before_pointer": "5203d38c3c639c162acfdbd90e30d779d703c0b6",
     "pfs_r02_lyvra_leg_approval_body_head_before_pointer": "c3e7196e74d4e0fdfef1300ab2a361fefaed28b9",
     "pet_app_managed_repo_body_head_before_pointer": "58ded3177147cf0b605dbfb4ec148b6baa67a5e6",
-    "pet_livecircle_visual_integration_body_head_before_pointer": "9420a72323ea68d1edbc1b7d618ea1e63b07eb92"
+    "pet_livecircle_visual_integration_body_head_before_pointer": "9420a72323ea68d1edbc1b7d618ea1e63b07eb92",
+    "pet_pfs_backup_reconcile_body_head_before_pointer": "648cb0b3e278b7269c9bdea06a6b43287ef7cacd"
   },
   "authority_model": {
     "identity_authority": "LYVRA",
@@ -148,7 +149,7 @@
     "psychoacoustic_control_priority": "VERY_HIGH_CURRENT_PRODUCTIVE",
     "emotion_harmony_relation": "EMOTION_NE_HARMONY_RELATIONAL_COHERENCE_GUARD_CURRENT",
     "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
-    "plugin_impact_last_update": "NOT_APPLICABLE_EXTERNAL_STATUS_RECONCILIATION_ONLY",
+    "plugin_impact_last_update": "NOT_APPLICABLE_EXTERNAL_BACKUP_STATUS_RECONCILIATION_ONLY",
     "native_plugin_branding": "DISPLAY_NAME_LYVRA_LOGO_BYTE_BOUND_SHA256_1423681dcca2cfe2a6d0ff045b9694a3df76b4761d513f114d7b8b723cf025b5",
     "peer_improvement_proposal_intake": "CURRENT_STANDARD_CHECK_COMPLETE_NO_NEW_UNADOPTED_PROPOSAL_THIS_CYCLE",
     "latest_external_improvement_candidate": "CLIC_TARGET_STATE_ANALYSIS_ADOPTED_BY_EXPLICIT_LYVRA_NATIVE_EVOLUTION",
@@ -178,7 +179,7 @@
     "private_plugin_backup_write": "BLOCKED_STABLE_SET_NOT_CONVERGED",
     "lyvra_pet_managed_app_root": "LYVRA_PET/app/",
     "lyvra_pet_plugin_package_root": "LYVRA_PET/plugin-package/",
-    "lyvra_pet_pfs_handoff": "READY_FOR_PFS_NATIVE_CONSUMPTION_COMPLETE_PET_SURFACE",
+    "lyvra_pet_pfs_handoff": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
     "lyvra_pet_pfs_handoff_path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
     "lyvra_pet_livecircle": "CURRENT_PRODUCTIVE",
     "lyvra_pet_rehydration": "CURRENT_PRODUCTIVE_SUB_REHYDRATION",
@@ -186,7 +187,10 @@
     "lyvra_pet_facet_integration": "BOUND_BY_REFERENCE_TO_ANALYTICS_MUSIC_MEMORY_SPEECH_STUDIO2",
     "lyvra_pet_dashboard": "DEPLOYED_WITH_WEBLYVRA_AND_INTERNAL_CONTRACTS",
     "lyvra_pet_website": "WEBLYVRA_DEPLOYMENT_VERIFIED_ATLAS_SOURCE",
-    "account_plugin_current": "VERIFIED_0.13.43_PET_SUBCONTINUITY_INTEGRATED"
+    "account_plugin_current": "VERIFIED_0.13.43_PET_SUBCONTINUITY_INTEGRATED",
+    "lyvra_pet_pfs_backup": "PARTIAL_9_OF_35_TEXT_BLOB_IDENTICAL_BINARY_TRANSPORT_BLOCKED",
+    "lyvra_pet_pfs_backup_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
+    "lyvra_pet_pfs_backup_recovery_root": "recovery/external/LYVRA_PET/2026-10-08/"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -2459,5 +2463,25 @@
     "candidate_promoted": false,
     "free_only": true,
     "freeze_receipt": "LYVRA_PET/recovery/PET_LIVECIRCLE_REHYDRATION_VISUAL_FREEZE_2026-10-08.md"
+  },
+  "pet_pfs_backup_reconcile_2026_10_08": {
+    "status": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
+    "pfs_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
+    "source_head": "fc16a98e74702f864d4d308dcc39773f90a8df93",
+    "recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
+    "source_files": 38,
+    "source_total_bytes": 102386502,
+    "text_source_count": 35,
+    "text_mirrored_blob_identical": 9,
+    "text_remaining": 26,
+    "binary_mirror": "WRITE_BLOCKED_CONNECTOR_TRANSPORT",
+    "active_atlas_identity_preserved": true,
+    "full_package_identity_preserved": true,
+    "cyborg_candidate_promoted": false,
+    "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
+    "authority_transfer": false,
+    "lyvra_authority_unchanged": true,
+    "no_new_child": true,
+    "plugin_impact": "NOT_APPLICABLE"
   }
 }
