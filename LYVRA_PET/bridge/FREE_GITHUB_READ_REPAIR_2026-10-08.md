@@ -29,3 +29,13 @@ Work branch: `lyvra-pet-free-auth-budget-20261008`.
 No forged approved event, no existing sprite mutation, no public token, no unsafe deployment, no separate personality, no auto activation of PFS or the radio.
 
 **Security note:** 5,000 requests/hour is a GitHub account-level nominal authenticated allowance, not a per-Worker guarantee. This candidate prevents *anonymous fallback* but does not yet provide a certified global 300/hour limit.
+
+## Development continuation 2026-10-08
+
+- New `github-budget.mjs` implements a single SQLite-backed Durable Object rolling-window counter, with a ceiling of 300 PET-originated GitHub REST reservations per hour.
+- Both Worker paths (`/native-expression` and MCP `open_lyvra_pet`) call `petBudgetedFetcher(env)`.
+- Absence or failure of `LYVRA_PET_GITHUB_BUDGET` is fail-closed before any GitHub REST call.
+- This is a SOURCE READBACK ONLY. No executed concurrency test, deployed object, configured secret or live authenticated read has been confirmed.
+- Before staging, configure a SQLite DO migration `new_sqlite_classes: ["PetGithubBudget"]` and Durable Object binding `LYVRA_PET_GITHUB_BUDGET` targeting the exported class.
+- This single object only enforces the PET budget. Other GitHub users sharing the token can consume the account's separate 5,000/h quota.
+- Regenerate the production Worker bundle before deployment: source-only GitHub updates do not update the deployed script.
