@@ -285,7 +285,7 @@ export default {
 
     if(url.pathname==="/native-expression"){
       if(request.method!=="GET")return json({status:"METHOD_NOT_ALLOWED"},405);
-      try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID}));}
+      try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN}));}
       catch(e){return json(publicNativeSourceFailure(e),503);}
     }
     if(url.pathname.startsWith('/asset/poses/')){
