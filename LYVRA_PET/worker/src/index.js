@@ -47,17 +47,32 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   heart(w*heartX,h*heartY,w*.032,color);ctx.globalAlpha=1;
   // Glühender Stab als Ausdrucksebene. Die endgültige Handverankerung braucht geprüfte neue Frames.
   const angle=reduced.matches?-.5:Math.sin(t*1.8)*.25-.5;
-  const x=w*.69,y=h*.42;
+  const x=w*.60,y=h*.48;
   ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.strokeStyle=state.baton;ctx.shadowColor=state.baton;ctx.shadowBlur=12;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(w*.16,-h*.09);ctx.stroke();ctx.restore();
   if(state.holo!=="none"){
-   const symbols=state.holo==="notes"?["♪","♫","♬"]:state.holo==="speech"?["a","…","∿"]:state.holo==="clips"?["▰","∿","▱"]:["⌒","∿"];
-   for(let i=0;i<8;i++){const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));ctx.save();ctx.translate(w*.5+Math.cos(a)*r,h*.48+Math.sin(a)*h*.22);ctx.fillStyle=i%2?"#ff45ca":"#38eeff";ctx.shadowColor=ctx.fillStyle;ctx.shadowBlur=10;ctx.globalAlpha=.45+.4*Math.sin(i+t)**2;ctx.font=(w*.065)+"px system-ui";ctx.fillText(symbols[i%symbols.length],0,0);ctx.restore();}
+   for(let i=0;i<8;i++){
+    const a=t*.55+i*Math.PI/4,r=w*(.25+.035*Math.sin(t+i));
+    let px=w*.5+Math.cos(a)*r,py=h*.48+Math.sin(a)*h*.22;
+    if(px>w*.38&&px<w*.62&&py<h*.66)px=px<w*.5?w*.32:w*.68;
+    ctx.save();ctx.translate(px,py);ctx.strokeStyle=ctx.fillStyle=i%2?"#ff45ca":"#38eeff";ctx.shadowColor=ctx.fillStyle;ctx.shadowBlur=10;ctx.lineWidth=1.5;ctx.globalAlpha=.45+.4*Math.sin(i+t)**2;
+    if(state.holo==="notes"){
+     ctx.beginPath();ctx.ellipse(0,0,3.5,2.5,-.35,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.moveTo(3,-1);ctx.lineTo(3,-14);ctx.lineTo(10,-10);ctx.stroke();
+    }else if(state.holo==="speech"){
+     ctx.beginPath();for(let j=0;j<=20;j++){const yy=Math.sin(j*.7+t)*3; j?ctx.lineTo(j-10,yy):ctx.moveTo(j-10,yy);}ctx.stroke();
+    }else if(state.holo==="clips"){
+     ctx.strokeRect(-10,-5,20,10);ctx.beginPath();for(let j=0;j<16;j++){const yy=Math.sin(j*1.1)*3;j?ctx.lineTo(j-8,yy):ctx.moveTo(j-8,yy);}ctx.stroke();
+    }else{
+     ctx.beginPath();ctx.arc(0,0,9,Math.PI*.15,Math.PI*.85);ctx.stroke();
+    }
+    ctx.restore();
+   }
   }
   raf=requestAnimationFrame(draw);
  }
  raf=requestAnimationFrame(draw);
  return Object.freeze({set(event){state=expressionFor(event);return state;},setBeat(bpm){signal={bpm,received:performance.now()};},dispose(){stopped=true;cancelAnimationFrame(raf);canvas.remove();}});
 }
+
 
 // Beobachtete Ereignisse projizieren; keine eigene Persönlichkeit oder Erinnerungswurzel.
 async function projectVerifiedEvidence(event,{verifyEvidence,revision,now=Date.now()}={}){
@@ -80,6 +95,8 @@ async function projectVerifiedEvidence(event,{verifyEvidence,revision,now=Date.n
  }
  return Object.freeze({status:"VERIFIED_EVENT_PROJECTION",expression:expressionFor(input),render_input:Object.freeze({...input}),source_revision:revision,evidence_id:snapshot.evidence_id,observed_at:snapshot.observed_at,inference:"BOUNDED_EVENT_MAPPING",memory_written:false});
 }
+
+
 // Brücke zu Whole-LYVRA-Ereignissen: Prüfer bleiben beim autorisierten Host.
 function createEvidenceEffectController({effects,getRevision,verifyEvidence,clock=()=>Date.now(),schedule=setTimeout,cancel=clearTimeout}){
  let generation=0,closed=false,timer=null;
@@ -106,6 +123,7 @@ function createEvidenceEffectController({effects,getRevision,verifyEvidence,cloc
  function dispose(){closed=true;++generation;clear();}
  return Object.freeze({accept,reset,dispose});
 }
+
 
 const stage=document.createElement("div");Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
 const figure=document.getElementById("sprite");figure.parentNode.insertBefore(stage,figure);stage.append(figure);Object.assign(figure.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
