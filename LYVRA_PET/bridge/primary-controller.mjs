@@ -6,6 +6,7 @@ export function createPrimaryController({render,verifySource=async()=>false,cloc
   function idle(){render({...resolveExpression(null,clock()),mode:"NATIVE_IDLE"});}
   function clear(){if(timer!==null)cancel(timer);timer=null;}
   async function accept(input){
+    if(closed)return false;
     const ticket=++sequence;clear();
     // Eingabe kopieren, damit sie während asynchroner Prüfung nicht verändert wird.
     const snapshot=input && {pet_id:input.pet_id,authority:input.authority,source_revision:input.source_revision,issued_at:input.issued_at,valid_until:input.valid_until,context:input.context,intensity:input.intensity};
