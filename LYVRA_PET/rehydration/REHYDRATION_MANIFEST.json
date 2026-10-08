@@ -4,6 +4,7 @@
   "whole_lyvra_rehydration_precedes_pet_rehydration": true,
   "required_sequence": [
     "READ_WHOLE_LYVRA_CURRENT_AUTHORITY",
+    "READ_LYVRA_CHARACTER_PERSONALITY_SUB_REHYDRATION",
     "RESOLVE_PET_REPOSITORY_AUTHORITY",
     "READ_LYVRA_PET_WHOLE_INTEGRATION_CONTRACT",
     "READ_PET_LIVECIRCLE_CURRENT_STATE",
@@ -21,6 +22,7 @@
   "coverage_ledger": [
     "PET_IDENTITY_RELATION_TO_WHOLE_LYVRA",
     "PET_RELATIONSHIP_CONTEXT",
+    "PET_CHARACTER_PERSONALITY_BINDING",
     "PET_ASSET_PROVENANCE",
     "PET_APP_MCP_WORKER",
     "PET_VISUAL_INTERFACE",
@@ -38,5 +40,12 @@
     "AUTO_ACTIVATE_PFS"
   ],
   "completion_rule": "ALL_REQUIRED_PET_DOMAINS_VERIFIED_OR_JUSTIFIED_NOT_APPLICABLE",
-  "current_work_scope_position": "LAST"
+  "current_work_scope_position": "LAST",
+  "character_personality": {
+    "livecircle": "LYVRA_NATIVE_RUNTIME/current/personality/CHARACTER_PERSONALITY_LIVECIRCLE.md",
+    "rehydration": "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "pet_adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
+    "pet_expression_model": "LYVRA_PET/personality/CURRENT_EXPRESSION_MODEL.json"
+  }
 }
