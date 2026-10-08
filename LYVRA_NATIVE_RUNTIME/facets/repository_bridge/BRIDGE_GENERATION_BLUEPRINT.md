@@ -25,3 +25,6 @@ B: RECOVERY_ANCHOR and bounded approved target.
 C: PUSH_RECEIPT with commit.
 D: REMOTE_BLOB_READBACK_PASS N/N (required for backup PASS).
 E: PLUGIN_RELEASE_AND_UI_PARITY explicitly NOT_APPLICABLE unless separately verified.
+
+## Windows PowerShell native-command recursion bug (2026-10-09)
+Observed LYVRA ALIVE bridge: `LOCAL PREFLIGHT PASS: 47 Dateien`, then `Skriptfehler aufgrund eines Überlaufs der Aufruftiefe` before clone/commit. Causal root: helper function named `Git` is case-insensitively identical to executable command `git` in PowerShell, so `& git` inside helper may recursively invoke that same function until depth overflow. Fix: `Invoke-GitSafe` helper and resolve `(Get-Command git.exe -CommandType Application).Source`, then call `& $gitExe` for all native calls. Never name wrappers the same as their executable. Guard: assert helper names cannot shadow PowerShell/native commands; syntax and payload SHA tests; bridge result remains NOT_UPLOADED until separately confirmed. Patched ALIVE bundle leaves original 47 files unchanged.
