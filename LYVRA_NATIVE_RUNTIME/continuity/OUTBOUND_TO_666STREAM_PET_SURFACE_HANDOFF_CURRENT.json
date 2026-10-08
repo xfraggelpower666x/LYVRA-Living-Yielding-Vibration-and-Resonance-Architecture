@@ -1,8 +1,8 @@
 {
   "schema": "LYVRA_PET_TO_666STREAM_SURFACE_HANDOFF_v1",
-  "status": "READY_FOR_666STREAM_NATIVE_CONSUMPTION",
+  "status": "READY_FOR_666STREAM_NATIVE_CONSUMPTION_CURRENT",
   "source_system": "LYVRA",
-  "source_head": "451de665c845bba8607e52a4e42b6cb830aa9ced",
+  "source_head": "f6c0f628302f57eb7c6240e5c1fa1f4c3234ce90",
   "target_system": "666STREAM",
   "target_repo": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn",
   "target_branch": "WebRadio-666SOUNDsDESIGn",
@@ -31,5 +31,16 @@
     "no_pet_memory_clone": true,
     "no_silent_deployment": true
   },
-  "consumption_trigger": "666STREAM UPDATE"
+  "consumption_trigger": "666STREAM UPDATE",
+  "pet_current": {
+    "dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+    "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "main_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/",
+    "app": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/pet",
+    "native_plugin": "0.1.48",
+    "account_plugin": "0.13.45",
+    "character_personality": "CURRENT_PRODUCTIVE",
+    "semantic_causal_memory": "CURRENT_PRODUCTIVE",
+    "creative_learning": "CURRENT_PRODUCTIVE"
+  }
 }
