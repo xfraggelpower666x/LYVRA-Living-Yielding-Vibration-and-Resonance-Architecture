@@ -1,0 +1,37 @@
+{
+  "status": "STAGED_NOT_DEPLOYED",
+  "verified_at": "2026-10-08",
+  "candidate_source_revision": "f52385289c9f14cf6844c9e566d29a38f0b00d7d",
+  "production_revision_observed": "5d57c9966663548919aed39cebdfe0545f0ff384",
+  "cloudflare": {
+    "version_id": "dd50275c-7a1d-4ab3-bdf9-19bed2adbbc9",
+    "number": 5,
+    "script_etag": "cf1e76796ab94d8f99c30f15f9207f45b92a3ff44bfa3d01007e26003ea66ecc",
+    "source_sha256": "4befb5909e97a669502e541ea90ff28f38ac540400c89900cac8d4c241abe5e1",
+    "readback_verified": true,
+    "active_deployment": "de607f5d-99ba-406a-a4b7-8378c6511468",
+    "active_version": "2dd20285-740f-4349-a145-a73807961fda",
+    "candidate_traffic_percentage": 0
+  },
+  "live_browser": {
+    "url": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/pet",
+    "original_sprite_visible": true,
+    "fraggle_waving_label_and_sprite_verified": true,
+    "music_jumping_label_verified": true,
+    "logo_dom_loaded": {
+      "width": 256,
+      "height": 256
+    },
+    "logo_screenshot_visible": false,
+    "new_effects_live": false
+  },
+  "remaining": [
+    "New original-compatible yawn/stomp/humor/hand-grip frames",
+    "Authenticated Whole LYVRA event producer",
+    "Candidate browser and host effect rendering",
+    "Plugin impact and promotion governance"
+  ],
+  "local_preview_browser_block": "Browser URL policy does not allow file: navigation; no bypass attempted",
+  "production_mutated": false,
+  "backup_approval_adopted": false
+}
