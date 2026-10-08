@@ -1,0 +1,36 @@
+{
+  "schema": "LYVRA_PET_TO_PFS_BACKUP_HANDOFF_v1",
+  "status": "READY_FOR_PFS_NATIVE_CONSUMPTION",
+  "source_system": "LYVRA",
+  "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "source_branch": "lyvra",
+  "source_root": "LYVRA_PET/",
+  "backup_scope": [
+    "LYVRA_PET/app/",
+    "LYVRA_PET/browser/",
+    "LYVRA_PET/worker/",
+    "LYVRA_PET/deployment/",
+    "LYVRA_PET/plugin-package/",
+    "LYVRA_PET/recovery/",
+    "LYVRA_PET/source-packages/",
+    "LYVRA_PET/references/",
+    "LYVRA_PET/verification/"
+  ],
+  "authority": {
+    "live_functional": "LYVRA_REPOSITORY",
+    "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
+    "pfs_runtime_authority": "NONE",
+    "pfs_deployment_authority": "NONE",
+    "pfs_routing_authority": "NONE",
+    "cross_system_merge": false
+  },
+  "current_pet": {
+    "pet_id": "pet_6ab791129364819183885f44a21497a2",
+    "worker": "lyvra-pet-plugin-ui",
+    "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+    "active_asset_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+    "candidate_promoted": false
+  },
+  "consumption_trigger": "666PFS UPDATE",
+  "foreign_autoactivation": false
+}
