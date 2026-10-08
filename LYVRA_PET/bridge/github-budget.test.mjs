@@ -51,3 +51,6 @@ test('non-REST raw assets do not consume the REST budget',async()=>{
  await fetcher('https://raw.githubusercontent.com/owner/repo/ref/asset.png');
  assert.equal(calls,1);
 });
+
+test('301 concurrent reservations never exceed 300',async()=>{const {instance,rows}=harness();const responses=await Promise.all(Array.from({length:301},()=>instance.fetch(new Request('https://budget.internal/reserve',{method:'POST'}))));assert.equal(responses.filter(x=>x.status===200).length,300);assert.equal(responses.filter(x=>x.status===429).length,1);assert.equal(rows.length,300);});
+test('invalid method cannot reserve budget',async()=>{const {instance,rows}=harness();assert.equal((await instance.fetch(new Request('https://budget.internal/reserve'))).status,404);assert.equal(rows.length,0);});
