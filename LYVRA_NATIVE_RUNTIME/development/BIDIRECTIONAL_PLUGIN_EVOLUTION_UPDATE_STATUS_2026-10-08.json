@@ -1,19 +1,21 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "PARTIAL_ALIVE_RUNTIME_READBACK_PENDING",
+  "status": "PARTIAL_BOTH_PLUGIN_RELEASES_READABLE_SEMANTIC_PARITY_PENDING",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
   "contract": "LYVRA_NATIVE_RUNTIME/development/BIDIRECTIONAL_PLUGIN_NATIVE_EVOLUTION_LIFECIRCLE.md",
   "native_plugin": {
     "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-    "version": "0.1.46",
-    "release_id": "pluginrel_6ac6d81b11208191831852d02d3b1938",
-    "readback": "VERIFIED"
+    "version": "0.1.47",
+    "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000",
+    "readback": "VERIFIED_PLUGIN_CREATOR_METADATA_AND_FILES"
   },
   "account_plugin": {
-    "version_from_last_pointer": "0.13.42",
-    "editable_live_release_readback": "READBACK_PENDING",
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.43",
+    "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7",
+    "editable_live_release_readback": "VERIFIED_PLUGIN_CREATOR_METADATA_AND_FILES",
     "mutation": "NONE"
   },
   "peer_notices": [
@@ -112,5 +114,19 @@
     "disposition": "EVIDENCE_RECORDED_NO_REPEATED_IDENTICAL_PROBE",
     "next": "Continue normal repo-authorized native developments; require ALIVE host provenance for runtime parity; do not delay safe independent native work",
     "classification": "PARTIAL_READBACK_PENDING"
+  },
+  "latest_reconciliation_2026_10_08": {
+    "source_head": "dbc7fe29da545608e30aa11d7225713b4771c4d1",
+    "current_pointer_blob": "4f875f567fb43e4d6bbf0b26cf90d2b3cfabec16",
+    "pet_newer_evolution": "PRESERVED",
+    "both_plugin_access": "VERIFIED",
+    "both_plugin_release_metadata": "VERIFIED",
+    "native_bidirectional_skill": "PRESENT",
+    "alive_same_named_bidirectional_skill": "NOT_PRESENT",
+    "semantic_equivalence": "PENDING_DEEP_DIFF",
+    "runtime_transport": "NOT_PROVEN",
+    "pfs_backup": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
+    "pointer": "ALREADY_NEWER_NOT_MUTATED",
+    "writes_to_plugins": "NONE"
   }
 }
