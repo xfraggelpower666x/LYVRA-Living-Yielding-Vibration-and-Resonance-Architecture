@@ -9,7 +9,7 @@
   "sites_version": 15,
   "site_assets_source_commit": "498c4b1bc41e53dde3d81d085ca1763e974ba353",
   "date": "2026-10-01",
-  "hosting_status": "DEPLOYMENT_VERIFIED_USER_BROWSER_CONFIRMED",
+  "hosting_status": "DEPLOYMENT_VERIFIED_CLOUDFLARE_API",
   "target_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
   "tests": "ALL_THREE_AUTOMATED_SUITES_PASS",
   "not_verified": [
@@ -20,7 +20,7 @@
   ],
   "scope": "Only WEBLyvra website presentation. Native runtime and previous releases unchanged.",
   "pages_project_name": "weblyvra-live",
-  "deployed_source_commit": "b163872347380b5e0795ea0b8fca1908571005ac",
+  "deployed_source_commit": "71bb048e7a9ddd493f23591ef7dfb34c9661dabe",
   "deployment_evidence_path": "WEBLyvra/deployment/PRODUCTION_STATUS_2026-10-01.json",
   "deployment_documentation_commit": "a0ed30eab5df455503cdf4e95c4b2f384640be99",
   "operator_reachability_confirmation": {
@@ -42,5 +42,27 @@
     "tests": "THREE_AUTOMATED_SUITES_PASS",
     "frozen_release": "v1.1.0_UNCHANGED",
     "pfs_backup": "PREVIOUS_SNAPSHOT_UNCHANGED"
+  },
+  "pet_visual_integration": {
+    "status": "DEPLOYED_VERIFIED_ATLAS_SOURCE",
+    "pages_project": "weblyvra-live",
+    "deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "custom_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "website_pet_files": [
+      "dist/pet-presence.css",
+      "dist/pet-presence.js",
+      "dist/index.html"
+    ],
+    "dashboard_pet_files": [
+      "dist/dashboard/pet-dashboard.css",
+      "dist/dashboard/pet-dashboard.js",
+      "dist/dashboard/index.html"
+    ],
+    "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+    "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
+    "verified_atlas_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+    "browser_visual_readback": "PENDING",
+    "free_only": true
   }
 }
