@@ -8,7 +8,7 @@
 :root{color-scheme:dark;--bg:#060811;--panel:#0d1220;--cyan:#6ef2ff;--pink:#ff5cb8;--lila:#a56cff;--text:#eef5ff;--muted:#91a1ba}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 10%,#201335 0,#090b15 42%,#05070d 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .shell{width:min(1120px,calc(100% - 28px));margin:auto;padding:28px 0 52px}
-.top{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}.kicker{font-size:.72rem;letter-spacing:.18em;color:var(--cyan)}h1{margin:.35rem 0 0;font-size:clamp(2rem,6vw,4rem);line-height:.95}.status{border:1px solid #6ef2ff66;border-radius:999px;padding:8px 12px;font-size:.72rem;letter-spacing:.08em;color:#c9fbff;background:#07101bcc}
+.top{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}.brandTitle{display:flex;align-items:center;gap:14px}.petBrandLogo{width:86px;height:86px;object-fit:contain;filter:drop-shadow(0 0 18px #ff5cb866)}.kicker{font-size:.72rem;letter-spacing:.18em;color:var(--cyan)}h1{margin:.35rem 0 0;font-size:clamp(2rem,6vw,4rem);line-height:.95}.status{border:1px solid #6ef2ff66;border-radius:999px;padding:8px 12px;font-size:.72rem;letter-spacing:.08em;color:#c9fbff;background:#07101bcc}
 .hero{display:grid;grid-template-columns:260px 1fr;gap:26px;margin-top:26px;padding:22px;border:1px solid #6ef2ff33;border-radius:26px;background:#090d18d9;box-shadow:0 0 54px #6ef2ff12,inset 0 0 42px #ff5cb80b}
 .sprite{width:192px;height:208px;margin:auto;border-radius:22px;background-image:url("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/spritesheet-extended.png");background-repeat:no-repeat;background-size:1536px 2288px;background-position:0 0;border:1px solid #6ef2ff66;box-shadow:0 0 30px #6ef2ff35;filter:drop-shadow(0 0 20px #ff5cb855)}
 .state{text-align:center;margin-top:10px;font-size:.75rem;letter-spacing:.12em;color:#ffd7f2}
@@ -21,7 +21,7 @@
 </style>
 </head>
 <body><main class="shell">
-<header class="top"><div><div class="kicker">L.Y.V.R.A. · NATIVE EXPRESSION SURFACE</div><h1>🐾 PET DASHBOARD</h1></div><div class="status">CURRENT · FREE_ONLY · ONE LYVRA · PET DASHBOARD v1.0.1</div></header>
+<header class="top"><div class="brandTitle"><img class="petBrandLogo" src="./assets/lyvra-pet-app-icon-256.png" alt="L.Y.V.R.A. PET Logo"><div><div class="kicker">L.Y.V.R.A. · NATIVE EXPRESSION SURFACE</div><h1>🐾 PET DASHBOARD</h1></div></div><div class="status">CURRENT · FREE_ONLY · ONE LYVRA · PET DASHBOARD v1.0.2</div></header>
 <section class="hero" aria-label="LYVRA Pet">
 <div><div class="sprite" id="sprite" role="img" aria-label="Animiertes L.Y.V.R.A. Pet"></div><div class="state" id="state">IDLE · LIVING PRESENCE</div></div>
 <div>
