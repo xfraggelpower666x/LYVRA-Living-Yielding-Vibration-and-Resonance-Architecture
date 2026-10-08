@@ -26,3 +26,18 @@ window.addEventListener("pagehide",()=>{++bridgeSequence;if(primaryBridge)primar
 bridgeReady.catch(()=>{sprite.dataset.bridgeStatus="UNAVAILABLE";});
 
 boot().catch(err=>{label.textContent="RENDERER ERROR";console.error(err)});
+
+let expressionEffects=null;
+const effectsReady=import("../bridge/expression-effects.mjs").then(module=>{
+ const stage=document.createElement("div");Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto",overflow:"visible"});
+ sprite.parentNode.insertBefore(stage,sprite);stage.append(sprite);Object.assign(sprite.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
+ expressionEffects=module.mountExpressionEffects(stage,{heartX:.5,heartY:.32});
+ return expressionEffects;
+});
+window.lyvraPetExpression=Object.freeze({
+ async preview(event){const effects=await effectsReady;const state=effects.set(event);label.textContent="AUSDRUCKSVORSCHAU · "+state.facet+" · "+state.gesture;return {...state,newGestureFramesAvailable:false};},
+ async setBeat(bpm){(await effectsReady).setBeat(bpm);},
+ instance:"PRIMARY_NATIVE",gptRequired:false
+});
+effectsReady.catch(()=>{sprite.dataset.effectsStatus="UNAVAILABLE";});
+window.addEventListener("pagehide",()=>{if(expressionEffects)expressionEffects.dispose();});
