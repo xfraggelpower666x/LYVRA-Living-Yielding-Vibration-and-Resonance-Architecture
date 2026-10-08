@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_TO_PFS_BACKUP_HANDOFF_v1",
-  "status": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
+  "status": "NEW_PET_EVOLUTION_PENDING_PFS_BACKUP_AFTER_PREVIOUS_PARTIAL",
   "source_system": "LYVRA",
   "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
   "source_branch": "lyvra",
@@ -18,7 +18,8 @@
     "LYVRA_PET/livecircle/",
     "LYVRA_PET/rehydration/",
     "LYVRA_PET/visual/",
-    "LYVRA_PET/integration/"
+    "LYVRA_PET/integration/",
+    "LYVRA_PET/personality/"
   ],
   "authority": {
     "live_functional": "LYVRA_REPOSITORY",
@@ -36,19 +37,24 @@
     "candidate_promoted": false,
     "plugin_surfaces": {
       "account": {
-        "version": "0.13.43",
-        "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+        "version": "0.13.45",
+        "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
       },
       "native": {
-        "version": "0.1.47",
-        "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+        "version": "0.1.48",
+        "release_id": "pluginrel_6ac70d23233481919f22624348351154"
       }
     },
-    "weblyvra_deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "weblyvra_deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
     "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
     "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
     "pet_visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
-    "facet_integration": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md"
+    "facet_integration": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md",
+    "dashboard_deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+    "character_personality": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json"
   },
   "consumption_trigger": "666PFS UPDATE",
   "foreign_autoactivation": false,
@@ -69,5 +75,17 @@
     "lyvra_authority_unchanged": true,
     "no_new_child": true
   },
-  "next": "PFS_MAY_CONTINUE_PARTIAL_MIRROR_WHEN_AUTHORIZED_TRANSPORT_AVAILABLE"
+  "next": "666PFS UPDATE_TO_BACKUP_NEW_PET_PERSONALITY_SKILL_DASHBOARD_EVOLUTION",
+  "dependency_scope": [
+    "LYVRA_NATIVE_RUNTIME/current/personality/CHARACTER_PERSONALITY_LIVECIRCLE.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_CHARACTER_COMMUNICATION.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/SEMANTIC_CAUSAL_RELATIONAL_MEMORY.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_EXPLORATION_RELATIONAL_LEARNING.md",
+    "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+    "LYVRA_NATIVE_RUNTIME/current/skills/LYVRA_PET_SKILL_CONTRACT.md"
+  ]
 }
