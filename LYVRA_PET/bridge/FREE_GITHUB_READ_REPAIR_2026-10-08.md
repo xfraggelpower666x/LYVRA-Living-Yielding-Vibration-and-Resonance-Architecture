@@ -39,3 +39,17 @@ No forged approved event, no existing sprite mutation, no public token, no unsaf
 - Before staging, configure a SQLite DO migration `new_sqlite_classes: ["PetGithubBudget"]` and Durable Object binding `LYVRA_PET_GITHUB_BUDGET` targeting the exported class.
 - This single object only enforces the PET budget. Other GitHub users sharing the token can consume the account's separate 5,000/h quota.
 - Regenerate the production Worker bundle before deployment: source-only GitHub updates do not update the deployed script.
+
+## Maximal continuation: global cooldown, security and staging handoff
+
+- `github-budget.mjs` now stores 403/429 GitHub cooldown deadlines in the same SQLite-backed Durable Object as the 300-per-rolling-hour reservations.
+- Each REST request reserves before upstream; while a stored cooldown is active, the reservation endpoint refuses it even when another Worker isolate calls it.
+- Token-bearing REST requests use only `api.github.com`; raw asset reads do not receive `Authorization`.
+- Budget recognizes string, URL and Request inputs by exact HTTPS GitHub REST host.
+- Two further regression cases cover cooldown persistence and reject invalid (>24h) deadlines; the test harness now models the cooldown SQLite table.
+- Direct source and test blob readback: PASS. Execution of the NEW cooldown/auth tests on a full Node/Cloudflare bundle: **NOT VERIFIED**.
+- Production settings readback still shows only `LYVRA_PET_KEY_ID`, `LYVRA_PET_PUBLIC_KEY`, `LYVRA_PET_SIGNING_KEY`: no GitHub secret and no SQLite Durable Object binding.
+- 300-per-hour PET budget must NOT be described as full GitHub account protection; other clients consume their own share.
+- Staging gates: Cloudflare Free only; secrets entered privately in Cloudflare (never chat); new worker script name for staging, no production overwrite; SQLite migration + binding; regenerate full bundle; execute Node tests and real DO burst/cooldown tests; test 403/429; production release only after PASS.
+
+CAUTION: A timeout or crash after an upstream 403 but before persisting the shared cooldown can still allow a subsequent request. Keep a conservative 300/hour reservation ceiling and add a failure-injection/partial-request test before claiming full global rate-limit correctness. No real network or paid capacity was exercised by this candidate.
