@@ -9,7 +9,7 @@
   "sites_version": 15,
   "site_assets_source_commit": "498c4b1bc41e53dde3d81d085ca1763e974ba353",
   "date": "2026-10-01",
-  "hosting_status": "DEPLOYMENT_VERIFIED_CLOUDFLARE_API",
+  "hosting_status": "WEB_AND_DASHBOARD_DEPLOYMENT_VERIFIED_CLOUDFLARE_API",
   "target_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
   "tests": "ALL_THREE_AUTOMATED_SUITES_PASS",
   "not_verified": [
@@ -20,7 +20,7 @@
   ],
   "scope": "Only WEBLyvra website presentation. Native runtime and previous releases unchanged.",
   "pages_project_name": "weblyvra-live",
-  "deployed_source_commit": "71bb048e7a9ddd493f23591ef7dfb34c9661dabe",
+  "deployed_source_commit": "e2d60b01b4a4103fceae12f13db20d7851ff4639",
   "deployment_evidence_path": "WEBLyvra/deployment/PRODUCTION_STATUS_2026-10-01.json",
   "deployment_documentation_commit": "a0ed30eab5df455503cdf4e95c4b2f384640be99",
   "operator_reachability_confirmation": {
@@ -44,10 +44,14 @@
     "pfs_backup": "PREVIOUS_SNAPSHOT_UNCHANGED"
   },
   "pet_visual_integration": {
-    "status": "DEPLOYED_VERIFIED_ATLAS_SOURCE",
+    "status": "DEPLOYED_INTELLIGENT_MEMORY_CREATIVE_PET_SURFACES",
     "pages_project": "weblyvra-live",
-    "deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
     "custom_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "dashboard_project": "lyvra-dashboard",
+    "dashboard_deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "dashboard_domain": "https://dashboard.666soundsdesign-broadcaster.com/",
+    "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
     "website_pet_files": [
       "dist/pet-presence.css",
       "dist/pet-presence.js",
@@ -56,13 +60,20 @@
     "dashboard_pet_files": [
       "dist/dashboard/pet-dashboard.css",
       "dist/dashboard/pet-dashboard.js",
-      "dist/dashboard/index.html"
+      "dist/dashboard/index.html",
+      "dist/dashboard/pet/index.html"
     ],
     "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
     "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "character_personality": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "relational_communication": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+    "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
+    "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
     "visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
     "verified_atlas_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
     "browser_visual_readback": "PENDING",
+    "build": "PASS",
+    "deploy": "PASS",
     "free_only": true
   }
 }
