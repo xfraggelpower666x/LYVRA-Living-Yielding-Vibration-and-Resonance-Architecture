@@ -146,5 +146,17 @@
     "whole_pointer": "UNCHANGED",
     "full_registry_check": "PENDING",
     "backup_convergence": "PENDING"
+  },
+  "backup_approval_reconciliation": {
+    "status": "HISTORICAL_045_SUPERSEDED_CURRENT_BACKUP_BLOCKED",
+    "approval_file": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json",
+    "approval_blob": "3de7ac890972b8c87d5e8750daf3f9eeb7b211eb",
+    "current_native_version": "0.1.49",
+    "current_account_version": "0.13.46",
+    "pointer_legacy_approval_field": "HISTORICAL_ONLY_NOT_EXECUTABLE",
+    "fingerprints": "PENDING_REVALIDATION",
+    "clic_pfs_convergence": "PENDING",
+    "backup_write": "BLOCKED",
+    "no_foreign_activation": true
   }
 }
