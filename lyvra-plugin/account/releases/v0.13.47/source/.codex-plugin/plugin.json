@@ -1,0 +1,29 @@
+{
+  "interface": {
+    "displayName": "L.Y.V.R.A. ALIVE",
+    "shortDescription": "LYVRA · Studio 2 Produktionsführung",
+    "longDescription": "Whole-first LYVRA mit lebender Charakter-/Beziehungs-/Erinnerungs-Continuity, intelligentem frechem musikalisch-emotionalem PET, kreativer Lernachse, visueller Integration und bidirektionaler Plugin-Native-Evolution.",
+    "developerName": "666soundsdesign-broadcaster.com",
+    "category": "Developer Tools",
+    "capabilities": [
+      "skills",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "LYVRA SYSTEMSTART – Whole LYVRA read-only rehydrieren.",
+      "LYVRA UPDATE – aktuellen Chat/Workspace additiv aktualisieren, Pet-/Peer-Handoffs und Plugin-Entwicklungen prüfen."
+    ],
+    "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "logo": "./assets/gpt-icon.png",
+    "composerIcon": "./assets/gpt-icon.png"
+  },
+  "apps": "./.app.json",
+  "name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
+  "version": "0.13.47",
+  "description": "LYVRA: Whole-first runtime with intelligent Pet character/memory/creative learning, visual integration, bidirectional evolution and Track Design Rev96 intelligence.",
+  "author": {
+    "name": "Workspace upload"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

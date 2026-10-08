@@ -1,0 +1,11 @@
+{
+  "production_head": "321e0fcdab8d744cc977b90499399a54b317656c",
+  "worker_previous_version": "2dd20285-740f-4349-a145-a73807961fda",
+  "visual_version": "c467cf72-d764-4a88-beb0-7b09c40ca014",
+  "visual_deployment": "344d5b01-4ee2-479c-aff9-4354cec5a9f2",
+  "plugin_pre_release": {
+    "native-runtime": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+    "account": "pluginrel_6ac736ef43cc819194986077f88bd791"
+  },
+  "scope": "LYVRA_PET_ONLY_NO_FOREIGN_MUTATION"
+}

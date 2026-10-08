@@ -1,0 +1,9 @@
+{
+  "status": "SOURCE_PATCH_SAVED_RELEASE_PENDING",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "version": "0.1.50",
+  "previous_release": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+  "source_kind": "PARTIAL_OVERLAY_UNCHANGED_FILES_PRESERVED",
+  "no_binary_parity_claim": true,
+  "change": "Native Whole-approved expression publication, reference only"
+}
