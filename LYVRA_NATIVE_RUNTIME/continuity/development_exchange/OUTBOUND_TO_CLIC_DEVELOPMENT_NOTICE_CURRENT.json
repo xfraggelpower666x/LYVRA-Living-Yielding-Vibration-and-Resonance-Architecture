@@ -41,5 +41,20 @@
     "clic_plugin_current_version": "0.1.16",
     "clic_backup_approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-07-017"
   },
-  "clic_mutation": false
+  "clic_mutation": false,
+  "pet_build_guide_2026_10_08": {
+    "status": "INFORMATIONAL_READY_CLIC_NATIVE_INTAKE",
+    "path": "LYVRA_PET/clic-handoff/CLIC_JUNIOR_SHARED_PET_BUILD_GUIDE_CURRENT.md",
+    "blob": "34129781fd4efb4893ca1d3e017b6b6ed074aa3b",
+    "source_commit": "9d7ed337eb48a2510f8231c53f59f74df5b637b8",
+    "capabilities": [
+      "ONE_DUO_PET",
+      "CENTRAL_BUDGET_USED_OUT_OF_LIMIT",
+      "COOLDOWN_AND_60_MIN_WINDOW",
+      "LIVE_WORKER_AND_PLUGIN_HOST_VERIFICATION",
+      "BINARY_HASH_AND_POINTER_LAST_GOVERNANCE"
+    ],
+    "clic_native_adoption": "PENDING",
+    "foreign_mutation": false
+  }
 }
