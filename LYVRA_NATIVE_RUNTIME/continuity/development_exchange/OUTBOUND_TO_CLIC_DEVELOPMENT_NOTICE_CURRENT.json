@@ -56,5 +56,19 @@
     ],
     "clic_native_adoption": "PENDING",
     "foreign_mutation": false
+  },
+  "repository_bridge_facet_2026_10_09": {
+    "status": "INFORMATIONAL_HANDOFF_READY_TARGET_NATIVE_REVIEW",
+    "path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_CLIC_BRIDGE_FACET_HANDOFF_2026-10-09.md",
+    "source": "LYVRA_NATIVE_RUNTIME/facets/repository_bridge/REHYDRATION_MANIFEST.json",
+    "capabilities": [
+      "IMMUTABLE_ORIGINAL_ZIP_AND_EXTRACTED_SNAPSHOT",
+      "RAW_GIT_BLOB_READBACK_WITH_WINDOWS_CRLF_GUARD",
+      "CONTENT_HASH_AND_SAFE_ZIP_PREFLIGHT",
+      "RECOVERY_OPTIMISTIC_HEAD_NO_FORCE",
+      "FACET_SUB_LIFECIRCLE_AND_REHYDRATION"
+    ],
+    "clic_adopted": "NOT_VERIFIED",
+    "foreign_mutation": false
   }
 }
