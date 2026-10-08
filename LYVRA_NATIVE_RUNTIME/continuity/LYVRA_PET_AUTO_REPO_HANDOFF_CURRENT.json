@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-WORKER-V2-DEPLOY-2026-10-06-006",
+  "handoff_id": "LYVRA-PET-CURRENT-APP-MANAGED-REPO-2026-10-08-007",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -47,11 +47,14 @@
     "browser_renderer_status": "VERIFIED_REPOSITORY_CURRENT",
     "browser_renderer_asset_status": "REMOTE_BINARY_READBACK_VERIFIED",
     "browser_host_binding": "NONE",
-    "deployment_status": "DEPLOYED_API_VERIFIED_PUBLIC_HTTP_READBACK_PENDING",
-    "deployment_id": "d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4",
-    "version_id": "e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c",
-    "previous_recovery_deployment_id": "11aabff6-85a8-4df6-8aef-a74e9fac1cda",
-    "previous_recovery_version_id": "a91a865b-1cc3-4afe-b882-8ff9a2f6be68"
+    "deployment_status": "DEPLOYED_API_VERIFIED_CHATGPT_APP_UI_VERIFIED_SPRITE_VISUAL_READBACK_PENDING",
+    "deployment_id": "5de6cdd2-fc99-41c0-bc77-042851aed4e4",
+    "version_id": "5bbb6d15-ebbb-4b3b-a5ed-5216b6c73117",
+    "previous_recovery_deployment_id": "d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4",
+    "previous_recovery_version_id": "e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c",
+    "app_root": "LYVRA_PET/app/",
+    "plugin_package_root": "LYVRA_PET/plugin-package/",
+    "pfs_handoff_root": "LYVRA_PET/pfs-handoff/"
   },
   "mandatory_integration": {
     "systemstart": true,
@@ -84,7 +87,7 @@
   "continuity_rule": "On future relevant LYVRA rehydration, read Whole-LYVRA authority/currentness first, then this Pet continuity carrier. Preserve newer verified Pet evolution. Do not treat the optional binary repository mirror as Pet capability loss or as a Whole-LYVRA system-completion blocker.",
   "blockers": {
     "repo_binary_atlas_mirror": "RESOLVED_REMOTE_BINARY_READBACK_VERIFIED",
-    "browser_host_pet_render": "PUBLIC_HTTP_AND_VISUAL_READBACK_PENDING"
+    "browser_host_pet_render": "SPRITE_VISUAL_READBACK_PENDING"
   },
   "asset_status": {
     "source_asset_availability": "VERIFIED_LIBRARY_READBACK",
@@ -103,9 +106,10 @@
     "full_package_git_blob": "76f8de50710342326b89325ba224df9bf990dbf9",
     "cyborg_candidate_git_blob": "299aec9ffb1ad404fbd05242567a8ad707256b11",
     "worker_deployment_api_readback": "PASS",
-    "worker_source_readback": "PASS",
+    "worker_source_readback": "PASS_ABSOLUTE_ASSET_URL",
     "public_http_readback": "PENDING",
-    "host_visual_render": "READBACK_PENDING"
+    "host_visual_render": "SPRITE_READBACK_PENDING",
+    "chatgpt_app_ui_render": "USER_VISIBLE_PASS"
   },
   "plugin_sync_2026_10_06": {
     "topology_workspace_release_set": "0.13.15_AND_0.1.15",
@@ -122,5 +126,12 @@
     "plugin_mutation_by_bridge": false,
     "deployment_by_bridge": false
   },
-  "deployment_receipt": "LYVRA_PET/deployment/DEPLOYMENT_RECEIPT_2026-10-06_WORKER_V2.md"
+  "deployment_receipt": "LYVRA_PET/deployment/DEPLOYMENT_RECEIPT_2026-10-06_WORKER_V2.md",
+  "pfs_backup_handoff": {
+    "status": "READY_FOR_PFS_NATIVE_CONSUMPTION",
+    "path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
+    "consumption_trigger": "666PFS UPDATE",
+    "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
+    "foreign_autoactivation": false
+  }
 }
