@@ -77,7 +77,7 @@ function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
 // Beobachtete Ereignisse projizieren; keine eigene Persönlichkeit oder Erinnerungswurzel.
 async function projectVerifiedEvidence(event,{verifyEvidence,revision,now=Date.now()}={}){
  const fallback={status:"UNVERIFIED",expression:expressionFor(),source_revision:null};
- if(typeof verifyEvidence!=="function"||!event||!revision||event.source_revision!==revision||!Number.isFinite(Date.parse(event.observed_at))||Date.parse(event.observed_at)>now||now-Date.parse(event.observed_at)>300000)return fallback;
+ if(typeof verifyEvidence!=="function"||!event||typeof revision!=="string"||! /^[a-f0-9]{40}$/i.test(revision)||event.source_revision!==revision||!Number.isFinite(Date.parse(event.observed_at))||Date.parse(event.observed_at)>now||now-Date.parse(event.observed_at)>300000)return fallback;
  const snapshot=Object.freeze({source_revision:event.source_revision,observed_at:event.observed_at,evidence_id:event.evidence_id,kind:event.kind,relation:event.relation,facet:event.facet,sensitive:event.sensitive===true});
  if(typeof snapshot.evidence_id!=="string"||!snapshot.evidence_id.trim())return fallback;
  let trusted=false;try{trusted=await verifyEvidence(snapshot);}catch{}
@@ -130,8 +130,9 @@ const figure=document.getElementById("sprite");figure.parentNode.insertBefore(st
 const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"},evidenceController=null;
 function preview(type){if(evidenceController)evidenceController.reset();current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";effects.set(current);}
 document.querySelectorAll("[data-expression]").forEach(button=>button.addEventListener("click",()=>preview(button.dataset.expression)));
-document.getElementById("facet").addEventListener("change",()=>{current.facet=document.getElementById("facet").value;effects.set(current);});
-window.lyvraPetExpression=Object.freeze({preview(event){return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:false,connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
+document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();current.facet=document.getElementById("facet").value;effects.set(current);});
+document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();effects.set({facet:document.getElementById("facet").value});}));
+window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:false,connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
 window.addEventListener("pagehide",()=>{if(evidenceController)evidenceController.dispose();effects.dispose();});
 </script></body></html>`;
 
