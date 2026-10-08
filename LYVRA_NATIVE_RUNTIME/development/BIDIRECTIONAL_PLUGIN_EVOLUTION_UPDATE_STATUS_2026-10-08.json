@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "CURRENT_RELEASES_VERIFIED_BACKUP_REVALIDATION_PENDING",
+  "status": "CURRENT_RELEASES_VERIFIED_REGISTRY_NON_PET_DRIFT_BACKUP_BLOCKED",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
@@ -183,5 +183,17 @@
     "pointer_summary": "STALE",
     "backup": "BLOCKED",
     "semantic_whole_rehydration": "PARTIAL"
+  },
+  "registry_reconciliation_2026_10_08": {
+    "registry_blob": "c279e956987fe13c0d16d7e7ba7bb643f0bcb9b2",
+    "registered_carriers": 200,
+    "preexisting_non_pet_mismatches": 10,
+    "whole_fingerprint_validation": "PENDING",
+    "native_version": "0.1.50",
+    "alive_version": "0.13.47",
+    "pet_bindings": "MATCH",
+    "backup": "BLOCKED",
+    "pointer": "PRESERVED_STALE_PENDING_FULL_VALIDATION",
+    "foreign_mutation": false
   }
 }
