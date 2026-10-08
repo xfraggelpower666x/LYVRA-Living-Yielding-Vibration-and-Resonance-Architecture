@@ -1167,11 +1167,11 @@
       "main_plugin_mcp_binding": false,
       "worker_preserved": true,
       "semantic_pet_capability": "VERIFIED_PRESERVED",
-      "worker_version": "2.3.2",
-      "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
-      "deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+      "worker_version": "2.3.4",
+      "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+      "deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
       "browser_visual": "PASS_FOUR_FACETS_AND_GESTURE_STRIPS",
-      "native_expression_transport": "INSTALLED_LIVE_EVENT_UNVERIFIED"
+      "native_expression_transport": "DIAGNOSED_PRIMARY_RATE_LIMIT_SAFE_COOLDOWN_LIVE_EVENT_OPEN"
     },
     "mandatory_integration": [
       "WHOLE_LYVRA_SYSTEM",
@@ -1237,7 +1237,7 @@
     },
     "primary": "OWN_LYVRA_PET",
     "secondary": "OPTIONAL_GPT_PET",
-    "latest_closeout": "LYVRA_PET/verification/EXTENSION_CLOSEOUT_2026-10-08.json"
+    "latest_closeout": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json"
   },
   "rev93_multi_music_evolution": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -2729,7 +2729,7 @@
   },
   "pet_native_connection_repair_2026_10_08": {
     "schema": "LYVRA_PET_CONNECTION_REPAIR_READBACK_v1",
-    "status": "VERIFIED_CURRENT_SOURCE_READ_RESTORED",
+    "status": "SUPERSEDED_TRANSIENT_SUCCESS_NOT_STABLE",
     "scope": "LYVRA_PET_NATIVE_SOURCE",
     "recovery_anchor": "401a996694f7d0dd414e16879ec04c372698d527",
     "worker_version": "2.3.2",
@@ -2750,6 +2750,72 @@
     "previous_audit": "LYVRA_PET/verification/NATIVE_CONNECTION_AUDIT_2026-10-08.json",
     "receipt": "LYVRA_PET/verification/NATIVE_CONNECTION_REPAIR_READBACK_2026-10-08.json",
     "receipt_revision": "f528a6f524779cd70a0bb7c9aa43527670e6ed31",
+    "pointer_publication_order": "LAST",
+    "post_pointer_mutation_allowed": false,
+    "superseded_by": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json"
+  },
+  "pet_rate_limit_repair_2026_10_08": {
+    "schema": "LYVRA_PET_RATE_LIMIT_REPAIR_v1",
+    "status": "REPAIR_DEPLOYED_VERIFIED_UPSTREAM_RATE_LIMIT_BLOCKED",
+    "worker_version": "2.3.4",
+    "source_revision": "e9c7dd818d999ab160e12320e4648655f675af15",
+    "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+    "deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
+    "script_etag": "0cf657c530b0a0499cb7b37ddcd1b4a5b0555a4770c733581289331294fe5783",
+    "source_diagnosis": {
+      "status": "SOURCE_UNAVAILABLE",
+      "reason": "NATIVE_SOURCE_HTTP_403",
+      "diagnostic": {
+        "category": "GITHUB_PRIMARY_RATE_LIMIT",
+        "http_status": 403,
+        "rate_limit_remaining": 0,
+        "rate_limit_reset": 1791475388
+      },
+      "retry_at": "2026-10-08T16:03:09.000Z"
+    },
+    "tests": {
+      "primary_secondary_unknown_diagnosis": "PASS",
+      "safe_numeric_diagnostics": "PASS",
+      "server_cooldown_without_retries": "PASS",
+      "browser_cooldown_and_recovery": "PASS",
+      "pending_fetch_manual_context_close": "PASS",
+      "signature_tamper_replay_expiry": "PASS",
+      "worker_bundle_syntax": "PASS"
+    },
+    "plugin_impact": {
+      "native_version": "0.1.50",
+      "account_version": "0.13.47",
+      "both_metadata": "FRESH_VERIFIED",
+      "release_change": "NOT_REQUIRED",
+      "reason": "Backward-compatible transport failure handling; Whole authority, publication rules, plugin skills, app binding and trusted key are unchanged."
+    },
+    "recovery": {
+      "branch": "lyvra-backup-pre-force-pet-233-20261008",
+      "head": "bad7eaf58a2036e3dabcb6967af6ead2104dccc0",
+      "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97"
+    },
+    "original_asset_preserved": true,
+    "private_key_changed": false,
+    "private_key_exported": false,
+    "paid_features_added": false,
+    "foreign_mutation": false,
+    "limit_bypass": false,
+    "background_retry_loop": false,
+    "upstream_availability": "BLOCKED_UNTIL_GITHUB_LIMIT_RESET_READBACK_REQUIRED_AFTER_RESET",
+    "positive_signed_live_event": "OPEN",
+    "host_new_pose_visual": "OPEN",
+    "one_eye_wink_asset": "OPEN",
+    "full_completion": "PARTIAL",
+    "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea",
+    "receipt": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json",
+    "body_revision": "1e65dd935ea2892d18127521b834a0fa14428911",
+    "fingerprint_revision": "16397d91b2df1dc61a5ceeaf9fb5ee023ea1e23b",
+    "deliverable": {
+      "filename": "LYVRA_PET_REPAIR_2_3_4.zip",
+      "version": 7,
+      "sha256": "c953d084c13cb6797d5d1109c1402061cdeee5081d829f4be02171a1a5b5bf9d",
+      "bytes": 8211257
+    },
     "pointer_publication_order": "LAST",
     "post_pointer_mutation_allowed": false
   }
