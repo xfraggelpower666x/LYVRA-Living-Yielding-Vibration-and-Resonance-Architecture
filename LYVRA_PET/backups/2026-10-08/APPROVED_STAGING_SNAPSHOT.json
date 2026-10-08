@@ -1,0 +1,49 @@
+{
+  "schema": "lyvra.pet.staging.backup.v1",
+  "created_date": "2026-10-08",
+  "status": "REPOSITORY_SNAPSHOT_BRANCH_CREATED",
+  "source_repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "source_branch": "lyvra-pet-free-auth-budget-20261008",
+  "snapshot_branch": "backup/lyvra-pet-approved-staging-20261008",
+  "approval_scope": "User visually approved staging interface and detector/neon typography; NOT production release approval",
+  "production_mutation": false,
+  "free_only": true,
+  "files": [
+    {
+      "path": "LYVRA_PET/worker/src/index.js",
+      "git_blob_sha": "4c38a0f71c36f31694ac5edb84ff6200b7e1a053"
+    },
+    {
+      "path": "LYVRA_PET/bridge/github-budget.mjs",
+      "git_blob_sha": "32f89c1da65eaab91591996e591e6bad1957ff2f"
+    },
+    {
+      "path": "LYVRA_PET/bridge/repository-event-source.mjs",
+      "git_blob_sha": "2c1638a18d9d0914526ca8416910df7eaff2e969"
+    },
+    {
+      "path": "LYVRA_PET/bridge/signed-event-transport.mjs",
+      "git_blob_sha": "cabffcd41dc84e66a5aabb473445661ca400af5d"
+    },
+    {
+      "path": "LYVRA_PET/assets/logo-assets.mjs",
+      "git_blob_sha": "f963b5a85ea8658542e5207126fd14e8bd38802b"
+    },
+    {
+      "path": "LYVRA_PET/worker/wrangler.staging.jsonc",
+      "git_blob_sha": "59a250048bfbd99ce8804e726a8b4aadaf4bef6f"
+    }
+  ],
+  "protected_secrets": "Excluded; Cloudflare secret bindings must be re-provisioned in disaster recovery, never exported to GitHub.",
+  "restore_contract": "Restore code from snapshot branch, verify all listed blob hashes, rebuild in isolated staging, reconnect free Cloudflare bindings, run tests and native authority checks, promote only with Whole LYVRA authorization and production readback.",
+  "pfs_child": {
+    "requested": true,
+    "proposal_id": "PFS-CHILD-LYVRA-PET-BACKUP-20261008",
+    "type": "backup_only",
+    "identity": "LYVRA PET",
+    "native_owner": "Whole LYVRA",
+    "activation_state": "PENDING_PFS_NATIVE_REGISTRATION",
+    "allowed": "Snapshot catalog, drift observation, repair proposal, restore in quarantine on approval",
+    "forbidden": "Foreign activation, live PET mutation, replacing LYVRA identity, radio writes, token copying"
+  }
+}
