@@ -1,23 +1,25 @@
 {
   "schema": "LYVRA_COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT_v14",
-  "status": "CURRENT_V14_LYVRA_LEG_APPROVED_PFS_R02_CLIC_BINDING_STALE_STABLE_SET_NOT_CONVERGED",
+  "status": "LYVRA_PET_RELEASES_UPDATED_BACKUP_APPROVAL_SUPERSEDED_NO_COUPLED_EXECUTION",
   "contract": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
   "persistent_rule": "EVERY_LYVRA_PLUGIN_BACKUP_ROUND_REQUIRES_CLIC_BACKUP_LEG",
   "lyvra_leg": {
-    "approval_status": "APPROVED",
+    "approval_status": "HISTORICAL_SUPERSEDED_NEW_APPROVAL_NOT_GRANTED",
     "previous_approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-07-031",
     "previous_approval_status": "SUPERSEDED_BY_RUNTIME_PLUGIN_STATE_CHANGE",
-    "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
+    "runtime_plugin_state_fingerprint": "0130421e53cfbadda14119d535798e9783400a208a6e61b938e4cecccdc3c43a",
     "binding_path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
     "account": {
-      "version": "0.13.42",
-      "release_id": "pluginrel_6ac6bc473d248191957b18b991ae0d37"
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.47",
+      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
     },
     "native": {
-      "version": "0.1.45",
-      "release_id": "pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29"
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.50",
+      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
     },
-    "live_readback": "VERIFIED_BOTH_SURFACES_NATIVE_BRANDING_LOGO_VERIFIED",
+    "live_readback": "DIRECT_AFFECTED_TEXT_AND_METADATA",
     "pfs_observed_request": {
       "version_account": "0.13.41",
       "version_native": "0.1.41",
@@ -119,11 +121,11 @@
       "LYVRA_NATIVE_0.1.45",
       "CLIC_0.1.20"
     ],
-    "lyvra_leg_fresh": true,
+    "lyvra_leg_fresh": false,
     "clic_leg_current_but_pfs_binding_stale": true,
     "converged": false,
     "executable": false,
-    "reason": "PFS_R02_CLIC_BINDING_SUPERSEDED_BY_CLIC_APPROVAL_022"
+    "reason": "NEW_LYVRA_RELEASES_REQUIRE_NEW_BACKUP_ROUND_NATIVE_APPROVAL"
   },
   "speech_evidence": {
     "status": "COMMUNITY_EVIDENCE_TEST_CANDIDATE_NOT_NATIVE_RULE",

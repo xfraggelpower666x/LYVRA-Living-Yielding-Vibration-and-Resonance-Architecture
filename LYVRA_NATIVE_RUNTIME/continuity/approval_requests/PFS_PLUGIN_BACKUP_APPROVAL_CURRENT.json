@@ -47,19 +47,21 @@
     "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
     "approval_state": "HISTORICAL_PROVENANCE_ONLY",
     "native_current": {
-      "version": "0.1.49",
-      "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.50",
+      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
     },
     "account_current": {
-      "version": "0.13.46",
-      "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.47",
+      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
     },
-    "fresh_runtime_fingerprint": "NOT_ESTABLISHED",
+    "fresh_runtime_fingerprint": "0130421e53cfbadda14119d535798e9783400a208a6e61b938e4cecccdc3c43a",
     "clic_current_binary_evidence": "READBACK_PENDING",
     "stable_set_convergence": false,
     "new_approval": "NOT_GRANTED",
     "backup_execution": "BLOCKED",
-    "supersession_cause": "BOTH_LYVRA_PLUGIN_RELEASES_CHANGED",
+    "supersession_cause": "BOTH_LYVRA_PLUGIN_RELEASES_CHANGED_PET_EXPRESSION_PUBLICATION",
     "preserve_original_approved_state": true
   }
 }

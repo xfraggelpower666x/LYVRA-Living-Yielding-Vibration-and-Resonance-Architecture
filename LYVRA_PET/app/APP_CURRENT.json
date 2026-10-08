@@ -11,8 +11,8 @@
   "main_plugin_binding": false,
   "free_only": true,
   "browser_portable": true,
-  "candidate_promoted": false,
-  "worker_version": "2.0.2",
+  "candidate_promoted": true,
+  "worker_version": "2.3.2",
   "chatgpt_app_ui": "USER_VISIBLE_VERIFIED",
   "sprite_visual_readback": "PENDING_USER_CONFIRMATION",
   "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
@@ -20,15 +20,15 @@
   "weblyvra_pages_deployment": "071cf372-4050-4187-9301-c925c1b9d4a5",
   "weblyvra_deployment_result": "SUCCESS",
   "plugin_surfaces": {
-    "account": {
-      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.46",
-      "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
-    },
     "native": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.49",
-      "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
+      "version": "0.1.50",
+      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
+    },
+    "account": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.47",
+      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
     }
   },
   "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
@@ -40,8 +40,8 @@
   "dashboard_pages_deployment": "b9c44d0a-fab2-478a-857c-68c700757100",
   "dashboard_deployment_result": "SUCCESS",
   "surface_navigation_status": "WEB_DASHBOARD_PET_DASHBOARD_LINKED_RADIO_OUTBOUND_HANDOFF_READY",
-  "worker_deployment_id": "de607f5d-99ba-406a-a4b7-8378c6511468",
-  "worker_version_id": "2dd20285-740f-4349-a145-a73807961fda",
+  "worker_deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+  "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
   "pet_app_binding": {
     "id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
     "plugin_manifest_binding": "VERIFIED_BOTH_PLUGIN_RELEASES",
@@ -60,5 +60,15 @@
     "worker_logo_route": "PASS",
     "embedded_app_logo": "DEPLOYED_SOURCE_VERIFIED",
     "host_shell_icon": "READBACK_PENDING"
-  }
+  },
+  "original_asset_preserved": true,
+  "expression_extension": "LYVRA_PET/verification/EXTENSION_CLOSEOUT_2026-10-08.json",
+  "native_expression": {
+    "installed": true,
+    "end_to_end_verified": false,
+    "public_carrier": "LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json",
+    "browser_observation": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT"
+  },
+  "browser_visual_readback": "PASS_FOUR_FACETS_YAWN_STOMP_HUMOR",
+  "plugin_host_visual_readback": "UNVERIFIED"
 }

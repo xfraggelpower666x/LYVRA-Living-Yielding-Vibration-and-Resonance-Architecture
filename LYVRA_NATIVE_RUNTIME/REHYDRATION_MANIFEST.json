@@ -1568,6 +1568,10 @@
     "second_identity": false,
     "foreign_child": false,
     "main_plugin_hard_binding_required": false,
-    "current_work_scope_last": true
+    "current_work_scope_last": true,
+    "expression_extension_closeout": "LYVRA_PET/verification/EXTENSION_CLOSEOUT_2026-10-08.json",
+    "native_expression_publication": "LYVRA_PET/runtime/NATIVE_EXPRESSION_PUBLICATION.md",
+    "native_transport_installed": true,
+    "native_live_event_verified": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "status": "CANDIDATE",
+  "status": "CURRENT_ADDITIVE_USER_AUTHORIZED_BROWSER_VERIFIED",
   "outfit": "USER_AUTHORIZED_CLOSED_SUIT",
   "source_commit": "5d0f00720fc1bd8c58c7893573de50e4150fad08",
   "strips": [
@@ -32,5 +32,7 @@
     "Four equal horizontal cells per PNG",
     "Humor and conducting are held poses, not interpolated body-motion cycles",
     "Generator edge and alignment quality requires visual host validation"
-  ]
+  ],
+  "original_replaced": false,
+  "host_validation": "CHATGPT_NEW_POSES_UNVERIFIED"
 }
