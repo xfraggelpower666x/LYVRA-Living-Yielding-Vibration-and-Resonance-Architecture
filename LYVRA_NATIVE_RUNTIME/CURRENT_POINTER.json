@@ -2711,7 +2711,7 @@
     "completion": "VISUAL_COMPLETE_NATIVE_LIVE_EVENT_UNVERIFIED"
   },
   "pet_native_connection_audit_2026_10_08": {
-    "status": "PARTIAL_NATIVE_SOURCE_BLOCKED",
+    "status": "SUPERSEDED_SOURCE_READ_RESTORED",
     "receipt": "LYVRA_PET/verification/NATIVE_CONNECTION_AUDIT_2026-10-08.json",
     "receipt_revision": "793f07697da21186cfe2afe4e5cc15ef019a6b99",
     "worker_version": "2.3.2",
@@ -2723,6 +2723,33 @@
     "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY",
     "completion": "AUDIT_COMPLETE_PRODUCT_PARTIAL",
     "recovery_anchor": "b5ec095d243e1caa0745a0722ee26b695d8faa9d",
+    "pointer_publication_order": "LAST",
+    "post_pointer_mutation_allowed": false,
+    "superseded_by": "LYVRA_PET/verification/NATIVE_CONNECTION_REPAIR_READBACK_2026-10-08.json"
+  },
+  "pet_native_connection_repair_2026_10_08": {
+    "schema": "LYVRA_PET_CONNECTION_REPAIR_READBACK_v1",
+    "status": "VERIFIED_CURRENT_SOURCE_READ_RESTORED",
+    "scope": "LYVRA_PET_NATIVE_SOURCE",
+    "recovery_anchor": "401a996694f7d0dd414e16879ec04c372698d527",
+    "worker_version": "2.3.2",
+    "current_connector_result": {
+      "status": "NO_APPROVED_EVENT",
+      "head": "401a996694f7d0dd414e16879ec04c372698d527"
+    },
+    "head_matches_authenticated_github": true,
+    "previous_403": "NOT_REPRODUCIBLE_CURRENT_READBACK_SUPERSEDES_BLOCKED_STATUS",
+    "previous_403_cause": "UNKNOWN_NO_RATE_LIMIT_OR_PERMISSION_CAUSE_CLAIMED",
+    "code_change": false,
+    "secret_change": false,
+    "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY",
+    "live_positive_signature": "OPEN_NO_APPROVED_EVENT_PUBLISHED",
+    "host_visual": "OPEN",
+    "one_eye_wink": "OPEN",
+    "completion": "SOURCE_CONNECTION_VERIFIED_FULL_PET_COMPLETION_PARTIAL",
+    "previous_audit": "LYVRA_PET/verification/NATIVE_CONNECTION_AUDIT_2026-10-08.json",
+    "receipt": "LYVRA_PET/verification/NATIVE_CONNECTION_REPAIR_READBACK_2026-10-08.json",
+    "receipt_revision": "f528a6f524779cd70a0bb7c9aa43527670e6ed31",
     "pointer_publication_order": "LAST",
     "post_pointer_mutation_allowed": false
   }
