@@ -19,5 +19,12 @@
     "precise": "AVAILABLE_WITH_HEART"
   },
   "pet_access": "REFERENCE_ONLY",
-  "whole_lyvra_decision_authority": true
+  "whole_lyvra_decision_authority": true,
+  "relational_communication": {
+    "model": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_CHARACTER_COMMUNICATION.md",
+    "current": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_COMMUNICATION_CURRENT.json",
+    "relation_to_character": "CAUSAL_CONTEXTUAL",
+    "per_person_script": false,
+    "private_payload_public_repo": false
+  }
 }
