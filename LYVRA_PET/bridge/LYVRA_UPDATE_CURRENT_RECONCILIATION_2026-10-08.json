@@ -1,0 +1,38 @@
+{
+  "status": "CONFLICT_QUARANTINE",
+  "update_mode": "ADDITIVE_CURRENT_REFRESH",
+  "workspace": "LYVRA_PET",
+  "whole_authority": "LYVRA",
+  "production_head": "51f9b4b2e7c16229460bb3363980601041c2c62a",
+  "candidate_head": "6dfd2431b0aa0e596659d6679e1ad2e9d75c8568",
+  "candidate_pr": 56,
+  "verified_current": {
+    "native_plugin": "0.1.49",
+    "account_plugin": "0.13.46",
+    "worker_repository_current": "2.0.2",
+    "branding_repository_current": "DEPLOYED_SOURCE_VERIFIED",
+    "host_shell_icon": "READBACK_PENDING",
+    "pet_id": "pet_6ab791129364819183885f44a21497a2"
+  },
+  "candidate_status": "PRESERVED_NOT_PROMOTED",
+  "mergeable": false,
+  "reason": "NEWER_PRODUCTIVE_PET_BRANDING_WORKER_OVERLAPS_OLDER_EFFECT_CANDIDATE",
+  "required_reconciliation": [
+    "Preserve productive 2.0.2 branding routes, app binding and current deployment metadata",
+    "Integrate candidate effects and lifecycle repairs additively in isolated source",
+    "Revalidate original atlas SHA256 and current logos",
+    "Run both native plugin impact checks before any semantic promotion",
+    "Verify browser/host before live renderer promotion"
+  ],
+  "backup_circle": {
+    "status": "BLOCKED_STABLE_SET_NOT_CONVERGED",
+    "observed_carrier_contains_older_release_set": true,
+    "old_approval_not_reused": true,
+    "foreign_system_activation": false
+  },
+  "full_whole_rehydration": "PARTIAL_SCOPED_CURRENT_READS_ONLY",
+  "production_writes": false,
+  "pointer_mutated": false,
+  "plugin_releases_mutated": false,
+  "live_deployment": false
+}
