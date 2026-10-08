@@ -23,7 +23,8 @@ export class PetGithubBudget {
 }
 export function petBudgetedFetcher(env,underlyingFetch=fetch) {
  return async (url,init={})=>{
-  const isGithubRest=typeof url==='string'&&url.startsWith('https://api.github.com/');
+  const parsed=typeof url==='string'?new URL(url):url instanceof URL?url:url instanceof Request?new URL(url.url):null;
+  const isGithubRest=parsed?.protocol==='https:'&&parsed.hostname==='api.github.com'&&parsed.port===''&&parsed.pathname.startsWith('/repos/');
   if(isGithubRest) {
    if(!env?.LYVRA_PET_GITHUB_BUDGET)throw Error('PET_GLOBAL_BUDGET_NOT_CONFIGURED');
    const namespace=env.LYVRA_PET_GITHUB_BUDGET;
