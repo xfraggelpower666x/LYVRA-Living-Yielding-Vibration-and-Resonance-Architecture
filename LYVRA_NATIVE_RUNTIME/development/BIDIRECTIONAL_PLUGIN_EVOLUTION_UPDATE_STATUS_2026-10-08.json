@@ -80,5 +80,25 @@
     "pointer_update": "BLOCKED_UNTIL_PROVEN_PARITY_OR_GOVERNED_PARTIAL_CLOSEOUT",
     "foreign_activation": false,
     "source": "user supplied exported ALIVE chat plus current skills and current GitHub readback"
+  },
+  "alive_external_acceptance_report": {
+    "source": "USER_SUPPLIED_ALIVE_READ_ONLY_ACCEPTANCE_REPORT_2026_10_08",
+    "observed_head": "ada54970a97efb6b10e25afea7a106a727dcaa56",
+    "probe_blob": "d5dfa91898c87c8443dd3541969613870231925a",
+    "bridge_blob": "9bb3d7ee887b5b5835094086e73bbed0cf74464b",
+    "lifecycle_blob": "38d6f24e021c3e54c53bc30516030ea5e81a748f",
+    "pointer_blob": "1062adb00d44e0b6b168f49789cbad24c8862eee",
+    "manifest_blob": "2f0895d4109947be2d09c2122e356430e20c9d2a",
+    "fingerprint_blob": "6079e560f068c2e3b924c3ba1d809a102f3fbff8",
+    "checks": {
+      "REPOSITORY_CONNECTED": "PASS_CHAT_PENDING_ALIVE",
+      "BRIDGE_FULL_READBACK": "PASS_CHAT_PENDING_ALIVE",
+      "RUNTIME_SEMANTIC_COMPATIBILITY": "PENDING",
+      "BIDIRECTIONAL_INBOUND_TRANSPORT": "PENDING_SIMULATION_ONLY",
+      "PLUGIN_RELEASE_PARITY": "PENDING"
+    },
+    "status": "PARTIAL_ALIVE_RUNTIME_READBACK_PENDING",
+    "writes_reported": 0,
+    "adoption": "EVIDENCE_INTAKE_ONLY_NOT_RUNTIME_ACCEPTANCE"
   }
 }
