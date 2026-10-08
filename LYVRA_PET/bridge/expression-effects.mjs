@@ -22,7 +22,7 @@ export function mountExpressionEffects(stage,{heartX=.5,heartY=.25}={}){
   ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
   const t=reduced.matches?0:(now-start)/1000;
   const liveBeat=signal&&now-signal.received<2000&&Number.isFinite(signal.bpm)&&signal.bpm>=30&&signal.bpm<=240;
-  const pulse=liveBeat?.75+.25*Math.cos(t*signal.bpm/60*Math.PI*2):.85+.15*Math.sin(t*2);
+  const pulse=liveBeat?.75+.25*Math.cos((now-signal.received)/1000*signal.bpm/60*Math.PI*2):.85+.15*Math.sin(t*2);
   const color=state.heart==="dad_joy"?(Math.sin(t*Math.PI)>0?"#ff45ca":"#38eeff"):state.heart==="anger"?"#ff334d":"#38eeff";
   ctx.globalAlpha=state.heart==="dim"?.25:state.heart==="anger"?.55+.3*Math.sin(t*4):pulse;
   heart(w*heartX,h*heartY,w*.032,color);ctx.globalAlpha=1;
