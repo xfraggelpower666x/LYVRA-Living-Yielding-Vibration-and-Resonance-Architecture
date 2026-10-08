@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-APP-MANAGED-REPO-2026-10-08-007",
+  "handoff_id": "LYVRA-PET-CURRENT-LIVECIRCLE-REHYDRATION-VISUAL-WEB-PLUGIN-2026-10-08-008",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -19,17 +19,17 @@
   "plugin_surfaces": {
     "account_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.15",
-      "release_id": "pluginrel_6ac54d435b788191adf894c109db2118",
-      "pet_capability": "VERIFIED_PRESERVED_CURRENT_RELEASE",
+      "version": "0.13.43",
+      "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7",
+      "pet_capability": "VERIFIED_PET_SUB_LIVECIRCLE_REHYDRATION_VISUAL_INTEGRATED",
       "main_plugin_mcp_binding": false,
       "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     },
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.15",
-      "release_id": "pluginrel_6ac54d336ac88191890ec10d0c4e43e6",
-      "pet_capability": "VERIFIED_PRESERVED_CURRENT_RELEASE",
+      "version": "0.1.47",
+      "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000",
+      "pet_capability": "VERIFIED_PET_SUB_LIVECIRCLE_REHYDRATION_VISUAL_INTEGRATED",
       "main_plugin_mcp_binding": false,
       "binding_note": "REMOVED_FOR_CROSS_SURFACE_PORTABILITY"
     }
@@ -47,14 +47,21 @@
     "browser_renderer_status": "VERIFIED_REPOSITORY_CURRENT",
     "browser_renderer_asset_status": "REMOTE_BINARY_READBACK_VERIFIED",
     "browser_host_binding": "NONE",
-    "deployment_status": "DEPLOYED_API_VERIFIED_CHATGPT_APP_UI_VERIFIED_SPRITE_VISUAL_READBACK_PENDING",
+    "deployment_status": "DEPLOYED_API_VERIFIED_CHATGPT_APP_UI_VERIFIED_WEBLYVRA_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
     "deployment_id": "5de6cdd2-fc99-41c0-bc77-042851aed4e4",
     "version_id": "5bbb6d15-ebbb-4b3b-a5ed-5216b6c73117",
     "previous_recovery_deployment_id": "d7284ef3-d4dd-40e6-8b9d-e086ad4db5c4",
     "previous_recovery_version_id": "e156c4f5-e31a-47b4-aa58-4e61c3d2cf6c",
     "app_root": "LYVRA_PET/app/",
     "plugin_package_root": "LYVRA_PET/plugin-package/",
-    "pfs_handoff_root": "LYVRA_PET/pfs-handoff/"
+    "pfs_handoff_root": "LYVRA_PET/pfs-handoff/",
+    "livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+    "rehydration_manifest": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
+    "facet_integration_map": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md",
+    "plugin_integration_current": "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json",
+    "website_deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "dashboard_integration": "DEPLOYED_WITH_WEBLYVRA"
   },
   "mandatory_integration": {
     "systemstart": true,
@@ -109,7 +116,10 @@
     "worker_source_readback": "PASS_ABSOLUTE_ASSET_URL",
     "public_http_readback": "PENDING",
     "host_visual_render": "SPRITE_READBACK_PENDING",
-    "chatgpt_app_ui_render": "USER_VISIBLE_PASS"
+    "chatgpt_app_ui_render": "USER_VISIBLE_PASS",
+    "website_atlas_source": "DEPLOYED_VERIFIED",
+    "website_visual_render": "READBACK_PENDING",
+    "dashboard_pet_surface": "DEPLOYED_VERIFIED_SOURCE"
   },
   "plugin_sync_2026_10_06": {
     "topology_workspace_release_set": "0.13.15_AND_0.1.15",
@@ -128,10 +138,11 @@
   },
   "deployment_receipt": "LYVRA_PET/deployment/DEPLOYMENT_RECEIPT_2026-10-06_WORKER_V2.md",
   "pfs_backup_handoff": {
-    "status": "READY_FOR_PFS_NATIVE_CONSUMPTION",
+    "status": "READY_FOR_PFS_NATIVE_CONSUMPTION_COMPLETE_PET_SURFACE",
     "path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
     "consumption_trigger": "666PFS UPDATE",
     "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
     "foreign_autoactivation": false
-  }
+  },
+  "freeze_receipt": "LYVRA_PET/recovery/PET_LIVECIRCLE_REHYDRATION_VISUAL_FREEZE_2026-10-08.md"
 }
