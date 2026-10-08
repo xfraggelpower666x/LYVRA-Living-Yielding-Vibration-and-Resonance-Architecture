@@ -1,0 +1,22 @@
+{
+  "name": "lyvra-pet-read-staging",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-08",
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "LYVRA_PET_GITHUB_BUDGET",
+        "class_name": "PetGithubBudget"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "pet-github-budget-sqlite-v1",
+      "new_sqlite_classes": [
+        "PetGithubBudget"
+      ]
+    }
+  ]
+}
