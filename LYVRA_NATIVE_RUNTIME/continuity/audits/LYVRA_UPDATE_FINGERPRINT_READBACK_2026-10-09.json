@@ -1,0 +1,97 @@
+{
+  "schema": "LYVRA_UPDATE_FINGERPRINT_READBACK_2026_10_09_v1",
+  "status": "PARTIAL_READBACK_PENDING",
+  "readback_base_head": "55f157948da4907c1666dde05f9c5888a44ac6bf",
+  "pointer_blob": "53ba1a12a3999f19df7ef26fe4291c6f5f30e115",
+  "manifest_blob": "4487b298b4166c83c740dde009fa56b7f5c8c0ce",
+  "fingerprint_registry_blob": "c279e956987fe13c0d16d7e7ba7bb643f0bcb9b2",
+  "critical_carriers_total": 210,
+  "mismatches": 15,
+  "matched": 195,
+  "remote_tree_truncated": false,
+  "remote_reference_paths_missing": 0,
+  "changed_or_out_of_date": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+      "registered_blob": "d1323e7eec6368645cd5a137282b39cc3f88ea25",
+      "observed_blob": "783860c266e92cfc65bd613b7eb23a5026f44353"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+      "registered_blob": "da8623aa0bddd7ae62e0e51b3e34732797a6ee6d",
+      "observed_blob": "8229a23c3a69708590fc031c004e4af46a18efef"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md",
+      "registered_blob": "62da7e66e8e321901493752c082a39453b7c5e99",
+      "observed_blob": "781f65dc3089e2fb66309cb0a4977cd47df96c93"
+    },
+    {
+      "path": "WEBLyvra/PET_INTEGRATION_HANDOFF.md",
+      "registered_blob": "f81c319784581274b30da1bc80378b0a7ef45fa9",
+      "observed_blob": "54f00f8928c486ce2c22f6ab9746a0ff81bf3b34"
+    },
+    {
+      "path": "WEBLyvra/live/dist/index.html",
+      "registered_blob": "64cd3a0210f850274af50a6d7cde6b63ba1ed4a7",
+      "observed_blob": "ae5af83e3d0ebbc486c1c96bf669da80534e69a6"
+    },
+    {
+      "path": "WEBLyvra/live/dist/pet-presence.css",
+      "registered_blob": "0ef46bdb51ebf4b5893c94c21e34e6250051ca8b",
+      "observed_blob": "4775196c7d791c16623d01afe137eed8b05090d4"
+    },
+    {
+      "path": "WEBLyvra/live/dist/pet-presence.js",
+      "registered_blob": "c117f8baaed0146b757d5967ed2d27e8716bf19a",
+      "observed_blob": "725e189d72166fdd4f0ee60bb376e3417e0506e4"
+    },
+    {
+      "path": "WEBLyvra/live/tests/preservation-baseline.json",
+      "registered_blob": "a7b6cfbb3fe5c8adc2bec324baec51596e01c154",
+      "observed_blob": "d0187375833170632ce1128c014ae0c5b2b33a30"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "registered_blob": "15c27583f725cd7fd0fc707b1cf091507144c90a",
+      "observed_blob": "ccaf08e6d5bf85837feee24d2f16b6d8650eb012"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+      "registered_blob": "b76b64272482e707c56e518d78867426e82bba52",
+      "observed_blob": "4ffa1cb499cda1a588800c81098bc6e6f815be3c"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+      "registered_blob": "9321b68592f7775a1921fc89bb48728895cd2f19",
+      "observed_blob": "048f6e780c2fc8709d95fbc931d04da286606d69"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_CLIC_DEVELOPMENT_NOTICE_CURRENT.json",
+      "registered_blob": "0068adba1e6e5486bbfd498af071838321918782",
+      "observed_blob": "aa3761f23ea2060329dc195ebfbf0489326d3948"
+    },
+    {
+      "path": "LYVRA_PET/app/APP_CURRENT.json",
+      "registered_blob": "f78f02bd48c888ae19659c784b5025eb25f4dca2",
+      "observed_blob": "ea92ab3670d6788e0b8e3b78ddbbf81c43869bf1"
+    },
+    {
+      "path": "LYVRA_PET/worker/src/index.js",
+      "registered_blob": "81ab9adf408ac16388a6ae124905d8df5e9228b9",
+      "observed_blob": "27ed41f4ed12718aa09b7895db43c3577dc90bae"
+    },
+    {
+      "path": "LYVRA_PET/worker/build/worker-bundle.mjs",
+      "registered_blob": "3a105eae89382e3908830f758e8f11e23fd7302c",
+      "observed_blob": "9146676bf56a70ccbc29b48210f6c935cf9ece85"
+    }
+  ],
+  "interpretation": "FINGERPRINT_MISMATCH_NE_CORRUPTION; preserve valid newer development; requires per-carrier provenance and supersession before registry update",
+  "current_pointer_changed": false,
+  "foreign_autoload": false,
+  "full_semantic_rehydration": "NOT_CLAIMED",
+  "release_mutation": "NONE",
+  "pet_worker_deployment_mutation": "NONE",
+  "bridge_facet_and_handoff": "PRESERVED"
+}
