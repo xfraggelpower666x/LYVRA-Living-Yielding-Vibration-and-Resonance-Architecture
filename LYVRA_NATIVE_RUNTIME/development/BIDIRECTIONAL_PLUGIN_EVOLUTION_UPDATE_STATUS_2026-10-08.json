@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "CURRENT_DUAL_PLUGIN_RELEASES_VERIFIED_POINTER_SUMMARY_STALE_BACKUP_BLOCKED",
+  "status": "CURRENT_RELEASES_VERIFIED_BACKUP_REVALIDATION_PENDING",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
@@ -173,5 +173,15 @@
     "backup_approval": "HISTORICAL_045_SUPERSEDED_BACKUP_BLOCKED",
     "pfs_clic_binary_hash": "NOT_VERIFIED",
     "foreign_mutation": false
+  },
+  "latest_release_evidence": {
+    "native_version": "0.1.50",
+    "account_version": "0.13.47",
+    "native_release": "pluginrel_6ac74b0b5c88819192dca918ea3860a4",
+    "account_release": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
+    "pet_bindings": "VERIFIED",
+    "pointer_summary": "STALE",
+    "backup": "BLOCKED",
+    "semantic_whole_rehydration": "PARTIAL"
   }
 }
