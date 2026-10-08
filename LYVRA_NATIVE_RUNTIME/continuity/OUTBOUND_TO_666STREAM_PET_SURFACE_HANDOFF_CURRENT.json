@@ -1,0 +1,35 @@
+{
+  "schema": "LYVRA_PET_TO_666STREAM_SURFACE_HANDOFF_v1",
+  "status": "READY_FOR_666STREAM_NATIVE_CONSUMPTION",
+  "source_system": "LYVRA",
+  "source_head": "451de665c845bba8607e52a4e42b6cb830aa9ced",
+  "target_system": "666STREAM",
+  "target_repo": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn",
+  "target_branch": "WebRadio-666SOUNDsDESIGn",
+  "observed_target_head": "858523a950f3bd5ef2e55756b7bb4565139a6b79",
+  "purpose": "Connect radio surface to LYVRA Pet without transferring radio authority.",
+  "requested_additive_surface_changes": {
+    "radio_pet_link": "Add visible navigation/link from WebRadio to https://dashboard.666soundsdesign-broadcaster.com/pet/",
+    "optional_pet_presence": "May expose PET visual/presence only by referencing LYVRA PET authority and verified asset; no cloned personality/state.",
+    "reciprocal_links": [
+      "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "https://dashboard.666soundsdesign-broadcaster.com/",
+      "https://dashboard.666soundsdesign-broadcaster.com/pet/"
+    ]
+  },
+  "authority": {
+    "radio_live_authority": "666STREAM / WebRadio repository",
+    "pet_live_authority": "LYVRA / LYVRA_PET/",
+    "cross_authority": false,
+    "foreign_autoactivation": false
+  },
+  "guards": {
+    "do_not_break_player": true,
+    "preserve_audio_runtime": true,
+    "preserve_existing_radio_dashboard": true,
+    "no_pet_identity_clone": true,
+    "no_pet_memory_clone": true,
+    "no_silent_deployment": true
+  },
+  "consumption_trigger": "666STREAM UPDATE"
+}
