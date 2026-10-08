@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "PARTIAL_PLUGIN_PARITY_PENDING",
+  "status": "PARTIAL_ALIVE_RUNTIME_READBACK_PENDING",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
@@ -53,5 +53,16 @@
       "FOREIGN_SYSTEM_AUTOACTIVATION"
     ],
     "remaining": "WRITE_BLOCKED_SECOND_PLUGIN_PARITY_PENDING"
+  },
+  "repository_bridge": {
+    "status": "REPOSITORY_BRIDGE_SPECIFIED",
+    "path": "LYVRA_NATIVE_RUNTIME/development/ALIVE_MIGRATED_PLUGIN_REPOSITORY_BRIDGE.md",
+    "native_contract_link": "VERIFIED",
+    "prechange_recovery_branch": "lyvra-pre-alive-repository-bridge-20261008",
+    "alive_host_readback": "PENDING_ACTUAL_ALIVE_RUNTIME_TEST",
+    "alive_semantic_compatibility": "UNVERIFIED",
+    "alive_plugin_release_parity": "PENDING_EDIT_AUTHORITY",
+    "inbound_candidate_transport": "HOST_CAPABILITY_DEPENDENT",
+    "current_pointer_closeout": "DEFERRED_UNTIL_GOVERNED_PARITY_OR_EXPLICIT_PARTIAL_PUBLICATION"
   }
 }
