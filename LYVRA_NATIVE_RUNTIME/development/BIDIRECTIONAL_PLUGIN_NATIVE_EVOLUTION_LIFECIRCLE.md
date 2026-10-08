@@ -40,3 +40,6 @@ NO_NATIVE_IDENTITY_OVERRIDE=TRUE
 
 ## Recovery
 Existing checkpoint, current manifest/fingerprint and plugin snapshots are preserved. A live plugin can be ahead without being a recovery authority. If release or file readback is unavailable, status is READBACK_PENDING and publication remains unverified.
+
+## GPT-migrated ALIVE read-through fallback
+When the second account plugin is not editable, use `LYVRA_NATIVE_RUNTIME/development/ALIVE_MIGRATED_PLUGIN_REPOSITORY_BRIDGE.md` as the native compatibility protocol. Repository Current may be consumed only through actual authorized host reads. Runtime bridge verification and plugin-release parity are distinct. Missing native release edit access must not block additive native development, but must block an unqualified two-plugin parity PASS. Native inbound candidate transport is not automatic when ALIVE lacks write tooling.
