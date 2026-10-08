@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_AUTO_REPO_HANDOFF_v1",
-  "handoff_id": "LYVRA-PET-CURRENT-LIVECIRCLE-REHYDRATION-VISUAL-WEB-PLUGIN-2026-10-08-008",
+  "handoff_id": "LYVRA-PET-CURRENT-PFS-BACKUP-RECONCILE-2026-10-08-009",
   "status": "CURRENT_PRODUCTIVE_PET_CONTINUITY",
   "source_branch": "lyvra",
   "scope": [
@@ -138,11 +138,18 @@
   },
   "deployment_receipt": "LYVRA_PET/deployment/DEPLOYMENT_RECEIPT_2026-10-06_WORKER_V2.md",
   "pfs_backup_handoff": {
-    "status": "READY_FOR_PFS_NATIVE_CONSUMPTION_COMPLETE_PET_SURFACE",
+    "status": "PFS_CONSUMED_PARTIAL_TRANSPORT_BLOCKED",
     "path": "LYVRA_PET/pfs-handoff/CURRENT_HANDOFF.json",
-    "consumption_trigger": "666PFS UPDATE",
+    "pfs_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
+    "pfs_recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
+    "pfs_backup_manifest": "recovery/external/LYVRA_PET/2026-10-08/BACKUP_MANIFEST.json",
+    "mirrored_text": "9_OF_35_BLOB_IDENTICAL",
+    "text_remaining": 26,
+    "binary_mirror": "WRITE_BLOCKED_CONNECTOR_TRANSPORT",
     "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
+    "authority_transfer": false,
     "foreign_autoactivation": false
   },
-  "freeze_receipt": "LYVRA_PET/recovery/PET_LIVECIRCLE_REHYDRATION_VISUAL_FREEZE_2026-10-08.md"
+  "freeze_receipt": "LYVRA_PET/recovery/PET_LIVECIRCLE_REHYDRATION_VISUAL_FREEZE_2026-10-08.md",
+  "plugin_impact_2026_10_08": "NOT_APPLICABLE_EXTERNAL_BACKUP_STATUS_RECONCILIATION_ONLY"
 }
