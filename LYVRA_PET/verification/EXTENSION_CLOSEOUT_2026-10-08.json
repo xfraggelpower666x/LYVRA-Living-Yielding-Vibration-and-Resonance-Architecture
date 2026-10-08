@@ -1,0 +1,51 @@
+{
+  "schema": "LYVRA_PET_EXTENSION_CLOSEOUT_v1",
+  "status": "VISUAL_LIVE_NATIVE_TRANSPORT_INSTALLED_LIVE_EVENT_UNVERIFIED",
+  "worker_version": "2.3.2",
+  "source_revision": "3a8b1853999d20ec36d8eea6bb464c882c9e217a",
+  "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
+  "deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+  "script_etag": "49fb8fc68dabad8b5f8499d5172e277c854b247c29af50e9c3837ca4929742f2",
+  "primary": "OWN_LYVRA_PET",
+  "secondary": "OPTIONAL_GPT_PET",
+  "original_preserved": true,
+  "closed_suit_authorized": true,
+  "native_signing": "INSTALLED_SIGN_ONLY_CLOUDFLARE_KEY",
+  "native_browser_trust": "PINNED_PUBLIC_DEPLOYMENT_KEY",
+  "browser_visual": "PASS_FOUR_FACETS_YAWN_STOMP_HUMOR",
+  "native_live_event": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT",
+  "plugin_host_visual": "NOT_VERIFIED",
+  "no_private_payload": true,
+  "no_private_key_in_repo": true,
+  "no_foreign_mutation": true,
+  "free_only": true,
+  "plugins": {
+    "native-runtime": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.50",
+      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
+    },
+    "account": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.47",
+      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
+    }
+  },
+  "public_event_carrier": "LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json",
+  "public_event_status": "NONE_NO_FAKE_TEST_EVENT",
+  "proof": "LYVRA_PET/preview/live-browser-proof-2.3.2.jpg",
+  "global_scope": "PET_ONLY",
+  "non_pet_prior_fingerprint_mismatches": [
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/facets/music_memory/FACET_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md",
+    "WEBLyvra/PET_INTEGRATION_HANDOFF.md",
+    "WEBLyvra/live/dist/index.html",
+    "WEBLyvra/live/dist/pet-presence.css",
+    "WEBLyvra/live/dist/pet-presence.js",
+    "WEBLyvra/live/tests/preservation-baseline.json",
+    "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md"
+  ]
+}

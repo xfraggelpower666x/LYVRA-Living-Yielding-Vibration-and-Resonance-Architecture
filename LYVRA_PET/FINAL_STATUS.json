@@ -1,0 +1,32 @@
+{
+  "status": "VISUAL_UPDATE_LIVE_NATIVE_TRANSPORT_INSTALLED_LIVE_EVENT_UNVERIFIED",
+  "package_version": "1.2.0",
+  "worker_version": "2.3.2",
+  "primary": "OWN_LYVRA_PET",
+  "secondary": "OPTIONAL_GPT_PET",
+  "original_preserved": true,
+  "closed_suit_user_authorized": true,
+  "live_deployed": true,
+  "worker_source_revision": "3a8b1853999d20ec36d8eea6bb464c882c9e217a",
+  "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
+  "worker_deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+  "verified": [
+    "BROWSER_FOUR_MUSIC_FACETS",
+    "BROWSER_YAWN_STOMP_HUMOR_STRIPS",
+    "CANVAS_ORIGINAL_RESTORE",
+    "SIGNATURE_TAMPER_REPLAY_EXPIRY",
+    "REPOSITORY_APPROVAL_COMMIT_AND_HEAD_RACE",
+    "LATE_NATIVE_FETCH_MANUAL_RESET_PAGE_CLOSE",
+    "BOTH_PLUGIN_RELEASE_TEXT_READBACK",
+    "CLOUDFLARE_SIGN_ONLY_KEY_AND_PUBLIC_TRUST_BINDING"
+  ],
+  "remaining": [
+    "LIVE_APPROVED_EVENT_END_TO_END",
+    "NEW_POSES_IN_CHATGPT_PLUGIN_HOST",
+    "DEFINITE_ONE_EYE_WINK_NOT_PRESENT"
+  ],
+  "native_browser_observation": "Whole-Verbindung derzeit nicht verfügbar; direct diagnostic navigation ERR_BLOCKED_BY_CLIENT",
+  "private_key_in_package": false,
+  "native_background_polling": false,
+  "foreign_system_mutation": false
+}

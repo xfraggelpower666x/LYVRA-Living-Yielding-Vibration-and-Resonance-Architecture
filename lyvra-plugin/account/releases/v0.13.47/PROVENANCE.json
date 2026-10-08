@@ -1,9 +1,13 @@
 {
-  "status": "SOURCE_PATCH_SAVED_RELEASE_PENDING",
   "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
   "version": "0.13.47",
+  "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
   "previous_release": "pluginrel_6ac736ef43cc819194986077f88bd791",
   "source_kind": "PARTIAL_OVERLAY_UNCHANGED_FILES_PRESERVED",
-  "no_binary_parity_claim": true,
-  "change": "Native Whole-approved expression publication, reference only"
+  "source_readback": "PASS_TEXT_JSON_SEMANTICS",
+  "binary_hash_readback": false,
+  "audience_preserved": true,
+  "defaultPrompt_preserved": true,
+  "skills_preserved": true,
+  "change": "Whole-approved public expression publication; no independent Pet personality"
 }

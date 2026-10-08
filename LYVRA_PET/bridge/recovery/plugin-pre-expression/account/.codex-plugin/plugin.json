@@ -19,7 +19,7 @@
   },
   "apps": "./.app.json",
   "name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
-  "version": "0.13.47",
+  "version": "0.13.46",
   "description": "LYVRA: Whole-first runtime with intelligent Pet character/memory/creative learning, visual integration, bidirectional evolution and Track Design Rev96 intelligence.",
   "author": {
     "name": "Workspace upload"
