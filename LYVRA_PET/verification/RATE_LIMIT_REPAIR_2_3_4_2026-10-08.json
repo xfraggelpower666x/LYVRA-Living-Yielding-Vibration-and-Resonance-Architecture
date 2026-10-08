@@ -1,0 +1,54 @@
+{
+  "schema": "LYVRA_PET_RATE_LIMIT_REPAIR_v1",
+  "status": "REPAIR_DEPLOYED_VERIFIED_UPSTREAM_RATE_LIMIT_BLOCKED",
+  "worker_version": "2.3.4",
+  "source_revision": "e9c7dd818d999ab160e12320e4648655f675af15",
+  "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+  "deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
+  "script_etag": "0cf657c530b0a0499cb7b37ddcd1b4a5b0555a4770c733581289331294fe5783",
+  "source_diagnosis": {
+    "status": "SOURCE_UNAVAILABLE",
+    "reason": "NATIVE_SOURCE_HTTP_403",
+    "diagnostic": {
+      "category": "GITHUB_PRIMARY_RATE_LIMIT",
+      "http_status": 403,
+      "rate_limit_remaining": 0,
+      "rate_limit_reset": 1791475388
+    },
+    "retry_at": "2026-10-08T16:03:09.000Z"
+  },
+  "tests": {
+    "primary_secondary_unknown_diagnosis": "PASS",
+    "safe_numeric_diagnostics": "PASS",
+    "server_cooldown_without_retries": "PASS",
+    "browser_cooldown_and_recovery": "PASS",
+    "pending_fetch_manual_context_close": "PASS",
+    "signature_tamper_replay_expiry": "PASS",
+    "worker_bundle_syntax": "PASS"
+  },
+  "plugin_impact": {
+    "native_version": "0.1.50",
+    "account_version": "0.13.47",
+    "both_metadata": "FRESH_VERIFIED",
+    "release_change": "NOT_REQUIRED",
+    "reason": "Backward-compatible transport failure handling; Whole authority, publication rules, plugin skills, app binding and trusted key are unchanged."
+  },
+  "recovery": {
+    "branch": "lyvra-backup-pre-force-pet-233-20261008",
+    "head": "bad7eaf58a2036e3dabcb6967af6ead2104dccc0",
+    "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97"
+  },
+  "original_asset_preserved": true,
+  "private_key_changed": false,
+  "private_key_exported": false,
+  "paid_features_added": false,
+  "foreign_mutation": false,
+  "limit_bypass": false,
+  "background_retry_loop": false,
+  "upstream_availability": "BLOCKED_UNTIL_GITHUB_LIMIT_RESET_READBACK_REQUIRED_AFTER_RESET",
+  "positive_signed_live_event": "OPEN",
+  "host_new_pose_visual": "OPEN",
+  "one_eye_wink_asset": "OPEN",
+  "full_completion": "PARTIAL",
+  "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea"
+}

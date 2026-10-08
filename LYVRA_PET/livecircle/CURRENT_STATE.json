@@ -82,10 +82,10 @@
     "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
   },
   "radio_integration": "OUTBOUND_HANDOFF_READY_666STREAM_NATIVE_CONSUMPTION_REQUIRED",
-  "worker_version": "2.3.2",
+  "worker_version": "2.3.4",
   "worker_deployment": {
-    "deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
-    "version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
+    "deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
+    "version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
     "source_readback": "PASS",
     "browser_visual": "PASS",
     "native_live_event": "UNVERIFIED"
@@ -111,8 +111,12 @@
     "installed": true,
     "end_to_end_verified": false,
     "public_carrier": "LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json",
-    "browser_observation": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT"
+    "browser_observation": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT",
+    "source_status": "GITHUB_PRIMARY_RATE_LIMIT_VERIFIED",
+    "retry_at": "2026-10-08T16:03:09.000Z",
+    "failure_handling": "SAFE_DIAGNOSIS_SERVER_AND_BROWSER_COOLDOWN"
   },
   "browser_visual_readback": "PASS_FOUR_FACETS_YAWN_STOMP_HUMOR",
-  "plugin_host_visual_readback": "UNVERIFIED"
+  "plugin_host_visual_readback": "UNVERIFIED",
+  "rate_limit_repair": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json"
 }

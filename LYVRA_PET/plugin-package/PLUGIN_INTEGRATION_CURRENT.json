@@ -106,5 +106,10 @@
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md"
     ]
+  },
+  "rate_limit_repair": {
+    "receipt": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json",
+    "worker_version": "2.3.4",
+    "plugin_impact": "NOT_REQUIRED_BACKWARD_COMPATIBLE_TRANSPORT"
   }
 }

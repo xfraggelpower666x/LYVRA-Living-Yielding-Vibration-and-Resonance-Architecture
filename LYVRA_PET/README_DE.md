@@ -1,3 +1,11 @@
+# Reparaturstand 2.3.4 · 08.10.2026
+
+Der GitHub-403 ist live als ausgeschöpftes primäres API-Limit nachgewiesen. Sichere numerische Diagnose, serverseitige Abrufpause und browserseitige Pause bis retry_at sind implementiert und getestet. Es gibt keinen automatischen Retry-Loop. Die lokale Ausdrucksvorschau bleibt verfügbar. Eine dauerhafte Quellenverfügbarkeit und ein echtes signiertes Live-Ereignis bleiben nach dem Limit-Reset zu prüfen.
+
+Reparaturbeleg: LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json
+
+Die folgende Dokumentation enthält den erhaltenen Stand der visuellen Erweiterung.
+
 # LYVRA Pet – Erweiterung 1.2.0
 
 Die sichtbare Erweiterung ist veröffentlicht: Worker 2.3.2. Das eigene Pet ist primär und außerhalb GPT Work nutzbar. GPT-Pet bleibt optional sekundär. Originalgrafiken und Logos bleiben erhalten. Zusätzliche Posen verwenden die ausdrücklich freigegebene geschlossene Rüstung.

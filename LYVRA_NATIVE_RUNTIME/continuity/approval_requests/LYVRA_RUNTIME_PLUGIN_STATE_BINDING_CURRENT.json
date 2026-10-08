@@ -2,9 +2,9 @@
   "schema": "LYVRA_RUNTIME_PLUGIN_STATE_FINGERPRINT_v1",
   "status": "CURRENT_PLUGIN_TEXT_AND_PET_SOURCE_VERIFIED_BINARY_HASH_NOT_REVERIFIED",
   "generated_date": "2026-10-08",
-  "source_head_observed_for_provenance": "a4a6bd3a5fdd38204668f605ce309f482e0bc9dc",
+  "source_head_observed_for_provenance": "e9c7dd818d999ab160e12320e4648655f675af15",
   "fingerprint_algorithm": "SHA256_CANONICAL_JSON_SORTED_KEYS_UTF8",
-  "runtime_plugin_state_fingerprint": "0130421e53cfbadda14119d535798e9783400a208a6e61b938e4cecccdc3c43a",
+  "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea",
   "bound_state": {
     "native_plugin": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
@@ -29,7 +29,7 @@
       "stable_set_adoption_blob": "44501cf56022503276d5b534cf3196322e05655d",
       "track_design_rev96_blob": "a6cac5c50d15f827169322a9e2dc969282dbd24a",
       "semantic_visual_facet_lifecircle_blob": "8f2383d68ea500add207e33674be012d7dd172c1",
-      "pet_event_source_blob": "ba33356a7064eac5034d9b460e5f99fa70f922c9",
+      "pet_event_source_blob": "c36daff3bfec1bc7fa05b1db8a146f63d74b6b2a",
       "pet_expression_effects_blob": "231ad55566eadac990c38c6c8dea5366edc57c9f"
     },
     "branding": {
@@ -49,10 +49,10 @@
       }
     },
     "pet_runtime": {
-      "worker_version": "2.3.2",
-      "source_revision": "3a8b1853999d20ec36d8eea6bb464c882c9e217a",
-      "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
-      "script_etag": "49fb8fc68dabad8b5f8499d5172e277c854b247c29af50e9c3837ca4929742f2",
+      "worker_version": "2.3.4",
+      "source_revision": "e9c7dd818d999ab160e12320e4648655f675af15",
+      "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+      "script_etag": "0cf657c530b0a0499cb7b37ddcd1b4a5b0555a4770c733581289331294fe5783",
       "public_key_id": "lyvra-whole-20261008-v1",
       "public_spki": "MCowBQYDK2VwAyEAS2d0QoYpOn+jzb9zkFe8E5T3pBEBkuyS5ZBODHUIYcM="
     }
@@ -94,12 +94,14 @@
       "lyvra_account": "0.13.47",
       "lyvra_native": "0.1.50",
       "converged": false,
-      "reason": "NEW_LYVRA_RELEASES_NOT_BACKUP_FROZEN"
+      "reason": "PET_RUNTIME_CHANGED_BACKUP_CANDIDATE_SUPERSEDED_NEW_APPROVAL_NOT_GRANTED",
+      "runtime_plugin_state_fingerprint": "13f7acd3cecc2e6398300525fc4c1b4859df9014bb7d8fcb769ee71a4ff39bea"
     }
   },
   "parallel_evolution_preserved": {
     "studio2_conducting_protocol_path": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
     "studio2_conducting_protocol_blob": "034df712a8642824dd824245fd0e252058ed7d6d",
     "plugin_release_required_by_studio2_change": false
-  }
+  },
+  "repair_note": "Pet 2.3.4 rate diagnostics and cooldown. New runtime fingerprint supersedes prior backup candidate; no fresh backup approval granted."
 }

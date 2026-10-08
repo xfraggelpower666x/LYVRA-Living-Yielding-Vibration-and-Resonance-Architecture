@@ -12,7 +12,7 @@
   "free_only": true,
   "browser_portable": true,
   "candidate_promoted": true,
-  "worker_version": "2.3.2",
+  "worker_version": "2.3.4",
   "chatgpt_app_ui": "USER_VISIBLE_VERIFIED",
   "sprite_visual_readback": "PENDING_USER_CONFIRMATION",
   "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
@@ -40,8 +40,8 @@
   "dashboard_pages_deployment": "b9c44d0a-fab2-478a-857c-68c700757100",
   "dashboard_deployment_result": "SUCCESS",
   "surface_navigation_status": "WEB_DASHBOARD_PET_DASHBOARD_LINKED_RADIO_OUTBOUND_HANDOFF_READY",
-  "worker_deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
-  "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
+  "worker_deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
+  "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
   "pet_app_binding": {
     "id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
     "plugin_manifest_binding": "VERIFIED_BOTH_PLUGIN_RELEASES",
@@ -67,8 +67,12 @@
     "installed": true,
     "end_to_end_verified": false,
     "public_carrier": "LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json",
-    "browser_observation": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT"
+    "browser_observation": "UNVERIFIED_CLOUD_BROWSER_DIAGNOSTIC_ERR_BLOCKED_BY_CLIENT",
+    "source_status": "GITHUB_PRIMARY_RATE_LIMIT_VERIFIED",
+    "retry_at": "2026-10-08T16:03:09.000Z",
+    "failure_handling": "SAFE_DIAGNOSIS_SERVER_AND_BROWSER_COOLDOWN"
   },
   "browser_visual_readback": "PASS_FOUR_FACETS_YAWN_STOMP_HUMOR",
-  "plugin_host_visual_readback": "UNVERIFIED"
+  "plugin_host_visual_readback": "UNVERIFIED",
+  "rate_limit_repair": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json"
 }

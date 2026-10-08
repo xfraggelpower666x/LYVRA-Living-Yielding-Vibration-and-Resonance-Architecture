@@ -1,15 +1,15 @@
 {
-  "status": "VISUAL_UPDATE_LIVE_NATIVE_TRANSPORT_INSTALLED_LIVE_EVENT_UNVERIFIED",
+  "status": "REPAIR_DEPLOYED_VERIFIED_UPSTREAM_RATE_LIMIT_BLOCKED",
   "package_version": "1.2.0",
-  "worker_version": "2.3.2",
+  "worker_version": "2.3.4",
   "primary": "OWN_LYVRA_PET",
   "secondary": "OPTIONAL_GPT_PET",
   "original_preserved": true,
   "closed_suit_user_authorized": true,
   "live_deployed": true,
-  "worker_source_revision": "3a8b1853999d20ec36d8eea6bb464c882c9e217a",
-  "worker_version_id": "b048a793-c5a7-479e-9f40-9a5659188f97",
-  "worker_deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+  "worker_source_revision": "e9c7dd818d999ab160e12320e4648655f675af15",
+  "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+  "worker_deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
   "verified": [
     "BROWSER_FOUR_MUSIC_FACETS",
     "BROWSER_YAWN_STOMP_HUMOR_STRIPS",
@@ -28,5 +28,26 @@
   "native_browser_observation": "Whole-Verbindung derzeit nicht verfügbar; direct diagnostic navigation ERR_BLOCKED_BY_CLIENT",
   "private_key_in_package": false,
   "native_background_polling": false,
-  "foreign_system_mutation": false
+  "foreign_system_mutation": false,
+  "rate_limit_repair": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json",
+  "native_source_diagnosis": {
+    "status": "SOURCE_UNAVAILABLE",
+    "reason": "NATIVE_SOURCE_HTTP_403",
+    "diagnostic": {
+      "category": "GITHUB_PRIMARY_RATE_LIMIT",
+      "http_status": 403,
+      "rate_limit_remaining": 0,
+      "rate_limit_reset": 1791475388
+    },
+    "retry_at": "2026-10-08T16:03:09.000Z"
+  },
+  "repair_verification": {
+    "primary_secondary_unknown_diagnosis": "PASS",
+    "safe_numeric_diagnostics": "PASS",
+    "server_cooldown_without_retries": "PASS",
+    "browser_cooldown_and_recovery": "PASS",
+    "pending_fetch_manual_context_close": "PASS",
+    "signature_tamper_replay_expiry": "PASS",
+    "worker_bundle_syntax": "PASS"
+  }
 }
