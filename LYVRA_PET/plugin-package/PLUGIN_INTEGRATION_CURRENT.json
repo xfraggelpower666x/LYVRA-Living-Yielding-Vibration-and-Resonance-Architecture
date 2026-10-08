@@ -1,17 +1,17 @@
 {
   "schema": "LYVRA_PET_PLUGIN_INTEGRATION_CURRENT_v1",
-  "status": "VERIFIED_INTELLIGENT_PET_SKILL_CURRENT",
+  "status": "VERIFIED_INTELLIGENT_PET_SKILL_APP_BINDING_BRANDED_CURRENT",
   "main_plugin_mcp_hard_binding": false,
   "pet_mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
   "account_plugin": {
     "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-    "version": "0.13.45",
-    "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
+    "version": "0.13.46",
+    "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
   },
   "native_plugin": {
     "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-    "version": "0.1.48",
-    "release_id": "pluginrel_6ac70d23233481919f22624348351154"
+    "version": "0.1.49",
+    "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
   },
   "pet_skill": "skills/lyvra-pet/SKILL.md",
   "pet_authority_reference": "references/pet-authority.md",
@@ -23,5 +23,35 @@
   "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
   "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
   "pet_personality_adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
-  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
+  "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
+  "release_freshness_2026_10_08": {
+    "source": "PLUGIN_CREATOR_LIVE_METADATA_AND_DIRECT_FILE_READBACK",
+    "verified_native_version": "0.1.49",
+    "verified_native_release": "pluginrel_6ac736d932588191b23afcc6f52d33eb",
+    "verified_account_version": "0.13.46",
+    "verified_account_release": "pluginrel_6ac736ef43cc819194986077f88bd791",
+    "app_binding_readback": "PASS_BOTH",
+    "pet_logo_asset_readback": "PASS_BOTH",
+    "preserve_main_lyvra_branding": true
+  },
+  "pet_app_binding": {
+    "id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "native_app_manifest": "VERIFIED",
+    "account_app_manifest": "VERIFIED"
+  },
+  "pet_branding": {
+    "plugin_asset": "assets/lyvra-pet-logo.png",
+    "plugin_asset_readback": "PASS_BOTH_RELEASES",
+    "repo_app_icon": {
+      "asset": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
+      "plugin_asset": "LYVRA_PET/plugin-package/assets/lyvra-pet-app-icon-256.png",
+      "dashboard_asset": "WEBLyvra/live/dist/dashboard/pet/assets/lyvra-pet-app-icon-256.png",
+      "git_blob": "fda0428e88d8bdf5984486712300bc5c3c084ca9",
+      "sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+      "bytes": 9675,
+      "format": "PNG",
+      "dimensions": "256x256"
+    },
+    "main_lyvra_logo_replaced": false
+  }
 }

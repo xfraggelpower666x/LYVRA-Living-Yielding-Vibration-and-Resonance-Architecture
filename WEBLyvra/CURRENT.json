@@ -9,7 +9,7 @@
   "sites_version": 15,
   "site_assets_source_commit": "498c4b1bc41e53dde3d81d085ca1763e974ba353",
   "date": "2026-10-01",
-  "hosting_status": "WEB_AND_DASHBOARD_DEPLOYMENT_VERIFIED_CLOUDFLARE_API",
+  "hosting_status": "WEB_AND_DASHBOARD_BRANDED_PET_DEPLOYMENT_VERIFIED_CLOUDFLARE_API",
   "target_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
   "tests": "ALL_THREE_AUTOMATED_SUITES_PASS",
   "not_verified": [
@@ -20,7 +20,7 @@
   ],
   "scope": "Only WEBLyvra website presentation. Native runtime and previous releases unchanged.",
   "pages_project_name": "weblyvra-live",
-  "deployed_source_commit": "e2d60b01b4a4103fceae12f13db20d7851ff4639",
+  "deployed_source_commit": "8d1f4b41f3c6fba0d8dcc9a42d0612ed58aecc84",
   "deployment_evidence_path": "WEBLyvra/deployment/PRODUCTION_STATUS_2026-10-01.json",
   "deployment_documentation_commit": "a0ed30eab5df455503cdf4e95c4b2f384640be99",
   "operator_reachability_confirmation": {
@@ -44,12 +44,12 @@
     "pfs_backup": "PREVIOUS_SNAPSHOT_UNCHANGED"
   },
   "pet_visual_integration": {
-    "status": "DEPLOYED_INTELLIGENT_MEMORY_CREATIVE_PET_SURFACES",
+    "status": "DEPLOYED_INTELLIGENT_MEMORY_CREATIVE_BRANDED_PET_SURFACES",
     "pages_project": "weblyvra-live",
-    "deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
+    "deployment_id": "071cf372-4050-4187-9301-c925c1b9d4a5",
     "custom_domain": "https://weblyvra.666soundsdesign-broadcaster.com/",
     "dashboard_project": "lyvra-dashboard",
-    "dashboard_deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "dashboard_deployment_id": "b9c44d0a-fab2-478a-857c-68c700757100",
     "dashboard_domain": "https://dashboard.666soundsdesign-broadcaster.com/",
     "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
     "website_pet_files": [
@@ -74,6 +74,13 @@
     "browser_visual_readback": "PENDING",
     "build": "PASS",
     "deploy": "PASS",
-    "free_only": true
+    "free_only": true,
+    "pet_logo": {
+      "path": "dist/dashboard/pet/assets/lyvra-pet-app-icon-256.png",
+      "sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+      "bytes": 9675,
+      "deployment_file_present": true,
+      "visual_host_readback": "SOURCE_AND_DEPLOYMENT_VERIFIED_HOST_VISUAL_PENDING"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_CHATGPT_APP_CURRENT_v1",
-  "status": "CURRENT_CHATGPT_APP_AND_WEB_INTEGRATED",
+  "status": "CURRENT_CHATGPT_APP_PLUGIN_BOUND_BRANDED",
   "pet_id": "pet_6ab791129364819183885f44a21497a2",
   "worker": "lyvra-pet-plugin-ui",
   "mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
@@ -12,23 +12,23 @@
   "free_only": true,
   "browser_portable": true,
   "candidate_promoted": false,
-  "worker_version": "2.0.1",
+  "worker_version": "2.0.2",
   "chatgpt_app_ui": "USER_VISIBLE_VERIFIED",
   "sprite_visual_readback": "PENDING_USER_CONFIRMATION",
   "website": "https://weblyvra.666soundsdesign-broadcaster.com/",
   "dashboard": "https://dashboard.666soundsdesign-broadcaster.com/",
-  "weblyvra_pages_deployment": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
+  "weblyvra_pages_deployment": "071cf372-4050-4187-9301-c925c1b9d4a5",
   "weblyvra_deployment_result": "SUCCESS",
   "plugin_surfaces": {
     "account": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.45",
-      "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
+      "version": "0.13.46",
+      "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
     },
     "native": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.48",
-      "release_id": "pluginrel_6ac70d23233481919f22624348351154"
+      "version": "0.1.49",
+      "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
     }
   },
   "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
@@ -37,7 +37,28 @@
   "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
   "radio": "https://webradio.666soundsdesign-broadcaster.com/",
   "radio_pet_handoff": "LYVRA_NATIVE_RUNTIME/continuity/OUTBOUND_TO_666STREAM_PET_SURFACE_HANDOFF_CURRENT.json",
-  "dashboard_pages_deployment": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+  "dashboard_pages_deployment": "b9c44d0a-fab2-478a-857c-68c700757100",
   "dashboard_deployment_result": "SUCCESS",
-  "surface_navigation_status": "WEB_DASHBOARD_PET_DASHBOARD_LINKED_RADIO_OUTBOUND_HANDOFF_READY"
+  "surface_navigation_status": "WEB_DASHBOARD_PET_DASHBOARD_LINKED_RADIO_OUTBOUND_HANDOFF_READY",
+  "worker_deployment_id": "de607f5d-99ba-406a-a4b7-8378c6511468",
+  "worker_version_id": "2dd20285-740f-4349-a145-a73807961fda",
+  "pet_app_binding": {
+    "id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "plugin_manifest_binding": "VERIFIED_BOTH_PLUGIN_RELEASES",
+    "required": false
+  },
+  "branding": {
+    "asset": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
+    "plugin_asset": "LYVRA_PET/plugin-package/assets/lyvra-pet-app-icon-256.png",
+    "dashboard_asset": "WEBLyvra/live/dist/dashboard/pet/assets/lyvra-pet-app-icon-256.png",
+    "git_blob": "fda0428e88d8bdf5984486712300bc5c3c084ca9",
+    "sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+    "bytes": 9675,
+    "format": "PNG",
+    "dimensions": "256x256",
+    "plugin_package_readback": "PASS",
+    "worker_logo_route": "PASS",
+    "embedded_app_logo": "DEPLOYED_SOURCE_VERIFIED",
+    "host_shell_icon": "READBACK_PENDING"
+  }
 }

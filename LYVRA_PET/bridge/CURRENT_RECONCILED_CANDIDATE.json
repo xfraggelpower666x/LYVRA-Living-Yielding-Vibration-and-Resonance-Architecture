@@ -1,0 +1,23 @@
+{
+  "status": "PARTIAL_RECONCILED_CANDIDATE",
+  "production_base": "51f9b4b2e7c16229460bb3363980601041c2c62a",
+  "previous_candidate": "cf6f3f1d3d6eb3d6dceb87a6e27efcaf4f82e309",
+  "worker_version": "2.1.1-candidate",
+  "production_branding_preserved": true,
+  "main_app_binding_preserved": true,
+  "legacy_logo_route_preserved": true,
+  "tests": [
+    "WORKER_HELPER_PARITY",
+    "WORKER_HTML_SCRIPT_MCP",
+    "EVENT_PREVIEW_INTERRUPTION",
+    "CURRENT_BRANDING_HEALTH_ROUTE_PRESERVATION"
+  ],
+  "production_promoted": false,
+  "live_deployed": false,
+  "remaining": [
+    "REAL_BROWSER_HOST_TEST",
+    "AUTHENTICATED_EVENTS",
+    "NEW_GESTURE_FRAMES",
+    "PLUGIN_IMPACT_BEFORE_PROMOTION"
+  ]
+}

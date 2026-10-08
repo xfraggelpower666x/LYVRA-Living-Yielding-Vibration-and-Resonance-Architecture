@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PET_TO_PFS_BACKUP_HANDOFF_v1",
-  "status": "NEW_PET_EVOLUTION_PENDING_PFS_BACKUP_AFTER_PREVIOUS_PARTIAL",
+  "status": "NEW_BRANDED_PET_APP_PLUGIN_EVOLUTION_PENDING_PFS_BACKUP",
   "source_system": "LYVRA",
   "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
   "source_branch": "lyvra",
@@ -37,24 +37,30 @@
     "candidate_promoted": false,
     "plugin_surfaces": {
       "account": {
-        "version": "0.13.45",
-        "release_id": "pluginrel_6ac70d31145c81918386ef96b49aeab4"
+        "version": "0.13.46",
+        "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
       },
       "native": {
-        "version": "0.1.48",
-        "release_id": "pluginrel_6ac70d23233481919f22624348351154"
+        "version": "0.1.49",
+        "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
       }
     },
-    "weblyvra_deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
+    "weblyvra_deployment_id": "071cf372-4050-4187-9301-c925c1b9d4a5",
     "pet_livecircle": "LYVRA_PET/livecircle/CURRENT_STATE.json",
     "pet_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
     "pet_visual_contract": "LYVRA_PET/visual/VISUAL_INTERFACE_CONTRACT.md",
     "facet_integration": "LYVRA_PET/integration/FACET_INTEGRATION_MAP.md",
-    "dashboard_deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "dashboard_deployment_id": "b9c44d0a-fab2-478a-857c-68c700757100",
     "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
     "character_personality": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
     "semantic_causal_memory": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_MEMORY_CURRENT.json",
-    "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json"
+    "creative_learning": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+    "worker_version": "2.0.2",
+    "worker_deployment_id": "de607f5d-99ba-406a-a4b7-8378c6511468",
+    "worker_version_id": "2dd20285-740f-4349-a145-a73807961fda",
+    "pet_app_binding": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "pet_logo_sha256": "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb",
+    "pet_logo_repo_path": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png"
   },
   "consumption_trigger": "666PFS UPDATE",
   "foreign_autoactivation": false,
@@ -75,7 +81,7 @@
     "lyvra_authority_unchanged": true,
     "no_new_child": true
   },
-  "next": "666PFS UPDATE_TO_BACKUP_NEW_PET_PERSONALITY_SKILL_DASHBOARD_EVOLUTION",
+  "next": "666PFS UPDATE_TO_BACKUP_BRANDED_PET_APP_PLUGIN_EVOLUTION",
   "dependency_scope": [
     "LYVRA_NATIVE_RUNTIME/current/personality/CHARACTER_PERSONALITY_LIVECIRCLE.md",
     "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json",

@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_BIDIRECTIONAL_PLUGIN_EVOLUTION_UPDATE_STATUS_v1",
-  "status": "ALIVE_ADAPTER_RELEASE_VERIFIED_POINTER_SYNC_PENDING",
+  "status": "DUAL_RELEASE_VERIFIED_PET_BINDING_REFRESHED_FULL_COVERAGE_PENDING",
   "date": "2026-10-08",
   "source_base_head": "1b278248d7c759827be110c744b38a0391c500c5",
   "recovery_branch": "lyvra-pre-bidirectional-evolution-20261008",
@@ -135,5 +135,16 @@
     "fingerprints": "PENDING",
     "backup_approval": "REVALIDATION_REQUIRED",
     "recovery": "lyvra-pre-alive-bidirectional-plugin-20261008"
+  },
+  "verified_release_freshness": {
+    "native_version": "0.1.48",
+    "native_release": "pluginrel_6ac71d9412cc8191b1cbd96b5189300d",
+    "account_version": "0.13.45",
+    "account_release": "pluginrel_6ac70d31145c81918386ef96b49aeab4",
+    "pet_binding_commit": "481f87256a7341ee36a4d0fb9ea2df2d5396b1c3",
+    "pet_binding_readback": "VERIFIED",
+    "whole_pointer": "UNCHANGED",
+    "full_registry_check": "PENDING",
+    "backup_convergence": "PENDING"
   }
 }
