@@ -53,3 +53,11 @@ No forged approved event, no existing sprite mutation, no public token, no unsaf
 - Staging gates: Cloudflare Free only; secrets entered privately in Cloudflare (never chat); new worker script name for staging, no production overwrite; SQLite migration + binding; regenerate full bundle; execute Node tests and real DO burst/cooldown tests; test 403/429; production release only after PASS.
 
 CAUTION: A timeout or crash after an upstream 403 but before persisting the shared cooldown can still allow a subsequent request. Keep a conservative 300/hour reservation ceiling and add a failure-injection/partial-request test before claiming full global rate-limit correctness. No real network or paid capacity was exercised by this candidate.
+
+## 2026-10-08 staging credential evidence
+
+- Cloudflare GET settings confirmed staging script `lyvra-pet-read-staging` has binding `LYVRA_GITHUB_READ_TOKEN` of type `secret_text` (value was not accessed).
+- The productive `lyvra-pet-plugin-ui` retains its original three bindings only.
+- GitHub production HEAD remains `3f39c8b1683b153eba29c3f7c9f9a4b11882444c`.
+- Staging remains scaffold only: not yet a working authenticated GitHub consumer, no DO migration/binding, no active 300/h central limiter. Do NOT claim operational rate protection.
+- Next: build deployable module bundle with `PetGithubBudget` SQLite DO migration and bound secret preserved, isolate staging, run authenticated read and concurrency tests, readback. No token in repository/chat.
