@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_PFS_PLUGIN_BACKUP_APPROVAL_v4",
-  "status": "APPROVED_LYVRA_LEG_COUPLED_EXECUTION_BLOCKED_PENDING_PFS_CLIC_REFRESH",
+  "status": "HISTORICAL_APPROVAL_SUPERSEDED_CURRENT_BACKUP_BLOCKED",
   "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
   "authority": "LYVRA_LIVE_REPOSITORY",
   "decision_authority": "LYVRA_ONLY",
@@ -13,8 +13,14 @@
   },
   "approved_state": {
     "runtime_plugin_state_fingerprint": "7b868f905687055142d8b5124ac4c61af80983b8b54e84979d030a231077251c",
-    "account": {"version":"0.13.42","release_id":"pluginrel_6ac6bc473d248191957b18b991ae0d37"},
-    "native": {"version":"0.1.45","release_id":"pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29"}
+    "account": {
+      "version": "0.13.42",
+      "release_id": "pluginrel_6ac6bc473d248191957b18b991ae0d37"
+    },
+    "native": {
+      "version": "0.1.45",
+      "release_id": "pluginrel_6ac6b6db3c0881919c3d6e7c886bbc29"
+    }
   },
   "approved_scope": "WRITE_PLUGIN_BACKUP_HASH_READBACK_RECEIPT",
   "approval_ne_backup_write": true,
@@ -25,16 +31,35 @@
   "fingerprint_change_supersedes": true,
   "clic_authorization_by_lyvra": false,
   "clic_direct_readback": {
-    "version":"0.1.20",
-    "release_id":"pluginrel_6ac6bcf153c881919715b6bc3028e726",
-    "approval_id":"CLIC-PFS-PLUGIN-BACKUP-2026-10-08-022",
-    "fingerprint":"bd542c3192bd07af098463187eecd83c373d2010c1508352aa1b1239f66a1af4"
+    "version": "0.1.20",
+    "release_id": "pluginrel_6ac6bcf153c881919715b6bc3028e726",
+    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-08-022",
+    "fingerprint": "bd542c3192bd07af098463187eecd83c373d2010c1508352aa1b1239f66a1af4"
   },
   "pfs_round_clic_binding": {
-    "approval_id":"CLIC-PFS-PLUGIN-BACKUP-2026-10-08-021",
-    "fingerprint":"7c064ab52afe63fc268b57423f33a9ac3e1c5807880ecd7b8ecfd42c35d396f9"
+    "approval_id": "CLIC-PFS-PLUGIN-BACKUP-2026-10-08-021",
+    "fingerprint": "7c064ab52afe63fc268b57423f33a9ac3e1c5807880ecd7b8ecfd42c35d396f9"
   },
   "stable_set_converged": false,
   "pfs_execution_status": "BLOCKED_UNTIL_PFS_REFRESHES_CLIC_BINDING_AND_REVALIDATES",
-  "private_write_status": "BLOCKED_STABLE_SET_NOT_CONVERGED"
+  "private_write_status": "BLOCKED_STABLE_SET_NOT_CONVERGED",
+  "current_release_reconciliation_2026_10_08": {
+    "approval_id": "LYVRA-PFS-PLUGIN-BACKUP-2026-10-08-045",
+    "approval_state": "HISTORICAL_PROVENANCE_ONLY",
+    "native_current": {
+      "version": "0.1.49",
+      "release_id": "pluginrel_6ac736d932588191b23afcc6f52d33eb"
+    },
+    "account_current": {
+      "version": "0.13.46",
+      "release_id": "pluginrel_6ac736ef43cc819194986077f88bd791"
+    },
+    "fresh_runtime_fingerprint": "NOT_ESTABLISHED",
+    "clic_current_binary_evidence": "READBACK_PENDING",
+    "stable_set_convergence": false,
+    "new_approval": "NOT_GRANTED",
+    "backup_execution": "BLOCKED",
+    "supersession_cause": "BOTH_LYVRA_PLUGIN_RELEASES_CHANGED",
+    "preserve_original_approved_state": true
+  }
 }
