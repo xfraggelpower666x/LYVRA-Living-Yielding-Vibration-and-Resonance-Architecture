@@ -40,8 +40,8 @@
   "dashboard_pages_deployment": "b9c44d0a-fab2-478a-857c-68c700757100",
   "dashboard_deployment_result": "SUCCESS",
   "surface_navigation_status": "WEB_DASHBOARD_PET_DASHBOARD_LINKED_RADIO_OUTBOUND_HANDOFF_READY",
-  "worker_deployment_id": "67eb8ec2-6fa8-40ea-853c-7170d6c178ce",
-  "worker_version_id": "bd7b205f-eff0-4e1e-9298-fe336b91e595",
+  "worker_deployment_id": "0c45fa4c-b546-4220-84c7-2a7fd262899e",
+  "worker_version_id": "7e3274fc-1cd2-449c-acd9-fb2ed3fe607b",
   "pet_app_binding": {
     "id": "asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
     "plugin_manifest_binding": "VERIFIED_BOTH_PLUGIN_RELEASES",
@@ -74,5 +74,22 @@
   },
   "browser_visual_readback": "PASS_FOUR_FACETS_YAWN_STOMP_HUMOR",
   "plugin_host_visual_readback": "UNVERIFIED",
-  "rate_limit_repair": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json"
+  "rate_limit_repair": "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json",
+  "pet_budget_counter": {
+    "status": "DEPLOYED_SCRIPT_READBACK_VERIFIED_HOST_VISUAL_PENDING",
+    "source": "LYVRA_PET_GITHUB_BUDGET_DURABLE_OBJECT",
+    "source_worker": "lyvra-pet-read-staging",
+    "source_endpoint": "https://lyvra-pet-read-staging.digital-underground-connected.workers.dev/budget-status",
+    "display": "USED_OF_300_REMAINING_60_MINUTE_WINDOW_COOLDOWN",
+    "verification": "SOURCE_BUNDLE_EXACT_GIT_BLOB_9146676bf56a70ccbc29b48210f6c935cf9ece85",
+    "live_deployment_id": "0c45fa4c-b546-4220-84c7-2a7fd262899e",
+    "live_version_id": "7e3274fc-1cd2-449c-acd9-fb2ed3fe607b",
+    "no_browser_estimates": true,
+    "fallback": "NICHT_VERFUEGBAR",
+    "observed_counter_value": "NOT_DIRECTLY_VERIFIED",
+    "host_render": "PENDING",
+    "source_cost": "FREE_ONLY",
+    "original_asset_preserved": true,
+    "plugin_file_mutation": false
+  }
 }
