@@ -1,0 +1,20 @@
+{
+  "schema": "LYVRA_PET_PLUGIN_INTEGRATION_CURRENT_v1",
+  "status": "VERIFIED",
+  "main_plugin_mcp_hard_binding": false,
+  "pet_mcp_endpoint": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/mcp",
+  "account_plugin": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.43",
+    "release_id": "pluginrel_6ac70209891c819182ce7b4fdb5317f7"
+  },
+  "native_plugin": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.47",
+    "release_id": "pluginrel_6ac701f7a71881918ac244e2a3080000"
+  },
+  "pet_skill": "skills/lyvra-pet/SKILL.md",
+  "pet_authority_reference": "references/pet-authority.md",
+  "continuity_rule": "PET_SUB_LIVECIRCLE_AND_REHYDRATION_BY_REFERENCE",
+  "browser_portability_preserved": true
+}
