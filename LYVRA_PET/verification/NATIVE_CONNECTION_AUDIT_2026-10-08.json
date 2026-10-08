@@ -1,0 +1,48 @@
+{
+  "schema": "LYVRA_PET_NATIVE_CONNECTION_AUDIT_v1",
+  "status": "PARTIAL_NATIVE_SOURCE_BLOCKED",
+  "base_head": "b5ec095d243e1caa0745a0722ee26b695d8faa9d",
+  "recovery_anchor": "b5ec095d243e1caa0745a0722ee26b695d8faa9d",
+  "scope": "LYVRA_PET",
+  "worker_version": "2.3.2",
+  "deployment_id": "f11e6b9b-a204-4c2f-99e5-13262453c3d2",
+  "native_source": {
+    "status": "SOURCE_UNAVAILABLE",
+    "verified_reason": "NATIVE_SOURCE_HTTP_403",
+    "evidence": "Direct current open_lyvra_pet connector structuredContent readback",
+    "cause": "UNKNOWN_403_DOES_NOT_DISTINGUISH_RATE_LIMIT_PERMISSION_OR_OTHER_DENIAL",
+    "live_approved_event": "NOT_VERIFIED"
+  },
+  "connector_schema": {
+    "runtime_version": "NOW_READ_BACK",
+    "native_expression": "NOW_READ_BACK",
+    "prior_missing_fields": "SUPERSEDED_BY_CURRENT_READBACK"
+  },
+  "tests": {
+    "repository_approval_head_race_privacy_expiry": "PASS",
+    "ed25519_tamper_replay_expiry_disposal": "PASS",
+    "manual_context_pending_fetch_guard": "PASS",
+    "worker_helper_parity": "PASS"
+  },
+  "plugins": {
+    "native": {
+      "version": "0.1.50",
+      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4",
+      "fresh_metadata": "VERIFIED"
+    },
+    "account": {
+      "version": "0.13.47",
+      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
+      "fresh_metadata": "VERIFIED"
+    }
+  },
+  "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY_NO_RUNTIME_SEMANTIC_CHANGE",
+  "visual_status": "PRIOR_LIVE_BROWSER_PROOF_PRESERVED_NOT_RETESTED_IN_THIS_AUDIT",
+  "host_visual": "OPEN",
+  "one_eye_wink": "OPEN_NO_DEDICATED_SPRITE",
+  "older_auto_repo_handoff": "HISTORICAL_VERSION_METADATA_SUPERSEDED_BY_PET_EXTENSION_CLOSEOUT_AND_THIS_AUDIT",
+  "next_repair": "Diagnose GitHub upstream 403 using response headers/body within the Worker; then choose authorized API access or wait for confirmed rate reset. Preserve current sign-only key and public trust anchor. Do not manufacture an approved emotion to test connectivity.",
+  "completion": "AUDIT_COMPLETE_PRODUCT_PARTIAL",
+  "foreign_mutation": false,
+  "secret_export": false
+}
