@@ -33,8 +33,9 @@ async function githubFailure(response,now){
 }
 // Read-only attestation: only a dedicated, current Whole-approved repository commit
 // may produce an envelope. This endpoint accepts no event supplied by a caller.
-export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.now()}={}){
- const api='https://api.github.com/repos/'+REPO,headers={'User-Agent':'LYVRA-Pet-ReadOnly-Producer','Accept':'application/vnd.github+json'};
+export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.now(),githubToken}={}){
+ if(typeof githubToken!=='string'||!githubToken.trim())return {status:'AUTH_NOT_CONFIGURED'};
+ const api='https://api.github.com/repos/'+REPO,headers={'User-Agent':'LYVRA-Pet-ReadOnly-Producer','Accept':'application/vnd.github+json','Authorization':'Bearer '+githubToken.trim(),'X-GitHub-Api-Version':'2022-11-28'};
  async function read(url,allowAbsent=false){
   const isApi=url.startsWith(api+'/'),state=githubReadStates.get(fetcher);
   if(isApi&&state&&clock()<state.until)throw state.error;
@@ -57,9 +58,9 @@ export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.
  const last=await read(api+'/branches/lyvra');if(last.commit?.sha!==head)throw Error('Native HEAD changed');
  return {status:'APPROVED',head,event};
 }
-export async function produceRepositoryEnvelope({privateKey,keyId,fetcher=fetch,cryptoApi=crypto,clock=()=>Date.now()}={}){
+export async function produceRepositoryEnvelope({privateKey,keyId,githubToken,fetcher=fetch,cryptoApi=crypto,clock=()=>Date.now()}={}){
  if(!privateKey||!keyId)return {status:'NOT_CONFIGURED'};
- const approved=await readApprovedRepositoryEvent({fetcher,clock});if(approved.status!=='APPROVED')return approved;
+ const approved=await readApprovedRepositoryEvent({fetcher,clock,githubToken});if(approved.status!=='APPROVED')return approved;
  const canonical=canonicalPetEvent(approved.event);
  const producer=createSignedEventProducer({privateKey,keyId,cryptoApi,clock,verifyNativeEvent:event=>canonicalPetEvent(event)===canonical});
  return {status:'APPROVED',head:approved.head,envelope:await producer.produce(approved.event)};
