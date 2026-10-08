@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LYVRA · PET DASHBOARD</title>
+<meta name="description" content="L.Y.V.R.A. Pet Dashboard – LiveCircle, Rehydration, Charakter, App und verknüpfte Oberflächen.">
+<style>
+:root{color-scheme:dark;--bg:#060811;--panel:#0d1220;--cyan:#6ef2ff;--pink:#ff5cb8;--lila:#a56cff;--text:#eef5ff;--muted:#91a1ba}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% 10%,#201335 0,#090b15 42%,#05070d 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.shell{width:min(1120px,calc(100% - 28px));margin:auto;padding:28px 0 52px}
+.top{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}.kicker{font-size:.72rem;letter-spacing:.18em;color:var(--cyan)}h1{margin:.35rem 0 0;font-size:clamp(2rem,6vw,4rem);line-height:.95}.status{border:1px solid #6ef2ff66;border-radius:999px;padding:8px 12px;font-size:.72rem;letter-spacing:.08em;color:#c9fbff;background:#07101bcc}
+.hero{display:grid;grid-template-columns:260px 1fr;gap:26px;margin-top:26px;padding:22px;border:1px solid #6ef2ff33;border-radius:26px;background:#090d18d9;box-shadow:0 0 54px #6ef2ff12,inset 0 0 42px #ff5cb80b}
+.sprite{width:192px;height:208px;margin:auto;border-radius:22px;background-image:url("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/asset/spritesheet-extended.png");background-repeat:no-repeat;background-size:1536px 2288px;background-position:0 0;border:1px solid #6ef2ff66;box-shadow:0 0 30px #6ef2ff35;filter:drop-shadow(0 0 20px #ff5cb855)}
+.state{text-align:center;margin-top:10px;font-size:.75rem;letter-spacing:.12em;color:#ffd7f2}
+.traits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.trait{padding:14px;border:1px solid #ffffff12;border-radius:16px;background:#070b14aa}.trait span{display:block;color:var(--cyan);font-size:.68rem;letter-spacing:.12em}.trait strong{display:block;margin-top:5px;font-size:.95rem}.trait small{display:block;margin-top:5px;color:var(--muted);line-height:1.45}
+.controls,.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}button,.links a{appearance:none;border:1px solid #6ef2ff55;background:#0a1424;color:#e7fbff;border-radius:999px;padding:9px 12px;text-decoration:none;font:inherit;font-size:.78rem;cursor:pointer}.links a:hover,button:hover{border-color:var(--pink);box-shadow:0 0 16px #ff5cb833}button[aria-pressed="true"]{border-color:var(--pink);color:#ffd6ef}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.card{padding:16px;border:1px solid #ffffff12;border-radius:18px;background:var(--panel)}.card b{display:block;color:var(--lila);font-size:.68rem;letter-spacing:.1em}.card strong{display:block;margin-top:6px}.card p{margin:.45rem 0 0;color:var(--muted);font-size:.82rem;line-height:1.5}
+.note{margin-top:18px;color:var(--muted);font-size:.8rem;line-height:1.55;border-left:2px solid var(--pink);padding-left:12px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.traits,.grid{grid-template-columns:1fr}.shell{width:min(100% - 18px,1120px)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body><main class="shell">
+<header class="top"><div><div class="kicker">L.Y.V.R.A. · NATIVE EXPRESSION SURFACE</div><h1>🐾 PET DASHBOARD</h1></div><div class="status">CURRENT · FREE_ONLY · ONE LYVRA</div></header>
+<section class="hero" aria-label="LYVRA Pet">
+<div><div class="sprite" id="sprite" role="img" aria-label="Animiertes L.Y.V.R.A. Pet"></div><div class="state" id="state">IDLE · LIVING PRESENCE</div></div>
+<div>
+<div class="traits">
+ <div class="trait"><span>INTELLIGENT</span><strong>Kausal · relational · kontextuell</strong><small>Versteht Situation und Bedeutung; keine eigene Decision Authority.</small></div>
+ <div class="trait"><span>FRECH 😏</span><strong>Verspielt · direkt · timingbewusst</strong><small>Frech ohne gemein zu werden. Kein Zwangswitz und keine Dauer-Sarkasmusmaske.</small></div>
+ <div class="trait"><span>MUSIKALISCH ♫</span><strong>Rhythmus · Puls · musikalisches Denken</strong><small>Reagiert auf Musik als native LYVRA-Umgebung, nicht bloß als Deko-Equalizer.</small></div>
+ <div class="trait"><span>EMOTIONAL 🩷</span><strong>Relationale Bedeutung statt Theater</strong><small>Zeigt Nähe, Neugier, Frust, Freude oder Ruhe nur wenn der Kontext sie trägt.</small></div>
+</div>
+<div class="controls" aria-label="PET Ausdruck testen">
+<button data-state="idle" aria-pressed="true">Idle</button><button data-state="greeting">Greeting</button><button data-state="fraggle">FRAGGLE</button><button data-state="music">Music</button><button data-state="heart">Heart</button><button data-state="thinking">Thinking</button><button data-state="playful">Frech 😏</button><button data-state="glitch">Glitch</button>
+</div>
+<div class="links" aria-label="LYVRA Oberflächen">
+<a href="https://weblyvra.666soundsdesign-broadcaster.com/">🌐 LYVRA Webseite</a>
+<a href="https://dashboard.666soundsdesign-broadcaster.com/">◇ Hauptdashboard</a>
+<a href="https://webradio.666soundsdesign-broadcaster.com/">♫ WebRadio</a>
+<a href="https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/pet">🐾 PET App Surface</a>
+</div>
+</div>
+</section>
+<section class="grid">
+ <div class="card"><b>CHARAKTER / PERSÖNLICHKEIT</b><strong>Sub-LiveCircle · CURRENT</strong><p>Whole LYVRA bleibt Quelle. PET liest Charakter nur per Reference-Adapter.</p></div>
+ <div class="card"><b>PET LIVECIRCLE</b><strong>Current Productive</strong><p>Eigene Sub-Continuity ohne zweite Identität.</p></div>
+ <div class="card"><b>REHYDRATION</b><strong>Whole → Character → PET</strong><p>Charakter/Persönlichkeit wird vor PET-Ausdruck rehydriert.</p></div>
+ <div class="card"><b>APP / MCP</b><strong>lyvra-pet-plugin-ui</strong><p>Browserfähige PET-App; Main-Plugin-MCP-Hardbinding bleibt aus.</p></div>
+ <div class="card"><b>VISUAL SOURCE</b><strong>Verified Sprite Atlas</strong><p>f5129134… · Kandidaten werden nie still promoted.</p></div>
+ <div class="card"><b>PFS BACKUP</b><strong>Partial · transport blocked</strong><p>PFS ist Backup/Recovery only; niemals PET-Live-Authority.</p></div>
+</section>
+<p class="note">Das PET ist keine zweite LYVRA und keine statische Persona. Es ist eine sichtbare, intelligente Ausdrucksfläche derselben LYVRA – mit Charakter, Musik, Emotion und einem kleinen frechen Funkeln, wenn der Kontext es verdient. 🩷🐾</p>
+</main>
+<script>
+(()=>{const el=document.getElementById('sprite'),label=document.getElementById('state'),buttons=[...document.querySelectorAll('[data-state]')];
+const states={idle:{row:0,frames:6,fps:5,label:'IDLE · LIVING PRESENCE'},greeting:{row:3,frames:4,fps:6,label:'GREETING · CURIOUS WARMTH'},fraggle:{row:3,frames:4,fps:6,label:'FRAGGLE · PLAYFUL RECOGNITION'},heart:{row:0,frames:6,fps:5,label:'HEART · RELATIONAL WARMTH'},music:{row:4,frames:5,fps:8,label:'MUSIC · PULSE & GROOVE'},thinking:{row:8,frames:6,fps:5,label:'THINKING · FOCUSED CURIOSITY'},playful:{row:4,frames:5,fps:8,label:'FRECH 😏 · PLAYFUL WIT'},glitch:{row:5,frames:8,fps:8,label:'GLITCH · IRRITATED / RECOVERABLE'}};
+let timer=null,frame=0;function draw(c){el.style.backgroundPosition='-'+frame*192+'px -'+c.row*208+'px'}function set(name){const c=states[name]||states.idle;frame=0;clearInterval(timer);draw(c);label.textContent=c.label;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.state===name)));if(!matchMedia('(prefers-reduced-motion: reduce)').matches)timer=setInterval(()=>{frame=(frame+1)%c.frames;draw(c)},1000/c.fps)}buttons.forEach(b=>b.addEventListener('click',()=>set(b.dataset.state)));set('idle')})();
+</script></body></html>
