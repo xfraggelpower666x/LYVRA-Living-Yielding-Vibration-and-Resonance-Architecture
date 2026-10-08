@@ -32,10 +32,10 @@
   },
   "website_deployment": {
     "project": "weblyvra-live",
-    "deployment_id": "60f2c683-db61-400f-9ee8-4ef4b8198c49",
+    "deployment_id": "4fd9ee31-ebbd-4f11-9316-ffa45069ffc9",
     "result": "SUCCESS"
   },
-  "dashboard_integration": "DEPLOYED_WITH_WEBLYVRA",
+  "dashboard_integration": "DEPLOYED_SEPARATE_PET_DASHBOARD_AND_MAIN_DASHBOARD",
   "facets_integration": "BOUND_BY_REFERENCE",
   "whole_rehydration_registration": "CURRENT",
   "pfs_backup": {
@@ -74,5 +74,12 @@
     "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
     "radio": "https://webradio.666soundsdesign-broadcaster.com/",
     "pet_app": "https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/pet"
-  }
+  },
+  "dashboard_deployment": {
+    "project": "lyvra-dashboard",
+    "deployment_id": "8f10d594-0c4a-4f48-a675-be5612fd1ae9",
+    "result": "SUCCESS",
+    "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/"
+  },
+  "radio_integration": "OUTBOUND_HANDOFF_READY_666STREAM_NATIVE_CONSUMPTION_REQUIRED"
 }
