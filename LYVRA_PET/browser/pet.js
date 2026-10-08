@@ -27,7 +27,7 @@ bridgeReady.catch(()=>{sprite.dataset.bridgeStatus="UNAVAILABLE";});
 
 boot().catch(err=>{label.textContent="RENDERER ERROR";console.error(err)});
 
-let expressionEffects=null;
+let expressionEffects=null,evidenceEffects=null;
 const effectsReady=import("../bridge/expression-effects.mjs").then(module=>{
  const stage=document.createElement("div");Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto",overflow:"visible"});
  sprite.parentNode.insertBefore(stage,sprite);stage.append(sprite);Object.assign(sprite.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
@@ -35,9 +35,10 @@ const effectsReady=import("../bridge/expression-effects.mjs").then(module=>{
  return expressionEffects;
 });
 window.lyvraPetExpression=Object.freeze({
- async preview(event){const effects=await effectsReady;const state=effects.set(event);label.textContent="AUSDRUCKSVORSCHAU · "+state.facet+" · "+state.gesture;return {...state,newGestureFramesAvailable:false};},
+ async preview(event){if(evidenceEffects)evidenceEffects.reset();const effects=await effectsReady;const state=effects.set(event);label.textContent="AUSDRUCKSVORSCHAU · "+state.facet+" · "+state.gesture;return {...state,newGestureFramesAvailable:false};},
  async setBeat(bpm){(await effectsReady).setBeat(bpm);},
- instance:"PRIMARY_NATIVE",gptRequired:false
+ instance:"PRIMARY_NATIVE",gptRequired:false,
+ async connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceEffects)evidenceEffects.dispose();const [effects,module]=await Promise.all([effectsReady,import("../bridge/evidence-effect-controller.mjs")]);evidenceEffects=module.createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceEffects;}
 });
 effectsReady.catch(()=>{sprite.dataset.effectsStatus="UNAVAILABLE";});
-window.addEventListener("pagehide",()=>{if(expressionEffects)expressionEffects.dispose();});
+window.addEventListener("pagehide",()=>{if(evidenceEffects)evidenceEffects.dispose();if(expressionEffects)expressionEffects.dispose();});
