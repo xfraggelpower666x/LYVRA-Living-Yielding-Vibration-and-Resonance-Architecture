@@ -64,5 +64,21 @@
     "alive_plugin_release_parity": "PENDING_EDIT_AUTHORITY",
     "inbound_candidate_transport": "HOST_CAPABILITY_DEPENDENT",
     "current_pointer_closeout": "DEFERRED_UNTIL_GOVERNED_PARITY_OR_EXPLICIT_PARTIAL_PUBLICATION"
+  },
+  "alive_bridge_validation_2026_10_08": {
+    "status": "PARTIAL_SEMANTIC_COMPATIBILITY_ONLY",
+    "observed_alternative_chat": "EXPORTED_ALIVE_CHAT_CONFIRMS_REPO_CURRENT_AND_MANIFEST_READS_BUT_EXPORT_ENDS_BEFORE_BRIDGE_RESULT",
+    "installed_alive_skills": "VERIFIED_THIS_SESSION_INSTRUCTIONS_AND_REPOSITORY_UPDATE_RECOVERY",
+    "native_bridge_git_blob": "9bb3d7ee887b5b5835094086e73bbed0cf74464b",
+    "native_bridge_readback": "VERIFIED_THIS_SESSION",
+    "required_bridge_references": "DIRECT_REPO_READS_THIS_SESSION_VERIFIED",
+    "separate_alive_runtime_full_bridge_readback": "NOT_EVIDENCED",
+    "semantic_alignment": "BASIC_AUTHORITY_AND_REHYDRATION_RULES_COMPATIBLE",
+    "semantic_execution": "NOT_PROVEN",
+    "plugin_release_parity": "UNVERIFIED_NO_EDITABLE_MIGRATED_RELEASE_READBACK",
+    "native_plugin": "0.1.46",
+    "pointer_update": "BLOCKED_UNTIL_PROVEN_PARITY_OR_GOVERNED_PARTIAL_CLOSEOUT",
+    "foreign_activation": false,
+    "source": "user supplied exported ALIVE chat plus current skills and current GitHub readback"
   }
 }
