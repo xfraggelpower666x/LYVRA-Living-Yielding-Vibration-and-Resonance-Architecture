@@ -1,0 +1,22 @@
+{
+  "schema": "LYVRA_PET_CONNECTION_REPAIR_READBACK_v1",
+  "status": "VERIFIED_CURRENT_SOURCE_READ_RESTORED",
+  "scope": "LYVRA_PET_NATIVE_SOURCE",
+  "recovery_anchor": "401a996694f7d0dd414e16879ec04c372698d527",
+  "worker_version": "2.3.2",
+  "current_connector_result": {
+    "status": "NO_APPROVED_EVENT",
+    "head": "401a996694f7d0dd414e16879ec04c372698d527"
+  },
+  "head_matches_authenticated_github": true,
+  "previous_403": "NOT_REPRODUCIBLE_CURRENT_READBACK_SUPERSEDES_BLOCKED_STATUS",
+  "previous_403_cause": "UNKNOWN_NO_RATE_LIMIT_OR_PERMISSION_CAUSE_CLAIMED",
+  "code_change": false,
+  "secret_change": false,
+  "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY",
+  "live_positive_signature": "OPEN_NO_APPROVED_EVENT_PUBLISHED",
+  "host_visual": "OPEN",
+  "one_eye_wink": "OPEN",
+  "completion": "SOURCE_CONNECTION_VERIFIED_FULL_PET_COMPLETION_PARTIAL",
+  "previous_audit": "LYVRA_PET/verification/NATIVE_CONNECTION_AUDIT_2026-10-08.json"
+}
