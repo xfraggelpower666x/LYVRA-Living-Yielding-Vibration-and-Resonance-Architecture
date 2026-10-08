@@ -47,5 +47,18 @@
     "binary_transport": "WRITE_BLOCKED",
     "pfs_role": "BACKUP_RECOVERY_REGISTRY_ONLY",
     "authority_transfer": false
+  },
+  "character_personality": {
+    "source": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+    "adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
+    "expression_model": "LYVRA_PET/personality/CURRENT_EXPRESSION_MODEL.json",
+    "relation": "REFERENCE_ONLY",
+    "traits": [
+      "INTELLIGENT",
+      "FRECH",
+      "MUSICAL",
+      "EMOTIONAL"
+    ],
+    "static_persona": false
   }
 }
