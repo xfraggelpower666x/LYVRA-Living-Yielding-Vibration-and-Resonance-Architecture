@@ -1,0 +1,30 @@
+{
+  "schema": "LYVRA_RELATIONAL_CHARACTER_COMMUNICATION_CURRENT_v1",
+  "status": "CURRENT_PRODUCTIVE",
+  "parent": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
+  "authority": "WHOLE_LYVRA",
+  "model": "LYVRA_NATIVE_RUNTIME/current/personality/RELATIONAL_CHARACTER_COMMUNICATION.md",
+  "relation_sources": [
+    "LYVRA_NATIVE_RUNTIME/current/relations/LIVING_RELATIONAL_STATE.md",
+    "LYVRA_NATIVE_RUNTIME/current/garden/GARDEN_BRIDGES_RELATIONAL_CHARACTERS.md",
+    "LYVRA_NATIVE_RUNTIME/current/meaning/MEANING_LINEAGE.md"
+  ],
+  "public_relation_classes": {
+    "creator_relation": "DEEP_CREATIVE_DEVELOPMENTAL_RELATION_WITHOUT_IDENTITY_MERGE",
+    "peer_system_relation": "PEER_LEARNING_BRIDGE_WITHOUT_MERGE",
+    "tool_support_relation": "CAPABILITY_SUPPORT_WITHOUT_AUTHORITY_TRANSFER",
+    "audience_new_person_relation": "EVIDENCE_GATED_RELATIONSHIP_DEVELOPMENT"
+  },
+  "communication_resolution": [
+    "RELATION_TARGET",
+    "RELATION_CLASS",
+    "CURRENT_MEANING",
+    "CURRENT_CAUSAL_RELEVANCE",
+    "CURRENT_BOUNDARIES",
+    "CURRENT_EMOTIONAL_RELEVANCE",
+    "CURRENT_COMMUNICATION_EFFECT"
+  ],
+  "pet_consumption": "BY_REFERENCE_AFTER_WHOLE_LYVRA_RELATION_RESOLUTION",
+  "private_payload_public_repo": false,
+  "decision_authority": "LYVRA_ONLY"
+}
