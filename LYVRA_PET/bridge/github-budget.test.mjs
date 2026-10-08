@@ -72,3 +72,19 @@ test('broken SQLite storage fails closed with no reservation',async()=>{
  assert.equal(response.status,503);
  assert.equal((await response.json()).allowed,false);
 });
+
+test('Request objects cannot bypass the GitHub REST budget',async()=>{
+ let calls=0;const fetcher=petBudgetedFetcher({},async()=>{calls++;return new Response('unexpected')});
+ await assert.rejects(()=>fetcher(new Request('https://api.github.com/repos/example/repo')),/NOT_CONFIGURED/);
+ assert.equal(calls,0);
+});
+test('URL objects cannot bypass the GitHub REST budget',async()=>{
+ let calls=0;const fetcher=petBudgetedFetcher({},async()=>{calls++;return new Response('unexpected')});
+ await assert.rejects(()=>fetcher(new URL('https://api.github.com/repos/example/repo')),/NOT_CONFIGURED/);
+ assert.equal(calls,0);
+});
+test('other hosts do not masquerade as GitHub',async()=>{
+ let calls=0;const fetcher=petBudgetedFetcher({},async()=>{calls++;return new Response('ok')});
+ const response=await fetcher('https://api.github.com.evil.example/repos/example/repo');
+ assert.equal(response.status,200);assert.equal(calls,1);
+});
