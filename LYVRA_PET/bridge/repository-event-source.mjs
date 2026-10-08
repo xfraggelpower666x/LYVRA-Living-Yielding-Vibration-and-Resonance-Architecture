@@ -8,7 +8,7 @@ const FACETS=['whole','track_design','speech_design','suno_studio_2'];
 // may produce an envelope. This endpoint accepts no event supplied by a caller.
 export async function readApprovedRepositoryEvent({fetcher=fetch,clock=()=>Date.now()}={}){
  const api='https://api.github.com/repos/'+REPO,headers={'User-Agent':'LYVRA-Pet-ReadOnly-Producer','Accept':'application/vnd.github+json'};
- async function read(url,allowAbsent=false){const r=await fetcher(url,{headers,cache:'no-store'});if(allowAbsent&&r.status===404)return null;if(!r.ok)throw Error('Native source unavailable');const text=await r.text();if(text.length>30000)throw Error('Native source too large');return JSON.parse(text);}
+ async function read(url,allowAbsent=false){const r=await fetcher(url,{headers,cache:'no-store'});if(allowAbsent&&r.status===404)return null;if(!r.ok)throw Error('NATIVE_SOURCE_HTTP_'+r.status);const text=await r.text();if(text.length>30000)throw Error('Native source too large');return JSON.parse(text);}
  const first=await read(api+'/branches/lyvra'),head=first.commit?.sha;
  if(!/^[a-f0-9]{40}$/.test(head||''))throw Error('Invalid native HEAD');
  const carrier=await read('https://raw.githubusercontent.com/'+REPO+'/'+head+'/'+EXPRESSION_CARRIER,true);

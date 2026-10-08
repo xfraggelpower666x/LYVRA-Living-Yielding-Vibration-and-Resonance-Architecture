@@ -333,7 +333,7 @@ export default {
     catch { return json({error:"invalid json"},400); }
 
     const {id,method,params} = body;
-    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.0"}});
+    if(method==="initialize") return rpc(id,{protocolVersion:params?.protocolVersion||"2025-06-18",capabilities:{tools:{},resources:{}},serverInfo:{name:"lyvra-pet-plugin-ui",version:"2.3.1"}});
     if(method==="notifications/initialized") return new Response(null,{status:204,headers:cors});
     if(method==="tools/list") return rpc(id,{tools:[tool()]});
     if(method==="resources/list") return rpc(id,{resources:[resource()]});
@@ -342,7 +342,8 @@ export default {
       return rpc(id,{contents:[{uri:RESOURCE_URI,mimeType:"text/html;profile=mcp-app",text:renderedUI,_meta:{ui:{prefersBorder:true,domain:WORKER_ORIGIN,csp:{connectDomains:[WORKER_ORIGIN],resourceDomains:[WORKER_ORIGIN]}},"openai/ui":{availableDisplayModes:["inline","fullscreen","pip"]}}}]});
     }
     if(method==="tools/call" && params?.name==="open_lyvra_pet"){
-      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER"},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
+      let nativeExpression;try{nativeExpression=await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID});}catch(e){nativeExpression={status:"SOURCE_UNAVAILABLE",reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(e.message)?e.message:"NATIVE_SOURCE_OR_APPROVAL_REJECTED"};}
+      return rpc(id,{structuredContent:{pet_id:PET_ID,status:"READY",authority:"LYVRA_PET/",visual_asset:"REMOTE_BINARY_READBACK_VERIFIED",deployment:"LIVE_BROWSER_RENDERER",runtime_version:"2.3.1",native_expression:nativeExpression},content:[{type:"text",text:"L.Y.V.R.A. Pet browser renderer opened."}],_meta:{petMode:"fraggle-bond",costPolicy:"FREE_ONLY",mainPluginBinding:false}});
     }
     return json({jsonrpc:"2.0",id,error:{code:-32601,message:"Method not found"}});
   }
