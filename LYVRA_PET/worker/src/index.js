@@ -222,7 +222,23 @@ function createSignedEffectConnection({effects,getRevision,trustedKeys,expectedP
 const stage=document.createElement("div");stage.dataset.poseBase="/asset/poses/";Object.assign(stage.style,{position:"relative",width:"320px",height:"300px",margin:"auto"});
 const figure=document.getElementById("sprite");figure.parentNode.insertBefore(stage,figure);stage.append(figure);Object.assign(figure.style,{position:"absolute",left:"64px",top:"46px",margin:"0"});
 const effects=mountExpressionEffects(stage,{heartX:.5,heartY:.32});let current={facet:"whole"},evidenceController=null;
-function preview(type){if(evidenceController)evidenceController.reset();nativeTicket++;current={facet:document.getElementById("facet").value};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";if(["smirk","wink","shrug","laugh"].includes(type))current.humor=type;effects.set(current);}
+// RESTORED FROM PFS HISTORICAL PET: display only verified Whole-approved facet.
+// Local preview may demonstrate visual transitions but never assert trusted context.
+const PET_FACETS=["whole","track_design","speech_design","suno_studio_2"];
+function chooseFacet(context){
+ if(context?.trusted===true&&PET_FACETS.includes(context.facet))return context.facet;
+ if(context?.activity==="music"||context?.type==="music")return "track_design";
+ if(context?.activity==="speech"||context?.type==="speech")return "speech_design";
+ if(context?.activity==="studio"||context?.type==="suno")return "suno_studio_2";
+ return "whole";
+}
+function applyVerifiedNativeFacet(event){
+ const facet=chooseFacet({facet:event?.facet,trusted:true});
+ document.getElementById("facet").value=facet;
+ current.facet=facet;
+ return facet;
+}
+function preview(type){if(evidenceController)evidenceController.reset();nativeTicket++;current={facet:chooseFacet({type})};if(type==="dad")Object.assign(current,{relation:"dad",affect:"joy",cause:"beautiful_moment"});if(type==="anger")Object.assign(current,{affect:"anger",cause:"explicit_preview"});if(type==="boredom")Object.assign(current,{affect:"boredom",cause:"explicit_boredom"});if(type==="music")current.activity="music";if(["smirk","wink","shrug","laugh"].includes(type))current.humor=type;effects.set(current);}
 document.querySelectorAll("[data-expression]").forEach(button=>button.addEventListener("click",()=>preview(button.dataset.expression)));
 document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;current.facet=document.getElementById("facet").value;effects.set(current);});
 document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;effects.set({facet:document.getElementById("facet").value});}));
@@ -262,7 +278,7 @@ async function refreshNative(){
   if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
   nativeRevision=result.envelope.event.source_revision;const accepted=await nativeConnection.accept(result.envelope);if(nativeClosed||ticket!==nativeTicket)return;
   nativeStatus.textContent=accepted?"Verifizierter Ausdruck von Whole LYVRA":"Ereignis bereits verarbeitet oder nicht mehr aktuell";
-  if(accepted)document.getElementById("facet").value=result.envelope.event.facet;
+  if(accepted)applyVerifiedNativeFacet(result.envelope.event);
  }catch{if(!nativeClosed&&ticket===nativeTicket){nativeRevision=null;nativeConnection?.reset();nativeStatus.textContent="Whole-Verbindung derzeit nicht verfügbar · Vorschau bleibt nutzbar";}}
 }
 document.getElementById("native-refresh").addEventListener("click",()=>refreshNative());refreshNative();
