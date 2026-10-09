@@ -345,7 +345,7 @@ document.querySelectorAll("[data-expression]").forEach(button=>button.addEventLi
 document.getElementById("facet").addEventListener("change",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;current.facet=document.getElementById("facet").value;effects.set(current);});
 document.querySelectorAll("[data-state]").forEach(button=>button.addEventListener("click",()=>{if(evidenceController)evidenceController.reset();nativeTicket++;effects.set({facet:document.getElementById("facet").value});}));
 window.lyvraPetExpression=Object.freeze({preview(event){if(evidenceController)evidenceController.reset();nativeTicket++;return effects.set(event);},setBeat(bpm){effects.setBeat(bpm);},instance:"PRIMARY_NATIVE",gptRequired:false,newGestureFramesAvailable:true,connectSignedEvidence({getRevision,trustedKeys}){if(evidenceController)evidenceController.dispose();evidenceController=createSignedEffectConnection({effects,getRevision,trustedKeys,expectedPetId:"pet_6ab791129364819183885f44a21497a2"});return evidenceController;},connectEvidence({getRevision,verifyEvidence}){if(typeof getRevision!=="function"||typeof verifyEvidence!=="function")throw Error("Native Quellenprüfer erforderlich");if(evidenceController)evidenceController.dispose();evidenceController=createEvidenceEffectController({effects,getRevision,verifyEvidence});return evidenceController;}});
-let nativeClosed=false,nativeTicket=0,nativeRevision=null,nativeConnection=null,nativeRetryAt=0;
+let nativeClosed=false,nativeTicket=0,nativeRevision=null,nativeConnection=null,nativeRetryAt=0,nativeExpiryTimer=null;
 const nativeStatus=document.getElementById("native-status"),nativeConfig=__LYVRA_NATIVE_TRUST__;
 async function refreshPetBudget(){
  const count=document.getElementById("pet-budget-count"),fill=document.getElementById("pet-budget-fill"),note=document.getElementById("pet-budget-note"),track=document.getElementById("pet-budget-track");
@@ -365,7 +365,7 @@ setInterval(()=>{if(!document.hidden)refreshPetBudget()},60000);
 async function refreshNative(){
  if(nativeClosed)return;
  if(Date.now()<nativeRetryAt){nativeStatus.textContent="GitHub-Abrufpause bis "+new Date(nativeRetryAt).toLocaleTimeString()+" · Vorschau bleibt nutzbar";return;}
- const ticket=++nativeTicket;nativeStatus.textContent="Whole-Verbindung wird geprüft";
+ const ticket=++nativeTicket;clearTimeout(nativeExpiryTimer);nativeExpiryTimer=null;nativeStatus.textContent="Whole-Verbindung wird geprüft";
  try{
   if(!nativeConfig?.spki||!nativeConfig?.key_id){nativeStatus.textContent="Lokale Ausdrucksvorschau";return;}
   if(!nativeConnection){const publicKey=await crypto.subtle.importKey("spki",Uint8Array.from(atob(nativeConfig.spki),c=>c.charCodeAt(0)),"Ed25519",false,["verify"]);if(nativeClosed||ticket!==nativeTicket)return;nativeConnection=window.lyvraPetExpression.connectSignedEvidence({getRevision:()=>nativeRevision,trustedKeys:{[nativeConfig.key_id]:publicKey}});}
@@ -380,11 +380,11 @@ async function refreshNative(){
   if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
   nativeRevision=result.envelope.event.source_revision;const accepted=await nativeConnection.accept(result.envelope);if(nativeClosed||ticket!==nativeTicket)return;
   nativeStatus.textContent=accepted?"Verifizierter Ausdruck von Whole LYVRA":"Ereignis bereits verarbeitet oder nicht mehr aktuell";
-  if(accepted)applyVerifiedNativeFacet(result.envelope.event);
+  if(accepted){applyVerifiedNativeFacet(result.envelope.event);const expiry=Date.parse(result.envelope.event.observed_at)+60000;const ms=Math.max(0,expiry-Date.now());nativeExpiryTimer=setTimeout(()=>{if(!nativeClosed&&ticket===nativeTicket){nativeRevision=null;nativeConnection?.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";nativeStatus.textContent="Whole-Ereignis abgelaufen · ruhige Präsenz";}},ms);}
  }catch{if(!nativeClosed&&ticket===nativeTicket){nativeRevision=null;nativeConnection?.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";nativeStatus.textContent="Whole-Verbindung derzeit nicht verfügbar · Vorschau bleibt nutzbar";}}
 }
 document.getElementById("native-refresh").addEventListener("click",()=>refreshNative());refreshNative();
-window.addEventListener("pagehide",()=>{nativeClosed=true;nativeTicket++;if(evidenceController)evidenceController.dispose();effects.dispose();});
+window.addEventListener("pagehide",()=>{nativeClosed=true;nativeTicket++;clearTimeout(nativeExpiryTimer);if(evidenceController)evidenceController.dispose();effects.dispose();});
 </script></body></html>`;
 
 const cors = {
