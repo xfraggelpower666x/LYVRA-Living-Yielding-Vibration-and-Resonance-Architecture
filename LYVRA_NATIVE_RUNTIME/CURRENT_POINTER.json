@@ -2846,5 +2846,21 @@
     "prior_pointer_publication": "PENDING",
     "whole_revision_preserved": 242,
     "track_revision_preserved": 96
+  },
+  "mini_pet_autobinding_update_2026_10_09": {
+    "status": "REPOSITORY_READBACK_VERIFIED_LIVE_BROWSER_PENDING",
+    "scope": "MINI_PET_DASHBOARD_READ_ONLY_SOURCE_BINDING",
+    "body_head": "a35eb3ca12cbe224fe0f02698eb62498d7fbd76e",
+    "recovery_branch": "lyvra-recovery-pre-pet-autobinding-20261009-0044",
+    "modified_paths": [
+      "WEBLyvra/live/dist/dashboard/pet-dashboard.js"
+    ],
+    "bootstrap": "AUTOMATIC_NO_PAD_OR_PLUGIN_START_REQUIRED",
+    "verified_source": "GITHUB_WHOLE_AND_PET_CURRENT_CHECK",
+    "actual_source_http_runtime": "NOT_VERIFIED",
+    "live_semantic_events": "NOT_CONNECTED",
+    "browser_visual": "NOT_VERIFIED",
+    "plugin_impact": "PRESENTATION_ONLY_NO_PLUGIN_CODE_MUTATION",
+    "critical_fingerprint_mismatches": 0
   }
 }
