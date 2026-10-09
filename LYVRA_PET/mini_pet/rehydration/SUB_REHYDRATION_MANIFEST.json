@@ -9,6 +9,7 @@
     "verify_one_pet_identity",
     "read_mini_facet_contract",
     "read_mini_sub_livecircle",
+    "verify_parent_full_capability_parity",
     "restore_host_capabilities",
     "rehydrate_only_approved_signed_expression",
     "fallback_neutral_when_unverified"
@@ -20,5 +21,13 @@
   "deployment": "NONE",
   "host_embedding_verified": false,
   "shared_full_pet_domain": "https://lyvra.pet.alive.666soundsdesign-broadcaster.com",
-  "pointer_promotion": "BLOCKED_UNTIL_VERIFIED"
+  "pointer_promotion": "BLOCKED_UNTIL_VERIFIED",
+  "capability_parity": "SAME_FULL_PARENT_PET_INTELLIGENCE",
+  "compactness_only": [
+    "visual_size",
+    "layout",
+    "visible_controls",
+    "text_density"
+  ],
+  "shared_runtime": "LYVRA_PET/"
 }
