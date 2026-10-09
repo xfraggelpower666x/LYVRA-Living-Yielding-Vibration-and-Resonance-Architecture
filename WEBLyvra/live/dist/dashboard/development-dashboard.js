@@ -13,7 +13,7 @@ const item=await get(urlBase+head+'/'+carrier);
 const current=(await get(api)).commit?.sha;if(head!==current)throw Error('STALE');
 if(item.schema!=='lyvra.development.progress.v1'||item.authority!=='WHOLE_LYVRA'||item.status!=='ACTIVE'||!item.current_work){hide();return;}
 const work=item.current_work, tasks=work.tasks;
-if(typeof work.title!=='string'||!work.title.trim()||work.title.length>120||!Array.isArray(tasks)||tasks.length===0||tasks.length>1000||work.source_revision!==head){hide();return;}
+if(typeof work.title!=='string'||!work.title.trim()||work.title.length>120||!Array.isArray(tasks)||tasks.length===0||tasks.length>1000||!/^[a-f0-9]{40}$/.test(work.source_revision||'')){hide();return;}
 const ids=new Set(),allowed=new Set(['OPEN','IN_PROGRESS','DONE','BLOCKED']);
 for(const task of tasks){if(!task||typeof task.id!=='string'||!task.id||ids.has(task.id)||!allowed.has(task.status)){hide();return;}ids.add(task.id);}
 const done=tasks.filter(t=>t.status==='DONE').length,total=tasks.length,pct=Math.round(done*100/total);
