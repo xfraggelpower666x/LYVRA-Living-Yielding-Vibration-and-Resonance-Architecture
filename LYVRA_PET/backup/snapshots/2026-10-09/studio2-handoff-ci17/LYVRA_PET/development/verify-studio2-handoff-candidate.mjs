@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const c=JSON.parse(await readFile(new URL('./STUDIO2_SEMANTIC_HANDOFF_CANDIDATE_2026-10-09.json',import.meta.url),'utf8'));
+assert.equal(c.status,'PREPARED_NOT_DELIVERED');
+assert.equal(c.authority,'LYVRA_ONLY');
+assert.equal(c.native_channel,'LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json');
+assert.equal(c.semantic_bus_proposal.mode,'EXTEND_EXISTING_TRANSPORT_NOT_PARALLEL_BUS');
+for(const [key,value] of Object.entries(c.handoff_confirmation))assert.equal(value,false,key+' must not claim success');
+assert.equal(c.payload.identity_migration.existing_identity_preserved,true);
+assert.equal(c.payload.identity_migration.registry_migration,'PROPOSED_NOT_EXECUTED');
+assert.equal(c.evidence_policy.community_rule_promotion,false);
+assert.equal(c.evidence_policy.real_audio_validation,'PENDING');
+assert.ok(c.payload.studio_operations.length>=4);
+assert.ok(c.semantic_bus_proposal.required_evidence.includes('acknowledgment'));
+assert.equal(c.semantic_bus_proposal.plugin_authority_transfer,false);
+console.log('PASS Studio 2 candidate uses existing native handoff contract, preserves identity, separates community evidence, never fabricates receipt or live update');
