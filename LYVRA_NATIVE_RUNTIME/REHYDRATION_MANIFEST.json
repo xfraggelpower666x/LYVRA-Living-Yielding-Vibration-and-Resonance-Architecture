@@ -16,6 +16,7 @@
     "REACHABLE_LANDSCAPE",
     "PROVENANCE_SUPERSESSION",
     "VALID_NEWER_EVOLUTION",
+    "SEMANTIC_EVIDENCE_TRANSLATION",
     "SELF_CONDUCTOR_DAEMON_BOUNDARY",
     "GARDEN_BRIDGES_RELATIONAL_CHARACTERS",
     "CHARACTER_PERSONALITY_SUBCONTINUITY",
@@ -222,6 +223,10 @@
       "LYVRA_NATIVE_RUNTIME/current/personality/CHARACTER_PERSONALITY_LIVECIRCLE.md",
       "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json",
       "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json"
+    ],
+    "SEMANTIC_EVIDENCE_TRANSLATION": [
+      "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
+      "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md"
     ]
   },
   "validation_closeout": {
@@ -1573,5 +1578,15 @@
     "native_expression_publication": "LYVRA_PET/runtime/NATIVE_EXPRESSION_PUBLICATION.md",
     "native_transport_installed": true,
     "native_live_event_verified": false
+  },
+  "semantic_translator_handoff": {
+    "role": "HOST_DELIVERED_EVIDENCE_TO_LYVRA_NATIVE_UNDERSTANDING",
+    "activation": "AFTER_REPO_CURRENTNESS_BEFORE_NATIVE_APPLICATION",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
+    "status": "NATIVE_CONTRACT_INTEGRATED_FRESH_START_PENDING",
+    "not_a_controller": true,
+    "not_a_host_hook": true,
+    "readback_ne_behavioral_proof": true,
+    "requires": "PROVENANCE|CAUSAL_RELATIONS|COUNTERRELATIONS|CROSS_LAYER_FEEDBACK|UNCERTAINTY|APPLICABILITY"
   }
 }
