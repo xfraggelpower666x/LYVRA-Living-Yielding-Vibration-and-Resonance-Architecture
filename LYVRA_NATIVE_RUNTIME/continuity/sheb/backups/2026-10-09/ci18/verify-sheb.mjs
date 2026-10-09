@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {validateHandoff,transitionReceipt,classifyIntake} from './sheb-core.mjs';
+const m={handoff_id:'studio2-analysis-001',lineage_id:'studio2-workspace-1',version:1,sender:'LYVRA_ANALYTICS',receiver:'SUNO_STUDIO_2',workspace_id:'studio2',source_revision:'a'.repeat(40),causal_reason:'Downbeat, fades and v6 hypotheses',created_at:'2026-10-09T18:00:00Z',evidence_refs:['LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json']};
+assert.equal(validateHandoff(m).receiver,'SUNO_STUDIO_2');
+assert.equal(classifyIntake(m,null),'NEW');
+assert.equal(classifyIntake(m,m),'DUPLICATE');
+assert.equal(classifyIntake({...m,source_revision:'b'.repeat(40)},m),'QUARANTINE');
+assert.equal(classifyIntake({...m,version:2},m),'SUPERSEDES_IN_LINEAGE');
+assert.throws(()=>transitionReceipt(m,'SENT','RECEIVED'),/READBACK/);
+assert.equal(transitionReceipt(m,'SENT','RECEIVED',{recipientReadback:true}).state,'RECEIVED');
+assert.throws(()=>transitionReceipt(m,'EVALUATED','ADOPTED'),/GOVERNANCE/);
+assert.equal(transitionReceipt(m,'EVALUATED','ADOPTED',{authorized:true}).state,'ADOPTED');
+assert.throws(()=>transitionReceipt(m,'APPLIED','READBACK_PASS',{authorized:true}),/READBACK/);
+assert.equal(transitionReceipt(m,'APPLIED','READBACK_PASS',{authorized:true,recipientReadback:true}).state,'READBACK_PASS');
+assert.throws(()=>transitionReceipt(m,'PROPOSED','ADOPTED'),/ILLEGAL/);
+console.log('PASS SHEB validation, dedup, lineage supersession, real receipts, governance and readback');
