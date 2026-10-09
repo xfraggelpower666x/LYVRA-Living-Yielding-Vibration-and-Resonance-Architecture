@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const root=new URL('./',import.meta.url);
+const config=JSON.parse(await readFile(new URL('worker/wrangler.staging.jsonc',root),'utf8'));
+const worker=await readFile(new URL('worker/src/index.js',root),'utf8');
+const budget=await readFile(new URL('bridge/github-budget.mjs',root),'utf8');
+assert.equal(config.name,'lyvra-pet-read-staging','Only isolated staging worker allowed');
+assert.equal(config.main,'src/index.js');
+assert.equal(config.workers_dev,true);
+assert.deepEqual(config.durable_objects.bindings,[{name:'LYVRA_PET_GITHUB_BUDGET',class_name:'PetGithubBudget'}]);
+assert.ok(config.migrations.some(m=>m.new_sqlite_classes?.includes('PetGithubBudget')));
+assert.ok(!JSON.stringify(config).includes('LYVRA_GITHUB_READ_TOKEN'),'No secret values or inline credentials in staging configuration');
+assert.ok(worker.includes('export {PetGithubBudget};'),'Worker must export DO class');
+assert.ok(worker.includes('githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)'),'Native source must use token and global budget');
+assert.ok(budget.includes('LYVRA_PET_GITHUB_BUDGET'),'Budget implementation must use configured binding');
+console.log('PASS isolated staging config, SQLite migration, DO export, secret isolation and authenticated budget binding');
