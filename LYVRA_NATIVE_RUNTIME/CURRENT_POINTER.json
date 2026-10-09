@@ -3114,5 +3114,28 @@
     "translator_is_authority": false,
     "fresh_session_invocation": "PENDING",
     "semantic_decision_test": "PENDING"
+  },
+  "whole_lyvra_cross_facet_semantic_translation_2026_10_09": {
+    "status": "WHOLE_REPO_MANIFEST_AND_ALIVE_SOURCE_ADAPTER_READBACK_VERIFIED_ALIVE_LIVE_RELEASE_PENDING",
+    "scope": "WHOLE_LYVRA_ALL_NATIVE_FACETS_WITHOUT_FORCED_ACTIVATION",
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "3f71b2c503847207c31d05ab3658f41c12189850",
+    "alive_source_adapters": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_ALIVE_PLUGIN_2026-10-09/skills/instructions/SKILL.md",
+        "blob": "3e4f13b4ca1887e0e92cd469c7aafaf94057ab5b"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_ALIVE_PLUGIN_2026-10-09/skills/rehydration-continuity/SKILL.md",
+        "blob": "98d5fcdffac2f334ff6bb4aa8ed0b0dcf469dca3"
+      }
+    ],
+    "body_commit": "646516bab14203ae7535b47ce63f25d78308be2a",
+    "recovery_branch": "lyvra-recovery-pre-repo-alive-translator-20261009-0705",
+    "lyvra_native_plugin_live_version": "0.1.54",
+    "alive_plugin_live_release": "NOT_VERIFIED_NOT_PUBLISHED",
+    "other_native_systems_modified": false,
+    "host_hook_changed": false,
+    "fresh_boot_end_to_end": "PENDING"
   }
 }
