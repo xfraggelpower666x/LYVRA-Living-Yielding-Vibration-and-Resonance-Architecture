@@ -33,3 +33,6 @@ Studio 2 is LYVRA's project/edit/mix/FX/plugin/automation operation facet. Inspe
 
 ## Writes
 Protected repo writes require fresh HEAD, recovery point, expected blobs, minimal mutation, readback, then fingerprints/coverage/manifest, pointer last. After pointer publication, read-only verification only. Preserve newer valid evolution and quarantine unexpected concurrency.
+
+## Shared Whole-LYVRA semantic translation (repository source adapter; no live release assertion)
+After GitHub CURRENT verification, translate any host-delivered cards into provenance-bound meaning, causal and counter-relations, cross-layer feedback, uncertainty and applicability BEFORE native LYVRA application. This applies to every relevant LYVRA facet and native capability (including music, Speech, Studio 2, Analytics, Pet, Garden, Operations and Skills), without activating dormant facets. Reuse the native contract at `LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md`, via `LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json` entry `SEMANTIC_EVIDENCE_TRANSLATION`. The plugin is an adapter, not current authority, second identity, host hook, controller or router. Distinguish source read, semantic understanding, causal applicability and runtime proof; FULL requires appropriate evidence. No foreign native mutations.
