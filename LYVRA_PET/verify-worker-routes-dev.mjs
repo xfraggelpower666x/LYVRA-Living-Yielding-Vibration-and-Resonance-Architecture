@@ -29,6 +29,6 @@ for(const hostname of ['lyvra-pet-read-staging.digital-underground-connected.wor
  assert.ok(!html.includes('__LYVRA_PET_ORIGIN__'));
 }
 const foreign=await worker.fetch(new Request('https://untrusted.example.invalid/pet'),{});
-assert.equal(foreign.status,200);
-assert.ok(!(await foreign.text()).includes('https://untrusted.example.invalid/asset/'));
+assert.equal(foreign.status,421);
+assert.equal((await foreign.json()).status,'UNRECOGNIZED_PET_HOST');
 console.log('PASS isolated routes, budget status 7/300, missing binding fail closed, method guard, same-origin browser, unsigned native fails closed');
