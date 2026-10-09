@@ -2862,5 +2862,21 @@
     "browser_visual": "NOT_VERIFIED",
     "plugin_impact": "PRESENTATION_ONLY_NO_PLUGIN_CODE_MUTATION",
     "critical_fingerprint_mismatches": 0
+  },
+  "mini_pet_browser_readback_2026_10_09": {
+    "status": "BROWSER_DOM_READBACK_VERIFIED_PARTIAL_FUNCTIONAL",
+    "evidence": "LYVRA_NATIVE_RUNTIME/continuity/audits/MINI_PET_BROWSER_READBACK_2026-10-09.json",
+    "evidence_blob": "2ee9f07be8637927eeab15edc4f09050f3ec967e",
+    "readback_count": 4,
+    "domains": 2,
+    "viewports": "390_AND_1280",
+    "source_binding": "VERIFIED_IN_BROWSER_DOM",
+    "sprite_visual": "NOT_VERIFIED",
+    "button_interaction": "NOT_VERIFIED",
+    "live_semantic_events": "NOT_CONNECTED",
+    "causal_self_learning": "NOT_VERIFIED",
+    "pre_change_recovery_branch": "lyvra-recovery-pre-pet-browser-evidence-20261009-0105",
+    "audit_body_commit": "96c364757936c39d500231d98e909fbf2a4e85a4",
+    "other_facets_modified": false
   }
 }
