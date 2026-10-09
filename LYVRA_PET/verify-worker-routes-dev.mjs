@@ -20,4 +20,15 @@ assert.doesNotMatch(ui,/fetch\("https:\/\/lyvra-pet-plugin-ui\.digital-undergrou
 res=await worker.fetch(request('/native-expression'),{});
 assert.equal(res.status,200);
 assert.notEqual((await res.json()).status,'APPROVED');
+for(const hostname of ['lyvra-pet-read-staging.digital-underground-connected.workers.dev','lyvra.pet.alive.666soundsdesign-broadcaster.com','lyvra-pet-plugin-ui.digital-underground-connected.workers.dev']){
+ const response=await worker.fetch(new Request('https://'+hostname+'/pet'),{});
+ assert.equal(response.status,200);
+ const html=await response.text();
+ assert.ok(html.includes('https://'+hostname+'/asset/pet-logo.png'));
+ assert.ok(html.includes('https://'+hostname+'/asset/spritesheet-extended.png'));
+ assert.ok(!html.includes('__LYVRA_PET_ORIGIN__'));
+}
+const foreign=await worker.fetch(new Request('https://untrusted.example.invalid/pet'),{});
+assert.equal(foreign.status,200);
+assert.ok(!(await foreign.text()).includes('https://untrusted.example.invalid/asset/'));
 console.log('PASS isolated routes, budget status 7/300, missing binding fail closed, method guard, same-origin browser, unsigned native fails closed');
