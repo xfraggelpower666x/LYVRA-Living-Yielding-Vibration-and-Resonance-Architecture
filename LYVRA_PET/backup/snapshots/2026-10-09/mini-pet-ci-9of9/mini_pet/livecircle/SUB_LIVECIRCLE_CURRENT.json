@@ -1,0 +1,33 @@
+{
+  "schema": "lyvra.pet.mini.sub-livecircle.v1",
+  "status": "DEVELOPMENT_CANDIDATE",
+  "authority": "LYVRA_PET/",
+  "parent": "WHOLE_LYVRA",
+  "pet_identity": "SAME_AS_PARENT_PET",
+  "faceted_role": "INTELLIGENT_CHAT_PRESENTATION",
+  "surfaces": [
+    "eligible_lyvra_chats",
+    "system_histories",
+    "facet_dashboards",
+    "development_dashboards"
+  ],
+  "phases": [
+    "context_read",
+    "source_classification",
+    "evidence_validation",
+    "expression_projection",
+    "compact_render",
+    "expiry_reset",
+    "safe_recovery"
+  ],
+  "guards": [
+    "NO_SECOND_IDENTITY",
+    "NO_SECOND_MEMORY_ROOT",
+    "NO_FOREIGN_AUTO_ACTIVATION",
+    "UNVERIFIED_CONTEXT_NE_VERIFIED_EMOTION",
+    "FREE_ONLY",
+    "SHARED_GITHUB_BUDGET",
+    "NO_UNSUPPORTED_HOST_EMBED"
+  ],
+  "live_approved": false
+}
