@@ -15,5 +15,11 @@
   ],
   "both_plugins_required": true,
   "blocks_whole_complete_when_plugin_drift": true,
-  "auto_release_without_approval": false
+  "auto_release_without_approval": false,
+  "managed_plugin_surfaces": [
+    "LYVRA_ACCOUNT",
+    "LYVRA_NATIVE_RUNTIME",
+    "LYVRA_PET"
+  ],
+  "logo_preservation": "ORIGINAL_BINARY_LOCK_UNLESS_EXPLICIT_USER_LOGO_CHANGE"
 }
