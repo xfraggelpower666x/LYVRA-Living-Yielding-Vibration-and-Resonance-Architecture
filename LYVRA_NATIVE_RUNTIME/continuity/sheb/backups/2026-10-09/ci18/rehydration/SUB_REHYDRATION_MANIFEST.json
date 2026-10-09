@@ -1,0 +1,15 @@
+{
+  "schema": "lyvra.sheb.sub-rehydration.v1",
+  "status": "DEV_ONLY",
+  "parent": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+  "order": [
+    "verify_whole_current",
+    "restore_requested_workspace_lineage",
+    "read_existing_continuity_channels",
+    "validate_pending_handoffs",
+    "restore_receipts_only_with_evidence",
+    "quarantine_conflicts"
+  ],
+  "productive_activation": false,
+  "plugin_skill_deployed": false
+}
