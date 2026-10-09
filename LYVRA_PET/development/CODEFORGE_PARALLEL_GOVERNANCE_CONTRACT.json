@@ -1,0 +1,75 @@
+{
+  "schema": "lyvra.codeforge.parallel-governance-proposal.v1",
+  "status": "PROPOSAL_ONLY_NOT_CODEFORGE_ADOPTED",
+  "authority": "WHOLE_LYVRA_FOR_LYVRA_SCOPE",
+  "principal_branch": "lyvra",
+  "workspace_policy": {
+    "workspace_current": "SCOPED_UNIQUE",
+    "per_workspace_branch": true,
+    "scoped_file_ownership": true,
+    "cross_chat_last_writer_wins": false,
+    "foreign_updates": "READ_ONLY_NOTICE_UNTIL_NATIVE_AUTHORITY_READBACK",
+    "concurrent_independent_branches": true
+  },
+  "core_mission": [
+    "CODING_ASSISTANT",
+    "CODE_QUALITY",
+    "TESTING_AND_REPAIR",
+    "GITHUB_ACTIONS",
+    "BUILD_DEPLOY_READBACK",
+    "ROLLBACK_SUPPORT"
+  ],
+  "facet_hierarchy": [
+    "CODEFORGE_CORE",
+    "DEVELOPMENT_INTELLIGENCE",
+    "CODE_TEST_DEPLOY_MULTICHAT_INTEGRATION_HYGIENE_SUBFACETS",
+    "SCOPED_WORKSPACE_LIFECIRCLE",
+    "REVERSIBLE_ACTION_LIFECIRCLE"
+  ],
+  "evidence_states": [
+    "OBSERVED",
+    "INFERRED",
+    "VERIFIED",
+    "DISPUTED",
+    "UNKNOWN"
+  ],
+  "promotion_sequence": [
+    "WORKSPACE_READY",
+    "BACKUP_VERIFIED",
+    "FRESH_MAIN_HEAD",
+    "EXCLUSIVE_INTEGRATION_LEASE",
+    "SCOPE_AND_DEPENDENCY_RECHECK",
+    "INTEGRATION_CANDIDATE",
+    "CI_SECURITY_PLUGIN_LIVECIRCLE_REHYDRATION_CHECKS",
+    "STAGING_AND_SIGNED_E2E_WHEN_REQUIRED",
+    "APPROVED_MAIN_MERGE",
+    "MERGE_READBACK",
+    "CURRENT_POINTER_LAST",
+    "RECOVERY_REFERENCE_VALIDATED",
+    "SAFE_BRANCH_CLEANUP"
+  ],
+  "cleanup_preconditions": [
+    "MERGE_VERIFIED",
+    "BACKUP_VERIFIED",
+    "NO_ACTIVE_WORKSPACE_REFERENCE",
+    "NO_OPEN_DEPENDENT_PR",
+    "NO_PINNED_REHYDRATION_REF",
+    "NO_RUNNING_DEPLOYMENT_DEPENDENCY"
+  ],
+  "hardlocks": [
+    "NO_FOREIGN_MUTATION",
+    "NO_FORCE_PUSH",
+    "NO_GLOBAL_DEV_CURRENT",
+    "NO_DELETE_ACTIVE_BRANCH",
+    "NO_DELETE_BEFORE_MERGE",
+    "NO_AUTO_PRODUCTION_DEPLOY",
+    "NO_MERGE_ON_FAILED_TEST",
+    "NO_POINTER_BEFORE_BODY_READBACK",
+    "FREE_ONLY"
+  ],
+  "implementation": {
+    "codeforge_native": "NOT_VERIFIED",
+    "deployments": "UNCHANGED",
+    "next_gate": "CODEFORGE_NATIVE_ADOPTION_AND_SIMULATED_PARALLEL_WORKSPACE_TESTS"
+  }
+}
