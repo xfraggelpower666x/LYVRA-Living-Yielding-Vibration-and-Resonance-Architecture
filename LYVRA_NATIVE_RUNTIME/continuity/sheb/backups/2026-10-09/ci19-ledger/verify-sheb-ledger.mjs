@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {createShebLedger} from './sheb-persistent-ledger.mjs';
+const store=new Map();
+const read=async p=>structuredClone(store.get(p)??null);
+const write=async(p,v,{createOnly=false,expected}={})=>{
+ if(createOnly&&store.has(p))throw Error('CONFLICT');
+ if(expected&&JSON.stringify(store.get(p))!==JSON.stringify(expected))throw Error('CONFLICT');
+ store.set(p,structuredClone(v));
+};
+const ledger=createShebLedger({read,write});
+const msg={handoff_id:'studio2-001',lineage_id:'workspace-chat-1',sender:'LYVRA_ANALYTICS',receiver:'SUNO_STUDIO_2',workspace_id:'studio2',version:1,source_revision:'a'.repeat(40),causal_reason:'Contextual downbeat review',created_at:'2026-10-09T18:00:00Z',evidence_refs:[]};
+const sent=await ledger.send(msg);assert.equal(sent.status,'SENT');
+assert.equal((await ledger.send(msg)).status,'DUPLICATE');
+assert.equal((await ledger.send({...msg,source_revision:'b'.repeat(40)})).status,'QUARANTINED');
+assert.equal((await ledger.receive(sent.path,{receiver:'WRONG',readbackEvidence:'some-readback'})).status,'RECEIPT_BLOCKED');
+assert.equal((await ledger.receive(sent.path,{receiver:'SUNO_STUDIO_2'})).status,'RECEIPT_BLOCKED');
+assert.equal((await ledger.recover([sent.path])).length,1);
+const receipt=await ledger.receive(sent.path,{receiver:'SUNO_STUDIO_2',readbackEvidence:'recipient-content-sha256:abc'});
+assert.equal(receipt.status,'RECEIVED');
+assert.equal((await read(sent.path)).delivery,'RECEIVED');
+assert.equal((await ledger.recover([sent.path]))[0].state,'RECEIVED');
+const blocked=createShebLedger({read,write:async()=>{throw Error('forbidden')}});
+const fail=await blocked.send({...msg,handoff_id:'blocked'});
+assert.equal(fail.status,'WRITE_BLOCKED');
+console.log('PASS SHEB persistence contract: sent, replay, conflict, authorized receiver, receipt readback and write-block');
