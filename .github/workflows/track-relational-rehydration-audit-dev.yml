@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: '22'
       - name: Run no-cost native relational contract regression
-        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-rehydration-audit.test.mjs
+        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-*.test.mjs
