@@ -1,0 +1,19 @@
+{
+  "schema": "lyvra.codeforge.plugin-stewardship.livecircle.v1",
+  "status": "DEV_ONLY",
+  "parent": "WHOLE_LYVRA_CODEFORGE",
+  "phases": [
+    "new_development_detect",
+    "dual_plugin_impact",
+    "snapshot",
+    "skill_migration_plan",
+    "test",
+    "release_approval",
+    "live_release_readback",
+    "recovery",
+    "current_pointer_last"
+  ],
+  "both_plugins_required": true,
+  "blocks_whole_complete_when_plugin_drift": true,
+  "auto_release_without_approval": false
+}
