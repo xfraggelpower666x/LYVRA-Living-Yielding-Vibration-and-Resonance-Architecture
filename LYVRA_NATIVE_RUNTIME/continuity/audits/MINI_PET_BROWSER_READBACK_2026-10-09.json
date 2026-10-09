@@ -1,0 +1,52 @@
+{
+  "schema": "LYVRA_MINI_PET_BROWSER_READBACK_v1",
+  "date": "2026-10-09",
+  "source_commit": "3079edacdaa0f100bd0f595719f63e88846185bc",
+  "scope": "WEBLYVRA_DASHBOARD_AND_SEPARATE_DASHBOARD_PET_PRESENTATION",
+  "status": "BROWSER_DOM_READBACK_VERIFIED_PARTIAL_FUNCTIONAL",
+  "method": "Cloudflare Browser Rendering content API with JavaScript execution and 1000ms settling",
+  "observations": [
+    {
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/dashboard/",
+      "viewport_width": 390,
+      "mode": "mini",
+      "controls": true,
+      "auto_source_binding": true,
+      "demo_label": true
+    },
+    {
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/dashboard/",
+      "viewport_width": 1280,
+      "mode": "mini",
+      "controls": true,
+      "auto_source_binding": true,
+      "demo_label": true
+    },
+    {
+      "url": "https://dashboard.666soundsdesign-broadcaster.com/",
+      "viewport_width": 390,
+      "mode": "mini",
+      "controls": true,
+      "auto_source_binding": true,
+      "demo_label": true
+    },
+    {
+      "url": "https://dashboard.666soundsdesign-broadcaster.com/",
+      "viewport_width": 1280,
+      "mode": "mini",
+      "controls": true,
+      "auto_source_binding": true,
+      "demo_label": true
+    }
+  ],
+  "limitations": [
+    "DOM readback does not establish sprite visual correctness, absence of occlusion, accessibility, or button interaction",
+    "Source binding success means public repository technical binding, not Whole semantic rehydration or emotional state",
+    "No real live semantic event subscription or outcome learning demonstrated",
+    "No autonomous repair or real host render-outcome verification demonstrated"
+  ],
+  "write_scope": "AUDIT_EVIDENCE_ONLY",
+  "no_facet_mutation": true,
+  "no_plugin_mutation": true,
+  "canonical_release_same_prior_commit": true
+}
