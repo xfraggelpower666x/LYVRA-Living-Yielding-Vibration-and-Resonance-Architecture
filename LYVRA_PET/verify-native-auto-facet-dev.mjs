@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-const root=new URL('../',import.meta.url);
+const root=new URL('./',import.meta.url);
 const src=await readFile(new URL('worker/src/index.js',root),'utf8');
 const built=await readFile(new URL('worker/build/worker-bundle.mjs',root),'utf8');
 const assets=await readFile(new URL('assets/logo-assets.mjs',root),'utf8');
