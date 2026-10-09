@@ -28,6 +28,11 @@ for(const hostname of ['lyvra-pet-read-staging.digital-underground-connected.wor
  assert.ok(html.includes('https://'+hostname+'/asset/spritesheet-extended.png'));
  assert.ok(!html.includes('__LYVRA_PET_ORIGIN__'));
 }
+for(const [host,service] of [['lyvra-pet-read-staging.digital-underground-connected.workers.dev','lyvra-pet-read-staging'],['lyvra.pet.alive.666soundsdesign-broadcaster.com','lyvra-pet-public'],['lyvra-pet-plugin-ui.digital-underground-connected.workers.dev','lyvra-pet-plugin-ui']]){
+ const health=await worker.fetch(new Request('https://'+host+'/health'),{});
+ assert.equal(health.status,200);
+ assert.equal((await health.json()).service,service);
+}
 const foreign=await worker.fetch(new Request('https://untrusted.example.invalid/pet'),{});
 assert.equal(foreign.status,421);
 assert.equal((await foreign.json()).status,'UNRECOGNIZED_PET_HOST');
