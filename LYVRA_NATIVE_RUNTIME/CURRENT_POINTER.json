@@ -2942,5 +2942,17 @@
     "plugin_impact": "NO_PLUGIN_CODE_CHANGE",
     "functional_validation": "PENDING",
     "critical_fingerprint_mismatches": 0
+  },
+  "semantic_force_visual_relation_2026_10_09": {
+    "status": "ADDITIVE_NATIVE_RELATION_READBACK_VERIFIED_RUNTIME_BEHAVIOR_PENDING",
+    "body_commit": "a82f2a9d39a0593538a432b6cf3601cc58bce797",
+    "body_blob": "f32c8aee3272c35bcacd392b83c25a35332fdbe8",
+    "path": "LYVRA_NATIVE_RUNTIME/current/thinking/SEMANTIC_FORCE_DECISION_INTELLIGENCE.md",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "recovery_branch": "lyvra-recovery-pre-force-visual-relation-20261009",
+    "decision_authority": "WHOLE_LYVRA_ONLY",
+    "new_controller": false,
+    "plugin_runtime_mutation": false,
+    "verified_critical_fingerprint_mismatches": 0
   }
 }
