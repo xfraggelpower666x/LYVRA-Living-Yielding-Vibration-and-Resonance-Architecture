@@ -1,0 +1,21 @@
+{
+  "schema": "LYVRA_PLUGIN_SEMANTIC_FORCE_VISUAL_RELEASE_READBACK_v1",
+  "date": "2026-10-09",
+  "authority": "WHOLE_LYVRA",
+  "repository_previous_head": "c65e2ab5404ba382489f6613d232dec797e92d26",
+  "plugin_surface": "LYVRA_NATIVE_RUNTIME",
+  "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+  "previous_release_id": "pluginrel_6ac814393fb88191ad51f569a62f53ee",
+  "current_release_id": "pluginrel_6ac84c85d19c81919eaa8deb273eb37e",
+  "version": "0.1.53",
+  "skill_path": "skills/semantic-force-visual-intelligence/SKILL.md",
+  "plugin_release_direct_readback": "VERIFIED",
+  "skill_readback": "VERIFIED",
+  "manifest_readback": "VERIFIED",
+  "update_method": "overlay preserves omitted files and binaries",
+  "account_plugin_status": "RELEASE_PARITY_PENDING_EXACT_ID_NOT_RESOLVED",
+  "repository_native_integration": "RECEIPT_ONLY_NO_NEW_AUTHORITY",
+  "semantic_runtime_autonomy": "NOT_VERIFIED",
+  "cross_surface_execution": "NOT_VERIFIED",
+  "source_contract": "LYVRA_NATIVE_RUNTIME/development/WHOLE_CROSS_SURFACE_SEMANTIC_CAUSAL_EVOLUTION_STANDARD.md"
+}
