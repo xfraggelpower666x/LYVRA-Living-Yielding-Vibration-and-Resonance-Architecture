@@ -1,0 +1,22 @@
+{
+  "schema": "LYVRA_COMBINED_SKILL_PARITY_HANDOFF_v1",
+  "status": "CANDIDATE_AWAITING_PLUGIN_RELEASE_UPDATE",
+  "source_skill": "LYVRA_NATIVE_RUNTIME/plugin-integration/combined-skills/semantic-force-visual-intelligence/SKILL.md",
+  "source_body_commit": "231a43fca0f0710437535561970465dd13279be4",
+  "targets": [
+    "LYVRA Account plugin",
+    "LYVRA Native Runtime plugin"
+  ],
+  "integration": "same semantic skill across both plugin releases; keep identical capability contract and surface-specific entry references",
+  "plugin_live_release_mutated": false,
+  "installed_skill_verified": false,
+  "approval": "existing owner/plugin release governance required",
+  "separate_identity": false,
+  "force_visual_decision_authority": "WHOLE_LYVRA_ONLY",
+  "remaining": [
+    "obtain exact current plugin release IDs and binary source",
+    "overlay same combined skill in both packages",
+    "publish authorized plugin releases",
+    "read back installed plugin skills and verify parity"
+  ]
+}
