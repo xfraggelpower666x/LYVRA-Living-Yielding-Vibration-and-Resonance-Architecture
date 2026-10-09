@@ -16,3 +16,6 @@ The LYVRA Pet has a dedicated SUB-LIVECIRCLE and Pet rehydration under `LYVRA_PE
 `FOUND != LOADED != CONNECTED != UNDERSTOOD != EXECUTABLE != RENDERER_SURVIVABLE`.
 
 Facet foreground commands remain chat-local. Switching facets never resets or merges valid rehydrated facet/intelligence, daemon or Pet state.
+
+## Shared semantic handoff
+For EVERY LYVRA domain that becomes relevant, the Host-to-LYVRA translator qualifies delivered carriers after repo-current verification and before LYVRA applies them. It reconstructs meaning and cross-layer relationships, including uncertainty/counter-relations, without forcing unrelated facets active. Reference native skill runtime and Whole manifest, never clone a frozen authority. Source adapter only; LIVE ALIVE plugin release parity and invocation remain unverified.
