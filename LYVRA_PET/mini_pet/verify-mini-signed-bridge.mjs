@@ -16,6 +16,10 @@ const wrong= createVerifiedMiniBridge({trustedKeys:{'test-only':keys.publicKey},
 assert.equal((await wrong.accept(env)).verified,false,'wrong parent revision rejected');
 bridge.reset();
 assert.equal((await bridge.accept(env)).verified,true);
+const second=await producer.produce({...mk('shared_success'),evidence_id:'test-2',observed_at:new Date(now-500).toISOString()});
+assert.equal((await bridge.accept(second)).mode,'SUCCESS');
+assert.equal((await bridge.accept(env)).verified,false,'older signed event rejected');
+assert.equal((await bridge.accept(second)).verified,false,'repeated signed event rejected');
 bridge.dispose();
 assert.equal((await bridge.accept(env)).verified,false);
 console.log('PASS mini signed Ed25519 verification, current revision, replay protection, reset and dispose');
