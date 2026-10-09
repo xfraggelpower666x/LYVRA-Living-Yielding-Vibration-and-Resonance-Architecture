@@ -1,0 +1,24 @@
+{
+  "schema": "lyvra.pet.mini.rehydration.v1",
+  "status": "DEV_ONLY_NOT_LIVE",
+  "authority": "LYVRA_PET/",
+  "parent_rehydration": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+  "order": [
+    "rehydrate_whole_lyvra_current",
+    "rehydrate_parent_pet_current",
+    "verify_one_pet_identity",
+    "read_mini_facet_contract",
+    "read_mini_sub_livecircle",
+    "restore_host_capabilities",
+    "rehydrate_only_approved_signed_expression",
+    "fallback_neutral_when_unverified"
+  ],
+  "artifacts": [
+    "LYVRA_PET/mini_pet/MINI_PET_FACET_CONTRACT.md",
+    "LYVRA_PET/mini_pet/livecircle/SUB_LIVECIRCLE_CURRENT.json"
+  ],
+  "deployment": "NONE",
+  "host_embedding_verified": false,
+  "shared_full_pet_domain": "https://lyvra.pet.alive.666soundsdesign-broadcaster.com",
+  "pointer_promotion": "BLOCKED_UNTIL_VERIFIED"
+}
