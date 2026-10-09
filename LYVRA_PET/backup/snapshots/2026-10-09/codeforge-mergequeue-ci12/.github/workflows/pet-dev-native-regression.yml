@@ -1,0 +1,44 @@
+name: Pet DEV native regression
+on:
+  push:
+    branches:
+      - lyvra-dev-pet-auto-facet-repair-20261009
+    paths:
+      - 'LYVRA_PET/**'
+      - '.github/workflows/pet-dev-native-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pet-native-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify deterministic native bundle and auto-facet safeguards
+        run: node LYVRA_PET/verify-native-auto-facet-dev.mjs
+      - name: Verify repository approvals and genuine Ed25519 signatures
+        run: node LYVRA_PET/bridge/verify-repository-events.mjs
+      - name: Verify native refresh and cooldown guards
+        run: node LYVRA_PET/bridge/verify-native-refresh.mjs
+      - name: Verify free-only hourly GitHub budget
+        run: node LYVRA_PET/bridge/github-budget.test.mjs
+      - name: Verify token isolation and anonymous fallback prevention
+        run: node LYVRA_PET/bridge/github-auth-isolation.test.mjs
+      - name: Verify isolated free-only staging configuration
+        run: node LYVRA_PET/verify-staging-config-dev.mjs
+      - name: Parse-check deployable worker bundle
+        run: node --check LYVRA_PET/worker/build/worker-bundle.mjs
+      - name: Execute same-origin worker route and budget integration tests
+        run: node LYVRA_PET/verify-worker-routes-dev.mjs
+      - name: Verify Mini-PET shared identity and release guards
+        run: node LYVRA_PET/mini_pet/verify-mini-facet-contract.mjs
+      - name: Verify cross-chat CODEFORGE governance proposal invariants
+        run: node LYVRA_PET/development/verify-codeforge-parallel-contract.mjs
+      - name: Simulate independent cross-chat integration and safe branch cleanup
+        run: node LYVRA_PET/development/verify-codeforge-parallel-scenarios.mjs
+      - name: Model serialized merge queue and cross-chat convergence
+        run: node LYVRA_PET/development/verify-codeforge-merge-queue-scenarios.mjs
