@@ -16,6 +16,7 @@
     "source_classification",
     "evidence_validation",
     "expression_projection",
+    "parent_capability_parity_audit",
     "compact_render",
     "expiry_reset",
     "safe_recovery"
@@ -29,5 +30,13 @@
     "SHARED_GITHUB_BUDGET",
     "NO_UNSUPPORTED_HOST_EMBED"
   ],
-  "live_approved": false
+  "live_approved": false,
+  "capability_parity": "SAME_FULL_PARENT_PET_INTELLIGENCE",
+  "compactness_only": [
+    "visual_size",
+    "layout",
+    "visible_controls",
+    "text_density"
+  ],
+  "shared_runtime": "LYVRA_PET/"
 }
