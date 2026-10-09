@@ -6,11 +6,14 @@ const built=await readFile(new URL('worker/build/worker-bundle.mjs',root),'utf8'
 const assets=await readFile(new URL('assets/logo-assets.mjs',root),'utf8');
 const signed=await readFile(new URL('bridge/signed-event-transport.mjs',root),'utf8');
 const reader=await readFile(new URL('bridge/repository-event-source.mjs',root),'utf8');
+const budget=await readFile(new URL('bridge/github-budget.mjs',root),'utf8');
 const importLogo='import {LOGO_ASSETS} from "../../assets/logo-assets.mjs";';
 const importReader='import {produceRepositoryEnvelope,publicNativeSourceFailure} from "../../bridge/repository-event-source.mjs";';
 assert.ok(src.startsWith(importLogo+'\n'));
 assert.ok(src.includes(importReader+'\n'));
-const reconstructed=assets.replace(/^export /gm,'')+'\n'+signed.replace(/^export /gm,'')+'\n'+reader.replace(/^import[^\n]*\n/gm,'').replace(/^export /gm,'')+'\n'+src.slice(importLogo.length+1).replace(importReader+'\n','');
+const importBudget='import {petBudgetedFetcher,PetGithubBudget} from "../../bridge/github-budget.mjs";';
+assert.ok(src.includes(importBudget+'\n'));
+const reconstructed=assets.replace(/^export /gm,'')+'\n'+signed.replace(/^export /gm,'')+'\n'+reader.replace(/^import[^\n]*\n/gm,'').replace(/^export /gm,'')+'\n'+budget.replace(/^export /gm,'')+'\n'+src.slice(importLogo.length+1).replace(importReader+'\n','').replace(importBudget+'\n','').replace('export {PetGithubBudget};\n','');
 assert.equal(built,reconstructed,'Native bundle differs from deterministic repository build');
 for(const s of [src,built]){
  assert.equal(s.split('aria-label="Ausdrucksvorschau" hidden inert').length-1,1,'Legacy preview must be hidden and inert by default');
@@ -34,4 +37,6 @@ for(const code of [src,built]){
 }
 assert.ok(reader.includes("carrier.status==='NONE'"),'Absent approval must remain a calm result');
 assert.ok(reader.includes('NO_APPROVED_EVENT'));
+assert.ok(reader.includes("AUTH_NOT_CONFIGURED"),'No anonymous fallback when token is missing');
+assert.ok(src.includes('githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)'),'Native browser and plugin both must use budgeted authenticated reader');
 console.log('PASS native PET source/bundle exact parity, manual preview disabled, signed events/budget/source semantics retained');
