@@ -37,3 +37,32 @@ PET worker remains on its isolated development branch until independent native s
 
 ## Handoff
 This document is an outbound architecture proposal for CODEFORGE and Whole LYVRA. It is not evidence that CODEFORGE has received, adopted or implemented it; a separate CODEFORGE-native update must verify authority and execute that scope.
+
+
+## Proposed native facet: Semantic-Causal Development Intelligence
+Status: PROPOSAL_NOT_IMPLEMENTED. CODEFORGE must adopt this inside its own authority; no claim of autonomous understanding or cross-system execution.
+
+### Semantic interpretation and evidence graph
+- Model each development objective as intent, desired behavior, acceptance evidence, protected constraints, owned files/surfaces, dependencies and observable completion criteria.
+- Maintain typed relations: WORKSPACE_OWNS, CHANGE_MODIFIES, API_DEPENDS_ON, TEST_EVIDENCES, INCIDENT_CAUSED_BY (only after verification), CONFLICTS_WITH, RELEASE_BLOCKED_BY, BACKUP_PROTECTS.
+- Distinguish facts OBSERVED/VERIFIED, test-backed INFERRED, DISPUTED and UNKNOWN. Track provenance, exact commit SHA, test run URL/ID, timestamps, readback hashes and expiration. Do not convert correlation into causation.
+- Detect behavioral conflicts even with no filename overlap (schema, event contract, authentication, resource budget, plugin release). Detect harmless file overlap when scoped interface compatibility and tests demonstrate safety.
+- Interpret peer notices as discovery only; native target authority readback required before facts or actions are adopted.
+
+### Adaptive action planner
+- Generate small reversible candidate actions ranked by causal benefit, confidence, risk, cost, dependency order and blast radius.
+- Safe automatic actions: READ_ONLY assessment, scoped test generation, isolated branch repairs with optimistic concurrency, backup/readback, additive compatibility adapters, issue/proposal creation.
+- Protected gates: main integration, secrets, production deploy, global pointers, plugin release, other-system mutations and branch deletion each require their own authority and release approval.
+- Under uncertain evidence, fail closed for destructive action while continuing other independent work. Never invent a passing result.
+- Preserve parallel chat branch ownership and independent development CURRENT; replan after any foreign HEAD movement, stale evidence, failed test or newly validated dependency.
+
+### Learning without unsafe autonomy
+- Persist bounded, auditable engineering heuristics from verified incidents, validated fixes and regressions, including confidence and counterexamples.
+- Learning data cannot silently rewrite governance, permissions, causal evidence or an owner's workspace state.
+- Measure usefulness: prevented conflicts, false alerts, reverted actions, mean time to verification, merge success, cleanup correctness and unintended cross-scope changes.
+- Provide concise user-facing development dashboard: task total/done, confidence and evidence coverage, blocked dependency, branch state, next proposed action; never fake percentages.
+
+### Native implementation proposal
+- Own CODEFORGE subfacet, Sub-LifeCircle, Sub-Rehydration, event schema, test fixtures and approval policy.
+- First deliver READ_ONLY observers plus simulated multi-branch tests: parallel unrelated updates, shared path race, cross-file semantic conflict, stale HEAD, plugin schema change, failed CI, merge queue fairness and cleanup of referenced branch forbidden.
+- Only graduate to scoped action after cross-system interface contracts, live readbacks, rollback and recovery verification.
