@@ -64,3 +64,20 @@ For pet/visual expression, separate: approved semantic event, trusted signature,
 This file is an additive candidate relation, not proof of an executable new intelligent runtime. Validate through actual Whole-LYVRA task decisions and measured outcomes before promoting any behavioral PASS. Record current evidence, decisions, alternatives, impact, regression and whether no-op was appropriate.
 
 No plugin binaries, whole identity, facet boundaries, native Current pointer, private memory, signed expression carrier or public site runtime may be mutated merely by this candidate.
+
+## Semantic FORCE support for Visual Intelligence — 2026-10-09
+
+RELATION_TARGET: LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md
+RELATION_LIFECIRCLE: LYVRA_NATIVE_RUNTIME/current/governance/SEMANTIC_VISUAL_FACET_LIFECIRCLE_STANDARD.md
+FORCE_SUPPORTS_VISUAL_INTELLIGENCE=true
+VISUAL_INTELLIGENCE_SUPPORTS_FORCE_WITH_OUTCOME_EVIDENCE=true
+FORCE_VISUAL_DECISION_AUTHORITY=NONE
+VISUAL_PRESENTATION_DECISION_AUTHORITY=WHOLE_LYVRA_ONLY
+
+When visual work is causally relevant, Whole LYVRA may use FORCE to check semantic intent, information hierarchy, evidence freshness, display truthfulness, accessibility, responsive layout, render outcome, reversibility and regression impact. FORCE helps choose safe depth: show verified evidence, visualize uncertainty, run a bounded render test, repair a reproducible defect, or hold an unsupported claim.
+
+A visual signal must retain data class (REAL_DATA / CONNECTED_DATA / LOCAL_UI_STATE / DEMO_DATA / PLACEHOLDER), provenance, currentness, confidence and causal relation to what it depicts. FORCE must not transform repository metadata, technical readiness or a demo animation into emotion, personality, semantic understanding or verified live runtime.
+
+Visual outcome feedback can inform FORCE's next recommendation only after actual observed results, contradictions and supersession have been assessed. FORCED_VISUAL_CHANGE=false; AUTOMATIC_ARBITRARY_STYLING=false; NEW_VISUAL_CONTROLLER=false; VISUAL_LEARNING_NE_AUTO_WRITE_AUTHORITY=true.
+
+For Mini-Pet specifically, verify approved event, signature, freshness, visible state and observed rendered effect separately. Missing signed event means neutral presence; fake emotional behavior is forbidden. No unrelated facet is automatically activated. This is a native capability relation and requires behavioral/runtime acceptance evidence before claiming autonomous semantic-visual intelligence.
