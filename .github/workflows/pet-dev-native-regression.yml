@@ -20,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify SHEB persistence adapter and recovery ledger
+        run: node LYVRA_NATIVE_RUNTIME/continuity/sheb/verify-sheb-ledger.mjs
       - name: Verify SHEB governed semantic handoff and receipts
         run: node LYVRA_NATIVE_RUNTIME/continuity/sheb/verify-sheb.mjs
       - name: Verify Studio 2 display name and legacy trigger migration
