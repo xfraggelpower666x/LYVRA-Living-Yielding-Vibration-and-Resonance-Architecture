@@ -21,6 +21,7 @@ for(const s of [src,built]){
 }
 for(const code of [src,built]){
  assert.ok(code.includes('function chooseFacet(context)'), 'Historical PFS automatic detector must be restored');
+ assert.equal(code.split('document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet').length-1,2,'Unapproved or unavailable events must clear stale verified status');
  assert.ok(code.includes('id="auto-detector-status"'), 'Auto detector must expose status without manual control');
  assert.ok(code.includes('if(status)status.textContent="Automatic Detector · verifiziert:'), 'Only accepted native event may mark detector verified');
  assert.ok(code.includes('if(accepted)applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
