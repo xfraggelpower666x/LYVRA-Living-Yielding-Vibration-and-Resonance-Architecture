@@ -2928,5 +2928,19 @@
     "signature_positive_path": "NO_CURRENT_APPROVED_EVENT_TO_TEST",
     "plugin_mutation": false,
     "critical_fingerprint_mismatches": 0
+  },
+  "semantic_force_decision_intelligence_2026_10_09": {
+    "status": "ADDITIVE_CANDIDATE_REPOSITORY_READBACK_VERIFIED_FUNCTIONAL_ACCEPTANCE_OPEN",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "candidate_path": "LYVRA_NATIVE_RUNTIME/current/thinking/SEMANTIC_FORCE_DECISION_INTELLIGENCE.md",
+    "candidate_blob": "97e5060f8346905f7b6ea097296a8de7dab39570",
+    "body_commit": "95a15e309ba8ef09c8180858bef9db831d88dc36",
+    "recovery_branch": "lyvra-recovery-pre-semantic-force-20261009",
+    "relation": "EXISTING_FORCE_INTEGRITY_PLUS_SELF_CONDUCTOR",
+    "new_controller": false,
+    "new_router": false,
+    "plugin_impact": "NO_PLUGIN_CODE_CHANGE",
+    "functional_validation": "PENDING",
+    "critical_fingerprint_mismatches": 0
   }
 }
