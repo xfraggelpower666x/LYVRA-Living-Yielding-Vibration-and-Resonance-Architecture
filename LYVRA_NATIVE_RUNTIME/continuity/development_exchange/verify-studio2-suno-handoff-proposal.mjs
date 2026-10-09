@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const j=JSON.parse(await readFile(new URL('./STUDIO2_SUNO_WATCH_HANDOFF_PROPOSAL_2026-10-09.json',import.meta.url),'utf8'));
+assert.equal(j.status,'PREPARED_NOT_DELIVERED');
+assert.equal(j.authority,'LYVRA_ONLY');
+assert.equal(j.target,'EXISTING_STUDIO2_FACET');
+assert.equal(j.native_handoff_current,'LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json');
+assert.equal(j.rename.implemented,false);
+assert.equal(j.rename.preserve_existing_facet_identity,true);
+assert.equal(j.findings.rule_promotion,false);
+assert.equal(j.receipt.receiver_acknowledged,false);
+assert.equal(j.receipt.adopted,false);
+assert.equal(j.receipt.active_current_mutated,false);
+assert.equal(j.semantic_transport.approach,'EXTEND_EXISTING_REPOSITORY_HANDOFF');
+assert.ok(j.guards.includes('NO_PRODUCTIVE_POINTER_WRITE'));
+assert.ok(j.guards.includes('NO_AUDIO_GENERATION_WITHOUT_PREFLIGHT'));
+console.log('PASS isolated Studio2 proposal: no fabricated receipt, authority transfer, renderer rule promotion or productive pointer mutation');
