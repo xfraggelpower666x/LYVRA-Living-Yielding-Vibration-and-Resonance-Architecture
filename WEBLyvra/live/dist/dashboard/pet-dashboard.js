@@ -16,5 +16,32 @@ for(const [value,title]of modes){const b=document.createElement('button');b.type
 const top=root.querySelector('.petDashTop');if(top)top.insertAdjacentElement('afterend',controls);else root.prepend(controls);
 buttons.forEach(b=>b.addEventListener('click',()=>setState(b.dataset.petDashboardSet)));
 document.addEventListener('visibilitychange',updateAnimation);reduce.addEventListener?.('change',updateAnimation);window.addEventListener('pagehide',stop,{once:true});
+
+// Automatic, read-only source binding. Repository status is never treated as live emotion or host-render evidence.
+const binding=document.createElement('p');binding.className='petDashNote';binding.setAttribute('role','status');binding.setAttribute('aria-live','polite');binding.textContent='Pet startet automatisch · semantischer Live-Kontext nicht verbunden';
+controls.insertAdjacentElement('afterend',binding);
+const api='https://api.github.com/repos/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture';
+const raw='https://raw.githubusercontent.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/';
+let bindingTicket=0;
+async function autoBind(){
+ const ticket=++bindingTicket;
+ try{
+  const get=async url=>{const response=await fetch(url,{cache:'no-store',headers:{'Accept':'application/vnd.github+json'}});if(!response.ok)throw Error('SOURCE_UNAVAILABLE');return response.json();};
+  const revision=(await get(api+'/branches/lyvra')).commit?.sha;
+  if(!/^[a-f0-9]{40}$/i.test(revision||''))throw Error('INVALID_REVISION');
+  const [character,pet]=await Promise.all([
+   get(raw+revision+'/LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json'),
+   get(raw+revision+'/LYVRA_PET/livecircle/CURRENT_STATE.json')
+  ]);
+  const current=(await get(api+'/branches/lyvra')).commit?.sha;
+  if(ticket!==bindingTicket||current!==revision)throw Error('STALE_CURRENT');
+  if(character.authority!=='WHOLE_LYVRA'||character.status!=='CURRENT_PRODUCTIVE'||character.whole_lyvra_decision_authority!==true||pet.parent_authority!=='WHOLE_LYVRA'||pet.status!=='CURRENT_PRODUCTIVE'||!/^pet_[a-z0-9]+$/.test(pet.pet_id||''))throw Error('AUTHORITY_MISMATCH');
+  binding.textContent='Pet automatisch bereit · Whole-LYVRA-Quellenbindung geprüft · Live-Semantik offen';
+ }catch{
+  if(ticket===bindingTicket)binding.textContent='Pet lokal bereit · Quellenbindung derzeit nicht bestätigt · sicherer Ruhemodus verfügbar';
+ }
+}
+
 setState('idle');setMode('mini');
+void autoBind();
 })();
