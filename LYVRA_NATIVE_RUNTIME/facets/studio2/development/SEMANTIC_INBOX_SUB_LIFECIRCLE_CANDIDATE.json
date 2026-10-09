@@ -1,0 +1,49 @@
+{
+  "schema": "lyvra.studio2.semantic-inbox-lifecircle.v1",
+  "status": "DEV_CANDIDATE_NOT_PRODUCTIVE",
+  "facet_id": "SUNO_STUDIO_2",
+  "root_identity": "LYVRA",
+  "root_authority": "LYVRA_ONLY",
+  "parent_rehydration": "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
+  "parent_contract": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+  "source_channel": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json",
+  "inbox_message": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_STUDIO2_SUNO_WATCH_CURRENT.json",
+  "stage_order": [
+    "PARENT_WHOLE_CURRENT_VERIFIED",
+    "WORKSPACE_SCOPE_VERIFIED",
+    "STUDIO2_NATIVE_SUB_REHYDRATION_VERIFIED",
+    "INBOX_SOURCE_READ",
+    "MESSAGE_ID_DEDUP",
+    "SOURCE_AND_PROVENANCE_VALIDATION",
+    "EVIDENCE_EVALUATION",
+    "EXPLICIT_NATIVE_RECEIPT_WRITE_READBACK",
+    "OPTIONAL_APPROVED_NATIVE_ADOPTION",
+    "POINTER_LAST_AFTER_RELEASE"
+  ],
+  "gates": {
+    "no_auto_activation": true,
+    "unknown_source_fail_closed": true,
+    "missing_authority_fail_closed": true,
+    "stale_source_quarantine": true,
+    "community_evidence_ne_rule": true,
+    "receipt_ne_adoption": true,
+    "no_paid_audio_validation_without_approval": true,
+    "legacy_alias_preserved": true
+  },
+  "trigger_read_intents": [
+    "SYSTEMSTART",
+    "UPDATE",
+    "WEITER",
+    "NEW CHAT",
+    "NEXT CHAT",
+    "LYVRA STUDIO 2",
+    "LYVRA SUNO STUDIO 2"
+  ],
+  "implementation": {
+    "runtime_wired": false,
+    "receiver_acknowledged": false,
+    "productive_pointer_changed": false,
+    "plugin_skill_changed": false
+  },
+  "next_action": "Implement native receiver in authorised Studio2 runtime after schema provenance readbacks; do not infer runtime wiring from this contract."
+}
