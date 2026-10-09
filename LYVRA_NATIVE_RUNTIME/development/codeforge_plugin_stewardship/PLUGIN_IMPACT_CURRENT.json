@@ -17,5 +17,16 @@
     "state": "LIVE_RELEASE_NOT_REVALIDATED"
   },
   "release_approved": false,
-  "live_plugin_parity_verified": false
+  "live_plugin_parity_verified": false,
+  "pet_plugin": {
+    "name": "LYVRA PET",
+    "state": "EXACT_ID_AND_RELEASE_PENDING_VERIFICATION"
+  },
+  "managed_plugin_count": 3,
+  "protected_assets": {
+    "policy": "EXPLICIT_USER_LOGO_CHANGE_ONLY",
+    "routine_update": "PRESERVE_ALL_LOGOS_BYTE_IDENTICAL",
+    "binary_readback_required": true,
+    "missing_binary_proof": "BLOCK_LOGO_AFFECTING_RELEASE"
+  }
 }
