@@ -25,7 +25,7 @@ for(const code of [src,built]){
  assert.ok(code.includes('clearTimeout(nativeExpiryTimer);nativeExpiryTimer=null'), 'Refresh must cancel prior expiration timer');
  assert.ok(code.includes('nativeTicket++;clearTimeout(nativeExpiryTimer);'), 'Page unload must release expiration timer');
 
- assert.equal(code.split('document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet').length-1,3,'Missing approval, unavailable source, and thrown errors must clear stale verified status');
+ assert.equal(code.split('document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet').length-1,4,'Missing approval, unavailable source, exceptions and event expiry must clear stale verified status');
  assert.ok(code.includes('id="auto-detector-status"'), 'Auto detector must expose status without manual control');
  assert.ok(code.includes('if(status)status.textContent="Automatic Detector · verifiziert:'), 'Only accepted native event may mark detector verified');
  assert.ok(code.includes('if(accepted)applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
