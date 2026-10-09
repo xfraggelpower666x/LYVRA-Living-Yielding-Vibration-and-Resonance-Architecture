@@ -50,3 +50,5 @@ jobs:
         run: node LYVRA_PET/development/verify-codeforge-real-git-merge-dev.mjs
       - name: Validate safe real Git branch cleanup with recovery reference
         run: node LYVRA_PET/development/verify-codeforge-real-git-cleanup-dev.mjs
+      - name: Verify native Studio 2 handoff candidate and honest receipts
+        run: node LYVRA_PET/development/verify-studio2-handoff-candidate.mjs
