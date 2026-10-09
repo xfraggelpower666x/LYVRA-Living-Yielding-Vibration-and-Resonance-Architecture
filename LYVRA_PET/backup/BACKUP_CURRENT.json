@@ -1,0 +1,40 @@
+{
+  "schema": "lyvra.pet.local-backup-index.v1",
+  "status": "RECOVERY_ANCHOR_VERIFIED_NOT_STANDALONE_BINARY_MIRROR",
+  "authority": "WHOLE_LYVRA",
+  "scope": "LYVRA_PET/",
+  "as_of": "2026-10-09",
+  "recovery": {
+    "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "branch": "lyvra-recovery-pre-pet-auto-facet-repair-20261009",
+    "commit": "300eaf956815832a416b5090d8e5e3820ab78d66",
+    "coverage": "FULL_REPOSITORY_GIT_TREE_AT_PINNED_COMMIT",
+    "pet_subtree": "LYVRA_PET/",
+    "blob_restore_requires": "READBACK_AND_HASH_CHECK"
+  },
+  "development": {
+    "branch": "lyvra-dev-pet-auto-facet-repair-20261009",
+    "source_fix_commit": "8cf401a5fb78f820f580909133d7306ef472aa4e",
+    "bundle_fix_commit": "60fd4cd936c19567a4f3104ce68161c76eb94ca0",
+    "regression_fix_commit": "42650a8793b454a15ffad461675c569d518fa27b",
+    "status": "NOT_PRODUCTION"
+  },
+  "cloudflare": {
+    "worker": "lyvra-pet-plugin-ui",
+    "last_verified_production_version": "7e3274fc-1cd2-449c-acd9-fb2ed3fe607b",
+    "last_verified_production_deployment": "0c45fa4c-b546-4220-84c7-2a7fd262899e",
+    "undeployed_candidate_version": "ed7d909a-945c-40f6-a197-5b37d437f6c1",
+    "cloudflare_recovery": "VERSION_ROLLBACK_REQUIRES_CURRENT_LIVE_READBACK"
+  },
+  "other_backup": {
+    "pfs": "PARTIAL_9_OF_35_TEXT_FILES_BINARY_WRITE_BLOCKED_AS_OF_2026-10-08",
+    "role": "BACKUP_ONLY_NO_RUNTIME_AUTHORITY"
+  },
+  "limits": [
+    "THIS_IS_AN_INDEX_TO_GIT_RECOVERY_NOT_AN_INDEPENDENT_BINARY_ARCHIVE",
+    "DO_NOT_ROLL_BACK_UNRELATED_WHOLE_LYVRA_FILES",
+    "DO_NOT_RESTORE_OLD_PLUGIN_RELEASES_AS_CURRENT",
+    "PINNED_VERSION_REFERENCES_REQUIRE_LIVE_REVALIDATION",
+    "POINTER_LAST_GOVERNANCE_FOR_FUTURE_PRODUCTIVE_RESTORE"
+  ]
+}
