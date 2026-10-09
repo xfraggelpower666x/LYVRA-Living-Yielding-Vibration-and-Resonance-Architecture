@@ -1,0 +1,73 @@
+{
+  "schema": "LYVRA_TRACK_RELATIONAL_AUDIT_UPDATE_v1",
+  "lineage_id": "relational-audit-20261009",
+  "workspace_id": "TRACK_DESIGN",
+  "update_scope": "TRACK_DESIGN_AUDIT_EVIDENCE_ONLY",
+  "status": "PARTIAL_PROVENANCE_READBACK_VERIFIED_BEHAVIORAL_RUNTIME_PENDING",
+  "source_branch": "lyvra-dev-track-relational-rehydration-audit-20261009",
+  "productive_authority_branch": "lyvra",
+  "production_mutation": false,
+  "plugin_mutation": false,
+  "foreign_facet_mutation": false,
+  "suno_render": false,
+  "recovery_branch": "lyvra-recovery-pre-track-relational-audit-update-20261009",
+  "recovery_source_commit": "1d53191c533a6b2f8fb53586382c10ab66e60673",
+  "source_handoff": "LYVRA_NEW_CHAT_20261009T212447Z.json",
+  "source_handoff_last_valid_stage": "TWO_CONTEXT_HYPOTHETICAL_TRACE_CI_PASS",
+  "whole_revision": 242,
+  "track_design_revision": 96,
+  "registry_status_claim": "CURRENT_CRITICAL_CARRIER_FINGERPRINTS_RECONCILED",
+  "registry_claim_mismatches": 0,
+  "registry_carrier_count": 210,
+  "direct_readback_sample": {
+    "checked": 4,
+    "matched": 2,
+    "mismatched": 2
+  },
+  "mismatches": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "registry_blob": "7e47802941e205184c9670e540019764c6d73b94",
+      "direct_blob": "81e03c87f4b820a8001cdb1b81199fa2da8189f8",
+      "provenance_commits": [
+        "0cbffa4f7903796f518f040dfb01eaabecee131f",
+        "33614e70af608bec522a1fa17a774bfb8a0c811f"
+      ]
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+      "registry_blob": "16c102897f5ef89b7a6f574308fc92edbe7f2fe5",
+      "direct_blob": "adce576dcdc37d65544d7ad69a97d885277f8a57",
+      "provenance_commits": [
+        "1bfd347b637f1b0be2c49bd393a04180019ea252"
+      ]
+    }
+  ],
+  "matched": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md",
+      "blob": "d14b0687f048e1a4e8b615c36719d8331ad2a617"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+      "blob": "4ec3f3f52acafb444e168f511ec4300a1573ad4e"
+    }
+  ],
+  "branch_divergence_at_preflight": {
+    "audit_ahead": 11,
+    "audit_behind": 1,
+    "productive_extra_file": "LYVRA_PET/worker/src/index.js",
+    "no_automatic_merge": true
+  },
+  "acceptance": {
+    "static_contract_ci": "PRIOR_HANDOFF_REPORTED_PASS_NOT_REEXECUTED",
+    "counterfactual_dry_trace": "CHAT_LOCAL_HYPOTHETICAL_NOT_RUNTIME_PROOF",
+    "fresh_boot": "OPEN",
+    "plugin_fresh_boot_parity": "OPEN",
+    "audio": "OPEN",
+    "full_210_carrier_fresh_sha_audit": "OPEN",
+    "fingerprint_registry_repair": "NOT_PERFORMED"
+  },
+  "next_work": "Audit all 210 registry entries against branch lyvra with batched reliable tree readback; reconcile newer valid blobs by provenance; do not overwrite newer carriers; then perform independent native fresh-session acceptance.",
+  "no_false_full": true
+}
