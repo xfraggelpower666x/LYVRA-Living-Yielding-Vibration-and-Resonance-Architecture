@@ -6,6 +6,7 @@ on:
     paths:
       - 'LYVRA_PET/**'
       - 'LYVRA_NATIVE_RUNTIME/facets/studio2/**'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/sheb/**'
       - '.github/workflows/pet-dev-native-regression.yml'
   workflow_dispatch:
 permissions:
@@ -19,6 +20,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify SHEB governed semantic handoff and receipts
+        run: node LYVRA_NATIVE_RUNTIME/continuity/sheb/verify-sheb.mjs
       - name: Verify Studio 2 display name and legacy trigger migration
         run: node LYVRA_NATIVE_RUNTIME/facets/studio2/verify-display-name-migration.mjs
       - name: Verify deterministic native bundle and auto-facet safeguards
