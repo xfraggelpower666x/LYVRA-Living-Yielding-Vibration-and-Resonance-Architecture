@@ -34,6 +34,8 @@ jobs:
         run: node --check LYVRA_PET/worker/build/worker-bundle.mjs
       - name: Execute same-origin worker route and budget integration tests
         run: node LYVRA_PET/verify-worker-routes-dev.mjs
+      - name: Verify Mini-PET compact view adapter and safe fallback
+        run: node LYVRA_PET/mini_pet/verify-mini-view-adapter.mjs
       - name: Verify Mini-PET full intelligence parity and sub rehydration
         run: node LYVRA_PET/mini_pet/verify-mini-parity-dev.mjs
       - name: Verify Mini-PET shared identity and release guards
