@@ -21,6 +21,8 @@ for(const s of [src,built]){
 }
 for(const code of [src,built]){
  assert.ok(code.includes('function chooseFacet(context)'), 'Historical PFS automatic detector must be restored');
+ assert.ok(code.includes('id="auto-detector-status"'), 'Auto detector must expose status without manual control');
+ assert.ok(code.includes('if(status)status.textContent="Automatic Detector · verifiziert:'), 'Only accepted native event may mark detector verified');
  assert.ok(code.includes('if(accepted)applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
  assert.ok(code.includes('current={facet:chooseFacet({type})}'), 'Local preview remains explicitly separate');
  assert.ok(code.includes('if(context?.trusted===true&&PET_FACETS.includes(context.facet))'), 'Untrusted external facet must not be treated as approved');
