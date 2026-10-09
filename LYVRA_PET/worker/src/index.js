@@ -350,7 +350,7 @@ export default {
       return new Response(bytes,{headers:{...cors,'content-type':'image/png','cache-control':'public, max-age=3600','x-lyvra-pose-sha256':hash}});
     }
     if(url.pathname==="/health"){
-      return json({status:"ok",service:"lyvra-pet-plugin-ui",pet_id:PET_ID,cost_policy:"FREE_ONLY",main_plugin_binding:false,renderer:"VERIFIED_ACTIVE_SPRITE",atlas_sha256:ATLAS_SHA256,logo_sha256:LOGO_SHA256,pet_app_binding:"asdk_app_6ac6fbaed2a481919fad519862e7b7f0"});
+      return json({status:"ok",service:url.hostname==="lyvra-pet-read-staging.digital-underground-connected.workers.dev"?"lyvra-pet-read-staging":url.hostname==="lyvra.pet.alive.666soundsdesign-broadcaster.com"?"lyvra-pet-public": "lyvra-pet-plugin-ui",pet_id:PET_ID,cost_policy:"FREE_ONLY",main_plugin_binding:false,renderer:"VERIFIED_ACTIVE_SPRITE",atlas_sha256:ATLAS_SHA256,logo_sha256:LOGO_SHA256,pet_app_binding:"asdk_app_6ac6fbaed2a481919fad519862e7b7f0"});
     }
 
     const logoName=url.pathname.startsWith("/asset/")?url.pathname.slice(7):null;
