@@ -253,7 +253,7 @@ async function refreshPetBudget(){
  const count=document.getElementById("pet-budget-count"),fill=document.getElementById("pet-budget-fill"),note=document.getElementById("pet-budget-note"),track=document.getElementById("pet-budget-track");
  if(!count||!fill||!note||!track)return;
  try{
-  const r=await fetch("https://lyvra-pet-read-staging.digital-underground-connected.workers.dev/budget-status",{cache:"no-store"});
+  const r=await fetch("/budget-status",{cache:"no-store"});
   if(!r.ok)throw Error("unavailable");
   const data=await r.json();
   if(data.status!=="OK"||!Number.isSafeInteger(data.used)||data.limit!==300||data.used<0||data.used>300||!Number.isSafeInteger(data.remaining)||data.remaining!==300-data.used)throw Error("invalid");
@@ -271,7 +271,7 @@ async function refreshNative(){
  try{
   if(!nativeConfig?.spki||!nativeConfig?.key_id){nativeStatus.textContent="Lokale Ausdrucksvorschau";return;}
   if(!nativeConnection){const publicKey=await crypto.subtle.importKey("spki",Uint8Array.from(atob(nativeConfig.spki),c=>c.charCodeAt(0)),"Ed25519",false,["verify"]);if(nativeClosed||ticket!==nativeTicket)return;nativeConnection=window.lyvraPetExpression.connectSignedEvidence({getRevision:()=>nativeRevision,trustedKeys:{[nativeConfig.key_id]:publicKey}});}
-  const response=await fetch("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/native-expression",{cache:"no-store"});
+  const response=await fetch("/native-expression",{cache:"no-store"});
   const result=await response.json();if(nativeClosed||ticket!==nativeTicket)return;
   if(!response.ok||result.status==="SOURCE_UNAVAILABLE"){
    nativeRevision=null;nativeConnection.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";
