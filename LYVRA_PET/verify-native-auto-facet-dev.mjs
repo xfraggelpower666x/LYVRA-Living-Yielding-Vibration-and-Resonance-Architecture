@@ -21,6 +21,10 @@ for(const s of [src,built]){
 }
 for(const code of [src,built]){
  assert.ok(code.includes('function chooseFacet(context)'), 'Historical PFS automatic detector must be restored');
+ assert.ok(code.includes('const expiry=Date.parse(result.envelope.event.observed_at)+60000'), 'Verified state must expire at signed observation deadline');
+ assert.ok(code.includes('clearTimeout(nativeExpiryTimer);nativeExpiryTimer=null'), 'Refresh must cancel prior expiration timer');
+ assert.ok(code.includes('nativeTicket++;clearTimeout(nativeExpiryTimer);'), 'Page unload must release expiration timer');
+
  assert.equal(code.split('document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet').length-1,3,'Missing approval, unavailable source, and thrown errors must clear stale verified status');
  assert.ok(code.includes('id="auto-detector-status"'), 'Auto detector must expose status without manual control');
  assert.ok(code.includes('if(status)status.textContent="Automatic Detector · verifiziert:'), 'Only accepted native event may mark detector verified');
