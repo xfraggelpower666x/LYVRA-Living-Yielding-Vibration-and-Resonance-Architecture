@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {applyDevelopmentEvent} from './development-event-adapter.mjs';
+import {developmentProgressCount} from './development-progress-producer.mjs';
+const rev='a'.repeat(40),seen=new Set(),event=(type,extra={})=>({type,source_revision:rev,event_id:type+'-'+(extra.task_id||'x'),evidence_ref:'qa/'+type,...extra});
+const task={id:'T1',status:'OPEN',evidence_ref:'qa/T1'};
+const active=applyDevelopmentEvent(null,event('START',{title:'Test',tasks:[task]}),{seen_event_ids:seen});
+assert.deepEqual(developmentProgressCount(active),{done:0,total:1,percent:0});
+assert.throws(()=>applyDevelopmentEvent(active,event('TASK_STATUS',{task_id:'T1',task_status:'DONE',completion_verified:true}),{seen_event_ids:seen}),/Private evidence map/);
+const proof={T1:{evidence_ref:'qa/T1'}};
+const done=applyDevelopmentEvent(active,event('TASK_STATUS',{task_id:'T1',task_status:'DONE',completion_verified:true}),{seen_event_ids:seen,prior_task_evidence:proof});
+assert.deepEqual(developmentProgressCount(done),{done:1,total:1,percent:100});
+assert.equal(done.current_work.tasks[0].evidence_ref,undefined);
+assert.throws(()=>applyDevelopmentEvent(active,event('TASK_STATUS',{task_id:'T1',task_status:'DONE',completion_verified:true}),{seen_event_ids:new Set(['TASK_STATUS-T1']),prior_task_evidence:proof}),/replayed/);
+assert.throws(()=>applyDevelopmentEvent(done,event('COMPLETE'),{seen_event_ids:seen,prior_task_evidence:proof}),/verified prior task evidence/);
+const complete=applyDevelopmentEvent(done,event('COMPLETE'),{seen_event_ids:seen,prior_task_evidence:{T1:{evidence_ref:'qa/DONE',completion_verified:true}}});
+assert.equal(complete.status,'COMPLETED');
+assert.throws(()=>applyDevelopmentEvent(complete,event('RESUME'),{seen_event_ids:seen}),/No active development/);
+console.log('PASS: event lifecycle, evidence retention, privacy, duplicate IDs, guarded completion');
