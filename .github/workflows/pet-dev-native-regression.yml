@@ -38,3 +38,5 @@ jobs:
         run: node LYVRA_PET/mini_pet/verify-mini-facet-contract.mjs
       - name: Verify cross-chat CODEFORGE governance proposal invariants
         run: node LYVRA_PET/development/verify-codeforge-parallel-contract.mjs
+      - name: Simulate independent cross-chat integration and safe branch cleanup
+        run: node LYVRA_PET/development/verify-codeforge-parallel-scenarios.mjs
