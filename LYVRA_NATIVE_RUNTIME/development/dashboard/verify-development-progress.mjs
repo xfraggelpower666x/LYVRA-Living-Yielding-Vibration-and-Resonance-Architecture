@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {developmentProgress,developmentProgressCount} from './development-progress-producer.mjs';
+const revision='a'.repeat(40),stamp='2026-10-09T02:17:00Z';
+const tasks=Array.from({length:100},(_,i)=>({id:'task-'+(i+1),status:i<46?'DONE':'OPEN',completion_verified:i<46,evidence_ref:'qa/task-'+(i+1)}));
+const active=developmentProgress({status:'ACTIVE',source_revision:revision,updated_at:stamp,current_work:{title:'Testentwicklung',tasks}});
+assert.deepEqual(developmentProgressCount(active),{done:46,total:100,percent:46});
+assert.equal(active.current_work.tasks[0].evidence_ref,undefined,'Never publish internal task evidence ref');
+assert.equal(developmentProgress({status:'INACTIVE'}).current_work,null);
+assert.equal(developmentProgressCount(developmentProgress({status:'INACTIVE'})),null);
+assert.throws(()=>developmentProgress({status:'ACTIVE',source_revision:revision,current_work:{title:'Invalid',tasks:[{id:'a',status:'DONE',evidence_ref:'qa'}]}}),/verified completion/);
+assert.throws(()=>developmentProgress({status:'ACTIVE',source_revision:revision,current_work:{title:'Dup',tasks:[tasks[0],tasks[0]]}}),/duplicate/);
+assert.throws(()=>developmentProgress({status:'COMPLETED',source_revision:revision,current_work:{title:'Incomplete',tasks}}),/unfinished/);
+console.log('PASS: 46/100=46%; inactive hidden; evidence scrubbed; fake DONE/duplicates/incomplete blocked');
