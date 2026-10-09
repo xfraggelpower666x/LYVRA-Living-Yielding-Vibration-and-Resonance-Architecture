@@ -66,3 +66,32 @@ Status: PROPOSAL_NOT_IMPLEMENTED. CODEFORGE must adopt this inside its own autho
 - Own CODEFORGE subfacet, Sub-LifeCircle, Sub-Rehydration, event schema, test fixtures and approval policy.
 - First deliver READ_ONLY observers plus simulated multi-branch tests: parallel unrelated updates, shared path race, cross-file semantic conflict, stale HEAD, plugin schema change, failed CI, merge queue fairness and cleanup of referenced branch forbidden.
 - Only graduate to scoped action after cross-system interface contracts, live readbacks, rollback and recovery verification.
+
+
+## Core-preserving CODEFORGE intelligence hierarchy (requested 2026-10-09)
+Status: CROSS-SYSTEM DEVELOPMENT PROPOSAL, NOT NATIVE CODEFORGE IMPLEMENTATION.
+
+CORE INVARIANT: CODEFORGE is fundamentally a coding and engineering assistant. Coding support, sound programming, maintainability, reviews, diagnosis, testing, practical repair and GitHub build/deploy accompaniment are mandatory core capabilities. Branch governance supports the core, never replaces or outranks it.
+
+### Development Intelligence as a CODEFORGE subfacet
+A hierarchical facet, NOT an independent system or identity. Suggested sub-subfacets with bounded authorities and their own compact state:
+1. Coding Quality: semantic code comprehension, maintainability, static and dynamic analysis, architecture, threat review, precise patch/test/refactor proposals.
+2. Testing and Evidence: unit, integration, contract, regression, runtime readbacks, confidence/provenance ledger, distinguish CI_GREEN from DEPLOYED and LIVE_VERIFIED.
+3. GitHub Engineering and Deployment: workflows, permissions, checks, artifacts, version manifests, deployment targets, environment bindings, rollback plans, post-deploy readbacks and failure repair. Never equate deploy trigger with deployment success.
+4. Multi-Chat Workspace Coordination: durable scoped workspace IDs, independent branch/current, active-owner isolation, rebase/conflict evidence, dependency graph and leases for shared files.
+5. Integration and Release: serialized merge queue into freshest principal HEAD, staging gates, scope/security/plugin continuity, immutable pre-merge backups, pointer-last promotion.
+6. Repository and Branch Hygiene: track branches during development; spot stale/orphan assets; after verified merge and protected-reference check automatically clean only safe temporary branches, retain immutable recovery.
+7. Adaptive Learning and Diagnostics: bounded causal engineering hypotheses with contrary evidence, traceable verified fixes, regression memory as revisioned engineering evidence (not an autonomous personal memory root).
+8. Developer Visibility: cross-workspace development dashboards with real measured tasks and meaningful blocked states; no guessed completion percentages.
+
+### Hierarchical semantic-causal-evidence LifeCircle
+LEVEL 0: Whole CODEFORGE engineering authority, original coding mission, governance/permission and native REHYDRATION.
+LEVEL 1: Development Intelligence orchestration; intent, workspace discovery, causal hypothesis/evidence graph, risk, planning, resource budgets.
+LEVEL 2: Sub-subfacet LifeCircles for code, test, GitHub deploy, branch coordination, merge and hygiene; each owns scoped inputs/outputs, revision, provenance and safety predicates.
+LEVEL 3: Workspace-specific LifeCircle per concurrent chat objective: base SHA, active branch, file ownership, dependencies, recent verified readback, backup, tests, deployment status, next safe action.
+LEVEL 4: Individual action cycle: observe -> classify facts/inference/unknown -> root-cause hypothesis -> select reversible patch -> backup -> compare-and-swap mutate -> test -> readback -> record outcome -> recover/advance.
+
+Every level has own independent Sub-Rehydration in parent-first order; workspace restoration cannot overwrite another workspace. Cross-level messages are versioned evidence/event contracts, not implicit permissions. Eventual integration into active main is required for completed approved developments; merge queue is serialized while work remains parallel. Cleaning occurs only after full successful integration and recovery proof.
+
+### Release and implementation tests
+Simulate independent chats working on unrelated files and semantic interfaces; same-file overlapping update, stale-HEAD and partial failed build; GitHub Actions green but deployment red; failed staged health check; incident requiring rollback; approval missing; plugin drift; active branch erroneously labeled stale; dependencies preventing branch deletion; gradual host adoption. Each simulation must prove no cross-workspace destruction, truthful evidence status and retained recovery.
