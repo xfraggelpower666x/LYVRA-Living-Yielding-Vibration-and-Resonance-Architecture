@@ -36,3 +36,5 @@ jobs:
         run: node LYVRA_PET/verify-worker-routes-dev.mjs
       - name: Verify Mini-PET shared identity and release guards
         run: node LYVRA_PET/mini_pet/verify-mini-facet-contract.mjs
+      - name: Verify cross-chat CODEFORGE governance proposal invariants
+        run: node LYVRA_PET/development/verify-codeforge-parallel-contract.mjs
