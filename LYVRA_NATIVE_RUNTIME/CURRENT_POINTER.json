@@ -3035,13 +3035,16 @@
     "critical_fingerprint_mismatches": 0
   },
   "development_dashboard_event_adapter_2026_10_09": {
-    "status": "PURE_EVENT_ADAPTER_REPOSITORY_READBACK_VERIFIED_TEST_EXECUTION_AND_NATIVE_PUBLICATION_PENDING",
+    "status": "EVIDENCE_GUARD_REPAIR_AND_TEST_SOURCE_READBACK_VERIFIED_TEST_EXECUTION_PENDING",
     "path": "LYVRA_NATIVE_RUNTIME/development/dashboard/development-event-adapter.mjs",
-    "blob": "2621c0a8d7c102f2ee48d7f8b35e5bf794aad7f2",
-    "body_commit": "79e28f65f121b0a006fb9a06859642a7887fc68f",
-    "recovery_branch": "lyvra-recovery-pre-development-event-adapter-20261009-0243",
-    "integration": "PURE_NON_PUBLISHING_CANDIDATE",
+    "blob": "c18bf5f00be33d4adf175ba0da9782678421bae5",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/dashboard/verify-development-event-adapter.mjs",
+    "test_blob": "477b82e580eef742927190ceb1f0ce8816caaaac",
+    "body_commit": "392687b0d92b7b83cb05905704dff2bdfc9a0466",
+    "recovery_branch": "lyvra-recovery-pre-development-event-evidence-repair-20261009-0246",
+    "evidence": "NO_FABRICATED_PRIOR_REFERENCES_AND_REPLAY_GUARD",
     "test_execution": "PENDING",
+    "native_publication": "NOT_CONNECTED",
     "plugin_impact": "NO_PLUGIN_RUNTIME_CHANGE",
     "current_carrier": "INACTIVE",
     "whole_authority": "LYVRA_ONLY"
