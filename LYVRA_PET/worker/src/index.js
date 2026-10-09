@@ -269,6 +269,15 @@ document.getElementById("native-refresh").addEventListener("click",()=>refreshNa
 window.addEventListener("pagehide",()=>{nativeClosed=true;nativeTicket++;if(evidenceController)evidenceController.dispose();effects.dispose();});
 </script></body></html>`;
 
+async function verifiedAssetResponse(source,expected,header){
+  const upstream=await fetch(source);
+  if(!upstream.ok)return new Response("asset unavailable",{status:502,headers:{"cache-control":"no-store"}});
+  const bytes=await upstream.arrayBuffer();
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",bytes)),b=>b.toString(16).padStart(2,"0")).join("");
+  if(hash!==expected)return new Response("asset integrity mismatch",{status:502,headers:{"cache-control":"no-store"}});
+  return new Response(bytes,{headers:{...cors,"content-type":"image/png","cache-control":"public, max-age=86400, immutable",[header]:hash}});
+}
+
 const cors = {
   "Access-Control-Allow-Origin":"*",
   "Access-Control-Allow-Headers":"content-type,mcp-protocol-version",
@@ -324,25 +333,9 @@ export default {
       return new Response(bytes,{headers:{...cors,"content-type":"image/png","cache-control":"public, max-age=3600","x-lyvra-logo-sha256":logo.sha256}});
     }
 
-    if(url.pathname==="/asset/spritesheet-extended.png"){
-      const upstream = await fetch(ATLAS_SOURCE);
-      if(!upstream.ok) return new Response("asset unavailable",{status:502});
-      const headers = new Headers(upstream.headers);
-      headers.set("content-type","image/png");
-      headers.set("cache-control","public, max-age=86400, immutable");
-      headers.set("x-lyvra-atlas-sha256",ATLAS_SHA256);
-      return new Response(upstream.body,{status:upstream.status,headers});
-    }
+    if(url.pathname==="/asset/spritesheet-extended.png")return verifiedAssetResponse(ATLAS_SOURCE,ATLAS_SHA256,"x-lyvra-atlas-sha256");
 
-    if(url.pathname==="/asset/pet-logo.png"){
-      const upstream = await fetch(LOGO_SOURCE);
-      if(!upstream.ok) return new Response("logo unavailable",{status:502});
-      const headers = new Headers(upstream.headers);
-      headers.set("content-type","image/png");
-      headers.set("cache-control","public, max-age=86400, immutable");
-      headers.set("x-lyvra-pet-logo-sha256",LOGO_SHA256);
-      return new Response(upstream.body,{status:upstream.status,headers});
-    }
+    if(url.pathname==="/asset/pet-logo.png")return verifiedAssetResponse(LOGO_SOURCE,LOGO_SHA256,"x-lyvra-pet-logo-sha256");
 
     if(url.pathname==="/pet" || url.pathname==="/pet/" || url.pathname==="/"){
       return new Response(renderedUI,{headers:{...cors,"content-type":"text/html; charset=utf-8","x-robots-tag":"noindex"}});
