@@ -28,7 +28,7 @@ for(const code of [src,built]){
  assert.equal(code.split('document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet').length-1,4,'Missing approval, unavailable source, exceptions and event expiry must clear stale verified status');
  assert.ok(code.includes('id="auto-detector-status"'), 'Auto detector must expose status without manual control');
  assert.ok(code.includes('if(status)status.textContent="Automatic Detector · verifiziert:'), 'Only accepted native event may mark detector verified');
- assert.ok(code.includes('if(accepted)applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
+ assert.ok(code.includes('if(accepted){applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
  assert.ok(code.includes('current={facet:chooseFacet({type})}'), 'Local preview remains explicitly separate');
  assert.ok(code.includes('if(context?.trusted===true&&PET_FACETS.includes(context.facet))'), 'Untrusted external facet must not be treated as approved');
 }
