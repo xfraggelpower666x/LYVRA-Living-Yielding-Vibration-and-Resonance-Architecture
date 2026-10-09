@@ -6,7 +6,7 @@ const block=worker.slice(worker.indexOf('let nativeClosed=false'),worker.indexOf
 const configured=block.replace('__LYVRA_NATIVE_TRUST__',JSON.stringify({key_id:'test',spki:'AQ=='}));
 let resolveResponse,accepts=0,resets=0;
 const handlers={},status={textContent:''},selector={value:'whole'};
-const scope={document:{getElementById(id){return id==='native-status'?status:id==='facet'?selector:{addEventListener(type,fn){handlers[type]=fn;}};}},crypto:{subtle:{importKey:async()=>({})}},atob:()=>String.fromCharCode(1),fetch:()=>new Promise(resolve=>{resolveResponse=resolve;}),window:{lyvraPetExpression:{connectSignedEvidence(){return {accept:async()=>{accepts++;return true;},reset(){resets++;}};}},addEventListener(type,fn){handlers[type]=fn;}},evidenceController:null,effects:{dispose(){}}};
+const scope={setInterval:()=>0,setTimeout:()=>0,clearTimeout:()=>{},document:{getElementById(id){return id==='native-status'?status:id==='facet'?selector:{addEventListener(type,fn){handlers[type]=fn;}};}},crypto:{subtle:{importKey:async()=>({})}},atob:()=>String.fromCharCode(1),fetch:()=>new Promise(resolve=>{resolveResponse=resolve;}),window:{lyvraPetExpression:{connectSignedEvidence(){return {accept:async()=>{accepts++;return true;},reset(){resets++;}};}},addEventListener(type,fn){handlers[type]=fn;}},evidenceController:null,effects:{dispose(){}}};
 vm.createContext(scope);vm.runInContext(configured,scope);await new Promise(r=>setImmediate(r));
 // A real pending HTTP response must not override a subsequent manual context.
 vm.runInContext('nativeTicket++',scope);
