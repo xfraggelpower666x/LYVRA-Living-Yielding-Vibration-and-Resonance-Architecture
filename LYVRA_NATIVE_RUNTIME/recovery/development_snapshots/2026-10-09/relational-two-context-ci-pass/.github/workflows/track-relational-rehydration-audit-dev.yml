@@ -1,0 +1,18 @@
+name: Track relational rehydration audit (DEV only)
+on:
+  push:
+    branches:
+      - lyvra-dev-track-relational-rehydration-audit-20261009
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run no-cost native relational contract regression
+        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-*.test.mjs
