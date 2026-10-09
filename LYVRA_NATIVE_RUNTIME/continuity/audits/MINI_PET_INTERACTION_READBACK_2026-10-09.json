@@ -1,0 +1,30 @@
+{
+  "schema": "LYVRA_MINI_PET_INTERACTION_READBACK_v1",
+  "date": "2026-10-09",
+  "tested_current": "ab430d421dbcecb7f1ce5bdfbdc957077fe556db",
+  "method": "Cloudflare Browser Rendering content API, mobile viewport 390x844, automated click on real DOM controls, readback of post-click data-pet-mode and aria-pressed",
+  "surfaces": [
+    {
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/dashboard/",
+      "mode_clicks": "quiet=quiet/true,detail=detail/true,mini=mini/true",
+      "music_demo": "DEMO · MUSIC|true",
+      "binding": "TECHNICAL_SOURCE_VERIFIED"
+    },
+    {
+      "url": "https://dashboard.666soundsdesign-broadcaster.com/",
+      "mode_clicks": "quiet=quiet/true,detail=detail/true,mini=mini/true",
+      "music_demo": "DEMO · MUSIC|true",
+      "binding": "TECHNICAL_SOURCE_VERIFIED"
+    }
+  ],
+  "result": "DOM_INTERACTION_PASS_BOTH_SURFACES",
+  "not_verified": [
+    "pixel or sprite visual correctness",
+    "network interruption behavior end-to-end",
+    "real semantic event ingestion",
+    "render outcome learning",
+    "self healing and autonomy"
+  ],
+  "no_plugin_mutation": true,
+  "no_semantic_authority_change": true
+}
