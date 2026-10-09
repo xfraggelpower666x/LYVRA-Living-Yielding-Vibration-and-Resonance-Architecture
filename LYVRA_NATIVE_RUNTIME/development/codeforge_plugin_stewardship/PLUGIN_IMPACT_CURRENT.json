@@ -1,0 +1,21 @@
+{
+  "schema": "lyvra.codeforge.plugin-impact.v1",
+  "status": "DEV_COMPLETE_PLUGIN_PENDING",
+  "tracked_developments": [
+    "mini_pet",
+    "sheb",
+    "studio2_display_alias",
+    "suno_contextual_operations",
+    "pet_custom_domain_security"
+  ],
+  "account_plugin": {
+    "name": "L.Y.V.R.A.",
+    "state": "LIVE_RELEASE_NOT_REVALIDATED"
+  },
+  "native_plugin": {
+    "name": "lyvra-native-runtime",
+    "state": "LIVE_RELEASE_NOT_REVALIDATED"
+  },
+  "release_approved": false,
+  "live_plugin_parity_verified": false
+}
