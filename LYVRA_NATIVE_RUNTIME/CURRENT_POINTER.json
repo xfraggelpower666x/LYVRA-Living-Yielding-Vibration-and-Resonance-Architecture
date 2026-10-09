@@ -2954,5 +2954,22 @@
     "new_controller": false,
     "plugin_runtime_mutation": false,
     "verified_critical_fingerprint_mismatches": 0
+  },
+  "semantic_force_visual_combined_plugin_skills_2026_10_09": {
+    "status": "REPOSITORY_SKILL_CANDIDATE_AND_PLUGIN_PARITY_HANDOFF_VERIFIED_LIVE_PLUGIN_RELEASE_PENDING",
+    "source_commit": "f245e1346f814995d04e7152c21652616a43e078",
+    "skill_path": "LYVRA_NATIVE_RUNTIME/plugin-integration/combined-skills/semantic-force-visual-intelligence/SKILL.md",
+    "skill_blob": "5cd857eec5e698c9988f5e2b01f1256d82d27bf2",
+    "handoff_path": "LYVRA_NATIVE_RUNTIME/plugin-integration/combined-skills/semantic-force-visual-intelligence/PLUGIN_PARITY_HANDOFF.json",
+    "handoff_blob": "d768b1c187a954e389d3d67174a1f056d33d8b61",
+    "recovery_branch": "lyvra-recovery-pre-combined-force-visual-skills-20261009",
+    "plugin_surfaces": [
+      "LYVRA_ACCOUNT",
+      "LYVRA_NATIVE_RUNTIME"
+    ],
+    "plugin_live_mutation": false,
+    "installed_skill_parity": "NOT_VERIFIED",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "fingerprint_mismatches": 0
   }
 }
