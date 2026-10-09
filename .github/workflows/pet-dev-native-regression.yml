@@ -24,3 +24,7 @@ jobs:
         run: node LYVRA_PET/bridge/verify-repository-events.mjs
       - name: Verify native refresh and cooldown guards
         run: node LYVRA_PET/bridge/verify-native-refresh.mjs
+      - name: Verify free-only hourly GitHub budget
+        run: node LYVRA_PET/bridge/github-budget.test.mjs
+      - name: Verify token isolation and anonymous fallback prevention
+        run: node LYVRA_PET/bridge/github-auth-isolation.test.mjs
