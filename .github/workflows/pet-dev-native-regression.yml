@@ -5,6 +5,7 @@ on:
       - lyvra-dev-pet-auto-facet-repair-20261009
     paths:
       - 'LYVRA_PET/**'
+      - 'LYVRA_NATIVE_RUNTIME/facets/studio2/**'
       - '.github/workflows/pet-dev-native-regression.yml'
   workflow_dispatch:
 permissions:
@@ -18,6 +19,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify Studio 2 display name and legacy trigger migration
+        run: node LYVRA_NATIVE_RUNTIME/facets/studio2/verify-display-name-migration.mjs
       - name: Verify deterministic native bundle and auto-facet safeguards
         run: node LYVRA_PET/verify-native-auto-facet-dev.mjs
       - name: Verify repository approvals and genuine Ed25519 signatures
