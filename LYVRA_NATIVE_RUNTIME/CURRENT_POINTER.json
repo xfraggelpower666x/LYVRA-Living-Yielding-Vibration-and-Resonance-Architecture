@@ -3065,5 +3065,18 @@
     "plugin_live_change": false,
     "other_facets_modified": false,
     "provider_audio_validation": "PENDING"
+  },
+  "track_design_progressive_relational_rehydration_pilot_2026_10_09": {
+    "status": "EXPERIMENTAL_CONTRACT_READBACK_VERIFIED_FRESH_BOOT_RUNTIME_UNVERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "contract_blob": "8ca7410d330fb3e2e36b5d993db313d254da52c5",
+    "body_commit": "c55288be490dba9f06922d4a8aa80a06c4b75fc3",
+    "recovery_branch": "lyvra-recovery-pre-relational-rehydration-pilot-20261009-0611",
+    "model": "PROGRESSIVE_CONTEXTUAL_INTER_LAYER_BIDIRECTIONAL_REUNDERSTANDING",
+    "new_controller": false,
+    "new_facet": false,
+    "peer_mutation": false,
+    "actual_fresh_start_validation": "PENDING"
   }
 }
