@@ -1,0 +1,67 @@
+{
+  "schema": "lyvra.studio2.semantic-handoff.proposal.v1",
+  "status": "PREPARED_NOT_DELIVERED",
+  "source": "Whole LYVRA - Suno Studio watch user-supplied report 2026-10-09",
+  "target": "EXISTING_STUDIO2_FACET",
+  "authority": "LYVRA_ONLY",
+  "branch_scope": "ISOLATED_STUDIO2_DEVELOPMENT",
+  "native_handoff_contract": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+  "native_handoff_current": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json",
+  "findings": {
+    "reported_official_2026_10_08_studio_operations": [
+      "improved downbeat detection",
+      "shift-click-drag time stretching",
+      "exponential/logarithmic fades",
+      "movable plugin windows"
+    ],
+    "official_source_reconfirmation": "REQUIRED_BEFORE_RULE_PROMOTION",
+    "community_unverified": [
+      "long form v6 degradation",
+      "Variety setting visibility/prompt rewrite drift"
+    ],
+    "rule_promotion": false
+  },
+  "proposed_tests": [
+    "145-150 BPM grid/phase and kick psybass lock",
+    "longitudinal v6 / Max / wild comparison without paid generation before authorization",
+    "beginning, 90 seconds, 120 seconds, final drop, outro quality checks",
+    "Variety requested vs actual metadata/prompt",
+    "DJ ending/endguard validation"
+  ],
+  "rename": {
+    "recommended": "LYVRA Studio 2",
+    "legacy_name": "LYVRA Suno Studio 2",
+    "preserve_existing_facet_identity": true,
+    "legacy_trigger_alias": true,
+    "implemented": false
+  },
+  "semantic_transport": {
+    "approach": "EXTEND_EXISTING_REPOSITORY_HANDOFF",
+    "sender_and_receiver_state": [
+      "PREPARED",
+      "SENT",
+      "RECEIVED",
+      "VALIDATED",
+      "ADOPTED",
+      "REJECTED",
+      "BLOCKED"
+    ],
+    "separate_receipt_and_adoption": true,
+    "rehydration_trigger_integration": "PROPOSED",
+    "plugin_skill": "PROPOSED",
+    "plugin_native_changes": false
+  },
+  "receipt": {
+    "persisted_proposal": true,
+    "receiver_acknowledged": false,
+    "adopted": false,
+    "active_current_mutated": false
+  },
+  "guards": [
+    "NO_FOREIGN_MUTATION",
+    "NO_PRODUCTIVE_POINTER_WRITE",
+    "NO_STUDIO2_AUTOACTIVATION",
+    "FREE_ONLY",
+    "NO_AUDIO_GENERATION_WITHOUT_PREFLIGHT"
+  ]
+}
