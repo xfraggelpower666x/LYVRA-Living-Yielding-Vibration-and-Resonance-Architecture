@@ -23,4 +23,18 @@ assert.equal(outbox.receipt.verified_by_receiver,false);
 assert.equal(outbox.receipt.receiver_current_sha,null);
 assert.equal(outbox.receipt.adopted,false);
 assert.equal(outbox.payload_path,'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/STUDIO2_SUNO_WATCH_HANDOFF_PROPOSAL_2026-10-09.json');
+// Verify that sender-side pending delivery cannot be confused with native receiver authority.
+const {createHash}=await import('node:crypto');
+const {readFile:readSource}=await import('node:fs/promises');
+const contract=await readSource(new URL('../TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md',import.meta.url),'utf8');
+const nativeCurrent=JSON.parse(await readSource(new URL('../TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json',import.meta.url),'utf8'));
+assert.equal(nativeCurrent.channel.shared_active_work_unit,false);
+assert.ok(contract.includes('PARALLEL_WORKSPACE_HANDOFF_LINES_MUST_NOT_OVERWRITE_EACH_OTHER'));
+assert.ok(contract.includes('UPDATE_PRESERVES_CURRENT_CHAT_WORKSPACE'));
+const payloadBytes=await readSource(new URL('./STUDIO2_SUNO_WATCH_HANDOFF_PROPOSAL_2026-10-09.json',import.meta.url));
+const outboxBytes=await readSource(new URL('./OUTBOUND_TO_STUDIO2_SUNO_WATCH_CURRENT.json',import.meta.url));
+assert.equal(createHash('sha256').update(payloadBytes).digest('hex').length,64);
+assert.equal(createHash('sha256').update(outboxBytes).digest('hex').length,64);
+assert.equal(outbox.routing.automatic_on_triggers,'PROPOSED_NOT_ACTIVE');
+assert.equal(outbox.native_existing_handoff,'LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json');
 console.log('PASS isolated Studio2 proposal: no fabricated receipt, authority transfer, renderer rule promotion or productive pointer mutation');
