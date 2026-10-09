@@ -30,13 +30,14 @@ for name in ('topic-banner-start.mp4', 'topic-banner-end.mp4'):
 boot_js=web/'cyber-boot.js';boot_css=web/'cyber-boot.css'
 assert boot_js.is_file() and boot_css.is_file(), 'Missing LYVRA cyber-intro assets'
 boot=boot_js.read_text(); boot_style=boot_css.read_text()
-assert "import './cyber-boot.js';" in (web/'app.js').read_text(), 'Cyber intro module not imported'
+assert "import './cyber-boot.js?v=cyber-intro-v1.9-r4-20261007';" in (web/'app.js').read_text(), 'Cyber intro module import must be cache-busted'
 for name in ('intro-background.jpg','intro-brand.png','center-emblem.png'):
     item=web/'assets'/'cyber-intro'/name
     assert item.is_file() and item.stat().st_size>1000, f'Missing cyber-intro artwork: {name}'
 assert "cyber-intro-v1.9-r2-20261006" in boot, 'Cyber intro release token missing'
 assert 'sessionStorage' not in boot, 'Cyber intro must run on every full page load'
 assert "css.addEventListener('load'" in boot and "if(!cssReady) return" in boot, 'Cyber intro must wait for stylesheet'
+assert "css-timeout" in boot and "css-load-error" in boot, 'Cyber intro must fail open on stylesheet failure'
 assert all(x in boot for x in ('4200','1100','5400','2000','18000')), 'Cyber intro timing contract incomplete'
 assert all(x in boot for x in ('SYSTEM ONLINE','system-online-sequence','lyvra:system-start')), 'Cyber intro handoff contract incomplete'
 assert 'hudSystemOnlineTripleFade' in boot_style and '5.4s ease-in-out 1 forwards' in boot_style, 'SYSTEM ONLINE triple-fade missing'
