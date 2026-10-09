@@ -34,4 +34,13 @@ const report=Object.freeze({
 });
 assert.match(report.outbox_sha256,/^[a-f0-9]{64}$/);
 assert.match(report.payload_sha256,/^[a-f0-9]{64}$/);
+const gate=JSON.parse(await read('STUDIO2_RECEIVER_DECISION_CONTRACT_2026-10-09.json'));
+assert.equal(gate.message_id,out.message_id);
+assert.equal(gate.actual_decision.state,'PREFLIGHT_VALIDATED');
+assert.equal(gate.actual_decision.native_receiver_receipt,null);
+assert.equal(gate.actual_decision.native_adoption_receipt,null);
+assert.equal(gate.assertions.preflight_is_receipt,false);
+assert.equal(gate.assertions.receipt_is_adoption,false);
+assert.equal(gate.assertions.production_released,false);
+for(const evidence of ['outbox_blob_sha','payload_blob_sha','receiving_current_sha','receiver_identity','explicit_receiver_action','readback_sha'])assert.ok(gate.mandatory_proof.includes(evidence));
 console.log(JSON.stringify(report));
