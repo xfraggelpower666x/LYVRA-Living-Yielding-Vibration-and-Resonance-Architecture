@@ -1,0 +1,81 @@
+{
+  "schema": "lyvra.semantic-handoff-candidate.v1",
+  "status": "PREPARED_NOT_DELIVERED",
+  "source": "LYVRA_WHOLE_SUNO_WATCH_EXPORT_2026-10-09",
+  "target": "EXISTING_LYVRA_STUDIO_2_FACET",
+  "authority": "LYVRA_ONLY",
+  "native_channel": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json",
+  "native_contract": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+  "owner_scope": "LYVRA_NATIVE_RUNTIME",
+  "candidate_workspace": "LYVRA_PET_DEV_READ_ONLY_PROPOSAL",
+  "evidence_policy": {
+    "official_release_reported": "Suno Studio operations 2026-10-08; corroboration via original official release notes required at adoption",
+    "community_observations": [
+      "v6 long-form degradation",
+      "Variety UI control drift"
+    ],
+    "community_rule_promotion": false,
+    "real_audio_validation": "PENDING"
+  },
+  "payload": {
+    "studio_operations": [
+      "downbeat_detection",
+      "shift_click_drag_time_stretch",
+      "exponential_logarithmic_fades",
+      "movable_plugin_windows"
+    ],
+    "production_tests": [
+      "Master Clock grid alignment",
+      "kick-bass/transient phase integrity",
+      "DJ endguard preservation",
+      "plugin window usability",
+      "requested Variety vs recorded metadata and prompt rewrite",
+      "v6 versus v6 Max versus v6-wild longitudinal quality"
+    ],
+    "identity_migration": {
+      "recommend_new_label": "LYVRA Studio 2",
+      "existing_identity_preserved": true,
+      "legacy_alias": "LYVRA SUNO STUDIO 2",
+      "registry_migration": "PROPOSED_NOT_EXECUTED"
+    }
+  },
+  "semantic_bus_proposal": {
+    "name": "LYVRA Semantic Handoff & Evidence Bus",
+    "mode": "EXTEND_EXISTING_TRANSPORT_NOT_PARALLEL_BUS",
+    "states": [
+      "PREPARED",
+      "SENT",
+      "RECEIVED",
+      "VALIDATED",
+      "ADOPTED",
+      "REJECTED",
+      "BLOCKED"
+    ],
+    "required_evidence": [
+      "source_revision",
+      "receiving_current",
+      "event_id",
+      "provenance",
+      "causal_rationale",
+      "acknowledgment",
+      "post_action_readback"
+    ],
+    "continuity_triggers": [
+      "SYSTEMSTART",
+      "UPDATE",
+      "WEITER",
+      "NEW CHAT",
+      "NEXT CHAT"
+    ],
+    "plugin_skill": "PROPOSED_NOT_CREATED",
+    "plugin_authority_transfer": false
+  },
+  "handoff_confirmation": {
+    "sent": false,
+    "received": false,
+    "integrated": false,
+    "plugin_updated": false,
+    "production_effect": false
+  },
+  "notes": "A readback of this dev candidate is not a delivery receipt. Native receiver must read and acknowledge within its own governed workstream."
+}
