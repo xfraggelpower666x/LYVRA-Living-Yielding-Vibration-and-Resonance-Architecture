@@ -16,3 +16,5 @@ jobs:
           node-version: '22'
       - name: Verify scoped native Studio 2 handoff candidate
         run: node LYVRA_NATIVE_RUNTIME/continuity/development_exchange/verify-studio2-suno-handoff-proposal.mjs
+      - name: Verify receiver intake provenance without fake acknowledgment
+        run: node LYVRA_NATIVE_RUNTIME/continuity/development_exchange/verify-studio2-receiver-intake-dev.mjs
