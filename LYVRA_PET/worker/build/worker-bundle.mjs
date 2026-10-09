@@ -420,7 +420,7 @@ async function refreshPetBudget(){
  const count=document.getElementById("pet-budget-count"),fill=document.getElementById("pet-budget-fill"),note=document.getElementById("pet-budget-note"),track=document.getElementById("pet-budget-track");
  if(!count||!fill||!note||!track)return;
  try{
-  const r=await fetch("https://lyvra-pet-read-staging.digital-underground-connected.workers.dev/budget-status",{cache:"no-store"});
+  const r=await fetch("/budget-status",{cache:"no-store"});
   if(!r.ok)throw Error("unavailable");
   const data=await r.json();
   if(data.status!=="OK"||!Number.isSafeInteger(data.used)||data.limit!==300||data.used<0||data.used>300||!Number.isSafeInteger(data.remaining)||data.remaining!==300-data.used)throw Error("invalid");
@@ -438,7 +438,7 @@ async function refreshNative(){
  try{
   if(!nativeConfig?.spki||!nativeConfig?.key_id){nativeStatus.textContent="Lokale Ausdrucksvorschau";return;}
   if(!nativeConnection){const publicKey=await crypto.subtle.importKey("spki",Uint8Array.from(atob(nativeConfig.spki),c=>c.charCodeAt(0)),"Ed25519",false,["verify"]);if(nativeClosed||ticket!==nativeTicket)return;nativeConnection=window.lyvraPetExpression.connectSignedEvidence({getRevision:()=>nativeRevision,trustedKeys:{[nativeConfig.key_id]:publicKey}});}
-  const response=await fetch("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/native-expression",{cache:"no-store"});
+  const response=await fetch("/native-expression",{cache:"no-store"});
   const result=await response.json();if(nativeClosed||ticket!==nativeTicket)return;
   if(!response.ok||result.status==="SOURCE_UNAVAILABLE"){
    nativeRevision=null;nativeConnection.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";
@@ -485,6 +485,19 @@ export default {
     const url = new URL(request.url);
     if(request.method==="OPTIONS") return new Response(null,{status:204,headers:cors});
 
+    if(url.pathname==="/budget-status"){
+      if(request.method!=="GET")return json({status:"METHOD_NOT_ALLOWED"},405);
+      if(!env.LYVRA_PET_GITHUB_BUDGET)return json({status:"UNAVAILABLE"},503);
+      try{
+        const ns=env.LYVRA_PET_GITHUB_BUDGET;
+        const budget=ns.get(ns.idFromName("whole-lyvra-pet-github-v1"));
+        const result=await budget.fetch("https://budget.internal/status");
+        if(!result.ok)return json({status:"UNAVAILABLE"},503);
+        const data=await result.json();
+        if(data.status!=="OK"||data.limit!==300||!Number.isSafeInteger(data.used)||data.used<0||data.used>300||data.remaining!==300-data.used)return json({status:"UNAVAILABLE"},503);
+        return json({status:"OK",used:data.used,remaining:data.remaining,limit:300,window_seconds:3600,cooldown_until:data.cooldown_until||null});
+      }catch{return json({status:"UNAVAILABLE"},503);}
+    }
     if(url.pathname==="/native-expression"){
       if(request.method!=="GET")return json({status:"METHOD_NOT_ALLOWED"},405);
       try{return json(await produceRepositoryEnvelope({privateKey:env.LYVRA_PET_SIGNING_KEY,keyId:env.LYVRA_PET_KEY_ID,githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)}));}
