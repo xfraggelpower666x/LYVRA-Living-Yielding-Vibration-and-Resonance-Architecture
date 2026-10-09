@@ -14,4 +14,10 @@ assert.equal(recovery.productive_plugin_integration,false);
 assert.equal(impact.status,'DEV_COMPLETE_PLUGIN_PENDING');
 assert.equal(impact.live_plugin_parity_verified,false);
 assert.equal(impact.release_approved,false);
+assert.equal(impact.managed_plugin_count,3);
+assert.equal(impact.pet_plugin.state,'EXACT_ID_AND_RELEASE_PENDING_VERIFICATION');
+assert.equal(impact.protected_assets.policy,'EXPLICIT_USER_LOGO_CHANGE_ONLY');
+assert.equal(impact.protected_assets.routine_update,'PRESERVE_ALL_LOGOS_BYTE_IDENTICAL');
+assert.match(contract,/LOGO_ASSET_CHANGE = EXPLICIT_USER_REQUEST_ONLY/);
+
 console.log('PASS CodeForge plugin steward: two surfaces, lifecycle, recovery and no premature release');
