@@ -2894,5 +2894,22 @@
     "plugin_mutation": false,
     "whole_authority_mutation": false,
     "critical_mismatch": 0
+  },
+  "mini_pet_interaction_readback_2026_10_09": {
+    "status": "BOTH_PRODUCTION_MOBILE_DOM_INTERACTION_PASS",
+    "evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/audits/MINI_PET_INTERACTION_READBACK_2026-10-09.json",
+    "evidence_blob": "fffa2362e6f24ab7c42f34987f1a420fc1cc5d40",
+    "body_commit": "920dd195721af4fa7f2f8b8d9045efbdf5de5615",
+    "recovery_branch": "lyvra-recovery-pre-pet-interaction-audit-20261009-0129",
+    "verified_modes": [
+      "quiet",
+      "detail",
+      "mini"
+    ],
+    "demo_music_control": "PASS_DEMO_ONLY",
+    "semantic_live_event_coupling": "NOT_VERIFIED",
+    "pixel_visual": "NOT_VERIFIED",
+    "plugin_mutation": false,
+    "critical_fingerprint_mismatches": 0
   }
 }
