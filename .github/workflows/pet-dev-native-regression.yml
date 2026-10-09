@@ -44,3 +44,5 @@ jobs:
         run: node LYVRA_PET/development/verify-codeforge-parallel-scenarios.mjs
       - name: Model serialized merge queue and cross-chat convergence
         run: node LYVRA_PET/development/verify-codeforge-merge-queue-scenarios.mjs
+      - name: Exercise real disposable git parallel branch merge and conflict abort
+        run: node LYVRA_PET/development/verify-codeforge-real-git-merge-dev.mjs
