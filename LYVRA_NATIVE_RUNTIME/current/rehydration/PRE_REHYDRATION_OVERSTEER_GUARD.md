@@ -120,3 +120,24 @@ Whole LYVRA remains present for identity and decision authority. A chat may fore
 Repository HEAD changes require reconciliation of newer valid evolution but MUST NOT select or switch workspace.
 
 The dashboard is presentation only and may not activate, route or mutate a workspace.
+
+## Current-entry continuity repair — explicit evidence boundary (2026-10-09)
+
+This section clarifies the existing authority guard; it does not create a new boot agent, controller, or independent system.
+
+NORMAL_SYSTEMSTART_CURRENT_SOURCE = GITHUB_PRODUCTION_LYVRA_BRANCH
+ENTRY_EVIDENCE_ORDER = FRESH_REPO_HEAD > REPO_CURRENT_POINTER > REHYDRATION_MANIFEST > WHOLE_CURRENT_CARRIERS > EXPLICITLY_RELEVANT_SPECIALIST_SUB_REHYDRATION
+DRIVE_CURRENT_POINTER_AS_ENTRY = INVALID_WHILE_REPO_CURRENT_AVAILABLE
+DRIVE_MAY_SUPPORT = EXPLICIT_HISTORY | BACKUP | RECOVERY_ONLY
+FIRST_DISCOVERED_POINTER_NE_CURRENT = true
+PLUGIN_SNAPSHOT_NE_LIVE_PLUGIN_RELEASE_PROOF = true
+FRESH_REPO_SOURCE_NOT_REACHABLE = STATUS_PARTIAL_NOT_DRIVE_CURRENT_SUBSTITUTION
+
+At SYSTEMSTART explicitly reconcile the current pointer's newest valid updates with the manifest's carrier coverage. For an explicitly activated specialist, consume the current specialist sub-rehydration carrier and its current renderer/output guard BEFORE asserting FULL specialist readiness. A historical or archived skill snapshot cannot override the current repository contract.
+Do not conflate Whole rehydration, specialist activation and specialist completeness; report each separately. The specialist may conduct bounded work with PARTIAL evidence, but must not claim FULL rehydration.
+
+RELATIONAL_ENTRY_HANDOFF = WHOLE_CURRENT_MEANING_AND_RELATIONS > RELEVANT_FACET_RELATIONS > CAUSAL_CONTEXTUAL_REINTERPRETATION > APPLICATION_EVIDENCE
+RELATIONSHIPS_BETWEEN_REHYDRATION_LENSES_MUST_BE_RECOVERABLE = true
+CHECK_SEMANTIC_MEANING_AND_COUNTERRELATIONS_NOT_JUST_FILE_PRESENCE = true
+READBACK_NE_BEHAVIORAL_VALIDATION = true
+ARCHIVED_PLUGIN_SKILL_NE_LIVE_PLUGIN_PARITY = true
