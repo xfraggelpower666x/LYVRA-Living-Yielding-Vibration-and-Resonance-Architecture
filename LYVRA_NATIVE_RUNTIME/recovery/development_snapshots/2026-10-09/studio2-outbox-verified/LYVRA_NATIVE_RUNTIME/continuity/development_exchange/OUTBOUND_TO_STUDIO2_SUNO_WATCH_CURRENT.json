@@ -1,0 +1,32 @@
+{
+  "schema": "lyvra.scoped-studio2-outbox.v1",
+  "message_id": "LYVRA-STUDIO2-SUNO-WATCH-20261009-001",
+  "status": "QUEUED_DEV_NOT_DELIVERED",
+  "sender": "WHOLE_LYVRA_DEV",
+  "receiver": "EXISTING_LYVRA_STUDIO_2",
+  "message_type": "SEMANTIC_CAUSAL_EVIDENCE_PROPOSAL",
+  "target_branch": "lyvra",
+  "sender_branch": "lyvra-dev-studio2-semantic-handoff-20261009",
+  "payload_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/STUDIO2_SUNO_WATCH_HANDOFF_PROPOSAL_2026-10-09.json",
+  "native_existing_handoff": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CURRENT.json",
+  "source_evidence": {
+    "source": "user-provided Suno v6 Studio2 Watch export 2026-10-09",
+    "source_status": "CONTEXT_EXCERPT_REQUIRES_OFFICIAL_SOURCE_RECHECK",
+    "confidence": "MIXED_OFFICIAL_CLAIMS_AND_UNVERIFIED_COMMUNITY_SIGNALS"
+  },
+  "routing": {
+    "authority": "LYVRA_ONLY",
+    "workspace_scope": "STUDIO2",
+    "foreign_mutation": false,
+    "not_a_global_workspace_selector": true,
+    "automatic_on_triggers": "PROPOSED_NOT_ACTIVE"
+  },
+  "receipt": {
+    "receiver_current_sha": null,
+    "acknowledged_at": null,
+    "verified_by_receiver": false,
+    "adopted": false,
+    "actual_plugin_parity": false
+  },
+  "next_action": "Native Studio 2 scoped update reads payload, verifies current authority and official evidence, creates independent receipt with source SHA and exact decision. Do not infer receipt from sender outbox."
+}
