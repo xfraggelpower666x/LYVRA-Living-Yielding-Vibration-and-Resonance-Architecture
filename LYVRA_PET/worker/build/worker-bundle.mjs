@@ -372,12 +372,12 @@ async function refreshNative(){
   const response=await fetch("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/native-expression",{cache:"no-store"});
   const result=await response.json();if(nativeClosed||ticket!==nativeTicket)return;
   if(!response.ok||result.status==="SOURCE_UNAVAILABLE"){
-   nativeRevision=null;nativeConnection.reset();
+   nativeRevision=null;nativeConnection.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";
    const limited=result.diagnostic?.category?.includes("RATE_LIMIT"),until=Date.parse(result.retry_at);
    nativeRetryAt=Number.isFinite(until)?until:0;
    nativeStatus.textContent=limited?"GitHub-Abruflimit · "+(Number.isFinite(until)?"erneut ab "+new Date(until).toLocaleTimeString():"bitte später aktualisieren")+" · Vorschau bleibt nutzbar":"Whole-Quelle nicht erreichbar · Vorschau bleibt nutzbar";return;
   }
-  if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
+  if(result.status!=="APPROVED"){nativeRevision=null;nativeConnection.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";nativeStatus.textContent=result.status==="EXPIRED"?"Whole-Ereignis abgelaufen · ruhige Präsenz":"Whole verbunden · aktuell kein freigegebenes Ausdrucksereignis";return;}
   nativeRevision=result.envelope.event.source_revision;const accepted=await nativeConnection.accept(result.envelope);if(nativeClosed||ticket!==nativeTicket)return;
   nativeStatus.textContent=accepted?"Verifizierter Ausdruck von Whole LYVRA":"Ereignis bereits verarbeitet oder nicht mehr aktuell";
   if(accepted)applyVerifiedNativeFacet(result.envelope.event);
