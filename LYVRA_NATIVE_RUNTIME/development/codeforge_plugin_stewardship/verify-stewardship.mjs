@@ -20,4 +20,12 @@ assert.equal(impact.protected_assets.policy,'EXPLICIT_USER_LOGO_CHANGE_ONLY');
 assert.equal(impact.protected_assets.routine_update,'PRESERVE_ALL_LOGOS_BYTE_IDENTICAL');
 assert.match(contract,/LOGO_ASSET_CHANGE = EXPLICIT_USER_REQUEST_ONLY/);
 
+
+const inventory=JSON.parse(await readFile(new URL('ZIP_ARCHIVE_INVENTORY_CURRENT.json',base),'utf8'));
+assert.equal(inventory.archive_entries.length,3);
+assert.equal(inventory.status,'REPOSITORY_PATHS_VERIFIED_RELEASE_PARITY_PENDING');
+assert.ok(inventory.hard_guards.includes('LOGO_CHANGE_EXPLICIT_USER_ONLY'));
+assert.match(contract,/Mandatory plugin ZIP current and immutable history checkpoints/);
+assert.match(contract,/Git blob SHA is NOT ZIP SHA-256/);
+for(const a of inventory.archive_entries){assert.equal(a.release_parity,'NOT_VERIFIED');assert.ok(a.path.endsWith('.zip'));assert.match(a.git_blob_sha,/^[a-f0-9]{40}$/);}
 console.log('PASS CodeForge plugin steward: two surfaces, lifecycle, recovery and no premature release');
