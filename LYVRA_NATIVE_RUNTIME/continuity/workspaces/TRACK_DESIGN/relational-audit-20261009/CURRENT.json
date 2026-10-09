@@ -1,0 +1,9 @@
+{
+  "schema": "LYVRA_WORKSPACE_LINEAGE_CURRENT_v1",
+  "workspace_id": "TRACK_DESIGN",
+  "lineage_id": "relational-audit-20261009",
+  "handoff_id": "LYVRA-TRACK-RELATIONAL-AUDIT-20261009T212447Z",
+  "handoff_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/TRACK_DESIGN/relational-audit-20261009/LYVRA_NEW_CHAT_20261009T212447Z.json",
+  "status": "DEV_SCOPED_HANDOFF_READBACK_VERIFIED",
+  "global_workspace_pointer": false
+}
