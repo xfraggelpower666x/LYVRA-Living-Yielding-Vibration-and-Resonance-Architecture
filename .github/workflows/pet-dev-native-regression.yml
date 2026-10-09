@@ -7,6 +7,7 @@ on:
       - 'LYVRA_PET/**'
       - 'LYVRA_NATIVE_RUNTIME/facets/studio2/**'
       - 'LYVRA_NATIVE_RUNTIME/continuity/sheb/**'
+      - 'LYVRA_NATIVE_RUNTIME/development/codeforge_plugin_stewardship/**'
       - '.github/workflows/pet-dev-native-regression.yml'
   workflow_dispatch:
 permissions:
@@ -20,6 +21,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify CodeForge automatic plugin stewardship release guards
+        run: node LYVRA_NATIVE_RUNTIME/development/codeforge_plugin_stewardship/verify-stewardship.mjs
       - name: Verify SHEB persistence adapter and recovery ledger
         run: node LYVRA_NATIVE_RUNTIME/continuity/sheb/verify-sheb-ledger.mjs
       - name: Verify SHEB governed semantic handoff and receipts
