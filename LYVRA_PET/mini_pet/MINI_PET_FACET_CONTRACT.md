@@ -15,3 +15,6 @@ Context: system/facet allowlist, user-relevant workspace, source namespace, no c
 Resource policy: FREE_ONLY, shared global PET GitHub budget max 300 REST calls per rolling hour, no independent polling budget.
 UI contract: independent component lifecycle (mount/unmount, resize, accessibility, reduced motion), shared signed backend, no duplicate identity.
 Release gates: behavior tests, authentic signed end-to-end event, host rendering evidence, plugin impact checks on both LYVRA surfaces, dashboard/website review, recovery and pointer-last.
+
+## FULL CAPABILITY PARITY
+Mini-PET inherits the full main PET intelligence: native context detection, causal evidence mapping, relationship-sensitive expressions, authorized personality and memory references, learning feedback, music responses, signed-event checks, recovery and lifecycle. Only visual layout, dimensions, displayed text and controls may be compact. Both views share one authoritative runtime, identity, revision, event expiry, budget and state. No second independent engine or memory. Host restrictions must be surfaced accurately. Parent PET updates require Mini-PET parity checks before release.
