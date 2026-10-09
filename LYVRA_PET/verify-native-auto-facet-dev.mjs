@@ -37,6 +37,12 @@ for(const code of [src,built]){
 }
 assert.ok(reader.includes("carrier.status==='NONE'"),'Absent approval must remain a calm result');
 assert.ok(reader.includes('NO_APPROVED_EVENT'));
+assert.ok(src.includes('fetch("/native-expression"'),'Native browser events must remain same-origin');
+assert.ok(src.includes('fetch("/budget-status"'),'Pet budget UI must read from same-origin');
+assert.ok(src.includes('if(url.pathname==="/budget-status")'),'Budget status endpoint must exist in same worker');
+assert.ok(src.includes('ns.idFromName("whole-lyvra-pet-github-v1")'),'Budget status must use identical shared namespace instance');
+assert.ok(!src.includes('fetch("https://lyvra-pet-plugin-ui.digital-underground-connected.workers.dev/native-expression"'),'Never cross from staging to production native endpoint');
+
 assert.ok(reader.includes("AUTH_NOT_CONFIGURED"),'No anonymous fallback when token is missing');
 assert.ok(src.includes('githubToken:env.LYVRA_GITHUB_READ_TOKEN,fetcher:petBudgetedFetcher(env)'),'Native browser and plugin both must use budgeted authenticated reader');
 console.log('PASS native PET source/bundle exact parity, manual preview disabled, signed events/budget/source semantics retained');
