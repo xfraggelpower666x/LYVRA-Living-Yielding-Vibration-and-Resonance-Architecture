@@ -316,7 +316,8 @@ export default {
     const trust={key_id:env.LYVRA_PET_KEY_ID||null,spki:env.LYVRA_PET_PUBLIC_KEY||null};
     const url = new URL(request.url);
     const allowedHosts=new Set(["lyvra-pet-plugin-ui.digital-underground-connected.workers.dev","lyvra-pet-read-staging.digital-underground-connected.workers.dev","lyvra.pet.alive.666soundsdesign-broadcaster.com"]);
-    const workerOrigin=url.protocol==="https:"&&allowedHosts.has(url.hostname)?url.origin:WORKER_ORIGIN;
+    if(url.protocol!=="https:"||!allowedHosts.has(url.hostname))return json({status:"UNRECOGNIZED_PET_HOST"},421);
+    const workerOrigin=url.origin;
     const renderedUI=PET_UI.replace("__LYVRA_NATIVE_TRUST__",JSON.stringify(trust)).replaceAll("__LYVRA_PET_ORIGIN__",workerOrigin);
     if(request.method==="OPTIONS") return new Response(null,{status:204,headers:cors});
 
