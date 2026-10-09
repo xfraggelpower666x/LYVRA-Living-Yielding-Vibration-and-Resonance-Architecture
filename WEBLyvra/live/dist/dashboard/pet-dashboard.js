@@ -22,8 +22,10 @@ const binding=document.createElement('p');binding.className='petDashNote';bindin
 controls.insertAdjacentElement('afterend',binding);
 const api='https://api.github.com/repos/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture';
 const raw='https://raw.githubusercontent.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/';
-let bindingTicket=0;
+let bindingTicket=0,lastBindingAttempt=0;
 async function autoBind(){
+ if(document.hidden||Date.now()-lastBindingAttempt<60000)return;
+ lastBindingAttempt=Date.now();
  const ticket=++bindingTicket;
  try{
   const get=async url=>{const response=await fetch(url,{cache:'no-store',headers:{'Accept':'application/vnd.github+json'}});if(!response.ok)throw Error('SOURCE_UNAVAILABLE');return response.json();};
@@ -44,4 +46,8 @@ async function autoBind(){
 
 setState('idle');setMode('mini');
 void autoBind();
+// Revalidate only on user-visible recovery; no permanent polling or invented live state.
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)void autoBind();});
+window.addEventListener('online',()=>{if(!document.hidden)void autoBind();});
+window.addEventListener('pagehide',()=>{bindingTicket++;},{once:true});
 })();
