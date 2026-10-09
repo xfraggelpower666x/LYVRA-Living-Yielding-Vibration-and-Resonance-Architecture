@@ -1,0 +1,23 @@
+{
+  "schema": "lyvra.development.progress.v1",
+  "status": "INACTIVE",
+  "authority": "WHOLE_LYVRA",
+  "source": "LYVRA_NATIVE_RUNTIME",
+  "current_work": null,
+  "updated_at": null,
+  "description": "Authoritative explicit work-event carrier. Never infer counts from commit totals or chat words. Publish ACTIVE only with an evidenced current_work containing task IDs, statuses and source revision. Otherwise dashboard hidden.",
+  "states": [
+    "INACTIVE",
+    "ACTIVE",
+    "PAUSED",
+    "COMPLETED"
+  ],
+  "task_statuses": [
+    "OPEN",
+    "IN_PROGRESS",
+    "DONE",
+    "BLOCKED"
+  ],
+  "visibility_policy": "ONLY_ACTIVE_VERIFIED_WORK",
+  "no_fake_progress": true
+}
