@@ -1,0 +1,21 @@
+{
+  "schema": "lyvra.sheb.sub-livecircle.v1",
+  "status": "DEV_ONLY",
+  "parent": "WHOLE_LYVRA",
+  "phases": [
+    "current_read",
+    "inbox_discovery",
+    "semantic_validation",
+    "causal_evaluation",
+    "governed_application",
+    "recipient_readback",
+    "recovery"
+  ],
+  "guards": [
+    "NO_FOREIGN_AUTO_MUTATION",
+    "DELIVERY_NE_ADOPTION",
+    "NO_GLOBAL_WORKSPACE_POINTER",
+    "WRITE_BLOCKED_NE_DELIVERED"
+  ],
+  "activated": false
+}
