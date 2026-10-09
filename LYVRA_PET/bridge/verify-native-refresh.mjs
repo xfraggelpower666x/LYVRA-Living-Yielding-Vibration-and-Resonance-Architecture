@@ -6,7 +6,7 @@ const block=worker.slice(worker.indexOf('let nativeClosed=false'),worker.indexOf
 const configured=block.replace('__LYVRA_NATIVE_TRUST__',JSON.stringify({key_id:'test',spki:'AQ=='}));
 let resolveResponse,accepts=0,resets=0;
 const handlers={},status={textContent:''},selector={value:'whole'};
-const scope={setInterval:()=>0,setTimeout:()=>0,clearTimeout:()=>{},document:{getElementById(id){return id==='native-status'?status:id==='facet'?selector:{addEventListener(type,fn){handlers[type]=fn;}};}},crypto:{subtle:{importKey:async()=>({})}},atob:()=>String.fromCharCode(1),fetch:()=>new Promise(resolve=>{resolveResponse=resolve;}),window:{lyvraPetExpression:{connectSignedEvidence(){return {accept:async()=>{accepts++;return true;},reset(){resets++;}};}},addEventListener(type,fn){handlers[type]=fn;}},evidenceController:null,effects:{dispose(){}}};
+const scope={setInterval:()=>0,setTimeout:()=>0,clearTimeout:()=>{},document:{getElementById(id){if(id.startsWith('pet-budget-'))return null;return id==='native-status'?status:id==='facet'?selector:{addEventListener(type,fn){handlers[type]=fn;}};}},crypto:{subtle:{importKey:async()=>({})}},atob:()=>String.fromCharCode(1),fetch:()=>new Promise(resolve=>{resolveResponse=resolve;}),window:{lyvraPetExpression:{connectSignedEvidence(){return {accept:async()=>{accepts++;return true;},reset(){resets++;}};}},addEventListener(type,fn){handlers[type]=fn;}},evidenceController:null,effects:{dispose(){}}};
 vm.createContext(scope);vm.runInContext(configured,scope);await new Promise(r=>setImmediate(r));
 // A real pending HTTP response must not override a subsequent manual context.
 vm.runInContext('nativeTicket++',scope);
@@ -19,7 +19,7 @@ console.log('PASS pending native fetch cannot override a manual context or a clo
 // The actual browser refresh block must respect the server's retry deadline.
 let httpCalls=0;
 const cooldownHandlers={},cooldownStatus={textContent:''};
-const cooldownScope={...scope,document:{getElementById(id){return id==='native-status'?cooldownStatus:{value:'whole',addEventListener(type,fn){cooldownHandlers[type]=fn;}};}},fetch:async()=>{httpCalls++;return {ok:false,json:async()=>({status:'SOURCE_UNAVAILABLE',diagnostic:{category:'GITHUB_PRIMARY_RATE_LIMIT'},retry_at:new Date(Date.now()+120000).toISOString()})};},window:{...scope.window,addEventListener(type,fn){cooldownHandlers[type]=fn;}}};
+const cooldownScope={...scope,document:{getElementById(id){if(id.startsWith('pet-budget-'))return null;return id==='native-status'?cooldownStatus:{value:'whole',addEventListener(type,fn){cooldownHandlers[type]=fn;}};}},fetch:async()=>{httpCalls++;return {ok:false,json:async()=>({status:'SOURCE_UNAVAILABLE',diagnostic:{category:'GITHUB_PRIMARY_RATE_LIMIT'},retry_at:new Date(Date.now()+120000).toISOString()})};},window:{...scope.window,addEventListener(type,fn){cooldownHandlers[type]=fn;}}};
 vm.createContext(cooldownScope);vm.runInContext(configured,cooldownScope);await new Promise(r=>setImmediate(r));
 assert.equal(httpCalls,1);cooldownHandlers.click();await new Promise(r=>setImmediate(r));assert.equal(httpCalls,1,'browser must not fetch before the upstream deadline');
 vm.runInContext('nativeRetryAt=0',cooldownScope);cooldownHandlers.click();await new Promise(r=>setImmediate(r));assert.equal(httpCalls,2);
