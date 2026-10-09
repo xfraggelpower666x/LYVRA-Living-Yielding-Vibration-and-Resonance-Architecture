@@ -19,6 +19,12 @@ for(const s of [src,built]){
  assert.ok(s.includes('/native-expression'),'Native verified event endpoint must be retained');
  assert.ok(s.includes('pet-budget'),'Newer budget UI must survive');
 }
+for(const code of [src,built]){
+ assert.ok(code.includes('function chooseFacet(context)'), 'Historical PFS automatic detector must be restored');
+ assert.ok(code.includes('if(accepted)applyVerifiedNativeFacet(result.envelope.event);'), 'Native facet needs accepted signed event');
+ assert.ok(code.includes('current={facet:chooseFacet({type})}'), 'Local preview remains explicitly separate');
+ assert.ok(code.includes('if(context?.trusted===true&&PET_FACETS.includes(context.facet))'), 'Untrusted external facet must not be treated as approved');
+}
 assert.ok(reader.includes("carrier.status==='NONE'"),'Absent approval must remain a calm result');
 assert.ok(reader.includes('NO_APPROVED_EVENT'));
 console.log('PASS native PET source/bundle exact parity, manual preview disabled, signed events/budget/source semantics retained');
