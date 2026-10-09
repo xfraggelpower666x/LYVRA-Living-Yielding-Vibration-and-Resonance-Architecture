@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import worker from './worker/build/worker-bundle.mjs';
-const request=(pathname,method='GET')=>new Request('https://lyvra-pet-read-staging.example.test'+pathname,{method});
+const request=(pathname,method='GET')=>new Request('https://lyvra-pet-read-staging.digital-underground-connected.workers.dev'+pathname,{method});
 const fakeBudget={fetch:async()=>Response.json({status:'OK',used:7,remaining:293,limit:300,window_seconds:3600,cooldown_until:null})};
 const fakeNamespace={idFromName:name=>{assert.equal(name,'whole-lyvra-pet-github-v1');return name},get:()=>fakeBudget};
 let res=await worker.fetch(request('/budget-status'),{LYVRA_PET_GITHUB_BUDGET:fakeNamespace});
