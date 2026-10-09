@@ -2993,5 +2993,15 @@
     "plugin_live_release_change": false,
     "active_cross_surface_daemon": "NOT_IMPLEMENTED",
     "critical_fingerprint_mismatches": 0
+  },
+  "semantic_force_visual_native_plugin_release_2026_10_09": {
+    "status": "NATIVE_PLUGIN_RELEASE_0_1_53_DIRECT_READBACK_VERIFIED_ACCOUNT_PARITY_PENDING",
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "release_id": "pluginrel_6ac84c85d19c81919eaa8deb273eb37e",
+    "receipt_path": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/SEMANTIC_FORCE_VISUAL_NATIVE_PLUGIN_2026-10-09.json",
+    "receipt_blob": "b24a5f743d5abc78c524c1c9f87c451cfabbc6ec",
+    "body_commit": "31ae42976e124f0acb0fe2b3b2d866549daba933",
+    "recovery_branch": "lyvra-recovery-pre-force-visual-plugin-release-20261009",
+    "fingerprint_mismatches": 0
   }
 }
