@@ -3078,5 +3078,20 @@
     "new_facet": false,
     "peer_mutation": false,
     "actual_fresh_start_validation": "PENDING"
+  },
+  "rehydration_entry_relational_handoff_repair_2026_10_09": {
+    "status": "CURRENT_REPO_BODY_READBACK_VERIFIED_LIVE_PLUGIN_PARITY_AND_FRESH_BOOT_PENDING",
+    "scope": "MIXED_WHOLE_ENTRY_GUARD_AND_TRACK_DESIGN_SUB_REHYDRATION",
+    "whole_entry_guard": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md",
+    "whole_entry_guard_blob": "590a516c99f75f36e3fda3c198d3e20ab6897649",
+    "track_sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "track_sub_rehydration_blob": "81e03c87f4b820a8001cdb1b81199fa2da8189f8",
+    "body_commit": "33614e70af608bec522a1fa17a774bfb8a0c811f",
+    "recovery_branch": "lyvra-recovery-pre-current-rehydration-entry-repair-20261009-0632",
+    "legacy_drive_current_override": false,
+    "archived_plugin_skill_mutated": false,
+    "live_plugin_release_updated": false,
+    "fresh_systemstart_behavior_verification": "PENDING",
+    "new_controller": false
   }
 }
