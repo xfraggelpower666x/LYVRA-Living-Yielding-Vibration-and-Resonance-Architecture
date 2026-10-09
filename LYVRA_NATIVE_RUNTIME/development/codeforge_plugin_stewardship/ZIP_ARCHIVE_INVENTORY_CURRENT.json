@@ -1,0 +1,34 @@
+{
+  "schema": "lyvra.codeforge.plugin-zip-inventory.v1",
+  "status": "REPOSITORY_PATHS_VERIFIED_RELEASE_PARITY_PENDING",
+  "source_branch": "lyvra",
+  "archive_entries": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_ALIVE_plugin_2026-10-09.zip",
+      "size_bytes": 34572079,
+      "git_blob_sha": "18f0ffaea25533e714a7441efeab52311a7a4e2f",
+      "release_parity": "NOT_VERIFIED"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_plugin_2026-10-09.zip",
+      "size_bytes": 10772318,
+      "git_blob_sha": "c4cf77142dea2bd40f185911b80403cf6eee8bb4",
+      "release_parity": "NOT_VERIFIED"
+    },
+    {
+      "path": "LYVRA_PET/source-packages/LYVRA_PETplugin.zip",
+      "size_bytes": 2836205,
+      "git_blob_sha": "bc95585967a766cc9502803eeff66062a9951615",
+      "release_parity": "NOT_VERIFIED"
+    }
+  ],
+  "hard_guards": [
+    "THREE_PLUGIN_ZIP_COVERAGE",
+    "RELEASE_ID_MATCH_REQUIRED",
+    "ACTUAL_BYTES_SHA256_ONLY",
+    "PRECHANGE_HISTORY_IMMUTABLE",
+    "CURRENT_POINTER_LAST",
+    "LOGO_CHANGE_EXPLICIT_USER_ONLY"
+  ],
+  "next_step": "Map verified plugin IDs/releases to exact ZIP assets; fetch original new release archive, hash actual bytes, save history and readback before pointer change."
+}
