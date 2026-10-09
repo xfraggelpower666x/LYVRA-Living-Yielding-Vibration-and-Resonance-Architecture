@@ -2911,5 +2911,22 @@
     "pixel_visual": "NOT_VERIFIED",
     "plugin_mutation": false,
     "critical_fingerprint_mismatches": 0
+  },
+  "mini_pet_signed_event_update_2026_10_09": {
+    "status": "REPOSITORY_BODY_READBACK_VERIFIED_PRODUCTION_PENDING",
+    "scope": "DASHBOARD_MINI_PET_SIGNED_EXPRESSION_CONSUMER_PRESENTATION_ONLY",
+    "body_head": "c51e3fa91acf3996c541508efaa06c8dc728dc43",
+    "body_blob": "3f1553eba11c3cf3fbbb3b6c9696fc74de31728e",
+    "recovery_branch": "lyvra-recovery-pre-mini-pet-signed-event-20261009-0135",
+    "endpoint": "LYVRA_PET_WORKER_NATIVE_EXPRESSION_READ_ONLY",
+    "trust": "PINNED_ED25519_SPKI",
+    "ttl_seconds": 60,
+    "automatic_bootstrap": true,
+    "no_background_polling": true,
+    "event_publication": "NONE_NOT_CREATED",
+    "production_browser": "NOT_VERIFIED",
+    "signature_positive_path": "NO_CURRENT_APPROVED_EVENT_TO_TEST",
+    "plugin_mutation": false,
+    "critical_fingerprint_mismatches": 0
   }
 }
