@@ -28,3 +28,7 @@ jobs:
         run: node LYVRA_PET/bridge/github-budget.test.mjs
       - name: Verify token isolation and anonymous fallback prevention
         run: node LYVRA_PET/bridge/github-auth-isolation.test.mjs
+      - name: Verify isolated free-only staging configuration
+        run: node LYVRA_PET/verify-staging-config-dev.mjs
+      - name: Parse-check deployable worker bundle
+        run: node --check LYVRA_PET/worker/build/worker-bundle.mjs
