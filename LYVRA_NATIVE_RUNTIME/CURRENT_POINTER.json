@@ -2878,5 +2878,21 @@
     "pre_change_recovery_branch": "lyvra-recovery-pre-pet-browser-evidence-20261009-0105",
     "audit_body_commit": "96c364757936c39d500231d98e909fbf2a4e85a4",
     "other_facets_modified": false
+  },
+  "mini_pet_lifecycle_update_2026_10_09": {
+    "status": "REPOSITORY_BODY_READBACK_VERIFIED_LIVE_BROWSER_PENDING",
+    "scope": "DASHBOARD_MINI_PET_PRESENTATION_ONLY",
+    "body_commit": "91a89bd726908b83d892054a335e575b0e9bc1be",
+    "body_blob": "a9d32d6c68cb9a5bd5989d9b24a06e373bf2fef3",
+    "recovery_branch": "lyvra-recovery-pre-mini-pet-lifecycle-20261009-0114",
+    "behavior": "VISIBILITY_AND_ONLINE_READONLY_REVALIDATION",
+    "min_retry_interval_ms": 60000,
+    "no_background_polling": true,
+    "stale_result_guard": true,
+    "semantic_live_events": "NOT_CONNECTED",
+    "browser_runtime": "NOT_YET_VERIFIED",
+    "plugin_mutation": false,
+    "whole_authority_mutation": false,
+    "critical_mismatch": 0
   }
 }
