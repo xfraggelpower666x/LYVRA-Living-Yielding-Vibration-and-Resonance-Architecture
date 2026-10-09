@@ -1,0 +1,43 @@
+{
+  "schema": "lyvra.studio2.receiver-decision.v1",
+  "status": "RECEIVER_DECISION_GATE_READY_NOT_ACKNOWLEDGED",
+  "message_id": "LYVRA-STUDIO2-SUNO-WATCH-20261009-001",
+  "outbox_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_STUDIO2_SUNO_WATCH_CURRENT.json",
+  "payload_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/STUDIO2_SUNO_WATCH_HANDOFF_PROPOSAL_2026-10-09.json",
+  "receiver": "EXISTING_LYVRA_STUDIO_2",
+  "authority": "LYVRA_ONLY",
+  "decision_states": [
+    "PREFLIGHT_VALIDATED",
+    "RECEIVED_BY_NATIVE_AUTHORITY",
+    "EVIDENCE_ACCEPTED",
+    "EVIDENCE_REJECTED",
+    "ADOPTED_AFTER_NATIVE_WRITE_READBACK",
+    "BLOCKED"
+  ],
+  "mandatory_proof": [
+    "current_branch_and_sha",
+    "message_id",
+    "outbox_blob_sha",
+    "payload_blob_sha",
+    "receiving_current_sha",
+    "receiver_identity",
+    "native_authority",
+    "explicit_receiver_action",
+    "evaluation_result",
+    "readback_sha"
+  ],
+  "assertions": {
+    "preflight_is_receipt": false,
+    "receipt_is_adoption": false,
+    "send_only_is_delivery": false,
+    "community_signal_is_renderer_rule": false,
+    "plugin_parity_verified": false,
+    "production_released": false
+  },
+  "actual_decision": {
+    "state": "PREFLIGHT_VALIDATED",
+    "native_receiver_receipt": null,
+    "native_adoption_receipt": null
+  },
+  "next_gate": "RECEIVER_SCOPED_NATIVE_CURRENT_AND_EXPLICIT_ACKNOWLEDGEMENT"
+}
