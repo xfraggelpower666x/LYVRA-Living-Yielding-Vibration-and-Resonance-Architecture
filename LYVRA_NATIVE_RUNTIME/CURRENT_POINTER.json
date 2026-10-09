@@ -2818,5 +2818,33 @@
     },
     "pointer_publication_order": "LAST",
     "post_pointer_mutation_allowed": false
+  },
+  "mini_pet_dashboard_update_2026_10_09": {
+    "status": "REPOSITORY_BODY_READBACK_VERIFIED_LIVE_BROWSER_PENDING",
+    "scope": "WEBLYVRA_DASHBOARD_PET_PRESENTATION_ONLY",
+    "body_head": "db40846e318887c49ba546d3c4646df8cd652da7",
+    "recovery_branch": "lyvra-recovery-pre-mini-pet-20261009-0022",
+    "modified_paths": [
+      "WEBLyvra/live/dist/dashboard/pet-dashboard.js",
+      "WEBLyvra/live/dist/dashboard/pet-dashboard.css"
+    ],
+    "mode": "MINI_DEFAULT_QUIET_DETAIL",
+    "live_render": "NOT_VERIFIED",
+    "deployment": "NOT_CLAIMED",
+    "semantic_event_coupling": "DEMO_ONLY_NOT_CLAIMED",
+    "facet_runtime_mutation": false,
+    "plugin_mutation": false,
+    "registry_carriers": 210,
+    "registry_mismatches": 0,
+    "pointer_publication": "LAST"
+  },
+  "fingerprint_registry_reconcile_2026_10_09": {
+    "status": "REGISTRY_READBACK_VERIFIED",
+    "registry_blob": "957d9c690d749c34ea489462edfa02812b46eedb",
+    "critical_carriers": 210,
+    "mismatches": 0,
+    "prior_pointer_publication": "PENDING",
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96
   }
 }
