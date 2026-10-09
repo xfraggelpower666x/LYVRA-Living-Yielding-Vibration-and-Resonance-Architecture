@@ -1,0 +1,53 @@
+{
+  "schema": "lyvra.codeforge.creator-originalbyte-readback.v1",
+  "status": "ORIGINALBYTE_GIT_BLOB_IDENTITY_VERIFIED",
+  "scope": "LYVRA_OWNED_CREATOR_ARCHIVES_ONLY",
+  "verification_method": "Uploaded archive byte length and Git blob SHA1 independently computed, compared with complete GitHub tree at prechange HEAD. SHA256 computed from user-uploaded original bytes, not from independent GitHub download.",
+  "observed_repository_head": "f1ec0c8968df4750051e3e71d38182dc00ca4f03",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "branch": "lyvra",
+  "recovery": {
+    "class": "R1_COMMIT_ANCHOR",
+    "prechange_head": "f1ec0c8968df4750051e3e71d38182dc00ca4f03",
+    "affected_paths": [
+      "LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/CREATOR_ORIGINALBYTE_READBACK_2026-10-09.json"
+    ],
+    "pointer_update": false
+  },
+  "releases": [
+    {
+      "surface": "LYVRA_NATIVE",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.54",
+      "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.1.54/lyvra-native-runtime_original.tar.gz",
+      "size_bytes": 10766170,
+      "sha256": "7b3566cc97cb8244114bfbf3df74eb0fb9167a54cb5af4215dac6c02b1bdc9a4",
+      "git_blob_sha1": "8797e9c11adf161a31755bcb40f1f9e21c029401",
+      "byte_identity": "VERIFIED"
+    },
+    {
+      "surface": "LYVRA_ALIVE",
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.49",
+      "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.13.49/lyvra-alive_original.tar.gz",
+      "size_bytes": 34567704,
+      "sha256": "a651516694a7c1718d64663e88bf8eb89319b9cb992f68bb8d9409579c87154c",
+      "git_blob_sha1": "05c159198496ccd378ae8b539ca4419269ecaacb",
+      "byte_identity": "VERIFIED"
+    }
+  ],
+  "constraints": {
+    "existing_zip_archives": "PRESERVED",
+    "original_logos": "NO_MUTATION",
+    "plugin_releases": "NO_MUTATION",
+    "pet_apps_sdk_original": "READBACK_PENDING",
+    "coupled_pfs_clic_backup": "NOT_EXECUTED_APPROVAL_STALE",
+    "native_authority": "REPOSITORY_FIRST",
+    "bridge_runtime_full_acceptance": "PENDING",
+    "no_foreign_autoactivation": true,
+    "no_current_pointer_mutation": true
+  },
+  "future_release_rule": "Creator tar.gz archive must be independently obtained, hashed and read back, with immutable history; this receipt does not itself activate a background release watcher or prove future automation."
+}
