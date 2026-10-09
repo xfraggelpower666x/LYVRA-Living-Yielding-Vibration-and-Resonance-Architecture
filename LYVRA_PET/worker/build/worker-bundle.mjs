@@ -381,7 +381,7 @@ async function refreshNative(){
   nativeRevision=result.envelope.event.source_revision;const accepted=await nativeConnection.accept(result.envelope);if(nativeClosed||ticket!==nativeTicket)return;
   nativeStatus.textContent=accepted?"Verifizierter Ausdruck von Whole LYVRA":"Ereignis bereits verarbeitet oder nicht mehr aktuell";
   if(accepted)applyVerifiedNativeFacet(result.envelope.event);
- }catch{if(!nativeClosed&&ticket===nativeTicket){nativeRevision=null;nativeConnection?.reset();nativeStatus.textContent="Whole-Verbindung derzeit nicht verfügbar · Vorschau bleibt nutzbar";}}
+ }catch{if(!nativeClosed&&ticket===nativeTicket){nativeRevision=null;nativeConnection?.reset();document.getElementById("auto-detector-status").textContent="Automatic Detector · wartet auf verifizierten Whole-LYVRA-Kontext";nativeStatus.textContent="Whole-Verbindung derzeit nicht verfügbar · Vorschau bleibt nutzbar";}}
 }
 document.getElementById("native-refresh").addEventListener("click",()=>refreshNative());refreshNative();
 window.addEventListener("pagehide",()=>{nativeClosed=true;nativeTicket++;if(evidenceController)evidenceController.dispose();effects.dispose();});
