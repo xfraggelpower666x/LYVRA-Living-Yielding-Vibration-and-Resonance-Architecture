@@ -1,0 +1,20 @@
+{
+  "schema": "lyvra.codeforge.plugin-stewardship.rehydration.v1",
+  "status": "DEV_ONLY",
+  "parent": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+  "order": [
+    "verify_whole_current",
+    "rehydrate_codeforge",
+    "inspect_recent_development",
+    "inspect_both_plugin_release_readbacks",
+    "reconcile_open_plugin_drift",
+    "resume_governed_work"
+  ],
+  "productive_plugin_integration": false,
+  "managed_plugin_surfaces": [
+    "LYVRA_ACCOUNT",
+    "LYVRA_NATIVE_RUNTIME",
+    "LYVRA_PET"
+  ],
+  "logo_preservation": "ORIGINAL_BINARY_LOCK_UNLESS_EXPLICIT_USER_LOGO_CHANGE"
+}
