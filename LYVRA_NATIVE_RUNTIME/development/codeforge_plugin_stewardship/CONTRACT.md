@@ -10,3 +10,9 @@ NEW CHAT, NEXT CHAT, SYSTEMSTART, UPDATE, WEITER and SHEB INTAKE all invoke this
 The CodeForge facet maintains a release-coupling register and exposes pending tasks to development dashboard; it does not bypass Whole LYVRA decision authority.
 Two plugin surfaces: L.Y.V.R.A. account plugin; lyvra-native-runtime. Skill lyvra-semantic-handoff is proposed for both and is not deployed until independently verified.
 New development inventory to reconcile: Mini PET, SHEB, Studio 2 display/alias, contextual Suno guidance, PET custom domain isolation.
+
+## Three-plugin scope and immutable logo guard
+CodeForge must include the LYVRA PET plugin as a third managed release surface alongside L.Y.V.R.A. (including GPT-migrated origin) and lyvra-native-runtime. Resolve exact plugin IDs through authorized metadata; never infer absence from a shallow personal-plugin list.
+LOGO_ASSET_CHANGE = EXPLICIT_USER_REQUEST_ONLY. During routine plugin updates retain existing logos, icons, artwork and binary assets byte-for-byte, including manifest icon references and app presentation. No default replacement, generated substitute, deletion, conversion, recompression or implicit rename.
+Before release record original asset paths and actual SHA-256 hashes when bytes are accessible. After update read back and compare actual bytes or report BINARY_PARITY_UNVERIFIED and block logo-affecting release. Never invent hashes. An explicit user request for logo replacement is required to alter the protected set; an ordinary plugin-update command does not authorize it.
+PLUGIN_RELEASE_COVERAGE = ACCOUNT + NATIVE + PET. All three have independent version, release, evidence, and blocked-state tracking.
