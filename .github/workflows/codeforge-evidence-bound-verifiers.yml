@@ -26,6 +26,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -134,6 +136,14 @@ jobs:
           set -euo pipefail
           node --check LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.mjs
           node --test LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.test.mjs 2>&1 | tee codeforge-evidence/cooperation_continuity_test_tap.txt
+      - name: Execute evidence-bound Whole and Sub-LifeCircle manifest source coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs 2>&1 | tee codeforge-evidence/manifest_carrier_test_tap.txt
+          node LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs > codeforge-evidence/manifest_carrier_source_report.json
+          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/manifest_carrier_source_report.json'));if(x.head!==process.env.GITHUB_SHA||x.stages.length!==28||x.host_runtime_verified!==false||x.semantic_rehydration_verified!==false||x.coverage.mapped+x.coverage.unmapped!==28)process.exit(1)"
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
