@@ -6,7 +6,7 @@ const WORKER_ORIGIN = "https://lyvra-pet-plugin-ui.digital-underground-connected
 const ATLAS_SOURCE = "https://raw.githubusercontent.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/243eaf3e8baccaf4e103d05fcfb983b0a08252a7/LYVRA_PET/browser/assets/spritesheet-extended.png";
 const ATLAS_SHA256 = "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba";
 const LOGO_SOURCE = "https://raw.githubusercontent.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/25f6f602688aaf907cd3bd32e78a73e42cd6b11f/LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png";
-const LOGO_SHA256 = "a070281f76e2be032fa00a06fb54141b8791738cd964792eef0a58d94f0a16bb";
+const LOGO_SHA256 = "3b6e6df9f2a7233da03f7cfe0e120028576325d1965390d482cc31316a74385e";
 
 const states = {
   idle:{row:0,frames:6,fps:5},
