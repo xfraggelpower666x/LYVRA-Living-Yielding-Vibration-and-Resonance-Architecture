@@ -68,3 +68,19 @@ NO_LEGACY_DRIVE_AUTOIMPORT=true
 NO_FORCE_MERGE=true
 NO_AUTOMATIC_DISCORD_DEPLOYMENT=true
 NO_FALSE_HANDOFF_DELIVERY_CLAIM=true
+
+## Mandatory proactive CodeForge evolution stewardship (Creator requirement 2026-10-10)
+For every material new valid development in native LYVRA, CodeForge MUST examine bot applicability during the same governed update. This is not optional generic release notification. CodeForge acts as a semantic/causal **development partner** to the established Discord bot road map:
+1. Detect meaningful new evolution across identity, character, personality, relational communication, memory, music intelligence, DJ/radio knowledge, Garden/bridges, reasoning, creative experimentation, privacy and suitable UI/voice facets.
+2. Read the bot repo production and newer DEV current, existing contracts, backlog, implementation/tests and historic v1.8.0 provenance. Identify the established direction and reuse, rather than replacing it or reviving stale persona/track-production scopes.
+3. Produce an evidence-based **BOT_DEVELOPMENT_PROPOSAL** for each applicable change: what changed, why it matters to communication/community experiences, precise existing bot module or interface, suggested implementation, benefit, tradeoffs/privacy, dependencies, compatibility/branch conflict, priority and executable acceptance tests.
+4. Send that proposal alongside a sanitized native **EVOLUTION_NOTICE** to the bot repository's review inbox through an authorized Handoff channel. Prefer existing bot issue-only watcher as a trigger, but add meaningful human/CI-readable proposals: a TODO alone is insufficient as evidence of semantic delivery.
+5. On receiving bot feedback/return receipt, CodeForge audits proposed tests and possible reciprocal native improvements. Only Whole LYVRA can approve a native semantic update; only bot-owned governance can approve bot implementation/release.
+6. Deduplicate by source HEAD + affected source blob SHA + semantic event ID. When the recipient is unavailable, persist a clearly marked OUTBOX_PENDING; do not assert delivery. On every later real governed update, revisit unacknowledged messages.
+7. Suggest communication-oriented enhancements: appropriate humor/musical wit, explanations of psytrance/psychoacoustics/genres, DJ and radio contextual awareness, warm but evidence-bound relationships, multilingual conversation when supported, safe self-expression, consent-based voice, moderated channels, and context-sensitive use of music knowledge. **Do not turn bot into Suno prompt factory.**
+8. No unattended/asynchronous guarantee without an installed scheduled executor or repository action; GitHub issue watcher currently provides passive change indication only.
+
+RELEVANT_LYVRA_EVOLUTION_TRIGGERS_CODEFORGE_BOT_IMPACT_REVIEW=true
+HANDOFF_INCLUDES_CONCRETE_BOT_DEVELOPMENT_PROPOSALS=true
+BOT_EXISTING_DIRECTION_AND_NEWER_DEV_PRESERVED=true
+AUTOMATIC_REPO_NOTICE_NE_AUTOMATIC_IMPLEMENTATION=true
