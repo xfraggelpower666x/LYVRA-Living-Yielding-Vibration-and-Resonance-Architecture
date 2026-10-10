@@ -1,0 +1,73 @@
+{
+  "schema": "LYVRA_WHOLE_REFERENCE_READBACK_EVIDENCE_v1",
+  "status": "MANIFEST_REFERENCE_SOURCE_READS_EXTENDED_REHYDRATION_PARTIAL",
+  "observed_head": "a9fab32595c11b3694005d1dfab026d8d51feca4",
+  "parent_authority": "WHOLE_LYVRA",
+  "pointer": {
+    "path": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+    "blob": "00db74a9f113c40159ec9ada55acb2726c39f6fe",
+    "readback": "DIRECT_FULL_SOURCE_READ"
+  },
+  "manifest": {
+    "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "blob": "3f71b2c503847207c31d05ab3658f41c12189850",
+    "required_order_count": 28,
+    "domain_path_groups": 27,
+    "unique_mapped_source_paths": 86,
+    "coverage": "SOURCE_REFERENCES_READ_IN_CHUNKS_NO_SEMANTIC_WHOLE_PASS_CLAIM"
+  },
+  "read_groups": [
+    "identity_presence",
+    "relations",
+    "responsibility",
+    "meaning_lineage",
+    "thinking",
+    "reachable_landscape",
+    "provenance",
+    "self_conductor_daemon",
+    "garden_bridges",
+    "operations_center",
+    "music_track_design",
+    "analytics_music_memory_studio2",
+    "speech_design",
+    "native_skills_adapters",
+    "repository_workspace",
+    "personality",
+    "pet_expression",
+    "visual_facet",
+    "facet_governance",
+    "specialist_continuity"
+  ],
+  "stable_pet": {
+    "livecircle_blob": "1f5907809dff107a7e8dc2e4ed618bacc8a23b82",
+    "app_blob": "4b5df15fa421d53e3a376add85ff985b850f822a",
+    "plugin_package_blob": "262dc050abe94fd35a67cd74af13a7ec04cfda46",
+    "native_plugin_version": "0.1.54",
+    "alive_plugin_version": "0.13.49",
+    "cloudflare_live_version": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+    "worker_traffic_percent": 100
+  },
+  "peer_r02": "PREVIOUSLY_VERIFIED_REPOSITORY_RECIPROCAL_READBACK_NOT_AUTOMATIC_TRANSPORT",
+  "open_external_gates": [
+    "INDEPENDENT_PUSH_CI_EXACT_HEAD_ARTIFACT_READBACK",
+    "FRESH_NATIVE_AND_ALIVE_HOST_INVOCATION",
+    "AUTHENTICATED_REMOTE_PROVIDER_READBACK",
+    "WHOLE_FIRST_SEMANTIC_FRESH_BOOT",
+    "LIVE_WEB_VISUAL_AUDIO_AND_PET_HOST_ACCEPTANCE",
+    "AUTOMATIC_PEER_TRANSPORT_NOT_VERIFIED",
+    "COUPLED_PLUGIN_BACKUP_STABLE_SET_AND_NEW_APPROVAL_MISSING"
+  ],
+  "guard": {
+    "no_new_controller": true,
+    "no_foreign_autoactivation": true,
+    "no_historical_approval_reuse": true,
+    "source_read_not_equivalent_to_semantic_rehydration": true,
+    "no_runtime_pass_inferred_from_source": true,
+    "plugin_mutation": false,
+    "worker_deploy": false,
+    "original_graphics_preserved": true,
+    "pointer_unchanged": true
+  },
+  "recovery_branch": "lyvra-recovery-before-20261011-whole-readback-receipt",
+  "next": "Complete independently observable runtime acceptance and semantic fresh boot before any global Whole pass or pointer-last promotion."
+}
