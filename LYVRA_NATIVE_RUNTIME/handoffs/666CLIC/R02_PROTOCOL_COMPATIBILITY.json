@@ -1,0 +1,42 @@
+{
+  "schema": "LYVRA_CLIC_R02_COMPATIBILITY_EVIDENCE_V1",
+  "status": "LYVRA_LOCAL_SCHEMA_ALIGNED_CLIC_NATIVE_READBACK_PENDING",
+  "context": "LYVRA native adaptation of CLIC_LYVRA_PEER_CHANNEL_V1, not CLIC-authored validated envelope",
+  "source_contract": "666CLIC_NATIVE_RUNTIME/continuity/repo-peer-channel.mjs",
+  "source_contract_blob": "e0027d3be2966fa1298392bcfcc0bc8edc9da406",
+  "original_report": "CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02",
+  "original_report_blob": "a9490b43dfb2ad38f576210c548c262bf49d821a",
+  "envelope": {
+    "handoff_id": "CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02",
+    "source_system": "666CLIC",
+    "target_system": "LYVRA",
+    "source_head": "f1a363190adbe11b53510c3a63189b346eef4452",
+    "source_path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02.json",
+    "status": "PREPARED"
+  },
+  "receipt": {
+    "handoff_id": "CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02",
+    "sender": "LYVRA",
+    "recipient": "666CLIC",
+    "lyvra_head": "50c7d80470bd25100d35cd59abcefe9011584ad7",
+    "receipt_id": "LYVRA-CLIC-VISUAL-R02-READBACK-20261010-01",
+    "source_path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02.json",
+    "recipient_repository_readback_verified": true,
+    "readback_carrier": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02-RECEIPT.json",
+    "readback_blob": "0e9eb90399459cd6443e2412c8af593caab07d0a"
+  },
+  "classification": {
+    "expected_local_validator_result": "DELIVERED_EVIDENCED_IF_CLIC_INDEPENDENTLY_VERIFIES_LYVRA_REPOSITORY_RECEIPT",
+    "actual_clic_consumption": "NOT_VERIFIED",
+    "automatic_delivery": "NOT_IMPLEMENTED",
+    "native_adoption": false,
+    "visual_runtime": "NOT_TESTED"
+  },
+  "guards": {
+    "preserve_r01": true,
+    "no_foreign_write": true,
+    "no_auto_activation": true,
+    "not_gateway": true,
+    "no_automatic_approval": true
+  }
+}
