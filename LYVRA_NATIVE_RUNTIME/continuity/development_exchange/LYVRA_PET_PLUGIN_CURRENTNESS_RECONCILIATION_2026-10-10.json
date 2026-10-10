@@ -1,0 +1,62 @@
+{
+  "schema": "lyvra.pet.plugin_currentness_reconciliation.v1",
+  "status": "VERIFIED_DELTA_REVIEW_NONPROMOTING",
+  "verification_date": "2026-10-10",
+  "scope": "LYVRA_NATIVE_OWNED_PET_PLUGIN_PROVENANCE",
+  "prechange_head": "54627c0b2c5c4ca97b313dbd86be049c860d121c",
+  "evidence": {
+    "cloudflare": {
+      "worker": "lyvra-pet-plugin-ui",
+      "active_version": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+      "traffic_percent": 100,
+      "preview_urls_enabled": false,
+      "rollback_version": "7e3274fc-1cd2-449c-acd9-fb2ed3fe607b"
+    },
+    "production_assets": {
+      "logo_sha256": "3b6e6df9f2a7233da03f7cfe0e120028576325d1965390d482cc31316a74385e",
+      "spritesheet_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+      "evidence_class": "CREATOR_WINDOWS_LIVE_HTTP_200_BYTE_SHA256_PASS",
+      "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_PET_SHA256_PRODUCTION_ASSET_LIVE_READBACK_2026-10-10.json"
+    },
+    "plugins": [
+      {
+        "surface": "native",
+        "historic_bound_version": "0.1.50",
+        "verified_current_version": "0.1.54",
+        "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+      },
+      {
+        "surface": "alive",
+        "historic_bound_version": "0.13.47",
+        "verified_current_version": "0.13.49",
+        "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+      }
+    ],
+    "stale_carriers": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
+        "reason": "Old fingerprint and bound release state; must not be silently rebound without stable-set governance and approvals"
+      },
+      {
+        "path": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+        "reason": "Old releases, worker deployment, and logo SHA256 byte-length. Current production proven by newer live readbacks; preserve historical provenance until governed native state reconcile"
+      }
+    ],
+    "repo_sources": [
+      "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/CODEFORGE_PLUGIN_PET_DELTA_DETECTION_CI_RECEIPT_2026-10-10.json",
+      "LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/CREATOR_ORIGINALBYTE_READBACK_2026-10-09.json"
+    ]
+  },
+  "decisions": {
+    "no_plugin_release_write": true,
+    "no_secret_read_or_write": true,
+    "no_graphic_mutation": true,
+    "no_pet_worker_redeploy": true,
+    "no_fake_events": true,
+    "no_foreign_mutation": true,
+    "no_current_pointer_write": true,
+    "no_false_whole_system_rehydration": true,
+    "backup_approval": "STALE_REVALIDATION_REQUIRED",
+    "next": "GOVERNED_PLUGIN_RUNTIME_FINGERPRINT_REVALIDATION_AND_PET_LIVECIRCLE_CURRENT_SOURCE_CORRECTION_BEFORE_POINTER_LAST"
+  }
+}
