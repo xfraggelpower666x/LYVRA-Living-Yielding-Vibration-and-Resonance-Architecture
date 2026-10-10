@@ -33,6 +33,8 @@ test('whole and sub-LiveCircle semantic verification remains independently open'
 test('CLIC cooperation remains advisory, never automatic peer authority',()=>{
  const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
  assert.equal(r.cooperation.coverage.authenticated_exchanges,0);
+ assert.equal(r.cooperation.exchanges[0].source_stage,'CALLER_CLAIM_ONLY');
+ assert.ok(!r.cooperation.issues.some(x=>x.code==='CLAIMED_PROGRESS_REQUIRES_INDEPENDENT_EVIDENCE'));
  assert.equal(r.peer_receipt.automatic_delivery_verified,false);
  assert.equal(r.peer_receipt.semantic_adoption_verified,false);
  assert.equal(r.no_new_authority,true);
