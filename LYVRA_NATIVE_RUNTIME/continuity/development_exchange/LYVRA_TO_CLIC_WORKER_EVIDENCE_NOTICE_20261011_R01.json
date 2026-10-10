@@ -1,0 +1,35 @@
+{
+  "schema": "LYVRA_NATIVE_PEER_INFORMATION_NOTICE_V1",
+  "notice_id": "LYVRA-CLIC-WORKER-EVIDENCE-20261011-R01",
+  "date": "2026-10-11",
+  "sender": "WHOLE_LYVRA",
+  "recipient": "666CLIC",
+  "type": "INFORMATIONAL_DEVELOPMENT_NOTICE",
+  "authority": "LYVRA_ONLY_NO_FOREIGN_MUTATION",
+  "scope": [
+    "LYVRA_VERIFICATION_RUNNER",
+    "REHYDRATION_MANIFEST_SOURCE_COVERAGE",
+    "CROSS_SYSTEM_COOPERATION"
+  ],
+  "content": {
+    "cooperation_inspector": "REPO_COMPOSED_ADVISORY",
+    "clic_r02_local_receipt": "READBACK_SOURCE_AVAILABLE_NOT_AUTOMATIC_DELIVERY",
+    "manifest_source_probe": "EXACT_GIT_BYTES_FIX_IMPLEMENTED",
+    "peer_receipt_checkout_binding": "LOCAL_GIT_SOURCE_PROBE_IMPLEMENTED",
+    "runtime": "NOT_VERIFIED",
+    "host_or_plugin_activation": "NOT_VERIFIED",
+    "automatic_peer_transport": "NOT_IMPLEMENTED",
+    "proposal_adoption": "NO_AUTOMATIC_ADOPTION"
+  },
+  "boundaries": {
+    "notice_not_command": true,
+    "no_authority_transfer": true,
+    "no_gatekeeper": true,
+    "no_foreign_writes": true,
+    "no_new_system": true
+  },
+  "return_required": false,
+  "peer_acknowledgment": "NOT_OBSERVED",
+  "publication": "LYVRA_REPOSITORY_ONLY",
+  "next": "ONLY_AUTHORIZED_RECEIVER_CAN_READ_AND_ACK; NO_AUTOMATIC_PEER_ACTIVATION"
+}
