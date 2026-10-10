@@ -34,6 +34,7 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-integrity.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-carrier-trust-boundary.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -176,6 +177,11 @@ jobs:
         run: |
           set -euo pipefail
           node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-integrity.test.mjs 2>&1 | tee codeforge-evidence/checkout_exact_bytes_tap.txt
+      - name: Verify caller supplied LifeCircle carrier ledgers cannot forge source coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-carrier-trust-boundary.test.mjs 2>&1 | tee codeforge-evidence/lifecircle_caller_carrier_trust_tap.txt
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
