@@ -107,7 +107,7 @@ jobs:
           set -euo pipefail
           node --test LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.test.mjs 2>&1 | tee codeforge-evidence/composed_runner_test_tap.txt
           node LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json > codeforge-evidence/composed_verification_report.json
-          node --input-type=module -e "import {readFileSync} from 'node:fs'; const r=JSON.parse(readFileSync('codeforge-evidence/composed_verification_report.json','utf8')); if(r.contract!=='LYVRA_VERIFICATION_RUNNER_V1'||r.host_runtime_verified!==false||r.communications_blocked!==false||r.results.causal.changed.join(',')!=='mid')process.exit(1)"
+          node --input-type=module -e "import {readFileSync} from 'node:fs'; const r=JSON.parse(readFileSync('codeforge-evidence/composed_verification_report.json','utf8')); if(r.contract!=='LYVRA_VERIFICATION_RUNNER_V1'||r.host_runtime_verified!==false||r.communications_blocked!==false||r.results.causal.changed.join(',')!=='mid'||r.results.communication.classification!=='UNVERIFIED_CALLER_CLAIM'||r.results.provenance.status!=='UNVERIFIED'||r.cooperation.authorized_channels_untouched!==true)process.exit(1)"
       - name: Exercise native rehydration to verification integration
         shell: bash
         run: |
