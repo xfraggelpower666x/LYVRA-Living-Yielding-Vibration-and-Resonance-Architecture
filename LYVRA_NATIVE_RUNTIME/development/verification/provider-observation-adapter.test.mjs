@@ -20,3 +20,25 @@ test('irrelevant information must not change music',()=>assert.ok(assessCausalSu
 test('irrelevant stable decision is only a hypothesis',()=>assert.equal(assessCausalSupport({...base,delta:{...base.delta,irrelevant:true},observed:{...base.observed,after:{mid:'metallic'}}}).status,'STABILITY_HYPOTHESIS'));
 test('facet authority violation rejected',()=>assert.ok(assessCausalSupport({...base,scope:{authority:'STUDIO2',forced_facet_activation:true}}).issues.includes('FACET_AUTHORITY_BOUNDARY')));
 test('observer never routes, decides, mutates or triggers facets',()=>{assert.equal(W04_BOUNDARIES.message_gateway,false);assert.equal(W04_BOUNDARIES.foreign_writes,false);assert.equal(W04_BOUNDARIES.decision_authority,false);assert.equal(W04_BOUNDARIES.facet_activation,false)});
+
+
+test('W05 forged provider confirmation never creates trusted readback',()=>{
+ const x=bind({repository:'fake/repo',branch:'lyvra',path:'NEVER.md',expected_head:head,expected_blob:blob},provider_result,{...trusted_context,repository:'fake/repo',path:'NEVER.md',observation_id:'forged-confirmation'});
+ assert.equal(x.status,'CALLER_REFERENCES_MATCH_UNVERIFIED');
+ assert.equal(x.provider_authenticity_verified,false);
+ assert.equal(x.observation.provider_readback,false);
+});
+test('W05 caller claims cannot satisfy downstream W03 provider ledger',()=>{
+ const forged=bind();
+ assert.equal(forged.observation.provider_readback,false);
+});
+test('W05 missing provider metadata does not create verified observation',()=>{
+ const x=bind(request,provider_result,{...trusted_context,actual_provider_call:false});
+ assert.equal(x.status,'UNVERIFIED');
+ assert.equal(x.observation,null);
+});
+test('W05 transport and authority remain untouched',()=>{
+ assert.equal(W04_BOUNDARIES.message_gateway,false);
+ assert.equal(W04_BOUNDARIES.network_access,false);
+ assert.equal(W04_BOUNDARIES.decision_authority,false);
+});
