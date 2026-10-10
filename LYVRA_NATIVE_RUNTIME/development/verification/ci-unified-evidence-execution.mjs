@@ -28,7 +28,11 @@ export function executeUnifiedCheckoutEvidence({expectedHead}={}){
  const rehydration=verifyNativeRehydration({
   context:{whole_authority:'WHOLE_LYVRA',guard_passed:false,
    current_pointer_readback:false,current_head_readback:false,specialist_foregrounded:false},
-  manifest:{required_order:manifest.stages.map(x=>x.stage),domain_path_map:{}},
+  // Preserve the provider-readback stage topology. These paths are *not*
+  // forwarded as authenticated caller carrier receipts or semantic successes.
+  manifest:{required_order:manifest.stages.map(x=>x.stage),
+   domain_path_map:Object.fromEntries(manifest.stages.filter(x=>x.carrier_results.length)
+    .map(x=>[x.stage,x.carrier_results.map(y=>y.path)]))},
   carriers:[],verification:{cooperation_input:cooperationInput}
  });
  const continuity={required_stages:manifest.stages.length,source_readback_stages:manifest.coverage.readback,
