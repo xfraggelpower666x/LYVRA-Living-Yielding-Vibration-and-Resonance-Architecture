@@ -1,0 +1,99 @@
+{
+  "schema": "LYVRA_EXTERNAL_PROVIDER_RUNTIME_READBACK_v1",
+  "observed_on": "2026-10-11",
+  "scope": "WHOLE_LYVRA_EVIDENCE_ONLY",
+  "base_head": "4debd565643bfe814d527a5b2f10c806f605594e",
+  "authority": "LYVRA",
+  "source_classes": [
+    "GITHUB_COMMIT",
+    "GITHUB_ACTIONS",
+    "PLUGIN_CREATOR_RELEASE_METADATA",
+    "PET_PLUGIN_RUNTIME_INVOCATION",
+    "CLOUDFLARE_AUTHENTICATED_DEPLOYMENT_API"
+  ],
+  "github": {
+    "branch": "lyvra",
+    "ci_run_id": 38095670166,
+    "ci_job": "evidence-first-readonly",
+    "ci_conclusion": "success",
+    "artifact_id": 11685402297,
+    "artifact_sha256": "7487e1a02b6c7096660bbbeb1a977928237129281081787f3d0b16cd120be457",
+    "artifact_content_reverified_this_update": false
+  },
+  "native_plugin": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.54",
+    "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+    "metadata_readback": "VERIFIED",
+    "independent_fresh_host_invocation": "NOT_TESTED"
+  },
+  "pet_plugin": {
+    "id": "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+    "version": "1.0.3",
+    "release_id": "pluginrel_6ac81b3ea1ec819186005d1c0a330d9b",
+    "metadata_readback": "VERIFIED"
+  },
+  "pet_tool_invocation": {
+    "status": "READY",
+    "deployment": "LIVE_BROWSER_RENDERER",
+    "runtime_version": "2.3.4",
+    "visual_asset": "REMOTE_BINARY_READBACK_VERIFIED",
+    "native_expression_status": "SOURCE_UNAVAILABLE",
+    "native_expression_reason": "NATIVE_SOURCE_OR_APPROVAL_REJECTED",
+    "acceptance": "PARTIAL"
+  },
+  "cloudflare_provider": {
+    "account_name": "666SOUNDsDESIGn",
+    "authenticated_deployment_readback": "VERIFIED",
+    "workers": [
+      {
+        "name": "lyvra-pet-plugin-ui",
+        "deployment_id": "b42fa40e-fdd2-4609-bb22-844d1e35d06b",
+        "version_id": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+        "traffic_percent": 100,
+        "created_on": "2026-10-10T01:18:57.931261Z"
+      },
+      {
+        "name": "lyvrasystem",
+        "deployment_id": "d2b0ecf6-cd8b-4a2f-a822-af551cb2cce7",
+        "version_id": "553a4882-05eb-4cd4-8487-91d1d40ad52d",
+        "traffic_percent": 100
+      },
+      {
+        "name": "lyvra-character-bot-auth",
+        "deployment_id": "3b5c76a3-a118-462f-89c6-c7e9ab888b0b",
+        "version_id": "86e8a032-1a88-47f2-b88c-8db7bd30e519",
+        "traffic_percent": 100
+      },
+      {
+        "name": "666discordrelay",
+        "deployment_id": "1f28430e-075e-42de-9a25-e0b6473703d9",
+        "version_id": "5719a3f6-d74a-477f-89d0-f30b4d8540e4",
+        "traffic_percent": 100
+      }
+    ]
+  },
+  "open_gates": [
+    "WHOLE_FIRST_INDEPENDENT_SEMANTIC_FRESH_BOOT",
+    "NATIVE_AND_ALIVE_INDEPENDENT_PLUGIN_HOST_INVOCATION",
+    "PET_NATIVE_EXPRESSION_SOURCE_OR_APPROVAL_REJECTED",
+    "LIVE_WEB_VISUAL_AUDIO_END_TO_END_ACCEPTANCE",
+    "AUTOMATIC_PEER_TRANSPORT_RECEIPT",
+    "COUPLED_PLUGIN_BACKUP_STABLE_SET_NEW_APPROVAL",
+    "ACCOUNT_ALIVE_PLUGIN_RELEASE_AND_HOST_PARITY"
+  ],
+  "guards": {
+    "source_read_ne_semantic_rehydration": true,
+    "deployment_ne_behavioral_acceptance": true,
+    "received_ne_understood": true,
+    "no_foreign_autoactivation": true,
+    "worker_ne_controller": true,
+    "plugin_mutation": false,
+    "worker_deploy": false,
+    "pointer_mutation": false,
+    "no_new_revision": true
+  },
+  "recovery_branch": "lyvra-recovery-before-20261011-provider-readback",
+  "status": "PARTIAL_PROVIDER_READBACK_EXTENDED",
+  "next": "Resolve pet native expression source/approval independently; obtain Native and ALIVE fresh host receipts and Whole-first semantic fresh boot evidence, then cross-surface browser/audio and transport end-to-end receipts. Do not infer full runtime acceptance."
+}
