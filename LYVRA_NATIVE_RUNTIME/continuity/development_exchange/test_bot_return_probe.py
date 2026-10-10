@@ -69,7 +69,7 @@ class BotReturnTests(unittest.TestCase):
         raw = json.dumps(example()).encode()
         digest = hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
         encoded = base64.b64encode(raw).decode()
-        wrapped = "\\n".join(encoded[i:i+60] for i in range(0, len(encoded), 60))
+        wrapped = chr(10).join(encoded[i:i+60] for i in range(0, len(encoded), 60))
         fake = iter([
             {"commit": {"sha": "b"*40}},
             {"encoding": "base64", "content": wrapped, "sha": digest},
