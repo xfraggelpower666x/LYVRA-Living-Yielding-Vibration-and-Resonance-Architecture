@@ -3672,5 +3672,61 @@
     "whole_and_facets": "UNCHANGED",
     "pointer_last": true,
     "next": "RUN_NATIVE_NODE_CI_AND_PLUGIN_BOUNDARY_TESTS; CONNECT_ACTUAL_AUTHORIZED_HOST_CALL_SITE; VERIFY_FRESH_BOOT_BEHAVIOR"
+  },
+  "lyvra_cooperation_evidence_boundary_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "COMPOSED_RUNNER_CALLER_CLAIM_DEMOTION_SOURCE_READBACK_VERIFIED_NODE_HOST_PENDING",
+    "prechange_head": "2294bc910723e7d28afba8f31bc259bb90c817fb",
+    "recovery_branch": "lyvra-recovery-pre-cooperation-evidence-20261010-1827",
+    "body_head_before_pointer": "66dcf9f46fd1e6a7b9f4c85ac2942e65e6591828",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.mjs",
+        "blob": "5a0b121ae3fc8d7d56835b4986a72450012843bf"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.test.mjs",
+        "blob": "cb416d32a368a031a673ed4cb04e2b46343994f4"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/examples/TRACK_CAUSAL_VERIFICATION_REPORT.json",
+        "blob": "370622e032545c6f7a706e43baa70c1fe35218ac"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "b726158e06935e88c64613c6618afa3f09d9a92e"
+      }
+    ],
+    "tests": {
+      "composed_runner": "14_OF_14_PASS_ISOLATED_V8",
+      "new_cases": 6,
+      "prior_worker_tests": "PREVIOUSLY_48_OF_48_ISOLATED_V8",
+      "node_ci": "NOT_VERIFIED"
+    },
+    "correction": {
+      "communication_claim": "CALLER_REPORTED_UNVERIFIED",
+      "visual_claim": "UNVERIFIED_VISUAL_CLAIM",
+      "semantic_runtime_flags": "UNVERIFIED_CALLER_CLAIM",
+      "provider_ledger": "REJECTED_IF_CALLER_SUPPLIED",
+      "w03_provenance": "UNVERIFIED_WITHOUT_TRUSTED_LEDGER",
+      "real_clic_r02_receipt": "INDEPENDENT_REPOSITORY_READBACK_PREVIOUSLY_VERIFIED_NOT_REVOKED"
+    },
+    "scope": "WHOLE_LYVRA_ADVISORY_VERIFICATION_COOPERATION_EVIDENCE",
+    "nonblocking": true,
+    "new_router": false,
+    "new_authority": false,
+    "facets_unchanged": true,
+    "foreign_mutations": false,
+    "plugin_impact": {
+      "native": "PURE_REPO_SOURCE_NOT_RELEASED",
+      "alive": "PURE_REPO_SOURCE_NOT_RELEASED",
+      "pet": "UNCHANGED",
+      "live_parity": "OPEN"
+    },
+    "host_adapter": "EXPLICIT_CALLABLE_ONLY",
+    "provider_adapter": "REQUIRES_TRUSTED_INTEGRATION",
+    "node_github_actions": "NOT_VERIFIED",
+    "pointer_last": true,
+    "next": "AUTHENTICATED_PROVIDER_BOUNDARY_PLUS_REAL_HOST_PLUGIN_HOOK_AND_FRESH_BOOT_EXECUTION"
   }
 }
