@@ -3169,5 +3169,28 @@
     "host_hook_modified": false,
     "foreign_native_plugin_mutation": false,
     "clic_impact": "REVIEW_FOR_PLUGIN_RELEASE_CROSS_SURFACE_NO_FOREIGN_SYSTEM_AUTOACTIVATION"
+  },
+  "fingerprint_registry_live_repair_2026_10_10": {
+    "status": "PRODUCTIVE_REGISTRY_FIVE_SHA_CORRECTIONS_READBACK_VERIFIED",
+    "scope": "WHOLE_LYVRA_FINGERPRINT_METADATA_RECONCILIATION_ONLY",
+    "registry_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_blob": "aeba4b979bdffc2a4ece90936929fbcb16a9beb4",
+    "registry_body_commit": "7e21c3db7ed5e6b2390cff13d23ace93ea65e63f",
+    "recovery_branch": "lyvra-recovery-pre-whole-fingerprint-reconcile-20261010-0134",
+    "previous_registered_mismatches": 5,
+    "critical_carriers": 210,
+    "corrected": 5,
+    "corrected_direct_blob_readback": "PASS_5_OF_5",
+    "full_postwrite_210_tree_readback": "NOT_PERFORMED_SEPARATE_PREWRITE_210_OF_210_READBACK",
+    "source_carriers_modified": false,
+    "track_design_content_modified": false,
+    "pet_content_modified": false,
+    "rehydration_manifest_modified": false,
+    "plugin_releases_modified": false,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "fresh_boot_execution": "OPEN",
+    "renderer_audio": "OPEN",
+    "no_false_full": true
   }
 }
