@@ -1,0 +1,32 @@
+{
+  "schema": "lyvra.codeforge.bot_reciprocal_outbox_audit.v1",
+  "status": "BOT_DEV_LOCAL_OUTBOX_CI_PASS_NOT_LIVE",
+  "source_native_head": "8f7c6b37c6220686b776e6d32771c55d27b31a6f",
+  "bot_repository": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+  "bot_dev_branch": "lyvrabot-dev-native-livecircle-20261002",
+  "bot_dev_head": "f3b052212b26252be562ece32fa2bc0245dcf116",
+  "bot_production_branch": "lyvrabot",
+  "new_bot_paths": [
+    "native_bridge/reciprocal_outbox.py",
+    "tests/test_reciprocal_outbox.py",
+    ".github/workflows/reciprocal-learning-dev-checks.yml"
+  ],
+  "test_report": {
+    "ci_run": 38012471228,
+    "url": "https://github.com/xfraggelpower666x/666LYVRACHARAKTERBOTAI/actions/runs/38012471228",
+    "status": "completed",
+    "conclusion": "success",
+    "defined_reciprocal_test_functions": 16
+  },
+  "outbox": "EXPLICIT_LOCAL_ONLY",
+  "privacy": "CALLER_ASSERTED_CONTENT_REVIEW_NOT_AUTOMATED_CONTENT_FILTER",
+  "end_to_end_automatic_delivery": "NOT_IMPLEMENTED",
+  "independent_native_adoption_readback": "NOT_EXECUTED",
+  "new_native_memory": "NONE",
+  "one_whole_lyvra_identity": true,
+  "bot_production_mutation": false,
+  "native_semantic_promotion": false,
+  "foreign_automatic_activation": false,
+  "prechange_recovery_commit": "8f7c6b37c6220686b776e6d32771c55d27b31a6f",
+  "pointer_last": "NOT_APPLICABLE_METADATA_ONLY"
+}
