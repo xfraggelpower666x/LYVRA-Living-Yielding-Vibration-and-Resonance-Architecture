@@ -35,7 +35,13 @@ export function runVerification(input={}){
   issues:[...provenanceClaim.issues,...(Array.isArray(data.provider_ledger)&&data.provider_ledger.length?['CALLER_PROVIDER_LEDGER_NOT_TRUSTED']:[])]};
  const causal=verifyCausalDecision(data.causal);
  const counter=assessCausalSupport(data.counterhypothesis);
- const lifecircle=inspectLifeCircleManifest({manifest:data.manifest,loaded:data.loaded_carriers,currentness_observed:data.currentness_observed===true});
+ // Loaded carrier provider_readback flags are caller-controlled, just like provider_ledger.
+ // Actual checkout-carrier evidence stays in the separate CI manifest source report.
+ const callerCarriers=Array.isArray(data.loaded_carriers)?data.loaded_carriers:[];
+ const lifecircleClaim=inspectLifeCircleManifest({manifest:data.manifest,loaded:[],currentness_observed:false});
+ const lifecircle={...lifecircleClaim,issues:[...(lifecircleClaim.issues||[]),
+  ...(callerCarriers.some(x=>x&&x.provider_readback===true)?['CALLER_CARRIER_READBACK_NOT_AUTHENTICATED']:[])],
+  carrier_claims_supplied:callerCarriers.length,caller_carrier_readback_trusted:false};
  const claims=Array.isArray(data.claims)?data.claims.map(c=>inspectClaim(c)):[];
  const issues=[];
  const item=(key,x)=>{for(const code of [...(x.issues||[]),...(x.violations||[])])issues.push({area:key,code})};
