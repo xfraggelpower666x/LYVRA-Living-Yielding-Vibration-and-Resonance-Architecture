@@ -20,6 +20,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -113,6 +115,14 @@ jobs:
         run: |
           set -euo pipefail
           node --test LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.test.mjs 2>&1 | tee codeforge-evidence/native_rehydration_test_tap.txt
+      - name: Independently bind CI source readback to local Git checkout
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.test.mjs 2>&1 | tee codeforge-evidence/ci_checkout_evidence_test_tap.txt
+          node LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json LYVRA_NATIVE_RUNTIME/development/verification/examples/TRACK_CAUSAL_VERIFICATION_REPORT.json > codeforge-evidence/checked_out_source_verification.json
+          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/checked_out_source_verification.json'));if(x.observed_head!==process.env.GITHUB_SHA||x.fixture_worktree_matches_commit!==true||x.host_runtime_verified!==false||x.advisory.results.provenance.status!=='UNVERIFIED')process.exit(1)"
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
