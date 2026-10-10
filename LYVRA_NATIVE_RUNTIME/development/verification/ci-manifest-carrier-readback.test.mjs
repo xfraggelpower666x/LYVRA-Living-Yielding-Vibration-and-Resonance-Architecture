@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
+import {readFileSync} from 'node:fs';
 import {inspectCheckoutManifest} from './ci-manifest-carrier-readback.mjs';
 const head=()=>execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
 test('manifest has complete source diagnostics and no runtime overclaim',()=>{
@@ -33,4 +34,11 @@ test('source readback never automatically means semantic understanding',()=>{
  const r=inspectCheckoutManifest({expectedHead:head()});
  assert.ok(r.stages.every(x=>x.semantic_understanding==='NOT_TESTED'&&x.runtime_verified===false));
  assert.equal(r.facet_activation,false);assert.equal(r.mutation,false);
+});
+
+test('exact committed manifest bytes preserve trailing newline',()=>{
+ const raw=execFileSync('git',['show','HEAD:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json'],{encoding:'utf8'});
+ const disk=readFileSync('LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json','utf8');
+ assert.equal(raw,disk);
+ assert.equal(inspectCheckoutManifest({expectedHead:head()}).manifest_blob,execFileSync('git',['rev-parse','HEAD:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json'],{encoding:'utf8'}).trim());
 });
