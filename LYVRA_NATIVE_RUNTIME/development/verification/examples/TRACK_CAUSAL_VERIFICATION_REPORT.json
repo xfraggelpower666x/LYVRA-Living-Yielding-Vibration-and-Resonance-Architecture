@@ -15,16 +15,20 @@
   "results": {
     "communication": {
       "facet": "COMMUNICATION",
-      "stage": "PEER_READBACK",
-      "classification": "OPEN",
-      "issues": [],
+      "stage": "CALLER_REPORTED_PEER_READBACK",
+      "classification": "UNVERIFIED_CALLER_CLAIM",
+      "issues": [
+        "COMMUNICATION_EVIDENCE_NOT_INDEPENDENTLY_ATTESTED"
+      ],
       "automatic_transport_verified": false,
       "mutation": false
     },
     "visual": {
       "facet": "VISUAL",
-      "status": "REVIEW",
-      "issues": [],
+      "status": "UNVERIFIED_VISUAL_CLAIM",
+      "issues": [
+        "VISUAL_RENDER_NOT_INDEPENDENTLY_ATTESTED"
+      ],
       "render_evidence": false,
       "mutation": false
     },
@@ -37,14 +41,17 @@
     },
     "evidence": {
       "facet": "EVIDENCE",
-      "status": "OPEN",
+      "status": "UNVERIFIED_CALLER_CLAIM",
       "reached": [
         "SOURCE_CURRENT",
         "SOURCE_READ",
         "SEMANTIC_APPLIED"
       ],
       "violations": [],
-      "mutation": false
+      "mutation": false,
+      "issues": [
+        "SEMANTIC_OR_RUNTIME_FLAGS_NOT_AUTHENTICATED"
+      ]
     },
     "provider": {
       "status": "CALLER_REFERENCES_MATCH_UNVERIFIED",
@@ -126,7 +133,30 @@
       }
     ]
   },
+  "cooperation": {
+    "status": "ADVISORY_ONLY",
+    "provider_bound": false,
+    "host_bound": false,
+    "caller_claims_not_authentication": true,
+    "authorized_channels_untouched": true,
+    "channel_discovery": "OPEN_NOT_GATEKEEPED",
+    "foreign_authority_transfer": false,
+    "peer_reports_are_not_commands": true,
+    "worker_failure_must_not_block_communications": true
+  },
   "issues": [
+    {
+      "area": "communication",
+      "code": "COMMUNICATION_EVIDENCE_NOT_INDEPENDENTLY_ATTESTED"
+    },
+    {
+      "area": "visual",
+      "code": "VISUAL_RENDER_NOT_INDEPENDENTLY_ATTESTED"
+    },
+    {
+      "area": "evidence",
+      "code": "SEMANTIC_OR_RUNTIME_FLAGS_NOT_AUTHENTICATED"
+    },
     {
       "area": "provenance",
       "code": "NO_MATCHING_PROVIDER_READBACK"
@@ -161,9 +191,11 @@
   "next": "Use independent provider/host evidence and user-authorized native integration, not booleans or historical status cards",
   "example_provenance": {
     "generation": "ISOLATED_V8_COMPOSITION_OF_REPO_SOURCE",
-    "source_runner_blob": "d8e1355ac17db52314d5b78ff9d2d2f5eb07e057",
+    "source_runner_blob": "5a0b121ae3fc8d7d56835b4986a72450012843bf",
     "fixture_blob": "a42563afe0e7bdcaa636469ff738ce0715069faa",
-    "not_node_ci": true,
-    "not_live_host": true
+    "previous_report_blob": "68f844d05622723fc45cdd138fc56dc5d4452186",
+    "supersedes_prior_example": true,
+    "node_ci": "NOT_VERIFIED",
+    "host": "NOT_OBSERVED"
   }
 }
