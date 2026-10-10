@@ -16,8 +16,8 @@ export function runTrustedCheckout({fixturePath,outputPath,expectedHead}={}){
  git('ls-files','--error-unmatch','--',fixturePath);
  const blob=git('rev-parse','HEAD:'+fixturePath);
  const committed=git('show','HEAD:'+fixturePath);
- const onDisk=readFileSync(fixturePath,'utf8').trimEnd();
- if(committed.trimEnd()!==onDisk)throw Error('WORKTREE_DIFFERS_FROM_COMMITTED_FIXTURE');
+ const onDisk=readFileSync(fixturePath,'utf8');
+ if(committed!==onDisk)throw Error('WORKTREE_DIFFERS_FROM_COMMITTED_FIXTURE');
  const report=runVerification(JSON.parse(onDisk));
  return {contract:'LYVRA_CHECKOUT_SOURCE_READBACK_V1',source:'LOCAL_GIT_CHECKOUT',observed_head:head,fixture_path:fixturePath,
   fixture_blob:blob,fixture_worktree_matches_commit:true,
