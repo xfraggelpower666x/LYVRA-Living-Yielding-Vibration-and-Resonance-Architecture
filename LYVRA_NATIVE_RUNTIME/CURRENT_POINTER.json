@@ -3211,5 +3211,24 @@
     "suno_render": "NOT_PERFORMED",
     "full_runtime_acceptance": "OPEN",
     "pointer_last": true
+  },
+  "track_design_renderer_ci_followup_2026_10_10": {
+    "status": "PRODUCTIVE_RENDERER_TEST_AND_READONLY_CI_WORKFLOW_SOURCES_VERIFIED",
+    "scope": "TRACK_DESIGN_RENDERER_TEST_ONLY",
+    "recovery_branch": "lyvra-recovery-pre-renderer-ci-audit-20261010-0327",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs",
+    "test_blob": "612506d2ca9c703c7ba1008a7f13c09ecba0bc9e",
+    "workflow_path": ".github/workflows/track-renderer-output-regression.yml",
+    "workflow_blob": "cc3a87dff56504b00cc90ee6a6c36656bd72ed7e",
+    "registry_blob": "2a0933e6113ddf611acad25218e903197ff04790",
+    "ci_execution": "OPEN_NO_VERIFIED_RUN_RESULT",
+    "fresh_boot": "OPEN",
+    "plugin_live_parity": "OPEN",
+    "suno_audio": "NOT_PERFORMED",
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "private_chat_content_not_published": true,
+    "renderer_guard_music_unmodified": true,
+    "pointer_last": true
   }
 }
