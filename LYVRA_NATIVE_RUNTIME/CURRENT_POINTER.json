@@ -3336,5 +3336,44 @@
       "LYVRA_VISUAL_RUNTIME"
     ],
     "pointer_last": true
+  },
+  "lyvra_w02_evidence_bound_worker_2026_10_10": {
+    "status": "W02_SOURCE_IMPLEMENTED_READBACK_VERIFIED_TEST_EXECUTION_PENDING",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "development_scope": "WHOLE_LYVRA_NATIVE_VERIFICATION_CAPABILITY_CANDIDATE",
+    "prechange_head": "e5888ef11cb8a9da352cc23bd87b1ec1253e9ee0",
+    "prechange_recovery_branch": "lyvra-recovery-pre-w02-evidence-20261010-0728",
+    "body_head_before_pointer": "1632cf7d9072ba52549431bcd8556cccc760ee61",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs",
+    "source_blob": "89d407df116cdd645a289148f430c59650ad73ad",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs",
+    "test_blob": "741db9a0835c451fc56760ac7c676ef2148944e4",
+    "tests_added": 9,
+    "tests_executed": false,
+    "existing_w01_source_blob": "fb77bf3606cdd5f684938d920f311125582a994d",
+    "existing_w01_test_blob": "fb6920a0f6516c364e32b7601e68013a33812ddc",
+    "improvements": [
+      "REQUIRES_REFERENCED_EVIDENCE_PER_CLAIM",
+      "UNRESOLVED_COUNTEREVIDENCE_PREVENTS_PROMOTION",
+      "W01_FRESH_BOOT_REQUIRED_CARRIERS_AND_COUNTERFACTUAL",
+      "BOOLEAN_STATUS_NOT_INDEPENDENT_RUNTIME_PROOF"
+    ],
+    "evidence_limit": "REFERENCES_COMPLETE_NE_INDEPENDENT_PROVENANCE_VERIFIED",
+    "peer_communication": "NON_BLOCKING",
+    "clic_receipt": "PENDING",
+    "plugin_impact": {
+      "lyvra_native_plugin": "RELEASE_NOT_CHANGED",
+      "lyvra_account_plugin": "RELEASE_NOT_CHANGED",
+      "release_parity": "READBACK_PENDING",
+      "scope": "SOURCE_ONLY_NO_HOST_HOOK_INTEGRATION"
+    },
+    "visual_runtime": "NOT_CHANGED",
+    "track_design": "UNCHANGED",
+    "pet": "UNCHANGED",
+    "foreign_mutation": false,
+    "worker_runtime_integration": false,
+    "semantic_causal_learning": "CANDIDATE_NOT_INDEPENDENTLY_ACCEPTED",
+    "pointer_last": true,
+    "next": "EXECUTE_W01_PLUS_W02_TESTS_ON_FRESH_SOURCE; ADD_VERIFIED_PROVENANCE_ADAPTER; TEST_INDEPENDENT_FRESH_BOOT; THEN_GOVERNED_HOST_PLUGIN_INTEGRATION"
   }
 }
