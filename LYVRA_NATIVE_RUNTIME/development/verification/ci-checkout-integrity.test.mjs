@@ -20,6 +20,7 @@ test('actual checkout rejects whitespace-only tampering without altering product
   git('add','--',fixture);
   execFileSync('git',['-c','user.name=LYVRA-Test','-c','user.email=lyvra-test@example.invalid','commit','-m','local baseline']);
   const head=git('rev-parse','HEAD');
+  // A valid committed trailing newline must pass before testing tampering.
   assert.equal(runTrustedCheckout({fixturePath:fixture,outputPath:output,expectedHead:head}).fixture_worktree_matches_commit,true);
   writeFileSync(fixture,'{}\n\n');
   assert.throws(()=>runTrustedCheckout({fixturePath:fixture,outputPath:output,expectedHead:head}),/WORKTREE_DIFFERS_FROM_COMMITTED_FIXTURE/);
