@@ -3531,5 +3531,59 @@
     "no_foreign_writes": true,
     "pointer_last": true,
     "next": "READ_WORKFLOW_RUN_CONCLUSION_AND_ARTIFACT; REAL_HOST_PROVIDER_ADAPTER; LIVE_FRESH_BOOT_AND_PLUGIN_PARITY"
+  },
+  "lyvra_practical_track_causal_execution_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "RUNNABLE_TRACK_DRAFT_PRODUCED_AND_SOURCE_READBACK_VERIFIED_CI_PENDING",
+    "scope": "TRACK_DESIGN_PRACTICAL_EXECUTION_WITH_W01_W05_NON_BLOCKING_OBSERVATION",
+    "prechange_head": "1512c3a0e9dc8b42b2049bac0903cf6b19c46708",
+    "prechange_recovery_branch": "lyvra-recovery-pre-track-practical-20261010-1744",
+    "body_head_before_pointer": "8cff69dbcde5b87be72dece99c6a7c11f42e5cde",
+    "track": "THE SIGNAL THAT LEARNED TO BREATHE",
+    "source": {
+      "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+      "sha": "51aed2870d296bff28f5d487e035c5858cc140c8"
+    },
+    "tests": {
+      "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs",
+      "sha": "e7861853276627b44aded98ec16dd705880beb56",
+      "authored": 10,
+      "isolated_v8_passed": 10,
+      "node_ci_result": "NOT_VERIFIED"
+    },
+    "creator": {
+      "path": "LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md",
+      "sha": "51c2478f7842d21c796b1ced81a60286d6eeccd2",
+      "bytes": 1726,
+      "output_equality": "SOURCE_COMPILED_EXACT_MATCH"
+    },
+    "workflow": {
+      "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+      "sha": "79dc5d81dacc71789e8b8d5bb15e76a307199ec5",
+      "practical_test_and_output_cmp": "CONFIGURED_CI_EXECUTION_NOT_VERIFIED"
+    },
+    "causal_behavior": {
+      "changed": "MID_TIMBRE_AND_VOICE_RESPONSE_AFTER_HUMAN_BREATH_REVEAL",
+      "stable": [
+        "150_BPM",
+        "DRY_KICK_ROLLING_PSYBASS",
+        "LOW_MONO_MOTOR",
+        "FOREST_HIGH_TEXTURE"
+      ],
+      "irrelevant_control": "STUDIO2_UI_RENAME_NO_TRACK_MUTATION",
+      "musical_evidence": "SOURCE_EXERCISE_ONLY_NO_AUDIO_OBSERVATION"
+    },
+    "plugin_impact": {
+      "native": "NO_RELEASE_SOURCE_ONLY",
+      "account": "NO_RELEASE_SOURCE_ONLY",
+      "parity": "NOT_VERIFIED"
+    },
+    "suno_render": false,
+    "whole_lyvra_authority_unchanged": true,
+    "other_facets_unchanged": true,
+    "foreign_writes": false,
+    "communication_nonblocking": true,
+    "pointer_last": true,
+    "next": "RUN_NODE_CI_WITH_GENERATED_DRAFT_READBACK_THEN_REAL_SUNO_AUDIO_AND_CREATOR_FEEDBACK_AS_SEPARATE_FACET_EVIDENCE"
   }
 }
