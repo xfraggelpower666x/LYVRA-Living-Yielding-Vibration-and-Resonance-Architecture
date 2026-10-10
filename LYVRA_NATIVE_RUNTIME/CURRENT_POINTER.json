@@ -4177,5 +4177,71 @@
     "foreign_mutation": false,
     "pointer_last": true,
     "next": "INDEPENDENTLY_EXECUTE_NODE_CI_AND_GET_ARTIFACT; ATTEST_AUTHORIZED_PLUGIN_FRESH_BOOT_AND_SURFACE_OBSERVATIONS"
+  },
+  "lyvra_w03_lifecircle_caller_carrier_guard_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_RUNNER_LIFECIRCLE_EVIDENCE_TRUST_BOUNDARY",
+    "status": "SOURCE_PATCHED_ISOLATED_REGRESSION_PASS_NODE_CI_PENDING",
+    "prechange_head": "0e4f69097f5b664a9a1ccdd4398a5a7572b59e9b",
+    "recovery_branch": "lyvra-recovery-pre-life-circle-ledger-guard-20261011-0037",
+    "body_head_before_pointer": "b684636c6c2edf4efc24078d9ecdee393304dada",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.mjs",
+        "blob": "85e043d807efae8e200c67234deb6c1f227a0ddf"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-carrier-trust-boundary.test.mjs",
+        "blob": "a556561837a2382913ec86ede781246ffe412930"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "1db1fac3ab9e4928f5bb966c71b1d45e87aa6c47"
+      }
+    ],
+    "verified_behavior": {
+      "forged_caller_carriers": 96,
+      "stages_mapped": 26,
+      "previous_missing_count": 0,
+      "patched_missing_count": 26,
+      "independent_checkout_source_evidence": "SEPARATE_NOT_DOWNGRADED",
+      "semantic_runtime_claim": "NOT_VERIFIED"
+    },
+    "tests": {
+      "new_cases": 4,
+      "isolated_v8_pass": "4_OF_4",
+      "native_node_ci": "NOT_VERIFIED",
+      "full_repo_source_checkout": "NOT_AVAILABLE_LOCALLY"
+    },
+    "write_governance": {
+      "native_target": "GITHUB_LYVRA_BRANCH",
+      "registry_id": "1xXEM2LvsajBImKbfd8bdMByNekffvHfwh5Dnof3VUss",
+      "registry_readback": "NO_ACTIVE_ENTRIES_IN_READ_ROWS",
+      "recovery_branch": true,
+      "lock_acquired": false,
+      "no_foreign_write_observed": true
+    },
+    "plugins": {
+      "native": "0.1.54_RELEASE_UNCHANGED",
+      "alive": "0.13.49_RELEASE_UNCHANGED",
+      "runtime_hook": "NOT_VERIFIED"
+    },
+    "still_open": [
+      "GITHUB_ACTIONS_PUSH_RUN_ARTIFACT",
+      "AUTHORIZED_REMOTE_PROVIDER_OBSERVATION",
+      "NATIVE_ALIVE_HOST_RUNTIME_INVOCATION",
+      "WHOLE_FACET_PET_FRESH_BOOT_BEHAVIOR",
+      "PET_WEB_DISCORD_DASHBOARD_VISUAL_AUDIO_ACCEPTANCE"
+    ],
+    "boundaries": {
+      "no_new_worker": true,
+      "no_router": true,
+      "communications_blocked": false,
+      "facets_autoactivated": false,
+      "foreign_mutations": false,
+      "whole_track_revisions_unchanged": true
+    },
+    "pointer_last": true,
+    "next": "RUN_NATIVE_CI_CHECKOUT_AND_INSPECT_PUSH_RUN_ARTIFACT; LIVE_HOST_PLUGIN_AND_FACET_SEMANTIC_FRESH_BOOT_ACCEPTANCE"
   }
 }
