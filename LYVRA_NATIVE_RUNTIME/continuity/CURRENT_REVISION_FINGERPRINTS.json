@@ -1220,5 +1220,25 @@
     "plugin_live_parity": "NOT_VERIFIED",
     "suno_audio": "NOT_PERFORMED",
     "no_external_facet_mutation": true
+  },
+  "renderer_output_ci_followup_2026_10_10": {
+    "status": "PRODUCTIVE_TEST_AND_CI_WORKFLOW_SOURCE_READBACK_VERIFIED",
+    "scope": "TRACK_DESIGN_RENDERER_TEST_EVIDENCE_ONLY",
+    "recovery_branch": "lyvra-recovery-pre-renderer-ci-audit-20261010-0327",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs",
+    "test_blob": "612506d2ca9c703c7ba1008a7f13c09ecba0bc9e",
+    "test_commit": "5aaf0f1600411615ebffdb25e21790c5016fe8f5",
+    "workflow_path": ".github/workflows/track-renderer-output-regression.yml",
+    "workflow_blob": "cc3a87dff56504b00cc90ee6a6c36656bd72ed7e",
+    "workflow_commit": "b11f91924ff67eed5c2f16823a0795dbf4ac2681",
+    "redacted_fresh_chat_heading_structure_only": true,
+    "actual_user_chat_content_in_repo": false,
+    "ci_execution": "UNVERIFIED_NO_GITHUB_ACTIONS_RUN_READBACK",
+    "local_test_execution_of_this_committed_version": "NOT_VERIFIED",
+    "plugin_release_change": false,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "renderer_guard_unchanged": true,
+    "other_facets_unchanged": true
   }
 }
