@@ -443,3 +443,27 @@ EMOJI_PRE_OUTPUT_CAUSAL_AUDIT = CURRENT_TRACK_MEANING > MUSICAL_PSYCHOACOUSTIC_F
 EMOJI_AUDIT_FAILS_ON = UNEXPLAINED_OMISSION | SILENT_THINNING | DECORATIVE_PADDING | BRACKET_ONLY_SUBSTITUTION_WHEN_LYRIC_TEXT_NEEDS_SEMANTIC_BINDING
 EMOJI_AUDIT_REPAIR = REASSESS_CURRENT_MEANING_AND_REBIND_NOT_QUOTA
 EMOJI_REQUIRED_AT_REHYDRATION_AND_RENDER_ASSEMBLY_WHEN_TRACK_DESIGN_ACTIVE = true
+
+
+## Creator-output completion and legacy box supersession — 2026-10-10
+
+The earlier BOX1..BOX4 assignments above identify the **four base copyable music fields** only. They do not specify the complete creator-visible output and MUST NOT suppress or displace contextual surfaces. BOX5_BOX6 are **internal audit dimensions**, never extra creator copyboxes, even if an audit is discussed to explain results. The verified latest Track Design sub-rehydration output contract owns the complete surface order.
+
+BASE_CREATOR_COPYBOXES = TITLE | EXTENDED | STYLE | LYRICS_STRUCTURE
+LEGACY_BOX1_TO_BOX4_NE_COMPLETE_CREATOR_OUTPUT = true
+BOX5_BOX6_NE_CREATOR_COPYBOXES = true
+CURRENT_CREATOR_SURFACE_ORDER = TITLE > EXTENDED > OPTIONAL_MY_TASTE_WHEN_ENABLED > SUNO_CONTROLS > DRIFT_FORECAST > STYLE > LYRICS_STRUCTURE
+BASE_VISIBLE_COPYBOX_COUNT = 4
+OPTIONAL_MY_TASTE_ADDS_ONE_COPYBOX_ONLY_WHEN_ENABLED = true
+MY_TASTE_DECISION_MUST_BE_VISIBLE = ON | OFF | UNKNOWN
+SUNO_CONTROLS_IS_A_VISIBLE_NON_COPYBOX_SURFACE = true
+DRIFT_FORECAST_IS_A_VISIBLE_NON_COPYBOX_SURFACE = true
+DRIFT_FORECAST_MUST_IMMEDIATELY_FOLLOW_SUNO_CONTROLS = true
+CREATOR_COPYBOX_CHARACTER_COUNTS_MUST_MATCH_ACTUAL_CONTENT = true
+CREATOR_COPYBOX_LIMITS = TITLE:80 | EXTENDED:1000 | MY_TASTE:2000 | STYLE:1000 | LYRICS_STRUCTURE:5000
+MY_TASTE_2000_IS_INTERNAL_PROFILE_BUDGET_NOT_VERIFIED_OFFICIAL_PROVIDER_CAP = true
+RENDERER_OUTPUT_CHECK_MUST_SEE_ASSEMBLED_CREATOR_OUTPUT_NOT_ONLY_STATIC_CONTRACT_TEXT = true
+OUTPUT_COMPLETENESS_GUARD_NE_NEW_MUSIC_COMPOSER_OR_DECISION_AUTHORITY = true
+NO_SUNO_AUDIO_OR_PLUGIN_FRESH_BOOT_PROOF_FROM_STATIC_OUTPUT_CHECK = true
+
+The test failure from a separately started Track Design chat (2026-10-10) demonstrates a four-box-only rendering with missing controls, missing drift forecast, absent My Taste decision, exposed internal audit boxes and missing character counts, despite an otherwise causally coherent musical dry run. The negative case must remain detectable. Source is user-provided chat export; it is evidence of a chat output, not automatic proof of a plugin-runtime defect.
