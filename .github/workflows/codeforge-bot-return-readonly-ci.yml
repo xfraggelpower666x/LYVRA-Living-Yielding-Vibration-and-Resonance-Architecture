@@ -7,8 +7,13 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_bot_return_probe.py'
       - '.github/workflows/codeforge-bot-return-readonly-ci.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '13 */6 * * *'
 permissions:
   contents: read
+concurrency:
+  group: lyvra-codeforge-bot-return-readonly
+  cancel-in-progress: false
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -25,4 +30,15 @@ jobs:
       - name: Read bot DEV return via pinned GitHub source
         env:
           GH_READ_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/bot_return_probe.py
+        run: |
+          python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/bot_return_probe.py | tee /tmp/lyvra-bot-return.json
+          python - <<'PY'
+          import json, os
+          with open('/tmp/lyvra-bot-return.json', encoding='utf-8') as f:
+              r = json.load(f)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
+              f.write('## Bot → LYVRA CodeForge · read-only observation\n')
+              for k in ('event_id', 'status', 'bot_source_head', 'outbox_git_blob'):
+                  f.write(f'- {k}: `{r[k]}`\n')
+              f.write('- ACK: **not issued**; native learning: **not adopted**\n')
+          PY
