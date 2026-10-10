@@ -23,7 +23,7 @@ export function inspectCooperation(input={}){
   if(!id||!sender||!recipient)entry.issues.push('INCOMPLETE_EXCHANGE_IDENTITY');
   if(!channel)entry.issues.push('UNKNOWN_CHANNEL_METADATA_NOT_A_BLOCKER');
   if(scope&&scope!=='WHOLE_LYVRA'&&scope!=='FACET_LOCAL'&&scope!=='FOREIGN_SYSTEM')entry.issues.push('UNRESOLVED_SCOPE_OWNER');
-  if(intent==='REPORT'||intent==='PROPOSAL'||intent==='HANDOFF')entry.issues.push('MESSAGE_NOT_AUTOMATIC_AUTHORITY');
+  if(intent==='REPORT'||intent==='PROPOSAL'||intent==='HANDOFF')observations.push({exchange:index,id:entry.id,code:'MESSAGE_NOT_AUTOMATIC_AUTHORITY'});
   if(supplied.received||supplied.peer_readback||supplied.semantic_understood||supplied.applied||supplied.host_verified)entry.issues.push('CLAIMED_PROGRESS_REQUIRES_INDEPENDENT_EVIDENCE');
   if(relation.proposed_effect&&!relation.cause)entry.issues.push('CAUSAL_EFFECT_WITHOUT_MECHANISM');
   if(relation.cause&&!relation.counterrelation)entry.issues.push('COUNTERRELATION_NOT_SUPPLIED');
