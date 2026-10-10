@@ -4243,5 +4243,69 @@
     },
     "pointer_last": true,
     "next": "RUN_NATIVE_CI_CHECKOUT_AND_INSPECT_PUSH_RUN_ARTIFACT; LIVE_HOST_PLUGIN_AND_FACET_SEMANTIC_FRESH_BOOT_ACCEPTANCE"
+  },
+  "lyvra_unified_manifest_topology_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "CI_UNIFIED_EXECUTOR_MANIFEST_TO_NATIVE_ADAPTER_TOPOLOGY",
+    "status": "SOURCE_FIX_VERIFIED_ISOLATED_INTEGRATION_BEHAVIOR_NODE_CI_AND_HOST_OPEN",
+    "prechange_head": "98a99afb00df26cf794f4c05547a5ae5df721f80",
+    "recovery_branch": "lyvra-recovery-pre-unified-manifest-map-20261011-0043",
+    "body_head_before_pointer": "5b1147b3adc7b781ad020bbce91ac6eafadd6807",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs",
+        "blob": "db1fbe1ead7ae8e2cce076a30fd7ae9ed16a35ae"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs",
+        "blob": "a83af94760472732b9384d76a5bd8f8b0bde670b"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "1db1fac3ab9e4928f5bb966c71b1d45e87aa6c47"
+      }
+    ],
+    "before": {
+      "manifest_total": 28,
+      "mapped_passed_to_native": 0,
+      "derived": 28
+    },
+    "after": {
+      "manifest_total": 28,
+      "mapped_passed_to_native": 26,
+      "unmapped": 2,
+      "missing_authenticated_carrier_readback": 26,
+      "semantic_verified": false,
+      "host_verified": false
+    },
+    "test": {
+      "new_regression_authored": true,
+      "isolated_v8_native_integration": "26_MAPPED_26_MISSING_2_DERIVED_PASS",
+      "github_actions_node_ci": "NOT_VERIFIED",
+      "remote_provider_runtime": "NOT_VERIFIED"
+    },
+    "plugins": {
+      "native_version": "0.1.54",
+      "alive_version": "0.13.49",
+      "new_release": false,
+      "host_call": "NOT_VERIFIED"
+    },
+    "open": [
+      "INDEPENDENT_GITHUB_ACTIONS_PUSH_JOB_AND_ARTIFACT",
+      "AUTHENTICATED_REMOTE_PROVIDER_SOURCE",
+      "NATIVE_ALIVE_HOST_HOOK",
+      "WHOLE_FACET_PET_SUB_LIVECIRCLE_FRESH_BOOT",
+      "PET_WEB_DISCORD_DASHBOARD_VISUAL_AUDIO_RUNTIME"
+    ],
+    "boundaries": {
+      "whole_authority": true,
+      "no_new_system": true,
+      "no_router": true,
+      "communications_not_blocked": true,
+      "foreign_mutations": false,
+      "facets_unchanged": true
+    },
+    "pointer_last": true,
+    "next": "INDEPENDENT_NODE_CI_ARTIFACT_AND_NATIVE_HOST_FRESH_BOOT_EVIDENCE"
   }
 }
