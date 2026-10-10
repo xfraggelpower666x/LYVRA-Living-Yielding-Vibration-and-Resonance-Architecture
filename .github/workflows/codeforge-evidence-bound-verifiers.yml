@@ -11,6 +11,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -37,6 +39,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs
       - name: Record checked-out commit and source blobs
         shell: bash
         run: |
@@ -69,11 +72,20 @@ jobs:
             printf '%s\t%s\n' "$file" "$(git rev-parse "HEAD:$file")" >> codeforge-evidence/source_git_blobs.tsv
           done
           node --version > codeforge-evidence/node_version.txt
+          git rev-parse "HEAD:LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs" > codeforge-evidence/practical_source_blob.txt
+          git rev-parse "HEAD:LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs" > codeforge-evidence/practical_test_blob.txt
       - name: Test boundaries, causal gaps and non-adoption without network
         shell: bash
         run: |
           set -euo pipefail
           node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs 2>&1 | tee codeforge-evidence/node_test_tap.txt
+      - name: Produce actual LYVRA creator draft and validate causal scenario
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs 2>&1 | tee codeforge-evidence/practical_test_tap.txt
+          node LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs > codeforge-evidence/practical_creator_draft.md
+          test -s codeforge-evidence/practical_creator_draft.md
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
