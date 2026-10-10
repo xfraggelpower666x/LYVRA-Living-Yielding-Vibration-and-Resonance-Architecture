@@ -9,6 +9,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -34,11 +36,13 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
       - name: Test boundaries, causal gaps and non-adoption without network
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
           test -s LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           test -s LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
+          test -s LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
