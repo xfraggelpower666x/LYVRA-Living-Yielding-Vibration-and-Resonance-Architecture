@@ -18,6 +18,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -46,6 +48,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs
       - name: Record checked-out commit and source blobs
         shell: bash
@@ -105,6 +108,11 @@ jobs:
           node --test LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.test.mjs 2>&1 | tee codeforge-evidence/composed_runner_test_tap.txt
           node LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json > codeforge-evidence/composed_verification_report.json
           node --input-type=module -e "import {readFileSync} from 'node:fs'; const r=JSON.parse(readFileSync('codeforge-evidence/composed_verification_report.json','utf8')); if(r.contract!=='LYVRA_VERIFICATION_RUNNER_V1'||r.host_runtime_verified!==false||r.communications_blocked!==false||r.results.causal.changed.join(',')!=='mid')process.exit(1)"
+      - name: Exercise native rehydration to verification integration
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.test.mjs 2>&1 | tee codeforge-evidence/native_rehydration_test_tap.txt
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
