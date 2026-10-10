@@ -11,6 +11,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md'
@@ -48,6 +50,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs
@@ -94,7 +97,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs 2>&1 | tee codeforge-evidence/node_test_tap.txt
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.test.mjs 2>&1 | tee codeforge-evidence/node_test_tap.txt
       - name: Produce actual LYVRA creator draft and validate causal scenario
         shell: bash
         run: |
