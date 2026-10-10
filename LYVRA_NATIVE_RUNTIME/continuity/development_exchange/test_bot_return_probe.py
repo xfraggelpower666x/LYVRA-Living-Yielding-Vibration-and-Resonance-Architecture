@@ -65,6 +65,20 @@ class BotReturnTests(unittest.TestCase):
             out = p.read_bot_return()
         self.assertEqual(out["outbox_git_blob"], blob)
 
+    def test_github_wrapped_base64(self):
+        raw = json.dumps(example()).encode()
+        digest = hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
+        encoded = base64.b64encode(raw).decode()
+        wrapped = "\\n".join(encoded[i:i+60] for i in range(0, len(encoded), 60))
+        fake = iter([
+            {"commit": {"sha": "b"*40}},
+            {"encoding": "base64", "content": wrapped, "sha": digest},
+            {"commit": {"sha": "b"*40}},
+        ])
+        with patch.object(p, "_github_get", side_effect=lambda *args, **kw: next(fake)):
+            report = p.read_bot_return()
+        self.assertEqual(report["outbox_git_blob"], digest)
+
     def test_modified_content_rejected(self):
         raw = json.dumps(example()).encode()
         fake = iter([
