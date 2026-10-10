@@ -9,6 +9,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_release_delta.py'
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_governance_triage.py'
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_governance_triage.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_candidate_preflight.py'
       - '.github/workflows/codeforge-plugin-pet-reciprocal-audit.yml'
   schedule:
     - cron: '23 */6 * * *'
@@ -45,6 +47,11 @@ jobs:
           python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_governance_triage.py
           python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_governance_triage.py
           python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_governance_triage.py
+      - name: Generate read-only PET reference correction candidates
+        run: |
+          python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py
+          python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_candidate_preflight.py
+          python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py
       - name: Protect custom brand assets and Creator originals
         run: |
           test -s LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.1.54/lyvra-native-runtime_original.tar.gz
