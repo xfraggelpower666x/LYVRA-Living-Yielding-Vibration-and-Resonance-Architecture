@@ -3230,5 +3230,33 @@
     "private_chat_content_not_published": true,
     "renderer_guard_music_unmodified": true,
     "pointer_last": true
+  },
+  "clic_lyvra_native_peer_receiver_2026_10_10": {
+    "status": "LYVRA_REPOSITORY_NATIVE_RECEIVER_PUBLISHED_SOURCE_READBACK_VERIFIED",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "source_clic_branch": "clic-migration-rev79-staging",
+    "source_visual_handoff": "CLIC-LYVRA-VISUAL-INTELLIGENCE-20261010-R01",
+    "source_channel_handoff": "CLIC-LYVRA-CHANNEL-ADOPTION-20261010-R01",
+    "receiver_contract": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/RECEIVER_CONTRACT.md",
+    "receiver_contract_sha": "90e897e8770ea57a25d25fd400c68c7e1c294c3a",
+    "receiver_reference": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/CURRENT.json",
+    "receiver_reference_sha": "925d79fe3bc81e14d4858969589a0c411368cd6b",
+    "return_handoff": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_CHANNEL_RETURN_20261010_R01.json",
+    "return_handoff_sha": "b7057d9d698b650d332b50ac26ba2cd8f722b8d6",
+    "prechange_recovery_branch": "lyvra-recovery-pre-clic-peer-channel-20261010-0434",
+    "prechange_head": "a01744022920519f62ce88c0972aa2739ddb0e49",
+    "body_head_before_pointer": "e7a1802124ad7770a784dab3737e27344a41404f",
+    "lyvra_native_decision": "RECEIVER_REFERENCE_CONTRACT_ADOPTED_VISUAL_PROPOSAL_REVIEW_ONLY",
+    "delivery_to_lyvra": "LYVRA_SOURCE_READBACK_CONFIRMED_NO_AUTOMATIC_TRANSPORT_CLAIM",
+    "delivery_to_clic": "OUTBOX_PUBLISHED_NO_CLIC_RECEIPT",
+    "roundtrip": "NOT_VERIFIED",
+    "host_plugin_parity": "NOT_APPLICABLE_TO_REPOSITORY_ONLY_REFERENCE_PUBLISH",
+    "fresh_host_visual": "NOT_TESTED",
+    "no_foreign_writes": true,
+    "no_automatic_peer_activation": true,
+    "communication_nonblocking": true,
+    "visual_state_unchanged": true,
+    "pet_unchanged": true,
+    "pointer_last": true
   }
 }
