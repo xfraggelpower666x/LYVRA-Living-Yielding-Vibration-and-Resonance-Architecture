@@ -93,7 +93,8 @@ def read_bot_return(*, token=""):
                         + "?ref=" + first, token=token)
     if entry.get("encoding") != "base64":
         raise ValueError("Unexpected encoding")
-    raw = base64.b64decode(entry["content"], validate=True)
+    encoded = "".join(str(entry["content"]).split())  # GitHub base64 line wrapping
+    raw = base64.b64decode(encoded, validate=True)
     if len(raw) > 32000:
         raise ValueError("Oversized payload")
     digest = hashlib.sha1(b"blob " + str(len(raw)).encode() + bytes([0]) + raw).hexdigest()
