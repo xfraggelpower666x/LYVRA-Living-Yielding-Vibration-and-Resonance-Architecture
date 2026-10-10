@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {test} from 'node:test';
+import {verifyProvenance,verifyCausalDecision,inspectLifeCircleManifest,W03_BOUNDARIES} from './provenance-causal-lifecircle-verifier.mjs';
+const sha='a'.repeat(40),head='b'.repeat(40);
+const source={repository:'owner/repo',branch:'lyvra',path:'current/meaning.md',blob:sha,observed_head:head};
+const observed={...source,provider_readback:true};
+test('matching source readback is not runtime proof',()=>{
+ const x=verifyProvenance(source,[observed]);
+ assert.equal(x.status,'READBACK_MATCHED_NOT_RUNTIME_PROVEN');
+ assert.equal(x.independently_authenticated_by_module,false);
+});
+test('forged blob becomes conflict',()=>assert.deepEqual(verifyProvenance({...source,blob:'c'.repeat(40)},[observed]).issues,['BLOB_MISMATCH']));
+test('wrong path has no matching provider readback',()=>assert.equal(verifyProvenance({...source,path:'unknown'},[observed]).status,'UNVERIFIED'));
+test('unverified self-declared observation is rejected',()=>assert.equal(verifyProvenance(source,[{...observed,provider_readback:false}]).status,'UNVERIFIED'));
+test('stale head is visible',()=>assert.ok(verifyProvenance({...source,expected_current_head:'c'.repeat(40)},[observed]).issues.includes('CURRENTNESS_MISMATCH')));
+test('contradictory provider snapshots require review',()=>assert.equal(verifyProvenance(source,[observed,{...observed,blob:'d'.repeat(40)}]).status,'REVIEW'));
+test('irrelevant facet update preserves music',()=>assert.equal(verifyCausalDecision({before:{tempo:150},after:{tempo:150},delta:'UI channel renamed',source_ref:'facet/actual',mechanism:'No audio effect',counterrelation:'No execution cross-link',irrelevant:true}).status,'STABILITY_CONSISTENT'));
+test('irrelevant facet update cannot silently change music',()=>assert.ok(verifyCausalDecision({before:{tempo:150},after:{tempo:175},delta:'UI channel renamed',source_ref:'facet/actual',mechanism:'No audio effect',counterrelation:'No execution cross-link',irrelevant:true}).issues.includes('UNJUSTIFIED_CHANGE_FROM_IRRELEVANT_DELTA')));
+test('musical hypothesis does not become causal fact',()=>assert.equal(verifyCausalDecision({before:{mid:'metal'},after:{mid:'breath'},delta:'Fear rather than sound',source_ref:'meaning/actual',mechanism:'Breath-like timbre',counterrelation:'Could be decorative'}).causality_proven,false));
+test('creative break remains review rather than automatic failure',()=>assert.equal(verifyCausalDecision({before:{low:'kick+bass'},after:{low:'percussion pulse'},delta:'dramatic break',source_ref:'track/current',mechanism:'rhythm retained',counterrelation:'DJ drive might vanish',protected_relations:['low'],exception_reason:'time maintained by percussion'}).status,'REVIEW'));
+const manifest={required_order:['PRE_REHYDRATION_OVERSTEER_GUARD','AUTHORITY_AND_CURRENT_POINTER','VALID_NEWER_EVOLUTION','IDENTITY_PRESENCE','CURRENT_WORK_SCOPE'],domain_path_map:{PRE_REHYDRATION_OVERSTEER_GUARD:['a.md'],AUTHORITY_AND_CURRENT_POINTER:['b.json'],IDENTITY_PRESENCE:['c.md']}};
+const loaded=['a.md','b.json','c.md'].map(path=>({path,blob:sha,provider_readback:true}));
+test('mapped carriers alone cannot prove derived semantic stages',()=>{
+ const x=inspectLifeCircleManifest({manifest,loaded,currentness_observed:true});
+ assert.equal(x.status,'PARTIAL');
+ assert.deepEqual(x.derived,['VALID_NEWER_EVOLUTION','CURRENT_WORK_SCOPE']);
+ assert.equal(x.fully_rehydrated,false);
+});
+test('missing mapped carrier is detected',()=>assert.deepEqual(inspectLifeCircleManifest({manifest,loaded:loaded.slice(0,2),currentness_observed:true}).missing,['IDENTITY_PRESENCE']));
+test('whole-first order violation rejected',()=>assert.ok(inspectLifeCircleManifest({manifest:{...manifest,required_order:['AUTHORITY_AND_CURRENT_POINTER','PRE_REHYDRATION_OVERSTEER_GUARD','CURRENT_WORK_SCOPE']},loaded}).issues.includes('WHOLE_REHYDRATION_ORDER_VIOLATION')));
+test('worker has no foreign write or gatekeeping authority',()=>{assert.equal(W03_BOUNDARIES.foreign_write,false);assert.equal(W03_BOUNDARIES.gatekeeper,false);assert.equal(W03_BOUNDARIES.authority,false)});
