@@ -22,13 +22,13 @@
   "plugin_surfaces": {
     "native": {
       "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
-      "version": "0.1.50",
-      "release_id": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
+      "version": "0.1.54",
+      "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
     },
     "account": {
       "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
-      "version": "0.13.47",
-      "release_id": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
+      "version": "0.13.49",
+      "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
     }
   },
   "pet_dashboard": "https://dashboard.666soundsdesign-broadcaster.com/pet/",
