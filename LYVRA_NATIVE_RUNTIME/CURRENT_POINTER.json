@@ -3491,5 +3491,45 @@
     "whole_and_facets": "UNCHANGED",
     "pointer_last": true,
     "next": "INDEPENDENT_NODE_CI_RUN; PROVIDER_BOUNDARY_INTEGRATION; FRESH_BOOT_AND_SURFACE_PARITY"
+  },
+  "lyvra_w05_codeforge_ci_evidence_closeout_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "CI_EVIDENCE_WORKFLOW_SOURCE_READBACK_VERIFIED_RUN_NOT_VERIFIED",
+    "scope": "W05_CI_PROVENANCE_OBSERVABILITY_NOT_RUNTIME_PROMOTION",
+    "prechange_head": "033e8fed0aa1e345f570846a414bf68c4f359612",
+    "recovery_branch": "lyvra-recovery-pre-ci-evidence-20261010-1736",
+    "body_head_before_pointer": "badee361fe9c1347f6648032c6bd380502eb022e",
+    "workflow_path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "workflow_blob": "41d7d8fcb9845e7a0c80af63398b4eba8186c805",
+    "evidence_contract_path": "LYVRA_NATIVE_RUNTIME/development/verification/CODEFORGE_CI_EVIDENCE_CONTRACT.md",
+    "evidence_contract_blob": "755625dc1104c43d31b0a7858933e38e3eed1e86",
+    "records": [
+      "CHECKOUT_HEAD",
+      "CHECKOUT_TREE",
+      "EIGHT_WORKER_SOURCE_AND_TEST_BLOBS",
+      "CI_WORKFLOW_BLOB",
+      "NODE22_VERSION",
+      "NODE_TEST_TAP"
+    ],
+    "artifacts_uploaded_on_workflow": "CONFIGURED_NOT_OBSERVED",
+    "run_id": "NOT_OBSERVED",
+    "run_conclusion": "NOT_VERIFIED",
+    "ci_acceptance": "INDEPENDENT_GITHUB_ACTIONS_RUN_AND_JOB_AND_ARTIFACT_READBACK_REQUIRED",
+    "node_test_executed_this_update": false,
+    "source_only": true,
+    "plugin_impact": {
+      "native": "UNMODIFIED_NOT_RELEASED",
+      "account": "UNMODIFIED_NOT_RELEASED",
+      "parity": "OPEN_FOR_RUNTIME_ACTIVATION"
+    },
+    "whole_state": "UNCHANGED",
+    "music_facets": "UNCHANGED",
+    "pet": "UNCHANGED",
+    "clic_reciprocal_receipt": "PRESERVED",
+    "automatic_communication": "NOT_VERIFIED",
+    "nonblocking": true,
+    "no_foreign_writes": true,
+    "pointer_last": true,
+    "next": "READ_WORKFLOW_RUN_CONCLUSION_AND_ARTIFACT; REAL_HOST_PROVIDER_ADAPTER; LIVE_FRESH_BOOT_AND_PLUGIN_PARITY"
   }
 }
