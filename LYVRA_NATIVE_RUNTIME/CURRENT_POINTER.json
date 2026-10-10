@@ -4307,5 +4307,60 @@
     },
     "pointer_last": true,
     "next": "INDEPENDENT_NODE_CI_ARTIFACT_AND_NATIVE_HOST_FRESH_BOOT_EVIDENCE"
+  },
+  "lyvra_peer_receipt_claim_fidelity_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_UNIFIED_CI_ADVISORY_PEER_RECEIPT_INTEGRITY",
+    "status": "MATERIAL_SOURCE_FIX_REPO_READBACK_VERIFIED_NODE_CI_OPEN",
+    "prechange_head": "d526faf3e7f11947828240df155d9e3fce7b58c4",
+    "recovery_branch": "lyvra-recovery-pre-peer-receipt-claim-fidelity-20261011-0050",
+    "body_head_before_pointer": "1e2d8a9d6b9b667ffa55ebdaa4933f96d86817ff",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs",
+        "blob": "1721dc70705e032f2ab242ae7c4d694d341b339f"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs",
+        "blob": "d024ad081a67a3cdbaff8dd692f3c18d3c9fdd9c"
+      }
+    ],
+    "causal_fix": {
+      "previous": "UNIFIED_EXECUTOR_SYNTHESIZED_RECEIVED_TRUE_FOR_LOCAL_CLIC_RECEIPT",
+      "current": "PRESERVE_LOCAL_CLIC_RECEIPT_AS_SOURCE_ONLY_WITH_NO_NEW_RECEIVED_CLAIM",
+      "source_local_receipt": "UNCHANGED",
+      "independent_peer_delivery": "NOT_VERIFIED",
+      "regression": "AUTHORED_SOURCE_READBACK_VERIFIED"
+    },
+    "tests": {
+      "source_contract_checks": "6_OF_6",
+      "native_ci": "NOT_VERIFIED",
+      "independent_host": "NOT_VERIFIED"
+    },
+    "plugin_impact": {
+      "native": "0.1.54_RELEASE_UNCHANGED",
+      "alive": "0.13.49_RELEASE_UNCHANGED",
+      "host_call": "NOT_OBSERVED",
+      "foreign_mutation": false
+    },
+    "governance": {
+      "lock_registry_read": "NO_ACTIVE_IN_SCANNED_ROWS",
+      "fresh_head_checked": true,
+      "recovery_before_write": true,
+      "optimistic_blobs": true,
+      "write_lock_acquired": false,
+      "pointer_last": true
+    },
+    "open": [
+      "GITHUB_ACTIONS_PUSH_RUN_AND_ARTIFACT",
+      "NATIVE_ALIVE_PLUGIN_HOST_EXECUTION",
+      "WHOLE_AND_SUB_LIVECIRCLE_FRESH_SEMANTIC_BOOT",
+      "REMOTE_PROVIDER_AUTHENTICATED_READBACK",
+      "PET_WEB_DISCORD_VISUAL_AUDIO_RUNTIME"
+    ],
+    "no_new_system": true,
+    "communication_gate": false,
+    "facets_unchanged": true,
+    "next": "RUN_REAL_GITHUB_ACTIONS_ARTIFACT_THEN_AUTHORIZED_HOST_AND_PLUGIN_RUNTIME_ACCEPTANCE"
   }
 }
