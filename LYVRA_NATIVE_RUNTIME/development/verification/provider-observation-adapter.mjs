@@ -15,7 +15,7 @@ export function bindProviderReadback({request={},provider_result={},trusted_cont
  if(provider_result.sha!==expected_blob)issues.push('PROVIDER_BLOB_MISMATCH');
  if(!nonempty(provider_result.content)||!nonempty(trusted_context.observation_id))issues.push('MISSING_CONTENT_OR_OBSERVATION_ID');
  const ok=issues.length===0;
- return {status:ok?'REFERENTIAL_READBACK_MATCH':'UNVERIFIED',issues,observation:ok?{repository,branch,path,blob:expected_blob,observed_head:expected_head,provider_readback:true,observation_id:trusted_context.observation_id}:null,independent_runtime_proven:false,mutation:false};
+ return {status:ok?'CALLER_REFERENCES_MATCH_UNVERIFIED':'UNVERIFIED',issues,observation:ok?{repository,branch,path,blob:expected_blob,observed_head:expected_head,provider_readback:false,readback_claimed_by_caller:true,observation_id:trusted_context.observation_id}:null,independent_runtime_proven:false,provider_authenticity_verified:false,mutation:false};
 }
 // An observation's trust is always conditional upon the externally attested call.
 // The same caller can lie about trusted_context; avoid any "cryptographically verified" claim.
