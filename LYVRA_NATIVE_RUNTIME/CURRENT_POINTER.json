@@ -3375,5 +3375,49 @@
     "semantic_causal_learning": "CANDIDATE_NOT_INDEPENDENTLY_ACCEPTED",
     "pointer_last": true,
     "next": "EXECUTE_W01_PLUS_W02_TESTS_ON_FRESH_SOURCE; ADD_VERIFIED_PROVENANCE_ADAPTER; TEST_INDEPENDENT_FRESH_BOOT; THEN_GOVERNED_HOST_PLUGIN_INTEGRATION"
+  },
+  "lyvra_w03_provenance_causal_lifecircle_2026_10_10": {
+    "status": "W03_SOURCE_AND_READBACK_VERIFIED_V8_TESTS_PASS_LIVE_RUNTIME_OPEN",
+    "owner": "WHOLE_LYVRA",
+    "prechange_recovery_branch": "lyvra-recovery-pre-w03-20261010-1723",
+    "prechange_head": "cc676a610227ff92b8e58f800196d61479619e83",
+    "body_head_before_pointer": "1e6225537a2fcd65508714fae36c23cc461a7beb",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs",
+    "source_blob": "2cdb51f77911727780b5565d5be63132838b6f7d",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs",
+    "test_blob": "12b6afeee50b263425f08d7f96b580f2c0c7110c",
+    "ci_workflow": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "ci_workflow_blob": "91d3d0f3d9c3cf41f30af42be65a472661e32f3d",
+    "tests_authored": 14,
+    "isolated_v8_regressions": "14_OF_14_PASS_WITH_ADAPTED_ASSERTIONS",
+    "github_actions_result": "NOT_VERIFIED",
+    "node22_result": "NOT_VERIFIED",
+    "scope": [
+      "PROVENANCE_REFERENCES",
+      "CONTEXTUAL_CAUSAL_HYPOTHESES",
+      "DYNAMIC_WHOLE_AND_SUB_LIFECIRCLE_COVERAGE"
+    ],
+    "constraints": {
+      "no_new_worker_identity": true,
+      "no_new_controller": true,
+      "no_communication_gate": true,
+      "no_foreign_writes": true,
+      "no_auto_facet_activation": true,
+      "readback_ne_semantically_understood": true,
+      "source_ne_runtime_proven": true
+    },
+    "existing_w01_w02": "PRESERVED_UNCHANGED",
+    "plugin_impact": {
+      "native_surface": "NO_RUNTIME_WIRING_OR_RELEASE_THIS_UPDATE",
+      "account_surface": "NO_RUNTIME_WIRING_OR_RELEASE_THIS_UPDATE",
+      "parity": "OPEN_IF_ACTIVATED",
+      "reason": "PURE_REPOSITORY_VERIFIER_CANDIDATE_ONLY"
+    },
+    "clic_peer_receipt": "RECIPROCAL_SOURCE_READBACK_VERIFIED_BY_CLIC_NOT_AUTOMATIC_DELIVERY",
+    "visual_runtime": "UNCHANGED",
+    "music_facets": "UNCHANGED",
+    "pet": "UNCHANGED",
+    "next": "GITHUB_ACTIONS_RUN_READBACK; TRUSTED_OBSERVATION_ADAPTER; SEMANTIC_REASONS_VALIDATION; DYNAMIC_FACET_COVERAGE; GOVERNED_RUNTIME_PLUGIN_INTEGRATION",
+    "pointer_last": true
   }
 }
