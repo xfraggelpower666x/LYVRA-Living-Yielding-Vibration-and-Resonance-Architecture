@@ -66,7 +66,7 @@ jobs:
             'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs' \
             '.github/workflows/codeforge-evidence-bound-verifiers.yml'
           do
-            printf '%s\\t%s\\n' "$file" "$(git rev-parse "HEAD:$file")" >> codeforge-evidence/source_git_blobs.tsv
+            printf '%s\t%s\n' "$file" "$(git rev-parse "HEAD:$file")" >> codeforge-evidence/source_git_blobs.tsv
           done
           node --version > codeforge-evidence/node_version.txt
       - name: Test boundaries, causal gaps and non-adoption without network
