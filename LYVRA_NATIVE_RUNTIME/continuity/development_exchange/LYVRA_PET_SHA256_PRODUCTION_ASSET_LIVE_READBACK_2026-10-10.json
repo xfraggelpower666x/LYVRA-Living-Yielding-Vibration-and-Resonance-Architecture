@@ -1,0 +1,43 @@
+{
+  "schema": "lyvra.pet.sha256.production_asset_live_readback.v1",
+  "scope": "LYVRA_PET_ONLY",
+  "classification": "VERIFIED_PRODUCTION_ASSET_BYTE_SHA256_BY_CREATOR_WINDOWS_POWERSHELL",
+  "observed_date": "2026-10-10",
+  "source_of_observation": "Creator-provided Windows PowerShell output in conversation; not an independent host fetch",
+  "domain": "lyvra.pet.ui.666soundsdesign-broadcaster.com",
+  "cloudflare": {
+    "worker": "lyvra-pet-plugin-ui",
+    "deployment": "b42fa40e-fdd2-4609-bb22-844d1e35d06b",
+    "active_version": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+    "traffic_percentage": 100,
+    "preview_urls_enabled": false,
+    "previous_version_available_for_rollback": "7e3274fc-1cd2-449c-acd9-fb2ed3fe607b",
+    "secret_material_read": false
+  },
+  "assets": [
+    {
+      "path": "/asset/pet-logo.png",
+      "expected_sha256": "3b6e6df9f2a7233da03f7cfe0e120028576325d1965390d482cc31316a74385e",
+      "creator_observation": "LIVE PASS",
+      "http_expected": 200
+    },
+    {
+      "path": "/asset/spritesheet-extended.png",
+      "expected_sha256": "f5129134e46e492bf7ef34da83c0cd4c75f9f0051553cc60880b4ab47e1d6fba",
+      "creator_observation": "LIVE PASS",
+      "http_expected": 200
+    }
+  ],
+  "repository": {
+    "native_worker_blob": "40e4f64040fafd8fbedf3ba28f6f1cf4f57ef74e",
+    "pet_patch_commit": "8f7c6b37c6220686b776e6d32771c55d27b31a6f",
+    "recovery_branch": "lyvra-recovery-pre-pet-logo-sha256-20261010",
+    "original_graphic_changed": false
+  },
+  "scope_status": "PET_ASSET_SHA256_PRODUCTION_VERIFIED",
+  "whole_system_rehydration": "NOT_CLAIMED",
+  "plugins_changed": false,
+  "synthetic_events_created": false,
+  "pointer_updated": false,
+  "continuity_guard": "Preserve newer valid LYVRA evolution; CURRENT_POINTER only after complete native reference read and fingerprint/manifest closure."
+}
