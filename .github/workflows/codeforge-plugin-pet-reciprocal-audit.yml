@@ -11,6 +11,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_governance_triage.py'
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py'
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_candidate_preflight.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_dependency_audit.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_dependency_audit.py'
       - '.github/workflows/codeforge-plugin-pet-reciprocal-audit.yml'
   schedule:
     - cron: '23 */6 * * *'
@@ -52,6 +54,11 @@ jobs:
           python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py
           python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_candidate_preflight.py
           python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_candidate_preflight.py
+      - name: Audit all PET plugin dependency candidates and historic provenance
+        run: |
+          python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_dependency_audit.py
+          python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_pet_plugin_dependency_audit.py
+          python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/pet_plugin_dependency_audit.py
       - name: Protect custom brand assets and Creator originals
         run: |
           test -s LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.1.54/lyvra-native-runtime_original.tar.gz
