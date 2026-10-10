@@ -5,7 +5,7 @@ import fixture from './fixtures/track-causal-smoke.json' with {type:'json'};
 test('end-to-end runner emits a structured advisory report',()=>{
  const r=runVerification(fixture);
  assert.equal(r.owner,'WHOLE_LYVRA');
- assert.equal(r.results.communication.stage,'PEER_READBACK');
+ assert.equal(r.results.communication.stage,'CALLER_REPORTED_PEER_READBACK');
  assert.equal(r.results.provenance.status,'UNVERIFIED');
  assert.equal(r.results.provider.observation.provider_readback,false);
  assert.equal(r.results.lifecircle.fully_rehydrated,false);
@@ -57,4 +57,55 @@ test('output serializes into one reproducible JSON report',()=>{
  const b=JSON.stringify(runVerification(fixture));
  assert.equal(a,b);
  assert.ok(a.includes('"contract":"LYVRA_VERIFICATION_RUNNER_V1"'));
+});
+
+test('caller host adoption flags never result in communication VERIFIED',()=>{
+ const x=structuredClone(fixture);
+ x.communication.native_adoption=true;x.communication.host_evidence=true;x.communication.automatic_transport=true;
+ const o=runVerification(x);
+ assert.equal(o.results.communication.stage,'CALLER_REPORTED_HOST_VERIFIED');
+ assert.equal(o.results.communication.classification,'UNVERIFIED_CALLER_CLAIM');
+ assert.equal(o.results.communication.automatic_transport_verified,false);
+ assert.equal(o.host_runtime_verified,false);
+});
+test('fake provider ledger cannot evade W05 inside composed runner',()=>{
+ const x=structuredClone(fixture),blob='c'.repeat(40);
+ x.provenance_claim.blob=blob;
+ x.provider_ledger=[{...x.provenance_claim,observed_head:blob,provider_readback:true}];
+ const o=runVerification(x);
+ assert.equal(o.results.provenance.status,'UNVERIFIED');
+ assert.ok(o.results.provenance.issues.includes('CALLER_PROVIDER_LEDGER_NOT_TRUSTED'));
+});
+test('caller visual and runtime flags cannot become authenticated',()=>{
+ const x=structuredClone(fixture);
+ x.visual={headline:'VERIFIED',parts:[{status:'VERIFIED'}],render_evidence:true};
+ x.evidence={source_current:true,source_read:true,meaning_applied:true,runtime_observed:true};
+ const o=runVerification(x);
+ assert.equal(o.results.visual.status,'UNVERIFIED_VISUAL_CLAIM');
+ assert.equal(o.results.evidence.status,'UNVERIFIED_CALLER_CLAIM');
+ assert.equal(o.host_runtime_verified,false);
+});
+test('channel diversity and worker failure preserve communication pass-through',()=>{
+ for(const channel of ['GITHUB','DRIVE','PET','DISCORD','WEB','AUTOMATED_REPORT','UNKNOWN_AUTHORIZED']){
+  const x=structuredClone(fixture);x.channel={name:channel,worker_available:false};
+  const o=runVerification(x);
+  assert.equal(o.communications_blocked,false);
+  assert.equal(o.cooperation.authorized_channels_untouched,true);
+  assert.equal(o.cooperation.channel_discovery,'OPEN_NOT_GATEKEEPED');
+  assert.equal(o.facet_activated,false);
+ }
+});
+test('contradictory evidence is retained as review findings',()=>{
+ const x=structuredClone(fixture);
+ x.facets.whole_authority='FOREIGN';
+ const o=runVerification(x);
+ assert.ok(o.issues.some(e=>e.area==='relations'&&e.code==='WHOLE_AUTHORITY_VIOLATION'));
+ assert.equal(o.mutation,false);
+});
+test('no caller ledger accepted even when empty provider trust flags look valid',()=>{
+ const x=structuredClone(fixture);
+ x.provider_ledger=[{repository:x.provenance_claim.repository,branch:x.provenance_claim.branch,path:x.provenance_claim.path,blob:x.provenance_claim.blob,observed_head:'a'.repeat(40),provider_readback:true}];
+ const o=runVerification(x);
+ assert.equal(o.results.provider.provider_authenticity_verified,false);
+ assert.equal(o.results.provenance.status,'UNVERIFIED');
 });
