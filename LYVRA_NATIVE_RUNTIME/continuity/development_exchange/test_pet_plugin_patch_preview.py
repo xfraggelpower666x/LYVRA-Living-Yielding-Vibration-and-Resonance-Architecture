@@ -83,5 +83,24 @@ class PreviewTests(unittest.TestCase):
             self.assertFalse(first["pointer_changed"])
 
 
+    def test_already_reconciled_is_safe_noop(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            docs = fixtures(root)
+            for _, path, nested, keys in d.CURRENT_CARRIERS:
+                destination = docs[path][nested] if nested else docs[path]
+                for surface in ("native", "alive"):
+                    pentry = destination[keys[surface]]
+                    pentry["version"] = "0.1.54" if surface == "native" else "0.13.49"
+                    pentry["release_id"] = "n54" if surface == "native" else "a49"
+                (root / path).write_text(json.dumps(docs[path]))
+            snapshot = {path: (root / path).read_bytes() for path in docs}
+            result = p.preview(root)
+            self.assertEqual(result["status"], "ALREADY_RECONCILED_NO_PATCH_NEEDED")
+            self.assertEqual(result["files"], [])
+            self.assertFalse(result["written"])
+            self.assertEqual(snapshot, {path: (root / path).read_bytes() for path in docs})
+
+
 if __name__=="__main__":
     unittest.main()
