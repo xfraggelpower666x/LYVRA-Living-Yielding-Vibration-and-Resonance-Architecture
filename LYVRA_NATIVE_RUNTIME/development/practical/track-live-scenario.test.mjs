@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {CASE,resolveScenario,renderCreator,exercise,PRACTICAL_BOUNDARY} from './track-live-scenario.mjs';
+test('real end to end exercise yields creator material',()=>{const x=exercise();assert.ok(x.creator_output.includes('### Lyrics — '));assert.ok(x.creator_output.includes('### Suno Controls'));assert.ok(x.creator_output.includes('### Drift Forecast'));assert.equal(x.evidence.suno_audio,'NOT_RENDERED')});
+test('material contradiction mutates MID but keeps low motor and BPM',()=>{const a=resolveScenario('baseline'),b=resolveScenario('contradiction');assert.notEqual(a.mid,b.mid);assert.equal(a.motor,b.motor);assert.equal(a.bpm,b.bpm)});
+test('irrelevant Studio UI change cannot mutate track design',()=>{const b=resolveScenario('contradiction'),c=resolveScenario('irrelevant');assert.equal(b.mid,c.mid);assert.equal(b.motor,c.motor);assert.equal(b.high,c.high)});
+test('all copyfields respect character limits',()=>{const rendered=exercise().creator_output;for(const [name,max] of [['Title',80],['Extended',1000],['Style',1000],['Lyrics',5000]]){const m=rendered.match(new RegExp('### '+name+' — (\\d+)\\/'+max));assert.ok(m,'missing '+name);assert.ok(Number(m[1])<=max)}});
+test('functional emoji survive all relevant creator fields',()=>{const x=exercise().creator_output;assert.ok(x.includes('spiral 🌀'));assert.ok(x.includes('acid response ⚡'));assert.ok(x.includes('breath 🫁'))});
+test('instrumental call response is square bracket scoped',()=>assert.ok(exercise().creator_output.includes('[Response — single dry acid stab ⚡]')));
+test('internal verification dimensions do not leak into creator output',()=>{const x=exercise().creator_output;assert.ok(!x.includes('### Interne Box 5'));assert.ok(!x.includes('### Interne Box 6'))});
+test('only LYVRA decides and no external Suno call occurs',()=>{assert.equal(PRACTICAL_BOUNDARY.whole_authority,'LYVRA');assert.equal(PRACTICAL_BOUNDARY.suno_render,false);assert.equal(PRACTICAL_BOUNDARY.foreign_writes,false)});
+test('unexpected fixture variants are not silently composed',()=>assert.throws(()=>resolveScenario('studio2-render'),/UNKNOWN_SCENARIO/));
+test('output is deterministic for the same resolved decisions',()=>assert.equal(renderCreator(resolveScenario('contradiction')),renderCreator(resolveScenario('contradiction'))));
