@@ -1,0 +1,51 @@
+{
+  "schema": "lyvra.codeforge.bot_two_way_scheduled_readonly_receipt.v1",
+  "status": "TWO_DIRECTIONS_SCHEDULE_CONFIGURED_FIRST_CI_PASS",
+  "authority": "REPOSITORY_FIRST",
+  "native_head_prechange": "9b2f82b9387138d1312e0e44b8ee49370f04e66e",
+  "native_pointer_write": false,
+  "identity_mutation": false,
+  "recovery_anchor": "9b2f82b9387138d1312e0e44b8ee49370f04e66e",
+  "mode": "READ_ONLY_POLLING_EVERY_6_HOURS_NOT_IMMEDIATE_DELIVERY",
+  "directions": [
+    {
+      "direction": "BOT_TO_LYVRA",
+      "repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+      "workflow": ".github/workflows/codeforge-bot-return-readonly-ci.yml",
+      "trigger": "cron 13 */6 * * *; workflow_dispatch; protected path push",
+      "github_actions_run_id": 38013881007,
+      "ci_conclusion": "success",
+      "scope": "Read bot DEV technical handoff, checksum and CI job summary, not an ACK nor learning adoption"
+    },
+    {
+      "direction": "LYVRA_TO_BOT",
+      "repo": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+      "branch": "lyvrabot",
+      "workflow": ".github/workflows/lyvra-handoff-readonly-scheduled.yml",
+      "trigger": "cron 37 */6 * * *; workflow_dispatch; protected path push",
+      "github_actions_run_id": 38013909925,
+      "ci_conclusion": "success",
+      "scope": "Checkout Bot DEV recipient and read native handoff, no Discord activation"
+    }
+  ],
+  "watcher_repair": {
+    "repo": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+    "source": "automation/native_update_todos.py",
+    "tests": "automation/test_native_update_todos.py",
+    "problem": "Compare URL SHA...SHA rejected by overbroad path traversal check",
+    "solution": "Reject literal dot traversal segments, permit GitHub compare triple-dot syntax",
+    "ci_run_id": 38013965620,
+    "conclusion": "success",
+    "github_issue_write_on_push": false,
+    "scheduled_issue_updates_subject_to_actual_workflow_credentials": true
+  },
+  "not_claimed": [
+    "No always-on or immediate bidirectional transport",
+    "No cross-repo ACK written",
+    "No Discord audience learning",
+    "No independent Whole-LYVRA rehydration PASS",
+    "No production Discord login",
+    "No plugin release parity"
+  ],
+  "preserve_newer_valid_pointer_revision": true
+}
