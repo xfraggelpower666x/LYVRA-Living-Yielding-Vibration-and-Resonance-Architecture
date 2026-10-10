@@ -1,0 +1,169 @@
+{
+  "contract": "LYVRA_VERIFICATION_RUNNER_V1",
+  "owner": "WHOLE_LYVRA",
+  "verdict": "REVIEW",
+  "input_completeness": {
+    "provided": 8,
+    "required": 8,
+    "missingInputs": []
+  },
+  "source": {
+    "reference": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "expected_head": "81fe1318985b33f87300aa695d2cbce27de46278",
+    "integrity": "NOT_INDEPENDENTLY_AUTHENTICATED_BY_RUNNER"
+  },
+  "results": {
+    "communication": {
+      "facet": "COMMUNICATION",
+      "stage": "PEER_READBACK",
+      "classification": "OPEN",
+      "issues": [],
+      "automatic_transport_verified": false,
+      "mutation": false
+    },
+    "visual": {
+      "facet": "VISUAL",
+      "status": "REVIEW",
+      "issues": [],
+      "render_evidence": false,
+      "mutation": false
+    },
+    "relations": {
+      "facet": "FACET_RELATIONS",
+      "status": "RELATION_ONLY",
+      "issues": [],
+      "activate_facets": false,
+      "mutation": false
+    },
+    "evidence": {
+      "facet": "EVIDENCE",
+      "status": "OPEN",
+      "reached": [
+        "SOURCE_CURRENT",
+        "SOURCE_READ",
+        "SEMANTIC_APPLIED"
+      ],
+      "violations": [],
+      "mutation": false
+    },
+    "provider": {
+      "status": "CALLER_REFERENCES_MATCH_UNVERIFIED",
+      "issues": [],
+      "observation": {
+        "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+        "branch": "lyvra",
+        "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+        "blob": "51aed2870d296bff28f5d487e035c5858cc140c8",
+        "observed_head": "81fe1318985b33f87300aa695d2cbce27de46278",
+        "provider_readback": false,
+        "readback_claimed_by_caller": true,
+        "observation_id": "fixture-not-trusted"
+      },
+      "independent_runtime_proven": false,
+      "provider_authenticity_verified": false,
+      "mutation": false
+    },
+    "provenance": {
+      "status": "UNVERIFIED",
+      "issues": [
+        "NO_MATCHING_PROVIDER_READBACK"
+      ],
+      "mutation": false
+    },
+    "causal": {
+      "status": "CAUSAL_HYPOTHESIS_REVIEW",
+      "issues": [],
+      "changed": [
+        "mid"
+      ],
+      "causality_proven": false,
+      "mutation": false
+    },
+    "counter": {
+      "status": "CAUSAL_HYPOTHESIS_REQUIRES_DISCRIMINATING_TEST",
+      "issues": [],
+      "counter_test": "A/B compare with controlled unchanged motor",
+      "causality_proven": false,
+      "mutation": false
+    },
+    "lifecircle": {
+      "status": "PARTIAL",
+      "required": 4,
+      "mapped": 2,
+      "derived": [
+        "VALID_NEWER_EVOLUTION",
+        "CURRENT_WORK_SCOPE"
+      ],
+      "missing": [
+        "PRE_REHYDRATION_OVERSTEER_GUARD",
+        "AUTHORITY_AND_CURRENT_POINTER"
+      ],
+      "issues": [
+        "MAPPED_STAGES_LACK_PROVIDER_READBACK",
+        "DERIVED_STAGES_REQUIRE_SEMANTIC_ASSESSMENT",
+        "HEAD_CURRENTNESS_NOT_INDEPENDENTLY_OBSERVED"
+      ],
+      "fully_rehydrated": false,
+      "mutation": false
+    },
+    "claims": [
+      {
+        "status": "REVIEW",
+        "claim": "HOST_VERIFIED",
+        "missing": [
+          "SOURCE_CURRENT",
+          "SOURCE_CONTENT",
+          "MEANING_DECISION",
+          "COUNTEREXAMPLE",
+          "HOST_OBSERVATION"
+        ],
+        "issues": [
+          "REQUIRED_EVIDENCE_MISSING"
+        ],
+        "source_refs": [],
+        "runtime_proven": false,
+        "mutation": false
+      }
+    ]
+  },
+  "issues": [
+    {
+      "area": "provenance",
+      "code": "NO_MATCHING_PROVIDER_READBACK"
+    },
+    {
+      "area": "lifecircle",
+      "code": "MAPPED_STAGES_LACK_PROVIDER_READBACK"
+    },
+    {
+      "area": "lifecircle",
+      "code": "DERIVED_STAGES_REQUIRE_SEMANTIC_ASSESSMENT"
+    },
+    {
+      "area": "lifecircle",
+      "code": "HEAD_CURRENTNESS_NOT_INDEPENDENTLY_OBSERVED"
+    },
+    {
+      "area": "claims_0",
+      "code": "REQUIRED_EVIDENCE_MISSING"
+    }
+  ],
+  "proof_stages": {
+    "SOURCE": "SOURCE_ONLY",
+    "SEMANTIC": "HYPOTHESIS_ONLY",
+    "RUNTIME": "NOT_OBSERVED"
+  },
+  "host_runtime_verified": false,
+  "ci_verified": false,
+  "communications_blocked": false,
+  "facet_activated": false,
+  "mutation": false,
+  "next": "Use independent provider/host evidence and user-authorized native integration, not booleans or historical status cards",
+  "example_provenance": {
+    "generation": "ISOLATED_V8_COMPOSITION_OF_REPO_SOURCE",
+    "source_runner_blob": "d8e1355ac17db52314d5b78ff9d2d2f5eb07e057",
+    "fixture_blob": "a42563afe0e7bdcaa636469ff738ce0715069faa",
+    "not_node_ci": true,
+    "not_live_host": true
+  }
+}
