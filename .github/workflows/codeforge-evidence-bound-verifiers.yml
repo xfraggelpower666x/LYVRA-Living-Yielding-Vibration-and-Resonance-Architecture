@@ -31,6 +31,8 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-peer-receipt-cooperation.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-peer-receipt-cooperation.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/verification/cooperation-runner-integration.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -160,6 +162,14 @@ jobs:
         run: |
           set -euo pipefail
           node --test LYVRA_NATIVE_RUNTIME/development/verification/cooperation-runner-integration.test.mjs 2>&1 | tee codeforge-evidence/cooperation_runner_integration_tap.txt
+      - name: Execute full Whole LYVRA source evidence and cooperation chain
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs 2>&1 | tee codeforge-evidence/unified_source_evidence_tap.txt
+          node LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs > codeforge-evidence/unified_source_evidence.json
+          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/unified_source_evidence.json'));if(x.contract!=='LYVRA_UNIFIED_CI_EVIDENCE_V1'||x.observed_checkout_head!==process.env.GITHUB_SHA||x.manifest.stages.length!==28||x.peer_receipt.local_receipt_worktree_matches_commit!==true||x.evidence_boundary.actual_host_execution_verified!==false||x.communications_blocked!==false)process.exit(1)"
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
