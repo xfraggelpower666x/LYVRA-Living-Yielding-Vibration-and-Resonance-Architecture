@@ -1,0 +1,28 @@
+name: LYVRA CodeForge Bot Return Readonly CI
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/bot_return_probe.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_bot_return_probe.py'
+      - '.github/workflows/codeforge-bot-return-readonly-ci.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile and test without writes
+        run: |
+          python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/bot_return_probe.py
+          python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_bot_return_probe.py
+      - name: Read bot DEV return via pinned GitHub source
+        env:
+          GH_READ_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/bot_return_probe.py
