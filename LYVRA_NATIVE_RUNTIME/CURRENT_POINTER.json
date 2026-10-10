@@ -3728,5 +3728,37 @@
     "node_github_actions": "NOT_VERIFIED",
     "pointer_last": true,
     "next": "AUTHENTICATED_PROVIDER_BOUNDARY_PLUS_REAL_HOST_PLUGIN_HOOK_AND_FRESH_BOOT_EXECUTION"
+  },
+  "lyvra_ci_local_git_checkout_evidence_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "CI_CHECKOUT_BOUND_EVIDENCE_SOURCE_IMPLEMENTED_RUN_NOT_VERIFIED",
+    "prechange_head": "8f67e9c1eb72f389dda8d711cf8eab40f3ebdc95",
+    "recovery_branch": "lyvra-recovery-pre-verified-checkout-20261010-1831",
+    "body_head_before_pointer": "377d164233bc3bb6347b95e51065e96c98aececf",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs",
+    "source_blob": "98867eab615f1a9fa68079e8dc924834f9e3834e",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.test.mjs",
+    "test_blob": "60c7185aa543afa79584eb3da0bbab5fed735b40",
+    "workflow_path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "workflow_blob": "f45f5960fe7417ed31b76ff7ac75b1e92102a744",
+    "tests_authored": 5,
+    "tests_executed_in_native_node": "NOT_VERIFIED",
+    "direct_source_checks": "9_OF_9_PASS",
+    "method": "GIT_REV_PARSE_HEAD_AND_COMMITTED_BLOB_AND_CHECKOUT_WORKTREE_MATCH",
+    "evidence_scope": "CI_CHECKOUT_GIT_LOCAL_NOT_REMOTE_PROVIDER_AUTHENTICATION",
+    "guarded": "NO_CALLER_LEDGER_TO_VERIFIED_PROVENANCE",
+    "host_runtime": "NOT_OBSERVED",
+    "plugin_parity": "NOT_VERIFIED",
+    "runtime_surfaces": {
+      "native": "SOURCE_ONLY_NO_PLUGIN_RELEASE",
+      "alive": "SOURCE_ONLY_NO_PLUGIN_RELEASE",
+      "pet": "UNCHANGED"
+    },
+    "whole_and_facets": "UNCHANGED",
+    "foreign_writes": false,
+    "communication_nonblocking": true,
+    "authority_transfer": false,
+    "pointer_last": true,
+    "next": "INDEPENDENT_CI_RUN_AND_ARTIFACT_READBACK; LIVE_PLUGIN_NATIVE_HOST_INVOCATION; AUTHORIZED_REMOTE_PROVIDER_OBSERVATION"
   }
 }
