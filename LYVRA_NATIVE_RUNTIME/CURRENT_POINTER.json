@@ -3979,5 +3979,78 @@
     },
     "pointer_last": true,
     "next": "INDEPENDENT_GITHUB_ACTIONS_PUSH_RUN_AND_NODE_ARTIFACT_READBACK_IF_PROVIDER_EXPOSES; AUTHORIZED_NATIVE_AND_ALIVE_PLUGIN_HOST_HOOK; REMOTE_PROVIDER_BOUNDARY; FACET_AWARE_REAL_SEMANTIC_FRESH_BOOT; PET_WEB_DISCORD_SURFACE_OBSERVATION"
+  },
+  "lyvra_unified_worker_checkout_cooperation_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "WHOLE_VERIFICATION_REHYDRATION_AND_COOPERATION_SOURCE_ONLY",
+    "status": "UNIFIED_SOURCE_EXECUTOR_COMPOSED_CI_CONFIGURED_REAL_RUNTIME_OPEN",
+    "prechange_head": "752a4c2d853fca358a0492833a8acde6e810e7fc",
+    "recovery_branch": "lyvra-recovery-pre-unified-worker-20261011-0025",
+    "body_head_before_pointer": "a530f7b585b42a7fe9172155638c53e08cedafc8",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs",
+        "blob": "4d3240fabd325a6349613ef0058f253da7bab2a3"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs",
+        "blob": "c6798c4790c83b65f3c473411fbbec4daf892a2b"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/UNIFIED_EXECUTION_BOUNDARY.md",
+        "blob": "440829a5a80d2573920cb469375fba2c8d8d98bd"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "c603c85b31509d7e0457ec2d5c5113441697bc17"
+      }
+    ],
+    "implemented": [
+      "ONE_CI_LOCAL_GIT_SOURCE_EXECUTION_CHAIN",
+      "WHOLE_MANIFEST_28_STAGE_INPUT",
+      "R02_LYVRA_LOCAL_RECEIPT_IN_COOPERATION",
+      "TRACK_FIXTURE_GIT_SOURCE_REPORT",
+      "NATIVE_REHYDRATION_ADVISORY_WITHOUT_HOST_PROMOTION",
+      "SIX_NATIVE_NODE_TEST_CASES",
+      "CI_UNIFIED_ARTIFACT_CONFIGURATION",
+      "DOCUMENTED_RUNTIME_ACCEPTANCE"
+    ],
+    "runtime_tests": {
+      "tests_authored": 6,
+      "node_execution": "NOT_VERIFIED",
+      "workflow_push_run": "NOT_VERIFIED_PROVIDER_LIST_NOT_AVAILABLE",
+      "local_clone": "UNAVAILABLE_NETWORK_DNS",
+      "source_integrity": "DIRECT_GITHUB_FILE_BLOB_READBACK",
+      "claims": "NO_SIMULATED_PASS_CLAIM"
+    },
+    "plugin_impact": {
+      "native_version": "0.1.54",
+      "native_release": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+      "alive_version": "0.13.49",
+      "alive_release": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+      "metadata_fresh_read": true,
+      "source_scope_only": true,
+      "host_hook_verified": false,
+      "releases_unchanged": true
+    },
+    "external_current": "CLIC_R02_PREVIOUS_SOURCE_READBACK_PRESERVED_NO_NEW_PEER_MUTATION",
+    "open": [
+      "INDEPENDENT_GITHUB_ACTIONS_PUSH_JOB_AND_ARTIFACT",
+      "AUTHORIZED_REMOTE_PROVIDER_AUTHENTICATION",
+      "REAL_NATIVE_ALIVE_PLUGIN_HOST_HOOK",
+      "WHOLE_SUB_LIVECIRCLE_FRESH_BOOT_SEMANTIC_RECONSTRUCTION",
+      "PET_WEB_DISCORD_VISUAL_AUDIO_REAL_SURFACE_ADAPTERS"
+    ],
+    "boundaries": {
+      "no_new_system": true,
+      "no_router": true,
+      "communications_blocked": false,
+      "foreign_writes": false,
+      "facets_autoactivated": false,
+      "whole_revision_unchanged": true,
+      "track_revision_unchanged": true
+    },
+    "pointer_last": true,
+    "next": "EXECUTE_AND_ATTEST_GITHUB_CI_ON_EXACT_HEAD; THEN ADD AUTHORIZED PLUGIN HOST SOURCES AND LIVE SURFACE EVIDENCE"
   }
 }
