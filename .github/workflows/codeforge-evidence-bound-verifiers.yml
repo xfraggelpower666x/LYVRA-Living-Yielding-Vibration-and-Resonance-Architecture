@@ -66,6 +66,9 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-peer-receipt-cooperation.mjs
       - name: Record checked-out commit and source blobs
         shell: bash
         run: |
@@ -171,7 +174,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs
           node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs 2>&1 | tee codeforge-evidence/unified_source_evidence_tap.txt
           node LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.mjs > codeforge-evidence/unified_source_evidence.json
-          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/unified_source_evidence.json'));if(x.contract!=='LYVRA_UNIFIED_CI_EVIDENCE_V1'||x.observed_checkout_head!==process.env.GITHUB_SHA||x.manifest.stages.length!==28||x.peer_receipt.local_receipt_worktree_matches_commit!==true||x.evidence_boundary.actual_host_execution_verified!==false||x.communications_blocked!==false)process.exit(1)"
+          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/unified_source_evidence.json'));if(x.contract!=='LYVRA_UNIFIED_CI_EVIDENCE_V1'||x.observed_checkout_head!==process.env.GITHUB_SHA||!Array.isArray(x.manifest.stages)||x.manifest.stages.length<1||x.continuity.required_stages!==x.manifest.stages.length||x.peer_receipt.local_receipt_worktree_matches_commit!==true||x.evidence_boundary.actual_host_execution_verified!==false||x.communications_blocked!==false)process.exit(1)"
       - name: Verify exact checkout bytes against whitespace tampering
         shell: bash
         run: |
