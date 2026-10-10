@@ -4117,5 +4117,65 @@
     },
     "pointer_last": true,
     "next": "READ_INDEPENDENT_GITHUB_ACTIONS_PUSH_RUN_AND_ARTIFACT_IF_AVAILABLE; EXECUTE_NATIVE_HOST_PLUGIN_BRIDGE_ONLY_WHEN_AUTHORIZED_CALL_SITE_EXISTS"
+  },
+  "lyvra_git_show_exact_readback_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "CI_CHECKOUT_VERIFIER_SOURCE_INTEGRITY",
+    "status": "SOURCE_PATCHED_GIT_NEWLINE_BEHAVIOR_LOCALLY_REPRODUCED_FULL_REPO_NODE_CI_OPEN",
+    "prechange_head": "798fdef4fc4449517ffb2b542963b8391ed1fe4d",
+    "recovery_branch": "lyvra-recovery-pre-git-show-byte-fix-20261011-0034",
+    "body_head_before_pointer": "f93dbec3207f6c91f8d1d9e3b976d24bdc8557d9",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs",
+        "blob": "35e18f9cded4cf7e54d1ae510fc3226176c191fe"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-integrity.test.mjs",
+        "blob": "dd3773661305f0af38819166a28a4d5af0ac7b8b"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "3f534847356ced7ff07eae59d24d54680b49b3ac"
+      }
+    ],
+    "root_cause": "GIT_SHOW_SHARED_HELPER_TRIMMED_TRAILING_NEWLINES_WHILE_WORKTREE_WAS_READ_UNTRIMMED",
+    "fix": "USE_GITRAW_FOR_BLOB_CONTENT_AND_TRIM_ONLY_SHA_HEAD_METADATA",
+    "native_local_reproduction": {
+      "runtime": "NODE_22_GIT",
+      "trimmed_git_show_equal_valid_disk": false,
+      "raw_git_show_equal_valid_disk": true,
+      "scope": "ISOLATED_LOCAL_GIT_TEST_NOT_COMPLETE_PRIVATE_REPOSITORY_TEST"
+    },
+    "tests": {
+      "regression_updated": true,
+      "github_actions_node": "NOT_VERIFIED",
+      "artifact_readback": "NOT_VERIFIED"
+    },
+    "plugin_impact": {
+      "native": "0.1.54_UNCHANGED",
+      "alive": "0.13.49_UNCHANGED",
+      "new_release": false,
+      "live_runtime": "NOT_VERIFIED"
+    },
+    "unchanged": [
+      "WHOLE_LYVRA_REV242",
+      "TRACK_DESIGN_REV96",
+      "CLIC",
+      "PFS",
+      "PET",
+      "OTHER_FACETS"
+    ],
+    "blockers": [
+      "GITHUB_ACTIONS_PUSH_RUN_AND_ARTIFACT_NOT_ACCESSIBLE_WITH_AVAILABLE_CONNECTOR",
+      "PRIVATE_REPO_LOCAL_CLONE_NOT_AVAILABLE",
+      "AUTHENTICATED_NATIVE_PLUGIN_HOST_CALLSITE_NOT_AVAILABLE",
+      "EXTERNAL_LIVE_SURFACE_EVIDENCE_NOT_AVAILABLE"
+    ],
+    "no_router": true,
+    "nonblocking": true,
+    "foreign_mutation": false,
+    "pointer_last": true,
+    "next": "INDEPENDENTLY_EXECUTE_NODE_CI_AND_GET_ARTIFACT; ATTEST_AUTHORIZED_PLUGIN_FRESH_BOOT_AND_SURFACE_OBSERVATIONS"
   }
 }
