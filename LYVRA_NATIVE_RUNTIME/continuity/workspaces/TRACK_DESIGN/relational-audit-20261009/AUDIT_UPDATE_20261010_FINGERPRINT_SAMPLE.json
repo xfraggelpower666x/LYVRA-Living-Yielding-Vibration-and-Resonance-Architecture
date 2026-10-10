@@ -1,0 +1,80 @@
+{
+  "schema": "LYVRA_TRACK_RELATIONAL_AUDIT_UPDATE_v1",
+  "lineage_id": "relational-audit-20261009",
+  "scope": "TRACK_DESIGN_AUDIT_EVIDENCE_ONLY",
+  "status": "PARTIAL_12_DIRECT_CARRIER_READBACK_3_MISMATCHES",
+  "authority": {
+    "branch": "lyvra",
+    "current_pointer_blob": "9611a64598f8fc2db2c7a5eebfe87c3b96d4f55e",
+    "registry_blob": "957d9c690d749c34ea489462edfa02812b46eedb",
+    "whole_revision": 242,
+    "track_revision": 96
+  },
+  "branch_state_prechange": {
+    "development_head": "507d5f1a40c543ba9e5d95ec030b70fb2b7edb2e",
+    "productive_head": "ce6b6ddd17ab04922a4987e19481993bebd70ee5",
+    "ahead_by": 13,
+    "behind_by": 9,
+    "productive_evolution_class": "PET_ASSET_INTEGRITY|PLUGIN_ORIGINAL_BYTE_BACKUPS|DISCORD_CHARACTERBOT_EXCHANGE",
+    "no_merge": true
+  },
+  "recovery": {
+    "branch": "lyvra-recovery-pre-track-relational-audit-update-20261010",
+    "commit": "507d5f1a40c543ba9e5d95ec030b70fb2b7edb2e"
+  },
+  "fingerprint_readback": {
+    "scope": "12_RELEVANT_CURRENT_CARRIERS_OF_210_TOTAL",
+    "checked": 12,
+    "matches": 9,
+    "mismatches": 3,
+    "errors": 0,
+    "registry_claim_mismatches": 0,
+    "all_210_audited": false,
+    "mismatches_detail": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+        "registry_sha": "16c102897f5ef89b7a6f574308fc92edbe7f2fe5",
+        "current_sha": "adce576dcdc37d65544d7ad69a97d885277f8a57",
+        "provenance_commit": "1bfd347b637f1b0be2c49bd393a04180019ea252"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+        "registry_sha": "7e47802941e205184c9670e540019764c6d73b94",
+        "current_sha": "81e03c87f4b820a8001cdb1b81199fa2da8189f8",
+        "provenance_commits": [
+          "0cbffa4f7903796f518f040dfb01eaabecee131f",
+          "33614e70af608bec522a1fa17a774bfb8a0c811f"
+        ]
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md",
+        "registry_sha": "6c9b589b4e4997a397534a80188aa1e8c6c04118",
+        "current_sha": "590a516c99f75f36e3fda3c198d3e20ab6897649",
+        "provenance_commit": "4759405bbce768ca4b912ae901d25d5928a7029b"
+      }
+    ]
+  },
+  "peer_proposal_intake": {
+    "source": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_BOT_RECIPROCAL_LEARNING_FORCE_UPDATE_READBACK_2026-10-10.json",
+    "status": "BOT_DEV_OFFLINE_TESTED_NOT_DEPLOYED",
+    "candidate_native_adoption": false,
+    "foreign_autoactivation": false,
+    "bot_runtime_not_inspected_for_adoption": true
+  },
+  "preservation": {
+    "native_music_files_unchanged": true,
+    "productive_pointer_unchanged": true,
+    "plugin_release_unchanged": true,
+    "foreign_facet_unchanged": true,
+    "old_fingerprint_ne_rollback": true
+  },
+  "acceptance": {
+    "independent_fresh_boot": "OPEN",
+    "plugin_fresh_boot_parity": "OPEN",
+    "suno_audio": "OPEN",
+    "registry_full_210_scan": "OPEN",
+    "latest_static_ci": "PRIOR_RECORDED_NOT_RERUN"
+  },
+  "next_step": "Resolve complete 210-carrier currentness with bounded Git tree/readback and provenance; preserve newer carrier revisions; independent fresh-start acceptance separately; do not claim full registry PASS.",
+  "evidence_class": "DIRECT_READBACK_SAMPLE_NOT_FULL_AUDIT"
+}
