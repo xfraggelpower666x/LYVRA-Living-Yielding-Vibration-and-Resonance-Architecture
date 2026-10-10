@@ -1,0 +1,51 @@
+{
+  "schema": "LYVRA_CODEFORGE_PLUGIN_PET_GOVERNANCE_TRIAGE_RECEIPT_v1",
+  "status": "REVIEW_CLASSIFICATION_TESTED_NONPROMOTING",
+  "prechange_head": "3e30e6dea5a1024b3070e02edf488c13f3c101cf",
+  "recovery_anchor": "3e30e6dea5a1024b3070e02edf488c13f3c101cf",
+  "source_reconciliation": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_PET_PLUGIN_CURRENTNESS_RECONCILIATION_2026-10-10.json",
+  "source_delta": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_release_delta.py",
+  "classifier": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_governance_triage.py",
+  "tests": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_governance_triage.py",
+  "ci": {
+    "run_id": 38014678819,
+    "job_id": 114102221203,
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/38014678819",
+    "conclusion": "success",
+    "regression_test_count": 11
+  },
+  "decisions": [
+    {
+      "surface": "native",
+      "category": "SUPERSEDED_BACKUP_BINDING_PROVENANCE",
+      "next": "Fresh Creator release and fingerprint candidate; new actual approval required"
+    },
+    {
+      "surface": "alive",
+      "category": "SUPERSEDED_BACKUP_BINDING_PROVENANCE",
+      "next": "Fresh Creator release and fingerprint candidate; new actual approval required"
+    },
+    {
+      "surface": "pet_native",
+      "category": "PET_CURRENT_LAGS_NEWER_EVIDENCE",
+      "next": "Governed source correction without overwriting historical provenance"
+    },
+    {
+      "surface": "pet_alive",
+      "category": "PET_CURRENT_LAGS_NEWER_EVIDENCE",
+      "next": "Governed source correction without overwriting historical provenance"
+    }
+  ],
+  "constraints": {
+    "coupled_backup_stable_set_converged": false,
+    "coupled_backup_executable": false,
+    "approval_reused": false,
+    "plugins_updated": false,
+    "pet_deployed": false,
+    "logos_replaced": false,
+    "current_pointer_updated": false,
+    "whole_system_rehydration_claim": false,
+    "foreign_activation": false
+  },
+  "next_gate": "Full Whole authority and newer PET production carrier review before any state correction or approval refresh"
+}
