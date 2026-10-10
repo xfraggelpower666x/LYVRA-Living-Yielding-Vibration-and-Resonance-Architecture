@@ -15,7 +15,7 @@ function sample(taste='OFF') {
 function audit(src) {
  const names=['Title','Extended','My Taste','Suno Controls','Drift Forecast','Style','Lyrics','Interne Box 5','Interne Box 6'];
  const h=[...src.matchAll(/^### ([^\n]+)$/gm)];
- const sections=h.map((v,i)=>{const title=v[1];const name=names.find(n=>title===n||title.startsWith(n+' — '));return {name,title,body:src.slice(v.index+v[0].length, i+1<h.length?h[i+1].index:src.length)};});
+ const sections=h.map((v,i)=>{const title=v[1];const historic=title.match(/^Box ([1-4]) — /);const byNumber={'1':'Title','2':'Extended','3':'Style','4':'Lyrics'};const name=(historic?byNumber[historic[1]]:null)||names.find(n=>title===n||title.startsWith(n+' — '));return {name,title,body:src.slice(v.index+v[0].length, i+1<h.length?h[i+1].index:src.length)};});
  const err=[];const found=sections.map(s=>s.name);
  const decisions=[...src.matchAll(/\bMy Taste:\s*(ON|OFF|UNKNOWN)\b/g)];
  if(decisions.length!==1)err.push('TASTE_DECISION');
@@ -36,11 +36,26 @@ function audit(src) {
 test('My Taste OFF valid',()=>assert.deepEqual(audit(sample('OFF')),[]));
 test('My Taste ON with fifth copybox valid',()=>assert.deepEqual(audit(sample('ON')),[]));
 test('My Taste UNKNOWN without fifth copybox valid',()=>assert.deepEqual(audit(sample('UNKNOWN')),[]));
-test('user fresh-chat regression is rejected',()=>{
- const old=box('Title','ECHO',80)+box('Extended','Dry motor',1000)+box('Style','Psytrance',1000)+box('Lyrics','[Intro]',5000)+'### Interne Box 5 — Guard\n';
- assert.ok(audit(old).includes('CREATOR_ORDER_OR_MISSING_SURFACE'));
- assert.ok(audit(old).includes('TASTE_DECISION'));
+test('redacted fresh-chat export STRUCTURE is rejected for observed failures',()=>{
+ // Faithful heading/box structure only; original user chat and lyrics are not committed.
+ const output=[
+   '### Box 1 — Title\n'+C+'text\nECHO\n'+C,
+   '### Box 2 — Advanced Extended\n'+C+'text\nDry motor\n'+C,
+   '### Box 3 — Style\n'+C+'text\nPsytrance\n'+C,
+   '### Box 4 — Lyrics / Structure\n'+C+'text\n[Intro]\n'+C,
+   '### Interne Box 5 — Kausaler Guard\nAudit text',
+   '### Interne Box 6 — Evidenz- und Drift-Guard\nAudit text'
+ ].join('\n')+'\n';
+ const issues=audit(output);
+ assert.ok(issues.includes('CREATOR_ORDER_OR_MISSING_SURFACE'));
+ assert.ok(issues.includes('TASTE_DECISION'));
+ assert.ok(issues.includes('INTERNAL_GUARD_EXPOSED'));
+ for(const field of ['Title','Extended','Style','Lyrics'])assert.ok(issues.includes('INVALID_COUNT_'+field));
 });
+test('valid surface with neutral control narrative is not accidental historic heading fixture',()=>{
+ assert.deepEqual(audit(sample('UNKNOWN')),[]);
+});
+
 test('missing controls rejected',()=>assert.ok(audit(sample().replace(/### Suno Controls[\s\S]*?(?=### Drift Forecast)/,'' )).length));
 test('missing drift rejected',()=>assert.ok(audit(sample().replace(/### Drift Forecast[\s\S]*?(?=### Style)/,'' )).length));
 test('wrong order rejected',()=>assert.ok(audit(sample().replace('### Suno Controls','### TEMP').replace('### Drift Forecast','### Suno Controls').replace('### TEMP','### Drift Forecast')).length));
