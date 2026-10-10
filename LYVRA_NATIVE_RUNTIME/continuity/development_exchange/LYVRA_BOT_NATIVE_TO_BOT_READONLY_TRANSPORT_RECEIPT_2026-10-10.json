@@ -1,0 +1,53 @@
+{
+  "schema": "lyvra.codeforge.bot_handoff_transport_receipt.v1",
+  "status": "NATIVE_TO_BOT_READONLY_HANDOFF_RECEIVED_CI_PASS",
+  "evidence_source": "REAL_GITHUB_ACTIONS_EXECUTION_LOG",
+  "source_repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "source_branch": "lyvra",
+  "source_head_observed_by_receiver": "24a9d4c9d8868ede0cb3bc0b73e1d5ae5d046cc8",
+  "source_handoff_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/OUTBOUND_TO_LYVRA_CHARACTERBOT_CODEFORGE_HANDOFF_2026-10-10.json",
+  "source_handoff_blob_sha1": "2efc060920c6b6b762478faf1bce06fb308acf3f",
+  "source_handoff_event_id": "LYVRA-CODEFORGE-BOT-EVOLUTION-2026-10-10-001",
+  "bot_repo": "xfraggelpower666x/666LYVRACHARAKTERBOTAI",
+  "bot_branch": "lyvrabot-dev-native-livecircle-20261002",
+  "bot_head": "1e39f19d4a0ab2416800d95e055809e5eedecfca",
+  "bot_code_paths": [
+    "native_bridge/repo_handoff_probe.py",
+    "tests/test_repo_handoff_probe.py",
+    ".github/workflows/reciprocal-learning-dev-checks.yml"
+  ],
+  "run_id": 38012791734,
+  "job_id": 114096342070,
+  "run_url": "https://github.com/xfraggelpower666x/666LYVRACHARAKTERBOTAI/actions/runs/38012791734",
+  "ci_conclusion": "success",
+  "ci_tests_run": 22,
+  "received_candidate_status": "READ_ONLY_RECEIVED_CANDIDATE",
+  "proposal_ids": [
+    "BOT-COMMUNICATION-001",
+    "BOT-EVOLUTION-HANDOFF-003",
+    "BOT-MUSIC-KNOWLEDGE-002"
+  ],
+  "verified_behavior": [
+    "GitHub pinned HEAD GET",
+    "Handoff file SHA-1 Git blob independently recomputed",
+    "HEAD checked unchanged during read",
+    "Exact event and three proposal identifiers read",
+    "Offline unittest success"
+  ],
+  "boundaries": {
+    "native_received_return_learning": false,
+    "bot_accepted_proposal": false,
+    "bot_deployed": false,
+    "bot_production_changed": false,
+    "native_learning_adopted": false,
+    "native_pointer_changed": false,
+    "scheduled_continuous_transport": false,
+    "whole_rehydration_claim": false,
+    "privacy_private_discord_data_read": false
+  },
+  "recovery": {
+    "mode": "R1_COMMIT_ANCHOR",
+    "prechange_head": "24a9d4c9d8868ede0cb3bc0b73e1d5ae5d046cc8",
+    "metadata_only": true
+  }
+}
