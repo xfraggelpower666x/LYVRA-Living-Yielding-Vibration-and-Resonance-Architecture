@@ -4052,5 +4052,70 @@
     },
     "pointer_last": true,
     "next": "EXECUTE_AND_ATTEST_GITHUB_CI_ON_EXACT_HEAD; THEN ADD AUTHORIZED PLUGIN HOST SOURCES AND LIVE SURFACE EVIDENCE"
+  },
+  "lyvra_checkout_exact_integrity_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "scope": "VERIFICATION_WORKER_CI_SOURCE_INTEGRITY_ONLY",
+    "status": "EXACT_CHECKOUT_BYTE_INTEGRITY_PATCHED_PRODUCTION_SOURCE_READBACK_NATIVE_NODE_REPO_TEST_PENDING",
+    "prechange_head": "c2f8198bb17dd629227d408d569cefede4ab189e",
+    "recovery_branch": "lyvra-recovery-pre-exact-checkout-integrity-20261011-0030",
+    "body_head_before_pointer": "10df7839f3913ed01e71440fe900f1bb260a09e7",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-readback.mjs",
+        "blob": "d87d0d1dcd92c96b9c2f6daca1384935e91260b5"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-checkout-integrity.test.mjs",
+        "blob": "a4e9e12b6ecd92b4ed7b47c555a45c6ec049c898"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "3f534847356ced7ff07eae59d24d54680b49b3ac"
+      }
+    ],
+    "reproduction": {
+      "node": "v22.16.0",
+      "local_temp_git": "OLD_TRIM_END_FALSE_PASS_CONFIRMED_EXACT_BYTES_REJECTS",
+      "test_fixture": "ONE_EXTRA_TRAILING_NEWLINE",
+      "test_status": "LOCAL_REPRODUCTION_PASSED_NEW_REPOSITORY_TEST_AUTHORED_NOT_EXECUTED_IN_REAL_CLONE"
+    },
+    "ci": {
+      "configured": true,
+      "push_run": "NOT_VERIFIED_GITHUB_ACTIONS_DISPATCH_AND_PUSH_RUN_LIST_UNAVAILABLE",
+      "remote_clone": "UNAVAILABLE_CONTAINER_GITHUB_DNS",
+      "artifact": "NOT_OBSERVED"
+    },
+    "plugins": {
+      "native": {
+        "version": "0.1.54",
+        "release": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+        "metadata_verified": true
+      },
+      "alive": {
+        "version": "0.13.49",
+        "release": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+        "metadata_verified": true
+      },
+      "new_release": false,
+      "host_hook": "NOT_VERIFIED"
+    },
+    "still_open": [
+      "INDEPENDENT_NODE_GITHUB_ACTIONS_RUN_AND_ARTIFACT",
+      "REMOTE_PROVIDER_AUTHENTICATION",
+      "NATIVE_ALIVE_REAL_HOST_INVOCATION",
+      "WHOLE_AND_SUB_LIVECIRCLE_SEMANTIC_FRESH_BOOT",
+      "PET_WEB_DISCORD_VISUAL_AUDIO_RUNTIME_ACCEPTANCE"
+    ],
+    "boundaries": {
+      "no_new_worker": true,
+      "no_router": true,
+      "nonblocking": true,
+      "foreign_mutations": false,
+      "facets_unchanged": true,
+      "whole_track_revision_unchanged": true
+    },
+    "pointer_last": true,
+    "next": "READ_INDEPENDENT_GITHUB_ACTIONS_PUSH_RUN_AND_ARTIFACT_IF_AVAILABLE; EXECUTE_NATIVE_HOST_PLUGIN_BRIDGE_ONLY_WHEN_AUTHORIZED_CALL_SITE_EXISTS"
   }
 }
