@@ -1,0 +1,37 @@
+{
+  "schema": "LYVRA_PET_PLUGIN_SIX_REFERENCE_RECONCILIATION_READBACK_v1",
+  "status": "SIX_RELEASE_REFERENCES_RECONCILED_REPO_READBACK_PASS",
+  "date": "2026-10-10",
+  "observed_head": "52cfb6ea491981d1db09b07173924b7c396d9a69",
+  "changed_carrier_blobs": {
+    "LYVRA_PET/livecircle/CURRENT_STATE.json": "1f5907809dff107a7e8dc2e4ed618bacc8a23b82",
+    "LYVRA_PET/app/APP_CURRENT.json": "4b5df15fa421d53e3a376add85ff985b850f822a",
+    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json": "262dc050abe94fd35a67cd74af13a7ec04cfda46"
+  },
+  "verified_versions": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.54",
+      "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.49",
+      "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+    }
+  },
+  "ci": {
+    "run_id": 38021235695,
+    "conclusion": "success",
+    "dry_run_postcondition": "ALREADY_RECONCILED_NO_PATCH_NEEDED",
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/38021235695"
+  },
+  "explicit_limits": {
+    "whole_system_rehydration_pass_claimed": false,
+    "whole_current_pointer_published_for_this_pet_change": false,
+    "coupled_backup_approval_granted": false,
+    "pet_worker_deployed": false,
+    "original_plugin_assets_mutated": false
+  },
+  "previous_recovery_head": "564c86db3ad5aed6f1d65673c071a8c651ef65dc"
+}
