@@ -3419,5 +3419,41 @@
     "pet": "UNCHANGED",
     "next": "GITHUB_ACTIONS_RUN_READBACK; TRUSTED_OBSERVATION_ADAPTER; SEMANTIC_REASONS_VALIDATION; DYNAMIC_FACET_COVERAGE; GOVERNED_RUNTIME_PLUGIN_INTEGRATION",
     "pointer_last": true
+  },
+  "lyvra_w04_provider_readback_causal_2026_10_10": {
+    "status": "W04_SOURCE_READBACK_VERIFIED_V8_13_OF_13_RUNTIME_OPEN",
+    "owner": "WHOLE_LYVRA",
+    "scope": "NATIVE_ADVISORY_VERIFICATION_CANDIDATE",
+    "prechange_head": "8511cee5d0d2c2081a886cde9e5ba0cad3a829d4",
+    "prechange_recovery_branch": "lyvra-recovery-pre-w04-20261010-1726",
+    "body_head_before_pointer": "2bcf4ac0445a21eadc25760c3efe946c77369deb",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs",
+    "source_blob": "4cfd8e493f43bcbdab2d1cbf9d878360f082461f",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs",
+    "test_blob": "81d6d368e3ce832b08d9721799bcbec28cfc1e63",
+    "workflow_path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "workflow_blob": "df6f3457d284c25745b544bd35ce4a6ad6de2c5c",
+    "new_tests": 13,
+    "isolated_v8": "13_PASS_ADAPTED_ASSERTIONS",
+    "node_ci": "NOT_VERIFIED",
+    "trusted_adapter": "CALLER_BOUND_PROVIDER_READBACK_NOT_AUTONOMOUS_AUTHENTICATION",
+    "semantic_decision": "EVIDENCE_REFERENCES_AND_COUNTERHYPOTHESIS_ONLY_NO_EMPIRICAL_CAUSALITY_PROOF",
+    "currentness": "EXPECTED_HEAD_CONSISTENCY_ONLY",
+    "w01_w02_w03": "PRESERVED",
+    "plugin_impact": {
+      "native": "NO_RELEASE_NO_RUNTIME_INTEGRATION",
+      "account": "NO_RELEASE_NO_RUNTIME_INTEGRATION",
+      "parity": "NOT_TESTED",
+      "kind": "REPOSITORY_SOURCE_CANDIDATE"
+    },
+    "whole_lifecircle": "UNCHANGED",
+    "pet": "UNCHANGED",
+    "music_facets": "UNCHANGED",
+    "clic_ack": "RECIPROCAL_READBACK_VERIFIED",
+    "auto_transport": "NOT_VERIFIED",
+    "foreign_writes": false,
+    "communication_nonblocking": true,
+    "pointer_last": true,
+    "next": "GET_CI_RUN_EVIDENCE; REAL_PROVIDER_ATTESTED_READBACK; SEMANTIC_DISCRIMINATING_TRIALS; GOVERNED_PLUGIN_SURFACE_ADAPTERS"
   }
 }
