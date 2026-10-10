@@ -3585,5 +3585,62 @@
     "communication_nonblocking": true,
     "pointer_last": true,
     "next": "RUN_NODE_CI_WITH_GENERATED_DRAFT_READBACK_THEN_REAL_SUNO_AUDIO_AND_CREATOR_FEEDBACK_AS_SEPARATE_FACET_EVIDENCE"
+  },
+  "lyvra_verification_execution_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "COMPOSED_RUNNER_EXECUTABLE_SOURCE_AND_REPORT_READBACK_VERIFIED_LIVE_RUNTIME_OPEN",
+    "scope": "ADVISORY_NATIVE_VERIFICATION_EXECUTION_WITHOUT_AUTOMATED_HOST_ACTIVATION",
+    "prechange_head": "81fe1318985b33f87300aa695d2cbce27de46278",
+    "prechange_recovery_branch": "lyvra-recovery-pre-verification-execution-20261010-1753",
+    "body_head_before_pointer": "7c36fa0ee4de897d4382c8dcc0548437daa6d33e",
+    "artifacts": {
+      "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.mjs": "d8e1355ac17db52314d5b78ff9d2d2f5eb07e057",
+      "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-cli.mjs": "351dd423c627480e4c57017d4a5dfd3239ad6cdd",
+      "LYVRA_NATIVE_RUNTIME/development/verification/lyvra-verification-runner.test.mjs": "f71a108c069e0f71d46d6f948a4c3f1ac2eea881",
+      "LYVRA_NATIVE_RUNTIME/development/verification/fixtures/track-causal-smoke.json": "a42563afe0e7bdcaa636469ff738ce0715069faa",
+      "LYVRA_NATIVE_RUNTIME/development/verification/examples/TRACK_CAUSAL_VERIFICATION_REPORT.json": "68f844d05622723fc45cdd138fc56dc5d4452186",
+      ".github/workflows/codeforge-evidence-bound-verifiers.yml": "e250b82209a0225145d768800645df22ada3c884"
+    },
+    "regressions": {
+      "composed_runner_tests": "8_OF_8_ISOLATED_V8_PASS",
+      "existing_worker_tests": "48_OF_48_PREVIOUSLY_PASSED",
+      "node22_ci": "NOT_VERIFIED"
+    },
+    "execution": {
+      "type": "COMPOSED_PURE_FUNCTION_V8_REPOSITORY_SOURCE",
+      "scenario": "TRACK_CAUSAL_SMOKE",
+      "report": "PUBLISHED",
+      "report_verdict": "REVIEW",
+      "reason": "PROVIDER_AND_HOST_EVIDENCE_NOT_AUTHENTICATED",
+      "node_cli": "SOURCE_IMPLEMENTED_NOT_INDEPENDENTLY_RUN",
+      "github_actions": "CONFIGURED_NOT_OBSERVED"
+    },
+    "capabilities": [
+      "ONE_COMPOSED_W01_W05_EXECUTION_FUNCTION",
+      "NODE_CLI_JSON_REPORT",
+      "MUSIC_CAUSAL_CONTRADICTION_AND_IRRELEVANT_CONTROL",
+      "COMMUNICATION_VISUAL_FACET_EVIDENCE",
+      "PROVENANCE_AND_LIFECIRCLE_DIAGNOSTICS",
+      "COUNTERHYPOTHESIS",
+      "READ_ONLY_NONBLOCKING"
+    ],
+    "boundaries": {
+      "whole_lyvra_authority": true,
+      "no_new_system": true,
+      "no_router": true,
+      "no_message_gate": true,
+      "no_foreign_writes": true,
+      "no_facet_activation": true,
+      "no_automatic_learning_promotion": true
+    },
+    "plugin_impact": {
+      "native": "NOT_WIRED_OR_RELEASED",
+      "account": "NOT_WIRED_OR_RELEASED",
+      "parity": "OPEN"
+    },
+    "track_design": "UNCHANGED_EXISTING_PRACTICAL_SCENARIO_USED",
+    "clic_receipt": "PREVIOUS_RECIPROCAL_READBACK_PRESERVED",
+    "pointer_last": true,
+    "next": "INDEPENDENT_NODE_CI_RUN_AND_ARTIFACT; CONNECT_HOST_AUTHORIZED_SOURCE_READBACK; ACTUAL_FRESH_BOOT_AND_PLUGIN_PARITY"
   }
 }
