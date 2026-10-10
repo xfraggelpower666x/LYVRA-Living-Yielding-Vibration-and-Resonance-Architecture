@@ -3,7 +3,7 @@
 import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 const git=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
-const valid=x=>typeof x==='string'&&x.startsWith('LYVRA_NATIVE_RUNTIME/')&&!x.includes('..')&&!x.includes('\\')&&!x.includes('\0');
+const valid=x=>typeof x==='string'&&['LYVRA_NATIVE_RUNTIME/','LYVRA_PET/','WEBLyvra/'].some(root=>x.startsWith(root))&&!x.includes('..')&&!x.includes('\\')&&!x.includes('\0');
 export function inspectCheckoutManifest({manifestPath='LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json',expectedHead}={}){
  if(!valid(manifestPath))throw Error('INVALID_MANIFEST_PATH');
  const head=git('rev-parse','HEAD');
