@@ -4,14 +4,16 @@
   "lineage_id": "relational-audit-20261009",
   "handoff_id": "LYVRA-TRACK-RELATIONAL-AUDIT-20261009T212447Z",
   "handoff_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/TRACK_DESIGN/relational-audit-20261009/LYVRA_NEW_CHAT_20261009T212447Z.json",
-  "status": "DEV_SCOPED_AUDIT_PROVENANCE_PARTIAL_READBACK_VERIFIED",
+  "status": "DEV_SCOPED_AUDIT_FINGERPRINT_SAMPLE_PARTIAL_READBACK_VERIFIED",
   "global_workspace_pointer": false,
   "last_ci_verified_stage": "TWO_CONTEXT_HYPOTHETICAL_TRACE_CI_PASS",
-  "latest_audit_evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/TRACK_DESIGN/relational-audit-20261009/AUDIT_UPDATE_20261009_FINGERPRINT_PROVENANCE.json",
-  "latest_audit_evidence_blob": "5b79a205a94d41d0d1fb754095b20e45dc3f719c",
-  "latest_audit_stage": "FINGERPRINT_PROVENANCE_PARTIAL_TWO_DIRECT_MISMATCHES",
+  "latest_audit_evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/TRACK_DESIGN/relational-audit-20261009/AUDIT_UPDATE_20261010_FINGERPRINT_SAMPLE.json",
+  "latest_audit_evidence_blob": "e7a451792da7795286943c22623ad4463ca6e121",
+  "latest_audit_stage": "FINGERPRINT_CURRENT_12_CHECKED_9_MATCH_3_MISMATCH",
   "runtime_fresh_boot_acceptance": "OPEN",
   "renderer_audio_acceptance": "OPEN",
   "plugin_fresh_boot_parity": "OPEN",
-  "productive_authority_mutated": false
+  "productive_authority_mutated": false,
+  "previous_audit_evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/TRACK_DESIGN/relational-audit-20261009/AUDIT_UPDATE_20261009_FINGERPRINT_PROVENANCE.json",
+  "full_registry_scan": "OPEN"
 }
