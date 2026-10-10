@@ -5,6 +5,8 @@ on:
     paths:
       - 'LYVRA_NATIVE_RUNTIME/development/CODEFORGE_UNIFIED_PLUGIN_PET_RECIPROCAL_EXCHANGE_2026-10-10.md'
       - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_release_delta.py'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_release_delta.py'
       - '.github/workflows/codeforge-plugin-pet-reciprocal-audit.yml'
   schedule:
     - cron: '23 */6 * * *'
@@ -31,6 +33,11 @@ jobs:
         run: python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py
       - name: Audit Native and ALIVE repository release bindings and Pet LiveCircle
         run: python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py
+      - name: Test factual release-delta review and report candidate findings
+        run: |
+          python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_release_delta.py
+          python -m unittest -v LYVRA_NATIVE_RUNTIME/continuity/development_exchange/test_plugin_pet_release_delta.py
+          python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_release_delta.py
       - name: Protect custom brand assets and Creator originals
         run: |
           test -s LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.1.54/lyvra-native-runtime_original.tar.gz
