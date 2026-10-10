@@ -3455,5 +3455,41 @@
     "communication_nonblocking": true,
     "pointer_last": true,
     "next": "GET_CI_RUN_EVIDENCE; REAL_PROVIDER_ATTESTED_READBACK; SEMANTIC_DISCRIMINATING_TRIALS; GOVERNED_PLUGIN_SURFACE_ADAPTERS"
+  },
+  "lyvra_w05_provider_trust_boundary_2026_10_10": {
+    "status": "W05_CALLER_ATTESTATION_DEMOTED_SOURCE_READBACK_VERIFIED_ISOLATED_V8_48_OF_48",
+    "owner": "WHOLE_LYVRA",
+    "prechange_head": "7506f59e5600f9068ca63860359d049d214cae4e",
+    "recovery_branch": "lyvra-recovery-pre-w05-trust-boundary-20261010-1733",
+    "body_head_before_pointer": "42f152eb9e28c6e7a041d4f7cc1dba94dbb9cb48",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs",
+    "source_blob": "51b62b4f310d2924c2742f64220c67507ac1da70",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs",
+    "test_blob": "28406c003c7cf3a4768edb33b2c7e382d69bd008",
+    "workflow_path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "workflow_blob": "df6f3457d284c25745b544bd35ce4a6ad6de2c5c",
+    "tests_total": 48,
+    "tests_w05_added": 4,
+    "tests_executed_in": "ISOLATED_V8_ADAPTED_ASSERTIONS",
+    "tests_passed": 48,
+    "node_github_actions": "NOT_VERIFIED",
+    "correction": {
+      "self_declared_provider_flag": "DOES_NOT_CREATE_TRUSTED_READBACK",
+      "provider_readback_on_caller_attestation": false,
+      "provider_authenticity_verified": false,
+      "status": "CALLER_REFERENCES_MATCH_UNVERIFIED"
+    },
+    "residual": "ONLY_TRUSTED_CALLER_INTEGRATION_CAN_ATTEST_ACTUAL_PROVIDER_READBACK; HOST_RUNTIME_NOT_WIRED",
+    "plugin_impact": {
+      "native": "SOURCE_CANDIDATE_NO_RUNTIME_RELEASE",
+      "account": "SOURCE_CANDIDATE_NO_RUNTIME_RELEASE",
+      "parity": "OPEN"
+    },
+    "clic_r02": "RECIPROCAL_SOURCE_READBACK_PREVIOUSLY_VERIFIED",
+    "communication_nonblocking": true,
+    "no_foreign_writes": true,
+    "whole_and_facets": "UNCHANGED",
+    "pointer_last": true,
+    "next": "INDEPENDENT_NODE_CI_RUN; PROVIDER_BOUNDARY_INTEGRATION; FRESH_BOOT_AND_SURFACE_PARITY"
   }
 }
