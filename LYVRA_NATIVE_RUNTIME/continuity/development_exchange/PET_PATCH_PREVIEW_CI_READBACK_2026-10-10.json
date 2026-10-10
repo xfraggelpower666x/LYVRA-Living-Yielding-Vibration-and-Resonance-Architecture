@@ -1,0 +1,33 @@
+{
+  "schema": "LYVRA_PET_PATCH_PREVIEW_CI_READBACK_v1",
+  "status": "CI_VERIFIED_THREE_FILE_MEMORY_ONLY_PREVIEW",
+  "prechange_head": "2b44ffbb564b9d9726b2ba6f9e368295352ff73a",
+  "ci": {
+    "run_id": 38020859420,
+    "job_id": 114121324013,
+    "result": "success",
+    "test_count": 29,
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/38020859420"
+  },
+  "pinned_sources": {
+    "LYVRA_PET/livecircle/CURRENT_STATE.json": "bf7690fbc8293468fdfb2b862d012bd62100021a",
+    "LYVRA_PET/app/APP_CURRENT.json": "ea92ab3670d6788e0b8e3b78ddbbf81c43869bf1",
+    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json": "97cf863425eefb118386d0b739619c061c2e7140"
+  },
+  "candidate_checks": [
+    "native v0.1.54 and ALIVE v0.13.49 release IDs exact in all three memory-only proposed files",
+    "all unrelated PET fields unchanged",
+    "immutable source files unchanged",
+    "repeat runs stable",
+    "foreign ID rejected"
+  ],
+  "constraints": {
+    "current_files_modified": false,
+    "pointer_modified": false,
+    "plugin_creator_changed": false,
+    "pet_worker_deployed": false,
+    "backup_approval_renewed": false,
+    "whole_rehydration_fully_verified_in_this_turn": false
+  },
+  "next": "Whole native and PET sub-rehydration coverage before governance-bound promotion; pointer LAST"
+}
