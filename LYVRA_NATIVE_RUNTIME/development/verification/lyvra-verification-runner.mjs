@@ -4,6 +4,7 @@ import {verifyCommunication,verifyVisualStatus,verifyFacetRelations,verifyEviden
 import {inspectClaim} from './evidence-bound-verifier.mjs';
 import {verifyProvenance,verifyCausalDecision,inspectLifeCircleManifest} from './provenance-causal-lifecircle-verifier.mjs';
 import {bindProviderReadback,assessCausalSupport} from './provider-observation-adapter.mjs';
+import {inspectCooperation} from './cooperation-continuity-verifier.mjs';
 export const RUNNER_BOUNDARIES=Object.freeze({owner:'WHOLE_LYVRA',new_system:false,daemon:false,router:false,blocks_communications:false,issues_orders:false,foreign_mutations:false,auto_promotions:false});
 const plain=v=>v&&typeof v==='object'&&!Array.isArray(v);
 const statuses=Object.freeze({SOURCE:'SOURCE_ONLY',SEMANTIC:'HYPOTHESIS_ONLY',RUNTIME:'NOT_OBSERVED'});
@@ -22,6 +23,7 @@ export function runVerification(input={}){
  const visual={...visualClaim,status:visualClaim.status==='FAIL'?'FAIL':'UNVERIFIED_VISUAL_CLAIM',
   render_evidence:false,issues:[...visualClaim.issues,'VISUAL_RENDER_NOT_INDEPENDENTLY_ATTESTED']};
  const relations=verifyFacetRelations(facets);
+ const crossSurfaceCooperation=inspectCooperation(data.cooperation_input);
  // W01 booleans are descriptive claims, even if internally coherent.
  const evidenceClaim=verifyEvidence(data.evidence);
  const evidence={...evidenceClaim,status:evidenceClaim.status==='PARTIAL'?'PARTIAL':'UNVERIFIED_CALLER_CLAIM',
@@ -37,7 +39,7 @@ export function runVerification(input={}){
  const claims=Array.isArray(data.claims)?data.claims.map(c=>inspectClaim(c)):[];
  const issues=[];
  const item=(key,x)=>{for(const code of [...(x.issues||[]),...(x.violations||[])])issues.push({area:key,code})};
- for(const [k,x] of Object.entries({communication,visual,relations,evidence,provider,provenance,causal,counter,lifecircle}))item(k,x);
+ for(const [k,x] of Object.entries({communication,visual,relations,crossSurfaceCooperation,evidence,provider,provenance,causal,counter,lifecircle}))item(k,x);
  claims.forEach((c,i)=>item('claims_'+i,c));
  // Caller data is never allowed to assert observed host facts via flags or self-attestations.
  // CI acceptance requires an independent GitHub Actions readback and is not implemented here.
@@ -49,7 +51,7 @@ export function runVerification(input={}){
   owner:'WHOLE_LYVRA',verdict,
   input_completeness:{provided:requiredAreas.length-missingInputs.length,required:requiredAreas.length,missingInputs},
   source:{reference:source.reference??null,expected_head:source.expected_head??null,integrity:'NOT_INDEPENDENTLY_AUTHENTICATED_BY_RUNNER'},
-  results:{communication,visual,relations,evidence,provider,provenance,causal,counter,lifecircle,claims},
+  results:{communication,visual,relations,crossSurfaceCooperation,evidence,provider,provenance,causal,counter,lifecircle,claims},
   cooperation:{status:'ADVISORY_ONLY',provider_bound:false,host_bound:false,
    caller_claims_not_authentication:true,authorized_channels_untouched:true,
    channel_discovery:'OPEN_NOT_GATEKEEPED',foreign_authority_transfer:false,
