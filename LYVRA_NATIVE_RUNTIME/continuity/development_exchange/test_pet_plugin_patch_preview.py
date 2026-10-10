@@ -39,5 +39,49 @@ class PreviewTests(unittest.TestCase):
             with self.assertRaises(ValueError): p.preview(root)
 
 
+    def test_exact_pinned_versions_in_all_three_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            fixtures(root)
+            report = p.preview(root)
+            expected = {"native": ("0.1.54", "n54"),
+                        "alive": ("0.13.49", "a49")}
+            targets = {name: (nested, keys) for name, _, nested, keys in d.CURRENT_CARRIERS}
+            for record, (name, _, _, _) in zip(report["files"], d.CURRENT_CARRIERS):
+                candidate = record["candidate"]
+                nested, keys = targets[name]
+                for surface, (version, release_id) in expected.items():
+                    plugin = candidate[nested][keys[surface]] if nested else candidate[keys[surface]]
+                    self.assertEqual((plugin["version"], plugin["release_id"]),
+                                     (version, release_id))
+
+    def test_unrelated_fields_survive_candidate_render(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            docs = fixtures(root)
+            for _, path, _, _ in d.CURRENT_CARRIERS:
+                docs[path]["custom_logo_sha256"] = "unique-user-asset"
+                docs[path]["worker_production_status"] = "preserved"
+                docs[path]["relationship_authority"] = "WHOLE_LYVRA_ONLY"
+                (root / path).write_text(json.dumps(docs[path]))
+            result = p.preview(root)
+            for item in result["files"]:
+                self.assertEqual(item["candidate"]["custom_logo_sha256"], "unique-user-asset")
+                self.assertEqual(item["candidate"]["worker_production_status"], "preserved")
+                self.assertEqual(item["candidate"]["relationship_authority"], "WHOLE_LYVRA_ONLY")
+
+    def test_preview_idempotent_and_no_release_collision(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            fixtures(root)
+            first, second = p.preview(root), p.preview(root)
+            self.assertEqual(
+                [(x["path"], x["candidate_semantic_sha256"]) for x in first["files"]],
+                [(x["path"], x["candidate_semantic_sha256"]) for x in second["files"]]
+            )
+            self.assertFalse(first["backup_approval"])
+            self.assertFalse(first["pointer_changed"])
+
+
 if __name__=="__main__":
     unittest.main()
