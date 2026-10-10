@@ -14,3 +14,11 @@ test('supersession requires traceable matching predecessor',()=>{const r=inspect
 test('supersession identity present can be retained without pretending adoption',()=>{const r=inspectCooperation({exchanges:[{...r02,id:'R01'}, {...r02,id:'R02',supersedes:'R01'}]});assert.ok(!r.issues.some(x=>x.code==='SUPERSEDED_REFERENCE_NOT_PRESENT'));assert.equal(r.coverage.host_verified_exchanges,0)});
 test('duplicate exchange identifiers are detected',()=>{const r=inspectCooperation({exchanges:[r02,r02]});assert.ok(r.issues.some(x=>x.code==='DUPLICATE_EXCHANGE_ID'))});
 test('pet and Web dashboards remain distinct surfaces',()=>{const r=inspectCooperation({exchanges:[{...r02,id:'PET',channel:'PET_WORKER'},{...r02,id:'WEB',channel:'WEB_DASHBOARD'}]});assert.deepEqual(r.channels_discovered,['PET_WORKER','WEB_DASHBOARD']);assert.equal(r.network_effect.foreign_mutation,false)});
+
+test('ordinary proposal without unsupported claims is advisory not a defect',()=>{
+ const x=structuredClone(r02);x.claims={};x.relation={cause:'A visual relation was proposed',proposed_effect:'Evaluate LYVRA contextual presentation',counterrelation:'No automatic adoption'};
+ const r=inspectCooperation({exchanges:[x]});
+ assert.equal(r.status,'ADVISORY_ONLY');
+ assert.ok(r.observations.some(x=>x.code==='MESSAGE_NOT_AUTOMATIC_AUTHORITY'));
+ assert.ok(!r.issues.some(x=>x.code==='MESSAGE_NOT_AUTOMATIC_AUTHORITY'));
+});
