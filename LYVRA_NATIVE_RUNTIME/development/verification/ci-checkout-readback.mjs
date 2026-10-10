@@ -5,7 +5,8 @@ import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import {runVerification} from './lyvra-verification-runner.mjs';
 
-const git=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe'],maxBuffer:4*1024*1024}).trim();
+const gitRaw=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe'],maxBuffer:4*1024*1024});
+const git=(...args)=>gitRaw(...args).trim();
 const validPath=p=>typeof p==='string'&&p.startsWith('LYVRA_NATIVE_RUNTIME/')&&!p.includes('..')&&!p.includes('\\')&&!p.includes('\0')&&!p.startsWith('/');
 export function runTrustedCheckout({fixturePath,outputPath,expectedHead}={}){
  if(!validPath(fixturePath)||!validPath(outputPath))throw Error('INVALID_CHECKOUT_PATH');
@@ -15,7 +16,7 @@ export function runTrustedCheckout({fixturePath,outputPath,expectedHead}={}){
  if(!expectedHead||expectedHead!==head)throw Error('CHECKOUT_HEAD_MISMATCH');
  git('ls-files','--error-unmatch','--',fixturePath);
  const blob=git('rev-parse','HEAD:'+fixturePath);
- const committed=git('show','HEAD:'+fixturePath);
+ const committed=gitRaw('show','HEAD:'+fixturePath);
  const onDisk=readFileSync(fixturePath,'utf8');
  if(committed!==onDisk)throw Error('WORKTREE_DIFFERS_FROM_COMMITTED_FIXTURE');
  const report=runVerification(JSON.parse(onDisk));
