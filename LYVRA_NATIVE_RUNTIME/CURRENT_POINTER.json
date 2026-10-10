@@ -3288,5 +3288,53 @@
     "no_new_router": true,
     "communication_nonblocking": true,
     "pointer_last": true
+  },
+  "lyvra_clic_r02_protocol_worker_2026_10_10": {
+    "status": "REPOSITORY_SOURCE_AND_STRUCTURAL_READBACK_VERIFIED_RUNTIME_TEST_PENDING",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "base_head": "50c7d80470bd25100d35cd59abcefe9011584ad7",
+    "prechange_recovery_branch": "lyvra-recovery-pre-peer-schema-worker-20261010-0655",
+    "body_head_before_pointer": "37156e48dfbca30f6314d6b03ed154efadb361f5",
+    "protocol_compatibility": {
+      "path": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/R02_PROTOCOL_COMPATIBILITY.json",
+      "blob": "e855ca6ddd04cdae7c16de1e49e252d12bb950a7",
+      "source_blob": "a9490b43dfb2ad38f576210c548c262bf49d821a",
+      "classification": "LYVRA_LOCAL_SCHEMA_COMPATIBILITY_NOT_CLIC_RECEIPT",
+      "clic_reciprocal_readback": "NOT_VERIFIED",
+      "auto_transport": "NOT_IMPLEMENTED"
+    },
+    "semantic_causal_verifier": {
+      "path": "LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs",
+      "blob": "fb77bf3606cdd5f684938d920f311125582a994d",
+      "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs",
+      "test_blob": "fb6920a0f6516c364e32b7601e68013a33812ddc",
+      "tests_authored": 8,
+      "tests_executed": false,
+      "status": "PURE_SOURCE_CANDIDATE_NO_LIVE_RUNTIME_CLAIM",
+      "scope": [
+        "COMMUNICATION",
+        "VISUAL",
+        "FACET_RELATIONS",
+        "EVIDENCE"
+      ],
+      "no_new_identity": true,
+      "no_new_router": true,
+      "no_gatekeeper": true,
+      "no_foreign_mutation": true
+    },
+    "plugin_impact": {
+      "native_plugin": "NOT_RELEASED_THIS_UPDATE",
+      "account_plugin": "NOT_RELEASED_THIS_UPDATE",
+      "parity": "NOT_VERIFIED",
+      "reason": "REPOSITORY_ONLY_PURE_DEVELOPMENT_CANDIDATE_NOT_RUNTIME_INTEGRATED"
+    },
+    "unchanged": [
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "STUDIO2",
+      "PET",
+      "LYVRA_VISUAL_RUNTIME"
+    ],
+    "pointer_last": true
   }
 }
