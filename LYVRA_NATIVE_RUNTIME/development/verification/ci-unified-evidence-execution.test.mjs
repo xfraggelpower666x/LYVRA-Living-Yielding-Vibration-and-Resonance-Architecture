@@ -26,6 +26,9 @@ test('whole and sub-LiveCircle semantic verification remains independently open'
  assert.equal(r.continuity.host_fresh_boot_verified,false);
  assert.equal(r.rehydration_advisory.semantic_rehydration_verified,false);
  assert.equal(r.manifest.coverage.unmapped,2);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.mapped,26);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.derived.length,2);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.missing.length,26);
 });
 test('CLIC cooperation remains advisory, never automatic peer authority',()=>{
  const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
@@ -43,4 +46,15 @@ test('real workflow makes no channel intercept or facet mutation',()=>{
 });
 test('forged HEAD cannot pass unified current gate',()=>{
  assert.throws(()=>executeUnifiedCheckoutEvidence({expectedHead:'e'.repeat(40)}),/CHECKOUT_HEAD_MISMATCH/);
+});
+
+test('only actual manifest stages are mapped, never elevated to rehydration proof',()=>{
+ const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
+ const stage=r.rehydration_advisory.advisory.results.lifecircle;
+ assert.equal(stage.required,28);
+ assert.equal(stage.mapped,26);
+ assert.deepEqual(stage.derived,['VALID_NEWER_EVOLUTION','CURRENT_WORK_SCOPE']);
+ assert.equal(stage.fully_rehydrated,false);
+ assert.equal(r.rehydration_advisory.external_provider_authenticated,false);
+ assert.equal(r.evidence_boundary.actual_host_execution_verified,false);
 });
