@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {verifyNativeRehydration,NATIVE_ADAPTER_BOUNDARY} from './native-rehydration-adapter.mjs';
+import fixture from './fixtures/track-causal-smoke.json' with {type:'json'};
+const manifest={required_order:['PRE_REHYDRATION_OVERSTEER_GUARD','AUTHORITY_AND_CURRENT_POINTER','VALID_NEWER_EVOLUTION','CURRENT_WORK_SCOPE'],domain_path_map:{PRE_REHYDRATION_OVERSTEER_GUARD:['guard.md'],AUTHORITY_AND_CURRENT_POINTER:['pointer.json']}};
+const context={whole_authority:'WHOLE_LYVRA',guard_passed:true,current_pointer_readback:true,current_head_readback:true,specialist_foregrounded:false};
+const run=(c=context)=>verifyNativeRehydration({context:c,manifest,verification:fixture});
+test('advisory runner executes from native current and guard context',()=>{const o=run();assert.equal(o.contract,'LYVRA_NATIVE_REHYDRATION_VERIFY_V1');assert.equal(o.status,'ADVISORY_EXECUTED_SOURCE_ONLY');assert.equal(o.advisory.results.causal.changed.join(','),'mid');assert.equal(o.host_runtime_verified,false)});
+test('missing pre guard produces contextual review not authority transfer',()=>assert.ok(run({...context,guard_passed:false}).issues.includes('PRE_REHYDRATION_GUARD_NOT_VERIFIED')));
+test('foreign authority cannot inherit Whole LYVRA',()=>assert.ok(run({...context,whole_authority:'STUDIO2'}).issues.includes('WHOLE_AUTHORITY_NOT_PINNED')));
+test('unproven specialist foreground rejected',()=>assert.ok(run({...context,specialist_foregrounded:true}).issues.includes('SPECIALIST_FOREGROUND_WITHOUT_EVIDENCE')));
+test('current HEAD not independently proven within adapter',()=>{const o=run();assert.equal(o.external_provider_authenticated,false);assert.equal(o.semantic_rehydration_verified,false)});
+test('nonblocking side effect free execution',()=>{const o=run();assert.equal(o.mutation,false);assert.equal(o.communication_blocked,false);assert.equal(o.facet_activated,false);assert.equal(NATIVE_ADAPTER_BOUNDARY.auto_hook,false)});
