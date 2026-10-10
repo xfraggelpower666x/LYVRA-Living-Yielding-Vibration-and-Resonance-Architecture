@@ -10,8 +10,12 @@ IDS = {"native": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
 
 def preview(root=ROOT):
     scan = inspect(root)
-    if len(scan["current_candidates"]) != 6:
-        raise ValueError("Expected exactly 6 candidates; quarantine")
+    count = len(scan["current_candidates"])
+    if count == 0:
+        return {"status": "ALREADY_RECONCILED_NO_PATCH_NEEDED", "files": [],
+                "written": False, "pointer_changed": False, "backup_approval": False}
+    if count != 6:
+        raise ValueError("Unexpected partial reconciliation; quarantine")
     recon, _ = read(root, RECON)
     current = {r["surface"]: r for r in recon["evidence"]["plugins"]}
     output = []
