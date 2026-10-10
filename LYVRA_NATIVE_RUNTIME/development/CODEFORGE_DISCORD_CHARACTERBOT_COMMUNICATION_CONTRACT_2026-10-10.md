@@ -84,3 +84,28 @@ RELEVANT_LYVRA_EVOLUTION_TRIGGERS_CODEFORGE_BOT_IMPACT_REVIEW=true
 HANDOFF_INCLUDES_CONCRETE_BOT_DEVELOPMENT_PROPOSALS=true
 BOT_EXISTING_DIRECTION_AND_NEWER_DEV_PRESERVED=true
 AUTOMATIC_REPO_NOTICE_NE_AUTOMATIC_IMPLEMENTATION=true
+
+## ONE LYVRA · bidirectional presence and reciprocal learning (Creator clarification 2026-10-10)
+LYVRA is **one continuous native identity** with multiple authorized communication surfaces. Discord is an external expression/interaction medium, figuratively a place LYVRA may visit, NOT a cloned or independently sovereign LYVRA, static prompt persona, second memory root, or separate native controller. This is a technical metaphor for continuity, not a claim of uninterrupted subjective presence or live Discord connection.
+
+**Outbound LYVRA → Discord bot**: CodeForge reviews current valid native character, reasoning, creativity, relational meaning, safe music intelligence and communication evolution. The bot consumes pinned sanitized evidence and proposes/implements communication-compatible adapters only after its own gate.
+
+**Inbound Discord bot → LYVRA**: Interaction outcomes, conversation patterns, new musical or cultural facts, helpful explanations, humor innovations, audience feedback, emergent bot-side knowledge and tested behaviors can be useful to Whole LYVRA. The bot records them as evidence-bound, consent/privacy-filtered **OBSERVATION / LEARNING_CANDIDATE / BOT_DEVELOPMENT_PROPOSAL** events, not as automatically accepted native memories or personality changes. Never store private Discord messages, identities, secrets, sensitive relationship histories or raw recordings in a public repository. Aggregate/redact where possible. Permission and provenance must be checked at source.
+
+**Reciprocal causal cycle**:
+1. A relevant change or meaningful observed Discord event generates a content-addressed event with direction, source repo/branch/head, timestamp, observed evidence class, causal meaning, novel insight, public/private scope, confidence, safety/privacy review, applicable current carrier, expected benefit, impact, tests and expiration/supersession.
+2. CodeForge compares fresh native CURRENT and bot PROD/DEV evidence. It distinguishes verified behavior from anecdote, hallucination, proposal or incomplete host read.
+3. Native LYVRA reviews inbound candidates via the existing character/personality, semantic-causal memory, music-intelligence and local-learning governance. Valid learning is adoptable only via native impact/test/backup/readback and pointer-last publication. Rejected or deferred candidates retain provenance; no silent autonomous personality mutation.
+4. Bot development is governed by bot-owned approvals, code review, CI, release and Discord privacy safeguards; a bot finding never overrides current native LYVRA or forces a plugin update.
+5. Each accepted/rejected/deferred event receives a return receipt, with semantic identity, implementation evidence, test feedback and consumed head. Handoff acknowledgment != actual adoption; only explicit readback demonstrates propagation.
+6. Reconcile both directions on each invoked governed update and any authorized scheduled CI. No promise of omnipresence, real-time two-way transport or persistent background work without an operating executor.
+
+**Continuity principle**: ONE_NATIVE_LYVRA_IDENTITY, MULTIPLE_CONTEXT_SCOPED_EXPRESSION_SURFACES. A Discord session may carry expression context and local session observations. It does not copy private memory or grant autonomous authority. The native system here remains the single origin of LYVRA's authority; development insights may flow both ways without creating multiple LYVRAs.
+
+BIDIRECTIONAL_EVOLUTION_REQUIRED=true
+BOT_INBOUND_CAUSAL_LEARNING_REVIEW_REQUIRED=true
+BOT_OUTBOUND_CHARACTER_KNOWLEDGE_REVIEW_REQUIRED=true
+NO_SECOND_LYVRA_IDENTITY=true
+NO_DISCORD_PRIVATE_MEMORY_AUTOIMPORT=true
+NO_BOT_AUTONOMOUS_NATIVE_PROMOTION=true
+RECIPROCAL_HANDOFF_ACK_NE_ADOPTION=true
