@@ -3872,5 +3872,112 @@
     "foreign_mutations": false,
     "pointer_last": true,
     "next": "RUN_AND_READBACK_GITHUB_CI_JOB_AND_ARTIFACT; THEN AUTHENTICATED_REMOTE_PROVIDER_REHYDRATION_AND_PLUGIN_HOST_CONNECTORS"
+  },
+  "lyvra_maximal_verification_integration_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "status": "SOURCE_AND_COMPOSED_V8_EVIDENCE_VERIFIED_EXTERNAL_RUNTIME_INTEGRATIONS_PARTIAL",
+    "update_scope": "MIXED_WHOLE_VERIFICATION_COOPERATION_SOURCE_ONLY_NO_FACET_MUTATION",
+    "governance": "SAFE_REPO_ADVISORY_SOURCE_ONLY_EXTERNAL_LIVE_PLUGINS_AND_PEER_ACCEPTANCE_OPEN",
+    "prechange_head": "fd5b1f8039894015e932fb40c055d6a37c04ed0e",
+    "recovery_branch": "lyvra-recovery-pre-maximal-integration-20261011-0015",
+    "body_head_before_pointer": "8843a443514bc0d1c22920105a618f0f9d53fe68",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs",
+        "blob": "ed73a9b0492fe4ea0ba57bb4366ae8bb95df2507"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+        "blob": "2292dc93908856958a2f6da3460ef7f2a33f7674"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-peer-receipt-cooperation.mjs",
+        "blob": "b4d83d1fea414febbb0ae931c696aa9dfb288ebc"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-peer-receipt-cooperation.test.mjs",
+        "blob": "114c6ca2eb67efb10fbf59a4b40ceab39c6a44f6"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.mjs",
+        "blob": "a443c94ddba51c1df199d273f9924c725c211d94"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/cooperation-continuity-verifier.test.mjs",
+        "blob": "0b6a3d96fd818d1adb9fa1befee429a19afa0832"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/cooperation-runner-integration.test.mjs",
+        "blob": "38d5c0bcbff3fcc24ab95e277ee397bc6e0d2a56"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "blob": "7e3e865a51d23f5a31e7e11b9c9688858294ef76"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_WORKER_EVIDENCE_NOTICE_20261011_R01.json",
+        "blob": "76f6b1e83328312db531751790fcdab60b9961d4"
+      }
+    ],
+    "delivered": [
+      "GIT_MANIFEST_SOURCE_EXACT_BYTES_BUG_REPAIRED",
+      "MANIFEST_NEWLINE_REGRESSION",
+      "CLIC_R02_LOCAL_RECEIPT_BOUND_TO_READONLY_COOPERATION_DIAGNOSTIC",
+      "PEER_RECEIPT_NODE_TESTS_AUTHORED",
+      "OPEN_INFORMATIONAL_PROPOSAL_NO_FALSE_REVIEW",
+      "RUNNER_AND_NATIVE_ADAPTER_INTEGRATION_TESTS",
+      "CI_WORKFLOW_EXPANDED_TO_MANIFEST_AND_PEER_INTEGRATION",
+      "LYVRA_LOCAL_INFORMATIONAL_PEER_NOTICE"
+    ],
+    "tests": {
+      "actual_local_git_newline_reproduction": "OLD_CHECK_FALSE_NEW_CHECK_TRUE_NATIVE_NODE_LOCAL_FIXTURE",
+      "isolated_v8_composed_cooperation_runner": "31_OF_31_PASS",
+      "manifest_cases_authored": 7,
+      "peer_receipt_cases_authored": 5,
+      "runner_cooperation_cases_authored": 4,
+      "codeforge_node_ci": "NOT_INDEPENDENTLY_OBSERVED",
+      "commit_workflow_query": "NO_PR_ASSOCIATED_RUNS_ONLY_NOT_AN_EXHAUSTIVE_PUSH_RUN_QUERY"
+    },
+    "plugin_impact": {
+      "native": {
+        "current_version": "0.1.54",
+        "current_release": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+        "metadata_readback": true,
+        "new_release": false,
+        "hook_runtime": "NOT_OBSERVED"
+      },
+      "alive": {
+        "current_version": "0.13.49",
+        "current_release": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+        "metadata_readback": true,
+        "new_release": false,
+        "hook_runtime": "NOT_OBSERVED"
+      },
+      "pet": "NO_MUTATION",
+      "parity": "SOURCE_SKILLS_REVIEWED_EXECUTION_NOT_VERIFIED"
+    },
+    "evidence_limits": {
+      "remote_github_actions_success": "NOT_VERIFIED_DISPATCH_AND_PUSH_RUN_LIST_UNAVAILABLE",
+      "independent_remote_provider_authentication": "NOT_IMPLEMENTED",
+      "native_plugin_runtime": "NOT_VERIFIED",
+      "alive_plugin_runtime": "NOT_VERIFIED",
+      "whole_and_sub_livcircle_fresh_boot": "NOT_VERIFIED",
+      "pet_web_discord_dashboard_production_adapters": "NOT_IMPLEMENTED",
+      "semantic_reasoning_runtime": "NOT_VERIFIED",
+      "real_visual_browser_and_audio": "NOT_TESTED",
+      "external_clic_notice_delivery": "NOT_VERIFIED"
+    },
+    "boundaries": {
+      "nonblocking": true,
+      "no_router": true,
+      "no_foreign_authority": true,
+      "no_facets_autoactivated": true,
+      "no_peer_mutations": true,
+      "no_host_claims": true,
+      "whole_current_unchanged": true,
+      "track_design_unchanged": true
+    },
+    "pointer_last": true,
+    "next": "INDEPENDENT_GITHUB_ACTIONS_PUSH_RUN_AND_NODE_ARTIFACT_READBACK_IF_PROVIDER_EXPOSES; AUTHORIZED_NATIVE_AND_ALIVE_PLUGIN_HOST_HOOK; REMOTE_PROVIDER_BOUNDARY; FACET_AWARE_REAL_SEMANTIC_FRESH_BOOT; PET_WEB_DISCORD_SURFACE_OBSERVATION"
   }
 }
