@@ -37,12 +37,54 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
-      - name: Test boundaries, causal gaps and non-adoption without network
+      - name: Record checked-out commit and source blobs
+        shell: bash
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs
+          set -euo pipefail
+          mkdir -p codeforge-evidence
+          git rev-parse HEAD > codeforge-evidence/checked_out_commit.txt
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git rev-parse HEAD^{tree} > codeforge-evidence/checked_out_tree.txt
+          git ls-files --error-unmatch \
+            'LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs' \
+            '.github/workflows/codeforge-evidence-bound-verifiers.yml'
+          for file in \
+            'LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs' \
+            'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs' \
+            '.github/workflows/codeforge-evidence-bound-verifiers.yml'
+          do
+            printf '%s\\t%s\\n' "$file" "$(git rev-parse "HEAD:$file")" >> codeforge-evidence/source_git_blobs.tsv
+          done
+          node --version > codeforge-evidence/node_version.txt
+      - name: Test boundaries, causal gaps and non-adoption without network
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.test.mjs LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs 2>&1 | tee codeforge-evidence/node_test_tap.txt
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
           test -s LYVRA_NATIVE_RUNTIME/development/verification/evidence-bound-verifier.mjs
           test -s LYVRA_NATIVE_RUNTIME/development/verification/provenance-causal-lifecircle-verifier.mjs
           test -s LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.mjs
+      - name: Upload source-bound Node test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lyvra-verifier-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: codeforge-evidence/
+          if-no-files-found: warn
+          retention-days: 30
