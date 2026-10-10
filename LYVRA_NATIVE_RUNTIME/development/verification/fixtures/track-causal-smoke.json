@@ -1,0 +1,140 @@
+{
+  "source": {
+    "reference": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "expected_head": "81fe1318985b33f87300aa695d2cbce27de46278"
+  },
+  "facets": {
+    "whole_authority": "LYVRA",
+    "active_facets": [
+      "TRACK_DESIGN"
+    ],
+    "proposed_facets": [],
+    "transferred_authority": false,
+    "observed_causal_effect": false
+  },
+  "communication": {
+    "handoff_id": "CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02",
+    "source_blob": "a9490b43dfb2ad38f576210c548c262bf49d821a",
+    "source_readback": true,
+    "local_receipt": true,
+    "peer_readback": true,
+    "native_adoption": false,
+    "host_evidence": false,
+    "automatic_transport": false
+  },
+  "visual": {
+    "headline": "PARTIAL",
+    "parts": [
+      {
+        "status": "VERIFIED"
+      },
+      {
+        "status": "NOT_TESTED"
+      }
+    ],
+    "render_evidence": false
+  },
+  "evidence": {
+    "source_current": true,
+    "source_read": true,
+    "meaning_applied": true,
+    "runtime_observed": false
+  },
+  "provider": {
+    "request": {
+      "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+      "branch": "lyvra",
+      "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+      "expected_head": "81fe1318985b33f87300aa695d2cbce27de46278",
+      "expected_blob": "51aed2870d296bff28f5d487e035c5858cc140c8"
+    },
+    "provider_result": {
+      "sha": "51aed2870d296bff28f5d487e035c5858cc140c8",
+      "content": "example caller references only"
+    },
+    "trusted_context": {
+      "provider": "GITHUB_CONNECTOR",
+      "actual_provider_call": true,
+      "readback_confirmed": true,
+      "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+      "branch": "lyvra",
+      "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+      "observed_head": "81fe1318985b33f87300aa695d2cbce27de46278",
+      "observation_id": "fixture-not-trusted"
+    }
+  },
+  "provenance_claim": {
+    "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "branch": "lyvra",
+    "path": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "blob": "51aed2870d296bff28f5d487e035c5858cc140c8"
+  },
+  "provider_ledger": [],
+  "causal": {
+    "before": {
+      "low": "150 BPM locked",
+      "mid": "cold metallic pulse"
+    },
+    "after": {
+      "low": "150 BPM locked",
+      "mid": "human breath-shaped pulse"
+    },
+    "delta": "Machine signal revealed to be human breath",
+    "source_ref": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "mechanism": "Breath envelope reshapes MID motif",
+    "counterrelation": "Could just be decorative",
+    "protected_relations": [
+      "low"
+    ]
+  },
+  "counterhypothesis": {
+    "source": {
+      "source_ref": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+      "observation_id": "fixture-only"
+    },
+    "delta": {
+      "changed_information": "machine signal is human breath",
+      "relevance_rationale": "voice changes the narrative MID"
+    },
+    "observed": {
+      "before": {
+        "mid": "metallic"
+      },
+      "after": {
+        "mid": "breathing"
+      },
+      "mechanism": "breath envelopes"
+    },
+    "alternative": {
+      "hypothesis": "decorative modulation",
+      "discriminating_test": "A/B compare with controlled unchanged motor"
+    },
+    "scope": {
+      "authority": "WHOLE_LYVRA"
+    }
+  },
+  "manifest": {
+    "required_order": [
+      "PRE_REHYDRATION_OVERSTEER_GUARD",
+      "AUTHORITY_AND_CURRENT_POINTER",
+      "VALID_NEWER_EVOLUTION",
+      "CURRENT_WORK_SCOPE"
+    ],
+    "domain_path_map": {
+      "PRE_REHYDRATION_OVERSTEER_GUARD": [
+        "guard.md"
+      ],
+      "AUTHORITY_AND_CURRENT_POINTER": [
+        "pointer.json"
+      ]
+    }
+  },
+  "loaded_carriers": [],
+  "currentness_observed": false,
+  "claims": [
+    {
+      "claim": "HOST_VERIFIED",
+      "evidence": []
+    }
+  ]
+}
