@@ -2,14 +2,15 @@
 // No plugin/network access, runtime claims, facet activation or repository writes.
 import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
-const git=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
+const gitRaw=(...args)=>execFileSync('git',args,{encoding:'utf8',stdio:['ignore','pipe','pipe']});
+const git=(...args)=>gitRaw(...args).trim();
 const valid=x=>typeof x==='string'&&['LYVRA_NATIVE_RUNTIME/','LYVRA_PET/','WEBLyvra/'].some(root=>x.startsWith(root))&&!x.includes('..')&&!x.includes('\\')&&!x.includes('\0');
 export function inspectCheckoutManifest({manifestPath='LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json',expectedHead}={}){
  if(!valid(manifestPath))throw Error('INVALID_MANIFEST_PATH');
  const head=git('rev-parse','HEAD');
  if(!expectedHead||head!==expectedHead)throw Error('HEAD_MISMATCH');
  git('ls-files','--error-unmatch','--',manifestPath);
- const committed=git('show','HEAD:'+manifestPath),disk=readFileSync(manifestPath,'utf8');
+ const committed=gitRaw('show','HEAD:'+manifestPath),disk=readFileSync(manifestPath,'utf8');
  if(committed!==disk)throw Error('MANIFEST_WORKTREE_MISMATCH');
  const manifest=JSON.parse(committed);
  const order=manifest.required_order,map=manifest.domain_path_map;
@@ -21,7 +22,7 @@ export function inspectCheckoutManifest({manifestPath='LYVRA_NATIVE_RUNTIME/REHY
    try{
     git('ls-files','--error-unmatch','--',path);
     const blob=git('rev-parse','HEAD:'+path);
-    const committedFile=git('show','HEAD:'+path),actual=readFileSync(path,'utf8');
+    const committedFile=gitRaw('show','HEAD:'+path),actual=readFileSync(path,'utf8');
     return {path,blob,source:committedFile===actual?'COMMITTED_BLOB_MATCHED':'WORKTREE_MISMATCH'};
    }catch{return {path,source:'CARRIER_NOT_READ_BACK'}}
   });
