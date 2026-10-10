@@ -6,7 +6,7 @@ const request={repository:'owner/repo',branch:'lyvra',path:'CURRENT.json',expect
 const provider_result={sha:blob,content:'{"state":"read"}'};
 const trusted_context={provider:'GITHUB_CONNECTOR',actual_provider_call:true,readback_confirmed:true,repository:'owner/repo',branch:'lyvra',path:'CURRENT.json',observed_head:head,observation_id:'test-obs'};
 const bind=(r=request,p=provider_result,t=trusted_context)=>bindProviderReadback({request:r,provider_result:p,trusted_context:t});
-test('bound readback yields only referential proof',()=>{const x=bind();assert.equal(x.status,'REFERENTIAL_READBACK_MATCH');assert.equal(x.independent_runtime_proven,false);assert.equal(x.observation.provider_readback,true)});
+test('bound readback yields only referential proof',()=>{const x=bind();assert.equal(x.status,'CALLER_REFERENCES_MATCH_UNVERIFIED');assert.equal(x.independent_runtime_proven,false);assert.equal(x.provider_authenticity_verified,false);assert.equal(x.observation.provider_readback,false);assert.equal(x.observation.readback_claimed_by_caller,true)});
 test('bare provider result alone is insufficient',()=>assert.equal(bind(request,provider_result,{}).status,'UNVERIFIED'));
 test('wrong blob fails even with provider flags',()=>assert.ok(bind(request,{...provider_result,sha:'c'.repeat(40)}).issues.includes('PROVIDER_BLOB_MISMATCH')));
 test('wrong repo fails',()=>assert.ok(bind({...request,repository:'other/repo'}).issues.includes('PROVIDER_REQUEST_IDENTITY_MISMATCH')));
