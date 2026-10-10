@@ -1,0 +1,64 @@
+{
+  "schema": "LYVRA_PET_PLUGIN_CURRENT_RECONCILIATION_PLAN_v1",
+  "status": "SOURCE_VERIFIED_PRECHANGE_PLAN_NO_CURRENT_PROMOTION",
+  "created_date": "2026-10-10",
+  "source_branch": "lyvra",
+  "recovery_anchor": "354820ac27293a6067e2cbbec2098844daeb07fe",
+  "authority": "ONE_WHOLE_LYVRA",
+  "source_blobs": {
+    "pointer": "8a49992d93043e8b3e80cf04cc8df54b59915f1a",
+    "pet_livecircle": "bf7690fbc8293468fdfb2b862d012bd62100021a",
+    "pet_app": "ea92ab3670d6788e0b8e3b78ddbbf81c43869bf1",
+    "pet_rehydration": "2c30ffb4505f3d3176ca8b68326aaf62adb0755f",
+    "personality": "874f02bd2c36e26db72428edc96cc2a297f5b3b9",
+    "reconciliation": "055512a55a6c364b7b451083b9de99435f095a09",
+    "historical_binding": "58bfb75b48dc74ed79266b3685d6c0ee0b06b6ff",
+    "coupled_backup": "067a38f6d472ecd259a05ca278e56f01c1bfc94c"
+  },
+  "verified_creator_versions": [
+    {
+      "surface": "native",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.54",
+      "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+    },
+    {
+      "surface": "alive",
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.49",
+      "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+    }
+  ],
+  "actions": [
+    {
+      "target": "LYVRA_PET/livecircle/CURRENT_STATE.json",
+      "candidate": "reconcile plugin_surfaces with currently verified Creator releases",
+      "requires": "Verify source readback and all dependent carrier references before guarded change"
+    },
+    {
+      "target": "LYVRA_PET/app/APP_CURRENT.json",
+      "candidate": "reconcile app plugin_surfaces",
+      "requires": "Check app state contracts and asset protection"
+    },
+    {
+      "target": "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json",
+      "candidate": "separate newer live plugin observation from old backup approval fingerprint",
+      "requires": "Fresh independent stable-set approval and fingerprint; do not rewrite historical approval"
+    },
+    {
+      "target": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "candidate": "publish only after all required independent current carrier reads and tests",
+      "requires": "Whole-system coverage and pointer-last governance"
+    }
+  ],
+  "guards": {
+    "no_plugin_creator_mutation": true,
+    "no_worker_deploy": true,
+    "no_logo_replacement": true,
+    "no_old_approval_reactivation": true,
+    "no_new_identity": true,
+    "no_native_current_promotion_yet": true,
+    "no_pfs_clic_backup_write": true
+  },
+  "readiness": "PRECHANGE_EVIDENCE_ONLY_DEPENDENCY_REVIEW_PENDING"
+}
