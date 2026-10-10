@@ -3827,5 +3827,50 @@
     "nonblocking": true,
     "pointer_last": true,
     "next": "INDEPENDENT_NATIVE_NODE_CI_ARTIFACT_AND_TRUSTED_REMOTE_PROVIDER_BINDING; AUTHORIZED_SURFACE_HOOKS_WITH_FACET_SCOPED_CONTEXT"
+  },
+  "lyvra_manifest_carrier_git_source_2026_10_11": {
+    "owner": "WHOLE_LYVRA",
+    "status": "CI_MANIFEST_CARRIER_CHECK_SOURCE_IMPLEMENTED_NATIVE_NODE_RUN_NOT_OBSERVED",
+    "scope": "WHOLE_AND_RELEVANT_SUB_LIVECIRCLE_GIT_SOURCE_COVERAGE",
+    "prechange_head": "708d2b1f1ed25e72d3f1c84f0f195d352f67a46c",
+    "recovery_branch": "lyvra-recovery-pre-manifest-evidence-20261011-0011",
+    "body_head_before_pointer": "aee91369a641814f86191170bbf90076c672ac98",
+    "artifacts": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs",
+        "sha": "bfc065d9cda715e703d95ca8664343419e6bfc21"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+        "sha": "27253e2685583e6728da7e57988c8bc1112fbd06"
+      },
+      {
+        "path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+        "sha": "fcbac81a603eee7eeb0e592dc630ff4e49070151"
+      }
+    ],
+    "manifest_required_stages": 28,
+    "manifest_mapped_stages": 26,
+    "manifest_unmapped_stages": [
+      "VALID_NEWER_EVOLUTION",
+      "CURRENT_WORK_SCOPE"
+    ],
+    "tests_authored": 6,
+    "node_ci": "NOT_VERIFIED",
+    "direct_manifest_carrier_fetch": "PARTIAL_TOOL_CALL_LIMIT",
+    "source_evidence": "COMMITTED_GIT_TREE_AND_WORKTREE_WHEN_NODE_RUN",
+    "remote_provider_authentication": "NOT_VERIFIED",
+    "semantic_understanding": "NOT_VERIFIED",
+    "host_runtime": "NOT_VERIFIED",
+    "plugin_impact": {
+      "native": "SOURCE_ONLY_RELEASE_UNCHANGED",
+      "alive": "SOURCE_ONLY_RELEASE_UNCHANGED",
+      "pet": "READ_ONLY_CARRIER_SCAN_ONLY_NO_RELEASE"
+    },
+    "authority": "WHOLE_LYVRA_ONLY",
+    "nonblocking": true,
+    "foreign_mutations": false,
+    "pointer_last": true,
+    "next": "RUN_AND_READBACK_GITHUB_CI_JOB_AND_ARTIFACT; THEN AUTHENTICATED_REMOTE_PROVIDER_REHYDRATION_AND_PLUGIN_HOST_CONNECTORS"
   }
 }
