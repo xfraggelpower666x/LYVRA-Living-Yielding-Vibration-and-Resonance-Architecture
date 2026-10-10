@@ -11,13 +11,26 @@ export function runVerification(input={}){
  const data=plain(input)?input:{};
  const source=plain(data.source)?data.source:{};
  const facets=plain(data.facets)?data.facets:{};
- const communication=verifyCommunication(data.communication);
- const visual=verifyVisualStatus(data.visual);
+ // Raw caller flags and JSON ledgers are claims, not authenticated provider/host evidence.
+ // Keep source stage diagnostics; no caller may elevate to RECEIPT, ADOPTED or HOST_VERIFIED.
+ const communicationClaim=verifyCommunication(data.communication);
+ const communication={...communicationClaim,
+  stage:communicationClaim.stage==='PREPARED'?'PREPARED':'CALLER_REPORTED_'+communicationClaim.stage,
+  classification:'UNVERIFIED_CALLER_CLAIM',automatic_transport_verified:false,
+  issues:[...communicationClaim.issues,'COMMUNICATION_EVIDENCE_NOT_INDEPENDENTLY_ATTESTED']};
+ const visualClaim=verifyVisualStatus(data.visual);
+ const visual={...visualClaim,status:visualClaim.status==='FAIL'?'FAIL':'UNVERIFIED_VISUAL_CLAIM',
+  render_evidence:false,issues:[...visualClaim.issues,'VISUAL_RENDER_NOT_INDEPENDENTLY_ATTESTED']};
  const relations=verifyFacetRelations(facets);
- // W01 booleans are descriptive only: never promote to trusted host proof.
- const evidence=verifyEvidence(data.evidence);
+ // W01 booleans are descriptive claims, even if internally coherent.
+ const evidenceClaim=verifyEvidence(data.evidence);
+ const evidence={...evidenceClaim,status:evidenceClaim.status==='PARTIAL'?'PARTIAL':'UNVERIFIED_CALLER_CLAIM',
+  issues:['SEMANTIC_OR_RUNTIME_FLAGS_NOT_AUTHENTICATED']};
  const provider=bindProviderReadback(data.provider);
- const provenance=verifyProvenance(data.provenance_claim||{},Array.isArray(data.provider_ledger)?data.provider_ledger:[]);
+ // Do not allow untrusted input.provider_ledger to bypass W05 via W03.
+ const provenanceClaim=verifyProvenance(data.provenance_claim||{},[]);
+ const provenance={...provenanceClaim,
+  issues:[...provenanceClaim.issues,...(Array.isArray(data.provider_ledger)&&data.provider_ledger.length?['CALLER_PROVIDER_LEDGER_NOT_TRUSTED']:[])]};
  const causal=verifyCausalDecision(data.causal);
  const counter=assessCausalSupport(data.counterhypothesis);
  const lifecircle=inspectLifeCircleManifest({manifest:data.manifest,loaded:data.loaded_carriers,currentness_observed:data.currentness_observed===true});
@@ -37,6 +50,10 @@ export function runVerification(input={}){
   input_completeness:{provided:requiredAreas.length-missingInputs.length,required:requiredAreas.length,missingInputs},
   source:{reference:source.reference??null,expected_head:source.expected_head??null,integrity:'NOT_INDEPENDENTLY_AUTHENTICATED_BY_RUNNER'},
   results:{communication,visual,relations,evidence,provider,provenance,causal,counter,lifecircle,claims},
+  cooperation:{status:'ADVISORY_ONLY',provider_bound:false,host_bound:false,
+   caller_claims_not_authentication:true,authorized_channels_untouched:true,
+   channel_discovery:'OPEN_NOT_GATEKEEPED',foreign_authority_transfer:false,
+   peer_reports_are_not_commands:true,worker_failure_must_not_block_communications:true},
   issues,proof_stages:statuses,host_runtime_verified:false,ci_verified:false,
   communications_blocked:false,facet_activated:false,mutation:false,
   next:'Use independent provider/host evidence and user-authorized native integration, not booleans or historical status cards'
