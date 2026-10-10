@@ -1,0 +1,38 @@
+name: LYVRA CodeForge Plugin PET Reciprocal Readonly Audit
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/CODEFORGE_UNIFIED_PLUGIN_PET_RECIPROCAL_EXCHANGE_2026-10-10.md'
+      - 'LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py'
+      - '.github/workflows/codeforge-plugin-pet-reciprocal-audit.yml'
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: lyvra-codeforge-plugin-pet-readonly
+  cancel-in-progress: false
+
+jobs:
+  repository-evidence-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile audit
+        run: python -m py_compile LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py
+      - name: Audit Native and ALIVE repository release bindings and Pet LiveCircle
+        run: python LYVRA_NATIVE_RUNTIME/continuity/development_exchange/plugin_pet_exchange_audit.py
+      - name: Protect custom brand assets and Creator originals
+        run: |
+          test -s LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.1.54/lyvra-native-runtime_original.tar.gz
+          test -s LYVRA_NATIVE_RUNTIME/plugin-backups/creator-releases/0.13.49/lyvra-alive_original.tar.gz
+          test -s LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png
