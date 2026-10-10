@@ -13,6 +13,7 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/verification/provider-observation-adapter.test.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md'
       - '.github/workflows/codeforge-evidence-bound-verifiers.yml'
   workflow_dispatch:
 
@@ -86,6 +87,7 @@ jobs:
           node --test LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs 2>&1 | tee codeforge-evidence/practical_test_tap.txt
           node LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs > codeforge-evidence/practical_creator_draft.md
           test -s codeforge-evidence/practical_creator_draft.md
+          cmp LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md codeforge-evidence/practical_creator_draft.md
       - name: Confirm only pure verifier and no runtime activation
         run: |
           test -s LYVRA_NATIVE_RUNTIME/development/verification/semantic-causal-verifier.mjs
