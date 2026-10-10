@@ -1,0 +1,81 @@
+{
+  "schema": "LYVRA_TRACK_RELATIONAL_AUDIT_UPDATE_v1",
+  "lineage_id": "relational-audit-20261009",
+  "workspace_id": "TRACK_DESIGN",
+  "status": "FULL_210_DIRECT_BLOB_READBACK_COMPLETED_205_MATCH_5_MISMATCH",
+  "evidence_kind": "SEQUENTIAL_PER_FILE_GITHUB_BLOB_SHA_READBACK_NOT_ATOMIC_TREE_SNAPSHOT",
+  "target_scope": "AUDIT_LINEAGE_ONLY_NO_PRODUCTION_MUTATION",
+  "source": {
+    "productive_branch": "lyvra",
+    "dev_branch": "lyvra-dev-track-relational-rehydration-audit-20261009",
+    "productive_current_pointer_blob": "9611a64598f8fc2db2c7a5eebfe87c3b96d4f55e",
+    "registry_blob": "957d9c690d749c34ea489462edfa02812b46eedb",
+    "productive_head_at_close": "24a9d4c9d8868ede0cb3bc0b73e1d5ae5d046cc8",
+    "productive_head_moved_during_scan": true,
+    "last_new_productive_change": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_BOT_RECIPROCAL_OUTBOX_CI_READBACK_2026-10-10.json",
+    "new_productive_change_outside_critical_registry": true,
+    "dev_head_before_write": "ed616bde949f5309ea69a90dee0918582e35530b"
+  },
+  "recovery": {
+    "branch": "lyvra-recovery-pre-track-relational-registry-full-audit-20261010",
+    "commit": "ed616bde949f5309ea69a90dee0918582e35530b"
+  },
+  "registry": {
+    "entries": 210,
+    "directly_checked": 210,
+    "matches": 205,
+    "mismatches": 5,
+    "errors": 0,
+    "registry_reported_mismatches": 0,
+    "complete_path_coverage": true,
+    "mismatch_details": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+        "registered_blob": "16c102897f5ef89b7a6f574308fc92edbe7f2fe5",
+        "direct_blob": "adce576dcdc37d65544d7ad69a97d885277f8a57",
+        "provenance": "1bfd347b637f1b0be2c49bd393a04180019ea252"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+        "registered_blob": "4487b298b4166c83c740dde009fa56b7f5c8c0ce",
+        "direct_blob": "3f71b2c503847207c31d05ab3658f41c12189850",
+        "provenance": "UNRESOLVED_SEPARATE_COMMIT_REVIEW"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md",
+        "registered_blob": "6c9b589b4e4997a397534a80188aa1e8c6c04118",
+        "direct_blob": "590a516c99f75f36e3fda3c198d3e20ab6897649",
+        "provenance": "4759405bbce768ca4b912ae901d25d5928a7029b"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+        "registered_blob": "7e47802941e205184c9670e540019764c6d73b94",
+        "direct_blob": "81e03c87f4b820a8001cdb1b81199fa2da8189f8",
+        "provenance": "0cbffa4f7903796f518f040dfb01eaabecee131f|33614e70af608bec522a1fa17a774bfb8a0c811f"
+      },
+      {
+        "path": "LYVRA_PET/worker/src/index.js",
+        "registered_blob": "27ed41f4ed12718aa09b7895db43c3577dc90bae",
+        "direct_blob": "40e4f64040fafd8fbedf3ba28f6f1cf4f57ef74e",
+        "provenance": "9d9d92c67c24774e8f863b080528e48f5b685468"
+      }
+    ]
+  },
+  "semantic_interpretation": "The stored mismatch count of zero contradicts direct current GitHub blob evidence. These are registry freshness inconsistencies, not automatic regressions, and newer valid carrier modifications must be preserved. No whole-system repair or fresh runtime PASS inferred.",
+  "peer_proposal_intake": "New bot reciprocal outbox evidence is independent, not adopted or activated by this Track Design update",
+  "plugin_impact": "AUDIT_ONLY_METADATA_NO_RUNTIME_CAPABILITY_CHANGE_NO_PLUGIN_RELEASE",
+  "runtime_acceptance": {
+    "independent_fresh_boot": "OPEN",
+    "plugin_fresh_boot_parity": "OPEN",
+    "suno_audio": "OPEN"
+  },
+  "next_actions": [
+    "Review provenance for manifest mismatch and validate atomic tree snapshot where tools permit",
+    "Resolve registered fingerprints through separate governed Whole LYVRA update, preserving newer carrier bytes and plugin/coverage impacts",
+    "Continue independent semantic rehydration acceptance as separate gate"
+  ],
+  "production_mutation": false,
+  "plugin_mutation": false,
+  "pet_mutation": false,
+  "whole_authority_preserved": true
+}
