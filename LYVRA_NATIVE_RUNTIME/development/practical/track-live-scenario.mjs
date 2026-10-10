@@ -43,4 +43,4 @@ export function exercise(){
  if(JSON.stringify(headings)!==JSON.stringify(expected))throw Error('CREATOR_OUTPUT_ORDER');
  return {track:CASE.name,cause:CASE.cause,unrelated:CASE.irrelevant,baseline:base,contradiction:changed,control:irrelevant,creator_output:creator,evidence:{source:'REPO_BUNDLED_SCENARIO',test:'EXECUTABLE_SOURCE_SCENARIO',semantic:'CAUSAL_HYPOTHESIS',suno_audio:'NOT_RENDERED',plugin_runtime:'NOT_OBSERVED'}};
 }
-if(process.argv[1]&&import.meta.url.endsWith(process.argv[1].replaceAll('\\','/')))console.log(exercise().creator_output);
+if(process.argv[1]&&import.meta.url.endsWith(process.argv[1].replaceAll('\\','/')))process.stdout.write(exercise().creator_output);
