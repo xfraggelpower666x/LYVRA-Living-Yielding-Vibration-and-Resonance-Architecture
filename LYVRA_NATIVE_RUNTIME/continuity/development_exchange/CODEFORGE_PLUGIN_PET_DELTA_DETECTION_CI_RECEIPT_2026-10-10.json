@@ -1,0 +1,60 @@
+{
+  "schema": "LYVRA_CODEFORGE_PLUGIN_PET_DELTA_DETECTION_CI_RECEIPT_v1",
+  "status": "RELEASE_DELTA_DETECTOR_CI_PASS_REVIEW_ONLY",
+  "prechange_head": "0912454700c479f58dccc532c2c9b234f92a9363",
+  "ci": {
+    "run_id": 38014448051,
+    "job_id": 114101512052,
+    "conclusion": "success",
+    "tests_run": 5,
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/38014448051"
+  },
+  "candidate_fingerprint": "ac18da4371128b689e27c66e1e374760dbe91930b37f4c7c5d1488ef20eabd38",
+  "source": "Repository historical binding compared with creator original archive receipt; live Creator metadata independently inspected during this invoked update",
+  "plugin_creator_latest_checked": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.54",
+      "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.49",
+      "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+    }
+  },
+  "findings": [
+    {
+      "surface": "native",
+      "historic": "0.1.50",
+      "latest": "0.1.54",
+      "status": "HISTORICAL_BINDING_STALE"
+    },
+    {
+      "surface": "alive",
+      "historic": "0.13.47",
+      "latest": "0.13.49",
+      "status": "HISTORICAL_BINDING_STALE"
+    },
+    {
+      "surface": "pet_native",
+      "status": "PET_HISTORICAL_RELEASE_REFERENCE"
+    },
+    {
+      "surface": "pet_alive",
+      "status": "PET_HISTORICAL_RELEASE_REFERENCE"
+    }
+  ],
+  "limits": {
+    "not_a_full_creator_binary_hash_readback": true,
+    "pet_worker_live_readback": false,
+    "pet_host_visual_readback": false,
+    "production_plugin_release_changed": false,
+    "learning_adopted": false,
+    "identity_changed": false,
+    "pointer_changed": false,
+    "backup_approval_not_refreshed": true
+  },
+  "next": "Classify historical-vs-active binding provenance and fingerprint dependent governance before any promotion",
+  "recovery_anchor": "0912454700c479f58dccc532c2c9b234f92a9363"
+}
