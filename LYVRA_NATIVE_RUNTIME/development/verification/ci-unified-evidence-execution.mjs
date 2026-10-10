@@ -22,7 +22,7 @@ export function executeUnifiedCheckoutEvidence({expectedHead}={}){
   id:x.id,channel:x.channel,sender:x.sender,recipient:x.recipient,
   intent:x.intent,scope_owner:x.scope_owner,source_ref:x.source_reference,
   relation:x.relation,claims:{}}
- }))};
+ ))};
  // Compose real source observations and the existing LYVRA semantic adapter.
  // Source and peer claims MUST NOT be upgraded to provider/host truth.
  const rehydration=verifyNativeRehydration({
