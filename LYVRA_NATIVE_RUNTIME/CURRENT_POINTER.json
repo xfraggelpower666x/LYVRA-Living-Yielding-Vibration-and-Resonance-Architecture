@@ -3642,5 +3642,35 @@
     "clic_receipt": "PREVIOUS_RECIPROCAL_READBACK_PRESERVED",
     "pointer_last": true,
     "next": "INDEPENDENT_NODE_CI_RUN_AND_ARTIFACT; CONNECT_HOST_AUTHORIZED_SOURCE_READBACK; ACTUAL_FRESH_BOOT_AND_PLUGIN_PARITY"
+  },
+  "lyvra_native_rehydration_verifier_adapter_2026_10_10": {
+    "owner": "WHOLE_LYVRA",
+    "status": "EXPLICIT_NATIVE_REHYDRATION_ADAPTER_SOURCE_IMPLEMENTED_V8_TESTED_HOST_HOOK_OPEN",
+    "prechange_head": "5145f72bc984bc2905e29f86925203f633a7f499",
+    "recovery_branch": "lyvra-recovery-pre-native-runner-adapter-20261010-1759",
+    "body_head_before_pointer": "22b073381afe078ad7f171dc2ff3fc90661ae026",
+    "source_path": "LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.mjs",
+    "source_blob": "cc42f142c385f8ad12d91783afaa5e1773ed96b8",
+    "test_path": "LYVRA_NATIVE_RUNTIME/development/verification/native-rehydration-adapter.test.mjs",
+    "test_blob": "0bd2f92ea5237633aeef8e097e325e0002e45a34",
+    "workflow_path": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "workflow_blob": "3eeaf5222f679dc48465737f6faf441ee1aa3bfc",
+    "tests_added": 6,
+    "isolated_v8": "6_OF_6_PASS",
+    "node_ci": "NOT_VERIFIED",
+    "integration": "EXPLICIT_CALLABLE_NATIVE_REHYDRATION_CONTEXT_ADAPTER_NOT_AUTOMATIC_HOST_HOOK",
+    "provider_authenticity": "NOT_INDEPENDENTLY_ATTESTED",
+    "host_runtime": "NOT_OBSERVED",
+    "plugin_impact": {
+      "native": "SOURCE_ONLY_NO_RELEASE",
+      "account": "SOURCE_ONLY_NO_RELEASE",
+      "parity": "OPEN"
+    },
+    "no_new_system": true,
+    "nonblocking": true,
+    "foreign_mutations": false,
+    "whole_and_facets": "UNCHANGED",
+    "pointer_last": true,
+    "next": "RUN_NATIVE_NODE_CI_AND_PLUGIN_BOUNDARY_TESTS; CONNECT_ACTUAL_AUTHORIZED_HOST_CALL_SITE; VERIFY_FRESH_BOOT_BEHAVIOR"
   }
 }
