@@ -1,0 +1,24 @@
+name: LYVRA Track Renderer Output Regression
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md'
+      - '.github/workflows/track-renderer-output-regression.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  renderer-output-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate creator-output structural regressions
+        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs
