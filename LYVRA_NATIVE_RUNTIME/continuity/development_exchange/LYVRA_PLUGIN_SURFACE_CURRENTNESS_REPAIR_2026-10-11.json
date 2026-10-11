@@ -1,0 +1,45 @@
+{
+  "schema": "LYVRA_PLUGIN_SURFACE_CURRENTNESS_REPAIR_v1",
+  "date": "2026-10-11",
+  "owner": "WHOLE_LYVRA",
+  "scope": "POINTER_PRESENTATION_CURRENTNESS_ONLY",
+  "status": "BODY_RECEIPT_PENDING_POINTER",
+  "base_head": "85dea6bb83db7a22c559f6ac612028a1ebe33598",
+  "pointer_expected_blob": "f2217dc49eccb8011877009cde925333b5c008bd",
+  "recovery_branch": "lyvra-recovery-pre-plugin-surface-currentness-20261011-r01",
+  "observed_stale": {
+    "native": {
+      "version": "0.1.50",
+      "release": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
+    },
+    "alive": {
+      "version": "0.13.47",
+      "release": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
+    },
+    "flattened": {
+      "native": "0.1.50",
+      "alive": "0.13.47"
+    }
+  },
+  "verified_current": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.54",
+      "release": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.49",
+      "release": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+    }
+  },
+  "qualification": "Earlier per-capability VERIFIED fields are historical observations and do not establish independent latest-release host execution.",
+  "boundaries": {
+    "no_plugin_release_change": true,
+    "no_runtime_deployment": true,
+    "no_backup_approval": true,
+    "no_peer_mutation": true,
+    "no_whole_or_track_revision_change": true,
+    "pointer_last": true
+  }
+}
