@@ -1,0 +1,70 @@
+{
+  "schema": "LYVRA_CI_ARTIFACT_ORIGINAL_BYTES_READBACK_v1",
+  "status": "EXACT_ARTIFACT_SHA256_AND_TAP_READBACK_VERIFIED",
+  "scope": "WHOLE_LYVRA_CI_EVIDENCE_ONLY",
+  "observed_repository_head": "d5e024d4c4f917c98f3d6b2b4948e926d27fbe66",
+  "github_actions": {
+    "run_id": 38095670166,
+    "job_id": 114340934310,
+    "job_name": "evidence-first-readonly",
+    "conclusion": "success",
+    "artifact_id": 11685402297,
+    "artifact_name": "lyvra-verifier-evidence-38095670166-1",
+    "artifact_sha256": "7487e1a02b6c7096660bbbeb1a977928237129281081787f3d0b16cd120be457",
+    "downloaded_zip_sha256": "7487e1a02b6c7096660bbbeb1a977928237129281081787f3d0b16cd120be457",
+    "zip_digest_equal": true,
+    "artifact_exact_checkout_commit": "4debd565643bfe814d527a5b2f10c806f605594e",
+    "artifact_checkout_tree": "13c2970dacaed21817817ddbfe5f27de7aa30785",
+    "original_zip_files": 25
+  },
+  "tap_verified": {
+    "node_test_tap": {
+      "total": 61,
+      "passed": 61,
+      "failed": 0,
+      "skipped": 0
+    },
+    "unified_source_evidence_tap": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "checkout_exact_bytes_tap": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "manifest_carrier_test_tap": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "peer_receipt_cooperation_test_tap": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    }
+  },
+  "readback_method": "Provider artifact ZIP download, local SHA256 verification, ZIP entry read and test TAP inspection",
+  "boundaries": {
+    "ci_checkout_exact_head_ne_latest_repo_head": true,
+    "independent_live_host_invocation": false,
+    "pet_source_unavailable_resolved": false,
+    "remote_runtime_proven": false,
+    "whole_semantic_fresh_boot_proven": false,
+    "plugin_release_changed": false,
+    "pet_worker_changed": false,
+    "foreign_system_changed": false,
+    "global_pointer_changed": false
+  },
+  "pet_runtime_diagnostic": {
+    "plugin_invocation_status": "READY",
+    "native_expression_status": "SOURCE_UNAVAILABLE",
+    "diagnostic_reason": "NATIVE_SOURCE_OR_APPROVAL_REJECTED",
+    "root_cause": "UNDETERMINED",
+    "do_not_infer_historical_403_as_current": true,
+    "no_speculative_worker_mutation": true
+  },
+  "recovery_branch": "lyvra-recovery-pre-ci-artifact-integrity-readback-20261011",
+  "next": "Only a bounded direct provider runtime observation can resolve PET Worker internal GitHub failure; independent host/plugin semantic acceptance and newer HEAD CI parity remain open."
+}
