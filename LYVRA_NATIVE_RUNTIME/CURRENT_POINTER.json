@@ -1063,8 +1063,8 @@
     "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK_AND_AUTOMATIC_PFS_BACKUP_HANDOFF_REFRESH",
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.50",
-      "release": "pluginrel_6ac74b0b5c88819192dca918ea3860a4",
+      "version": "0.1.54",
+      "release": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -1088,8 +1088,8 @@
     },
     "migrated_gpt_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.47",
-      "release": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b",
+      "version": "0.13.49",
+      "release": "pluginrel_6ac893be2c9481919431ad52d92f0777",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -1114,8 +1114,27 @@
       "pet_expression_publication": "PASS_SOURCE_READBACK",
       "current_release_readback": "DIRECT"
     },
-    "native_runtime_version": "0.1.50",
-    "account_plugin_version": "0.13.47"
+    "native_runtime_version": "0.1.54",
+    "account_plugin_version": "0.13.49",
+    "release_currentness_reconciliation_2026_10_11": {
+      "status": "DIRECT_CURRENT_RELEASE_METADATA_VERIFIED_HOST_FRESH_BOOT_PENDING",
+      "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_PLUGIN_SURFACE_CURRENTNESS_REPAIR_2026-10-11.json",
+      "receipt_blob": "ad17c3d918034101004511f8e6ef001452c4804a",
+      "historical_capability_field_release_scope": {
+        "native": {
+          "version": "0.1.50",
+          "release": "pluginrel_6ac74b0b5c88819192dca918ea3860a4"
+        },
+        "alive": {
+          "version": "0.13.47",
+          "release": "pluginrel_6ac74b1f99ac8191a4c800e9180c2e9b"
+        }
+      },
+      "current_release_skill_readback": "PREVIOUSLY_DIRECTLY_READ_SEMANTIC_COMPATIBILITY_NOT_FRESH_HOST_INVOCATION",
+      "independent_host_runtime": "NOT_VERIFIED",
+      "plugin_mutation": false,
+      "backup_approval": false
+    }
   },
   "music_additive_evolution_2026_10_05": {
     "status": "CURRENT_PRODUCTIVE_ADDITIVE_EVOLUTION",
