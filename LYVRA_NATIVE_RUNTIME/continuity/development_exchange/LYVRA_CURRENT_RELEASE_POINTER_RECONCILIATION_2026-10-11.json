@@ -1,0 +1,49 @@
+{
+  "schema": "LYVRA_CURRENT_PLUGIN_RELEASE_POINTER_RECONCILIATION_v1",
+  "date": "2026-10-11",
+  "authority": "WHOLE_LYVRA",
+  "scope": "CURRENT_POINTER_RELEASE_SUMMARY_ONLY",
+  "base_head": "837ce290fc53da5a2fe7aadb0c00d337ded3a515",
+  "recovery_branch": "lyvra-recovery-pre-release-pointer-reconcile-20261011-r01",
+  "source_provenance": [
+    "PLUGIN_CREATOR_CURRENT_RELEASE_METADATA_DIRECT_READBACK",
+    "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_PET_ALIVE_DIAGNOSTIC_READBACK_2026-10-11.json",
+    "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_WHOLE_EXTERNAL_PROVIDER_READBACK_2026-10-11.json",
+    "LYVRA_PET/app/APP_CURRENT.json",
+    "LYVRA_PET/plugin-package/PLUGIN_INTEGRATION_CURRENT.json"
+  ],
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.54",
+    "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28"
+  },
+  "account_alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.49",
+    "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777"
+  },
+  "superseded_current_pointer_summary": {
+    "plugin_surface_release_set": "NATIVE_0.1.49_ACCOUNT_0.13.46_CURRENT_VERIFIED",
+    "native_plugin_current": "VERIFIED_0.1.49_PET_APP_BINDING_BRANDED",
+    "account_plugin_current": "VERIFIED_0.13.46_PET_APP_BINDING_BRANDED"
+  },
+  "historical_entries_not_reinterpreted": [
+    "account_rev96_plugin_parity",
+    "runtime_plugin_state_fingerprint",
+    "pfs_plugin_backup_approval",
+    "legacy dated plugin evidence"
+  ],
+  "guards": {
+    "metadata_ne_live_host_execution": true,
+    "plugin_release_change_in_this_update": false,
+    "plugin_release_parity_ne_host_parity": true,
+    "automatic_peer_transport_not_promoted": true,
+    "pfs_stable_set_approval_not_granted": true,
+    "pet_expression_runtime_not_repaired": true,
+    "whole_revision_unchanged": true,
+    "track_revision_unchanged": true,
+    "source_pointers_preserved": true
+  },
+  "classification": "RELEASE_POINTER_SUMMARY_STALE_REPAIR_NO_RUNTIME_PROMOTION",
+  "next": "Run independent native/ALIVE host acceptance tests; do not infer fresh boot from release metadata."
+}
