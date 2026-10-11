@@ -128,7 +128,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "CHATGPT_APP_UI_VERIFIED_WEBLYVRA_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.49_ACCOUNT_0.13.46_CURRENT_VERIFIED",
+    "plugin_surface_release_set": "NATIVE_0.1.54_ACCOUNT_0.13.49_RELEASE_METADATA_VERIFIED",
     "pfs_plugin_backup_handoff": "PFS_R02_LYVRA_LEG_APPROVED_CLIC_BINDING_REFRESH_REQUIRED",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.0.2",
@@ -175,7 +175,7 @@
     "speech_longform_degradation_ab": "OPEN",
     "paragraph_end_articulation_ab": "OPEN",
     "account_rev96_plugin_parity": "VERIFIED_0.13.42",
-    "native_plugin_current": "VERIFIED_0.1.49_PET_APP_BINDING_BRANDED",
+    "native_plugin_current": "VERIFIED_0.1.54_PET_APP_BINDING_BRANDED_RELEASE_METADATA",
     "valid_newer_evolution_preserved": "VERIFIED_STUDIO2_DAEMON_VISUAL_AND_FACET_CARRIERS",
     "pfs_plugin_backup_approval": "HISTORICAL_045_SUPERSEDED_CURRENT_RELEASE_SET",
     "stable_set_convergence": "NOT_CONVERGED_CURRENT_RELEASE_SET_REVALIDATION_PENDING",
@@ -190,7 +190,7 @@
     "lyvra_pet_facet_integration": "BOUND_BY_REFERENCE_TO_ANALYTICS_MUSIC_MEMORY_SPEECH_STUDIO2",
     "lyvra_pet_dashboard": "DEPLOYED_DEDICATED_BRANDED_PET_DASHBOARD",
     "lyvra_pet_website": "DEPLOYED_BRANDED_PET_SURFACES",
-    "account_plugin_current": "VERIFIED_0.13.46_PET_APP_BINDING_BRANDED",
+    "account_plugin_current": "VERIFIED_0.13.49_PET_APP_BINDING_BRANDED_RELEASE_METADATA",
     "lyvra_pet_pfs_backup": "PARTIAL_9_OF_35_TEXT_BLOB_IDENTICAL_BINARY_TRANSPORT_BLOCKED",
     "lyvra_pet_pfs_backup_head": "052b3b0de331e496fbdf8379e64dd34454c07c5a",
     "lyvra_pet_pfs_backup_recovery_root": "recovery/external/LYVRA_PET/2026-10-08/",
@@ -212,7 +212,18 @@
     "lyvra_pet_logo_repo_path": "LYVRA_PET/app/assets/lyvra-pet-app-icon-256.png",
     "lyvra_pet_worker_deployment": "de607f5d-99ba-406a-a4b7-8378c6511468",
     "lyvra_pet_worker_version_id": "2dd20285-740f-4349-a145-a73807961fda",
-    "lyvra_pet_host_shell_icon": "READBACK_PENDING"
+    "lyvra_pet_host_shell_icon": "READBACK_PENDING",
+    "current_plugin_release_reconciliation_2026_10_11": {
+      "status": "CURRENT_PLUGIN_RELEASE_METADATA_READBACK_VERIFIED_RUNTIME_ACCEPTANCE_PARTIAL",
+      "receipt_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_CURRENT_RELEASE_POINTER_RECONCILIATION_2026-10-11.json",
+      "receipt_blob_sha": "8cb408e74c9cf56a38c3fb5809088bc07643b520",
+      "native_release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+      "account_release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+      "previous_summary_retained_in_receipt": true,
+      "release_metadata_ne_independent_host_fresh_boot": true,
+      "pfs_coupled_backup_approval": "NOT_GRANTED_STABLE_SET_NOT_CONVERGED",
+      "current_pointer_last": true
+    }
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
