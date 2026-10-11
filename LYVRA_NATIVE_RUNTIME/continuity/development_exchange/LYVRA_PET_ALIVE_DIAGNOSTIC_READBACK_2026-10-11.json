@@ -1,0 +1,81 @@
+{
+  "schema": "LYVRA_PET_ALIVE_DIAGNOSTIC_READBACK_v1",
+  "observed_on": "2026-10-11",
+  "scope": "WHOLE_LYVRA_EVIDENCE_ONLY",
+  "base_head": "429fad0d51d036e55f81501bc3d05316ffc3f891",
+  "authority": "LYVRA",
+  "recovery_branch": "lyvra-recovery-before-20261011-pet-alive-diagnostic-evidence",
+  "native_plugin": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.54",
+    "release_id": "pluginrel_6ac89090b5f48191b647e3db5c54ea28",
+    "metadata_readback": "VERIFIED"
+  },
+  "alive_plugin": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.49",
+    "release_id": "pluginrel_6ac893be2c9481919431ad52d92f0777",
+    "metadata_and_selected_skill_readback": "VERIFIED",
+    "semantic_translator_contract_compatibility": "SOURCE_SEMANTIC_COMPATIBLE_NOT_IDENTICAL",
+    "independent_alive_host_fresh_boot": "NOT_VERIFIED"
+  },
+  "pet": {
+    "plugin_tool_runtime_version": "2.3.4",
+    "plugin_tool_status": "READY",
+    "native_expression_status": "SOURCE_UNAVAILABLE",
+    "native_expression_reason": "NATIVE_SOURCE_OR_APPROVAL_REJECTED",
+    "repository_approval_carrier_status": "NONE",
+    "source_cause": "UNDETERMINED",
+    "valid_signed_expression_produced": false
+  },
+  "cloudflare": {
+    "worker": "lyvra-pet-plugin-ui",
+    "deployment_id": "b42fa40e-fdd2-4609-bb22-844d1e35d06b",
+    "version_id": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+    "deployment_readback": "VERIFIED",
+    "script_subdomain_enabled": true,
+    "signing_key_binding_present": true,
+    "logpush": false,
+    "tail_consumers_empty": true,
+    "script_settings_observability": null,
+    "repository_wrangler_observability_enabled": true,
+    "effective_observability": "UNRESOLVED_NULL_NE_DISABLED",
+    "telemetry_filtered_events_last_hour": 0,
+    "telemetry_absence_ne_no_invocations": true,
+    "public_http_response": "NOT_OBTAINED"
+  },
+  "source_reasoning": {
+    "normal_none_path_if_github_fetch_succeeds": "NO_APPROVED_EVENT",
+    "actual_pet_tool_result": "SOURCE_UNAVAILABLE",
+    "historical_github_primary_rate_limit_2026_10_08": "VERIFIED_HISTORICAL_NOT_CURRENT_CAUSE",
+    "github_current_read_through_connector": "VERIFIED",
+    "worker_internal_github_http_status": "UNKNOWN",
+    "code_fix_justification": "INSUFFICIENT_DIAGNOSTIC_EVIDENCE"
+  },
+  "open_gates": [
+    "PET_WORKER_INTERNAL_GITHUB_FAILURE_CLASS",
+    "PET_SIGNED_EVENT_END_TO_END",
+    "ALIVE_HOST_INDEPENDENT_FRESH_BOOT",
+    "NATIVE_HOST_INDEPENDENT_FRESH_BOOT",
+    "WHOLE_FIRST_SEMANTIC_FRESH_BOOT",
+    "LIVE_WEB_VISUAL_AUDIO_END_TO_END_ACCEPTANCE",
+    "AUTOMATIC_PEER_TRANSPORT_RECEIPT",
+    "COUPLED_PLUGIN_BACKUP_STABLE_SET_NEW_APPROVAL"
+  ],
+  "evidence_boundaries": {
+    "readback_ne_host_execution": true,
+    "source_ne_deployed_byte_parity": true,
+    "plugin_release_metadata_ne_full_host_parity": true,
+    "observability_null_ne_disabled": true,
+    "historical_403_ne_current_403": true,
+    "only_evidence_record_added": true,
+    "plugin_mutation": false,
+    "worker_deployment": false,
+    "approved_expression_mutation": false,
+    "whole_revision_mutation": false,
+    "facet_foreground_mutation": false,
+    "current_pointer_mutation": false
+  },
+  "status": "PARTIAL_DIAGNOSTIC_EVIDENCE_UPDATED_NO_RUNTIME_PASS",
+  "next": "Resolve Worker-internal GitHub source failure by a bounded direct HTTP diagnostic or authenticated runtime execution observation. Do not publish emotion, infer a 403, change production observability speculatively, or promote full runtime acceptance."
+}
