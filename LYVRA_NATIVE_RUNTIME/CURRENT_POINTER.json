@@ -4467,5 +4467,29 @@
     "native_plugin_and_alive_release_impact": "SOURCE_CHANGE_REQUIRES_PARITY_REVIEW_OR_RELEASE_BEFORE_HOST_CLAIM",
     "no_foreign_autoactivation": true,
     "no_new_router": true
+  },
+  "cross_chat_visual_rehydration_protection_2026_10_14": {
+    "status": "CURRENT_REPO_GOVERNANCE_VERIFIED_DUAL_PLUGIN_RELEASE_PARITY_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "base_head": "7320c3892759ec05add2d725950557391a10ff57",
+    "recovery_branch": "lyvra-recovery-pre-cross-chat-rehydration-preservation-20261014-r01",
+    "governance_path": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+    "governance_blob": "9e4c1656f79707b5795fc244c6dd999b5927a6ae",
+    "manifest_blob": "c66f5dd441609c9d5e0da1826fc58749f7a202be",
+    "fingerprint_registry_blob": "08935dcb2b8d2653a53ef4a5183159fece776afc",
+    "preserved_invariants": [
+      "VISIBLE_VERIFIED_OR_PARTIAL_REHYDRATION_FINISH",
+      "FOUR_CHAT_LOCAL_WORK_CHOICES",
+      "NO_AUTOMATIC_REPAIR_OR_DEVELOPMENT",
+      "NO_REPEATED_WEITER_WITHOUT_NEW_EVIDENCE"
+    ],
+    "cross_chat_rule": "RECONCILE_FRESH_HEAD_AND_EXPECTED_SHA_CONFLICT_QUARANTINE",
+    "valid_newer_evolution": "PRESERVE_EXCEPT_GOVERNED_SUPERSESSION",
+    "native_plugin_expected": "0.1.54",
+    "alive_plugin_expected": "0.13.49",
+    "plugin_update_result": "UPLOAD_ARCHIVE_INGESTION_REJECTED_RELEASES_UNCHANGED",
+    "plugin_host_acceptance": "PENDING",
+    "original_logo_policy": "PRESERVE_UNCHANGED",
+    "foreign_autoactivation": false
   }
 }
