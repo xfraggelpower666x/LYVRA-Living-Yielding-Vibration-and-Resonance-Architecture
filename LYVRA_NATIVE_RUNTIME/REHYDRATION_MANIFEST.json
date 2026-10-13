@@ -1794,5 +1794,45 @@
     "no_automatic_promotion": true,
     "no_new_router": true,
     "no_foreign_autoactivation": true
+  },
+  "cross_chat_current_rehydration_authority_2026_10_14": {
+    "status": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE",
+    "source": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+    "source_blob": "c6a78e95a3f98f719659d07597405574f8671468",
+    "scope": [
+      "SYSTEMSTART",
+      "WEITER",
+      "UPDATE",
+      "NEW_CHAT",
+      "NEXT_CHAT",
+      "MAIN",
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2",
+      "LYVRA_PET_OPTIONAL"
+    ],
+    "precedence": [
+      "FRESH_GITHUB_CURRENT_POINTER_AND_REFERENCES",
+      "VERIFIED_VALID_NEWER_EVOLUTION",
+      "HISTORICAL_PROVENANCE",
+      "CHAT_MEMORY_OR_OLD_PROMPTS_NONAUTHORITATIVE"
+    ],
+    "preserve": [
+      "READ_ONLY_WHOLE_AND_FACET_REHYDRATION",
+      "VISIBLE_PROCEDURE_COMPLETION_NOT_FAKE_PASS",
+      "FOUR_WORK_OPTIONS",
+      "NO_RECURSIVE_WEITER_OR_UNASKED_DEVELOPMENT",
+      "PET_OPTIONAL_DIRECT_TRIGGER_NOT_WHOLE_BLOCKER",
+      "ONE_WHOLE_LYVRA_IDENTITY"
+    ],
+    "cross_chat_writes": "LATEST_HEAD_AND_EXPECTED_BLOB_SHA_OR_QUARANTINE",
+    "supersession": "EXPLICIT_CAUSAL_COMPATIBLE_PROVENANCE_PRESERVING_NEWER_EVOLUTION_ONLY",
+    "plugin_surfaces": [
+      "LYVRA_NATIVE_RUNTIME_0.1.55",
+      "LYVRA_ALIVE_0.13.50"
+    ],
+    "plugin_host_fresh_boot": "NOT_VERIFIED",
+    "no_new_router": true,
+    "no_foreign_autoload": true
   }
 }
