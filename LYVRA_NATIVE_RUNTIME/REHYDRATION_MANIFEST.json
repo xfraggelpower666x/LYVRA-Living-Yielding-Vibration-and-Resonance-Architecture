@@ -1834,5 +1834,31 @@
     "plugin_host_fresh_boot": "NOT_VERIFIED",
     "no_new_router": true,
     "no_foreign_autoload": true
+  },
+  "post_rehydration_fifth_development_topic_menu_2026_10_14": {
+    "status": "CURRENT_NATIVE_SOURCE_GOVERNANCE",
+    "source": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "source_blob": "73449608ae725e741abd3dcf72ebb052dbe7a355",
+    "choices": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "BEARBEITEN UND WEITERENTWICKELN"
+    ],
+    "fifth_option_behavior": "READ_ONLY_OPEN_DEVELOPMENT_TOPIC_DISCOVERY_NOT_UPDATE",
+    "topic_evidence": [
+      "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+      "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md",
+      "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "CURRENT_TOPIC_SPECIFIC_EVIDENCE"
+    ],
+    "topic_select": "DIRECT_EXPLICIT_SCOPE_TO_GOVERNED_UPDATE",
+    "non_current_items": "SHOW_STALENESS_NO_FAKE_OPEN_COUNT",
+    "promoted_ne_open": true,
+    "pet_only_opt_in": true,
+    "back_to_work_choice": true,
+    "no_auto_development": true,
+    "no_new_router": true
   }
 }
