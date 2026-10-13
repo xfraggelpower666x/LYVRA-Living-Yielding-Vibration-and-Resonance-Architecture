@@ -4522,5 +4522,43 @@
     "binary_logo_byte_integrity": "NOT_HASH_VERIFIED",
     "coupled_pfs_backup_approval": "NOT_GRANTED_WITHOUT_STABLE_SET",
     "foreign_autoactivation": false
+  },
+  "whole_facet_nondevelopment_rehydration_finalizer_2026_10_14": {
+    "status": "CURRENT_REPO_SOURCE_READBACK_PENDING_PLUGIN_FRESH_HOST_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "base_head": "6c87b1e7de5714bd5f5780b2b71eb86c69abade0",
+    "recovery_branch": "lyvra-recovery-pre-nondevelopment-rehydration-finalizer-20261014-r01",
+    "manifest_blob": "5e6209fdda55ae6e6c4991fa64984358598261e8",
+    "fingerprint_registry_blob": "dd66bea337856d333399288566b87a78bbd2b172",
+    "carrier_blobs": {
+      "facet_sub_rehydration": "0330b4536738516ed496e410cf8459de28713cc3",
+      "visual_intelligence": "6643467fd0b7983d8999e7e765d9a1ac006298be",
+      "facet_navigation": "959061c854379c5ddac43e1d40f8ccfd683afb66"
+    },
+    "scopes": [
+      "WHOLE_LYVRA",
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2"
+    ],
+    "process_completion_separate_from_full_verified_pass": true,
+    "finalize_even_with_noncritical_external_gaps": true,
+    "critical_authority_never_waived": true,
+    "visual_choice_after_terminal": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2"
+    ],
+    "read_only_rehydration": true,
+    "no_automatic_repair_or_development": true,
+    "previous_plugin_releases": {
+      "native": "0.1.55",
+      "alive": "0.13.50"
+    },
+    "plugin_impact": "REPOSITORY_CURRENT_RULE_ADDITIVE_PLUGIN_SKILL_ALREADY_PRESENT_RELEASES_UNCHANGED_FRESH_HOST_PENDING",
+    "independent_host_behavior": "NOT_VERIFIED",
+    "cross_chat_guard": "FRESH_HEAD_AND_EXPECTED_BLOB_SHA",
+    "foreign_autoactivation": false
   }
 }
