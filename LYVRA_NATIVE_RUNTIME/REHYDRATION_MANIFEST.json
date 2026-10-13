@@ -1678,5 +1678,25 @@
     "repeat_weiter_without_new_evidence": "REPORT_TERMINAL_STATE_AND_OFFER_CHOICES",
     "no_new_router": true,
     "no_foreign_autoload": true
+  },
+  "cross_chat_visual_rehydration_preservation_2026_10_14": {
+    "status": "CURRENT_REPO_GOVERNANCE_VERIFIED_PLUGIN_PUBLICATION_BLOCKED",
+    "source": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+    "source_sha": "9e4c1656f79707b5795fc244c6dd999b5927a6ae",
+    "invariants": [
+      "VISUAL_REHYDRATION_TERMINAL",
+      "FOUR_CHAT_LOCAL_WORK_CHOICES",
+      "NO_RECURSIVE_WEITER_LOOP",
+      "NO_AUTO_REPAIR_OR_DEVELOPMENT"
+    ],
+    "concurrent_write_rule": "FRESH_HEAD_EXPECTED_BLOB_SHA_RECOVERY_AND_CONFLICT_QUARANTINE",
+    "newer_evolution_rule": "PRESERVE_UNLESS_EXPLICIT_GOVERNED_SUPERSESSION",
+    "plugin_targets": [
+      "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "plugin_06a4fc64dd848191982ca4a6ebdb2619"
+    ],
+    "plugin_release_state": "CURRENT_RELEASES_UNCHANGED_ARCHIVE_INGESTION_NOT_ACCEPTED",
+    "host_fresh_boot": "NOT_VERIFIED",
+    "no_new_router": true
   }
 }
