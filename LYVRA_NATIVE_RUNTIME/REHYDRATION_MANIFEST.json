@@ -1718,5 +1718,54 @@
     "host_acceptance": "PENDING",
     "binary_byte_parity": "NOT_DIRECTLY_HASHED",
     "no_new_router": true
+  },
+  "whole_and_facet_readonly_round_finalizer_2026_10_14": {
+    "status": "CURRENT_REPOSITORY_SOURCE_INTEGRATED",
+    "owner": "WHOLE_LYVRA",
+    "scope": [
+      "WHOLE_LYVRA",
+      "TRACK_DESIGN",
+      "SPEECH_DESIGN",
+      "SUNO_STUDIO_2"
+    ],
+    "mechanism": "BOUNDED_READBACK_ROUND_CLOSEOUT_NO_DEVELOPMENT",
+    "separate_fields": {
+      "process": [
+        "IN_PROGRESS",
+        "COMPLETED",
+        "BLOCKED"
+      ],
+      "evidence": [
+        "VERIFIED",
+        "PARTIAL",
+        "READBACK_PENDING",
+        "NOT_APPLICABLE"
+      ],
+      "readiness": [
+        "READY_VERIFIED",
+        "USABLE_WITH_EXPLICIT_LIMITS",
+        "UNAVAILABLE_CRITICAL"
+      ]
+    },
+    "finalizer": "ON_RELEVANT_SOURCES_READ_OR_EXACT_BLOCKERS_RECORDED_CLOSE_ROUND",
+    "round_closed_ne_whole_or_facet_pass": true,
+    "critical_authority_not_waivable": true,
+    "unresolved_evidence": "OPERATIONS_CENTER_OPEN_EVIDENCE_NO_AUTO_EXECUTION",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "facet_lifecircle": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "facet_navigation": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+    "post_round_choices": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2"
+    ],
+    "direct_facet_task_skips_duplicate_menu": true,
+    "read_only": true,
+    "no_auto_development": true,
+    "no_auto_repair": true,
+    "no_recursive_weiter": true,
+    "no_new_controller": true,
+    "no_foreign_autoactivation": true
   }
 }
