@@ -1,0 +1,37 @@
+{
+  "schema": "LYVRA_PET_WORKER_CURRENTNESS_REPAIR_v1",
+  "date": "2026-10-14",
+  "authority": "WHOLE_LYVRA",
+  "scope": "CURRENT_POINTER_PET_WORKER_METADATA_ONLY",
+  "base_head": "3e58059bad7613549fd3870d678baa6fca7362d5",
+  "recovery_branch": "lyvra-recovery-pre-pet-worker-pointer-repair-20261014",
+  "source_evidence": {
+    "cloudflare_deployment_api": "AUTHENTICATED_GET_VERIFIED",
+    "pet_tool": "DIRECT_RUNTIME_INVOCATION_READY_2.3.4",
+    "cloudflare_active": {
+      "worker": "lyvra-pet-plugin-ui",
+      "deployment_id": "b42fa40e-fdd2-4609-bb22-844d1e35d06b",
+      "version_id": "d3bc3412-3f5c-4dc4-b1a2-89f550df2f04",
+      "traffic_percent": 100
+    },
+    "prior_pointer": {
+      "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.0.2",
+      "lyvra_pet_worker_deployment": "de607f5d-99ba-406a-a4b7-8378c6511468",
+      "lyvra_pet_worker_version_id": "2dd20285-740f-4349-a145-a73807961fda"
+    }
+  },
+  "decision": "CORRECT_ONLY_STALE_WHOLE_POINTER_WORKER_METADATA",
+  "guards": {
+    "worker_deploy": false,
+    "plugin_release_mutation": false,
+    "pet_event_approval_mutation": false,
+    "pet_native_expression_resolved": false,
+    "independent_host_fresh_boot_proven": false,
+    "whole_revision_mutation": false,
+    "track_revision_mutation": false,
+    "foreign_mutation": false,
+    "fingerprint_registry_rehash_not_claimed": true,
+    "backup_approval_not_granted": true
+  },
+  "next": "BOUND_WORKER_INTERNAL_GITHUB_HTTP_DIAGNOSTIC_AND_INDEPENDENT_HOST_RUNTIME_ACCEPTANCE"
+}
