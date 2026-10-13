@@ -425,3 +425,28 @@ EVOLVE_CAPABILITY_OR_INTELLIGENCE_IF_JUSTIFIED >
 READBACK_FACET_STATE
 
 STRENGTHENED_FLOW_SUPPLEMENTS_EXISTING_SUB_LIFECIRCLE = true
+
+
+## Native bounded sub-rehydration finalizer — 2026-10-14
+
+A facet SUB-REHYDRATION is a read-only restoration of verified capability/intelligence meaning, NOT a demand to repair, mutate, regenerate or test an unavailable external provider. End the finite relevant readback when (a) required reachable sources were read and understood, or (b) an exact inaccessible source or unresolved acceptance dependency was recorded. No unbounded reread without new source evidence.
+
+Distinct independent fields must be presented:
+- ROUND = IN_PROGRESS | CLOSED | BLOCKED.
+- EVIDENCE = VERIFIED | PARTIAL | READBACK_PENDING | NOT_APPLICABLE, by applicable carrier.
+- FACET_READINESS = READY_VERIFIED | USABLE_WITH_EXPLICIT_LIMITS | UNAVAILABLE_CRITICAL.
+- OPEN_OBLIGATIONS = sourced precise remaining evidence gates, not executable repair commands.
+
+ROUND=CLOSED with EVIDENCE=PARTIAL means REHYDRATION WORKFLOW CLOSED, not facet capability PASS. If required critical Whole/Facet authority is missing, FACET_READINESS=UNAVAILABLE_CRITICAL; do not claim an operational ability. Only actually verified capability may be used. No development or repository write is authorized by this closeout.
+
+For each of TRACK_DESIGN, SPEECH_DESIGN and SUNO_STUDIO_2, render prominent final status and available work choice(s) through Whole LYVRA Semantic Visual Intelligence. Then offer the existing four chat-local destinations, with the just-rehydrated facet clearly indicated and optional return to LYVRA MAIN. Nothing switches foreground without explicit user selection. When a sub-rehydration is implicitly part of the explicit user-requested facet task, do not force another menu: continue that chosen task if it is safe and supported.
+
+After FULL Whole or any Sub-Rehydration concludes, REHYDRATION_CLOSEOUT_NE_AUTO_DEVELOPMENT, REHYDRATION_CLOSEOUT_NE_AUTO_REPAIR, REHYDRATION_CLOSEOUT_NE_FRESH_BOOT_ACCEPTANCE. Unresolved validation obligations are registered/reachable in Operations Center, not executed as a repair queue. A repeated WEITER without materially newer evidence displays the terminal result again and offers work, not an automatic loop.
+
+SUB_REHYDRATION_RUN_FINALIZER = MANDATORY
+FACET_TERMINAL_VISIBLE = true
+FACET_ROUND_CLOSED_NE_VERIFIED_CAPABILITY = true
+SUB_REHYDRATION_REQUIRES_NO_WRITE = true
+NO_REHYDRATION_TO_DEVELOPMENT_ESCALATION = true
+NO_NEW_FACET_AGENT_OR_ROUTER = true
+WHOLE_AUTHORITY_ALWAYS_PRESENT = true
