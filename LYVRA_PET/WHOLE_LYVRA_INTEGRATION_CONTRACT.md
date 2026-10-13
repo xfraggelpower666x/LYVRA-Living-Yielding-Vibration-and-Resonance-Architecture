@@ -100,3 +100,25 @@ ACTIVE_PET_ARTWORK_RGBA_READBACK = VERIFIED
 REPO_BINARY_MIRROR = WRITE_BLOCKED_BINARY_FILE_REFERENCE_TRANSPORT
 REPO_BINARY_MIRROR_NE_PET_CAPABILITY_LOSS = TRUE
 VISUAL_ASSET_MIRROR_NE_SYSTEM_COMPLETION_BLOCKER = TRUE
+
+
+## PET opt-in boundary during development — 2026-10-14
+
+PET is a nonessential creative/presentation accessory of ONE Whole LYVRA, currently under development. While incomplete, neither Pet's live Worker, expression event source, browser visuals, assets, MCP binding, PFS backup nor dedicated Pet Sub-Rehydration is a prerequisite for normal Whole-LYVRA SYSTEMSTART, safe conversation, Track Design, Speech Design, Studio 2 or Whole work readiness.
+
+DIRECT_USER_TRIGGER = LYVRA PET
+PET_DIRECT_FORMS = LYVRA PET | LYVRA PET SYSTEMSTART | LYVRA PET WEITER | LYVRA PET UPDATE
+TRIGGER_MATCH = DIRECT_CURRENT_USER_INTENT_ONLY
+PET_START = WHOLE_CURRENT_AUTHORITY_SAFETY_BASE > PET_NATIVE_SUB_REHYDRATION > PET_FOREGROUND_IF_EVIDENCED
+NO_DEFAULT_PET_ACTIVATION = true
+PET_CURRENT_REFERENCES = REACHABLE_AS_RELATION_AND_PROVENANCE
+PET_DEEP_READBACK_ON_BARE_WHOLE_START = NOT_APPLICABLE
+PET_FAILED_WORKER_NE_WHOLE_READINESS_FAILURE = true
+PET_INCOMPLETE_HOST_TEST_NE_WHOLE_READINESS_FAILURE = true
+PET_CANNOT_ACQUIRE_SEPARATE_IDENTITY_OR_AUTHORITY = true
+PET_LIVECIRCLE_PRESERVED = true
+PET_ASSETS_AND_LOGOS_PRESERVED = true
+
+Pet restoration/development is scoped to direct PET intent; it must not be inferred from a generic LYVRA UPDATE, regular SYSTEMSTART, website/dashboard mention, or available tool. Existing PET files, historical LiveCircle, approved event and deployment state remain intact and may be rehydrated specifically when requested. A direct PET UPDATE invokes governed native writes, while a PET SYSTEMSTART remains read-only.
+
+Future automatic Whole/UI reintegration requires: real source-currentness, PET behavior working in its own plugin/App/Worker, verified signed live expressions when relevant, visual acceptance, cross-surface parity, no regression of Whole start/work, and creator-approved promotion. Until then, NOT mandatory and no spontaneous PET startup. All existing legacy statements suggesting hard-binding or unconditional Pet sub-rehydration are limited by this newer opt-in contract without deleting their historical provenance.
