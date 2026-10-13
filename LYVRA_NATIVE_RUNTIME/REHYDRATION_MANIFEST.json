@@ -1606,5 +1606,44 @@
     "chat_local": true,
     "no_new_router": true,
     "no_foreign_autoactivation": true
+  },
+  "post_deep_rehydration_visual_four_choices_2026_10_14": {
+    "status": "CURRENT_PRODUCTIVE_REPOSITORY_SOURCE_PLUGIN_RELEASE_PARITY_PENDING",
+    "trigger_condition": "AFTER_EXPLICIT_REHYDRATION_VERTIEFEN_COMPLETES_IF_USER_HAS_NOT_ALREADY_SELECTED_A_FACET",
+    "display": "NATIVE_SEMANTIC_VISUAL_INTELLIGENCE_FOUR_ACCESSIBLE_USER_CHOICES",
+    "choices": [
+      {
+        "label": "Mit LYVRA arbeiten und sprechen",
+        "native_trigger": "LYVRA MAIN",
+        "facet": "WHOLE_LYVRA"
+      },
+      {
+        "label": "Mit LYVRA Track Design",
+        "native_trigger": "LYVRA TRACK DESIGN",
+        "facet": "TRACK_DESIGN"
+      },
+      {
+        "label": "Mit LYVRA Speech Design",
+        "native_trigger": "LYVRA SPEECH DESIGN",
+        "facet": "SPEECH_DESIGN"
+      },
+      {
+        "label": "Mit LYVRA Studio 2",
+        "native_trigger": "LYVRA SUNO STUDIO 2",
+        "facet": "SUNO_STUDIO_2"
+      }
+    ],
+    "sources": [
+      "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+      "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+      "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md"
+    ],
+    "no_automatic_development": true,
+    "no_automatic_repair": true,
+    "no_new_router": true,
+    "unchosen_facets_not_foreground": true,
+    "unresolved_evidence_preserved": true,
+    "non_waivable_authority_checks": true,
+    "interactive_selection_only": true
   }
 }
