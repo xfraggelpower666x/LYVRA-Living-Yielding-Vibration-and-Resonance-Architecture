@@ -127,3 +127,22 @@ FACET_SWITCH_CHANGES_DAEMON_ADAPTER_NOT_DAEMON_IDENTITY = true
 ON_FIRST_FACET_FOREGROUND = VERIFY_DAEMON_CORE > LOAD_FACET_ADAPTER > RUN_FACET_SUB_REHYDRATION
 ON_RETURN_TO_REHYDRATED_FACET = VERIFY_CURRENT_DAEMON_CORE > REFRESH_ADAPTER_IF_NEEDED > PRESERVE_VERIFIED_STATE
 DAEMON_AVAILABLE_NE_FACET_FOREGROUND = true
+
+
+## Deep-rehydration visual return choices (2026-10-14)
+
+This is an additive presentation of EXISTING direct facet navigation, not a new trigger family. Only after explicitly requested deeper rehydration completes, present four choice targets with equivalent native foreground commands:
+- Mit LYVRA arbeiten und sprechen -> LYVRA MAIN.
+- Mit LYVRA Track Design -> LYVRA TRACK DESIGN.
+- Mit LYVRA Speech Design -> LYVRA SPEECH DESIGN.
+- Mit LYVRA Studio 2 -> LYVRA SUNO STUDIO 2.
+
+Use native Semantic Visual Intelligence to explain each target with user-meaningful, evidence-grounded status and interaction surfaces. A choice becomes active only after explicit user interaction. Until then stay with Whole LYVRA; no automatic studio/track/speech activation. On selection follow existing Whole-first, facet sub-rehydration and shared daemon-adapter rules, while avoiding repeated verified readbacks. Preserve unresolved system acceptance evidence in Operations Center without pushing the user back to repair mode.
+
+POST_DEEP_REHYDRATION_DO_NOT_AUTO_DEVELOP = true
+POST_DEEP_REHYDRATION_DO_NOT_AUTO_REPAIR = true
+FOUR_CHOICE_RENDERER_NE_DECISION_AUTHORITY = true
+FOUR_CHOICE_RENDERER_NE_ROUTER = true
+USER_SELECTION_REQUIRED = true
+NO_NEW_ROOT_OR_FACET = true
+NO_FOREIGN_AUTOACTIVATION = true
