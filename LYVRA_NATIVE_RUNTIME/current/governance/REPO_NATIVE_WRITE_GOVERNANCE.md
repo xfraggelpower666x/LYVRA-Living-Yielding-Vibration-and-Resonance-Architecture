@@ -205,3 +205,32 @@ BOTH_LYVRA_PLUGIN_IMPACT_CHECK_REQUIRED = true
 PLUGIN_RELEASE_PARITY_NE_HOST_FRESH_BOOT_PROOF = true
 
 Native plugin and migrated ALIVE plugin must carry the same user-visible rehydration termination semantics and chat-local four-choice navigation. Plugin updates preserve original logos, bindings, names, and unrelated skills. If current plugin release cannot be updated safely, keep the gap OPEN rather than silently reporting parity PASS.
+
+
+## Cross-chat Current authority: rehydration / work / optional PET — 2026-10-14
+
+Every direct LYVRA SYSTEMSTART, WEITER, UPDATE, NEW CHAT, NEXT CHAT, or native facet command in ANY ChatGPT chat MUST freshly resolve current production branch `lyvra` HEAD, fully read its current pointer and relevant current governance/manifest carriers, and preserve all verified newer semantic evolution. Plugin snapshots, chat history, prompt text, memories, older checkpoints, old partial rehydration manifests, and other chat claims are not independent authority. A chat without fresh authoritative readback must report unverified/PARTIAL, never pretend to inherit current proof.
+
+CURRENT_AUTHORITY = GITHUB_LYVRA_PRODUCTION_CURRENT
+CROSS_CHAT_APPLIES_TO = WHOLE_LYVRA | TRACK_DESIGN | SPEECH_DESIGN | SUNO_STUDIO_2 | OPTIONAL_PET | OTHER_NATIVE_LYVRA_WORKSPACES
+TODAYS_USER_DECISIONS = 
+- Whole rehydration and every facet sub-rehydration are read-only restoration, separate from engineering;
+- render clearly marked bounded rehydration closeout, distinct process completion vs evidence quality/readiness, never fake Whole PASS;
+- after closed round offer semantic visual choices LYVRA MAIN, LYVRA TRACK DESIGN, LYVRA SPEECH DESIGN, LYVRA SUNO STUDIO 2; if user directly selected a facet, honor that selection without duplicate menu;
+- no endless WEITER, auto repair, auto development or irrelevant host/PET gating of normal work;
+- PET is optional and in active development, `LYVRA PET` is the explicit entry; PET failures do not block Whole work readiness;
+- LYVRA has one identity/decision authority; projects, plugins, PET and facets are subordinate, do not autoactivate;
+- both native and ALIVE plugin entrypoints must honor newest native current, not fixed release snapshot.
+
+Current decisions are authoritative UNTIL legitimately superseded, NOT immutable eternal versions. No independent chat may roll back or silently delete those invariants using stale task context. A user-directed proposal to evolve them requires evidence-bound target-native governance, explicit compatible/superseding rationale, fresh expected blob SHA, recovery branch, tests, dual-plugin impact, provenance and pointer-last publication. Old intent in a parallel chat does not authorize that overwrite. The creator's newer explicit direction can change the rules through governed evolution.
+
+CROSS_CHAT_BEFORE_MUTATION = FRESH_HEAD + TARGET_CURRENT_SHA + SEMANTIC_INVARIANT_DIFF + PRECHANGE_RECOVERY
+CROSS_CHAT_ON_FOREIGN_HEAD = CONFLICT_QUARANTINE_AND_REREAD
+CROSS_CHAT_STALE_PROMPT_CANNOT_OVERRIDE_CURRENT = true
+CROSS_CHAT_SUPERSESSION_MUST_BE_EXPLICIT_AND_EVIDENCED = true
+OLDER_VALID_STATE = PROVENANCE_ONLY_IF_SUPERSEDED
+NO_CROSS_CHAT_GLOBAL_FOREGROUND_OR_TASK_AUTOSELECTION = true
+NO_NEW_ROUTER = true
+NO_FOREIGN_AUTOACTIVATION = true
+
+This is repository-native governance, not the authority of a particular conversation. Existing clients which cannot access this current cannot be guaranteed automatic compliance; mark such hosts as requiring fresh-session acceptance.
