@@ -4392,5 +4392,27 @@
     "communication_gate": false,
     "facets_unchanged": true,
     "next": "RUN_REAL_GITHUB_ACTIONS_ARTIFACT_THEN_AUTHORIZED_HOST_AND_PLUGIN_RUNTIME_ACCEPTANCE"
+  },
+  "post_rehydration_choice_2026_10_14": {
+    "status": "CURRENT_REPOSITORY_GOVERNANCE_SOURCE_VERIFIED_PLUGIN_PARITY_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "base_head": "d17c2519d597448180da0f8aa9265f737088eacd",
+    "recovery_branch": "lyvra-recovery-pre-rehydration-choice-20261014-r01",
+    "governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "governance_blob": "d8c9b108e984749fa4bf724782ebd5aa3d3c88dd",
+    "rehydration_manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "ebf697b7ed54b199815c868be099f833d24d6098",
+    "choices": [
+      "LYVRA_NUTZEN",
+      "REHYDRATION_VERTIEFEN",
+      "ENTWICKLUNG_REPARATUR_FORTSETZEN"
+    ],
+    "direct_user_intent_overrides_prompt": true,
+    "avoid_auto_rehydration_loop": true,
+    "avoid_auto_repair_loop": true,
+    "preserve_pending_gates": true,
+    "plugin_impact": "BOTH_ACTIVE_RELEASES_REQUIRE_NEXT_RELEASE_PARITY_READBACK",
+    "foreign_autoactivation": false,
+    "write_scope": "LYVRA_REPOSITORY_ONLY"
   }
 }
