@@ -4585,5 +4585,32 @@
     "no_automatic_activation": true,
     "no_new_root_or_router": true,
     "no_foreign_autoactivation": true
+  },
+  "cross_chat_current_authority_2026_10_14": {
+    "status": "CURRENT_REPOSITORY_SOURCE_VERIFIED_EXTERNAL_HOST_ACCEPTANCE_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "base_head": "24cc97b2dc4110e3c046d7bc1c6263982221d58c",
+    "recovery_branch": "lyvra-recovery-pre-crosschat-current-authority-20261014-r01",
+    "governance_blob": "c6a78e95a3f98f719659d07597405574f8671468",
+    "manifest_blob": "57abf2362be8edd833820b3666a0c101938e0638",
+    "fingerprint_registry_blob": "c1b01b2701465eb5d61e389a8b77d47aff0e0fc6",
+    "source_of_truth": "FRESH_GITHUB_LYVRA_CURRENT_NOT_THIS_CHAT",
+    "preserved_user_decisions": [
+      "READ_ONLY_WHOLE_AND_FACET_REHYDRATION",
+      "VISIBLE_TERMINAL_AFTER_BOUNDED_READBACK",
+      "FOUR_USER_WORK_OPTIONS",
+      "NO_AUTO_DEVELOPMENT_OR_REPAIR",
+      "PET_OPT_IN_DIRECT_TRIGGER_ONLY",
+      "PET_NE_WHOLE_WORK_BLOCKER",
+      "CONCURRENT_CHAT_NO_STALE_OVERWRITE"
+    ],
+    "valid_newer_supersession": "GOVERNED_EVIDENCED_EXPLICIT_AND_PROVENANCE_PRESERVING",
+    "installed_releases": {
+      "native": "0.1.55",
+      "alive": "0.13.50"
+    },
+    "plugin_semantic_fresh_host": "NOT_VERIFIED",
+    "no_new_router": true,
+    "no_foreign_autoactivation": true
   }
 }
