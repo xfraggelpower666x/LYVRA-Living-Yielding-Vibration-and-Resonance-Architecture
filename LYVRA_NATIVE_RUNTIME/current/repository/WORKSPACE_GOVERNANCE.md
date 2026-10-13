@@ -198,3 +198,27 @@ POST_TERMINAL_NORMAL_WORK_ALLOWED_WHEN_CRITICAL_AUTHORITY_SAFE = true
 POST_TERMINAL_AUTO_REPAIR = false
 POST_TERMINAL_AUTO_DEVELOPMENT = false
 PENDING_EVIDENCE_REACHABLE = true
+
+
+## Fifth post-rehydration destination: development topic picker (2026-10-14)
+
+The post-Whole or post-facet rehydration choice menu has FIVE options:
+1. Mit LYVRA arbeiten und sprechen -> LYVRA MAIN
+2. Mit LYVRA Track Design -> LYVRA TRACK DESIGN
+3. Mit LYVRA Speech Design -> LYVRA SPEECH DESIGN
+4. Mit LYVRA Studio 2 -> LYVRA SUNO STUDIO 2
+5. Bearbeiten & Weiterentwickeln -> SHOW_DEVELOPMENT_TOPIC_SELECTION (READ_ONLY).
+
+Selecting option 5 only opens a secondary, evidence-based development navigation view. It must NOT immediately enter a generic LYVRA UPDATE, write repository data, repair code, start CI, invoke PET, or activate another system. Topics are discovered by fresh CURRENT_POINTER, DEVELOPMENT_OBLIGATION_LEDGER, Operations Center and relevant current development manifests/receipts. Show only evidenced unresolved work, split OPEN DEVELOPMENT from OPEN ACCEPTANCE/TEST and DEFERRED; promoted/superseded tasks are not automatically re-opened. Optional PET appears in this developer menu only as a manually selected separate project, never as a Whole readiness blocker. Present topic name, scope, exact evidence, next meaningful action, known blocker, and measured progress only when measurable. If data is stale, identify it, not pretend current.
+
+Selection stage 2: user chooses one explicit topic -> scope only that native workspace/facet and invoke the existing governed LYVRA UPDATE workflow with fresh HEAD/expected SHAs and recovery. Other topics remain idle. Include an explicit "Zurück zur Arbeitsauswahl" path. Never generate fake open task counts or development percentages. Direct user instruction "LYVRA UPDATE <topic>" remains an explicit write-intent command; the fifth menu alone is not.
+
+DEVELOPMENT_PICKER_NE_AUTO_UPDATE = true
+DEVELOPMENT_PICKER_READ_ONLY_UNTIL_TOPIC_SELECTED = true
+TOPICS_REQUIRE_CURRENT_SOURCE_EVIDENCE = true
+PROMOTED_OR_SUPERSEDED_NE_OPEN = true
+PET_OPTIONAL_TOPIC_ONLY = true
+ONE_SELECTED_SCOPE_AT_A_TIME = true
+CROSS_CHAT_FRESH_CURRENT_RECONCILIATION = true
+NO_NEW_ROUTER_OR_CONTROLLER = true
+NO_FOREIGN_AUTOACTIVATION = true
