@@ -1,0 +1,33 @@
+name: LYVRA PET Native Source Diagnostics
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_PET/bridge/repository-event-source.mjs'
+      - 'LYVRA_PET/bridge/verify-repository-events.mjs'
+      - '.github/workflows/lyvra-pet-source-diagnostics.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-diagnostic-readonly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact PET source diagnostics without network or events
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          node --check LYVRA_PET/bridge/repository-event-source.mjs
+          node --check LYVRA_PET/bridge/verify-repository-events.mjs
+          node LYVRA_PET/bridge/verify-repository-events.mjs
+      - name: Verify no production deployment or foreign writes
+        run: |
+          test -s LYVRA_PET/runtime/APPROVED_EXPRESSION_CURRENT.json
+          test -s LYVRA_PET/worker/src/index.js
