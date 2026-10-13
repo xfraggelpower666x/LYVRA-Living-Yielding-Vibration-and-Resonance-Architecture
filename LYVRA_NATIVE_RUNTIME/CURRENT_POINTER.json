@@ -4560,5 +4560,30 @@
     "independent_host_behavior": "NOT_VERIFIED",
     "cross_chat_guard": "FRESH_HEAD_AND_EXPECTED_BLOB_SHA",
     "foreign_autoactivation": false
+  },
+  "pet_opt_in_readiness_boundary_2026_10_14": {
+    "status": "CURRENT_NATIVE_SOURCE_VERIFIED_PLUGIN_HOST_PARITY_PENDING",
+    "base_head": "1f8f8c8da83d53d0f971baac9c81bd78b8b84c2f",
+    "recovery_branch": "lyvra-recovery-pre-pet-optin-gate-20261014-r01",
+    "trigger": "LYVRA PET",
+    "direct_forms": [
+      "LYVRA PET SYSTEMSTART",
+      "LYVRA PET WEITER",
+      "LYVRA PET UPDATE"
+    ],
+    "whole_rehydration_scope": "PET_DEEP_SUB_REHYDRATION_NOT_APPLICABLE_UNLESS_EXPLICIT",
+    "whole_work_readiness": "PET_NOT_REQUIRED",
+    "pet_relation": "REACHABLE_NON_FOREGROUND",
+    "pet_development": "INDEPENDENT_OPT_IN",
+    "whole_source_manifest_blob": "14f37b6961dab02f527618efae4dcc5226b0e05a",
+    "pet_integration_contract_blob": "b69d8d735d625a555a552cc3e8e9a94fc8e57c56",
+    "pet_sub_rehydration_manifest_blob": "47533eb154aa3920a24a57e7523d07864520e954",
+    "fingerprint_registry_blob": "79f98dcaf0c1c16c846a1de015dd7813a45c5dc1",
+    "promotion_rule": "CREATOR_APPROVAL_AFTER_REAL_PET_OPERATION_AND_VISUAL_HOST_VERIFICATION",
+    "plugin_impact": "NATIVE_0.1.55_ALIVE_0.13.50_EXISTING_PET_SKILLS_REQUIRE_NEXT_PARITY_UPDATE",
+    "pet_assets_preserved": true,
+    "no_automatic_activation": true,
+    "no_new_root_or_router": true,
+    "no_foreign_autoactivation": true
   }
 }
