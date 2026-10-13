@@ -1,0 +1,53 @@
+{
+  "schema": "LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_RELEASE_READBACK_v1",
+  "date": "2026-10-14",
+  "owner": "WHOLE_LYVRA",
+  "base_head": "9defbbabf9a18fc895431bb68bccb29f73b83d40",
+  "recovery_branch": "lyvra-recovery-pre-dual-plugin-visual-parity-20261014-r01",
+  "status": "BOTH_PLUGIN_RELEASES_PUBLISHED_FILES_READBACK_VERIFIED_HOST_FRESH_BOOT_PENDING",
+  "source_contracts": [
+    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
+  ],
+  "releases": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "old_version": "0.1.54",
+      "version": "0.1.55",
+      "release_id": "pluginrel_6aceb04574d081919d9378c31a13d739",
+      "files_readback": true,
+      "skill": "skills/lyvra-rehydration-completion/SKILL.md",
+      "logo_path": "./assets/lyvra-plugin-logo.png"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "old_version": "0.13.49",
+      "version": "0.13.50",
+      "release_id": "pluginrel_6aceb057c1cc81919a253199ca2535fe",
+      "files_readback": true,
+      "skill": "skills/lyvra-rehydration-completion/SKILL.md",
+      "logo_path": "./assets/lyvra-alive-logo.png"
+    }
+  },
+  "readback": {
+    "new_skill_present_both": true,
+    "release_manifest_versions_match": true,
+    "original_logo_paths_preserved": true,
+    "original_binary_assets_still_listed": true,
+    "app_manifest_and_mcp_files_still_listed": true,
+    "host_fresh_session_semantic_execution": "NOT_TESTED",
+    "binary_logo_sha256_direct_readback": "NOT_PERFORMED",
+    "cross_chat_optimistic_concurrency_runtime_proof": "NOT_TESTED"
+  },
+  "semantic_guards": {
+    "terminal_status_not_equal_full_pass": true,
+    "four_destinations_user_chosen": true,
+    "no_automatic_repair_or_develop": true,
+    "newer_evolution_preserved": true,
+    "conflict_quarantine": true,
+    "whole_identity_only": true
+  },
+  "scope": "PLUGIN_SOURCE_RELEASE_PARITY_NOT_EXTERNAL_HOST_ACCEPTANCE",
+  "foreign_mutation": false
+}
