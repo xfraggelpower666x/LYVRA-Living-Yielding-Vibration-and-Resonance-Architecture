@@ -1588,5 +1588,23 @@
     "not_a_host_hook": true,
     "readback_ne_behavioral_proof": true,
     "requires": "PROVENANCE|CAUSAL_RELATIONS|COUNTERRELATIONS|CROSS_LAYER_FEEDBACK|UNCERTAINTY|APPLICABILITY"
+  },
+  "post_rehydration_continuation_choice_2026_10_14": {
+    "status": "CURRENT_PRODUCTIVE_NATIVE_CONTINUITY_GOVERNANCE",
+    "source": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "placement": "AFTER_SAFE_WHOLE_CURRENT_READBACK_BEFORE_ANY_UNREQUESTED_DEVELOPMENT_LOOP",
+    "choices": [
+      "LYVRA_NUTZEN",
+      "REHYDRATION_VERTIEFEN",
+      "ENTWICKLUNG_REPARATUR_FORTSETZEN"
+    ],
+    "behavior": "OFFER_IF_NO_EXPLICIT_DIRECT_MODE_ALREADY_CHOSEN",
+    "direct_update": "CONTINUE_AUTHORIZED_ACTIVE_SCOPE",
+    "default": "NO_FORCED_REHYDRATION_OR_REPAIR_LOOP",
+    "unresolved_items": "RETAIN_IN_OPERATIONS_CENTER",
+    "critical_authority_checks": "NOT_WAIVABLE",
+    "chat_local": true,
+    "no_new_router": true,
+    "no_foreign_autoactivation": true
   }
 }
