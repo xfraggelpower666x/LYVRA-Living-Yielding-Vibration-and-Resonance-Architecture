@@ -4438,5 +4438,34 @@
     "plugin_impact": "NATIVE_AND_ALIVE_CURRENT_RELEASES_UNCHANGED_LIVE_HOST_PARITY_PENDING",
     "no_foreign_activation": true,
     "no_new_router": true
+  },
+  "visual_rehydration_terminal_2026_10_14": {
+    "status": "CURRENT_REPOSITORY_SOURCE_VERIFIED_PLUGIN_HOST_PARITY_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "recovery_branch": "lyvra-recovery-pre-visual-rehydration-terminal-status-20261014-r03",
+    "source_base_head": "554a72b501fdd68003e5c2ce0f028c1750fb38c3",
+    "visual_contract_blob": "8108cbe6827966433eef6dd5d95f298f69e3952f",
+    "continuity_governance_blob": "71702e4d7b7ce9c397041d48aa86273c42177562",
+    "rehydration_manifest_blob": "8d628a563fae0f44f5d98b0b70f934f91251c192",
+    "fingerprint_registry_blob": "c21dda2ee7e3b000bc930886124ed7838b1a7ef7",
+    "state_distinction": "BOUNDED_READBACK_END_NE_FULL_WHOLE_PASS",
+    "terminal_labels": [
+      "REHYDRATION ABGESCHLOSSEN — VERIFIZIERT",
+      "REHYDRATIONS-DURCHLAUF BEENDET — TEILWEISE OFFEN",
+      "REHYDRATION BLOCKIERT"
+    ],
+    "measured_stage_statuses": true,
+    "repeated_weiter_without_new_evidence": "RETURN_TERMINAL_STATUS_AND_FOUR_WORK_CHOICES",
+    "destinations": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2"
+    ],
+    "unresolved_evidence": "OPERATIONS_CENTER_REACHABLE_NOT_AUTORUN",
+    "critical_authority_gate": "NOT_WAIVABLE",
+    "native_plugin_and_alive_release_impact": "SOURCE_CHANGE_REQUIRES_PARITY_REVIEW_OR_RELEASE_BEFORE_HOST_CLAIM",
+    "no_foreign_autoactivation": true,
+    "no_new_router": true
   }
 }
