@@ -175,3 +175,33 @@ PFS_MAY_REQUEST_REFRESH_DURING_CONVERGENCE = true
 PFS_MAY_EXECUTE_ONLY_AFTER_STABLE_SET_AND_MATCHING_NATIVE_APPROVALS = true
 NO_FOREIGN_SELF_APPROVAL = true
 NO_CROSS_SYSTEM_MERGE = true
+
+
+## Cross-chat semantic preservation and additive rehydration gates — 2026-10-14
+
+Concurrent LYVRA chats may work on distinct workspace/facet scopes, but may not silently erase the current visual rehydration completion, four post-deep-rehydration choices, anti-WEITER-loop rules or earlier valid evolution. Existing optimistic HEAD/blob concurrency is mandatory. Every branch update must reread the latest productive Current after choosing the target workspace and BEFORE writing; unexpected branch movement requires CONFLICT_QUARANTINE and target-by-target reconciliation, never blind overwrite.
+
+PROTECTED_REHYDRATION_CONTRACTS =
+LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md |
+LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md |
+LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md |
+LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json |
+LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json |
+LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json
+
+These are SEMANTIC PRESERVATION INVARIANTS, not permanently frozen hashes or versions. Newer valid evolution may intentionally extend or replace a contract only with explicit supersession rationale, migration/compatibility mapping, affected plugin impact, direct tests and pointer-last readback. Outdated workspace-specific snapshots never outrank newer verified global Current. A change to one facet may not replace unrelated Whole visual governance.
+
+CROSS_CHAT_FRESH_HEAD_REQUIRED = true
+CROSS_CHAT_EXPECTED_BLOB_SHA_REQUIRED = true
+CROSS_CHAT_RECONCILE_NEWER_EVOLUTION = true
+CONCURRENT_FOREIGN_HEAD_NE_BLIND_REBASE = true
+NO_SILENT_REMOVAL_OF_VISUAL_REHYDRATION_TERMINAL = true
+NO_SILENT_REMOVAL_OF_FOUR_WORK_CHOICES = true
+NO_SILENT_REINTRODUCTION_OF_AUTO_REPAIR_LOOP = true
+NO_PERMANENT_VERSION_LOCK = true
+NEWER_VALID_EVOLUTION_MAY_SUPERSEDE_WITH_PROVENANCE = true
+REPOSITORY_CURRENT_IS_AUTHORITY_PLUGIN_IS_ENTRYPOINT = true
+BOTH_LYVRA_PLUGIN_IMPACT_CHECK_REQUIRED = true
+PLUGIN_RELEASE_PARITY_NE_HOST_FRESH_BOOT_PROOF = true
+
+Native plugin and migrated ALIVE plugin must carry the same user-visible rehydration termination semantics and chat-local four-choice navigation. Plugin updates preserve original logos, bindings, names, and unrelated skills. If current plugin release cannot be updated safely, keep the gap OPEN rather than silently reporting parity PASS.
