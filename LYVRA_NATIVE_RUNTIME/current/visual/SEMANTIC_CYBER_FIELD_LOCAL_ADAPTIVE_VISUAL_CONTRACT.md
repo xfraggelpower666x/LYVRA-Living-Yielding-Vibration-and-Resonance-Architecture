@@ -88,3 +88,25 @@ CHOICE_REQUIRES_DIRECT_USER_INTERACTION = true
 UNSELECTED_FACETS_IDLE = true
 VISUAL_INTELLIGENCE_IS_PRESENTATION_NOT_DECISION_AUTHORITY = true
 NO_FOREIGN_AUTOACTIVATION = true
+
+
+## Universal Whole + facet rehydration finalizer UI — 2026-10-14
+
+Use the SAME verified Semantic Visual Intelligence presentation for Whole LYVRA and each existing native facet SUB-REHYDRATION (Track Design, Speech Design, Suno Studio 2).
+
+The UI separates:
+REHYDRATION PROZESS = ABGESCHLOSSEN | LÄUFT | BLOCKIERT
+NACHWEISQUALITÄT = VERIFIZIERT | TEILWEISE OFFEN | KRITISCH UNGEKLÄRT
+NUTZBARKEIT = BEREIT | NUR NACHGEWIESENE TEILE | NICHT SICHER FREIGEGEBEN
+
+Show header "REHYDRATION ABGESCHLOSSEN" once all currently safe/reachable reads were consumed or recorded with precise blocked dependencies, even if evidence remains PARTIAL. Directly underneath show distinct non-green evidence badge "NACHWEISE TEILWEISE OFFEN", concise relevant gaps and limitations. This is NOT "WHOLE PASS" or "FACET PASS." If critical authority is unavailable, show BLOCKIERT, and do not render an unsafe facet as ready.
+
+Render real coverage stages, their evidence, scope name, source HEAD and last verified checkpoint when available; no invented completion percentages. Present explicit four chat-local work choices after closed Whole or facet rehydration: "Mit LYVRA arbeiten und sprechen", "Mit LYVRA Track Design", "Mit LYVRA Speech Design", "Mit LYVRA Studio 2". Mark unavailable choices where required current capability cannot be safely verified; selection does not trigger development. If the user already directly selected a facet, avoid a second selection gate and enter requested supported work.
+
+Round closeout is always read-only. Engineering, repaired code, CI runs, writes, plugin publishes and provider acceptance checks are separate developer-requested work. Their absence need not prolong rehydration. Visually show clear next-use choice, not an automatic WEITER.
+
+REHYDRATION_PROCESS_COMPLETION_NE_PROOF_COMPLETENESS = true
+FULL_WHOLE_PASS_NE_ROUND_CLOSED_PARTIAL = true
+FULL_FACET_PASS_NE_ROUND_CLOSED_PARTIAL = true
+NO_AUTOMATIC_REPAIR_OR_DEVELOPMENT = true
+NO_NEW_VISUAL_RUNTIME_OR_ROUTER = true
