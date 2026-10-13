@@ -1698,5 +1698,25 @@
     "plugin_release_state": "CURRENT_RELEASES_UNCHANGED_ARCHIVE_INGESTION_NOT_ACCEPTED",
     "host_fresh_boot": "NOT_VERIFIED",
     "no_new_router": true
+  },
+  "visual_rehydration_dual_plugin_release_parity_2026_10_14": {
+    "status": "BOTH_PLUGIN_RELEASES_CURRENT_SOURCE_VERIFIED_HOST_FRESH_BOOT_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_PARITY_2026-10-14.json",
+    "receipt_blob": "2f5e2aba24d6253c5546633d53b36a306b41b547",
+    "native": {
+      "version": "0.1.55",
+      "release_id": "pluginrel_6aceb04574d081919d9378c31a13d739"
+    },
+    "alive": {
+      "version": "0.13.50",
+      "release_id": "pluginrel_6aceb057c1cc81919a253199ca2535fe"
+    },
+    "visual_terminal": true,
+    "four_selectable_work_modes": true,
+    "concurrent_chat_optimistic_write_guard": true,
+    "no_auto_repair_or_development": true,
+    "host_acceptance": "PENDING",
+    "binary_byte_parity": "NOT_DIRECTLY_HASHED",
+    "no_new_router": true
   }
 }
