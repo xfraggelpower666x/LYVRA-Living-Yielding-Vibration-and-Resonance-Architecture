@@ -110,3 +110,11 @@ FULL_WHOLE_PASS_NE_ROUND_CLOSED_PARTIAL = true
 FULL_FACET_PASS_NE_ROUND_CLOSED_PARTIAL = true
 NO_AUTOMATIC_REPAIR_OR_DEVELOPMENT = true
 NO_NEW_VISUAL_RUNTIME_OR_ROUTER = true
+
+
+## Fifth interactive work destination / evidence-based developer submenu (2026-10-14)
+The standard post-rehydration work screen now presents FIVE choices, with 'Bearbeiten & Weiterentwickeln' as the fifth. That fifth choice opens a SECOND visual level of verified open development topics, not an update action. Use source-backed names, development status, affected facet, open acceptance and known blockers. Distinguish unsatisfied tests from actual feature work; never invent progress, counts, priorities or completeness. Exclude promoted and superseded completed tasks. PET is an optional development topic only on explicit selection.
+The user must select one topic before beginning LYVRA UPDATE, governed by fresh canonical Current and recovery. Offer 'Zurück zur Arbeitsauswahl' to return to all five choices. The original four creative destinations remain unchanged. No automatic write, repair or foreign activation on entering the menu.
+DEVELOPMENT_MENU_IS_READ_ONLY_DISCOVERY = true
+FIFTH_CHOICE_NE_GENERIC_AUTO_UPDATE = true
+VISUAL_INTELLIGENCE_SUPPORTS_EVIDENCE_NOT_AUTHORITY = true
