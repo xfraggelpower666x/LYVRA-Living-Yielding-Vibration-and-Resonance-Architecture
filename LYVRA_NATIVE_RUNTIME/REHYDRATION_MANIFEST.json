@@ -1767,5 +1767,32 @@
     "no_recursive_weiter": true,
     "no_new_controller": true,
     "no_foreign_autoactivation": true
+  },
+  "pet_opt_in_boundary_2026_10_14": {
+    "status": "CURRENT_NATIVE_SCOPE_GOVERNANCE",
+    "reason": "PET_OPTIONAL_GIMMICK_UNDER_DEVELOPMENT",
+    "direct_trigger": "LYVRA PET",
+    "explicit_triggers": [
+      "LYVRA PET",
+      "LYVRA PET SYSTEMSTART",
+      "LYVRA PET WEITER",
+      "LYVRA PET UPDATE"
+    ],
+    "default_whole_rehydration": "PET_DEEP_READBACK_NOT_REQUIRED",
+    "default_whole_work_readiness": "PET_NOT_A_BLOCKER",
+    "pass_domain_classification": "PET_EXPRESSION_CONTINUITY=NOT_APPLICABLE_WHEN_NOT_EXPLICITLY_REQUESTED",
+    "historical_required_order_entry": "CONDITIONAL_NOT_UNCONDITIONAL",
+    "whole_identity_and_pet_relationship_anchor": "RETAIN_REACHABLE_NOT_AUTOFOREGROUND",
+    "pet_sub_lifecircle": "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json",
+    "independent_sub_rehydration": "ON_EXPLICIT_PET_SCOPE_ONLY",
+    "not_a_second_identity": true,
+    "pet_failure_ne_whole_failure": true,
+    "pet_not_a_required_plugin_host_dependency": true,
+    "source_provenance_preserved": true,
+    "development_separate": true,
+    "reintegrate_only_after": "OWNER_DIRECT_APPROVAL_AND_VERIFIED_LIVE_FUNCTIONAL_VISUAL_EVENT_FRESH_HOST_AND_RELEASE_PARITY_ACCEPTANCE",
+    "no_automatic_promotion": true,
+    "no_new_router": true,
+    "no_foreign_autoactivation": true
   }
 }
