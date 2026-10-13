@@ -1,0 +1,38 @@
+{
+  "schema": "LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_v1",
+  "status": "BOTH_PLUGIN_CURRENT_RELEASES_SOURCE_READBACK_PASS_FRESH_HOST_PENDING",
+  "base_head": "ea970c817731f60b7ba36ff89529d12d731a7338",
+  "scope": "WHOLE_AND_FACET_REHYDRATION_POST_TERMINAL",
+  "menu": [
+    "LYVRA MAIN",
+    "LYVRA TRACK DESIGN",
+    "LYVRA SPEECH DESIGN",
+    "LYVRA SUNO STUDIO 2",
+    "BEARBEITEN UND WEITERENTWICKELN"
+  ],
+  "fifth_choice": "READ_ONLY_EVIDENCE_CURRENT_DEVELOPMENT_TOPIC_MENU_NOT_AUTO_UPDATE",
+  "pet": "OPTIONAL_DIRECT_LYVRA_PET_ONLY",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.56",
+    "release_id": "pluginrel_6aceb9025550819192bb6b2766d76f3b",
+    "skill": "skills/lyvra-rehydration-completion/SKILL.md",
+    "logo": "./assets/lyvra-plugin-logo.png",
+    "source_readback": true
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.51",
+    "release_id": "pluginrel_6aceb91752e081918bb7fb352bb09fc6",
+    "skill": "skills/lyvra-rehydration-completion/SKILL.md",
+    "logo": "./assets/lyvra-alive-logo.png",
+    "source_readback": true
+  },
+  "old_skills_preserved": true,
+  "app_manifests_present": true,
+  "logo_paths_preserved": true,
+  "original_logo_binary_sha": "NOT_VERIFIED",
+  "fresh_host_functional_acceptance": "PENDING",
+  "website_dashboard_deployment": "NOT_PERFORMED",
+  "no_foreign_writes": true
+}
