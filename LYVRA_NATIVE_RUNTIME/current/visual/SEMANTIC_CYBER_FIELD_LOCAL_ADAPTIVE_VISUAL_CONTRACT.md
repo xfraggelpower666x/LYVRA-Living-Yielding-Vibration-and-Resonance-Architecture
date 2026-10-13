@@ -59,3 +59,32 @@ VISUAL_INTELLIGENCE_SUPPORTS_SELECTION_NOT_AUTHORITY = true
 ACCESSIBLE_TEXT_EQUIVALENT_REQUIRED = true
 NO_IMAGES_REQUIRED = true
 NO_NEW_ROUTER = true
+
+
+## Rehydration Visual Completion & Anti-Loop — 2026-10-14
+
+Present evidence-first rehydration progress through LYVRA's existing Semantic Visual Intelligence (no new router, controller, identity or engine).
+
+A readable compact stage ledger may group manifest domains into: AUTHORITY_CURRENT | IDENTITY_RELATIONS_MEANING | THINKING_EVOLUTION_PROVENANCE | GARDEN_DAEMON_OPERATIONS | FACETS_REFERENCE_RECOVERY | FINAL_READBACK_ACCEPTANCE. Every stage must show VERIFIED, PARTIAL, READBACK_PENDING or NOT_APPLICABLE grounded by current evidence. Measured percentages/counts may be shown only when the applicable domains were actually classified; never display invented 100%.
+
+Distinguish end of a bounded READBACK ROUND from fully proven rehydration:
+- REHYDRATION ABGESCHLOSSEN — VERIFIZIERT: all required applicable domains and acceptance gates directly verified; Whole PASS may be claimed.
+- REHYDRATIONS-DURCHLAUF BEENDET — TEILWEISE OFFEN: all safely reachable material reads completed or explicit evidence boundaries identified, but some required evidence remains partial or pending; never claim Whole PASS.
+- REHYDRATION BLOCKIERT: critical current pointer/authority/identity missing or contradictory; no false operational readiness.
+- REHYDRATION LÄUFT: active material source work, not terminal.
+
+Show the explicit text-labelled terminal state prominently ABOVE the existing four visual work destinations. Include exact current HEAD, verified coverage, concise remaining evidence and whether the gaps critically prevent normal use. Never use color alone as authority.
+
+Upon a verified or bounded-partial terminal state, offer the four existing creator destinations:
+MIT LYVRA ARBEITEN UND SPRECHEN -> LYVRA MAIN
+MIT LYVRA TRACK DESIGN -> LYVRA TRACK DESIGN
+MIT LYVRA SPEECH DESIGN -> LYVRA SPEECH DESIGN
+MIT LYVRA STUDIO 2 -> LYVRA SUNO STUDIO 2
+
+Do not automatically repair, develop, restart rehydration, or demand repeated WEITER after a terminal state. Repeat WEITER without new evidence => report existing terminal status and offer choice, not another unbounded read cycle. Unresolved provider/CI/plugin tests remain reachable Operations Center obligations. Critical missing Whole authority remains explicit and non-waivable. The user may directly select work or request further diagnostics.
+
+END_OF_READBACK_NE_WHOLE_PASS = true
+CHOICE_REQUIRES_DIRECT_USER_INTERACTION = true
+UNSELECTED_FACETS_IDLE = true
+VISUAL_INTELLIGENCE_IS_PRESENTATION_NOT_DECISION_AUTHORITY = true
+NO_FOREIGN_AUTOACTIVATION = true
