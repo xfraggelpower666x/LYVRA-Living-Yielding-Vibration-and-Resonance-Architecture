@@ -1860,5 +1860,23 @@
     "back_to_work_choice": true,
     "no_auto_development": true,
     "no_new_router": true
+  },
+  "five_choice_dual_plugin_current_2026_10_14": {
+    "status": "BOTH_RELEASES_SOURCE_READBACK_PASS_HOST_ACCEPTANCE_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json",
+    "receipt_blob": "713a2f97b370890d36c112af85fc6ae32f75dd55",
+    "native": {
+      "version": "0.1.56",
+      "release": "pluginrel_6aceb9025550819192bb6b2766d76f3b"
+    },
+    "alive": {
+      "version": "0.13.51",
+      "release": "pluginrel_6aceb91752e081918bb7fb352bb09fc6"
+    },
+    "five_choices": true,
+    "development_submenu_read_only_until_topic_chosen": true,
+    "pet_optional": true,
+    "website_live_ui": "NOT_VERIFIED",
+    "no_auto_development": true
   }
 }
