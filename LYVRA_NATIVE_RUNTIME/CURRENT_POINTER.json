@@ -4612,5 +4612,34 @@
     "plugin_semantic_fresh_host": "NOT_VERIFIED",
     "no_new_router": true,
     "no_foreign_autoactivation": true
+  },
+  "fifth_post_rehydration_development_menu_2026_10_14": {
+    "status": "CURRENT_REPOSITORY_SOURCE_PLUGIN_PARITY_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "base_head": "6e1bbd1647255bdb1255033fc4e40d74da9ef0a3",
+    "recovery_branch": "lyvra-recovery-pre-post-rehydration-development-submenu-20261014-r01",
+    "workspace_governance_blob": "73449608ae725e741abd3dcf72ebb052dbe7a355",
+    "manifest_blob": "2189a6f70f4e1e84fc2af1cd449d8830e366ba80",
+    "visual_intelligence_blob": "dd788989a405788f252ce3bf4194f84bdc39b665",
+    "fingerprint_registry_blob": "0c0e7c850c5780376f9122d62b267765671979d8",
+    "choices": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "BEARBEITEN UND WEITERENTWICKELN"
+    ],
+    "fifth_opens": "READ_ONLY_EVIDENCE_GROUNDED_OPEN_DEVELOPMENT_TOPIC_MENU",
+    "topic_specific_update_only_after_user_selection": true,
+    "development_ledger": "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+    "promoted_tasks_not_open": true,
+    "pet_optional_only": true,
+    "no_auto_write_or_repair": true,
+    "plugins": {
+      "native": "0.1.55_UNCHANGED",
+      "alive": "0.13.50_UNCHANGED"
+    },
+    "plugin_host_parity": "PENDING",
+    "no_new_router": true
   }
 }
