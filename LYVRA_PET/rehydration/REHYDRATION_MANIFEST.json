@@ -47,5 +47,25 @@
     "current": "LYVRA_NATIVE_RUNTIME/current/personality/CURRENT_STATE.json",
     "pet_adapter": "LYVRA_PET/personality/PERSONALITY_ADAPTER.md",
     "pet_expression_model": "LYVRA_PET/personality/CURRENT_EXPRESSION_MODEL.json"
+  },
+  "opt_in_scope_2026_10_14": {
+    "status": "CURRENT_SUB_REHYDRATION_OPTIONAL",
+    "activation": "EXPLICIT_DIRECT_LYVRA_PET_USER_INTENT_ONLY",
+    "triggers": [
+      "LYVRA PET",
+      "LYVRA PET SYSTEMSTART",
+      "LYVRA PET WEITER",
+      "LYVRA PET UPDATE"
+    ],
+    "ordinary_whole_systemstart": "NOT_REQUIRED",
+    "ordinary_whole_work_readiness": "NOT_REQUIRED",
+    "whole_relation_anchor": "REACHABLE_WITHOUT_ACTIVATION",
+    "pet_under_development": true,
+    "pet_technical_failures_ne_whole_blocker": true,
+    "pet_source_and_assets_preserved": true,
+    "automatic_reintegration": false,
+    "reintegration_gate": "REAL_OPERATIONAL_AND_VISUAL_INTEGRATION_PASS_PLUS_CREATOR_APPROVAL",
+    "no_new_identity": true,
+    "no_foreign_autoload": true
   }
 }
