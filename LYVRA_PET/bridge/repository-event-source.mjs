@@ -9,7 +9,9 @@ const githubReadStates=new WeakMap();
 function numericHeader(response,name){const value=response.headers.get(name);return value!==null&&/^[0-9]+$/.test(value)&&Number.isSafeInteger(Number(value))?Number(value):null;}
 export function publicNativeSourceFailure(error){
  if(error?.nativeDiagnostic)return {status:'SOURCE_UNAVAILABLE',reason:error.message,diagnostic:error.nativeDiagnostic,retry_at:error.retryAt};
- return {status:'SOURCE_UNAVAILABLE',reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(error?.message||'')?error.message:'NATIVE_SOURCE_OR_APPROVAL_REJECTED'};
+ const message=error?.message||'';
+ const category=error instanceof SyntaxError?'GITHUB_RESPONSE_INVALID_JSON':error instanceof TypeError?'GITHUB_FETCH_NETWORK_OR_RUNTIME':'NATIVE_SOURCE_OR_APPROVAL_REJECTED';
+ return {status:'SOURCE_UNAVAILABLE',reason:/^NATIVE_SOURCE_HTTP_[0-9]{3}$/.test(message)?message:category};
 }
 async function githubFailure(response,now){
  const remaining=numericHeader(response,'x-ratelimit-remaining'),reset=numericHeader(response,'x-ratelimit-reset'),retry=numericHeader(response,'retry-after');
