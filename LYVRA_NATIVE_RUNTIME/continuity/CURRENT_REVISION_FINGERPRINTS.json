@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_FINGERPRINTS_RECONCILED",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-11-PET-THREE-CARRIER-SHA-RECONCILIATION",
+  "freshness_epoch": "2026-10-14-VISUAL-REHYDRATION-THREE-CARRIER-SHA-RECONCILIATION",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,7 +35,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "3f71b2c503847207c31d05ab3658f41c12189850",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "d6d192b62a24d9378efbaf2b963db39b8a3a6367",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "91b8d365b545389a7e558813dcb6cd552206d87e",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -81,7 +81,7 @@
     "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f",
     "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
     "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json": "0d888faf271e2742d777e914a66cb224c89fd043",
-    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
+    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "b15a304138a42d4a784d3c479d9c67b8088f522f",
     "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md": "1df0eb9cee0cac055df5eac749c9dee48bf7b631",
     "lyvra-plugin/native-runtime/releases/v0.1.15/PROVENANCE.json": "1993312ab8e3b3022ac72412858a2d764cae5463",
     "lyvra-plugin/native-runtime/releases/v0.1.15/RESTORE.md": "e2a9ae0683b9561bb7ade95dd4fc5a952d4b1585",
@@ -104,7 +104,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_FX_CAPABILITY_CARDS.md": "418bfe3d74451a7a0b531b3c51bf5f91ee12d921",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/CREATOR_UI_EVIDENCE.md": "845e1c1ca39d49ab8c5427c9e4113a92ca58bfff",
     "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md": "49c19853e900c5877663cbecaa6e6388378a49bb",
-    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md": "6aafaecb037f7910720f29bc40e75afea7fc6acf",
+    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md": "e07e85948935932d140b0a5cca4dd01216057aac",
     "lyvra-plugin/native-runtime/releases/v0.1.17/PROVENANCE.json": "02f447dbd7b2df042538bcbcb9a0a82438159355",
     "lyvra-plugin/account/releases/v0.13.17/PROVENANCE.json": "4bf62893a834a5a2d2e87588c180669c55d2b7b5",
     "lyvra-plugin/native-runtime/releases/v0.1.28/PROVENANCE.json": "3a094dd82c76fb5a5d100a38f99a9667bdf71e72",
@@ -1273,5 +1273,37 @@
     "independent_host_fresh_boot": "OPEN",
     "current_pet_native_expression": "SOURCE_UNAVAILABLE",
     "coupled_backup_approval": "NOT_GRANTED_STABLE_SET_NOT_CONVERGED"
+  },
+  "reconciliation_2026_10_14": {
+    "scope": "FINGERPRINT_REGISTRY_ONLY",
+    "authority": "WHOLE_LYVRA",
+    "base_head": "894c87178e69bf65298888c2fbbe86a23660c8e7",
+    "recovery_branch": "lyvra-recovery-pre-visual-fingerprint-reconcile-20261014",
+    "checked_critical_carriers": 210,
+    "changed_carriers": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+        "old_sha": "3f71b2c503847207c31d05ab3658f41c12189850",
+        "new_sha": "d6d192b62a24d9378efbaf2b963db39b8a3a6367"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+        "old_sha": "4a2d59e56d8f7b8a96c66249915e8caad436ce05",
+        "new_sha": "b15a304138a42d4a784d3c479d9c67b8088f522f"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+        "old_sha": "6aafaecb037f7910720f29bc40e75afea7fc6acf",
+        "new_sha": "e07e85948935932d140b0a5cca4dd01216057aac"
+      }
+    ],
+    "classification": "GIT_BLOB_REFERENCE_SYNC_ONLY",
+    "whole_revision_mutated": false,
+    "track_revision_mutated": false,
+    "plugin_release_mutated": false,
+    "pet_worker_mutated": false,
+    "runtime_behavior_claim": "NOT_TESTED",
+    "independent_host_fresh_boot": "OPEN",
+    "coupled_backup_approval": "NOT_GRANTED"
   }
 }
