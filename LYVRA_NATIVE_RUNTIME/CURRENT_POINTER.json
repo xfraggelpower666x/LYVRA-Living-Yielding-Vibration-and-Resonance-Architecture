@@ -128,7 +128,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "CHATGPT_APP_UI_VERIFIED_WEBLYVRA_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.55_ACCOUNT_0.13.50_SOURCE_RELEASE_READBACK_VERIFIED_HOST_PENDING",
+    "plugin_surface_release_set": "NATIVE_0.1.56_ACCOUNT_0.13.51_FIVE_CHOICE_SOURCE_READBACK_HOST_PENDING",
     "pfs_plugin_backup_handoff": "PFS_R02_LYVRA_LEG_APPROVED_CLIC_BINDING_REFRESH_REQUIRED",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.3.4",
@@ -1063,8 +1063,8 @@
     "sync_rule": "SEMANTICALLY_RELEVANT_PLUGIN_CHANGES_REQUIRE_BOTH_SURFACE_CHECK_AND_AUTOMATIC_PFS_BACKUP_HANDOFF_REFRESH",
     "native_runtime": {
       "name": "lyvra-native-runtime",
-      "version": "0.1.55",
-      "release": "pluginrel_6aceb04574d081919d9378c31a13d739",
+      "version": "0.1.56",
+      "release": "pluginrel_6aceb9025550819192bb6b2766d76f3b",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -1089,8 +1089,8 @@
     },
     "migrated_gpt_plugin": {
       "name": "L.Y.V.R.A.",
-      "version": "0.13.50",
-      "release": "pluginrel_6aceb057c1cc81919a253199ca2535fe",
+      "version": "0.13.51",
+      "release": "pluginrel_6aceb91752e081918bb7fb352bb09fc6",
       "music_analytics": "VERIFIED",
       "analyzer_alias": "VERIFIED",
       "multi_music_facet_dashboard": "VERIFIED",
@@ -1116,8 +1116,8 @@
       "current_release_readback": "DIRECT",
       "visual_rehydration_terminal": "CURRENT_SOURCE_RELEASE_READBACK_VERIFIED"
     },
-    "native_runtime_version": "0.1.55",
-    "account_plugin_version": "0.13.50",
+    "native_runtime_version": "0.1.56",
+    "account_plugin_version": "0.13.51",
     "release_currentness_reconciliation_2026_10_11": {
       "status": "DIRECT_CURRENT_RELEASE_METADATA_VERIFIED_HOST_FRESH_BOOT_PENDING",
       "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_PLUGIN_SURFACE_CURRENTNESS_REPAIR_2026-10-11.json",
@@ -4641,5 +4641,38 @@
     },
     "plugin_host_parity": "PENDING",
     "no_new_router": true
+  },
+  "five_choice_dual_plugin_release_2026_10_14": {
+    "status": "NATIVE_AND_ALIVE_RELEASE_SOURCE_VERIFIED_FRESH_HOST_PENDING",
+    "base_head": "ea970c817731f60b7ba36ff89529d12d731a7338",
+    "recovery_branch": "lyvra-recovery-pre-five-choice-both-plugins-20261014-r01",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json",
+    "receipt_blob": "713a2f97b370890d36c112af85fc6ae32f75dd55",
+    "manifest_blob": "ee5c7e42124ee17ca4e3b63982bcdca553b30b1e",
+    "fingerprint_registry_blob": "fcb37034357f9af6eda1791bd03eda9c6bccb89b",
+    "native": {
+      "version": "0.1.56",
+      "release": "pluginrel_6aceb9025550819192bb6b2766d76f3b"
+    },
+    "alive": {
+      "version": "0.13.51",
+      "release": "pluginrel_6aceb91752e081918bb7fb352bb09fc6"
+    },
+    "integrated_surfaces": [
+      "WHOLE_REHYDRATION_NATIVE_GOVERNANCE",
+      "FACET_REHYDRATION_NATIVE_GOVERNANCE",
+      "SEMANTIC_VISUAL_INTERFACE_CONTRACT",
+      "PLUGIN_NATIVE_RUNTIME",
+      "PLUGIN_LYVRA_ALIVE"
+    ],
+    "not_claimed": [
+      "WEBLYVRA_LIVE_DASHBOARD_DEPLOYMENT",
+      "INDEPENDENT_FRESH_HOST_BEHAVIOR",
+      "PET_INTEGRATION"
+    ],
+    "five_work_choices": true,
+    "second_development_menu_requires_user_selected_topic": true,
+    "pet_opt_in": true,
+    "foreign_autoactivation": false
   }
 }
