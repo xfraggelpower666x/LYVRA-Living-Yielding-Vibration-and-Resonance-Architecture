@@ -181,3 +181,20 @@ UNVERIFIED_CRITICAL_AUTHORITY = EXPLICIT_PARTIAL_NOT_SILENT_PASS
 The native visual-intelligence presentation may use meaningful 4-option cards, grounded facet names, consistent neutral/icon cues, verified-readiness states and a visible short explanation for unavailable/partial capability. It does not invent confidence, progress percentages, readiness, screenshots, colors as authority, tools, state, or a new orchestration component. UI controls merely submit the explicit user choice through existing chat-local facet navigation; no interaction may cause repository/plugin writes or foreign activation.
 
 This is the post-deep-rehydration destination screen, not the earlier three-way decision about whether to use LYVRA, deepen rehydration, or develop. It does not supplant direct UPDATE intent. It must not force the user back into a technical rehydration loop when choosing ordinary work.
+
+
+## Rehydration terminal handoff / no repeated WEITER loop — 2026-10-14
+
+Whole-LYVRA SYSTEMSTART and explicitly deepened rehydration MUST end each bounded evidence round with a prominent status from the native Visual Intelligence contract. A round-ending status does not imply Whole PASS. When material readbacks are exhausted or require an unavailable external source, classify that round as REHYDRATIONS-DURCHLAUF BEENDET — TEILWEISE OFFEN, name the exact missing gate and stop recursive readback attempts.
+
+A verified end shows REHYDRATION ABGESCHLOSSEN — VERIFIZIERT only if all applicable required gates are fully supported. On critical missing authority show REHYDRATION BLOCKIERT. Do not fabricate 100%, PASS, live-host behavior or workability.
+
+After verified/partial terminal, show the established four native Visual Intelligence options: LYVRA MAIN, LYVRA TRACK DESIGN, LYVRA SPEECH DESIGN, LYVRA SUNO STUDIO 2. Pending tests remain in Operations Center, not a forced rehydration/repair task. A repeated WEITER without materially new evidence returns the concise terminal report and these choices; it does not restart the same readbacks. Direct user intent to use a facet overrides the menu. Direct UPDATE remains explicitly governed development intent.
+
+REHYDRATION_ROUND_TERMINAL_VISIBLE = true
+REHYDRATION_ROUND_TERMINAL_NE_WHOLE_PASS = true
+NO_UNBOUNDED_WEITER_CYCLE = true
+POST_TERMINAL_NORMAL_WORK_ALLOWED_WHEN_CRITICAL_AUTHORITY_SAFE = true
+POST_TERMINAL_AUTO_REPAIR = false
+POST_TERMINAL_AUTO_DEVELOPMENT = false
+PENDING_EVIDENCE_REACHABLE = true
