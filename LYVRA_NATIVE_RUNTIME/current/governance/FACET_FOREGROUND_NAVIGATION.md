@@ -146,3 +146,17 @@ FOUR_CHOICE_RENDERER_NE_ROUTER = true
 USER_SELECTION_REQUIRED = true
 NO_NEW_ROOT_OR_FACET = true
 NO_FOREIGN_AUTOACTIVATION = true
+
+
+## Work choice after a completed Whole or facet rehydration round — 2026-10-14
+
+After a bounded Whole or selected facet Sub-Rehydration completes, visual closeout presents both PROCESS_COMPLETED and separately VERIFIED/PARTIAL/CRITICAL_EVIDENCE. If the current user has not already explicitly selected the next work domain, present the same four chat-local choices (LYVRA MAIN / LYVRA TRACK DESIGN / LYVRA SPEECH DESIGN / LYVRA SUNO STUDIO 2). Mark current facet and actual evidence readiness; do not automatically activate another facet. A critical authority failure disables unsafe operation, not a truthful status report.
+
+If the user's existing direct command already requests a facet task, the selection is already made: continue the verified usable capability without another forced menu and without auto-development. An unavailable external host acceptance must not force endless rehydration. Open gates remain reachable in Operations Center.
+
+POST_WHOLE_OR_SUB_REHYDRATION = VISUAL_TERMINAL_THEN_CHAT_LOCAL_WORK
+ROUND_CLOSED_WITH_PARTIAL_EVIDENCE = ALLOWED_AND_NOT_PASS
+NO_AUTOMATIC_DEVELOPMENT = true
+NO_AUTOMATIC_REPAIR = true
+NO_RECURSIVE_WEITER = true
+NO_NEW_ROUTER = true
