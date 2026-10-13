@@ -35,3 +35,17 @@ const forbidden=async()=>new Response('Forbidden',{status:403});
 try{await readApprovedRepositoryEvent({fetcher:forbidden,clock:()=>now});}catch(e){failure=publicNativeSourceFailure(e);}
 assert.equal(failure.diagnostic.category,'GITHUB_FORBIDDEN');assert.ok(!('rate_limit_remaining' in failure.diagnostic));
 console.log('PASS primary/secondary/unknown 403 diagnosis, numeric-only public evidence, cooldown without retries and recovery after deadline');
+
+const networkFailure=async()=>{throw new TypeError('private upstream address must not leak')};
+try{await readApprovedRepositoryEvent({fetcher:networkFailure,clock:()=>now});}catch(e){failure=publicNativeSourceFailure(e);}
+assert.equal(failure.reason,'GITHUB_FETCH_NETWORK_OR_RUNTIME');
+assert.equal(failure.status,'SOURCE_UNAVAILABLE');
+assert.ok(!JSON.stringify(failure).includes('private upstream address'));
+const badJson=async()=>new Response('not valid json PRIVATE_TOKEN_MUST_NOT_LEAK',{status:200});
+try{await readApprovedRepositoryEvent({fetcher:badJson,clock:()=>now});}catch(e){failure=publicNativeSourceFailure(e);}
+assert.equal(failure.reason,'GITHUB_RESPONSE_INVALID_JSON');
+assert.ok(!JSON.stringify(failure).includes('PRIVATE_TOKEN_MUST_NOT_LEAK'));
+const privateUnexpected=publicNativeSourceFailure(Error('private event data'));
+assert.equal(privateUnexpected.reason,'NATIVE_SOURCE_OR_APPROVAL_REJECTED');
+assert.ok(!JSON.stringify(privateUnexpected).includes('private event data'));
+console.log('PASS bounded network/JSON/unknown failure classification without secret leakage');
