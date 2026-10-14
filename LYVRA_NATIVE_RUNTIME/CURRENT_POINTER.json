@@ -4728,5 +4728,21 @@
     "speech": "NO_DEVICE_PROMPT_INHERITANCE_WITHOUT_OWN_EVIDENCE",
     "fresh_host_behavior": "PENDING",
     "audio_power_test": "PENDING"
+  },
+  "track_design_new_reference_preservation_2026_10_14": {
+    "status": "TWO_TRACK_DESIGN_REFERENCES_PRODUCTIVE_REGISTRY_READBACK_VERIFIED",
+    "scope": "TRACK_REFERENCES_ONLY_NO_RUNTIME_OR_PLUGIN_SEMANTIC_CHANGE",
+    "registry": "LYVRA_NATIVE_RUNTIME/music/TRACK_REFERENCE_REGISTRY.json",
+    "registry_commit": "6bda7af9ae158645a56a1520818ee54a57163ce6",
+    "registry_blob": "fef2368a8cf80425fcbd735542ea796c5e57dfcb",
+    "recovery_branch": "lyvra-recovery-pre-track-references-20261014",
+    "references": [
+      "WHERE DO THE HOURS GO - TRANSMISSION 18",
+      "NIGHT SHIFT - WHILE THE WORLD SLEEPS"
+    ],
+    "status_of_audio": "UNRENDERED_OR_NOT_REPORTED",
+    "raw_lyrics": "PRESERVED_IN_CHAT_NOT_COPIED_TO_REGISTRY",
+    "plugin_releases": "UNCHANGED_NATIVE_0.1.59_ALIVE_0.13.54",
+    "fresh_host": "PENDING"
   }
 }
