@@ -4816,5 +4816,27 @@
     "no_global_pointer": true,
     "no_facet_merge": true,
     "no_foreign_activation": true
+  },
+  "handoff_persistence_discovery_repair_2026_10_14": {
+    "status": "REPOSITORY_AND_DUAL_PLUGIN_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "recovery_branch": "lyvra-recovery-pre-handoff-persistence-repair-20261014-r01",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "contract_blob": "454aa30d37e6e94fd5fb2a21cedbbd332dbee235",
+    "manifest_blob": "b18a1464afc3e0817957dbbc8c32914a53f02d1d",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_HANDOFF_PERSISTENCE_DISCOVERY_REPAIR_2026-10-14.json",
+    "receipt_blob": "6ca31441463c21f7b8404f4803e17102cc1f70c1",
+    "native": {
+      "version": "0.1.63",
+      "release": "pluginrel_6acfffa3b4dc8191a2f66a8efc159e7f"
+    },
+    "alive": {
+      "version": "0.13.58",
+      "release": "pluginrel_6acfffb60b9881919b470f0f4768860d"
+    },
+    "actual_handoff_created": false,
+    "host_new_next_acceptance": "PENDING",
+    "destination_update_detection": "PENDING",
+    "no_global_latest": true,
+    "no_new_architecture": true
   }
 }
