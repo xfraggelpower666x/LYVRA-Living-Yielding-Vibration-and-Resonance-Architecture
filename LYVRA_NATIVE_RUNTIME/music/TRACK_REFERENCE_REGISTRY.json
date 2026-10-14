@@ -152,6 +152,64 @@
         "VISUAL_WAVEFORM_DENSITY_NE_AUDIBLE_LOUDNESS_FAIL",
         "CREATOR_VALIDATED_UI_EVIDENCE_GT_GENERIC_DOCS_FOR_EXPOSED_UI"
       ]
+    },
+    {
+      "name": "WHERE DO THE HOURS GO - TRANSMISSION 18",
+      "status": "PRE_RENDER_TRACK_DESIGN_REFERENCE",
+      "current_template": false,
+      "source_provenance": "CREATOR_LYRICS_AND_TRACK_DESIGN_CHAT_2026-10-14",
+      "renderer_context": "IPHONE_SUNO_APP_CUSTOM",
+      "audio_render": "NOT_REPORTED",
+      "target_duration": "5:35_DESIGN_TARGET_NOT_GUARANTEE",
+      "bpm": 147,
+      "style_families": [
+        "DARK_GOA",
+        "DARK_PSY",
+        "DARK_FULL_ON"
+      ],
+      "causal_motifs": [
+        "SEVEN_MINUTES_VERSUS_YEARS",
+        "TRANSMISSION_17_CHILD_NOW_95",
+        "GLASS_OCEAN_MEMORY_ERASURE",
+        "CLOCK_ILLUSIONS_ABOVE_STABLE_PSYBASS",
+        "UNLOCATABLE_HOME_TO_QUIET_ACCEPTANCE",
+        "TRANSMISSION_18_NO_RECIPIENT_FOUND_FINAL_MESSAGE"
+      ],
+      "renderer_guards": [
+        "PROTECTED_VOCAL_FREE_DJ_OUTRO",
+        "CONSERVATIVE_MOBILE_LYRIC_BUDGET",
+        "NO_PROMISED_DURATION"
+      ],
+      "reference_role": "UNRENDERED_CAUSAL_DESIGN_NOT_POSITIVE_AUDIO_EVIDENCE"
+    },
+    {
+      "name": "NIGHT SHIFT - WHILE THE WORLD SLEEPS",
+      "status": "PRE_RENDER_TRACK_DESIGN_REFERENCE",
+      "current_template": false,
+      "source_provenance": "CREATOR_NIGHT_WORK_ENGLISH_REQUEST_AND_TRACK_DESIGN_CHAT_2026-10-14",
+      "renderer_context": "IPHONE_SUNO_APP_CUSTOM",
+      "audio_render": "NOT_REPORTED",
+      "target_duration": "5:35_DESIGN_TARGET_NOT_GUARANTEE",
+      "bpm": 146,
+      "style_families": [
+        "DARK_GOA",
+        "DARK_PSY",
+        "DARK_FULL_ON"
+      ],
+      "causal_motifs": [
+        "NIGHT_WORKERS_INVISIBLE_ESSENTIAL_LABOUR",
+        "TIMECLOCK_HITS_BECOME_PERCUSSION",
+        "FOUR_AM_FATIGUE_AS_MID_HIGH_SPATIAL_DISTORTION",
+        "NURSE_DRIVER_CLEANER_AND_INFRASTRUCTURE_WORKERS",
+        "DAWN_AS_RECOGNITION_NOT_EUPHORIC_RESOLUTION"
+      ],
+      "renderer_guards": [
+        "DRY_STABLE_ROLLING_16TH_LOW",
+        "PROTECTED_VOCAL_FREE_DJ_OUTRO",
+        "CONSERVATIVE_MOBILE_LYRIC_BUDGET",
+        "NO_PROMISED_DURATION"
+      ],
+      "reference_role": "UNRENDERED_CAUSAL_DESIGN_NOT_POSITIVE_AUDIO_EVIDENCE"
     }
   ],
   "current_reference_lineage": {
