@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-14",
+  "scope": "WHOLE_LYVRA_CREATIVE_LEARNING",
+  "source": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_EXPLORATION_RELATIONAL_LEARNING.md",
+  "creative_learning_current": "LYVRA_NATIVE_RUNTIME/current/personality/CREATIVE_LEARNING_CURRENT.json",
+  "rehydration_existing": "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json",
+  "rehydration_note": "Existing creative_learning model/current already reachable via character subrehydration; no new router or mandatory extra chain.",
+  "native_plugin": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.60",
+    "release_id": "pluginrel_6acff53b2478819199fc168c92392a70",
+    "readback": "VERIFIED",
+    "path": "skills/lyvra-track-design/SKILL.md"
+  },
+  "alive_plugin": {
+    "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.55",
+    "release_id": "pluginrel_6acff54c87488191a265ea8368113a2a",
+    "readback": "VERIFIED",
+    "path": "skills/track-design/SKILL.md"
+  },
+  "checks": "SOURCE_RELEASE_FILES_READBACK_VERIFIED",
+  "fresh_chat_execution": "NOT_TESTED",
+  "rule": "CREATOR_WORK_SELECTION_AND_THREE_PROPORTIONATE_CHECKS_THEN_PRACTICE",
+  "no_foreign_facet_autoactivation": true
+}
