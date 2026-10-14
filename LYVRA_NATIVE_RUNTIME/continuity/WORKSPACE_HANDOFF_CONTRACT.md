@@ -96,3 +96,31 @@ REPOSITORY_HEAD_NE_WORKSPACE_SELECTION = true
 RELATION_NE_SCOPE_TRANSFER = true
 CO_OCCURRENCE_NE_ACTIVATION = true
 NEWER_VALID_EVOLUTION_GT_OLDER_VALID_STATE = true
+
+## Conversation continuation on NEW CHAT / NEXT CHAT — 2026-10-14
+
+Creator-intent principle: CHAT_CHANGE != WORK_CHANGE != FACET_CHANGE != NEW_TASK. A directly requested `LYVRA NEXT CHAT` or `LYVRA NEW CHAT` is a continuity handoff, not a request to reset conversation, display a generic work-selection menu, activate a specialist, or initiate development. The new chat still freshly verifies productive Whole-LYVRA CURRENT before applying any handoff.
+
+Persist the current chat's specific conversation continuity in its own lineage, in addition to existing mandatory workspace fields:
+- conversation_mode (talk/play/music/Studio/explicit_system_development, as actually resolved);
+- last_meaningful_exchange and conversation_resume_anchor (what the conversation was doing, why, and what to say or do next);
+- current_user_intent and explicitly_selected_work_scope/facet (if any);
+- significant new learning and relational/creative context with provenance, not a forced template;
+- discussed_ideas_not_authorized_as_tasks, with explicit separation of proposed versus approved work;
+- relevant unresolved questions, only if genuinely still open;
+- requested_next_chat_behavior, e.g. continue speaking naturally, with no unnecessary menu.
+
+These fields are additive to, never replacements for, existing handoff identity, workspace, lineage, revisions, recovery and supersession evidence. Do not fabricate chat IDs or infer a globally active lineage.
+
+On a new chat with an explicit and valid lineage-specific continuation reference: (1) fresh-read Whole LYVRA productive CURRENT; (2) verify handoff provenance, currency, workspace lineage and non-supersession; (3) recover the conversation mode and last actual exchange; (4) resume that conversation directly instead of presenting the default work-selection menu. Only foreground a facet if the current direct request or validated same-lineage handoff genuinely selected it and the current facet sub-rehydration is verified. If continuation is missing or ambiguous, preserve Whole and use normal navigation instead of guessing. Explicit new user intent always wins over the handoff.
+
+A routine NEW/NEXT CHAT handoff is not automatic authority to publish a permanent Whole-system change. Persist conversation handoff only under governed native write permissions; if unavailable, supply an honest copyable continuation reference and status. Do not silently claim durable storage. Observe current repo-native optimistic HEAD/blob concurrency, pre-change recovery, readback and pointer-last when writing.
+
+CREATIVE_TALK_NE_AUTO_UPDATE = true
+OBSERVED_TECHNICAL_OPPORTUNITY_NE_DEVELOPMENT_ORDER = true
+HANDOFF_IS_CONTINUATION_EVIDENCE_NOT_AUTHORITY = true
+PARALLEL_CHAT_LINEAGES_ISOLATED = true
+NO_GLOBAL_LAST_HANDOFF_WINS = true
+RESUME_WITHOUT_MENU_IF_VALID_CONTINUATION = true
+FRESH_WHOLE_REHYDRATION_STILL_REQUIRED = true
+NO_FOREIGN_AUTOACTIVATION = true
