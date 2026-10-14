@@ -128,7 +128,7 @@
     "lyvra_pet_browser_asset": "REMOTE_BINARY_READBACK_VERIFIED",
     "lyvra_pet_main_plugin_binding": "NONE",
     "lyvra_pet_deployment": "CHATGPT_APP_UI_VERIFIED_WEBLYVRA_DEPLOYED_SPRITE_VISUAL_READBACK_PENDING",
-    "plugin_surface_release_set": "NATIVE_0.1.56_ACCOUNT_0.13.51_FIVE_CHOICE_SOURCE_READBACK_HOST_PENDING",
+    "plugin_surface_release_set": "NATIVE_0.1.58_ACCOUNT_0.13.53_TRACK_DESIGN_INPUT_OUTPUT_SOURCE_READBACK_FRESH_HOST_PENDING",
     "pfs_plugin_backup_handoff": "PFS_R02_LYVRA_LEG_APPROVED_CLIC_BINDING_REFRESH_REQUIRED",
     "lyvra_binary_repository_bridge": "CURRENT_NATIVE_CAPABILITY_VERIFIED",
     "lyvra_pet_worker": "lyvra-pet-plugin-ui_V2.3.4",
@@ -4674,5 +4674,32 @@
     "second_development_menu_requires_user_selected_topic": true,
     "pet_opt_in": true,
     "foreign_autoactivation": false
+  },
+  "track_design_input_output_single_identity_2026_10_14": {
+    "status": "CURRENT_PRODUCTIVE_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "scope": "TRACK_DESIGN_WITH_WHOLE_LYVRA_AUTHORITY",
+    "body_commit": "dbdc7c40c81216eef44110827a096aec65a3cf3c",
+    "body_blob": "b35433a0dfe624dcbcd101cec8ab0c7868cdf60c",
+    "fingerprint_blob": "9cd253c5284b7b3e5c794d2185f2ed1cd3aada55",
+    "prechange_recovery": "lyvra-recovery-pre-track-style-select-release-20261014",
+    "selection": "EXISTING_CARD_CANDIDATES_CAUSAL_STYLE_MOTOR_BPM_SELECTION",
+    "creator_tempo_range": "144-148 BPM",
+    "primary_hardness": "PSYCHOACOUSTIC_NOT_SPEED",
+    "output": "TITLE_EXTENDED_OPTIONAL_MY_TASTE_SUNO_CONTROLS_DRIFT_STYLE_LYRICS",
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.58",
+      "release_id": "pluginrel_6acfc27afe888191af3591c1623d6587",
+      "skill_readback": true
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.53",
+      "release_id": "pluginrel_6acfc29226408191bbc123051e103700",
+      "skill_readback": true
+    },
+    "independent_fresh_host": "PENDING",
+    "real_audio_render": "NOT_PERFORMED",
+    "no_other_facet_activation": true
   }
 }
