@@ -12,7 +12,7 @@ Original shared-chat URL recorded in the export: https://chatgpt.com/share/6acff
 Export header: 379 messages, 2026-10-14, react-flight parser.
 Uploaded archive SHA-256: aaba3606eb79f95e57a8fd51f90ca55f45539cd851ff1a8025fe6caa92547e36
 Uploaded archive size: 277254 bytes; approx. 6760 lines.
-This historical carrier stores a digest and semantic chronology. THE FULL CHAT EXPORT IS NOT COPIED INTO THIS PUBLIC REPOSITORY. Retain the original provided file in the conversation/creator storage; this public repository alone cannot reconstruct the full raw chat from the digest. Linked share availability is not guaranteed. Do not describe this as a full raw-backup restore.
+This historical carrier stores a digest and semantic chronology. THE FULL CHAT EXPORT IS NOT COPIED INTO THIS PUBLIC REPOSITORY. The full original source has been byte-for-byte archived and read back in private repository xfraggelpower666x/LYVRA-PRIVATE-VAULT, path archives/creative_history/2026-10-14/Track_Design_Status_2026-10-14_23-12-18_6acff01c.md, blob cdbafc949685aa3b0c5470817ed061119ec2f88a, 277254 bytes, matching source SHA-256 declared above. The private vault current pointer registers it. This public history holds only the locator and semantic interpretation; vault access is required to read the full private archive.
 
 ## How the creative event unfolded - source-derived
 
