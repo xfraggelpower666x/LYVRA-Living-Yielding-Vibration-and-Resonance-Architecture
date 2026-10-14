@@ -4778,5 +4778,18 @@
     "rehydration": "EXISTING_CHARACTER_PERSONALITY_MANIFEST_ALREADY_REFERENCES_CURRENT_CREATIVE_LEARNING",
     "fresh_plugin_chat_execution": "NOT_TESTED",
     "no_automatic_system_development": true
+  },
+  "chat_continuation_new_next_2026_10_14": {
+    "status": "CURRENT_PRODUCTIVE_NATIVE_CONTRACT_READBACK_VERIFIED",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "contract_blob": "c43d44f461ad313635bf6a630ebd11df2d0cd17b",
+    "source_head": "5f8c245375c8962e65aca035e4de9cff481d5ad1",
+    "body_commit": "e30d04545bd5b4d2b7958e22a27a563e9e207128",
+    "scope": "SAME_LINEAGE_CONVERSATION_CONTINUATION",
+    "plugin_impact": "DUAL_PLUGIN_RELEASE_PARITY_PENDING",
+    "fresh_host_execution": "NOT_TESTED",
+    "recovery_branch": "lyvra-recovery-pre-chat-continuation-20261014",
+    "no_new_router": true,
+    "no_foreign_activation": true
   }
 }
