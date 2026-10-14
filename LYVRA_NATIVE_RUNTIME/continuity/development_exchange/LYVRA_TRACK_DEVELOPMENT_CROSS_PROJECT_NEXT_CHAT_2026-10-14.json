@@ -1,0 +1,37 @@
+{
+  "schema": "LYVRA_TRACK_DEVELOPMENT_CROSS_PROJECT_NEXT_CHAT_V1",
+  "status": "CONTRACT_AND_BOTH_PLUGIN_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+  "source_head": "1ff8a7db5281eaf268dbc529990d70a6f2f34951",
+  "recovery_branch": "lyvra-recovery-pre-cross-project-continuity-20261014-r01",
+  "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+  "contract_blob": "bbd718b6e8a81dcf31a9632c656adb3d2f58b9c4",
+  "body_commit": "5315a2d4d66c67563e111242cfaf3c941dc1ce3f",
+  "scope": "TRACK_DESIGN_AND_LYVRA_DEVELOPMENT_LINKED_LINEAGE_REFERENCES",
+  "native": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.62",
+    "release": "pluginrel_6acffadc6fe88191a0b897944220bc89",
+    "source_readback": true
+  },
+  "alive": {
+    "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.57",
+    "release": "pluginrel_6acffaec6a3c8191b5c4643eeb987841",
+    "source_readback": true
+  },
+  "preserved": {
+    "whole_identity": true,
+    "track_master_music_base": true,
+    "workspace_lineages_separate": true,
+    "facet_boundaries": true,
+    "logos_paths_preserved": true,
+    "global_pointer_forbidden": true,
+    "no_new_router": true,
+    "no_foreign_activation": true
+  },
+  "remaining": {
+    "fresh_host_new_next_chat": "PENDING",
+    "actual_cross_project_runtime_handoff": "NOT_TESTED",
+    "logo_binary_hash": "NOT_READBACK"
+  }
+}
