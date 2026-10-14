@@ -4791,5 +4791,30 @@
     "recovery_branch": "lyvra-recovery-pre-chat-continuation-20261014",
     "no_new_router": true,
     "no_foreign_activation": true
+  },
+  "track_development_cross_project_new_next_chat_2026_10_14": {
+    "status": "REPOSITORY_AND_BOTH_PLUGIN_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "scope": "EXISTING_WORKSPACE_AND_LINEAGE_HANDOFF_CONTRACT",
+    "recovery_branch": "lyvra-recovery-pre-cross-project-continuity-20261014-r01",
+    "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "contract_blob": "bbd718b6e8a81dcf31a9632c656adb3d2f58b9c4",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TRACK_DEVELOPMENT_CROSS_PROJECT_NEXT_CHAT_2026-10-14.json",
+    "receipt_blob": "a9a48abdb0f3759f29b6c04ffcdcc5bc8aeb19ea",
+    "manifest_blob": "42161689e3ac40d4b60024561b6e6a11efa270c5",
+    "native": {
+      "version": "0.1.62",
+      "release": "pluginrel_6acffadc6fe88191a0b897944220bc89",
+      "readback": "VERIFIED"
+    },
+    "alive": {
+      "version": "0.13.57",
+      "release": "pluginrel_6acffaec6a3c8191b5c4643eeb987841",
+      "readback": "VERIFIED"
+    },
+    "fresh_host": "PENDING",
+    "actual_cross_project_chat_transfer": "NOT_TESTED",
+    "no_global_pointer": true,
+    "no_facet_merge": true,
+    "no_foreign_activation": true
   }
 }
