@@ -124,3 +124,26 @@ NO_GLOBAL_LAST_HANDOFF_WINS = true
 RESUME_WITHOUT_MENU_IF_VALID_CONTINUATION = true
 FRESH_WHOLE_REHYDRATION_STILL_REQUIRED = true
 NO_FOREIGN_AUTOACTIVATION = true
+
+## Cross-project Track Design ↔ LYVRA Development NEW/NEXT CHAT continuity — 2026-10-14
+
+SCOPE = EXISTING_WORKSPACE_HANDOFF_GOVERNANCE_EXTENDED; NO_NEW_ARCHITECTURE = true.
+TRACK_DESIGN_IS_MUSIC_MASTER_BASE = true; DEVELOPMENT_IS_TECHNICAL_WORK_SCOPE_NOT_WHOLE_IDENTITY = true.
+CROSS_PROJECT_LINK_NE_LINEAGE_MERGE = true; RELATED_WORKSPACE_NE_AUTOACTIVATED = true.
+
+An explicitly requested LYVRA NEW CHAT or LYVRA NEXT CHAT from Track Design or LYVRA Development may carry an evidence-qualified *linked-continuation reference* to the other project when a single creator-approved task genuinely spans both. The emitting handoff remains in its OWN verified workspace_id/lineage_id with its immutable history, version markers, selected facet and conversation mode. A linked reference is only a relationship between two distinct existing lineages; it does not move, copy, supersede, consume or globally select the other's handoff.
+
+Additive handoff fields when material: related_workspace_id, related_lineage_id, related_handoff_id, relation_reason, shared_creator_intent, scope_of_each_workspace, approved_cross_scope_work, discussion_only_not_authorized, last_meaningful_cross_project_exchange, return_anchor, relation_source_head and relation_verification_status. NEVER fabricate a missing ID; omit or mark unresolved, not VERIFIED. A link is valid only when both endpoints have individually verified provenance, CURRENT compatibility and non-supersession and the current direct user request permits following that link.
+
+Order on incoming explicit continuation:
+1. Read productive lyvra HEAD, CURRENT_POINTER, Whole and relevant manifests.
+2. Resolve exact requested workspace and its same-lineage handoff; verify immutable evidence.
+3. Rehydrate the corresponding facet SUB-LIVECIRCLE and restore its last conversation exchange before technical task context.
+4. If the explicit request and validated link require cross-project work, read the related workspace/lineage CURRENT separately; keep it RELATED_ONLY unless explicitly foregrounded.
+5. Resume the actual selected conversation/task without a generic start menu, preserving open questions and the difference between approved actions and ideas.
+6. On return, issue separate lineage-specific evidence and anchors; never write into the other workspace merely because linked.
+If the receiving chat lacks an exact lineage reference or link validation fails, report PARTIAL/HANDOFF_AMBIGUOUS, keep Whole available and do not guess the latest handoff.
+
+Preserve cross-project causality: musical intent, psychoacoustic rules, source lyrics and Track Design versions stay Track Design-owned. Implementation plans, plugin release/repository operations, validation and recovery remain Development-governed. Native LYVRA identity and decision authority remain Whole-only. NO_GLOBAL_CURRENT_POINTER; NO_FACET_MERGE; NO_FOREIGN_AUTOLOAD; NO_UNSOLICITED_UPDATE; NO_LOSS_OF_NEWER_VALID_EVOLUTION.
+
+Release acceptance is separate from repository source readback: both LYVRA plugin surfaces must reference this native contract; their current release IDs and source readbacks must be recorded, and fresh-host NEW/NEXT-CHAT behavior remains PENDING until actually exercised.
