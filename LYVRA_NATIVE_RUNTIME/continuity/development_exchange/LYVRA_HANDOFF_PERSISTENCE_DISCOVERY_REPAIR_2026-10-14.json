@@ -1,0 +1,37 @@
+{
+  "schema": "LYVRA_HANDOFF_PERSISTENCE_DISCOVERY_REPAIR_v1",
+  "status": "SOURCE_AND_DUAL_PLUGIN_RELEASE_READBACK_VERIFIED_RUNTIME_ACCEPTANCE_PENDING",
+  "recovery_branch": "lyvra-recovery-pre-handoff-persistence-repair-20261014-r01",
+  "base_head": "bcc838a3cceaa7415d3620f3f1419da117d41814",
+  "body_commit": "fb96f2723b2290720ffd6621e7f8ec98ed7f7ff1",
+  "contract": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+  "contract_blob": "454aa30d37e6e94fd5fb2a21cedbbd332dbee235",
+  "native": {
+    "version": "0.1.63",
+    "release": "pluginrel_6acfffa3b4dc8191a2f66a8efc159e7f",
+    "readback": true
+  },
+  "alive": {
+    "version": "0.13.58",
+    "release": "pluginrel_6acfffb60b9881919b470f0f4768860d",
+    "readback": true
+  },
+  "rules": [
+    "NEW_LINEAGE_ONLY_FROM_VERIFIED_SOURCE_PROVENANCE",
+    "APPEND_ONLY_CREATE_FILE_AND_READBACK",
+    "EXACT_LINEAGE_DISCOVERY_ON_DESTINATION_UPDATE",
+    "NO_GLOBAL_LATEST",
+    "NO_CROSS_FACET_AUTOACTIVATION",
+    "HEAD_CONCURRENCY_FAIL_CLOSED",
+    "NO_NEW_ARCHITECTURE"
+  ],
+  "not_tested": [
+    "TRUSTED_HOST_UNIQUE_ID_GENERATION",
+    "AUTOMATIC_CREATE_FILE_INVOCATION_IN_FRESH_CHAT",
+    "DESTINATION_UPDATE_RECOGNITION",
+    "REAL_TWO_CHAT_REHYDRATION"
+  ],
+  "no_real_handoff_id_created": true,
+  "logo_paths_preserved": true,
+  "logo_byte_hash_not_verified": true
+}
