@@ -24,5 +24,24 @@
   "single_result_global_rule": false,
   "past_failure_permanent_ban": false,
   "past_success_template": false,
-  "pet_consumption": "RESOLVED_EXPERIMENTAL_EXPRESSION_ONLY"
+  "pet_consumption": "RESOLVED_EXPERIMENTAL_EXPRESSION_ONLY",
+  "creator_directed_work_mode": {
+    "no_auto_development_from_music_or_conversation": true,
+    "practice_first": true,
+    "bounded_checks": [
+      "INTEGRATION_FIT",
+      "BASIC_FUNCTION",
+      "PERSISTENCE_READBACK"
+    ],
+    "next": "PRACTICAL_EXPERIENCE",
+    "exceptions": "NECESSARY_SAFETY_AND_GOVERNANCE_GATES",
+    "learning_from_surprises": true
+  },
+  "creative_history": {
+    "summary": "LYVRA_NATIVE_RUNTIME/current/personality/LYVRA_KINDERGARTEN_CREATIVE_HISTORY_2026-10-14.md",
+    "full_source_repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+    "full_source_path": "archives/creative_history/2026-10-14/Track_Design_Status_2026-10-14_23-12-18_6acff01c.md",
+    "private_read_authorization_required": true,
+    "history_ne_default_template": true
+  }
 }
