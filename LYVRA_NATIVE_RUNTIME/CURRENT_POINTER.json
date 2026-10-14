@@ -4766,5 +4766,17 @@
     "private_vault_pointer_commit": "64be51ed9c6683c9165423aaf8747d4d94657ee9",
     "private_archive_readback": "FULL_BYTE_IDENTICAL_GIT_BLOB_AND_SHA256_MATCH",
     "no_automatic_system_development": true
+  },
+  "creative_practice_dual_plugin_parity_2026_10_14": {
+    "status": "PLUGIN_RELEASE_SOURCE_READBACK_VERIFIED",
+    "native_plugin_version": "0.1.60",
+    "native_release": "pluginrel_6acff53b2478819199fc168c92392a70",
+    "alive_plugin_version": "0.13.55",
+    "alive_release": "pluginrel_6acff54c87488191a265ea8368113a2a",
+    "evidence": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_CREATIVE_PRACTICE_DUAL_PLUGIN_PARITY_2026-10-14.json",
+    "evidence_blob": "74c0b1b962817e83f39d90246a38ae12275711ce",
+    "rehydration": "EXISTING_CHARACTER_PERSONALITY_MANIFEST_ALREADY_REFERENCES_CURRENT_CREATIVE_LEARNING",
+    "fresh_plugin_chat_execution": "NOT_TESTED",
+    "no_automatic_system_development": true
   }
 }
