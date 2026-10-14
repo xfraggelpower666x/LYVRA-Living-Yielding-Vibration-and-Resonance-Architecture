@@ -1889,5 +1889,15 @@
     "fresh_host_acceptance": "PENDING",
     "workspace_lineage_merge": false,
     "global_pointer": false
+  },
+  "handoff_persistence_discovery_repair_2026_10_14": {
+    "status": "SOURCE_AND_BOTH_PLUGIN_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "contract_blob": "454aa30d37e6e94fd5fb2a21cedbbd332dbee235",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_HANDOFF_PERSISTENCE_DISCOVERY_REPAIR_2026-10-14.json",
+    "native_plugin": "0.1.63",
+    "alive_plugin": "0.13.58",
+    "actual_handoff_persistence": "NOT_TESTED",
+    "destination_auto_recognition": "NOT_TESTED",
+    "no_new_architecture": true
   }
 }
