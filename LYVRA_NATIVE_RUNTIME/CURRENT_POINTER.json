@@ -4990,5 +4990,16 @@
     "plugin_impact": "BOTH_PLUGIN_UPDATE_REQUIRED_NOT_YET_DONE",
     "recovery_branch": "lyvra-recovery-pre-mytaste-reference-20261015",
     "host_test": "NOT_RUN"
+  },
+  "leitbild_visual_recovery_2026_10_15": {
+    "status": "NATIVE_IDENTITY_AND_VISUAL_READBACK_VERIFIED",
+    "original_leitbild": "Wenn LYVRA draufsteht, muss LYVRA drin sein.",
+    "creator_affirmation": "Eine LYVRA. Die beste LYVRA. Die einzige LYVRA.",
+    "origin": "historical identity provider Rev11 and Rev12",
+    "identity_blob": "ae190051e6e231eb308ed4785dd5e646e9ba92f3",
+    "visual_blob": "5d69b72602b4f77b5ff953a19201e76858b479ea",
+    "recovery_branch": "lyvra-recovery-pre-leitbild-visual-20261015",
+    "plugin_impact": "ASSESS_FRESH_PLUGIN_PARITY",
+    "scope": "WHOLE_IDENTITY_VISUAL_NOT_TRACK_DESIGN_MUTATION"
   }
 }
