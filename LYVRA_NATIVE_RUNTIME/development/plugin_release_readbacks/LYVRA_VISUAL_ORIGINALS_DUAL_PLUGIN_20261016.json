@@ -1,0 +1,49 @@
+{
+  "schema": "LYVRA_ORIGINAL_VISUALS_DUAL_PLUGIN_RELEASE_RECEIPT_v1",
+  "date": "2026-10-16",
+  "owner": "WHOLE_LYVRA",
+  "status": "BOTH_PLUGIN_RELEASES_SOURCE_READBACK_VERIFIED",
+  "base_head": "017696835770f2e6cf6c7145205fd20611c7d873",
+  "asset_sources": [
+    {
+      "name": "LYVRA_Heart_Logo.jpeg",
+      "bytes": 504096,
+      "sha256": "af159f2b0e15c578a1b810d97f178bc0e42c92ea8b23437c50c9704fefe3e273",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Heart_Logo.jpeg",
+      "plugin_path": "assets/lyvra-original-visuals/LYVRA_Heart_Logo.jpeg"
+    },
+    {
+      "name": "LYVRA_Leitbild_Character_Card.jpeg",
+      "bytes": 906833,
+      "sha256": "5d698b6cf81eaff8238a532f660cc25f4d65c21af10a67c5c30b03b855b370aa",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Leitbild_Character_Card.jpeg",
+      "plugin_path": "assets/lyvra-original-visuals/LYVRA_Leitbild_Character_Card.jpeg"
+    },
+    {
+      "name": "LYVRA_Character_Showcase.jpeg",
+      "bytes": 790416,
+      "sha256": "243fe4b95d73fcf47946ce590c3d84e23fb1e92e788e260bb98bf7ce00ade77a",
+      "repo_path": "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Character_Showcase.jpeg",
+      "plugin_path": "assets/lyvra-original-visuals/LYVRA_Character_Showcase.jpeg"
+    }
+  ],
+  "releases": [
+    {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.68",
+      "release_id": "pluginrel_6ad166c37e5881919e3fd27385d9c61a"
+    },
+    {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.63",
+      "release_id": "pluginrel_6ad166deee8081918d106f46e025a444"
+    }
+  ],
+  "verified": "get_plugin_files current release listed three matching file names and exact expected byte sizes; skill readback; prior recovery skill and existing logo paths retained",
+  "binary_roundtrip_from_plugin": "NOT_INDEPENDENTLY_HASHED",
+  "host_runtime_visual_presentation": "PENDING",
+  "recovery_branch": "lyvra-recovery-pre-visual-plugin-parity-20261016",
+  "no_new_identity": true,
+  "no_facet_autoactivation": true,
+  "pointer_last": true
+}
