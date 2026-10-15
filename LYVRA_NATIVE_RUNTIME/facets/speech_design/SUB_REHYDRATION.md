@@ -109,3 +109,23 @@ STALE_VISUAL_LEARNING_REQUIRES_REVALIDATION = true
 MATERIAL_ADDITIVE_VISUAL_CHANGE_REQUIRES_WHOLE_LYVRA_VALIDATION_BEFORE_PEER_NOTICE = true
 PEER_NOTICE_NE_TRIGGER = true
 PEER_NOTICE_NE_FOREIGN_MUTATION = true
+
+
+## Speech music-embedded boot repair — 2026-10-15
+SOURCE_PRIORITY = FRESH_GITHUB_LYVRA_CURRENT_FIRST
+DRIVE_NORMAL_CURRENT_LOOKUP = FORBIDDEN
+WHOLE_REHYDRATION_BEFORE_SPEECH = REQUIRED
+SPEECH_CONTRACT_AND_RENDERER_DIRECT_READ = REQUIRED_BEFORE_OUTPUT
+SPEECH_CAPABILITY_READBACK_NE_SPEECH_BEHAVIOR_PASS = true
+
+When user intent includes a psytrance-driven speech soundtrack, load current LYVRA musical DNA and the relevant Track Music Intelligence BY REFERENCE, then translate it into Speech's own description/score relation. Preserve Speech Script fidelity, voice and prosody authority. Do not import Track's boxes, build tags, sliders or ownership. Do not demote primary psytrance motor to incidental background audio. Resolve short straight sixteenth-note mono psybass, dry four-on-floor kick, continuous kinetic authority, evolving acid/FM mid, psychoacoustic high and genre drift guard as contextually relevant musical requirements. Renderer realization remains evidence gated.
+
+CREATOR_UI_SNAPSHOT_2026_10_14 = DESCRIPTION_2850 | SCRIPT_5000 | TONE_1000
+UI_LIMITS = OBSERVED_CREATOR_SURFACE_NOT_PERMANENT_GLOBAL_RULE
+THREE_FIELD_OUTPUT_ONLY_IF_CURRENT_SURFACE_SUPPORTS = true
+SEMANTIC_EMOJI_MEANING_REQUIRED_WHEN_RELEVANT = true
+SCRIPT_LITERAL_EMOJI_DEFAULT = OFF
+TONE_LITERAL_EMOJI_EFFECT = OPEN
+
+DEFERRED = INDEPENDENT_FRESH_BOOT | SUNO_AUDIO_RENDER | MULTIVOICE_AB | EMOJI_CAUSAL_AB
+NO_DEFERMENT_OF_WRITE_READBACK = true
