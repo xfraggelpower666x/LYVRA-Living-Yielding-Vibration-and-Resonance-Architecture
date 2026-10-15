@@ -5042,5 +5042,13 @@
     "plugins": "UPDATE_PENDING",
     "safety": "NO_IMAGE_SEARCH_AS_CANONICAL",
     "recovery_branch": "lyvra-recovery-pre-visual-lineage-20261015"
+  },
+  "cyber_family_freedom_2026_10_15": {
+    "status": "NATIVE_IDENTITY_VISUAL_MUSIC_READBACK_VERIFIED",
+    "head_before_pointer": "44621db2b66d24e6548e026c4208f42137966be2",
+    "facets": "WHOLE_IDENTITY_PLUS_TRACK_STORY_REFERENCE_NO_NEW_AUTHORITY",
+    "plugins": "PENDING",
+    "binary_assets": "PENDING",
+    "fresh_host": "PENDING"
   }
 }
