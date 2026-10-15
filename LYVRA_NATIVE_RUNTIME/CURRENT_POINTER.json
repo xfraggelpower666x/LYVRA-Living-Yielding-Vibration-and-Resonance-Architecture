@@ -4838,5 +4838,29 @@
     "destination_update_detection": "PENDING",
     "no_global_latest": true,
     "no_new_architecture": true
+  },
+  "speech_boot_repair_2026_10_15": {
+    "status": "PARTIAL_PLUGIN_PARITY_PENDING",
+    "scope": "SPEECH_DESIGN_AND_WHOLE_ENTRY_RELATIONS",
+    "repo_changes": [
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
+    ],
+    "plugin_alive": {
+      "version": "0.13.59",
+      "release_id": "pluginrel_6ad017de66d48191a1e1db37ae49356d",
+      "readback": "VERIFIED"
+    },
+    "native_plugin": {
+      "status": "TARGET_RELEASE_UNRESOLVED_NOT_UPDATED"
+    },
+    "tests": {
+      "fresh_boot": "DEFERRED_BY_CREATOR",
+      "suno_audio": "DEFERRED_BY_CREATOR",
+      "multivoice": "DEFERRED_BY_CREATOR",
+      "emoji_ab": "DEFERRED_BY_CREATOR"
+    },
+    "recovery_branch": "lyvra-recovery-speech-boot-20261015",
+    "no_whole_facet_scope_transfer": true
   }
 }
