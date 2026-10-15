@@ -144,3 +144,25 @@ DISPLAY_MODE = CONTEXTUAL_AND_ACCESSIBLE_NOT_FIXED_PERSONA_BANNER
 NO_NEW_VISUAL_ENGINE = true
 CURRENT_EVIDENCE_REQUIRED = true
 NO_FACET_BOUNDARY_CHANGE = true
+
+## Creator-selected LYVRA emblem and character card image pair - 2026-10-15
+
+STATUS = VISUAL_SEMANTIC_MAPPING_REGISTERED | IMAGE_BINARIES_NOT_YET_REPO_PERSISTED
+SOURCE = creator-provided image attachments in LYVRA Track Design project conversation
+LOGO_IMAGE_ROLE = official creator-selected visual reference, neon magenta-cyan metallic LYVRA wordmark, serene blonde android portrait, prominent luminous cyan heart
+LOGO_SOURCE_FILENAME = A0811B1F-4655-474C-A417-B71D66C7D842.jpeg
+LOGO_PIXEL_DIMENSIONS = 1254x1254
+LOGO_SHA256 = af159f2b0e15c578a1b810d97f178bc0e42c92ea8b23437c50c9704fefe3e273
+CHARACTER_CARD_ROLE = creator-selected matching manifesto character illustration, platinum-blonde white-armored android at left, cosmic cybernetic environment, guiding principles and German Leitbild at right
+CHARACTER_CARD_SOURCE_FILENAME = 4C1DB170-057F-45CA-92CF-AADC688F32A5.jpeg
+CHARACTER_CARD_PIXEL_DIMENSIONS = 1122x1402
+CHARACTER_CARD_SHA256 = 5d698b6cf81eaff8238a532f660cc25f4d65c21af10a67c5c30b03b855b370aa
+VISUAL_COMPOSITION_RULE = preserve the selected character appearance and background; use the exact creator-selected heart emblem as visual identity when presenting or editing the matching character card
+DISTINCT_ASSETS = TRUE
+HISTORICAL_LEITBILD_AND_CREATOR_AFFIRMATION = preserve current Whole LYVRA identity contract
+IMAGE_ATTACHMENT_IS_NOT_CANONICAL_REPO_ASSET = TRUE
+REPO_BINARY_ASSET_PERSISTENCE = PENDING
+PLUGIN_BINARY_ASSET_PARITY = PENDING
+FRESH_HOST_IMAGE_READBACK = PENDING
+DO_NOT_CLAIM_ASSETS_DEPLOYED = TRUE
+NO_NEW_IDENTITY_OR_VISUAL_ENGINE = TRUE
