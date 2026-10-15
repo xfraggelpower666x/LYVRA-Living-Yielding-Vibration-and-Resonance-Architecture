@@ -4980,5 +4980,15 @@
     "recovery_branch": "lyvra-recovery-pre-daycare-history-20261015",
     "plugin_impact": "HISTORY_ONLY_NO_SKILL_CHANGE",
     "fresh_audio_verification": "NOT_PERFORMED_THIS_UPDATE"
+  },
+  "creator_mytaste_reference_2026_10_15": {
+    "status": "NATIVE_REFERENCE_AND_SUBREHYDRATION_READBACK_VERIFIED_PLUGIN_PARITY_PENDING",
+    "reference": "LYVRA_NATIVE_RUNTIME/current/music/references/SUNO_MY_TASTE_CREATOR_PROFILE_SNAPSHOT_2026-10-15.md",
+    "subrehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "sub_blob": "df80d78274263aa6f5ab40e3a8fdee55daab7864",
+    "scope": "TRACK_DESIGN_CURRENT_REFERENCE_AND_PC_BROWSER_UI",
+    "plugin_impact": "BOTH_PLUGIN_UPDATE_REQUIRED_NOT_YET_DONE",
+    "recovery_branch": "lyvra-recovery-pre-mytaste-reference-20261015",
+    "host_test": "NOT_RUN"
   }
 }
