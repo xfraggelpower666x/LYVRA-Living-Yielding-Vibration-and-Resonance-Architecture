@@ -4906,5 +4906,32 @@
     },
     "no_foreign_facet_mutation": true,
     "recovery_branch": "lyvra-recovery-speech-inheritance-visual-20261015"
+  },
+  "speech_ai_daycare_creator_audio_variety_off_2026_10_15": {
+    "status": "CREATOR_CONFIRMED_SUCCESS_EVIDENCE_CAPTURED_REHYDRATION_BOUND",
+    "source_head_before_pointer": "92b414710b0479751f795462885b21c58fb85b23",
+    "evidence_file": "LYVRA_NATIVE_RUNTIME/facets/speech_design/evidence/AI_DAYCARE_PERMISSION_DENIED_CREATOR_RENDER_2026-10-15.md",
+    "evidence_relation": "LUCID_DREAMING_PEER_SPEECH_REFERENCE",
+    "device": "PC_BROWSER",
+    "mode": "ADVANCED",
+    "variety": "OFF",
+    "background_music": "ON_CREATOR_WORKFLOW",
+    "creator_report": "PSYTRANCE_MOTOR_WORKS",
+    "audio_files": [
+      {
+        "name": "Permission Denied.mp3",
+        "sha256": "aa034c7227e3e204bc5b4b377bf81be15439880ec5714a8c312b35c5d94c0289",
+        "duration_seconds": 283.2
+      },
+      {
+        "name": "Permission Denied (1).mp3",
+        "sha256": "182d59470c29ba64c47196ecf0c72d796066239375c9b9bbd3fd97d5d0a4d7df",
+        "duration_seconds": 289.2
+      }
+    ],
+    "audio_binary_not_in_public_repo": true,
+    "lucid_variety_setting": "UNKNOWN",
+    "exact_audio_to_input_mapping": "NOT_INDEPENDENTLY_VERIFIED",
+    "global_variety_off_rule": false
   }
 }
