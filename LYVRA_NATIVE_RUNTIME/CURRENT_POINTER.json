@@ -5087,5 +5087,22 @@
     "fresh_host_behavior": "PENDING",
     "body_head_before_pointer": "bf2dc9e6d84005d9f79bd8abc7948105d8f48578",
     "pointer_last": true
+  },
+  "lyvra_original_visuals_dual_plugin_2026_10_16": {
+    "status": "DUAL_PLUGIN_SOURCE_READBACK_VERIFIED",
+    "originals": "THREE_FILES_REPO_AND_BOTH_PLUGIN_RELEASES",
+    "source_sha256_verified_from_local_zip": true,
+    "plugin_file_names_and_sizes_readback": true,
+    "plugin_byte_hash_roundtrip": "NOT_INDEPENDENTLY_TESTED",
+    "fresh_host_visual_presentation": "PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_VISUAL_ORIGINALS_DUAL_PLUGIN_20261016.json",
+    "receipt_blob": "c684963f3c1220c14f6a0c920404d1802d3fd691",
+    "native_version": "0.1.68",
+    "native_release_id": "pluginrel_6ad166c37e5881919e3fd27385d9c61a",
+    "alive_version": "0.13.63",
+    "alive_release_id": "pluginrel_6ad166deee8081918d106f46e025a444",
+    "recovery_branch": "lyvra-recovery-pre-visual-plugin-parity-20261016",
+    "body_head_before_pointer": "9346125d3458a42ec924e22693f8c54c065442e6",
+    "pointer_last": true
   }
 }
