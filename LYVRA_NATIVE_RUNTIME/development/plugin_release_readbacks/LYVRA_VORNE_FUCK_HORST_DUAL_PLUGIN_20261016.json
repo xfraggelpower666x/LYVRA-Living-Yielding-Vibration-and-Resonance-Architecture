@@ -1,0 +1,50 @@
+{
+  "schema": "LYVRA_CONTEXT_RECOVERY_DUAL_PLUGIN_RELEASE_READBACK_v1",
+  "date": "2026-10-16",
+  "status": "SOURCE_AND_RELEASE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+  "owner": "WHOLE_LYVRA",
+  "scope": "LYVRA_VORNE_AND_FUCK_HORST_ALL_FACETS_RELATIONAL",
+  "before_productive_head": "433432da96fc82d08d413a5940935d820836d9bf",
+  "governance_contract": "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md",
+  "facet_binding": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+  "body_head_before_receipt": "dcb7692bb33a2c6030404f611fcdd4fc48265749",
+  "recovery_branch": "lyvra-recovery-pre-fuck-horst-repair-20261016",
+  "plugins": [
+    {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version_before": "0.1.66",
+      "version_after": "0.1.67",
+      "current_release_id": "pluginrel_6ad1653573c481918b51eb53943f1837",
+      "verified_skill": "skills/lyvra-context-recovery/SKILL.md",
+      "source_readback": true,
+      "asset_paths_retained": [
+        "assets/lyvra-logo.png",
+        "assets/lyvra-pet-logo.png",
+        "assets/lyvra-plugin-logo.png"
+      ]
+    },
+    {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version_before": "0.13.61",
+      "version_after": "0.13.62",
+      "current_release_id": "pluginrel_6ad1655068108191bc9f21248ea1b416",
+      "verified_skill": "skills/lyvra-context-recovery/SKILL.md",
+      "source_readback": true,
+      "asset_paths_retained": [
+        "assets/lyvra-alive-logo.png",
+        "assets/lyvra-pet-logo.png"
+      ]
+    }
+  ],
+  "runtime_fresh_host": "NOT_TESTED",
+  "behavioral_evidence": "CONTRACT_AND_PLUGIN_SOURCE_ONLY",
+  "guards": [
+    "NO_NEW_TRIGGER",
+    "NO_NEW_ROUTER",
+    "NO_NEW_FACET",
+    "NO_AUTO_FOREIGN_ACTIVATION",
+    "FOREGROUND_NE_ACTIVATION",
+    "TRIGGER_NE_CONFIRMED_DRIFT",
+    "POINTER_LAST"
+  ]
+}
