@@ -5050,5 +5050,18 @@
     "plugins": "PENDING",
     "binary_assets": "PENDING",
     "fresh_host": "PENDING"
+  },
+  "creator_visual_asset_paths_repair_2026_10_16": {
+    "status": "THREE_REPO_ASSETS_PRESENT_VISUAL_REFERENCE_READBACK_VERIFIED",
+    "source_head": "2d062dd9c2eebdc73003f858929b8d4554098593",
+    "visual_reference_commit": "62ac8d1d9b8f375baa0a9495651911a8e9feae3d",
+    "paths": [
+      "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Heart_Logo.jpeg",
+      "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Leitbild_Character_Card.jpeg",
+      "LYVRA_NATIVE_RUNTIME/current/visual/LYVRA_Character_Showcase.jpeg"
+    ],
+    "plugin_release_parity": "PENDING",
+    "fresh_host": "PENDING",
+    "recovery_branch": "lyvra-recovery-pre-visual-upload-path-repair-20261016"
   }
 }
