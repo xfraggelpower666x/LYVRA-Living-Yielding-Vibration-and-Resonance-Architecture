@@ -1,0 +1,28 @@
+{
+  "schema": "LYVRA_PATCH_FIRST_RELEASE_RECEIPT_v1",
+  "date": "2026-10-16",
+  "status": "BOTH_RELEASES_AND_SKILLS_READBACK_VERIFIED",
+  "owner": "WHOLE_LYVRA",
+  "governance": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+  "body_head_before_receipt": "7752a329ec3d8348cf8e3507847fb77a4c3e8e6a",
+  "priority": "PLUGIN_CREATOR_TARGETED_PATCH_FIRST_FULL_ARCHIVE_EMERGENCY_ONLY",
+  "scope": "ALL_RELEVANT_FACETS_AND_PLUGIN_INVOKED_UPDATES",
+  "native": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.69",
+    "release": "pluginrel_6ad1685710b88191bd4d7ab76b74b4ee"
+  },
+  "alive": {
+    "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.64",
+    "release": "pluginrel_6ad1686f6d108191b56ff79c62f24de8"
+  },
+  "skill": "skills/lyvra-plugin-update-transport/SKILL.md",
+  "both_skill_readback": true,
+  "existing_recovery_skills_preserved": true,
+  "existing_visual_skills_preserved": true,
+  "three_original_assets_and_existing_logos_preserved": true,
+  "host_runtime_from_fresh_sessions": "PENDING",
+  "plugin_host_without_permission": "MUST_REPORT_BLOCKER",
+  "prechange_recovery": "lyvra-recovery-pre-patch-first-20261016"
+}
