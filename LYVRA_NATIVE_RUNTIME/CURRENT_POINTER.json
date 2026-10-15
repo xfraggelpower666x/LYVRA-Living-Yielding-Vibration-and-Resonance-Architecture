@@ -5012,5 +5012,16 @@
     "plugins": "IMPACT_REVIEW_PENDING",
     "fresh_host": "NOT_TESTED",
     "recovery_branch": "lyvra-recovery-pre-full-leitbild-20261015"
+  },
+  "creator_visual_pair_2026_10_15": {
+    "status": "VISUAL_REFERENCE_MAPPING_READBACK_VERIFIED_BINARY_ASSETS_PENDING",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "6d4d75a4749a75c9dae08c806a1c742d8892dcdf",
+    "logo_sha256": "af159f2b0e15c578a1b810d97f178bc0e42c92ea8b23437c50c9704fefe3e273",
+    "character_sha256": "5d698b6cf81eaff8238a532f660cc25f4d65c21af10a67c5c30b03b855b370aa",
+    "asset_binary_repo": "PENDING",
+    "plugin_parity": "PENDING",
+    "fresh_host": "PENDING",
+    "recovery_branch": "lyvra-recovery-pre-visual-asset-pair-20261015"
   }
 }
