@@ -4867,5 +4867,44 @@
     "no_whole_facet_scope_transfer": true,
     "parity": "SPEECH_AND_BOOT_SKILL_TEXT_SCOPE_ALIGNED_NOT_FRESH_HOST_PASS",
     "second_recovery_branch": "lyvra-recovery-speech-native-parity-20261015"
+  },
+  "speech_track_grade_rehydration_visual_dual_plugin_2026_10_15": {
+    "status": "REPO_AND_BOTH_PLUGIN_RELEASE_TEXT_READBACK_VERIFIED",
+    "source_head_before_pointer": "72eb1249b26d2080a38490872dd6fd28a11626de",
+    "scope": "SPEECH_DESIGN_ONLY_PLUS_WHOLE_LYVRA_MUSIC_VISUAL_RELATIONS",
+    "repo_carriers": [
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md"
+    ],
+    "plugins": [
+      {
+        "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+        "version": "0.13.60",
+        "release": "pluginrel_6ad02c28aa488191b2b30659daca890a",
+        "readback": "VERIFIED"
+      },
+      {
+        "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+        "version": "0.1.65",
+        "release": "pluginrel_6ad02c36b05c819180cca769f98b85da",
+        "readback": "VERIFIED"
+      }
+    ],
+    "speech_ui_observed_2026_10_14": {
+      "main_description": 2850,
+      "script": 5000,
+      "tone": 1000
+    },
+    "track_master": "CURRENT_BY_REFERENCE",
+    "visual": "SEMANTIC_VISUAL_FACET_CONTRACT",
+    "lucid": "CREATOR_CONFIRMED_SUCCESSFUL_REFERENCE_EXACT_SOURCE_PAIRING_OPEN",
+    "tests": {
+      "independent_fresh_boot": "NOT_TESTED",
+      "suno_audio": "NOT_TESTED",
+      "multivoice": "NOT_TESTED",
+      "emoji_ab": "NOT_TESTED"
+    },
+    "no_foreign_facet_mutation": true,
+    "recovery_branch": "lyvra-recovery-speech-inheritance-visual-20261015"
   }
 }
