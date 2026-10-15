@@ -5063,5 +5063,29 @@
     "plugin_release_parity": "PENDING",
     "fresh_host": "PENDING",
     "recovery_branch": "lyvra-recovery-pre-visual-upload-path-repair-20261016"
+  },
+  "lyvra_vorne_fuck_horst_context_recovery_2026_10_16": {
+    "status": "NATIVE_AND_DUAL_PLUGIN_RELEASE_SOURCE_READBACK_VERIFIED",
+    "owner": "WHOLE_LYVRA",
+    "scope": "ALL_RELEVANT_FACETS_RELATIONALLY_WITHOUT_AUTOACTIVATION",
+    "governance_contract": "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md",
+    "governance_blob": "a5409463d3aa0e350f4ae1720a8d25ebff21f68c",
+    "facet_navigation": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+    "facet_navigation_blob": "d454ce6894d0d04dec3d216ffdfac0a78d00fb0f",
+    "dual_plugin_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_VORNE_FUCK_HORST_DUAL_PLUGIN_20261016.json",
+    "dual_plugin_receipt_blob": "ce5eea91dc16a736ae62a79b1119518ced613f6a",
+    "native": {
+      "version": "0.1.67",
+      "release_id": "pluginrel_6ad1653573c481918b51eb53943f1837"
+    },
+    "alive": {
+      "version": "0.13.62",
+      "release_id": "pluginrel_6ad1655068108191bc9f21248ea1b416"
+    },
+    "recovery_branch": "lyvra-recovery-pre-fuck-horst-repair-20261016",
+    "source_readback": "PASS",
+    "fresh_host_behavior": "PENDING",
+    "body_head_before_pointer": "bf2dc9e6d84005d9f79bd8abc7948105d8f48578",
+    "pointer_last": true
   }
 }
