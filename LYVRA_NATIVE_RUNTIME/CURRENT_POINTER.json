@@ -4933,5 +4933,42 @@
     "lucid_variety_setting": "UNKNOWN",
     "exact_audio_to_input_mapping": "NOT_INDEPENDENTLY_VERIFIED",
     "global_variety_off_rule": false
+  },
+  "speech_device_final_dual_plugin_2026_10_15": {
+    "status": "REPO_AND_BOTH_PLUGIN_RELEASE_SKILL_READBACK_VERIFIED",
+    "scope": "SPEECH_DESIGN_ONLY_WITH_WHOLE_REFERENCE_RELATIONS",
+    "recovery_branch": "lyvra-recovery-speech-device-final-20261015",
+    "native_subrehydration_commit": "1f84a607632fae7ca57a5893e92bd673a6518642",
+    "device_modes": {
+      "iphone_app": "THREE_COPY_FIELDS_DESCRIPTION_SCRIPT_TONE",
+      "pc_browser_advanced": "TWO_COPY_FIELDS_SCRIPT_TONE_PLUS_VOCAL_GENDER_BACKGROUND_MUSIC_VARIETY",
+      "pc_browser_simple": "ONE_FREEFORM_FIELD",
+      "iphone_browser": "OUT_OF_NORMAL_CREATOR_WORKFLOW"
+    },
+    "creator_confirmed_ai_daycare_pc_advanced": {
+      "variety": "OFF",
+      "background_music": "ON",
+      "heard_success": true,
+      "not_global_renderer_rule": true
+    },
+    "lucid_dreaming_variety": "UNKNOWN",
+    "plugins": [
+      {
+        "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+        "version": "0.13.61",
+        "release": "pluginrel_6ad034d65e4c8191a35cba33fbec397a",
+        "readback": "VERIFIED"
+      },
+      {
+        "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+        "version": "0.1.66",
+        "release": "pluginrel_6ad034e6cc688191aa809de2a36016ce",
+        "readback": "VERIFIED"
+      }
+    ],
+    "skill_text_identical": true,
+    "real_independent_fresh_boot": "NOT_VERIFIED",
+    "real_suno_audio_causal_ab": "NOT_VERIFIED",
+    "pointer_last": true
   }
 }
