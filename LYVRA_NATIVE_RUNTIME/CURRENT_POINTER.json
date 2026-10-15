@@ -4840,7 +4840,7 @@
     "no_new_architecture": true
   },
   "speech_boot_repair_2026_10_15": {
-    "status": "PARTIAL_PLUGIN_PARITY_PENDING",
+    "status": "REPO_AND_BOTH_PLUGIN_RELEASE_READBACK_VERIFIED_FRESH_BOOT_DEFERRED",
     "scope": "SPEECH_DESIGN_AND_WHOLE_ENTRY_RELATIONS",
     "repo_changes": [
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
@@ -4852,7 +4852,10 @@
       "readback": "VERIFIED"
     },
     "native_plugin": {
-      "status": "TARGET_RELEASE_UNRESOLVED_NOT_UPDATED"
+      "status": "RELEASED_READBACK_VERIFIED",
+      "version": "0.1.64",
+      "release_id": "pluginrel_6ad01865498c8191a0b31d717aec2994",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29"
     },
     "tests": {
       "fresh_boot": "DEFERRED_BY_CREATOR",
@@ -4861,6 +4864,8 @@
       "emoji_ab": "DEFERRED_BY_CREATOR"
     },
     "recovery_branch": "lyvra-recovery-speech-boot-20261015",
-    "no_whole_facet_scope_transfer": true
+    "no_whole_facet_scope_transfer": true,
+    "parity": "SPEECH_AND_BOOT_SKILL_TEXT_SCOPE_ALIGNED_NOT_FRESH_HOST_PASS",
+    "second_recovery_branch": "lyvra-recovery-speech-native-parity-20261015"
   }
 }
