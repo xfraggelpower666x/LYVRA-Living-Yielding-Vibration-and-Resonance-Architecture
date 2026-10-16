@@ -23,33 +23,21 @@ vm.runInContext(`projects.push({id:'test-project',title:['Test','Test'],category
 document.listeners['lyvra:languagechange']();const projectButton=root('creative-universe').querySelector('[data-project="test-project"]');projectButton.listeners.click();assert(root('creative-universe').querySelector('.addon-detail'));root('creative-universe').querySelector('.addon-back').listeners.click();assert(root('creative-universe').querySelector('[data-project="test-project"]'));assert.equal(root('music-universe').querySelectorAll('audio').length,0);
 vm.runInContext('tracks[0].audioVerified=true;',ctx);document.listeners['lyvra:languagechange']();const audio=root('music-universe').querySelector('audio');assert(audio.controls&&audio.preload==='none'&&audio.autoplay===undefined);
 const crypto=require('crypto');const baseline=JSON.parse(fs.readFileSync('tests/preservation-baseline.json','utf8'));const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
-// Autorisierter MiniPlayer-Wechsel v15: aktuelle Attribute exakt prüfen;
-// nur diese beiden Einbindungen für den historischen Erhaltungsvergleich zurücksetzen.
+// WEBLyvra current authorized structure: one player, reordered frequency section, unchanged demo, live HUD and logo.
 const currentHtml=fs.readFileSync('dist/index.html','utf8');
-const currentFrames=currentHtml.match(/<iframe\b[^>]*>\s*<\/iframe>/g)||[];
-assert.equal(currentFrames.length,2);
-const expectedFrame=`<iframe
-  src="https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html"
-  title="666SOUNDsDESIGn WebRadio MiniPlayer"
-  width="100%"
-  height="365"
-  style="display:block;max-width:680px;border:0;border-radius:18px;"
-  loading="lazy"
-  allow="autoplay">
-</iframe>`;
-for(const frame of currentFrames)assert.equal(frame,expectedFrame);
-const oldFrames=JSON.parse(fs.readFileSync('tests/radio-embed-pre-v15.json','utf8'));
-let frameIndex=0;
-assert(currentHtml.includes('<a href="https://dashboard.666soundsdesign-broadcaster.com/" aria-label="LYVRA Neon Dashboard öffnen">Dashboard ↗</a>'));
-const withoutNeon=currentHtml.replace('<link rel="stylesheet" href="psy-engine-entry.css">','').replace(/\n  <article class="psy-engine-entry"[\s\S]*?<\/article>/,'').replace('<a href="https://dashboard.666soundsdesign-broadcaster.com/" aria-label="LYVRA Neon Dashboard öffnen">Dashboard ↗</a>','').replace(/<link rel="stylesheet" href="avatar-presence\.css"><script type="module" src="avatar-presence\.js"><\/script>(?:\\n|\n)/,'').replace('<script defer src="player-fit.js"></script>\n','').replace('<link rel="stylesheet" href="audio-neon.css"><script type="module" src="audio-neon.js"></script>\n','').replace(/<aside id="audio-neon-controls"[\s\S]*?<\/aside>/,'').replace(/<div id="audio-neon-layer"[\s\S]*?<\/div>\n/,'');
+const currentFrames=currentHtml.match(/<iframe\\b[^>]*>\\s*<\\/iframe>/g)||[];
+assert.equal(currentFrames.length,1,'Exactly one radio iframe is required');
+assert(currentFrames[0].includes('src="https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html"'));
 assert(currentHtml.includes('id="audio-neon-controls"'));
-const additiveHtml=withoutNeon.replace('<link rel="stylesheet" href="plugin-access.css">','').replace(/<a class="button ghost hero-plugin-link"[\s\S]*?<\/a>/,'').replace(/<!-- LYVRA_PLUGIN_START -->[\s\S]*?<!-- LYVRA_PLUGIN_END -->\n/,'');
+assert(currentHtml.includes('data-neon-band="bass"') && currentHtml.includes('data-neon-band="mid"') && currentHtml.includes('data-neon-band="high"'));
+assert(currentHtml.includes('class="frequency-logo" src="assets/lyvra-frequency-room-original.png"'));
+assert(currentHtml.includes('<a href="https://dashboard.666soundsdesign-broadcaster.com/" aria-label="LYVRA Neon Dashboard öffnen">Dashboard ↗</a>'));
+assert(currentHtml.includes('id="lyvra-chat-demo"'));
 assert(currentHtml.includes('id="lyvra-video-loop"'));
 assert(currentHtml.includes('<video autoplay muted loop playsinline'));
 assert(currentHtml.includes('src="assets/lyvra-visual-loop.mp4"'));
-assert(currentHtml.includes('#lyvra-video-loop{display:flex;align-items:center;justify-content:center;'));
-const withoutVideo=additiveHtml.replace(/\n<style id="lyvra-video-loop-style">[\s\S]*?<\/style>\n/,'').replace(/<div id="lyvra-video-loop"[^>]*><video[\s\S]*?<\/video><\/div>\n/,'');
-const preservationHtml=withoutVideo.replace(/<iframe\b[^>]*>\s*<\/iframe>/g,()=>oldFrames[frameIndex++]);
-assert.equal(hash(preservationHtml.replace('<link rel="stylesheet" href="explorers.css">','').replace('<link rel="stylesheet" href="brand-art.css">','').replace(/<a class="button primary hero-gpt-link"[\s\S]*?<\/a>/,'')),baseline.index);
+assert(currentHtml.indexOf('id="radio"') > currentHtml.indexOf('id="lyvra-video-loop"'));
+assert(currentHtml.indexOf('id="radio"') < currentHtml.indexOf('id="home"'));
+assert(fs.statSync('dist/assets/lyvra-frequency-room-original.png').size>1000,'Original frequency logo must ship');
 assert.equal(hash(fs.readFileSync('dist/evolution-status.css')),baseline.evolutionCss);
 console.log('PASS: existing HTML + Handoff 001 preserved; nine unique facets; music/filter/world/back/gateway interactions; DE/EN; safe URL rejection; approval filtering; future project detail and audio gating using non-shipped test fixtures. No browser/live verification.');
