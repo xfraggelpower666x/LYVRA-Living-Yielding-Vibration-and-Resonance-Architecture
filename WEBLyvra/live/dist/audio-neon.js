@@ -47,12 +47,17 @@ if (panel && layer) {
       return;
     }
     const signal = candidates.reduce((a, b) => a.energy >= b.energy ? a : b);
-    for (const key of ['bass', 'mid', 'high', 'energy']) layer.style.setProperty(`--audio-${key}`, String(signal[key]));
+    // Display-only sensitivity curve: real received levels in, no artificial audio pulses.
+    // Square-root lift emphasizes quiet musical detail; clamp prevents visual overload.
+    const lift = value => Math.min(1, Math.sqrt(Math.max(0, value)) * 1.42);
+    const bass = lift(signal.bass), mid = lift(signal.mid), high = lift(signal.high);
+    const energy = lift(signal.energy);
+    for (const key of ['bass', 'mid', 'high', 'energy']) layer.style.setProperty(`--audio-${key}`, String({ bass, mid, high, energy }[key]));
     layer.dataset.active = signal.energy > 0.005 ? 'true' : 'false';
-    for(const key of ['bass','mid','high']) bands[key]?.style.setProperty('--neon-level',String(Math.min(1, Math.max(0,signal[key]*3.5))));
-    if(orbits[0]) { orbits[0].style.transform=`scale(${1+signal.bass*.24})`; orbits[0].style.opacity=String(Math.min(1,.2+signal.bass*1.6)); }
-    if(orbits[1]) { orbits[1].style.transform=`scale(${1+signal.mid*.18})`; orbits[1].style.opacity=String(Math.min(1,.2+signal.mid*1.4)); }
-    if(edge) edge.style.opacity=String(Math.min(1,.15+signal.high*1.6));
+    for (const [key, value] of Object.entries({bass, mid, high})) bands[key]?.style.setProperty('--neon-level', String(value));
+    if (orbits[0]) { orbits[0].style.transform = `scale(${1 + bass * .35})`; orbits[0].style.opacity = String(.16 + bass * .77); }
+    if (orbits[1]) { orbits[1].style.transform = `scale(${1 + mid * .28})`; orbits[1].style.opacity = String(.14 + mid * .76); }
+    if (edge) edge.style.opacity = String(.12 + high * .78);
     setMode(signal.energy > 0.005 ? 'active' : 'paused');
   }
   function configure() {
