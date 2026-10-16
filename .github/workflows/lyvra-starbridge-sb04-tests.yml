@@ -1,0 +1,25 @@
+name: LYVRA StarBridge SB04 evidence tests
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/starbridge-r02-intake.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/verification/starbridge-r02-intake.test.mjs'
+      - '.github/workflows/lyvra-starbridge-sb04-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify R02 native source, independent readback and lineage safety
+        run: node --test LYVRA_NATIVE_RUNTIME/development/verification/starbridge-r02-intake.test.mjs
+# Offline regression only. Not automatic transport, live peer delivery or fresh host acceptance.
