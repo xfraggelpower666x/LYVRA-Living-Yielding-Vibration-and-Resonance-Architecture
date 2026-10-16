@@ -1,0 +1,68 @@
+{
+  "schema": "LYVRA_STARBRIDGE_SB04_NATIVE_EVIDENCE_V1",
+  "owner": "WHOLE_LYVRA",
+  "mode": "NATIVE_LYVRA_DEVELOPMENT_NO_FOREIGN_WRITES",
+  "status": "SOURCE_CI_VERIFIED_DELIVERY_HOST_PENDING",
+  "base_head": "09b40102d37db8f65053544a6081fd31490d151d",
+  "prechange_recovery_branch": "lyvra-recovery-pre-starbridge-sb04-20261016",
+  "source": {
+    "clic_head": "1f56d6b4cd75fb7a16366e8f1f1d3cbb1f14833a",
+    "source_path": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-LYVRA-VISUAL-DEVELOPMENT-REPORT-20261010-R02.json",
+    "source_blob": "a9490b43dfb2ad38f576210c548c262bf49d821a",
+    "lyvra_receiver_blob": "0e9eb90399459cd6443e2412c8af593caab07d0a",
+    "clic_reciprocal_blob": "0d9ca09c2150fa2d2057236ee6892045af3479dc",
+    "historical_reciprocal_readback": true
+  },
+  "implemented": [
+    "LYVRA_NATIVE_RUNTIME/development/verification/starbridge-r02-intake.mjs",
+    "LYVRA_NATIVE_RUNTIME/development/verification/starbridge-r02-intake.test.mjs",
+    ".github/workflows/lyvra-starbridge-sb04-tests.yml"
+  ],
+  "ci": {
+    "run_id": 38833708494,
+    "result": "SUCCESS",
+    "test_count": 5,
+    "type": "OFFLINE_SOURCE_EVIDENCE"
+  },
+  "triple_verification": {
+    "structural": "PASS_SOURCE_CI",
+    "causal_semantic": "PASS_NEGATIVE_GATES_AND_NATIVE_AUTHORITY_BOUNDARIES",
+    "rehydration_recovery": "PARTIAL_RECOVERY_BRANCH_AND_EXISTING_WORKSPACE_CONTRACT_VERIFIED_NO_FRESH_TWO_CHAT_HOST_PROOF"
+  },
+  "plugin_impact": {
+    "scope": "NATIVE_DEVELOPMENT_VERIFIER_ONLY_NO_SKILL_SURFACE_MUTATED",
+    "lyvra_native": {
+      "version": "0.1.69",
+      "release_id": "pluginrel_6ad1685710b88191bd4d7ab76b74b4ee"
+    },
+    "lyvra_alive": {
+      "version": "0.13.64",
+      "release_id": "pluginrel_6ad1686f6d108191b56ff79c62f24de8"
+    },
+    "plugin_release_this_update": "NONE",
+    "provider_runtime_e2e": "NOT_TESTED",
+    "future_host_workflow_skill_impact": "RECHECK_IF_RUNTIME_INTAKE_IS_CONNECTED"
+  },
+  "acceptance": {
+    "source_pass": true,
+    "release_metadata_readback": true,
+    "delivery_pass": false,
+    "native_adoption_pass": false,
+    "fresh_host_pass": false,
+    "real_two_chat_pass": false
+  },
+  "guards": {
+    "no_new_router": true,
+    "no_global_last_lineage": true,
+    "no_new_fabricated_handoff": true,
+    "no_clic_write": true,
+    "no_pet_mutation": true
+  },
+  "open": [
+    "NATIVE_RECEIVER_INVOCATION_ON_RELEVANT_LYVRA_UPDATE",
+    "REAL_GITHUB_SOURCE_INGESTION_IN_EXECUTION_CONTEXT",
+    "REAL_HOST_TWO_CHAT_WORKSPACE_LINEAGE_READBACK",
+    "CLIC_NATIVE_RESPONSE_AND_RECEIPT_VERIFICATION_FOR_NEW_EXCHANGE"
+  ],
+  "return_anchor": "CONTINUE_WHOLE_LYVRA_ORIGINAL_WORK; SB04_SOURCE_REGRESSION_VERIFIED_NO_RUNTIME_DELIVERY_CLAIM"
+}
