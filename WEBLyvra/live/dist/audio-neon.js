@@ -17,7 +17,7 @@ if (panel && layer) {
     de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', paused: 'Kein aktuelles Audiosignal', missing: 'Keine Audio-Pegeldaten vom Radio empfangen · Stream-Analyse prüfen', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
     en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', paused: 'No current audio signal', missing: 'No audio level data received from radio · check stream analysis', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
   };
-  let enabled = false, timer = null, mode = 'idle', subscribedAt = 0, lastLevelsAt = 0;
+  let enabled = false, userOverride = false, timer = null, mode = 'idle', subscribedAt = 0, lastLevelsAt = 0;
   const reference = { bass:null, mid:null, high:null, energy:null };
   const display = { bass:0, mid:0, high:0, energy:0 };
   function labels() {
@@ -38,7 +38,7 @@ if (panel && layer) {
     if(edge) edge.style.opacity='0.12';
   }
   function subscribe(frame) {
-    frame.contentWindow?.postMessage({ type: 'lyvra:audio:subscribe', version: 1, enabled: enabled && !motion.matches && !document.hidden }, origin);
+    frame.contentWindow?.postMessage({ type: 'lyvra:audio:subscribe', version: 1, enabled: (enabled || !userOverride) && !motion.matches && !document.hidden }, origin);
   }
   function render() {
     const now = performance.now();
@@ -82,20 +82,25 @@ if (panel && layer) {
   }
   window.addEventListener('message', event => {
     const frame = frames.find(f => f.contentWindow === event.source);
-    if (!enabled || motion.matches || document.hidden || event.origin !== origin || !frame) return;
+    if ((!enabled && userOverride) || motion.matches || document.hidden || event.origin !== origin || !frame) return;
     const data = event.data;
     if (!data || data.type !== 'lyvra:audio:levels' || data.version !== 1 || typeof data.playing !== 'boolean' || !Number.isSafeInteger(data.sequence) || data.sequence < 0) return;
     if (!['bass', 'mid', 'high', 'energy'].every(k => typeof data[k] === 'number' && Number.isFinite(data[k]) && data[k] >= 0 && data[k] <= 1)) return;
     const previous = states.get(frame);
     if (previous && data.sequence <= previous.sequence) return;
+    // Play confirmed by the trusted iframe's real audio-level bridge: enable automatically
+    // only until the visitor explicitly operates the neon toggle.
+    if (!enabled && !userOverride && data.playing) { enabled = true; configure(); }
     lastLevelsAt = performance.now();
     states.set(frame, { ...data, received: lastLevelsAt }); render();
   });
   frames.forEach(frame => frame.addEventListener('load', () => { states.delete(frame); subscribe(frame); render(); }));
-  toggle.addEventListener('click', () => { enabled = !enabled; configure(); });
+  toggle.addEventListener('click', () => { userOverride = true; enabled = !enabled; configure(); });
   motion.addEventListener('change', configure);
   document.addEventListener('visibilitychange', configure);
   document.addEventListener('lyvra:languagechange', labels);
   window.addEventListener('pagehide', () => { enabled = false; configure(); });
   reset(); labels();
+  // Listen passively for the first authentic Play event; no fabricated activity.
+  frames.forEach(subscribe);
 }
