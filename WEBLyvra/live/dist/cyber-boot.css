@@ -36,3 +36,35 @@
 @media(max-height:620px){.lyvra-intro-panel{transform:scale(.86);margin-top:3vh}.lyvra-intro-brand-image{max-height:82px}.hud-system-online{top:calc(50% + min(21vw,165px));font-size:clamp(12px,1.45vw,19px)}.hud-center-logo-wrap{width:min(28vw,290px);height:min(70%,290px)}}
 @media(prefers-reduced-motion:reduce){.lyvra-intro-scanlines,.lyvra-intro-core,.lyvra-intro-core::before,.lyvra-intro-step.active::before{animation:none!important}.lyvra-intro-bar{transition:none}.lyvra-intro-stage,.lyvra-hud-stage,.lyvra-intro-panel{transition:none!important}.lyvra-transition-fx,.lyvra-transition-fx::before,.lyvra-transition-fx::after{animation:none!important}}
 #lyvra-cyber-boot-host{position:fixed;inset:0;z-index:2147483000;width:100%;height:100vh;height:100svh;margin:0;overflow:hidden;background:#020006;opacity:1;transition:opacity 720ms ease;isolation:isolate}#lyvra-cyber-boot-host.lyvra-host-exit{opacity:0;pointer-events:none}#lyvra-cyber-boot-host .lyvra-cyber-sequence{width:100%;height:100%;min-height:100%}#lyvra-cyber-boot-host .lyvra-intro-stage,#lyvra-cyber-boot-host .lyvra-hud-stage{min-height:100%}@supports(height:100dvh){#lyvra-cyber-boot-host{height:100dvh}}
+
+/* WEBLyvra phase-2 mobile portrait repair: keep every HUD part inside the viewport.
+   Desktop remains unchanged; SYSTEM ONLINE sits below the center emblem, before credits. */
+@media (max-width:760px) and (orientation:portrait){
+  #lyvra-cyber-boot-host .lyvra-hud-stage-inner{width:100%;height:100%;padding:clamp(8px,2vw,16px);display:grid;place-items:center}
+  #lyvra-cyber-boot-host .cyber-hud-logo{
+    width:min(100%,440px);height:min(76svh,600px);min-height:0;aspect-ratio:auto;
+    overflow:hidden;align-self:center;
+  }
+  #lyvra-cyber-boot-host .hud-center-logo-wrap{
+    top:35%;left:50%;width:min(66vw,245px);height:min(43%,255px);max-height:255px;
+  }
+  #lyvra-cyber-boot-host .hud-circuit{top:35%;height:clamp(28px,8vw,48px);width:55%}
+  #lyvra-cyber-boot-host .hud-circuit-left{left:-7%}
+  #lyvra-cyber-boot-host .hud-circuit-right{right:-7%}
+  #lyvra-cyber-boot-host .hud-reactor-ring{top:35%;width:min(67vw,270px)}
+  #lyvra-cyber-boot-host .hud-system-online{
+    top:62%;left:50%;font-size:clamp(13px,3.5vw,19px);
+    letter-spacing:.10em;text-indent:.10em;max-width:95%;
+  }
+  #lyvra-cyber-boot-host .hud-label-left,
+  #lyvra-cyber-boot-host .hud-label-right{
+    left:50%;right:auto;font-size:clamp(12px,3.45vw,18px);
+    max-width:96%;letter-spacing:.035em;
+  }
+  #lyvra-cyber-boot-host .hud-label-left{top:77%}
+  #lyvra-cyber-boot-host .hud-label-right{top:87%;font-size:clamp(11px,3vw,16px)}
+}
+@media (max-width:760px) and (orientation:portrait) and (max-height:650px){
+  #lyvra-cyber-boot-host .cyber-hud-logo{height:90svh}
+  #lyvra-cyber-boot-host .hud-center-logo-wrap{height:min(37%,205px)}
+}
