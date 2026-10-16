@@ -72,4 +72,4 @@ export const links={
   spotifyUser:{symbol:'S',url:'https://open.spotify.com/user/1132163452',name:['Spotify — Persönliches Profil','Spotify — Personal profile'],text:['Separates Nutzerprofil; unabhängig vom Künstlerprofil.','A separate user profile, distinct from the artist profile.']},
   discord:{symbol:'D',url:'https://discord.com/users/1332026823168757776',name:['Discord — Benutzerprofil','Discord — User profile'],text:['Discord-Benutzerprofil. Keine Server-Einladung.','Discord user profile. This is not a server invitation.']}
 };
-export const linkGroups={websites:['weblyvra','radio','veluna','twitchRadio','twitch'],music:['spotifyArtist','apple','amazon','tidal','soundcloud','youtubeMusic','mixcloud','suno'],community:['facebook','youtube','spotifyUser','discord','twitch']};
+export const linkGroups={websites:['weblyvra','radio','veluna','twitchRadio','twitch'],music:['spotifyArtist','apple','amazon','tidal','soundcloud','youtubeMusic','mixcloud','suno'],community:['facebook','youtube','spotifyUser','discord']};
