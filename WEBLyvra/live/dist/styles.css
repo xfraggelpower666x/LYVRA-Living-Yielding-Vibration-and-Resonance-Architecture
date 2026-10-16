@@ -44,3 +44,25 @@ img,video{max-width:100%}
   #home .hero-bottom>span{max-width:48%;overflow-wrap:break-word}
   #home .hero-bottom a{margin-left:auto;text-align:right;max-width:48%}
 }
+
+/* WEBLyvra: Radio-First-Startbereich, bestehende Animationen und Player-Logik bleiben erhalten. */
+#radio.radio-section{padding:clamp(25px,4vw,58px) 0 clamp(38px,5vw,75px);background:linear-gradient(180deg,#080b18 0%,#0a1022 65%,#070911 100%);position:relative;isolation:isolate}
+#radio .section-label{margin-bottom:clamp(18px,3vw,32px)}
+#radio .radio-layout{display:flex;flex-direction:column;align-items:stretch;gap:clamp(18px,3vw,30px)}
+#radio .radio-intro{width:100%;max-width:100%}
+#radio .radio-intro h2{margin:6px 0 14px;font-size:clamp(2.1rem,4vw,4rem)}
+#radio .radio-intro>p:not(.eyebrow){max-width:960px;color:#c1c8dc;line-height:1.7}
+#radio .radio-embed.radio-cyber-hud{width:100%;max-width:none;display:grid;gap:0;overflow:hidden;padding:clamp(8px,1.4vw,16px);border:1px solid #52dceb9c;border-radius:20px;background:linear-gradient(125deg,#080c19,#180d2c 60%,#091828);box-shadow:0 0 0 1px #ea75dc20,0 0 45px #a42cf126}
+#radio .radio-cyber-hud iframe{width:100%;max-width:none!important;height:clamp(180px,24vw,365px);min-width:0}
+#radio .radio-cyber-hud .audio-neon-controls{margin:0;max-width:none;width:100%;border:1px solid #56d9e46b;border-radius:12px;background:linear-gradient(90deg,#0a1726ed,#170f2eeb);padding:clamp(12px,2vw,20px);display:grid;grid-template-columns:minmax(180px,1fr) auto;align-items:center;gap:8px 22px}
+#radio .radio-cyber-hud .audio-neon-controls h3{font-size:clamp(1rem,1.7vw,1.4rem);margin:0}
+#radio .radio-cyber-hud .audio-neon-controls button{grid-column:2;grid-row:1 / span 2;min-width:180px}
+#radio .radio-cyber-hud .audio-neon-controls p{margin:0;font-size:.8rem}
+#radio .radio-cyber-hud .audio-neon-controls [data-neon-note]{grid-column:1 / -1}
+@media(max-width:700px){
+ #radio.radio-section{padding:24px 0 42px}
+ #radio .radio-cyber-hud iframe{height:260px}
+ #radio .radio-cyber-hud .audio-neon-controls{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+ #radio .radio-cyber-hud .audio-neon-controls button{min-width:0;width:100%}
+ #lyvra-video-loop{padding:14px 10px}
+}
