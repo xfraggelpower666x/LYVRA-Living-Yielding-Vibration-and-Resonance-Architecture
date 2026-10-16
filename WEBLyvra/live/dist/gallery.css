@@ -1,6 +1,6 @@
 /* LYVRA_GALLERY_BRIDGE_V1: non-navigating thumbnail + overlay gallery */
 .lyvra-visual-gallery{padding:clamp(32px,5vw,80px) 0}.lyvra-visual-gallery h2{margin:14px 0;color:#f0ebff}.gallery-lead{max-width:700px;color:#bad0e4}
-.lyvra-gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,2vw,22px);margin-top:24px;align-items:stretch}
+.lyvra-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,22px);margin-top:24px;align-items:stretch}
 .lyvra-gallery-card{min-width:0;padding:12px;background:#080e1b;border:1px solid #4ccfe577;border-radius:16px;color:#dfedfc;cursor:zoom-in;box-shadow:0 0 20px #9141d522;display:flex;align-items:center;flex-direction:column;justify-content:space-between;gap:8px;transition:border-color .2s ease,box-shadow .2s ease}
 .lyvra-gallery-card:hover,.lyvra-gallery-card:focus-visible{border-color:#f29ce7;box-shadow:0 0 20px #eb52c755;outline-offset:3px}
 .lyvra-gallery-card img{display:block;width:auto;max-width:100%;max-height:240px;height:auto;object-fit:contain}
@@ -13,3 +13,7 @@
 @media(max-width:850px){.lyvra-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lyvra-gallery-card img{max-height:180px}.lyvra-gallery-logo-card img{max-width:100px;max-height:100px}}
 @media(max-width:460px){.lyvra-gallery-card img{max-height:140px}.lyvra-gallery-logo-card img{max-width:88px;max-height:88px}}
 @media(prefers-reduced-motion:reduce){.lyvra-gallery-card{transition:none}}
+
+/* Responsive gallery keeps the logo as a deliberately small accent. */
+.lyvra-gallery-logo-card img{max-width:110px;max-height:110px}
+@media(max-width:460px){.lyvra-gallery-logo-card img{max-width:78px;max-height:78px}}

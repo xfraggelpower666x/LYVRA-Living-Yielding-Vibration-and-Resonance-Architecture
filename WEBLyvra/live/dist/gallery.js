@@ -4,7 +4,7 @@ const closeButton=overlay?.querySelector('.lyvra-gallery-close');
 const bigImage=overlay?.querySelector('.lyvra-gallery-dialog img');
 const caption=overlay?.querySelector('.lyvra-gallery-caption');
 const cards=[...document.querySelectorAll('[data-gallery-key]')];
-const assets={poster1:{de:'statement-01-de.png',en:'statement-01-de.png'},poster2:{de:'statement-02-de.png',en:'statement-02-de.png'},logo:{de:'lyvra-gallery-logo.png',en:'lyvra-gallery-logo.png'},resonance:{de:'resonance-awakens.png',en:'resonance-awakens.png'}};
+const assets={poster1:{de:'statement-01-de.png',en:'statement-01-en.png'},poster2:{de:'statement-02-de.png',en:'statement-02-en.png'},logo:{de:'lyvra-gallery-logo.png',en:'lyvra-gallery-logo.png'}};
 let previousFocus=null;
 function language(){return document.documentElement.lang?.toLowerCase().startsWith('en')?'en':'de';}
 function syncLanguage(){const lang=language();for(const card of cards){const key=card.dataset.galleryKey,file=assets[key]?.[lang];if(!file)continue;const img=card.querySelector('img');if(img)img.src=`assets/gallery/${file}`;}if(overlay&&!overlay.hidden)closeOverlay();}
