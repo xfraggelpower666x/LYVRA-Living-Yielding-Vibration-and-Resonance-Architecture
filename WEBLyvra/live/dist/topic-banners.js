@@ -41,7 +41,11 @@
         if (!ready && introVideo.paused) introVideo.play().catch(() => {});
       }, {passive:true});
     }
-    const sections=[...document.querySelectorAll('main > section[id]')];
+    // Site narrative: the radio room is the mandatory first experience. The gallery
+    // belongs to Identity, rather than being introduced as an unrelated topic.
+    // Decorative transition pairs introduce only actual narrative sections.
+    const narrativeTopics=new Set(['home','identity','universe','sound','lab','world','evolution']);
+    const sections=[...document.querySelectorAll('main > section[id]')].filter(section=>narrativeTopics.has(section.id));
     if(!sections.length)return;
     const markers=sections.map(section=>{
       const marker=document.createElement('div');
