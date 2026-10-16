@@ -63,3 +63,12 @@ Bei Vorprüfung am 16.10.2026 wurde in der Live-Webseite die oben genannte Karte
 - [ ] Source-/CI-/Deploy-/Fresh-Host-Readbacks getrennt dokumentiert
 
 **Verantwortung:** Dieses Add-on-Team liefert Daten, Vorschau und Integrationsanleitung. Die Integration, Ersetzung auf der Hauptseite und Cloudflare-Liveabnahme erfolgen ausdrücklich durch **WEBLyvra**, nicht stillschweigend durch das Add-on-Team.
+
+## Eigene Radio-Section und Status-Panels (16.10.2026)
+
+- Der bisherige Radio-Kartenbereich wird durch genau **eine separate Radio-Section** im Add-on ersetzt. Webradio, Veluna, Twitch Broadcast und MiniPlayer sind Zugänge zu Klangräumen, keine technischen Statusmeldungen.
+- Status-Endpunkte (Health, Now Playing, AutoDJ, Player Alerts, Discord, Stream) gehören in dedizierte **Status-Panels**, nicht unter Musikplattformkarten.
+- Technische Datengrundlage: vom Nutzer übergebene `666STREAM_RADIO_LINK_REGISTRY_v2_2026-10-16.json`, federführend 666STREAM; keine Fremdwrites am Radiosystem.
+- **Sämtliche sichtbaren Beschreibungen** müssen im Schreibstil der bestehenden WEBLyvra-Seite verfasst sein (gemeinsamer Frequenzraum, Klang, Emotion, Universum). Registry-Originaltexte und interne Statuscodes dürfen nicht unredigiert übernommen werden.
+- Der Prototyp zeigt einen **historischen Prüfstand**, keine Live-Messung. Erst nach autorisierter clientseitiger Anbindung echter öffentlicher GET-Endpunkte mit geprüfter Fehler-/CORS-Behandlung darf eine Anzeige als live gelten. Keine erfundene Verfügbarkeit oder Audio-Wiedergabe.
+- Beim späteren atomaren Ersatz auf der Hauptseite keine Radio-/Websites-Karten doppelt stehenlassen. Den originalen Radio-Player und seine Effekte **niemals** löschen.
