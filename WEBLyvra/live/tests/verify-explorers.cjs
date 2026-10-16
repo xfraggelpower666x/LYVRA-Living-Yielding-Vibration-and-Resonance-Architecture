@@ -25,7 +25,7 @@ vm.runInContext('tracks[0].audioVerified=true;',ctx);document.listeners['lyvra:l
 const crypto=require('crypto');const baseline=JSON.parse(fs.readFileSync('tests/preservation-baseline.json','utf8'));const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 // WEBLyvra current authorized structure: one player, reordered frequency section, unchanged demo, live HUD and logo.
 const currentHtml=fs.readFileSync('dist/index.html','utf8');
-const currentFrames=currentHtml.match(/<iframe\\b[^>]*>\\s*<\\/iframe>/g)||[];
+const currentFrames=currentHtml.split('<iframe').slice(1).filter(part=>part.includes('</iframe>'));
 assert.equal(currentFrames.length,1,'Exactly one radio iframe is required');
 assert(currentFrames[0].includes('src="https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html"'));
 assert(currentHtml.includes('id="audio-neon-controls"'));
