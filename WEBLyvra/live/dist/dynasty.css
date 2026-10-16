@@ -8,3 +8,20 @@
 @media(max-width:1000px){.dyn-extension .dyn-family-grid,.dyn-extension .dyn-capability-grid{grid-template-columns:1fr 1fr}.dyn-extension .dyn-character-role{min-height:0}.dyn-extension .dyn-character:last-child{grid-column:1/-1}.dyn-extension .dyn-resonance-grid{gap:12px}}
 @media(max-width:700px){.dyn-extension{margin-top:55px;padding-top:35px}.dyn-extension .dyn-family-grid,.dyn-extension .dyn-capability-grid,.dyn-extension .dyn-links,.dyn-extension .dyn-lineage-grid,.dyn-extension .dyn-resonance-grid{grid-template-columns:1fr}.dyn-extension .dyn-character,.dyn-extension .dyn-capability-grid article{padding:25px}.dyn-extension .dyn-resonance{padding:24px}.dyn-extension .dyn-link{padding:20px;gap:14px}.dyn-extension .dyn-link-symbol{width:36px;height:36px;flex-basis:36px}.dyn-extension .dyn-heading h3{font-size:2rem}.dyn-extension .dyn-resonance-grid{gap:24px}}
 @media(prefers-reduced-motion:reduce){.dyn-extension *{animation:none!important;transition:none!important}}
+
+/* CONNECTED UNIVERSE: compact cyber glyph tiles, accessible hover/focus/tap disclosure.
+   Only informational buttons expand text; actual destination anchors preserve URLs. */
+.dyn-extension .dyn-cyber-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:18px;overflow:visible}
+.dyn-extension .dyn-cyber-card{position:relative;min-width:0;display:grid;justify-items:center;align-content:start;padding:12px 6px 14px;border:1px solid #386274a8;border-radius:16px;background:linear-gradient(145deg,#0d1b30,#160d2a);box-shadow:0 0 14px #02dcff12,inset 0 0 18px #ac61ff11}
+.dyn-extension .dyn-cyber-link{width:100%;display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none}
+.dyn-extension .dyn-cyber-link .dyn-link-symbol{width:min(100%,82px);height:82px;flex:none;border:1px solid #5fceebaa;border-radius:16px;background:radial-gradient(circle at 50% 30%,#512e757a,#061626);font:700 2.3rem/1 var(--heading);color:#87f2ff;text-shadow:0 0 11px #12d9fc,0 0 24px #c25bf2;box-shadow:inset 0 0 17px #0beaf321,0 0 15px #d04bff22;transition:transform .2s,border-color .2s}
+.dyn-extension .dyn-cyber-label{display:block;max-width:100%;font:600 .86rem/1.35 var(--heading);text-align:center;color:#def9ff;overflow-wrap:anywhere}
+.dyn-extension .dyn-cyber-card:hover .dyn-link-symbol,.dyn-extension .dyn-cyber-link:focus-visible .dyn-link-symbol{transform:translateY(-3px);border-color:#f28be9}
+.dyn-extension .dyn-cyber-info{margin-top:9px;min-width:35px;min-height:35px;padding:4px;border:1px solid #76bfd3;border-radius:50%;background:#0c2639;color:#e2fcff;cursor:pointer;font-weight:700}
+.dyn-extension .dyn-cyber-info[aria-expanded=true]{background:#47286d;border-color:#ed8af1}
+.dyn-extension .dyn-cyber-popover{display:none;position:absolute;z-index:25;left:50%;top:calc(100% - 3px);transform:translateX(-50%);width:min(290px,83vw);padding:15px 17px;border:1px solid #70d9ed;border-radius:12px;background:#081324;box-shadow:0 12px 32px #000b,0 0 18px #bd5cf333;text-align:left}
+.dyn-extension .dyn-cyber-popover strong,.dyn-extension .dyn-cyber-popover span{display:block;font-size:.86rem;line-height:1.55;overflow-wrap:anywhere}
+.dyn-extension .dyn-cyber-popover span{margin-top:7px;color:#b9cce0}
+.dyn-extension .dyn-cyber-card.info-open .dyn-cyber-popover,.dyn-extension .dyn-cyber-card:focus-within .dyn-cyber-popover{display:block}
+@media(hover:hover) and (pointer:fine){.dyn-extension .dyn-cyber-card:hover .dyn-cyber-popover{display:block}}
+@media(max-width:700px){.dyn-extension .dyn-cyber-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dyn-extension .dyn-cyber-card{padding:12px 4px}.dyn-extension .dyn-cyber-link .dyn-link-symbol{height:70px;max-width:70px;font-size:2rem}.dyn-extension .dyn-cyber-popover{width:min(255px,82vw)}}
