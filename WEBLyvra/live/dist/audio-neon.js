@@ -11,10 +11,10 @@ if (panel && layer) {
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const states = new Map();
   const words = {
-    de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', paused: 'Kein aktuelles Audiosignal', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
-    en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', paused: 'No current audio signal', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
+    de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', paused: 'Kein aktuelles Audiosignal', missing: 'Keine Audio-Pegeldaten vom Radio empfangen · Stream-Analyse prüfen', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
+    en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', paused: 'No current audio signal', missing: 'No audio level data received from radio · check stream analysis', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
   };
-  let enabled = false, timer = null, mode = 'idle';
+  let enabled = false, timer = null, mode = 'idle', subscribedAt = 0, lastLevelsAt = 0;
   function labels() {
     const text = words[getLanguage()] || words.de;
     panel.querySelector('h3').textContent = text.title;
@@ -37,7 +37,7 @@ if (panel && layer) {
     const candidates = [...states.values()].filter(s => s.playing && now - s.received < 1500);
     if (!enabled || motion.matches || document.hidden || !candidates.length) {
       reset();
-      if (enabled) setMode(states.size ? 'paused' : 'waiting');
+      if (enabled) setMode(states.size ? 'paused' : (now - subscribedAt >= 7000 ? 'missing' : 'waiting'));
       return;
     }
     const signal = candidates.reduce((a, b) => a.energy >= b.energy ? a : b);
@@ -49,6 +49,7 @@ if (panel && layer) {
     if (timer !== null) { clearInterval(timer); timer = null; }
     frames.forEach(subscribe);
     states.clear(); reset();
+    subscribedAt = performance.now(); lastLevelsAt = 0;
     mode = enabled ? 'waiting' : 'idle';
     if (enabled && !motion.matches && !document.hidden) timer = setInterval(render, 500);
     labels();
@@ -61,7 +62,8 @@ if (panel && layer) {
     if (!['bass', 'mid', 'high', 'energy'].every(k => typeof data[k] === 'number' && Number.isFinite(data[k]) && data[k] >= 0 && data[k] <= 1)) return;
     const previous = states.get(frame);
     if (previous && data.sequence <= previous.sequence) return;
-    states.set(frame, { ...data, received: performance.now() }); render();
+    lastLevelsAt = performance.now();
+    states.set(frame, { ...data, received: lastLevelsAt }); render();
   });
   frames.forEach(frame => frame.addEventListener('load', () => { states.delete(frame); subscribe(frame); render(); }));
   toggle.addEventListener('click', () => { enabled = !enabled; configure(); });
