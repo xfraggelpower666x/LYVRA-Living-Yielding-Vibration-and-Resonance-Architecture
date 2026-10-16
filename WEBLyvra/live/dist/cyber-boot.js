@@ -2,7 +2,7 @@
 // Replaces the previous simple cyber boot while preserving the existing site underneath.
 (() => {
   'use strict';
-  const RELEASE='cyber-intro-v1.9-r2-20261006';
+  const RELEASE='cyber-intro-v1.9-r3-mobile-20261016';
 
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const INTRO_MS = reduced ? 700 : 4200;
