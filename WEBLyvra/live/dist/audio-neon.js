@@ -10,6 +10,9 @@ if (panel && layer) {
   const status = panel.querySelector('[data-neon-status]');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const states = new Map();
+  const bands = Object.fromEntries(['bass','mid','high'].map(key => [key, panel.querySelector(`[data-neon-band="${key}"]`)]));
+  const orbits = [...layer.querySelectorAll('.audio-neon-orbit')];
+  const edge = layer.querySelector('.audio-neon-edge');
   const words = {
     de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', paused: 'Kein aktuelles Audiosignal', missing: 'Keine Audio-Pegeldaten vom Radio empfangen · Stream-Analyse prüfen', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
     en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', paused: 'No current audio signal', missing: 'No audio level data received from radio · check stream analysis', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
@@ -28,6 +31,9 @@ if (panel && layer) {
   function reset() {
     for (const key of ['bass', 'mid', 'high', 'energy']) layer.style.setProperty(`--audio-${key}`, '0');
     layer.dataset.active = 'false';
+    Object.values(bands).forEach(b => b?.style.setProperty('--neon-level','0'));
+    orbits.forEach(o => { o.style.transform='scale(1)'; o.style.opacity='0.15'; });
+    if(edge) edge.style.opacity='0.12';
   }
   function subscribe(frame) {
     frame.contentWindow?.postMessage({ type: 'lyvra:audio:subscribe', version: 1, enabled: enabled && !motion.matches && !document.hidden }, origin);
@@ -42,8 +48,12 @@ if (panel && layer) {
     }
     const signal = candidates.reduce((a, b) => a.energy >= b.energy ? a : b);
     for (const key of ['bass', 'mid', 'high', 'energy']) layer.style.setProperty(`--audio-${key}`, String(signal[key]));
-    layer.dataset.active = 'true';
-    setMode('active');
+    layer.dataset.active = signal.energy > 0.005 ? 'true' : 'false';
+    for(const key of ['bass','mid','high']) bands[key]?.style.setProperty('--neon-level',String(Math.min(1, Math.max(0,signal[key]*3.5))));
+    if(orbits[0]) { orbits[0].style.transform=`scale(${1+signal.bass*.24})`; orbits[0].style.opacity=String(Math.min(1,.2+signal.bass*1.6)); }
+    if(orbits[1]) { orbits[1].style.transform=`scale(${1+signal.mid*.18})`; orbits[1].style.opacity=String(Math.min(1,.2+signal.mid*1.4)); }
+    if(edge) edge.style.opacity=String(Math.min(1,.15+signal.high*1.6));
+    setMode(signal.energy > 0.005 ? 'active' : 'paused');
   }
   function configure() {
     if (timer !== null) { clearInterval(timer); timer = null; }
