@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "module": "GLOBAL ARTIST DISCOVERY",
   "artist": "FRAGGELPOWER666",
   "label": "666SOUNDsDESIGn",
@@ -103,6 +103,87 @@
       "url": "https://archive.org/details/SL_performance_KX5d59Nax0Q",
       "status": "direct_readback",
       "detail": "Fraggelpower @ Bunker (Techno) · 2025-11-11"
+    },
+    {
+      "id": "lyvra",
+      "name": "LYVRA",
+      "group": "web",
+      "url": "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "radio",
+      "name": "Webradio",
+      "group": "web",
+      "url": "https://webradio.666soundsdesign-broadcaster.com/",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "veluna",
+      "name": "Veluna Radio",
+      "group": "web",
+      "url": "https://webradio.666soundsdesign-broadcaster.com/veluna/",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "twitchsite",
+      "name": "Twitch Broadcast",
+      "group": "web",
+      "url": "https://webradio.666soundsdesign-broadcaster.com/TWITCH",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch Live",
+      "group": "web",
+      "url": "https://www.twitch.tv/666soundsdesign",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "group": "social",
+      "url": "https://www.facebook.com/PsyTranceFraggeL2k",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "group": "social",
+      "url": "https://youtube.com/channel/UCfDgUd4sIhLw-kWVOlnaIZw",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "group": "social",
+      "url": "https://discord.com/users/1332026823168757776",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "group": "social",
+      "url": "https://www.instagram.com/fraggelpower",
+      "status": "linked_from_current_weblyvra_or_mixcloud",
+      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
+      "kind": "website/social"
     }
   ],
   "pending": [
@@ -111,5 +192,38 @@
     "Facebook/Instagram Music native audio catalog IDs",
     "Store-by-store deep checks",
     "More global web mentions"
-  ]
+  ],
+  "sections": [
+    {
+      "id": "web",
+      "title": "Websites, Radio & Live",
+      "hint": "CONNECTED UNIVERSE"
+    },
+    {
+      "id": "social",
+      "title": "Community & Social Media",
+      "hint": "CONNECTED UNIVERSE"
+    },
+    {
+      "id": "music",
+      "title": "FRAGGELPOWER666 hören & kaufen",
+      "hint": "LISTEN & BUY"
+    },
+    {
+      "id": "independent",
+      "title": "DJ-Mixe & Creator",
+      "hint": "ORIGINAL CONTENT"
+    },
+    {
+      "id": "discovery",
+      "title": "Auftritte & Archiv",
+      "hint": "ARTIST DISCOVERY"
+    }
+  ],
+  "display_notes": {
+    "music": "Links are platform/catalog findings, not a blanket guarantee of delivery for all releases",
+    "social": "Social channels are not proof of presence in Meta sound libraries",
+    "visibility": "No empty store cards; all shown entries have source links",
+    "layout": "one coherent module with themed subsections"
+  }
 }
