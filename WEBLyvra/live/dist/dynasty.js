@@ -5,7 +5,7 @@ const t=pair=>pair[getLanguage()==='en'?1:0];
 const paragraph=pair=>`<p>${escape(t(pair))}</p>`;
 // One native link per destination; the independent info button never navigates.
 const linkVisuals = {
-  weblyvra:['✧','LYVRA'],radio:['♫','Radio'],veluna:['☾','Veluna'],
+  weblyvra:['✧','LYVRA'],radio:['♫','666SOUNDsDESIGn\\nBROADCASTER'],veluna:['☾','VELUNA\\nBROADCASTER'],
   twitchRadio:['▣','TV-Radio'],twitch:['◈','Twitch'],
   spotifyArtist:['♫','Spotify'],apple:['♪','Apple'],amazon:['◉','Amazon'],
   tidal:['◆','Tidal'],soundcloud:['≋','SoundCloud'],youtubeMusic:['▶','YT Music'],
@@ -18,7 +18,7 @@ function cards(group){
     return `<article class="dyn-cyber-card" data-link-key="${escape(key)}">
       <a class="dyn-cyber-link" href="${escape(l.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(t(l.name))}">
         <span class="dyn-link-symbol" aria-hidden="true">${escape(glyph)}</span>
-        <span class="dyn-cyber-label">${escape(label)}</span>
+        <span class="dyn-cyber-label">${escape(label).replace(/\\n/g,'<br>')}</span>
       </a>
       <button class="dyn-cyber-info" type="button" aria-expanded="false" aria-label="${escape(t(['Informationen zu ','Information about ']))}${escape(label)}" aria-controls="dyn-info-${escape(group)}-${escape(key)}">i</button>
       <div class="dyn-cyber-popover" id="dyn-info-${escape(group)}-${escape(key)}" role="note">
