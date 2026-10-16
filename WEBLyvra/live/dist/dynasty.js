@@ -6,7 +6,7 @@ const paragraph=pair=>`<p>${escape(t(pair))}</p>`;
 // One native link per destination; the independent info button never navigates.
 const linkVisuals = {
   weblyvra:['✧','LYVRA'],radio:['♫','666SOUNDsDESIGn\\nBROADCASTER'],veluna:['☾','VELUNA\\nBROADCASTER'],
-  twitchRadio:['▣','TV-Radio'],twitch:['◈','Twitch'],
+  twitchRadio:['▣','TWITCH\\nBROADCAST SOURCE'],twitch:['◈','Twitch'],
   spotifyArtist:['♫','Spotify'],apple:['♪','Apple'],amazon:['◉','Amazon'],
   tidal:['◆','Tidal'],soundcloud:['≋','SoundCloud'],youtubeMusic:['▶','YT Music'],
   mixcloud:['≋','Mixcloud'],suno:['✦','Suno'],facebook:['f','Facebook'],
