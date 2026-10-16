@@ -68,3 +68,43 @@
   #lyvra-cyber-boot-host .cyber-hud-logo{height:90svh}
   #lyvra-cyber-boot-host .hud-center-logo-wrap{height:min(37%,205px)}
 }
+
+/* R04: Mobile phase 2 portrait screenshot repair. The background artwork is a landscape
+   banner; cover the phone instead of letterboxing it into a horizontal strip.
+   Do not duplicate brand inscriptions already embedded in the art. */
+@media (max-width:760px) and (orientation:portrait){
+  #lyvra-cyber-boot-host .lyvra-cyber-sequence.intro-complete::before,
+  #lyvra-cyber-boot-host .lyvra-cyber-sequence.is-transitioning::before{
+    background-size:cover;
+    background-position:50% 50%;
+  }
+  #lyvra-cyber-boot-host .lyvra-hud-stage-inner{
+    height:100%;
+    display:grid;
+    place-items:center;
+  }
+  #lyvra-cyber-boot-host .cyber-hud-logo{
+    height:min(72svh,560px);
+    overflow:visible;
+  }
+  #lyvra-cyber-boot-host .hud-center-logo-wrap{
+    top:43%;
+    width:min(72vw,270px);
+    height:min(46%,270px);
+  }
+  #lyvra-cyber-boot-host .hud-label,
+  #lyvra-cyber-boot-host .hud-circuit{
+    display:none;
+  }
+  #lyvra-cyber-boot-host .hud-reactor-ring{
+    top:43%;
+    width:min(78vw,300px);
+  }
+  #lyvra-cyber-boot-host .hud-system-online{
+    top:76%;
+    font-size:clamp(14px,3.6vw,20px);
+    letter-spacing:.13em;
+    text-indent:.13em;
+    white-space:nowrap;
+  }
+}
