@@ -68,8 +68,9 @@ for rel in dashboard_assets:
     assert item.is_file() and item.stat().st_size>1000, f'Missing dashboard asset: {rel}'
 main=parsed[web/'index.html'];privacy=parsed[web/'privacy/index.html']
 assert all(i in main.ids for i in ['home','identity','universe','sound','lab','world','radio','evolution','lyvra-system-evolution','lyvra-chat-demo'])
-assert len(main.frames)==2 and not privacy.frames
+assert len(main.frames)==1 and not privacy.frames, 'WEBLyvra must have exactly one radio iframe'
 assert all(f['src']=='https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html' for f in main.frames)
+assert any(im.get('src')=='assets/lyvra-frequency-room-original.png' for im in main.images), 'Frequenzraum original logo missing' 
 assert any(a.get('href')=='/privacy' for a in main.links)
 assert sum(a.get('href')=='https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdbac3-l-y-v-r-a' for a in main.links)==2
 checked=set()
@@ -106,4 +107,4 @@ try:
     for path in ['','privacy']+sorted(checked):
         with urlopen(f'http://127.0.0.1:{server.server_port}/{path}') as response:assert response.status==200; response.read()
 finally:server.shutdown();server.server_close();thread.join()
-print(json.dumps({'status':'PASS','html_pages':len(parsed),'local_files_checked':len(checked),'javascript_syntax':'PASS','local_http':'PASS','controller_DE_EN':'PASS','radio_embeds_preserved':2,'browser_visual_audio_screenreader':'NOT_VERIFIED'}))
+print(json.dumps({'status':'PASS','html_pages':len(parsed),'local_files_checked':len(checked),'javascript_syntax':'PASS','local_http':'PASS','controller_DE_EN':'PASS','radio_embeds_preserved':1,'browser_visual_audio_screenreader':'NOT_VERIFIED'}))
