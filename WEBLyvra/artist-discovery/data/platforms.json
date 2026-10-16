@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "module": "GLOBAL ARTIST DISCOVERY",
   "artist": "FRAGGELPOWER666",
   "label": "666SOUNDsDESIGn",
@@ -114,33 +114,6 @@
       "kind": "website/social"
     },
     {
-      "id": "radio",
-      "name": "Webradio",
-      "group": "web",
-      "url": "https://webradio.666soundsdesign-broadcaster.com/",
-      "status": "linked_from_current_weblyvra_or_mixcloud",
-      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
-      "kind": "website/social"
-    },
-    {
-      "id": "veluna",
-      "name": "Veluna Radio",
-      "group": "web",
-      "url": "https://webradio.666soundsdesign-broadcaster.com/veluna/",
-      "status": "linked_from_current_weblyvra_or_mixcloud",
-      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
-      "kind": "website/social"
-    },
-    {
-      "id": "twitchsite",
-      "name": "Twitch Broadcast",
-      "group": "web",
-      "url": "https://webradio.666soundsdesign-broadcaster.com/TWITCH",
-      "status": "linked_from_current_weblyvra_or_mixcloud",
-      "source": "Live WEBLyvra page and/or verified Mixcloud profile",
-      "kind": "website/social"
-    },
-    {
       "id": "twitch",
       "name": "Twitch Live",
       "group": "web",
@@ -200,6 +173,11 @@
       "hint": "CONNECTED UNIVERSE"
     },
     {
+      "id": "radio",
+      "title": "Ein gemeinsamer Frequenzraum.",
+      "hint": "666SOUNDsDESIGn / WEBRADIO"
+    },
+    {
       "id": "social",
       "title": "Community & Social Media",
       "hint": "CONNECTED UNIVERSE"
@@ -225,5 +203,82 @@
     "social": "Social channels are not proof of presence in Meta sound libraries",
     "visibility": "No empty store cards; all shown entries have source links",
     "layout": "one coherent module with themed subsections"
+  },
+  "radio": {
+    "source": "666STREAM_RADIO_LINK_REGISTRY_v2_2026-10-16.json",
+    "provenance": "Historical endpoint registry; no automatic live health measurement",
+    "checked": "2026-10-16",
+    "description": "Elektronische Musik verbindet das LYVRA-Universum mit der Welt von 666SOUNDsDESIGn. Hier treffen Fraggles eigene Sounds, Dark Techno, Psytrance und Cyberpunk-Atmosphäre aufeinander – ein gemeinsames Signal, das weit über die Website hinausreicht.",
+    "players": [
+      {
+        "name": "Webradio",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/",
+        "description": "Das Herz unseres musikalischen Universums."
+      },
+      {
+        "name": "Twitch Broadcast",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/TWITCH",
+        "description": "Klang und visuelle Welten im gemeinsamen Signal."
+      },
+      {
+        "name": "Veluna Radio",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/VELUNA/",
+        "description": "Velunas eigener Frequenzraum."
+      },
+      {
+        "name": "MiniPlayer",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/embed/miniplayer.html",
+        "description": "Unser Radio im kompakten Format."
+      },
+      {
+        "name": "TuneIn Deutschland",
+        "url": "https://tunein.com/radio/s357001/",
+        "description": "Ein weiterer Zugang zu unserem Radiosignal."
+      },
+      {
+        "name": "TuneIn USA",
+        "url": "https://tunein.com/radio/s361383/",
+        "description": "Katalogeintrag – laut letzter Prüfung nicht abspielbar.",
+        "availability": "unavailable"
+      }
+    ],
+    "panels": [
+      {
+        "name": "Signal & Verbindung",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/health",
+        "display": "Schnittstelle beim letzten Test erreichbar",
+        "state": "previously_reachable"
+      },
+      {
+        "name": "Musik im Moment",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/api/nowplaying",
+        "display": "Titelinformationen können hier abgerufen werden",
+        "state": "previously_reachable"
+      },
+      {
+        "name": "AutoDJ",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/api/skip/status",
+        "display": "Statusschnittstelle zuletzt erreichbar",
+        "state": "previously_reachable"
+      },
+      {
+        "name": "Player-Hinweise",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/api/player-alert/status",
+        "display": "Hinweis-System zuletzt erreichbar",
+        "state": "previously_reachable"
+      },
+      {
+        "name": "Discord-Verbindung",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/api/discord/status",
+        "display": "Statusschnittstelle zuletzt erreichbar",
+        "state": "previously_reachable"
+      },
+      {
+        "name": "Audiostream",
+        "url": "https://webradio.666soundsdesign-broadcaster.com/stream",
+        "display": "Konfiguriert; Audiowiedergabe nicht unabhängig geprüft",
+        "state": "unverified_stream"
+      }
+    ]
   }
 }
