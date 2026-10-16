@@ -12,12 +12,30 @@ const linkVisuals = {
   mixcloud:['≋','Mixcloud'],suno:['✦','Suno'],facebook:['f','Facebook'],
   youtube:['▶','YouTube'],spotifyUser:['♫','Spotify'],discord:['◉','Discord']
 };
+// Recognisable platform silhouettes, chromed by the shared card styles.
+// Official platform marks are loaded read-only; glyph remains a robust fallback.
+const brandLogos = {
+  weblyvra:'assets/logo-chrome.webp',
+  twitch:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitch.svg',
+  twitchRadio:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/twitch.svg',
+  spotifyArtist:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/spotify.svg',
+  spotifyUser:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/spotify.svg',
+  apple:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/applemusic.svg',
+  amazon:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonmusic.svg',
+  tidal:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tidal.svg',
+  soundcloud:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/soundcloud.svg',
+  youtubeMusic:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtubemusic.svg',
+  mixcloud:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mixcloud.svg',
+  facebook:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/facebook.svg',
+  youtube:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg',
+  discord:'https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/discord.svg'
+};
 function cards(group){
   return `<div class="dyn-links dyn-cyber-links">${linkGroups[group].map(key=>{
     const l=links[key], [glyph,label]=linkVisuals[key] || [l.symbol,key];
     return `<article class="dyn-cyber-card" data-link-key="${escape(key)}">
       <a class="dyn-cyber-link" href="${escape(l.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(t(l.name))}">
-        <span class="dyn-link-symbol" aria-hidden="true">${escape(glyph)}</span>
+        <span class="dyn-link-symbol" aria-hidden="true">${brandLogos[key] ? `<img class="dyn-brand-logo" src="${escape(brandLogos[key])}" alt="" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="dyn-fallback-glyph" hidden>${escape(glyph)}</span>` : `<span class="dyn-fallback-glyph">${escape(glyph)}</span>`}</span>
         <span class="dyn-cyber-label">${escape(label).replace(/\\n/g,'<br>')}</span>
       </a>
       <button class="dyn-cyber-info" type="button" aria-expanded="false" aria-label="${escape(t(['Informationen zu ','Information about ']))}${escape(label)}" aria-controls="dyn-info-${escape(group)}-${escape(key)}">i</button>
