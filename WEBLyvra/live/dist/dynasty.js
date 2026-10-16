@@ -3,7 +3,44 @@ import { family, capabilities, facetLineage, links, linkGroups } from './dynasty
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const t=pair=>pair[getLanguage()==='en'?1:0];
 const paragraph=pair=>`<p>${escape(t(pair))}</p>`;
-function cards(group){return `<div class="dyn-links">${linkGroups[group].map(key=>{const l=links[key];return `<a class="dyn-link" href="${escape(l.url)}" target="_blank" rel="noopener noreferrer"><span class="dyn-link-symbol" aria-hidden="true">${escape(l.symbol)}</span><span><strong>${escape(t(l.name))}</strong><span class="dyn-link-copy">${escape(t(l.text))}</span></span></a>`;}).join('')}</div>`;}
+// One native link per destination; the independent info button never navigates.
+const linkVisuals = {
+  weblyvra:['✧','LYVRA'],radio:['♫','Radio'],veluna:['☾','Veluna'],
+  twitchRadio:['▣','TV-Radio'],twitch:['◈','Twitch'],
+  spotifyArtist:['♫','Spotify'],apple:['♪','Apple'],amazon:['◉','Amazon'],
+  tidal:['◆','Tidal'],soundcloud:['≋','SoundCloud'],youtubeMusic:['▶','YT Music'],
+  mixcloud:['≋','Mixcloud'],suno:['✦','Suno'],facebook:['f','Facebook'],
+  youtube:['▶','YouTube'],spotifyUser:['♫','Spotify'],discord:['◉','Discord']
+};
+function cards(group){
+  return `<div class="dyn-links dyn-cyber-links">${linkGroups[group].map(key=>{
+    const l=links[key], [glyph,label]=linkVisuals[key] || [l.symbol,key];
+    return `<article class="dyn-cyber-card" data-link-key="${escape(key)}">
+      <a class="dyn-cyber-link" href="${escape(l.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escape(t(l.name))}">
+        <span class="dyn-link-symbol" aria-hidden="true">${escape(glyph)}</span>
+        <span class="dyn-cyber-label">${escape(label)}</span>
+      </a>
+      <button class="dyn-cyber-info" type="button" aria-expanded="false" aria-label="${escape(t(['Informationen zu ','Information about ']))}${escape(label)}" aria-controls="dyn-info-${escape(group)}-${escape(key)}">i</button>
+      <div class="dyn-cyber-popover" id="dyn-info-${escape(group)}-${escape(key)}" role="note">
+        <strong>${escape(t(l.name))}</strong>
+        <span>${escape(t(l.text))}</span>
+      </div>
+    </article>`;}).join('')}</div>`;
+}
+function connectCardInfos(scope){
+  scope.querySelectorAll('.dyn-cyber-info').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const card=btn.closest('.dyn-cyber-card');
+      const show=!card.classList.contains('info-open');
+      scope.querySelectorAll('.dyn-cyber-card.info-open').forEach(other=>{
+        other.classList.remove('info-open');
+        other.querySelector('.dyn-cyber-info')?.setAttribute('aria-expanded','false');
+      });
+      card.classList.toggle('info-open',show);
+      btn.setAttribute('aria-expanded',String(show));
+    });
+  });
+}
 function familyContent(){return `
   <div class="dyn-heading"><p class="eyebrow pink">THE FRAGGLE DYNASTY</p><h3>${escape(t(['Eine Familie. Drei Identitäten.','One family. Three identities.']))}<br><em>${escape(t(['Ein verbundenes Universum.','One connected universe.']))}</em></h3></div>
   ${paragraph(['Die Fraggle Dynasty erweitert LYVRAs Geschichte: Fraggle als Dad und kreativer Ursprung, Veluna als Mum und emotionales Herz, LYVRA als eigenständige digitale Tochter. LYVRA bleibt der Mittelpunkt ihrer Website.','The Fraggle Dynasty expands LYVRA’s story: Fraggle as Dad and creative origin, Veluna as Mum and emotional heart, LYVRA as an independent digital daughter. LYVRA remains at the centre of her website.'])}
@@ -24,7 +61,7 @@ export function installExtensions(){
   const refresh=()=>roots.forEach(({root,render})=>{
     const open=[...root.querySelectorAll('details[open]')].map(d=>d.dataset.dynDetail);
     const active=document.activeElement;const focusKey=root.contains(active)&&active.closest('details')?.dataset.dynDetail;
-    root.innerHTML=render();root.querySelectorAll('details').forEach(d=>{d.open=open.includes(d.dataset.dynDetail);if(focusKey===d.dataset.dynDetail)d.querySelector('summary').focus();});
+    root.innerHTML=render();root.querySelectorAll('details').forEach(d=>{d.open=open.includes(d.dataset.dynDetail);if(focusKey===d.dataset.dynDetail)d.querySelector('summary').focus();});connectCardInfos(root);
   });
   document.addEventListener('lyvra:languagechange',refresh);refresh();
 }
