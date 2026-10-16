@@ -66,3 +66,9 @@ img,video{max-width:100%}
  #radio .radio-cyber-hud .audio-neon-controls button{min-width:0;width:100%}
  #lyvra-video-loop{padding:14px 10px}
 }
+
+/* LYVRA FREQUENZRAUM ORIGINAL LOGO - BRIDGE V1 */
+#radio .radio-intro{position:relative;min-height:178px;padding-right:clamp(0px,25vw,315px)}
+#radio .frequency-logo-wrap{position:absolute;right:4px;top:0;width:min(23vw,280px);height:auto;display:flex;align-items:center;justify-content:center;pointer-events:none}
+#radio .frequency-logo{display:block;max-width:100%;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 0 12px rgba(188,73,255,.32))}
+@media(max-width:750px){#radio .radio-intro{padding-right:0;display:flex;flex-direction:column}#radio .frequency-logo-wrap{position:relative;right:auto;top:auto;order:2;width:min(55vw,200px);margin:3px auto 9px}#radio .radio-intro>p:not(.eyebrow){order:1}#radio .radio-intro>.eyebrow{order:0}#radio .radio-intro>h2{order:0}}
