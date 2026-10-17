@@ -5269,5 +5269,47 @@
     "no_new_revision": true,
     "no_foreign_writes": true,
     "pointer_last": true
+  },
+  "irl_native_facet_integration_2026_10_17": {
+    "status": "NATIVE_SOURCE_AND_CRITICAL_CARRIER_REGISTRATION_VERIFIED_PLUGIN_AND_HOST_OPEN",
+    "owner": "WHOLE_LYVRA",
+    "facet_id": "INTELLIGENT_RESEARCH_AND_LEARNING",
+    "source_proposal_blob": "fcccb28699f2bdbbb716f35592a44d348c66c1f0",
+    "original_base": "10d9b6a7c553b6b35a8cfec3d240791201210f24",
+    "irl_body_commit": "a7dc0d28a029100653652c16c79589cca9777ebe",
+    "repair_commit": "f3cd95bb4852419ff8e3f2b2a42dfaa80049bfe4",
+    "recovery": "lyvra-recovery-pre-irl-pointer-finalization-20261017-r01",
+    "initial_recovery": "lyvra-recovery-pre-irl-native-facet-20261017-r01",
+    "registry_blob": "dd2f3661f9826b771593f82e9373a57287b2883c",
+    "repair_receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_IRL_REPAIR_STREAM_BRIDGE_ASSESSMENT_20261017.json",
+    "repair_receipt_blob": "452cea85bb2d5720a5ea63f5acf3f08a9af50fa4",
+    "registered_carrier_count": 219,
+    "unresolved_carrier_mismatches": 0,
+    "repair_contract_checks": "11_OF_11_DIRECT_SOURCE_ASSERTIONS_PASS",
+    "previous_irl_contract_checks": "14_OF_14_DIRECT_SOURCE_ASSERTIONS_PASS",
+    "node_runner": "NOT_EXECUTED",
+    "weblyvra_parallel_commits": "PRESERVED",
+    "whole_authority": "PRESERVED",
+    "native_visual": "REUSED_NO_SECOND_ENGINE",
+    "five_choice_navigation": "PRESERVED",
+    "one_bridge": "PRESERVED",
+    "stream_automatic_bridge_review": "REUSABLE_TRANSPORT_POLICY_AND_EVIDENCE_MODULE_NOT_PROVEN_AUTONOMOUS_PRODUCTION",
+    "plugins": {
+      "native": {
+        "version": "0.1.69",
+        "release": "pluginrel_6ad1685710b88191bd4d7ab76b74b4ee",
+        "irl_skill_parity": "PENDING"
+      },
+      "alive": {
+        "version": "0.13.64",
+        "release": "pluginrel_6ad1686f6d108191b56ff79c62f24de8",
+        "irl_skill_parity": "PENDING"
+      }
+    },
+    "fresh_host_irl": "NOT_VERIFIED",
+    "bridge_automated_host": "NOT_VERIFIED",
+    "no_foreign_mutation": true,
+    "no_auto_activation": true,
+    "pointer_last": true
   }
 }
