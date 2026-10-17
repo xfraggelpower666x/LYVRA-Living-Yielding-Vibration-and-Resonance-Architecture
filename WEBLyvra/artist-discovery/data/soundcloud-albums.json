@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-10-17",
-  "status": "partial_public_catalog_readback_18_verified_set_urls",
+  "status": "partial_interactive_album_catalog",
   "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album.",
   "albums": [
     {
@@ -127,6 +127,97 @@
       ],
       "status": "direct_page_readback",
       "source": "SoundCloud set page"
+    },
+    {
+      "title": "666 Special Dark Techno Part One",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "666 SPECIAL DARK TECHNO AGGRO",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "666 Special ACID DARK TECHNO",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "THE DARK DANCER - VOLUME 2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "THE DARK DANCER - VOLUME1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "Remakes, Remixes, some new Tracks of my work - Part One",
+      "url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "Remakes, Remixes, some new Tracks of my work - Part Two",
+      "url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "PsyTrance Attack v2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "PsyTrance Attack v1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "The Power of Nothing Part 2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "The Power of Nothing Part 1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "Trapped in PsyTrance",
+      "url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "Storyteller englisch",
+      "url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "type": "SoundCloud album listing",
+      "status": "browser_album_listing",
+      "source": "SoundCloud /albums interactive browser readback 2026-10-17"
     }
   ],
   "next_scan": {
@@ -156,5 +247,12 @@
     "electronic dance music",
     "electro psytrance"
   ],
-  "search_notes": "Genre search currently brought no additional independently verified unique album URL beyond the 18 catalogued sets. Search snippets can reference tracks or recommendation blocks; do not promote without set-page verification."
+  "search_notes": "Genre search currently brought no additional independently verified unique album URL beyond the 18 catalogued sets. Search snippets can reference tracks or recommendation blocks; do not promote without set-page verification.",
+  "browser_evidence": {
+    "source_url": "https://soundcloud.com/fraggelpower666/albums",
+    "date": "2026-10-17",
+    "observed_count": 30,
+    "method": "scroll to load browser automation",
+    "note": "30 items were observed; complete catalogue not definitively established"
+  }
 }
