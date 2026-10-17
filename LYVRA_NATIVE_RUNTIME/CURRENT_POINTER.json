@@ -5360,5 +5360,28 @@
     "renderer_rules_unchanged": true,
     "character_bot_independent": true,
     "five_options_preserved": true
+  },
+  "dual_layer_visual_current_source_2026_10_17": {
+    "status": "NATIVE_SOURCE_REGISTRY_AND_PROJECTOR_READBACK_VERIFIED_PLUGIN_AND_HOST_PENDING",
+    "recovery_branch": "lyvra-recovery-pre-dual-layer-visual-20261017-r01",
+    "registry": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "registry_blob": "ee7c93810997f25bedd416525cade675b745910a",
+    "projection": "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+    "projection_blob": "c350cc47cde6958e4638be1d551bd6ef436904bd",
+    "operations_center_blob": "b812b0e0ec54181c9ad01902bfaf5ac4021f9c31",
+    "tests_blob": "a545b197a1d3af45530e5d62a1388c9d6f00fb3f",
+    "tests_executed": false,
+    "manifest_blob": "53d4b96422fde5efde7867c62a0a1e03c72c75aa",
+    "persistent_items": 2,
+    "source": "PASS_STATIC_READBACK",
+    "delivery": "NOT_DISPATCHED",
+    "adoption": "NATIVE_SOURCE_ONLY",
+    "host": "NOT_TESTED",
+    "plugin_native": "0.1.69_UNCHANGED_PARITY_PENDING",
+    "plugin_alive": "0.13.64_UNCHANGED_PARITY_PENDING",
+    "no_renderer_rule_change": true,
+    "no_private_text_publication": true,
+    "character_bot_untouched": true,
+    "five_choices_preserved": true
   }
 }
