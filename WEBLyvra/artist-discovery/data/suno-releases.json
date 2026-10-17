@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-17",
   "public_profile_song_count_observed": 386,
-  "coverage": "partial: 386 shown in public profile; only currently listed public song UUIDs individually observed. No automatic full pagination.",
+  "coverage": "partial: public profile showed 386 songs, 99 separate public song links observed and retained.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -568,6 +568,139 @@
       "status": "public_profile_browser_observed",
       "source": "2026-10-17 subsequent Suno Songs scrolling",
       "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Predator Sofa",
+      "url": "https://suno.com/song/d038608f-dbd4-4d99-96a8-6cd6a805de38",
+      "cover_observed": "https://cdn2.suno.ai/image_d038608f-dbd4-4d99-96a8-6cd6a805de38.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "Predator Sofa",
+      "url": "https://suno.com/song/8a2ae83a-3b6b-4420-949b-ee1aa7df1010",
+      "cover_observed": "https://cdn2.suno.ai/image_8a2ae83a-3b6b-4420-949b-ee1aa7df1010.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "Motor Ritual",
+      "url": "https://suno.com/song/e4391261-fe2f-4f63-8480-03c8a2f34edb",
+      "cover_observed": "https://cdn2.suno.ai/image_e4391261-fe2f-4f63-8480-03c8a2f34edb.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "Motor Ritual",
+      "url": "https://suno.com/song/64285b62-e874-4117-8c1a-4a8fd5c754dd",
+      "cover_observed": "https://cdn2.suno.ai/image_64285b62-e874-4117-8c1a-4a8fd5c754dd.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "NEON GODDESS ASCENDING",
+      "url": "https://suno.com/song/64542ddd-2031-4342-942d-0335ff3de16b",
+      "cover_observed": "https://cdn2.suno.ai/image_64542ddd-2031-4342-942d-0335ff3de16b.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "NEON GODDESS ASCENDING",
+      "url": "https://suno.com/song/e63217d3-5c75-474f-8217-b1dd27d2d8f5",
+      "cover_observed": "https://cdn2.suno.ai/image_e63217d3-5c75-474f-8217-b1dd27d2d8f5.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "RITUAL FREQUENCY ACTIVATED",
+      "url": "https://suno.com/song/889e42a8-6fa6-4e11-9634-a82db5039600",
+      "cover_observed": "https://cdn2.suno.ai/image_889e42a8-6fa6-4e11-9634-a82db5039600.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "RITUAL FREQUENCY ACTIVATED",
+      "url": "https://suno.com/song/ba76deb9-c270-471b-8131-2ac584d6a470",
+      "cover_observed": "https://cdn2.suno.ai/image_ba76deb9-c270-471b-8131-2ac584d6a470.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "SACRED DESIRE IN THE VOID",
+      "url": "https://suno.com/song/7b61d065-15d8-4f20-8134-16fea2ee9282",
+      "cover_observed": "https://cdn2.suno.ai/image_7b61d065-15d8-4f20-8134-16fea2ee9282.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "SACRED DESIRE IN THE VOID",
+      "url": "https://suno.com/song/f969864a-ca6a-4d5a-8f53-6a98c197c50a",
+      "cover_observed": "https://cdn2.suno.ai/image_f969864a-ca6a-4d5a-8f53-6a98c197c50a.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "DARK FEMININE FREQUENCY",
+      "url": "https://suno.com/song/09a412cb-817c-4fd4-a016-0885407026f6",
+      "cover_observed": "https://cdn2.suno.ai/image_09a412cb-817c-4fd4-a016-0885407026f6.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "DARK FEMININE FREQUENCY",
+      "url": "https://suno.com/song/70d3d50c-f2c8-4c98-bf2e-00c869b1172f",
+      "cover_observed": "https://cdn2.suno.ai/image_70d3d50c-f2c8-4c98-bf2e-00c869b1172f.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "SHE OWNS THE FREQUENCY",
+      "url": "https://suno.com/song/6498db5c-c427-4a65-8043-930620d5033f",
+      "cover_observed": "https://cdn2.suno.ai/image_6498db5c-c427-4a65-8043-930620d5033f.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "SHE OWNS THE FREQUENCY",
+      "url": "https://suno.com/song/3fd61083-9f25-4ed9-9df0-14430bf3a791",
+      "cover_observed": "https://cdn2.suno.ai/image_3fd61083-9f25-4ed9-9df0-14430bf3a791.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "TOUCH ME THROUGH THE BASS",
+      "url": "https://suno.com/song/d43092e4-16a5-4102-86f5-2a9a1ba24295",
+      "cover_observed": "https://cdn2.suno.ai/image_d43092e4-16a5-4102-86f5-2a9a1ba24295.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "TOUCH ME THROUGH THE BASS",
+      "url": "https://suno.com/song/61a38294-bcd3-4c86-b7c1-b01c1887e418",
+      "cover_observed": "https://cdn2.suno.ai/image_61a38294-bcd3-4c86-b7c1-b01c1887e418.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "YOUR TOUCH HAS A BASSLINE",
+      "url": "https://suno.com/song/f573a75a-d27e-4f22-a2c0-bceb95c7540d",
+      "cover_observed": "https://cdn2.suno.ai/image_f573a75a-d27e-4f22-a2c0-bceb95c7540d.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "YOUR TOUCH HAS A BASSLINE",
+      "url": "https://suno.com/song/cb976e7c-7125-4b0b-afec-60e19f6b02f7",
+      "cover_observed": "https://cdn2.suno.ai/image_cb976e7c-7125-4b0b-afec-60e19f6b02f7.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "SURRENDER TO THE DARK PULSE",
+      "url": "https://suno.com/song/bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3",
+      "cover_observed": "https://cdn2.suno.ai/image_bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3.jpeg?width=360",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 Suno Songs infinite-scroll continuation"
     }
   ],
   "rules": [
@@ -579,7 +712,9 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 80,
+  "observed_public_song_links": 99,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage."
+  "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
+  "last_seen_end_song_url": "https://suno.com/song/bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3",
+  "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors."
 }
