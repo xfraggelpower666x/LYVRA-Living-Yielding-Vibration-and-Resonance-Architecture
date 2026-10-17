@@ -136,5 +136,19 @@
     "requires_pagination": true,
     "dedupe_key": "canonical_url",
     "publish_gate": "evidence_verified"
-  }
+  },
+  "discovery_search_terms": [
+    "techno",
+    "dark techno",
+    "psy-techno",
+    "psytrance",
+    "psychedelic trance",
+    "psytrance full on",
+    "full-on psytrance",
+    "fraggel style",
+    "fraggle styler",
+    "fraggel styler",
+    "fraggle style"
+  ],
+  "search_notes": "Genre search currently brought no additional independently verified unique album URL beyond the 18 catalogued sets. Search snippets can reference tracks or recommendation blocks; do not promote without set-page verification."
 }
