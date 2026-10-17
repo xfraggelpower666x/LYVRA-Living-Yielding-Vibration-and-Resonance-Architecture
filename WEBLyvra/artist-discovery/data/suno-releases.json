@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "source_profile": "https://suno.com/@fraggelpower666",
+  "reviewed_at": "2026-10-17",
+  "public_profile_song_count_observed": 386,
+  "coverage": "partial; 386 is profile displayed count, NOT fetched song URLs",
+  "playlists": [
+    {
+      "title": "Multiverse Dj Set 1, Psy-Dark Techno",
+      "url": "https://suno.com/playlist/b95d4afd-461e-4e90-872a-c21e5ba37ac0",
+      "observed_song_count": 1,
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "New Tracks",
+      "url": "https://suno.com/playlist/294f95a5-aa18-4ac8-b28f-8fcbf269e975",
+      "observed_song_count": 8,
+      "status": "direct_page_readback"
+    }
+  ],
+  "public_songs": [
+    {
+      "title": "VELUNA - THE ONE AND ONLY NEON QUEEN",
+      "url": "https://suno.com/song/dd030afe-6051-41f8-b594-9ab0b6c852c2",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "VELUNA - THE ONE AND ONLY NEON QUEEN",
+      "url": "https://suno.com/song/c3f3289b-5749-45eb-adcb-bc405dadea68",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "CYBER FAMILY CORE - DAUGHTER OF SIX WORLDS",
+      "url": "https://suno.com/song/d65c76b1-9ecb-40bb-bc56-78e7819b63b4",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "CYBER FAMILY CORE - DAUGHTER OF SIX WORLDS",
+      "url": "https://suno.com/song/cfeaab32-b420-4e8d-85a9-0f46d0cf5179",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "CYBER FAMILY CORE - DAUGHTER OF SIX WORLDS",
+      "url": "https://suno.com/song/1d92ac7c-a7c6-40d5-ae9b-fd978da4a7f7",
+      "status": "direct_page_readback"
+    }
+  ],
+  "rules": [
+    "Publicly accessible songs and playlists only; do not retrieve private drafts.",
+    "Canonical song UUID identifies variants; same title can have multiple public versions.",
+    "Keep playlists separate from published songs; do not call a playlist an album.",
+    "Profile full playlist page was blocked by hCaptcha; do not bypass or claim complete coverage.",
+    "New items require direct public URL evidence; no invented links.",
+    "Host DE/EN controls the UI language."
+  ]
+}
