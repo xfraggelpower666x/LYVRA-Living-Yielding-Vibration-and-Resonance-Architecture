@@ -1,0 +1,47 @@
+{
+  "brand": "LYVRA / 666SOUNDsDESIGn",
+  "scope": "WEBLyvra artist-discovery addon",
+  "optimized_from_user_supplied_images": [
+    {
+      "file": "lyvra-resonance-banner.webp",
+      "role": "wide resonance strip",
+      "width": 1600,
+      "height": 308,
+      "bytes": 110228,
+      "source": "Lyvra_ Neon-Resonanz im Cyberraum.png"
+    },
+    {
+      "file": "lyvra-cyber-emblem.webp",
+      "role": "intro emblem",
+      "width": 360,
+      "height": 360,
+      "bytes": 35350,
+      "source": "Neon-Cyber-Emblem mit LYVRA-Logo(3).png"
+    },
+    {
+      "file": "fraggel-system-designer.webp",
+      "role": "origin portrait",
+      "width": 410,
+      "height": 512,
+      "bytes": 59568,
+      "source": "ChatGPT-Bild 8. Okt. 2026, 22_39_39-1.png"
+    },
+    {
+      "file": "lyvra-666soundsdesign-wordmark.webp",
+      "role": "footer lockup",
+      "width": 900,
+      "height": 300,
+      "bytes": 47676,
+      "source": "0BC199B6-7F8D-4417-B73D-F911CDC46189(1).png"
+    },
+    {
+      "file": "lyvra-hero-crest.webp",
+      "role": "optional creative-origin symbol",
+      "width": 420,
+      "height": 420,
+      "bytes": 77490,
+      "source": "7E7FEC5C-8208-4851-A988-A4851BDA88B7.png"
+    }
+  ],
+  "production_status": "assets prepared locally; not yet uploaded to GitHub"
+}
