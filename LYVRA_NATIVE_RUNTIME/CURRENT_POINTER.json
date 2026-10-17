@@ -5153,5 +5153,30 @@
     "triple_verification": "STRUCTURE_PASS|CAUSAL_SEMANTIC_SOURCE_PASS|RECOVERY_PARTIAL_FRESH_HOST_OPEN",
     "pointer_last": true,
     "return_anchor": "STARBRIDGE_SB04_NATIVE_SOURCE_CI_COMPLETE_REAL_TWO_CHAT_HOST_AND_RECEIVER_DISPATCH_PENDING; RESUME_PRIOR_WHOLE_LYVRA_SCOPE"
+  },
+  "starbridge_sb04_clic_native_receipt_2026_10_17": {
+    "status": "NATIVE_SOURCE_READBACK_RECEIPT_PERSISTED_SENDER_DELIVERY_RECONCILIATION_PENDING",
+    "source_system": "666CLIC",
+    "handoff_id": "CLIC-STARBRIDGE-SB04-20261017-01",
+    "source_head": "26799d79511f633a47149bb13c2408dcf755f998",
+    "observed_clic_head": "208ead31f358cb125c428320262cf3dbd4d540c5",
+    "source_blob": "a9490b43dfb2ad38f576210c548c262bf49d821a",
+    "envelope_blob": "2f4bc9374a29c7ec4fe6f73ea224cee616dd7211",
+    "receipt_path": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/CLIC-STARBRIDGE-SB04-20261017-01-RECEIPT.json",
+    "receipt_blob": "498b52951597d4033b803460703349b10d4bcad4",
+    "body_head_before_pointer": "0b66261c36d3bdd827385dce28d391aac6f61e19",
+    "prechange_recovery": "lyvra-recovery-pre-sb04-native-receipt-20261017",
+    "independent_source_readback": true,
+    "receiver_receipt_readback": true,
+    "clic_reciprocal_reconciliation": "PENDING",
+    "semantic_adoption": false,
+    "host_pass": false,
+    "automatic_transport": false,
+    "plugin_impact": "DATA_ONLY_NO_SEMANTIC_PLUGIN_CHANGE",
+    "foreign_writes": false,
+    "no_new_router": true,
+    "pet": "UNCHANGED",
+    "pointer_last": true,
+    "return_anchor": "RESUME_PRIOR_WHOLE_LYVRA_AFTER_SB04_RECEIPT"
   }
 }
