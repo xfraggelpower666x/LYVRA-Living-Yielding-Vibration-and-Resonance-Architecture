@@ -11,6 +11,16 @@ Artist-first discography spanning public platforms: Suno, SoundCloud and distrib
 - SoundCloud: 30 observed album/EP entries from the /albums listing and one separately verified set; `data/soundcloud-albums.json`. Completeness not established.
 - Distributor/store sources: separately verify ownership, release IDs and external links. No assumption that an artist landing page is proof of a published release.
 
+## Existing artist-universe data — mandatory preservation and non-regression
+**This is an extension of the existing Artist Discovery add-on, not a replacement.** The canonical staged source for provider links, radio and community navigation is `data/platforms.json` (schema 1.2, last reviewed 2026-10-16). Preserve that file and its source/status/provenance fields exactly unless a separately evidenced update is approved.
+
+- **Radio & Live:** keep the `radio` object, its source registry `666STREAM_RADIO_LINK_REGISTRY_v2_2026-10-16.json`, all six radio entry points (Webradio, Twitch Broadcast, Veluna Radio, MiniPlayer, TuneIn Deutschland, TuneIn USA), six system/status panels (signal/health, now playing, AutoDJ, player alerts, Discord connectivity, audio stream), and the original explanatory text. Retain the TuneIn USA `unavailable` status, `previously_reachable` panel evidence and `unverified_stream` qualifier; never turn historic status into current online claims.
+- **Social & community:** preserve the currently stored Facebook, YouTube, Discord and Instagram URLs, plus Twitch Live and the WEBLyvra site link. Preserve every existing `group=web/social` entry and future evidence-qualified social sources. Do not infer music catalog distribution from social profiles.
+- **Listening / buying:** preserve existing provider URLs for Spotify, Apple Music, Amazon Music, TIDAL, Deezer, Qobuz, Anghami, iHeartRadio and YouTube Music, including `indexed_artist`, `direct_readback`, `album_readback` qualifications. Keep SoundCloud, Mixcloud, Suno and the Internet Archive performance link in their existing independent/discovery groups.
+- **Existing six navigation groups:** preserve `web`, `radio`, `social`, `music`, `independent`, `discovery` and the original user-facing titles, hints and display notes. The new discography section is an additive child or adjacent view inside **one coherent centered module**, never another competing list of platform cards.
+- **Source-of-truth precedence:** the new discography ingests from `data/suno-releases.json` and `data/soundcloud-albums.json`; `data/platforms.json` remains the authoritative staged input for radio/social/store entry points. No sync job is permitted to delete/rewrite unrelated sections.
+- **Acceptance tests:** compare before/after IDs and exact URLs for every `platforms` entry, each `radio.players` entry and `radio.panels` status. Require equality when the task changes discography only. Explicitly test DE/EN headings, player separation, status disclaimers, mobile layout and no duplicate cards.
+
 ## Source adapters and workflows
 | Provider | Initial source | Type | Change detection |
 | -- | -- | -- | -- |
