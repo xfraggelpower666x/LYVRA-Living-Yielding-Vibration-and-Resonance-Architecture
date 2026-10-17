@@ -1,0 +1,78 @@
+{
+  "schema": "LYVRA_IRL_CONFLICT_RECONCILIATION_AND_STREAM_BRIDGE_PEER_REVIEW_V1",
+  "owner": "WHOLE_LYVRA",
+  "scope": "IRL_NATIVE_FACET_FINGERPRINT_AND_POINTER_COMPLETION",
+  "base_head": "0de68c75daa53dc9163a35ff533e9ff68e9f370c",
+  "recovery_branch": "lyvra-recovery-pre-irl-repair-stream-bridge-review-20261017-r01",
+  "previous_irl_body": "a7dc0d28a029100653652c16c79589cca9777ebe",
+  "parallel_non_overlapping_paths": [
+    "WEBLyvra/artist-discovery/data/suno-releases.json",
+    "WEBLyvra/artist-discovery/suno-tracks-preview.html"
+  ],
+  "existing_changed_carriers": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "previous": "3769f6aad766292d65b26e2f7d38ef7309bfcf28",
+      "current": "f9056f3514a2aabb0d9f845ce064c7a8b722743c"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+      "previous": "4ffa1cb499cda1a588800c81098bc6e6f815be3c",
+      "current": "20dc9611ad0a11071251e3c45a1c710e833dea29"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+      "previous": "41e886fe752e9a31f475c27a9e6f5c5a4fdc4821",
+      "current": "67650f23706a5bfaf5ead2115cf53d4cd7a10495"
+    }
+  ],
+  "new_critical_carriers": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/irl/FACET_CONTRACT.md",
+      "sha": "74bf612eae3453b8fb28ede3318647a7df6f16d9"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_LIFECIRCLE.md",
+      "sha": "66b3058d3c61e9b4ed6fe104d7177b271e37f712"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_REHYDRATION.md",
+      "sha": "8ac8e30f325cc1d9a7de48e29ca47bb8a1138e42"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/irl/CURRENT_STATE.json",
+      "sha": "59309e54e599f0794340e1280cd5ddb8646dca5c"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json",
+      "sha": "817bb03bb7cab95a00f524d5dea51587ff6c83f5"
+    }
+  ],
+  "expected_total_carriers": 219,
+  "contract_checks": "14_SOURCE_ASSERTIONS_PASS_IN_PREVIOUS_ROUND",
+  "node_test_runner": "NOT_INDEPENDENTLY_EXECUTED",
+  "stream_review": {
+    "repository": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn",
+    "branch": "WebRadio-666SOUNDsDESIGn",
+    "observed_head": "7cc5b469dcc0263da0f42aea55d96b94a85e837e",
+    "master_blob": "3def06e8440bd3816fe00cc23f0c6c8e8319271f",
+    "evidence_module_blob": "be1cc24869e50ec5a04253cc7334005cdd353c1c",
+    "functional_validation_blob": "44450c40ab10c234e88ffae58c7f0ef0c8aeb945",
+    "automatic_bridge_interpretation": "SINGLE_REUSABLE_TRANSPORT_SELECTION_PLUS_FAIL_CLOSED_EVIDENCE_POLICY_NOT_VERIFIED_AUTONOMOUS_PRODUCTION_TRANSPORT",
+    "stream_validation": "13_IN_PROCESS_SCENARIOS_PASS_NODE_TEST_NOT_RUN_REAL_REMOTE_TRANSPORT_NOT_EXECUTED",
+    "lyvra_original_binary_bridge": "UNCHANGED_RETAINED",
+    "new_bridge_created": false,
+    "foreign_adoption": false
+  },
+  "dual_plugin_impact": {
+    "native": "0.1.69_SOURCE_NEW_IRL_SKILL_PARITY_PENDING",
+    "alive": "0.13.64_SOURCE_NEW_IRL_SKILL_PARITY_PENDING",
+    "host": "PENDING"
+  },
+  "native_auto_foreground": false,
+  "new_root": false,
+  "existing_visual_engine_preserved": true,
+  "preserve_five_options": true,
+  "real_irl_host": "NOT_VERIFIED",
+  "peer_writes": false
+}
