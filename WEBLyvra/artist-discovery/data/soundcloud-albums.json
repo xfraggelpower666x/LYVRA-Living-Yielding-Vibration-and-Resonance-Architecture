@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-10-17",
-  "status": "partial_public_catalog_readback_10_entries",
-  "notes": "Entries independently found on public SoundCloud Albums page. This is not a complete catalog.",
+  "status": "partial_public_catalog_readback_16_verified_set_urls",
+  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album.",
   "albums": [
     {
       "title": "LYVRA - LOVE PROTOCOL",
@@ -65,6 +65,48 @@
       "type": "Album",
       "url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
       "status": "direct_page_listing"
+    },
+    {
+      "title": "Not every one likes you!",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "Geschichtenerzähler (Storyteller)",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "Sie sind unter uns (Single - Part3)",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "666 Special Dark Techno Part Two",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "FRAGGEL STYLE MUSIC",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "POWERBEATS - 666 SOUNDsDESIGn 2026",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
     }
   ],
   "next_scan": {
