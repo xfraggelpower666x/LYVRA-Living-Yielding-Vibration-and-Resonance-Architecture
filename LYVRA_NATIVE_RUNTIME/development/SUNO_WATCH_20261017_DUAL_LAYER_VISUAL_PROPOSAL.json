@@ -1,0 +1,103 @@
+{
+  "schema": "LYVRA_DEVELOPMENT_PROPOSAL_V1",
+  "proposal_id": "SUNO_WATCH_20261017_DUAL_LAYER_VISUAL_PROPOSAL",
+  "status": "PROPOSED_NOT_ADOPTED",
+  "authority": "LYVRA_ONLY",
+  "source": {
+    "chat": "Suno-Watch 2026-10-17",
+    "imported_backup": "USER_IMPORTED_PRIOR_CHAT_BACKUP_20_MESSAGES_SUMMARIZED_CONTEXT_NOT_INDEPENDENT_RAW_BACKUP_READBACK",
+    "claims_as": "TEST_HYPOTHESES_NOT_PROVIDER_VERIFIED",
+    "prechange_head": "023362b77f0424e7cf79e0907c9b876c087eeebc"
+  },
+  "recovery": "lyvra-recovery-pre-suno-watch-dual-visual-proposal-20261017-r01",
+  "themes": [
+    {
+      "id": "SUNO_LONGFORM_QUALITY",
+      "models": [
+        "V6",
+        "MAX",
+        "WILD"
+      ],
+      "action": "Longitudinal matched prompt tests; longform completeness, repetition, duration, arrangement, audio artifacts",
+      "status": "HYPOTHESIS"
+    },
+    {
+      "id": "VARIETY_CONTROL_DRIFT",
+      "action": "Verify actual slider/control UI and metadata, prompt rewrite and drift against rendered outcomes; keep devices separately",
+      "status": "HYPOTHESIS"
+    },
+    {
+      "id": "STUDIO_2_CONTROL_SURFACE",
+      "action": "Evidence-gated downbeat, stretching, fades, plugins, timeline/editor capability verification; STUDIO_2 canonical label, Suno Studio 2 historical search alias only",
+      "status": "PROPOSAL"
+    },
+    {
+      "id": "SPEECH_VOICES",
+      "action": "Inspect voices/speech surface and real script/phoneme/prosody render evidence within Speech facet",
+      "status": "PROPOSAL"
+    },
+    {
+      "id": "SONG_EDITOR",
+      "action": "Validate editing and re-rendered section fidelity, source and target versions",
+      "status": "PROPOSAL"
+    },
+    {
+      "id": "SEMANTIC_CAUSAL_HANDOFFS",
+      "action": "Reuse native repository receipt/outbox/continuity mechanism, peer proposals only, source/delivery/adoption/host independently",
+      "status": "PROPOSAL"
+    },
+    {
+      "id": "VISUAL_TWO_LAYERS",
+      "action": "Use same Whole LYVRA Visual Intelligence and existing evidence-backed registry projections: dynamic changing-priority queue and persistent saved project/predevelopment ledger; no second engine",
+      "status": "PROPOSAL"
+    }
+  ],
+  "dual_layer_contract": {
+    "dynamic": {
+      "role": "PRIORITY_PROJECTION",
+      "sorting": "evidence, urgency, blocking dependency, creator selected focus; no invented scores",
+      "volatile": true
+    },
+    "persistent": {
+      "role": "PROJECT_AND_PREDEVELOPMENT_INDEX",
+      "until": "explicit archive or verified supersession",
+      "states": [
+        "PROPOSED",
+        "DEV_ACTIVE",
+        "DEFERRED_WITH_REASON",
+        "ADOPTED",
+        "SUPERSEDED",
+        "ARCHIVED"
+      ],
+      "visible_in": "Whole-LYVRA Operations Center and five-choice development picker",
+      "content_storage": "Existing native development registry + optional private vault references",
+      "private_material": "REFERENCE_ONLY_NEVER_PUBLIC_COPY"
+    }
+  },
+  "private_vault": {
+    "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+    "visibility": "PRIVATE_VERIFIED",
+    "observed_head": "64be51ed9c6683c9165423aaf8747d4d94657ee9",
+    "source_backup_path": "NOT_VERIFIED_FOR_SUNO_WATCH",
+    "public_record": "metadata/ref only, no private text"
+  },
+  "architecture_fences": [
+    "NO_NEW_ROUTER",
+    "NO_SECOND_VISUAL_ENGINE",
+    "CHARACTER_BOT_INDEPENDENT",
+    "PRESERVE_FIVE_CHOICES",
+    "PRESERVE_NATIVE_TRIGGERS",
+    "NO_AUTO_RENDERER_RULE_CHANGE",
+    "NO_FOREIGN_AUTOACTIVATION",
+    "PARALLEL_WORKSPACE_LINEAGES_ISOLATED"
+  ],
+  "evidence": {
+    "source": "PROPOSAL_FILE_PENDING_DIRECT_READBACK",
+    "delivery": "NOT_DISPATCHED",
+    "adoption": "NOT_ADOPTED_AS_RUNTIME",
+    "host": "NOT_TESTED",
+    "provider_claims": "UNVERIFIED"
+  },
+  "plugin_impact": "DATA_ONLY_PROPOSAL_NO_PLUGIN_SEMANTIC_RELEASE_CHANGE",
+  "next_action": "Separately verify exact imported backup and Suno provider UI/API evidence, then scope ONE explicitly approved implementation topic using existing registry/visual carriers."
+}
