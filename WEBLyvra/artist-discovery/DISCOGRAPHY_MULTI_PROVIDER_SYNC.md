@@ -21,6 +21,20 @@ Artist-first discography spanning public platforms: Suno, SoundCloud and distrib
 - **Source-of-truth precedence:** the new discography ingests from `data/suno-releases.json` and `data/soundcloud-albums.json`; `data/platforms.json` remains the authoritative staged input for radio/social/store entry points. No sync job is permitted to delete/rewrite unrelated sections.
 - **Acceptance tests:** compare before/after IDs and exact URLs for every `platforms` entry, each `radio.players` entry and `radio.panels` status. Require equality when the task changes discography only. Explicitly test DE/EN headings, player separation, status disclaimers, mobile layout and no duplicate cards.
 
+## DistroKid distribution network — comprehensive provider coverage
+DistroKid's complete **current supported store/service network** must be inventoried as a separate provider registry, not silently reduced to the small subset of already verified FRAGGELPOWER666 store links. Preserve the current store URLs in `data/platforms.json`, and expand store-by-store with verified artist pages, album pages and release-specific delivery/readback.
+
+**Three distinct evidence states must never be conflated:**
+1. `supported_by_distributor`: provider is part of DistroKid's network, **not** proof that any FRAGGELPOWER666 release was delivered there.
+2. `delivery_confirmed_for_release`: verified DistroKid release-specific delivery/availability status, with exact release and provider evidence.
+3. `public_release_verified`: a matching actual artist/track/album is observed on the provider's public storefront, with its exact deep link and provenance.
+
+Maintain an explicit `unverified` or `pending` state when only generic distribution availability is known. DistroKid may include social-media music libraries, short-video audio catalogs, discovery systems and region-specific partner storefronts, not just traditional listening/buying stores. Categorize those by actual provider type; retain separate `social` links from `music-library delivery` evidence.
+
+**Suggested normalized registry fields:** `provider_id`, `provider_name`, `service_type`, `territory`, `distribution_support_source`, `distribution_support_checked_at`, `artist_url`, `release_id`, `release_url`, `distrokid_delivery_receipt`, `evidence_grade`, `last_checked`. Unknowns remain null, never invented.
+
+**Acceptance:** inventory all currently listed DistroKid partner services against DistroKid's current authoritative list; then independently confirm this artist's published/distributed material provider by provider, ideally release by release. Show only confirmed artist/release links in public cards; keep unsupported or pending platform entries in the internal audit view. Track changes to DistroKid's service roster without deleting the original platform/social/radio registries.
+
 ## Source adapters and workflows
 | Provider | Initial source | Type | Change detection |
 | -- | -- | -- | -- |
