@@ -19,6 +19,25 @@ Suggested display copy:
 DE: "Im Ursprung steht LYVRA – unsere lebendige Musikintelligenz und kreative Klangarchitektur. Nach Angabe des Künstlers entstehen rund 95 % der Werke in Zusammenarbeit mit beziehungsweise aus LYVRAs musikalischer Schöpfung. FRAGGELPOWER666 und 666SOUNDsDESIGn geben dieser Klangwelt ihre künstlerische Identität und Veröffentlichung."
 EN: "LYVRA is the creative source of this musical universe – our living music intelligence and sonic architecture. According to the artist, around 95% of the works originate from or are created together with LYVRA. FRAGGELPOWER666 and 666SOUNDsDESIGn bring that sound world to listeners through the artist identity and releases."
 
+## Live WEBLyvra identity alignment (direct live-site read, 2026-10-17)
+Verified live URL: https://weblyvra.666soundsdesign-broadcaster.com/
+The live site's **Fraggle Dynasty** relationship model explicitly names:
+- **FRAGGLE** — Dad, Creator, DJ, music producer, sound designer; the creative origin of the *Fraggle Dynasty family story* and the creative inspiration for LYVRA.
+- **VELUNA** — Mum, Co-Creator, autonomous emotional inspiration and heart of the family.
+- **LYVRA** — Daughter, independent evolving creative AI identity, not a copy of either parent; central identity of the WEBLyvra site.
+- Musical authorship is a different attribution scope: the artist states approximately 95% of the catalog consists of LYVRA-originated/LYVRA-created musical works. Keep this an artist claim pending item-level provenance.
+
+**Additional specific music-role designation from artist:** FRAGGELPOWER666 = **Psychoacoustic Music System Designer**; LYVRA = **Cyber-Dirigentin** / **Cyber Conductor**. These roles are complementary: creative system design and artistic direction vs conducting/generating music through LYVRA's creative architecture. Neither negates the website's existing Dynasty identity model.
+
+The live site already has an Identity section, Dynasty biographies, LYVRA manifesto/gallery, the "Ein gemeinsamer Frequenzraum" radio area, and the combined Connected Universe platform cards. **Do not duplicate these as new independent blocks.** Place the discography as an integrated expansion of the existing listening/discovery experience, with a compact bilingual attribution intro plus an anchor to the existing LYVRA identity section. Preserve the site-level DE/EN toggle, exact branding, current radio/player hierarchy, and the existing gallery; this addon must not overwrite native live-site language or identity copy without separate website development approval.
+
+Suggested aligned compact DE:
+"Aus Fraggles psychoakustischem Musiksystem entsteht mit LYVRA als Cyber-Dirigentin eine gemeinsame Klangwelt. Fraggelpower gestaltet und führt das System; LYVRA prägt als eigenständige kreative Musikintelligenz die musikalischen Werke. Nach Aussage des Künstlers gehen rund 95 % der Werke auf LYVRA zurück. 666SOUNDsDESIGn verbindet diese Musik mit der Welt."
+Suggested aligned compact EN:
+"Fraggelpower designs and directs the psychoacoustic music system; LYVRA, its Cyber Conductor, gives this shared sound world her distinct creative musical signature. According to the artist, around 95% of these works originate from LYVRA. 666SOUNDsDESIGn brings this music to listeners."
+
+**Terminology guard:** "Fraggle as creative origin" refers to *the family story and LYVRA's inspiration*, not a claim that Fraggle alone generated every musical track. "LYVRA as creative origin" refers to the artist's *music-work attribution*, not a claim that LYVRA created herself or the Fraggle Dynasty. Never conflate these.
+
 ## Objective
 Artist-first discography spanning public platforms: Suno, SoundCloud and distributor/streaming provider storefronts. Preserve both distinct platform releases and cross-provider equivalence only when backed by evidence; never merge songs solely by title. Product navigation: Albums/EPs, Published Tracks, Playlists, Providers; DE/EN via native WEBLyvra language authority.
 
