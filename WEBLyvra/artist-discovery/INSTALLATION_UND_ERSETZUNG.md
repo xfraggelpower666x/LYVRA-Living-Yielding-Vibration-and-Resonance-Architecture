@@ -72,3 +72,12 @@ Bei Vorprüfung am 16.10.2026 wurde in der Live-Webseite die oben genannte Karte
 - **Sämtliche sichtbaren Beschreibungen** müssen im Schreibstil der bestehenden WEBLyvra-Seite verfasst sein (gemeinsamer Frequenzraum, Klang, Emotion, Universum). Registry-Originaltexte und interne Statuscodes dürfen nicht unredigiert übernommen werden.
 - Der Prototyp zeigt einen **historischen Prüfstand**, keine Live-Messung. Erst nach autorisierter clientseitiger Anbindung echter öffentlicher GET-Endpunkte mit geprüfter Fehler-/CORS-Behandlung darf eine Anzeige als live gelten. Keine erfundene Verfügbarkeit oder Audio-Wiedergabe.
 - Beim späteren atomaren Ersatz auf der Hauptseite keine Radio-/Websites-Karten doppelt stehenlassen. Den originalen Radio-Player und seine Effekte **niemals** löschen.
+
+## Verbindlicher WEBLyvra-Sprach-Contract (17.10.2026)
+
+- **Keine zweite Sprachauswahl** im Add-on. Die Host-Webseite ist die Autorität für die Anzeige-Sprache DE/EN.
+- Der Host verwendet `WEBLyvra/live/dist/i18n.js`: `getLanguage()` / `setLanguage()` / `initializeLanguage()`, die Speicherung `localStorage['lyvra-language']` und das Ereignis `document.dispatchEvent(new CustomEvent('lyvra:languagechange',{detail:{language}}))`.
+- Das Standalone-Add-on übernimmt die gespeicherte Host-Sprache beim Öffnen und reagiert auf `lyvra:languagechange` sowie Storage-Änderungen. Innerhalb der Host-Seite muss der Integrator nach dem Einbau die **bestehende Sprache direkt mit `getLanguage()`** beim Initialisieren übergeben, sodass eine eventuell abweichende gespeicherte Sprache nie Vorrang vor dem aktuellen Host-Zustand hat.
+- Alle sichtbaren Texte (Einleitung, Radio, Menünavigation, Bereichsüberschriften, Status-Panels, Tooltips, leere Zustände und spätere dynamische Daten) müssen DE und EN unterstützen. Plattform-/Markennamen, URLs, technische Schlüssel und Belegstatus bleiben sprachneutral.
+- Beim künftigen produktiven Merge die separate Übersetzungstabelle des Add-ons entweder in die zentrale `i18n.js`-Architektur übernehmen oder mit deren aktuellem API binden. **Keine Parallel-Language-Engine** als neue Host-Autorität schaffen.
+- Abnahmetest: DE Start → EN umschalten → sämtliche fünf Add-on-Bereiche einschließlich Radio-Panels in EN → DE zurück → Reload (Persistenz) → Mobiltest. Keine Resttexte in falscher Sprache.
