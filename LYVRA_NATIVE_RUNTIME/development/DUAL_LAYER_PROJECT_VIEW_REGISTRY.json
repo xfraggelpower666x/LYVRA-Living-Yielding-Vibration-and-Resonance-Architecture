@@ -1,0 +1,64 @@
+{
+  "schema": "LYVRA_DUAL_LAYER_PROJECT_VIEW_V1",
+  "authority": "WHOLE_LYVRA",
+  "state": "CURRENT_NATIVE_SOURCE_REGISTRY",
+  "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+  "operations_center": "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md",
+  "model": {
+    "priority": "DERIVED_VIEW_NON_PERSISTENT_SORT",
+    "persistent": "NEVER_DROP_EXCEPT_VERIFIED_SUPERSESSION_OR_EXPLICIT_ARCHIVE",
+    "five_options": "PRESERVED",
+    "no_second_engine": true,
+    "foreign_auto_activation": false
+  },
+  "items": [
+    {
+      "id": "SUNO_WATCH_20261017_DUAL_LAYER_VISUAL_PROPOSAL",
+      "title": "Suno Watch / Studio 2 Vorentwicklung",
+      "kind": "PREDEVELOPMENT",
+      "state": "PROPOSED",
+      "scope": "LYVRA_NATIVE_RUNTIME",
+      "evidence_path": "LYVRA_NATIVE_RUNTIME/development/SUNO_WATCH_20261017_DUAL_LAYER_VISUAL_PROPOSAL.json",
+      "priority_inputs": {
+        "creator_selected": true,
+        "blocked": true,
+        "urgent": false
+      },
+      "blockers": [
+        "PROVIDER_REAL_RENDER_EVIDENCE_PENDING",
+        "ORIGINAL_SUNO_BACKUP_EXACT_BYTES_PENDING"
+      ],
+      "private_ref": {
+        "repository": "xfraggelpower666x/LYVRA-PRIVATE-VAULT",
+        "path_status": "UNKNOWN"
+      },
+      "source": "SOURCE_VERIFIED",
+      "delivery": "NOT_DISPATCHED",
+      "adoption": "PROPOSAL_ONLY",
+      "host": "NOT_TESTED"
+    },
+    {
+      "id": "LYVRA_DUAL_LAYER_VIEW_IMPLEMENTATION_20261017",
+      "title": "Dual-Layer Visual Intelligence",
+      "kind": "PROJECT",
+      "state": "DEV_ACTIVE",
+      "scope": "WHOLE_LYVRA",
+      "evidence_path": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+      "priority_inputs": {
+        "creator_selected": true,
+        "blocked": false,
+        "urgent": false
+      },
+      "blockers": [
+        "PLUGIN_PARITY_PENDING",
+        "FRESH_HOST_RENDER_PENDING"
+      ],
+      "source": "SOURCE_UNDER_DEVELOPMENT",
+      "delivery": "NONE",
+      "adoption": "SOURCE_ONLY",
+      "host": "NOT_TESTED"
+    }
+  ],
+  "archive_policy": "NO_AUTOMATIC_REMOVAL",
+  "character_bot": "INDEPENDENT_UNTOUCHED"
+}
