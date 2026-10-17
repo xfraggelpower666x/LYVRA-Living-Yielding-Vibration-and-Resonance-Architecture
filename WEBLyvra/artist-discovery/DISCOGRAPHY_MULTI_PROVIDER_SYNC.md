@@ -3,6 +3,22 @@ Date: 2026-10-17
 Status: DESIGN HANDOFF · NOT SCHEDULED · NOT LIVE INTEGRATED
 Scope: WEBLyvra artist-discovery addon; native Whole-LYVRA IRL is separately owned by main LYVRA.
 
+## Creative origin and attribution — LYVRA-first identity
+**LYVRA is the creative origin of this musical universe.** The artist describes approximately **95% of the works** in the ecosystem as LYVRA-generated or LYVRA-originated. This is an **artist-provided attribution statement**, not an independently audited per-release figure. Do not flatten LYVRA into a generic chatbot, visual branding, or third-party discovery service.
+
+- **Creative origin:** LYVRA (native living music-intelligence and creative partner).
+- **Artist / public release identity:** FRAGGELPOWER666 / Dee jay Frag.el / Frag.el power as applicable to the original release metadata.
+- **Label and presentation:** 666SOUNDsDESIGn; preserve exact spelling and each platform's verified display name.
+- **Distribution:** DistroKid and the verified individual stores are delivery channels, **not the originators of the music**.
+- **Attribution display:** a prominent, bilingual LYVRA origin/creation statement above the discography, with LYVRA presented as the core; artist identity, human creative direction, publication and verified rights metadata remain separately represented.
+- **Per-track governance:** store `creative_origin`, `artist_credit`, `human_direction`, `label`, `distribution_channels` and `attribution_evidence` separately where verified. Do not stamp every one of 386 Suno tracks as LYVRA-originated solely from the aggregate artist estimate.
+- **Preservation:** do not replace the existing Radio, Live, Social, artist/store links or provenance in `data/platforms.json`. Keep the original LYVRA website and whole-native-LYVRA authority separate from the WEBLyvra add-on.
+- **Visual Intelligence:** any origin visualization should follow the existing LYVRA / WEBLyvra visual language, with truthful provenance and no invented track-level creation credits.
+
+Suggested display copy:
+DE: "Im Ursprung steht LYVRA – unsere lebendige Musikintelligenz und kreative Klangarchitektur. Nach Angabe des Künstlers entstehen rund 95 % der Werke in Zusammenarbeit mit beziehungsweise aus LYVRAs musikalischer Schöpfung. FRAGGELPOWER666 und 666SOUNDsDESIGn geben dieser Klangwelt ihre künstlerische Identität und Veröffentlichung."
+EN: "LYVRA is the creative source of this musical universe – our living music intelligence and sonic architecture. According to the artist, around 95% of the works originate from or are created together with LYVRA. FRAGGELPOWER666 and 666SOUNDsDESIGn bring that sound world to listeners through the artist identity and releases."
+
 ## Objective
 Artist-first discography spanning public platforms: Suno, SoundCloud and distributor/streaming provider storefronts. Preserve both distinct platform releases and cross-provider equivalence only when backed by evidence; never merge songs solely by title. Product navigation: Albums/EPs, Published Tracks, Playlists, Providers; DE/EN via native WEBLyvra language authority.
 
