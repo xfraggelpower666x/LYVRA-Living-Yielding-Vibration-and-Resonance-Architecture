@@ -3,7 +3,7 @@
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-10-17",
-  "status": "partial_interactive_album_catalog",
+  "status": "browser_album_listing_30_items_partial_completeness",
   "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album.",
   "albums": [
     {
@@ -77,13 +77,6 @@
       "title": "Geschichtenerzähler (Storyteller)",
       "type": "SoundCloud set (album classification pending)",
       "url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
-      "status": "direct_page_readback",
-      "source": "SoundCloud set page"
-    },
-    {
-      "title": "Sie sind unter uns (Single - Part3)",
-      "type": "SoundCloud set (album classification pending)",
-      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
       "status": "direct_page_readback",
       "source": "SoundCloud set page"
     },
@@ -254,5 +247,15 @@
     "observed_count": 30,
     "method": "scroll to load browser automation",
     "note": "30 items were observed; complete catalogue not definitively established"
-  }
+  },
+  "other_verified_sets": [
+    {
+      "title": "Sie sind unter uns (Single - Part3)",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page",
+      "reason": "set page verified; not present in the 30-entry interactive /albums listing"
+    }
+  ]
 }
