@@ -439,5 +439,7 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 60
+  "observed_public_song_links": 60,
+  "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
+  "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage."
 }
