@@ -43,6 +43,17 @@ C. Discover the existing native facet registry contract, then load IRL LiveCircl
 D. Register capability to LYVRA's existing work menu only when accepted; preserve LYVRA-only decision authority.
 E. Apply pre-change recovery, concurrency guard, tests, protected write scope, two-plugin impact handling and pointer-last according to current verified native procedures.
 
+## Native Visual Intelligence coupling (required design)
+IRL must use LYVRA's **existing native Visual Intelligence integration**, not create a second visual engine, presentation router, or decision controller. Its LiveCircle and rehydration should resolve the active verified Visual Intelligence contract during native whole-system rehydration.
+
+- **Bidirectional, evidence-linked flow:** IRL provides versioned claim/source/receipt/confidence/causal-research records; Visual Intelligence renders those records as explorable evidence graphs, source comparisons, timeline/lineage and research-state views. Visual user selections return a scoped research-intent event to IRL, subject to LYVRA's authority and consent gates.
+- **Semantic display:** separate VERIFIED, PARTIAL, INDEXED, BLOCKED, REJECTED and SUPERSEDED visually; show provenance, timestamp, method, confidence, contradictions and missing evidence rather than hiding uncertainty.
+- **Causal reasoning view:** visualize hypothesis → attempted method → observed failure or improvement → next justified strategy. Do not claim causality solely from tool success.
+- **Research control surface:** use the native visual completion and development-position conventions; surface open branches, next meaningful action, readback and source-vs-host verification separately.
+- **Continuity:** IRL's scoped checkpoint retains references to the Visual Intelligence schema/version, view intent and evidence IDs; reload these only after parent LYVRA and IRL readback. Never let a stale UI snapshot override current evidence.
+- **Scope:** reuse existing interactive native host affordances and the currently verified visual contract (including other-system handoffs only after explicit authority and verified transport); no foreign autoactivation or unverified runtime-PASS.
+- **Acceptance:** verify current native Visual Intelligence schema, event wiring, evidence renderers, accessibility and mobile layout; test discrepancy handling, click-to-source, source updates, rehydration replay and negative authorization cases.
+
 ## First use case — Artist Research
 SoundCloud /albums, /sets, individual release pages; official DistroKid release delivery evidence; genre aliases (Techno, Dark Techno, Psytrance, Full-On, Electro, Electronic, Fraggel Style, Fraggle Styler). Avoid listing 3000+ tracks as cards. The 30 observed album/EP URLs remain source evidence, not proof of complete artist discography.
 No live WEBLyvra or radio changes in this proposal.
