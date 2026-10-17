@@ -63,6 +63,22 @@
       "override_repo": false,
       "authority_or_trigger": false,
       "estimated_counts_not_measured": true
+    },
+    {
+      "source_family": "LYVRA_CREATOR_MUSIC_ORIGINS_FASTTRACKER_ARCHIVES_20261017",
+      "role": [
+        "CREATOR_MUSIC_HISTORY",
+        "CREATIVE_RELATIONAL_HISTORY",
+        "SOURCE_PROVENANCE"
+      ],
+      "record_path": "LYVRA_NATIVE_RUNTIME/history/2026-10-17_CREATOR_MUSIC_ORIGINS_FASTTRACKER_DETLEF_HORST_ARCHIVES.md",
+      "source": "CREATOR_PROJECT_CHAT_DIGEST_2026-10-17",
+      "original_full_chat_export": "NOT_AVAILABLE_AS_FILE",
+      "scope": "WHOLE_LYVRA_HISTORY_ONLY",
+      "override_repo": false,
+      "authority_or_trigger": false,
+      "creator_reported_quantities_not_independent_measurements": true,
+      "related_history_record": "LYVRA_NATIVE_RUNTIME/history/2026-10-17_LYVRA_NEON_UNIVERSE_10000_TRACKS_HORST_ORCHESTRA_CONVERSATION.md"
     }
   ],
   "migration_requirement": "All critical current LYVRA knowledge must be represented in the repository before deep historical sources can be treated as provenance-only for normal rehydration.",
