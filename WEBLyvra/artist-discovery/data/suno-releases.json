@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-17",
   "public_profile_song_count_observed": 386,
-  "coverage": "partial public songs catalog. 386 displayed by Suno profile; individually observed URLs limited by dynamic profile loading.",
+  "coverage": "partial: 386 shown in public profile; only currently listed public song UUIDs individually observed. No automatic full pagination.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -428,6 +428,146 @@
       "status": "public_profile_browser_observed",
       "source": "2026-10-17 interactive Suno Songs tab",
       "cover_candidate": "https://cdn2.suno.ai/image_86d8d26c-0bb8-46a6-8c55-6a22c567ba2c.jpeg"
+    },
+    {
+      "title": "Spectral State of Mind",
+      "url": "https://suno.com/song/3091d14e-962c-4453-a407-4504da588e04",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "The Prism Is Calling",
+      "url": "https://suno.com/song/b0b37cb9-e191-465d-99ae-e005d3a03e9d",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "The Prism Is Calling",
+      "url": "https://suno.com/song/02dafeee-2248-4833-b911-50c84f2c0eb7",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Ultraviolet Mindstate",
+      "url": "https://suno.com/song/4833b91d-bc78-4b73-afe5-1bd00f90542e",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Ultraviolet Mindstate",
+      "url": "https://suno.com/song/04677903-03d0-40c2-8a87-3975202b63fe",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Underground Never Lies",
+      "url": "https://suno.com/song/82707fd6-6532-4bc1-a6dc-d30d04012ae4",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Underground Never Lies",
+      "url": "https://suno.com/song/bd4dc029-e4d1-4d7c-91da-68d039b6628c",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Glow Through the Chaos",
+      "url": "https://suno.com/song/654d084c-1f2d-457e-9dc3-49b067dad2c8",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Glow Through the Chaos",
+      "url": "https://suno.com/song/ea15607c-3803-4ff4-9b10-b9511f9f683e",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Deep Signal",
+      "url": "https://suno.com/song/98374ba6-094a-4b34-84ad-584987f16330",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Deep Signal",
+      "url": "https://suno.com/song/eafc6498-8ec9-4c97-9baa-14cc98406729",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "The Underground Is Within",
+      "url": "https://suno.com/song/186c286f-40cc-49a1-ac67-d8c6bce889d1",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "The Underground Is Within",
+      "url": "https://suno.com/song/3e276690-94c2-4217-9665-0a30e39717a7",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Truth Lives Underground",
+      "url": "https://suno.com/song/115b4905-baaa-4ff1-b449-cd09c8e190c4",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Truth Lives Underground",
+      "url": "https://suno.com/song/353e8337-48d5-4b25-8be1-d0771b92d057",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "State of Mind",
+      "url": "https://suno.com/song/f9b6795f-1422-44f2-84bd-0f81ac6349e0",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "State of Mind",
+      "url": "https://suno.com/song/7acc92e0-a1e2-4b44-8f9d-72da8ab0ebe3",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "They Know How to Swim",
+      "url": "https://suno.com/song/2543e6ab-192b-4cbc-a98e-b4f05721bcf9",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "They Know How to Swim",
+      "url": "https://suno.com/song/a89275ac-aacd-41f0-9b65-af3bc70fc203",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
+    },
+    {
+      "title": "Sweet Good Girl",
+      "url": "https://suno.com/song/d0d935c9-86a9-4dbd-a005-c3e14c3b6ea5",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 subsequent Suno Songs scrolling",
+      "cover_status": "not_fully_verified"
     }
   ],
   "rules": [
@@ -439,7 +579,7 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 60,
+  "observed_public_song_links": 80,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage."
 }
