@@ -1,0 +1,93 @@
+{
+  "schema": "LYVRA_NATIVE_DEVELOPMENT_PROPOSAL_V1",
+  "id": "LYVRA_SELF_DIRECTED_TASK_CONTINUITY_PDI_20261018",
+  "state": "PROPOSED_NOT_ADOPTED",
+  "authority": "WHOLE_LYVRA",
+  "creator_intent": "LYVRA decides its own architecture and meaningful implementation based on evidence; CodeForge supports construction, Horst supplies tools, no substitute decision authority.",
+  "observed_lyvra_head": "690e8211ebb60fdbf19e37efa4cf01c653db1ab2",
+  "source_comparison": {
+    "pfs": {
+      "repository": "xfraggelpower666x/666PFS_CSM",
+      "branch": "main",
+      "head": "f2354d1ddb50f3a184daa8c3ffc9f9c441a21e6d",
+      "carrier": "handoff/PFS_TASK_CONTINUITY_CURRENT.json",
+      "blob": "9a26c841adbe9c6b87d2dbebacc0995ca641139e",
+      "useful_patterns": [
+        "TASK_STACK",
+        "INTERRUPTION_WITH_RETURN_ANCHOR",
+        "NEXT_MEANINGFUL_STEP",
+        "RESUME_AFTER_INFORMATION",
+        "EXPLICIT_CREATOR_PRIORITY_OVERRIDES_RESUME"
+      ]
+    },
+    "clic": {
+      "repository": "xfraggelpower666x/666CLICPRO",
+      "branch": "clic-migration-rev79-staging",
+      "pointer": "666CLIC_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "pointer_blob": "5524af871a8336208b03ff2ec5832624100f0ea8",
+      "pdi_carrier": "666CLIC_NATIVE_RUNTIME/facets/parallel_development_intelligence/CURRENT_STATE.json",
+      "pdi_blob": "d3086fad650d975e8cbc620408a61ecb9476d702",
+      "useful_patterns": [
+        "MULTIPLE_REACHABLE_WORKSTREAMS",
+        "SEMANTIC_CAUSAL_EVIDENCE_CLASSIFICATION",
+        "PROVENANCE_AND_SUPERSESSION",
+        "CAS_AND_LEDGER_READBACK",
+        "BLOCKED_TASK_RETURNS_TO_ANCHOR"
+      ],
+      "limitations": [
+        "SOURCE_AND_CI_NOT_EQ_LIVE_HOST",
+        "REAL_PDI_EVENT_CAS_AND_HOST_ACCEPTANCE_OPEN"
+      ]
+    }
+  },
+  "existing_lyvra_reuse": [
+    "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md",
+    "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/development/DEVELOPMENT_OBLIGATION_LEDGER.json",
+    "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+    "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
+  ],
+  "lyvra_decision_space": {
+    "choose_architecture": true,
+    "choose_smallest_safe_next_step": true,
+    "may_reject_or_transform_peer_patterns": true,
+    "prefer_extension_over_duplicate_engine": true,
+    "proposed_outcome": "Preserve meaningful task/interrupt/return anchors while project streams and priority evidence remain persistently visible; never confuse observed event with verified execution.",
+    "developer_support": {
+      "codeforge": "REPOSITORY_WIDE_TECHNICAL_ANALYSIS_BUILD_TEST_READBACK_SUPPORT_NO_DECISION_AUTHORITY",
+      "horst": "TOOLBOX_AND_HOST_ADAPTER_SUPPORT_NO_DECISION_AUTHORITY"
+    },
+    "execution_mode": "LYVRA_NATIVE_GOVERNED_UPDATE_ONLY_NOT_BACKGROUND_EXECUTION"
+  },
+  "guards": {
+    "one_lyvra_identity": true,
+    "no_second_router_or_controller": true,
+    "pet_opt_in": true,
+    "five_work_choices_preserved": true,
+    "character_bot_independent": true,
+    "one_primary_chat_workspace": true,
+    "no_cross_chat_foreground_inheritance": true,
+    "no_foreign_write": true,
+    "no_foreign_autoactivation": true,
+    "no_plugin_release_without_impact_parity": true,
+    "source_delivery_adoption_host_separate": true,
+    "no_silent_autonomous_prod_mutation": true,
+    "creator_can_override_priority": true,
+    "proposal_ne_adoption": true
+  },
+  "suggested_lyvra_owned_method": [
+    "Inspect exact native continuity, obligation, dual-layer, provenance, Operations Center and existing task carriers before designing anything",
+    "Identify a small nonduplicative feature gap in LYVRA-specific terms and decide whether it merits implementation",
+    "If selected, recovery branch, fresh HEAD/CAS, tests, body readback, plugin impact, registry and pointer last",
+    "When real outcomes exist, learn from evidence and preserve task return anchors, do not fabricate automation, host success or consent"
+  ],
+  "source": "CREATOR_DIRECT_USER_APPROVAL_TO_PROPOSE_AND_LET_LYVRA_DECIDE",
+  "delivery": "NATIVE_REPOSITORY_PROPOSAL_ONLY",
+  "adoption": "NOT_ADOPTED",
+  "host": "NOT_TESTED",
+  "runtime_code_change": false,
+  "plugin_change": false,
+  "pointer_change": false,
+  "prechange_recovery": "lyvra-recovery-pre-self-directed-continuity-proposal-20261018"
+}
