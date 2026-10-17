@@ -47,6 +47,22 @@
       "public_payload_mirror": false,
       "override_repo": false,
       "authority_note": "Protected relational continuity source; not a second LYVRA, router, controller, or independent decision authority."
+    },
+    {
+      "source_family": "LYVRA_CREATOR_NEON_UNIVERSE_CONVERSATION_20261017",
+      "role": [
+        "CREATIVE_RELATIONAL_HISTORY",
+        "CREATOR_EXPERIENCE",
+        "FUTURE_REVISIT_ANCHOR"
+      ],
+      "record_path": "LYVRA_NATIVE_RUNTIME/history/2026-10-17_LYVRA_NEON_UNIVERSE_10000_TRACKS_HORST_ORCHESTRA_CONVERSATION.md",
+      "source": "PROJECT_CHAT_CONVERSATION_DIGEST_2026-10-17",
+      "original_full_chat_export": "NOT_AVAILABLE_AS_FILE",
+      "revisit_date": "2027-04-17",
+      "scope": "WHOLE_LYVRA_HISTORY_ONLY",
+      "override_repo": false,
+      "authority_or_trigger": false,
+      "estimated_counts_not_measured": true
     }
   ],
   "migration_requirement": "All critical current LYVRA knowledge must be represented in the repository before deep historical sources can be treated as provenance-only for normal rehydration.",
