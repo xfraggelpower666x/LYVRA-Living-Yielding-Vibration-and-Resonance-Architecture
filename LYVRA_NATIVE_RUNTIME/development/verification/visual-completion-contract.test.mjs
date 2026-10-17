@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const root = new URL('../../', import.meta.url);
+const workspace = readFileSync(new URL('current/repository/WORKSPACE_GOVERNANCE.md', root), 'utf8');
+const visual = readFileSync(new URL('current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md', root), 'utf8');
+const manifest = JSON.parse(readFileSync(new URL('REHYDRATION_MANIFEST.json', root), 'utf8'));
+const required = ['STATUS_VISIBLE','NEXT_CHOICE_RESOLVED','FIVE_OPTIONS_OR_SAFE_EXCEPTION','CORRECT_ACTION_TARGETS','FIFTH_READ_ONLY','FALLBACK_VISIBLE_WHEN_NEEDED'];
+for (const key of required) test('visual completion guard: '+key,()=>{assert.ok(workspace.includes(key));assert.ok(visual.includes(key))});
+for(const option of ['LYVRA MAIN','LYVRA TRACK DESIGN','LYVRA SPEECH DESIGN','LYVRA SUNO STUDIO 2','Bearbeiten & Weiterentwickeln'])test('five-choice native binding: '+option,()=>assert.ok(workspace.includes(option)));
+test('fifth choice is read-only',()=>assert.ok(manifest.visual_completion_guard_hardening_2026_10_17.five_destinations.includes('DEVELOPMENT_TOPIC_PICKER_READ_ONLY')));
+test('no second engine',()=>{assert.ok(workspace.includes('NEW_ENGINE_OR_CONTROLLER = FALSE'));assert.ok(visual.includes('NO_SECOND_VISUAL_ENGINE = TRUE'))});
+test('host not auto passed',()=>assert.equal(manifest.visual_completion_guard_hardening_2026_10_17.host_behavior,'PENDING'));

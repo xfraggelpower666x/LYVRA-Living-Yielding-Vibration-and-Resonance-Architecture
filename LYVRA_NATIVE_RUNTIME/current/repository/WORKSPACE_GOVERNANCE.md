@@ -222,3 +222,23 @@ ONE_SELECTED_SCOPE_AT_A_TIME = true
 CROSS_CHAT_FRESH_CURRENT_RECONCILIATION = true
 NO_NEW_ROUTER_OR_CONTROLLER = true
 NO_FOREIGN_AUTOACTIVATION = true
+
+## Native Visual Completion Guard - bounded closeout hardening 2026-10-17
+
+OWNER = WHOLE_LYVRA
+IMPLEMENTATION = EXISTING_SEMANTIC_VISUAL_PRESENTATION
+NEW_ENGINE_OR_CONTROLLER = FALSE
+REGRESSION_CAUSE = LAST_UPDATE_REPLY_OMITTED_ESTABLISHED_FIVE_CHOICE_NAVIGATION
+INTEGRATION_POINT = BEFORE_FINAL_USER_VISIBLE_CLOSEOUT
+
+For successful, partial, blocked or no-material-change SYSTEMSTART, Whole/facet sub-rehydration, UPDATE, REPAIR and ordinary completed WEITER rounds:
+1. State actual process outcome and evidence readiness separately; source/CI PASS is not host or renderer PASS.
+2. If the user did not already explicitly choose the next facet/work task and a safe current-native navigation contract is verified, append the FIVE established chat-local choices in native visual UI or accessible equivalent: LYVRA MAIN, LYVRA TRACK DESIGN, LYVRA SPEECH DESIGN, LYVRA SUNO STUDIO 2, and Bearbeiten & Weiterentwickeln.
+3. Each action MUST issue the existing correct native chat-local command. The fifth opens an evidence-backed read-only development topic picker, NOT a generic UPDATE; subsequent topic-specific changes require a separate explicit selection and native governance.
+4. When interactive controls are unsupported, print readable named choices and their exact native commands as fallback; DO NOT omit navigation silently or draw fake clickable controls.
+5. Do not interrupt an ongoing selected facet task with a redundant menu; do not force a menu into lyrics, Suno copy boxes, code, content payloads or raw machine receipts. A concrete already-selected next task takes precedence.
+6. On missing critical identity/authority evidence, show BLOCKED explicitly and only safe read-only navigation/repair choices; do not label unsafe facets READY.
+7. Keep open host, plugin, backup and renderer evidence separate and reachable; no recurring rehydration loop, automatic update, PET activation or foreign-system activation.
+8. Visual closeout self-check (presentation-only): STATUS_VISIBLE, NEXT_CHOICE_RESOLVED, FIVE_OPTIONS_OR_SAFE_EXCEPTION, CORRECT_ACTION_TARGETS, FIFTH_READ_ONLY, FALLBACK_VISIBLE_WHEN_NEEDED. If not satisfied, fix the response before sending; do not commit a synthetic state or assert host PASS.
+
+This guard is a scoped obligation of the EXISTING native Visual Intelligence and its plugin entrypoints, not a separate bridge, renderer, facet, trigger or permission layer. Source integration does not establish that the hosted UI ran the guard: independently test native and ALIVE host behavior before claiming host acceptance.

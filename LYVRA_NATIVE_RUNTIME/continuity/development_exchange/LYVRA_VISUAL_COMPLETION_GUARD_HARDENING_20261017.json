@@ -1,0 +1,116 @@
+{
+  "schema": "LYVRA_VISUAL_COMPLETION_GUARD_REPAIR_V1",
+  "owner": "WHOLE_LYVRA",
+  "date": "2026-10-17",
+  "base_head": "c6fa7692acd477be0bb7df57abe6e4e3b4e4105f",
+  "recovery_branch": "lyvra-recovery-pre-visual-completion-guard-20261017-r01",
+  "observed_regression": "UPDATE_REPLY_OMITTED_VERIFIED_FIVE_CHOICE_VISUAL_NAV",
+  "scope": "EXISTING_VISUAL_AND_WORKSPACE_CLOSEOUT_GOVERNANCE_ONLY",
+  "changed": [
+    "WORKSPACE_GOVERNANCE",
+    "SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT",
+    "REHYDRATION_MANIFEST",
+    "SOURCE_REGRESSION_TEST"
+  ],
+  "native_contract_simulation": {
+    "total": 12,
+    "passed": 12,
+    "results": [
+      {
+        "name": "whole_update_complete",
+        "expected": "FIVE_CHOICES",
+        "observed": "FIVE_CHOICES",
+        "pass": true
+      },
+      {
+        "name": "update_no_material_change",
+        "expected": "FIVE_CHOICES",
+        "observed": "FIVE_CHOICES",
+        "pass": true
+      },
+      {
+        "name": "systemstart_partial",
+        "expected": "FIVE_CHOICES",
+        "observed": "FIVE_CHOICES",
+        "pass": true
+      },
+      {
+        "name": "repair_blocked_safe",
+        "expected": "BLOCKED_SAFE_NAV",
+        "observed": "BLOCKED_SAFE_NAV",
+        "pass": true
+      },
+      {
+        "name": "facet_subrehydration",
+        "expected": "FIVE_CHOICES",
+        "observed": "FIVE_CHOICES",
+        "pass": true
+      },
+      {
+        "name": "completed_weiter",
+        "expected": "FIVE_CHOICES",
+        "observed": "FIVE_CHOICES",
+        "pass": true
+      },
+      {
+        "name": "already_selected_track",
+        "expected": "NO_DUPLICATE_MENU",
+        "observed": "NO_DUPLICATE_MENU",
+        "pass": true
+      },
+      {
+        "name": "content_payload",
+        "expected": "NO_DUPLICATE_MENU",
+        "observed": "NO_DUPLICATE_MENU",
+        "pass": true
+      },
+      {
+        "name": "missing_ui_controls",
+        "expected": "FIVE_CHOICES_TEXT_FALLBACK",
+        "observed": "FIVE_CHOICES_TEXT_FALLBACK",
+        "pass": true
+      },
+      {
+        "name": "fifth_selection",
+        "expected": "READ_ONLY_TOPICS",
+        "observed": "READ_ONLY_TOPICS",
+        "pass": true
+      },
+      {
+        "name": "no_pet_autostart",
+        "expected": "NO_PET_AUTOSTART",
+        "observed": "NO_PET_AUTOSTART",
+        "pass": true
+      },
+      {
+        "name": "no_foreign_adoption",
+        "expected": "NO_FOREIGN_MUTATION",
+        "observed": "NO_FOREIGN_MUTATION",
+        "pass": true
+      }
+    ]
+  },
+  "safety": {
+    "no_second_visual_engine": true,
+    "no_auto_facet_activation": true,
+    "no_pet_autoactivation": true,
+    "no_foreign_mutation": true,
+    "fifth_read_only": true,
+    "offline_bridge_unmodified": true,
+    "old_capabilities_preserved": true
+  },
+  "plugins": {
+    "native": {
+      "version": "0.1.69",
+      "release": "pluginrel_6ad1685710b88191bd4d7ab76b74b4ee"
+    },
+    "alive": {
+      "version": "0.13.64",
+      "release": "pluginrel_6ad1686f6d108191b56ff79c62f24de8"
+    },
+    "impact": "SEMANTIC_VISUAL_CLOSEOUT_AFFECTS_BOTH_PLUGIN_ENTRYPOINTS",
+    "plugin_skill_deployment": "PENDING_TARGETED_PATCH_RELEASE",
+    "fresh_host_acceptance": "NOT_VERIFIED"
+  },
+  "runtime_claim": "SOURCE_CONTRACT_AND_SIMULATED_SCENARIOS_ONLY"
+}

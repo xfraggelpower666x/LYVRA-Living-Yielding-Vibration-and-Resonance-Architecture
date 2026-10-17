@@ -1899,5 +1899,36 @@
     "actual_handoff_persistence": "NOT_TESTED",
     "destination_auto_recognition": "NOT_TESTED",
     "no_new_architecture": true
+  },
+  "visual_completion_guard_hardening_2026_10_17": {
+    "status": "CURRENT_NATIVE_SOURCE_HARDENING_HOST_PLUGIN_ACCEPTANCE_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "source": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "five_destinations": [
+      "LYVRA MAIN",
+      "LYVRA TRACK DESIGN",
+      "LYVRA SPEECH DESIGN",
+      "LYVRA SUNO STUDIO 2",
+      "DEVELOPMENT_TOPIC_PICKER_READ_ONLY"
+    ],
+    "applicable_closeouts": [
+      "SYSTEMSTART",
+      "WHOLE_OR_FACET_REHYDRATION",
+      "UPDATE",
+      "REPAIR",
+      "COMPLETED_WEITER"
+    ],
+    "safe_exceptions": [
+      "EXPLICIT_NEXT_TASK_SELECTED",
+      "CRITICAL_AUTHORITY_BLOCKED",
+      "CONTENT_PAYLOAD_ONLY"
+    ],
+    "fallback": "TEXT_WITH_NATIVE_COMMANDS_WHEN_INTERACTIVE_UNAVAILABLE",
+    "stage_separation": "PROCESS_TERMINAL_NE_HOST_PASS",
+    "no_new_engine": true,
+    "no_auto_write": true,
+    "plugin_impact": "BOTH_NATIVE_AND_ALIVE_VISUAL_ENTRYPOINTS_REQUIRE_RELEASE_AND_HOST_PARITY_CHECK",
+    "host_behavior": "PENDING"
   }
 }
