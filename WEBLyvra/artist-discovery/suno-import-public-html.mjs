@@ -15,7 +15,7 @@ const html=fs.readFileSync(input,'utf8');
 const raw=JSON.parse(fs.readFileSync(dataFile,'utf8'));
 if (!Array.isArray(raw.public_songs)) throw new Error('Expected public_songs array');
 const deentity=s=>s.replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#(?:39|x27);/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>').trim();
-const re=/<a\\b[^>]*href="https:\\/\\/suno\\.com\\/song\\/([0-9a-f-]{36})"[^>]*>([^<]{1,250})<\\/a>/g;
+const re=/<a\b[^>]*href="https:\/\/suno\.com\/song\/([0-9a-f-]{36})"[^>]*>([^<]{1,250})<\/a>/g;
 const seen=new Map();
 for (const m of html.matchAll(re)) {
   const title=deentity(m[2]);
@@ -36,6 +36,6 @@ if (apply) {
   raw.public_songs.push(...additions);
   raw.observed_public_song_links=raw.public_songs.length;
   raw.coverage='partial; public profile song count and HTML anchor coverage are separate measurements';
-  fs.writeFileSync(dataFile,JSON.stringify(raw,null,2)+'\\n');
+  fs.writeFileSync(dataFile,JSON.stringify(raw,null,2)+'\n');
   console.log('Wrote',dataFile);
 } else console.log('Dry run. Pass --apply only after reviewing evidence and backups.');
