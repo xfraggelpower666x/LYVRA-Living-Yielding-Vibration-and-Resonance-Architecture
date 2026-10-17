@@ -109,6 +109,23 @@ Use (provider + provider_item_id) as ingestion identity. Preserve variants and p
 ## UI
 Single centered cyber-neon section consistent with WEBLyvra; filter provider/type/genre, search and sort, responsive gallery, original cover where verified, direct provider link and accessible fallbacks. Distinguish `Last scanned` from `Last confirmed published`. DE/EN from WEBLyvra i18n; no competing language state. Never duplicate the existing radio or main player.
 
+## Live-page card migration contract — approved design reference, controlled replacement
+User direction (2026-10-17): **Reuse the styling and behavior of the existing live WEBLyvra individual platform cards as a design reference for the add-on. Once the new add-on is integrated and verified, remove the old individual cards from the website.** No simultaneous duplicate card sections.
+
+Observed directly on live WEBLyvra: the existing `CONNECTED UNIVERSE / Unsere digitalen Welten` section contains cards for LYVRA, 666SOUNDsDESIGn BROADCASTER, VELUNA BROADCASTER, TWITCH BROADCAST SOURCE, Twitch channel, Spotify artist profile, Apple Music, Amazon Music, TIDAL, SoundCloud, YouTube Music, Mixcloud, Suno, Facebook, YouTube, Spotify personal profile and Discord, with expanded info text. Preserve **separate destinations** for Twitch broadcast page versus Twitch channel, Spotify artist versus personal user, and the three different radio surfaces.
+
+Design inspiration to retain: cyber symbols/logos, short platform labels, consistent hover/tap info, readable descriptions and external links, centered grouped cards, responsive mobile taps and the established cyber-neon visual language. New additive capabilities: expanded store network and evidence badges, discography filtering, source-aware sync, unified bilingual navigation.
+
+**Replacement gate, not immediate deletion:**
+1. Re-read the exact productive source and deployed page/current repository revision immediately before work; site and staged addon may have diverged.
+2. Prepare a complete before/after card inventory and explicit stable URLs, with no missing links, unknown destinations or status promotions. Preserve privacy distinctions (Discord user profile is not server invitation).
+3. Build the combined addon in staging, using the card system already present as design reference. Integrate only once, in one centered site area; preserve main radio player, Dynasty/Identity, gallery and other unrelated sections.
+4. In the SAME controlled integration change, remove/hide the **legacy individual platform card section only after replacement content is present**. Do not delete the underlying `data/platforms.json` source or the radio/social/store facts.
+5. Verify desktop/mobile, hover/tap, DE/EN, accessibility, all external links, radio URLs, separately grouped types, release attribution, no duplicate cards, and actual fresh production host readback.
+6. If deployment or validation fails, revert to the previous functioning card section. No `LIVE PASS` until readback.
+
+**Important current limitation:** `WEBLyvra/live/dist/index.html` on the `lyvra` branch is not assumed to contain the same card markup as the presently deployed production webpage. Determine the actual source/deployment artifact first; no blind removal in an older source copy.
+
 ## Phased delivery
 1. Unify existing Suno and SoundCloud data in read-only merged discography preview; leave individual platform sources intact.
 2. Implement source adapters with capture receipts; prove count/identity validation on public snapshots.
