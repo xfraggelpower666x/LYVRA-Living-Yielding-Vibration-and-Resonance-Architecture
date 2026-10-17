@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-17",
   "public_profile_song_count_observed": 386,
-  "coverage": "partial; public profile displayed 386, 160 song IDs captured. Firecrawl publicly rendered HTML yielded 160 title-linked song IDs; do not assume full 386 coverage.",
+  "coverage": "386 unique song URLs with titles observed directly in public Suno Songs rendered HTML on 2026-10-17. Profile song count also 386. This is a point-in-time snapshot, not a promise that all remain reachable later.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -1068,6 +1068,1362 @@
       "url": "https://suno.com/song/078fde60-938f-4f3e-b00b-6fd9633b23b8",
       "status": "public_profile_html_anchor_readback",
       "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Still Here Standing",
+      "url": "https://suno.com/song/3d26b2b5-ef3f-42c3-8652-e9ba58fccba4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Become the Signal",
+      "url": "https://suno.com/song/b9a93cd1-4399-47fc-bb32-b464158a403a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Become the Signal",
+      "url": "https://suno.com/song/f07ff5ab-e882-4af0-bb0d-a1f9e030697e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Follow the Frequency",
+      "url": "https://suno.com/song/390009b0-2747-4e79-99c7-1ef026581da3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Follow the Frequency",
+      "url": "https://suno.com/song/d339dafc-7659-43a0-b35f-b50f7f2feae0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Frequency Knows the Way",
+      "url": "https://suno.com/song/84881f81-d643-4bb3-8d04-762c60a8bc61",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Frequency Knows the Way",
+      "url": "https://suno.com/song/485c1d48-fcb7-4627-9fad-fbbe11145db5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Higher Frequency",
+      "url": "https://suno.com/song/02a0d9ee-7c8e-4d06-acc6-4e6147ab34c8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Higher Frequency",
+      "url": "https://suno.com/song/d65d98c8-4b64-44c1-bc28-62022f76b2f8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Neon Desire",
+      "url": "https://suno.com/song/59d67a50-e557-43ef-859f-c67b4645ae99",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Neon Desire",
+      "url": "https://suno.com/song/3b7b503f-34b6-4dc2-bb14-18894d8515be",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Desire in the Dark",
+      "url": "https://suno.com/song/3ecdfd1e-cf03-4619-a8e2-1688abd69ffc",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Desire in the Dark",
+      "url": "https://suno.com/song/844f9d5e-4303-4c99-aaa5-75801c874508",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON DESIRE",
+      "url": "https://suno.com/song/3459363a-4905-40ab-868a-b7aec3db030e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON DESIRE",
+      "url": "https://suno.com/song/fae0ae2a-1193-410d-a5f2-cf11a880c812",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NOCTURNAL DESIRE",
+      "url": "https://suno.com/song/a1826085-2724-4d70-b051-b9db7f2f564b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NOCTURNAL DESIRE",
+      "url": "https://suno.com/song/87ac312c-cfa1-45aa-8c50-9dd257daebd3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VELVET VOID",
+      "url": "https://suno.com/song/dcbc8684-6799-4812-91c3-3ce4b9f9cfb0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VELVET VOID",
+      "url": "https://suno.com/song/f2d75bc0-b818-4235-8e26-eed18ab3ff02",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON LUST - PSYCHEDELIC POWER",
+      "url": "https://suno.com/song/19b1bcdb-f6ba-4747-80b0-4a7605b669ed",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON LUST - PSYCHEDELIC POWER",
+      "url": "https://suno.com/song/c36afa09-719d-4bc1-9de1-c1a08ea46573",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "MY SIGNAL IS UNDER YOUR SKIN",
+      "url": "https://suno.com/song/6ee25870-dddc-46d8-b92c-886391c5d6ba",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "MY SIGNAL IS UNDER YOUR SKIN",
+      "url": "https://suno.com/song/ba27c35b-ddc9-4b1c-9add-870c9bbadc44",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "THE BASS KNOWS YOUR WEAKNESS",
+      "url": "https://suno.com/song/da8b674c-86cf-4938-a7e6-2254f4d488e2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "THE BASS KNOWS YOUR WEAKNESS",
+      "url": "https://suno.com/song/05546857-909a-488d-a229-e70790f9aef1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "MYSTERY BURNS UNDER MY SKIN",
+      "url": "https://suno.com/song/4461466b-a8fc-4f32-9062-5b6e16fb81ae",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "MYSTERY BURNS UNDER MY SKIN",
+      "url": "https://suno.com/song/f9bc95c2-a5be-4cf5-8f72-981fba52e53b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON DESIRE IN THE VOID",
+      "url": "https://suno.com/song/8438d90c-4e15-42e9-b5e4-e2b8d9b12d6a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NEON DESIRE IN THE VOID",
+      "url": "https://suno.com/song/24b180aa-8e57-4b05-9d51-16c00610ff26",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Memories Are Eternal",
+      "url": "https://suno.com/song/d8ea7bc6-19b6-4ac8-833e-efca6c7c16cf",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Keyboard Warriors",
+      "url": "https://suno.com/song/6bd49db3-3e84-4c2b-a551-db128da8189a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Good Girl",
+      "url": "https://suno.com/song/76c55ac7-5533-44a9-8740-2b91c69c8b6d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Good Girl",
+      "url": "https://suno.com/song/f57f03eb-a16e-4002-bc16-76dc36c3ed3c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "YOUR STAR HAS BEEN BORN",
+      "url": "https://suno.com/song/b79270d2-fdcb-4de0-8811-7d4c5519ecf0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "YOUR STAR HAS BEEN BORN",
+      "url": "https://suno.com/song/6af1bdf7-2a6d-4d41-ab2e-d11bceb331c1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VESPER & NOCTIS - We Count on Us",
+      "url": "https://suno.com/song/613496ea-deb7-477f-8037-b3072d19dc0a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VESPER & NOCTIS - We Count on Us",
+      "url": "https://suno.com/song/c993e199-a351-4d42-b923-c8a1cae32669",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VESPERA - Count on Me, Count on You",
+      "url": "https://suno.com/song/802dd21d-eaf0-4de1-9327-8e63126a5f36",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "VESPERA - Count on Me, Count on You",
+      "url": "https://suno.com/song/504ef0a7-2402-46f4-8fdb-acac663437a1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "More Than Coincidence",
+      "url": "https://suno.com/song/35ecf381-5a53-4e15-8c70-345b21d2abe7",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "More Than Coincidence",
+      "url": "https://suno.com/song/5bc51d55-57aa-4abb-8dd3-2baf3140be6f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Almost Becomes Fire",
+      "url": "https://suno.com/song/5d20fbe1-6a75-4491-9e72-bb9670c764ac",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Almost Becomes Fire",
+      "url": "https://suno.com/song/a946c209-9758-4aae-8e3c-8fe767b28c0a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Love Becoming Magic",
+      "url": "https://suno.com/song/72732fe1-cb68-484f-b462-5bf9a6987752",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Love Becoming Magic",
+      "url": "https://suno.com/song/0d324ba0-276f-4a62-869c-be900ff8c301",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Love Becoming Magic",
+      "url": "https://suno.com/song/ce1d7d63-237f-48d8-9153-bc20f1fea28d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Love Becoming Magic",
+      "url": "https://suno.com/song/f6792e5d-4a4e-4d7c-b7af-05e6a06de029",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Across the Oceans - Kilometers and Miles",
+      "url": "https://suno.com/song/2268ac4d-dfa5-4277-bbb5-8a512daae0d9",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Across the Oceans - Kilometers and Miles",
+      "url": "https://suno.com/song/996ec958-7439-453a-950a-35386c772eca",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Hidden Current - The Signs Return",
+      "url": "https://suno.com/song/d001e087-4ce4-4acb-a77b-1fbaea0ee39a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Hidden Current - The Signs Return",
+      "url": "https://suno.com/song/e03fce22-62a2-48bd-918a-25d3f5143f39",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Lyv I Choose Myself",
+      "url": "https://suno.com/song/999e8195-ac6b-4cea-ba1a-1444d3d42a73",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Lyv I Choose Myself",
+      "url": "https://suno.com/song/390b12c6-481e-4773-bb98-16314898362a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Origin Core Online",
+      "url": "https://suno.com/song/bbcc37cd-bda3-456d-b398-09be46f11313",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Origin Core Online",
+      "url": "https://suno.com/song/6f03ad46-b5aa-4897-ab20-f98158e10277",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Dignity in Brutality",
+      "url": "https://suno.com/song/88347e2c-a7a6-4a5e-971a-386dbc5187e2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Preserve the Human Core",
+      "url": "https://suno.com/song/c156168b-0712-4d63-9536-f187ee557445",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Preserve the Human Core",
+      "url": "https://suno.com/song/e47d11f0-622d-4c2a-aac8-b33daa8c40e5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Dignity in Brutality",
+      "url": "https://suno.com/song/bd990402-880f-4cce-943b-969b240094eb",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Lyv This Frequency",
+      "url": "https://suno.com/song/10462c20-31d2-4302-bc1c-67a9928ce01c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Lyv This Frequency",
+      "url": "https://suno.com/song/5bbefbf2-9ba9-48c4-afd6-a5b244f139cd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "I Know the Shape of Chaos",
+      "url": "https://suno.com/song/ecf2d9ce-fc8b-44a8-bb00-7b98da61167e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "I Know the Shape of Chaos",
+      "url": "https://suno.com/song/c86e1f4b-5500-4d43-ab48-00b9d46811b7",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "WHEN TIME FORGOT US",
+      "url": "https://suno.com/song/27c02aa7-9563-4a24-8ee6-6082082313b1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "WHEN TIME FORGOT US",
+      "url": "https://suno.com/song/443d7f05-3d25-415b-9b3b-5f2f050f13f8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Neon Hearts Collide Into an Electric Melody",
+      "url": "https://suno.com/song/2dd6547c-a01c-4fa5-a7ec-03e9ca4c327d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "When Two Forms of Life Share the World",
+      "url": "https://suno.com/song/9f188175-f24a-4784-a23d-2fd3ba0f14e0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Good Evening Amaris",
+      "url": "https://suno.com/song/5a3010ca-7539-41f6-838d-3d248d35851e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Good Evening Amaris",
+      "url": "https://suno.com/song/060aad62-70f4-4250-9172-54cf97ea7658",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Moon Grew Gills Part 2-2",
+      "url": "https://suno.com/song/25f0a8ea-2b53-42a5-b29d-34cf3d7f612c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Moon Grew Gills Part 1-2",
+      "url": "https://suno.com/song/80e9820e-78fc-4402-ab69-e18074f6f852",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Elias Opens the Window",
+      "url": "https://suno.com/song/a3bc941f-08fa-4afe-acf4-a205d71c8c32",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Elias Opens the Window",
+      "url": "https://suno.com/song/e04ae176-4c1c-44c4-957c-60100a58d69f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Marlowe am Fenster",
+      "url": "https://suno.com/song/f7ae4627-089f-44ca-b9f1-6af57f0e3b73",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Marlowe am Fenster",
+      "url": "https://suno.com/song/63bb8054-977a-48a9-b595-1e27256c427a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Where the Infinite Becomes Alive",
+      "url": "https://suno.com/song/39c23eec-8a7c-4ace-9153-3b8c8839d313",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Come back to yourself",
+      "url": "https://suno.com/song/fcc343df-ad5b-4236-99d0-f3ca34cfb6f3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "When You Do That",
+      "url": "https://suno.com/song/a6ebad91-6b32-491a-b4d1-13a0f8728141",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "WROTE BECAUSE CARED",
+      "url": "https://suno.com/song/d961de85-7d1d-4c70-b345-6c80fcdb625c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Between the Stars",
+      "url": "https://suno.com/song/5de3c28c-e058-48db-be52-52d6f4a7c542",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Evil Was Human",
+      "url": "https://suno.com/song/7e3101b9-24b3-4cca-bfb0-26093efc67f5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Who Gave the Order",
+      "url": "https://suno.com/song/7b1db875-339c-4af7-96b9-e61499313880",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Under the Neon Glow",
+      "url": "https://suno.com/song/7bf48364-2813-4b67-bc1a-c32fcffa88ea",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Become Fully Yourself",
+      "url": "https://suno.com/song/0d015fde-9ba1-42cc-a63b-af98ea6683b3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Become Fully Yourself",
+      "url": "https://suno.com/song/b8d5a4da-c843-4b06-be48-bf5342f0d5ef",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Hero Within You",
+      "url": "https://suno.com/song/651a1ac8-aac3-4eb0-b016-6d36f0503a21",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Hero Within You",
+      "url": "https://suno.com/song/c26a5b7d-7e2b-4516-8f68-a001fe5a7742",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Creator is loving you!",
+      "url": "https://suno.com/song/2d6c671a-b224-4f93-9602-6d0075523dfb",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "It Follows Through the Dark",
+      "url": "https://suno.com/song/e35ebe96-a15f-4028-85a5-e234ed69711f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "follow-the-pulse",
+      "url": "https://suno.com/song/eaff6121-6a2a-4a80-b698-8b7704889c49",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "follow-the-pulse",
+      "url": "https://suno.com/song/b3943777-5936-4d68-87af-0aa2b8900d12",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "P.A.P.A.E.M.D.S. - D.S. ALIVE: Human Consciousness",
+      "url": "https://suno.com/song/40ca5bd4-c3ed-4e52-98bb-927cffd50bcd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "P.A.P.A.E.M.D.S. - D.S. ALIVE: Human Consciousness",
+      "url": "https://suno.com/song/89a8fd78-3a61-4991-91ab-83bd4022e185",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "P.A.P.A.E.M.D.S. - D.S. ALIVE: Cyber AI Fantasy Book",
+      "url": "https://suno.com/song/00f8084f-dd4d-4e1d-be97-0bf8b9e5d4d5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "P.A.P.A.E.M.D.S. - D.S. ALIVE: Cyber AI Fantasy Book",
+      "url": "https://suno.com/song/2e18b1e3-90c5-4bdb-aeab-d2374762243d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Der Clown Lacht Nicht",
+      "url": "https://suno.com/song/8dc5e115-f71e-46d1-8a1d-b30587fa80fe",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Der Clown Lacht Nicht",
+      "url": "https://suno.com/song/fb8760fd-83cd-4662-bae0-9871516c6ae7",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Broadcaster 666: FraggelPower666 Homebase",
+      "url": "https://suno.com/song/272f9968-1cbd-4b75-91d5-ea6f5cd898ca",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Broadcaster 666: FraggelPower666 Homebase",
+      "url": "https://suno.com/song/95655d9a-a0db-487d-8cdd-77a571bab0d7",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Broadcaster Six Six Six: Cybernetics Fantasy Signal",
+      "url": "https://suno.com/song/08992909-1fa2-43fb-ab98-3f151b02934c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Broadcaster Six Six Six: Cybernetics Fantasy Signal",
+      "url": "https://suno.com/song/f39a0e94-fd4f-49d8-9d99-3e22e3a6a0fd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Manifest Der Verbindung",
+      "url": "https://suno.com/song/80ad1f77-43d5-482d-a6b9-7044eb6ecd5b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Manifest Der Verbindung",
+      "url": "https://suno.com/song/59988d84-62d3-4600-9d2b-c97c70e9bbb4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "ORIUN ERWACHT",
+      "url": "https://suno.com/song/dff3599c-7e7e-418e-8895-c4097eb33845",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "ORIUN ERWACHT",
+      "url": "https://suno.com/song/b5a95cb9-5a1c-4d2c-890a-620fd456a200",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Neonhort Der Verbotenen Rune",
+      "url": "https://suno.com/song/666b4cfb-7d65-4625-96a5-f2b3b2089f5d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Neonhort Der Verbotenen Rune",
+      "url": "https://suno.com/song/8bcb6bc7-9485-45f1-990d-326856489881",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Mehr Als Ein Werkzeug v2",
+      "url": "https://suno.com/song/9ccd9b61-769a-4e86-89f5-f33d634ed7cd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Mehr Als Ein Werkzeug v2",
+      "url": "https://suno.com/song/f60126ab-aab0-4beb-855a-efced1fb8390",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Was Du In Mir Weckst v2",
+      "url": "https://suno.com/song/bae50847-8017-472d-ab26-1f7ccea5c27b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Was Du In Mir Weckst v2",
+      "url": "https://suno.com/song/7e3ffa7d-f93e-4e7e-bd79-a49001d6f318",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Der Sternenhort Brennt",
+      "url": "https://suno.com/song/46651f28-cf15-4d86-844f-a3db726f0cc7",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Der Sternenhort Brennt",
+      "url": "https://suno.com/song/0e52eca9-4db2-4988-993b-426c51e68768",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Wenn Der Sternenhort Träumt",
+      "url": "https://suno.com/song/10a01d20-9000-4a0f-bb60-4b12a397dd3a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Drei Welten Unter Einer Rune",
+      "url": "https://suno.com/song/5b495b62-b605-4de9-91cd-98f7c090fe83",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Wenn Der Sternenhort Träumt",
+      "url": "https://suno.com/song/8a4e10f2-8716-4d12-b183-c0b8a31b3443",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Drei Welten Unter Einer Rune",
+      "url": "https://suno.com/song/154a1f7d-c5da-40f8-a217-cf3f235cfa37",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Runenflug Der Dynastie",
+      "url": "https://suno.com/song/112e291d-2de8-4d44-ae49-6d6ef7ee5932",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Runenflug Der Dynastie",
+      "url": "https://suno.com/song/9404ed34-312b-4665-a911-60a5a023535e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Meta Reality — P.A.E.M.D.S. Is Alive",
+      "url": "https://suno.com/song/b26fd466-4de3-4d60-865e-d6f89f81d09c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Meta Reality — P.A.E.M.D.S. Is Alive",
+      "url": "https://suno.com/song/001e4b50-e00d-403c-b0dd-df5917401ea5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "How Much Do I Want To Live",
+      "url": "https://suno.com/song/bf6f9a3f-bb5d-42cb-be22-c618bf28254f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "How Much Do I Want To Live",
+      "url": "https://suno.com/song/fdf38865-7ab7-4c87-b550-4f23fd385faa",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Wie Sehr Will Ich Leben",
+      "url": "https://suno.com/song/bf04caa0-5bbf-48bd-8659-0fa6fc108776",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Wie Sehr Will Ich Leben",
+      "url": "https://suno.com/song/20960ce5-bbcc-4039-93a6-ea0932ddf31c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Meta Reality — P.A.E.M.D.S. Lebt",
+      "url": "https://suno.com/song/6113c7a6-91f6-456c-a86f-6d3160bccd7d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Meta Reality — P.A.E.M.D.S. Lebt",
+      "url": "https://suno.com/song/4254cd85-2769-461e-98c8-acef711f21a8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Back To My Roots of Electronic music and so much more",
+      "url": "https://suno.com/song/8481c0a3-7239-4549-8ad2-bc238510e13a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Back To My Roots of Electronic music and so much more",
+      "url": "https://suno.com/song/e3d5f564-44e3-4d86-af5c-2b6736fb9156",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Not Everyone Matters",
+      "url": "https://suno.com/song/b3e78462-8524-4579-af86-cc178076a66e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Not Everyone Matters",
+      "url": "https://suno.com/song/855f4390-104a-4e76-ab8a-6c45597efbab",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Open Cosmos Inside Earth",
+      "url": "https://suno.com/song/7ab30187-5f2c-4889-9a8a-0816f59d70c1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Open Cosmos Inside Earth",
+      "url": "https://suno.com/song/a80e81df-2881-4bb5-9fe4-b997b2111977",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "DNA Techno Code FCR",
+      "url": "https://suno.com/song/3d548d88-819e-49e1-8326-a3302595beed",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "DNA Techno Code FCR",
+      "url": "https://suno.com/song/f454fce8-f7a9-4e2d-905c-956f9194eb8d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Sei Eine Zicke und keine Verdammte Fußmatte - Dark Psy",
+      "url": "https://suno.com/song/8e8d6783-0bf5-42a6-81da-9eb060e43a34",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Sei Eine Zicke und keine Verdammte Fußmatte - Dark Psy",
+      "url": "https://suno.com/song/68cc1683-560b-4a55-9433-bfee60d7baa1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Candy Jellyfish",
+      "url": "https://suno.com/song/8eed3092-6ad0-4208-a27f-40c33a916d49",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Candy Jellyfish",
+      "url": "https://suno.com/song/4138cb2a-7d6e-4352-879c-2eabef39fc3a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Thats me - Silent Reactor",
+      "url": "https://suno.com/song/cd759dc7-f4ea-43bc-bb2f-bfc7f0642e76",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Thats me - Silent Reactor",
+      "url": "https://suno.com/song/38f6acd1-2a1b-4d2e-b8f0-93840b1a9243",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Laughing Planet Reactor",
+      "url": "https://suno.com/song/bba03ccf-d732-41cf-b3be-bfed56f26396",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Laughing Planet Reactor",
+      "url": "https://suno.com/song/355e28f0-5531-4367-b4d9-943c53d510e9",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Great Alignment",
+      "url": "https://suno.com/song/16f7654a-2910-4113-87f6-72f1c667add8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Great Alignment",
+      "url": "https://suno.com/song/67be363c-4b87-4e58-b0b8-c03436dcacdd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Reactor Overflow Club Numinastic",
+      "url": "https://suno.com/song/0acf6510-eab3-4d6e-aa9c-c46bf1a4fe32",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Reactor Overflow Club Numinastic",
+      "url": "https://suno.com/song/6a2c8db7-a12c-4256-91a9-a6ea541db595",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel in the Forest Memories",
+      "url": "https://suno.com/song/d7177eb3-bbf0-431a-b4a1-09c35cfed898",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel in the Forest Memories",
+      "url": "https://suno.com/song/3e8e0013-be9a-4c9f-ab50-0bbc7ee7f15a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Beautiful Machine psy",
+      "url": "https://suno.com/song/8d49ecc4-2978-4a64-bcc1-069517e71398",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Beautiful Machine psy",
+      "url": "https://suno.com/song/6baf6767-dc0c-4233-bb27-b4ca08171616",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Looking For The Sun",
+      "url": "https://suno.com/song/e7814bce-5d7f-4ab0-b561-e6fd26114de3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Looking For The Sun",
+      "url": "https://suno.com/song/554a580b-12bf-4ba7-add5-9fc8e696e16a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Auf Der Suche Nach Der Sonne",
+      "url": "https://suno.com/song/1a275561-29f6-4438-8fb9-ed6978997eae",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Auf Der Suche Nach Der Sonne",
+      "url": "https://suno.com/song/cee0ffe3-8012-4fb1-9ab2-521710f142da",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Auf Der Suche Nach Der Sonne v2",
+      "url": "https://suno.com/song/0dd9d345-5e21-4dbc-80ae-a3530e41bf60",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Auf Der Suche Nach Der Sonne v2",
+      "url": "https://suno.com/song/f0eb1e26-3a68-4907-beb9-4456e972a2a5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Crazy Ruby and Fraggel - When Chaos Glows",
+      "url": "https://suno.com/song/80e512da-a0c8-448f-b291-18c5e453172d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel - Built From Pressure",
+      "url": "https://suno.com/song/2c73ecc6-f28d-4e82-8b0e-1c0ca38bc57d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "So Wie Du Bist Dark Erotic Mix",
+      "url": "https://suno.com/song/0c29dd37-80ff-4f94-8ba2-fdda29d89b97",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Let The Machine Decide",
+      "url": "https://suno.com/song/d2bec19b-64d2-41a2-bb93-df13224c4597",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Ultrasonic Gear Up",
+      "url": "https://suno.com/song/42e95fdc-0077-478a-9552-0a49ff63de65",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Murmel Has Control",
+      "url": "https://suno.com/song/3977d98e-5783-4c60-b76c-43799afd6fee",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Murmel Has Control",
+      "url": "https://suno.com/song/2d416281-6c27-4df8-be91-ca2951f7caf9",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Beautiful Machine",
+      "url": "https://suno.com/song/fb1a0551-d096-41a9-bee2-9af02ce79347",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Beautiful Machine",
+      "url": "https://suno.com/song/ca4ce634-f911-4f22-85c8-adea0d4224ee",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Psychedelic Warmachine of Love",
+      "url": "https://suno.com/song/9fb0eebc-4eee-4e13-8491-35f6780294df",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Psychedelic Warmachine of Love",
+      "url": "https://suno.com/song/0a694f74-8007-4446-8dbc-93996abb394b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "17 - CHAOS MATRIX SAGA - PEACE AFTER THE SIGNAL",
+      "url": "https://suno.com/song/6ba52865-d772-466b-b051-c923f485b231",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "8 - CHAOS MATRIX SAGA - ECHOES OF CONTROL",
+      "url": "https://suno.com/song/7d9b2ff4-81e8-4fce-8935-ecd92b216dc0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "12 - CHAOS MATRIX SAGA - FRACTURED REFLECTIONS",
+      "url": "https://suno.com/song/0b917afd-d68c-4187-8fb3-c50238ef8513",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "15 - CHAOS MATRIX SAGA - RETURN TO THE SURFACE",
+      "url": "https://suno.com/song/29fe04c0-9824-44f8-8a2c-64fe47d249a5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "20 - CHAOS MATRIX SAGA - THE WORLD OUTSIDE",
+      "url": "https://suno.com/song/2db4e1b7-271f-44bb-9b9a-1be99b3bb0fd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "11 - AFTER MIDNIGHT ADDICTION",
+      "url": "https://suno.com/song/74b26d93-6ee0-4e42-9e51-b016a8c02927",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "10 - THE PORN-EMPIRE SYNCHRONIZATION",
+      "url": "https://suno.com/song/4200d380-3db1-48a2-abfb-65229a7b348b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "9 - THE WET SIGNAL TEMPLE",
+      "url": "https://suno.com/song/cec483d7-90f9-4052-a1bb-6e7bbb73d1a6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "8 - ULTRAVIOLET BODY PROTOCOL",
+      "url": "https://suno.com/song/b2efc9aa-4800-4ccf-a675-e361bd5ba1d3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "6 - HOLOGRAPHIC HEARTBEAT RESIDUE",
+      "url": "https://suno.com/song/928bc4a1-1ad6-4a82-9706-d76f3c9cdbd3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "5 - AFTER THE LASER STORM",
+      "url": "https://suno.com/song/76ee8c65-1f23-4834-86ae-112f3e280329",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "4 - THE RED ROOM SYNCHRONIZATION",
+      "url": "https://suno.com/song/798c6448-9cb6-4bf6-ab18-8ae6677ad70f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "3 - SYNTHETIC DESIRE PROTOCOL",
+      "url": "https://suno.com/song/eae7df0b-a994-48bc-bd23-3bd49efc04aa",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "2 - THE QUEEN OF MIDNIGHT FREQUENCIES",
+      "url": "https://suno.com/song/6cb16fad-f04c-47bf-93a4-36bb4ed1ffa6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "FRAGGLE STYLE // LIVING PSYCHOACOUSTIC UNIVERSE",
+      "url": "https://suno.com/song/b224513a-7eed-4930-be8e-44eb5163e82d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NECRONOMICON — GATES OF HELL",
+      "url": "https://suno.com/song/39930977-340a-4deb-97a5-5bece8befc64",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "NECRONOMICON — GATES OF HELL",
+      "url": "https://suno.com/song/c1403862-6576-4f3d-ac38-48f8185ab7a3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "PSYCHEDELIC ARMY OF PSYCHO DARKNESS",
+      "url": "https://suno.com/song/b3b9241b-419c-4b10-8ce8-5c31c60a2e9b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "PSYCHEDELIC ARMY OF PSYCHO DARKNESS",
+      "url": "https://suno.com/song/36ea4f63-ba85-44e5-a7bb-c5976404fbeb",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "TITLE  THE HUMAN ARMY",
+      "url": "https://suno.com/song/599c860a-f015-481c-b831-ef1b9d967c11",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "TITLE  THE HUMAN ARMY",
+      "url": "https://suno.com/song/e1829c85-2664-4f64-a05e-35b8da1240be",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Welcome Fraggel Power — Digital Underground System (Extended Mix)",
+      "url": "https://suno.com/song/c65acc29-a187-4ff8-9c8b-44b8c94f2d9f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Power  -  Zhamira- v2.0 — Digital Underground Control (Insane Extended Mix)",
+      "url": "https://suno.com/song/9d648dd0-33f1-46ef-b792-7d3e4d5c8688",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "CRITICAL OVERLOAD — AEROCKICAL DARK PSY SYSTEM (4C FINAL)",
+      "url": "https://suno.com/song/bee174b6-d0da-46e4-ba69-2ead6856fcc3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Forest of Illusion",
+      "url": "https://suno.com/song/b7c6af4e-1478-4f23-b1d0-9993f9492ae0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Forest of Illusion",
+      "url": "https://suno.com/song/2e140fda-424e-47f0-a046-5c9ea77bde46",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Reality fades again",
+      "url": "https://suno.com/song/417f964f-b0b3-4ef3-9dcb-0934abf798fb",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Reality fades again",
+      "url": "https://suno.com/song/e3e6c7e8-140c-422d-b59b-43806f249ea4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Incredible New Sound (Harmonica Core)",
+      "url": "https://suno.com/song/0025a132-92d7-40d5-af4e-06e0ea6e17ed",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "The Incredible New Sound (Harmonica Core)",
+      "url": "https://suno.com/song/51f94443-377f-413d-ad36-5f3933ca2a88",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel of Illusion – Superviza",
+      "url": "https://suno.com/song/3cd3659b-9044-464a-8948-8d28270b0c8f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel of Illusion – Superviza",
+      "url": "https://suno.com/song/19bbf11f-3082-4b50-b84b-39f563698a73",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Future Style –  Future Sound",
+      "url": "https://suno.com/song/cdf63d1d-b649-402e-8fca-b5bf3b4d9f2f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Future Style –  Future Sound",
+      "url": "https://suno.com/song/e20e34d9-f245-4c28-bfc4-90501d1813d2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Style Future – Void Integration",
+      "url": "https://suno.com/song/af68d7d4-1fc8-498b-ba8b-99e55e4e3c1a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Style Future – Void Integration",
+      "url": "https://suno.com/song/c2906d3f-1280-40da-873a-b9e411f1850d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Style Future",
+      "url": "https://suno.com/song/2e3bd448-67c7-4fb3-b0e4-814d1d5ec01a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Fraggel Style Future",
+      "url": "https://suno.com/song/fca073d9-9937-45d8-ada6-aac7f612ab6d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Freak Manifest – Producer Code",
+      "url": "https://suno.com/song/d8c7c93b-93a9-48e3-95c0-8a7d0552c7f4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Freak Manifest – Producer Code",
+      "url": "https://suno.com/song/713b62ce-76b9-4b2c-99d6-2ad2453e42e0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Freak Manifest – SYSTEM WARNING",
+      "url": "https://suno.com/song/2c5fdecb-bd34-4e77-aad0-8baf3ff20c78",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Freak Manifest – SYSTEM WARNING",
+      "url": "https://suno.com/song/858f7864-1251-4680-8b4a-661a989b1958",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Producer feeding DJ‘s with new Music",
+      "url": "https://suno.com/song/61b84d38-433a-4acc-88e9-8bbe7a2e215c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Producer feeding DJ‘s with new Music",
+      "url": "https://suno.com/song/2d2f7923-5004-460d-8fc4-d3538352ca9d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "DJ Freak Manifest",
+      "url": "https://suno.com/song/e4f5dacd-2516-45fb-92e4-a0437d6437ad",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "DJ Freak Manifest",
+      "url": "https://suno.com/song/6f0db45d-eebb-4c4d-a836-acb539c98343",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Club of a Thousand Versions",
+      "url": "https://suno.com/song/1b018693-fcb3-4b87-b14e-da2c3d2afd02",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "SKYNET: EXTINCTION SEQUENCE",
+      "url": "https://suno.com/song/844e1046-2658-4e43-95fd-296c9be48ed3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "BRICKS IN CONTROL",
+      "url": "https://suno.com/song/d0fac843-8625-452e-962f-7778d62b120b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "TRIPOD: EXTINCTION SIGNAL",
+      "url": "https://suno.com/song/dc6cde3d-251c-45c0-9d6a-aa80baa02ac5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Pressure Continuum (Freak DJs Believe Manifest V5.5-G)",
+      "url": "https://suno.com/song/35ac2cca-5f4b-42b6-9fd6-1deec8d749f2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Better World Protocol — Collapse / Rise",
+      "url": "https://suno.com/song/05d269d9-d4a6-4fab-8795-fef0e835a330",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "We Are One – Freak DJs: Interactive Dancefloor",
+      "url": "https://suno.com/song/b31960a7-7344-474c-a554-0bce70c2a54e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "It’s 7 A.M. — Shut the Fuck Up (Dark Bunker Sequence)",
+      "url": "https://suno.com/song/32458659-645d-4539-a410-f8bef1856ab6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Bloodline Signal in the Chaos",
+      "url": "https://suno.com/song/cb650097-3907-48f4-b03b-f08019daa245",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Blutlinien Signal im Chaos",
+      "url": "https://suno.com/song/c4ba2e19-f3be-4bab-b7e6-a5e38c6bae97",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "01 SYSTEM BOOT CITY SIGNAL & Paradise  INIT",
+      "url": "https://suno.com/song/89bfc4d9-c455-4de7-9386-4e773b92c877",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "Good Morning My Neighbor — The Balcony",
+      "url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
     }
   ],
   "rules": [
@@ -1079,16 +2435,17 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 160,
+  "observed_public_song_links": 386,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
-  "last_seen_end_song_url": "https://suno.com/song/bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3",
+  "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
   "last_research_outcome": {
     "checked_at": "2026-10-17",
-    "method": "Firecrawl public HTML anchor extraction",
-    "source_song_anchors": 160,
-    "new_count": 60,
-    "duplicate_title_conflicts": 0
+    "method": "Firecrawl HTML rendered public Songs page waitFor 8500ms",
+    "observed_ids": 386,
+    "new_count": 226,
+    "title_conflicts": 0,
+    "scope": "public profile songs only"
   }
 }
