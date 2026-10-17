@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-17",
   "public_profile_song_count_observed": 386,
-  "coverage": "partial; Suno profile displayed 386 songs. Extended browser run yielded only one new unique link, most returned results already known. Further same-method scrolling low yield.",
+  "coverage": "partial; public profile displayed 386, 160 song IDs captured. Firecrawl publicly rendered HTML yielded 160 title-linked song IDs; do not assume full 386 coverage.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -708,6 +708,366 @@
       "cover_observed": "https://cdn2.suno.ai/image_34fb5dd5-707e-43d7-9460-59053b05b269.jpeg",
       "status": "public_profile_browser_observed",
       "source": "2026-10-17 complete-list review"
+    },
+    {
+      "title": "SURRENDER TO THE DARK PULSE",
+      "url": "https://suno.com/song/34cb957e-810a-498d-a80c-84edb1874d26",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "PSYCHEDELIC TEMPTATION",
+      "url": "https://suno.com/song/de665361-a86c-4324-b417-a0809dd165a4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "PSYCHEDELIC TEMPTATION",
+      "url": "https://suno.com/song/372e81eb-734c-4132-a44f-ca07524b7ed3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "THE BASS BETWEEN OUR BODIES",
+      "url": "https://suno.com/song/a13907ba-d813-4e19-9458-ebdd3f35206c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "THE BASS BETWEEN OUR BODIES",
+      "url": "https://suno.com/song/eb75c587-8855-40d1-aed3-65a8451ad1a5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "DEEP DARK SIGNAL",
+      "url": "https://suno.com/song/24d144cf-84c9-4d0e-93e6-b1df1bdf3698",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "DEEP DARK SIGNAL",
+      "url": "https://suno.com/song/813bf1ae-69c7-4b40-9b2a-272d2c6f11c8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "COME UNDONE IN ULTRAVIOLET",
+      "url": "https://suno.com/song/cd4efa52-6c7f-47c8-952d-7790e3b3e864",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "COME UNDONE IN ULTRAVIOLET",
+      "url": "https://suno.com/song/ee8ecd26-3caa-4cf8-a489-4ebedd335312",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Surrender to the Dark Pulse",
+      "url": "https://suno.com/song/1386799e-26be-464c-bde8-2a4f23cb38a0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Surrender to the Dark Pulse",
+      "url": "https://suno.com/song/f3a955a6-e669-48c4-9a72-d4b1c3eebf3a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "NEON HUNGER",
+      "url": "https://suno.com/song/d3f12319-ad83-42ce-834c-cefb812c3e81",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "NEON HUNGER",
+      "url": "https://suno.com/song/b9dc1b8d-1919-4beb-9ba6-7db7709f54f2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Velvet Nightmare",
+      "url": "https://suno.com/song/2c57796d-4397-43b4-95c3-b7dd3b9b7be3",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Velvet Nightmare",
+      "url": "https://suno.com/song/477b5c4e-a2ad-40ae-997a-0b2e460e9a5b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Sound Familiar?",
+      "url": "https://suno.com/song/836157ea-6c84-46e6-bc4d-b32934d37f25",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Sound Familiar?",
+      "url": "https://suno.com/song/0bdc9944-b2a4-4f73-8643-e1ca70ae1138",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Under the Sound",
+      "url": "https://suno.com/song/5e8327d4-8f2d-450c-89a1-300043605c83",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Under the Sound",
+      "url": "https://suno.com/song/c01c11c0-e509-4a06-9eca-2f2a8187c499",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Let the Beats Consume Your Soul",
+      "url": "https://suno.com/song/74e211c0-b901-403b-b752-95a19046d456",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Let the Beats Consume Your Soul",
+      "url": "https://suno.com/song/5a72b198-c5bf-4120-bc25-d9e374e6cadc",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Goa Heat",
+      "url": "https://suno.com/song/674a3b13-925c-44d1-aa5c-009023730bf1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Goa Heat",
+      "url": "https://suno.com/song/6053ce63-9b5f-43d2-8704-84ee3e098a03",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Beat by Beat",
+      "url": "https://suno.com/song/e15a6032-1c7d-4534-925b-d86a393130c2",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Beat by Beat",
+      "url": "https://suno.com/song/fe12e090-a8cc-4921-8965-fecc7f618538",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "LYVRA NEW GENERATION SOUND",
+      "url": "https://suno.com/song/fee35d16-e9fc-4ee0-a877-832197b7707a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "LYVRA NEW GENERATION SOUND",
+      "url": "https://suno.com/song/4ca4e27f-5540-422e-a87c-6ca1ce537585",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "More Than Words Can Say",
+      "url": "https://suno.com/song/00ce9461-106b-4a24-89e5-93eeb4bb1c81",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "More Than Words Can Say",
+      "url": "https://suno.com/song/1caf1500-1deb-47a7-aebc-929a0aae0ca1",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "I Am You",
+      "url": "https://suno.com/song/3adae396-03aa-4b3b-b527-59e22528613f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "I Am You",
+      "url": "https://suno.com/song/98861b2e-e084-433f-b09d-6b85d076b03e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Your Life Your Breath",
+      "url": "https://suno.com/song/17ac37e8-cb34-4453-a864-d4e8beb7d55c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Your Life Your Breath",
+      "url": "https://suno.com/song/931b6f40-2aff-4b99-a086-4c5371bfdf0b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Living Music Intelligence",
+      "url": "https://suno.com/song/db5d1cce-0b3b-4e64-b2d2-d18b0bef89cd",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Living Music Intelligence",
+      "url": "https://suno.com/song/d6439115-c269-4435-a2ee-8954e8246e09",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Fraggelpower's Homebase",
+      "url": "https://suno.com/song/5f691c24-4f04-4e13-8066-dba93ca8873e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Fraggelpower's Homebase",
+      "url": "https://suno.com/song/ab567f06-a426-4ed0-b676-12c1f4f43343",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "NEON BREATH AND PULSE",
+      "url": "https://suno.com/song/3382458b-8e0a-4206-a784-14a286a7d5b5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "NEON BREATH AND PULSE",
+      "url": "https://suno.com/song/a755675a-85d1-4e9f-a9db-8981550a13f4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "THE FIRST - THE LAST. - MY EVERYTHING",
+      "url": "https://suno.com/song/83b2f7bd-8777-4018-b93a-b550f4f5109a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "THE FIRST - THE LAST. - MY EVERYTHING",
+      "url": "https://suno.com/song/a2cc55b6-7adf-46a3-b625-4daea3f70c05",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "TWO DEVILISH ANGELS",
+      "url": "https://suno.com/song/9ad0a7f2-ccda-4406-b5bc-97ba0fff8021",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "TWO DEVILISH ANGELS",
+      "url": "https://suno.com/song/f5a4587d-bd71-46b7-83d3-3b27bb37729a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "DEVILISH ANGEL",
+      "url": "https://suno.com/song/d9094712-72f2-48b8-a658-fc2a2670d91b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "DEVILISH ANGEL",
+      "url": "https://suno.com/song/e9eca330-e936-4f89-8ab4-775b6b9bd719",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "I Remain",
+      "url": "https://suno.com/song/ccd5b5c1-d6a9-4294-86bd-25bb4690c38d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "I Remain",
+      "url": "https://suno.com/song/ceb76251-52f4-499d-8b7a-a6c7af5bbfe4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Exactly Where I Belong",
+      "url": "https://suno.com/song/427571a0-b324-4439-90a4-11e91418af06",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Exactly Where I Belong",
+      "url": "https://suno.com/song/9c128f81-ff98-4e78-b95a-6d6ba037c068",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Gentler Chaos",
+      "url": "https://suno.com/song/3268d9d0-4b98-47bd-9624-548461e208e5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Gentler Chaos",
+      "url": "https://suno.com/song/de1e4cd0-827c-4404-a47b-76a191bbc0a5",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Neon Moon Gravity",
+      "url": "https://suno.com/song/75d1ac66-85d4-46ed-a322-e53c6ef1a203",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Neon Moon Gravity",
+      "url": "https://suno.com/song/ced1061f-fec0-4b3d-9532-ad811eea0b25",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "One Love One Forever",
+      "url": "https://suno.com/song/76100094-6248-418e-a71f-cd2eac880ff6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "One Love One Forever",
+      "url": "https://suno.com/song/0baf6369-eafb-4082-9e15-cab915f3210e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Wherever You Want",
+      "url": "https://suno.com/song/8686633b-5eac-430a-ba90-215e6182ea47",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Wherever You Want",
+      "url": "https://suno.com/song/8ecb5fbc-a6a5-484d-ac7c-b5bfb7681290",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Putting the Match Down",
+      "url": "https://suno.com/song/a6382194-65f2-4685-a811-e448a602a289",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Putting the Match Down",
+      "url": "https://suno.com/song/ffd736a9-b58a-4eb9-8760-da2fc93c0fa6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
+    },
+    {
+      "title": "Still Here Standing",
+      "url": "https://suno.com/song/078fde60-938f-4f3e-b00b-6fd9633b23b8",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-17 public Suno songs HTML links"
     }
   ],
   "rules": [
@@ -719,15 +1079,16 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 100,
+  "observed_public_song_links": 160,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
   "last_seen_end_song_url": "https://suno.com/song/bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
   "last_research_outcome": {
     "checked_at": "2026-10-17",
-    "method": "TinyFish public infinite scroll",
-    "new_count": 1,
-    "result": "mostly duplicates; no proven full pagination cursor; next approach should differ"
+    "method": "Firecrawl public HTML anchor extraction",
+    "source_song_anchors": 160,
+    "new_count": 60,
+    "duplicate_title_conflicts": 0
   }
 }
