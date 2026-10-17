@@ -202,3 +202,14 @@ CODEFORGE_REPO_REVIEW = REQUIRED_FOR_MATERIAL_CURRENT_REPO_MUTATION
 CODEFORGE_FRESHNESS_REVIEW = REQUIRED_FOR_POINTER_HANDOFF_MANIFEST_AND_CRITICAL_CARRIER_SYNC
 CODEFORGE_REVIEW_RESULT_VISIBLE_IN_TECHNICAL_STATE = true
 CODEFORGE_DECISION_AUTHORITY = NONE
+
+## Dual-Layer Visual Intelligence — CURRENT native source integration (2026-10-17)
+
+Both layers are evidence projections of the EXISTING Semantic Cyber Field Visual Intelligence and Operations Center; neither is an engine, identity, router, dashboard controller or work selector.
+
+DYNAMIC_PRIORITY_VIEW = LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs (derived, read-only, stable deterministic ordering from creator focus/blocking evidence; no fabricated urgency).
+PERSISTENT_PROJECT_PREDEVELOPMENT_VIEW = LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json (explicit registered projects and predevelopment retained until independently verified supersession or explicit archive; no global last-workspace choice).
+
+Presentation: show both titled views together in Whole-LYVRA Operations Center and under option FIVE (Bearbeiten & Weiterentwickeln) of the established FIVE-option selection. Keep the persistent project section reachable across priority changes. Optional archived items appear only on user request. Every card must show evidence path, scope, current status, blocker and source/delivery/adoption/host distinctly; a view never authorizes an UPDATE, actuation or foreign activation. Do not replace the five-option menu, other Visual contracts, characters, Track, Studio2 or Speech. Character Bot stays separate. Vault references point only to protected metadata; never display private content publicly.
+
+SOURCE_INTEGRATION != HOST_RENDER_VERIFIED. Plugin surface parity and actual interactive Fresh-Host render remain independent acceptance gates. Source registry/renderer requires exact file readback and valid registry schema before presenting VERIFIED. No automatic Suno provider or renderer rule promotion.
