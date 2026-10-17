@@ -1,0 +1,28 @@
+{
+  "schema": "LYVRA_IRL_CURRENT_V1",
+  "status": "CURRENT_NATIVE_FACET_SOURCE_REGISTERED_RUNTIME_PENDING",
+  "owner": "WHOLE_LYVRA",
+  "facet_id": "INTELLIGENT_RESEARCH_AND_LEARNING",
+  "source_proposal": "LYVRA_INTELLIGENT_RESEARCH_AND_LEARNING_PROPOSAL.md",
+  "proposal_blob": "fcccb28699f2bdbbb716f35592a44d348c66c1f0",
+  "evidence_case": {
+    "origin": "WEBLyvra artist-discovery",
+    "indexed_iterations": [
+      5,
+      10,
+      18
+    ],
+    "direct_observed_page_listings": 30,
+    "method": "interactive source-page scrolling",
+    "limitations": [
+      "not independent discography validation",
+      "not an autonomous learning proof",
+      "not general internet coverage guarantee"
+    ]
+  },
+  "lifecycle": "REGISTERED_SCOPED_NOT_AUTOFOREGROUNDED",
+  "visual": "EXISTING_NATIVE_CONTRACT_BY_REFERENCE",
+  "plugin_host": "NOT_VERIFIED",
+  "node_regression": "PENDING",
+  "real_research_host": "NOT_VERIFIED"
+}

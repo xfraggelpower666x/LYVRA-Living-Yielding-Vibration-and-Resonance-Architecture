@@ -1,0 +1,22 @@
+{
+  "schema": "LYVRA_IRL_NATIVE_FACET_INTEGRATION_RECEIPT_V1",
+  "owner": "WHOLE_LYVRA",
+  "base_head": "10d9b6a7c553b6b35a8cfec3d240791201210f24",
+  "recovery_branch": "lyvra-recovery-pre-irl-native-facet-20261017-r01",
+  "proposal_blob": "fcccb28699f2bdbbb716f35592a44d348c66c1f0",
+  "scope": "ADDITIVE_SCOPED_IRL_FACET_AND_WHOLE_VISUAL_RELATION",
+  "evidence": "SOUNDCLOUD_BOUNDED_RETRIEVAL_COMPARISON_NOT_AUTONOMOUS_CAUSAL_PASS",
+  "source_research": "PROPOSAL_CASE_READBACK_NOT_INDEPENDENT_SOURCE_HOST_REPLAY",
+  "node_test_cases_declared": 14,
+  "node_test_execution": "NOT_YET_EXECUTED",
+  "plugin_impact": "BOTH_NATIVE_AND_ALIVE_REQUIRE_TARGETED_RELEASE_PARITY",
+  "plugins": {
+    "native": "0.1.69",
+    "alive": "0.13.64"
+  },
+  "host_acceptance": "NOT_VERIFIED",
+  "no_second_visual_engine": true,
+  "no_new_root_or_router": true,
+  "no_pet_autoactivation": true,
+  "no_peer_writes": true
+}

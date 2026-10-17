@@ -1930,5 +1930,23 @@
     "no_auto_write": true,
     "plugin_impact": "BOTH_NATIVE_AND_ALIVE_VISUAL_ENTRYPOINTS_REQUIRE_RELEASE_AND_HOST_PARITY_CHECK",
     "host_behavior": "PENDING"
+  },
+  "irl_native_facet_integration_2026_10_17": {
+    "owner": "WHOLE_LYVRA",
+    "status": "NATIVE_SOURCE_REGISTERED_HOST_AND_PLUGIN_PARITY_PENDING",
+    "scope": "INTELLIGENT_RESEARCH_AND_LEARNING",
+    "source_proposal": "LYVRA_INTELLIGENT_RESEARCH_AND_LEARNING_PROPOSAL.md",
+    "sub_lifecircle": "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_LIFECIRCLE.md",
+    "sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_REHYDRATION.md",
+    "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/irl/FACET_CONTRACT.md",
+    "current_state": "LYVRA_NATIVE_RUNTIME/facets/irl/CURRENT_STATE.json",
+    "learning_ledger": "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json",
+    "whole_first": true,
+    "load_on_relevance_not_default": true,
+    "reuse_existing_visual_intelligence": true,
+    "preserve_five_choice_menu": true,
+    "plugin_host": "PENDING",
+    "causal_learning": "PROVISIONAL_NO_GLOBAL_PROMOTION",
+    "no_foreign_autoactivation": true
   }
 }

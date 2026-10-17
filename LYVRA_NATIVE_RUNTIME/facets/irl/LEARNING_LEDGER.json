@@ -1,0 +1,29 @@
+{
+  "schema": "LYVRA_IRL_METHOD_LEDGER_V1",
+  "version": 1,
+  "entries": [
+    {
+      "id": "IRL-METHOD-20261017-SOUNDCLOUD-001",
+      "kind": "RESEARCH_STRATEGY_EVIDENCE",
+      "status": "PROVISIONAL_REVIEWABLE",
+      "source": "LYVRA_INTELLIGENT_RESEARCH_AND_LEARNING_PROPOSAL.md",
+      "question": "Do public index results exhaust a dynamic /albums page?",
+      "observations": {
+        "successive_links": [
+          5,
+          10,
+          18
+        ],
+        "interactive_page_listings": 30
+      },
+      "hypothesis": "Interactive source inspection may reveal listings missed by indexing",
+      "causality": "SUGGESTIVE_COMPARISON_NOT_CONTROLLED_CAUSAL_PASS",
+      "transfer_limits": [
+        "dynamic listing pages with permitted browsing",
+        "not a guarantee for unavailable or deleted content"
+      ],
+      "revision": 1
+    }
+  ],
+  "global_learning_promoted": false
+}
