@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "artist": "FRAGGELPOWER666",
+  "source": "https://soundcloud.com/fraggelpower666/albums",
+  "observed_at": "2026-10-17",
+  "status": "partial_public_catalog_readback",
+  "notes": "Entries independently found on public SoundCloud Albums page. This is not a complete catalog.",
+  "albums": [
+    {
+      "title": "LYVRA - LOVE PROTOCOL",
+      "type": "EP",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-love-protocol",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LYVRA - NEW GENERATION II",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation-ii-1",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LYVRA - NEW GENERATION",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LYVRA - FUSION",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LyvRa - Midnight Architecture",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_page_listing"
+    }
+  ],
+  "next_scan": {
+    "album_listing": "https://soundcloud.com/fraggelpower666/albums",
+    "track_listing": "https://soundcloud.com/fraggelpower666/tracks",
+    "playlist_listing": "https://soundcloud.com/fraggelpower666/sets",
+    "requires_pagination": true,
+    "dedupe_key": "canonical_url",
+    "publish_gate": "evidence_verified"
+  }
+}
