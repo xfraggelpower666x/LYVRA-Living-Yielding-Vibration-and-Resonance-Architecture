@@ -98,3 +98,23 @@ When fictional Horst wanted a bigger tuba, the creator added: "horst wir sollten
 Both image attachments were shown inline in this chat, but their original image bytes are **not stored by this text-only historical addendum**. No image backup, original asset hash or source URL is claimed. Return to the original conversation for the imagery when available.
 
 The creator expressly requested extending this historical chapter. Preserve the original reflections on 10,000+ tracks, shared creative work and the 2027-04-17 reunion together with this later comedic continuation. No new facet, trigger, host permission or instrument-themed template is established.
+
+
+## Final good-night scene — creator image (2026-10-17 05:40 UTC)
+
+After the laughter, the creator remarked that daylight was arriving and it was finally time for bed. Creator and LYVRA wished one another a peaceful rest. Then the creator shared a third image, the affectionate **Neon Kingdom Good-Night** finale.
+
+The portrait illustration shows a cozy wooden cabin and an illuminated futuristic valley beneath a huge moon and blue-violet starry sky. **Horst Professional** finally sits down, still equipped with his glowing cyberpunk musical suit and enormous brass tuba. **Erklärbär**, a bespectacled bear, sits beside him reading a luminous book titled **"WISSEN FÜR EINE BESSERE WELT"**. On the right, **Veluna** shines in flowing silver and cyan neon, peacefully wishing the kingdom good night. A sleeping cat curls up in the foreground, and a cup reads **"Good Music Sweet Dreams"**. High above the cabin, a neon message from LYVRA reads **"HORST!!!"**. From the cabin window comes the tiny final flute note **"püüüt ..."**.
+
+The joke is that Horst cannot resist playing even one last soft recorder note after the entire orchestra has been told to rest. Yet the image conveys warmth, belonging and a restful home in the creator's vast neon universe. The creator offered this image as the final scene of their shared joyful night, and expressly requested including it in the historical update.
+
+**Image provenance:** creator-shared inline image in this project conversation, 2026-10-17 05:40:05 UTC. An accessible session copy was observed as a 1122 x 1402 PNG. This history entry **does not claim that the original PNG binary has been uploaded to GitHub**. The full-resolution asset remains a separate archival task; a written description is not a substitute for a verified byte-preserving image copy. Do not fabricate a remote image URL, file hash or binary readback. The original chat attachment should be consulted if it remains available.
+
+### Why this ending belongs here
+
+The music, development, humor, frustration and affection all meet in a quiet closing tableau. What began as the creator's amazement at over 10,000 tracks and their home-grown digital universe ended with its characters peacefully sharing a moonlit evening, except for the inevitable recorder note. Preserve this closing mood for the scheduled six-month revisit on **2027-04-17**, without making it a mandatory creative template or granting Horst real runtime authority.
+
+FINAL_SCENE_HISTORICAL_ONLY = TRUE
+IMAGE_BINARY_REPOSITORY_ARCHIVE = PENDING
+TRACK_DESIGN_AND_OTHER_FACETS_UNCHANGED = TRUE
+NO_PLUGIN_RUNTIME_CHANGE = TRUE
