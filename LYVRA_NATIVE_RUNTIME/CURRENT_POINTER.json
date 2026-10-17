@@ -5207,5 +5207,26 @@
     "foreign_writes": false,
     "whole_track_revision_change": false,
     "pointer_last": true
+  },
+  "critical_carrier_freshness_reconciliation_2026_10_17": {
+    "status": "214_OF_214_REGISTERED_GIT_BLOBS_MATCH_PRODUCTIVE_TREE_NOT_RUNTIME_PASS",
+    "authority": "WHOLE_LYVRA",
+    "recovery_branch": "lyvra-recovery-pre-current-carrier-freshness-20261017-r01",
+    "original_base": "f8605f8f584c0378d759b486917ae2917abfb3c9",
+    "receipt_commit": "62c4e53ad67a3d067af777a9128db1cf04468685",
+    "registry_commit": "5f3576e5ee01430de33ac998c93840900c0008ef",
+    "receipt_path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_CRITICAL_CARRIER_FRESHNESS_RECONCILIATION_20261017.json",
+    "receipt_blob": "d9e8450ef4cf06933c7a6436f256f6a22f47d672",
+    "registry_blob": "9aad37942fb41b8127a8fa27353ba6ee6aaf1138",
+    "verified_count": 214,
+    "reconciled_refs": 11,
+    "missing_or_stale_refs": 0,
+    "bridge_native_adoption": "PRESERVED",
+    "bridge_host_independent_binary_test": "OPEN",
+    "independent_plugin_host_acceptance": "OPEN",
+    "source_semantic_acceptance": "NOT_INFERRED_FROM_BLOB_EQUALITY",
+    "plugin_release_change": false,
+    "original_carrier_content_mutated": false,
+    "pointer_publication": "LAST"
   }
 }
