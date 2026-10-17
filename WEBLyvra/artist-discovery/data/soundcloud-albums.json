@@ -3,7 +3,7 @@
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-10-17",
-  "status": "partial_public_catalog_readback",
+  "status": "partial_public_catalog_readback_10_entries",
   "notes": "Entries independently found on public SoundCloud Albums page. This is not a complete catalog.",
   "albums": [
     {
@@ -34,6 +34,36 @@
       "title": "LyvRa - Midnight Architecture",
       "type": "Album",
       "url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LyvRa - Resonance Bloom",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LyvRa - Electric Desire",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "LyvRa - Velvet Signal",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "CHAOS MATRIX SAGA - THE COLLAPSE OF SYNCHRONISATION",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_page_listing"
+    },
+    {
+      "title": "CHAOS MATRIX - THE BIRTH OF THE SIGNAL",
+      "type": "Album",
+      "url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
       "status": "direct_page_listing"
     }
   ],
