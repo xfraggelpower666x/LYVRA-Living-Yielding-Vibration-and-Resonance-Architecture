@@ -3,7 +3,7 @@
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-10-17",
-  "status": "partial_public_catalog_readback_16_verified_set_urls",
+  "status": "partial_public_catalog_readback_18_verified_set_urls",
   "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album.",
   "albums": [
     {
@@ -105,6 +105,26 @@
       "title": "POWERBEATS - 666 SOUNDsDESIGn 2026",
       "type": "SoundCloud set (album classification pending)",
       "url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "SELFMADE - EMOTION - DARK TECHNO - PSYTRANCE COMPLIATION",
+      "url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "type": "SoundCloud set (album classification pending)",
+      "genre_tags": [
+        "Techno"
+      ],
+      "status": "direct_page_readback",
+      "source": "SoundCloud set page"
+    },
+    {
+      "title": "The Virtual Worlds - Second Life - 3DX Chat Meredian",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "type": "SoundCloud set (album classification pending)",
+      "genre_tags": [
+        "Techno"
+      ],
       "status": "direct_page_readback",
       "source": "SoundCloud set page"
     }
