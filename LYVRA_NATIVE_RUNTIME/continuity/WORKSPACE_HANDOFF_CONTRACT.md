@@ -168,3 +168,14 @@ UPDATE DISCOVERY in a *verified destination* workspace: fresh read productive CU
 RECOVERY / CONCURRENCY: recovery before durable cross-project governance edits; ordinary per-chat persistence is append-only and collision-checked. Unexpected HEAD/ref movement: CONFLICT_QUARANTINE before dependent writes. A stale event may not supersede newer valid evolution. Automatic recognition is only on an actual direct LYVRA UPDATE in the chosen destination chat with tools and permissions; it is not continuous background monitoring.
 
 Acceptance matrix: SOURCE_CONTRACT_READBACK, NEW_LINEAGE_GENERATION_WITH_REAL_PROVENANCE, APPEND_ONLY_WRITE_READBACK, DESTINATION_UPDATE_DISCOVERY, SAME_LINEAGE_RESUMPTION, CROSS_PROJECT_RELATED_ONLY, CONCURRENT_LINEAGES, FRESH_HOST_NEW_NEXT_CHAT. Each has independent real evidence. SOURCE_PASS != FRESH_HOST_PASS.
+
+
+## Development candidate - interruption safe continuation (2026-10-17)
+STATUS = DEVELOPMENT_BRANCH_CANDIDATE_NOT_PRODUCTIVE_CURRENT
+GUARD = LYVRA_NATIVE_RUNTIME/continuity/INTERRUPTION_RESUME_AND_OBLIGATION_GUARD.md
+CLARIFICATION_NE_CANCELLATION = true
+ADD_CONSTRAINT_THEN_RESUME_ORIGINAL_APPROVED_TASK = true
+UNFINISHED_APPROVED_UPDATE_REMAINS_OPEN_UNTIL_GATES_PASS = true
+NO_NEW_CONTROLLER_OR_GLOBAL_TASK_SELECTOR = true
+REPO_FIRST_DRIVE_HISTORY_ONLY_FOR_THIS_UPDATE = true
+DUAL_PLUGIN_PARITY_AND_POINTER_LAST = STILL_REQUIRED_BEFORE_PRODUCTION_COMPLETE
