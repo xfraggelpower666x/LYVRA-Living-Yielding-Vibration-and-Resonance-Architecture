@@ -1,0 +1,83 @@
+{
+  "schema": "LYVRA_CRITICAL_CARRIER_FRESHNESS_RECONCILIATION_V1",
+  "owner": "WHOLE_LYVRA",
+  "date": "2026-10-17",
+  "scope": "GIT_BLOB_REGISTRY_REFERENCES_ONLY",
+  "base_head": "f8605f8f584c0378d759b486917ae2917abfb3c9",
+  "prechange_registry_sha": "0be43abc65888cf5601bf561359613843f9abf26",
+  "recovery_branch": "lyvra-recovery-pre-current-carrier-freshness-20261017-r01",
+  "checked_carriers": 214,
+  "changes": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "old_sha": "ee5c7e42124ee17ca4e3b63982bcdca553b30b1e",
+      "new_sha": "b18a1464afc3e0817957dbbc8c32914a53f02d1d"
+    },
+    {
+      "path": "WEBLyvra/live/dist/index.html",
+      "old_sha": "ae5af83e3d0ebbc486c1c96bf669da80534e69a6",
+      "new_sha": "ba23763304a0f5a781fc896a14deaef9d84292c6"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+      "old_sha": "c6a78e95a3f98f719659d07597405574f8671468",
+      "new_sha": "2a2f93043f6c3b0828dd2dbadd8c1590126804ef"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
+      "old_sha": "4d33f55aeec1395262b231c4e8ffba5faf48e7c3",
+      "new_sha": "2533354ab20a0460dbe226f24f211ec59b4ff16b"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+      "old_sha": "b29a36180c7a98ae9f422b7229f388307f8906fb",
+      "new_sha": "454aa30d37e6e94fd5fb2a21cedbbd332dbee235"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "old_sha": "b035c30d0e8f95e2569f39151a53d568b8734296",
+      "new_sha": "c55575e341c1c1ca8584d06822af5ef351c351a4"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
+      "old_sha": "49c19853e900c5877663cbecaa6e6388378a49bb",
+      "new_sha": "8d2668b31bb4577cbda8aa15e0058cccf303127f"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_FOREGROUND_NAVIGATION.md",
+      "old_sha": "959061c854379c5ddac43e1d40f8ccfd683afb66",
+      "new_sha": "d454ce6894d0d04dec3d216ffdfac0a78d00fb0f"
+    },
+    {
+      "path": "LYVRA_PET/bridge/repository-event-source.mjs",
+      "old_sha": "c36daff3bfec1bc7fa05b1db8a146f63d74b6b2a",
+      "new_sha": "ce162e28a94b68b2c0a7400ee560d133bf7b845f"
+    },
+    {
+      "path": "LYVRA_PET/bridge/verify-repository-events.mjs",
+      "old_sha": "fd166bdb5eebed7f588be6ff9daaa5cf8be5acd1",
+      "new_sha": "b61fff78b3b34507c4e0f46759255da092a7b489"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+      "old_sha": "dd788989a405788f252ce3bf4194f84bdc39b665",
+      "new_sha": "139060acbdacadb9ce9fc8e6f1800e1902452142"
+    }
+  ],
+  "classification": "DIRECT_GIT_TREE_BLOB_REFERENCES_ONLY_NOT_SEMANTIC_ADOPTION",
+  "preserve": {
+    "all_target_content_unchanged": true,
+    "whole_identity": true,
+    "facet_boundaries": true,
+    "plugin_releases": true,
+    "stream_bridge_adoption": true,
+    "original_offline_fallback": true,
+    "no_host_or_renderer_claim": true,
+    "no_foreign_mutation": true
+  },
+  "open": {
+    "fresh_host_acceptance": true,
+    "bridge_independent_binary_sha256": true,
+    "renderer_runtime": true
+  }
+}
