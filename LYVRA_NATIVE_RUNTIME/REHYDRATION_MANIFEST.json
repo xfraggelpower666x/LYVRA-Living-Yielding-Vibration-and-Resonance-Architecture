@@ -1959,5 +1959,20 @@
     "existing_visual_and_registry_reuse": true,
     "adoption": "PENDING",
     "host": "NOT_TESTED"
+  },
+  "dual_layer_visual_source_2026_10_17": {
+    "status": "CURRENT_SOURCE_PROJECTION_AND_REGISTRY_READBACK_PASS_PLUGIN_HOST_PENDING",
+    "registry": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "registry_blob": "ee7c93810997f25bedd416525cade675b745910a",
+    "projection": "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+    "projection_blob": "c350cc47cde6958e4638be1d551bd6ef436904bd",
+    "tests": "LYVRA_NATIVE_RUNTIME/development/verification/dual-layer-visual-projection.test.mjs",
+    "tests_blob": "a545b197a1d3af45530e5d62a1388c9d6f00fb3f",
+    "operations_center_blob": "b812b0e0ec54181c9ad01902bfaf5ac4021f9c31",
+    "test_runner": "NOT_EXECUTED",
+    "plugin_impact": "BOTH_SURFACES_REQUIRE_RUNTIME_PRESENTATION_REVIEW",
+    "five_choices": "PRESERVED",
+    "private_content_publication": false,
+    "host": "PENDING"
   }
 }
