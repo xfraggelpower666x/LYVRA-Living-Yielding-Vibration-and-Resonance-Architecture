@@ -87,7 +87,7 @@
     "lyvra-plugin/native-runtime/releases/v0.1.15/RESTORE.md": "e2a9ae0683b9561bb7ade95dd4fc5a952d4b1585",
     "lyvra-plugin/account/releases/v0.13.15/PROVENANCE.json": "e623f6350102af0f9659a6943c85bd1e1043ab55",
     "lyvra-plugin/account/releases/v0.13.15/RESTORE.md": "4114c16cbe9c5dcf2c30c4c87ed09da230541a7f",
-    "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md": "d0f58f4b1b3cda4c85125f0c2d6f086fc7d9cc6a",
+    "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md": "8a2911b1342433b26ecbf5dc686715432698f272",
     "LYVRA_PET/browser/assets/spritesheet-extended.png": "0173a86b2cc2d352bbbfcbefaf1c4769c80893ce",
     "LYVRA_PET/browser/sprite-manifest.json": "448384ab10ed350c396fb33f993c72c9ccfe8f84",
     "LYVRA_PET/source-packages/LYVRA-Cyber-Pet-Full-Package(1).zip": "76f8de50710342326b89325ba224df9bf990dbf9",
@@ -1378,5 +1378,14 @@
     "manifest_blob": "ee5c7e42124ee17ca4e3b63982bcdca553b30b1e",
     "receipt_blob": "713a2f97b370890d36c112af85fc6ae32f75dd55",
     "fresh_host": "PENDING"
+  },
+  "stream_master_bridge_native_intake_2026_10_17": {
+    "scope": "BRIDGE_CARRIER_FINGERPRINT_ONLY",
+    "source_base": "4a16d994d06f5b19e61d0fa1bd921fdd8d4e4e2e",
+    "original": "d0f58f4b1b3cda4c85125f0c2d6f086fc7d9cc6a",
+    "new": "8a2911b1342433b26ecbf5dc686715432698f272",
+    "unrelated_preexisting_mismatches": 11,
+    "unrelated_mismatches_not_promoted": true,
+    "foreign_plugin_or_host_pass": false
   }
 }
