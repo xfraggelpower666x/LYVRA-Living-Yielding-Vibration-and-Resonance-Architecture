@@ -70,7 +70,7 @@ async function showVerifiedOriginal(selector,url,size,sha256){
   if(actual!==sha256)return;
   const objectUrl=URL.createObjectURL(new Blob([bytes],{type:'image/webp'}));
   const preview=new Image();
-  preview.onload=()=>{visible.onload=()=>URL.revokeObjectURL(objectUrl);visible.src=objectUrl;if(visible.complete)URL.revokeObjectURL(objectUrl);};
+  preview.onload=()=>{visible.onload=()=>URL.revokeObjectURL(objectUrl);visible.src=objectUrl;};
   preview.onerror=()=>URL.revokeObjectURL(objectUrl);
   preview.src=objectUrl;
  }catch{/* Keep existing verified production asset visible. */}
