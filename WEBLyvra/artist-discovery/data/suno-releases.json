@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-17",
   "public_profile_song_count_observed": 386,
-  "coverage": "partial: public profile showed 386 songs, 99 separate public song links observed and retained.",
+  "coverage": "partial; Suno profile displayed 386 songs. Extended browser run yielded only one new unique link, most returned results already known. Further same-method scrolling low yield.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -701,6 +701,13 @@
       "cover_observed": "https://cdn2.suno.ai/image_bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3.jpeg?width=360",
       "status": "public_profile_browser_observed",
       "source": "2026-10-17 Suno Songs infinite-scroll continuation"
+    },
+    {
+      "title": "Sweet Good Girl",
+      "url": "https://suno.com/song/34fb5dd5-707e-43d7-9460-59053b05b269",
+      "cover_observed": "https://cdn2.suno.ai/image_34fb5dd5-707e-43d7-9460-59053b05b269.jpeg",
+      "status": "public_profile_browser_observed",
+      "source": "2026-10-17 complete-list review"
     }
   ],
   "rules": [
@@ -712,9 +719,15 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 99,
+  "observed_public_song_links": 100,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
   "last_seen_end_song_url": "https://suno.com/song/bf0026a8-2e4e-41f5-87d4-77aaf0db5fc3",
-  "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors."
+  "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
+  "last_research_outcome": {
+    "checked_at": "2026-10-17",
+    "method": "TinyFish public infinite scroll",
+    "new_count": 1,
+    "result": "mostly duplicates; no proven full pagination cursor; next approach should differ"
+  }
 }
