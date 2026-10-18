@@ -1,0 +1,43 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_DUAL_PLUGIN_RELEASE_READBACK_V1",
+  "authority": "WHOLE_LYVRA",
+  "mode": "PLUGIN_CREATOR_PATCH_FIRST",
+  "base_head": "6e2e3edc4b977dff9d7fa58df132d2a3bcea3120",
+  "recovery": "lyvra-recovery-pre-supercodeforge-dual-plugin-20261018-r01",
+  "scope": "NATIVE_AND_ALIVE_SKILL_INTEGRATION_NO_EXECUTOR_REWRITE",
+  "facet": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/",
+  "entry": "Bearbeiten & Weiterentwickeln / SuperCodeForge · Superfacette",
+  "main_menu_options": 5,
+  "original_executor": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.mjs",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "previous_version": "0.1.69",
+    "version": "0.1.70",
+    "release_id": "pluginrel_6ad426ed317c8191af6fd7078de25ba6",
+    "skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "manifest_versions_match": true,
+    "plugin_creator_file_readback": true
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "previous_version": "0.13.64",
+    "version": "0.13.65",
+    "release_id": "pluginrel_6ad426fcbc788191aa90ec5f00dfd5d5",
+    "skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "manifest_versions_match": true,
+    "plugin_creator_file_readback": true
+  },
+  "gates": {
+    "source": "REPOSITORY_EXECUTOR_SOURCE_VERIFIED",
+    "delivery": "BOTH_PLUGIN_RELEASES_UPDATED_AND_DIRECT_SKILL_READBACK_VERIFIED",
+    "adoption": "PLUGIN_SKILL_SOURCE_ADOPTED_NOT_HOST_EXECUTION",
+    "host": "FRESH_HOST_INVOKED_EXECUTOR_NOT_VERIFIED",
+    "provider": "EXISTING_CONNECTED_GITHUB_READBACK_SEPARATELY_VERIFIED",
+    "foreign": "NONE"
+  },
+  "caveat": "Skill/manifest readback proves release delivery but not an actual fresh-session execution of imported .mjs with the connected GitHub tool; Node tests and connector observation are separate prior evidence.",
+  "no_foreign_activation": true,
+  "no_foreign_writes": true,
+  "no_new_router": true,
+  "no_fabricated_host_pass": true
+}
