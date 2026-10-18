@@ -1,0 +1,16 @@
+{
+  "handoff_id": "NEW_CHAT_20261018_R01",
+  "workspace_id": "WHOLE_LYVRA_NATIVE_RUNTIME",
+  "lineage_id": "whole-lyvra-supercodeforge-host-acceptance-20261018",
+  "source_head": "9159a7a676571db4d2e6e723f697be036722380d",
+  "current_anchor": "SUPERCODEFORGE_VISUAL_REGRESSIONS_5_OF_5_PASS_PLUGIN_GENERAL_VISUAL_PARITY_PENDING",
+  "source_evidence": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_VISUAL_PLUGIN_PARITY_AUDIT_2026-10-18.json",
+  "node_visual_tests": "5_OF_5_PASS",
+  "plugin_supercodeforge_skill": "IDENTICAL",
+  "plugin_general_visual_skill": "DIFFERENT",
+  "native_version": "0.1.75",
+  "alive_version": "0.13.70",
+  "host": "NOT_VERIFIED",
+  "next_action": "Rehydrate latest Whole LYVRA then reconcile Native and ALIVE visual-interface differences; keep true host evidence independent.",
+  "no_foreign_writes": true
+}
