@@ -1,0 +1,66 @@
+{
+  "schema": "LYVRA_SPEECH_AUDIO_SCRIPT_PAIRING_READINESS_V1",
+  "owner": "WHOLE_LYVRA/SPEECH_DESIGN",
+  "date": "2026-10-18",
+  "scope": "EVIDENCE_ONLY_NO_AUDIO_RENDER",
+  "status": "PARTIAL_MAPPING_NOT_VERIFIED",
+  "source_head": "09453a5306b409a3ffe86b9ff45b3b1ea771d792",
+  "recovery_branch": "lyvra-recovery-pre-speech-pairing-audit-20261018-r01",
+  "source_path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/evidence/AI_DAYCARE_PERMISSION_DENIED_CREATOR_RENDER_2026-10-15.md",
+  "source_blob": "e7dfc964bbbe9874ad8545f9d10cf24f91bc45f9",
+  "relations": [
+    {
+      "name": "Permission Denied.mp3",
+      "sha256": "aa034c7227e3e204bc5b4b377bf81be15439880ec5714a8c312b35c5d94c0289",
+      "reported_duration_seconds": 283.2,
+      "reported_size_bytes": 7163919,
+      "source_script_revision": null,
+      "source_script_sha256": null,
+      "source_tonfall_revision": null,
+      "source_tonfall_sha256": null,
+      "renderer_session_id": null,
+      "exact_ui_session_binding": "UNVERIFIED",
+      "status": "IDENTITY_METADATA_ONLY"
+    },
+    {
+      "name": "Permission Denied (1).mp3",
+      "sha256": "182d59470c29ba64c47196ecf0c72d796066239375c9b9bbd3fd97d5d0a4d7df",
+      "reported_duration_seconds": 289.2,
+      "reported_size_bytes": 7265419,
+      "source_script_revision": null,
+      "source_script_sha256": null,
+      "source_tonfall_revision": null,
+      "source_tonfall_sha256": null,
+      "renderer_session_id": null,
+      "exact_ui_session_binding": "UNVERIFIED",
+      "status": "IDENTITY_METADATA_ONLY"
+    }
+  ],
+  "validated": {
+    "repo_source_metadata": "READBACK_VERIFIED",
+    "audio_binary_sha256": "HISTORICAL_CONVERSATION_VERIFICATION_NOT_RERUN",
+    "creator_report": "PRESERVED_AS_CREATOR_REPORT",
+    "script_audio_mapping": "NOT_VERIFIED",
+    "word_phoneme_timecodes": "NOT_AVAILABLE",
+    "emoji_renderer_ab": "NOT_PERFORMED",
+    "tonfall_single_variable_ab": "NOT_PERFORMED"
+  },
+  "required_to_promote_mapping": [
+    "VERBATIM_RENDERED_SCRIPT_WITH_STABLE_REVISION_OR_HASH",
+    "VERBATIM_TONFALL_WITH_STABLE_REVISION_OR_HASH",
+    "PER_FILE_RENDER_SESSION_ASSOCIATION_EVIDENCE",
+    "SOURCE_TO_AUDIO_HASH_ASSOCIATION_INDEPENDENTLY_VERIFIED"
+  ],
+  "constraints": [
+    "NO_GUESSED_SCRIPT_FROM_CHAT_DRAFT",
+    "NO_GLOBAL_VARIETY_OFF_RULE",
+    "NO_PUBLIC_RAW_MP3_UPLOAD",
+    "NO_PROMOTION_FROM_DURATION_OR_HASH_ONLY",
+    "NO_AUTOMATIC_AUDIO_CLAIMS",
+    "KEEP_ORIGINAL_SPEECH_FACET_PROMOTED"
+  ],
+  "first_action_result": "PAIRING_EVIDENCE_GAP_IDENTIFIED_AND_PERSISTED_NOT_RESOLVED",
+  "other_validation_gates": "OPEN",
+  "foreign_writes": false,
+  "supercodeforge_host": "BLOCKED_UNCHANGED"
+}
