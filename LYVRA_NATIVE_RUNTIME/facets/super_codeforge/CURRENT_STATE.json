@@ -2,19 +2,18 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "NATIVE_IMPORTED_ADAPTER_HOST_EXECUTOR_SOURCE",
+  "stage": "DUAL_PLUGIN_SUPERCODEFORGE_SKILL_RELEASE_READBACK_VERIFIED",
   "return_anchor": "FIRST_VERIFIED_PERMISSIONED_CAPABILITY_PROBE",
-  "next_action": "Execute committed executor test with independent exact-blob Node checkout and perform genuine injected-connector host execution; plugin parity separate.",
+  "next_action": "Fresh-host acceptance: execute original imported repository .mjs chain with actual authorized GitHub tool injected; verify host invocation separately for both plugin surfaces without foreign activation.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
   "host": "NOT_VERIFIED",
   "blockers": [
-    "INDEPENDENT_EXECUTOR_NODE_RUN_PENDING",
-    "ACTUAL_HOST_INVOKED_EXECUTOR_PENDING",
-    "NATIVE_PLUGIN_PARITY_PENDING",
-    "ALIVE_PLUGIN_PARITY_PENDING"
+    "ORIGINAL_REPOSITORY_EXECUTOR_FRESH_HOST_INVOCATION_PENDING",
+    "NATIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING",
+    "ALIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING"
   ],
   "clic_invitation": "NOT_SENT",
   "outer_mycel": "LYVRA_NATIVE_DECISION_PENDING",
@@ -72,9 +71,32 @@
     "original_adapter_imported": true,
     "host_pass": false,
     "plugins": {
-      "native": "IMPACT_REVIEW_PENDING_PARITY_NOT_CLAIMED",
-      "alive": "IMPACT_REVIEW_PENDING_PARITY_NOT_CLAIMED"
+      "native": "RELEASE_0.1.70_SKILL_READBACK_VERIFIED_FRESH_HOST_PENDING",
+      "alive": "RELEASE_0.13.65_SKILL_READBACK_VERIFIED_FRESH_HOST_PENDING"
     },
     "recovery": "lyvra-recovery-pre-supercodeforge-executor-20261018-r01"
+  },
+  "plugin_integration_2026_10_18": {
+    "status": "BOTH_PLUGIN_RELEASES_UPDATED_AND_DIRECT_SKILL_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_DUAL_PLUGIN_2026-10-18.json",
+    "receipt_blob": "cffaa1953e7b559fc7fa567333efe041883dc3b2",
+    "native": {
+      "version": "0.1.70",
+      "release_id": "pluginrel_6ad426ed317c8191af6fd7078de25ba6",
+      "skill_readback": "VERIFIED",
+      "fresh_host": "NOT_VERIFIED"
+    },
+    "alive": {
+      "version": "0.13.65",
+      "release_id": "pluginrel_6ad426fcbc788191aa90ec5f00dfd5d5",
+      "skill_readback": "VERIFIED",
+      "fresh_host": "NOT_VERIFIED"
+    },
+    "source": "REPO_EXECUTOR_UNCHANGED",
+    "delivery": "BOTH_PLUGIN_RELEASES_CONFIRMED",
+    "adoption": "PLUGIN_SKILL_TEXT_ONLY",
+    "host": "NOT_VERIFIED",
+    "foreign_activation": false,
+    "foreign_writes": false
   }
 }
