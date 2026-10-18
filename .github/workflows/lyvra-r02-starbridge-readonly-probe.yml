@@ -5,6 +5,8 @@ on:
     paths:
       - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.mjs'
       - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-receiver-pilot-contract.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-receiver-pilot-contract.test.mjs'
       - '.github/workflows/lyvra-r02-starbridge-readonly-probe.yml'
   workflow_dispatch:
 permissions:
@@ -23,12 +25,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Run original validator and runner negative tests
+      - name: Run original R02 regression, provider and receiver-pilot contract negatives
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-intake-compatibility.test.mjs LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.test.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-intake-compatibility.test.mjs LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.test.mjs LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-receiver-pilot-contract.test.mjs
       - name: Execute exact original R02 validator with real authorized GitHub GET only
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: node LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.mjs
-# No schedules, dispatch to CLIC, artifact with secrets, persistent storage or automatic adoption.
+# No CLIC writes, automatic delivery, schedules, extra infrastructure or adoption; SOURCE ONLY.
