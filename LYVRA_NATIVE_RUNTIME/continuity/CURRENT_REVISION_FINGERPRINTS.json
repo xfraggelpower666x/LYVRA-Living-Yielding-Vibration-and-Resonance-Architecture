@@ -1617,5 +1617,14 @@
     "fresh_host": "NOT_TESTED",
     "suno": "NOT_RENDERED",
     "no_new_visual_engine": true
+  },
+  "whole_supercodeforge_host_acceptance_handoff_2026_10_18": {
+    "status": "WHOLE_LYVRA_HANDOFF_SOURCE_VERIFIED_HOST_PENDING",
+    "handoff_id": "LYVRA-SUPERCODEFORGE-HOST-ACCEPTANCE-20261018-R01",
+    "handoff_blob": "1a55705232b34dc9f509d7c7898b18befea979b7",
+    "scope": "WHOLE_DEVELOPMENT_OBLIGATION_NOT_WORKSPACE_ACTIVATION",
+    "host": "NOT_VERIFIED",
+    "track_design": "ALREADY_PRODUCTIVE_NO_REOPEN",
+    "recovery": "lyvra-recovery-pre-supercodeforge-main-handoff-20261018-r01"
   }
 }
