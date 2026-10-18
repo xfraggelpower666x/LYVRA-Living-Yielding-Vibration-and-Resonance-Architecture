@@ -5794,5 +5794,26 @@
     "foreign_activation": false,
     "prior_state": "PRESERVED_AS_PROVENANCE",
     "pointer_last": true
+  },
+  "supercodeforge_visual_skill_dual_plugin_parity_2026_10_18": {
+    "scope": "TARGETED_VISUAL_SKILL_PATCH_ONLY",
+    "source_head_before_update": "8c612f120a837d1106ed574390b0c62e1285a8a2",
+    "receipt_commit": "e27b391220ebf47067333227f3f585c3d1e7fff5",
+    "receipt_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db",
+    "receipt_path": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-visual-parity-release-20261018-r01",
+    "native_version": "0.1.76",
+    "native_release_id": "pluginrel_6ad49701e0a881918168627beaba3996",
+    "alive_version": "0.13.72",
+    "alive_release_id": "pluginrel_6ad497189d788191a6344646222326c9",
+    "visual_skill_sha256": "d72ab65b878a29b270b1ac2f99f03d8a4fd969298d7c80248ff142c4e5661827",
+    "plugin_text_readback": "PASS_BOTH_RELEASES",
+    "release_delivery": "VERIFIED",
+    "full_plugin_archive_binary_binding": "NOT_VERIFIED",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "no_foreign_writes": true,
+    "original_executor_unchanged": true,
+    "return_anchor": "SUPERCODEFORGE_VISUAL_PARITY_PLUGIN_READBACK_PASS_NATIVE_ALIVE_HOST_PENDING"
   }
 }
