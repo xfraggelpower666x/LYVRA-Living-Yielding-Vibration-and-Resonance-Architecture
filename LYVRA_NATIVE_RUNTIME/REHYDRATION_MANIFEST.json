@@ -2076,5 +2076,33 @@
     "fresh_host": "NOT_TESTED",
     "audio_render": "NOT_TESTED",
     "pointer_last": "PENDING"
+  },
+  "track_design_full_capability_both_modes_repair_2026_10_18": {
+    "status": "TRACK_AND_WHOLE_RELATION_SOURCE_WITH_BOTH_PLUGIN_RELEASE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "scope": "TRACK_DESIGN_AND_WHOLE_RELATION_BY_REFERENCE",
+    "bridge": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md",
+    "bridge_blob": "c612735d240eae59f1dcd8cdac0e1563e836e7b6",
+    "modes": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md",
+    "modes_blob": "47839f027c49b317a4640ef83634db5b59e2ba86",
+    "sub_rehydration": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "sub_blob": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1",
+    "renderer": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+    "renderer_blob": "3228242459272d6e39922a3e5ab68ba039156c59",
+    "whole_relation": "LYVRA_NATIVE_RUNTIME/current/relations/WHOLE_LYVRA_TRACK_DESIGN_MODE_CAPABILITY_CONTINUITY.md",
+    "whole_relation_blob": "b73ac2f41ac8d2aeafaa169717cb38e1127cb78d",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_TRACK_FULL_CAPABILITY_REPAIR_DUAL_PLUGIN_2026-10-18.json",
+    "receipt_blob": "d500a8978686bf1c495cd7d4dd4c58641aebd960",
+    "native_version": "0.1.72",
+    "native_release": "pluginrel_6ad4488440b0819193e5e00a219fa3d2",
+    "alive_version": "0.13.67",
+    "alive_release": "pluginrel_6ad4489354388191acf91c201a35686e",
+    "previous_mode_release_preserved": true,
+    "static_source": "VERIFIED",
+    "dual_plugin_releases": "VERIFIED",
+    "fresh_host": "NOT_TESTED",
+    "suno_render": "NOT_TESTED",
+    "codeforge_executor": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-track-mode-full-capability-repair-20261018-r01",
+    "foreign_mutation": false
   }
 }
