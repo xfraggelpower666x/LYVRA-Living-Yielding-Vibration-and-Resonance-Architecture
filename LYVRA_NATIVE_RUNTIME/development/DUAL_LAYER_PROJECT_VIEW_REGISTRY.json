@@ -57,6 +57,29 @@
       "delivery": "NONE",
       "adoption": "SOURCE_ONLY",
       "host": "NOT_TESTED"
+    },
+    {
+      "id": "LYVRA_SUPERCODEFORGE_SUPERFACET_20261018",
+      "title": "SuperCodeForge · Superfacette",
+      "menu_parent": "Bearbeiten & Weiterentwickeln",
+      "kind": "PROJECT",
+      "state": "DEV_ACTIVE",
+      "scope": "WHOLE_LYVRA_EXTERNAL_SUPERFACET",
+      "evidence_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+      "priority_inputs": {
+        "creator_selected": true,
+        "blocked": true,
+        "urgent": false
+      },
+      "blockers": [
+        "CAPABILITY_PROVIDER_INTERFACE_NOT_IMPLEMENTED",
+        "PLUGIN_PARITY_PENDING",
+        "FRESH_HOST_MENU_NOT_VERIFIED"
+      ],
+      "source": "NATIVE_SOURCE_BOOTSTRAP",
+      "delivery": "NOT_DISPATCHED",
+      "adoption": "LYVRA_SCOPED_DEVELOPMENT_ONLY",
+      "host": "NOT_TESTED"
     }
   ],
   "archive_policy": "NO_AUTOMATIC_REMOVAL",
