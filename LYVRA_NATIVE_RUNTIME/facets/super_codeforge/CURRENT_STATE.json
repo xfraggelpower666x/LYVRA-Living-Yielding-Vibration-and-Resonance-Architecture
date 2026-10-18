@@ -1,17 +1,16 @@
 {
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
-  "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "ORIGINAL_LOCAL_NODE_TESTS_PASS_MANUAL_GITHUB_ACTIONS_INJECTION_SOURCE_READY",
-  "return_anchor": "SUPERCODEFORGE_MANUAL_ACTIONS_REAL_PROVIDER_RUN_PENDING_NATIVE_ALIVE_HOST_SEPARATE",
-  "next_action": "Manually dispatch existing-repo read-only GitHub Actions workflow and inspect real workflow trace; then separately obtain Native and ALIVE ChatGPT host invocation traces. Do not treat GitHub Actions as plugin Host PASS.",
+  "status": "DEV_ACTIVE_SOURCE_PROVIDER_VERIFIED_HOST_PENDING",
+  "stage": "GITHUB_ACTIONS_ORIGINAL_EXECUTOR_PROVIDER_PASS_NATIVE_ALIVE_HOST_PENDING",
+  "return_anchor": "SUPERCODEFORGE_PROVIDER_PASS_VISUAL_PARITY_NATIVE_ALIVE_HOST_PENDING",
+  "next_action": "Keep real GitHub Actions provider PASS separate from Native/ALIVE plugin host execution; reconcile general visual skill parity losslessly with release-safe patch and separate independent host invocation.",
   "verified_live_capabilities": 0,
-  "source": "REPOSITORY_ONLY",
+  "source": "REPOSITORY_EXECUTOR_AND_GITHUB_ACTIONS_PROVIDER_READBACK_VERIFIED",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
-  "host": "NOT_VERIFIED",
+  "host": "NATIVE_ALIVE_PLUGIN_HOST_NOT_VERIFIED",
   "blockers": [
-    "MANUAL_GITHUB_ACTIONS_REAL_PROVIDER_RUN_NOT_EXECUTED",
     "NATIVE_PLUGIN_HOST_ACTION_HANDLE_INJECTION_UNAVAILABLE",
     "ALIVE_PLUGIN_HOST_ACTION_HANDLE_INJECTION_UNAVAILABLE"
   ],
@@ -111,7 +110,7 @@
     "no_code_change": true
   },
   "github_actions_readonly_self_probe_2026_10_18": {
-    "status": "SOURCE_READY_DISPATCH_PENDING",
+    "status": "REAL_PROVIDER_RUN_SUCCESS",
     "receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
     "receipt_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
     "entrypoint_blob": "63dae484c15ee1df1c2c6bd60fe1be7fb8cc5409",
@@ -119,12 +118,14 @@
     "test_blob": "55a7d62809fe1b2f866c8ece39a349ac1886c308",
     "original_executor_unchanged": true,
     "original_node_tests": "PRIOR_LOCAL_3_OF_3_PASS",
-    "new_test_execution": "NOT_EXECUTED",
-    "real_provider_workflow": "NOT_EXECUTED",
+    "new_test_execution": "4_OF_4_TEST_MODULES_PASS",
+    "real_provider_workflow": "RUN_39115080655_JOB_117639129011_SUCCESS",
     "chatgpt_native_fresh_host": "NOT_VERIFIED",
     "chatgpt_alive_fresh_host": "NOT_VERIFIED",
     "read_only": true,
-    "manual_only": true
+    "manual_only": true,
+    "previous_historical_status": "SOURCE_READY_DISPATCH_PENDING",
+    "provider_calls": 1
   },
   "visual_intelligence_binding_2026_10_18": {
     "status": "SOURCE_BINDING_VERIFIED_HOST_RENDER_PENDING",
@@ -142,5 +143,24 @@
     "alive_fresh_host": "NOT_VERIFIED",
     "preserve_five_choices": true,
     "no_second_engine": true
+  },
+  "provider_execution_verified_2026_10_18": {
+    "source": "GITHUB_ACTIONS_DIRECT_JOB_AND_LOG_READBACK",
+    "run_id": 39115080655,
+    "job_id": 117639129011,
+    "checkout_head": "63e6499e903f1a2e965131a33752aa4384440e65",
+    "conclusion": "success",
+    "source_readback": "SOURCE_READBACK_MATCH",
+    "source_blob": "e5ae05bed19bfef3612ada3e0ed533da0d23a28f",
+    "provider_calls": 1,
+    "original_repository_executor_invoked": true,
+    "test_modules_passed": 4,
+    "test_modules_failed": 0,
+    "host_plugin_native_verified": false,
+    "host_plugin_alive_verified": false,
+    "scope": "READ_ONLY_SELF_REPOSITORY",
+    "foreign_activation": false,
+    "mutation": false,
+    "prior_stage_retained_as_historical_record": true
   }
 }
