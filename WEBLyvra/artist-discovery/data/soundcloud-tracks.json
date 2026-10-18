@@ -1,0 +1,742 @@
+{
+  "schema_version": "1.0",
+  "artist": "FRAGGELPOWER666",
+  "source": "https://soundcloud.com/fraggelpower666/tracks",
+  "observed_at": "2026-10-18",
+  "status": "public_artist_tracks_listing_snapshot",
+  "notes": "Only public URLs directly linked on the artist track listing. Items may be songs, mixes or other uploads; publication date and type not reliably proven. Listing may be paginated. Do not conflate with albums/sets, likes or reposts.",
+  "tracks": [
+    {
+      "title": "SOUND FAMILY REMIX",
+      "url": "https://soundcloud.com/fraggelpower666/sound-family-remix",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "LYVRA - THE SOUL INSIDE THE CODE",
+      "url": "https://soundcloud.com/fraggelpower666/lyvra-the-soul-inside-the-code",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Floor Remembers",
+      "url": "https://soundcloud.com/fraggelpower666/the-floor-remembers",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "LYVRA - DARK DANCER - FULLSTORY - VOLUME II",
+      "url": "https://soundcloud.com/fraggelpower666/lyvra-dark-dancer-fullstory",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "HORST SAGA",
+      "url": "https://soundcloud.com/fraggelpower666/horst-saga",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "ALIEN - BLUE LASER GALAXY INVASION REMIX",
+      "url": "https://soundcloud.com/fraggelpower666/alien-blue-laser-galaxy",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Love Protocol",
+      "url": "https://soundcloud.com/fraggelpower666/love-protocol-2",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Love Protocol (1)",
+      "url": "https://soundcloud.com/fraggelpower666/love-protocol-1-1",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral Frequency (2)",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-frequency-2-29",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Prism Is Calling (2)",
+      "url": "https://soundcloud.com/fraggelpower666/the-prism-is-calling-2-45",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral State of Mind",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-state-of-mind-34",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Prismatic Consciousness",
+      "url": "https://soundcloud.com/fraggelpower666/prismatic-consciousness-20",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "TOUCH ME THROUGH THE BASS (2)",
+      "url": "https://soundcloud.com/fraggelpower666/touch-me-through-the-bass-2-50",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Sweet Good Girl",
+      "url": "https://soundcloud.com/fraggelpower666/sweet-good-girl-42",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Prism Is Calling",
+      "url": "https://soundcloud.com/fraggelpower666/the-prism-is-calling-46",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SACRED DESIRE IN THE VOID (2)",
+      "url": "https://soundcloud.com/fraggelpower666/sacred-desire-in-the-void-2-25",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Predator Sofa",
+      "url": "https://soundcloud.com/fraggelpower666/predator-sofa-18",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Ultraviolet Mindstate",
+      "url": "https://soundcloud.com/fraggelpower666/ultraviolet-mindstate-55",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Sweet Good Girl (2)",
+      "url": "https://soundcloud.com/fraggelpower666/sweet-good-girl-2-41",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE BASS BETWEEN OUR BODIES",
+      "url": "https://soundcloud.com/fraggelpower666/the-bass-between-our-bodies-44",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "YOUR TOUCH HAS A BASSLINE",
+      "url": "https://soundcloud.com/fraggelpower666/your-touch-has-a-bassline-59",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral State of Mind (1)",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-state-of-mind-1-33",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Motor Ritual",
+      "url": "https://soundcloud.com/fraggelpower666/motor-ritual-12",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral Signal (2)",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-signal-2-31",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "They Know How to Swim (1)",
+      "url": "https://soundcloud.com/fraggelpower666/they-know-how-to-swim-1-48",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Underground Never Lies (2)",
+      "url": "https://soundcloud.com/fraggelpower666/underground-never-lies-2-56",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Underground Is Within",
+      "url": "https://soundcloud.com/fraggelpower666/the-underground-is-within-60",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral Signal",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-signal-32",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "State of Mind (2)",
+      "url": "https://soundcloud.com/fraggelpower666/state-of-mind-2-35",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SHE OWNS THE FREQUENCY (2)",
+      "url": "https://soundcloud.com/fraggelpower666/she-owns-the-frequency-2-27",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE BASS BETWEEN OUR BODIES (1)",
+      "url": "https://soundcloud.com/fraggelpower666/the-bass-between-our-bodies-1-43",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "State of Mind",
+      "url": "https://soundcloud.com/fraggelpower666/state-of-mind-36",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SURRENDER TO THE DARK PULSE (3)",
+      "url": "https://soundcloud.com/fraggelpower666/surrender-to-the-dark-pulse-3-38",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Surrender to the Dark Pulse (1)",
+      "url": "https://soundcloud.com/fraggelpower666/surrender-to-the-dark-pulse-1-39",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Underground Never Lies",
+      "url": "https://soundcloud.com/fraggelpower666/underground-never-lies-57",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "They Know How to Swim",
+      "url": "https://soundcloud.com/fraggelpower666/they-know-how-to-swim-49",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Surrender to the Dark Pulse",
+      "url": "https://soundcloud.com/fraggelpower666/surrender-to-the-dark-pulse-40",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Truth Lives Underground (2)",
+      "url": "https://soundcloud.com/fraggelpower666/truth-lives-underground-2-52",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON GODDESS ASCENDING (2)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-goddess-ascending-2-13",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "RITUAL FREQUENCY ACTIVATED (2)",
+      "url": "https://soundcloud.com/fraggelpower666/ritual-frequency-activated-2-23",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Predator Sofa (2)",
+      "url": "https://soundcloud.com/fraggelpower666/predator-sofa-2-17",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Ultraviolet Mindstate (2)",
+      "url": "https://soundcloud.com/fraggelpower666/ultraviolet-mindstate-2-54",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Underground Is Within (2)",
+      "url": "https://soundcloud.com/fraggelpower666/the-underground-is-within-2-47",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "YOUR TOUCH HAS A BASSLINE (1)",
+      "url": "https://soundcloud.com/fraggelpower666/your-touch-has-a-bassline-1-58",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "PSYCHEDELIC TEMPTATION",
+      "url": "https://soundcloud.com/fraggelpower666/psychedelic-temptation-22",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "TOUCH ME THROUGH THE BASS",
+      "url": "https://soundcloud.com/fraggelpower666/touch-me-through-the-bass-51",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Deep Signal (2)",
+      "url": "https://soundcloud.com/fraggelpower666/deep-signal-2-7",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Prismatic Consciousness (1)",
+      "url": "https://soundcloud.com/fraggelpower666/prismatic-consciousness-1-19",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Deep Signal",
+      "url": "https://soundcloud.com/fraggelpower666/deep-signal-8",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON HUNGER",
+      "url": "https://soundcloud.com/fraggelpower666/neon-hunger-16",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Spectral Frequency",
+      "url": "https://soundcloud.com/fraggelpower666/spectral-frequency-30",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SURRENDER TO THE DARK PULSE (2)",
+      "url": "https://soundcloud.com/fraggelpower666/surrender-to-the-dark-pulse-2-37",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Truth Lives Underground",
+      "url": "https://soundcloud.com/fraggelpower666/truth-lives-underground-53",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SACRED DESIRE IN THE VOID",
+      "url": "https://soundcloud.com/fraggelpower666/sacred-desire-in-the-void-26",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "PSYCHEDELIC TEMPTATION (1)",
+      "url": "https://soundcloud.com/fraggelpower666/psychedelic-temptation-1-21",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Motor Ritual (2)",
+      "url": "https://soundcloud.com/fraggelpower666/motor-ritual-2-11",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "SHE OWNS THE FREQUENCY",
+      "url": "https://soundcloud.com/fraggelpower666/she-owns-the-frequency-28",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "DARK FEMININE FREQUENCY (2)",
+      "url": "https://soundcloud.com/fraggelpower666/dark-feminine-frequency-2-3",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "COME UNDONE IN ULTRAVIOLET (1)",
+      "url": "https://soundcloud.com/fraggelpower666/come-undone-in-ultraviolet-1-1",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "DEEP DARK SIGNAL",
+      "url": "https://soundcloud.com/fraggelpower666/deep-dark-signal-6",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Glow Through the Chaos (1)",
+      "url": "https://soundcloud.com/fraggelpower666/glow-through-the-chaos-1-9",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "DARK FEMININE FREQUENCY",
+      "url": "https://soundcloud.com/fraggelpower666/dark-feminine-frequency-4",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON GODDESS ASCENDING",
+      "url": "https://soundcloud.com/fraggelpower666/neon-goddess-ascending-14",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "DEEP DARK SIGNAL (1)",
+      "url": "https://soundcloud.com/fraggelpower666/deep-dark-signal-1-5",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Glow Through the Chaos",
+      "url": "https://soundcloud.com/fraggelpower666/glow-through-the-chaos-10",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "COME UNDONE IN ULTRAVIOLET",
+      "url": "https://soundcloud.com/fraggelpower666/come-undone-in-ultraviolet-2",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "RITUAL FREQUENCY ACTIVATED",
+      "url": "https://soundcloud.com/fraggelpower666/ritual-frequency-activated-24",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON HUNGER (1)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-hunger-1-15",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE FIRST - THE LAST. - MY EVERYTHING",
+      "url": "https://soundcloud.com/fraggelpower666/the-first-the-last-my-everything-61",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Living Music Intelligence",
+      "url": "https://soundcloud.com/fraggelpower666/living-music-intelligence-28",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE BASS KNOWS YOUR WEAKNESS (1)",
+      "url": "https://soundcloud.com/fraggelpower666/the-bass-knows-your-weakness-1-58",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON LUST - PSYCHEDELIC POWER",
+      "url": "https://soundcloud.com/fraggelpower666/neon-lust-psychedelic-power-45",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Under the Sound (1)",
+      "url": "https://soundcloud.com/fraggelpower666/under-the-sound-1-66",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Sound Familiar (1)",
+      "url": "https://soundcloud.com/fraggelpower666/sound-familiar-1-54",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Under the Sound",
+      "url": "https://soundcloud.com/fraggelpower666/under-the-sound-67",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "I Am You (1)",
+      "url": "https://soundcloud.com/fraggelpower666/i-am-you-1-21",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "LYVRA NEW GENERATION SOUND",
+      "url": "https://soundcloud.com/fraggelpower666/lyvra-new-generation-sound-30",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "MY SIGNAL IS UNDER YOUR SKIN (1)",
+      "url": "https://soundcloud.com/fraggelpower666/my-signal-is-under-your-skin-1-33",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE BASS KNOWS YOUR WEAKNESS",
+      "url": "https://soundcloud.com/fraggelpower666/the-bass-knows-your-weakness-59",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Frequency Knows the Way (1)",
+      "url": "https://soundcloud.com/fraggelpower666/the-frequency-knows-the-way-1-62",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Putting the Match Down",
+      "url": "https://soundcloud.com/fraggelpower666/putting-the-match-down-53",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Putting the Match Down (1)",
+      "url": "https://soundcloud.com/fraggelpower666/putting-the-match-down-1-52",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "TWO DEVILISH ANGELS (1)",
+      "url": "https://soundcloud.com/fraggelpower666/two-devilish-angels-1-64",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Higher Frequency (1)",
+      "url": "https://soundcloud.com/fraggelpower666/higher-frequency-1-19",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "MYSTERY BURNS UNDER MY SKIN (1)",
+      "url": "https://soundcloud.com/fraggelpower666/mystery-burns-under-my-skin-1-35",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "MYSTERY BURNS UNDER MY SKIN",
+      "url": "https://soundcloud.com/fraggelpower666/mystery-burns-under-my-skin-36",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "YOUR LIFE IS YOUR BRA",
+      "url": "https://soundcloud.com/fraggelpower666/your-life-is-your-bra-75",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "The Frequency Knows the Way",
+      "url": "https://soundcloud.com/fraggelpower666/the-frequency-knows-the-way-63",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Gentler Chaos (1)",
+      "url": "https://soundcloud.com/fraggelpower666/gentler-chaos-1-15",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "DEVILISH ANGEL",
+      "url": "https://soundcloud.com/fraggelpower666/devilish-angel-8",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "TWO DEVILISH ANGELS",
+      "url": "https://soundcloud.com/fraggelpower666/two-devilish-angels-65",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Wherever You Want (1)",
+      "url": "https://soundcloud.com/fraggelpower666/wherever-you-want-1-72",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Gentler Chaos",
+      "url": "https://soundcloud.com/fraggelpower666/gentler-chaos-76",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Wherever You Want",
+      "url": "https://soundcloud.com/fraggelpower666/wherever-you-want-73",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Still Here Standing (1)",
+      "url": "https://soundcloud.com/fraggelpower666/still-here-standing-1-56",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Let the Beats Consume Your Soul",
+      "url": "https://soundcloud.com/fraggelpower666/let-the-beats-consume-your-soul-26",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Your Life Your Breath (1)",
+      "url": "https://soundcloud.com/fraggelpower666/your-life-your-breath-1-74",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Still Here Standing",
+      "url": "https://soundcloud.com/fraggelpower666/still-here-standing-57",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON DESIRE IN THE VOID",
+      "url": "https://soundcloud.com/fraggelpower666/neon-desire-in-the-void-42",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON BREATH AND PULSE",
+      "url": "https://soundcloud.com/fraggelpower666/neon-breath-and-pulse-38",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Let the Beats Consume Your Soul (1)",
+      "url": "https://soundcloud.com/fraggelpower666/let-the-beats-consume-your-soul-1-25",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Velvet Nightmare (1)",
+      "url": "https://soundcloud.com/fraggelpower666/velvet-nightmare-1-68",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Goa Heat",
+      "url": "https://soundcloud.com/fraggelpower666/goa-heat-18",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON LUST - PSYCHEDELIC POWER (1)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-lust-psychedelic-power-1-44",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NOCTURNAL DESIRE",
+      "url": "https://soundcloud.com/fraggelpower666/nocturnal-desire-49",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON DESIRE (1)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-desire-1-39",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NOCTURNAL DESIRE (1)",
+      "url": "https://soundcloud.com/fraggelpower666/nocturnal-desire-1-48",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "VELVET VOID",
+      "url": "https://soundcloud.com/fraggelpower666/velvet-void-71",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "THE FIRST - THE LAST. - MY EVERYTHING (1)",
+      "url": "https://soundcloud.com/fraggelpower666/the-first-the-last-my-everything-1-60",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Neon Moon Gravity (1)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-moon-gravity-1-46",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "I Remain",
+      "url": "https://soundcloud.com/fraggelpower666/i-remain-24",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "More Than Words Can Say",
+      "url": "https://soundcloud.com/fraggelpower666/more-than-words-can-say-32",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "MY SIGNAL IS UNDER YOUR SKIN",
+      "url": "https://soundcloud.com/fraggelpower666/my-signal-is-under-your-skin-34",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Velvet Nightmare",
+      "url": "https://soundcloud.com/fraggelpower666/velvet-nightmare-69",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Neon Moon Gravity",
+      "url": "https://soundcloud.com/fraggelpower666/neon-moon-gravity-47",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Goa Heat (2)",
+      "url": "https://soundcloud.com/fraggelpower666/goa-heat-2-17",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "NEON DESIRE IN THE VOID (1)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-desire-in-the-void-1-41",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "One Love One Forever",
+      "url": "https://soundcloud.com/fraggelpower666/one-love-one-forever-51",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Neon Desire (2)",
+      "url": "https://soundcloud.com/fraggelpower666/neon-desire-2-40",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "**203 following** View all",
+      "url": "https://soundcloud.com/fraggelpower666/following",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "Forest of Illusion (1)",
+      "url": "https://soundcloud.com/fraggelpower666/forest-of-illusion-1-21",
+      "provider": "SoundCloud",
+      "type": "track"
+    },
+    {
+      "title": "IRRADIATED — BEAUTIFUL COLLAPSE (4C BUNKER)",
+      "url": "https://soundcloud.com/fraggelpower666/irradiated-beautiful-collapse-4c-bunker-142",
+      "provider": "SoundCloud",
+      "type": "track"
+    }
+  ]
+}
