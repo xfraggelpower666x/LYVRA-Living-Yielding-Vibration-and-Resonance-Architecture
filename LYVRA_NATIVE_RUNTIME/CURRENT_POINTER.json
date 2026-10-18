@@ -5604,5 +5604,30 @@
     "no_foreign_autoactivation": true,
     "recovery": "lyvra-recovery-pre-supercodeforge-main-handoff-20261018-r01",
     "pointer_last": true
+  },
+  "track_creator_visual_copy_and_custom_off_feedback_2026_10_18": {
+    "status": "PRODUCTIVE_CREATOR_VALIDATED_RICH_TRACK_COPY_UI_AND_RENDER_FEEDBACK_BOTH_PLUGIN_RELEASES_READBACK_VERIFIED_HOST_PENDING",
+    "scope": "TRACK_DESIGN_PLUS_EXISTING_SEMANTIC_VISUAL_INTELLIGENCE",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CREATOR_VALIDATED_VISUAL_COPY_RENDER_FEEDBACK.md",
+    "source_blob": "3205a3504266e8dc418501027563179322b4c38b",
+    "visual_blob": "c87da9f0b6caee2f75cdfbbfde4bb1580e25f248",
+    "analysis_blob": "61acd63381e2aae6669219879f5cff4175674a2d",
+    "renderer_blob": "b9004a19e4fea8ab56bb98455c826574c819b7bf",
+    "receipt_blob": "a3e9dd45be43144642e9555a5901b0be7ed7ee78",
+    "native_plugin_version": "0.1.74",
+    "native_release_id": "pluginrel_6ad46c1c841c8191bd92cdf73f3fceda",
+    "alive_plugin_version": "0.13.69",
+    "alive_release_id": "pluginrel_6ad46c2f77808191b7357eeccd644bd0",
+    "manifest_blob": "8fa3864bbd45e5fdee6f375e33bd4e53afe7a96b",
+    "fingerprint_blob": "39a9fcdb50462e9222d9c1d077074a138a1a6317",
+    "recovery": "lyvra-recovery-pre-track-visual-copy-ui-20261018-r01",
+    "individual_copy_buttons": true,
+    "actual_payload_character_counts": true,
+    "meaningful_visual_quality_reference": true,
+    "custom_off_feedback": "POSITIVE_SINGLE_USER_REPORT_NOT_GLOBAL_OR_AB",
+    "host_fresh_boot": "NOT_TESTED",
+    "independent_audio": "NOT_VERIFIED",
+    "no_new_facet_or_controller": true,
+    "pointer_last": true
   }
 }
