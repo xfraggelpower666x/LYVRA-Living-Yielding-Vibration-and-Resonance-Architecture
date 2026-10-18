@@ -1,0 +1,72 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_ORIGINAL_NODE_EXECUTION_EVIDENCE_V1",
+  "owner": "WHOLE_LYVRA",
+  "scope": "NATIVE_SUPERCODEFORGE_ORIGINAL_REPOSITORY_TESTS_ONLY",
+  "date": "2026-10-18",
+  "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "branch": "lyvra",
+  "source_head_before_test": "2141ca8e9dfb6869e9bbd31183a1c2016642a85b",
+  "recovery_branch": "lyvra-recovery-pre-supercodeforge-original-node-test-20261018-r01",
+  "exact_git_blob_validation": "PASS_USING_GIT_HASH_OBJECT_ON_ORIGINAL_BYTES",
+  "files": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.mjs",
+      "blob": "61f063d5e890b09b7cebc1b9ad7a6161a7bc4b07"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs",
+      "blob": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs",
+      "blob": "c3baa1944355eeb9af43eb16331eb0aa0336b46d"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs",
+      "blob": "a97e3a72098f9b296303ace86163935501f85e94"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs",
+      "blob": "30f43e3ce95cda4b8a4a4133202881e34bd76486"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs",
+      "blob": "62a661fd18e8524fc436907c30ba363f7dffa73b"
+    }
+  ],
+  "execution_environment": {
+    "runner": "Node.js",
+    "version": "22.16.0",
+    "command": "node --test *.test.mjs",
+    "source": "BYTE_IDENTICAL_LOCAL_MATERIALIZATION_FROM_GITHUB_READBACK",
+    "network_access": "NO_GITHUB_CONNECTOR_IN_LOCAL_NODE_PROCESS"
+  },
+  "results": {
+    "original_test_modules": 3,
+    "passed": 3,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "negative_cases": "PASS_IN_ORIGINAL_NODE_TEST_SUITE",
+    "read_only_provider": "MOCKED_BY_ORIGINAL_TESTS",
+    "original_runtime_module_import": "PASS_LOCAL_NODE",
+    "plugin_host_original_module_invocation": "NOT_EXECUTED",
+    "live_github_fetch_file": "PRIOR_DIRECT_CONNECTOR_READBACK_ONLY_NOT_NODE_INJECTION",
+    "native_plugin_fresh_host": "NOT_VERIFIED",
+    "alive_plugin_fresh_host": "NOT_VERIFIED",
+    "source_gate": "PASS",
+    "node_test_gate": "PASS",
+    "host_gate": "BLOCKED_UNAVAILABLE_HOST_IMPORT_AND_ACTION_HANDLE_INJECTION",
+    "automatic_transport": "NOT_VERIFIED",
+    "external_adoption": "NOT_VERIFIED"
+  },
+  "technical_gap": "Available plugin skill invocation and GitHub fetch_file actions do not expose a supported host entrypoint that imports the repository authorized-host-executor.mjs and injects mcp__GitHub__fetch_file as the function argument. Running local original Node tests is not a substitute for that host integration.",
+  "plugin_impact": "EVIDENCE_AND_STATUS_ONLY_NO_RUNTIME_SEMANTIC_CHANGE_NO_RELEASE",
+  "no_new_router": true,
+  "no_code_mutation": true,
+  "no_foreign_writes": true,
+  "no_foreign_autoactivation": true,
+  "track_design_productive": "PRESERVED_NOT_REOPENED",
+  "next_meaningful_action": "Connect existing module to an actually authorized executable host entrypoint, then collect independent native and alive host traces. No false PASS.",
+  "return_anchor": "SUPERCODEFORGE_ORIGINAL_NODE_TEST_PASS_FRESH_HOST_INJECTION_PENDING"
+}
