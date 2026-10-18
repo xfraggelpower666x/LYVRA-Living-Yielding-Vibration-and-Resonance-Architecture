@@ -1,12 +1,12 @@
 # LYVRA Track Design - Work Modes and Track Context Isolation
-STATUS: PRODUCTION_SOURCE_PENDING_POINTER_LAST
+STATUS: CURRENT_PRODUCTIVE_TRACK_MODES
 DATE: 2026-10-17
 OWNER: WHOLE_LYVRA
 FACET: TRACK_DESIGN
 SCOPE: TRACK_DESIGN_ONLY_WITH_PRESENTATION_BY_REFERENCE
 SOURCE: CREATOR_DIRECT_DECISION_2026-10-17
 BASE_PRODUCTIVE_HEAD: d9782d5955617222a4094ac889d1baf3794ee612
-PRODUCTION_PROMOTION: NATIVE_AND_ALIVE_RELEASES_VERIFIED_POINTER_LAST_PENDING
+PRODUCTION_PROMOTION: VERIFIED_CURRENT_POINTER_2026-10-18; FULL_CAPABILITY_BRIDGE_REPAIR_IN_PROGRESS
 
 ## Architecture and identity
 Track Design remains ONE native LYVRA facet. Source Mode and Discovery Mode are internal working modes, NOT new subfacets, systems, agents, controllers, routers, triggers or authorities. No changes to Speech Design, Suno Studio 2 or Analytics. Whole LYVRA owns musical decisions.
@@ -42,3 +42,11 @@ Then LEARNING_BY_DOING uses user feedback and actual render outcomes. Three-chec
 
 ## Renderer and output
 Both modes share the EXISTING current Track Design renderer/output guard and device-specific surface. This document adds no new box order, field limits, genre requirement, version or automatic plugin release.
+
+
+## Full capability continuity across modes (2026-10-18)
+BOTH_MODES_MUST_USE_FULL_MUSIC_DEPTH = TRUE
+CAUSE_TO_SOUND_TO_RENDERER_OUTPUT = MANDATORY
+FULL_CAPABILITY_BRIDGE = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md
+CREATIVE_CONTEXT_ISOLATION_NE_REHYDRATION_OR_MUSICAL_CAPABILITY_ISOLATION = TRUE
+VISIBLE_OUTPUT_MUST_BE_CHECKED_IN_ASSEMBLED_FORM = TRUE

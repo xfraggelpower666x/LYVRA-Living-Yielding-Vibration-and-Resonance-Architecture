@@ -1,0 +1,53 @@
+{
+  "schema": "LYVRA_TRACK_DESIGN_FULL_CAPABILITY_REPAIR_V1",
+  "date": "2026-10-18",
+  "owner": "WHOLE_LYVRA",
+  "scope": "TRACK_DESIGN_EXECUTION_PLUS_WHOLE_LYVRA_REFERENCE",
+  "status": "SOURCE_AND_BOTH_PLUGIN_RELEASE_READBACK_VERIFIED_HOST_EXECUTION_NOT_TESTED",
+  "base_current_head": "c1ebb2b33d2b6d027454ce0324ce97f341f9a4a3",
+  "recovery": "lyvra-recovery-pre-track-mode-full-capability-repair-20261018-r01",
+  "trigger": "CREATOR_AUTHORIZED_REPAIR_BOTH_MODES_AND_WHOLE_LYVRA",
+  "source_sha_map": {
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md": "c612735d240eae59f1dcd8cdac0e1563e836e7b6",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md": "47839f027c49b317a4640ef83634db5b59e2ba86",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1",
+    "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "3228242459272d6e39922a3e5ab68ba039156c59",
+    "LYVRA_NATIVE_RUNTIME/current/relations/WHOLE_LYVRA_TRACK_DESIGN_MODE_CAPABILITY_CONTINUITY.md": "b73ac2f41ac8d2aeafaa169717cb38e1127cb78d"
+  },
+  "native": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "previous_version": "0.1.71",
+    "new_version": "0.1.72",
+    "release_id": "pluginrel_6ad4488440b0819193e5e00a219fa3d2",
+    "skill": "skills/lyvra-track-design-full-capability-guard/SKILL.md",
+    "release_and_skill_readback": "VERIFIED"
+  },
+  "alive": {
+    "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "previous_version": "0.13.66",
+    "new_version": "0.13.67",
+    "release_id": "pluginrel_6ad4489354388191acf91c201a35686e",
+    "skill": "skills/track-design-full-capability-guard/SKILL.md",
+    "release_and_skill_readback": "VERIFIED"
+  },
+  "static_checks": {
+    "mode_is_only_input_selection": true,
+    "complete_music_capabilities_in_both": true,
+    "shared_renderer_guard": true,
+    "semantic_emoji_survival": true,
+    "real_output_character_counts": true,
+    "explicit_continuation_exception": true,
+    "whole_authority_preserved": true,
+    "foreign_facets_untouched": true
+  },
+  "codeforge": {
+    "existing_source_review": "PERFORMED",
+    "native_host_executor": "NOT_VERIFIED",
+    "tests_are_static_only": true
+  },
+  "real_suno_render": "NOT_PERFORMED",
+  "fresh_plugin_host_behavior": "NOT_TESTED",
+  "governance": "POINTER_LAST_AFTER_MANIFEST_AND_FINGERPRINT",
+  "no_new_controller": true,
+  "no_new_facet": true
+}
