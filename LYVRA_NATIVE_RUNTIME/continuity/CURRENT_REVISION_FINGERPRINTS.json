@@ -1674,5 +1674,17 @@
     "recovery": "lyvra-recovery-pre-supercodeforge-manual-readonly-actions-probe-20261018-r01",
     "plugin_impact": "REPOSITORY_TEST_TOOLING_ONLY_NO_PLUGIN_SKILL_SEMANTICS_CHANGED",
     "foreign_writes": false
+  },
+  "supercodeforge_existing_visual_hardening_2026_10_18": {
+    "status": "EXISTING_VISUAL_BINDING_SOURCE_VERIFIED_HOST_PENDING",
+    "receipt_blob": "704006f53381d8d089fe61010b2a3ab533f90d45",
+    "visual_blob": "fbdb54dba6eb759ce1fc46307096b33b1b1d5fdb",
+    "sub_rehydration_blob": "feb58b499b6d77c387213ea2d4bca5f305ca698c",
+    "registry_blob": "4da674c5079795620c754c23d16b1744e03d2efb",
+    "facet_state_blob": "ef74a1d4f0af10283d6f8328f5adf37315cf5682",
+    "host": "NOT_VERIFIED",
+    "native_plugin": "PARITY_REVIEW_PENDING",
+    "alive_plugin": "PARITY_REVIEW_PENDING",
+    "no_new_engine": true
   }
 }
