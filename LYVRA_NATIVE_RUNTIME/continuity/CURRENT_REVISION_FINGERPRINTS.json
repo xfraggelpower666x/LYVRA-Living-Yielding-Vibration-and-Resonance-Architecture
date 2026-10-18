@@ -1443,7 +1443,7 @@
     "carriers": {
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md": "682f68fd600625ebdafcd306b51a2c127101698d",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md": "6c5eae255fd68e6b0d03daf269cd00d641f0fb7d",
-      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "4887e6ba7a733aee2f5e3c927a21c48246f24df8",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "5949777d606f8ad825c71822edb00ca0d633bf16",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CAPABILITY_REGISTRY_PROPOSAL.json": "c0b4691d88693c7e0b1c042d044c5b4f99698222",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md": "3f22994f1db6ce28ee7bb81d4c899dd3d52705ba",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "b2a7ede7fb8c54cb80ba8b4fe4236354e63f52da",
@@ -1461,13 +1461,28 @@
     "carriers": {
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs": "c3baa1944355eeb9af43eb16331eb0aa0336b46d",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs": "62a661fd18e8524fc436907c30ba363f7dffa73b",
-      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "4887e6ba7a733aee2f5e3c927a21c48246f24df8"
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "5949777d606f8ad825c71822edb00ca0d633bf16"
     },
     "local_contract_checks": 13,
     "committed_node_tests": "NOT_EXECUTED",
     "provider_host": "NOT_VERIFIED",
     "native_plugin": "IMPACT_REVIEWED_NO_PLUGIN_SURFACE_CHANGE_HOST_PARITY_PENDING",
     "alive_plugin": "IMPACT_REVIEWED_NO_PLUGIN_SURFACE_CHANGE_HOST_PARITY_PENDING",
+    "foreign_writes": false
+  },
+  "super_codeforge_github_binding_2026_10_18": {
+    "status": "NODE_AND_GITHUB_CONNECTOR_READBACK_VERIFIED_HOST_PLUGIN_PENDING",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-github-provider-20261018-r01",
+    "carriers": {
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs": "30f43e3ce95cda4b8a4a4133202881e34bd76486",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "5949777d606f8ad825c71822edb00ca0d633bf16"
+    },
+    "node_test": "PASS",
+    "git_provider_readback": "PASS",
+    "host_adapter_integration": "NOT_VERIFIED",
+    "native_plugin_parity": "PENDING",
+    "alive_plugin_parity": "PENDING",
     "foreign_writes": false
   }
 }
