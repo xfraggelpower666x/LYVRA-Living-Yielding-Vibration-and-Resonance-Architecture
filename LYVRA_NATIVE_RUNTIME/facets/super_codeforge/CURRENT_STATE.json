@@ -2,19 +2,18 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "ORIGINAL_REPOSITORY_NODE_22_TESTS_PASS_FRESH_HOST_EXECUTOR_BLOCKED",
-  "return_anchor": "SUPERCODEFORGE_ORIGINAL_NODE_TEST_PASS_FRESH_HOST_INJECTION_PENDING",
-  "next_action": "Expose and permission an actual host execution entrypoint for the existing authorized-host-executor.mjs and inject the authorized GitHub fetch_file function; then independently test Native and ALIVE real invocation; preserve local source test PASS without host promotion.",
+  "stage": "ORIGINAL_LOCAL_NODE_TESTS_PASS_MANUAL_GITHUB_ACTIONS_INJECTION_SOURCE_READY",
+  "return_anchor": "SUPERCODEFORGE_MANUAL_ACTIONS_REAL_PROVIDER_RUN_PENDING_NATIVE_ALIVE_HOST_SEPARATE",
+  "next_action": "Manually dispatch existing-repo read-only GitHub Actions workflow and inspect real workflow trace; then separately obtain Native and ALIVE ChatGPT host invocation traces. Do not treat GitHub Actions as plugin Host PASS.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
   "host": "NOT_VERIFIED",
   "blockers": [
-    "ORIGINAL_REPOSITORY_EXECUTOR_FRESH_HOST_INVOCATION_PENDING",
-    "AUTHORIZED_GITHUB_ACTION_HANDLE_INJECTION_IN_PLUGIN_HOST_UNAVAILABLE",
-    "NATIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING",
-    "ALIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING"
+    "MANUAL_GITHUB_ACTIONS_REAL_PROVIDER_RUN_NOT_EXECUTED",
+    "NATIVE_PLUGIN_HOST_ACTION_HANDLE_INJECTION_UNAVAILABLE",
+    "ALIVE_PLUGIN_HOST_ACTION_HANDLE_INJECTION_UNAVAILABLE"
   ],
   "clic_invitation": "NOT_SENT",
   "outer_mycel": "LYVRA_NATIVE_DECISION_PENDING",
@@ -110,5 +109,21 @@
     "live_provider_test": "PREVIOUS_DIRECT_GITHUB_READBACK_NOT_INJECTED_NODE_HOST",
     "plugin_host": "NOT_VERIFIED",
     "no_code_change": true
+  },
+  "github_actions_readonly_self_probe_2026_10_18": {
+    "status": "SOURCE_READY_DISPATCH_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
+    "receipt_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
+    "entrypoint_blob": "63dae484c15ee1df1c2c6bd60fe1be7fb8cc5409",
+    "workflow_blob": "6be02995c73be32a007b4e434bfb5eb583f22357",
+    "test_blob": "55a7d62809fe1b2f866c8ece39a349ac1886c308",
+    "original_executor_unchanged": true,
+    "original_node_tests": "PRIOR_LOCAL_3_OF_3_PASS",
+    "new_test_execution": "NOT_EXECUTED",
+    "real_provider_workflow": "NOT_EXECUTED",
+    "chatgpt_native_fresh_host": "NOT_VERIFIED",
+    "chatgpt_alive_fresh_host": "NOT_VERIFIED",
+    "read_only": true,
+    "manual_only": true
   }
 }
