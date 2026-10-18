@@ -1,6 +1,8 @@
 // Manually invoked GitHub Actions integration proof, never a ChatGPT Plugin host acceptance.
 // Reuses the original LYVRA SuperCodeForge executor without changing its authority.
 import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { executeAuthorizedReadOnlyCapability } from './authorized-host-executor.mjs';
 
 const REPOSITORY = 'xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture';
@@ -53,7 +55,7 @@ export async function runGitHubActionsSelfProbe({ token, repository = REPOSITORY
   return Object.freeze(safeResult);
 }
 
-if (process.argv[1] && import.meta.url === new URL(`file://${process.argv[1]}`).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   runGitHubActionsSelfProbe({ token: process.env.GITHUB_TOKEN, repository: process.env.GITHUB_REPOSITORY })
     .then(result => { process.stdout.write(JSON.stringify(result) + '\n'); })
     .catch(error => { process.stderr.write(`SUPER_CODEFORGE_ACTIONS_PROBE_BLOCKED: ${error.message}\n`); process.exitCode = 1; });
