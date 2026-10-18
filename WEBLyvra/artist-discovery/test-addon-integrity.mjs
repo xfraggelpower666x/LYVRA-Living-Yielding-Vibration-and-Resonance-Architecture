@@ -12,7 +12,7 @@ const found=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert.ok(found,'embedded unified diskography missing');
 const entries=JSON.parse(found[1]);
 assert.equal(suno.length,401,'current verified Suno snapshot count mismatch');
-assert.equal(soundcloud.length,30,'historical SoundCloud snapshot changed unexpectedly');
+assert.equal(soundcloud.length,45,'current SoundCloud snapshot count mismatch');
 assert.equal(entries.length,suno.length+soundcloud.length,'discography missing entries');
 const urls=new Set();
 for(const entry of entries){
@@ -27,5 +27,5 @@ for(const token of ['populateRadio(section)','lyvra:languagechange','lyvra-langu
 for(const name of ['lyvra-hero-crest.webp','lyvra-resonance-banner.webp','lyvra-cyber-emblem.webp','lyvra-666soundsdesign-wordmark.webp'])assert.ok(html.includes(name),'progressive art slot missing '+name);
 assert.ok(platform.platforms.length>=15,'platform coverage unexpectedly reduced');
 assert.ok(platform.radio?.players?.length>=4,'radio provider coverage unexpectedly reduced');
-console.log('PASS: 401 Suno links + 30 SoundCloud links + original source parity + radio/social + language + art fallback');
+console.log('PASS: 401 Suno links + 45 SoundCloud links + original source parity + radio/social + language + art fallback');
 console.log('NOTE: original WebP binary remote verification is separate; this test does not claim asset delivery.');
