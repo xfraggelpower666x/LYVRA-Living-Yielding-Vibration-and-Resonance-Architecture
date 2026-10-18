@@ -35,8 +35,8 @@ export async function runGitHubActionsSelfProbe({ token, repository = REPOSITORY
     const file = await response.json();
     if (file.type !== 'file' || file.sha !== BLOB || file.encoding !== 'base64' || typeof file.content !== 'string')
       throw Error('GITHUB_BLOB_RESPONSE_INVALID');
-    const bytes = Buffer.from(file.content.replace(/\\s/g, ''), 'base64');
-    const blobHash = createHash('sha1').update(Buffer.from(`blob ${bytes.length}\\0`)).update(bytes).digest('hex');
+    const bytes = Buffer.from(file.content.replace(/\s/g, ''), 'base64');
+    const blobHash = createHash('sha1').update(Buffer.from(`blob ${bytes.length}\0`)).update(bytes).digest('hex');
     if (blobHash !== BLOB) throw Error('GITHUB_RAW_BYTES_HASH_MISMATCH');
     return { result: { sha: blobHash, content: bytes.toString('utf8'), encoding: 'utf-8' } };
   };
@@ -55,6 +55,6 @@ export async function runGitHubActionsSelfProbe({ token, repository = REPOSITORY
 
 if (process.argv[1] && import.meta.url === new URL(`file://${process.argv[1]}`).href) {
   runGitHubActionsSelfProbe({ token: process.env.GITHUB_TOKEN, repository: process.env.GITHUB_REPOSITORY })
-    .then(result => { process.stdout.write(JSON.stringify(result) + '\\n'); })
-    .catch(error => { process.stderr.write(`SUPER_CODEFORGE_ACTIONS_PROBE_BLOCKED: ${error.message}\\n`); process.exitCode = 1; });
+    .then(result => { process.stdout.write(JSON.stringify(result) + '\n'); })
+    .catch(error => { process.stderr.write(`SUPER_CODEFORGE_ACTIONS_PROBE_BLOCKED: ${error.message}\n`); process.exitCode = 1; });
 }
