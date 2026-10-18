@@ -1706,5 +1706,21 @@
     "forced_rotation": false,
     "host_acceptance": "NOT_TESTED",
     "real_render_test": "NOT_TESTED"
+  },
+  "supercodeforge_visual_parity_audit_2026_10_18": {
+    "status": "NATIVE_VISUAL_REGRESSION_5_OF_5_PASS_SUPERCODEFORGE_SKILL_PARITY_PASS_GENERAL_VISUAL_PLUGIN_PARITY_PENDING",
+    "test_blob": "ed5155749de548fa6b92dbde358d383a0e73ad9c",
+    "projector_blob": "c350cc47cde6958e4638be1d551bd6ef436904bd",
+    "audit_blob": "976329b96bf1c98038aa462608dfebb046239b7f",
+    "project_registry_blob": "d0e7fa81810d2c0af24479cf820cd631eb0c6191",
+    "native_plugin_release": "pluginrel_6ad4874d04388191a3959f95913d74fc",
+    "alive_plugin_release": "pluginrel_6ad4875c07a08191ad1f777a23ef6fd9",
+    "supercodeforge_skill_exact_text_parity": "PASS",
+    "general_visual_skill_parity": "OPEN",
+    "native_host": "NOT_VERIFIED",
+    "alive_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-supercodeforge-visual-parity-regression-20261018-r01",
+    "plugin_impact": "NEW_REPO_TEST_AND_AUDIT_ONLY_NO_SEMANTIC_PLUGIN_CHANGE",
+    "no_foreign_mutation": true
   }
 }
