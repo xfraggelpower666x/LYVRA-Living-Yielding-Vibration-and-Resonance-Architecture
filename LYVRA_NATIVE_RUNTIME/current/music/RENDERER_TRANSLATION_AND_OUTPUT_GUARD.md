@@ -467,3 +467,12 @@ OUTPUT_COMPLETENESS_GUARD_NE_NEW_MUSIC_COMPOSER_OR_DECISION_AUTHORITY = true
 NO_SUNO_AUDIO_OR_PLUGIN_FRESH_BOOT_PROOF_FROM_STATIC_OUTPUT_CHECK = true
 
 The test failure from a separately started Track Design chat (2026-10-10) demonstrates a four-box-only rendering with missing controls, missing drift forecast, absent My Taste decision, exposed internal audit boxes and missing character counts, despite an otherwise causally coherent musical dry run. The negative case must remain detectable. Source is user-provided chat export; it is evidence of a chat output, not automatic proof of a plugin-runtime defect.
+
+
+## Both Track Design modes: creator-output behavioral completeness (2026-10-18)
+MODE_BRIDGE = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md
+SOURCE_AND_DISCOVERY_MUST_BOTH_USE_EXISTING_COMPLETE_NATIVE_MUSIC_INTELLIGENCE = TRUE
+MODE_CREATIVE_ISOLATION_MAY_NOT_DROP_RENDERER_OR_SEMANTIC_FACET_CAPABILITIES = TRUE
+RENDERER_OUTPUT_ASSEMBLY_CHECK = REAL_FIELD_CONTENT | FUNCTIONAL_EMOJI_ACROSS_RELEVANT_FIELDS | VOICE_AND_INSTRUMENT_RELATIONS | TRACK_SPECIFIC_CONTROLS | DRIFT | TRUE_CHARACTER_COUNTS | OUTRO
+GENERIC_SUMMARY_OF_AUDIO_EFFECTS_NE_CAUSAL_FIELD_EXECUTION = TRUE
+SINGLE_BAD_EXAMPLE_NE_VERIFIED_HOST_DEFECT = TRUE
