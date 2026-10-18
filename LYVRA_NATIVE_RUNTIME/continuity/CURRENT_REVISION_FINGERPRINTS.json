@@ -1530,5 +1530,16 @@
     "plugin_impact": "EVIDENCE_ONLY_EXISTING_PLUGIN_CONTRACTS_UNCHANGED",
     "host": "NO_RENDER_PERFORMED",
     "foreign_writes": false
+  },
+  "supercodeforge_clic_starbridge_handoff_2026_10_18": {
+    "status": "SOURCE_ONLY_PASS_TARGET_RECEIPT_PENDING",
+    "recovery": "lyvra-recovery-pre-supercodeforge-starbridge-clic-20261018-r01",
+    "carrier": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_SUPERCODEFORGE_STARBRIDGE_20261018_R01.json",
+    "carrier_blob": "84b139648074233b058157a05836d60594a7b4ed",
+    "source": "PASS",
+    "delivery": "NOT_VERIFIED",
+    "adoption": "NOT_VERIFIED",
+    "host": "BLOCKED",
+    "foreign_writes": false
   }
 }
