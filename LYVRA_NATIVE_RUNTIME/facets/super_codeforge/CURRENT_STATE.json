@@ -2,9 +2,9 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "DUAL_PLUGIN_SUPERCODEFORGE_SKILL_RELEASE_READBACK_VERIFIED",
-  "return_anchor": "FIRST_VERIFIED_PERMISSIONED_CAPABILITY_PROBE",
-  "next_action": "Fresh-host acceptance: execute original imported repository .mjs chain with actual authorized GitHub tool injected; verify host invocation separately for both plugin surfaces without foreign activation.",
+  "stage": "ORIGINAL_REPOSITORY_NODE_22_TESTS_PASS_FRESH_HOST_EXECUTOR_BLOCKED",
+  "return_anchor": "SUPERCODEFORGE_ORIGINAL_NODE_TEST_PASS_FRESH_HOST_INJECTION_PENDING",
+  "next_action": "Expose and permission an actual host execution entrypoint for the existing authorized-host-executor.mjs and inject the authorized GitHub fetch_file function; then independently test Native and ALIVE real invocation; preserve local source test PASS without host promotion.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
@@ -12,6 +12,7 @@
   "host": "NOT_VERIFIED",
   "blockers": [
     "ORIGINAL_REPOSITORY_EXECUTOR_FRESH_HOST_INVOCATION_PENDING",
+    "AUTHORIZED_GITHUB_ACTION_HANDLE_INJECTION_IN_PLUGIN_HOST_UNAVAILABLE",
     "NATIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING",
     "ALIVE_PLUGIN_FRESH_HOST_EXECUTION_PENDING"
   ],
@@ -65,8 +66,8 @@
     "test_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs",
     "test_blob": "a97e3a72098f9b296303ace86163935501f85e94",
     "source": "EXACT_GITHUB_READBACK_VERIFIED",
-    "execution": "NOT_YET_VERIFIED",
-    "node_test": "PENDING",
+    "execution": "ORIGINAL_NODE_IMPORT_PASS_LOCAL_ONLY_REAL_PLUGIN_HOST_NOT_EXECUTED",
+    "node_test": "ORIGINAL_BYTES_NODE_22_16_0_PASS_3_OF_3",
     "contract": "INJECT_EXISTING_AUTHORIZED_GITHUB_FETCH_FILE",
     "original_adapter_imported": true,
     "host_pass": false,
@@ -98,5 +99,16 @@
     "host": "NOT_VERIFIED",
     "foreign_activation": false,
     "foreign_writes": false
+  },
+  "local_original_node_execution_2026_10_18": {
+    "evidence": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_ORIGINAL_NODE_EXECUTION_2026-10-18.json",
+    "blob": "0b95f59f9911f6db255eb2e8d9bbaf65e04a108b",
+    "node_version": "22.16.0",
+    "original_modules_and_tests_git_hash_object_match": true,
+    "original_node_test_modules_passed": 3,
+    "original_node_test_modules_failed": 0,
+    "live_provider_test": "PREVIOUS_DIRECT_GITHUB_READBACK_NOT_INJECTED_NODE_HOST",
+    "plugin_host": "NOT_VERIFIED",
+    "no_code_change": true
   }
 }
