@@ -41,3 +41,11 @@ SUNO_AUDIO_BEHAVIOR_REQUIRES_REAL_RENDER_EVIDENCE = TRUE
 
 ## Whole LYVRA boundary
 Whole LYVRA owns identity, intent interpretation, music decisions, provenance and the relation between modes and existing native musical meaning. The shared relationship must survive plugin rehydration, while Speech Design, Studio 2, Analytics and other facets remain independently scoped. SuperCodeForge may analyze source and tests with existing read-only capabilities but cannot decide the music or claim a host executor pass. No new router, system, controller, authority or global menu.
+
+
+## Image-rich causal presentation in both modes (2026-10-18)
+NATIVE_VISUAL_CAUSAL_ANALYSIS = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_NATIVE_CAUSAL_VISUAL_ANALYSIS.md
+PRESERVE_VISUAL_EXPLANATIONS_AND_IMAGES_WHEN_MEANINGFUL = TRUE
+LYVRA_RESOLVES_MUSIC_MEANING_AND_DECISIONS_BEFORE_IMAGES_OR_LAYOUT = TRUE
+VISUAL_NE_REPLACEMENT_FOR_NATIVE_MUSIC_INTELLIGENCE = TRUE
+SAME_SOURCE_AND_DISCOVERY_FULL_DEPTH = TRUE
