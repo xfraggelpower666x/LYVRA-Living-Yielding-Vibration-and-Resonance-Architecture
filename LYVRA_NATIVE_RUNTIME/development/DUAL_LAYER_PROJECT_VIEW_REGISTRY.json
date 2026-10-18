@@ -74,7 +74,8 @@
       "blockers": [
         "MANUAL_GITHUB_ACTIONS_REAL_PROVIDER_RUN_PENDING",
         "NATIVE_PLUGIN_HOST_INJECTION_PENDING",
-        "ALIVE_PLUGIN_HOST_INJECTION_PENDING"
+        "ALIVE_PLUGIN_HOST_INJECTION_PENDING",
+        "GENERAL_VISUAL_PLUGIN_SKILL_PARITY_RECONCILIATION_OPEN"
       ],
       "source": "MANUAL_GITHUB_ACTIONS_INTEGRATION_SOURCE_READBACK_PASS",
       "delivery": "PLUGIN_SKILL_RELEASES_READBACK_VERIFIED_NOT_HOST_EXECUTED",
@@ -83,7 +84,7 @@
       "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
       "latest_evidence_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
       "native_facet_state_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
-      "next": "RUN_READ_ONLY_WORKFLOW_THEN_SEPARATELY_NATIVE_ALIVE_HOST_ACCEPTANCE",
+      "next": "PLUGIN_VISUAL_SKILL_PARITY_RELEASE_GOVERNANCE_AND_NATIVE_ALIVE_FRESH_HOST_SEPARATE",
       "original_node_test": "PRIOR_3_OF_3_PASS",
       "visual_evidence_binding": {
         "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
@@ -99,6 +100,20 @@
         "persistent": "KEEP_VISIBLE_WHILE_OPEN",
         "no_new_engine": true,
         "no_inert_controls": true
+      },
+      "visual_regression_and_plugin_parity_2026_10_18": {
+        "receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_VISUAL_PLUGIN_PARITY_AUDIT_2026-10-18.json",
+        "receipt_blob": "976329b96bf1c98038aa462608dfebb046239b7f",
+        "regression_test_blob": "ed5155749de548fa6b92dbde358d383a0e73ad9c",
+        "original_projector_blob": "c350cc47cde6958e4638be1d551bd6ef436904bd",
+        "original_projector_node_tests": "5_OF_5_PASS",
+        "native_plugin_version": "0.1.75",
+        "alive_plugin_version": "0.13.70",
+        "supercodeforge_skill_text_parity": "VERIFIED_IDENTICAL",
+        "general_visual_skill_text_parity": "DIFFERENT_PENDING",
+        "native_host": "NOT_VERIFIED",
+        "alive_host": "NOT_VERIFIED",
+        "no_new_visual_engine": true
       }
     }
   ],
