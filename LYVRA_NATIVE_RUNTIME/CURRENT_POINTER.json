@@ -5776,5 +5776,23 @@
     "no_new_router": true,
     "pointer_last": true,
     "return_anchor": "SUPERCODEFORGE_VISUAL_REGRESSIONS_5_OF_5_PASS_PLUGIN_GENERAL_VISUAL_PARITY_PENDING"
+  },
+  "supercodeforge_provider_readback_reconcile_2026_10_18": {
+    "scope": "SUPERCODEFORGE_PROVIDER_STATE_METADATA_ONLY",
+    "base_head": "63e6499e903f1a2e965131a33752aa4384440e65",
+    "body_commit": "6231aeca4ecc6c5667e325ad0e5bf3899c4a0b28",
+    "body_blob": "378b19acb15b1e4be9b16fc8596a6ea4c6f0312e",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-provider-state-20261018-r02",
+    "source": "GITHUB_ACTIONS_RUN_39115080655_JOB_117639129011_DIRECT_READBACK_PASS",
+    "provider": "READ_ONLY_PROVIDER_EXECUTION_SUCCESS",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "general_visual_skill_parity": "NOT_RESOLVED",
+    "plugin_binary_binding": "NOT_VERIFIED",
+    "plugin_release_change": "NONE",
+    "executor_code_change": "NONE",
+    "foreign_activation": false,
+    "prior_state": "PRESERVED_AS_PROVENANCE",
+    "pointer_last": true
   }
 }
