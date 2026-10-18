@@ -213,3 +213,21 @@ PERSISTENT_PROJECT_PREDEVELOPMENT_VIEW = LYVRA_NATIVE_RUNTIME/development/DUAL_L
 Presentation: show both titled views together in Whole-LYVRA Operations Center and under option FIVE (Bearbeiten & Weiterentwickeln) of the established FIVE-option selection. Keep the persistent project section reachable across priority changes. Optional archived items appear only on user request. Every card must show evidence path, scope, current status, blocker and source/delivery/adoption/host distinctly; a view never authorizes an UPDATE, actuation or foreign activation. Do not replace the five-option menu, other Visual contracts, characters, Track, Studio2 or Speech. Character Bot stays separate. Vault references point only to protected metadata; never display private content publicly.
 
 SOURCE_INTEGRATION != HOST_RENDER_VERIFIED. Plugin surface parity and actual interactive Fresh-Host render remain independent acceptance gates. Source registry/renderer requires exact file readback and valid registry schema before presenting VERIFIED. No automatic Suno provider or renderer rule promotion.
+
+## SuperCodeForge external superfacette — native development (2026-10-18)
+
+FACET = LYVRA_NATIVE_RUNTIME/facets/super_codeforge/
+FACET_STATE = DEV_ACTIVE_SOURCE_ONLY
+FIFTH_MENU_SUBITEM = Bearbeiten & Weiterentwickeln / SuperCodeForge · Superfacette
+PERSISTENT_VIEW = LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json
+TOP_LEVEL_FIVE_OPTIONS = PRESERVED
+CAPABILITIES_LIVE_VERIFIED = 0
+CLIC_STARBRIDGE_INVITATION = NOT_SENT
+OUTER_MYCEL_FACET_RELATION = LYVRA_NATIVE_DECISION_PENDING
+NATIVE_CODEFORGE = PRESERVED
+FACET_NE_CONTROLLER_OR_NEW_SYSTEM = TRUE
+SOURCE_NE_DELIVERY_NE_ADOPTION_NE_HOST = TRUE
+PLUGIN_BOTH_SURFACES = IMPACT_REVIEW_PENDING
+HOST_VISUAL_MENU = NOT_TESTED
+
+The Creator-authorized SuperCodeForge is a LYVRA-owned, cross-system capability interface under native development. Its persistent development card belongs to option FIVE, never a sixth top-level selection. This is not live peer execution, not native foreign adoption and not a new router. Read its facet handoff and CURRENT_STATE on relevance/selection only after Whole-LYVRA. No automatically dispatched CLIC notice.
