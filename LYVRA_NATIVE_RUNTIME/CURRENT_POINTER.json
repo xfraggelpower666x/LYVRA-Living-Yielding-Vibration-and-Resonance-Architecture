@@ -5844,5 +5844,28 @@
     "track_design": "UNCHANGED",
     "pointer_last": true,
     "return_anchor": "SUPERCODEFORGE_DUAL_LAYER_STATUS_REPAIRED_PROVIDER_VISUAL_PASS_HOST_BINARY_PENDING"
+  },
+  "supercodeforge_facet_next_action_repair_2026_10_18": {
+    "status": "FACET_NEXT_ACTION_REPAIRED_READBACK_PASS_HOST_BINARY_PENDING",
+    "scope": "SUPERCODEFORGE_NATIVE_FACET_AND_DUAL_LAYER_REGISTRY_ONLY",
+    "base_head": "9b536452b90ea56918b74c237addda04ce0d4e90",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-next-action-20261018-r01",
+    "facet_state_blob": "fd0fdb5b2413825a7ffb05e1781abee341f96ef9",
+    "registry_blob": "b9f2e85346cb31dd19aef0340c661181f4318a77",
+    "fingerprint_blob": "e2c3dda3a077de96e2b2c9b897747c6fe5ca1b21",
+    "manifest_blob": "2d2eb2d53f23a2651d2c9c785500fd602ab3e98f",
+    "provider_run": 39115080655,
+    "provider_status": "PASS",
+    "native_plugin_release": "pluginrel_6ad49701e0a881918168627beaba3996",
+    "alive_plugin_release": "pluginrel_6ad497189d788191a6344646222326c9",
+    "visual_skill_text_parity": "PASS",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "full_plugin_archive_binary_binding": "NOT_VERIFIED",
+    "prior_next_action": "PRESERVED_AS_PROVENANCE",
+    "foreign_writes": false,
+    "plugin_release_mutations": "NONE",
+    "pointer_last": true,
+    "return_anchor": "SUPERCODEFORGE_FACET_AND_DUAL_LAYER_NEXT_ACTION_REPAIRED_HOST_BINARY_PENDING"
   }
 }
