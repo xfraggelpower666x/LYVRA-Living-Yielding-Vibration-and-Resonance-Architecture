@@ -1974,5 +1974,25 @@
     "five_choices": "PRESERVED",
     "private_content_publication": false,
     "host": "PENDING"
+  },
+  "super_codeforge_native_source_2026_10_18": {
+    "status": "ADDITIVE_NATIVE_FACET_SOURCE_AND_PERSISTENT_SUBMENU_HOST_PENDING",
+    "facet": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/",
+    "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md",
+    "handoff": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md",
+    "current_state": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+    "sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md",
+    "capability_registry": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CAPABILITY_REGISTRY_PROPOSAL.json",
+    "integration_plan": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md",
+    "fifth_option_submenu": "SuperCodeForge · Superfacette",
+    "whole_first": true,
+    "load_on_relevance_or_selection": true,
+    "no_sixth_top_level_option": true,
+    "no_foreign_autoactivation": true,
+    "no_new_router_or_controller": true,
+    "no_executed_capabilities": true,
+    "host": "NOT_TESTED",
+    "dual_plugin_parity": "PENDING",
+    "clic_invitation": "NOT_SENT"
   }
 }
