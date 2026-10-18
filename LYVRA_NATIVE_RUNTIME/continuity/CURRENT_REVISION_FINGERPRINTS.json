@@ -1559,5 +1559,23 @@
     "plugin_impact": "DATA_ONLY_NO_RUNTIME_SKILL_CHANGE",
     "foreign_writes": false,
     "pet": "OPTIONAL_UNCHANGED"
+  },
+  "track_design_modes_dual_plugin_2026_10_18": {
+    "status": "BOTH_PLUGIN_RELEASES_READBACK_VERIFIED_POINTER_PENDING",
+    "scope": "TRACK_DESIGN_ONLY",
+    "recovery": "lyvra-recovery-pre-track-modes-dual-plugin-20261018-r01",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_TRACK_MODES_DUAL_PLUGIN_2026-10-18.json",
+    "receipt_blob": "b6da03712d7bf60504affd5eb41178f4f774d925",
+    "track_modes_blob": "9b5c7c019015aa45935076d5ba665705f0198407",
+    "track_sub_blob": "db0a2ced105175969e2b9dedae7effbf6580dd74",
+    "visual_blob": "5f52dfd6a94af4434d379a7c0b94a3ecb3cd14a3",
+    "native_version": "0.1.71",
+    "native_release": "pluginrel_6ad43bd0f6cc81919da42eb1eca241e8",
+    "alive_version": "0.13.66",
+    "alive_release": "pluginrel_6ad4411e9bc48191a7d360deb2ea46b6",
+    "source": "VERIFIED",
+    "delivery": "VERIFIED_BOTH_RELEASES",
+    "host": "NOT_VERIFIED",
+    "no_foreign_mutation": true
   }
 }
