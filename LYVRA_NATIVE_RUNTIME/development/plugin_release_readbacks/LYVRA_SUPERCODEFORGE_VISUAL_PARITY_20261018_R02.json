@@ -1,0 +1,40 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_VISUAL_PARITY_RELEASE_READBACK_V1",
+  "authority": "WHOLE_LYVRA",
+  "scope": "EXISTING_666_VISUAL_INTERFACE_SKILL_TARGETED_PATCH_ONLY",
+  "base_head": "8c612f120a837d1106ed574390b0c62e1285a8a2",
+  "recovery_branch": "lyvra-recovery-pre-supercodeforge-visual-parity-release-20261018-r01",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "from_version": "0.1.75",
+    "to_version": "0.1.76",
+    "release_id": "pluginrel_6ad49701e0a881918168627beaba3996",
+    "manifest_readback": "PASS",
+    "visual_skill_direct_readback": "PASS"
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "from_version": "0.13.71",
+    "to_version": "0.13.72",
+    "release_id": "pluginrel_6ad497189d788191a6344646222326c9",
+    "manifest_readback": "PASS",
+    "visual_skill_direct_readback": "PASS"
+  },
+  "merged_visual_skill_sha256": "d72ab65b878a29b270b1ac2f99f03d8a4fd969298d7c80248ff142c4e5661827",
+  "native_targeted_patch_sha256": "2f578f8ff44f6f43b57251b98a80ab54f8fe7b7879564388dad944c5bda23721",
+  "alive_targeted_patch_sha256": "a4e2f525f1facf3a97722681ced08e83c092c618bf58e51f518d1fcc4af7b7cb",
+  "skill_exact_text_parity": "PASS_DIRECT_PLUGIN_CREATOR_READBACK",
+  "supercodeforge_skill_unchanged_text_parity": "PASS",
+  "binary_binding": "PATCH_ZIP_HASHED_FULL_CURRENT_ARCHIVES_NOT_BYTE_HASHED",
+  "source": "VERIFIED_MERGE_AND_STATIC_GATES",
+  "delivery": "BOTH_PLUGIN_RELEASES_DIRECT_READBACK_PASS",
+  "adoption": "PLUGIN_SKILL_DELIVERED_NO_HOST_PROOF",
+  "native_host": "NOT_VERIFIED",
+  "alive_host": "NOT_VERIFIED",
+  "provider_run": "39115080655",
+  "provider_job": "117639129011",
+  "no_foreign_writes": true,
+  "no_new_router": true,
+  "original_logos_preserved": true,
+  "return_anchor": "SUPERCODEFORGE_VISUAL_SKILL_TEXT_PARITY_RELEASED_NATIVE_ALIVE_HOST_PENDING"
+}
