@@ -2181,5 +2181,32 @@
     "no_new_router": true,
     "no_foreign_writes": true,
     "return_anchor": "SUPERCODEFORGE_ORIGINAL_NODE_TEST_PASS_FRESH_HOST_INJECTION_PENDING"
+  },
+  "supercodeforge_manual_actions_readonly_injection_2026_10_18": {
+    "status": "SOURCE_READY_MANUAL_GITHUB_ACTIONS_RUN_PENDING_PLUGIN_HOSTS_UNVERIFIED",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
+    "receipt_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
+    "native_state": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+    "native_state_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
+    "persistent_registry": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "persistent_registry_blob": "defb5664b5de8b04ef36cc4a8b7f662cfb9f0ce5",
+    "fingerprint_blob": "1a12b831192cfe98035dfa83a6421eac10041148",
+    "workflow": ".github/workflows/lyvra-supercodeforge-readonly-self-probe.yml",
+    "workflow_blob": "6be02995c73be32a007b4e434bfb5eb583f22357",
+    "entrypoint": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-actions-readonly-self-probe.mjs",
+    "entrypoint_blob": "63dae484c15ee1df1c2c6bd60fe1be7fb8cc5409",
+    "tests": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-actions-readonly-self-probe.test.mjs",
+    "tests_blob": "55a7d62809fe1b2f866c8ece39a349ac1886c308",
+    "existing_original_executor": "UNCHANGED",
+    "prior_local_original_node_tests": "PASS_3_OF_3",
+    "new_adapter_test_execution": "PENDING_MANUAL_WORKFLOW",
+    "provider_host_execution": "NOT_EXECUTED",
+    "native_plugin_host": "NOT_VERIFIED",
+    "alive_plugin_host": "NOT_VERIFIED",
+    "plugin_impact": "ADDITIVE_REPOSITORY_MANUAL_TEST_TOOLING_NO_RELEASE",
+    "recovery": "lyvra-recovery-pre-supercodeforge-manual-readonly-actions-probe-20261018-r01",
+    "no_foreign_writes": true,
+    "no_auto_activation": true,
+    "return_anchor": "SUPERCODEFORGE_MANUAL_ACTIONS_REAL_PROVIDER_RUN_PENDING_NATIVE_ALIVE_HOST_SEPARATE"
   }
 }
