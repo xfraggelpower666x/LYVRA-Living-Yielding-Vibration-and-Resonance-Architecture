@@ -1997,7 +1997,10 @@
     "read_only_capability_adapter": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs",
     "read_only_capability_adapter_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs",
     "adapter_status": "NATIVE_SOURCE_READBACK_VERIFIED_HOST_PENDING",
-    "node_test_execution": "PENDING",
-    "no_executed_cross_system_capabilities": true
+    "node_test_execution": "PASS_INDEPENDENT_NODE_22",
+    "no_executed_cross_system_capabilities": true,
+    "github_provider_binding": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs",
+    "github_provider_binding_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs",
+    "github_provider_binding_status": "SOURCE_AND_NODE_READBACK_VERIFIED_HOST_PLUGIN_PENDING"
   }
 }
