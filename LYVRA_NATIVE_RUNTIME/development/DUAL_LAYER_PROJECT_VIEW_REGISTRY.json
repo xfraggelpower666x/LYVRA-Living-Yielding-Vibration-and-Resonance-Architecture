@@ -83,8 +83,8 @@
       "host": "GITHUB_ACTIONS_PROVIDER_PASS_NATIVE_ALIVE_PLUGIN_HOST_NOT_VERIFIED",
       "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
       "latest_evidence_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db",
-      "native_facet_state_blob": "fd0fdb5b2413825a7ffb05e1781abee341f96ef9",
-      "next": "FULL_RELEASE_ARCHIVE_BINARY_READBACK_AND_INDEPENDENT_NATIVE_ALIVE_FRESH_HOST_ACCEPTANCE",
+      "native_facet_state_blob": "fc875ada3456df361e654cb6cbfde6657dddc28b",
+      "next": "INDEPENDENT_NATIVE_ALIVE_HOST_HANDLE_INJECTION_AND_FULL_ARCHIVE_BINARY_READBACK",
       "original_node_test": "PRIOR_3_OF_3_PASS",
       "visual_evidence_binding": {
         "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
@@ -125,7 +125,7 @@
           "test_modules_passed": 4,
           "test_modules_failed": 0,
           "repo_receipt": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
-          "repo_receipt_blob": "fd0fdb5b2413825a7ffb05e1781abee341f96ef9"
+          "repo_receipt_blob": "fc875ada3456df361e654cb6cbfde6657dddc28b"
         },
         "plugin_visual_skill_parity": {
           "status": "PASS_EXACT_TEXT_READBACK",
@@ -160,7 +160,15 @@
           "native_facet_state_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
           "next": "PLUGIN_VISUAL_SKILL_PARITY_RELEASE_GOVERNANCE_AND_NATIVE_ALIVE_FRESH_HOST_SEPARATE"
         },
-        "native_state_next_action_reconciled": true
+        "native_state_next_action_reconciled": true,
+        "source_only_host_entrypoint": {
+          "status": "SOURCE_COMMITTED_NO_FRESH_HOST_PASS",
+          "entrypoint": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/host-entrypoint.mjs",
+          "entrypoint_blob": "ad41dc15201a152e29dfa5c49f4c280d0431e9a4",
+          "test_blob": "467cae9a2dfc31c25659aa3d84112f47fb109f78",
+          "native_host": "NOT_VERIFIED",
+          "alive_host": "NOT_VERIFIED"
+        }
       }
     }
   ],
