@@ -267,3 +267,18 @@ TRACK_DESIGN_VISUAL_PRESENTATION_PREFER = MEANINGFUL_IMAGES | LYVRA_CAUSAL_EXPLA
 VISUAL_UI_NE_FIXED_TEMPLATE = TRUE
 REAL_COPY_ACTION_COPIES_ONLY_FIELD_PAYLOAD = TRUE
 NO_FALSE_UI_CAPABILITY_OR_AUDIO_EVIDENCE = TRUE
+
+## SuperCodeForge evidence-gated visual binding — 2026-10-18
+
+This is an additive facet presentation binding to the SAME Semantic Cyber Field, not a second engine or a new authority.
+
+- For the fifth-menu SuperCodeForge project card, consume the latest Whole-LYVRA pointer, the exact facet CURRENT_STATE, its SUB_REHYDRATION visual binding, and the persistent dual-layer project registry. Stale card/operations text loses to newer verified carriers.
+- Present four separate evidence gates: SOURCE (exact repo blob), DELIVERY (scope and recipient receipt), ADOPTION (native scope and decision), and HOST (actual executable invocation trace). Never collapse them into a single green success status.
+- Preserve both visual layers: priority is a derived, reversible view of grounded inputs; persistent development and blocked acceptance must remain visible until explicitly archived or validly superseded. Never silently drop an item due to lower priority.
+- Local original Node tests, direct GitHub fetch_file and manually triggered GitHub Actions are distinct from real ChatGPT Native and ALIVE plugin host invocation. The latter remain PENDING without independent host traces for EACH surface. Colors and UI buttons cannot promote gates.
+- Render exact checked SHA, scope, blockers, trace availability and return anchor when relevant. Render only measured counters; no invented execution, success, percentages or workflow dispatch. If UI interaction is unsupported, offer text commands with identical scope; never display inert controls.
+- Do not publish protected vault content or reinterpret CLIC/PFS/STREAM evidence as Whole-LYVRA authority; no peer autoactivation. Preserve Track Design's productive source and the five native main-menu choices.
+
+VISUAL_HARDENING_SOURCE_NE_HOST_PASS = true
+VISUAL_IS_PRESENTATION_NOT_DECISION_AUTHORITY = true
+NO_NEW_VISUAL_ENGINE_OR_ROUTER = true
