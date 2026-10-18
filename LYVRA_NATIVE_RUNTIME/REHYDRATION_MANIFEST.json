@@ -2295,5 +2295,22 @@
     "alive_fresh_host": "NOT_VERIFIED",
     "full_archive_binary": "NOT_VERIFIED",
     "historical_audit_refs": "PRESERVED"
+  },
+  "supercodeforge_source_only_host_entrypoint_2026_10_18": {
+    "scope": "SUPERCODEFORGE_SOURCE_ONLY_HOST_HANDLE_ADAPTER",
+    "entrypoint_blob": "ad41dc15201a152e29dfa5c49f4c280d0431e9a4",
+    "test_blob": "467cae9a2dfc31c25659aa3d84112f47fb109f78",
+    "facet_state_blob": "fc875ada3456df361e654cb6cbfde6657dddc28b",
+    "registry_blob": "6c26204133b4d47e1d98d763701ff096104ddd70",
+    "original_executor_unchanged": true,
+    "local_node_negative_tests": "PASS_SOURCE_FIXTURE_ONLY",
+    "repository_ci_for_new_adapter": "NOT_EXECUTED",
+    "native_host": "NOT_VERIFIED",
+    "alive_host": "NOT_VERIFIED",
+    "plugin_binary": "NOT_VERIFIED",
+    "native_release": "0.1.76",
+    "alive_release": "0.13.72",
+    "other_facets": "UNCHANGED",
+    "prior_carriers": "PRESERVED"
   }
 }
