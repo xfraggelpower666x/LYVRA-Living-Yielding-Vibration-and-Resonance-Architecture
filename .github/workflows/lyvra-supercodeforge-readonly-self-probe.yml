@@ -19,7 +19,7 @@ jobs:
           node-version: '22'
       - name: Test the original repository modules and fail-closed cases
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs
+          node --test LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-actions-readonly-self-probe.test.mjs
       - name: Invoke original module with real read-only GitHub API provider
         env:
           GITHUB_TOKEN: ${{ github.token }}
