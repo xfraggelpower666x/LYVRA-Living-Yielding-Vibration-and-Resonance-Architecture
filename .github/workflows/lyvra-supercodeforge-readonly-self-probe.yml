@@ -1,0 +1,27 @@
+name: LYVRA SuperCodeForge read-only self probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-module-self-repository-probe:
+    if: github.ref == 'refs/heads/lyvra'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout canonical LYVRA source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test the original repository modules and fail-closed cases
+        run: |
+          node --test LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs
+      - name: Invoke original module with real read-only GitHub API provider
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-actions-readonly-self-probe.mjs
