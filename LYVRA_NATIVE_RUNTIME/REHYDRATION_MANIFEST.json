@@ -2281,5 +2281,19 @@
     "alive_release_id": "pluginrel_6ad497189d788191a6344646222326c9",
     "previous_audit_fields": "HISTORICAL_PROVENANCE_PRESERVED",
     "no_cross_facet_scope_change": true
+  },
+  "supercodeforge_facet_next_action_repair_2026_10_18": {
+    "scope": "SUPERCODEFORGE_FACET_NEXT_ACTION_STATE_ONLY",
+    "facet_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+    "facet_blob": "fd0fdb5b2413825a7ffb05e1781abee341f96ef9",
+    "registry_path": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "registry_blob": "b9f2e85346cb31dd19aef0340c661181f4318a77",
+    "result": "OLD_VISUAL_PARITY_PENDING_NEXT_ACTION_SUPERSEDED",
+    "provider": "PASS_RUN_39115080655",
+    "visual_skill_text_parity": "PASS_0_1_76_0_13_72",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "full_archive_binary": "NOT_VERIFIED",
+    "historical_audit_refs": "PRESERVED"
   }
 }
