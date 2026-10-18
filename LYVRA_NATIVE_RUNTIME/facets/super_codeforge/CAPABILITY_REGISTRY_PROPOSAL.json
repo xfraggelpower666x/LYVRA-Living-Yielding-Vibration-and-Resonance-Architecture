@@ -1,0 +1,28 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_CAPABILITY_REGISTRY_PROPOSAL_V1",
+  "state": "EMPTY_METADATA_PROPOSAL_NO_LIVE_CAPABILITIES",
+  "owner": "WHOLE_LYVRA",
+  "verified_capabilities": [],
+  "collaboration_evidence": [],
+  "proposed_contract_fields": [
+    "capability_id",
+    "origin_system",
+    "origin_commit",
+    "native_authority",
+    "input_contract",
+    "output_contract",
+    "permission",
+    "availability",
+    "version",
+    "readback_evidence",
+    "host_evidence",
+    "limitations",
+    "recovery"
+  ],
+  "guards": [
+    "NO_FOREIGN_AUTOMUTATION",
+    "NO_FABRICATED_HOST",
+    "NO_PERMISSION_ESCALATION",
+    "SOURCE_NE_HOST"
+  ]
+}
