@@ -5437,5 +5437,22 @@
     "plugin_native_release_id": "pluginrel_6ad426ed317c8191af6fd7078de25ba6",
     "plugin_alive_release_id": "pluginrel_6ad426fcbc788191aa90ec5f00dfd5d5",
     "recovery_plugin_integration": "lyvra-recovery-pre-supercodeforge-dual-plugin-20261018-r01"
+  },
+  "speech_design_pairing_readiness_2026_10_18": {
+    "status": "SOURCE_EVIDENCE_CARRIER_VERIFIED_PAIRING_NOT_VERIFIED",
+    "authority": "WHOLE_LYVRA_SPEECH_DESIGN",
+    "scope": "EVIDENCE_ONLY",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/speech_design/evidence/SPEECH_AUDIO_SCRIPT_PAIRING_READINESS_2026-10-18.json",
+    "carrier_blob": "89573a85fcfcae2d5f8f1ace24127d10cff83261",
+    "manifest_blob": "e07021872d8e89459e5993e8db922f3381c47206",
+    "fingerprint_blob": "2bc5122fd8eacebbb4c628e2ca1290715b6dbd35",
+    "recovery": "lyvra-recovery-pre-speech-pairing-audit-20261018-r01",
+    "audio_records": 2,
+    "script_mapping": "UNVERIFIED",
+    "other_gates": "OPEN",
+    "plugin_impact": "EVIDENCE_ONLY_NO_SKILL_CHANGE",
+    "supercodeforge_host": "BLOCKED_UNCHANGED",
+    "next": "PROVIDE_VERBATIM_SCRIPT_TONFALL_AND_SESSION_ASSOCIATION_ONLY_WHEN_AVAILABLE",
+    "no_foreign_activation": true
   }
 }
