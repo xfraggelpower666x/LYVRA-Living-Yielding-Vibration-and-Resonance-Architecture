@@ -33,3 +33,11 @@ SOURCE_READBACK_NE_HOST_BEHAVIORAL_TEST = TRUE
 
 ## Whole LYVRA boundary
 Whole LYVRA remains identity and sole authority; existing Semantic Visual Intelligence provides context-aware presentation. No change to the five Whole navigation destinations or other specialist's scope. CodeForge may inspect native contracts and compliance but may not select the track's meaning or compose. Learn from actual creator feedback and real renders with provenance; do not invent empirical certainty.
+
+
+## Creator-approved presentation quality (2026-10-18)
+REFERENCE = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CREATOR_VALIDATED_VISUAL_COPY_RENDER_FEEDBACK.md
+KEEP_STRIKING_CAUSALLY_MEANINGFUL_VISUAL_ANALYSIS = TRUE
+PREFER_NATIVE_INDIVIDUAL_COPY_CARDS_WITH_REAL_ACTIONS_WHEN_SUPPORTED = TRUE
+EXACT_CHAR_COUNTS_FROM_COPY_PAYLOAD = TRUE
+NO_IMPOSED_GLOBAL_LAYOUT_TEMPLATE = TRUE
