@@ -1,0 +1,34 @@
+name: LYVRA R02 StarBridge read-only source probe
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.test.mjs'
+      - '.github/workflows/lyvra-r02-starbridge-readonly-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r02-readonly-source:
+    if: github.ref == 'refs/heads/lyvra'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout unchanged original validator and source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run original validator and runner negative tests
+        run: |
+          node --test LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-intake-compatibility.test.mjs LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.test.mjs
+      - name: Execute exact original R02 validator with real authorized GitHub GET only
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node LYVRA_NATIVE_RUNTIME/development/free_first_starbridge_automation/r02-github-actions-runner.mjs
+# No schedules, dispatch to CLIC, artifact with secrets, persistent storage or automatic adoption.
