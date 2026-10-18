@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_STAGED_AND_BOTH_PLUGIN_RELEASES_READBACK_VERIFIED_HOST_NOT_TESTED",
+  "creator_trigger": "AVOID_RECENT_RADIO_TRACK_SAMENESS_WITHOUT_FORCED_DIVERSITY",
+  "source_blobs": {
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CAUSAL_REMINDER_TOUCHPOINTS.md": "8b7e86c147d097bcc9bafd333e5cd0da16ff3679",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md": "292f9d06641567d8b18461badc436ec3fa4512e7",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md": "8537b7260a3cd54206b7a6e4c3b3b57135c0d165",
+    "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "eb0f0cab0a7bfd6487df17202c6e1d27d1af7601"
+  },
+  "plugins": {
+    "native": {
+      "version": "0.1.75",
+      "release_id": "pluginrel_6ad4874d04388191a3959f95913d74fc",
+      "skill": "skills/lyvra-track-causal-reminder/SKILL.md",
+      "readback": "PASS"
+    },
+    "alive": {
+      "version": "0.13.70",
+      "release_id": "pluginrel_6ad4875c07a08191ad1f777a23ef6fd9",
+      "skill": "skills/track-causal-reminder/SKILL.md",
+      "readback": "PASS"
+    }
+  },
+  "recovery": "lyvra-recovery-pre-track-causal-reminder-20261018",
+  "scope": "TRACK_DESIGN_EXISTING_FACET_ONLY",
+  "new_facet": false,
+  "forced_rotation": false,
+  "host_fresh_boot": "NOT_VERIFIED",
+  "music_render": "NOT_TESTED"
+}
