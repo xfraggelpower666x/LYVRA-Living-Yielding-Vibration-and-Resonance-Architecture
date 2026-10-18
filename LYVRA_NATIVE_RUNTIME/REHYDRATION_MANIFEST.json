@@ -1991,8 +1991,8 @@
     "no_foreign_autoactivation": true,
     "no_new_router_or_controller": true,
     "no_executed_capabilities": true,
-    "host": "NOT_TESTED",
-    "dual_plugin_parity": "PENDING",
+    "host": "ORIGINAL_EXECUTOR_FRESH_HOST_NOT_VERIFIED",
+    "dual_plugin_parity": "SOURCE_SKILL_VERIFIED_HOST_PENDING",
     "clic_invitation": "NOT_SENT",
     "read_only_capability_adapter": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs",
     "read_only_capability_adapter_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs",
@@ -2006,6 +2006,11 @@
     "authorized_host_executor_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs",
     "executor_source": "GITHUB_READBACK_VERIFIED",
     "executor_node_execution": "PENDING",
-    "host_integration": "PENDING"
+    "host_integration": "PENDING",
+    "plugin_integration": "NATIVE_0.1.70_ALIVE_0.13.65_DIRECT_SKILL_READBACK_VERIFIED",
+    "plugin_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_DUAL_PLUGIN_2026-10-18.json",
+    "plugin_receipt_blob": "cffaa1953e7b559fc7fa567333efe041883dc3b2",
+    "native_plugin_version": "0.1.70",
+    "alive_plugin_version": "0.13.65"
   }
 }
