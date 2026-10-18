@@ -1722,5 +1722,17 @@
     "recovery": "lyvra-recovery-pre-supercodeforge-visual-parity-regression-20261018-r01",
     "plugin_impact": "NEW_REPO_TEST_AND_AUDIT_ONLY_NO_SEMANTIC_PLUGIN_CHANGE",
     "no_foreign_mutation": true
+  },
+  "supercodeforge_duallayer_status_repair_2026_10_18": {
+    "scope": "DUAL_LAYER_PROJECT_VIEW_REGISTRY_SUPERCODEFORGE_STATUS_ONLY",
+    "registry_path": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "registry_blob": "eda9eea9c654f2b31caec94a3c5763cb152f753a",
+    "status": "PROVIDER_AND_VISUAL_SKILL_TEXT_PARITY_VERIFIED_NATIVE_ALIVE_HOST_AND_FULL_ARCHIVE_BINARY_PENDING",
+    "provider_run": 39115080655,
+    "provider_job": 117639129011,
+    "native_release_id": "pluginrel_6ad49701e0a881918168627beaba3996",
+    "alive_release_id": "pluginrel_6ad497189d788191a6344646222326c9",
+    "previous_audit_fields": "HISTORICAL_PROVENANCE_PRESERVED",
+    "no_cross_facet_scope_change": true
   }
 }
