@@ -1,0 +1,53 @@
+{
+  "schema": "LYVRA_TRACK_DESIGN_DUAL_PLUGIN_RELEASE_READBACK_V1",
+  "date": "2026-10-18",
+  "authority": "WHOLE_LYVRA",
+  "scope": "TRACK_DESIGN_ONLY",
+  "status": "BOTH_PLUGIN_RELEASES_DIRECT_SKILL_READBACK_VERIFIED_HOST_PENDING",
+  "production_base_head": "d9782d5955617222a4094ac889d1baf3794ee612",
+  "recovery_branch": "lyvra-recovery-pre-track-modes-dual-plugin-20261018-r01",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.71",
+    "release_id": "pluginrel_6ad43bd0f6cc81919da42eb1eca241e8",
+    "mode_skill": "skills/lyvra-track-design-modes/SKILL.md",
+    "readback": "VERIFIED",
+    "preserved_prior_track_skill": true,
+    "manifest_parity": true
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.66",
+    "release_id": "pluginrel_6ad4411e9bc48191a7d360deb2ea46b6",
+    "mode_skill": "skills/track-design-modes/SKILL.md",
+    "readback": "VERIFIED",
+    "preserved_prior_track_skill": true,
+    "manifest_parity": true
+  },
+  "music_source": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md",
+      "blob_sha": "9b5c7c019015aa45935076d5ba665705f0198407"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "blob_sha": "db0a2ced105175969e2b9dedae7effbf6580dd74"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+      "blob_sha": "5f52dfd6a94af4434d379a7c0b94a3ecb3cd14a3"
+    }
+  ],
+  "checks": {
+    "source_mode": true,
+    "discovery_mode": true,
+    "per_track_isolation_both": true,
+    "explicit_continuation_exception": true,
+    "visual_presentation_by_existing_intelligence": true,
+    "no_new_facet_or_router": true,
+    "other_music_facets_unchanged": true
+  },
+  "host_acceptance": "NOT_TESTED",
+  "suno_audio": "NOT_RENDERED",
+  "note": "This receipt covers plugin source/release delivery and GitHub source-readback, not runtime behavior or a rendered song. Only production pointer-last after manifest and fingerprint reconciliation establishes repository current integration."
+}
