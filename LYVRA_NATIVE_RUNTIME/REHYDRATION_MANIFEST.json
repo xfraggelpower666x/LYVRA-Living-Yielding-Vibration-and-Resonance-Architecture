@@ -2021,5 +2021,14 @@
     "open_gate": "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
     "no_audio_render": true,
     "supercodeforge_host": "BLOCKED_UNCHANGED"
+  },
+  "supercodeforge_clic_starbridge_handoff_2026_10_18": {
+    "status": "LYVRA_SOURCE_READBACK_VERIFIED_CLIC_DELIVERY_PENDING",
+    "handoff": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_SUPERCODEFORGE_STARBRIDGE_20261018_R01.json",
+    "blob": "84b139648074233b058157a05836d60594a7b4ed",
+    "clic_observed_head": "fabbee6fd0c76ff6d2e6d42c54e987428de336fe",
+    "clic_native_adoption": "PENDING",
+    "host_executor": "BLOCKED",
+    "no_foreign_writes": true
   }
 }
