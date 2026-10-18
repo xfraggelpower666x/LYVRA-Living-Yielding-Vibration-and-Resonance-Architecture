@@ -72,19 +72,19 @@
         "urgent": false
       },
       "blockers": [
-        "MANUAL_GITHUB_ACTIONS_REAL_PROVIDER_RUN_PENDING",
         "NATIVE_PLUGIN_HOST_INJECTION_PENDING",
         "ALIVE_PLUGIN_HOST_INJECTION_PENDING",
-        "GENERAL_VISUAL_PLUGIN_SKILL_PARITY_RECONCILIATION_OPEN"
+        "FULL_NATIVE_PLUGIN_ARCHIVE_BINARY_READBACK_PENDING",
+        "FULL_ALIVE_PLUGIN_ARCHIVE_BINARY_READBACK_PENDING"
       ],
-      "source": "MANUAL_GITHUB_ACTIONS_INTEGRATION_SOURCE_READBACK_PASS",
-      "delivery": "PLUGIN_SKILL_RELEASES_READBACK_VERIFIED_NOT_HOST_EXECUTED",
+      "source": "ORIGINAL_EXECUTOR_GITHUB_ACTIONS_PROVIDER_READBACK_VERIFIED",
+      "delivery": "NATIVE_0_1_76_ALIVE_0_13_72_VISUAL_AND_SUPERCODEFORGE_SKILL_TEXT_PARITY_VERIFIED",
       "adoption": "NATIVE_LYVRA_DEVELOPMENT_ONLY",
-      "host": "NOT_VERIFIED_GITHUB_ACTIONS_MANUAL_DISPATCH_PENDING",
-      "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
-      "latest_evidence_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
-      "native_facet_state_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
-      "next": "PLUGIN_VISUAL_SKILL_PARITY_RELEASE_GOVERNANCE_AND_NATIVE_ALIVE_FRESH_HOST_SEPARATE",
+      "host": "GITHUB_ACTIONS_PROVIDER_PASS_NATIVE_ALIVE_PLUGIN_HOST_NOT_VERIFIED",
+      "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
+      "latest_evidence_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db",
+      "native_facet_state_blob": "378b19acb15b1e4be9b16fc8596a6ea4c6f0312e",
+      "next": "FULL_RELEASE_ARCHIVE_BINARY_READBACK_AND_INDEPENDENT_NATIVE_ALIVE_FRESH_HOST_ACCEPTANCE",
       "original_node_test": "PRIOR_3_OF_3_PASS",
       "visual_evidence_binding": {
         "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
@@ -93,7 +93,7 @@
         "sub_blob": "feb58b499b6d77c387213ea2d4bca5f305ca698c",
         "classification": "SOURCE_VERIFIED_HOST_PENDING",
         "source": "EXACT_REPO_READBACK",
-        "delivery": "REPO_MANUAL_PROBE_SOURCE_ONLY",
+        "delivery": "GITHUB_ACTIONS_PROVIDER_PASS_DUAL_PLUGIN_SKILL_TEXT_RELEASE_READBACK_PASS",
         "adoption": "LYVRA_DEV_SCOPE_ONLY",
         "host": "PLUGIN_NATIVE_AND_ALIVE_UNVERIFIED",
         "priority": "DERIVED_NOT_AUTHORITY",
@@ -113,7 +113,53 @@
         "general_visual_skill_text_parity": "DIFFERENT_PENDING",
         "native_host": "NOT_VERIFIED",
         "alive_host": "NOT_VERIFIED",
-        "no_new_visual_engine": true
+        "no_new_visual_engine": true,
+        "historical_status": true
+      },
+      "current_verified_evidence_2026_10_18": {
+        "provider": {
+          "run_id": 39115080655,
+          "job_id": 117639129011,
+          "result": "PASS_REAL_GITHUB_ACTIONS_ORIGINAL_EXECUTOR",
+          "provider_calls": 1,
+          "test_modules_passed": 4,
+          "test_modules_failed": 0,
+          "repo_receipt": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+          "repo_receipt_blob": "378b19acb15b1e4be9b16fc8596a6ea4c6f0312e"
+        },
+        "plugin_visual_skill_parity": {
+          "status": "PASS_EXACT_TEXT_READBACK",
+          "native_version": "0.1.76",
+          "native_release_id": "pluginrel_6ad49701e0a881918168627beaba3996",
+          "alive_version": "0.13.72",
+          "alive_release_id": "pluginrel_6ad497189d788191a6344646222326c9",
+          "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
+          "receipt_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db"
+        },
+        "binary": {
+          "native": "FULL_ARCHIVE_BYTE_HASH_PENDING",
+          "alive": "FULL_ARCHIVE_BYTE_HASH_PENDING"
+        },
+        "host": {
+          "native": "NOT_VERIFIED",
+          "alive": "NOT_VERIFIED"
+        },
+        "supersedes_prior_display_only": true,
+        "previous_display": {
+          "blockers": [
+            "MANUAL_GITHUB_ACTIONS_REAL_PROVIDER_RUN_PENDING",
+            "NATIVE_PLUGIN_HOST_INJECTION_PENDING",
+            "ALIVE_PLUGIN_HOST_INJECTION_PENDING",
+            "GENERAL_VISUAL_PLUGIN_SKILL_PARITY_RECONCILIATION_OPEN"
+          ],
+          "source": "MANUAL_GITHUB_ACTIONS_INTEGRATION_SOURCE_READBACK_PASS",
+          "delivery": "PLUGIN_SKILL_RELEASES_READBACK_VERIFIED_NOT_HOST_EXECUTED",
+          "host": "NOT_VERIFIED_GITHUB_ACTIONS_MANUAL_DISPATCH_PENDING",
+          "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
+          "latest_evidence_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
+          "native_facet_state_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
+          "next": "PLUGIN_VISUAL_SKILL_PARITY_RELEASE_GOVERNANCE_AND_NATIVE_ALIVE_FRESH_HOST_SEPARATE"
+        }
       }
     }
   ],
