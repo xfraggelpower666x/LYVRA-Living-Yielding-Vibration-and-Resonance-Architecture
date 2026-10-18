@@ -2012,5 +2012,14 @@
     "plugin_receipt_blob": "cffaa1953e7b559fc7fa567333efe041883dc3b2",
     "native_plugin_version": "0.1.70",
     "alive_plugin_version": "0.13.65"
+  },
+  "speech_design_pairing_readiness_2026_10_18": {
+    "status": "EVIDENCE_CARRIER_VERIFIED_MAPPING_UNRESOLVED",
+    "scope": "SPEECH_DESIGN_ONLY",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/speech_design/evidence/SPEECH_AUDIO_SCRIPT_PAIRING_READINESS_2026-10-18.json",
+    "carrier_blob": "89573a85fcfcae2d5f8f1ace24127d10cff83261",
+    "open_gate": "EXACT_WAV_TO_SCRIPT_VERSION_MAPPING",
+    "no_audio_render": true,
+    "supercodeforge_host": "BLOCKED_UNCHANGED"
   }
 }
