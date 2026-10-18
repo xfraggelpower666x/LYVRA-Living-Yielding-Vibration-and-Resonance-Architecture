@@ -125,5 +125,22 @@
     "chatgpt_alive_fresh_host": "NOT_VERIFIED",
     "read_only": true,
     "manual_only": true
+  },
+  "visual_intelligence_binding_2026_10_18": {
+    "status": "SOURCE_BINDING_VERIFIED_HOST_RENDER_PENDING",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "fbdb54dba6eb759ce1fc46307096b33b1b1d5fdb",
+    "sub_rehydration_blob": "feb58b499b6d77c387213ea2d4bca5f305ca698c",
+    "persistent_registry_blob": "4da674c5079795620c754c23d16b1744e03d2efb",
+    "gates": {
+      "source": "VERIFIED",
+      "delivery": "REPOSITORY_SOURCE_ONLY",
+      "adoption": "NATIVE_DEVELOPMENT_ONLY",
+      "host": "NOT_VERIFIED"
+    },
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "preserve_five_choices": true,
+    "no_second_engine": true
   }
 }
