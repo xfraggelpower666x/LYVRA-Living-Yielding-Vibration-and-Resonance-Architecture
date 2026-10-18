@@ -2,18 +2,19 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "AUTHORIZED_GITHUB_PROVIDER_BINDING_SOURCE_VERIFIED",
+  "stage": "NATIVE_IMPORTED_ADAPTER_HOST_EXECUTOR_SOURCE",
   "return_anchor": "FIRST_VERIFIED_PERMISSIONED_CAPABILITY_PROBE",
-  "next_action": "Run fresh host consumer integration for the injected authorized GitHub fetch_file adapter; plugin surfaces remain separate acceptance gates.",
+  "next_action": "Execute committed executor test with independent exact-blob Node checkout and perform genuine injected-connector host execution; plugin parity separate.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
-  "host": "NOT_TESTED",
+  "host": "NOT_VERIFIED",
   "blockers": [
-    "FRESH_HOST_INVOKED_ADAPTER_END_TO_END_PENDING",
-    "PLUGIN_NATIVE_PARITY_PENDING",
-    "PLUGIN_ALIVE_PARITY_PENDING"
+    "INDEPENDENT_EXECUTOR_NODE_RUN_PENDING",
+    "ACTUAL_HOST_INVOKED_EXECUTOR_PENDING",
+    "NATIVE_PLUGIN_PARITY_PENDING",
+    "ALIVE_PLUGIN_PARITY_PENDING"
   ],
   "clic_invitation": "NOT_SENT",
   "outer_mycel": "LYVRA_NATIVE_DECISION_PENDING",
@@ -58,5 +59,22 @@
       "plugin_alive": "NO_RELEASE_CHANGE_PARITY_PENDING",
       "foreign_activation": false
     }
+  },
+  "host_executor": {
+    "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.mjs",
+    "blob": "61f063d5e890b09b7cebc1b9ad7a6161a7bc4b07",
+    "test_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs",
+    "test_blob": "a97e3a72098f9b296303ace86163935501f85e94",
+    "source": "EXACT_GITHUB_READBACK_VERIFIED",
+    "execution": "NOT_YET_VERIFIED",
+    "node_test": "PENDING",
+    "contract": "INJECT_EXISTING_AUTHORIZED_GITHUB_FETCH_FILE",
+    "original_adapter_imported": true,
+    "host_pass": false,
+    "plugins": {
+      "native": "IMPACT_REVIEW_PENDING_PARITY_NOT_CLAIMED",
+      "alive": "IMPACT_REVIEW_PENDING_PARITY_NOT_CLAIMED"
+    },
+    "recovery": "lyvra-recovery-pre-supercodeforge-executor-20261018-r01"
   }
 }
