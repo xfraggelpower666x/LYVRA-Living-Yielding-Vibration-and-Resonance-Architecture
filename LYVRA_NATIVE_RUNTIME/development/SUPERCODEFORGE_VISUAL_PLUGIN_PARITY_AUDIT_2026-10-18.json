@@ -1,0 +1,71 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_VISUAL_PLUGIN_PARITY_AUDIT_V1",
+  "authority": "WHOLE_LYVRA",
+  "scope": "EXISTING_VISUAL_INTELLIGENCE_AND_FIFTH_MENU_SUPERCODEFORGE",
+  "date": "2026-10-18",
+  "base_head": "a6facbdbd5da76769697c6ccff83beb2d9fb9173",
+  "recovery": "lyvra-recovery-pre-supercodeforge-visual-parity-regression-20261018-r01",
+  "native_plugin": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.75",
+    "release": "pluginrel_6ad4874d04388191a3959f95913d74fc",
+    "supercodeforge_skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "supercodeforge_skill_chars": 2277,
+    "visual_skill_path": "skills/666-visual-interface/SKILL.md",
+    "visual_skill_chars": 2564
+  },
+  "alive_plugin": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.70",
+    "release": "pluginrel_6ad4875c07a08191ad1f777a23ef6fd9",
+    "supercodeforge_skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "supercodeforge_skill_chars": 2277,
+    "visual_skill_path": "skills/666-visual-interface/SKILL.md",
+    "visual_skill_chars": 1180
+  },
+  "comparison": {
+    "supercodeforge_skill_exact_text_parity": "PASS_CURRENT_RELEASES",
+    "general_visual_interface_skill_exact_text_parity": "DIFFERENT_CURRENT_RELEASES",
+    "general_visual_interface_skill_semantic_host_equivalence": "NOT_VERIFIED",
+    "repo_semantic_visual_source": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "repo_semantic_visual_blob": "fbdb54dba6eb759ce1fc46307096b33b1b1d5fdb",
+    "supercodeforge_sub_rehydration_blob": "feb58b499b6d77c387213ea2d4bca5f305ca698c",
+    "plugin_skill_text_readback": "LIVE_PLUGIN_CREATOR",
+    "new_release": "NOT_PUBLISHED",
+    "binary_binding": "NOT_CHECKED",
+    "host": "NOT_VERIFIED"
+  },
+  "visual_tests": {
+    "source_module": "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+    "source_git_blob": "c350cc47cde6958e4638be1d551bd6ef436904bd",
+    "new_regression": "LYVRA_NATIVE_RUNTIME/development/verification/supercodeforge-visual-gates.test.mjs",
+    "regression_blob": "ed5155749de548fa6b92dbde358d383a0e73ad9c",
+    "environment": "NODE_22_16_0_LOCAL_ORIGINAL_PROJECTOR_GIT_HASH_MATCH",
+    "results": "5_OF_5_PASS",
+    "cases": [
+      "PERSISTENT_AND_DYNAMIC_CARD_PRESENCE",
+      "SOURCE_NOT_HOST_PROMOTION",
+      "SEPARATE_SOURCE_DELIVERY_ADOPTION_HOST",
+      "PRIORITY_CHANGE_DOES_NOT_DELETE_PERSISTENT",
+      "INVALID_DUPLICATES_FAIL_CLOSED"
+    ],
+    "github_actions_original_provider": "NO_NEW_VERIFIED_WORKFLOW_RUN",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED"
+  },
+  "decisions": {
+    "source": "PASS",
+    "native_supercodeforge_skill_text_parity": "PASS",
+    "full_visual_plugin_parity": "PENDING_RECONCILIATION",
+    "host": "NOT_VERIFIED",
+    "adoption": "NO_FOREIGN_ADOPTION",
+    "plugin_impact": "TEST_ONLY_REPO_SOURCE_CHANGE;_PLUGIN_SKILL_VISUAL_DIFFERENCE_REQUIRES_GOVERNED_RELEASE_RECONCILIATION",
+    "no_unverified_release": true,
+    "no_second_visual_engine": true,
+    "no_new_router": true,
+    "track_design_completed": "PRESERVED",
+    "no_foreign_writes": true
+  },
+  "next": "RECONCILE_GENERAL_VISUAL_INTERFACE_PLUGIN_SKILLS_WITH_RELEASE_SAFE_CHANGE_AND_INDEPENDENT_READBACK;_RUN_REAL_NATIVE_AND_ALIVE_HOST_ACCEPTANCE_SEPARATELY",
+  "return_anchor": "SUPERCODEFORGE_VISUAL_REGRESSIONS_5_OF_5_PASS_PLUGIN_GENERAL_VISUAL_PARITY_PENDING"
+}
