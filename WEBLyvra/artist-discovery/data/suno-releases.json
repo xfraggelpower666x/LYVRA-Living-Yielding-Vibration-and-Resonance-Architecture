@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-17",
-  "public_profile_song_count_observed": 386,
-  "coverage": "386 unique song URLs with titles observed directly in public Suno Songs rendered HTML on 2026-10-17. Profile song count also 386. This is a point-in-time snapshot, not a promise that all remain reachable later.",
+  "reviewed_at": "2026-10-18",
+  "public_profile_song_count_observed": 400,
+  "coverage": "400 unique public song URLs observed directly from Suno Songs HTML 2026-10-18, including 14 newer IDs; snapshot only, not ongoing reachability guarantee.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -19,6 +19,76 @@
     }
   ],
   "public_songs": [
+    {
+      "title": "SPOOKY MOMENTS - THE FLOOR REMEMBERS",
+      "url": "https://suno.com/song/5630334e-9e4b-4c66-8c95-2fb43aee66d1",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "SPOOKY MOMENTS - THE FLOOR REMEMBERS",
+      "url": "https://suno.com/song/51e52767-8289-49dd-9b8b-f84e4bab873a",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "BRAINWASHED - THE RESONANCE RESET",
+      "url": "https://suno.com/song/d837fd63-88dc-41ce-b220-4d79eea25832",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "BRAINWASHED - THE RESONANCE RESET",
+      "url": "https://suno.com/song/ee922109-9d20-4ab7-bf07-762ba69a0d2b",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "CAN YOU FEEL ME THROUGH THE BASS",
+      "url": "https://suno.com/song/d1106ab7-3a32-4964-80a3-e0bdee89aafd",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "CAN YOU FEEL ME THROUGH THE BASS",
+      "url": "https://suno.com/song/2ec208ed-a890-4196-b76d-90fcad130d86",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "ADDICTION @ INTERGALACTIC",
+      "url": "https://suno.com/song/cdf1b3b6-1a3b-45b2-a1c5-09d84a0a5c1f",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "ADDICTION @ INTERGALACTIC",
+      "url": "https://suno.com/song/e652d89e-79b5-4748-a282-bb496bf9facc",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HELP ME - GRAVITY BETWEEN US",
+      "url": "https://suno.com/song/136e92e1-b41c-4c95-947e-fcf065db23e7",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HELP ME - GRAVITY BETWEEN US",
+      "url": "https://suno.com/song/b690ebad-ceff-463a-b36e-f10c8de3938e",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HORST'S RETIREMENT ORCHESTRA - TOTAL MAYHEM",
+      "url": "https://suno.com/song/644b3ffb-0d77-4324-aa81-ce882149f269",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HORST'S RETIREMENT ORCHESTRA - TOTAL MAYHEM",
+      "url": "https://suno.com/song/343261b1-d754-46d5-af1d-fad9682c0a1b",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "A B C - THE ALPHABET OF CHAOS",
+      "url": "https://suno.com/song/6ae89580-e676-4c8d-984e-3cd1905122c1",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "A B C - THE ALPHABET OF CHAOS",
+      "url": "https://suno.com/song/53bba1d0-e082-4ef7-bfaf-9d0eaa4a41a9",
+      "status": "direct_page_readback"
+    },
     {
       "title": "VELUNA - THE ONE AND ONLY NEON QUEEN",
       "url": "https://suno.com/song/dd030afe-6051-41f8-b594-9ab0b6c852c2",
@@ -2435,17 +2505,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 386,
+  "observed_public_song_links": 400,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": {
-    "checked_at": "2026-10-17",
-    "method": "Firecrawl HTML rendered public Songs page waitFor 8500ms",
-    "observed_ids": 386,
-    "new_count": 226,
-    "title_conflicts": 0,
-    "scope": "public profile songs only"
-  }
+  "last_research_outcome": "2026-10-18 new public songs: +14 IDs, 7 pairs; previously known 386 preserved."
 }
