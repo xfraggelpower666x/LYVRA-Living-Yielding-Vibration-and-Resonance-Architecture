@@ -1598,5 +1598,24 @@
     "suno": "NOT_RENDERED",
     "codeforge": "SOURCE_AUDIT_ONLY",
     "foreign_mutations": false
+  },
+  "track_visual_lyvra_native_authorship_2026_10_18": {
+    "status": "NATIVE_VISUAL_AUTHORED_TRACK_SOURCE_AND_DUAL_PLUGIN_RELEASES_VERIFIED_POINTER_PENDING",
+    "scope": "TRACK_DESIGN_PLUS_WHOLE_RELATION",
+    "visual_blob": "67d526293d5b23f7505ceb74c208424f13e85994",
+    "analysis_blob": "ebaac0355715f2609de40859d4fb7715fc447bea",
+    "full_bridge_blob": "9fc3fde64e1982f31e85892cc0029e5e6f3d0e65",
+    "whole_relation_blob": "d50949f6f6600c4a8acfcbd1b9f04e81981d4ab7",
+    "receipt_blob": "367a7a816f7e2e382ddabba23c0f116fd3d94b73",
+    "native_version": "0.1.73",
+    "native_release": "pluginrel_6ad45cf96f208191820e209811752939",
+    "alive_version": "0.13.68",
+    "alive_release": "pluginrel_6ad45d09350081918612f4b09ff48d80",
+    "recovery": "lyvra-recovery-pre-visual-causal-track-20261018-r01",
+    "source": "PASS",
+    "delivery": "PASS_BOTH",
+    "fresh_host": "NOT_TESTED",
+    "suno": "NOT_RENDERED",
+    "no_new_visual_engine": true
   }
 }
