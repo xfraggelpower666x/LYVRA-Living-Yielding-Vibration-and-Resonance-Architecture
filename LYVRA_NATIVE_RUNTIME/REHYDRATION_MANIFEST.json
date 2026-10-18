@@ -2001,6 +2001,11 @@
     "no_executed_cross_system_capabilities": true,
     "github_provider_binding": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs",
     "github_provider_binding_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs",
-    "github_provider_binding_status": "SOURCE_AND_NODE_READBACK_VERIFIED_HOST_PLUGIN_PENDING"
+    "github_provider_binding_status": "SOURCE_AND_NODE_READBACK_VERIFIED_HOST_PLUGIN_PENDING",
+    "authorized_host_executor": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.mjs",
+    "authorized_host_executor_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs",
+    "executor_source": "GITHUB_READBACK_VERIFIED",
+    "executor_node_execution": "PENDING",
+    "host_integration": "PENDING"
   }
 }
