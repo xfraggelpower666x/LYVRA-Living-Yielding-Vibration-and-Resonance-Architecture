@@ -5454,5 +5454,21 @@
     "supercodeforge_host": "BLOCKED_UNCHANGED",
     "next": "PROVIDE_VERBATIM_SCRIPT_TONFALL_AND_SESSION_ASSOCIATION_ONLY_WHEN_AVAILABLE",
     "no_foreign_activation": true
+  },
+  "supercodeforge_clic_starbridge_handoff_2026_10_18": {
+    "status": "LYVRA_OUTBOX_SOURCE_PUBLISHED_CLIC_DELIVERY_NOT_VERIFIED",
+    "handoff_id": "LYVRA-CLIC-SUPERCODEFORGE-STARBRIDGE-20261018-R01",
+    "source": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_SUPERCODEFORGE_STARBRIDGE_20261018_R01.json",
+    "source_blob": "84b139648074233b058157a05836d60594a7b4ed",
+    "manifest_blob": "055d3a795d05554e10e30c12837600f6beee890c",
+    "fingerprint_blob": "69eb3db25cb72dc7faaefc37b2880bec68995958",
+    "recovery": "lyvra-recovery-pre-supercodeforge-starbridge-clic-20261018-r01",
+    "clic_observed_head": "fabbee6fd0c76ff6d2e6d42c54e987428de336fe",
+    "source_gate": "PASS",
+    "delivery_gate": "PENDING_CLIC_NATIVE_READ",
+    "adoption_gate": "PENDING_CLIC_NATIVE_DECISION",
+    "host_gate": "BLOCKED_HANDLE_INJECTION",
+    "clic_write": false,
+    "foreign_autoactivation": false
   }
 }
