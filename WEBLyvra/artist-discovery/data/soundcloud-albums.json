@@ -2,10 +2,100 @@
   "schema_version": "1.2",
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
-  "observed_at": "2026-10-17",
+  "observed_at": "2026-10-18",
   "status": "browser_album_listing_30_items_partial_completeness",
-  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album.",
+  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album. 2026-10-18 additive scan: 15 extra unique set URLs from the public SoundCloud /albums listing; first-seen here is not a publication date; type classification pending.",
   "albums": [
+    {
+      "title": "Another Psy Revolution",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Psy Revolution",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Sie sind unter uns (Single - Part2)",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Sie sind unter uns (Single)",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "The Power must go on...",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Album Alien being in Human",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "PsyTrance - From the Beginning",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "A Speech to Humanity - Die Rede an die Menschheit",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "666 the Alpha and the AIs",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Second Life - Bunker - Techno / PsyTechno",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "PsyTechno Overdosed CyberStorm",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "666 @ The Asylum",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Numinastics Forever",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Second Life - Multiverse Fair",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_album_listing_2026-10-18"
+    },
+    {
+      "title": "Vocal Psytrance Adventure 2.0",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_album_listing_2026-10-18"
+    },
     {
       "title": "LYVRA - LOVE PROTOCOL",
       "type": "EP",
