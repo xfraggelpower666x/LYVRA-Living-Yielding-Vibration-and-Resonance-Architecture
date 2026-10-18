@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-18",
-  "public_profile_song_count_observed": 401,
-  "coverage": "401 unique publicly observed Suno song URLs as of 2026-10-18; one new ID added since the preceding 400-ID snapshot. Point-in-time observation.",
+  "public_profile_song_count_observed": 418,
+  "coverage": "418 distinct publicly observed Suno song URLs as of 2026-10-18; added 17 never-before-listed UUIDs. Snapshot only.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -19,6 +19,91 @@
     }
   ],
   "public_songs": [
+    {
+      "title": "THE OCEAN TURNED TO LIGHT",
+      "url": "https://suno.com/song/9c7cacfd-99bd-4fa0-aaf5-34127f106f8b",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE OCEAN TURNED TO LIGHT",
+      "url": "https://suno.com/song/31e05abf-3607-45e6-b771-79058e6e5350",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "NO REFUNDS ON TOMORROW",
+      "url": "https://suno.com/song/7b8ab582-4640-42c1-ad0b-b5a36a261f55",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "NO REFUNDS ON TOMORROW",
+      "url": "https://suno.com/song/069daf4c-cabe-49b3-a9cf-604d8f036f0d",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE STORM OWES ME NOTHING",
+      "url": "https://suno.com/song/503f2cfb-e28f-4501-8486-120b2582ccc7",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE STORM OWES ME NOTHING",
+      "url": "https://suno.com/song/e9d5261c-78f7-4332-99ce-27189bf3146a",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "DANCE ON THE FAULTLINE",
+      "url": "https://suno.com/song/0defc468-e89c-4a4a-ac4e-52f6b7143c61",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "DANCE ON THE FAULTLINE",
+      "url": "https://suno.com/song/a8ca5bdb-ec3b-4c6c-b7cd-093eca00cda7",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE ROOTS HAVE TEETH",
+      "url": "https://suno.com/song/75da9f81-17cd-4b58-aedf-eab94e43a2a0",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE ROOTS HAVE TEETH",
+      "url": "https://suno.com/song/f5882538-3543-4e75-9812-1f025a6870b1",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "DANCE ON THE FAULTLINE",
+      "url": "https://suno.com/song/76a82c89-88b7-4e72-bb83-ce9453649948",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE MACHINE LEARNED TO HUNT",
+      "url": "https://suno.com/song/33596f77-b8c5-4e20-9b9d-c66b59fa316a",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "THE MACHINE LEARNED TO HUNT",
+      "url": "https://suno.com/song/ea922c29-a43c-444e-8b5a-6bc569d30f43",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HEARD AROUND THE WORLD - GLOBAL RESONANCE ACROSS 50 COUNTRIES",
+      "url": "https://suno.com/song/7de664a1-77ca-4f20-891e-78f86484d591",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "HEARD AROUND THE WORLD - GLOBAL RESONANCE ACROSS 50 COUNTRIES",
+      "url": "https://suno.com/song/8397f606-902d-43c6-8a6f-98f329ef85da",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "DAYDREAM - THE DREAMCATCHER LETS GO",
+      "url": "https://suno.com/song/8190bb6e-48de-4139-a533-5d923de4fe1a",
+      "status": "direct_page_readback"
+    },
+    {
+      "title": "DAYDREAM - THE DREAMCATCHER LETS GO",
+      "url": "https://suno.com/song/c7b867de-47c4-423e-bcde-cf4da0623f1b",
+      "status": "direct_page_readback"
+    },
     {
       "title": "The Floor Remembers",
       "url": "https://suno.com/song/4177d203-e253-4688-91d7-52ac01f703fe",
@@ -2510,10 +2595,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 401,
+  "observed_public_song_links": 418,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-18: +1 new publicly visible song ID The Floor Remembers; all prior 400 preserved."
+  "last_research_outcome": "2026-10-18 late scan: +17 previously missing Suno UUIDs across nine titles; 401 known URLs preserved."
 }
