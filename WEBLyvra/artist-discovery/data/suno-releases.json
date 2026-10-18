@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-10-18",
-  "public_profile_song_count_observed": 400,
-  "coverage": "400 unique public song URLs observed directly from Suno Songs HTML 2026-10-18, including 14 newer IDs; snapshot only, not ongoing reachability guarantee.",
+  "public_profile_song_count_observed": 401,
+  "coverage": "401 unique publicly observed Suno song URLs as of 2026-10-18; one new ID added since the preceding 400-ID snapshot. Point-in-time observation.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -19,6 +19,11 @@
     }
   ],
   "public_songs": [
+    {
+      "title": "The Floor Remembers",
+      "url": "https://suno.com/song/4177d203-e253-4688-91d7-52ac01f703fe",
+      "status": "direct_page_readback"
+    },
     {
       "title": "SPOOKY MOMENTS - THE FLOOR REMEMBERS",
       "url": "https://suno.com/song/5630334e-9e4b-4c66-8c95-2fb43aee66d1",
@@ -2505,10 +2510,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 400,
+  "observed_public_song_links": 401,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-18 new public songs: +14 IDs, 7 pairs; previously known 386 preserved."
+  "last_research_outcome": "2026-10-18: +1 new publicly visible song ID The Floor Remembers; all prior 400 preserved."
 }
