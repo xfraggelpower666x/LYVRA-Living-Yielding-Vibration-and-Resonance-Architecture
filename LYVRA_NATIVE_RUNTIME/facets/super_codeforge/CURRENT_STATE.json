@@ -2,18 +2,18 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "NATIVE_READ_ONLY_PROVIDER_ADAPTER_SOURCE",
+  "stage": "AUTHORIZED_GITHUB_PROVIDER_BINDING_SOURCE_VERIFIED",
   "return_anchor": "FIRST_VERIFIED_PERMISSIONED_CAPABILITY_PROBE",
-  "next_action": "Run exact committed Node tests independently; verify provider permissioned call and host integration separately before capability publication.",
+  "next_action": "Run fresh host consumer integration for the injected authorized GitHub fetch_file adapter; plugin surfaces remain separate acceptance gates.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
   "host": "NOT_TESTED",
   "blockers": [
-    "REAL_PROVIDER_INVOCATION_HOST_TEST_PENDING",
-    "NODE_CI_TEST_EXECUTION_PENDING",
-    "PLUGIN_HOST_PARITY_PENDING"
+    "FRESH_HOST_INVOKED_ADAPTER_END_TO_END_PENDING",
+    "PLUGIN_NATIVE_PARITY_PENDING",
+    "PLUGIN_ALIVE_PARITY_PENDING"
   ],
   "clic_invitation": "NOT_SENT",
   "outer_mycel": "LYVRA_NATIVE_DECISION_PENDING",
@@ -26,7 +26,7 @@
     "base_commit": "49ef14775d23a4aa63d9dcb132fd55148ceb539e",
     "local_contract_checks": 13,
     "local_checks_status": "PASS_FUNCTION_EQUIVALENT",
-    "committed_node_test_execution": "NOT_VERIFIED",
+    "committed_node_test_execution": "PREVIOUS_ADAPTER_TEST_HISTORICALLY_REPORTED;NEW_BINDING_TEST_INDEPENDENT_PASS",
     "permission_scope": "LYVRA_READ_ONLY_SELF_REPOSITORY",
     "independent_live_host": "NOT_VERIFIED",
     "verified_provider_live_capabilities": 0,
@@ -41,6 +41,22 @@
       "native": "SOURCE_ONLY_PLUGIN_INTERFACE_UNCHANGED_HOST_PARITY_PENDING",
       "alive": "SOURCE_ONLY_PLUGIN_INTERFACE_UNCHANGED_HOST_PARITY_PENDING"
     },
-    "no_foreign_autoactivation": true
+    "no_foreign_autoactivation": true,
+    "github_provider_binding": {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs",
+      "blob": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
+      "test_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs",
+      "test_blob": "30f43e3ce95cda4b8a4a4133202881e34bd76486",
+      "node": "22.16.0",
+      "test": "PASS_DIRECT_NODE_TEST_GIT_BLOB_IDENTICAL",
+      "source_commit": "49ef14775d23a4aa63d9dcb132fd55148ceb539e",
+      "provider_readback": "LIVE_GITHUB_FETCH_FILE_SHA_AND_ENCODING_MATCH",
+      "provider_blob": "e5ae05bed19bfef3612ada3e0ed533da0d23a28f",
+      "provider_content_length": 11088,
+      "host_adapter_wiring": "NOT_INDEPENDENTLY_OBSERVED",
+      "plugin_native": "NO_RELEASE_CHANGE_PARITY_PENDING",
+      "plugin_alive": "NO_RELEASE_CHANGE_PARITY_PENDING",
+      "foreign_activation": false
+    }
   }
 }
