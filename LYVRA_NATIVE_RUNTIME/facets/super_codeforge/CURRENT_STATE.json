@@ -2,20 +2,45 @@
   "schema": "LYVRA_SUPERCODEFORGE_FACET_STATE_V1",
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_ONLY",
-  "stage": "NATIVE_BOOTSTRAP",
+  "stage": "NATIVE_READ_ONLY_PROVIDER_ADAPTER_SOURCE",
   "return_anchor": "FIRST_VERIFIED_PERMISSIONED_CAPABILITY_PROBE",
-  "next_action": "Inventory existing CodeForge abilities and establish provider-caller authorization contract.",
+  "next_action": "Run exact committed Node tests independently; verify provider permissioned call and host integration separately before capability publication.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_ONLY",
   "delivery": "NOT_SENT",
   "adoption": "NATIVE_DEVELOPMENT_SCOPE_ONLY",
   "host": "NOT_TESTED",
   "blockers": [
-    "PROVIDER_INTEGRATION_NOT_IMPLEMENTED",
-    "HOST_MENU_NOT_VERIFIED",
-    "PLUGIN_IMPACT_PARITY_PENDING"
+    "REAL_PROVIDER_INVOCATION_HOST_TEST_PENDING",
+    "NODE_CI_TEST_EXECUTION_PENDING",
+    "PLUGIN_HOST_PARITY_PENDING"
   ],
   "clic_invitation": "NOT_SENT",
   "outer_mycel": "LYVRA_NATIVE_DECISION_PENDING",
-  "recovery": "lyvra-recovery-pre-supercodeforge-facet-20261018-r01"
+  "recovery": "lyvra-recovery-pre-supercodeforge-facet-20261018-r01",
+  "adapter": {
+    "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs",
+    "blob": "c3baa1944355eeb9af43eb16331eb0aa0336b46d",
+    "test_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs",
+    "test_blob": "62a661fd18e8524fc436907c30ba363f7dffa73b",
+    "base_commit": "49ef14775d23a4aa63d9dcb132fd55148ceb539e",
+    "local_contract_checks": 13,
+    "local_checks_status": "PASS_FUNCTION_EQUIVALENT",
+    "committed_node_test_execution": "NOT_VERIFIED",
+    "permission_scope": "LYVRA_READ_ONLY_SELF_REPOSITORY",
+    "independent_live_host": "NOT_VERIFIED",
+    "verified_provider_live_capabilities": 0,
+    "external_caller_access": "NOT_AUTHORIZED",
+    "origin_evidence": {
+      "commit": "49ef14775d23a4aa63d9dcb132fd55148ceb539e",
+      "source_blob": "e5ae05bed19bfef3612ada3e0ed533da0d23a28f",
+      "readback": "COMMIT_AND_BRANCH_MATCH_11088_CHARACTERS",
+      "scope": "OWN_REPO_ONLY"
+    },
+    "plugin_impact": {
+      "native": "SOURCE_ONLY_PLUGIN_INTERFACE_UNCHANGED_HOST_PARITY_PENDING",
+      "alive": "SOURCE_ONLY_PLUGIN_INTERFACE_UNCHANGED_HOST_PARITY_PENDING"
+    },
+    "no_foreign_autoactivation": true
+  }
 }
