@@ -1541,5 +1541,23 @@
     "adoption": "NOT_VERIFIED",
     "host": "BLOCKED",
     "foreign_writes": false
+  },
+  "clic_starbridge_whole_network_lyvra_receipt_2026_10_18": {
+    "status": "NATIVE_RECEIVER_SOURCE_READBACK_PASS_CLIC_RECIPROCAL_DELIVERY_PENDING",
+    "handoff_id": "CLIC-STARBRIDGE-WHOLE-NET-LYVRA-20261018-R01",
+    "receipt": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/CLIC-STARBRIDGE-WHOLE-NET-LYVRA-20261018-R01-RECEIPT.json",
+    "receipt_blob": "f7219c71d1d0c2c67a4314a3a572bd3525490e60",
+    "source_commit": "dc50a2353012ab952acb977648f79f77050c7dd0",
+    "source_blob": "b686a42ee635e38fe6e5746337af3d04b11baf3d",
+    "recovery": "lyvra-recovery-pre-clic-whole-network-lyvra-receipt-20261018-r01",
+    "source": "PASS",
+    "recipient_readback": "PASS",
+    "clic_reciprocal_delivery": "PENDING_INDEPENDENT_CLIC_READ",
+    "native_adoption": "NOT_VERIFIED",
+    "host": "NOT_VERIFIED",
+    "supercodeforge_host": "BLOCKED_UNCHANGED",
+    "plugin_impact": "DATA_ONLY_NO_RUNTIME_SKILL_CHANGE",
+    "foreign_writes": false,
+    "pet": "OPTIONAL_UNCHANGED"
   }
 }
