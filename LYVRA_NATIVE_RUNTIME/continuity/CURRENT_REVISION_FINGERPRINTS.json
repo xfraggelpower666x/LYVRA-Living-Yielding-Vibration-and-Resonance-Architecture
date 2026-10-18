@@ -1656,5 +1656,23 @@
     "recovery": "lyvra-recovery-pre-supercodeforge-original-node-test-20261018-r01",
     "plugin_impact": "EVIDENCE_ONLY_NO_RUNTIME_OR_SKILL_CHANGES",
     "foreign_writes": false
+  },
+  "supercodeforge_manual_actions_real_provider_injection_2026_10_18": {
+    "status": "SELF_REPO_MANUAL_GITHUB_ACTIONS_INJECTION_SOURCE_VERIFIED_REAL_RUN_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_MANUAL_GITHUB_ACTIONS_INJECTION_2026-10-18.json",
+    "receipt_blob": "2b6d3dcc1e99db6515cb160911d887df7c469197",
+    "executor_entrypoint_blob": "63dae484c15ee1df1c2c6bd60fe1be7fb8cc5409",
+    "workflow_blob": "6be02995c73be32a007b4e434bfb5eb583f22357",
+    "test_blob": "55a7d62809fe1b2f866c8ece39a349ac1886c308",
+    "facet_current_blob": "27b2f7f63238ae45ea918b64677ca3c55d984b18",
+    "project_registry_blob": "defb5664b5de8b04ef36cc4a8b7f662cfb9f0ce5",
+    "original_node_test": "PREVIOUS_3_OF_3_PASS",
+    "new_test": "NOT_EXECUTED",
+    "github_actions_run": "NOT_EXECUTED",
+    "native_host": "NOT_VERIFIED",
+    "alive_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-supercodeforge-manual-readonly-actions-probe-20261018-r01",
+    "plugin_impact": "REPOSITORY_TEST_TOOLING_ONLY_NO_PLUGIN_SKILL_SEMANTICS_CHANGED",
+    "foreign_writes": false
   }
 }
