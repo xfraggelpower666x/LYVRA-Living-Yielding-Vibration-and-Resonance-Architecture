@@ -1515,5 +1515,20 @@
     "delivery": "VERIFIED_BOTH_RELEASES",
     "adoption": "SKILL_RELEASE_ONLY",
     "host": "NOT_VERIFIED"
+  },
+  "speech_design_pairing_readiness_2026_10_18": {
+    "status": "SOURCE_READBACK_VERIFIED_NO_RENDERER_PROMOTION",
+    "recovery": "lyvra-recovery-pre-speech-pairing-audit-20261018-r01",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/speech_design/evidence/SPEECH_AUDIO_SCRIPT_PAIRING_READINESS_2026-10-18.json",
+    "carrier_blob": "89573a85fcfcae2d5f8f1ace24127d10cff83261",
+    "source_blob": "e7dfc964bbbe9874ad8545f9d10cf24f91bc45f9",
+    "audio_records": 2,
+    "script_pairing": "UNVERIFIED",
+    "timecodes": "OPEN",
+    "emoji_ab": "OPEN",
+    "tonfall_ab": "OPEN",
+    "plugin_impact": "EVIDENCE_ONLY_EXISTING_PLUGIN_CONTRACTS_UNCHANGED",
+    "host": "NO_RENDER_PERFORMED",
+    "foreign_writes": false
   }
 }
