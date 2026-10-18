@@ -1993,6 +1993,11 @@
     "no_executed_capabilities": true,
     "host": "NOT_TESTED",
     "dual_plugin_parity": "PENDING",
-    "clic_invitation": "NOT_SENT"
+    "clic_invitation": "NOT_SENT",
+    "read_only_capability_adapter": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.mjs",
+    "read_only_capability_adapter_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/read-only-capability-adapter.test.mjs",
+    "adapter_status": "NATIVE_SOURCE_READBACK_VERIFIED_HOST_PENDING",
+    "node_test_execution": "PENDING",
+    "no_executed_cross_system_capabilities": true
   }
 }
