@@ -5470,5 +5470,28 @@
     "host_gate": "BLOCKED_HANDLE_INJECTION",
     "clic_write": false,
     "foreign_autoactivation": false
+  },
+  "clic_starbridge_whole_network_lyvra_receipt_2026_10_18": {
+    "status": "NATIVE_SOURCE_RECEIPT_READBACK_VERIFIED_CLIC_RECIPROCAL_DELIVERY_PENDING",
+    "handoff_id": "CLIC-STARBRIDGE-WHOLE-NET-LYVRA-20261018-R01",
+    "receipt": "LYVRA_NATIVE_RUNTIME/handoffs/666CLIC/CLIC-STARBRIDGE-WHOLE-NET-LYVRA-20261018-R01-RECEIPT.json",
+    "receipt_blob": "f7219c71d1d0c2c67a4314a3a572bd3525490e60",
+    "sender_published_commit": "dc50a2353012ab952acb977648f79f77050c7dd0",
+    "sender_source_blob": "b686a42ee635e38fe6e5746337af3d04b11baf3d",
+    "manifest_blob": "d766459b5351cce5a6084c40a0371f9812524fa2",
+    "fingerprint_blob": "e3643929486cbe7278db860eeb40522b24e77baf",
+    "recovery": "lyvra-recovery-pre-clic-whole-network-lyvra-receipt-20261018-r01",
+    "source_readback": "PASS",
+    "recipient_native_source_receipt": "PASS",
+    "sender_reciprocal_delivery": "PENDING_CLIC_READBACK",
+    "native_adoption": "NOT_VERIFIED",
+    "host": "NOT_VERIFIED",
+    "supercodeforge_host": "BLOCKED_UNCHANGED",
+    "plugin_impact": "EVIDENCE_ONLY_NO_PLUGIN_RELEASE",
+    "no_clic_write": true,
+    "foreign_autoactivation": false,
+    "pet": "OPT_IN_UNCHANGED",
+    "pointer_last": true,
+    "return_anchor": "RESUME_WHOLE_LYVRA_SCOPE_CLIC_MAY_NATIVE_RECONCILE_RECEIPT"
   }
 }
