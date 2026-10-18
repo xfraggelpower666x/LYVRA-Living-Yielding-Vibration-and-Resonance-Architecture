@@ -1443,7 +1443,7 @@
     "carriers": {
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md": "682f68fd600625ebdafcd306b51a2c127101698d",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md": "6c5eae255fd68e6b0d03daf269cd00d641f0fb7d",
-      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "5949777d606f8ad825c71822edb00ca0d633bf16",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "f25713ed3eb92339275ece3e72d4441e3cc2c9f4",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CAPABILITY_REGISTRY_PROPOSAL.json": "c0b4691d88693c7e0b1c042d044c5b4f99698222",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md": "3f22994f1db6ce28ee7bb81d4c899dd3d52705ba",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "b2a7ede7fb8c54cb80ba8b4fe4236354e63f52da",
@@ -1476,7 +1476,7 @@
     "carriers": {
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.test.mjs": "30f43e3ce95cda4b8a4a4133202881e34bd76486",
-      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "5949777d606f8ad825c71822edb00ca0d633bf16"
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "f25713ed3eb92339275ece3e72d4441e3cc2c9f4"
     },
     "node_test": "PASS",
     "git_provider_readback": "PASS",
@@ -1484,5 +1484,20 @@
     "native_plugin_parity": "PENDING",
     "alive_plugin_parity": "PENDING",
     "foreign_writes": false
+  },
+  "super_codeforge_executor_2026_10_18": {
+    "status": "GITHUB_SOURCE_READBACK_VERIFIED_NODE_HOST_PLUGIN_PENDING",
+    "base_head": "e364ebc0a11dda36d38524da620f077940b8afcd",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-executor-20261018-r01",
+    "carriers": {
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.mjs": "61f063d5e890b09b7cebc1b9ad7a6161a7bc4b07",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/authorized-host-executor.test.mjs": "a97e3a72098f9b296303ace86163935501f85e94",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "f25713ed3eb92339275ece3e72d4441e3cc2c9f4"
+    },
+    "node_execution": "PENDING",
+    "host_execution": "PENDING",
+    "plugin_native": "PENDING",
+    "plugin_alive": "PENDING",
+    "foreign_mutation": false
   }
 }
