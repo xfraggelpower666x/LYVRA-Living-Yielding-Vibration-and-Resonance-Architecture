@@ -1577,5 +1577,26 @@
     "delivery": "VERIFIED_BOTH_RELEASES",
     "host": "NOT_VERIFIED",
     "no_foreign_mutation": true
+  },
+  "track_design_full_capability_both_modes_repair_2026_10_18": {
+    "status": "TRACK_DESIGN_AND_WHOLE_RELATION_SOURCE_VERIFIED_BOTH_PLUGIN_RELEASES_READBACK_VERIFIED_POINTER_PENDING",
+    "scope": "TRACK_DESIGN_PLUS_WHOLE_RELATION",
+    "recovery": "lyvra-recovery-pre-track-mode-full-capability-repair-20261018-r01",
+    "bridge_blob": "c612735d240eae59f1dcd8cdac0e1563e836e7b6",
+    "modes_blob": "47839f027c49b317a4640ef83634db5b59e2ba86",
+    "track_sub_blob": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1",
+    "renderer_blob": "3228242459272d6e39922a3e5ab68ba039156c59",
+    "whole_relation_blob": "b73ac2f41ac8d2aeafaa169717cb38e1127cb78d",
+    "receipt_blob": "d500a8978686bf1c495cd7d4dd4c58641aebd960",
+    "native_version": "0.1.72",
+    "native_release": "pluginrel_6ad4488440b0819193e5e00a219fa3d2",
+    "alive_version": "0.13.67",
+    "alive_release": "pluginrel_6ad4489354388191acf91c201a35686e",
+    "static_source": "PASS",
+    "plugin_source": "PASS_BOTH",
+    "host": "NOT_VERIFIED",
+    "suno": "NOT_RENDERED",
+    "codeforge": "SOURCE_AUDIT_ONLY",
+    "foreign_mutations": false
   }
 }
