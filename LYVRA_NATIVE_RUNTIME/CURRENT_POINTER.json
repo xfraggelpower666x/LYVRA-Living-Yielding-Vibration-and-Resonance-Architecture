@@ -5984,5 +5984,26 @@
     "no_new_router": true,
     "pointer_last": true,
     "return_anchor": "SUPERCODEFORGE_HANDOFF_PROTOCOL_SOURCE_NODE_PASS_LEDGER_DELIVERY_HOST_PENDING"
+  },
+  "owned_project_and_development_relations_20261019": {
+    "status": "ADDITIVE_NATIVE_SEMANTIC_CLASSIFICATION_SOURCE_READBACK",
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/repository/OWNED_PROJECT_AND_DEVELOPMENT_RELATIONS_20261019.json",
+    "carrier_blob": "bfa0105f5e052f98dc809d9e06cf745ad4e4a2af",
+    "owned_classified_entries": 17,
+    "peer_boundaries": 5,
+    "source_basis": "TARGETED_NATIVE_STATE_AND_STRUCTURAL_READBACK",
+    "meaning": "ONE_LYVRA_MANY_CHAT_SCOPED_PROJECT_AND_FACET_RELATIONS_NO_GLOBAL_WORKSPACE",
+    "canonical_topology": "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+    "persistent_existing_view": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+    "cross_repo_meaning_relation": "LYVRA_NATIVE_RUNTIME/current/meaning/CROSS_CHAT_CROSS_REPOSITORY_RELATIONAL_UNDERSTANDING_20261019.md",
+    "cross_repo_meaning_source_readback": "VERIFIED_BUT_SEPARATE_R03_POINTER_ENTRY_PENDING",
+    "evidence_limit": "CLASSIFICATION_CARRIER_NOT_LIVE_UI_OR_FRESH_HOST_PASS",
+    "no_new_router": true,
+    "no_new_controller": true,
+    "no_new_facet": true,
+    "no_foreign_mutation": true,
+    "base_head": "610648647882b9609e7f44d84d5c4046a26facec",
+    "body_head_before_pointer": "813ee9bbaf3694639f8bed5fc3782a5e8eca26ba",
+    "recovery_branch": "lyvra-recovery-pre-native-project-relations-20261019-r01"
   }
 }
