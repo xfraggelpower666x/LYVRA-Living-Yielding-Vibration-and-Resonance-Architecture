@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {inspectEnvelope,inspectRepositoryHandoff,gitBlobSha,PROTOCOL_BOUNDARY} from './repository-handoff-protocol.mjs';
+const content='LYVRA scoped proposal fixture\n';
+const base={schema:'LYVRA_SUPERCODEFORGE_REPO_HANDOFF_V1',owner:'WHOLE_LYVRA',sender:'LYVRA',receiver:'LYVRA_SUPERCODEFORGE',intent:'PROPOSAL',permission:'READ_ONLY_SELF_REPOSITORY',mutation:false,repository:'xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture',branch:'lyvra',handoff_id:'lyvra:test:0001',replay_key:'lyvra:nonce:0001',source_commit:'a'.repeat(40),source_blob:gitBlobSha(content),source_path:'LYVRA_NATIVE_RUNTIME/test-proposal.txt',sequence:1,supersedes:null,expires_at:'2030-01-01T00:00:00Z'};
+let calls=0;
+const fetchFile=async()=>{calls++;return {result:{sha:base.source_blob,content,encoding:'utf-8'}}};
+const readLedger=async()=>({authenticated_readback:true,authority:'WHOLE_LYVRA',entries:[]});
+const now=new Date('2026-10-19T21:00:00Z');
+assert.equal(inspectEnvelope(base).status,'ELIGIBLE_SOURCE_REVIEW');
+const good=await inspectRepositoryHandoff(base,{fetchFile,readLedger,now});assert.equal(good.status,'SOURCE_READBACK_MATCH');assert.equal(good.delivery_verified,false);assert.equal(good.host_verified,false);assert.equal(calls,1);
+const negative=[{sender:'666CLIC'},{receiver:'666PFS'},{repository:'foreign/repo'},{branch:'main'},{intent:'WRITE'},{mutation:true},{permission:'WRITE'},{source_commit:'lyvra'},{source_blob:'bad'},{source_path:'LYVRA_NATIVE_RUNTIME/../secret'},{source_path:'LYVRA_NATIVE_RUNTIME/\\secret'},{handoff_id:'x'},{replay_key:'x'},{sequence:0},{supersedes:'lyvra:test:0001'},{expires_at:'bad'},{schema:'OTHER'}];
+for(const patch of negative){const before=calls;const r=await inspectRepositoryHandoff({...base,...patch},{fetchFile,readLedger,now});assert.equal(r.status,'DENIED',JSON.stringify(patch));assert.equal(calls,before)}
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger,now:new Date('2031-01-01')})).code,'HANDOFF_EXPIRED');
+assert.equal((await inspectRepositoryHandoff(base,{readLedger,now})).code,'AUTHORIZED_READBACKS_MISSING');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,now})).code,'AUTHORIZED_READBACKS_MISSING');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger,now:'untrusted'})).code,'TRUSTED_CLOCK_REQUIRED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger:async()=>({authenticated_readback:false,authority:'WHOLE_LYVRA',entries:[]}),now})).code,'AUTHENTICATED_LEDGER_REQUIRED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger:async()=>{throw Error('offline')},now})).code,'LEDGER_READ_FAILED');
+for(const entries of [[{handoff_id:base.handoff_id}],[{replay_key:base.replay_key}]])assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger:async()=>({authenticated_readback:true,authority:'WHOLE_LYVRA',entries}),now})).code,'REPLAY_DENIED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger:async()=>({authenticated_readback:true,authority:'WHOLE_LYVRA',entries:[{supersedes:base.handoff_id}]}),now})).code,'SUPERSEDED_DENIED');
+assert.equal((await inspectRepositoryHandoff({...base,supersedes:'lyvra:test:0000',sequence:2},{fetchFile,readLedger,now})).code,'SUPERSESSION_PREDECESSOR_UNVERIFIED');
+assert.equal((await inspectRepositoryHandoff({...base,supersedes:'lyvra:test:0000',sequence:2},{fetchFile,readLedger:async()=>({authenticated_readback:true,authority:'WHOLE_LYVRA',entries:[{handoff_id:'lyvra:test:0000',sender:'LYVRA',receiver:'LYVRA_SUPERCODEFORGE',sequence:2}]}),now})).code,'SUPERSESSION_LINEAGE_DENIED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile,readLedger:async()=>({authenticated_readback:true,authority:'WHOLE_LYVRA',entries:[{sender:'LYVRA',receiver:'LYVRA_SUPERCODEFORGE',sequence:1}]}),now})).code,'STALE_SEQUENCE_DENIED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile:async()=>{throw Error('offline')},readLedger,now})).code,'SOURCE_READ_FAILED');
+assert.equal((await inspectRepositoryHandoff(base,{fetchFile:async()=>({result:{sha:base.source_blob,content:'tampered',encoding:'utf-8'}}),readLedger,now})).code,'SOURCE_BLOB_MISMATCH');
+assert.equal(PROTOCOL_BOUNDARY.host_verified,false);
+console.log('PASS: source-only positive, 17 envelope negative cases, expiry, missing authority/clock, replay, supersession, stale sequence and tampering; no delivery/host promotion');
