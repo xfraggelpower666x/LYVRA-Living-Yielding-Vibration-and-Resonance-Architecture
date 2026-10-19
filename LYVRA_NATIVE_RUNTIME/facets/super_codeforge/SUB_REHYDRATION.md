@@ -26,3 +26,13 @@ COMMUNICATION_SCOPE=SUPERCODEFORGE_NATIVE_DEVELOPMENT_CAPABILITY
 COMMUNICATION_SOURCE_ONLY=TRUE
 REMOTE_DELIVERY_AND_HOST=PENDING
 Existing unified CI evidence, repository handoffs and peer receipts belong to this SuperCodeForge workstream as source/provenance. Do not promote them to deployed peer messaging, authenticated receipts or Fresh Host. The existing fifth-menu placement and Semantic Visual Intelligence remain unchanged. Keep the original executor, PET ownership and all foreign repositories intact.
+
+## Read-only repository handoff protocol verification — 2026-10-19
+READ_AFTER_COMMUNICATION_CONTRACT=repository-handoff-protocol.mjs
+TEST=repository-handoff-protocol.test.mjs
+PROTOCOL_SCOPE=LYVRA_SELF_REPOSITORY_ONLY
+NODE_TEST=PASS_SOURCE_ONLY
+INDEPENDENT_LEDGER_AUTHENTICATION=NOT_VERIFIED
+ACTUAL_PEER_DELIVERY=NOT_VERIFIED
+NATIVE_ALIVE_HOST=NOT_VERIFIED
+The module fail-closes on invalid source, unauthorized scope, replay, stale sequence, supersession contradictions, missing ledger/clock and blob mismatch; a caller-provided ledger attestation flag does not authenticate the ledger. Only the authorized provider may establish ledger origin independently. Do not promote source tests into receipt/delivery/host PASS.
