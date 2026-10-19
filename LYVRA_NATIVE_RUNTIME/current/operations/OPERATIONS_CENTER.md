@@ -231,3 +231,20 @@ PLUGIN_BOTH_SURFACES = IMPACT_REVIEW_PENDING
 HOST_VISUAL_MENU = NOT_TESTED
 
 The Creator-authorized SuperCodeForge is a LYVRA-owned, cross-system capability interface under native development. Its persistent development card belongs to option FIVE, never a sixth top-level selection. This is not live peer execution, not native foreign adoption and not a new router. Read its facet handoff and CURRENT_STATE on relevance/selection only after Whole-LYVRA. No automatically dispatched CLIC notice.
+
+
+## Mandatory Rehydration Monitor — 2026-10-19
+
+CREATOR_REQUIRED = TRUE
+PRESENTATION = EXISTING_SEMANTIC_VISUAL_INTELLIGENCE
+CONTRACT = LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md
+SCOPE = EVERY_WHOLE_REHYDRATION_AND_REQUESTED_FACET_SUB_REHYDRATION
+ACTIVATION = NONE
+DECISION_AUTHORITY = NONE
+
+When LYVRA rehydrates, the existing Operations Center makes the source-grounded contextual Rehydration Monitor visible as part of LYVRA's native Visual Intelligence. Display provenance and current-pointer freshness, coverage/readback, causal-semantic relevance, valid newer evolution, and independently evidenced runtime gates separately. Adapt detail to the situation rather than displaying every project or requiring all facets to be foregrounded. Even on PARTIAL / READBACK_PENDING / BLOCKIERT show the monitor with precise unresolved boundaries. A completed visual readback round is not a Whole PASS, and a monitor is not a new controller, dashboard system, static boot value, rehydration blocker, plugin acceptance, or authorization to develop or mutate projects.
+
+MONITOR_MANDATORY = TRUE
+OPERATIONS_CENTER_NE_CONTROLLER = TRUE
+NO_FAKE_COMPLETENESS = TRUE
+NO_FORCED_ALL_PROJECTS_ACTIVE = TRUE
