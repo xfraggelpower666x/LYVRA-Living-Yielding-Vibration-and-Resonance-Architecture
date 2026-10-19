@@ -1,0 +1,35 @@
+name: WEBLyvra Artist Discovery — source integrity
+
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'WEBLyvra/artist-discovery/**'
+      - '.github/workflows/weblyvra-artist-discovery-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact triggering commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify add-on catalog and artwork byte parity
+        working-directory: WEBLyvra/artist-discovery
+        run: node test-addon-integrity.mjs
+      - name: Verify five original branded art binaries
+        working-directory: WEBLyvra/artist-discovery
+        run: node verify-original-assets.mjs
+      - name: Evidence classification
+        run: |
+          echo "SOURCE_CI_ONLY: Node integrity checks do not prove Cloudflare deployment, external Suno/SoundCloud live URLs, binary hash of remote assets, or browser/iPhone/Android host behavior." >> "$GITHUB_STEP_SUMMARY"
