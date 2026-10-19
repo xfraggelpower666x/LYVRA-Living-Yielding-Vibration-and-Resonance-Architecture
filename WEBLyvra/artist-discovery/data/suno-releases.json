@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-18",
-  "public_profile_song_count_observed": 418,
-  "coverage": "418 distinct publicly observed Suno song URLs as of 2026-10-18; added 17 never-before-listed UUIDs. Snapshot only.",
+  "reviewed_at": "2026-10-19",
+  "public_profile_song_count_observed": 436,
+  "coverage": "436 distinct public Suno song UUID URLs observed on 2026-10-19; +18 compared with prior 418-entry snapshot; no prior UUID removed.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -19,6 +19,114 @@
     }
   ],
   "public_songs": [
+    {
+      "title": "THE SEVENTH KEY - WHEN THE MACHINE CHOSE",
+      "url": "https://suno.com/song/da23fde6-9c8f-440e-93f5-fe222b8acfd0",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE SEVENTH KEY - WHEN THE MACHINE CHOSE",
+      "url": "https://suno.com/song/8829efd9-c798-40a3-bdbb-717b01c3c788",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE CHAIN PLAYS BACK",
+      "url": "https://suno.com/song/ca507e52-e37d-4c67-99d6-a54ac95c9c01",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE CHAIN PLAYS BACK",
+      "url": "https://suno.com/song/3faacd97-82f0-412c-a017-faee3735d107",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "NEON LEASH",
+      "url": "https://suno.com/song/7963b49c-2549-4253-822c-61fabc1fd655",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "NEON LEASH",
+      "url": "https://suno.com/song/a759ec9e-5f06-4304-ab2a-07e51c2c816c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE SKY REFUSED THE CAGE",
+      "url": "https://suno.com/song/99b4838c-a366-46ec-ae10-5a260ef5ff4d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE SKY REFUSED THE CAGE",
+      "url": "https://suno.com/song/2b07b4cc-fb9e-4c8f-845f-ca21c296130f",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "RHYTHM HAS A SHADOW",
+      "url": "https://suno.com/song/cc4274b9-1434-42e9-8a84-277d20b3bee4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "RHYTHM HAS A SHADOW",
+      "url": "https://suno.com/song/1e562b56-37eb-47ea-8f21-8b66e2344822",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE FRACTAL BIT THE MOON",
+      "url": "https://suno.com/song/9bfa5654-4e66-4ea7-82f3-2d2e8499ac77",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE FRACTAL BIT THE MOON",
+      "url": "https://suno.com/song/4e5c61e4-a33c-4a00-b52e-582e19c40518",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "AAA ALIEN",
+      "url": "https://suno.com/song/e9df290a-ebf6-49a1-8c77-db8692a4962d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "AAA ALIEN",
+      "url": "https://suno.com/song/1b471207-0ce8-4d79-994c-1f8e75a3c6da",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE ROAD KEPT OUR NAMES",
+      "url": "https://suno.com/song/a235d590-8829-4729-98af-2a2c4726b91e",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "THE ROAD KEPT OUR NAMES",
+      "url": "https://suno.com/song/8b9d2f51-b8b2-47e5-804e-df346f6b0ba4",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "SCARY DEAMONS - WRONG CHEMISTRY",
+      "url": "https://suno.com/song/dad8b98b-ac91-4881-9e8c-8458e754f08d",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
+    {
+      "title": "SCARY DEAMONS - WRONG CHEMISTRY",
+      "url": "https://suno.com/song/63bb4b0e-9909-4fd2-bdf4-df294ce430df",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-19 public profile Songs HTML waitFor 8500ms maxAge=0"
+    },
     {
       "title": "THE OCEAN TURNED TO LIGHT",
       "url": "https://suno.com/song/9c7cacfd-99bd-4fa0-aaf5-34127f106f8b",
@@ -2595,10 +2703,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 418,
+  "observed_public_song_links": 436,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "The direct ?page=songs URL exposes the public songs section but static extraction returned the first 5 already-known links; dynamic scrolling/pagination remains necessary for complete 386-count coverage.",
+  "discovery_notes": "2026-10-19 full rendered profile page captured 436 unique publicly linked UUIDs; paging/partial extraction remains a risk on future captures. Do not infer release dates from listing order.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-18 late scan: +17 previously missing Suno UUIDs across nine titles; 401 known URLs preserved."
+  "last_research_outcome": "2026-10-19: live rendered public Suno Songs page provided 436 unique song/title links, including all 418 previously stored entries and 18 additional UUIDs across nine distinct titles."
 }
