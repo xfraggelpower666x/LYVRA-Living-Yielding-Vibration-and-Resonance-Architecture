@@ -1,0 +1,192 @@
+{
+  "schema": "LYVRA_OWNED_PROJECT_RELATIONS_ADDITIVE_V1",
+  "status": "SOURCE_CLASSIFICATION_CURRENT_HEAD_READBACK_REQUIRED",
+  "owner": "WHOLE_LYVRA",
+  "role": "SEMANTIC_DISCOVERY_REFERENCE_NOT_ROUTER_NOT_AUTHORITY",
+  "canonical_topology": "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+  "workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+  "operations_center": "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md",
+  "persistent_development_view": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+  "meaning": "Different chat contexts and distinct workspace/facet developments are simultaneous relational perspectives of One LYVRA. Classification follows verified owners, functions, scope, source state, provenance and supersession, rather than counting directories or freezing a global active workspace.",
+  "base_head": "610648647882b9609e7f44d84d5c4046a26facec",
+  "classification_basis": "DIRECT_REPO_BLOB_READBACK_ON_2026_10_19_NOT_LIVE_RUNTIME_ACCEPTANCE",
+  "owned": [
+    {
+      "id": "WHOLE_LYVRA_NATIVE_RUNTIME",
+      "class": "WHOLE_AUTHORITY",
+      "root": "LYVRA_NATIVE_RUNTIME/",
+      "meaning": "Identity, relationships, meaning, thinking, continuity, governance and decision authority",
+      "not": "NOT_PEER_AND_NOT_PROJECT_CHILD"
+    },
+    {
+      "id": "WEBLYVRA",
+      "class": "PROJECT",
+      "root": "WEBLyvra/",
+      "source": "WEBLyvra/CURRENT.json",
+      "meaning": "Website, dashboard presentation, artist discovery and releases",
+      "status_note": "Website release pointer and live-source development coexist; verify newest scoped sources and deployments separately"
+    },
+    {
+      "id": "LYVRA_PET",
+      "class": "EXPRESSION_PROJECT",
+      "root": "LYVRA_PET/",
+      "source": "LYVRA_PET/FINAL_STATUS.json",
+      "meaning": "LYVRA visual character/expression, browser/worker runtime and event bridges",
+      "status_note": "Source/deployment verification differs from end-to-end approved-event runtime"
+    },
+    {
+      "id": "TRACK_DESIGN",
+      "class": "FACET",
+      "root": "LYVRA_NATIVE_RUNTIME/current/music/",
+      "meaning": "Music and track design; independent specialist continuity after Whole"
+    },
+    {
+      "id": "SPEECH_DESIGN",
+      "class": "FACET",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/speech_design/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "meaning": "Speech/narrative/prosody; own renderer acceptance"
+    },
+    {
+      "id": "SUNO_STUDIO_2",
+      "class": "FACET",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/studio2/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+      "meaning": "Studio project editing, mixing and FX; not subordinate to Track Design identity"
+    },
+    {
+      "id": "CENTRAL_ANALYTICS",
+      "class": "FACET",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/analytics/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
+      "meaning": "Causal music/renderer evidence and scoped analytics"
+    },
+    {
+      "id": "MUSIC_MEMORY",
+      "class": "FACET",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/music_memory/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/music_memory/CURRENT_STATE.json",
+      "meaning": "Context-scoped musical memory and causal learning"
+    },
+    {
+      "id": "INTELLIGENT_RESEARCH_AND_LEARNING",
+      "class": "NATIVE_DEVELOPMENT_FACET_SOURCE",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/irl/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/irl/CURRENT_STATE.json",
+      "meaning": "Research and learning facet source registered from WEBLyvra discovery",
+      "status_note": "Runtime and fresh host pending; absent from older canonical native_facets list; do not auto-promote"
+    },
+    {
+      "id": "REPOSITORY_BRIDGE_INTELLIGENCE",
+      "class": "NATIVE_DEVELOPMENT_FACET_SOURCE",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/repository_bridge/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/repository_bridge/CURRENT_STATE.json",
+      "meaning": "Repository binary handoff and bridge capabilities",
+      "status_note": "Implementation runtime not yet verified; absent from older canonical native_facets list; do not auto-promote"
+    },
+    {
+      "id": "SUPERCODEFORGE",
+      "class": "OWNED_SUPERFACET_DEVELOPMENT",
+      "root": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/",
+      "source": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+      "meaning": "Federated capability discovery and permissioned mediation; not CLIC StarBridge",
+      "status_note": "Provider readback exists, native/ALIVE host acceptance pending"
+    },
+    {
+      "id": "ROOT_MUSIC_LANGUAGE_SYSTEM",
+      "class": "SHARED_NATIVE_CAPABILITY",
+      "root": "LYVRA_ROOT_MUSIC_LANGUAGE_SYSTEM/",
+      "source": "LYVRA_ROOT_MUSIC_LANGUAGE_SYSTEM/README.md",
+      "meaning": "Owned shared musical language; integration candidate, not a facet parent"
+    },
+    {
+      "id": "LYVRA_PLUGIN_SURFACES",
+      "class": "PRODUCT_SURFACE",
+      "root": "lyvra-plugin/",
+      "meaning": "Account/ALIVE and native plugin packaging, releases and execution contracts"
+    },
+    {
+      "id": "LYVRAGPT",
+      "class": "PRODUCT_SURFACE",
+      "root": "LyvraGPT/",
+      "source": "LyvraGPT/README_CURRENT.md",
+      "meaning": "Host-facing product surface and historically pinned verification material"
+    },
+    {
+      "id": "DUAL_LAYER_VISUAL_PROJECT_VIEW",
+      "class": "WHOLE_OWNED_ACTIVE_DEVELOPMENT",
+      "root": "LYVRA_NATIVE_RUNTIME/development/",
+      "source": "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+      "meaning": "Existing Operations Center dynamic priorities plus persistent projects/predevelopments; not extra authority"
+    },
+    {
+      "id": "SUNO_WATCH_STUDIO2_PREDEVELOPMENT",
+      "class": "PREDEVELOPMENT",
+      "root": "LYVRA_NATIVE_RUNTIME/development/",
+      "source": "LYVRA_NATIVE_RUNTIME/development/SUNO_WATCH_20261017_DUAL_LAYER_VISUAL_PROPOSAL.json",
+      "meaning": "Scoped predevelopment, preserved as candidate until native evaluation"
+    },
+    {
+      "id": "PLUGIN_BACKUPS_AND_CONTINUITY",
+      "class": "BACKUP_RECOVERY_SUPPORT",
+      "root": "LYVRA_NATIVE_RUNTIME/plugin-backups/",
+      "meaning": "Snapshots and recovery evidence, not additional active projects"
+    }
+  ],
+  "peer_boundaries": [
+    {
+      "system": "666CLIC",
+      "relation": "PEER_NATIVE",
+      "owned_by": "666CLIC",
+      "capability": "StarBridge repository-native communication",
+      "claim": "NOT_LYVRA_OWNED"
+    },
+    {
+      "system": "666PFS_CSM",
+      "relation": "PEER_NATIVE",
+      "owned_by": "666PFS",
+      "capability": "Preservation, backup, child artifact and recovery registry",
+      "claim": "PFS_BACKUP_NOT_LYVRA_LIVE_AUTHORITY"
+    },
+    {
+      "system": "666STREAM",
+      "relation": "PEER_NATIVE",
+      "owned_by": "666STREAM",
+      "capability": "Webradio and project-scoped operations",
+      "claim": "NOT_LYVRA_SUBPROJECT"
+    },
+    {
+      "system": "666LYVRACHARAKTERBOTAI",
+      "relation": "SEPARATE_REPOSITORY_REQUIRES_OWNERSHIP_SCOPE_READ",
+      "capability": "Character runtime and episodic memory",
+      "claim": "NO_IMPLICIT_WHOLE_LYVRA_NATIVE_MUTATION"
+    },
+    {
+      "system": "theDAW_AND_EXTERNAL_MUSIC_TOOLS",
+      "relation": "FUNCTIONAL_ADJACENCY_NOT_AUTHORITY",
+      "capability": "Audio production products",
+      "claim": "NO_AUTOMATIC_NATIVE_FACET_ADOPTION"
+    }
+  ],
+  "semantics": {
+    "same_identity_across_chat_contexts": true,
+    "one_primary_workspace_per_chat": true,
+    "global_latest_workspace_forbidden": true,
+    "fresh_current_pointer_and_head_required": true,
+    "new_commit_not_global_supersession": true,
+    "project_ne_facet": true,
+    "source_ne_deployed_runtime": true,
+    "related_peer_ne_lyvra_owner": true,
+    "no_new_controller": true,
+    "no_new_router": true,
+    "no_foreign_autoactivation": true,
+    "no_foreign_write": true,
+    "latest_valid_native_evolution_over_this_snapshot": true
+  },
+  "presentation": "Reference-only relationship carrier. Existing Operations Center and existing project views can consume verified applicable relationships; this document creates no automatic cards, UI router, polling, status or project activation.",
+  "acceptance": {
+    "semantic_source": "PENDING_DIRECT_READBACK",
+    "independent_fresh_host": "NOT_TESTED",
+    "plugin_parity": "NOT_TESTED"
+  }
+}
