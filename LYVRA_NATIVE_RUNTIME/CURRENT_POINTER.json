@@ -6025,5 +6025,33 @@
     "base_head": "dd1c0668c1e1404e8ad7728bfbe5c400c3e80bf3",
     "body_commit_before_pointer": "cd56aef0143d195474c7217a7023d025d0f49849",
     "recovery_branch": "lyvra-recovery-pre-mandatory-rehydration-monitor-20261019-r01"
+  },
+  "rehydration_monitor_semantic_inheritance_20261019": {
+    "status": "SOURCE_INTEGRATED_HOST_UNVERIFIED",
+    "owner": "WHOLE_LYVRA",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "c78d4409de5ad9f80c916af1fb0d69e0acac7ff7",
+    "projector": "LYVRA_NATIVE_RUNTIME/development/rehydration-inheritance-assessment.mjs",
+    "projector_blob": "41e5d439c36bc7a5f1147f3e0533ede1a31fec65",
+    "tests": "LYVRA_NATIVE_RUNTIME/development/rehydration-inheritance-assessment.test.mjs",
+    "tests_blob": "3caf2a42201b5bd7ce8c228ca98ce4f164bb4064",
+    "source_tests": "LOCAL_FUNCTION_EQUIVALENT_8_OF_8_PASS",
+    "original_github_test_execution": "NOT_INDEPENDENTLY_EXECUTED",
+    "independent_host": "NOT_VERIFIED",
+    "semantic_dimensions": [
+      "SOURCE",
+      "MEANING",
+      "RELATIONS",
+      "EVOLUTION",
+      "APPLICATION"
+    ],
+    "no_independent_pass_from_caller_claims": true,
+    "no_new_engine": true,
+    "no_new_router": true,
+    "no_foreign_autoactivation": true,
+    "no_foreign_writes": true,
+    "base_head": "edc2a5de0529fd3d3e293cd0ceed8dee314f3407",
+    "body_head_before_pointer": "101995db167611fce2b3246800dc9123be403e6f",
+    "recovery_branch": "lyvra-recovery-pre-inheritance-monitor-20261019-r01"
   }
 }
