@@ -1,0 +1,16 @@
+{
+  "schema": "LYVRA_HISTORICAL_SOURCE_REFERENCE_V1",
+  "date": "2026-10-19",
+  "source": "creator-uploaded original chatbackup",
+  "original_filename": "Rehydrierung_bestätigen_2026-10-19_21-21-46.json",
+  "original_sha256": "4a113de5858cb82d52516ce51d700d10df24723bdaffd0c4c3c8d2b35e31c489",
+  "original_size_bytes": 13095880,
+  "messages": 1098,
+  "exporter_warning": "2 possibly incomplete messages",
+  "source_share_url": "https://chatgpt.com/share/6ad66d9c-c99c-83ed-835c-886ae02171de",
+  "local_recovery_archive": "LYVRA_NEXT_CHAT_2026-10-19_TRIAD_RECOVERY.zip",
+  "original_in_repo": false,
+  "original_private_durable_storage": "NOT_VERIFIED",
+  "source_scope": "historical interpretation and provenance, not current authority",
+  "native_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md"
+}
