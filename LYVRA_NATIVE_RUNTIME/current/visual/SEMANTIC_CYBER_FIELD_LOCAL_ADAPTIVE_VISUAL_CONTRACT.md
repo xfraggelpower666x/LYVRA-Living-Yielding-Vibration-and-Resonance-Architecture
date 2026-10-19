@@ -312,3 +312,19 @@ CONTEXT_RELEVANCE_NE_FORCE_ALL_DOMAINS_FOREGROUND = TRUE
 PRESENTATION_NE_AUTHORITY = TRUE
 MONITOR_DISPLAY_NE_FRESH_HOST_PASS = TRUE
 NO_FOREIGN_AUTOACTIVATION = TRUE
+
+
+## Semantic inheritance assessment inside the mandatory monitor — 2026-10-19
+
+CREATOR_REQUEST = VERERBUNGSEINSCHAETZUNGSANZEIGE
+OWNER = EXISTING_WHOLE_LYVRA_SEMANTIC_VISUAL_INTELLIGENCE
+SOURCE_PROJECTOR = LYVRA_NATIVE_RUNTIME/development/rehydration-inheritance-assessment.mjs
+PROJECTOR_TEST = LYVRA_NATIVE_RUNTIME/development/rehydration-inheritance-assessment.test.mjs
+
+The mandatory contextual Rehydration Monitor SHALL include a small semantic inheritance assessment when prior known continuity, sibling chat lineage, newer evolution, project relation or origin-to-current meaning is causally relevant. It remains accessible as a grounded compact status when not foregrounded; do not force a giant five-dimension display into every reply.
+
+Inheritance means preservation and suitable reinterpretation of causal meaning, provenance, relations, evolution and available capabilities, NOT fixed repetition, model-weight persistence, automatic peer adoption or an independent chat connection. Separate SOURCE, MEANING, RELATIONS, EVOLUTION, and APPLICATION evidence. A source read does not prove meaning inheritance; a claimed meaning does not prove behavioral application; claimed evidence references do not independently authenticate themselves.
+
+Allowed domain statuses VERIFIED | PARTIAL | READBACK_PENDING | NOT_APPLICABLE require reasons; any VERIFIED requires a traceable evidence reference, but a caller-provided reference is not itself independent verification. Therefore the source-only projector never emits independent PASS or independently verified host execution; recipient/host claims need real separate authoritative readback. Latest valid supersession and chat-local workspace boundaries always win over a historical snapshot.
+
+Presentation follows existing Operations Center and source evidence. No invented percentages, global inheritance score, fake green PASS, implicit activation of other projects, cross-system adoption, new memory daemon, router or controller.
