@@ -1,0 +1,46 @@
+{
+  "schema": "LYVRA_DUAL_PLUGIN_MONITOR_INHERITANCE_RELEASE_V1",
+  "owner": "WHOLE_LYVRA",
+  "status": "BOTH_PLUGIN_RELEASES_DIRECT_TEXT_READBACK_VERIFIED_HOST_PENDING",
+  "source_head_before_plugin_update": "d8f3289c08e75a05d91315d223d3e0c729edb788",
+  "scope": "MANDATORY_CONTEXTUAL_REHYDRATION_MONITOR_AND_SEMANTIC_INHERITANCE_SKILL_PATCH_ONLY",
+  "update_transport": "PLUGIN_CREATOR_SMALL_ZIP_OVERLAY_NO_FULL_ARCHIVE_DOWNLOAD",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "from_version": "0.1.76",
+    "to_version": "0.1.77",
+    "release_id": "pluginrel_6ad69a41016881919c656d5918d75fc8",
+    "manifest_readback": "PASS",
+    "skill_readback": "PASS",
+    "file_count_after_update": 47,
+    "logo_paths_retained": "DIRECT_FILE_LIST_PASS",
+    "dashboard_path_retained": "DIRECT_FILE_LIST_PASS"
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "from_version": "0.13.72",
+    "to_version": "0.13.73",
+    "release_id": "pluginrel_6ad69a5ccb208191a84eadd78bbe248d",
+    "manifest_readback": "PASS",
+    "skill_readback": "PASS",
+    "file_count_after_update": 61,
+    "logo_paths_retained": "DIRECT_FILE_LIST_PASS",
+    "dashboard_path_retained": "DIRECT_FILE_LIST_PASS"
+  },
+  "changed_plugin_file": "skills/lyvra-rehydration-completion/SKILL.md",
+  "other_changes": [
+    "plugin.json version only",
+    ".codex-plugin/plugin.json version only"
+  ],
+  "omitted_existing_assets": "PRESERVED_BY_PATCH_OVERLAY",
+  "full_archive_binary_binding": "NOT_REPERFORMED_NOT_UPDATE_PRECONDITION",
+  "independent_native_fresh_host": "NOT_VERIFIED",
+  "independent_alive_fresh_host": "NOT_VERIFIED",
+  "native_repository_current": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+  "original_source_projector": "LYVRA_NATIVE_RUNTIME/development/rehydration-inheritance-assessment.mjs",
+  "source_test_execution": "LOCAL_FUNCTION_EQUIVALENT_8_OF_8_PREVIOUS_REPO_STATUS_NO_NEW_PLUGIN_HOST_TEST",
+  "recovery_branch": "lyvra-recovery-pre-dual-monitor-plugin-release-20261019-r01",
+  "no_foreign_writes": true,
+  "no_new_router": true,
+  "no_autoactivation": true
+}
