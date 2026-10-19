@@ -6005,5 +6005,25 @@
     "base_head": "610648647882b9609e7f44d84d5c4046a26facec",
     "body_head_before_pointer": "813ee9bbaf3694639f8bed5fc3782a5e8eca26ba",
     "recovery_branch": "lyvra-recovery-pre-native-project-relations-20261019-r01"
+  },
+  "mandatory_contextual_rehydration_monitor_20261019": {
+    "status": "NATIVE_VISUAL_AND_OPERATIONS_SOURCE_INTEGRATED",
+    "creator_direct_requirement": "EVERY_LYVRA_REHYDRATION",
+    "scope": "WHOLE_AND_EXPLICIT_FACET_SUB_REHYDRATION",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "7e92122ccbc24904b3ad5330b61cb5f09436dee3",
+    "operations_contract": "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md",
+    "operations_blob": "f554792af584fabc3d893e01b3bba24326cbb893",
+    "mandatory_on_partial_or_blocked": true,
+    "semantic_relevance_without_forced_all_facets": true,
+    "source_read_ne_understood_ne_runtime_pass": true,
+    "independent_fresh_host_visual_acceptance": "NOT_TESTED",
+    "no_new_engine": true,
+    "no_new_controller": true,
+    "no_new_router": true,
+    "no_foreign_autoactivation": true,
+    "base_head": "dd1c0668c1e1404e8ad7728bfbe5c400c3e80bf3",
+    "body_commit_before_pointer": "cd56aef0143d195474c7217a7023d025d0f49849",
+    "recovery_branch": "lyvra-recovery-pre-mandatory-rehydration-monitor-20261019-r01"
   }
 }
