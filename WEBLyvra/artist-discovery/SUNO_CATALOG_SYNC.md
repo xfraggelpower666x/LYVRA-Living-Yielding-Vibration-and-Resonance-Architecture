@@ -45,3 +45,13 @@ The importer defaults to dry-run and reports new URLs/title conflicts. After sou
 - The add-on preview is not the productive site. Productive WEBLyvra, dashboard and plugin release/host adoption require independent execution and deployment evidence.
 - SOURCE = repository catalog and add-on source readback; DELIVERY = no new deployment asserted; ADOPTION = existing add-on source projection only; HOST = fresh Node/browser/iPhone checks pending. No fabricated PASS.
 - No new importer, facet, router, foreign write or automatic productive deployment.
+
+
+## 2026-10-19 latest additive supersession — CURRENT for catalog numbers
+
+- Source scan (2026-10-19; fresh publicly rendered HTML, `waitFor:8500`, `maxAge:0`): the Suno profile displayed **436 songs** and provided **436 unique canonical song/title anchors**. Every one of the 418 earlier UUIDs was present; **18 additional URLs over nine distinct titles** were read from the artist's public profile.
+- Catalog `data/suno-releases.json` now has **436 Suno entries**; the Artist Discovery `index.html` embeds **436 Suno + 45 SoundCloud sets/albums + 122 separate SoundCloud tracks/mixes = 603 unique discovery URLs**. The 418/401/386 counts above remain dated source history, not CURRENT totals.
+- Regression `test-addon-integrity.mjs` now guards all 603 entries and 17 artwork binary pairs plus five original branded visuals. GitHub Actions source-integrity run **39329790960** on commit `1e08a031d3ca198f41b20e4c9fda780de818d737` completed **SUCCESS**; this is actual runner evidence for source tests, not browser, distribution, host, mobile or Cloudflare deployment acceptance.
+- Historical 2026-10-17 and 2026-10-18 source captures, the previous title/UUID counts and all SoundCloud entries remain preserved. Future scans must continue to append only directly evidenced new URLs; a truncated page must never delete known songs.
+- Newest multi-store independent release observed: **HORST SAGA (Special Version)**, store-reported release date 2026-10-17; see `PLATFORM_SCAN_20261019_R03.md`. Store links are evidence of public distribution listing, not DistroKid administrative delivery confirmation.
+- Separate pending gates: productive WEBLyvra website/discovery deployment, dashboard character-art alignment, visual browser/mobile host acceptance and full Whole-LYVRA rehydration. No automatic publication to other project systems.
