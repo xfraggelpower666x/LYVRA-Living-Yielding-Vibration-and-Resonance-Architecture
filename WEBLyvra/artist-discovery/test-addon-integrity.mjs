@@ -38,11 +38,21 @@ for(const name of ['lyvra-hero-crest.webp','lyvra-resonance-banner.webp','lyvra-
 // New WEBLyvra staged artwork must remain complete; this checks presence, not binary hashes or deployment.
 for(let i=1;i<=17;i++){
  const name=`art-${String(i).padStart(2,'0')}.webp`;
- assert.ok(existsSync(join(root,'assets','addon-20261018',name)),'missing staged artwork: '+name);
+ const staged=join(root,'assets','addon-20261018',name);
+ const snapshot=join(root,'source-snapshots','LYVRA_NEW_ART_20261018','optimized',name);
+ const png=join(root,'source-snapshots','LYVRA_NEW_ART_20261018','originals',name.slice(0,-5)+'.png');
+ for(const file of [staged,snapshot,png])assert.ok(existsSync(file),'missing artwork/source: '+file);
+ const stagedBytes=readFileSync(staged),snapshotBytes=readFileSync(snapshot),originalBytes=readFileSync(png);
+ assert.ok(stagedBytes.length>12,'empty or truncated staged WebP: '+name);
+ assert.equal(stagedBytes.toString('ascii',0,4),'RIFF','WebP RIFF signature missing: '+name);
+ assert.equal(stagedBytes.toString('ascii',8,12),'WEBP','WebP magic missing: '+name);
+ assert.ok(stagedBytes.equals(snapshotBytes),'staged/snapshot WebP byte drift: '+name);
+ assert.ok(originalBytes.length>24,'empty or truncated source PNG: '+name);
+ assert.ok(originalBytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'PNG signature missing: '+name);
 }
 for(const name of ['art-14.webp','art-17.webp'])assert.ok(html.includes(name),'Global Resonance/brand artwork missing: '+name);
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
 assert.ok(platform.platforms.length>=15,'platform coverage unexpectedly reduced');
 assert.ok(platform.radio?.players?.length>=4,'radio provider coverage unexpectedly reduced');
-console.log('PASS: 418 Suno + 45 SoundCloud sets + 122 SoundCloud tracks (separate) + 17 staged WebP paths + UI/radio/language regression');
+console.log('PASS: 418 Suno + 45 SoundCloud sets + 122 distinct SoundCloud tracks + 17 staged WebP/source byte-pair checks + UI/radio/language regression');
 console.log('NOTE: original WebP binary remote verification is separate; this test does not claim asset delivery.');
