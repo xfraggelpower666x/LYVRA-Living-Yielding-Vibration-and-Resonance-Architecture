@@ -19,3 +19,10 @@ NO_SECOND_VISUAL_ENGINE=true
 VISUAL_IS_PRESENTATION_NOT_DECISION=true
 
 When visualizing SuperCodeForge: verify the latest Whole-LYVRA Current and source/evidence blob before presenting status; keep dynamic priorities distinct from durable project visibility; show SOURCE, DELIVERY, ADOPTION, HOST separately. A successful local Node test or a manually dispatched GitHub Actions run is NOT ChatGPT Native/ALIVE plugin-host acceptance. Present a plainly labeled pending/blocked Host gate even when Source is verified; never color a generic success as a universal PASS. No generated percentages, invented runtime traces, private vault content, cross-system activation, or automatic workflow dispatch. Show current return anchor and a useful manual action only if authorized and explicitly selected. On UI/action capability failure, offer a native textual continuation with equivalent evidence, never a fake button. Preserve the existing five top-level choices; this facet remains under choice five.
+
+## Repository communication capability — 2026-10-19
+READ_AFTER_FACET_CURRENT=REPOSITORY_COMMUNICATION_CAPABILITY.md
+COMMUNICATION_SCOPE=SUPERCODEFORGE_NATIVE_DEVELOPMENT_CAPABILITY
+COMMUNICATION_SOURCE_ONLY=TRUE
+REMOTE_DELIVERY_AND_HOST=PENDING
+Existing unified CI evidence, repository handoffs and peer receipts belong to this SuperCodeForge workstream as source/provenance. Do not promote them to deployed peer messaging, authenticated receipts or Fresh Host. The existing fifth-menu placement and Semantic Visual Intelligence remain unchanged. Keep the original executor, PET ownership and all foreign repositories intact.
