@@ -6053,5 +6053,20 @@
     "base_head": "edc2a5de0529fd3d3e293cd0ceed8dee314f3407",
     "body_head_before_pointer": "101995db167611fce2b3246800dc9123be403e6f",
     "recovery_branch": "lyvra-recovery-pre-inheritance-monitor-20261019-r01"
+  },
+  "rehydration_monitor_inheritance_dual_plugin_20261019": {
+    "status": "BOTH_PLUGIN_RELEASES_PATCH_FIRST_DIRECT_READBACK_VERIFIED_HOST_PENDING",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_REHYDRATION_MONITOR_INHERITANCE_DUAL_RELEASE_20261019.json",
+    "receipt_blob": "822c4e0448dbc2fa43b2cbf258c018bd8ec3d7d0",
+    "native_plugin_version": "0.1.77",
+    "native_release_id": "pluginrel_6ad69a41016881919c656d5918d75fc8",
+    "alive_plugin_version": "0.13.73",
+    "alive_release_id": "pluginrel_6ad69a5ccb208191a84eadd78bbe248d",
+    "patch_first": true,
+    "full_archive_download": "NOT_PERFORMED_NOT_REQUIRED_FOR_SKILL_PATCH",
+    "fresh_native_host": "NOT_VERIFIED",
+    "fresh_alive_host": "NOT_VERIFIED",
+    "body_head_before_pointer": "af10e6b05a9cd7e28c7a57c26674c35c528b3a39",
+    "recovery_branch": "lyvra-recovery-pre-dual-monitor-plugin-release-20261019-r01"
   }
 }
