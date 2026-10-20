@@ -31,7 +31,7 @@ class Integrated(unittest.TestCase):
                Situation("music_pipeline",c.situation.observed|{"timing_ok"}))
         self.assertEqual(run_chain(c)["candidates"],["relation_fault"])
     def test_conflict_no_auto_selection(self):
-        c=Case(self.c.revision,self.c.memories,self.c.evidence+(Record("opposing","root-X","report-X",rebut=frozenset({"relation_fault"})),),self.c.experiences,self.c.situation)
+        c=Case(self.c.revision,self.c.memories,self.c.evidence+(Record("opposing","root-X","report-X",rebuts=frozenset({"relation_fault"})),),self.c.experiences,self.c.situation)
         self.assertEqual(run_chain(c)["status"],"EVIDENCE_CONFLICT_REVIEW")
     def test_stale_memory_not_used(self):
         c=Case("rev-3",self.c.memories,self.c.evidence,self.c.experiences,self.c.situation)
