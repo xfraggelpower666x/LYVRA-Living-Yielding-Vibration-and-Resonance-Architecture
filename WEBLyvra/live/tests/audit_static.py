@@ -81,6 +81,13 @@ assert sum(a.get('href')=='https://chatgpt.com/g/g-6abe79b4637481919e42d6085ccdb
 checked=set()
 for name in ['brand-chrome-emblem','brand-cosmos-mascot','brand-alien-emblem','mascot-life-tree','mascot-resonance']:
     image=web/'assets'/(name+'.webp');assert image.is_file();checked.add(str(image.relative_to(web)))
+# Artist Discovery renders platform sections from its verified JSON inventory.
+# Its six navigation anchors are DOM-generated, unlike ordinary static anchors.
+addon_page=web/'artist-discovery'/'index.html'
+addon_data=json.loads((web/'artist-discovery'/'data'/'platforms.json').read_text())
+addon_dynamic={section['id'] for section in addon_data['sections']}
+assert len(addon_dynamic)==len(addon_data['sections'])
+assert "section.id=group.id" in addon_page.read_text(), 'dynamic section renderer unavailable'
 def resolve(value,path):
     u=urlsplit(value)
     if u.scheme or u.netloc or value.startswith('data:'):return
@@ -88,7 +95,8 @@ def resolve(value,path):
     if not u.path:target=path
     if target.is_dir():target=target/'index.html'
     assert target.is_file(),(path,value)
-    if u.fragment and target.suffix=='.html':assert u.fragment in parsed[target].ids,(path,value)
+    if u.fragment and target.suffix=='.html':
+        assert u.fragment in parsed[target].ids or (target==addon_page and u.fragment in addon_dynamic),(path,value)
     checked.add(str(target.relative_to(web)))
 for path,page in parsed.items():
     for value in page.refs:resolve(value,path)
