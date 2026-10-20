@@ -51,6 +51,11 @@ for(let i=1;i<=17;i++){
  assert.ok(originalBytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'PNG signature missing: '+name);
 }
 for(const name of ['art-14.webp','art-17.webp'])assert.ok(html.includes(name),'Global Resonance/brand artwork missing: '+name);
+// Google Resonance must not fabricate organic traffic or Google rank.
+for(const token of ['id="google-resonance"','renderGoogleResonance(lang)','grPlatforms','grProducts','grState.filter','grCopy','MESSDATEN AUSSTEHEND','METRICS PENDING','Google Search Console','noopener noreferrer'])assert.ok(html.includes(token),'Google Resonance capability missing: '+token);
+assert.ok(html.includes("value.textContent='—'"),'unverified search metric must remain empty');
+assert.ok(html.includes("item.level/3*100"),'evidence-tier progress bars missing');
+assert.ok(html.includes("sort((a,b)=>b.level-a.level"),'ranking must sort by evidence level');
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
 assert.ok(platform.platforms.length>=15,'platform coverage unexpectedly reduced');
 assert.ok(platform.radio?.players?.length>=4,'radio provider coverage unexpectedly reduced');
