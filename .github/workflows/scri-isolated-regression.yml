@@ -25,7 +25,7 @@ jobs:
       - name: Python version
         run: python3 --version
       - name: Compile all SCRI fixture modules
-        run: python3 -m compileall -q scri_hypothesis_probe_20261020.py scri_causal_experience_probe_20261020.py scri_diagnostic_reflection_20261020.py scri_context_reconstruction_20261020.py scri_evidence_hardening_20261020.py scri_integrated_chain_20261020.py test_scri_competing_experiences_20261020.py test_scri_evidence_hardening_20261020.py test_scri_integrated_chain_20261020.py
+        run: python3 -m compileall -q scri_hypothesis_probe_20261020.py scri_causal_experience_probe_20261020.py scri_diagnostic_reflection_20261020.py scri_context_reconstruction_20261020.py scri_evidence_hardening_20261020.py scri_integrated_chain_20261020.py test_scri_competing_experiences_20261020.py test_scri_evidence_hardening_20261020.py test_scri_integrated_chain_20261020.py scri_github_evidence_adapter_20261020.py test_scri_github_evidence_adapter_20261020.py
       - name: Four standalone legacy fixtures
         run: |
           set -euo pipefail
@@ -39,5 +39,7 @@ jobs:
         run: python3 -m unittest -v test_scri_evidence_hardening_20261020.py
       - name: End-to-end integrated regressions
         run: python3 -m unittest -v test_scri_integrated_chain_20261020.py
+      - name: GitHub evidence adapter regressions
+        run: python3 -m unittest -v test_scri_github_evidence_adapter_20261020.py
       - name: Summary
-        run: echo "74 fixture checks defined; PASS requires all previous steps success. Synthetic evidence, not live SCRI runtime."
+        run: echo "87 fixture checks defined; PASS requires all previous steps success. Synthetic evidence, not live SCRI runtime."
