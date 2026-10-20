@@ -6,6 +6,7 @@ on:
     paths:
       - 'WEBLyvra/artist-discovery/**'
       - '.github/workflows/weblyvra-artist-discovery-integrity.yml'
+      - 'WEBLyvra/live/tests/stage-artist-discovery.cjs'
   workflow_dispatch:
 
 permissions:
@@ -30,6 +31,9 @@ jobs:
       - name: Verify five original branded art binaries
         working-directory: WEBLyvra/artist-discovery
         run: node verify-original-assets.mjs
+      - name: Stage and verify independent Cloudflare Pages artifact
+        working-directory: WEBLyvra/live
+        run: node tests/stage-artist-discovery.cjs
       - name: Evidence classification
         run: |
           echo "SOURCE_CI_ONLY: Node integrity checks do not prove Cloudflare deployment, external Suno/SoundCloud live URLs, binary hash of remote assets, or browser/iPhone/Android host behavior." >> "$GITHUB_STEP_SUMMARY"
