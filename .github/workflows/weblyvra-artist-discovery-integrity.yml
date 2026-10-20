@@ -7,6 +7,8 @@ on:
       - 'WEBLyvra/artist-discovery/**'
       - '.github/workflows/weblyvra-artist-discovery-integrity.yml'
       - 'WEBLyvra/live/tests/stage-artist-discovery.cjs'
+      - 'WEBLyvra/live/tests/audit_static.py'
+      - 'WEBLyvra/live/dist/index.html'
   workflow_dispatch:
 
 permissions:
