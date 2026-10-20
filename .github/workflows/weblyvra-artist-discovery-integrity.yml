@@ -34,6 +34,9 @@ jobs:
       - name: Stage and verify independent Cloudflare Pages artifact
         working-directory: WEBLyvra/live
         run: node tests/stage-artist-discovery.cjs
+      - name: Verify complete static deployment after staging
+        working-directory: WEBLyvra/live
+        run: python tests/audit_static.py
       - name: Evidence classification
         run: |
           echo "SOURCE_CI_ONLY: Node integrity checks do not prove Cloudflare deployment, external Suno/SoundCloud live URLs, binary hash of remote assets, or browser/iPhone/Android host behavior." >> "$GITHUB_STEP_SUMMARY"
