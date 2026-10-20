@@ -6,7 +6,7 @@ import subprocess
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[2]
 CANDIDATE_REF = "lyvra-scri-candidate-20261020"
 RECOVERY_DIR = "LYVRA_NATIVE_RUNTIME/recovery"
 
@@ -37,7 +37,7 @@ class RealGitProvenance(unittest.TestCase):
         self.assertEqual(git("cat-file", "-t", self.remote_prod), "commit")
 
     def test_recovery_documents_are_blobs_not_restore_anchors(self):
-        entries = git("ls-tree", "HEAD", RECOVERY_DIR + "/").splitlines()
+        entries = git("ls-tree", "-r", "HEAD", RECOVERY_DIR + "/").splitlines()
         self.assertTrue(entries)
         for line in entries:
             self.assertIn(" blob ", line)
@@ -57,7 +57,7 @@ class RealGitProvenance(unittest.TestCase):
         self.assertNotEqual(self.head, self.remote_prod)
 
     def test_no_repair_execution_or_restore(self):
-        self.assertEqual(git("status", "--porcelain"), "")
+        self.assertEqual(git("diff", "--name-only"), "")
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
