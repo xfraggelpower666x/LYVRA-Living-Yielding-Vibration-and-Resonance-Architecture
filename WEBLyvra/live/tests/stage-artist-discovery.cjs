@@ -8,7 +8,7 @@ const source = path.resolve(__dirname, '../../artist-discovery');
 const target = path.resolve(__dirname, '../dist/artist-discovery');
 const main = fs.readFileSync(path.join(source, 'index.html'));
 const catalog = JSON.parse(fs.readFileSync(path.join(source, 'data/suno-releases.json'),'utf8'));
-const embedded = main.toString('utf8').match(/const discoItems=(\\[[^;]*\\]);\\s*const discoState=/s);
+const embedded = main.toString('utf8').match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert(embedded, 'missing embedded Artist Discovery diskography');
 const items=JSON.parse(embedded[1]);
 assert.equal(catalog.public_songs.length, 436, 'unexpected Suno catalog');
