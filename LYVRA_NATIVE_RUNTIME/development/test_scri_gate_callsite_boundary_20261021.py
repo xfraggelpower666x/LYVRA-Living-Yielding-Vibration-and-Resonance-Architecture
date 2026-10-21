@@ -31,7 +31,7 @@ class PublicBoundary(unittest.TestCase):
    if any(isinstance(x,ast.Name) and x.id=="_evaluate_verified_carriers" for x in ast.walk(tree)):offenders.append(module.name)
   self.assertFalse(offenders,offenders)
  def test_only_fixture_tests_import_internal(self):
-  allowed={"test_scri_scoped_supersession_gate_20261021.py","test_scri_adversarial_gate_20261021.py"}
+  allowed={"test_scri_scoped_supersession_gate_20261021.py","test_scri_adversarial_gate_20261021.py","test_scri_gate_callsite_boundary_20261021.py"}
   offenders=[]
   for module in ROOT.glob("test_scri_*_20261021.py"):
    if module.name in allowed:continue
