@@ -1,7 +1,7 @@
 """Adversarial tests for source-bound supersession. No external writes."""
 import unittest
 from copy import deepcopy
-from scri_scoped_supersession_gate_20261021 import judge
+from scri_scoped_supersession_gate_20261021 import _evaluate_verified_carriers as judge
 A="a"*40
 B="b"*40
 def fixture():
