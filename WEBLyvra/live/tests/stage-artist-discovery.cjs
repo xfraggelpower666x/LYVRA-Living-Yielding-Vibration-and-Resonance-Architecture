@@ -11,9 +11,9 @@ const catalog = JSON.parse(fs.readFileSync(path.join(source, 'data/suno-releases
 const embedded = main.toString('utf8').match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert(embedded, 'missing embedded Artist Discovery diskography');
 const items=JSON.parse(embedded[1]);
-assert.equal(catalog.public_songs.length, 436, 'unexpected Suno catalog');
-assert.equal(items.length, 603, 'unexpected unified discovery inventory');
-assert.equal(new Set(items.map(x=>x.url)).size,603,'duplicate discovery URLs');
+assert.equal(catalog.public_songs.length, 450, 'unexpected Suno catalog');
+assert.equal(items.length, 617, 'unexpected unified discovery inventory');
+assert.equal(new Set(items.map(x=>x.url)).size,617,'duplicate discovery URLs');
 const data=['platforms.json','suno-releases.json','soundcloud-albums.json','soundcloud-tracks.json'];
 const art=[...Array(17)].map((_,i)=>'art-'+String(i+1).padStart(2,'0')+'.webp');
 const original=['fraggel-system-designer.webp','lyvra-666soundsdesign-wordmark.webp','lyvra-cyber-emblem.webp','lyvra-hero-crest.webp','lyvra-resonance-banner.webp'];
@@ -28,4 +28,4 @@ for(const rel of files){
  assert.equal(digest(fs.readFileSync(src)),digest(fs.readFileSync(dst)),'staging byte drift: '+rel);
 }
 assert.equal(files.length,27,'unexpected asset selection');
-console.log('WEBLYVRA_DISCOVERY_STAGE_PASS 603 unique URLs, 436 Suno, 22 WebP binaries, 4 data inventories; repository originals unchanged');
+console.log('WEBLYVRA_DISCOVERY_STAGE_PASS 617 unique URLs, 450 Suno, 22 WebP binaries, 4 data inventories; repository originals unchanged');
