@@ -1,6 +1,6 @@
 import json,subprocess,unittest
 from pathlib import Path
-from scri_scoped_supersession_gate_20261021 import judge
+from scri_scoped_supersession_gate_20261021 import _evaluate_verified_carriers as judge
 ROOT=Path(__file__).resolve().parents[2]
 def git(*args):
  p=subprocess.run(["git","-C",str(ROOT),*args],text=True,capture_output=True,timeout=40)
