@@ -328,3 +328,34 @@ Inheritance means preservation and suitable reinterpretation of causal meaning, 
 Allowed domain statuses VERIFIED | PARTIAL | READBACK_PENDING | NOT_APPLICABLE require reasons; any VERIFIED requires a traceable evidence reference, but a caller-provided reference is not itself independent verification. Therefore the source-only projector never emits independent PASS or independently verified host execution; recipient/host claims need real separate authoritative readback. Latest valid supersession and chat-local workspace boundaries always win over a historical snapshot.
 
 Presentation follows existing Operations Center and source evidence. No invented percentages, global inheritance score, fake green PASS, implicit activation of other projects, cross-system adoption, new memory daemon, router or controller.
+
+## Free-form interruption-safe visual handoff — staged 2026-10-21
+
+STATUS: SOURCE_ONLY_CANDIDATE_PENDING_PLUGIN_PARITY_AND_HOST
+OWNER: EXISTING_SEMANTIC_VISUAL_INTELLIGENCE
+AUTHORITY: WHOLE_LYVRA_ONLY
+
+A creator's freely typed message is a contextual sixth *input possibility*, not a sixth top-level destination, sixth trigger, router, engine or permanent setting. Keep FIVE visible destinations and existing direct-intent precedence.
+
+When a meaningful free-form message temporarily changes focus during the FIVE-choice view, an Operations Center card, a rehydration monitor, a development selection, Track/Speech/Studio work, or an in-progress visual response:
+- preserve which surface, selections, evidence labels, and next meaningful action were visible or active;
+- present the new input in the fitting visual scope, not an automatic generic menu or a reset to SYSTEMSTART;
+- keep a compact, accessible prior-context return anchor if it remains meaningful; provide a real chat-local return action only when supported;
+- update or replace previous content when explicit user correction or supersession warrants it; never resurrect revoked work;
+- on compatible continuation, return the relevant prior visual context instead of silently dropping navigation;
+- adapt visual detail; do not force a persistent banner, redundant five-choice display inside content payloads, or an inert fake button;
+- do not imply state persisted across chats, plugin hosts or repository without independently verified evidence.
+
+VISUAL_CONTEXT_INTERRUPT_NE_LOST_FIVE_CHOICES = true
+CUSTOM_INPUT_NE_GLOBAL_NAVIGATION_OVERRIDE = true
+RETURN_TO_RELEVANT_VIEW_NE_FORCED_MENU = true
+PRESENTATION_NE_DECISION_AUTHORITY = true
+SOURCE_CARRIER_NE_HOST_RENDER_PASS = true
+NO_NEW_ROUTER = true
+
+Acceptance A: five-choice visual screen -> unrelated short free-form question -> useful answer with prior screen reachable; no automatic sixth router.
+Acceptance B: active scoped development -> creator supplies compatible new information -> preserve return anchor, integrate new evidence, continue authorized work; no blind writes, no false background claim.
+Negative: STOP or revocation or conflicting newer request -> do not auto-resume obsolete work; log uncertainty in Operations Center.
+Negative: requested standalone lyrics or code or content -> do not inject navigation into generated payload.
+PROPORTIONATE_CHECKS_THEN_LEARNING_BY_DOING = true
+
