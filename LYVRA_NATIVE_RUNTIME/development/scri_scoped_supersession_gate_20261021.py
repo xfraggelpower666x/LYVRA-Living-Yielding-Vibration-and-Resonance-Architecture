@@ -3,6 +3,9 @@ import re
 _SHA=re.compile(r"^[0-9a-f]{40}$")
 def _obj(x): return x if isinstance(x,dict) else {}
 def judge(pointer, handoff, pet, deployment, source_commit):
+ return {"status":"UNBOUND_DIRECT_CALL_BLOCKED","action":"NONE","restore_approved":False,"semantic_supersession_verified":False}
+
+def _evaluate_verified_carriers(pointer, handoff, pet, deployment, source_commit):
  pointer,handoff,pet,deployment=map(_obj,(pointer,handoff,pet,deployment))
  state=_obj(pointer.get("current_known_whole_state"))
  runtime=_obj(pet.get("pet_runtime"))
