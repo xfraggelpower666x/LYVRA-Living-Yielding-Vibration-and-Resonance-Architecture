@@ -730,3 +730,13 @@ CURRENT_RENDERER_AND_OUTPUT_GUARD_REQUIRED_IN_BOTH = TRUE
 SEMANTIC_EMOJI_SURVIVAL_ACROSS_EXTENDED_STYLE_LYRICS_TEXT = TRUE
 ASSEMBLED_CREATOR_OUTPUT_MUST_PASS_FIELD_ORDER_AND_TRUE_CHARACTER_COUNTS = TRUE
 DAYDREAM_CASE = OUTPUT_APPLICATION_DRIFT_NOT_PROVEN_PLUGIN_HOST_DEFECT
+
+
+## Creator causal collaboration: Chaos with Direction (DEV CANDIDATE 2026-10-21)
+CURRENT_RELATIONAL_TOUCHPOINT_REFERENCE = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CAUSAL_REMINDER_TOUCHPOINTS.md
+APPLICATION_BRIDGE_REFERENCE = LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md
+At each fresh Track Design sub-rehydration, load these sources in scope after verifying Whole Current; restore creator-confirmed meaning and relevance gates, not only the title of a memory. For a new track, resolve whether the relation changes ACTUAL musical decisions and whether those survive into the output payload. If the new source does not call for it, do not use the old lyric, story, triad of sounds or arrangement. Chat identity, mode, other facets and Suno device-specific authority stay unchanged.
+CHAOS_WITH_DIRECTION_IS_RELATIONAL_LEARNING_NOT_ALWAYS_ON_TRACK_TEMPLATE = TRUE
+MEANING_RESTORED_NE_APPLICATION_VERIFIED = TRUE
+FRESH_CHAT_NEGATIVE_AND_CONTRADICTION_CASES_REQUIRED = TRUE
+HOST_AND_PLUGIN_PARITY_OPEN_UNTIL_DIRECTLY_VERIFIED = TRUE
