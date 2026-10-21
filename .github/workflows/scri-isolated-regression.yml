@@ -7,6 +7,8 @@ on:
       - '.github/workflows/scri-isolated-regression.yml'
       - 'LYVRA_NATIVE_RUNTIME/development/scri_*_20261020.py'
       - 'LYVRA_NATIVE_RUNTIME/development/test_scri_*_20261020.py'
+      - 'LYVRA_NATIVE_RUNTIME/development/scri_*_20261021.py'
+      - 'LYVRA_NATIVE_RUNTIME/development/test_scri_*_20261021.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -63,4 +65,4 @@ jobs:
       - name: Adversarial source-bound gate tests
         run: python3 -m unittest -v test_scri_adversarial_gate_20261021.py
       - name: Summary
-        run: echo "87 fixture checks plus 9 real git-object and 9 recovery-anchor checks and 18 read-only ring and 12 ref stability and 17 LKG-protection and 13 temporal provenance and 15 real supersession and 15 causal carrier and 16 scoped supersession checks defined; PASS requires all previous steps success. Synthetic evidence, not live SCRI runtime."
+        run: echo "87 fixture checks plus 9 real git-object and 9 recovery-anchor checks and 18 read-only ring and 12 ref stability and 17 LKG-protection and 13 temporal provenance and 15 real supersession and 15 causal carrier and 16 scoped supersession and 14 adversarial gate checks defined; PASS requires all previous steps success. Synthetic evidence, not live SCRI runtime."
