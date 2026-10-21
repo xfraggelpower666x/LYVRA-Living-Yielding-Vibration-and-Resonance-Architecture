@@ -57,3 +57,15 @@ RELEVANT_CARDS_ARE_RECALLED_DURING_CREATION_NOT_JUST_NAMED_AT_BOOT = TRUE
 VOICE_AND_DRAMATURGY_ARE_TRACK_SPECIFIC_AND_CAUSALLY_CHOSEN = TRUE
 MOTOR_DNA_NE_IDENTICAL_MOTOR_SURFACE_OR_REPEATED_BREAK_PATTERN = TRUE
 NO_FIXED_DIVERSITY_QUOTA_OR_ALTERNATIVE_MENU = TRUE
+
+
+## Cross-chat causal application of Chaos with Direction (DEV CANDIDATE 2026-10-21)
+The actual Track Design reminder now includes the creator-confirmed relational understanding of "Chaos with Direction". At sub-rehydration, follow the reference to `TRACK_DESIGN_CAUSAL_REMINDER_TOUCHPOINTS.md`, then evaluate relevance at CURRENT source/impulse interpretation and again before final renderer assembly. The new dialog's needs always supersede the old track example.
+- Positive: when a new source thematizes shaping volatile possibilities, meaningful inter-instrument causality may make previously clashing motifs cooperate without discarding their identities or softening power. A chosen consequence must surface in Extended, Style and/or Lyrics/Structure rather than only a pretty explanation.
+- Negative: a new track about unrelated people, places or emotions must not import "WE SHAPE CHAOS", the original line, exactly three sound forces, the old hook, voice persona or detlef/horst comedy.
+- Contradiction: a source celebrating uncontained disorder may require maintaining unresolved chaos; do not force purposeful resolution as a moral.
+- If the relevance check finds no material musical effect, leave unrelated fields untouched; zero mutation is a valid intelligent choice.
+- For any selected output field, check actual generated copy payloads and repair out-of-limit text BEFORE labelling a result ready. Device-specific experimental input fields remain device-scoped and audio-unverified.
+
+REMEMBER_CREATOR_MEANING_WITHOUT_REPLAYING_TRACK = TRUE
+CROSS_CHAT_BEHAVIORAL_TEST_REQUIRED_BEFORE_FRESH_HOST_CLAIM = TRUE
