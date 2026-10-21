@@ -65,6 +65,10 @@ assert.ok(html.includes('LIVE ON WEBLYVRA')&&html.includes('AUF WEBLYVRA LIVE'),
 assert.ok(html.includes('grState.filter=key')&&html.includes('aria-pressed'),'reach filters must update pressed state');
 assert.ok(html.includes("const source=[...grPlatforms,...grProducts]"),'ranking has lost indexed platforms and curated products');
 assert.ok(html.includes("w.level+' '+item.level+'/3"),'ranking accessibility provenance label missing');
+// Separate, voluntary public search checks must never be presented as measured Google rankings.
+for(const token of ['gr-search-check','encodeURIComponent(',"'https://www.google.com/search?q='+encodeURIComponent",'w.checkHelp','Check on Google','Google prüfen','item.label'])assert.ok(html.includes(token),'Google item search source check missing: '+token);
+assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
+assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
 assert.ok(platform.platforms.length>=15,'platform coverage unexpectedly reduced');
 assert.ok(platform.radio?.players?.length>=4,'radio provider coverage unexpectedly reduced');
