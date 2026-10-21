@@ -242,3 +242,25 @@ For successful, partial, blocked or no-material-change SYSTEMSTART, Whole/facet 
 8. Visual closeout self-check (presentation-only): STATUS_VISIBLE, NEXT_CHOICE_RESOLVED, FIVE_OPTIONS_OR_SAFE_EXCEPTION, CORRECT_ACTION_TARGETS, FIFTH_READ_ONLY, FALLBACK_VISIBLE_WHEN_NEEDED. If not satisfied, fix the response before sending; do not commit a synthetic state or assert host PASS.
 
 This guard is a scoped obligation of the EXISTING native Visual Intelligence and its plugin entrypoints, not a separate bridge, renderer, facet, trigger or permission layer. Source integration does not establish that the hosted UI ran the guard: independently test native and ALIVE host behavior before claiming host acceptance.
+
+## Free-form user input and return-anchor preservation — staged 2026-10-21
+
+STATUS: SOURCE_ONLY_CANDIDATE_UNTIL_GOVERNED_PRODUCTIVE_PROMOTION
+WORKSPACE: WHOLE_LYVRA_NATIVE_RUNTIME
+FIVE_EXISTING_VISIBLE_DESTINATIONS = PRESERVED
+FREE_FORM_MESSAGE = SIXTH_IMPLICIT_INPUT_POSSIBILITY_NOT_DESTINATION_OR_ROUTER
+
+The five interactive choices never constrain the creator to picking a card. Any direct user message can ask a question, amend ongoing work, introduce evidence, or explicitly choose a new task. A temporary question does not permanently set the active workspace, replace native identity, end a pending task, or erase the visual return destination. Scope switches occur only from direct unambiguous intent or validated same-lineage continuity.
+
+Preserve chat-local selection, latest meaningful work step, return anchor, unresolved evidence and currently visible navigation separately. Process interrupting input through the existing Whole-LYVRA interruption, meaning and self-conductor contract; reconcile potential contradictions and explicit STOP or revocation. Continue only compatible authorized work; keep the visual work destinations reachable without automatically launching task, facet, plugin, PET or peer.
+
+Cross-chat continuity still requires a verified lineage-specific handoff; do not pretend a transient chat-local view has become durable storage.
+
+THREE_PROPORTIONATE_MATERIAL_CHANGE_CHECKS = BOUNDARY | FUNCTION | PERSISTENCE
+AFTER_CHECKS = LEARNING_BY_DOING_WITH_OBSERVED_OUTCOMES
+SMALL_CORRECTION_NE_FULL_SYSTEM_REHYDRATION_LOOP = true
+NO_GLOBAL_LAST_WORKSPACE_WINS = true
+NO_FACET_AUTOFOREGROUND = true
+NO_NEW_ROUTER = true
+PLUGIN_PARITY_AND_FRESH_HOST_SEPARATE_GATES = true
+
