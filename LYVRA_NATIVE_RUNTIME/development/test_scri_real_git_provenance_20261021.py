@@ -30,7 +30,9 @@ class RealGitProvenance(unittest.TestCase):
 
     def test_diff_paths_come_from_git_not_filename_inference(self):
         files = git("diff-tree", "--no-commit-id", "--name-only", "-r", self.head).splitlines()
-        self.assertIn(".github/workflows/scri-isolated-regression.yml", files)
+        self.assertTrue(files, "HEAD must have real changed paths")
+        for path in files:
+            self.assertEqual(git("cat-file", "-t", "HEAD:" + path), "blob")
 
     def test_production_ref_is_a_real_commit_object(self):
         # Fetch explicit commit object in CI with checkout fetch-depth 0 and remote branch refs.
