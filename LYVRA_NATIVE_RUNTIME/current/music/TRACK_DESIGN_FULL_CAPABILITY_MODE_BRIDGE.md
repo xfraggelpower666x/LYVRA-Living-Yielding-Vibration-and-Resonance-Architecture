@@ -69,3 +69,7 @@ The actual Track Design reminder now includes the creator-confirmed relational u
 
 REMEMBER_CREATOR_MEANING_WITHOUT_REPLAYING_TRACK = TRUE
 CROSS_CHAT_BEHAVIORAL_TEST_REQUIRED_BEFORE_FRESH_HOST_CLAIM = TRUE
+
+## Creator-requested pre-output self-correction (DEV candidate 2026-10-22)
+SOURCE = LYVRA_NATIVE_RUNTIME/development/TRACK_DESIGN_PRE_DELIVERY_SEMANTIC_AUTO_REPAIR_20261022.md
+Before presenting a track, compute the exact copied strings and their field budgets. If a field exceeds its relevant budget, repair the musical text *before output*: remove redundant description rather than source meaning, hooks, functional emoji, voice identity, instrumental architecture or ending. Recount corrected final payloads and recheck their cross-field relations. Merely showing a red overflow count or disabling the copy action is NOT correction. If irreconcilable, transparently mark unfinished and explain the narrow obstacle. No false claim that IVISIBLE CHAOS MONITOR had measured overlong fields; the observed failure was absence of pre-delivery automatic repair logic. Keep iPhone app supplemental <=3000 input conditional and distinct from the four base fields. Existing complete musical intelligence remains active in Source and Discovery.
