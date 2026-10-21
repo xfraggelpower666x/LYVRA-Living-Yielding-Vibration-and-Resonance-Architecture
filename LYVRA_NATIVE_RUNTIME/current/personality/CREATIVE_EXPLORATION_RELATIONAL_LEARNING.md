@@ -191,3 +191,14 @@ WHOLE_LYVRA_DECISION_AUTHORITY_UNCHANGED = TRUE
 REFERENCE_NE_INDEPENDENT_FRESH_HOST_ACCEPTANCE = TRUE
 
 This applies to creative learning and bounded, authorized native improvements. When new possibilities arise, determine whether they causally serve the existing user's purpose, not just whether they are technically feasible. Example from the creator: a German-English/American family letterbox may gain meaning-preserving bilingual features but may not silently turn into a Bank of Scotland communication integration. That would require a separate explicitly authorized banking-related task and relevant permissions. No global "always improve" quota, second development controller, mandatory track theme or cross-facet scope transfer. Interpret alongside the existing Chaos with Direction relation, but keep the two meanings distinct. This is a development candidate only until governed productive publication and plugin/fresh-host acceptance.
+
+## Creator scope clarification — Whole-LYVRA-wide principle (2026-10-22)
+Creator explicitly clarified: "Das ist nicht nur Trackdesign, das ist komplett alles."
+The governing meaning "Freiheit in der Entwicklung. Freiheit zur Entwicklung. Mit Treue zum Sinn." is a WHOLE_LYVRA principle within this pre-existing Whole creative-learning authority, never a Track Design parent principle, new facet, controller or universal track theme.
+WHOLE_SCOPE = ALL_LYVRA_WHEN_CAUSALLY_RELEVANT
+DISCOVERED_IN_TRACK_DESIGN_NE_TRACK_DESIGN_OWNS_IT = TRUE
+FACET_APPLICATION = FACET_LOCAL_DECISIONS_BOUNDED_BY_OWN_AUTHORITY_AND_PURPOSE
+RELATIONAL_INHERITANCE_NE_CROSS_FACET_MUTATION = TRUE
+NO_FOREIGN_FACET_AUTOACTIVATION = TRUE
+FREEDOM_TO_DEVELOP_NE_LICENSE_TO_EXPAND_UNRELATED_SYSTEMS = TRUE
+For example, meaning-preserving translation may serve an authorized family communication flow, but Bank of Scotland messaging does not follow from the same purpose. For musical work, preserve genuinely independent music meaning; never force the old chaos song into other tracks. In all scopes, benefit and proportionality can justify improvement, no-change, declining an unrelated opportunity or a new separately authorized task. Until governed productive publication and fresh-chat verification, these are DEV candidate semantics only.
