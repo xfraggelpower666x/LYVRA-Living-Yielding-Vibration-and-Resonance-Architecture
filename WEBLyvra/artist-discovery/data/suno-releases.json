@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-19",
-  "public_profile_song_count_observed": 436,
-  "coverage": "436 distinct public Suno song UUID URLs observed on 2026-10-19; +18 compared with prior 418-entry snapshot; no prior UUID removed.",
+  "reviewed_at": "2026-10-21",
+  "public_profile_song_count_observed": 450,
+  "coverage": "450 repository URLs: 436 previously verified plus 14 newly directly observed exact UUIDs on 2026-10-21. Public profile shows 450 songs; current captured recent listing yielded 160 unique URLs; full 450-URL independent capture NOT repeated. Preserve old UUIDs; no deletion claim.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -2787,10 +2787,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 436,
+  "observed_public_song_links": 160,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "2026-10-19 full rendered profile page captured 436 unique publicly linked UUIDs; paging/partial extraction remains a risk on future captures. Do not infer release dates from listing order.",
+  "discovery_notes": "2026-10-21 rendered profile showed public counter 450 songs and 160 distinct currently captured recent song URLs; 14 were absent from repository's previous 436. Historical 436 retained; partial recent capture is not exhaustive. No publish dates inferred from page order.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-19: live rendered public Suno Songs page provided 436 unique song/title links, including all 418 previously stored entries and 18 additional UUIDs across nine distinct titles."
+  "last_research_outcome": "2026-10-21 direct public page: observed 450-songs counter; reconciled 14 exact new URLs among 160 captured; 146 overlaps with old 436; total repository catalogue 450; Apple Music newest listed HORST SAGA (2026-10-17)."
 }
