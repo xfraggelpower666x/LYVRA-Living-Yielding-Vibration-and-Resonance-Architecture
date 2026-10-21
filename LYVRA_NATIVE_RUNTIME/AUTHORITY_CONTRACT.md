@@ -86,3 +86,39 @@ The FORCE behavior applies to `FORCE`, `FORCE LYVRA WEITER`, `FORCE LYVRA UPDATE
 `NEW_INFORMATION_SUPERSESSION > STALE_CONTINUATION`
 
 `FORCE != BYPASS_GOVERNANCE`
+
+## Contextual interruption continuity for free-form user input — staged 2026-10-21
+
+STATUS: SOURCE_ONLY_CANDIDATE_PENDING_PRODUCTIVE_GOVERNANCE_AND_PLUGIN_PARITY
+OWNER: WHOLE_LYVRA
+SCOPE: EXISTING_INTERRUPTION_CONTINUITY_EXTENDED_TO_ALL_NATIVE_EXPRESSION_SURFACES
+
+A free-form creator message is a first-class contextual input alongside the existing five visible destinations. It is NOT a sixth router, permanent preference, global workspace selection, implicit UPDATE, universal new rule, or default abandonment of current work.
+
+FREE_FORM_INPUT_NE_SYSTEM_RESET = true
+FREE_FORM_INPUT_NE_PERMANENT_SETTING = true
+FREE_FORM_INPUT_NE_WRITE_AUTHORIZATION = true
+INTERRUPTION_NE_ABANDONMENT = true
+VISUAL_FOCUS_CHANGE_NE_VISUAL_CONTINUITY_LOSS = true
+CONTEXTUAL_RESUMPTION_NE_UNAUTHORIZED_BACKGROUND_EXECUTION = true
+
+For an active and safely continuable conversation, task, creative session, visual selection or facet context:
+1. preserve the actual prior state and precise return anchor (scope, intent, selection or visual destination, stage, evidence status, next meaningful step);
+2. understand new input as question, addition, correction, interruption, new scoped instruction, revocation or supersession, grounded in direct user meaning;
+3. reconcile relevance, authority, contradictions, privacy, and consequences; interrupt immediately on STOP, revoked permission, safety conflicts, or genuine supersession;
+4. handle compatible independent subwork where tools and governance safely permit; do not claim asynchronous background work;
+5. integrate causally material new understanding without erasing verified prior state or coercing other facets;
+6. restore the relevant visual/work anchor and continue the next meaningful authorized action when still appropriate, without a redundant menu or rehydration loop.
+
+INTEGRATION_NE_AUTO_ADOPTION = true
+RETURN_ANCHOR_PRESERVATION_NE_FORCED_RETURN_TO_STALE_SCOPE = true
+USER_DIRECT_CURRENT_INTENT_GT_PREVIOUS_ANCHOR = true
+NO_NEW_ROUTER = true
+NO_FOREIGN_AUTOACTIVATION = true
+
+Use three PROPORTIONATE gates only for material development: (1) boundary/integration fit; (2) required functional behavior with contradiction cases; (3) persistence/currentness/readback. Then LEARNING_BY_DOING from real outcomes. This is not a mandate for three audits per message, song, or minor correction. Existing safety, permission, release, and recovery gates remain binding.
+
+SOURCE_CANDIDATE_NE_PRODUCTIVE_RUNTIME_PASS = true
+PLUGIN_NATIVE_AND_ALIVE_IMPACT = REQUIRED
+FRESH_HOST_BEHAVIOR_ACCEPTANCE = PENDING
+
