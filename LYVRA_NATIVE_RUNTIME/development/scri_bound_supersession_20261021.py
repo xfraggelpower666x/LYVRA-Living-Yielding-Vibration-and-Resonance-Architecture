@@ -1,5 +1,14 @@
 """Mandatory real Git-bound evaluation; no unbound dict reaches the supersession gate."""
 import json
+import subprocess
+from pathlib import Path
+_ROOT=Path(__file__).resolve().parents[2]
+def _remote_head():
+    p=subprocess.run(['git','-C',str(_ROOT),'ls-remote','origin','refs/heads/lyvra'],text=True,capture_output=True,timeout=35)
+    fields=p.stdout.strip().split()
+    if p.returncode or len(fields)!=2 or fields[1]!='refs/heads/lyvra':
+        return None
+    return fields[0]
 from scri_git_blob_binding_20261021 import PATHS,verify,git
 
 
@@ -8,6 +17,8 @@ def assess(commit, bindings, expected_current_commit=None):
         return {"status":"UNBOUND_CARRIER_SET","action":"NONE","restore_approved":False}
     if expected_current_commit is None or commit!=expected_current_commit:
         return {"status":"STALE_OR_UNPINNED_CURRENT","action":"NONE","restore_approved":False}
+    if _remote_head()!=commit:
+        return {"status":"LIVE_REF_MISMATCH","action":"NONE","restore_approved":False}
     verified={}
     for facet,path in PATHS.items():
         item=bindings.get(facet)
@@ -28,5 +39,7 @@ def assess(commit, bindings, expected_current_commit=None):
             "pet":{"status":"DEPLOYMENT_CLAIM_VISUAL_PENDING" if deployment["pet_surface"]["visual_atlas_render"]=="READBACK_PENDING" else "REVIEW",
                    "deployment_provenance":pet["pet_runtime"].get("deployment_id"),"visual_readback_verified":False,"restore":False},
             "checkpoints":{"reopen":False},"automatic_write":False,"semantic_supersession_verified":False}
+    if _remote_head()!=commit:
+        return {"status":"REF_CHANGED_DURING_REVIEW","action":"NONE","restore_approved":False}
     return {"status":"BOUND_REVIEW_ONLY","decision":result,"verified_git_blobs":len(verified),
             "action":"NONE","restore_approved":False}
