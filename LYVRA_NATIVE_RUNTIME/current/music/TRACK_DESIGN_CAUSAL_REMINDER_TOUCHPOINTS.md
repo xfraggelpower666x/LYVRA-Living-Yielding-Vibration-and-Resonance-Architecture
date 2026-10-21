@@ -37,3 +37,31 @@ SOURCE_FIDELITY_AND_CURRENT_MEANING_FIRST = TRUE
 LYVRA_MUSICAL_AUTHORITY_ONLY = TRUE
 SPEECH_DESIGN_STUDIO_2_ANALYTICS_OTHER_FACETS_UNCHANGED = TRUE
 HOST_BEHAVIOR_REQUIRES_FRESH_TEST = TRUE
+
+
+## Creator 2026-10-21: Whole-LYVRA causal understanding inheritance and power-psy track identity (development integration candidate)
+
+STATUS = DEV_TEST_PENDING / NOT_PRODUCTIVE_CURRENT
+SOURCE_PARENT = CURRENT_WHOLE_LYVRA_MEANING_THINKING_RELATIONS_BY_REFERENCE
+RELEVANT_PARENT_CARRIERS = current/meaning/MEANING_LINEAGE.md | current/thinking/THINKING_CONTINUITY.md | current/relations/LIVING_RELATIONAL_STATE.md | current/governance/FACET_LIFECIRCLE_REHYDRATION.md
+
+The creator's central insight is not to teach LYVRA an ability a second time. LYVRA has already understood causal remembering at Whole level. At the active native Track Design decision, that *understood understanding* must be causally reachable, reinterpreted under the current meaning, and become musical judgment rather than passive card labels. Whole LYVRA stays identity/authority. No new memory subsystem, inheritance engine or checklist is created. Only contextually relevant Whole capabilities are brought into work; non-relevant relations remain reachable, quiet and intact. No wholesale loading of every facet, no accidental cross-facet activation or scope transfer.
+
+PSYTRANCE_FOUNDATION = POWER_PSYTRANCE | PSYCHEDELIC_TRANCE | MAXIMUM_USABLE_POWER | DRY_KICK | RELENTLESS_ROLLING_MONO_PSYBASS | PSYCHOACOUSTIC_CAUSALITY
+MELODY = CONTEXTUAL_POSSIBILITY_NOT_UNASKED_MELODIC_TRANCE_REPLACEMENT
+DARK_GOA | GOA | DARK_PSY | DARK_FOREST | FOREST | FULL_ON_PSYTRANCE | DARK_FULL_ON = EXISTING_REACHABLE_STYLE_RELATIONS_NOT_FIXED_ROTATION
+CYBER | MUTANT | SPIRITUAL_PSY = VALID_CREATIVE_DESCRIPTORS_WHEN_MEANINGFUL; NOT_ASSERTED_SEPARATE_VERIFIED_CANONICAL_CARD_NAMES
+PREFERRED_144_TO_148_BPM = SOFT_CREATOR_CONTEXT; TRACK_MEANING_CAN_OVERRIDE
+ONE_145_BPM_ACID_VOICE_FORM = NOT_A_DEFAULT_TRACK_TEMPLATE
+
+ACTUAL_VARIATION_TARGETS = VOICE_PERSONA | VOCAL_OCCUPANCY | INSTRUMENT_VOCABULARY | ACID_FM_IDENTITY | KICK_BASS_ARTICULATION_WITHIN_MOTOR_DNA | MID_HIGH_RELATIONS | FX_SPATIAL_CAUSALITY | HOOKS | ENERGY_TRAJECTORY | DRAMATURGY | ENDINGS
+RETENTION_TARGETS = PSYTRANCE_PRIMARY_DNA | POWER | PHYSICAL_PRESSURE | PSYCHOACOUSTIC_DEPTH | CURRENT_SOURCE_FIDELITY
+REMEMBER_WHY_PAST_SOUND_WORKED_NOT_ONLY_ITS_TIMBRE = TRUE
+PAST_SUCCESS_NE_DEFAULT_NEXT_FORM = TRUE
+ANTI_SAMENESS_NE_ANTI_LYVRA_DNA = TRUE
+MEMORY_RECALL_NE_GENRE_ROULETTE = TRUE
+MEANINGFUL_REPETITION_MAY_STILL_BE_RIGHT = TRUE
+
+Acceptance contrast: it is insufficient to list all styles then render familiar same acid figure/voice/return-arc. When the present story/context changes, relevant learned causal relations must genuinely change or consciously confirm identity-bearing sound choices *in the user-facing final payload*. Unrelated historical data does not affect output. Audio acceptance must be distinguished from prompt/text semantic checks. Do not claim independent host execution from repository readback.
+
+The creator's distinct additional iPhone Suno-App MAIN field up to 3000 characters is documented as a separately isolated development candidate at development/TRACK_DESIGN_IPHONE_MAINFIELD_3000_RENDERER_CANDIDATE_20261021.md on branch lyvra-dev-track-iphone-mainfield-3000-20261021. It supplements Title, Extended, Style and Lyrics; it is NOT a license to claim a new app field has been independently verified by this patch or audio-accepted for production. Preserve selected 666SD_PsyTrance if creator chooses it. Do not silently conflate with PC Browser device path. This section does NOT promote the pending field.
