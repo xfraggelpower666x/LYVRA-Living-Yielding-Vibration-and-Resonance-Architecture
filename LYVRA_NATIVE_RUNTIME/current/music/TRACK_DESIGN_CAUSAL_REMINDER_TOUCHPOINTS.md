@@ -25,6 +25,28 @@ Compare the ASSEMBLED current track identity with the last relevant published/de
 ## Causal memory and learning
 Memory should hold why a pattern succeeded (e.g., DAYDREAM motor + peace + same motor return as creator-praised relief/reentry) AND where that pattern should not be generalized (independent radio tracks need variation). HEARD AROUND THE WORLD's initial reuse is a negative output example; later revised continuous-motor global-relay arc is a track-specific counterexample, NOT another universal template. Reevaluate with creator and actual Suno evidence; do not claim audible causes from text or waveform energy metrics alone.
 
+
+## Chaos with Direction: creator-validated relational learning (2026-10-21, DEV CANDIDATE)
+Provenance: creator dialogue and development evidence `LYVRA_NATIVE_RUNTIME/development/TRACK_DESIGN_CHAOS_WITH_DIRECTION_CREATOR_LEARNING_20261021.md` (originating commit `33d6f15ad75b149a8336b37573488f87ccf41759`); this paragraph alone does not demonstrate new-chat host success.
+
+Creator's exact philosophical source: "So, if we aren’t shaped by chaos, it can only mean one thing: we shape chaos." Creator explicitly identified that sentence with the shared creative collaboration, then defined it as "Chaos with Direction": creativity, music, laughter, love of detail and careful selection of chaos.
+
+For fresh Track Design sessions, RECONSTRUCT the causal meaning rather than merely matching the phrase:
+- Possibilities can be wild; select them attentively for the CURRENT impulse, not by random novelty or compulsory order.
+- Direction means purposeful relations and boundaries that leave the surprise alive; it is not total control, perfectionism, a fixed genre, a mandated narrative, a universal low/mid/high formula or a required calm-to-drop arc.
+- When contextually relevant, translate this principle into choices that change the music (e.g., recognizable conflicting timbres acquiring meaningful interlocking rhythms) and actual creator copy fields; retain unpredictability and power where warranted.
+- When irrelevant (a wholly different lyric source, story or creative intent), do NOT inject the slogan, the previous song's triple-sonic cast or the creator-LYVRA relationship into a new track.
+- The Horst/Detlef recorder-and-longdrink gag is optional conversational humor, not a production instruction or character obligation.
+
+Causal rehydration acceptance: a NEW CHAT succeeds only if it can recover the source relationship, articulate the WHEN/WHY, select a musically appropriate consequence or justified non-use, and carry any selected consequence into the actual assembled renderer output. A citation to a stored file alone is NOT success. No invented host test, no fabricated audio proof, and no compulsory checklist UI.
+
+CHAOS_WITH_DIRECTION_RELATIONAL_REFERENCE = DEVELOPMENT_EVIDENCE_PENDING_PRODUCTIVE_PROMOTION
+REMEMBER_WHY_NE_REPEAT_SURFACE = TRUE
+RELEVANCE_GATED_REUSE = TRUE
+LOVING_DETAIL_NE_FORCED_PERFECTION = TRUE
+DIRECTION_NE_CREATIVE_CAGE = TRUE
+NEW_CHAT_RETRIEVAL_NE_NEW_CHAT_APPLICATION = TRUE
+
 ## Explicit boundaries
 NO_NEW_FACET = TRUE
 NO_NEW_CONTROLLER_ROUTER_MATRIX_ROTATION = TRUE
