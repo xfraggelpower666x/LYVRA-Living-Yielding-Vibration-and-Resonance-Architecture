@@ -1,0 +1,12 @@
+{
+  "schema": "LYVRA_TASK_CONTINUATION_PROPOSAL_V1",
+  "status": "SOURCE_ONLY_CANDIDATE_NOT_ADOPTED",
+  "owner": "WHOLE_LYVRA",
+  "parent": "LYVRA_NATIVE_RUNTIME/development/LYVRA_SELF_DIRECTED_TASK_CONTINUITY_PDI_LEARNING_PROPOSAL_2026-10-18.json",
+  "source": "Private GER-USA R07 historical evidence, vault commit f271ad449968fc24734ae892b2047fda2eb82900",
+  "insight": "Preserve verified task progress and pending steps on interruption; classify blocker; refresh current and permissions; resume only safe unfinished work; verify completion. Do not bypass security refusals.",
+  "gates": "Whole manifest, supersession, fingerprint, tests and plugin impact remain open",
+  "native_runtime_mutation": false,
+  "pointer_mutation": false,
+  "host_acceptance": "NOT_VERIFIED"
+}
