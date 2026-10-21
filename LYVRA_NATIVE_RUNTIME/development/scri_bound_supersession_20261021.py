@@ -1,7 +1,7 @@
 """Mandatory real Git-bound evaluation; no unbound dict reaches the supersession gate."""
 import json
 from scri_git_blob_binding_20261021 import PATHS,verify,git
-from scri_scoped_supersession_gate_20261021 import judge
+from scri_scoped_supersession_gate_20261021 import _evaluate_verified_carriers
 
 def assess(commit, bindings, expected_current_commit=None):
     if not isinstance(bindings,dict) or set(bindings)!=set(PATHS):
@@ -19,6 +19,6 @@ def assess(commit, bindings, expected_current_commit=None):
         if not evidence.get("verified"):
             return {"status":"GIT_BINDING_REJECTED","facet":facet,"reason":evidence["status"],"action":"NONE","restore_approved":False}
         verified[facet]=json.loads(git("show",commit+":"+path))
-    result=judge(verified["whole"],verified["track"],verified["pet"],verified["deployment"],commit)
+    result=_evaluate_verified_carriers(verified["whole"],verified["track"],verified["pet"],verified["deployment"],commit)
     return {"status":"BOUND_REVIEW_ONLY","decision":result,"verified_git_blobs":len(verified),
             "action":"NONE","restore_approved":False}
