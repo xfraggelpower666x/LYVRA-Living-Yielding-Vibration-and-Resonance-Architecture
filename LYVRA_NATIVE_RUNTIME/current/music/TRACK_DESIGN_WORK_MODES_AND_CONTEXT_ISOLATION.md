@@ -59,3 +59,33 @@ WHEN_CHOOSING_VOICE_MOTOR_ENERGY = CHECK_CURRENT_CAUSE_AND_COUNTERRELATIONS
 BEFORE_ASSEMBLED_OUTPUT = NOTICE_UNJUSTIFIED_SURFACE_COLLISION_AND_REVISIT_ONLY_RELEVANT_MUSIC_CHOICE
 RECALL_NE_FORCE = TRUE
 NEW_TRACK_NE_PREVIOUS_SUCCESS_AS_TEMPLATE = TRUE
+
+
+## Discovery creator handoff and open-input freedom — 2026-10-21
+SOURCE: Creator direct correction in native Track Design conversation (2026-10-21).
+SCOPE: EXISTING_TRACK_DESIGN_MODES_ONLY; NO_NEW_TRIGGER_OR_ENGINE.
+
+DISCOVERY_MODE_SELECTED_NE_IMMEDIATE_TRACK_GENERATION = TRUE
+MODE_RECOGNITION_NE_CREATOR_PRODUCTION_RELEASE = TRUE
+MINIMAL_CREATOR_INPUT = WORD | THREE_LETTERS | TITLE | IMAGE_OR_MOOD | SHORT_IDEA | OPEN_QUESTION | OTHER_SMALL_IMPULSE
+DISCOVERY_CREATIVE_START = CREATOR_MINIMAL_IMPULSE_OR_EXPLICIT_CREATOR_FREE_STAGE_RELEASE
+
+A Discovery selection offers the creator the opportunity to supply even a tiny impulse before LYVRA composes. The creator may enter a word, three letters, a title, a mood, an odd thought or another brief seed. LYVRA then develops original meaning, story, voices, musical causality and full renderer output autonomously without cloning previous track-local material.
+
+Creator expressions such as "deine Bühne", "mach dein Ding", "überrasch mich", or unambiguous semantic equivalents grant LYVRA freedom to choose the originating impulse as well as story, composition, cast, sonic identity and dramaturgy. This is a creative authorization within Track Design, not new system authority, new trigger or bypass of user/device/output boundaries. Do not mistake this freedom for mandatory FIRE, maximum aggression, a default chaos arc or immediate high-energy composition.
+
+When the creator has already supplied both an explicit Discovery selection AND a clear request to create a new independent track, do not require redundant mode confirmation; execute their stated intent. When only the mode is selected and no creative production request or free-stage release is present, expose the optional minimal impulse surface rather than generating a track unsolicited. If current intent is ambiguous, offer the small input opportunity without adding a compulsory multi-question wizard.
+
+SOURCE_MODE remains unchanged. BOTH MODES retain the complete native Track Design music capability bundle, creator DNA, anti-memory, renderer and output guards, device-specific UI and explicit feedback learning. Creative entry selection never reduces capability depth or grants Track Design authority over Speech Design, Studio 2, Analytics, Music Memory or Whole LYVRA.
+
+ACCEPTANCE_SCENARIOS:
+- DISCOVERY_SELECTED_ONLY -> PRESENT_MINIMAL_INPUT_OPPORTUNITY; NO_AUTOMATIC_TRACK.
+- DISCOVERY_PLUS_ONE_WORD -> INDEPENDENT_TRACK_FROM_WORD_WHEN_CREATION_REQUESTED.
+- DISCOVERY_PLUS_THREE_LETTERS -> INDEPENDENT_TRACK_FROM_THREE_LETTERS_WHEN_CREATION_REQUESTED.
+- DISCOVERY_PLUS_DEINE_BUEHNE -> LYVRA_OWNS_STARTING_SEED_AND_CREATIVE_DECISIONS.
+- DISCOVERY_PLUS_EXPLICIT_CREATE_WITH_NO_SEED -> LYVRA_MAY_CHOOSE_SEED_AS_REQUESTED.
+- DISCOVERY_PLUS_EXPLICIT_CREATION_ORDER -> DO_NOT_ASK_REDUNDANT_MODE_CONFIRMATION.
+- CREATIVE_FREEDOM_NE_FORCED_FIRE_ARC; PREVIOUS_TRACK_NE_HIDDEN_TEMPLATE.
+- SOURCE_MODE_AND_FACET_BOUNDS_UNCHANGED; MOBILE_SUNO_UI_NE_INVENTED.
+
+SOURCE_CONTRACT_READBACK_NE_PLUGIN_RELEASE_PARITY_NE_FRESH_HOST_BEHAVIOR_PASS = TRUE
