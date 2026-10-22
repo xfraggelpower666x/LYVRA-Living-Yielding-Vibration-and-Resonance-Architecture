@@ -44,3 +44,73 @@ test('Accessibility, lifecycle reset and reduced-motion safety survive',()=>{
 test('No second audio source, oscillator or new stream in receiver',()=>{
  assert.doesNotMatch(source,/createMediaElementSource|createOscillator|new Audio\(/);
 });
+
+import vm from 'node:vm';
+
+function runReceiver() {
+  let clock = 100;
+  const events = new Map();
+  const listen = key => ({ addEventListener(name, fn) { events.set(key + ':' + name, fn); } });
+  const el = () => ({ style: { setProperty() {}, opacity: '', transform: '' }, dataset: {}, textContent: '', setAttribute() {}, ...listen('element') });
+  const status = el(), toggle = el(), title = el(), note = el(), layer = el();
+  const visualBands = { bass: el(), mid: el(), high: el() };
+  const origin = 'https://webradio.666soundsdesign-broadcaster.com';
+  const frame = { src: origin + '/embed/miniplayer.html', contentWindow: { postMessage() {} }, ...listen('frame') };
+  const panel = { querySelector(selector) {
+    if (selector === 'button') return toggle;
+    if (selector === '[data-neon-status]') return status;
+    if (selector === 'h3') return title;
+    if (selector === '[data-neon-note]') return note;
+    const key = /data-neon-band="(.*?)"/.exec(selector)?.[1];
+    return key ? visualBands[key] : null;
+  } };
+  layer.querySelectorAll = () => [];
+  layer.querySelector = () => null;
+  const document = {
+    hidden: false,
+    querySelectorAll(selector) { return selector === 'iframe' ? [frame] : []; },
+    querySelector(selector) { return selector === '#audio-neon-controls' ? panel : selector === '#audio-neon-layer' ? layer : null; },
+    ...listen('document')
+  };
+  const motion = { matches: false, ...listen('motion') };
+  let intervalTick = null;
+  const runtime = {
+    document, window: { ...listen('window') }, matchMedia: () => motion,
+    performance: { now: () => clock },
+    setInterval(fn) { intervalTick = fn; return 1; },
+    clearInterval() { intervalTick = null; },
+    console
+  };
+  vm.runInNewContext(source.replace(/^import \{ getLanguage \} from '\.\/i18n\.js';/, "const getLanguage = () => 'de';"), runtime, { filename: 'audio-neon.js' });
+  const dispatch = (data, options = {}) => {
+    events.get('window:message')?.({ origin: options.origin ?? origin, source: options.source ?? frame.contentWindow, data });
+  };
+  const bands = { bass: .35, mid: .42, high: .24, energy: .36 };
+  const synthetic = () => ({ type: 'lyvra:audio:visual-fallback', mode: 'synthetic', version: 1, playing: true, ...bands });
+  const real = (sequence, playing = true, energy = .65) => ({ type: 'lyvra:audio:levels', version: 1, sequence, playing, bass: energy, mid: energy, high: energy, energy });
+  return { dispatch, status, layer, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); } };
+}
+test('runtime: trusted synthetic frame activates visibly disclosed fallback', () => {
+  const x = runReceiver();
+  x.dispatch(x.synthetic());
+  assert.match(x.status.textContent, /Visueller Fallback/);
+  assert.equal(x.layer.dataset.active, 'true');
+});
+test('runtime: genuine samples override synthetic then zero frames allow fallback', () => {
+  const x = runReceiver();
+  x.dispatch(x.synthetic());
+  x.dispatch(x.real(1, true, .72));
+  assert.match(x.status.textContent, /Audioreaktiv/);
+  x.dispatch(x.real(2, false, 0));
+  assert.match(x.status.textContent, /Visueller Fallback/);
+});
+test('runtime: forged origin and source rejected; expired fallback becomes inactive', () => {
+  const x = runReceiver();
+  x.dispatch(x.synthetic(), { origin: 'https://forged.example' });
+  assert.doesNotMatch(x.status.textContent, /Visueller Fallback/);
+  x.dispatch(x.synthetic(), { source: {} });
+  assert.doesNotMatch(x.status.textContent, /Visueller Fallback/);
+  x.dispatch(x.synthetic());
+  x.setClock(1200);
+  assert.equal(x.layer.dataset.active, 'false');
+});
