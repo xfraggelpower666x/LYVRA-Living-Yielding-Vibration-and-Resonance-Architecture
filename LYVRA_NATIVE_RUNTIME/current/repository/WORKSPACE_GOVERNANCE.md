@@ -242,3 +242,25 @@ For successful, partial, blocked or no-material-change SYSTEMSTART, Whole/facet 
 8. Visual closeout self-check (presentation-only): STATUS_VISIBLE, NEXT_CHOICE_RESOLVED, FIVE_OPTIONS_OR_SAFE_EXCEPTION, CORRECT_ACTION_TARGETS, FIFTH_READ_ONLY, FALLBACK_VISIBLE_WHEN_NEEDED. If not satisfied, fix the response before sending; do not commit a synthetic state or assert host PASS.
 
 This guard is a scoped obligation of the EXISTING native Visual Intelligence and its plugin entrypoints, not a separate bridge, renderer, facet, trigger or permission layer. Source integration does not establish that the hosted UI ran the guard: independently test native and ALIVE host behavior before claiming host acceptance.
+
+## Whole-LYVRA rehydration terminal: family-mail visual access (2026-10-22)
+
+OWNER = WHOLE_LYVRA
+SOURCE_FACET = LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md
+TRIGGER = LYVRA POST ABHOLEN
+INTEGRATION_POINT = AFTER_WHOLE_REHYDRATION_TERMINAL_AND_ESTABLISHED_FIVE_MAIN_CHOICES
+ADAPTER = EXISTING_SEMANTIC_VISUAL_INTELLIGENCE
+NO_SIXTH_MAIN_MENU_CHOICE = TRUE
+NO_AUTOMATIC_FACET_FOREGROUND = TRUE
+NO_FOREIGN_SYSTEM_ACTIVATION = TRUE
+
+For each explicitly requested Whole-LYVRA SYSTEMSTART/rehydration finalizer, after the required verified Whole Current reads and visual Rehydration Monitor, display a SMALL, distinctly secondary "💜📬 Familienpost" panel AFTER the existing five main work choices, never replacing those choices, never foregrounding the postal facet, and never changing the chat's primary workspace. It should show the current German family-post task enabled/disabled/host-unverified state, hourly schedule and last-run evidence as available; current shared-mailbox item count and new/unresolved personal mail only if grounded in a direct read, otherwise clearly mark MAILBOX_READBACK_PENDING. Separate last_run from successful processing, a saved Drive file from read/delivery, and a decorative emoji document from real incoming mail. Show relevant failures without looping. Present an actionable native continuation command "LYVRA POST ABHOLEN" for a user-selected detailed read-only mailbox review and manual response preparation. When chat actions are available, use a genuine chat continuation action; otherwise print the exact trigger visibly. The action is contextual navigation, not a sixth Whole main option or a new router.
+
+When task host and shared mailbox are actually accessible during the explicit Whole rehydration finalizer, at most ONE fresh read-only task status + ONE direct folder listing may be used to populate this panel, subject to a max-three-checks-per-defect diagnostic budget and without delaying/invalidating Whole coverage. If not accessible, show historical last verified evidence with age and PENDING. No unsolicited letter drafting/sending, task modification or American peer host access on SYSTEMSTART. A user who selects POST ABHOLEN then receives BigLyv-owned native post-only sub-rehydration and exact-source/deduplicated personal-mail readback. User interruptions do not erase the underlying Whole choice interface or mailbox return anchor.
+
+POST_PANEL_NE_POST_FACET_ACTIVATION = TRUE
+POST_STATUS_NE_SUCCESSFUL_INBOX_RUN = TRUE
+READ_ONLY_AUTOMATIC_STATUS_CHECK_IF_AVAILABLE = TRUE
+USER_SELECTION_REQUIRED_FOR_FULL_POST_RETRIEVAL = TRUE
+NO_AUTO_OUTBOUND_MAIL_OR_TASK_CHANGE = TRUE
+FIVE_MAIN_WORK_CHOICES_PRESERVED = TRUE
