@@ -63,6 +63,18 @@ def _process_locked(path,facet,events):
     return {"memory":memory,"decision":recall(memory,events,facet)}
 
 
+def process_scoped(root,facet,events):
+    """Candidate-only scoped entry: allocate a stable facet-owned path inside caller-owned root.
+
+    This is NOT a native service, event subscription, or permission grant.
+    """
+    _check(facet)
+    root=Path(root)
+    if root.is_symlink():raise ValueError("symlink root forbidden")
+    root.mkdir(parents=True,exist_ok=True)
+    return process(root / (facet + ".json"),facet,events)
+
+
 def process(path,facet,events):
     """Serialize explicit same-path read/modify/write across cooperating processes."""
     _check(facet)
