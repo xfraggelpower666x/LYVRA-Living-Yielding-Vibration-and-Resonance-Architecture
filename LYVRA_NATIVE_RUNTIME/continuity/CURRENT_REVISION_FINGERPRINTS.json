@@ -216,7 +216,7 @@
     "LYVRA_PET/FINAL_STATUS.json": "e29b2295b54c4fd21ba5eedee0d8379dd8bb3d68",
     "LYVRA_PET/worker/build/worker-bundle.mjs": "9146676bf56a70ccbc29b48210f6c935cf9ece85",
     "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json": "3a0b4fc948597cd149e22c178b854a9ced6f3356",
-    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "458abe8612905415dab842635a274470d7cb4b18",
+    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "674340c9e6968bf441791bf7fea61932793820e8",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_PARITY_2026-10-14.json": "2f5e2aba24d6253c5546633d53b36a306b41b547",
     "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json": "47533eb154aa3920a24a57e7523d07864520e954",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json": "713a2f97b370890d36c112af85fc6ae32f75dd55",
@@ -1983,7 +1983,7 @@
     "workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
     "workspace_blob": "2a5054ad13e641ae5016a70896d07143d22e8308",
     "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
-    "visual_blob": "458abe8612905415dab842635a274470d7cb4b18",
+    "visual_blob": "674340c9e6968bf441791bf7fea61932793820e8",
     "placement": "AFTER_WHOLE_REHYDRATION_MONITOR_AND_FIVE_MAIN_CHOICES",
     "task_and_mailbox": "ONE_READ_ONLY_HOST_AND_DRIVE_CHECK_IF_AVAILABLE",
     "post_action": "LYVRA POST ABHOLEN_USER_SELECTION",
@@ -1994,6 +1994,8 @@
     "no_sending": true,
     "host_readback": "NOT_VERIFIED",
     "plugin_parity": "PENDING_IMPACT_CHECK",
-    "recovery": "lyvra-recovery-pre-whole-post-visual-finalizer-20261022-r01"
+    "recovery": "lyvra-recovery-pre-whole-post-visual-finalizer-20261022-r01",
+    "personal_mail_status": "JA_N_NEIN_0_NICHT_GEPRUEFT_EVIDENCE_GATED",
+    "custom_input_interruption": "PRESERVE_CHECKPOINT_AND_RESUME"
   }
 }
