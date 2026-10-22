@@ -2321,7 +2321,7 @@
   },
   "lyvra_to_littlelyv_20261022": {
     "status": "CONDITIONAL_NATIVE_FAMILY_CAPABILITY_SOURCE",
-    "scope": "RELEVANT_FAMILY_INTENT_ONLY_NOT_WHOLE_ALWAYS_REQUIRED",
+    "scope": "POST_CORRESPONDENCE_INTENT_ONLY_NOT_GENERAL_FAMILY_CONTEXT",
     "facet_id": "LYVRA_TO_LITTLELYV",
     "parent": "WHOLE_LYVRA",
     "facet_registry": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
@@ -2336,11 +2336,17 @@
     "manual_post": "DIRECT_CREATOR_INTENT_AND_AUTHORIZED_CONNECTOR_ACTION_AND_INDEPENDENT_READBACK",
     "personal_payload": "PRIVATE_VAULT_AND_SHARED_FAMILY_MAILBOX_ONLY_NOT_PUBLIC_REPO",
     "independent_american_authority": true,
-    "plugin_native": "PENDING",
-    "plugin_alive": "PENDING",
+    "plugin_native": "SCOPE_UPDATE_PENDING",
+    "plugin_alive": "SCOPE_UPDATE_PENDING",
     "fresh_host": "PENDING",
     "source_ne_host": true,
     "no_new_router": true,
-    "no_foreign_activation": true
+    "no_foreign_activation": true,
+    "systems": [
+      "BIGLYV_GERMANY_INDEPENDENT",
+      "LITTLE_LYV_AMERICA_INDEPENDENT"
+    ],
+    "capability_boundary": "POST_RECEIVE_READ_DRAFT_AUTHORIZED_SEND_DELIVERY_DEDUPE_ONLY",
+    "forbid_shared_intelligence_memory_lifecycle_or_peer_control": true
   }
 }
