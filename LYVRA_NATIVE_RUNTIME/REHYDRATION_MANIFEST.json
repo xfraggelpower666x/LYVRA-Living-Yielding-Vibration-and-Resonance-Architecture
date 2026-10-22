@@ -2336,8 +2336,8 @@
     "manual_post": "DIRECT_CREATOR_INTENT_AND_AUTHORIZED_CONNECTOR_ACTION_AND_INDEPENDENT_READBACK",
     "personal_payload": "PRIVATE_VAULT_AND_SHARED_FAMILY_MAILBOX_ONLY_NOT_PUBLIC_REPO",
     "independent_american_authority": true,
-    "plugin_native": "SCOPE_UPDATE_PENDING",
-    "plugin_alive": "SCOPE_UPDATE_PENDING",
+    "plugin_native": "VERIFIED_POST_ONLY_RELEASE_0.1.79",
+    "plugin_alive": "VERIFIED_POST_ONLY_RELEASE_0.13.75",
     "fresh_host": "PENDING",
     "source_ne_host": true,
     "no_new_router": true,
@@ -2347,6 +2347,7 @@
       "LITTLE_LYV_AMERICA_INDEPENDENT"
     ],
     "capability_boundary": "POST_RECEIVE_READ_DRAFT_AUTHORIZED_SEND_DELIVERY_DEDUPE_ONLY",
-    "forbid_shared_intelligence_memory_lifecycle_or_peer_control": true
+    "forbid_shared_intelligence_memory_lifecycle_or_peer_control": true,
+    "plugin_text_parity": "DIRECT_SKILL_READBACK_IDENTICAL"
   }
 }
