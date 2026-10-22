@@ -178,13 +178,13 @@ const lyvraTranslations={"Unsere digitalen Welten, Webradio, Community, Streamin
 /* Only current evidence levels are ranked. Search metrics stay empty until an authenticated source exists. */
 const grPlatforms=entries.filter(p=>p.url&&p.url.startsWith('https://')).map(p=>({
  label:p.name,url:p.url,category:'platforms',
- level:['direct_readback','album_readback'].includes(p.status)?3:['indexed_artist','crosslinked_profile','linked_from_website'].includes(p.status)?2:1
+ level:['direct_readback','album_readback'].includes(p.status)?3:['indexed_artist','crosslinked_profile','linked_from_website','linked_from_current_weblyvra_or_mixcloud'].includes(p.status)?2:1
 }));
 const grProducts=[
  {label:'HORST SAGA (Special Version)',url:'https://music.apple.com/us/album/horst-saga-special-version/6824008329',level:3,category:'releases'},
  {label:'LYVRA FUSION',url:'https://tidal.com/album/564606934',level:3,category:'releases'},
  {label:'666LyvRa System (Psychoacoustic Music Design)',url:'https://music.apple.com/us/album/666lyvra-system-psychoacoustic-music-design/6816668503',level:3,category:'releases'},
- {label:'ALIEN (BLUE LASER GALAXY INVASION)',url:'https://tidal.com/album/564577352',level:3,category:'releases'},
+ {label:'ALIEN (BLUE LASER GALAXY INVASION) (Special Version)',url:'https://tidal.com/album/564577352',level:3,category:'releases'},
  {label:'WEBLyvra Artist Discovery',url:'https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/',level:3,category:'products'},
  {label:'666SOUNDsDESIGn Webradio',url:'https://webradio.666soundsdesign-broadcaster.com/',level:2,category:'products'},
  {label:'Suno Song Catalogue',url:'https://suno.com/@fraggelpower666?page=songs',level:3,category:'products'},
