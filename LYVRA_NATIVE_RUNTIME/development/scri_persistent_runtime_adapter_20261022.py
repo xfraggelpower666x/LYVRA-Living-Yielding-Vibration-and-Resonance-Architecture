@@ -1,7 +1,7 @@
 """Isolated, explicit-path SCRI persistent memory adapter. No native service activation."""
 from dataclasses import asdict
 from pathlib import Path
-import json,os,tempfile
+import json,os,tempfile,fcntl
 from scri_causal_chain_adapter_20261021 import Memory,derive,recall,revise
 
 def _check(facet):
@@ -44,7 +44,7 @@ def store(path,facet,memory):
     finally:
         if temp and os.path.exists(temp):os.unlink(temp)
 
-def process(path,facet,events):
+def _process_locked(path,facet,events):
     """Explicit invocation, no background worker; same-facet events supplied by caller."""
     _check(facet)
     prior=load(path,facet)
@@ -55,3 +55,20 @@ def process(path,facet,events):
     memory=revise(prior,events)
     if memory!=prior:store(path,facet,memory)
     return {"memory":memory,"decision":recall(memory,events,facet)}
+
+
+def process(path,facet,events):
+    """Serialize explicit same-path read/modify/write across cooperating processes."""
+    _check(facet)
+    lock=Path(str(path)+".lock")
+    lock.parent.mkdir(parents=True,exist_ok=True)
+    if lock.is_symlink():raise ValueError("symlink lock forbidden")
+    flags=os.O_CREAT|os.O_RDWR
+    if hasattr(os,"O_NOFOLLOW"):flags|=os.O_NOFOLLOW
+    fd=os.open(lock,flags,0o600)
+    try:
+        with os.fdopen(fd,"r+") as file:
+            fcntl.flock(file.fileno(),fcntl.LOCK_EX)
+            return _process_locked(path,facet,events)
+    finally:
+        pass
