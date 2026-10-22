@@ -10,12 +10,13 @@ if (panel && layer) {
   const status = panel.querySelector('[data-neon-status]');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const states = new Map();
+  const fallbackStates = new Map();
   const bands = Object.fromEntries(['bass','mid','high'].map(key => [key, panel.querySelector(`[data-neon-band="${key}"]`)]));
   const orbits = [...layer.querySelectorAll('.audio-neon-orbit')];
   const edge = layer.querySelector('.audio-neon-edge');
   const words = {
-    de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', paused: 'Kein aktuelles Audiosignal', missing: 'Keine Audio-Pegeldaten vom Radio empfangen · Stream-Analyse prüfen', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
-    en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', paused: 'No current audio signal', missing: 'No audio level data received from radio · check stream analysis', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
+    de: { title: 'Klang wird Licht.', off: 'Neon-Effekte einschalten', on: 'Neon-Effekte ausschalten', idle: 'Effekte aus', waiting: 'Bereit · Starte den MiniPlayer', active: 'Audioreaktiv · echtes Audiosignal', synthetic: 'Visueller Fallback · keine echten Audiowerte', paused: 'Kein aktuelles Audiosignal', missing: 'Keine Audio-Pegeldaten vom Radio empfangen · Stream-Analyse prüfen', reduced: 'Reduzierte Bewegung · Effekte pausiert', note: 'Bass, Mitten und Höhen steuern das Neonlicht. Keine Mikrofonfreigabe, keine Audioaufzeichnung.' },
+    en: { title: 'Sound becomes light.', off: 'Enable neon effects', on: 'Disable neon effects', idle: 'Effects off', waiting: 'Ready · Start the MiniPlayer', active: 'Audio reactive · real audio signal', synthetic: 'Visual fallback · not real audio levels', paused: 'No current audio signal', missing: 'No audio level data received from radio · check stream analysis', reduced: 'Reduced motion · effects paused', note: 'Bass, mids and highs control the neon light. No microphone access or audio recording.' }
   };
   let enabled = false, userOverride = false, timer = null, mode = 'idle', subscribedAt = 0, lastLevelsAt = 0;
   const reference = { bass:null, mid:null, high:null, energy:null };
@@ -42,13 +43,16 @@ if (panel && layer) {
   }
   function render() {
     const now = performance.now();
-    const candidates = [...states.values()].filter(s => s.playing && now - s.received < 1500);
+    const realCandidates = [...states.values()].filter(s => s.playing && s.energy > 0.005 && now - s.received < 1500);
+    const fallbackCandidates = [...fallbackStates.values()].filter(s => s.playing && s.mode === 'synthetic' && now - s.received < 850);
+    const candidates = realCandidates.length ? realCandidates : fallbackCandidates;
     if (!enabled || motion.matches || document.hidden || !candidates.length) {
       reset();
       if (enabled) setMode(states.size ? 'paused' : (now - subscribedAt >= 7000 ? 'missing' : 'waiting'));
       return;
     }
     const signal = candidates.reduce((a, b) => a.energy >= b.energy ? a : b);
+    const synthetic = !realCandidates.length;
     // Adaptive, display-only response to actual incoming audio levels.
     // Track the local baseline so continuous mastered music never pins all bars at 100%.
     // No oscillator, fabricated beat, or audio-gain change.
@@ -69,12 +73,12 @@ if (panel && layer) {
     if (orbits[0]) { orbits[0].style.transform = `scale(${1 + bass * .35})`; orbits[0].style.opacity = String(.16 + bass * .77); }
     if (orbits[1]) { orbits[1].style.transform = `scale(${1 + mid * .28})`; orbits[1].style.opacity = String(.14 + mid * .76); }
     if (edge) edge.style.opacity = String(.12 + high * .78);
-    setMode(signal.energy > 0.005 ? 'active' : 'paused');
+    setMode(signal.energy > 0.005 ? (synthetic ? 'synthetic' : 'active') : 'paused');
   }
   function configure() {
     if (timer !== null) { clearInterval(timer); timer = null; }
     frames.forEach(subscribe);
-    states.clear(); reset();
+    states.clear(); fallbackStates.clear(); reset();
     subscribedAt = performance.now(); lastLevelsAt = 0;
     mode = enabled ? 'waiting' : 'idle';
     if (enabled && !motion.matches && !document.hidden) timer = setInterval(render, 500);
@@ -84,17 +88,22 @@ if (panel && layer) {
     const frame = frames.find(f => f.contentWindow === event.source);
     if ((!enabled && userOverride) || motion.matches || document.hidden || event.origin !== origin || !frame) return;
     const data = event.data;
-    if (!data || data.type !== 'lyvra:audio:levels' || data.version !== 1 || typeof data.playing !== 'boolean' || !Number.isSafeInteger(data.sequence) || data.sequence < 0) return;
+    if (!data || data.version !== 1 || typeof data.playing !== 'boolean') return;
+    const synthetic = data.type === 'lyvra:audio:visual-fallback' && data.mode === 'synthetic';
+    const real = data.type === 'lyvra:audio:levels' && Number.isSafeInteger(data.sequence) && data.sequence >= 0;
+    if (!synthetic && !real) return;
     if (!['bass', 'mid', 'high', 'energy'].every(k => typeof data[k] === 'number' && Number.isFinite(data[k]) && data[k] >= 0 && data[k] <= 1)) return;
     const previous = states.get(frame);
-    if (previous && data.sequence <= previous.sequence) return;
+    if (real && previous && data.sequence <= previous.sequence) return;
     // Play confirmed by the trusted iframe's real audio-level bridge: enable automatically
     // only until the visitor explicitly operates the neon toggle.
     if (!enabled && !userOverride && data.playing) { enabled = true; configure(); }
     lastLevelsAt = performance.now();
-    states.set(frame, { ...data, received: lastLevelsAt }); render();
+    if (synthetic) fallbackStates.set(frame, { ...data, received: lastLevelsAt });
+    else { states.set(frame, { ...data, received: lastLevelsAt }); if (!data.playing) fallbackStates.delete(frame); }
+    render();
   });
-  frames.forEach(frame => frame.addEventListener('load', () => { states.delete(frame); subscribe(frame); render(); }));
+  frames.forEach(frame => frame.addEventListener('load', () => { states.delete(frame); fallbackStates.delete(frame); subscribe(frame); render(); }));
   toggle.addEventListener('click', () => { userOverride = true; enabled = !enabled; configure(); });
   motion.addEventListener('change', configure);
   document.addEventListener('visibilitychange', configure);
