@@ -60,6 +60,7 @@ def _process_locked(path,facet,events):
 def process(path,facet,events):
     """Serialize explicit same-path read/modify/write across cooperating processes."""
     _check(facet)
+    events=tuple(events)
     lock=Path(str(path)+".lock")
     lock.parent.mkdir(parents=True,exist_ok=True)
     if lock.is_symlink():raise ValueError("symlink lock forbidden")
