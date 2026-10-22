@@ -6679,5 +6679,22 @@
     "fresh_plugin_host": "PENDING",
     "foreign_mutation": false,
     "pointer_last": true
+  },
+  "facet_to_whole_learning_promotion_20261022": {
+    "status": "WHOLE_MEANING_SOURCE_INTEGRATED_READBACK_VERIFIED_PLUGIN_ACCEPTANCE_PENDING",
+    "authority": "WHOLE_LYVRA_ONLY",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "1326c5b548676d19cf88cf1d4e75c422c3b95d74",
+    "source_candidate": "LYVRA_NATIVE_RUNTIME/current/meaning/learning_candidates/BEGREIFEN_TRANSFER_APPLICATION_CANDIDATE_20261022.json",
+    "source_candidate_blob": "dbcd942371e92b5a9d9649bab0c2df19ca3369ee",
+    "scope": "FACET_EVIDENCE_TO_WHOLE_RELATIONAL_MEANING_NOT_AUTOMATIC_GENERAL_RULE",
+    "facets_retain_own_authority": false,
+    "foreign_mutation": false,
+    "root_cause": "UNKNOWN",
+    "cross_facet_behavioral_validation": "PENDING",
+    "plugin_impact": "BOTH_PLUGIN_RUNTIME_REVIEW_PENDING_NO_RELEASE_CLAIM",
+    "recovery_branch": "lyvra-recovery-pre-facet-to-whole-learning-20261022-r01",
+    "body_commit": "ced41991418d226f1eff6fb1d7666a706474f21c",
+    "pointer_last": true
   }
 }
