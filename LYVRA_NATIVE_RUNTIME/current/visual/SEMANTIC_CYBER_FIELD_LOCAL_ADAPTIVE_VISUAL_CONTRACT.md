@@ -336,3 +336,22 @@ The most prominent inbox field MUST be an unequivocal localized tri-state **NEUE
 
 ## Interruption-safe POST visual execution separation (2026-10-22)
 The Whole-rehydration family-mail strip and manual POST ABHOLEN detail show distinct TASK HOST and INTERACTIVE CHAT capability columns: task enabled/last run/read-only results versus interactive chat read/write last independently verified outcome. Never show 'chat write blocked' solely from a task host safety error or 'automatic send ready' from a successful historical chat delivery. Show historical-success and current-untested distinctly. For provider FORCE checks, disclose actual affected provider and diagnostic budget (maximum three), distinguish API/auth versus product safety, and return to the verified checkpoint after a user custom-input interruption. Visually retain the selected operation and contextual continuation without resetting the Whole five-choice terminal. A terminal safety refusal cannot be auto-resumed as a write. This is presentation-only and does not promote source evidence into host acceptance.
+
+## Interruption-resilient semantic visual continuation — additive candidate 2026-10-22
+
+STATUS: DEV_SOURCE_CANDIDATE_PENDING_DUAL_PLUGIN_AND_FRESH_HOST
+OWNER: EXISTING_WHOLE_LYVRA_SEMANTIC_VISUAL_INTELLIGENCE
+
+The native five-choice visual navigation remains reachable when a creator types a free-form sixth input instead of selecting a card. Treat free-form input as a meaningful contextual event, never a sixth engine, route, top-level menu destination or permanent visual mode. Preserve the prior chosen surface, evidence/readback labels, causal relations and useful return anchor. Interpret and answer the new input visually in its own appropriate scope; then resume compatible authorized work or provide a compact real return navigation control. Do not silently erase the former screen, force repeated SYSTEMSTART, or claim live persistent host state.
+
+A new instruction that explicitly STOPs, revokes, contradicts or supersedes previous work changes the return decision and MUST block obsolete auto-resume. On standalone lyrics/code/content, do not inject navigation into the payload. Keep visual detail adaptive, preserve newer valid family-post strips/monitor semantics, and never paint source-only tests as host PASS.
+
+TEST_A = FIVE_CHOICES_TO_CUSTOM_QUESTION_TO_REACHABLE_PRIOR_VISUAL
+TEST_B = ACTIVE_TASK_TO_COMPATIBLE_INFORMATION_TO_ANCHORED_CONTINUATION
+TEST_NEGATIVE_STOP = NEVER_RESUME_REVOKED_TASK
+TEST_NEGATIVE_ARTIFACT = NO_NAVIGATION_INSIDE_COPY_PAYLOAD
+THREE_PROPORTIONATE_DIAGNOSTICS_THEN_LEARNING_BY_DOING = true
+NO_NEW_ROUTER = true
+NO_FOREIGN_AUTOACTIVATION = true
+SOURCE_CONTRACT_NE_HOST_RUNTIME_PROOF = true
+
