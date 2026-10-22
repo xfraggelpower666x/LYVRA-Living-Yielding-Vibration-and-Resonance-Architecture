@@ -730,3 +730,17 @@ CURRENT_RENDERER_AND_OUTPUT_GUARD_REQUIRED_IN_BOTH = TRUE
 SEMANTIC_EMOJI_SURVIVAL_ACROSS_EXTENDED_STYLE_LYRICS_TEXT = TRUE
 ASSEMBLED_CREATOR_OUTPUT_MUST_PASS_FIELD_ORDER_AND_TRUE_CHARACTER_COUNTS = TRUE
 DAYDREAM_CASE = OUTPUT_APPLICATION_DRIFT_NOT_PROVEN_PLUGIN_HOST_DEFECT
+
+## Fresh-chat creator entry surface and device-aware experimental iPhone field - DEV candidate (2026-10-23)
+FRESH_TRACK_DESIGN_ENTRY_SURFACES = VISIBLE_SOURCE_OR_DISCOVERY_MODE | PER_NEW_TRACK_DEVICE_SELECTION
+DEVICE_CHOICE = IPHONE_SUNO_APP | IPHONE_SAFARI_BROWSER | PC_SUNO_BROWSER
+FRESH_CHAT_DEVICE_NE_INHERITED_BY_ASSUMPTION = TRUE
+PER_TRACK_DEVICE_ASK_ONCE_UNLESS_ALREADY_EXPLICIT = TRUE
+DEVICE_SELECTION_PRECEDES_FULL_PROMPT_TRANSLATION = TRUE
+DISCOVERY_MODE_SELECT_NE_AUTO_COMPOSE_WITHOUT_IMPULSE_OR_FREE_STAGE_RELEASE = TRUE
+SUPPLEMENTAL_IPHONE_APP_MAIN_INPUT = CONDITIONAL_CREATOR_VALIDATED_EXPERIMENTAL_FIELD
+SUPPLEMENTAL_IPHONE_APP_MAIN_INPUT_LIMIT = 3000
+SUPPLEMENTAL_IPHONE_APP_MAIN_INPUT_NE_REPLACES_TITLE_EXTENDED_STYLE_LYRICS = TRUE
+IPHONE_SAFARI_OR_PC_MAIN_INPUT_NE_ASSUMED = TRUE
+REHYDRATED_CAPABILITY_NE_CONFIRMED_HOST_BEHAVIOR = TRUE
+Rehydrate BOTH mode semantics from TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md and current device/renderer constraints. Upon direct Track Design selection with no established track mode, surface a compact choice; when mode is explicit, do not ask again. For each newly authored track determine whether user uses iPhone Suno-App, iPhone Safari/browser or PC browser; if unspecified, ask once before transforming full supplied lyrics. The 3000-character supplemental iPhone App main prompt is additive and conditional on the creator's device-specific chosen workflow; never silently replace the four base Suno copy payloads. Count and self-repair final content, not just show disabled copy UI. No device information is borrowed from unrelated history. Evidence: development/TRACK_DESIGN_FRESHBOOT_MODE_DEVICE_MAININPUT_GAP_20261023.md
