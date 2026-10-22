@@ -204,6 +204,8 @@ const grCopy={
 };
 function renderGoogleResonance(lang){
  const host=document.getElementById('google-resonance-content');if(!host)return;
+ // Rebuilding for DE/EN must not strand a keyboard user at the document body.
+ const focusedReachFilter=document.activeElement?.closest?.('#google-resonance .gr-filter button')?.dataset.reachFilter;
  const w=grCopy[lang==='en'?'en':'de'];host.replaceChildren();
  const header=document.createElement('div');header.className='gr-top';
  const left=document.createElement('div');const micro=document.createElement('p');micro.className='micro';micro.textContent=w.micro;
@@ -233,9 +235,10 @@ function renderGoogleResonance(lang){
   if(!source.length){const empty=document.createElement('p');empty.className='gr-empty';empty.textContent=w.empty;listing.append(empty);return}
   for(const item of source){const row=document.createElement('div');row.className='gr-item';row.setAttribute('role','listitem');const label=document.createElement('div');label.className='gr-label';const anchor=document.createElement('a');anchor.href=item.url;anchor.rel='noopener noreferrer';anchor.target='_blank';anchor.textContent=item.label;/* The visible source name is the link's accessible name; the evidence tier is announced separately by the adjacent graphic. */const links=document.createElement('div');links.className='gr-link-row';links.append(anchor);const check=document.createElement('a');check.className='gr-search-check';check.href='https://www.google.com/search?q='+encodeURIComponent('"'+item.label+'" "FRAGGELPOWER666"');check.target='_blank';check.rel='noopener noreferrer';check.textContent=w.check;check.setAttribute('aria-label',w.check+': '+item.label);links.append(check);label.append(links);const track=document.createElement('div');track.className='gr-bar-track';track.setAttribute('role','img');track.setAttribute('aria-label',item.label+': '+w.level+' '+item.level+'/3');const bar=document.createElement('div');bar.className='gr-bar';bar.style.width=(item.level/3*100)+'%';track.append(bar);const level=document.createElement('span');level.className='gr-level';level.textContent=item.level+'/3';row.append(label,track,level);listing.append(row)}
  }
- for(const key of ['all','platforms','products','releases']){const button=document.createElement('button');button.type='button';button.textContent=w[key];button.setAttribute('aria-pressed',String(grState.filter===key));button.addEventListener('click',()=>{grState.filter=key;for(const b of filters.children)b.setAttribute('aria-pressed',String(b===button));fill()});filters.append(button)}
+ for(const key of ['all','platforms','products','releases']){const button=document.createElement('button');button.type='button';button.dataset.reachFilter=key;button.textContent=w[key];button.setAttribute('aria-pressed',String(grState.filter===key));button.addEventListener('click',()=>{grState.filter=key;for(const b of filters.children)b.setAttribute('aria-pressed',String(b===button));fill()});filters.append(button)}
  const legend=document.createElement('p');legend.className='gr-legend';legend.textContent=w.legend;
  const source=document.createElement('p');source.className='gr-note';source.textContent=w.source;const checkHelp=document.createElement('p');checkHelp.className='gr-check-note';checkHelp.textContent=w.checkHelp;rankPanel.append(rankHeading,rankInfo,filters,resultCount,listing,legend,checkHelp,source);host.append(rankPanel);fill();
+ if(focusedReachFilter)filters.querySelector('[data-reach-filter="'+focusedReachFilter+'"]')?.focus({preventScroll:true});
 }
 
 const originalText=new WeakMap();
