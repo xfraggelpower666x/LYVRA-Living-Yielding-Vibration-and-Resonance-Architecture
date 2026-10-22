@@ -90,6 +90,10 @@ for(const token of ['@media(forced-colors:active)','outline:3px solid Highlight'
  assert.ok(html.includes(token),'forced-colors keyboard/visual regression: '+token);
 }
 assert.ok(!html.includes("listing.setAttribute('aria-live','polite')"),'duplicate live-region announcements reintroduced');
+// A DE/EN language switch re-renders the filter buttons: preserve the specific focused key.
+for(const token of ["const focusedReachFilter=document.activeElement?.closest?.('#google-resonance .gr-filter button')?.dataset.reachFilter","button.dataset.reachFilter=key","if(focusedReachFilter)filters.querySelector('[data-reach-filter=\"'+focusedReachFilter+'\"]')?.focus({preventScroll:true})"]){
+ assert.ok(html.includes(token),'reach keyboard focus must survive language changes: '+token);
+}
 assert.ok(!html.includes("anchor.setAttribute('aria-label',item.label+"),'release source link should announce its visible name only, not repeat the evidence tier');
 assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
 assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
