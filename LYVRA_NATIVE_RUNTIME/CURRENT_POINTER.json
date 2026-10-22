@@ -6453,5 +6453,31 @@
     "no_new_router": true,
     "recovery": "lyvra-recovery-pre-task-currentness-check-20261022-r01",
     "pointer_last": true
+  },
+  "family_mail_export_causal_learning_20261022": {
+    "status": "SOURCE_INTEGRATED_POINTER_LAST_TASK_ENABLED_MAIL_UNSENT",
+    "source_class": "USER_UPLOADED_HISTORICAL_TRANSCRIPT_NOT_PRODUCTIVE_AUTHORITY",
+    "target": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "target_blob": "c1a31af50043e1511818f4fc4de352b5b32fddbc",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "d2ed7d92daa218c6f9ce711034e50f106f378ecf",
+    "mailbox_count": 38,
+    "task_enabled": true,
+    "task_last_run_utc": "2026-10-22T16:01:32.322054Z",
+    "task_run_success": "NOT_ESTABLISHED",
+    "historical_diagnostics": "A_READ_OK_B_OAUTH_PARENT_UNSUPPORTED_C_SAFETY_DENIAL_NO_RETRY",
+    "private_backup": "READBACK_PENDING_BRANCH_REF_INVALID",
+    "unsent_mail": "2026_10_22_STRATEGY_FOLLOWUP_EMOJI_QUESTION_NOT_SENT",
+    "test_limit": 3,
+    "learning": "EXISTING_TESTS_NOT_REPEATED",
+    "plugin_impact": "NATIVE_AND_ALIVE_SKILLS_REFERENCE_FRESH_CONTRACT_NO_CHANGED_PUBLIC_API",
+    "plugin_releases_unchanged": true,
+    "fresh_host": "UNVERIFIED",
+    "american_system": "NOT_TOUCHED",
+    "no_new_router": true,
+    "no_foreign_activation": true,
+    "no_auto_mail": true,
+    "recovery": "lyvra-recovery-pre-family-export-learning-20261022-r01",
+    "pointer_last": true
   }
 }
