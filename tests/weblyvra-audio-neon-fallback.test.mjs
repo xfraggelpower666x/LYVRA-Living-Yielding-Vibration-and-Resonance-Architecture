@@ -51,13 +51,14 @@ function runReceiver() {
   let clock = 100;
   const events = new Map();
   const listen = key => ({ addEventListener(name, fn) { events.set(key + ':' + name, fn); } });
-  const el = () => ({ style: { setProperty() {}, opacity: '', transform: '' }, dataset: {}, textContent: '', setAttribute() {}, ...listen('element') });
-  const status = el(), toggle = el(), title = el(), note = el(), layer = el();
+  const el = () => ({ style: { setProperty() {}, opacity: '', transform: '' }, dataset: {}, textContent: '', attributes: {}, setAttribute(name, value) { this.attributes[name] = value; }, ...listen('element') });
+  const status = el(), toggle = el(), title = el(), note = el(), layer = el(), meter = el();
   const visualBands = { bass: el(), mid: el(), high: el() };
   const origin = 'https://webradio.666soundsdesign-broadcaster.com';
   const frame = { src: origin + '/embed/miniplayer.html', contentWindow: { postMessage() {} }, ...listen('frame') };
   const panel = { querySelector(selector) {
     if (selector === 'button') return toggle;
+    if (selector === '.neon-band-meter') return meter;
     if (selector === '[data-neon-status]') return status;
     if (selector === 'h3') return title;
     if (selector === '[data-neon-note]') return note;
@@ -88,7 +89,7 @@ function runReceiver() {
   const bands = { bass: .35, mid: .42, high: .24, energy: .36 };
   const synthetic = () => ({ type: 'lyvra:audio:visual-fallback', mode: 'synthetic', version: 1, playing: true, ...bands });
   const real = (sequence, playing = true, energy = .65) => ({ type: 'lyvra:audio:levels', version: 1, sequence, playing, bass: energy, mid: energy, high: energy, energy });
-  return { dispatch, status, layer, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); }, motion, document, changeMotion(value) { motion.matches = value; events.get('motion:change')?.(); }, changeVisibility(hidden) { document.hidden = hidden; events.get('document:visibilitychange')?.(); } };
+  return { dispatch, status, layer, meter, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); }, motion, document, changeMotion(value) { motion.matches = value; events.get('motion:change')?.(); }, changeVisibility(hidden) { document.hidden = hidden; events.get('document:visibilitychange')?.(); } };
 }
 test('runtime: trusted synthetic frame activates visibly disclosed fallback', () => {
   const x = runReceiver();
@@ -164,4 +165,26 @@ test('runtime: hidden tab clears light state and does not accept fallback', () =
   assert.equal(x.layer.dataset.active, 'false');
   x.changeVisibility(false);
   assert.equal(x.layer.dataset.active, 'false');
+});
+
+test('runtime: screenreader meter never calls synthetic fallback a genuine audio measurement', () => {
+  const x = runReceiver();
+  assert.match(x.meter.attributes['aria-label'], /keine echten Audiodaten/);
+  x.toggle();
+  x.dispatch(x.synthetic());
+  assert.match(x.status.textContent, /Visueller Fallback/);
+  assert.match(x.meter.attributes['aria-label'], /Synthetische visuelle Pegel/);
+  assert.doesNotMatch(x.meter.attributes['aria-label'], /^Echte Audiosignal-Pegel/);
+});
+test('runtime: genuine audio changes meter back to real, then pause clears the genuine claim', () => {
+  const x = runReceiver();
+  x.dispatch(x.real(1, true, .65));
+  assert.match(x.meter.attributes['aria-label'], /^Echte Audiosignal-Pegel/);
+  x.dispatch(x.real(2, false, 0));
+  assert.match(x.meter.attributes['aria-label'], /keine echten Audiodaten/);
+});
+test('source: both DE and EN explicitly distinguish genuine, synthetic and no data', () => {
+  assert.match(source, /Synthetic visual levels, not audio reactive/);
+  assert.match(source, /Real audio levels: bass, mids and highs/);
+  assert.match(source, /Neon level display: no current real audio data/);
 });
