@@ -89,3 +89,12 @@ ACCEPTANCE_SCENARIOS:
 - SOURCE_MODE_AND_FACET_BOUNDS_UNCHANGED; MOBILE_SUNO_UI_NE_INVENTED.
 
 SOURCE_CONTRACT_READBACK_NE_PLUGIN_RELEASE_PARITY_NE_FRESH_HOST_BEHAVIOR_PASS = TRUE
+
+## Fresh Track-Design entry and visible mode continuity - DEV candidate (2026-10-23)
+FRESH_ENTRY_MODE_SURFACE = SOURCE_MODE | DISCOVERY_MODE
+EXPLICIT_CREATOR_MODE_WINS = TRUE
+CLEAR_INTENT_MAY_INFER_MODE_WITH_VISIBLE_DISCLOSURE = TRUE
+UNRESOLVED_MODE_OFFERS_COMPACT_CHOICE = TRUE
+NO_DUPLICATE_MODE_QUESTION_WHEN_CREATOR_ALREADY_SELECTED = TRUE
+DISCOVERY_SELECTION_ALONE_NE_PERMISSION_TO_IMMEDIATELY_COMPOSE = TRUE
+Source and Discovery must survive true new-chat rehydration by direct native current readback, not by silently retaining this chat. Mode is internal Track Design behavior, NOT an added Whole facet/trigger. After a creator-selected mode, preserve that track's mode until explicitly changed. The mode stage and separate per-track device stage are BOTH required where relevant; neither replaces the other. See development/TRACK_DESIGN_FRESHBOOT_MODE_DEVICE_MAININPUT_GAP_20261023.md for negative fresh-chat evidence and acceptance sketches.
