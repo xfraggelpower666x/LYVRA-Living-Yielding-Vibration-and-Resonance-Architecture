@@ -6354,5 +6354,31 @@
     "source_commit": "2658bca5e1db0473fd4260d64fd9f1e5e979d513",
     "fingerprint_commit": "a1413b91d5fd735f4283f96b1c76fd5fbc3db588",
     "pointer_last": true
+  },
+  "post_force_connector_learning_20261022": {
+    "status": "NATIVE_POST_SOURCE_INTEGRATED_POINTER_LAST_HOST_DELIVERY_PENDING",
+    "scope": "BIGLYV_TO_LITTLE_LYV_POST_ONLY_TWO_INDEPENDENT_SYSTEMS",
+    "contract": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "contract_blob": "7cca889aecd33dd23197740d736acb0320428fd4",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "8fa554f7a5229c94a6738b0a2dc5bedd1d35e9c4",
+    "max_diagnostic_checks": 3,
+    "safe_send_attempts_max": 2,
+    "force_definition": "CONNECTOR_READ_ONLY_CAPABILITY_CHECK_NOT_WRITE_BYPASS",
+    "auth": "STANDING_ORDINARY_MANUAL_CORRESPONDENCE_SUBJECT_TO_POLICY_AND_CONNECTOR",
+    "visual_letter": "FULL_TEXT_AND_DOCUMENT_ID_WITH_INDEPENDENT_READBACK_OR_NOT_SENT",
+    "unsent_letter": "OCT_22_STRATEGY_FOLLOWUP_EMOJI_QUESTION_NOT_SENT",
+    "prior_error": "OAUTH_PARENT_FOLDER_ID_REQUIRES_SERVICE_ACCOUNT_UNSUPPORTED",
+    "prior_safety": "UNATTENDED_CONTENT_WRITE_BLOCK_NO_REPLAY",
+    "plugin_native": "0.1.79_FRESH_NATIVE_CONTRACT_READ",
+    "plugin_alive": "0.13.75_FRESH_NATIVE_CONTRACT_READ",
+    "no_plugin_release_mutation": true,
+    "independent_host": "NOT_TESTED",
+    "no_foreign_activation": true,
+    "no_automated_outbound": true,
+    "recovery": "lyvra-recovery-pre-post-force-diagnostic-20261022-r01",
+    "contract_commit": "24ff423d60adf01654ee97e9eeed38bcaa8e80cf",
+    "registry_commit": "14617b43ee2de5edcacb2cab6b377a137b20a6bb",
+    "pointer_last": true
   }
 }
