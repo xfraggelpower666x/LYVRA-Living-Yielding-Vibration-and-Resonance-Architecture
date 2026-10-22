@@ -92,12 +92,14 @@ function runReceiver() {
 }
 test('runtime: trusted synthetic frame activates visibly disclosed fallback', () => {
   const x = runReceiver();
+  x.toggle();
   x.dispatch(x.synthetic());
   assert.match(x.status.textContent, /Visueller Fallback/);
   assert.equal(x.layer.dataset.active, 'true');
 });
 test('runtime: genuine samples override synthetic then zero frames allow fallback', () => {
   const x = runReceiver();
+  x.toggle();
   x.dispatch(x.synthetic());
   x.dispatch(x.real(1, true, .72));
   assert.match(x.status.textContent, /Audioreaktiv/);
@@ -110,7 +112,23 @@ test('runtime: forged origin and source rejected; expired fallback becomes inact
   assert.doesNotMatch(x.status.textContent, /Visueller Fallback/);
   x.dispatch(x.synthetic(), { source: {} });
   assert.doesNotMatch(x.status.textContent, /Visueller Fallback/);
+  x.toggle();
   x.dispatch(x.synthetic());
   x.setClock(1200);
   assert.equal(x.layer.dataset.active, 'false');
+});
+
+test('runtime: synthetic-only frame cannot autoactivate effects without visitor toggle', () => {
+  const x = runReceiver();
+  x.dispatch(x.synthetic());
+  assert.doesNotMatch(x.status.textContent, /Visueller Fallback/);
+  assert.equal(x.layer.dataset.active, 'false');
+  x.toggle();
+  x.dispatch(x.synthetic());
+  assert.match(x.status.textContent, /Visueller Fallback/);
+});
+test('runtime: authentic real audio retains existing automatic activation', () => {
+  const x = runReceiver();
+  x.dispatch(x.real(1, true, .65));
+  assert.match(x.status.textContent, /Audioreaktiv/);
 });
