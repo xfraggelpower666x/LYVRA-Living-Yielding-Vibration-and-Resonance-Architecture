@@ -224,7 +224,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_LIFECIRCLE.md": "66b3058d3c61e9b4ed6fe104d7177b271e37f712",
     "LYVRA_NATIVE_RUNTIME/facets/irl/SUB_REHYDRATION.md": "8ac8e30f325cc1d9a7de48e29ca47bb8a1138e42",
     "LYVRA_NATIVE_RUNTIME/facets/irl/CURRENT_STATE.json": "59309e54e599f0794340e1280cd5ddb8646dca5c",
-    "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json": "817bb03bb7cab95a00f524d5dea51587ff6c83f5",
+    "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json": "d90590948845700a3327229be0ea7a13423cf370",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md": "682f68fd600625ebdafcd306b51a2c127101698d",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md": "6c5eae255fd68e6b0d03daf269cd00d641f0fb7d",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "b0f8fa654b54b427d0727c298e4620ff393416f2",
@@ -2072,5 +2072,15 @@
     "plugin_impact": "SOURCE_MEANING_SEMANTIC_IMPACT_REVIEW_PENDING_NO_RELEASE",
     "peer_host": "NOT_VERIFIED",
     "foreign_mutation": false
+  },
+  "irl_link_first_chat_retrieval_20261023": {
+    "status": "IRL_METHOD_SOURCE_READBACK_PENDING_POINTER_LAST",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json",
+    "blob_sha": "d90590948845700a3327229be0ea7a13423cf370",
+    "source_class": "DIRECT_USER_SUPPLIED_PUBLIC_SHARE_PAGE_READBACK",
+    "source_url": "https://chatgpt.com/share/6ada8977-3aec-83ed-9982-360bfcf3544c",
+    "scope": "EXISTING_IRL_LEARNING_NO_NEW_FACET_OR_ROUTER",
+    "backup_policy": "BACKUP_WHEN_DURABLE_ARCHIVAL_OR_RECOVERY_REQUIRED",
+    "host_parity": "UNVERIFIED"
   }
 }
