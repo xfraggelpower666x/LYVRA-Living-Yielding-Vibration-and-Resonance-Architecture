@@ -141,7 +141,7 @@
     "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
     "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
     "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED",
-    "freshness_registry": "CURRENT_PARTIAL_CARRIER_REVALIDATION_FULL_REGISTRY_REHASH_NOT_PERFORMED",
+    "freshness_registry": "CURRENT_230_OF_230_REGISTERED_CRITICAL_CARRIER_GITHUB_TREE_READBACK",
     "pfs_plugin_backup_approval_channel": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE",
     "coupled_plugin_backup_circle": "CURRENT_V14_LYVRA_LEG_APPROVED_STABLE_SET_NOT_CONVERGED",
     "clic_plugin_backup_relation": "CURRENT_REVALIDATION_PENDING_NO_FOREIGN_AUTOACTIVATION",
@@ -6114,6 +6114,22 @@
     "plugin_release_changed": false,
     "host_fresh_acceptance": "PENDING",
     "no_foreign_activation": true,
+    "pointer_last": true
+  },
+  "fingerprint_full_registry_reconciliation_20261022": {
+    "status": "230_OF_230_REGISTERED_CRITICAL_BLOBS_MATCH_VERIFIED_BASE_TREE",
+    "base_head": "7a122a0556bce90453989e9eca9fe7711dda196f",
+    "recovery_branch": "lyvra-recovery-pre-fingerprint-full-20261022-r02",
+    "fingerprint_registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_blob": "e9e5b0c34c236c887a712494d01e812e84fc0f34",
+    "verified_bindings": 230,
+    "superseded_bindings": 6,
+    "conditional_family_carriers_added": 4,
+    "scope": "SOURCE_FRESHNESS_METADATA_ONLY",
+    "family_relevance_gated": true,
+    "plugin_release_changes": false,
+    "independent_host_acceptance": "OPEN",
+    "no_foreign_writes": true,
     "pointer_last": true
   }
 }
