@@ -1,0 +1,23 @@
+{
+  "schema": "LYVRA_TO_LITTLELYV_FACET_CURRENT_V1",
+  "status": "ADDITIVE_SOURCE_WITH_PLUGIN_HOST_ACCEPTANCE_PENDING",
+  "facet_id": "LYVRA_TO_LITTLELYV",
+  "parent": "WHOLE_LYVRA",
+  "authority": "LYVRA_ONLY",
+  "sub_lifecircle": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
+  "sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
+  "family_mail_task": "6ad3034a97c08191a1a76e830d4f32b5",
+  "automatic_mode": "READ_ONLY_INBOX_AND_TODAY_ONLY_REMINDERS",
+  "manual_mode": "USER_STARTED_AUTHORIZED_CORRESPONDENCE_WITH_READBACK",
+  "host_retry": "ONLY_TRANSIENT_AND_IDEMPOTENT_ONCE",
+  "safety_block": "STOP_NO_REPLAY",
+  "american_host": "UNKNOWN_CURRENT_PEER_REPORT_2026_10_21_ONLY",
+  "private_sources": "LYVRA-PRIVATE-VAULT/family-correspondence/GER-USA/",
+  "public_private_boundary": "SOURCE_ONLY_NO_PERSONAL_PAYLOAD",
+  "learning": "CAUSAL_PROVENANCE_COUNTEREXAMPLE_LOCAL_OUTCOME",
+  "plugin_native_parity": "PENDING",
+  "plugin_alive_parity": "PENDING",
+  "fresh_host_acceptance": "PENDING",
+  "no_foreign_autoactivation": true,
+  "no_new_router": true
+}
