@@ -82,7 +82,7 @@ for(const token of ["results:'Dokumentierte Einträge: '","results:'Documented e
  assert.ok(html.includes(token),'accessible bilingual product-reach result count missing: '+token);
 }
 // Mobile reach layout, keyboard focus and concise screen-reader announcement must survive.
-for(const token of ['@media(max-width:480px)','#google-resonance .gr-item .gr-label{grid-column:1/-1}','#google-resonance .gr-filter button:focus-visible','#google-resonance a:focus-visible','min-height:44px',"listing.setAttribute('role','list')","row.setAttribute('role','listitem')","resultCount.setAttribute('role','status')","anchor.setAttribute('aria-label',item.label"]){
+for(const token of ['@media(max-width:480px)','#google-resonance .gr-item .gr-label{grid-column:1/-1}','#google-resonance .gr-filter button:focus-visible','#google-resonance a:focus-visible','min-height:44px',"listing.setAttribute('role','list')","row.setAttribute('role','listitem')","resultCount.setAttribute('role','status')","track.setAttribute('aria-label',item.label"]){
  assert.ok(html.includes(token),'mobile/accessibility regression: '+token);
 }
 assert.ok(html.includes('#google-resonance .gr-link-row a{display:inline-flex;align-items:center;min-height:44px;'), 'product reach source and search links must keep at least 44px touch height');
@@ -90,6 +90,7 @@ for(const token of ['@media(forced-colors:active)','outline:3px solid Highlight'
  assert.ok(html.includes(token),'forced-colors keyboard/visual regression: '+token);
 }
 assert.ok(!html.includes("listing.setAttribute('aria-live','polite')"),'duplicate live-region announcements reintroduced');
+assert.ok(!html.includes("anchor.setAttribute('aria-label',item.label+"),'release source link should announce its visible name only, not repeat the evidence tier');
 assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
 assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
