@@ -11,6 +11,14 @@ class Persistent(unittest.TestCase):
  def setUp(self):self.tmp=tempfile.TemporaryDirectory();self.p=Path(self.tmp.name)/"music.json"
  def tearDown(self):self.tmp.cleanup()
  def test_first_pass(self):self.assertEqual(process(self.p,"music",evidence())["decision"]["status"],"INVESTIGATE_ONLY")
+ def test_single_pass_iterator_retains_evidence(self):
+  result=process(self.p,"music",iter(evidence()))
+  self.assertEqual(result["decision"]["status"],"INVESTIGATE_ONLY")
+  self.assertEqual(result["decision"]["candidate"],("pulse","drop"))
+ def test_single_pass_iterator_revises(self):
+  process(self.p,"music",iter(evidence()))
+  result=process(self.p,"music",iter(evidence()+refute()))
+  self.assertEqual(result["decision"]["status"],"REVISED_COUNTEREVIDENCE")
  def test_file_created(self):process(self.p,"music",evidence());self.assertTrue(self.p.is_file())
  def test_reload(self):process(self.p,"music",evidence());self.assertEqual(load(self.p,"music").relation,("pulse","drop"))
  def test_restart(self):process(self.p,"music",evidence());self.assertEqual(process(self.p,"music",evidence())["decision"]["candidate"],("pulse","drop"))
