@@ -1,0 +1,38 @@
+{
+  "schema": "WEBLYVRA_AUDIO_NEON_ACCESSIBLE_METER_V1",
+  "date": "2026-10-22",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "owner": "WHOLE_LYVRA",
+  "status": "SOURCE_CI_PASS_20_OF_20_BROWSER_IPHONE_HOST_PENDING",
+  "prechange_recovery": "lyvra-recovery-pre-weblyvra-neon-aria-semantics-20261022-r01",
+  "prechange_head": "863e077547cc9c282bdf34c0193fad88c6a03ab7",
+  "receiver": {
+    "path": "WEBLyvra/live/dist/audio-neon.js",
+    "blob": "34fe1ca239701cd281a1041d0507d2d1ffc44114",
+    "commit": "04d30625bdb0ca3574398400781a95537027ab24"
+  },
+  "html": {
+    "path": "WEBLyvra/live/dist/index.html",
+    "blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "commit": "d89d127bbf086ee8aa66af71119e929c5d25f51b"
+  },
+  "tests": {
+    "path": "tests/weblyvra-audio-neon-fallback.test.mjs",
+    "blob": "df96b0e81d6bdbca4fef5c77a1a16f8b68c827b8",
+    "commit": "40c65830ad1173fe09e7a6659cc3cd768d3773a2"
+  },
+  "ci": {
+    "run_id": 39831228965,
+    "job_id": 120007580284,
+    "passed": 20,
+    "total": 20,
+    "failed": 0,
+    "conclusion": "success"
+  },
+  "repair": "Screenreader aria-label distinguishes measured real audio from synthetic visual fallback and idle, bilingual.",
+  "website_runtime_deployed": "NOT_VERIFIED_AT_RECEIPT",
+  "iphone_edge_host": "NOT_VERIFIED",
+  "whole_rehydration": "PARTIAL",
+  "cross_system_mutation": false,
+  "return_anchor": "WEBLYVRA_NEON_METER_A11Y_HOST_ACCEPTANCE"
+}
