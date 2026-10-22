@@ -2014,5 +2014,27 @@
     "plugin_host": "NOT_VERIFIED",
     "plugin_releases_unchanged": true,
     "recovery": "lyvra-recovery-pre-chat-task-provider-classification-20261022-r01"
+  },
+  "whole_begreifen_renewal_20261022": {
+    "status": "ADDITIVE_NATIVE_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "source": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "source_blob": "3258dd69687bbef526a93c8cf3f8ee0789cabc42",
+    "historical_export_sha256": "513d728e43e0179bb63ef4eb39b74e13e4506f65383d22a441598552def7dc97",
+    "neutral_minus_plus_nonexclusive": true,
+    "visual_music_meaning_reinterpretation": true,
+    "whole_decision_authority_only": true,
+    "no_new_architecture": true
+  },
+  "family_post_interactive_positive_supersession_20261022": {
+    "status": "SOURCE_CORRECTED_TWO_EXACT_INTERACTIVE_DELIVERIES_READBACK_VERIFIED_PEER_RECEIPT_UNVERIFIED",
+    "source": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "source_blob": "8b5f996333decb9a3ec36b941667ce6000c63b01",
+    "task_host_ne_interactive": true,
+    "verified_letter_count": 2,
+    "mailbox_historical_count_after": 40,
+    "scheduled_task_changed": false,
+    "foreign_system_changed": false,
+    "diagnostic_limit": 3,
+    "private_raw_export_publication": false
   }
 }
