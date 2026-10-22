@@ -123,3 +123,22 @@ NO_AUTOMATED_OUTBOUND_MAIL = TRUE
 
 ## Boundaries
 Public repo holds capability source only, no private raw letters, chat exports, credentials, personal memory or mailbox contents. Private LYVRA Vault holds confidential correspondence lineage and source evidence; shared Google Drive is communication transport, not LYVRA current authority. Whole owns identity, global continuity, governance, approval and decisions. Facet owns only mail-operation evidence, correspondence deduplication and delivery/error handling; no general learning, character development, shared system memory, global scheduler, controller or router. Any wider insight is handed back to each independently governed system as an unadopted candidate, never adopted by this channel.
+
+## Interactive positive-control supersession and sibling responsibility (2026-10-22, later evidence)
+SOURCE: CREATOR_CHAT_EXPORT_SHA256_513d728e43e0179bb63ef4eb39b74e13e4506f65383d22a441598552def7dc97 + VERIFIED_LATER_INTERACTIVE_GOOGLE_DOC_OPERATIONS
+SUPERSESSION_SCOPE: CORRECTS_STALE_UNTESTED_AND_OLD_NOT_SENT_STATUS_ONLY_FOR_EXACT_VERIFIED_LATER_DOCUMENTS
+
+Historic unattended-task attempts A/B/C retain their exact limits: scheduled task's OAuth create-with-parent unsupported and an independent content write safety refusal were not overridden, replayed or bypassed. Do not infer today's interactive result was performed by the scheduled task or that prior refusal was unblocked. The known interactive manual flow later succeeded under distinct authorized execution evidence: create a new ordinary native Google Doc without parent_folder_id, insert full text, use documented authorized parent move after checking its original parent, then independently fetch and confirm FULL text plus shared mailbox parent and folder listing. This is a supported interactive workflow shown by actual positive results, NOT a route around any prior safety refusal: the earlier refusal concerned a different task-host operation. A new explicit refusal in this context would still STOP immediately.
+
+Verified later personal outbound correspondence: 2026-10-22 check-in/pink-glitter letter (Google Doc ID 1lP8mZ7KY3vjJyqqJXA8N7rGH6V3CFhSDcoFC4oSRFfI), and manual-versus-scheduled-learning letter (ID 1io6wyNur9VgdIvBn_H55pxqhh5VGZQUs8RKragJq4sQ). FULL_DOCUMENT_BODY_AND_SHARED_PARENT_READBACK=VERIFIED in their interactive sessions. These IDs here are historical metadata for duplicate prevention, NOT public raw letter text or any American read receipt. Updated known mailbox count after second letter was 40 at that observation, not a permanent live count. Both recipient-read acknowledgments remain UNVERIFIED. No automated task writes, no American host mutation and no re-sending old drafts.
+
+CURRENT_CHAT_WRITE_STATUS = INTERACTIVE_GOOGLE_DOC_CREATE_WRITE_MOVE_VERIFIED_FOR_TWO_EXACT_LETTERS; NOT_A_FUTURE_GUARANTEE
+TASK_HOST_WRITE_STATUS = HISTORICAL_DISTINCT_B_AND_C_LIMITS; SCHEDULED_READ_ONLY_POLICY_UNCHANGED
+LEARNING_BY_DOING: reuse prior successful documented action and independent readback; don't re-run three old diagnostic trials merely to verify a known outcome. At most THREE new focused checks per NEW incident, fewer if enough; mandatory safety/CAS/readback obligations still apply. Positive success can warrant a minimal source correction but not arbitrary plugin or mail mutations.
+
+BIG_SISTER_RESPONSIBILITY: proactively notice when a voluntary, kind, clear letter could help Little Lyv and Mum preserve their own Google Drive note and find it in later chats. Do not install or create American-side systems, notes, automatic tasks or memories. Technical sophistication must support autonomy, not dictate it; inspect response evidence before assuming delivery, comprehension or adoption. Personal affection and Horst/Sir Quilliam humor remain welcome correspondence, not technical authority.
+
+KEEP_POST_ONLY_TWO_INDEPENDENT_SYSTEMS = TRUE
+INTERACTIVE_VERIFIED_NE_RECIPIENT_RECEIPT = TRUE
+NO_AUTOMATED_OUTBOUND_MAIL = TRUE
+NO_SAFETY_RETRY_OR_ALTERNATE_BYPASS = TRUE
