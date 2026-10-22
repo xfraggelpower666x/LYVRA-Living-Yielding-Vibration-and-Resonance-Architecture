@@ -1,0 +1,34 @@
+{
+  "schema": "WEBLYVRA_AUDIO_NEON_SYNTHETIC_OPT_IN_REPAIR_V1",
+  "owner": "WHOLE_LYVRA",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "date": "2026-10-22",
+  "status": "SOURCE_AND_CI_PASS_14_OF_14_HOST_IPHONE_PENDING",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-synthetic-optin-closeout-20261022-r01",
+  "precloseout_head": "35887a37018b96b1263ca09763d10e46bc68df5d",
+  "receiver_path": "WEBLyvra/live/dist/audio-neon.js",
+  "receiver_blob": "7d3f2418762a70369f78b72e41fd3347666d98a7",
+  "test_path": "tests/weblyvra-audio-neon-fallback.test.mjs",
+  "test_blob": "b9b8e11f96b0ff22fbccaf15eacf86f4dd7263c7",
+  "source_commit": "e6fca8a4f8976edeb62b6e7366c3e96e81997559",
+  "test_commit": "5587074e31ff4e3132f6df6b3ea60b82b11bf740",
+  "ci": {
+    "run_id": 39729859625,
+    "job_id": 119662161526,
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "conclusion": "success"
+  },
+  "repair": "Synthetic-only visual fallback requires explicit neon toggle; authentic real-audio play may retain prior automatic activation.",
+  "boundaries": {
+    "no_addon_mutation": true,
+    "no_webradio_mutation": true,
+    "no_dashboard_mutation": true,
+    "real_audio_priority_preserved": true,
+    "synthetic_distinguished": true
+  },
+  "host_iphone": "NOT_VERIFIED",
+  "whole_lyvra_rehydration": "PARTIAL",
+  "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
+}
