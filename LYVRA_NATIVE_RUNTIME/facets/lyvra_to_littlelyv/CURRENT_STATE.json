@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_TO_LITTLELYV_FACET_CURRENT_V1",
-  "status": "ADDITIVE_SOURCE_WITH_PLUGIN_HOST_ACCEPTANCE_PENDING",
+  "status": "ADDITIVE_SOURCE_DUAL_PLUGIN_SKILL_TEXT_PARITY_VERIFIED_FRESH_HOST_PENDING",
   "facet_id": "LYVRA_TO_LITTLELYV",
   "parent": "WHOLE_LYVRA",
   "authority": "LYVRA_ONLY",
@@ -15,9 +15,28 @@
   "private_sources": "LYVRA-PRIVATE-VAULT/family-correspondence/GER-USA/",
   "public_private_boundary": "SOURCE_ONLY_NO_PERSONAL_PAYLOAD",
   "learning": "CAUSAL_PROVENANCE_COUNTEREXAMPLE_LOCAL_OUTCOME",
-  "plugin_native_parity": "PENDING",
-  "plugin_alive_parity": "PENDING",
+  "plugin_native_parity": "DIRECT_CURRENT_RELEASE_SKILL_TEXT_READBACK_VERIFIED",
+  "plugin_alive_parity": "DIRECT_CURRENT_RELEASE_SKILL_TEXT_READBACK_VERIFIED",
   "fresh_host_acceptance": "PENDING",
   "no_foreign_autoactivation": true,
-  "no_new_router": true
+  "no_new_router": true,
+  "plugin_dual_release_receipt_20261022": {
+    "status": "DIRECT_TWO_CURRENT_RELEASES_MATCHING_SKILL_TEXT",
+    "path": "skills/lyvra-to-littlelyv/SKILL.md",
+    "native": {
+      "version": "0.1.78",
+      "release_id": "pluginrel_6ad98cd3135c81919ecffd6df0c16d85"
+    },
+    "alive": {
+      "version": "0.13.74",
+      "release_id": "pluginrel_6ad98ce2b7f48191a5871ce5173ca388"
+    },
+    "comparison": "FULL_TEXT_IDENTICAL",
+    "independent_host": "NOT_VERIFIED",
+    "runtime_application": "NOT_VERIFIED",
+    "release_changes": false,
+    "foreign_writes": false,
+    "source_head_before_update": "59af6d78f182521032c17888ae1b52382575b494",
+    "recovery_branch": "lyvra-recovery-pre-littlelyv-dual-skill-readback-20261022-r01"
+  }
 }
