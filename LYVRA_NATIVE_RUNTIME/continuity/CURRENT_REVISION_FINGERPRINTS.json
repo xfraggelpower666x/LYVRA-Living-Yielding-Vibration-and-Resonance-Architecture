@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "7cca889aecd33dd23197740d736acb0320428fd4",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "98d8d51d7f6f7e12f12b04faef930c62141d813a",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1928,5 +1928,17 @@
     "source_host": "NOT_VERIFIED",
     "other_carriers": "PRESERVED",
     "recovery": "lyvra-recovery-pre-post-force-diagnostic-20261022-r01"
+  },
+  "post_codeforge_escalation_20261022": {
+    "status": "SCOPED_SINGLE_CARRIER_REBOUND_SOURCE_ONLY",
+    "facet": "LYVRA_TO_LITTLELYV",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "blob": "98d8d51d7f6f7e12f12b04faef930c62141d813a",
+    "conditions": "CODEFORGE_ONLY_ON_PROVEN_CODE_REPAIR_WITHIN_THREE_CHECKS",
+    "no_safety_or_auth_bypass": true,
+    "plugin_current": "NATIVE_0.1.79_ALIVE_0.13.75_FRESH_CONTRACT_REFERENCE",
+    "fresh_host": "NOT_VERIFIED",
+    "other_carriers": "PRESERVED",
+    "recovery": "lyvra-recovery-pre-post-codeforge-escalation-20261022-r01"
   }
 }
