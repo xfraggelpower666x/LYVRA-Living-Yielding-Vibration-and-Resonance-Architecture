@@ -1,0 +1,22 @@
+name: WEBLyvra Audio Neon Fallback — read-only regression
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'WEBLyvra/live/dist/audio-neon.js'
+      - 'tests/weblyvra-audio-neon-fallback.test.mjs'
+      - '.github/workflows/weblyvra-audio-neon-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trusted-visual-fallback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact checked out commit
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          git rev-parse HEAD
+      - name: Node regression for WEBLyvra visual-only fallback
+        run: node --test tests/weblyvra-audio-neon-fallback.test.mjs
