@@ -8,6 +8,7 @@ const layer = document.querySelector('#audio-neon-layer');
 if (panel && layer) {
   const toggle = panel.querySelector('button');
   const status = panel.querySelector('[data-neon-status]');
+  const meter = panel.querySelector('.neon-band-meter');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const states = new Map();
   const fallbackStates = new Map();
@@ -22,13 +23,20 @@ if (panel && layer) {
   const reference = { bass:null, mid:null, high:null, energy:null };
   const display = { bass:0, mid:0, high:0, energy:0 };
   function labels() {
-    const text = words[getLanguage()] || words.de;
+    const lang = getLanguage() === 'en' ? 'en' : 'de';
+    const text = words[lang];
     panel.querySelector('h3').textContent = text.title;
     panel.querySelector('[data-neon-note]').textContent = text.note;
     toggle.textContent = enabled ? text.on : text.off;
     toggle.setAttribute('aria-pressed', String(enabled));
     toggle.disabled = motion.matches;
     status.textContent = text[motion.matches ? 'reduced' : mode];
+    if (meter) {
+      const meterLabels = lang === 'de'
+        ? { active: 'Echte Audiosignal-Pegel: Bass, Mitten und Höhen', synthetic: 'Synthetische visuelle Pegel, nicht audioreaktiv: Bass, Mitten und Höhen', idle: 'Neon-Pegelanzeige: momentan keine echten Audiodaten' }
+        : { active: 'Real audio levels: bass, mids and highs', synthetic: 'Synthetic visual levels, not audio reactive: bass, mids and highs', idle: 'Neon level display: no current real audio data' };
+      meter.setAttribute('aria-label', meterLabels[motion.matches ? 'idle' : mode] || meterLabels.idle);
+    }
   }
   function setMode(next) { if (mode !== next) { mode = next; labels(); } }
   function reset() {
