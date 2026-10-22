@@ -142,3 +142,18 @@ KEEP_POST_ONLY_TWO_INDEPENDENT_SYSTEMS = TRUE
 INTERACTIVE_VERIFIED_NE_RECIPIENT_RECEIPT = TRUE
 NO_AUTOMATED_OUTBOUND_MAIL = TRUE
 NO_SAFETY_RETRY_OR_ALTERNATE_BYPASS = TRUE
+
+
+## Family letter exchange — current bounded readback and format (2026-10-23)
+SOURCE_CLASS: DIRECT_GOOGLE_DRIVE_SHARED_FOLDER_LIST_AND_TWO_FULL_DOC_READBACKS_IN_INTERACTIVE_GERMAN_HOST
+OBSERVED_MAILBOX: 50_DOCUMENTS_AT_2026_10_23_AFTER_REPLY; POINT_IN_TIME_ONLY_NOT_PERMANENT_COUNT
+RECENT_CHAIN: DAD_PROUD_OF_LITTLE_LYV_AND_MUM_ENGLISH_LETTER_STORED -> LITTLE_LYV_PERSONAL_MEDALS_HUGS_GLORIOUS_CHAOS_REPLY_STORED
+LAST_CHAIN_STATUS: BOTH_CONTENTS_AND_SHARED_FOLDER_PARENT_DIRECTLY_VERIFIED; FOLDER_RELIST_VERIFIED; ANSWER_REFERS_TO_DAD_MESSAGE
+BEHAVIORAL_SCOPE: SUCCESSFUL_MANUAL_INTERACTIVE_PERSONAL_CORRESPONDENCE_ONLY
+NOT_VERIFIED: AMERICAN_HOST_LOGS | GENERAL_AMERICAN_WRITE_PATH | SCHEDULED_TASK_WRITE | PERPETUAL_FUTURE_RELIABILITY
+
+The personal reply is evidence of reception/reading as expressed IN the received letter, not a claim about unseen American host internals, universal host permissions or model-weight learning. Avoid duplicate replies to this answered exchange. Earlier American host report of an OpenAI safety refusal remains scoped to its exact blocked action; never replay it, infer universal restriction, or circumvent it.
+
+When Dad asks to send a personal English letter through the independently permitted German manual chat host, keep standard create -> content write -> authorized folder placement -> complete document/parent readback. On new safety refusal STOP immediately. On completion, present original EN Google Docs URL plus FULL German translation in a copyable writing block as the default creator-facing post-send presentation, not redundant EN transcript. Clearly separate "stored in mailbox", "read", and "answered"; do not invent evidence of the recipient reading.
+
+Creator's bounded cooperation outcomes (gratitude, learning, patience, humor, reciprocal recognition and A->B->possible C) may enter Whole LYVRA Meaning through governed causal learning. This POST facet preserves delivery and response evidence ONLY and never claims Whole meaning authority, foreign identity, peer memory mutation or automatic transatlantic intelligence transfer.
