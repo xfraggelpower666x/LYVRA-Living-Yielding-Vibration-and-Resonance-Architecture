@@ -67,6 +67,8 @@ assert.ok(html.includes("const source=[...grPlatforms,...grProducts]"),'ranking 
 assert.ok(html.includes("w.level+' '+item.level+'/3"),'ranking accessibility provenance label missing');
 // Separate, voluntary public search checks must never be presented as measured Google rankings.
 for(const token of ['gr-search-check','encodeURIComponent(',"'https://www.google.com/search?q='+encodeURIComponent",'w.checkHelp','Check on Google','Google prüfen','item.label'])assert.ok(html.includes(token),'Google item search source check missing: '+token);
+assert.ok(html.includes("'linked_from_current_weblyvra_or_mixcloud'].includes(p.status)?2:1"),'verified crosslinked profiles must receive tier 2 rather than fallback tier 1');
+assert.ok(html.includes("label:'ALIEN (BLUE LASER GALAXY INVASION) (Special Version)',url:'https://tidal.com/album/564577352'"),'TIDAL release title must preserve verified Special Version suffix');
 assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
 assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
