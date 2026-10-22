@@ -3,8 +3,13 @@ import {readFileSync,existsSync} from 'node:fs';
 import {dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
+import { Script } from 'node:vm';
 const root=dirname(fileURLToPath(import.meta.url));
 const html=readFileSync(join(root,'index.html'),'utf8');
+// Parse the actual inline browser JavaScript without executing DOM or external network actions.
+const inlineScripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map(match=>match[1]).filter(Boolean);
+assert.ok(inlineScripts.length>0,'missing executable inline add-on scripts');
+for(const code of inlineScripts)assert.doesNotThrow(()=>new Script(code,{filename:'artist-discovery-inline.js'}),'embedded JavaScript syntax regression');
 const suno=JSON.parse(readFileSync(join(root,'data/suno-releases.json'),'utf8')).public_songs;
 const soundcloud=JSON.parse(readFileSync(join(root,'data/soundcloud-albums.json'),'utf8')).albums;
 const soundcloudTracks=JSON.parse(readFileSync(join(root,'data/soundcloud-tracks.json'),'utf8')).tracks;
