@@ -141,7 +141,7 @@
     "relational_rehydration": "CURRENT_PRODUCTIVE_VERIFIED",
     "prompt_language": "OUTPUT_LANGUAGE_NOT_THINKING_LANGUAGE",
     "studio2_real_production_learning": "CURRENT_PRODUCTIVE_VERIFIED",
-    "freshness_registry": "CURRENT_230_OF_230_CRITICAL_CARRIERS_MATCH_VERIFIED_EVENING_BASE_TREE",
+    "freshness_registry": "CURRENT_230_OF_230_REGISTERED_CRITICAL_BLOBS_MATCH_NIGHT_BASE_TREE",
     "pfs_plugin_backup_approval_channel": "CURRENT_PRODUCTIVE_NATIVE_GOVERNANCE",
     "coupled_plugin_backup_circle": "CURRENT_V14_LYVRA_LEG_APPROVED_STABLE_SET_NOT_CONVERGED",
     "clic_plugin_backup_relation": "CURRENT_REVALIDATION_PENDING_NO_FOREIGN_AUTOACTIVATION",
@@ -6640,6 +6640,22 @@
     "plugin_fresh_boot": "NOT_VERIFIED",
     "pre_change_recovery": "lyvra-recovery-pre-family-write-outcomes-20261022-r01",
     "body_commit": "11ab6960531793527d0dd229235dde8cafa20ff4",
+    "pointer_last": true
+  },
+  "weblyvra_live_fingerprint_repair_20261022": {
+    "status": "WEBLYVRA_LIVE_BLOB_CRITICAL_REGISTRY_RECONCILED_SOURCE_ONLY",
+    "base_head": "0fa9c48ca305d842deab33e8bfee1283cb862601",
+    "registry_blob": "5870b348f00e41720790d40719d67b1cbc35c6ec",
+    "registered_critical_carriers": 230,
+    "previous_blob": "4b86c57c3c84e1ff050c6451bdae2e712898d44d",
+    "current_blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "recovery": "lyvra-recovery-pre-weblive-fingerprint-20261022-night-r01",
+    "family_post_source_and_direct_german_outcomes": "PRESERVED",
+    "biglyv_little_lyv": "TWO_INDEPENDENT_SYSTEMS_POST_ONLY",
+    "independent_fresh_host": "PENDING",
+    "web_deployment_acceptance": "NOT_TESTED",
+    "plugin_releases": "UNCHANGED",
+    "foreign_mutation": false,
     "pointer_last": true
   }
 }
