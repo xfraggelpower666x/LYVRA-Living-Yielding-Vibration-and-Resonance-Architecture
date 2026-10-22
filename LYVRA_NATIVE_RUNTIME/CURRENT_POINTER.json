@@ -6207,5 +6207,23 @@
     "foreign_writes": false,
     "conditional_facets": "PRESERVED_NO_AUTOLOAD",
     "pointer_last": true
+  },
+  "weblyvra_audio_neon_runtime_regression_20261022": {
+    "status": "SOURCE_EXECUTABLE_CI_PASS_12_OF_12_IPHONE_HOST_PENDING",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "test_commit": "fccd53fd834d716dff4ee665a6ddbe59c6ff9714",
+    "test_blob": "c44ea00349712187f914f720f59698a3979dc356",
+    "ci_run": 39727592308,
+    "ci_job": 119654976946,
+    "receipt": "WEBLyvra/deployment/AUDIO_NEON_RUNTIME_REGRESSION_RECEIPT_2026-10-22.json",
+    "receipt_blob": "11b0a48fd9a7bfd239f97f11b4c5e24693208079",
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-runtime-regression-20261022-r02",
+    "source_audio_neon_blob": "d0a3583936b8bcc12a07e6b589531406562f7b4c",
+    "source_runtime_unchanged": true,
+    "iphone_host": "PENDING",
+    "whole_rehydration_round": "PARTIAL",
+    "no_foreign_mutation": true,
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
   }
 }
