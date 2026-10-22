@@ -1,4 +1,17 @@
-# Suno public catalog — current additive snapshot and sync handoff
+# Suno public catalog — additive sync and historical source lineage
+
+## Current verified public catalog — 2026-10-22
+
+The CURRENT repository inventory is **450 unique Suno song UUID/URL records**, plus **45 SoundCloud sets/albums and 122 independent tracks/mixes**, projected into **617 unique Artist Discovery links**. Canonical authority for exact source records: `data/suno-releases.json`; for the bounded new-readback method and 14 added song UUIDs: `PLATFORM_SCAN_20261021_R04.md`.
+
+The 2026-10-21 rendered Suno profile showed a 450-song counter and 160 unique directly captured recent page links, including 14 new URLs versus the previous repository's 436. A single bounded 160-link capture **does not** independently revalidate all 450 previously and newly catalogued URLs. All 436 older records remain by additive preservation, not by a deletion-inference rule.
+
+**Production evidence (2026-10-22):** Public WEBLyvra Artist Discovery HTML directly exposed the new `CHAOS FULL OF SUPERNOVAS` UUID `b9fa99ea-7802-4f16-9a84-2f5142d4a4c9`, the 450-song label and the 617-entry total. This is specific HTTP readback, distinct from GitHub Actions PASS and Cloudflare deployment status.
+
+The following 2026-10-18 entries are historical method and version provenance, **not current counts or current deployment state**. Newer data take precedence.
+
+---
+
 Updated: 2026-10-18
 Scope: WEBLyvra artist-discovery add-on only. Whole-LYVRA authority, productive WEBLyvra website and dashboard are unchanged by this documentation update.
 
