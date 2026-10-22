@@ -1,0 +1,4 @@
+LYVRA GitHub connector isolated read/write diagnostic.
+Scope: test-only branch; not production.
+No authority, no manifest change, no family data.
+Probe: create_file then direct fetch_file readback.
