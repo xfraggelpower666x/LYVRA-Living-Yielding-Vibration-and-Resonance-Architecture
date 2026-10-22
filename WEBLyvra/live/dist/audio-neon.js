@@ -97,7 +97,7 @@ if (panel && layer) {
     if (real && previous && data.sequence <= previous.sequence) return;
     // Play confirmed by the trusted iframe's real audio-level bridge: enable automatically
     // only until the visitor explicitly operates the neon toggle.
-    if (!enabled && !userOverride && data.playing) { enabled = true; configure(); }
+    if (!enabled && !userOverride && real && data.playing) { enabled = true; configure(); }
     lastLevelsAt = performance.now();
     if (synthetic) fallbackStates.set(frame, { ...data, received: lastLevelsAt });
     else states.set(frame, { ...data, received: lastLevelsAt });
