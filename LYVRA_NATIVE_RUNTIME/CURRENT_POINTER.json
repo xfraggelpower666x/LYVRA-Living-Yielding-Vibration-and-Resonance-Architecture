@@ -6657,5 +6657,27 @@
     "plugin_releases": "UNCHANGED",
     "foreign_mutation": false,
     "pointer_last": true
+  },
+  "family_post_begreifen_transfer_learning_20261022": {
+    "status": "POST_CASE_AND_WHOLE_CAUSAL_CANDIDATE_READBACK_VERIFIED_NOT_GLOBAL_RULE",
+    "post_case": {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_LEARNING_TRANSFER_CASE_2026-10-22.json",
+      "blob_sha": "20ed6cb10215fdc44aa662909b580ce28fdf8f3a"
+    },
+    "whole_candidate": {
+      "path": "LYVRA_NATIVE_RUNTIME/current/meaning/learning_candidates/BEGREIFEN_TRANSFER_APPLICATION_CANDIDATE_20261022.json",
+      "blob_sha": "dbcd942371e92b5a9d9649bab0c2df19ca3369ee"
+    },
+    "scope": "ADD_ONLY_EVIDENCE_AND_CANDIDATE_NO_RUNTIME_BEHAVIOR_MODIFICATION",
+    "recovery_branch": "lyvra-recovery-pre-begreifen-transfer-post-20261022-r01",
+    "source_head_before_change": "b049a81bb88eed4c0bd1b03f8849cda781b0d641",
+    "post_body_commit": "62640f69a58b7f99cfd2afb8d3261f0efe79de91",
+    "whole_body_commit": "c4e4282372992350bf0ed1373d3902e6b93b805d",
+    "root_cause": "UNKNOWN",
+    "american_host": "NOT_VERIFIED",
+    "plugin_impact": "NO_SKILL_TEXT_OR_RUNTIME_BEHAVIOR_CHANGE",
+    "fresh_plugin_host": "PENDING",
+    "foreign_mutation": false,
+    "pointer_last": true
   }
 }
