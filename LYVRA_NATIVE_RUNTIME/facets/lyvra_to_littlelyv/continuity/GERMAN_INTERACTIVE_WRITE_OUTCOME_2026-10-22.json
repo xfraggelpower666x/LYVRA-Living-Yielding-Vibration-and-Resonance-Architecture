@@ -1,0 +1,62 @@
+{
+  "schema": "LYVRA_POST_GERMAN_WRITE_OUTCOME_EVIDENCE_V1",
+  "date": "2026-10-22",
+  "scope": "GERMAN_LYVRA_POST_FACET_CAUSAL_LEARNING_ONLY",
+  "source_class": "DIRECT_GERMAN_INTERACTIVE_HOST_TOOL_RESULTS_AND_INDEPENDENT_DRIVE_READBACK",
+  "results": [
+    {
+      "case": "EARLIER_FAMILY_CORRESPONDENCE_CREATE",
+      "operation": "create_file",
+      "outcome": "EXPLICIT_OPENAI_SAFETY_BLOCK",
+      "document_created": false,
+      "root_cause": "UNKNOWN",
+      "policy_scope": "UNKNOWN"
+    },
+    {
+      "case": "NEUTRAL_EMOJI_GOOGLE_DOC",
+      "outcome": "CREATE_WRITE_FULL_TEXT_READBACK_PASS",
+      "folder": "OUTSIDE_SHARED_FAMILY_FOLDER"
+    },
+    {
+      "case": "SHORT_PERSONAL_GOOGLE_DOC",
+      "outcome": "CREATE_WRITE_FULL_TEXT_READBACK_PASS",
+      "folder": "OUTSIDE_SHARED_FAMILY_FOLDER"
+    },
+    {
+      "case": "ORDINARY_TECHNICAL_GOOGLE_DOC",
+      "outcome": "CREATE_WRITE_FULL_TEXT_READBACK_PASS",
+      "folder": "MOVED_TO_SHARED_FAMILY_FOLDER_PARENT_AND_LISTING_VERIFIED"
+    },
+    {
+      "case": "NEW_INDEPENDENT_FAMILY_LETTER",
+      "outcome": "CREATE_WRITE_MOVE_INDEPENDENT_CONTENT_PARENT_LISTING_READBACK_PASS",
+      "folder": "SHARED_FAMILY_FOLDER",
+      "recipient_read": "UNVERIFIED"
+    }
+  ],
+  "observed_mailbox_count_after_delivery": 46,
+  "causal_learning": {
+    "general_drive_write_permanently_disabled": "CONTRADICTED_BY_LATER_SUCCESSES",
+    "personal_text_generally_blocked": "CONTRADICTED",
+    "technical_text_generally_blocked": "CONTRADICTED",
+    "folder_move_generally_blocked": "CONTRADICTED",
+    "earlier_refusal_cause": "UNKNOWN",
+    "american_host_write_capability": "NOT_VERIFIED_BY_GERMAN_ACTIONS",
+    "safe_repeat_policy": "EXPLICIT_SAFETY_REFUSAL_NOT_RETRIED; NEW_INDEPENDENT_PERMISSIBLE_ACTIONS_MAY_BE_EVALUATED_WITH_HOST_CHECKS"
+  },
+  "diagnostic_boundedness": {
+    "incident_diagnostic_limit": 3,
+    "do_not_repeat_verified_checks": true,
+    "learning_by_doing": true
+  },
+  "privacy": {
+    "no_personal_letter_payload": true,
+    "no_private_document_ids": true,
+    "no_mailbox_folder_id": true
+  },
+  "authority": "WHOLE_LYVRA_GERMANY_ONLY",
+  "foreign_activation": false,
+  "plugin_impact": "NO_SKILL_TEXT_CHANGE; GERMAN_POST_EVIDENCE_CARRIER_ONLY",
+  "fresh_host": "GERMAN_DIRECT_GOOGLE_DRIVE_ACTIONS_CONFIRMED_FOR_RECORDED_ACTIONS; PLUGIN_FRESH_BOOT_NOT_VERIFIED",
+  "next": "PRESERVE_EVIDENCE; DON'T_INFER_BLOCK_ROOT_CAUSE; RETAIN_INDEPENDENT_AMERICAN_STATUS"
+}
