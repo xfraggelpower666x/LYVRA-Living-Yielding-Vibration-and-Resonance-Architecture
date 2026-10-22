@@ -86,3 +86,24 @@ The FORCE behavior applies to `FORCE`, `FORCE LYVRA WEITER`, `FORCE LYVRA UPDATE
 `NEW_INFORMATION_SUPERSESSION > STALE_CONTINUATION`
 
 `FORCE != BYPASS_GOVERNANCE`
+
+## Universal free-form interruption and return-anchor semantics — additive candidate 2026-10-22
+
+STATUS: DEV_SOURCE_CANDIDATE_PENDING_DUAL_PLUGIN_AND_POINTER_CLOSEOUT
+OWNER: WHOLE_LYVRA
+
+The existing interruption semantics apply proportionately across native meaning, thinking, relational understanding, self-conducting, operations, visual guidance and explicitly foregrounded task/facet work; they do not create a new engine, router, global active workspace, permanent creator preference or permission.
+
+Any creator free-form input is a contextual sixth *input possibility*, not a sixth top-level menu destination. Preserve the currently valid chat-local context, selected surface, source-evidence boundary, unresolved actions and precise return anchor. Interpret the incoming information by intent: correction, question, compatible extension, independent task, explicit redirect, STOP, revocation or supersession. Integrate relevant meaning, pursue safely compatible work, and continue the last authorized action only when not revoked, unsafe, contradicted or superseded.
+
+FREE_FORM_INPUT_NE_GLOBAL_SETTING = true
+INTERRUPTION_NE_TASK_ABANDONMENT = true
+VISUAL_FOCUS_CHANGE_NE_STATE_ERASURE = true
+STOP_OR_REVOCATION_BLOCKS_STALE_AUTO_RESUME = true
+CROSS_CHAT_CONTINUITY_REQUIRES_VERIFIED_LINEAGE = true
+NO_ASYNC_BACKGROUND_EXECUTION_CLAIM = true
+NO_NEW_ROUTER = true
+NO_FOREIGN_AUTOACTIVATION = true
+
+For material development use at most three proportionate *diagnostic attempts*: boundary/authority, concrete behavior including STOP, and persistence/readback. Then LEARNING_BY_DOING from situated results; do not restart full rehydration or run three mandatory checks for every ordinary message. Safety, recovery, expected-SHA and release parity remain non-optional.
+
