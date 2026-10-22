@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-22-FULL-REGISTERED-CRITICAL-CARRIER-TREE-CHECK",
+  "freshness_epoch": "2026-10-22-LITTLELYV-DUAL-PLUGIN-PARITY-NATIVE-STATUS-RECONCILE",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -36,7 +36,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
     "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "fac1b5c017905e1db78cf22114281db0abb5708d",
-    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "91b8d365b545389a7e558813dcb6cd552206d87e",
+    "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/PROJECT_CHAT_MIX_DIRECTOR_REV93.md": "7de9212ce0e1a607d1ad713c3d20ce85ececbc50",
@@ -232,7 +232,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md": "3f22994f1db6ce28ee7bb81d4c899dd3d52705ba",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "ea3bb63eeaef5d5345570457f664f5d0a49a076f",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d661635f05ed3f1e8f04bcbcdf2476f456c35446",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "57129f13f14a515c33ae448ff19ff0ca32d49c0f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "f6b48069fbf026870ac1a382fe596a2c91342950"
@@ -1841,5 +1841,34 @@
     "plugin_impact": "SOURCE_METADATA_ONLY_NO_PLUGIN_CODE_OR_SKILL_CHANGE",
     "independent_host": "NOT_VERIFIED",
     "pointer_last_required": true
+  },
+  "latest_scoped_reconciliation_20261022": {
+    "status": "230_OF_230_REGISTERED_CRITICAL_TREE_BINDINGS_VERIFIED",
+    "base_head": "149e2e10b016549596a818789e2f8dc7a8a372e9",
+    "changes": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json",
+        "previous": "91b8d365b545389a7e558813dcb6cd552206d87e",
+        "current": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+        "previous": "ea3bb63eeaef5d5345570457f664f5d0a49a076f",
+        "current": "d661635f05ed3f1e8f04bcbcdf2476f456c35446"
+      }
+    ],
+    "plugin_surface_native": {
+      "version": "0.1.78",
+      "release_id": "pluginrel_6ad98cd3135c81919ecffd6df0c16d85"
+    },
+    "plugin_surface_alive": {
+      "version": "0.13.74",
+      "release_id": "pluginrel_6ad98ce2b7f48191a5871ce5173ca388"
+    },
+    "text_skill_parity": "FULL_SKILL_TEXT_IDENTICAL_DIRECT_READBACK",
+    "fresh_host": "NOT_VERIFIED",
+    "no_new_releases": true,
+    "public_family_payload": "NONE",
+    "metadata_only": true
   }
 }
