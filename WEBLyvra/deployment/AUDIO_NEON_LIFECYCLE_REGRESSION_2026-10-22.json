@@ -1,0 +1,34 @@
+{
+  "schema": "WEBLYVRA_AUDIO_NEON_LIFECYCLE_REGRESSION_V1",
+  "date": "2026-10-22",
+  "owner": "WHOLE_LYVRA",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "status": "SOURCE_CI_PASS_17_OF_17_IPHONE_HOST_PENDING",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-lifecycle-ci-20261022-r03",
+  "pre_change_head": "2d71f9159013ed4c50c5e61c2ede194a41e22b65",
+  "source_file": "WEBLyvra/live/dist/audio-neon.js",
+  "source_blob": "7d3f2418762a70369f78b72e41fd3347666d98a7",
+  "test_file": "tests/weblyvra-audio-neon-fallback.test.mjs",
+  "test_blob": "7615bc686bc3b7e3c9ca3c0b4062092e5dbd3339",
+  "test_commit": "cbdb2999f2f061869afc8cc427e0743bd3dc7d2c",
+  "ci": {
+    "run_id": 39806552524,
+    "job_id": 119921199468,
+    "tests": 17,
+    "passed": 17,
+    "failed": 0,
+    "conclusion": "success"
+  },
+  "new_cases": [
+    "manual off respected",
+    "reduced motion respected",
+    "hidden tab clears neon"
+  ],
+  "receiver_unchanged": true,
+  "iphone_host": "PENDING",
+  "whole_rehydration": "PARTIAL",
+  "no_addon_mutation": true,
+  "no_webradio_mutation": true,
+  "no_dashboard_mutation": true,
+  "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
+}
