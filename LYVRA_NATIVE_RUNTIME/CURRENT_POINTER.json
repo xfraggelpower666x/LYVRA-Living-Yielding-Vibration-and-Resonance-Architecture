@@ -6508,5 +6508,28 @@
     "plugin_host_acceptance": "NOT_VERIFIED",
     "recovery": "lyvra-recovery-pre-whole-post-visual-finalizer-20261022-r01",
     "pointer_last": true
+  },
+  "post_task_vs_interactive_codeforge_repair_20261022": {
+    "status": "POST_FACET_AND_VISUAL_SOURCE_PUBLISHED_PLUGIN_HOST_PENDING",
+    "reason": "SCHEDULED_TASK_HOST_AUTH_OR_CONTENT_BLOCK_MUST_NOT_IMPLY_INTERACTIVE_CHAT_BLOCK",
+    "task_host": "ENABLED_HOURLY_READ_ONLY",
+    "task_failure": "GOOGLE_OAUTH_CREATE_WITH_PARENT_UNSUPPORTED_AND_SAFETY_DENIED_CONTENT_IN_TASK",
+    "interactive_historical_success": "NONEMPTY_FAMILY_MAIL_CONTENT_PARENT_DIRECT_READBACK_2026_10_22",
+    "interactive_current_write": "UNTESTED_NOT_AUTH_DENIED",
+    "private_vault": "MAIN_BRANCH_BACKUP_AND_ABC_EVIDENCE_DIRECT_READ",
+    "connector_force": "PROVIDER_SCOPED_UP_TO_THREE_CHECKS_NO_DENIAL_RETRY",
+    "interruption": "ADD_NEW_REQUIREMENT_CONTINUE_FROM_VERIFIED_CHECKPOINT_KEEP_VISUAL_GUIDANCE",
+    "post_contract": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_blob": "45696e87a8e053a26257a4a25d54865f2abd7052",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "4d8d6a9f619f454e217de7e0ce24d5f45a7089ae",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "58fe5b8400e4f4cac06a8d03167c6001c194d341",
+    "recovery": "lyvra-recovery-pre-chat-task-provider-classification-20261022-r01",
+    "no_task_change": true,
+    "no_outbound_write": true,
+    "no_foreign_activation": true,
+    "plugin_host": "UNVERIFIED",
+    "pointer_last": true
   }
 }
