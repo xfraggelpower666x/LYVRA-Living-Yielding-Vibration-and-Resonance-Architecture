@@ -30,7 +30,8 @@
     "FACET_BOUNDARY_AND_PROMOTION_GUARD": "VERIFIED_REPO_READBACK",
     "DEVELOPMENT_OBLIGATION_LEDGER": "VERIFIED_SPEECH_PROMOTED_CURRENT",
     "SPEECH_DESIGN": "VERIFIED_CURRENT_PRODUCTIVE_RECONCILED_FROM_VALID_DEV_LINEAGE",
-    "REPOSITORY_TOPOLOGY_AND_WORKSPACE": "VERIFIED_WITH_PARALLEL_SAFE_WORKSPACE_HANDOFF_V2"
+    "REPOSITORY_TOPOLOGY_AND_WORKSPACE": "VERIFIED_WITH_PARALLEL_SAFE_WORKSPACE_HANDOFF_V2",
+    "LYVRA_TO_LITTLELYV": "VERIFIED_CONDITIONAL_SOURCE_AND_DUAL_PLUGIN_SKILL_READBACK_FRESH_HOST_PENDING"
   },
   "source_state": {
     "drive_whole_revision": 242,
@@ -1431,5 +1432,42 @@
     "private_write": "BLOCKED",
     "proposal_intake": "PASS_NO_NEW_UNADOPTED_PROPOSAL",
     "foreign_native_mutation": false
+  },
+  "lyvra_to_littlelyv_20261022": {
+    "status": "CONDITIONAL_NATIVE_SOURCE_AND_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "coverage_class": "CONDITIONAL_RELEVANCE_NOT_WHOLE_ALWAYS_REQUIRED",
+    "facet_id": "LYVRA_TO_LITTLELYV",
+    "carrier_paths": [
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json"
+    ],
+    "manifest_binding": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "fac1b5c017905e1db78cf22114281db0abb5708d",
+    "fingerprint_registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_blob": "e9e5b0c34c236c887a712494d01e812e84fc0f34",
+    "registered_critical_carriers": 230,
+    "plugin_native": {
+      "version": "0.1.78",
+      "release_id": "pluginrel_6ad98cd3135c81919ecffd6df0c16d85",
+      "skill_readback": "VERIFIED"
+    },
+    "plugin_alive": {
+      "version": "0.13.74",
+      "release_id": "pluginrel_6ad98ce2b7f48191a5871ce5173ca388",
+      "skill_readback": "VERIFIED"
+    },
+    "skill_parity": "DIRECT_TEXT_MATCH",
+    "fresh_native_host": "NOT_VERIFIED",
+    "fresh_alive_host": "NOT_VERIFIED",
+    "independent_family_mailbox_delivery": "NOT_TESTED",
+    "american_peer_authority": "INDEPENDENT_NO_AUTOADOPTION",
+    "public_private": "SOURCE_ONLY_NO_PERSONAL_PAYLOAD",
+    "automation": "EXISTING_READ_ONLY_TASK_UNCHANGED",
+    "regression_guard": "NO_NEW_ROUTER_NO_FOREIGN_AUTOACTIVATION_NO_PRIVATE_PUBLIC_LETTER",
+    "source_head_before_coverage": "a9e33082e62a333606ba9cd2ab4dedb85f6b51ac",
+    "recovery": "lyvra-recovery-pre-littlelyv-closeout-20261022-r03",
+    "no_host_pass_claim": true
   }
 }
