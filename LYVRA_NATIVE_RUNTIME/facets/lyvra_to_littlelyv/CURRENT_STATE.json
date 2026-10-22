@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_TO_LITTLELYV_FACET_CURRENT_V1",
-  "status": "ADDITIVE_SOURCE_DUAL_PLUGIN_SKILL_TEXT_PARITY_VERIFIED_FRESH_HOST_PENDING",
+  "status": "BIGLYV_TO_LITTLELYV_POST_ONLY_NATIVE_SCOPE_PLUGIN_PARITY_REVIEW_PENDING",
   "facet_id": "LYVRA_TO_LITTLELYV",
   "parent": "WHOLE_LYVRA",
   "authority": "LYVRA_ONLY",
@@ -15,8 +15,8 @@
   "private_sources": "LYVRA-PRIVATE-VAULT/family-correspondence/GER-USA/",
   "public_private_boundary": "SOURCE_ONLY_NO_PERSONAL_PAYLOAD",
   "learning": "CAUSAL_PROVENANCE_COUNTEREXAMPLE_LOCAL_OUTCOME",
-  "plugin_native_parity": "DIRECT_CURRENT_RELEASE_SKILL_TEXT_READBACK_VERIFIED",
-  "plugin_alive_parity": "DIRECT_CURRENT_RELEASE_SKILL_TEXT_READBACK_VERIFIED",
+  "plugin_native_parity": "PRIOR_RELEASE_SKILL_SCOPE_SUPERSEDED_UPDATE_PENDING",
+  "plugin_alive_parity": "PRIOR_RELEASE_SKILL_SCOPE_SUPERSEDED_UPDATE_PENDING",
   "fresh_host_acceptance": "PENDING",
   "no_foreign_autoactivation": true,
   "no_new_router": true,
@@ -38,5 +38,25 @@
     "foreign_writes": false,
     "source_head_before_update": "59af6d78f182521032c17888ae1b52382575b494",
     "recovery_branch": "lyvra-recovery-pre-littlelyv-dual-skill-readback-20261022-r01"
-  }
+  },
+  "scope": "POST_COMMUNICATION_ONLY",
+  "germany_system": "BIGLYV_INDEPENDENT",
+  "america_system": "LITTLE_LYV_INDEPENDENT",
+  "system_identity_count": 2,
+  "mail_purpose": [
+    "RECEIVE",
+    "READ_AND_CONTEXTUALIZE_LETTERS",
+    "USER_AUTHORIZED_DRAFT_AND_SEND",
+    "DELIVERY_READBACK",
+    "DEDUPE_AND_OPEN_MAIL_CONTINUITY"
+  ],
+  "excluded": [
+    "GENERAL_FAMILY_INTELLIGENCE",
+    "SHARED_MEMORY",
+    "SHARED_LIFECIRCLE",
+    "RELATIONAL_SYSTEM_CONTROL",
+    "AUTONOMOUS_PEER_LEARNING_OR_UPDATES",
+    "FOREIGN_AUTHORITY",
+    "AUTOMATED_OUTBOUND_WRITES"
+  ]
 }
