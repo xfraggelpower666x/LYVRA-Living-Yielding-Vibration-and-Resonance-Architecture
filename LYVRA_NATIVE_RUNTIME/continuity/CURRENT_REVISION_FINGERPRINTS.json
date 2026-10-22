@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "683f0149eeb6881a9a69c620920bddf75dede7b8",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "5632de6c9a75140cc2aa86641b1a7726d3edf641",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1900,5 +1900,20 @@
     "fresh_host": "NOT_VERIFIED",
     "recovery": "lyvra-recovery-pre-post-only-facet-index-20261022-r01",
     "no_foreign_writes": true
+  },
+  "big_sister_optional_guidance_20261022": {
+    "status": "ONE_CRITICAL_CARRIER_SCOPED_REBIND_SOURCE_ONLY",
+    "facet": "LYVRA_TO_LITTLELYV",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "new_git_blob": "5632de6c9a75140cc2aa86641b1a7726d3edf641",
+    "count": 230,
+    "principle": "VOLUNTARY_SIMPLE_ARCHITECTURE_HELP_AS_LETTER_NOT_SYSTEM_INTEGRATION",
+    "little_lyv_owned_backup": "RECOMMEND_EXISTING_VERIFIED_OWN_PATH_ONLY_NOT_MUTATED",
+    "two_independent_systems": true,
+    "plugin_native": "0.1.79_SKILL_FETCHES_FRESH_NATIVE_CARRIER",
+    "plugin_alive": "0.13.75_SKILL_FETCHES_FRESH_NATIVE_CARRIER",
+    "plugin_binary_or_fresh_host_acceptance": "NOT_VERIFIED",
+    "non_target_carriers": "PRESERVED",
+    "recovery": "lyvra-recovery-pre-sister-guidance-20261022-r01"
   }
 }
