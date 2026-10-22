@@ -6402,5 +6402,32 @@
     "no_autoactivation": true,
     "no_amercian_mutation": true,
     "pointer_last": true
+  },
+  "post_codeforge_linguistic_logic_20261022": {
+    "status": "POST_FACET_CONTRACT_LINGUISTIC_CODEFORGE_SCOPE_VERIFIED_SOURCE_ONLY_HOST_PENDING",
+    "scope": "BIGLYV_POST_ONLY_TWO_INDEPENDENT_SYSTEMS",
+    "codeforge_supports": [
+      "EXECUTABLE_LOGIC",
+      "LINGUISTIC_PROGRAMMED_LOGIC",
+      "NATURAL_LANGUAGE_RULES",
+      "SEMANTIC_WORKFLOWS",
+      "CONTRADICTION_AMBIGUITY_TESTS"
+    ],
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "carrier_blob": "94fc6c2269d03ec53a3fb98a6d2c4ec653bee47c",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "1d7d78c593aec5dd6d92b49ab353668b0bcf4432",
+    "max_checks": 3,
+    "no_new_router": true,
+    "no_foreign_writes": true,
+    "no_safety_bypass": true,
+    "no_auto_mail": true,
+    "native_release": "0.1.79_FRESH_FACET_CARRIER",
+    "alive_release": "0.13.75_FRESH_FACET_CARRIER",
+    "fresh_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-codeforge-linguistic-logic-20261022-r01",
+    "contract_commit": "da002c95a1ff218b417a3075b6d1bc21d76a2bab",
+    "fingerprint_commit": "769043095cbe0a051c584169619996362bef0c51",
+    "pointer_last": true
   }
 }
