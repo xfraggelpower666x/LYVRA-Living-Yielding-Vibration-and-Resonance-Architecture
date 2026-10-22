@@ -216,7 +216,7 @@
     "LYVRA_PET/FINAL_STATUS.json": "e29b2295b54c4fd21ba5eedee0d8379dd8bb3d68",
     "LYVRA_PET/worker/build/worker-bundle.mjs": "9146676bf56a70ccbc29b48210f6c935cf9ece85",
     "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json": "3a0b4fc948597cd149e22c178b854a9ced6f3356",
-    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "674340c9e6968bf441791bf7fea61932793820e8",
+    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "4d8d6a9f619f454e217de7e0ce24d5f45a7089ae",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_PARITY_2026-10-14.json": "2f5e2aba24d6253c5546633d53b36a306b41b547",
     "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json": "47533eb154aa3920a24a57e7523d07864520e954",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json": "713a2f97b370890d36c112af85fc6ae32f75dd55",
@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "c1a31af50043e1511818f4fc4de352b5b32fddbc",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "45696e87a8e053a26257a4a25d54865f2abd7052",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1997,5 +1997,22 @@
     "recovery": "lyvra-recovery-pre-whole-post-visual-finalizer-20261022-r01",
     "personal_mail_status": "JA_N_NEIN_0_NICHT_GEPRUEFT_EVIDENCE_GATED",
     "custom_input_interruption": "PRESERVE_CHECKPOINT_AND_RESUME"
+  },
+  "post_task_vs_interactive_codeforge_repair_20261022": {
+    "status": "SCOPED_CAUSAL_SOURCE_REPAIR",
+    "post_contract": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_blob": "45696e87a8e053a26257a4a25d54865f2abd7052",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "4d8d6a9f619f454e217de7e0ce24d5f45a7089ae",
+    "diagnosis": "AUTOMATION_HOST_WRITE_BLOCK_NOT_INTERACTIVE_CHAT_AUTH_FAILURE",
+    "positive_control": "PRIOR_INTERACTIVE_FAMILY_LETTER_FULL_CONTENT_AND_PARENT_VERIFIED",
+    "vault_backup": "PRIVATE_MAIN_BRANCH_FULL_READ_VERIFIED",
+    "task": "ENABLED_HOURLY_READ_ONLY",
+    "current_chat_write": "UNTESTED",
+    "interruptions": "RESUME_FROM_CHECKPOINT_WITH_VISUAL_GUIDANCE",
+    "prohibited": "SAFETY_DENIAL_RETRY_OR_BYPASS",
+    "plugin_host": "NOT_VERIFIED",
+    "plugin_releases_unchanged": true,
+    "recovery": "lyvra-recovery-pre-chat-task-provider-classification-20261022-r01"
   }
 }
