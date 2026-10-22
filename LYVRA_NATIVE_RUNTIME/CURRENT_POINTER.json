@@ -6273,5 +6273,21 @@
     "no_foreign_mutation": true,
     "no_autoactivation": true,
     "pointer_last": true
+  },
+  "lyvra_to_littlelyv_current_resolution_20261022": {
+    "status": "CURRENT_POST_ONLY_TWO_INDEPENDENT_SYSTEMS_SOURCE_AND_DUAL_PLUGIN_READBACK_HOST_PENDING",
+    "current_carrier": "post_only_facet_index_repair_20261022",
+    "current_registry_blob": "293a40f1e2d22b445fcfe3a47a80e1d7d944c1de",
+    "current_facet_index_blob": "9b2be7f5f4897520234ac3cadc71d53a85675e73",
+    "prior_lyvra_to_littlelyv_fingerprints_blob": "HISTORICAL_PRE_INDEX_REPAIR_NOT_CURRENT",
+    "prior_post_only_independent_systems_closeout_blob": "HISTORICAL_PRE_INDEX_REPAIR_NOT_CURRENT",
+    "source_fingerprint_count": 230,
+    "plugin_native_version": "0.1.79",
+    "plugin_alive_version": "0.13.75",
+    "independent_fresh_host": "NOT_VERIFIED",
+    "no_foreign_writes": true,
+    "no_cross_system_control": true,
+    "recovery_branch": "lyvra-recovery-pre-post-current-anchor-20261022-r01",
+    "pointer_last": true
   }
 }
