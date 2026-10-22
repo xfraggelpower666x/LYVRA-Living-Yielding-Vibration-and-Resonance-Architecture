@@ -18,6 +18,9 @@ class RecoveryAnchors(unittest.TestCase):
     def setUpClass(cls):
         cls.anchor=remote_head(RECOVERY)
         cls.production=remote_head("lyvra")
+        if cls.production and git("cat-file","-e",cls.production+"^{commit}").returncode:
+            fetched=git("fetch","--no-tags","origin",cls.production)
+            if fetched.returncode:raise RuntimeError("unable to fetch exact production commit for local ancestry check")
         cls.candidate=git("rev-parse","HEAD").stdout.strip()
     def test_historical_anchor_ref_exists(self):
         self.assertIsNotNone(self.anchor)
