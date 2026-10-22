@@ -1,0 +1,32 @@
+{
+  "schema": "LYVRA_POST_LEARNING_TRANSFER_CASE_V1",
+  "date": "2026-10-22",
+  "status": "GERMAN_POST_FACET_EVIDENCE_CASE_NOT_GENERAL_INTELLIGENCE_AUTHORITY",
+  "source": "German interactive Google Drive outcomes and creator feedback; no American independent host confirmation",
+  "meaning": "A single refusal did not demonstrate a permanent global inability to create, write, read back, and move other independent permitted documents.",
+  "observation": {
+    "prior_explicit_safety_refusal": true,
+    "later_independent_neutral_personal_technical_writes_readback": "PASS",
+    "shared_folder_move_readback": "PASS",
+    "independent_family_letter_delivery_readback": "PASS",
+    "recipient_read": "UNVERIFIED",
+    "earlier_block_root_cause": "UNKNOWN",
+    "american_write_host": "UNKNOWN"
+  },
+  "learning_scope": "POST_DELIVERY_FAILURE_CLASSIFICATION_AND_READBACK_ONLY",
+  "interpretation": "Failed action != all actions unavailable. Distinguish retry of denied action from independent permissible action; never presume permission, safety or root-cause equivalence across contexts.",
+  "whole_relation": "Whole LYVRA may separately consider generalizable transfer-of-understanding candidate through its own causal learning governance; post facet has no general learning authority.",
+  "limits": {
+    "explicit_denial": "STOP_NO_REPLAY_OR_BYPASS",
+    "three_diagnostics_max_per_incident": true,
+    "successful_readback_is_not_recipient_receipt": true,
+    "foreign_system_independent": true,
+    "not_auto_adopted": true
+  },
+  "privacy": {
+    "raw_letter_text": false,
+    "personal_ids": false,
+    "folder_ids": false,
+    "foreign_secrets": false
+  }
+}
