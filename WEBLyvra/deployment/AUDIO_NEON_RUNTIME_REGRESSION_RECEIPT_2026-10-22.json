@@ -1,0 +1,38 @@
+{
+  "schema": "LYVRA_WEBLYVRA_AUDIO_NEON_RUNTIME_REGRESSION_V1",
+  "date": "2026-10-22",
+  "scope": "WEBLYVRA_MAIN_WEBSITE_ONLY",
+  "owner": "WHOLE_LYVRA",
+  "status": "SOURCE_RUNTIME_REGRESSION_PASS_12_OF_12_IPHONE_HOST_PENDING",
+  "source": {
+    "path": "WEBLyvra/live/dist/audio-neon.js",
+    "blob": "d0a3583936b8bcc12a07e6b589531406562f7b4c",
+    "changed": false
+  },
+  "test": {
+    "path": "tests/weblyvra-audio-neon-fallback.test.mjs",
+    "blob": "c44ea00349712187f914f720f59698a3979dc356",
+    "commit": "fccd53fd834d716dff4ee665a6ddbe59c6ff9714",
+    "static_contract_checks": 9,
+    "executable_receiver_event_tests": 3
+  },
+  "workflow": {
+    "path": ".github/workflows/weblyvra-audio-neon-regression.yml",
+    "run_id": 39727592308,
+    "job_id": 119654976946,
+    "tests": 12,
+    "pass": 12,
+    "fail": 0,
+    "conclusion": "success",
+    "verified_from": "GITHUB_ACTIONS_JOB_LOGS"
+  },
+  "prechange_recovery": "lyvra-recovery-pre-weblyvra-runtime-regression-20261022-r02",
+  "audio_stream_unchanged": true,
+  "iphone_host": "PENDING",
+  "no_addon_write": true,
+  "no_dashboard_write": true,
+  "no_webradio_write": true,
+  "no_foreign_autoload": true,
+  "whole_system_rehydration_this_round": "PARTIAL",
+  "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
+}
