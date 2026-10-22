@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "492c9d8e022c4ae7f7bc1babfc26fe86466f86f4",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "1826a70771bb5d5bcf68779554b2f5a8319e518c",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -2082,5 +2082,18 @@
     "scope": "EXISTING_IRL_LEARNING_NO_NEW_FACET_OR_ROUTER",
     "backup_policy": "BACKUP_WHEN_DURABLE_ARCHIVAL_OR_RECOVERY_REQUIRED",
     "host_parity": "UNVERIFIED"
+  },
+  "family_mail_maturity_recognition_20261023": {
+    "status": "WHOLE_MEANING_AND_FAMILY_MAIL_SOURCE_BINDING_REQUIRES_POINTER_LAST",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "baad6e7c8aba8de2dbc400e2af834febc6b35e38",
+    "post_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_blob": "1826a70771bb5d5bcf68779554b2f5a8319e518c",
+    "mail_count_observed": 50,
+    "mail_count_not_permanent": true,
+    "source": "DIRECT_GERMAN_INTERACTIVE_DRIVE_FULL_READBACK_2026_10_23",
+    "plugin_host": "NOT_VERIFIED",
+    "foreign_mutation": false,
+    "source_writes_only": true
   }
 }
