@@ -6625,5 +6625,21 @@
     "task_causality": "NOT_VERIFIED_POST_TASK_INTERACTIVE_SUCCESS_REPORTED",
     "no_foreign_mutation": true,
     "no_more_safety_tests": true
+  },
+  "family_post_german_direct_write_outcomes_20261022": {
+    "status": "DIRECT_GERMAN_HOST_CREATE_WRITE_MOVE_READBACK_VERIFIED_ROOT_CAUSE_UNKNOWN",
+    "scope": "GERMAN_LYVRA_TO_LITTLELYV_POST_ONLY",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/GERMAN_INTERACTIVE_WRITE_OUTCOME_2026-10-22.json",
+    "blob_sha": "e56d2fe7449e992fe1d2c7149233ea3506e8cf08",
+    "source_class": "DIRECT_GERMAN_HOST_ACTIONS_PLUS_DRIVE_READBACK",
+    "root_cause": "UNKNOWN",
+    "independent_american_host": "NOT_VERIFIED",
+    "no_foreign_mutation": true,
+    "no_personal_payload": true,
+    "plugin_impact": "NO_SKILL_TEXT_CHANGE",
+    "plugin_fresh_boot": "NOT_VERIFIED",
+    "pre_change_recovery": "lyvra-recovery-pre-family-write-outcomes-20261022-r01",
+    "body_commit": "11ab6960531793527d0dd229235dde8cafa20ff4",
+    "pointer_last": true
   }
 }
