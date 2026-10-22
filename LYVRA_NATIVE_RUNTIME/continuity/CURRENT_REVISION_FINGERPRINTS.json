@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "5632de6c9a75140cc2aa86641b1a7726d3edf641",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "7cca889aecd33dd23197740d736acb0320428fd4",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1915,5 +1915,18 @@
     "plugin_binary_or_fresh_host_acceptance": "NOT_VERIFIED",
     "non_target_carriers": "PRESERVED",
     "recovery": "lyvra-recovery-pre-sister-guidance-20261022-r01"
+  },
+  "post_force_diagnostic_three_check_20261022": {
+    "status": "SCOPED_ONE_CARRIER_REBIND_SOURCE_ONLY",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "carrier_blob": "7cca889aecd33dd23197740d736acb0320428fd4",
+    "max_diagnostics": 3,
+    "max_safe_send_attempts": 2,
+    "force": "READ_ONLY_CAPABILITY_AND_ERROR_DIAGNOSTIC_NO_BYPASS",
+    "standing_manual_correspondence_authorization": "ORDINARY_MAIL_ONLY_SUBJECT_TO_PROVIDER_AND_SAFETY",
+    "pending_letter": "OCT_22_STRATEGY_FOLLOWUP_EMOJI_QUESTION_NOT_SENT",
+    "source_host": "NOT_VERIFIED",
+    "other_carriers": "PRESERVED",
+    "recovery": "lyvra-recovery-pre-post-force-diagnostic-20261022-r01"
   }
 }
