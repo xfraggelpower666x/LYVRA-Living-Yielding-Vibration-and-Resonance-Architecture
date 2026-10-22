@@ -1,4 +1,5 @@
 import unittest,tempfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from scri_event_sequence_inference_20261021 import Event as E
 from scri_persistent_runtime_adapter_20261022 import process,load,store
@@ -42,4 +43,17 @@ class Persistent(unittest.TestCase):
   target=Path(self.tmp.name)/"real.json";target.write_text("{}");self.p.symlink_to(target)
   with self.assertRaises(ValueError):load(self.p,"music")
  def test_no_automatic_action(self):self.assertEqual(process(self.p,"music",evidence())["decision"]["action"],"NONE")
+class ConcurrentRevision(unittest.TestCase):
+ def test_simultaneous_distinct_counterevidence_retained(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   p=Path(tmp)/"scoped.json"
+   process(p,"music",evidence())
+   one=evidence()+refute()
+   two=evidence()+[E("music","r4",1,"pulse","i4","intervention"),E("music","r4",2,"drop","refuter2","refutation")]
+   with ThreadPoolExecutor(max_workers=2) as pool:
+    results=list(pool.map(lambda es:process(p,"music",es),(one,two)))
+   m=load(p,"music")
+   self.assertEqual(m.revision,3)
+   self.assertEqual(set(m.counter_sources),{"refuter","refuter2"})
+   self.assertEqual(m.status,"COUNTEREVIDENCE")
 if __name__=="__main__":unittest.main(verbosity=2)
