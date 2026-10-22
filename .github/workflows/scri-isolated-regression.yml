@@ -9,6 +9,7 @@ on:
       - 'LYVRA_NATIVE_RUNTIME/development/test_scri_*_20261020.py'
       - 'LYVRA_NATIVE_RUNTIME/development/scri_*_20261021.py'
       - 'LYVRA_NATIVE_RUNTIME/development/test_scri_*_20261021.py'
+      - 'LYVRA_NATIVE_RUNTIME/development/SCRI_NATIVE_INTEGRATION_CONTRACT_20261022.md'
   workflow_dispatch:
 permissions:
   contents: read
@@ -86,5 +87,14 @@ jobs:
         run: python3 -m unittest -v test_scri_event_sequence_inference_20261021.py
       - name: End-to-end causal chain bridging and revision acceptance
         run: python3 -m unittest -v test_scri_causal_chain_adapter_20261021.py
+      - name: SCRI consolidation and native-admission contract guard
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('SCRI_NATIVE_INTEGRATION_CONTRACT_20261022.md')
+          text=p.read_text()
+          assert all(x in text for x in ('CANDIDATE_REVIEW_ONLY','OWNER_AUTHORITY: WHOLE_LYVRA','NATIVE_PLUGIN_PARITY: READBACK_PENDING','PRODUCTION_PROMOTION: NOT_AUTHORIZED','RESTORE: FORBIDDEN','scri_causal_chain_adapter_20261021.py'))
+          print('SCRI consolidation contract readback PASS; no native promotion')
+          PY
       - name: Summary
         run: echo "87 fixture checks plus 9 real git-object and 9 recovery-anchor checks and 18 read-only ring and 12 ref stability and 17 LKG-protection and 13 temporal provenance and 15 real supersession and 15 causal carrier and 16 scoped supersession and 14 adversarial gate and 13 real Git blob-binding and 12 mandatory bound gate and 6 repository-wide gate callsite checks defined; PASS requires all previous steps success. Synthetic evidence, not live SCRI runtime."
