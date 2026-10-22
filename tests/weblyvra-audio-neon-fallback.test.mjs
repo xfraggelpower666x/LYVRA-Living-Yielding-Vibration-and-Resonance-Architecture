@@ -88,7 +88,7 @@ function runReceiver() {
   const bands = { bass: .35, mid: .42, high: .24, energy: .36 };
   const synthetic = () => ({ type: 'lyvra:audio:visual-fallback', mode: 'synthetic', version: 1, playing: true, ...bands });
   const real = (sequence, playing = true, energy = .65) => ({ type: 'lyvra:audio:levels', version: 1, sequence, playing, bass: energy, mid: energy, high: energy, energy });
-  return { dispatch, status, layer, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); } };
+  return { dispatch, status, layer, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); }, motion, document, changeMotion(value) { motion.matches = value; events.get('motion:change')?.(); }, changeVisibility(hidden) { document.hidden = hidden; events.get('document:visibilitychange')?.(); } };
 }
 test('runtime: trusted synthetic frame activates visibly disclosed fallback', () => {
   const x = runReceiver();
@@ -131,4 +131,37 @@ test('runtime: authentic real audio retains existing automatic activation', () =
   const x = runReceiver();
   x.dispatch(x.real(1, true, .65));
   assert.match(x.status.textContent, /Audioreaktiv/);
+});
+
+test('runtime: explicit off remains off despite subsequent genuine and synthetic frames', () => {
+  const x = runReceiver();
+  x.dispatch(x.real(1, true, .65));
+  assert.match(x.status.textContent, /Audioreaktiv/);
+  x.toggle();
+  x.dispatch(x.real(2, true, .7));
+  x.dispatch(x.synthetic());
+  assert.equal(x.layer.dataset.active, 'false');
+  assert.doesNotMatch(x.status.textContent, /Audioreaktiv|Visueller Fallback/);
+});
+test('runtime: reduced motion suppresses fallback and real animation', () => {
+  const x = runReceiver();
+  x.toggle();
+  x.dispatch(x.synthetic());
+  assert.equal(x.layer.dataset.active, 'true');
+  x.changeMotion(true);
+  x.dispatch(x.synthetic());
+  x.dispatch(x.real(1, true, .65));
+  assert.equal(x.layer.dataset.active, 'false');
+  assert.match(x.status.textContent, /Reduzierte Bewegung/);
+});
+test('runtime: hidden tab clears light state and does not accept fallback', () => {
+  const x = runReceiver();
+  x.toggle();
+  x.dispatch(x.synthetic());
+  assert.equal(x.layer.dataset.active, 'true');
+  x.changeVisibility(true);
+  x.dispatch(x.synthetic());
+  assert.equal(x.layer.dataset.active, 'false');
+  x.changeVisibility(false);
+  assert.equal(x.layer.dataset.active, 'false');
 });
