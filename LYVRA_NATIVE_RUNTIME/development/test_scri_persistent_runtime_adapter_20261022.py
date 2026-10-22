@@ -2,7 +2,7 @@ import unittest,tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from scri_event_sequence_inference_20261021 import Event as E
-from scri_persistent_runtime_adapter_20261022 import process,load,store
+from scri_persistent_runtime_adapter_20261022 import process,load,store,process_scoped
 def evidence(facet="music",a="pulse",b="drop"):
  return [E(facet,"r1",1,a,"i1","intervention"),E(facet,"r1",2,b,"m1"),E(facet,"r2",1,a,"i2","intervention"),E(facet,"r2",2,b,"m2")]
 def refute(facet="music",a="pulse",b="drop"):
@@ -10,6 +10,22 @@ def refute(facet="music",a="pulse",b="drop"):
 class Persistent(unittest.TestCase):
  def setUp(self):self.tmp=tempfile.TemporaryDirectory();self.p=Path(self.tmp.name)/"music.json"
  def tearDown(self):self.tmp.cleanup()
+ def test_scoped_entry_separates_facets(self):
+  root=Path(self.tmp.name)/"scoped"
+  first=process_scoped(root,"music",evidence("music"))
+  second=process_scoped(root,"studio2",evidence("studio2","cache","frame"))
+  self.assertEqual(first["memory"].relation,("pulse","drop"))
+  self.assertEqual(second["memory"].relation,("cache","frame"))
+  self.assertEqual(load(root/"music.json","music").revision,1)
+  self.assertEqual(load(root/"studio2.json","studio2").revision,1)
+ def test_scoped_entry_rejects_traversal(self):
+  with self.assertRaises(ValueError):process_scoped(Path(self.tmp.name),"../music",evidence())
+ def test_scoped_entry_rejects_symlink_root(self):
+  target=Path(self.tmp.name)/"target"
+  target.mkdir()
+  alias=Path(self.tmp.name)/"alias"
+  alias.symlink_to(target,target_is_directory=True)
+  with self.assertRaises(ValueError):process_scoped(alias,"music",evidence())
  def test_first_pass(self):self.assertEqual(process(self.p,"music",evidence())["decision"]["status"],"INVESTIGATE_ONLY")
  def test_single_pass_iterator_retains_evidence(self):
   result=process(self.p,"music",iter(evidence()))
