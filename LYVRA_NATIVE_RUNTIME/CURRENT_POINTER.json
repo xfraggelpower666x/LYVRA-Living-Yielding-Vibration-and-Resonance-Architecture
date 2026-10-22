@@ -6596,5 +6596,23 @@
     "independent_fresh_host": "NOT_VERIFIED",
     "no_foreign_activation": true,
     "pointer_last": true
+  },
+  "weblyvra_audio_neon_meter_a11y_20261022": {
+    "status": "SOURCE_CI_PASS_20_OF_20_IPHONE_HOST_PENDING",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "receipt": "WEBLyvra/deployment/AUDIO_NEON_ACCESSIBLE_METER_2026-10-22.json",
+    "receipt_blob": "4c1cb1b24bbaa962e2c657c221ee5590f02e25fa",
+    "receiver_blob": "34fe1ca239701cd281a1041d0507d2d1ffc44114",
+    "html_blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "test_blob": "df96b0e81d6bdbca4fef5c77a1a16f8b68c827b8",
+    "ci_run": 39831228965,
+    "ci_passed": 20,
+    "ci_failed": 0,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-neon-aria-semantics-20261022-r01",
+    "host_iphone": "PENDING",
+    "whole_rehydration": "PARTIAL",
+    "no_foreign_mutation": true,
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_NEON_METER_A11Y_HOST_ACCEPTANCE"
   }
 }
