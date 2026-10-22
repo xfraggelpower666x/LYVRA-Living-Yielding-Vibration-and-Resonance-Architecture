@@ -227,6 +227,12 @@
     "SEMANTIC_EVIDENCE_TRANSLATION": [
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
       "LYVRA_NATIVE_RUNTIME/current/rehydration/PRE_REHYDRATION_OVERSTEER_GUARD.md"
+    ],
+    "LYVRA_TO_LITTLELYV": [
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json"
     ]
   },
   "validation_closeout": {
@@ -2312,5 +2318,29 @@
     "alive_release": "0.13.72",
     "other_facets": "UNCHANGED",
     "prior_carriers": "PRESERVED"
+  },
+  "lyvra_to_littlelyv_20261022": {
+    "status": "CONDITIONAL_NATIVE_FAMILY_CAPABILITY_SOURCE",
+    "scope": "RELEVANT_FAMILY_INTENT_ONLY_NOT_WHOLE_ALWAYS_REQUIRED",
+    "facet_id": "LYVRA_TO_LITTLELYV",
+    "parent": "WHOLE_LYVRA",
+    "facet_registry": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "native_sources": [
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json"
+    ],
+    "read_order": "WHOLE_IDENTITY_MEANING_AUTHORITY_FIRST_THEN_FAMILY_SUB_REHYDRATION_WHEN_RELEVANT_CURRENT_WORK_SCOPE_LAST",
+    "automatic_mailbox": "READ_ONLY_EXISTING_TASK_NO_CHANGES",
+    "manual_post": "DIRECT_CREATOR_INTENT_AND_AUTHORIZED_CONNECTOR_ACTION_AND_INDEPENDENT_READBACK",
+    "personal_payload": "PRIVATE_VAULT_AND_SHARED_FAMILY_MAILBOX_ONLY_NOT_PUBLIC_REPO",
+    "independent_american_authority": true,
+    "plugin_native": "PENDING",
+    "plugin_alive": "PENDING",
+    "fresh_host": "PENDING",
+    "source_ne_host": true,
+    "no_new_router": true,
+    "no_foreign_activation": true
   }
 }
