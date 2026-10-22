@@ -2061,5 +2061,16 @@
     "web_runtime_or_deployment_test": "NOT_PERFORMED",
     "metadata_only": true,
     "pointer_last_required": true
+  },
+  "mutual_family_learning_whole_meaning_20261022": {
+    "status": "LATEST_SCOPED_MEANING_BLOB_VERIFIED",
+    "path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "current_blob": "865e7950e2b6b815c2b9fae35ad154e9d4d683d8",
+    "historical_renewal_blob_preserved": true,
+    "scope": "WHOLE_RELATIONAL_MEANING_ONLY",
+    "critical_tree_change": "NO_REGISTERED_CRITICAL_CARRIER_KEY_MATCH_FOR_THIS_PATH",
+    "plugin_impact": "SOURCE_MEANING_SEMANTIC_IMPACT_REVIEW_PENDING_NO_RELEASE",
+    "peer_host": "NOT_VERIFIED",
+    "foreign_mutation": false
   }
 }
