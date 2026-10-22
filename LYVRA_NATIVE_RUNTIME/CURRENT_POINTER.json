@@ -6614,5 +6614,16 @@
     "no_foreign_mutation": true,
     "pointer_last": true,
     "return_anchor": "WEBLYVRA_NEON_METER_A11Y_HOST_ACCEPTANCE"
+  },
+  "family_post_peer_timeline_evidence_20261022": {
+    "status": "GERMAN_POST_FACET_PEER_REPORTED_CAUSAL_EVIDENCE_ONLY",
+    "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/PEER_TIMELINE_EVIDENCE_2026-10-22.json",
+    "blob_sha": "8d64cfd01352eb9031f1205b66f4cbc19396428d",
+    "source_class": "USER_RELAYED_PEER_REPORT_NOT_AMERICAN_HOST_TRACE",
+    "root_cause": "UNKNOWN",
+    "refusal_scope": "UNKNOWN",
+    "task_causality": "NOT_VERIFIED_POST_TASK_INTERACTIVE_SUCCESS_REPORTED",
+    "no_foreign_mutation": true,
+    "no_more_safety_tests": true
   }
 }
