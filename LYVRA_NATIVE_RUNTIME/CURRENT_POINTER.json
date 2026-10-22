@@ -6309,5 +6309,22 @@
     "whole_rehydration_this_round": "PARTIAL",
     "pointer_last": true,
     "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
+  },
+  "weblyvra_audio_neon_lifecycle_regression_20261022": {
+    "status": "SOURCE_EXECUTABLE_CI_PASS_17_OF_17_IPHONE_HOST_PENDING",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "receipt": "WEBLyvra/deployment/AUDIO_NEON_LIFECYCLE_REGRESSION_2026-10-22.json",
+    "receipt_blob": "b28e1c4cee66204264c279d75c3e9a38554d8278",
+    "test_blob": "7615bc686bc3b7e3c9ca3c0b4062092e5dbd3339",
+    "source_blob": "7d3f2418762a70369f78b72e41fd3347666d98a7",
+    "ci_run": 39806552524,
+    "ci_passed": 17,
+    "ci_failed": 0,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-lifecycle-ci-20261022-r03",
+    "source_runtime_unchanged": true,
+    "iphone_host": "PENDING",
+    "whole_rehydration_this_round": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
   }
 }
