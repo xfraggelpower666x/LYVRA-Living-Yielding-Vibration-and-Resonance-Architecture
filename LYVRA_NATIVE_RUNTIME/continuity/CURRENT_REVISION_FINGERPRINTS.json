@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "98d8d51d7f6f7e12f12b04faef930c62141d813a",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "94fc6c2269d03ec53a3fb98a6d2c4ec653bee47c",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1940,5 +1940,16 @@
     "fresh_host": "NOT_VERIFIED",
     "other_carriers": "PRESERVED",
     "recovery": "lyvra-recovery-pre-post-codeforge-escalation-20261022-r01"
+  },
+  "codeforge_linguistic_logic_20261022": {
+    "status": "SCOPED_FACET_CONTRACT_BLOB_REBIND",
+    "scope": "POST_ONLY_GERMAN_CODEFORGE_LINGUISTIC_AND_EXECUTABLE_DEVELOPMENT",
+    "carrier": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "carrier_blob": "94fc6c2269d03ec53a3fb98a6d2c4ec653bee47c",
+    "non_target_carriers": "PRESERVED",
+    "tests": "SEMANTIC_CONTRADICTION_AMBIGUITY_NEGATIVE_AND_POSITIVE_CASES_DESCRIBED_NOT_EXECUTED",
+    "plugin_release_change": false,
+    "host_acceptance": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-codeforge-linguistic-logic-20261022-r01"
   }
 }
