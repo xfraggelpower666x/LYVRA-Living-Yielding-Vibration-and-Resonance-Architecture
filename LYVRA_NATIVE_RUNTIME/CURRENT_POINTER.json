@@ -6696,5 +6696,29 @@
     "recovery_branch": "lyvra-recovery-pre-facet-to-whole-learning-20261022-r01",
     "body_commit": "ced41991418d226f1eff6fb1d7666a706474f21c",
     "pointer_last": true
+  },
+  "irl_link_first_chat_retrieval_20261023": {
+    "status": "CURRENT_IRL_SOURCE_METHOD_INTEGRATED_POINTER_LAST_PLUGIN_HOST_ACCEPTANCE_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "facet": "INTELLIGENT_RESEARCH_AND_LEARNING",
+    "learning_ledger": "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json",
+    "ledger_blob": "d90590948845700a3327229be0ea7a13423cf370",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "1f27abce72c101cd376387c9335ee4aac383ba24",
+    "source_url": "https://chatgpt.com/share/6ada8977-3aec-83ed-9982-360bfcf3544c",
+    "source_evidence": "USER_SHARED_PUBLIC_CHAT_RETRIEVED_AND_ANALYZED_IN_CURRENT_SESSION",
+    "conclusion": "LINK_FIRST_WHEN_AUTHORIZED_REACHABLE_AND_COMPLETE_FOR_SCOPED_CHAT_ANALYSIS",
+    "counterrelation": "LINK_NE_DURABLE_BACKUP_OR_GITHUB_CURRENT_AUTHORITY",
+    "fallback": "VERIFIED_EXPORT_OR_BACKUP_IF_SOURCE_INCOMPLETE_OR_RECOVERY_NEEDS_BYTES",
+    "recovery_branch": "lyvra-recovery-pre-irl-link-first-20261023-r01",
+    "base_head": "7059dca7dac4196bbb1409fb8503c7077174fe83",
+    "ledger_commit": "0a1858c4fb1c0156f131b67f1d298343ea39b9bd",
+    "fingerprint_commit": "89b7e23da01fc1ee527f737d9851386e8c64ad61",
+    "no_new_router": true,
+    "no_new_facet": true,
+    "foreign_system_mutation": false,
+    "plugin_parity": "NOT_VERIFIED",
+    "fresh_host": "NOT_VERIFIED",
+    "pointer_last": true
   }
 }
