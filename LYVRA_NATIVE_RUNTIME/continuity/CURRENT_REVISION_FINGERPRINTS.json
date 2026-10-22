@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_CRITICAL_CARRIER_FINGERPRINTS_RECONCILED",
+  "status": "CURRENT_PARTIAL_CARRIER_REVALIDATION_FULL_REGISTRY_REHASH_NOT_PERFORMED",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
   "freshness_epoch": "2026-10-14-MOBILE-CUSTOM-TITLE-AND-RENDER-FEEDBACK",
   "whole_revision": 242,
@@ -8,10 +8,10 @@
   "critical_carriers": {
     "LYVRA_NATIVE_RUNTIME/current/thinking/CODEFORGE_TECHNICAL_SELF_UNDERSTANDING.md": "e5ae05bed19bfef3612ada3e0ed533da0d23a28f",
     "LYVRA_NATIVE_RUNTIME/current/thinking/THINKING_CONTINUITY.md": "16bc26bf0f27ce490445d830240c357a0f118700",
-    "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md": "d8267025c2ad08c36948cb2879c90003f64d5995",
+    "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md": "f554792af584fabc3d893e01b3bba24326cbb893",
     "LYVRA_NATIVE_RUNTIME/current/specialists/SPECIALIST_CONTINUITY.md": "69d7a10aa605c7dc1579db99a24ae063009d767c",
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md": "db8a09aacfd29a837d07f7bc8e3a21049f2adc44",
-    "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "7584c112ff8817b0ad676ecf6dcb0f635ff63ecc",
+    "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "eb0f0cab0a7bfd6487df17202c6e1d27d1af7601",
     "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md": "e6c51293d72b56ebc24b8a1e217804da285695de",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md": "783860c266e92cfc65bd613b7eb23a5026f44353",
     "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json": "8e94e0f93db9bb882bbe953f0d5318870fcd5aed",
@@ -97,7 +97,7 @@
     "lyvra-plugin/account/releases/v0.13.16/PROVENANCE.json": "0987e1af78c2a00ce4aa650102841df807f27e56",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md": "0330b4536738516ed496e410cf8459de28713cc3",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md": "cf387193faf226876fe52be352a946740d333840",
-    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "c55575e341c1c1ca8584d06822af5ef351c351a4",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1",
     "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md": "7b556e46a881b38e9a6da5290c46c14ac224f7cd",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md": "048f6e780c2fc8709d95fbc931d04da286606d69",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md": "423de4024e6db4e074b4d9ee30dffaa3231cc286",
@@ -216,7 +216,7 @@
     "LYVRA_PET/FINAL_STATUS.json": "e29b2295b54c4fd21ba5eedee0d8379dd8bb3d68",
     "LYVRA_PET/worker/build/worker-bundle.mjs": "9146676bf56a70ccbc29b48210f6c935cf9ece85",
     "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json": "3a0b4fc948597cd149e22c178b854a9ced6f3356",
-    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "67650f23706a5bfaf5ead2115cf53d4cd7a10495",
+    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "c78d4409de5ad9f80c916af1fb0d69e0acac7ff7",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_PARITY_2026-10-14.json": "2f5e2aba24d6253c5546633d53b36a306b41b547",
     "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json": "47533eb154aa3920a24a57e7523d07864520e954",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json": "713a2f97b370890d36c112af85fc6ae32f75dd55",
@@ -1765,5 +1765,30 @@
     "alive_release": "0.13.72",
     "other_facets": "UNCHANGED",
     "prior_carriers": "PRESERVED"
+  },
+  "scoped_binding_reconciliation_2026_10_22": {
+    "scope": "WHOLE_LYVRA_READ_ONLY_EVIDENCE_FOLLOWUP_FOUR_BINDINGS",
+    "source_head_before_write": "3883515e09ae2999430249bf8ec2ca816bafddba",
+    "prechange_recovery_branch": "lyvra-recovery-pre-whole-fingerprint-scope-20261022-r01",
+    "verified_current_blobs": {
+      "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md": "f554792af584fabc3d893e01b3bba24326cbb893",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "eb0f0cab0a7bfd6487df17202c6e1d27d1af7601",
+      "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "c78d4409de5ad9f80c916af1fb0d69e0acac7ff7",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1"
+    },
+    "previous_fingerprint_blobs": {
+      "LYVRA_NATIVE_RUNTIME/current/operations/OPERATIONS_CENTER.md": "d8267025c2ad08c36948cb2879c90003f64d5995",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md": "7584c112ff8817b0ad676ecf6dcb0f635ff63ecc",
+      "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "67650f23706a5bfaf5ead2115cf53d4cd7a10495",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "c55575e341c1c1ca8584d06822af5ef351c351a4"
+    },
+    "validated_count": 4,
+    "full_registry_carrier_count": 226,
+    "remaining_carriers_not_rehashed": true,
+    "existing_freshness_epoch_preserved_as_historical_marker": true,
+    "plugin_impact": "METADATA_ONLY_NO_PLUGIN_SKILL_OR_RUNTIME_SOURCE_CHANGE",
+    "host_acceptance": "NOT_VERIFIED",
+    "non_target_carriers": "PRESERVED_UNCHANGED",
+    "no_foreign_mutation": true
   }
 }
