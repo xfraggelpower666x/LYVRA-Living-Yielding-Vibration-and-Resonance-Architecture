@@ -233,7 +233,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
     "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json": "6c26204133b4d47e1d98d763701ff096104ddd70",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json": "d6bd15af03bc32ece64611ec7eace931b3742559",
-    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "94fc6c2269d03ec53a3fb98a6d2c4ec653bee47c",
+    "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md": "f179d93572980e8931be7be9eb8c15c026201188",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md": "a13376283683cd78ec498b11c17162ef19ba6d8f",
     "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md": "47419b7063a31d3c6ffab498c185fa024d02c92c"
   },
@@ -1951,5 +1951,19 @@
     "plugin_release_change": false,
     "host_acceptance": "NOT_VERIFIED",
     "recovery": "lyvra-recovery-pre-codeforge-linguistic-logic-20261022-r01"
+  },
+  "family_mail_task_currentness_20261022": {
+    "status": "SOURCE_CONTRACT_BINDING",
+    "task_id": "6ad3034a97c08191a1a76e830d4f32b5",
+    "source": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "source_blob": "f179d93572980e8931be7be9eb8c15c026201188",
+    "task_host": "VERIFIED_ENABLED_2026_10_22T16_01_54Z",
+    "last_run": "2026-10-22T16:01:32.322054Z",
+    "run_success": "NOT_INFERRED",
+    "notifications_enabled": false,
+    "scope": "GERMAN_READ_ONLY_FAMILY_TASK",
+    "no_task_mutation": true,
+    "non_target_carriers": "PRESERVED",
+    "recovery": "lyvra-recovery-pre-task-currentness-check-20261022-r01"
   }
 }
