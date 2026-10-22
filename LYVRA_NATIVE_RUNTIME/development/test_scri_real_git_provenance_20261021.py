@@ -34,9 +34,12 @@ class RealGitProvenance(unittest.TestCase):
         for path in files:
             self.assertEqual(git("cat-file", "-t", "HEAD:" + path), "blob")
 
-    def test_production_ref_is_a_real_commit_object(self):
-        # Fetch explicit commit object in CI with checkout fetch-depth 0 and remote branch refs.
-        self.assertEqual(git("cat-file", "-t", self.remote_prod), "commit")
+    def test_production_ref_is_a_real_remote_branch(self):
+        # The remote can advance after checkout. ls-remote proves the branch points to a SHA,
+        # not that this moving SHA is already present in the local Git object store.
+        self.assertEqual(len(self.remote_prod), 40)
+        self.assertTrue(all(c in "0123456789abcdef" for c in self.remote_prod))
+        self.assertEqual(git("ls-remote", "--exit-code", "origin", "refs/heads/lyvra").split()[0], self.remote_prod)
 
     def test_recovery_documents_are_blobs_not_restore_anchors(self):
         entries = git("ls-tree", "-r", "HEAD", RECOVERY_DIR + "/").splitlines()
