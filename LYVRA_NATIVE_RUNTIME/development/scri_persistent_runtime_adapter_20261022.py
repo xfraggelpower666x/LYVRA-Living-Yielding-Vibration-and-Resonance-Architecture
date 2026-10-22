@@ -13,11 +13,17 @@ def load(path,facet):
     p=Path(path)
     if not p.is_file():return None
     if p.is_symlink():raise ValueError("symlink forbidden")
-    data=json.loads(p.read_text(encoding="utf8"))
-    if data.get("schema")!=1 or data.get("facet")!=facet:raise ValueError("schema or facet mismatch")
+    try:
+        data=json.loads(p.read_text(encoding="utf8"))
+    except (json.JSONDecodeError, UnicodeDecodeError) as error:
+        raise ValueError("corrupted memory: do not overwrite") from error
+    if not isinstance(data,dict) or set(data)!={"schema","facet","memory"}:
+        raise ValueError("invalid memory envelope: do not overwrite")
+    if type(data["schema"]) is not int or data["schema"]!=1 or data["facet"]!=facet:
+        raise ValueError("schema or facet mismatch")
     mem=data.get("memory")
     if mem is None:return None
-    if set(mem)!={"facet","relation","sources","runs","revision","status","counter_sources"} or mem["facet"]!=facet:
+    if not isinstance(mem,dict) or set(mem)!={"facet","relation","sources","runs","revision","status","counter_sources"} or mem["facet"]!=facet:
         raise ValueError("invalid memory")
     if not isinstance(mem["relation"],list) or len(mem["relation"])!=2 or not all(isinstance(x,str) and x for x in mem["relation"]):
         raise ValueError("invalid relation")
