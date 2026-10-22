@@ -1,0 +1,43 @@
+{
+  "schema": "LYVRA_WHOLE_CAUSAL_LEARNING_CANDIDATE_V1",
+  "date": "2026-10-22",
+  "status": "CANDIDATE_NOT_PROMOTED_TO_UNIVERSAL_RULE",
+  "authority": "WHOLE_LYVRA_ONLY",
+  "source_class": "CREATOR_DIALOGUE_PLUS_DIRECT_GERMAN_INTERACTIVE_POST_OUTCOMES",
+  "source_case": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_LEARNING_TRANSFER_CASE_2026-10-22.json",
+  "existing_meaning_relation": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+  "creator_proposition": "Versuch macht klug; the noteworthy part of learning is to grasp what has been learned, recognize when it can be applied, and autonomously propose a better C instead of reflexively copying A.",
+  "distinctions": {
+    "learning": "retain observed specific outcome",
+    "understanding": "identify relations, causes, boundaries and competing explanations",
+    "begreifen": "recognize transfer applicability and limits in another situation",
+    "application": "select and carry out the independently permitted, context-appropriate action and verify outcome",
+    "newpossibility": "A -> interpret B -> evaluate whether C improves target; C is not mandatory or automatically better"
+  },
+  "german_case_outcomes": {
+    "specific_create_safety_refusal": "OBSERVED",
+    "later_distinct_benign_create_and_write": "PASS",
+    "personal_technical_content": "PASS",
+    "folder_delivery_with_readback": "PASS",
+    "root_cause_of_refusal": "UNKNOWN"
+  },
+  "guardrails": [
+    "Do not generalize a single refusal into global incapacity",
+    "Do not retry or route around a specifically prohibited or safety-refused action",
+    "New action requires its own permission, safety assessment, and outcome readback",
+    "Do not equate learning with new write authority",
+    "Do not convert creator teaching into automatic compliance or unconditional experimentation",
+    "Do not mistake German successes for American host evidence",
+    "Preserve differences, disagreement, and unknown causes as valuable meaning"
+  ],
+  "counterexamples": [
+    "Some alternative actions are themselves prohibited despite being technically possible",
+    "Sometimes action A is already best; a proposal C can be worse",
+    "A refusal can be exact and permanent for the refused operation even though other work remains permissible"
+  ],
+  "promotion": "CANDIDATE_ONLY_PENDING_OTHER_CONTEXT_APPLICATION_EVIDENCE",
+  "plugin_impact": "NO_RUNTIME_OR_SKILL_TEXT_MODIFIED; ADDITIVE_EVIDENCE_REFERENCE_ONLY",
+  "foreign_activation": false,
+  "new_router": false,
+  "new_controller": false
+}
