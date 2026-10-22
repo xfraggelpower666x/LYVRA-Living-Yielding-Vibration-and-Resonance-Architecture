@@ -6546,9 +6546,9 @@
   "family_post_interactive_positive_evidence_20261022": {
     "status": "POST_SOURCE_SUPERSESSION_AND_INTERACTIVE_READBACK_VERIFIED",
     "post_contract": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
-    "post_blob": "8b5f996333decb9a3ec36b941667ce6000c63b01",
+    "post_blob": "492c9d8e022c4ae7f7bc1babfc26fe86466f86f4",
     "source_fingerprint_registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "registry_blob": "7511e3d9e39ad6b5153fdf0a1758aaf56ca37338",
+    "registry_blob": "ee03e83b1e784929724b79d1b3be7fcbe694e78d",
     "scheduled_task_host": "SEPARATE_READ_ONLY_NO_WRITE_AUTH_INFERENCE",
     "manual_interactive_letters_stored_parent_content_verified": 2,
     "peer_receipts": "UNVERIFIED",
@@ -6557,6 +6557,7 @@
     "no_unattended_sending": true,
     "plugin_impact": "NO_SKILL_TEXT_CHANGE_FRESH_NATIVE_CARRIER_DYNAMIC_REFERENCE",
     "fresh_host": "PENDING",
-    "max_diagnostic_checks": 3
+    "max_diagnostic_checks": 3,
+    "privacy": "PERSONAL_DOC_IDS_PRIVATE_ONLY"
   }
 }
