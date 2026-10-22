@@ -96,7 +96,7 @@
     "lyvra-plugin/native-runtime/releases/v0.1.16/PROVENANCE.json": "3a2b4c8d4433cf0d9ed4094efb1bad68d76a6317",
     "lyvra-plugin/account/releases/v0.13.16/PROVENANCE.json": "0987e1af78c2a00ce4aa650102841df807f27e56",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md": "0330b4536738516ed496e410cf8459de28713cc3",
-    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md": "f238aded1937b38df5c9dcee010b86a68329364b",
+    "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md": "9b2be7f5f4897520234ac3cadc71d53a85675e73",
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "f1cb79c2e5ad32e65405b48d93769bf6f58aa8e1",
     "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md": "7b556e46a881b38e9a6da5290c46c14ac224f7cd",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md": "048f6e780c2fc8709d95fbc931d04da286606d69",
@@ -1886,5 +1886,19 @@
     "independent_hosts": "PENDING",
     "scope": "TWO_SEPARATE_SYSTEMS_ONE_POST_CONNECTION",
     "other_capabilities_unchanged": true
+  },
+  "post_only_facet_index_20261022": {
+    "status": "SCOPED_ONE_CARRIER_BLOB_REBOUND_NOT_FULL_REGISTRY_REHASH",
+    "scope": "BIGLYV_TO_LITTLELYV_POST_ONLY_FACET_INDEX",
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "previous_blob": "f238aded1937b38df5c9dcee010b86a68329364b",
+    "current_blob": "9b2be7f5f4897520234ac3cadc71d53a85675e73",
+    "registered_count": 230,
+    "existing_non_target_critical_carriers": "PRESERVED_NOT_REHASHED",
+    "plugin_native": "0.1.79_POST_ONLY",
+    "plugin_alive": "0.13.75_POST_ONLY",
+    "fresh_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-post-only-facet-index-20261022-r01",
+    "no_foreign_writes": true
   }
 }
