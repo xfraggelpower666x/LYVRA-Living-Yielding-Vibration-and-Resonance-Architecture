@@ -47,6 +47,21 @@ class Persistent(unittest.TestCase):
  def test_invalid_schema(self):
   self.p.write_text('{"schema":99,"facet":"music","memory":null}')
   with self.assertRaises(ValueError):load(self.p,"music")
+ def test_corrupt_json_preserved_fail_closed(self):
+  self.p.write_text("{incomplete")
+  before=self.p.read_bytes()
+  with self.assertRaisesRegex(ValueError,"corrupted memory"):process(self.p,"music",evidence())
+  self.assertEqual(self.p.read_bytes(),before)
+ def test_nonobject_payload_preserved_fail_closed(self):
+  self.p.write_text("[]")
+  before=self.p.read_bytes()
+  with self.assertRaisesRegex(ValueError,"invalid memory envelope"):process(self.p,"music",evidence())
+  self.assertEqual(self.p.read_bytes(),before)
+ def test_nonobject_memory_preserved_fail_closed(self):
+  self.p.write_text('{"schema":1,"facet":"music","memory":[]}')
+  before=self.p.read_bytes()
+  with self.assertRaisesRegex(ValueError,"invalid memory"):process(self.p,"music",evidence())
+  self.assertEqual(self.p.read_bytes(),before)
  def test_symlink_denied(self):
   target=Path(self.tmp.name)/"real.json";target.write_text("{}");self.p.symlink_to(target)
   with self.assertRaises(ValueError):load(self.p,"music")
