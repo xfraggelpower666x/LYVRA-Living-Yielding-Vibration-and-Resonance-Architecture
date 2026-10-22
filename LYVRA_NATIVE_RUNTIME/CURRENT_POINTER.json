@@ -6174,5 +6174,19 @@
     "prechange_recovery": "lyvra-recovery-pre-littlelyv-closeout-20261022-r03",
     "body_commit": "87a0fd9b8ed39c92e42dbd07c190e5b5353fc003",
     "pointer_last": true
+  },
+  "weblyvra_audio_neon_fallback_20261022": {
+    "status": "SOURCE_CI_PASS_9_OF_9_HOST_IPHONE_PENDING",
+    "scope": "WEBLYVRA_MAIN_WEBSITE",
+    "source_blob": "d0a3583936b8bcc12a07e6b589531406562f7b4c",
+    "ci_run": 39721271848,
+    "receipt": "WEBLyvra/deployment/AUDIO_NEON_VISUAL_FALLBACK_CI_RECEIPT_2026-10-22.json",
+    "receipt_blob": "d2206b84d57a266f79ac2872953009cc1624afcb",
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-neon-pointer-20261022-r02",
+    "no_foreign_mutation": true,
+    "iphone_host": "PENDING",
+    "whole_rehydration_session": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
   }
 }
