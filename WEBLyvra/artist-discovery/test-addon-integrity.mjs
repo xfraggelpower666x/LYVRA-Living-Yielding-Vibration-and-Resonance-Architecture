@@ -62,6 +62,9 @@ assert.ok(html.includes('SoundCloud: 45 Alben/Sets und 122 eigenständige Tracks
 assert.ok(html.includes('SoundCloud: 45 albums/sets and 122 separate tracks/mixes'),'English SoundCloud count regressed');
 assert.ok(!html.includes('Suno: 418')&&!html.includes('Suno: 436')&&!html.includes('SoundCloud: 30'),'obsolete count restored');
 assert.ok(html.includes('LIVE ON WEBLYVRA')&&html.includes('AUF WEBLYVRA LIVE'),'live standalone classification missing');
+assert.ok(html.includes('Dieses eigenständige Add-on ist über WEBLyvra live erreichbar'),'German footer must reflect productive standalone deployment');
+assert.ok(html.includes('This standalone add-on is live on WEBLyvra'),'English footer must reflect productive standalone deployment');
+assert.ok(!html.includes('Diese Vorschau ist unabhängig von der produktiven LYVRA-Webseite.')&&!html.includes('This preview is separate from the production LYVRA website.'),'obsolete standalone preview copy restored');
 assert.ok(html.includes('grState.filter=key')&&html.includes('aria-pressed'),'reach filters must update pressed state');
 assert.ok(html.includes("const source=[...grPlatforms,...grProducts]"),'ranking has lost indexed platforms and curated products');
 assert.ok(html.includes("w.level+' '+item.level+'/3"),'ranking accessibility provenance label missing');
