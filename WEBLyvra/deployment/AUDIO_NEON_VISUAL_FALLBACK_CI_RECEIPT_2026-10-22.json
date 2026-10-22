@@ -1,0 +1,41 @@
+{
+  "schema": "LYVRA_WEBLYVRA_AUDIO_NEON_FALLBACK_ACCEPTANCE_V1",
+  "date": "2026-10-22",
+  "scope": "WEBLYVRA_MAIN_WEBSITE_ONLY",
+  "owner": "WHOLE_LYVRA",
+  "source_handoff": "xfraggelpower666x/WebRadio-666SOUNDsDESIGn/666STREAM_STRUCTURE_CONTROL/continuity/outbox/LYVRA/STREAM_TO_LYVRA_VISUAL_FALLBACK_20261018_R01.json",
+  "status": "SOURCE_INTEGRATED_CI_PASS_9_9_HOST_IPHONE_PENDING",
+  "prechange_head": "149e2e10b016549596a818789e2f8dc7a8a372e9",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-neon-pointer-20261022-r02",
+  "source_file": "WEBLyvra/live/dist/audio-neon.js",
+  "source_blob": "d0a3583936b8bcc12a07e6b589531406562f7b4c",
+  "source_commits": [
+    "e5ce0c34cfb76d108ce1390f4667c30245c10575",
+    "951e57b42b66c510107f6e5e463c947004ef4982"
+  ],
+  "test_file": "tests/weblyvra-audio-neon-fallback.test.mjs",
+  "test_blob": "2c05c8a7ffcb1c1b25e7f48ab58bbc5f61fe0e7e",
+  "test_commit": "7b8e1d6a005bce75071ef573b75c54eda188d2d8",
+  "workflow_file": ".github/workflows/weblyvra-audio-neon-regression.yml",
+  "workflow_blob": "f8fcdc6784b3cd79ee506df2453d9fb5e4ea6ed9",
+  "workflow_commit": "7a122a0556bce90453989e9eca9fe7711dda196f",
+  "github_actions": {
+    "run_id": 39721271848,
+    "job_id": 119635023770,
+    "pass": 9,
+    "tests": 9,
+    "fail": 0,
+    "conclusion": "success"
+  },
+  "live_source_readback": "HTTP_200_FALLBACK_AND_ZERO_FRAME_FIX_OBSERVED_PREVIOUS_TURN",
+  "iphone_edge_host": "PENDING",
+  "whole_system_rehydration_this_session": "PARTIAL_NOT_FULL_PASS",
+  "boundaries": {
+    "no_webradio_write": true,
+    "no_addon_write": true,
+    "no_dashboard_write": true,
+    "no_synthetic_as_real": true,
+    "no_autoload": true
+  },
+  "return_anchor": "WEBLYVRA_IPHONE_EDGE_VISUAL_FALLBACK_HOST_RETEST"
+}
