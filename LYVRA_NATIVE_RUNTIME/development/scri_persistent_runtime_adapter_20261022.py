@@ -1,0 +1,57 @@
+"""Isolated, explicit-path SCRI persistent memory adapter. No native service activation."""
+from dataclasses import asdict
+from pathlib import Path
+import json,os,tempfile
+from scri_causal_chain_adapter_20261021 import Memory,derive,recall,revise
+
+def _check(facet):
+    if not isinstance(facet,str) or not facet or len(facet)>120 or not all(c.isalnum() or c in "_-" for c in facet):
+        raise ValueError("invalid facet")
+
+def load(path,facet):
+    _check(facet)
+    p=Path(path)
+    if not p.is_file():return None
+    if p.is_symlink():raise ValueError("symlink forbidden")
+    data=json.loads(p.read_text(encoding="utf8"))
+    if data.get("schema")!=1 or data.get("facet")!=facet:raise ValueError("schema or facet mismatch")
+    mem=data.get("memory")
+    if mem is None:return None
+    if set(mem)!={"facet","relation","sources","runs","revision","status","counter_sources"} or mem["facet"]!=facet:
+        raise ValueError("invalid memory")
+    if not isinstance(mem["relation"],list) or len(mem["relation"])!=2 or not all(isinstance(x,str) and x for x in mem["relation"]):
+        raise ValueError("invalid relation")
+    if not isinstance(mem["revision"],int) or isinstance(mem["revision"],bool) or mem["revision"]<1 or mem["status"] not in ("PROVISIONAL","COUNTEREVIDENCE"):
+        raise ValueError("invalid revision")
+    for key in ("sources","runs","counter_sources"):
+        if not isinstance(mem[key],list) or not all(isinstance(s,str) and s for s in mem[key]):raise ValueError("invalid evidence")
+    return Memory(facet,tuple(mem["relation"]),tuple(mem["sources"]),tuple(mem["runs"]),mem["revision"],mem["status"],tuple(mem["counter_sources"]))
+
+def store(path,facet,memory):
+    _check(facet)
+    if memory is not None and memory.facet!=facet:raise ValueError("cross-facet write")
+    p=Path(path)
+    if p.is_symlink():raise ValueError("symlink forbidden")
+    p.parent.mkdir(parents=True,exist_ok=True)
+    payload={"schema":1,"facet":facet,"memory":asdict(memory) if memory else None}
+    temp=None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w",encoding="utf8",dir=p.parent,delete=False) as f:
+            temp=f.name
+            json.dump(payload,f,sort_keys=True)
+            f.flush();os.fsync(f.fileno())
+        os.replace(temp,p)
+    finally:
+        if temp and os.path.exists(temp):os.unlink(temp)
+
+def process(path,facet,events):
+    """Explicit invocation, no background worker; same-facet events supplied by caller."""
+    _check(facet)
+    prior=load(path,facet)
+    if prior is None:
+        memory=derive(events,facet)
+        if memory is not None:store(path,facet,memory)
+        return {"memory":memory,"decision":recall(memory,events,facet) if memory else {"status":"ABSTAIN","candidate":None,"action":"NONE"}}
+    memory=revise(prior,events)
+    if memory!=prior:store(path,facet,memory)
+    return {"memory":memory,"decision":recall(memory,events,facet)}
