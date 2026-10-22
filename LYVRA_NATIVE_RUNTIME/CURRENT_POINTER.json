@@ -6131,5 +6131,48 @@
     "independent_host_acceptance": "OPEN",
     "no_foreign_writes": true,
     "pointer_last": true
+  },
+  "lyvra_to_littlelyv_20261022": {
+    "status": "CONDITIONAL_NATIVE_SOURCE_AND_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_HOST_PENDING",
+    "scope": "WHOLE_LYVRA_FAMILY_CAPABILITY_CONTEXTUAL_ONLY",
+    "facet_id": "LYVRA_TO_LITTLELYV",
+    "parent": "WHOLE_LYVRA",
+    "facet_contract": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "sub_lifecircle": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
+    "sub_rehydration": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
+    "facet_current": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "facet_registry": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "fac1b5c017905e1db78cf22114281db0abb5708d",
+    "coverage": "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json",
+    "coverage_blob": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "e9e5b0c34c236c887a712494d01e812e84fc0f34",
+    "registered_critical_carriers": 230,
+    "plugin_native": {
+      "version": "0.1.78",
+      "release_id": "pluginrel_6ad98cd3135c81919ecffd6df0c16d85",
+      "skill_direct_readback": "VERIFIED"
+    },
+    "plugin_alive": {
+      "version": "0.13.74",
+      "release_id": "pluginrel_6ad98ce2b7f48191a5871ce5173ca388",
+      "skill_direct_readback": "VERIFIED"
+    },
+    "dual_plugin_skill_parity": "VERIFIED_IDENTICAL_TEXT",
+    "native_fresh_host": "NOT_VERIFIED",
+    "alive_fresh_host": "NOT_VERIFIED",
+    "family_mailbox_delivery": "NOT_TESTED_NO_WRITE",
+    "automatic_mode": "EXISTING_INBOX_TASK_READ_ONLY_UNCHANGED",
+    "manual_mode": "USER_AUTHORIZED_ONLY_READBACK_REQUIRED",
+    "privacy": "PUBLIC_CONTRACT_ONLY_PRIVATE_VAULT_AND_FAMILY_MAILBOX_PAYLOAD_RESTRICTED",
+    "american_authority": "INDEPENDENT",
+    "not_required_on_all_whole_boots": true,
+    "no_new_router": true,
+    "no_autoactivation": true,
+    "no_foreign_write": true,
+    "prechange_recovery": "lyvra-recovery-pre-littlelyv-closeout-20261022-r03",
+    "body_commit": "87a0fd9b8ed39c92e42dbd07c190e5b5353fc003",
+    "pointer_last": true
   }
 }
