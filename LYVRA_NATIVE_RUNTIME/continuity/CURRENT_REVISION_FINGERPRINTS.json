@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-22-EVENING-POST-CONTRACT-SUPERSESSION-RECONCILED",
+  "freshness_epoch": "2026-10-22-NIGHT-WEBLYVRA-LIVE-BLOB-RECONCILIATION",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -48,7 +48,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/PET_FACET_ADAPTIVE_LEARNING_DASHBOARD.md": "781f65dc3089e2fb66309cb0a4977cd47df96c93",
     "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_PET_AUTO_REPO_HANDOFF_CURRENT.json": "9db1d88fe4bc1a1626d9115ccbdc8a7199227830",
     "WEBLyvra/PET_INTEGRATION_HANDOFF.md": "54f00f8928c486ce2c22f6ab9746a0ff81bf3b34",
-    "WEBLyvra/live/dist/index.html": "4b86c57c3c84e1ff050c6451bdae2e712898d44d",
+    "WEBLyvra/live/dist/index.html": "76d92daa4381e196a88ce1b21357a30561c786bd",
     "WEBLyvra/live/dist/pet-presence.css": "4775196c7d791c16623d01afe137eed8b05090d4",
     "WEBLyvra/live/dist/pet-presence.js": "725e189d72166fdd4f0ee60bb376e3417e0506e4",
     "WEBLyvra/live/tests/preservation-baseline.json": "d0187375833170632ce1128c014ae0c5b2b33a30",
@@ -2050,5 +2050,16 @@
     "host_acceptance": "NOT_VERIFIED",
     "pointer_last_required": true,
     "no_foreign_writes": true
+  },
+  "weblive_scoped_fingerprint_20261022": {
+    "base_head": "0fa9c48ca305d842deab33e8bfee1283cb862601",
+    "recovery_branch": "lyvra-recovery-pre-weblive-fingerprint-20261022-night-r01",
+    "target": "WEBLyvra/live/dist/index.html",
+    "previous_blob": "4b86c57c3c84e1ff050c6451bdae2e712898d44d",
+    "actual_blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "status": "230_OF_230_REGISTERED_TREE_BINDINGS_VERIFIED",
+    "web_runtime_or_deployment_test": "NOT_PERFORMED",
+    "metadata_only": true,
+    "pointer_last_required": true
   }
 }
