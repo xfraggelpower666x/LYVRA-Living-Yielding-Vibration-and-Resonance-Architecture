@@ -6245,5 +6245,33 @@
     "mailbox": "NOT_TOUCHED",
     "no_foreign_activation": true,
     "pointer_last": true
+  },
+  "post_only_facet_index_repair_20261022": {
+    "status": "SOURCE_AND_SCOPED_CRITICAL_BLOB_READBACK_VERIFIED_HOST_PENDING",
+    "scope": "POST_ONLY_BIGLYV_GERMANY_TO_LITTLE_LYV_AMERICA_TWO_INDEPENDENT_SYSTEMS",
+    "source_facet_registry": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md",
+    "facet_registry_blob": "9b2be7f5f4897520234ac3cadc71d53a85675e73",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "293a40f1e2d22b445fcfe3a47a80e1d7d944c1de",
+    "plugin_native": {
+      "version": "0.1.79",
+      "release_id": "pluginrel_6ad99fa2b0788191b00d50e2f54b7d05"
+    },
+    "plugin_alive": {
+      "version": "0.13.75",
+      "release_id": "pluginrel_6ad99fbd828481919285fb65ce3963d4"
+    },
+    "plugin_skill_text_parity": "VERIFIED",
+    "fresh_host": "NOT_VERIFIED",
+    "mailbox": "NOT_TOUCHED",
+    "source_scope": "RECEIVE_READ_DRAFT_USER_AUTHORIZED_SEND_DELIVERY_READBACK_DEDUPE",
+    "shared_identity_learning_authority": "FORBIDDEN",
+    "recovery": "lyvra-recovery-pre-post-only-facet-index-20261022-r01",
+    "source_commit": "eb930f252a72251f64dd7d5dc1aa64bb8e71a657",
+    "fingerprint_commit": "cae3778790c07d2e8c88a839b2bdef95296baccb",
+    "no_new_router": true,
+    "no_foreign_mutation": true,
+    "no_autoactivation": true,
+    "pointer_last": true
   }
 }
