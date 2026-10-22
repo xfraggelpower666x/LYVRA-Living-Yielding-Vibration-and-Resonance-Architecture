@@ -100,7 +100,7 @@ if (panel && layer) {
     if (!enabled && !userOverride && data.playing) { enabled = true; configure(); }
     lastLevelsAt = performance.now();
     if (synthetic) fallbackStates.set(frame, { ...data, received: lastLevelsAt });
-    else { states.set(frame, { ...data, received: lastLevelsAt }); if (!data.playing) fallbackStates.delete(frame); }
+    else states.set(frame, { ...data, received: lastLevelsAt });
     render();
   });
   frames.forEach(frame => frame.addEventListener('load', () => { states.delete(frame); fallbackStates.delete(frame); subscribe(frame); render(); }));
