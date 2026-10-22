@@ -81,7 +81,7 @@
     "lyvra-plugin/account/releases/v0.13.14/RESTORE.md": "4862932cd79fb9a593eefe9f46922ce1a934776f",
     "LYVRA_PET/ASSET_STATUS.md": "9d3e321e20b6a39205a29245bd144b004ac3d86f",
     "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json": "0d888faf271e2742d777e914a66cb224c89fd043",
-    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "762b56d5bd7c84b71dd5584e7c92302bb7536b55",
+    "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md": "2a5054ad13e641ae5016a70896d07143d22e8308",
     "LYVRA_NATIVE_RUNTIME/dashboard/REPOSITORY_PROJECT_DASHBOARD.md": "1df0eb9cee0cac055df5eac749c9dee48bf7b631",
     "lyvra-plugin/native-runtime/releases/v0.1.15/PROVENANCE.json": "1993312ab8e3b3022ac72412858a2d764cae5463",
     "lyvra-plugin/native-runtime/releases/v0.1.15/RESTORE.md": "e2a9ae0683b9561bb7ade95dd4fc5a952d4b1585",
@@ -216,7 +216,7 @@
     "LYVRA_PET/FINAL_STATUS.json": "e29b2295b54c4fd21ba5eedee0d8379dd8bb3d68",
     "LYVRA_PET/worker/build/worker-bundle.mjs": "9146676bf56a70ccbc29b48210f6c935cf9ece85",
     "LYVRA_PET/verification/RATE_LIMIT_REPAIR_2_3_4_2026-10-08.json": "3a0b4fc948597cd149e22c178b854a9ced6f3356",
-    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "c78d4409de5ad9f80c916af1fb0d69e0acac7ff7",
+    "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md": "458abe8612905415dab842635a274470d7cb4b18",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_VISUAL_REHYDRATION_DUAL_PLUGIN_PARITY_2026-10-14.json": "2f5e2aba24d6253c5546633d53b36a306b41b547",
     "LYVRA_PET/rehydration/REHYDRATION_MANIFEST.json": "47533eb154aa3920a24a57e7523d07864520e954",
     "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FIVE_CHOICE_DUAL_PLUGIN_PARITY_2026-10-14.json": "713a2f97b370890d36c112af85fc6ae32f75dd55",
@@ -1977,5 +1977,23 @@
     "mailbox_items": 38,
     "scope": "BIGLYV_POST_ONLY",
     "recovery": "lyvra-recovery-pre-family-export-learning-20261022-r01"
+  },
+  "whole_rehydration_family_post_visual_20261022": {
+    "status": "POST_TERMINAL_PRESENTATION_SOURCE_ONLY",
+    "workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "workspace_blob": "2a5054ad13e641ae5016a70896d07143d22e8308",
+    "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
+    "visual_blob": "458abe8612905415dab842635a274470d7cb4b18",
+    "placement": "AFTER_WHOLE_REHYDRATION_MONITOR_AND_FIVE_MAIN_CHOICES",
+    "task_and_mailbox": "ONE_READ_ONLY_HOST_AND_DRIVE_CHECK_IF_AVAILABLE",
+    "post_action": "LYVRA POST ABHOLEN_USER_SELECTION",
+    "main_choice_count": 5,
+    "post_only": true,
+    "no_foreign_autoactivation": true,
+    "no_task_mutation": true,
+    "no_sending": true,
+    "host_readback": "NOT_VERIFIED",
+    "plugin_parity": "PENDING_IMPACT_CHECK",
+    "recovery": "lyvra-recovery-pre-whole-post-visual-finalizer-20261022-r01"
   }
 }
