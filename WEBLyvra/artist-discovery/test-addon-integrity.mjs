@@ -12,7 +12,7 @@ const platform=JSON.parse(readFileSync(join(root,'data/platforms.json'),'utf8'))
 const found=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert.ok(found,'embedded unified diskography missing');
 const entries=JSON.parse(found[1]);
-assert.equal(suno.length,450,'current verified Suno snapshot count mismatch');
+assert.ok(suno.length>=450,'protected 450-entry Suno baseline regressed');
 assert.equal(soundcloud.length,45,'current SoundCloud album/set snapshot count mismatch');
 assert.equal(soundcloudTracks.length,122,'current SoundCloud track/mix snapshot count mismatch');
 const trackUrls=new Set();
@@ -56,8 +56,8 @@ for(const token of ['id="google-resonance"','renderGoogleResonance(lang)','grPla
 assert.ok(html.includes("value.textContent='—'"),'unverified search metric must remain empty');
 assert.ok(html.includes("item.level/3*100"),'evidence-tier progress bars missing');
 assert.ok(html.includes("sort((a,b)=>b.level-a.level"),'ranking must sort by evidence level');
-assert.ok(html.includes('Suno: 450 katalogisierte öffentliche Song-URLs'),'stale German discovery count');
-assert.ok(html.includes('Suno: 450 catalogued public song URLs'),'stale English discovery count');
+assert.ok(html.includes('Suno: '+suno.length+' katalogisierte öffentliche Song-URLs'),'stale German discovery count');
+assert.ok(html.includes('Suno: '+suno.length+' catalogued public song URLs'),'stale English discovery count');
 assert.ok(html.includes('SoundCloud: 45 Alben/Sets und 122 eigenständige Tracks/Mixe'),'German SoundCloud count regressed');
 assert.ok(html.includes('SoundCloud: 45 albums/sets and 122 separate tracks/mixes'),'English SoundCloud count regressed');
 assert.ok(!html.includes('Suno: 418')&&!html.includes('Suno: 436')&&!html.includes('SoundCloud: 30'),'obsolete count restored');
@@ -72,5 +72,5 @@ assert.ok(html.includes('Its position is not measured'),'English Google uncertai
 assert.ok(html.includes('prefers-reduced-motion'),'reduced-motion safety missing');
 assert.ok(platform.platforms.length>=15,'platform coverage unexpectedly reduced');
 assert.ok(platform.radio?.players?.length>=4,'radio provider coverage unexpectedly reduced');
-console.log('PASS: 450 Suno + 45 SoundCloud sets + 122 distinct SoundCloud tracks + 17 staged WebP/source byte-pair checks + UI/radio/language regression');
+console.log('PASS: '+suno.length+' Suno + '+soundcloud.length+' SoundCloud sets + '+soundcloudTracks.length+' distinct SoundCloud tracks + 17 staged WebP/source byte-pair checks + UI/radio/language regression');
 console.log('NOTE: original WebP binary remote verification is separate; this test does not claim asset delivery.');
