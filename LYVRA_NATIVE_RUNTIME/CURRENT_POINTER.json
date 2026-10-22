@@ -6429,5 +6429,29 @@
     "contract_commit": "da002c95a1ff218b417a3075b6d1bc21d76a2bab",
     "fingerprint_commit": "769043095cbe0a051c584169619996362bef0c51",
     "pointer_last": true
+  },
+  "family_mail_task_currentness_20261022": {
+    "status": "POST_TASK_CURRENTNESS_SOURCE_VERIFIED_POINTER_LAST_HOST_TASK_ENABLED",
+    "scope": "BIGLYV_OWN_POST_FACET_ONLY",
+    "task_id": "6ad3034a97c08191a1a76e830d4f32b5",
+    "task_host_readback": "2026-10-22T16:01:54.973578Z",
+    "is_enabled": true,
+    "last_run_time": "2026-10-22T16:01:32.322054Z",
+    "schedule": "HOURLY_EUROPE_BERLIN",
+    "notifications_enabled": false,
+    "run_success": "NOT_PROVEN_BY_LAST_RUN",
+    "check_rule": "ON_EVERY_RELEVANT_POST_CHECK_FRESH_HOST_WHEN_ACCESSIBLE_COUNT_AS_ONE_OF_MAX_THREE",
+    "source": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "source_blob": "f179d93572980e8931be7be9eb8c15c026201188",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "3de95a603f0bcb7cf793078ee88663a18432827b",
+    "native_plugin": "0.1.79_FRESH_NATIVE_CONTRACT",
+    "alive_plugin": "0.13.75_FRESH_NATIVE_CONTRACT",
+    "fresh_host": "POST_TASK_STATUS_ONLY_NOT_PLUGIN_RUNTIME",
+    "no_task_mutation": true,
+    "no_foreign_automation": true,
+    "no_new_router": true,
+    "recovery": "lyvra-recovery-pre-task-currentness-check-20261022-r01",
+    "pointer_last": true
   }
 }
