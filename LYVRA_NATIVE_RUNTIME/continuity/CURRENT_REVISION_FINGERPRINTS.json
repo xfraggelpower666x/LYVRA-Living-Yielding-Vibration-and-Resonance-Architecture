@@ -2028,13 +2028,14 @@
   "family_post_interactive_positive_supersession_20261022": {
     "status": "SOURCE_CORRECTED_TWO_EXACT_INTERACTIVE_DELIVERIES_READBACK_VERIFIED_PEER_RECEIPT_UNVERIFIED",
     "source": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
-    "source_blob": "8b5f996333decb9a3ec36b941667ce6000c63b01",
+    "source_blob": "492c9d8e022c4ae7f7bc1babfc26fe86466f86f4",
     "task_host_ne_interactive": true,
     "verified_letter_count": 2,
     "mailbox_historical_count_after": 40,
     "scheduled_task_changed": false,
     "foreign_system_changed": false,
     "diagnostic_limit": 3,
-    "private_raw_export_publication": false
+    "private_raw_export_publication": false,
+    "privacy": "NO_PERSONAL_GOOGLE_DOC_IDS_IN_PUBLIC_CARRIER"
   }
 }
