@@ -2349,5 +2349,46 @@
     "capability_boundary": "POST_RECEIVE_READ_DRAFT_AUTHORIZED_SEND_DELIVERY_DEDUPE_ONLY",
     "forbid_shared_intelligence_memory_lifecycle_or_peer_control": true,
     "plugin_text_parity": "DIRECT_SKILL_READBACK_IDENTICAL"
+  },
+  "track_design_freshboot_mode_device_maininput_20261023": {
+    "status": "DEV_CANDIDATE_SOURCE_BINDING_HOST_NOT_VERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "owner": "WHOLE_LYVRA",
+    "required_current_paths": [
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_WORK_MODES_AND_CONTEXT_ISOLATION.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md",
+      "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md"
+    ],
+    "gap_receipt": "LYVRA_NATIVE_RUNTIME/development/TRACK_DESIGN_FRESHBOOT_MODE_DEVICE_MAININPUT_GAP_20261023.md",
+    "modes": [
+      "SOURCE_MODE",
+      "DISCOVERY_MODE_LEARNING_BY_DOING"
+    ],
+    "devices": [
+      "IPHONE_APP",
+      "IPHONE_SAFARI_BROWSER",
+      "PC_BROWSER"
+    ],
+    "iphone_app_supplemental_main_input": {
+      "status": "CONDITIONAL_CREATOR_VALIDATED_EXPERIMENTAL",
+      "limit_characters": 3000,
+      "additive": true,
+      "does_not_replace": [
+        "TITLE",
+        "EXTENDED",
+        "STYLE",
+        "LYRICS_STRUCTURE",
+        "OPTIONAL_MY_TASTE"
+      ],
+      "not_assumed_for": [
+        "IPHONE_SAFARI_BROWSER",
+        "PC_BROWSER"
+      ]
+    },
+    "fresh_chat_acceptance": "PENDING",
+    "native_alive_plugin_parity": "PENDING",
+    "other_facets": "UNCHANGED",
+    "production_promotion": "NOT_PERFORMED"
   }
 }
