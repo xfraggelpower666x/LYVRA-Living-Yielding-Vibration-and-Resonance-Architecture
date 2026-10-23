@@ -92,3 +92,10 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - Distinguish **desired central data governance** from **actual per-file/per-folder Google Drive ownership**. A screenshot of the currently opened shared family folder displayed Erin as `Eigentümer`, whereas the owner specifies FraggelPower as intended owner. This is an unresolved discrepancy, not evidence that Google ownership has changed.
 - Before any ownership-sensitive operation, inspect authoritative current Drive metadata for the exact target folder/files and account context; do not infer ownership from collaborator list, user intent, or the email on an OAuth token. No transfer, permission mutation, or additional folder creation without explicit authorization and verified capability.
 - Family identities remain Germany Dad + Big LyvRa, America Mum + Little Lyv. Technical login addresses and collaborator permissions never imply additional people.
+
+## Distinct host login vs Google data identity (2026-10-23, user clarified)
+- The Germany owner's ChatGPT account is authenticated via **Apple**, NOT via the Google account.
+- The central Google account `fraggelpower666@googlemail.com` is separately used for the owner's Drive data ownership/governance, subject to per-folder metadata verification; secondary owner-controlled Google addresses are collaborators.
+- Google OAuth consent/Drive connector identity and ChatGPT host login must remain independent security principals. A ChatGPT Apple sign-in neither proves nor grants Google Drive access.
+- Erin has a separate account and grants; no assumption that she logs in to ChatGPT with Google. Her ChatGPT login method is **not established** and must not be inferred.
+- Senders are logical family roles mapped to separately authorized clients and secrets; NEVER automatically infer a sender from an Apple login, Gmail address, or Google OAuth identity alone.
