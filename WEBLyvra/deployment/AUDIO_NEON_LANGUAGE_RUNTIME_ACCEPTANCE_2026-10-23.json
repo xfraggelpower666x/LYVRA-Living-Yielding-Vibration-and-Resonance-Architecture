@@ -1,0 +1,42 @@
+{
+  "schema": "WEBLYVRA_AUDIO_NEON_DE_EN_RUNTIME_ACCEPTANCE_V1",
+  "date": "2026-10-23",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "owner": "WHOLE_LYVRA",
+  "status": "SOURCE_CI_PASS_22_OF_22_IPHONE_HOST_PENDING",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-de-en-22ci-closeout-20261023-r03",
+  "prechange_head": "ccfedf471695eeced1b41aa76f3a9a9281e59a56",
+  "test": {
+    "path": "tests/weblyvra-audio-neon-fallback.test.mjs",
+    "blob": "a2505ba54c7fd6d3d2a567634ad4f7702ed687dd",
+    "commit": "d92f0a4a0ee7adb57c6867bd1e2917c12db1ba57",
+    "new_cases": 2,
+    "behavior": [
+      "synthetic fallback DE to EN updates status and meter aria label",
+      "real audio DE EN DE and pause preserve semantic labels"
+    ]
+  },
+  "receiver": {
+    "path": "WEBLyvra/live/dist/audio-neon.js",
+    "blob": "34fe1ca239701cd281a1041d0507d2d1ffc44114",
+    "unchanged": true
+  },
+  "ci": {
+    "run_id": 39909562014,
+    "job_id": 120269129865,
+    "passed": 22,
+    "failed": 0,
+    "total": 22,
+    "conclusion": "success",
+    "evidence": "PRIOR_INDEPENDENT_GITHUB_ACTIONS_JOB_LOG_READBACK"
+  },
+  "boundaries": {
+    "no_addon_write": true,
+    "no_productive_code_write": true,
+    "no_webradio_write": true,
+    "no_dashboard_write": true
+  },
+  "iphone_host": "PENDING",
+  "whole_system_rehydration": "PARTIAL",
+  "return_anchor": "WEBLYVRA_NEON_LANGUAGE_HOST_ACCEPTANCE"
+}
