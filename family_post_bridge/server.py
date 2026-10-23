@@ -66,7 +66,7 @@ def do_write(letter: Letter) -> dict:
         f"trashed = false and '{folder_id}' in parents and "
         f"appProperties has {{ key='family_post_message_id' and value='{letter.message_id}' }}"
     )
-    existing = service.files().list(q=query, fields="files(id,name,mimeType),nextPageToken",page_size=2).execute().get("files",[])
+    existing = service.files().list(q=query, fields="files(id,name,mimeType),nextPageToken",pageSize=2).execute().get("files",[])
     if existing:
         doc = existing[0]
         return {"state": "STORED_PREVIOUSLY", "file_id": doc["id"], "message_id": letter.message_id, "read_confirmed": False}
