@@ -80,16 +80,17 @@ function runReceiver() {
     performance: { now: () => clock },
     setInterval(fn) { intervalTick = fn; return 1; },
     clearInterval() { intervalTick = null; },
-    console
+    console,
+    language: 'de'
   };
-  vm.runInNewContext(source.replace(/^import \{ getLanguage \} from '\.\/i18n\.js';/, "const getLanguage = () => 'de';"), runtime, { filename: 'audio-neon.js' });
+  vm.runInNewContext(source.replace(/^import \{ getLanguage \} from '\.\/i18n\.js';/, 'const getLanguage = () => language;'), runtime, { filename: 'audio-neon.js' });
   const dispatch = (data, options = {}) => {
     events.get('window:message')?.({ origin: options.origin ?? origin, source: options.source ?? frame.contentWindow, data });
   };
   const bands = { bass: .35, mid: .42, high: .24, energy: .36 };
   const synthetic = () => ({ type: 'lyvra:audio:visual-fallback', mode: 'synthetic', version: 1, playing: true, ...bands });
   const real = (sequence, playing = true, energy = .65) => ({ type: 'lyvra:audio:levels', version: 1, sequence, playing, bass: energy, mid: energy, high: energy, energy });
-  return { dispatch, status, layer, meter, synthetic, real, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); }, motion, document, changeMotion(value) { motion.matches = value; events.get('motion:change')?.(); }, changeVisibility(hidden) { document.hidden = hidden; events.get('document:visibilitychange')?.(); } };
+  return { dispatch, status, layer, meter, synthetic, real, changeLanguage(lang) { runtime.language = lang; events.get('document:lyvra:languagechange')?.(); }, setClock(n) { clock = n; intervalTick?.(); }, toggle() { events.get('element:click')?.(); }, motion, document, changeMotion(value) { motion.matches = value; events.get('motion:change')?.(); }, changeVisibility(hidden) { document.hidden = hidden; events.get('document:visibilitychange')?.(); } };
 }
 test('runtime: trusted synthetic frame activates visibly disclosed fallback', () => {
   const x = runReceiver();
@@ -187,4 +188,25 @@ test('source: both DE and EN explicitly distinguish genuine, synthetic and no da
   assert.match(source, /Synthetic visual levels, not audio reactive/);
   assert.match(source, /Real audio levels: bass, mids and highs/);
   assert.match(source, /Neon level display: no current real audio data/);
+});
+
+test('runtime: switching to English during active synthetic fallback updates status and accessible meter immediately', () => {
+  const x = runReceiver();
+  x.toggle();
+  x.dispatch(x.synthetic());
+  x.changeLanguage('en');
+  assert.match(x.status.textContent, /Visual fallback/);
+  assert.match(x.meter.attributes['aria-label'], /Synthetic visual levels/);
+  assert.doesNotMatch(x.meter.attributes['aria-label'], /Real audio levels:/);
+});
+test('runtime: DE-EN-DE toggle during actual audio and subsequent pause stays semantically accurate', () => {
+  const x = runReceiver();
+  x.dispatch(x.real(1, true, .6));
+  x.changeLanguage('en');
+  assert.match(x.status.textContent, /Audio reactive/);
+  assert.match(x.meter.attributes['aria-label'], /Real audio levels:/);
+  x.dispatch(x.real(2, false, 0));
+  assert.match(x.meter.attributes['aria-label'], /no current real audio data/);
+  x.changeLanguage('de');
+  assert.match(x.meter.attributes['aria-label'], /keine echten Audiodaten/);
 });
