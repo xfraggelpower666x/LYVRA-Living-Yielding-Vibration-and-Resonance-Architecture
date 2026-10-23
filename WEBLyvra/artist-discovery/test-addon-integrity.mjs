@@ -94,6 +94,10 @@ assert.ok(!html.includes("listing.setAttribute('aria-live','polite')"),'duplicat
 for(const token of ["const focusedReachFilter=document.activeElement?.closest?.('#google-resonance .gr-filter button')?.dataset.reachFilter","button.dataset.reachFilter=key","if(focusedReachFilter)filters.querySelector('[data-reach-filter=\"'+focusedReachFilter+'\"]')?.focus({preventScroll:true})"]){
  assert.ok(html.includes(token),'reach keyboard focus must survive language changes: '+token);
 }
+// Preserve exact external source/search link focus when a DE/EN change rebuilds the ranking.
+for(const token of ["const focusedReachLink=document.activeElement?.closest?.('#google-resonance .gr-item a')","const focusedReachHref=focusedReachLink?.href","focusedReachLink?.classList.contains('gr-search-check')?'search':'source'","link.href===focusedReachHref","replacement?.focus({preventScroll:true})"]){
+ assert.ok(html.includes(token),'reach source/search keyboard focus regression: '+token);
+}
 assert.ok(!html.includes("anchor.setAttribute('aria-label',item.label+"),'release source link should announce its visible name only, not repeat the evidence tier');
 assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
 assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
