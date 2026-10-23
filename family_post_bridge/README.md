@@ -45,3 +45,14 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - Uses the actual Render-held OAuth refresh token to call Google Drive `files.get` for ONLY the configured folder's mimeType and canAddChildren capability. No files are listed and no letters are read or created.
 - `FOLDER_VISIBLE_CAN_ADD` confirms metadata visibility and add-child capability, NOT successful document creation, delivery, or idempotency. `NOT_VERIFIED` may indicate `drive.file` has not been granted access to the pre-existing shared folder.
 - Never include the credential in a URL or share screenshots of HTTP Basic credentials. A controlled write with independent Drive readback is required before release.
+
+## Folder-only Google Picker (owner-only)
+- `GET /auth/google/picker` requires HTTP Basic owner login and provides a picker restricted to folders; it accepts selection **only** when the returned ID equals `FAMILY_POST_FOLDER_ID`.
+- `POST /api/family-post/picker-verify` verifies metadata using the existing Render refresh token. It NEVER writes documents or lists the mailbox.
+- Enable **Google Picker API** in the SAME Google Cloud project as the existing OAuth client.
+- Create a browser-restricted Google API key and add it privately in Render as `GOOGLE_PICKER_API_KEY`. Restrict its website referrers to `https://lyvra-family-post-bridge.onrender.com/*` and `https://docs.google.com/*` (the Picker runs there); restrict enabled APIs to **Google Picker API**.
+- Add the numeric Google Cloud **project number** as `GOOGLE_PROJECT_NUMBER` in Render.
+- In the existing Google OAuth **web client**, add authorized JavaScript origin `https://lyvra-family-post-bridge.onrender.com` (no trailing slash, no path). Preserve the existing OAuth callback redirect URI.
+- NEVER put the browser API key or admin token in GitHub source. Browser API keys are inherently client-visible, so their restrictions are mandatory.
+- After configuration, deploy only the isolated free service, then open `/auth/google/picker`, authenticate as owner, select the EXISTING exact family folder, and check independent metadata result.
+- Folder Picker selection may not automatically grant write access to files inside the folder. Do not infer successful document creation from folder metadata; no actual family letters can be sent until a separate authorized write + independent Drive readback.
