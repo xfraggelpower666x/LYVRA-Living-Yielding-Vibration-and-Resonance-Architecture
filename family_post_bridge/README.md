@@ -105,3 +105,10 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - This is Erin's separate Google email and her separate ChatGPT account; it does **not** prove that ChatGPT's underlying login provider is Google OAuth or that any connector authorization is already installed.
 - Germany owner ChatGPT remains Apple-authenticated; Germany's separate data owner Google account remains `fraggelpower666@googlemail.com`.
 - America connector enrollment must take place under Erin's own account with her own explicit one-time authorization. Do not treat the Germany owner's connected session as authority over Erin's ChatGPT connection.
+
+## Private account map reference (no PII in public source)
+- Account-identity and authorization mapping lives in the **separate private** repository `LYVRA-PRIVATE-VAULT`, path `family-post/LYVRA_FAMILY_ACCOUNT_IDENTITY_MAP_20261023.json`, schema `lyvra.family-post.account-identity-map.v1`.
+- This is a **reference**, not a public copy: access requires independently verified private-repo permission.
+- The authoritative private card distinguishes Germany/America, ChatGPT account identity, Google Drive authorization and intended family roles; see the private record for details. Do not mirror addresses, account metadata, or permission lists into this public repository.
+- The card is a user-reported mapping, NOT proof of underlying host authentication/Drive ownership. Any unresolved ownership discrepancy is read-only and must not trigger permission changes.
+- The live Family Post Bridge does not read the private JSON automatically. Client integration requires an explicit authorized connection and independently confirmed runtime behavior.
