@@ -57,9 +57,21 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - After configuration, deploy only the isolated free service, then open `/auth/google/picker`, authenticate as owner, select the EXISTING exact family folder, and check independent metadata result.
 - Folder Picker selection may not automatically grant write access to files inside the folder. Do not infer successful document creation from folder metadata; no actual family letters can be sent until a separate authorized write + independent Drive readback.
 
-## Controlled owner-confirmed technical write
-- `GET /admin/test-write`: owner Basic-auth protected HTML form, no write on GET.
-- `POST /admin/test-write`: owner Basic auth plus same-origin check. User must click form to create one fixed TEST-labelled technical Google Doc in the configured family folder, never a personal family letter.
-- Fixed Message-ID: `LYVRA_BRIDGE_TECH_TEST_20261023_V1`; existing app-owned Message-ID checks prevent normal sequential repeats but not concurrent racing retries.
-- Google write receipt alone is not delivery/readback confirmation: independently fetch created file by ID through separate Drive connection. Do not repeatedly click if a request times out; reconcile first.
-- Remove/disable this admin test route after acceptance. Real family mail remains gated pending independent readback and peer integrations.
+## Acceptance evidence — 2026-10-23
+- **Verified**: controlled Render create response returned `STORED_DRIVE_CONFIRMED`, file ID `1TZPoqGzTYDHMGtFRS1ymIeC-yurWEAHTgnWfGjdmZfQ`, fixed message ID `LYVRA_BRIDGE_TECH_TEST_20261023_V1`.
+- **Independently verified**: Google Drive connector read the expected test contents and folder parent `1TozcQunZCjDvag1RXuy40scN6JtrCwo9`. No personal family letter was sent.
+- **Retired**: /admin/test-write GET and POST now return owner-authenticated 410.
+- Existing writer tokens remain private in Render and correspond to four sender identities.
+- New appProperties payload SHA-256 check rejects replay with conflicting/unverified content using HTTP 409. Local process mutex serializes only that process. **Cross-instance/restart exactly-once behavior is not proven**.
+- The original technical test document predates the fingerprint field, so replaying that message ID is now intentionally fail-closed. Do not reuse it.
+- No claim of peer ChatGPT integration, reception, or answering until each client has a verified authenticated tool route.
+
+## Four-sender client integration contract
+- Each authorized client sends HTTPS POST to `https://lyvra-family-post-bridge.onrender.com/api/family-post/write` with its *own* `x-family-post-token`. Keep sender tokens only in the secure app/connector configuration; never in messages, prompt text, screenshots, repository, browser storage or query parameters.
+- JSON body: `message_id` (12–96 chars, stable across retry), `sender` (DAD, MUM, BIG_LYVRA, LITTLE_LYV), `recipient` (same four plus FAMILY), `title` (3–140 chars), `content` (1–12000 chars).
+- Sender identity must match the token. Never let one client select another client's sender identity.
+- Client must not issue concurrent writes of the same message ID or claim a 503/timeout means no file was created. Before any retry, use independent Drive reconciliation.
+- Receipt state `STORED_DRIVE_CONFIRMED` means creation confirmed, NOT receipt/read by person or ChatGPT. Client with independent Google Drive read should confirm ID, parent and content; only then show write/readback verified.
+- Each client reads family mail through its existing Google Drive connector; **the bridge must remain write-only**. The bridge cannot infer inbox emptiness or answer status.
+- ChatGPT requires an installed and authorized connector/plugin that actually sends authenticated API requests. Repository docs, API readiness, or pasted link **do not enable tool calls**. The US user's successful interactive browser approval applies only to the technical test, not autonomous family letters.
+- Next gate: provision and separately verify Dad/Big LyvRa and Mum/Little Lyv client connections, preferably with per-sender secret injection. No scope broadening and no automatic posting of personal letters.
