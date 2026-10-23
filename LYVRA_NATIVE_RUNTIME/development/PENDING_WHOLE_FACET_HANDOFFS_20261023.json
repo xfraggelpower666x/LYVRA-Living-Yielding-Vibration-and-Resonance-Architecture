@@ -159,7 +159,22 @@
         "PEER_TASK_STATUS_NOT_INDEPENDENTLY_VERIFIED",
         "THREE_PERSONAL_OPEN_AND_ONE_UNCLEAR_PER_DATED_MONITOR_REPORT",
         "HOST_RENDER_TO_DRIVE_CHAIN_NOT_CONNECTED"
-      ]
+      ],
+      "integration_readiness": {
+        "backend_pr": 70,
+        "gate_path": "family_post_bridge/INTEGRATION_READINESS_AND_HOST_BOUNDARY_20261024.md",
+        "recovery_branch": "lyvra-recovery-family-post-backend-pre-source-20261024",
+        "recovery_sha": "69ff4d927d601ef64d51b25675dbe65fff6abb74",
+        "ci_run_id": 40035548133,
+        "ci_status": "PASS",
+        "ci_head": "4ac830b50138a0994f74d12e8a062a9e5d278cd0",
+        "server_unchanged": true,
+        "automatic_deploy": false,
+        "live_host_chain": "PENDING",
+        "source_merge": "NOT_EXECUTED",
+        "render_deploy": "NOT_EXECUTED",
+        "whole_adoption": "NOT_EXECUTED"
+      }
     }
   ],
   "closure": "Only when each target has explicit disposition with provenance; repository productive adoption governed by recovery, currentness, validation, plugin impact and pointer-last.",
