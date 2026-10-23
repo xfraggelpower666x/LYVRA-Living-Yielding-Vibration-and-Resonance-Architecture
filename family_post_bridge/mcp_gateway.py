@@ -6,7 +6,7 @@ Client-selected sender roles are intentionally not accepted. No extra service.
 import hmac
 import os
 
-from mcp.server.mcpserver import MCPServer
+from mcp.server import MCPServer
 from mcp.server.transport_security import TransportSecuritySettings
 from starlette.responses import JSONResponse
 from starlette.concurrency import run_in_threadpool
