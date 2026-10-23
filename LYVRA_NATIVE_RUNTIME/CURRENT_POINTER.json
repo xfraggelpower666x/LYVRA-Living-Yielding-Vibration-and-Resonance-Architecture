@@ -6938,5 +6938,35 @@
     "no_new_facet": true,
     "no_new_router": true,
     "pointer_last": true
+  },
+  "lyvra_two_plugin_post_skill_release_parity_20261023": {
+    "status": "NATIVE_POST_PLUGIN_BOTH_RELEASES_SOURCE_PARITY_PASS_FRESH_HOST_PENDING",
+    "base_head": "95669bb7cb62ca77624bcc50d184d444711ec613",
+    "post_state_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "post_state_blob": "8b94961adee2cc12ae4047b658e7b833dc7b3fc5",
+    "manifest_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "84e048e0b8c4769da0f46ecdb81893327ad2e7ee",
+    "fingerprints_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "c7226bbdf9689f3da1223196cad91f1ba6fb3d52",
+    "post_contract_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.80",
+      "release_id": "pluginrel_6adaf7b104448191936883db01f183a7"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.76",
+      "release_id": "pluginrel_6adaf7ca748c8191a2e06285370067ac"
+    },
+    "post_skill_text_equal": true,
+    "no_new_plugin_release_required": true,
+    "whole_plugin_binary_parity": "NOT_CLAIMED",
+    "fresh_host_execution": "NOT_VERIFIED",
+    "new_visual_leadership_semantic_parity": "SEPARATE_PENDING_FROM_CURRENT_POINTER",
+    "no_new_router": true,
+    "no_foreign_autoload": true,
+    "recovery": "lyvra-recovery-pre-post-dual-release-parity-20261023-r01",
+    "pointer_last": true
   }
 }
