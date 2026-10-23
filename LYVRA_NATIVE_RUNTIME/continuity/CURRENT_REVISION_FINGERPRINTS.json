@@ -2212,5 +2212,26 @@
     "manifest_blob": "18e997171e81eb9234a33ee57a8427be7c5720f1",
     "plugin": "UNVERIFIED",
     "fresh_host": "UNVERIFIED"
+  },
+  "lyvra_two_plugin_post_skill_release_parity_20261023": {
+    "status": "TWO_LIVE_PLUGIN_RELEASES_DIRECT_POST_SKILL_READBACK_EQUAL",
+    "post_state_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "post_state_blob": "8b94961adee2cc12ae4047b658e7b833dc7b3fc5",
+    "manifest_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "84e048e0b8c4769da0f46ecdb81893327ad2e7ee",
+    "native": {
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.80",
+      "release": "pluginrel_6adaf7b104448191936883db01f183a7"
+    },
+    "alive": {
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.76",
+      "release": "pluginrel_6adaf7ca748c8191a2e06285370067ac"
+    },
+    "post_skill_exact_text_equal": true,
+    "fresh_host": "UNVERIFIED",
+    "visual_latest_release_parity": "NOT_EVALUATED_SEPARATELY",
+    "recovery": "lyvra-recovery-pre-post-dual-release-parity-20261023-r01"
   }
 }
