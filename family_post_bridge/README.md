@@ -56,3 +56,10 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - NEVER put the browser API key or admin token in GitHub source. Browser API keys are inherently client-visible, so their restrictions are mandatory.
 - After configuration, deploy only the isolated free service, then open `/auth/google/picker`, authenticate as owner, select the EXISTING exact family folder, and check independent metadata result.
 - Folder Picker selection may not automatically grant write access to files inside the folder. Do not infer successful document creation from folder metadata; no actual family letters can be sent until a separate authorized write + independent Drive readback.
+
+## Controlled owner-confirmed technical write
+- `GET /admin/test-write`: owner Basic-auth protected HTML form, no write on GET.
+- `POST /admin/test-write`: owner Basic auth plus same-origin check. User must click form to create one fixed TEST-labelled technical Google Doc in the configured family folder, never a personal family letter.
+- Fixed Message-ID: `LYVRA_BRIDGE_TECH_TEST_20261023_V1`; existing app-owned Message-ID checks prevent normal sequential repeats but not concurrent racing retries.
+- Google write receipt alone is not delivery/readback confirmation: independently fetch created file by ID through separate Drive connection. Do not repeatedly click if a request times out; reconcile first.
+- Remove/disable this admin test route after acceptance. Real family mail remains gated pending independent readback and peer integrations.
