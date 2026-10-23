@@ -82,7 +82,10 @@ def _do_write_locked(letter: Letter) -> dict:
     existing = service.files().list(q=query, fields="files(id,name,mimeType,appProperties),nextPageToken",pageSize=2).execute().get("files",[])
     if existing:
         doc = existing[0]
-        recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")\n        if not recorded or not hmac.compare_digest(recorded, fingerprint):\n            raise HTTPException(409, "MESSAGE_ID_ALREADY_USED_OR_UNVERIFIED")\n        return {"state": "STORED_PREVIOUSLY", "file_id": doc["id"], "message_id": letter.message_id, "read_confirmed": False}
+        recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")
+        if not recorded or not hmac.compare_digest(recorded, fingerprint):
+            raise HTTPException(409, "MESSAGE_ID_ALREADY_USED_OR_UNVERIFIED")
+        return {"state": "STORED_PREVIOUSLY", "file_id": doc["id"], "message_id": letter.message_id, "read_confirmed": False}
     # Native Google Doc via text/plain import. Data is plain text, not executable markup.
     payload = (f"Sender: {letter.sender}\nRecipient: {letter.recipient}\nMessage-ID: {letter.message_id}\n\n{letter.content}\n").encode("utf-8")
     media = MediaInMemoryUpload(payload, mimetype="text/plain", resumable=False)
