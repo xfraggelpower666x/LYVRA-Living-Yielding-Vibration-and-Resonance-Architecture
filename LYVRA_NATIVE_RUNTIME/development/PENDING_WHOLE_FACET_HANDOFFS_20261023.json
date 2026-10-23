@@ -71,6 +71,25 @@
         "NO_NEW_UNNECESSARY_SERVICE",
         "INDEPENDENT_E2E_READBACK"
       ]
+    },
+    {
+      "id": "CODEFORGE_SUPERCODEFORGE_CONTEXTUAL_PAIRING_20261023",
+      "origin": "CREATOR_WHOLE_LYVRA_DEVELOPMENT_INTENT",
+      "targets": [
+        "WHOLE_LYVRA_CONTEXT_CLASSIFICATION",
+        "NATIVE_CODEFORGE",
+        "SUPERCODEFORGE"
+      ],
+      "scope": "DEVELOPMENT_ASSISTANCE_ONLY_BOTH_PASSIVE_DURING_NORMAL_USE",
+      "state": "CANDIDATE_PENDING_NATIVE_REVIEW",
+      "evidence": "Development-only contextual collaboration contract; native CodeForge and SuperCodeForge Current contracts separately read; host SuperCodeForge execution remains unverified",
+      "required_ack": [
+        "WHOLE_NATIVE_CAUSAL_REVIEW",
+        "FACET_RELEVANCE_AND_PLUGIN_IMPACT",
+        "NO_AUTONOMOUS_HOST_ACTION",
+        "NO_NEW_ROUTER",
+        "PRODUCTION_POINTER_LAST_IF_PROMOTED"
+      ]
     }
   ],
   "closure": "Only when each target has explicit disposition with provenance; repository productive adoption governed by recovery, currentness, validation, plugin impact and pointer-last.",
