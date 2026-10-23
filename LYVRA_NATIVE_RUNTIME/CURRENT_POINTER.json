@@ -6968,5 +6968,25 @@
     "no_foreign_autoload": true,
     "recovery": "lyvra-recovery-pre-post-dual-release-parity-20261023-r01",
     "pointer_last": true
+  },
+  "weblyvra_audio_neon_language_runtime_20261023": {
+    "status": "SOURCE_EXECUTABLE_CI_PASS_22_OF_22_IPHONE_HOST_PENDING",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "receipt": "WEBLyvra/deployment/AUDIO_NEON_LANGUAGE_RUNTIME_ACCEPTANCE_2026-10-23.json",
+    "receipt_blob": "7f67209c50f88faba8ad15c47a2458543157f6f8",
+    "test_commit": "d92f0a4a0ee7adb57c6867bd1e2917c12db1ba57",
+    "test_blob": "a2505ba54c7fd6d3d2a567634ad4f7702ed687dd",
+    "receiver_blob": "34fe1ca239701cd281a1041d0507d2d1ffc44114",
+    "ci_run": 39909562014,
+    "ci_job": 120269129865,
+    "ci_passed": 22,
+    "ci_failed": 0,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-de-en-22ci-closeout-20261023-r03",
+    "no_productive_code_mutation": true,
+    "no_addon_write": true,
+    "iphone_host": "PENDING",
+    "whole_system_rehydration": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_NEON_LANGUAGE_HOST_ACCEPTANCE"
   }
 }
