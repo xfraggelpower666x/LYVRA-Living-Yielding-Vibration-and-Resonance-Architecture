@@ -2190,5 +2190,19 @@
     "foreign_host": "NO_ACTION",
     "plugin_parity": "CURRENT_NEW_SOURCE_CHANGE_PENDING_REVIEW",
     "recovery_branch": "lyvra-recovery-pre-post-two-case-learning-20261023-r01"
+  },
+  "lyvra_whole_refresh_post_context_20261023": {
+    "status": "BODY_AND_MANIFEST_COMMIT_READBACK_PENDING_POINTER",
+    "post_state_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "post_state_blob": "492d40dbfcd6c8474b80cd669d6e7161ae36112d",
+    "post_contract_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_contract_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "whole_meaning_blob": "156a88fa1679147f9977d8c8bb6b95b278c8b85a",
+    "manifest_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "5035d9778b6897ffd745f30ab3a4a94fb0b24297",
+    "plugin_latest_verified_history": "NATIVE_0.1.79_ALIVE_0.13.75",
+    "plugin_new_semantics": "PENDING_NO_FALSE_PARITY",
+    "recovery": "lyvra-recovery-pre-whole-refresh-20261023-r01",
+    "scope": "POST_FACET_STATE_AND_WHOLE_CONTINUITY_ONLY"
   }
 }
