@@ -2148,5 +2148,13 @@
     "manifest_blob": "2e4afde010ae3f3ea484489fb2fafa567092cc71",
     "audio": "NOT_TESTED",
     "plugin": "READBACK_PENDING"
+  },
+  "track_design_contextual_output_route_20261023": {
+    "status": "SOURCE_READBACK_VERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "bridge_blob": "cc3504fd97f193d3581181bdc197fa0369ca75be",
+    "manifest_blob": "52b04c71ab7ecc21ed1a372d3695bea4b24a9c59",
+    "plugin": "PENDING",
+    "render_comparison": "OBSERVATIONAL_NO_CONTROLLED_AB"
   }
 }
