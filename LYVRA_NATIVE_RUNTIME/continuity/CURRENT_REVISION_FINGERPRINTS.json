@@ -2204,5 +2204,13 @@
     "plugin_new_semantics": "PENDING_NO_FALSE_PARITY",
     "recovery": "lyvra-recovery-pre-whole-refresh-20261023-r01",
     "scope": "POST_FACET_STATE_AND_WHOLE_CONTINUITY_ONLY"
+  },
+  "lyvra_visual_leadership_three_attempt_limit_20261023": {
+    "status": "SOURCE_READBACK_VERIFIED",
+    "scope": "WHOLE_LYVRA",
+    "meaning_blob": "9e1e25dc7109741ba87b2e3824642faa21f6a160",
+    "manifest_blob": "18e997171e81eb9234a33ee57a8427be7c5720f1",
+    "plugin": "UNVERIFIED",
+    "fresh_host": "UNVERIFIED"
   }
 }
