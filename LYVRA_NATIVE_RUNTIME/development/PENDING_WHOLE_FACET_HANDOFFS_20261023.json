@@ -122,7 +122,7 @@
         "NATIVE_VISUAL_GUIDANCE"
       ],
       "scope": "READ_ONLY_INBOX_AND_USER_AUTHORIZED_POST_WRITE_DRIVE_READBACK",
-      "state": "CANDIDATE_BACKEND_SEMANTIC_REVIEW_CI_PASS_HOST_PENDING",
+      "state": "BACKEND_SOURCE_MERGED_READBACK_PASS_HOST_AND_WHOLE_ADOPTION_PENDING",
       "source_pr": 70,
       "whole_handoff": "LYVRA_NATIVE_RUNTIME/handoffs/FAMILY_POST_INTELLIGENT_MONITOR_POST_WRITE_VISUAL_HANDOFF_20261024.md",
       "source_ci": {
@@ -171,10 +171,10 @@
         "server_unchanged": true,
         "automatic_deploy": false,
         "live_host_chain": "PENDING",
-        "source_merge": "NOT_EXECUTED",
+        "source_merge": "VERIFIED",
         "render_deploy": "NOT_EXECUTED",
         "whole_adoption": "NOT_EXECUTED",
-        "pr70": "READY_FOR_REVIEW_NOT_MERGED",
+        "pr70": "MERGED_AND_READBACK_VERIFIED",
         "actual_writer_contract_test": "SOURCE_COMPATIBILITY_GUARD_ADDED",
         "latest_ci": {
           "run_id": 40035983025,
@@ -184,7 +184,10 @@
         "live_backend_branch": "lyvra-family-post-bridge-free-20261023",
         "live_backend_source_head": "69ff4d927d601ef64d51b25675dbe65fff6abb74",
         "production_release_status": "NOT_DEPLOYED",
-        "host_connector": "NOT_CONNECTED"
+        "host_connector": "NOT_CONNECTED",
+        "source_merge_sha": "72a6bbbe7228997a6e41357efce177efa547eda4",
+        "target_writer_sha_unchanged": "1f432452b811fa41194a9da7d7c95e92c6086a4b",
+        "render_current_live_deploy": "dep-dbdre0m7bikc73869450"
       }
     }
   ],
