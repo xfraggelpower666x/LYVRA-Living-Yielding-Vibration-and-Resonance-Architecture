@@ -67,7 +67,7 @@ def create_role_server(role, write_callback):
         json_response=True,
         stateless_http=True,
         transport_security=TransportSecuritySettings(
-            allowed_hosts=[PUBLIC_HOST, PUBLIC_HOST + ":443"],
+            allowed_hosts=[PUBLIC_HOST, PUBLIC_HOST + ":*"],
             allowed_origins=["https://chatgpt.com", "https://chat.openai.com"],
         ),
     )
