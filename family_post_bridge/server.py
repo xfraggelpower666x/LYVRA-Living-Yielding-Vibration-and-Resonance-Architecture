@@ -33,7 +33,7 @@ class Letter(BaseModel):
 
 
 def configured() -> bool:
-    required = ("FAMILY_POST_WRITE_TOKEN", "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REFRESH_TOKEN", "FAMILY_POST_FOLDER_ID")
+    required = ("FAMILY_POST_TOKEN_DAD", "FAMILY_POST_TOKEN_MUM", "FAMILY_POST_TOKEN_BIG_LYVRA", "FAMILY_POST_TOKEN_LITTLE_LYV", "GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REFRESH_TOKEN", "FAMILY_POST_FOLDER_ID")
     return all(os.environ.get(k, "").strip() for k in required)
 
 
@@ -100,7 +100,7 @@ def write_letter(letter: Letter, x_family_post_token: str | None = Header(defaul
     # Intentionally returns no secret or user-specific configuration in errors.
     if not configured():
         raise HTTPException(status_code=503, detail="GOOGLE_WRITER_NOT_CONFIGURED")
-    token = os.environ["FAMILY_POST_WRITE_TOKEN"]
+    token = os.environ["FAMILY_POST_TOKEN_" + letter.sender]
     if not x_family_post_token or not hmac.compare_digest(x_family_post_token,token):
         raise HTTPException(status_code=401,detail="UNAUTHORIZED")
     try:
