@@ -10,6 +10,7 @@ import uuid
 from typing import Literal
 
 from fastapi import FastAPI, Header, HTTPException
+from family_post_bridge.oauth_setup import router as oauth_router
 from pydantic import BaseModel, Field
 from google.auth.transport.requests import Request as GoogleRequest
 from google.oauth2.credentials import Credentials
@@ -19,7 +20,8 @@ from googleapiclient.http import MediaInMemoryUpload
 
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 MAX_LETTER_CHARS = 12000
-app = FastAPI(title="LYVRA Family Post Bridge", version="0.2.0-write-gated", docs_url=None, redoc_url=None, openapi_url=None)
+app = FastAPI(title="LYVRA Family Post Bridge", version="0.3.0-oauth-gated", docs_url=None, redoc_url=None, openapi_url=None)
+app.include_router(oauth_router)
 
 
 class Letter(BaseModel):
