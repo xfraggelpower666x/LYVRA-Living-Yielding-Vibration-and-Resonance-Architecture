@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-22-NIGHT-WEBLYVRA-LIVE-BLOB-RECONCILIATION",
+  "freshness_epoch": "2026-10-24-FOUR-BINDING-RECONCILIATION",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -242,9 +242,9 @@
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "POST_POINTER_VERIFIED_COMPLETE",
   "codeforge_review_required": true,
-  "registry_population_status": "230_OF_230_REGISTERED_CRITICAL_CARRIERS_MATCH_VERIFIED_GITHUB_TREE_AT_BASE_HEAD",
+  "registry_population_status": "231_OF_231_REGISTERED_CRITICAL_CARRIERS_MATCH_POST_FOUR_BINDING_READBACK",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 230,
+  "verified_carrier_count": 231,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
