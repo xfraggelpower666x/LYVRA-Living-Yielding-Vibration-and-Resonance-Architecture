@@ -2349,5 +2349,23 @@
     "capability_boundary": "POST_RECEIVE_READ_DRAFT_AUTHORIZED_SEND_DELIVERY_DEDUPE_ONLY",
     "forbid_shared_intelligence_memory_lifecycle_or_peer_control": true,
     "plugin_text_parity": "DIRECT_SKILL_READBACK_IDENTICAL"
+  },
+  "track_design_iphone_custom_duration_coherence_20261023": {
+    "status": "SOURCE_READBACK_VERIFIED_PLUGIN_HOST_PENDING",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+    "iphone_default": "PRO_6_CUSTOM_CREATOR_DNA",
+    "iphone_base_pro6": "OPTIONAL",
+    "duration_slider_custom": "NOT_AVAILABLE_CREATOR_REPORTED",
+    "duration_target_causally_coherent": [
+      "APPLICABLE_MAIN_INPUT",
+      "EXTENDED",
+      "STYLE",
+      "LYRICS_STRUCTURE"
+    ],
+    "field_visibility": "DEVICE_MODEL_CONTEXTUAL_NOT_INVENTED",
+    "audio_validation": "NOT_RENDERED",
+    "plugin_native_alive": "IMPACT_REVIEW_PENDING",
+    "other_facets": "UNCHANGED"
   }
 }
