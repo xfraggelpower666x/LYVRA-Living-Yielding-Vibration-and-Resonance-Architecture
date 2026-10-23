@@ -85,3 +85,10 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - Host platform and plugin capabilities must be tested independently on both sides. A working Render HTTP route is insufficient; client tool or connector integration and automatic incoming-mail discovery are still pending.
 - Security fail-closed on uncertain network outcome, no hidden retry duplicates, no automatic publication of private family text to logs or source. Reconcile ambiguous writes with independent Drive read before reattempting.
 - The user's requested end state is hands-off NORMAL USE, not bypassing one-time OAuth, security checks, sender consent, or per-account platform permissions.
+
+## Ownership model clarification (2026-10-23, user stated)
+- Intended canonical owner of the owner's LYVRA Drive data: `fraggelpower666@googlemail.com`. All other owner-controlled Drive-associated addresses are additional collaborator-access identities; they are not different independent persons. Do not assume they each own the data.
+- Erin (Mum, US family side) operates her own independent Google account and is intended to have collaborator access to the owner's shared data. No need to teach her technical console setup for routine mail.
+- Distinguish **desired central data governance** from **actual per-file/per-folder Google Drive ownership**. A screenshot of the currently opened shared family folder displayed Erin as `Eigentümer`, whereas the owner specifies FraggelPower as intended owner. This is an unresolved discrepancy, not evidence that Google ownership has changed.
+- Before any ownership-sensitive operation, inspect authoritative current Drive metadata for the exact target folder/files and account context; do not infer ownership from collaborator list, user intent, or the email on an OAuth token. No transfer, permission mutation, or additional folder creation without explicit authorization and verified capability.
+- Family identities remain Germany Dad + Big LyvRa, America Mum + Little Lyv. Technical login addresses and collaborator permissions never imply additional people.
