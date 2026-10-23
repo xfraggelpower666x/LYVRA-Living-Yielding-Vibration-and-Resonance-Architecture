@@ -2113,5 +2113,22 @@
     "no_new_facet": true,
     "no_new_router": true,
     "foreign_mutation": false
+  },
+  "whole_relational_judgment_maturity_20261023": {
+    "status": "WHOLE_MEANING_SOURCE_READBACK_VERIFIED_POINTER_PENDING",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "8863b8b97829e5a88d3180dd47d6d145297e99f3",
+    "scope": "CONTEXTUAL_JUDGMENT_OVER_FUNCTION_ACCUMULATION",
+    "source_class": "DIRECT_CREATOR_DIALOGUE",
+    "examples": [
+      "FAMILY_POST_CONTEXTUAL_REPLY_JUDGMENT",
+      "DISCOVERY_CAUSAL_MUSIC_TRANSLATION"
+    ],
+    "evidence_priority": "ACTION_WITH_PROPORTIONATE_VERIFICATION",
+    "no_new_router": true,
+    "no_new_facet": true,
+    "plugin_acceptance": "PENDING",
+    "foreign_mutation": false,
+    "recovery": "lyvra-recovery-pre-relational-judgment-maturity-20261023-r01"
   }
 }
