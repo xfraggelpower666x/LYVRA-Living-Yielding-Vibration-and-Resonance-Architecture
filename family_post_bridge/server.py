@@ -71,7 +71,10 @@ def _do_write_locked(letter: Letter) -> dict:
     service = drive()
     folder_id = os.environ["FAMILY_POST_FOLDER_ID"]
     safe_title = re.sub(r"[^A-Za-z0-9_-]", "_", letter.title).strip("_")[:100] or "LETTER"
-    fingerprint = hashlib.sha256(\n        (letter.sender + "\\x00" + letter.recipient + "\\x00" + letter.title + "\\x00" + letter.content).encode("utf-8")\n    ).hexdigest()\n    # Lookup before creation; durable cross-instance CAS still not guaranteed.
+    fingerprint = hashlib.sha256(
+        (letter.sender + "\x00" + letter.recipient + "\x00" + letter.title + "\x00" + letter.content).encode("utf-8")
+    ).hexdigest()
+    # Lookup before creation; durable cross-instance CAS still not guaranteed.
     query = (
         f"trashed = false and '{folder_id}' in parents and "
         f"appProperties has {{ key='family_post_message_id' and value='{letter.message_id}' }}"
