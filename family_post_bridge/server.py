@@ -4,6 +4,9 @@ Requires explicit Google user OAuth grant, private Render secrets, and a
 separate writer-token. Never treats stored = read or answered.
 """
 import hmac
+import hashlib
+import secrets
+import time
 import os
 import re
 import uuid
@@ -140,31 +143,82 @@ TEST_CONTENT = (
 )
 
 
+def _csrf_sign(base: str) -> str:
+    return hmac.new(
+        os.environ["FAMILY_POST_ADMIN_TOKEN"].encode(),
+        base.encode(), hashlib.sha256
+    ).hexdigest()
+
+
+def _test_csrf_token() -> str:
+    base = f"{int(time.time())}.{secrets.token_urlsafe(24)}"
+    return f"{base}.{_csrf_sign(base)}"
+
+
+def _test_csrf_valid(value: str | None) -> bool:
+    if not value:
+        return False
+    parts = value.split(".")
+    if len(parts) != 3 or not parts[0].isdigit():
+        return False
+    when, nonce, supplied = parts
+    if abs(time.time() - int(when)) > 600:
+        return False
+    return hmac.compare_digest(supplied, _csrf_sign(f"{when}.{nonce}"))
+
+
 @app.get("/admin/test-write", response_class=HTMLResponse)
 def technical_test_page(authorization: str | None = Header(default=None)):
     _authorize(authorization)
     if not configured():
         raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
+    csrf = _test_csrf_token()
     page = """<!doctype html><html lang="de"><head><meta charset="utf-8">
     <meta name="referrer" content="no-referrer"><title>LYVRA technical write check</title></head>
     <body><h1>LYVRA – einmaliger technischer Schreibtest</h1>
     <p>Dieser Vorgang schreibt ein ausdrücklich als TEST gekennzeichnetes Google-Dokument
     in den bestehenden Familienordner. Kein echter Familienbrief.</p>
-    <form method="post" action="/admin/test-write">
-      <button type="submit">Ein technisches Testdokument erstellen</button>
-    </form></body></html>"""
+    <button id="run">Ein technisches Testdokument erstellen</button>
+    <pre id="output" role="status"></pre>
+    <script>
+    const btn = document.getElementById('run');
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      document.getElementById('output').textContent = 'Schreibversuch gestartet – bitte nicht wiederholen.';
+      try {
+        const response = await fetch('/admin/test-write', {
+          method: 'POST', credentials: 'same-origin',
+          headers: {'X-Family-Test-CSRF': '__CSRF__'},
+        });
+        const result = await response.json();
+        document.getElementById('output').textContent = JSON.stringify(result, null, 2);
+      } catch (_) {
+        document.getElementById('output').textContent = 'Antwort unklar. Zuerst unabhängig in Google Drive abgleichen. Nicht erneut klicken.';
+      }
+    });
+    </script></body></html>""".replace("__CSRF__", csrf)
     return HTMLResponse(page, headers={
         "Cache-Control": "no-store",
-        "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+        "Content-Security-Policy": "default-src 'none'; script-src 'unsafe-inline'; connect-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'",
         "Referrer-Policy": "no-referrer",
     })
 
 
 @app.post("/admin/test-write")
-def technical_test_write(request: Request, authorization: str | None = Header(default=None)):
+def technical_test_write(
+    request: Request,
+    authorization: str | None = Header(default=None),
+    x_family_test_csrf: str | None = Header(default=None),
+):
     _authorize(authorization)
-    if request.headers.get("origin") != "https://lyvra-family-post-bridge.onrender.com":
+    origin = request.headers.get("origin")
+    if origin and origin != "https://lyvra-family-post-bridge.onrender.com":
         raise HTTPException(403, "ORIGIN_NOT_ALLOWED")
+    fetch_site = request.headers.get("sec-fetch-site")
+    if fetch_site and fetch_site != "same-origin":
+        raise HTTPException(403, "SITE_NOT_ALLOWED")
+    if not _test_csrf_valid(x_family_test_csrf):
+        raise HTTPException(403, "CSRF_TOKEN_REQUIRED")
     if not configured():
         raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
     letter = Letter(
