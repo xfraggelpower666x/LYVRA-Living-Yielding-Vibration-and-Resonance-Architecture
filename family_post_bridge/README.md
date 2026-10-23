@@ -99,3 +99,9 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - Google OAuth consent/Drive connector identity and ChatGPT host login must remain independent security principals. A ChatGPT Apple sign-in neither proves nor grants Google Drive access.
 - Erin has a separate account and grants; no assumption that she logs in to ChatGPT with Google. Her ChatGPT login method is **not established** and must not be inferred.
 - Senders are logical family roles mapped to separately authorized clients and secrets; NEVER automatically infer a sender from an Apple login, Gmail address, or Google OAuth identity alone.
+
+## America account identification (2026-10-23, stated by Erin via owner)
+- Mum (Erin) confirms her ChatGPT account is registered/signed in under `erinkay251@gmail.com`.
+- This is Erin's separate Google email and her separate ChatGPT account; it does **not** prove that ChatGPT's underlying login provider is Google OAuth or that any connector authorization is already installed.
+- Germany owner ChatGPT remains Apple-authenticated; Germany's separate data owner Google account remains `fraggelpower666@googlemail.com`.
+- America connector enrollment must take place under Erin's own account with her own explicit one-time authorization. Do not treat the Germany owner's connected session as authority over Erin's ChatGPT connection.
