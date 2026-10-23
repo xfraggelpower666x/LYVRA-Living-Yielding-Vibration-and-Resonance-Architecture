@@ -1,0 +1,112 @@
+{
+  "handoff_id": "a35a5aee-8b41-4865-9caa-a4ca46dbd323",
+  "lineage_id": "91763d8f-e2fd-4516-81e4-3d4892a9a3a6",
+  "lineage_allocated_new": true,
+  "identity_generator": "host Python uuid.uuid4()",
+  "workspace_id": "WEBLYVRA",
+  "workspace_class": "PROJECT",
+  "workspace_subscope": "WEBLyvra/artist-discovery",
+  "source_chat_scope": "direct current WEBLYVRA ADDON NEW CHAT after additive Suno import task; no host chat ID supplied",
+  "source_context_resolution_evidence": "User explicitly selected WEBLYVRA ADDON UPDATE, then directly requested WEBLYVRA ADDON NEW CHAT before catalog writes",
+  "source_head": "da6cf8121a5aabca20d9a6bed4bfe82f6f2d180e",
+  "source_commit_sha": "da6cf8121a5aabca20d9a6bed4bfe82f6f2d180e",
+  "created_at": "2026-10-23T23:06:30.561Z",
+  "whole_revision": "read fresh CURRENT_POINTER on source HEAD, not copied here",
+  "conversation_mode": "explicit_system_development",
+  "current_user_intent": "Move this WEBLyvra Add-on Suno ingestion to a new chat with same approved scope, no reset",
+  "last_meaningful_exchange": "User authorized additive import of 12 newly verified Suno URLs into prior 450 inventory, preserving original 450 and SoundCloud; assistant checked exact 12 novel UUIDs against public profile (462 songs) and GitHub catalog, created recovery branch, then user interrupted with NEW CHAT before any catalog writes.",
+  "conversation_resume_anchor": "Continue additive 12-song Suno import from safely frozen pre-write recovery point; source 450 => target 462, SoundCloud 45 sets+122 tracks unchanged; total unique discovery 617=>629. Do not rerun the discovery research unless new current evidence materially conflicts.",
+  "last_valid_stage": "RESEARCH_VERIFIED_12_NEW_UUIDS_AND_PRE_WRITE_RECOVERY_BRANCH_CREATED_NO_CATALOG_WRITES",
+  "active_task": "Add 12 Suno entries and regenerate embedded 629-entry discovery, update DE/EN labels and docs, execute CI, verify Cloudflare exact final commit and public HTTP readback",
+  "pending_work": [
+    "Fresh HEAD/expected blob check; reconcile any concurrent updates",
+    "Append only these 12 entries to data/suno-releases.json and update evidence metadata",
+    "Regenerate discoItems in index.html retaining 167 SoundCloud links and the existing HTML/visual behavior",
+    "Update hardcoded bilingual 450 Suno notices to 462 and 12 newly observed on Oct 24",
+    "Protect exact 462/45/122 and all 629 URLs in tests and docs without altering other systems",
+    "Run relevant CI and exact Cloudflare/public host readback; show visual status without inventing PASS"
+  ],
+  "next_meaningful_action": "Read this immutable handoff after Whole CURRENT and verify 450 existing UUIDs and new 12 against fresh HEAD; perform governed minimal addon writes with recovery and readback",
+  "relevant_paths": [
+    "WEBLyvra/artist-discovery/data/suno-releases.json",
+    "WEBLyvra/artist-discovery/index.html",
+    "WEBLyvra/artist-discovery/test-addon-integrity.mjs",
+    "WEBLyvra/live/tests/stage-artist-discovery.cjs",
+    "WEBLyvra/artist-discovery/README.md",
+    "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json"
+  ],
+  "recovery_branch": "lyvra-recovery-pre-462-suno-addon-20261024-r01",
+  "recovery_source_head": "da6cf8121a5aabca20d9a6bed4bfe82f6f2d180e",
+  "source_evidence": {
+    "profile": "https://suno.com/@fraggelpower666?page=songs",
+    "observed_public_counter": 462,
+    "old_catalog_count": 450,
+    "public_recent_listing_direct_unique": 200,
+    "new_unique_uuid_count": 12,
+    "soundcloud_albums": 45,
+    "soundcloud_tracks": 122,
+    "old_total": 617,
+    "target_total": 629,
+    "source_readback": "Public rendered Suno profile showing 462 songs and exact 12 new titled URLs; the profile listing is partial, not a complete independent enumeration of all 462",
+    "incoming": [
+      {
+        "title": "BURN INTO REALITY",
+        "url": "https://suno.com/song/b912442f-3b46-40f7-ae49-ba50c1d8f1d9"
+      },
+      {
+        "title": "BURN INTO REALITY",
+        "url": "https://suno.com/song/81903fdd-1d1a-4764-98f0-c996f3dcd8eb"
+      },
+      {
+        "title": "THE LAWS OF BOUNCE",
+        "url": "https://suno.com/song/15f31485-d6b1-4598-8133-b34eff1ee8db"
+      },
+      {
+        "title": "THE LAWS OF BOUNCE",
+        "url": "https://suno.com/song/19332939-87ea-4669-8033-0a46201ce513"
+      },
+      {
+        "title": "THE THROAT OF STONE",
+        "url": "https://suno.com/song/b580cb8a-6bee-46cc-b868-7171c572be6a"
+      },
+      {
+        "title": "THE THROAT OF STONE",
+        "url": "https://suno.com/song/d49f5d79-2c61-469f-8821-da259571cd62"
+      },
+      {
+        "title": "CHECK THE CONTEXT",
+        "url": "https://suno.com/song/004080d4-f0bd-4942-b885-e910e0d5da8c"
+      },
+      {
+        "title": "CHECK THE CONTEXT",
+        "url": "https://suno.com/song/6189b1fe-6ddd-4b61-839e-fa07403a5c37"
+      },
+      {
+        "title": "IVISIBLE CHAOS MONITOR",
+        "url": "https://suno.com/song/a23b10c9-ae34-41a7-9d25-d28f390b25e6"
+      },
+      {
+        "title": "IVISIBLE CHAOS MONITOR",
+        "url": "https://suno.com/song/cbe75259-50eb-4c7a-a162-637e3a0731ab"
+      },
+      {
+        "title": "WE SHAPE CHAOS",
+        "url": "https://suno.com/song/633e6b35-1f81-4d82-9412-812ef44c772b"
+      },
+      {
+        "title": "WE SHAPE CHAOS",
+        "url": "https://suno.com/song/a3d71b94-aa67-440e-8015-148baf606033"
+      }
+    ]
+  },
+  "supersedes_handoff_id": null,
+  "related_workspace_activation": false,
+  "approved_work": "WEBLYVRA ADDON UPDATE — import 12 exact new public Suno song URLs additively, preserve SoundCloud; maximum three targeted checks then learning by doing, CI and Cloudflare Live Readback",
+  "discussion_only_not_authorized": [
+    "Any changes to unrelated Whole LYVRA runtime or LittleLyv",
+    "Any modification of radio production code"
+  ],
+  "requested_next_chat_behavior": "Fresh Whole current first; resume exact approved WEBLyvra additive import immediately, not generic navigation; preserve chat-local workspace, 3-check governance and visual leadership; no unrelated activation",
+  "release_status": "NOT_APPLIED; NO_CATALOG_WRITE; NO_CI_FOR_IMPORT; NO_629_LIVE_CLAIM",
+  "provenance_note": "Immutable chat handoff, not Whole identity/authority or release approval"
+}
