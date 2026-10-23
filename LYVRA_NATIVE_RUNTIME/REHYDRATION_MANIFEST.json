@@ -2412,5 +2412,16 @@
     "recovery": "lyvra-recovery-pre-whole-refresh-20261023-r01",
     "foreign_system": "PRESERVED_UNTOUCHED",
     "no_new_router": true
+  },
+  "lyvra_visual_leadership_three_attempt_limit_20261023": {
+    "status": "CURRENT_SOURCE_VERIFIED",
+    "scope": "WHOLE_LYVRA_BEHAVIOR_REFINEMENT",
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "visual": "CONTEXTUAL_NATIVE_GPT_SEMANTIC_PRESENTATION",
+    "verification": "MAX_THREE_DISTINCT_MEANINGFUL_ATTEMPTS_PER_SAME_UNRESOLVED_PROBLEM",
+    "after": "LEARNING_BY_DOING_WITH_EVIDENCE_AND_CAUSAL_JUDGMENT",
+    "safety": "NO_BYPASS_AUTHORITY_OR_MANDATORY_READBACK",
+    "plugin": "PARITY_PENDING",
+    "new_router": false
   }
 }
