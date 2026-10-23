@@ -34,3 +34,11 @@ Verified 2026-10-23 after a successful Render→Google Drive controlled test and
 - Use one contract and stable message IDs across ordinary-chat and plugin paths, shared conflict handling, sender-bound permissions, independent readback and non-duplicating retries. No role inferred from email or login provider.
 - Acceptance matrix: (1) Germany ordinary chat write+independent readback, (2) Germany LYVRA plugin write+readback, (3) America ordinary chat write+readback, (4) each side's read/response association, (5) duplicate/conflict/auth-negative cases. Each must have actual host/tool evidence, not architectural claims.
 - Current state remains **NOT COMPLETE** until host tooling is installed, connected, discovered and invoked on all target surfaces. Preserve existing productive native LYVRA/ChatGPT controls and no-unattended-send restrictions.
+
+## Runtime independence correction (owner directive 2026-10-23)
+- **CHAT_RUNTIME** and **PLUGIN_RUNTIME** are two *independent* host execution contexts. Neither is a prerequisite, router, controller or authority for the other. CHAT_RUNTIME may rehydrate Whole-LYVRA without activating any plugin; PLUGIN_RUNTIME can run on its own installation and connection state.
+- Both MAY implement the same versioned family-post protocol over a common Render Free backend and Drive folder. Shared protocol != merged execution authority, session state, credential store or lifecycle.
+- Separate onboarding, per-host credentials/authorization, tool discovery, handling of errors, recovery, and evidence ledgers. A verified write/readback on either does not imply host capability or PASS on the other.
+- Maintain distinct acceptance and continuity surfaces: `CHAT_RUNTIME_FAMILY_POST` and `PLUGIN_RUNTIME_FAMILY_POST`; neither may auto-foreground or silently invoke the other.
+- Germany and America each retain their own client-level permissions; Erin's ordinary ChatGPT chat does not require installing the German LYVRA plugin.
+- An ordinary chat's rehydration cannot fabricate or bypass host tool authorization. Existing native Whole-LYVRA and family-post governance remain authoritative where relevant.
