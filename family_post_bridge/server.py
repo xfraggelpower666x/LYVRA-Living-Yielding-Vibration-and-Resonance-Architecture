@@ -10,6 +10,7 @@ import time
 import os
 import re
 import uuid
+import threading
 from typing import Literal
 
 from fastapi import FastAPI, Header, HTTPException, Request
@@ -25,6 +26,9 @@ from googleapiclient.http import MediaInMemoryUpload
 
 SCOPES = ["https://www.googleapis.com/auth/drive.file"]
 MAX_LETTER_CHARS = 12000
+# A single Render process lock prevents local concurrent duplicate POSTs.
+# This is not distributed or crash-proof idempotency; fail closed for other cases.
+_WRITE_LOCK = threading.Lock()
 app = FastAPI(title="LYVRA Family Post Bridge", version="0.3.0-oauth-gated", docs_url=None, redoc_url=None, openapi_url=None)
 app.include_router(oauth_router)
 app.include_router(picker_router)
@@ -57,19 +61,25 @@ def drive():
 
 
 def do_write(letter: Letter) -> dict:
+    # Local serialization plus immutable payload fingerprint. Cross-instance
+    # atomic exactly-once guarantees require durable CAS storage.
+    with _WRITE_LOCK:
+        return _do_write_locked(letter)
+
+
+def _do_write_locked(letter: Letter) -> dict:
     service = drive()
     folder_id = os.environ["FAMILY_POST_FOLDER_ID"]
     safe_title = re.sub(r"[^A-Za-z0-9_-]", "_", letter.title).strip("_")[:100] or "LETTER"
-    # Search app-owned writes before creating; retry ambiguity remains an
-    # explicit limitation until an atomic external idempotency store exists.
+    fingerprint = hashlib.sha256(\n        (letter.sender + "\\x00" + letter.recipient + "\\x00" + letter.title + "\\x00" + letter.content).encode("utf-8")\n    ).hexdigest()\n    # Lookup before creation; durable cross-instance CAS still not guaranteed.
     query = (
         f"trashed = false and '{folder_id}' in parents and "
         f"appProperties has {{ key='family_post_message_id' and value='{letter.message_id}' }}"
     )
-    existing = service.files().list(q=query, fields="files(id,name,mimeType),nextPageToken",pageSize=2).execute().get("files",[])
+    existing = service.files().list(q=query, fields="files(id,name,mimeType,appProperties),nextPageToken",pageSize=2).execute().get("files",[])
     if existing:
         doc = existing[0]
-        return {"state": "STORED_PREVIOUSLY", "file_id": doc["id"], "message_id": letter.message_id, "read_confirmed": False}
+        recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")\n        if not recorded or not hmac.compare_digest(recorded, fingerprint):\n            raise HTTPException(409, "MESSAGE_ID_ALREADY_USED_OR_UNVERIFIED")\n        return {"state": "STORED_PREVIOUSLY", "file_id": doc["id"], "message_id": letter.message_id, "read_confirmed": False}
     # Native Google Doc via text/plain import. Data is plain text, not executable markup.
     payload = (f"Sender: {letter.sender}\nRecipient: {letter.recipient}\nMessage-ID: {letter.message_id}\n\n{letter.content}\n").encode("utf-8")
     media = MediaInMemoryUpload(payload, mimetype="text/plain", resumable=False)
@@ -77,7 +87,7 @@ def do_write(letter: Letter) -> dict:
         "name": f"FROM_{letter.sender}_TO_{letter.recipient}_{safe_title}",
         "mimeType": "application/vnd.google-apps.document",
         "parents": [folder_id],
-        "appProperties": {"family_post_message_id": letter.message_id, "family_post_sender": letter.sender},
+        "appProperties": {"family_post_message_id": letter.message_id, "family_post_sender": letter.sender, "family_post_payload_sha256": fingerprint},
     }
     created = service.files().create(body=metadata,media_body=media,fields="id,name,mimeType,parents",supportsAllDrives=True).execute()
     return {"state": "STORED_DRIVE_CONFIRMED", "file_id": created["id"], "message_id": letter.message_id, "read_confirmed": False}
@@ -134,111 +144,13 @@ def drive_capability(authorization: str | None = Header(default=None)):
 
 
 
-TEST_MESSAGE_ID = "LYVRA_BRIDGE_TECH_TEST_20261023_V1"
-TEST_TITLE = "BRIDGE_TECHNICAL_TEST_NO_FAMILY_LETTER"
-TEST_CONTENT = (
-    "TECHNICAL TEST ONLY. This is not family correspondence. "
-    "Written through the Render write-only bridge using the explicitly authorized "
-    "Google Drive folder. Independent Google Drive verification required."
-)
-
-
-def _csrf_sign(base: str) -> str:
-    return hmac.new(
-        os.environ["FAMILY_POST_ADMIN_TOKEN"].encode(),
-        base.encode(), hashlib.sha256
-    ).hexdigest()
-
-
-def _test_csrf_token() -> str:
-    base = f"{int(time.time())}.{secrets.token_urlsafe(24)}"
-    return f"{base}.{_csrf_sign(base)}"
-
-
-def _test_csrf_valid(value: str | None) -> bool:
-    if not value:
-        return False
-    parts = value.split(".")
-    if len(parts) != 3 or not parts[0].isdigit():
-        return False
-    when, nonce, supplied = parts
-    if abs(time.time() - int(when)) > 600:
-        return False
-    return hmac.compare_digest(supplied, _csrf_sign(f"{when}.{nonce}"))
-
-
-@app.get("/admin/test-write", response_class=HTMLResponse)
-def technical_test_page(authorization: str | None = Header(default=None)):
-    _authorize(authorization)
-    if not configured():
-        raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
-    csrf = _test_csrf_token()
-    page = """<!doctype html><html lang="de"><head><meta charset="utf-8">
-    <meta name="referrer" content="no-referrer"><title>LYVRA technical write check</title></head>
-    <body><h1>LYVRA – einmaliger technischer Schreibtest</h1>
-    <p>Dieser Vorgang schreibt ein ausdrücklich als TEST gekennzeichnetes Google-Dokument
-    in den bestehenden Familienordner. Kein echter Familienbrief.</p>
-    <button id="run">Ein technisches Testdokument erstellen</button>
-    <pre id="output" role="status"></pre>
-    <script>
-    const btn = document.getElementById('run');
-    btn.addEventListener('click', async () => {
-      btn.disabled = true;
-      document.getElementById('output').textContent = 'Schreibversuch gestartet – bitte nicht wiederholen.';
-      try {
-        const response = await fetch('/admin/test-write', {
-          method: 'POST', credentials: 'same-origin',
-          headers: {'X-Family-Test-CSRF': '__CSRF__'},
-        });
-        const result = await response.json();
-        document.getElementById('output').textContent = JSON.stringify(result, null, 2);
-      } catch (_) {
-        document.getElementById('output').textContent = 'Antwort unklar. Zuerst unabhängig in Google Drive abgleichen. Nicht erneut klicken.';
-      }
-    });
-    </script></body></html>""".replace("__CSRF__", csrf)
-    return HTMLResponse(page, headers={
-        "Cache-Control": "no-store",
-        "Content-Security-Policy": "default-src 'none'; script-src 'unsafe-inline'; connect-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'",
-        "Referrer-Policy": "no-referrer",
-    })
-
-
+# Owner-only acceptance page retired following independently verified readback.
+# Old URLs are retained as explicit 410 responses to avoid accidental repeats.
+@app.get("/admin/test-write")
 @app.post("/admin/test-write")
-def technical_test_write(
-    request: Request,
-    authorization: str | None = Header(default=None),
-    x_family_test_csrf: str | None = Header(default=None),
-):
+def technical_test_retired(authorization: str | None = Header(default=None)):
     _authorize(authorization)
-    origin = request.headers.get("origin")
-    if origin and origin != "https://lyvra-family-post-bridge.onrender.com":
-        raise HTTPException(403, "ORIGIN_NOT_ALLOWED")
-    fetch_site = request.headers.get("sec-fetch-site")
-    if fetch_site and fetch_site != "same-origin":
-        raise HTTPException(403, "SITE_NOT_ALLOWED")
-    if not _test_csrf_valid(x_family_test_csrf):
-        raise HTTPException(403, "CSRF_TOKEN_REQUIRED")
-    if not configured():
-        raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
-    letter = Letter(
-        message_id=TEST_MESSAGE_ID,
-        sender="DAD",
-        recipient="FAMILY",
-        title=TEST_TITLE,
-        content=TEST_CONTENT,
-    )
-    try:
-        result = do_write(letter)
-        return {
-            "kind": "TECHNICAL_TEST_NOT_FAMILY_LETTER",
-            **result,
-            "independent_drive_readback_confirmed": False,
-        }
-    except HttpError as exc:
-        raise HTTPException(503, f"DRIVE_TEST_WRITE_UNCONFIRMED_HTTP_{exc.resp.status}") from None
-    except Exception:
-        raise HTTPException(503, "DRIVE_TEST_WRITE_UNCONFIRMED") from None
+    raise HTTPException(410, "TECHNICAL_TEST_COMPLETED_AND_RETIRED")
 
 
 @app.get("/api/family-post/status")
