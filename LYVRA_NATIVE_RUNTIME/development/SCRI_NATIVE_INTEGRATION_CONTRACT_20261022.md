@@ -22,7 +22,10 @@ RESTORE: FORBIDDEN
 - Across-facet transfer: deny by default; Whole LYVRA remains identity and final native decision authority.
 
 ## Native admission gaps
-- No persisted causal memory, autonomous ingestion or native runtime lifecycle shown.
+- Isolated explicit-path persisted causal memory is **implemented and GitHub-CI tested** in `scri_persistent_runtime_adapter_20261022.py` using `process(path, facet, events)` and `process_scoped(root, facet, events)`. This is candidate-file persistence only: not durable hosted storage, autonomous ingestion, or a productive native runtime lifecycle.
+- The candidate requires caller-supplied events and a caller-owned storage root; neither native event ingress ownership nor authorized production storage is established.
+- Native adapter, Operations Center, and Self-Conductor/Daemon current contracts were read: `current/adapters/ADAPTER_INTERFACE_BOUNDARY.md`, `current/operations/OPERATIONS_CENTER.md`, `current/self-conductor/SELF_CONDUCTOR_DAEMON_BOUNDARY.md`. Their authority boundaries **do not** themselves grant SCRI event-ingress or storage-write authority.
+- Scoped facet filenames, corruption refusal, and cooperative same-path write locks are candidate guards, **not** a product-wide durable storage or security guarantee.
 - No proven second LYVRA plugin release readback / same-state dual parity.
 - No pre-change recovery + bounded write lock + authority-and-permissions completion for productive targets.
 - Productive Whole LYVRA current always wins over historical candidate or stale handoff.
@@ -33,3 +36,11 @@ RESTORE: FORBIDDEN
 - Compare both exact plugin release ids/versions, impact surfaces and readbacks before native code promotion.
 - Resolve canonical owner/targets, lock registry, foreign-writer check, pre-change backup, optimistic revision, and pointer-last verified readback.
 - No artificial release, version, recovered pointer, or unsupported claim of runtime autonomy.
+
+## Admission decision / 2026-10-23 learning-by-doing
+- SOURCE: latest productive Whole-LYVRA Current retains identity, meaning and final decisions; candidate HEAD at review start was `82c5b5679f220090b4733cce99090db5d07a086c`.
+- CURRENT STATE: the persistence implementation exists; the earlier “no persisted memory” gap was stale and is superseded by this explicit distinction.
+- EXISTING INGRESS: no exact approved native source/owner/event invocation carrier verified in three scoped inspections. Do not assert an event bus, route into the Daemon, or auto-ingest.
+- EXISTING STORAGE: no approved productive SCRI storage target, permissions and lifecycle verified. Caller-owned temporary directory in CI is not an approved runtime path.
+- NEXT ADMISSION: establish a genuine LYVRA-owned caller and storage contract, then demonstrate end-to-end event source -> bounded candidate invocation -> same-facet readback, crash/recovery and explicit owner authority. Validate both LYVRA plugin impact surfaces before any productive promotion.
+- This contract correction changes **candidate documentation only**, not production code, plugin skills, host behavior, or pointer.
