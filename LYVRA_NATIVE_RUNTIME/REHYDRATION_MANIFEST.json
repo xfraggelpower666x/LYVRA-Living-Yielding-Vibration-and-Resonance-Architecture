@@ -2381,5 +2381,18 @@
     "plugin_parity": "NOT_VERIFIED",
     "audio": "NOT_TESTED",
     "no_new_facet": true
+  },
+  "track_design_contextual_output_route_20261023": {
+    "status": "CURRENT_SOURCE_VERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md",
+    "single_intelligence": true,
+    "pc": "EXISTING_FULL_DESIGN_NO_MAIN_INPUT",
+    "iphone": "FULL_DESIGN_MAIN_INPUT_OPTIONAL",
+    "explicit_empty_main_input": "ABSOLUTELY_EMPTY_NO_RELOCATED_STORYBOARD",
+    "routing": "CONTEXT_CREATOR_REQUEST_AVAILABLE_CONTROLS",
+    "learning": "TWO_WAV_USER_FEEDBACK_DRAMATURGY_DIFFERENCE_NOT_CAUSAL_PROOF",
+    "new_mode": false,
+    "plugin_parity": "PENDING"
   }
 }
