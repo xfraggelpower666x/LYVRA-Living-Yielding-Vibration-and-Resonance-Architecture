@@ -6812,5 +6812,19 @@
     "plugin_native_alive": "REVIEW_PENDING",
     "fresh_chat": "NOT_TESTED",
     "no_other_facet_changes": true
+  },
+  "track_design_event_storyboard_discovery_20261023": {
+    "status": "CURRENT_SOURCE_READBACK_VERIFIED_EXPERIMENT_AUDIO_PENDING",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md",
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "principle": "5_TO_6_FLEXIBLE_EVENT_STORYBOARD_ANCHORS_IN_ADDITIVE_MAIN_INPUT",
+    "preserve": "FULL_NATIVE_TRACK_DNA_STYLE_EXTENDED_LYRICS_DURATION_EMOJIS_AND_CUSTOM_MODEL",
+    "learning": "CREATOR_EXPERIMENT_PROVISIONAL_ESTIMATE_NE_PROVEN_PROVIDER_RULE",
+    "plugin_readback": "PENDING",
+    "audio_test": "NOT_TESTED",
+    "recovery": "lyvra-recovery-pre-discovery-storyboard-learning-20261023-r01",
+    "no_new_facet": true
   }
 }
