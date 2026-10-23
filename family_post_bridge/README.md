@@ -39,3 +39,9 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 5. Do not treat service available as proof that either ChatGPT/GPT peer has API-tool integration.
 
 **Cost:** Free instance plan does not verify account-level bandwidth/build charges.
+
+## Owner-only read-only folder permission check
+- `GET /api/family-post/drive-capability` requires HTTP Basic username `owner` and password `FAMILY_POST_ADMIN_TOKEN`.
+- Uses the actual Render-held OAuth refresh token to call Google Drive `files.get` for ONLY the configured folder's mimeType and canAddChildren capability. No files are listed and no letters are read or created.
+- `FOLDER_VISIBLE_CAN_ADD` confirms metadata visibility and add-child capability, NOT successful document creation, delivery, or idempotency. `NOT_VERIFIED` may indicate `drive.file` has not been granted access to the pre-existing shared folder.
+- Never include the credential in a URL or share screenshots of HTTP Basic credentials. A controlled write with independent Drive readback is required before release.
