@@ -4,6 +4,7 @@ import unittest
 from family_post_bridge.fallback_decision import (
     evaluate_direct_drive_candidate,
     verified_storage_status,
+    evaluate_exact_drive_readback,
 )
 
 BASE = dict(
@@ -63,6 +64,35 @@ class TestFamilyPostFallback(unittest.TestCase):
         self.assertEqual(self.decide(primary_state="NO_WRITE_CONFIRMED").state,
                          "DIRECT_DRIVE_CANDIDATE")
 
+
+
+    def test_exact_readback_rejects_mismatched_content_or_file(self):
+        evidence = dict(
+            intended_file_id="file-abc",
+            listed_file_ids=["file-abc"],
+            fetched_file_id="file-abc",
+            expected_parent_id="family-mailbox",
+            fetched_parent_ids=["family-mailbox"],
+            intended_content="One letter exactly.",
+            fetched_content="One letter exactly.",
+        )
+        self.assertEqual(
+            evaluate_exact_drive_readback(**evidence),
+            "STORED_CONTENT_AND_PARENT_VERIFIED",
+        )
+        for changes in (
+            {"listed_file_ids": []},
+            {"fetched_file_id": "different"},
+            {"fetched_parent_ids": ["other-folder"]},
+            {"fetched_content": "One letter almost."},
+            {"fetched_content": ""},
+            {"intended_file_id": ""},
+        ):
+            with self.subTest(changes=changes):
+                self.assertEqual(
+                    evaluate_exact_drive_readback(**{**evidence, **changes}),
+                    "STORAGE_UNVERIFIED",
+                )
 
 if __name__ == "__main__":
     unittest.main()
