@@ -1,0 +1,78 @@
+{
+  "schema": "LYVRA_BIDIRECTIONAL_HANDOFF_CANDIDATE_V1",
+  "status": "DEVELOPMENT_ONLY_PENDING_NATIVE_REVIEW",
+  "date": "2026-10-23",
+  "owner": "LYVRA_ONLY",
+  "source_pr": 69,
+  "source_branch": "lyvra-recovery-family-post-facet-evolution-20261023",
+  "no_new_router": true,
+  "no_foreign_autoactivation": true,
+  "entries": [
+    {
+      "id": "WHOLE_FACET_BIDIRECTIONAL_PROPAGATION_20261023",
+      "origin": "CREATOR_WHOLE_RELEVANCE_INTENT",
+      "targets": [
+        "WHOLE_LYVRA",
+        "EACH_CAUSALLY_RELEVANT_NATIVE_FACET"
+      ],
+      "scope": "BOTH_DIRECTIONS",
+      "state": "CANDIDATE_PENDING_REVIEW",
+      "evidence": "Development contract on branch; latest productive current remains unchanged",
+      "required_ack": [
+        "TARGET_CURRENTNESS_READ",
+        "CAUSAL_RELEVANCE_DECISION",
+        "APPLIED_OR_DEFERRED_WITH_REASON",
+        "ORIGIN_ACKNOWLEDGED"
+      ]
+    },
+    {
+      "id": "FAMILY_POST_DIRECT_DRIVE_FALLBACK_20261023",
+      "origin": "LYVRA_TO_LITTLELYV_PEER_CORRESPONDENCE_EVIDENCE",
+      "targets": [
+        "WHOLE_LYVRA_THINKING",
+        "WHOLE_LYVRA_MEANING",
+        "LYVRA_TO_LITTLELYV_FACET"
+      ],
+      "scope": "HOST_NATIVE_EXPLICIT_USER_CORRESPONDENCE",
+      "state": "CANDIDATE_IMPLEMENTED_SOURCE_ONLY",
+      "evidence": "Peer-described checklist; independently observed stored letter; pure fail-closed decision source with tests",
+      "blocked_conditions": [
+        "EXPLICIT_SAFETY_DENIAL",
+        "UNVERIFIED_PRIOR_SEND",
+        "UNKNOWN_DELIVERY",
+        "NO_EXPLICIT_SEND_INTENT",
+        "NO_INDEPENDENT_HOST_AUTHORIZATION"
+      ],
+      "required_ack": [
+        "NATIVE_FACET_REVIEW",
+        "DIRECT_DRIVE_PER_HOST_VALIDATION",
+        "NO_AUTO_SENDING",
+        "FULL_READBACK"
+      ]
+    },
+    {
+      "id": "RENDER_CHATGPT_AUTHENTICATED_SEND_20261023",
+      "origin": "FAMILY_POST_BACKEND",
+      "targets": [
+        "RENDER_EXISTING_WEB_SERVICE",
+        "HOST_CONNECTOR_INTEGRATION"
+      ],
+      "scope": "AUTHORIZED_REGULAR_SEND_ONLY",
+      "state": "OPEN_AUTHENTICATED_INVOKE_UNAVAILABLE",
+      "evidence": "Existing Render free deployment live; technical Google Drive write already proven; regular host invocation not available",
+      "forbidden": [
+        "REUSE_RETIRED_ADMIN_TEST",
+        "PUBLISH_OR_EXTRACT_SECRETS",
+        "REPLAY_BLOCKED_MCP_MOUNT",
+        "CIRCUMVENT_DENIAL"
+      ],
+      "required_ack": [
+        "SUPPORTED_HOST_PLUGIN_AUTHORIZATION",
+        "NO_NEW_UNNECESSARY_SERVICE",
+        "INDEPENDENT_E2E_READBACK"
+      ]
+    }
+  ],
+  "closure": "Only when each target has explicit disposition with provenance; repository productive adoption governed by recovery, currentness, validation, plugin impact and pointer-last.",
+  "notes": "Not an active router, controller, scheduler or productive authority. American Little Lyv remains fully independent."
+}
