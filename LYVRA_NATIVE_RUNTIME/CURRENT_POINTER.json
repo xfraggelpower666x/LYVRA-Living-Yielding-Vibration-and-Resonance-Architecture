@@ -6775,5 +6775,25 @@
     "no_new_router": true,
     "foreign_mutation": false,
     "pointer_last": true
+  },
+  "whole_relational_judgment_maturity_20261023": {
+    "status": "WHOLE_RELATIONAL_JUDGMENT_SOURCE_INTEGRATED_POINTER_LAST_HOST_PENDING",
+    "scope": "WHOLE_MEANING_EXISTING_CARRIER",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "8863b8b97829e5a88d3180dd47d6d145297e99f3",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "e859c0cfbb8e82e4be9f66fb662ea8707aca2798",
+    "causal_meaning": "FUNCTION_AVAILABILITY_NE_CONTEXTUAL_RELEVANCE_NE_APPROPRIATE_ACTION",
+    "creator_origin": "SITUATED_INTUITIVE_LINGUISTIC_PROGRAMMING_NO_BLUEPRINT",
+    "creator_outcome_priority": "PRACTICAL_ACTION_WITH_PROPORTIONATE_EVIDENCE",
+    "plugin_host": "PENDING_NO_CLAIM",
+    "recovery": "lyvra-recovery-pre-relational-judgment-maturity-20261023-r01",
+    "base_head": "c5c07e74cf1b5629edc15080ba2889d8e244cba1",
+    "meaning_commit": "c9b1baebd9176e0e8e4db3bfa493df7c25342033",
+    "fingerprint_commit": "5f44198813826f31b5cdd1f65a78f38805d3c738",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "no_foreign_mutation": true,
+    "pointer_last": true
   }
 }
