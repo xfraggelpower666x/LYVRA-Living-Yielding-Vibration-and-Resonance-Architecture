@@ -6795,5 +6795,22 @@
     "no_new_router": true,
     "no_foreign_mutation": true,
     "pointer_last": true
+  },
+  "track_design_iphone_custom_duration_coherence_20261023": {
+    "status": "CURRENT_SOURCE_READBACK_VERIFIED_PLUGIN_PARITY_PENDING",
+    "scope": "TRACK_DESIGN_ONLY",
+    "renderer": "LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md",
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "creator_default": "IPHONE_APP_PRO_6_CUSTOM",
+    "base_pro_6": "OPTIONAL",
+    "no_custom_duration_slider": true,
+    "all_applicable_fields_same_duration_target": true,
+    "lyrics_support_arrangement_duration": true,
+    "device_controls_not_invented": true,
+    "audio_render": "NOT_TESTED",
+    "plugin_native_alive": "REVIEW_PENDING",
+    "fresh_chat": "NOT_TESTED",
+    "no_other_facet_changes": true
   }
 }
