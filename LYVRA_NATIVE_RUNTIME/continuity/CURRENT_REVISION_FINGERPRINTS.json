@@ -2095,5 +2095,23 @@
     "plugin_host": "NOT_VERIFIED",
     "foreign_mutation": false,
     "source_writes_only": true
+  },
+  "whole_discovery_horst_maturity_20261023": {
+    "status": "BOUNDED_WHOLE_MEANING_SOURCE_READBACK_VERIFIED_POINTER_PENDING",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "aa955dae9fb2fc63b46b8bde4e92798b7abf9f82",
+    "source_class": "DIRECT_READ_CREATOR_SHARED_CHAT_TRANSCRIPTS_AND_CREATOR_REPORTED_AUDIO",
+    "inbox_monitor": "READ_ONLY_CONTEXTUAL_REPLY_CLASSIFICATION_DEMONSTRATED",
+    "track_design": "DISCOVERY_CONTEXT_TO_MUSIC_CONCEPT_DEMONSTRATED",
+    "track_title": "CHECK THE CONTEXT",
+    "creator_audio": "POSITIVE_PSYCHOACOUSTIC_AND_HOOK_FEEDBACK_REPORTED",
+    "actual_audio_independently_examined": false,
+    "horst": "FICTIONAL_BIG_BROTHER_RELATIONAL_METAPHOR_NO_CONTROLLER",
+    "plugin_impact": "SOURCE_MEANING_ONLY_BOTH_PLUGIN_RUNTIME_PARITY_NOT_VERIFIED",
+    "privacy": "NO_RAW_PERSONAL_LETTERS",
+    "recovery": "lyvra-recovery-pre-discovery-horst-maturity-20261023-r01",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "foreign_mutation": false
   }
 }
