@@ -48,7 +48,25 @@
         "DIRECT_DRIVE_PER_HOST_VALIDATION",
         "NO_AUTO_SENDING",
         "FULL_READBACK"
-      ]
+      ],
+      "backend_source_pr": 70,
+      "backend_source_branch": "lyvra-family-post-fallback-source-ci-20261024",
+      "backend_base_branch": "lyvra-family-post-bridge-free-20261023",
+      "source_blobs": {
+        "fallback_decision": "c45f48a7c00f5e738bcc8d59f32cbf93194753f5",
+        "fallback_tests": "8fedc14c1100d28d7ef399c6fa8c051c8967e921",
+        "workflow": "9862aa1860ae7f32637483c2276bbbbaf42c498d"
+      },
+      "whole_branch_ci": {
+        "run_id": 40033257003,
+        "status": "PASS",
+        "head": "23b2de705f3952898f48d0295a7d4113f9226010"
+      },
+      "backend_ci": {
+        "run_id": 40033395912,
+        "status": "RUNNING_AT_LAST_CHECK"
+      },
+      "note": "Pure helper source exists in both candidate branches. Backend server remains unchanged and production Render never automatically loads this module; deployment and live sending not claimed."
     },
     {
       "id": "RENDER_CHATGPT_AUTHENTICATED_SEND_20261023",
