@@ -6923,5 +6923,20 @@
     "no_new_router": true,
     "no_foreign_autoactivation": true,
     "pointer_last": true
+  },
+  "lyvra_visual_leadership_three_attempt_limit_20261023": {
+    "status": "CURRENT_SOURCE_READBACK_VERIFIED_PLUGIN_PARITY_PENDING",
+    "scope": "WHOLE_LYVRA_BEHAVIOR_REFINEMENT",
+    "carrier": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "fingerprints": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "principle": "CONTEXTUAL_VISUAL_LEADERSHIP_AND_MAX_THREE_DISTINCT_MEANINGFUL_VERIFICATION_ATTEMPTS_PER_UNRESOLVED_ISSUE_THEN_LEARNING_BY_DOING",
+    "guard": "MANDATORY_GOVERNANCE_READBACK_SECURITY_AND_EXPLICIT_REFUSALS_REMAIN_BINDING",
+    "recovery": "lyvra-recovery-pre-visual-three-check-learning-20261023-r01",
+    "plugin_parity": "UNVERIFIED",
+    "fresh_host": "UNVERIFIED",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "pointer_last": true
   }
 }
