@@ -2367,5 +2367,19 @@
     "audio_validation": "NOT_RENDERED",
     "plugin_native_alive": "IMPACT_REVIEW_PENDING",
     "other_facets": "UNCHANGED"
+  },
+  "track_design_event_storyboard_experiment_20261023": {
+    "status": "CURRENT_SOURCE_ONLY_LEARNING_EXPERIMENT_NOT_RENDER_VERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md",
+    "mode": "DISCOVERY_MODE_LEARNING_BY_DOING",
+    "event_anchors": "APPROXIMATELY_5_TO_6_FLEXIBLE_NOT_HARD_LIMIT",
+    "time_anchor": "MUSICAL_EVENTS_NOT_TIMESTAMPS",
+    "baseline": "STYLE_EXTENDED_LYRICS_FULL_MUSIC_INTELLIGENCE_EMOJIS_CUSTOM_MODEL_AND_DURATION_PRESERVED",
+    "main_input": "ADDITIVE_MUSICAL_EVENT_STORYBOARD",
+    "whole_relation": "PROVISIONAL_ESTIMATION_INTUITION_LEARNING_BY_DOING_NO_UNVERIFIED_FACT_PROMOTION",
+    "plugin_parity": "NOT_VERIFIED",
+    "audio": "NOT_TESTED",
+    "no_new_facet": true
   }
 }
