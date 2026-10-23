@@ -1,0 +1,4 @@
+# Development-only MCP dependency, NOT included by current Render deployment.
+# MCPServer is a Python MCP SDK v2 API. Exact version verified 2026-10-23.
+mcp==2.3.0
+pytest>=8,<10
