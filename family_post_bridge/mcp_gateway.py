@@ -58,9 +58,17 @@ def create_role_server(role, write_callback):
         Not a bulk or autonomous sending tool. Repeat a message ID unchanged
         when reconciling an uncertain result. Stored is not recipient-read.
         """
-        return await run_in_threadpool(
-            write_callback, role, recipient, title, content, message_id
-        )
+        try:
+            return await run_in_threadpool(
+                write_callback, role, recipient, title, content, message_id
+            )
+        except Exception as exc:
+            # Never expose a letter body, Google/Render transport internals,
+            # Pydantic input echoes or credentials in a ChatGPT tool error.
+            # 409 is a fail-closed conflict, not evidence of a saved letter.
+            if getattr(exc, "status_code", None) == 409:
+                raise ValueError("FAMILY_POST_MESSAGE_ID_CONFLICT_UNVERIFIED") from None
+            raise ValueError("FAMILY_POST_WRITE_UNCONFIRMED_NO_AUTO_RETRY") from None
 
     transport = server.streamable_http_app(
         streamable_http_path="/",
