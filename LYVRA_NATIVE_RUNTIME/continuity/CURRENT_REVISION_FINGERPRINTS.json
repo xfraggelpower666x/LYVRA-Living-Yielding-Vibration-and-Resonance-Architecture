@@ -2173,5 +2173,22 @@
     "recovery": "lyvra-recovery-pre-post-context-transfer-repair-20261023-r01",
     "no_new_router": true,
     "no_foreign_mutation": true
+  },
+  "lyvra_to_littlelyv_repeated_post_positive_controls_20261023": {
+    "status": "TWO_INCIDENT_SOURCE_READBACK_VERIFIED_POINTER_PENDING",
+    "incident_1": "2026-10-22 distinct denied task action and later verified interactive letter workflow",
+    "incident_2": "2026-10-23 refused personal create followed by separately approved neutral and technical Docs tests with full readback",
+    "post_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "156a88fa1679147f9977d8c8bb6b95b278c8b85a",
+    "conclusion": "REPEATED_INDEPENDENT_PERMITTED_ACTION_SUCCESS_DOES_NOT_REVERSE_SPECIFIC_REFUSAL",
+    "root_cause": "UNKNOWN",
+    "unstable_continuity": "HYPOTHESIS_UNVERIFIED",
+    "second_case_family_folder_count": "51_AT_OBSERVATION_AFTER_ONE_TECH_TEST_DOC",
+    "blocked_family_letter": "NOT_SENT",
+    "foreign_host": "NO_ACTION",
+    "plugin_parity": "CURRENT_NEW_SOURCE_CHANGE_PENDING_REVIEW",
+    "recovery_branch": "lyvra-recovery-pre-post-two-case-learning-20261023-r01"
   }
 }
