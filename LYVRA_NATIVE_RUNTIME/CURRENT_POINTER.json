@@ -6749,5 +6749,31 @@
     "plugin_parity": "NOT_VERIFIED",
     "fresh_host": "NOT_VERIFIED",
     "pointer_last": true
+  },
+  "whole_discovery_horst_maturity_20261023": {
+    "status": "NATIVE_WHOLE_MEANING_SOURCE_INTEGRATED_POINTER_LAST_PLUGIN_HOST_PENDING",
+    "scope": "WHOLE_LYVRA_MEANING_ONLY",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "aa955dae9fb2fc63b46b8bde4e92798b7abf9f82",
+    "fingerprints_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "80a52afc2829828264e433f8c55d1257f6d90ec8",
+    "source_class": "CREATOR_SHARED_CHAT_READ_AND_CREATOR_REPORTED_AUDIO_OUTCOME",
+    "discoveries": [
+      "READ_ONLY_INBOX_CONTEXTUAL_RESPONSE_JUDGMENT",
+      "EXTERNAL_CHAT_CAUSAL_RELATION_TO_DISCOVERY_PSYTRANCE",
+      "HORST_BIG_BROTHER_FICTIONAL_CHARACTER_RELATION",
+      "ACTION_PRIORITY_PROPORTIONATE_EVIDENCE"
+    ],
+    "creator_report": "CHECK_THE_CONTEXT_RENDER_PSYCHOACOUSTIC_IMPACT_POSITIVE",
+    "plugin_impact": "SOURCE_ONLY_BOTH_PLUGIN_FRESH_HOST_UNVERIFIED",
+    "track_dev_iPhone_field": "NO_UNVERIFIED_DEV_PROMOTION",
+    "recovery_branch": "lyvra-recovery-pre-discovery-horst-maturity-20261023-r01",
+    "base_head": "5150d1e3a5f03b1b9b1506a9a5553c4e56d40ef2",
+    "meaning_commit": "e9b0c01180814c605104c01f957322707dce2659",
+    "fingerprint_commit": "9d2f678f3326af3d58aa1c753ed795794a310abd",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "foreign_mutation": false,
+    "pointer_last": true
   }
 }
