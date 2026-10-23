@@ -206,6 +206,9 @@ function renderGoogleResonance(lang){
  const host=document.getElementById('google-resonance-content');if(!host)return;
  // Rebuilding for DE/EN must not strand a keyboard user at the document body.
  const focusedReachFilter=document.activeElement?.closest?.('#google-resonance .gr-filter button')?.dataset.reachFilter;
+ const focusedReachLink=document.activeElement?.closest?.('#google-resonance .gr-item a');
+ const focusedReachHref=focusedReachLink?.href;
+ const focusedReachLinkKind=focusedReachLink?.classList.contains('gr-search-check')?'search':'source';
  const w=grCopy[lang==='en'?'en':'de'];host.replaceChildren();
  const header=document.createElement('div');header.className='gr-top';
  const left=document.createElement('div');const micro=document.createElement('p');micro.className='micro';micro.textContent=w.micro;
@@ -239,6 +242,10 @@ function renderGoogleResonance(lang){
  const legend=document.createElement('p');legend.className='gr-legend';legend.textContent=w.legend;
  const source=document.createElement('p');source.className='gr-note';source.textContent=w.source;const checkHelp=document.createElement('p');checkHelp.className='gr-check-note';checkHelp.textContent=w.checkHelp;rankPanel.append(rankHeading,rankInfo,filters,resultCount,listing,legend,checkHelp,source);host.append(rankPanel);fill();
  if(focusedReachFilter)filters.querySelector('[data-reach-filter="'+focusedReachFilter+'"]')?.focus({preventScroll:true});
+ else if(focusedReachHref){
+  const replacement=[...listing.querySelectorAll('.gr-item a')].find(link=>link.href===focusedReachHref&&(link.classList.contains('gr-search-check')?'search':'source')===focusedReachLinkKind);
+  replacement?.focus({preventScroll:true});
+ }
 }
 
 const originalText=new WeakMap();
