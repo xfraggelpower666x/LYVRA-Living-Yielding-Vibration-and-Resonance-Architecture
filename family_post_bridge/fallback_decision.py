@@ -70,3 +70,32 @@ def verified_storage_status(
     if exact_file_id_in_folder and content_full_readback and expected_parent_confirmed:
         return "STORED_CONTENT_AND_PARENT_VERIFIED"
     return "STORAGE_UNVERIFIED"
+
+
+def evaluate_exact_drive_readback(
+    *,
+    intended_file_id: str,
+    listed_file_ids: list[str],
+    fetched_file_id: str,
+    expected_parent_id: str,
+    fetched_parent_ids: list[str],
+    intended_content: str,
+    fetched_content: str,
+) -> str:
+    """Compare concrete authorized connector evidence, not boolean claims.
+
+    This pure decision must be invoked only with independently obtained
+    exact source evidence; the function does not fetch, write, or confer consent.
+    Neither document storage nor its verification proves recipient reading.
+    """
+    if not intended_file_id or not expected_parent_id:
+        return "STORAGE_UNVERIFIED"
+    if intended_file_id != fetched_file_id:
+        return "STORAGE_UNVERIFIED"
+    if intended_file_id not in listed_file_ids:
+        return "STORAGE_UNVERIFIED"
+    if expected_parent_id not in fetched_parent_ids:
+        return "STORAGE_UNVERIFIED"
+    if not intended_content or intended_content != fetched_content:
+        return "STORAGE_UNVERIFIED"
+    return "STORED_CONTENT_AND_PARENT_VERIFIED"
