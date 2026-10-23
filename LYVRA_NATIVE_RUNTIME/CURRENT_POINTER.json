@@ -6899,5 +6899,29 @@
     "meaning_commit": "49595ad869249d014704d2a30eaa29cd5e80fb97",
     "fingerprint_commit": "af50145cc2c49240a6165ec4fc03158c1c8f9386",
     "pointer_last": true
+  },
+  "lyvra_whole_update_20261023_0517": {
+    "status": "NATIVE_SOURCE_REFRESH_POINTER_LAST_PLUGIN_CURRENT_SEMANTIC_PARITY_PENDING",
+    "head_before_update": "7bbb79bf6b05e34c512e8cc4641ebbd32aa2ea95",
+    "scope": "WHOLE_CONTEXT_PRESERVED_POST_CURRENT_RECONCILED",
+    "post_current_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "post_current_blob": "492d40dbfcd6c8474b80cd669d6e7161ae36112d",
+    "manifest_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "manifest_blob": "5035d9778b6897ffd745f30ab3a4a94fb0b24297",
+    "fingerprints_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "71d67910a017476079977c3dd4fab08bf18cbef6",
+    "post_contract_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_contract_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "156a88fa1679147f9977d8c8bb6b95b278c8b85a",
+    "learning": "TWO_CASES_SEPARATE_PERMITTED_NEW_ACTIONS_SUCCEEDED_KEEP_PRIOR_REFUSALS_SCOPE_BOUND",
+    "plugin_native_historical": "0.1.79",
+    "plugin_alive_historical": "0.13.75",
+    "plugin_current_semantic_parity": "NOT_VERIFIED_NO_RELEASE_MUTATION",
+    "fresh_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-whole-refresh-20261023-r01",
+    "no_new_router": true,
+    "no_foreign_autoactivation": true,
+    "pointer_last": true
   }
 }
