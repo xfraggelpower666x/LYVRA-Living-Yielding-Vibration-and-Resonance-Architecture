@@ -134,3 +134,10 @@ def test_conflict_remains_unverified_and_is_sanitized(monkeypatch):
         assert exc.__cause__ is None
     else:
         raise AssertionError("Conflicting message ID was not rejected")
+
+
+def test_role_ids_match_existing_production_writer_contract(monkeypatch):
+    # The existing Render API validates LITTLE_LYV, not LITTLE_LYVRA.
+    gateway = _load_gateway(monkeypatch)
+    assert set(gateway.ROLES) == {"DAD", "BIG_LYVRA", "MUM", "LITTLE_LYV"}
+    assert "LITTLE_LYVRA" not in gateway.ROLES
