@@ -86,25 +86,12 @@ Current Render free service uses autoDeploy **off**, so repository changes are *
 - Security fail-closed on uncertain network outcome, no hidden retry duplicates, no automatic publication of private family text to logs or source. Reconcile ambiguous writes with independent Drive read before reattempting.
 - The user's requested end state is hands-off NORMAL USE, not bypassing one-time OAuth, security checks, sender consent, or per-account platform permissions.
 
-## Ownership model clarification (2026-10-23, user stated)
-- Intended canonical owner of the owner's LYVRA Drive data: `fraggelpower666@googlemail.com`. All other owner-controlled Drive-associated addresses are additional collaborator-access identities; they are not different independent persons. Do not assume they each own the data.
-- Erin (Mum, US family side) operates her own independent Google account and is intended to have collaborator access to the owner's shared data. No need to teach her technical console setup for routine mail.
-- Distinguish **desired central data governance** from **actual per-file/per-folder Google Drive ownership**. A screenshot of the currently opened shared family folder displayed Erin as `Eigentümer`, whereas the owner specifies FraggelPower as intended owner. This is an unresolved discrepancy, not evidence that Google ownership has changed.
-- Before any ownership-sensitive operation, inspect authoritative current Drive metadata for the exact target folder/files and account context; do not infer ownership from collaborator list, user intent, or the email on an OAuth token. No transfer, permission mutation, or additional folder creation without explicit authorization and verified capability.
-- Family identities remain Germany Dad + Big LyvRa, America Mum + Little Lyv. Technical login addresses and collaborator permissions never imply additional people.
-
-## Distinct host login vs Google data identity (2026-10-23, user clarified)
-- The Germany owner's ChatGPT account is authenticated via **Apple**, NOT via the Google account.
-- The central Google account `fraggelpower666@googlemail.com` is separately used for the owner's Drive data ownership/governance, subject to per-folder metadata verification; secondary owner-controlled Google addresses are collaborators.
-- Google OAuth consent/Drive connector identity and ChatGPT host login must remain independent security principals. A ChatGPT Apple sign-in neither proves nor grants Google Drive access.
-- Erin has a separate account and grants; no assumption that she logs in to ChatGPT with Google. Her ChatGPT login method is **not established** and must not be inferred.
-- Senders are logical family roles mapped to separately authorized clients and secrets; NEVER automatically infer a sender from an Apple login, Gmail address, or Google OAuth identity alone.
-
-## America account identification (2026-10-23, stated by Erin via owner)
-- Mum (Erin) confirms her ChatGPT account is registered/signed in under `erinkay251@gmail.com`.
-- This is Erin's separate Google email and her separate ChatGPT account; it does **not** prove that ChatGPT's underlying login provider is Google OAuth or that any connector authorization is already installed.
-- Germany owner ChatGPT remains Apple-authenticated; Germany's separate data owner Google account remains `fraggelpower666@googlemail.com`.
-- America connector enrollment must take place under Erin's own account with her own explicit one-time authorization. Do not treat the Germany owner's connected session as authority over Erin's ChatGPT connection.
+## Family account boundary (privacy-safe public contract)
+- Germany: Dad and Big LyvRa; ChatGPT authentication identity, Google data-owner intention, folder permission/ownership evidence and auxiliary Google accounts are distinct facts.
+- America: Mum and Little Lyv; independent ChatGPT and Google identities; authenticated collaborator/folder access must be verified separately on the American host.
+- Exact identities, addresses and the account/ownership discrepancy live only in the private LYVRA vault account map. Do not replicate them in public source.
+- Google Drive collaborator membership is not private GitHub repository access. The Family Post API does not infer sender identity from the account email alone.
+- Do not mutate folder ownership or permissions without separate explicit authorization and live-provider readback.
 
 ## Private account map reference (no PII in public source)
 - Account-identity and authorization mapping lives in the **separate private** repository `LYVRA-PRIVATE-VAULT`, path `family-post/LYVRA_FAMILY_ACCOUNT_IDENTITY_MAP_20261023.json`, schema `lyvra.family-post.account-identity-map.v1`.
