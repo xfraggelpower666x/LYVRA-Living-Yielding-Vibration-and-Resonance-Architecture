@@ -10,7 +10,7 @@ import uuid
 from typing import Literal
 
 from fastapi import FastAPI, Header, HTTPException
-from family_post_bridge.oauth_setup import router as oauth_router
+from family_post_bridge.oauth_setup import router as oauth_router, _authorize
 from pydantic import BaseModel, Field
 from google.auth.transport.requests import Request as GoogleRequest
 from google.oauth2.credentials import Credentials
@@ -87,6 +87,43 @@ def health():
         "drive_read_mailbox": False,
         "post_detection": "DIRECT_DRIVE_CLIENT_ONLY",
         "paid_fallback": False,
+    }
+
+
+@app.get("/api/family-post/drive-capability")
+def drive_capability(authorization: str | None = Header(default=None)):
+    """Owner-only metadata check: never lists or reads any letters, never writes."""
+    _authorize(authorization)
+    if not configured():
+        raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
+    try:
+        metadata = drive().files().get(
+            fileId=os.environ["FAMILY_POST_FOLDER_ID"],
+            fields="mimeType,capabilities(canAddChildren)",
+            supportsAllDrives=True,
+        ).execute()
+    except HttpError as exc:
+        return {
+            "check": "FOLDER_METADATA_ONLY",
+            "result": "NOT_VERIFIED",
+            "google_http_status": exc.resp.status,
+            "letter_written": False,
+        }
+    except Exception:
+        return {
+            "check": "FOLDER_METADATA_ONLY",
+            "result": "AUTH_OR_NETWORK_ERROR",
+            "letter_written": False,
+        }
+    is_folder = metadata.get("mimeType") == "application/vnd.google-apps.folder"
+    can_add = metadata.get("capabilities", {}).get("canAddChildren") is True
+    return {
+        "check": "FOLDER_METADATA_ONLY",
+        "result": "FOLDER_VISIBLE_CAN_ADD" if is_folder and can_add else "NOT_VERIFIED",
+        "folder_visible": is_folder,
+        "can_add_children": can_add,
+        "letter_written": False,
+        "actual_write_verified": False,
     }
 
 
