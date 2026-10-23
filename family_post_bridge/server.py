@@ -9,7 +9,8 @@ import re
 import uuid
 from typing import Literal
 
-from fastapi import FastAPI, Header, HTTPException
+from fastapi import FastAPI, Header, HTTPException, Request
+from fastapi.responses import HTMLResponse
 from family_post_bridge.oauth_setup import router as oauth_router, _authorize
 from family_post_bridge.picker import router as picker_router
 from pydantic import BaseModel, Field
@@ -127,6 +128,63 @@ def drive_capability(authorization: str | None = Header(default=None)):
         "letter_written": False,
         "actual_write_verified": False,
     }
+
+
+
+TEST_MESSAGE_ID = "LYVRA_BRIDGE_TECH_TEST_20261023_V1"
+TEST_TITLE = "BRIDGE_TECHNICAL_TEST_NO_FAMILY_LETTER"
+TEST_CONTENT = (
+    "TECHNICAL TEST ONLY. This is not family correspondence. "
+    "Written through the Render write-only bridge using the explicitly authorized "
+    "Google Drive folder. Independent Google Drive verification required."
+)
+
+
+@app.get("/admin/test-write", response_class=HTMLResponse)
+def technical_test_page(authorization: str | None = Header(default=None)):
+    _authorize(authorization)
+    if not configured():
+        raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
+    page = """<!doctype html><html lang="de"><head><meta charset="utf-8">
+    <meta name="referrer" content="no-referrer"><title>LYVRA technical write check</title></head>
+    <body><h1>LYVRA – einmaliger technischer Schreibtest</h1>
+    <p>Dieser Vorgang schreibt ein ausdrücklich als TEST gekennzeichnetes Google-Dokument
+    in den bestehenden Familienordner. Kein echter Familienbrief.</p>
+    <form method="post" action="/admin/test-write">
+      <button type="submit">Ein technisches Testdokument erstellen</button>
+    </form></body></html>"""
+    return HTMLResponse(page, headers={
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+        "Referrer-Policy": "no-referrer",
+    })
+
+
+@app.post("/admin/test-write")
+def technical_test_write(request: Request, authorization: str | None = Header(default=None)):
+    _authorize(authorization)
+    if request.headers.get("origin") != "https://lyvra-family-post-bridge.onrender.com":
+        raise HTTPException(403, "ORIGIN_NOT_ALLOWED")
+    if not configured():
+        raise HTTPException(503, "GOOGLE_WRITER_NOT_CONFIGURED")
+    letter = Letter(
+        message_id=TEST_MESSAGE_ID,
+        sender="DAD",
+        recipient="FAMILY",
+        title=TEST_TITLE,
+        content=TEST_CONTENT,
+    )
+    try:
+        result = do_write(letter)
+        return {
+            "kind": "TECHNICAL_TEST_NOT_FAMILY_LETTER",
+            **result,
+            "independent_drive_readback_confirmed": False,
+        }
+    except HttpError as exc:
+        raise HTTPException(503, f"DRIVE_TEST_WRITE_UNCONFIRMED_HTTP_{exc.resp.status}") from None
+    except Exception:
+        raise HTTPException(503, "DRIVE_TEST_WRITE_UNCONFIRMED") from None
 
 
 @app.get("/api/family-post/status")
