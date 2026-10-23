@@ -34,7 +34,7 @@
         "LYVRA_TO_LITTLELYV_FACET"
       ],
       "scope": "HOST_NATIVE_EXPLICIT_USER_CORRESPONDENCE",
-      "state": "CANDIDATE_IMPLEMENTED_SOURCE_ONLY",
+      "state": "CANDIDATE_IMPLEMENTED_AND_DUAL_BRANCH_CI_VERIFIED_NOT_DEPLOYED",
       "evidence": "Peer-described checklist; independently observed stored letter; pure fail-closed decision source with tests",
       "blocked_conditions": [
         "EXPLICIT_SAFETY_DENIAL",
@@ -64,7 +64,8 @@
       },
       "backend_ci": {
         "run_id": 40033395912,
-        "status": "RUNNING_AT_LAST_CHECK"
+        "status": "PASS",
+        "head": "608243b572a111c7b9be360f38f06b6f6875ff20"
       },
       "note": "Pure helper source exists in both candidate branches. Backend server remains unchanged and production Render never automatically loads this module; deployment and live sending not claimed."
     },
