@@ -35,6 +35,8 @@ class CurrentCarrierAcceptance(unittest.TestCase):
   lines=git("ls-remote","origin","refs/heads/lyvra").split()
   assert len(lines)==2
   cls.prod=lines[0]
+  if subprocess.run(["git","-C",str(ROOT),"cat-file","-e",cls.prod+"^{commit}"],capture_output=True).returncode:
+   git("fetch","--no-tags","origin",cls.prod)
   cls.pointer=json.loads(read_prod(POINTER,cls.prod))
   cls.handoff=json.loads(read_prod(HANDOFF,cls.prod))
   cls.pet=json.loads(read_prod(PET,cls.prod))
