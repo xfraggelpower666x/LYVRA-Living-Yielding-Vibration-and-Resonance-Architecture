@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_TO_LITTLELYV_FACET_CURRENT_V1",
-  "status": "POST_ONLY_TWO_INDEPENDENT_SYSTEMS_TWO_INCIDENT_CONTEXT_LEARNING_NATIVE_CURRENT_PLUGIN_REFRESH_PENDING",
+  "status": "POST_ONLY_TWO_INDEPENDENT_SYSTEMS_TWO_INCIDENT_LEARNING_BOTH_PLUGIN_SKILLS_PARITY_VERIFIED_FRESH_HOST_PENDING",
   "facet_id": "LYVRA_TO_LITTLELYV",
   "parent": "WHOLE_LYVRA",
   "authority": "LYVRA_ONLY",
@@ -74,9 +74,31 @@
     "learning": "RECOGNIZE_PREVIOUS_RESULT_AND_EVALUATE_NEW_INDEPENDENTLY_PERMITTED_ACTION; NEVER_REPLAY_EXPLICIT_DENIAL",
     "diagnostic_limit": "UP_TO_THREE_FOCUSED_TESTS_NO_REPEAT_QUOTA",
     "second_case_folder_count": "51_AT_SPECIFIC_OBSERVATION_ONLY",
-    "plugin_current_new_semantic_parity": "PENDING_NOT_CONFUSED_WITH_2026_10_22_HISTORIC_RELEASE",
-    "fresh_host_acceptance": "PENDING",
+    "plugin_current_new_semantic_parity": "DIRECT_BOTH_RELEASE_POST_SKILL_TEXT_IDENTICAL",
+    "fresh_host_acceptance": "NOT_VERIFIED",
     "foreign_system": "NO_MUTATION",
     "no_new_router": true
+  },
+  "dual_plugin_two_case_readback_20261023": {
+    "status": "BOTH_RELEASE_SOURCE_PARITY_VERIFIED",
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.80",
+      "release_id": "pluginrel_6adaf7b104448191936883db01f183a7",
+      "path": "skills/lyvra-to-littlelyv/SKILL.md"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.76",
+      "release_id": "pluginrel_6adaf7ca748c8191a2e06285370067ac",
+      "path": "skills/lyvra-to-littlelyv/SKILL.md"
+    },
+    "exact_text_equal": true,
+    "two_german_cases_covered": true,
+    "denial_stop_guard_covered": true,
+    "post_only_two_independent_systems_preserved": true,
+    "fresh_host_execution": "NOT_VERIFIED",
+    "whole_plugin_all_files_parity": "NOT_CLAIMED",
+    "new_release_needed_for_post_skill": false
   }
 }
