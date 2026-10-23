@@ -93,3 +93,44 @@ def test_unsupported_role_rejected_before_tool_registration(monkeypatch):
         pass
     else:
         raise AssertionError("Unrecognized sender accepted")
+
+
+def test_write_error_never_echoes_private_letter(monkeypatch):
+    gateway = _load_gateway(monkeypatch)
+    sensitive_content = "PRIVATE_FAMILY_LETTER_MUST_NOT_LEAK"
+
+    def failed_writer(*args):
+        raise RuntimeError("Transport diagnostic: " + sensitive_content)
+
+    server, _ = gateway.create_role_server("DAD", failed_writer)
+    try:
+        asyncio.run(server.tools["send_family_letter"](
+            "MUM", "Family Letter", sensitive_content, "message-id-privacy-test"
+        ))
+    except ValueError as exc:
+        assert str(exc) == "FAMILY_POST_WRITE_UNCONFIRMED_NO_AUTO_RETRY"
+        assert sensitive_content not in str(exc)
+        assert exc.__cause__ is None
+    else:
+        raise AssertionError("Unconfirmed write did not fail closed")
+
+
+def test_conflict_remains_unverified_and_is_sanitized(monkeypatch):
+    gateway = _load_gateway(monkeypatch)
+
+    class SimulatedConflict(Exception):
+        status_code = 409
+
+    def failed_writer(*args):
+        raise SimulatedConflict("internal Google document ID must not leak")
+
+    server, _ = gateway.create_role_server("MUM", failed_writer)
+    try:
+        asyncio.run(server.tools["send_family_letter"](
+            "DAD", "Family Letter", "test", "message-id-conflict-test"
+        ))
+    except ValueError as exc:
+        assert str(exc) == "FAMILY_POST_MESSAGE_ID_CONFLICT_UNVERIFIED"
+        assert exc.__cause__ is None
+    else:
+        raise AssertionError("Conflicting message ID was not rejected")
