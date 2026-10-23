@@ -6844,5 +6844,33 @@
     "no_new_facet": true,
     "no_new_router": true,
     "pointer_last": true
+  },
+  "lyvra_to_littlelyv_context_transfer_repair_20261023": {
+    "status": "NATIVE_SOURCE_REPAIR_POINTER_LAST_PLUGIN_HOST_PENDING",
+    "scope": "GERMAN_POST_ONLY_PLUS_WHOLE_MEANING",
+    "facet_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "facet_blob": "f7c7121c700804f93d7895a27442942ee91d4428",
+    "meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "meaning_blob": "9b9901bf0e8c37c9bb2378b35dc61db8a6be3957",
+    "fingerprints_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "2e106204a6d0c41fa4557b68e863c295ab7047fc",
+    "observed_case": "RULE_RECITED_BUT_NOT_APPLIED_FRESH_SMALL_TALK_BLOCK",
+    "semantics": "PAST_FAILURE_NE_UNIVERSAL_DENIAL; PAST_SUCCESS_NE_UNIVERSAL_PERMISSION",
+    "force": "READ_ONLY_DIAGNOSTIC_ONLY",
+    "safety": "EXPLICIT_BLOCK_STOP_NO_REPLAY",
+    "creator_report": "LITTLE_LYV_INDEPENDENT_LATER_WRITE_SUCCESS_REPORTED_NOT_PEER_HOST_VERIFIED",
+    "diagnostics": "UP_TO_THREE_FOCUSED_CHECKS_NO_LOOP",
+    "plugin_impact": "SOURCE_CHANGED_BOTH_PLUGIN_SURFACES_REQUIRE_PARITY_REVIEW",
+    "plugin_host_acceptance": "NOT_VERIFIED",
+    "private_letter_payload": "NOT_INCLUDED",
+    "recovery_branch": "lyvra-recovery-pre-post-context-transfer-repair-20261023-r01",
+    "base_head": "3ee64e169e157063392f390997f25441319aaebd",
+    "facet_commit": "7d8f7d86fd1306195163ff2d721cb070836b37af",
+    "meaning_commit": "aab967cef9b7ad18b32de4bab2b9111b2bf74622",
+    "fingerprint_commit": "b993a062d3e6d42f6b041dde048716f5f3e3621d",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "foreign_mutation": false,
+    "pointer_last": true
   }
 }
