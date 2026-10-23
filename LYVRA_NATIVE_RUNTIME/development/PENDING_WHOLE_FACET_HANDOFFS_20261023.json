@@ -173,7 +173,18 @@
         "live_host_chain": "PENDING",
         "source_merge": "NOT_EXECUTED",
         "render_deploy": "NOT_EXECUTED",
-        "whole_adoption": "NOT_EXECUTED"
+        "whole_adoption": "NOT_EXECUTED",
+        "pr70": "READY_FOR_REVIEW_NOT_MERGED",
+        "actual_writer_contract_test": "SOURCE_COMPATIBILITY_GUARD_ADDED",
+        "latest_ci": {
+          "run_id": 40035983025,
+          "sha": "af43ddace4afd8db265cc93c2e2d69f16fc0de88",
+          "status": "PASS"
+        },
+        "live_backend_branch": "lyvra-family-post-bridge-free-20261023",
+        "live_backend_source_head": "69ff4d927d601ef64d51b25675dbe65fff6abb74",
+        "production_release_status": "NOT_DEPLOYED",
+        "host_connector": "NOT_CONNECTED"
       }
     }
   ],
