@@ -122,7 +122,7 @@
         "NATIVE_VISUAL_GUIDANCE"
       ],
       "scope": "READ_ONLY_INBOX_AND_USER_AUTHORIZED_POST_WRITE_DRIVE_READBACK",
-      "state": "CANDIDATE_BACKEND_SOURCE_CI_PASS_HOST_PENDING",
+      "state": "CANDIDATE_BACKEND_SEMANTIC_REVIEW_CI_PASS_HOST_PENDING",
       "source_pr": 70,
       "whole_handoff": "LYVRA_NATIVE_RUNTIME/handoffs/FAMILY_POST_INTELLIGENT_MONITOR_POST_WRITE_VISUAL_HANDOFF_20261024.md",
       "source_ci": {
@@ -142,6 +142,23 @@
         "VISUAL_UI_ACCEPTANCE",
         "HOST_ACTUAL_READBACK",
         "BOTH_PLUGIN_IMPACT_IF_PROMOTED"
+      ],
+      "direct_drive_evidence": "TWO_ORIGINAL_TEXT_DOCS_DIRECTLY_FETCHED_AND_ONE_MEDIA_DOC_TEXT_EMPTY",
+      "additional_whole_handoff": "LYVRA_NATIVE_RUNTIME/handoffs/FAMILY_POST_SEMANTIC_MONITOR_ORIGINAL_DRIVE_EVIDENCE_20261024.md",
+      "semantic_source": {
+        "path": "family_post_bridge/intelligent_review.py",
+        "blob_sha": "43e39a5ccdb67ffe3ddac28e426f751960d92159"
+      },
+      "latest_ci": {
+        "run_id": 40035239374,
+        "head": "2079f632917d837e83e18cd867800873994c200a",
+        "status": "PASS"
+      },
+      "additional_open": [
+        "VISUAL_MEDIA_CONTENT_UNVERIFIED",
+        "PEER_TASK_STATUS_NOT_INDEPENDENTLY_VERIFIED",
+        "THREE_PERSONAL_OPEN_AND_ONE_UNCLEAR_PER_DATED_MONITOR_REPORT",
+        "HOST_RENDER_TO_DRIVE_CHAIN_NOT_CONNECTED"
       ]
     }
   ],
