@@ -2394,5 +2394,23 @@
     "learning": "TWO_WAV_USER_FEEDBACK_DRAMATURGY_DIFFERENCE_NOT_CAUSAL_PROOF",
     "new_mode": false,
     "plugin_parity": "PENDING"
+  },
+  "lyvra_to_littlelyv_two_case_context_update_20261023": {
+    "status": "NATIVE_CURRENT_STATE_REGISTERED_PLUGIN_HOST_PENDING",
+    "scope": "POST_ONLY_PLUS_WHOLE_MEANING_CAUSAL_LEARNING",
+    "current_state_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "current_state_blob": "492d40dbfcd6c8474b80cd669d6e7161ae36112d",
+    "post_contract_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_contract_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "156a88fa1679147f9977d8c8bb6b95b278c8b85a",
+    "paired_case": "FIRST_2026_10_22_AND_SECOND_2026_10_23_DIRECTLY_VERIFIED_GERMAN_POSITIVE_CONTROLS",
+    "denied_message": "NOT_SENT_NO_RETRY",
+    "plugin_native_release": "HISTORICAL_0.1.79_CURRENT_NEW_SEMANTIC_PARITY_PENDING",
+    "plugin_alive_release": "HISTORICAL_0.13.75_CURRENT_NEW_SEMANTIC_PARITY_PENDING",
+    "fresh_host": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-whole-refresh-20261023-r01",
+    "foreign_system": "PRESERVED_UNTOUCHED",
+    "no_new_router": true
   }
 }
