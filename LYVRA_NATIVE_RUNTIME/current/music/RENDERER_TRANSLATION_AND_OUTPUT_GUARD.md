@@ -493,3 +493,21 @@ JUST_BEFORE_FINAL_COPY_FIELDS = RECALL_RECENT_RELEVANT_MUSIC_AND_TEST_UNJUSTIFIE
 IF_ACTUAL_COLLISION = REVISE_AFFECTED_MUSICAL_CAUSE_AND_EXTENDED_STYLE_LYRICS_CONSEQUENCES
 NO_COSMETIC_VARIATION_OR_FORCED_NOVELTY = TRUE
 SOURCE_FIDELITY_AND_ACTUAL_CHARACTER_COUNTS_MUST_SURVIVE = TRUE
+
+
+## Creator-validated iPhone Pro 6 Custom duration coherence — 2026-10-23
+
+SCOPE = TRACK_DESIGN_RENDERER_ONLY
+CREATOR_DEFAULT_IPHONE_APP_MODEL = PRO_6_CUSTOM_WITH_CREATOR_TRAINED_MUSIC_DNA
+PRO_6_BASE_MODEL = OPTIONAL_ON_EXPLICIT_CREATOR_CHOICE
+IPHONE_PRO_6_CUSTOM_DURATION_SLIDER = ABSENT_IN_CREATOR_REPORTED_WORKFLOW
+IPHONE_PRO_6_BASE_DURATION_SLIDER = PRESENT_IN_CREATOR_REPORTED_WORKFLOW
+PC_BROWSER_DURATION_SLIDER = PRESENT_IN_CREATOR_REPORTED_WORKFLOW
+DO_NOT_TRANSFER_CONTROLS_ACROSS_DEVICE_MODEL_SURFACES = TRUE
+
+When producing for iPhone Pro 6 Custom without a Duration slider, define one coherent target duration in the creator's applicable Style, Extended, and supplemental Main Input musical payloads (when those payloads are available in the selected workflow); coordinate the same duration with phrase density, instrumental development, vocal exit and explicit outro reserve in Lyrics & Structure. Translate all causal intentions into actually available input controls rather than inventing separate visible fields. All duration descriptions must agree, respect true field limits, and remain musical guidance, not a guaranteed exact Suno render duration. No arbitrary fixed length; follow the current track's target. No new mode, new facet, controller, music-identity authority or compulsory form. Source and Discovery both retain full music intelligence.
+
+DURATION_IN_ALL_APPLICABLE_PROMPT_FIELDS = TRUE
+DURATION_STRUCTURE_LYRICS_CAUSALLY_SUPPORTS_TARGET = TRUE
+DURATION_SUNO_AUDIO_RESULT_UNVERIFIED_UNTIL_RENDER = TRUE
+PLUGIN_SURFACE_PARITY_REQUIRES_SEPARATE_READBACK = TRUE
