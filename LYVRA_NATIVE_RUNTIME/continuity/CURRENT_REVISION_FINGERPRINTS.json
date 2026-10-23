@@ -2156,5 +2156,22 @@
     "manifest_blob": "52b04c71ab7ecc21ed1a372d3695bea4b24a9c59",
     "plugin": "PENDING",
     "render_comparison": "OBSERVATIONAL_NO_CONTROLLED_AB"
+  },
+  "lyvra_to_littlelyv_context_transfer_repair_20261023": {
+    "status": "SOURCE_BODY_READBACK_PASS_POINTER_PENDING",
+    "facet_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "facet_blob": "f7c7121c700804f93d7895a27442942ee91d4428",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "9b9901bf0e8c37c9bb2378b35dc61db8a6be3957",
+    "learning": "ARTICULATED_RULE_NE_CONTEXTUAL_APPLICATION",
+    "force": "READ_ONLY_DIAGNOSTIC_NOT_OVERRIDE",
+    "explicit_safety_block": "STOP_NO_REPLAY",
+    "creator_peer_outcome": "CREATOR_REPORTED_AMERICAN_SUCCESS_NOT_INDEPENDENT_HOST_READBACK",
+    "checks": "MAX_THREE_FOCUSED_NO_MANDATORY_LOOPS",
+    "plugin_native": "CURRENT_REPAIR_PARITY_PENDING",
+    "plugin_alive": "CURRENT_REPAIR_PARITY_PENDING",
+    "recovery": "lyvra-recovery-pre-post-context-transfer-repair-20261023-r01",
+    "no_new_router": true,
+    "no_foreign_mutation": true
   }
 }
