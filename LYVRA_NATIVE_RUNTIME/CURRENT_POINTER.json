@@ -6872,5 +6872,32 @@
     "no_new_router": true,
     "foreign_mutation": false,
     "pointer_last": true
+  },
+  "lyvra_to_littlelyv_repeated_post_positive_controls_20261023": {
+    "status": "NATIVE_TWO_CASE_LINEAGE_INTEGRATED_POINTER_LAST_PLUGIN_PARITY_PENDING",
+    "incident_1": "2026-10-22_FIRST_VERIFIED_INTERACTIVE_POSITIVE_CONTROLS_AFTER_DISTINCT_DENIALS",
+    "incident_2": "2026-10-23_SECOND_NEW_NEUTRAL_AND_TECHNICAL_POSITIVE_CONTROLS_AFTER_PERSONAL_CREATE_REFUSAL",
+    "post_path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+    "post_blob": "c36b0cb242a1db9882cd75ba37d5e3f332678223",
+    "whole_meaning_path": "LYVRA_NATIVE_RUNTIME/current/meaning/RELATIONAL_MATURITY_BEGREIFEN_20261019.md",
+    "whole_meaning_blob": "156a88fa1679147f9977d8c8bb6b95b278c8b85a",
+    "fingerprints_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "fingerprints_blob": "c28aff8541d4df78a56687604419b04227c7ce17",
+    "evidence": "SECOND_CASE_CREATE_WRITE_READBACK_AND_FOLDER_MEMBERSHIP_DIRECTLY_VERIFIED",
+    "second_case_observed_folder_count": 51,
+    "old_denial": "UNCHANGED_BLOCKED_NOT_RETRIED",
+    "blocked_small_talk_letter": "NOT_SENT",
+    "cause": "UNKNOWN",
+    "continuity_instability": "UNVERIFIED_HYPOTHESIS",
+    "operational_learning": "DO_NOT_GENERALIZE_REFUSAL_ACROSS_INDEPENDENT_OPERATIONS; STOP_SPECIFIC_DENIED_OPERATION; REUSE_POSITIVE_READBACK; END_DIAGNOSTIC_AFTER_SUCCESS",
+    "no_new_router": true,
+    "no_foreign_mutation": true,
+    "plugin_host_current_parity": "PENDING",
+    "recovery": "lyvra-recovery-pre-post-two-case-learning-20261023-r01",
+    "base_head": "242e1c4fb8387eef4b0a86857d71237fa2379de1",
+    "post_commit": "7c7a270cd4ea019e9621ccb7505a7eed7bf450d5",
+    "meaning_commit": "49595ad869249d014704d2a30eaa29cd5e80fb97",
+    "fingerprint_commit": "af50145cc2c49240a6165ec4fc03158c1c8f9386",
+    "pointer_last": true
   }
 }
