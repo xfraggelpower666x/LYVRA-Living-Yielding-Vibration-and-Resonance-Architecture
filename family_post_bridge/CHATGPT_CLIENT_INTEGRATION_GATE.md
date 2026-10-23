@@ -22,3 +22,15 @@ Verified 2026-10-23 after a successful Render→Google Drive controlled test and
 ## Privacy
 - All personal identity mapping lives only in private vault `LYVRA-PRIVATE-VAULT` at `family-post/LYVRA_FAMILY_ACCOUNT_IDENTITY_MAP_20261023.json`. This public development artifact contains no personal account addresses.
 - No automatic change to Google Drive folder ownership or membership.
+
+## Mandatory dual surface acceptance (owner directive 2026-10-23)
+**Germany must send and receive family post from BOTH** (A) an ordinary ChatGPT conversation with no explicit LYVRA plugin invocation and (B) LYVRA's native plugin/family-post facet. Neither context may require copying links, switching chats, or running a browser test form. Both surfaces use ONE shared authorized transport, not separate mailboxes or duplicate authorities.
+
+- Common write transport: add a genuine, standards-compliant and safely authenticated remote MCP tool endpoint to the **existing Render Free service**; do not add Cloudflare, external paid infrastructure, required card/billing, or a second hosting provider. The current REST route is NOT an MCP endpoint.
+- Host integration: expose that MCP server as an installable private ChatGPT connector/app for Germany. It must be available and actually tool-callable from **ordinary chat**, independently of the `lyvra-native-runtime` plugin. Native LYVRA may also bind to that same connector but must not control ordinary-chat host permissions.
+- America: Erin's ordinary ChatGPT account requires its own supportable one-time connector enrollment and per-client auth; she does NOT need a developer plugin/MCP project. A server cannot silently inject a tool into another person's ChatGPT session without installation/consent.
+- The user's **normal operation** requirement is no repeated technical confirmations, not no initial setup/consent. Explicit ordinary-language send intent is required; ordinary discussion is never automatically published.
+- Reads should remain through each party's independently authorized Google Drive connector/observation channel. This is not equivalent to autonomous new-mail notification unless real polling/scheduling is configured and tested.
+- Use one contract and stable message IDs across ordinary-chat and plugin paths, shared conflict handling, sender-bound permissions, independent readback and non-duplicating retries. No role inferred from email or login provider.
+- Acceptance matrix: (1) Germany ordinary chat write+independent readback, (2) Germany LYVRA plugin write+readback, (3) America ordinary chat write+readback, (4) each side's read/response association, (5) duplicate/conflict/auth-negative cases. Each must have actual host/tool evidence, not architectural claims.
+- Current state remains **NOT COMPLETE** until host tooling is installed, connected, discovered and invoked on all target surfaces. Preserve existing productive native LYVRA/ChatGPT controls and no-unattended-send restrictions.
