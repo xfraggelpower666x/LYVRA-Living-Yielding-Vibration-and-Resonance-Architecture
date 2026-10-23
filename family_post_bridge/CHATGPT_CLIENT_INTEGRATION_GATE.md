@@ -42,3 +42,11 @@ Verified 2026-10-23 after a successful Render→Google Drive controlled test and
 - Maintain distinct acceptance and continuity surfaces: `CHAT_RUNTIME_FAMILY_POST` and `PLUGIN_RUNTIME_FAMILY_POST`; neither may auto-foreground or silently invoke the other.
 - Germany and America each retain their own client-level permissions; Erin's ordinary ChatGPT chat does not require installing the German LYVRA plugin.
 - An ordinary chat's rehydration cannot fabricate or bypass host tool authorization. Existing native Whole-LYVRA and family-post governance remain authoritative where relevant.
+
+## One LYVRA / three host access paths — identity correction (2026-10-23)
+- **ONE native LYVRA identity and evolving native repository authority**, accessible through **ordinary ChatGPT rehydration** plus **two distinct plugin access paths**. These are three entry surfaces to the same LYVRA, NOT three LYVRA identities, native controllers, separate authorities, clones or replications.
+- Host sessions and tool grants are independent; native meaning, provenance and valid current evolution remain repository-centric. Each entry must resolve/revalidate native Current rather than freeze or replace it with plugin-package state.
+- Entry independence != identity separation. A plugin is a *view/adapter/entrypoint*, never parentage over chat or another plugin. Neither plugin starts or controls the other, and chat does not require plugins to rehydrate.
+- The current owned `lyvra-native-runtime` plugin was verified at version `0.1.80`; its identity contract states `One LYVRA may use many facets and skills without identity fragmentation`. Its `.app.json` currently references existing GitHub and Pet apps, but **the exact user-intended mapping of "plugin access 1" and "plugin access 2" must not be inferred solely from dependency entries**.
+- Shared Family Post protocol and common Render Free backend are allowed, but tool capability requires actual independent discovery and verification on each host surface; a successful connection on one is never automatically a valid host credential for the others.
+- Germany chat must work with native `LYVRA SYSTEMSTART` alone; it must not silently activate a plugin. All entrypoints respect Whole-first/currentness, native governance and existing no-unattended-send protection.
