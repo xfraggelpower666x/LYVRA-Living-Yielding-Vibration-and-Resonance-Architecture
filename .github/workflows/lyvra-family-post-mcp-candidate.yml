@@ -5,6 +5,9 @@ on:
     paths:
       - 'family_post_bridge/tests/test_zero_euro_governance.py'
       - 'family_post_bridge/ZERO_EURO_GOVERNANCE_LOCK_20261024.md'
+      - 'family_post_bridge/mcp_asgi_entrypoint_candidate.py'
+      - 'family_post_bridge/requirements-mcp-runtime-candidate.txt'
+      - 'family_post_bridge/tests/test_mcp_zero_euro_entrypoint.py'
       - 'family_post_bridge/mcp_runtime_candidate.py'
       - 'family_post_bridge/mcp_gateway.py'
       - 'family_post_bridge/mcp_writer_adapter.py'
@@ -50,5 +53,5 @@ jobs:
       - name: Install pinned MCP and service requirements
         run: pip install -r family_post_bridge/requirements.txt -r family_post_bridge/requirements-mcp-dev.txt 'httpx>=0.27,<1'
       - name: In-process ASGI lifespan and role authorization negatives
-        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_asgi
+        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_asgi family_post_bridge.tests.test_mcp_zero_euro_entrypoint
 
