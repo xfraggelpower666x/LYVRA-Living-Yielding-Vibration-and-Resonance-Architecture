@@ -248,3 +248,8 @@ MONITOR_MANDATORY = TRUE
 OPERATIONS_CENTER_NE_CONTROLLER = TRUE
 NO_FAKE_COMPLETENESS = TRUE
 NO_FORCED_ALL_PROJECTS_ACTIVE = TRUE
+
+## Native facet-card projection in Operations Center (DEV candidate 2026-10-24)
+REFERENCE = LYVRA_NATIVE_RUNTIME/development/WHOLE_LYVRA_NATIVE_FACET_CARD_INTELLIGENCE_CANDIDATE_20261024.md
+FACET_CARD_ROLE = DERIVED_EVIDENCE_VIEW_NOT_STATE_MACHINE
+A governed native development affecting a registered facet should produce a reconstructible current-vs-previous semantic/causal delta and validate the affected derived card binding before the Whole overview is refreshed. Include in existing continuity and backup/freeze only as version-consistent source-bound presentation metadata. Never make card generation an independent write authority, a second freeze step, or a reason to mutate an unrelated facet. Failed updates preserve the last independently verified state/card and mark the incomplete candidate distinctly. A higher version alone does not establish improvement. Source readback and actual host/behavior evidence must remain separate; visualized does not mean verified.
