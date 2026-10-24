@@ -7016,5 +7016,28 @@
     "independent_fresh_host_acceptance": "NOT_VERIFIED",
     "no_foreign_activation": true,
     "pointer_last": true
+  },
+  "weblyvra_addon_suno_import_20261024": {
+    "status": "SOURCE_CI_EXACT_DEPLOYMENT_PASS_CANONICAL_HOST_PENDING",
+    "workspace": "WEBLYVRA_ARTIST_DISCOVERY",
+    "receipt": "WEBLyvra/artist-discovery/SUNO_IMPORT_462_629_RECEIPT_2026-10-24.json",
+    "receipt_blob": "2655f70e6da957ad7c4095be8792bf6515183eff",
+    "source_release_head": "0290cfb3119d44c9c57dc58f7882aa8005676707",
+    "ci_run": 40069371578,
+    "ci_result": "SUCCESS",
+    "cloudflare_exact_deployment_id": "26e884dc-51af-433c-89f9-5fb719b24c86",
+    "suno_urls": 462,
+    "soundcloud_urls": 167,
+    "discovery_urls": 629,
+    "new_suno_uuids": 12,
+    "old_450_preserved": true,
+    "canonical_domain_host": "PENDING_450_STALE_ON_LAST_READBACK",
+    "prechange_recovery": "lyvra-recovery-pre-462-suno-addon-current-20261024-r02",
+    "whole_rehydration": "PARTIAL",
+    "plugin_impact": "NO_NATIVE_PLUGIN_SKILL_OR_RUNTIME_CHANGE",
+    "critical_registry": "NO_REGISTERED_CRITICAL_ADDON_SOURCE_FILES_CHANGED",
+    "no_foreign_activation": true,
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_ADDON_CANONICAL_462_HOST_READBACK_ONLY"
   }
 }
