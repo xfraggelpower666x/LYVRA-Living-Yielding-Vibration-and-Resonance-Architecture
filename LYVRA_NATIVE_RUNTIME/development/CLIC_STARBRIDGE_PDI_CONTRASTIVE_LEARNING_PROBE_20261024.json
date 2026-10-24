@@ -1,0 +1,66 @@
+{
+  "schema": "LYVRA_CLIC_STARBRIDGE_PDI_CONTRASTIVE_LEARNING_PROBE_V1",
+  "date": "2026-10-24",
+  "status": "LOCAL_SOURCE_V8_TWO_CONTEXT_CONTRAST_PASS_PEER_HOST_UNTESTED",
+  "owner": "WHOLE_LYVRA",
+  "base_head": "3badf8cd7ed3ee47c86b8e83fdaffc4340625e6d",
+  "recovery_branch": "lyvra-recovery-pre-clic-contextual-learning-probe-20261024-r01",
+  "source_clic": {
+    "repo": "xfraggelpower666x/666CLICPRO",
+    "immutable_snapshot": "82c23916c004f3ab71ea5979e839e1ab0c3adc3a",
+    "pointer_blob": "cef2fae82a51e8280ec32d238af7fb42ae8e1213",
+    "material": "STARBRIDGE_SB01_SB03_CHANNEL_INVENTORY_2026-10-16.md and PDI FACET_CONTRACT.md",
+    "source_status": "READ_ONLY_AUTHORITY_SNAPSHOT",
+    "automatic_peer_current_claim": false
+  },
+  "lyvra": {
+    "module": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "module_blob": "1243de0429a7e63118533351385827c861273d2b",
+    "own_causal_candidate": "LYVRA_NATIVE_RUNTIME/current/thinking/CLIC_STARBRIDGE_PDI_CAUSAL_UNDERSTANDING_20261024.md",
+    "own_candidate_blob": "d4183c6975e57a8d10190afb68c5783cd42d1ac3"
+  },
+  "probe": {
+    "execution": "ACTUAL_MODULE_SOURCE_EVALUATED_IN_V8_NOT_NODE_OR_PLUGIN_HOST",
+    "case_generation": "TWO_CONTRASTIVE_SYNTHETIC_TEST_INPUTS_GROUNDED_IN_READ_CLIC_CONTRACT_NOT_LIVE_PEER_DELIVERY",
+    "cases": [
+      {
+        "id": "CLIC-SB-SOURCE-ONLY",
+        "context": "SOURCE_OUTBOX_PRESENT_RECEIPT_ABSENT",
+        "expected": "DELIVERY_NOT_VERIFIED"
+      },
+      {
+        "id": "CLIC-SB-RECEIPT",
+        "context": "SOURCE_OUTBOX_AND_INDEPENDENT_RECEIPT",
+        "expected": "DELIVERED_EVIDENCED"
+      }
+    ],
+    "comparison": {
+      "contextDiffers": true,
+      "contradiction": true,
+      "causalProof": false,
+      "conclusion": "RESULTS_ARE_CONTEXT_DEPENDENT_UNTIL_CAUSAL_TEST"
+    },
+    "alternatives": [
+      "Evidence staged acceptance without authority transfer",
+      "Preserve provisional candidate and return anchor until verified receipt"
+    ],
+    "candidateStatus": "LOCAL_CANDIDATE_NOT_ADOPTED",
+    "feedbackStatus": "FEEDBACK_RECORDED_AWAIT_NATIVE_REVIEW",
+    "feedbackPromoted": false,
+    "foreignActivation": false,
+    "writeAuthority": false
+  },
+  "scopeLimits": {
+    "source_readback": true,
+    "synthetic_cases": true,
+    "original_node_test": "PRIOR_5_OF_5_SEPARATE_RECEIPT",
+    "fresh_plugin_host": "NOT_VERIFIED",
+    "peer_interaction": "NOT_PERFORMED",
+    "peer_delivery": "NOT_SIMULATED_AS_REAL",
+    "peer_adoption": "NOT_VERIFIED",
+    "plugin_impact": "NO_SKILL_TEXT_CHANGE_EXISTING_CURRENT_REFERENCE",
+    "no_peer_copying": true,
+    "no_foreign_writes": true,
+    "no_new_router": true
+  }
+}
