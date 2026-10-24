@@ -8,12 +8,14 @@ from contextlib import AsyncExitStack, asynccontextmanager
 from starlette.applications import Starlette
 from starlette.routing import Mount
 
-from family_post_bridge.server import app as legacy_app
 from family_post_bridge.mcp_gateway import ROLES, create_role_server
 from family_post_bridge.mcp_writer_adapter import write_family_letter
 
 
 def create_app():
+    # Deferred import avoids a circular dependency on server:app.
+    from family_post_bridge import server
+    legacy_app = server.legacy_app
     # Keep MCPServer objects alive so the host lifespan can explicitly own
     # each session manager; mounted sub-application lifespan does not run.
     role_apps = [
