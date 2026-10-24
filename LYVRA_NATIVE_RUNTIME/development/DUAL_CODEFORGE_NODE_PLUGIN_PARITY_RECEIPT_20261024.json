@@ -1,0 +1,68 @@
+{
+  "schema": "LYVRA_DUAL_CODEFORGE_NODE_PLUGIN_PARITY_RECEIPT_V1",
+  "status": "LOCAL_NODE_5_OF_5_AND_BOTH_PLUGIN_SKILL_SOURCE_PARITY_VERIFIED_FRESH_HOST_PENDING",
+  "date": "2026-10-24",
+  "authority": "WHOLE_LYVRA",
+  "base_head": "18d3a921508efa42162bc5539f1d9fcb7b3584b8",
+  "recovery_branch": "lyvra-recovery-pre-dual-codeforge-node-plugin-parity-20261024-r01",
+  "source": {
+    "module": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "module_blob": "1243de0429a7e63118533351385827c861273d2b",
+    "test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs",
+    "test_blob": "741256ee2234d896bd0739ef6478434b86118887"
+  },
+  "node": {
+    "runtime": "Node.js v22.16.0",
+    "command": "node --test relational-learning-core.test.mjs",
+    "source_byte_verified_via_git_hash_object": true,
+    "tests": 5,
+    "pass": 5,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "scope": "LOCAL_ORIGINAL_SOURCE_MODULE_AND_TEST_FILE_NOT_GITHUB_PROVIDER_RUN"
+  },
+  "plugins": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "previous_version": "0.1.81",
+      "previous_release": "pluginrel_6adc493185c0819185deed236ce0dfe6",
+      "new_version": "0.1.82",
+      "new_release": "pluginrel_6adcd5c94e508191a5ff0c02e045c6d2",
+      "readback": "SUPER_CODEFORGE_SKILL_DIRECT_TEXT_READBACK_PASS",
+      "historical_release_recovery": "ARCHIVE_ACCESS_VERIFIED_NOT_BINARY_BACKED_UP_TO_REPO",
+      "plugin_url": "https://chatgpt.com/plugins/plugins_6ab3a345db308191b8ad7ef6311f8a29"
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "previous_version": "0.13.77",
+      "previous_release": "pluginrel_6adc4947fd8c8191a5d1e47d9829efd2",
+      "new_version": "0.13.78",
+      "new_release": "pluginrel_6adcd6083d0081919c11db8ce0956703",
+      "readback": "SUPER_CODEFORGE_SKILL_DIRECT_TEXT_READBACK_PASS",
+      "historical_release_recovery": "ARCHIVE_ACCESS_VERIFIED_NOT_BINARY_BACKED_UP_TO_REPO",
+      "plugin_url": "https://chatgpt.com/plugins/plugin_06a4fc64dd848191982ca4a6ebdb2619"
+    },
+    "skill_text_equal": true,
+    "skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "new_learning_contract_referenced": true,
+    "complete_plugin_binary_parity": "NOT_VERIFIED",
+    "unrelated_files": "OVERLAY_PRESERVED_BY_PLUGIN_UPDATER_NOT_BYTEWISE_HASHED"
+  },
+  "host": {
+    "fresh_native_host": "NOT_VERIFIED",
+    "fresh_alive_host": "NOT_VERIFIED",
+    "original_supercodeforge_adapter_host_injection": "NOT_EXECUTED",
+    "real_peer_learning": "NOT_TESTED"
+  },
+  "boundaries": {
+    "read_not_copy": true,
+    "peer_authority_preserved": true,
+    "no_foreign_activation": true,
+    "no_peer_writes": true,
+    "no_new_router": true,
+    "no_original_executor_change": true
+  },
+  "risk": "PLUGIN_REHYDRATION_DOCKS_TO_CURRENT_REPO_NOT_STATIC_SNAPSHOT",
+  "further_checks": "FRESH_HOST_ACCEPTANCE_SEPARATE"
+}
