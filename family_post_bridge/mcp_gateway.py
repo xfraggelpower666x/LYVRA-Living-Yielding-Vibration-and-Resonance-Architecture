@@ -24,8 +24,11 @@ class RoleBearerGuard:
 
     async def __call__(self, scope, receive, send):
         if scope["type"] != "http":
-            await self.application(scope, receive, send)
-            return
+            # No websocket/lifespan bypass around the HTTP bearer boundary.
+            if scope["type"] == "websocket":
+                await send({"type": "websocket.close", "code": 1008})
+                return
+            raise RuntimeError("Unsupported MCP guard scope")
         headers = {k.lower(): v for k, v in scope.get("headers", ())}
         supplied = headers.get(b"authorization", b"")
         configured = os.environ.get("FAMILY_POST_TOKEN_" + self.role, "")
@@ -59,6 +62,11 @@ def create_role_server(role, write_callback):
         when reconciling an uncertain result. Stored is not recipient-read.
         """
         try:
+            # Validate with the same canonical Letter contract before any writer
+            # callback; MCP string schemas alone do not enforce role/ID limits.
+            from family_post_bridge.server import Letter
+            Letter(sender=role, recipient=recipient, title=title,
+                   content=content, message_id=message_id)
             return await run_in_threadpool(
                 write_callback, role, recipient, title, content, message_id
             )
