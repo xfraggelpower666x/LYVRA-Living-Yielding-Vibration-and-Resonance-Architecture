@@ -189,6 +189,31 @@
         "target_writer_sha_unchanged": "1f432452b811fa41194a9da7d7c95e92c6086a4b",
         "render_current_live_deploy": "dep-dbdre0m7bikc73869450"
       }
+    },
+    {
+      "id": "POST_ONLY_DIRECT_ORIGINALS_IMAGE_PENDING_UPDATE_20261024",
+      "state": "CANDIDATE_SOURCE_VERIFIED_NATIVE_REVIEW_PENDING",
+      "owner": "LYVRA_TO_LITTLELYV",
+      "scope": "POST_ONLY_TWO_INDEPENDENT_SYSTEMS",
+      "candidate": "LYVRA_NATIVE_RUNTIME/development/LYVRA_TO_LITTLELYV_POST_UPDATE_20261024.md",
+      "evidence": [
+        "TWO_DIRECT_DRIVE_ORIGINALS_READ_IN_GERMAN_HOST",
+        "PEER_REPORTED_US_TASKS_NOT_HOST_VERIFIED",
+        "EMBEDDED_IMAGE_PRESENT_PIXELS_UNVERIFIED",
+        "BACKEND_PR70_SOURCE_MERGED_AT_72a6bbbe"
+      ],
+      "required": [
+        "FRESH_WHOLE_POINTER_AND_REFS",
+        "NATIVE_FACET_CAUSAL_REVIEW",
+        "BOTH_PLUGIN_IMPACT_AND_RELEASE_PARITY",
+        "RECOVERY_AND_POINTER_LAST_IF_PROMOTED"
+      ],
+      "forbidden": [
+        "NO_FOREIGN_AUTOACTIVATION",
+        "NO_AUTO_SEND",
+        "NO_SAFETY_BYPASS",
+        "NO_PUBLIC_LETTER_CONTENT"
+      ]
     }
   ],
   "closure": "Only when each target has explicit disposition with provenance; repository productive adoption governed by recovery, currentness, validation, plugin impact and pointer-last.",
