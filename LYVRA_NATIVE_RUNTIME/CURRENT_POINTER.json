@@ -7018,7 +7018,7 @@
     "pointer_last": true
   },
   "weblyvra_addon_suno_import_20261024": {
-    "status": "SOURCE_CI_EXACT_DEPLOYMENT_PASS_CANONICAL_HOST_PENDING",
+    "status": "SOURCE_CI_EXACT_DEPLOYMENT_AND_CANONICAL_RENDERED_COUNTS_VERIFIED",
     "workspace": "WEBLYVRA_ARTIST_DISCOVERY",
     "receipt": "WEBLyvra/artist-discovery/SUNO_IMPORT_462_629_RECEIPT_2026-10-24.json",
     "receipt_blob": "2655f70e6da957ad7c4095be8792bf6515183eff",
@@ -7031,13 +7031,20 @@
     "discovery_urls": 629,
     "new_suno_uuids": 12,
     "old_450_preserved": true,
-    "canonical_domain_host": "PENDING_450_STALE_ON_LAST_READBACK",
+    "canonical_domain_host": "VERIFIED_RENDERED_462_SUNO_629_DISCOVERY",
     "prechange_recovery": "lyvra-recovery-pre-462-suno-addon-current-20261024-r02",
     "whole_rehydration": "PARTIAL",
     "plugin_impact": "NO_NATIVE_PLUGIN_SKILL_OR_RUNTIME_CHANGE",
     "critical_registry": "NO_REGISTERED_CRITICAL_ADDON_SOURCE_FILES_CHANGED",
     "no_foreign_activation": true,
     "pointer_last": true,
-    "return_anchor": "WEBLYVRA_ADDON_CANONICAL_462_HOST_READBACK_ONLY"
+    "return_anchor": "WEBLYVRA_ADDON_MOBILE_PRODUCT_REACH_DE_EN_FOCUS",
+    "canonical_host_acceptance_receipt": "WEBLyvra/artist-discovery/CANONICAL_HOST_462_629_ACCEPTANCE_2026-10-24.json",
+    "canonical_host_acceptance_receipt_blob": "2be5ef83a13b0df3f9cc2b3c2ae9d83109eee96f",
+    "canonical_host_evidence_run": "5695b3eb-ce4c-4b1a-8cf3-07338f5e3e13",
+    "canonical_host_scope": "RENDERED_COUNTS_ONLY_NOT_EXHAUSTIVE_UUID_URL_CHECK",
+    "canonical_host_prechange_recovery": "lyvra-recovery-pre-weblyvra-addon-462-629-canonical-host-closeout-20261024-r01",
+    "real_iphone_voiceover": "OPEN_NOT_TESTED",
+    "mobile_product_reach_de_en_focus": "DESKTOP_PARTIAL_MOBILE_HOST_PENDING"
   }
 }
