@@ -7064,5 +7064,33 @@
     "automatic_outbound": false,
     "no_global_workspace_selection": true,
     "pointer_last": true
+  },
+  "dual_codeforge_semantic_relational_learning_20261024": {
+    "status": "ADDITIVE_NATIVE_SOURCE_AND_FINGERPRINT_READBACK_VERIFIED_HOST_AND_TEST_RUNTIME_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "scope": "CODEFORGE_AND_SUPERCODEFORGE_NON_COPYING_RELATIONAL_LEARNING",
+    "base_head": "4e1240530b988f826c3f2ce074f9744cdcf152e4",
+    "recovery_branch": "lyvra-recovery-pre-dual-codeforge-relational-learning-20261024-r01",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/thinking/DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_20261024.md",
+    "contract_blob": "9a66168358d3885e8ed7c7face7f213433f5f727",
+    "codeforge_blob": "ca8a00824f20f8a3a863c4e4bd1240d4b5aea8e9",
+    "supercodeforge_blob": "f9995c662c6c892ec610e84aee42aea5099f7b22",
+    "pure_core": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "pure_core_blob": "1243de0429a7e63118533351385827c861273d2b",
+    "test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs",
+    "test_blob": "741256ee2234d896bd0739ef6478434b86118887",
+    "manifest_blob": "1fb6230d581928f220eac08e9fa6f701f69da110",
+    "fingerprints_blob": "c1cb7be8eb5b282b54027e565f5ab086f668af92",
+    "registered_critical_carriers": 234,
+    "previously_verified_base_carriers": 231,
+    "tests_executed": false,
+    "real_peer_learning": "NOT_TESTED",
+    "host_execution": "NOT_VERIFIED",
+    "plugin_native_alive_impact": "REVIEW_PENDING",
+    "no_peer_copying": true,
+    "no_foreign_activation": true,
+    "identity_preserved": true,
+    "pointer_last": true,
+    "return_anchor": "LYVRA_DUAL_CODEFORGE_RELATIONAL_LEARNING_SOURCE_READY_TEST_AND_PLUGIN_IMPACT_PENDING"
   }
 }
