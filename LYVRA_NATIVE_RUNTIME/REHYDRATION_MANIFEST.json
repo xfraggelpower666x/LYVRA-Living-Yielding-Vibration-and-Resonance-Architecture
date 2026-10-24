@@ -2448,5 +2448,21 @@
     "other_system_mutation": false,
     "plugin_impact": "NATIVE_AND_ALIVE_REVIEW_PENDING",
     "no_new_router": true
+  },
+  "dual_codeforge_relational_learning_execution_20261024": {
+    "status": "EVIDENCE_READBACK_SOURCE_V8_5_OF_5_NODE_PLUGIN_HOST_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "source": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/DUAL_CODEFORGE_RELATIONAL_LEARNING_EXECUTION_EVIDENCE_20261024.json",
+    "receipt_blob": "d4412b93131467f1337e5b75d19e33686bb4520b",
+    "current_state": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+    "current_state_blob": "0551f5fca5db2e1c8d9c696ace983ae2eaca032a",
+    "node_run": "NOT_VERIFIED",
+    "fresh_plugin_host": "NOT_VERIFIED",
+    "plugin_native": "0.1.81_SEMANTIC_UPDATE_PENDING",
+    "plugin_alive": "0.13.77_SEMANTIC_UPDATE_PENDING",
+    "source_only_v8_passes": 5,
+    "no_foreign_writes": true,
+    "peer_system_copying": false
   }
 }
