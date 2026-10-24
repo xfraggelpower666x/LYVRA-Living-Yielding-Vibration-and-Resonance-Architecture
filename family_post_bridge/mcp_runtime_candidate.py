@@ -1,7 +1,7 @@
 """Opt-in MCP ASGI composition candidate on existing Render Free service.
 
-Source-only. Production still launches family_post_bridge.server:app;
-switching the start command and dependencies requires separate approval.
+Source-only. Production still launches family_post_bridge.server:app.
+Do not deploy until exact pinned-SDK runtime and host tests pass.
 """
 from contextlib import AsyncExitStack, asynccontextmanager
 
@@ -14,8 +14,10 @@ from family_post_bridge.mcp_writer_adapter import write_family_letter
 
 
 def create_app():
+    # Keep MCPServer objects alive so the host lifespan can explicitly own
+    # each session manager; mounted sub-application lifespan does not run.
     role_apps = [
-        (role, create_role_server(role, write_family_letter)[1])
+        (role, *create_role_server(role, write_family_letter))
         for role in ROLES
     ]
 
@@ -23,22 +25,18 @@ def create_app():
     async def lifespan(_app):
         async with AsyncExitStack() as stack:
             await stack.enter_async_context(legacy_app.router.lifespan_context(legacy_app))
-            # RoleBearerGuard wraps each actual MCP Starlette app. Its
-            # underlying router's SDK-managed lifespan must be entered once.
-            for _, guarded in role_apps:
-                inner = guarded.application
-                await stack.enter_async_context(inner.router.lifespan_context(inner))
+            for _, server, _ in role_apps:
+                await stack.enter_async_context(server.session_manager.run())
             yield
 
-    # Every role mount has an independent bearer-token guard, including
-    # MCP initialize/discovery. No user-supplied sender field exists.
+    # Every MCP path has a distinct fixed sender identity and bearer guard.
+    # The existing REST writer/OAuth/Picker remains under the catch-all mount.
     routes = [
         Mount("/mcp/" + role.lower(), app=guarded)
-        for role, guarded in role_apps
+        for role, _, guarded in role_apps
     ]
     routes.append(Mount("/", app=legacy_app))
     return Starlette(routes=routes, lifespan=lifespan)
 
 
-# No module-level app: merely adding the source cannot change Render's
-# existing entrypoint. SDK compatibility and ASGI HTTP tests required.
+# No module-level app: this module cannot activate itself on current Render.
