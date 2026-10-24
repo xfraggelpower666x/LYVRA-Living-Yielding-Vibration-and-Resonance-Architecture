@@ -2433,5 +2433,20 @@
     "safety": "NO_BYPASS_AUTHORITY_OR_MANDATORY_READBACK",
     "plugin": "PARITY_PENDING",
     "new_router": false
+  },
+  "dual_codeforge_relational_learning_20261024": {
+    "status": "ADDITIVE_SOURCE_COMMITTED_HOST_AND_TEST_EXECUTION_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "current_contract": "LYVRA_NATIVE_RUNTIME/current/thinking/DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_20261024.md",
+    "codeforge_contract": "LYVRA_NATIVE_RUNTIME/current/thinking/CODEFORGE_TECHNICAL_SELF_UNDERSTANDING.md",
+    "supercodeforge_contract": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md",
+    "pure_core": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "tests": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs",
+    "relation": "READ_UNDERSTAND_CAUSAL_LEARN_NO_PEER_COPY",
+    "tests_executed": false,
+    "host_verified": false,
+    "other_system_mutation": false,
+    "plugin_impact": "NATIVE_AND_ALIVE_REVIEW_PENDING",
+    "no_new_router": true
   }
 }
