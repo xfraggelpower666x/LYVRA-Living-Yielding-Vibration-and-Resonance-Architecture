@@ -1,8 +1,7 @@
-"""Opt-in ASGI composition candidate for one Render Free service.
+"""Opt-in MCP ASGI composition candidate on existing Render Free service.
 
-NOT the production entrypoint. The current service continues starting
-family_post_bridge.server:app. Enabling this alternative requires a separate
-review, dependency install, authorization, deploy and host acceptance.
+Source-only. Production still launches family_post_bridge.server:app;
+switching the start command and dependencies requires separate approval.
 """
 from contextlib import AsyncExitStack, asynccontextmanager
 
@@ -15,35 +14,31 @@ from family_post_bridge.mcp_writer_adapter import write_family_letter
 
 
 def create_app():
-    role_apps = []
-    for role in ROLES:
-        server, guarded_app = create_role_server(role, write_family_letter)
-        role_apps.append((role, server, guarded_app))
+    role_apps = [
+        (role, create_role_server(role, write_family_letter)[1])
+        for role in ROLES
+    ]
 
     @asynccontextmanager
     async def lifespan(_app):
-        # MCP streamable transports need a live session manager; without it,
-        # initialize/list_tools may fail even when ASGI routes are mounted.
         async with AsyncExitStack() as stack:
-            async with legacy_app.router.lifespan_context(legacy_app):
-                for _, server, _ in role_apps:
-                    transport = server.streamable_http_app(
-                        streamable_http_path="/",
-                        json_response=True,
-                        stateless_http=True,
-                    )
-                    # The real guarded_app created above is the routed app.
-                    # Do not activate without SDK-specific lifespan validation.
-                    _ = transport
-                yield
+            await stack.enter_async_context(legacy_app.router.lifespan_context(legacy_app))
+            # RoleBearerGuard wraps each actual MCP Starlette app. Its
+            # underlying router's SDK-managed lifespan must be entered once.
+            for _, guarded in role_apps:
+                inner = guarded.application
+                await stack.enter_async_context(inner.router.lifespan_context(inner))
+            yield
 
-    # Sender identity is fixed by path and backend credentials, not by a
-    # client argument. The REST writer remains on the original ASGI app.
-    routes = [Mount("/mcp/" + role.lower(), app=guarded)
-              for role, _, guarded in role_apps]
+    # Every role mount has an independent bearer-token guard, including
+    # MCP initialize/discovery. No user-supplied sender field exists.
+    routes = [
+        Mount("/mcp/" + role.lower(), app=guarded)
+        for role, guarded in role_apps
+    ]
     routes.append(Mount("/", app=legacy_app))
     return Starlette(routes=routes, lifespan=lifespan)
 
 
-# Deliberately no module-level 'app': production cannot activate this by
-# accidentally importing the candidate. Test ASGI behavior before release.
+# No module-level app: merely adding the source cannot change Render's
+# existing entrypoint. SDK compatibility and ASGI HTTP tests required.
