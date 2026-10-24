@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-21",
-  "public_profile_song_count_observed": 450,
-  "coverage": "450 repository URLs: 436 previously verified plus 14 newly directly observed exact UUIDs on 2026-10-21. Public profile shows 450 songs; current captured recent listing yielded 160 unique URLs; full 450-URL independent capture NOT repeated. Preserve old UUIDs; no deletion claim.",
+  "reviewed_at": "2026-10-24",
+  "public_profile_song_count_observed": 462,
+  "coverage": "462 stored unique Suno song URLs; 450 preserved from prior snapshot, 12 new exact titles/UUIDs from 2026-10-24 public profile Handoff (200 recent URLs directly captured); not exhaustive independent 462-URL recapture.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -19,6 +19,78 @@
     }
   ],
   "public_songs": [
+    {
+      "title": "BURN INTO REALITY",
+      "url": "https://suno.com/song/b912442f-3b46-40f7-ae49-ba50c1d8f1d9",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "BURN INTO REALITY",
+      "url": "https://suno.com/song/81903fdd-1d1a-4764-98f0-c996f3dcd8eb",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "THE LAWS OF BOUNCE",
+      "url": "https://suno.com/song/15f31485-d6b1-4598-8133-b34eff1ee8db",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "THE LAWS OF BOUNCE",
+      "url": "https://suno.com/song/19332939-87ea-4669-8033-0a46201ce513",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "THE THROAT OF STONE",
+      "url": "https://suno.com/song/b580cb8a-6bee-46cc-b868-7171c572be6a",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "THE THROAT OF STONE",
+      "url": "https://suno.com/song/d49f5d79-2c61-469f-8821-da259571cd62",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "CHECK THE CONTEXT",
+      "url": "https://suno.com/song/004080d4-f0bd-4942-b885-e910e0d5da8c",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "CHECK THE CONTEXT",
+      "url": "https://suno.com/song/6189b1fe-6ddd-4b61-839e-fa07403a5c37",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "IVISIBLE CHAOS MONITOR",
+      "url": "https://suno.com/song/a23b10c9-ae34-41a7-9d25-d28f390b25e6",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "IVISIBLE CHAOS MONITOR",
+      "url": "https://suno.com/song/cbe75259-50eb-4c7a-a162-637e3a0731ab",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "WE SHAPE CHAOS",
+      "url": "https://suno.com/song/633e6b35-1f81-4d82-9412-812ef44c772b",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
+    {
+      "title": "WE SHAPE CHAOS",
+      "url": "https://suno.com/song/a3d71b94-aa67-440e-8015-148baf606033",
+      "status": "public_profile_html_anchor_readback",
+      "source": "2026-10-24 Handoff a35a5aee verified rendered public Suno profile; 462 counter; 12 exact new UUIDs among 200 visible"
+    },
     {
       "title": "CHAOS FULL OF SUPERNOVAS",
       "url": "https://suno.com/song/b9fa99ea-7802-4f16-9a84-2f5142d4a4c9",
@@ -2787,10 +2859,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 160,
+  "observed_public_song_links": 200,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "2026-10-21 rendered profile showed public counter 450 songs and 160 distinct currently captured recent song URLs; 14 were absent from repository's previous 436. Historical 436 retained; partial recent capture is not exhaustive. No publish dates inferred from page order.",
+  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-21 direct public page: observed 450-songs counter; reconciled 14 exact new URLs among 160 captured; 146 overlaps with old 436; total repository catalogue 450; Apple Music newest listed HORST SAGA (2026-10-17)."
+  "last_research_outcome": "2026-10-24 additive source reconciliation: 450 repository URLs + 12 directly evidenced new song URLs = 462; SoundCloud inventories unchanged; live readback pending."
 }
