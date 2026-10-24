@@ -154,6 +154,9 @@ const discoWords={
 function makeDiscography(){
  const host=document.getElementById('discography');
  const w=discoWords[discoState.lang];
+ // Preserve the keyboard target when a DE/EN event rebuilds this section.
+ const focused=document.activeElement;
+ const discoFocus=host.contains(focused)?(focused.classList.contains('disco-item')?{kind:'item',href:focused.href}:focused.classList.contains('disco-more')?{kind:'more'}:focused.matches('input[type="search"]')?{kind:'search'}:focused.matches('select')?{kind:'provider'}:null):null;
  host.replaceChildren();
  const micro=document.createElement('div');micro.className='micro';micro.textContent=w.micro;
  const title=document.createElement('h2');title.textContent=w.title;
@@ -178,6 +181,10 @@ function makeDiscography(){
  provider.addEventListener('change',()=>{discoState.filter=provider.value;discoState.limit=40;render()});
  more.addEventListener('click',()=>{discoState.limit+=40;render()});
  host.append(micro,title,intro,note,controls,counter,grid,more);render();
+ if(discoFocus){
+  const replacement=discoFocus.kind==='search'?search:discoFocus.kind==='provider'?provider:discoFocus.kind==='more'&&!more.hidden?more:discoFocus.kind==='item'?[...grid.querySelectorAll('.disco-item')].find(link=>link.href===discoFocus.href):null;
+  (replacement||search).focus({preventScroll:true});
+ }
 }
 
 const lyvraTranslations={"Unsere digitalen Welten, Webradio, Community, Streaming, Kaufmöglichkeiten und DJ-Auftritte. Eine zusammenhängende Übersicht statt verteilter Kartenblöcke.":"Our digital worlds, web radio, community, streaming, music stores and DJ performances. One connected space instead of scattered link cards.","FRAGGELPOWER666 — Unsere digitalen Welten, Webradio, Community, Streaming, Kaufmöglichkeiten und DJ-Auftritte. Eine zusammenhängende Übersicht statt verteilter Kartenblöcke.":"FRAGGELPOWER666 — Our digital worlds, web radio, community, streaming, music stores and DJ performances. One connected space instead of scattered link cards.","◉ LIVE-STANDALONE-ANSICHT · KEIN ERSATZ DER HAUPTSEITEN-KARTEN":"◉ LIVE STANDALONE VIEW · NOT A REPLACEMENT FOR MAIN-SITE CARDS","◉ STANDALONE ADD-ON · AUF WEBLYVRA LIVE · 21.10.2026":"◉ STANDALONE ADD-ON · LIVE ON WEBLYVRA · 21 OCT 2026","Websites, Radio & Live":"Websites, Radio & Live","Community & Social Media":"Community & Social Media","Hören & Kaufen":"Listen & Buy","DJ & Creator":"DJ & Creator","Archive":"Archives","Öffentlich dargestellt werden nur belegte Zielseiten. Die konkrete DistroKid-Auslieferung wird separat releasebezogen geprüft. Social-Profile belegen nicht automatisch TikTok- oder Meta-Audiokatalogeinträge. Dieses eigenständige Add-on ist über WEBLyvra live erreichbar und ersetzt nicht die bestehenden Karten der Hauptseite.":"Only documented pages are displayed. Actual DistroKid deliveries are verified per release. Social profiles do not automatically prove TikTok or Meta audio-library availability. This standalone add-on is live on WEBLyvra and does not replace the existing main-site cards.","Ein gemeinsamer Frequenzraum.":"A shared frequency space.","Elektronische Musik verbindet das LYVRA-Universum mit der Welt von 666SOUNDsDESIGn. Hier treffen Fraggles eigene Sounds, Dark Techno, Psytrance und Cyberpunk-Atmosphäre aufeinander – ein gemeinsames Signal, das weit über die Website hinausreicht.":"Electronic music connects the LYVRA universe with the world of 666SOUNDsDESIGn. Fraggle's original sounds, dark techno, psytrance and cyberpunk atmospheres meet here in a shared signal that reaches beyond the website.","Unsere Frequenzräume":"Our frequency spaces","Ein Blick hinter das Signal":"Behind the signal","Diese Anzeigen beruhen auf dem dokumentierten Prüfstand vom ":"These panels reflect the documented check from ",". Sie zeigen keinen automatisch ermittelten Live-Zustand.":". They do not indicate automatically measured live status.","Signal & Verbindung":"Signal & connection","Musik im Moment":"Music right now","AutoDJ":"AutoDJ","Player-Hinweise":"Player notices","Discord-Verbindung":"Discord connection","Audiostream":"Audio stream","Schnittstelle beim letzten Test erreichbar":"Endpoint reached during the last check","Titelinformationen können hier abgerufen werden":"Track information can be retrieved here","Statusschnittstelle zuletzt erreichbar":"Status endpoint reached during the last check","Hinweis-System zuletzt erreichbar":"Notice system reached during the last check","Konfiguriert; Audiowiedergabe nicht unabhängig geprüft":"Configured; audio playback not independently verified","ZULETZT ERREICHBAR":"REACHED AT LAST CHECK","AUDIO-CHECK OFFEN":"AUDIO CHECK PENDING","Schnittstelle ansehen ↗":"View endpoint ↗","Das Herz unseres musikalischen Universums.":"The heart of our musical universe.","Klang und visuelle Welten im gemeinsamen Signal.":"Sound and visual worlds in one shared signal.","Velunas eigener Frequenzraum.":"Veluna's own frequency space.","Unser Radio im kompakten Format.":"Our radio in a compact player.","Ein weiterer Zugang zu unserem Radiosignal.":"Another way to tune into our radio signal.","Katalogeintrag – laut letzter Prüfung nicht abspielbar.":"Directory listing – not playable at the last check.","Auftritte & Archiv":"Performances & archive","FRAGGELPOWER666 hören & kaufen":"Listen to & buy FRAGGELPOWER666","DJ-Mixe & Creator":"DJ mixes & creators","Webradio":"Web radio"};
@@ -256,7 +263,7 @@ function renderGoogleResonance(lang){
  if(focusedReachFilter)filters.querySelector('[data-reach-filter="'+focusedReachFilter+'"]')?.focus({preventScroll:true});
  else if(focusedReachHref){
   const replacement=[...listing.querySelectorAll('.gr-item a')].find(link=>link.href===focusedReachHref&&(link.classList.contains('gr-search-check')?'search':'source')===focusedReachLinkKind);
-  replacement?.focus({preventScroll:true});
+  (replacement||filters.querySelector('[data-reach-filter="'+grState.filter+'"]'))?.focus({preventScroll:true});
  }
 }
 
