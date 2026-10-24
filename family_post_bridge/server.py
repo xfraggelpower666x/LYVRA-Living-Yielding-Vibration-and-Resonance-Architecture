@@ -86,6 +86,10 @@ def _do_write_locked(letter: Letter) -> dict:
         raise HTTPException(409, "MESSAGE_ID_AMBIGUOUS_DUPLICATES")
     if existing:
         doc = existing[0]
+        if not doc.get("id") or doc.get("mimeType") != "application/vnd.google-apps.document":
+            raise HTTPException(409, "MESSAGE_ID_EXISTING_FILE_UNVERIFIED")
+        if doc.get("appProperties", {}).get("family_post_sender") != letter.sender:
+            raise HTTPException(409, "MESSAGE_ID_EXISTING_SENDER_UNVERIFIED")
         recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")
         if not recorded or not hmac.compare_digest(recorded, fingerprint):
             raise HTTPException(409, "MESSAGE_ID_ALREADY_USED_OR_UNVERIFIED")
