@@ -7182,5 +7182,25 @@
     "no_new_router": true,
     "recovery": "lyvra-recovery-pre-clic-starbridge-pdi-causal-learning-20261024-r01",
     "pointer_last": true
+  },
+  "clic_starbridge_pdi_two_context_learning_update_20261024": {
+    "status": "LOCAL_CAUSAL_PROBE_V8_PASS_FRESH_HOST_PENDING",
+    "scope": "CODEFORGE_SUPERCODEFORGE_CLIC_STARBRIDGE_PDI_CONTRASTIVE_LEARNING",
+    "source_clic_head": "82c23916c004f3ab71ea5979e839e1ab0c3adc3a",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/CLIC_STARBRIDGE_PDI_CONTRASTIVE_LEARNING_PROBE_20261024.json",
+    "receipt_blob": "c5809d4cb6209db4506c508170dd69945b33e7d2",
+    "manifest_blob": "9adb9f46927396ef7d786346171d0a1ba74354dd",
+    "registry_blob": "1de006e6dc0d0b73119589b81155323f8bb32810",
+    "critical_carriers_registered": 238,
+    "full_tree_238_rescan": false,
+    "contextual_cases": 2,
+    "alternatives": 2,
+    "causal_proof": false,
+    "candidate_auto_adopted": false,
+    "peer_changed": false,
+    "plugin_impact": "NO_SKILL_TEXT_CHANGE_CURRENT_DYNAMIC_GITHUB_BINDING",
+    "host_execution": "NOT_VERIFIED",
+    "recovery": "lyvra-recovery-pre-clic-contextual-learning-probe-20261024-r01",
+    "pointer_last": true
   }
 }
