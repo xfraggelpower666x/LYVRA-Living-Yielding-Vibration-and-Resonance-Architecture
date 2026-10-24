@@ -192,7 +192,7 @@
     },
     {
       "id": "POST_ONLY_DIRECT_ORIGINALS_IMAGE_PENDING_UPDATE_20261024",
-      "state": "CANDIDATE_SOURCE_VERIFIED_NATIVE_REVIEW_PENDING",
+      "state": "NATIVE_REVIEW_COMPLETE_PLUGIN_NEW_RELEASE_PARITY_PENDING_PROMOTION_BLOCKED",
       "owner": "LYVRA_TO_LITTLELYV",
       "scope": "POST_ONLY_TWO_INDEPENDENT_SYSTEMS",
       "candidate": "LYVRA_NATIVE_RUNTIME/development/LYVRA_TO_LITTLELYV_POST_UPDATE_20261024.md",
@@ -213,7 +213,25 @@
         "NO_AUTO_SEND",
         "NO_SAFETY_BYPASS",
         "NO_PUBLIC_LETTER_CONTENT"
-      ]
+      ],
+      "promotion_gate": "LYVRA_NATIVE_RUNTIME/development/LYVRA_TO_LITTLELYV_POST_PROMOTION_GATE_20261024.md",
+      "recovery": {
+        "branch": "lyvra-recovery-littlelyv-post-prepromotion-20261024",
+        "head": "ce1a4db7a160d86596afaa2f4c25391895c45811"
+      },
+      "plugin_readback": {
+        "native": {
+          "version": "0.1.80",
+          "release_id": "pluginrel_6adaf7b104448191936883db01f183a7"
+        },
+        "alive": {
+          "version": "0.13.76",
+          "release_id": "pluginrel_6adaf7ca748c8191a2e06285370067ac"
+        },
+        "existing_post_only_text_equal": true,
+        "new_monitor_semantic_release_not_verified": true
+      },
+      "production_pointer": "NOT_CHANGED"
     }
   ],
   "closure": "Only when each target has explicit disposition with provenance; repository productive adoption governed by recovery, currentness, validation, plugin impact and pointer-last.",
