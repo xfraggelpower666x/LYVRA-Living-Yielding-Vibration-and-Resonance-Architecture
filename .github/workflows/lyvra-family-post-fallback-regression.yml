@@ -11,6 +11,10 @@ on:
       - 'family_post_bridge/tests/test_intelligent_review.py'
       - 'family_post_bridge/tests/test_backend_source_isolation.py'
       - 'family_post_bridge/tests/test_existing_writer_contract.py'
+      - 'family_post_bridge/tests/test_mcp_host_acceptance_source_gates.py'
+      - 'family_post_bridge/mcp_gateway.py'
+      - 'family_post_bridge/mcp_writer_adapter.py'
+      - 'family_post_bridge/server.py'
       - '.github/workflows/lyvra-family-post-fallback-regression.yml'
   workflow_dispatch:
 
@@ -28,6 +32,6 @@ jobs:
         with:
           python-version: '3.11'
       - name: Pure deterministic fallback contract
-        run: python -m unittest -v family_post_bridge.tests.test_fallback_decision family_post_bridge.tests.test_post_write_monitor family_post_bridge.tests.test_intelligent_review family_post_bridge.tests.test_backend_source_isolation family_post_bridge.tests.test_existing_writer_contract
+        run: python -m unittest -v family_post_bridge.tests.test_fallback_decision family_post_bridge.tests.test_post_write_monitor family_post_bridge.tests.test_intelligent_review family_post_bridge.tests.test_backend_source_isolation family_post_bridge.tests.test_existing_writer_contract family_post_bridge.tests.test_mcp_host_acceptance_source_gates
       - name: Source syntax check
-        run: python -m py_compile family_post_bridge/fallback_decision.py family_post_bridge/tests/test_fallback_decision.py family_post_bridge/post_write_monitor.py family_post_bridge/tests/test_post_write_monitor.py family_post_bridge/intelligent_review.py family_post_bridge/tests/test_intelligent_review.py family_post_bridge/tests/test_backend_source_isolation.py family_post_bridge/tests/test_existing_writer_contract.py
+        run: python -m py_compile family_post_bridge/fallback_decision.py family_post_bridge/tests/test_fallback_decision.py family_post_bridge/post_write_monitor.py family_post_bridge/tests/test_post_write_monitor.py family_post_bridge/intelligent_review.py family_post_bridge/tests/test_intelligent_review.py family_post_bridge/tests/test_backend_source_isolation.py family_post_bridge/tests/test_existing_writer_contract.py family_post_bridge/tests/test_mcp_host_acceptance_source_gates.py family_post_bridge/mcp_gateway.py family_post_bridge/mcp_writer_adapter.py family_post_bridge/server.py
