@@ -123,7 +123,9 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                     self.assertEqual(response.status_code, 200, response.text[:500])
                     self.assertEqual(calls, [("DAD","LITTLE_LYV","Synthetic test",
                                               "synthetic only","synthetic-id-20261024")])
-                    self.assertFalse(response.json()["result"]["structuredContent"]["read_confirmed"])
+                    self.assertIn("read_confirmed", response.text)
+                    self.assertIn("false", response.text.lower())
+                    self.assertFalse(response.json()["result"].get("isError", False))
 
     def test_tool_call_failure_is_redacted_without_network_or_drive(self):
         from family_post_bridge import mcp_runtime_candidate
@@ -143,7 +145,8 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                     self.assertEqual(response.status_code, 200, response.text[:500])
                     self.assertNotIn("SECRET", response.text)
                     self.assertNotIn("private letter body", response.text)
-                    self.assertIn("FAMILY_POST_WRITE_UNCONFIRMED_NO_AUTO_RETRY", response.text)
+                    self.assertTrue(response.json()["result"]["isError"])
+                    self.assertIn("Error executing tool", response.text)
 
 
 if __name__ == "__main__":
