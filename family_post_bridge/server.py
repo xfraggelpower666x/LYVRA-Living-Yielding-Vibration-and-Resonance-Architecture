@@ -179,3 +179,11 @@ def write_letter(letter: Letter, x_family_post_token: str | None = Header(defaul
         raise HTTPException(status_code=503, detail=f"DRIVE_WRITE_UNCONFIRMED_HTTP_{exc.resp.status}") from None
     except Exception:
         raise HTTPException(status_code=503, detail="DRIVE_WRITE_UNCONFIRMED") from None
+
+
+# Existing Render start command continues to import server:app. Compose the
+# role-guarded MCP ASGI surface into that same service without an extra host.
+# The candidate composition imports the already-defined legacy FastAPI app,
+# preserving existing REST routes and the OAuth/Drive writer.
+from family_post_bridge.mcp_runtime_candidate import create_app as _create_mcp_app
+app = _create_mcp_app()
