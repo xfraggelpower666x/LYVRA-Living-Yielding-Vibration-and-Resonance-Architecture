@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-10-24-DUAL_CODEFORGE_RELATIONAL_SOURCE_BINDING",
+  "freshness_epoch": "2026-10-24-DUAL_CODEFORGE_V8_EXECUTION_EVIDENCE",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -35,7 +35,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "1fb6230d581928f220eac08e9fa6f701f69da110",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "0c7d0eedf0b00efe19d59662b4dfecc6e7ebd776",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -227,7 +227,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json": "d90590948845700a3327229be0ea7a13423cf370",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md": "682f68fd600625ebdafcd306b51a2c127101698d",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md": "f9995c662c6c892ec610e84aee42aea5099f7b22",
-    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "b0f8fa654b54b427d0727c298e4620ff393416f2",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "0551f5fca5db2e1c8d9c696ace983ae2eaca032a",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CAPABILITY_REGISTRY_PROPOSAL.json": "c0b4691d88693c7e0b1c042d044c5b4f99698222",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md": "3f22994f1db6ce28ee7bb81d4c899dd3d52705ba",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
@@ -239,13 +239,14 @@
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md": "cc3504fd97f193d3581181bdc197fa0369ca75be",
     "LYVRA_NATIVE_RUNTIME/current/thinking/DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_20261024.md": "9a66168358d3885e8ed7c7face7f213433f5f727",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs": "1243de0429a7e63118533351385827c861273d2b",
-    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs": "741256ee2234d896bd0739ef6478434b86118887"
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs": "741256ee2234d896bd0739ef6478434b86118887",
+    "LYVRA_NATIVE_RUNTIME/development/DUAL_CODEFORGE_RELATIONAL_LEARNING_EXECUTION_EVIDENCE_20261024.json": "d4412b93131467f1337e5b75d19e33686bb4520b"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
   "pointer_publication": "POST_POINTER_VERIFIED_COMPLETE",
   "codeforge_review_required": true,
-  "registry_population_status": "234_SOURCE_BINDINGS_PRESENT_231_PRIOR_BASE_VERIFIED_NEW_SOURCE_READBACK_6_TARGETS_TEST_RUNTIME_PENDING",
+  "registry_population_status": "235_CARRIERS_SOURCE_READBACK_V8_FIVE_PASS_NO_NODE_OR_FRESH_PLUGIN_HOST_PASS",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
   "verified_carrier_count": 231,
   "verified_mismatch_count": 0,
@@ -2249,5 +2250,14 @@
     "tests_executed": false,
     "plugin_impact": "NATIVE_ALIVE_REVIEW_PENDING",
     "no_foreign_adoption": true
+  },
+  "dual_codeforge_test_evidence_20261024": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/DUAL_CODEFORGE_RELATIONAL_LEARNING_EXECUTION_EVIDENCE_20261024.json",
+    "receipt_blob": "d4412b93131467f1337e5b75d19e33686bb4520b",
+    "node_execution": false,
+    "v8_source_execution_5_of_5": true,
+    "plugin_native_semantic_parity": false,
+    "plugin_alive_semantic_parity": false,
+    "foreign_actions": false
   }
 }
