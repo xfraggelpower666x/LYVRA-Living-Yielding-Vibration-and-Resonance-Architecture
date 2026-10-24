@@ -102,6 +102,10 @@ for(const token of ["const focusedReachLink=document.activeElement?.closest?.('#
 for(const token of ['role="group" aria-label="Language / Sprache"','data-addon-lang="de"','data-addon-lang="en"','.addon-lang button:focus-visible','min-width:44px;min-height:44px',"button.dataset.addonLang===lang","localStorage.setItem('lyvra-language',selected)","new CustomEvent('lyvra:languagechange'"]){
  assert.ok(html.includes(token),'visible bilingual mobile language control regression: '+token);
 }
+// Visible filter badges must report actual inventory category counts, never the 617-link discography count.
+for(const token of ["const reachEntries=[...grPlatforms,...grProducts]","key==='all'?reachEntries.length:reachEntries.filter(item=>item.category===key).length","button.textContent=w[key]+' ('+count+')'","button.setAttribute('aria-pressed',String(grState.filter===key))"]){
+ assert.ok(html.includes(token),'Product Reach badge/state contract missing: '+token);
+}
 assert.ok(!html.includes("anchor.setAttribute('aria-label',item.label+"),'release source link should announce its visible name only, not repeat the evidence tier');
 assert.ok(html.includes('Die Position dort ist nicht gemessen'),'Google uncertainty disclosure missing');
 assert.ok(html.includes('Its position is not measured'),'English Google uncertainty disclosure missing');
