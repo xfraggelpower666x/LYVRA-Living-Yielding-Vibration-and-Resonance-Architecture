@@ -1,0 +1,44 @@
+{
+  "kind": "WEBLYVRA_ADDON_MOBILE_FOCUS_REPAIR_RECEIPT",
+  "date": "2026-10-24",
+  "workspace": "WEBLyvra/artist-discovery",
+  "source_base_head": "1aa5cb999e2035960916684f9c1887fbfef6f2de",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-mobile-focus-20261024-r01",
+  "source_path": "WEBLyvra/artist-discovery/index.html",
+  "source_blob": "aa22e3a1f6dafbf459caf89828fa971a82ca1f7a",
+  "source_head": "15d635a12e3dc505bb4606b23c370daa186c4769",
+  "change": "Preserve discography search/provider/item/more keyboard focus across DE/EN DOM rebuild; preserve existing Product Reach focus restoration and use selected-filter fallback for absent links.",
+  "source_integrity_ci": {
+    "run_id": 40113259975,
+    "conclusion": "success",
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/40113259975"
+  },
+  "first_candidate_ci": {
+    "run_id": 40113208092,
+    "conclusion": "failure",
+    "cause": "Existing literal focus-regression assertion",
+    "resolution": "Retained existing replacement focus expression; appended fallback as additional line"
+  },
+  "canonical_catalog": {
+    "suno": 462,
+    "soundcloud": 167,
+    "total": 629,
+    "prior_verified_host_receipt": "WEBLyvra/artist-discovery/CANONICAL_HOST_462_629_ACCEPTANCE_2026-10-24.json",
+    "canonical_host_not_retested": true
+  },
+  "evidence_boundary": {
+    "source_readback": "VERIFIED",
+    "ci": "PASS",
+    "canonical_deployment_of_this_ui_change": "NOT_VERIFIED",
+    "real_iphone_voiceover": "OPEN_NOT_TESTED",
+    "exhaustive_urls": "NOT_REPEATED",
+    "whole_lyvra": "PARTIAL"
+  },
+  "scope": {
+    "only_addon_html": true,
+    "no_new_router": true,
+    "no_foreign_activation": true,
+    "no_plugin_mutation": true
+  },
+  "pointer_last_required": true
+}
