@@ -1,0 +1,28 @@
+name: LYVRA Family Post Minimal MCP
+on:
+  pull_request:
+    paths:
+      - 'family_post_bridge/server.py'
+      - 'family_post_bridge/requirements.txt'
+      - 'family_post_bridge/tests/test_production_import_compatibility.py'
+      - 'family_post_bridge/mcp_gateway.py'
+      - 'family_post_bridge/mcp_runtime_candidate.py'
+      - 'family_post_bridge/mcp_asgi_entrypoint_candidate.py'
+      - 'family_post_bridge/requirements-mcp-runtime-candidate.txt'
+      - 'family_post_bridge/tests/test_mcp_runtime_asgi.py'
+      - 'family_post_bridge/tests/test_mcp_zero_euro_entrypoint.py'
+      - '.github/workflows/lyvra-family-post-minimal-mcp.yml'
+permissions:
+  contents: read
+jobs:
+  free-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install same-service runtime and no-cost test driver
+        run: pip install -r family_post_bridge/requirements-mcp-runtime-candidate.txt 'httpx>=0.27,<1'
+      - name: Start, authenticate and preserve legacy REST endpoints in-process
+        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_asgi family_post_bridge.tests.test_mcp_zero_euro_entrypoint family_post_bridge.tests.test_production_import_compatibility

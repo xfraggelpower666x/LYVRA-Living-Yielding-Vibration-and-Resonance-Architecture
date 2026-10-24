@@ -3,3 +3,6 @@ uvicorn==0.34.2
 google-api-python-client==2.169.0
 google-auth==2.40.1
 google-auth-httplib2==0.2.0
+
+# Same Render Free service: MCP gateway, no second server or database.
+mcp==2.3.0
