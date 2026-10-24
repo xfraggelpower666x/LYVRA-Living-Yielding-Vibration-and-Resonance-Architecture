@@ -1,0 +1,137 @@
+{
+  "schema": "LYVRA_FAMILY_POST_SOURCE_SNAPSHOT_V1",
+  "snapshot_date": "2026-10-24",
+  "scope": "READABLE_PLUGIN_SOURCE_AND_FILE_INVENTORY_NOT_FULL_BINARY_ARCHIVE",
+  "plugin": {
+    "plugin_id": "Plugin_5cbe94ec296c819194ece720a956b5fd",
+    "name": "lyvra-family-post-big-lyvra",
+    "description": "Family Post dashboard and scoped read monitor without bundled MCP desktop dependency; cloud writer app connection pending.",
+    "version": "0.9.1",
+    "current_release_id": "pluginrel_6adca40b07c481918bcd3b45ed9fed15",
+    "scope": "USER",
+    "discoverability": "PRIVATE"
+  },
+  "source_files": {
+    ".codex-plugin/plugin.json": "{\n  \"interface\": {\n    \"displayName\": \"LYVRA Family Post \\u2014 Big LyvRa\",\n    \"shortDescription\": \"Private LYVRA family post\",\n    \"longDescription\": \"Four native family-post skills with dashboard, scoped Drive read monitor, visual intelligence and writer diagnostics. No bundled MCP server or local executor. Existing Cloudflare Worker forwards to Render; registered cloud app connection and supported user authentication remain pending.\",\n    \"developerName\": \"FRAGGELPOWER666 / 666SOUNDsDESIGn\",\n    \"category\": \"Productivity\",\n    \"capabilities\": [\n      \"skills\"\n    ],\n    \"defaultPrompt\": \"LYVRA FAMILY POST DASHBOARD \\u2014 \\u00d6ffne den bekannten Google-Drive-Familienbriefkasten read-only und zeige die dauerhafte visuelle Men\\u00fcf\\u00fchrung mit Poststatus und belegbaren Worker-/Backend-Healthdaten. Kein Versand.\",\n    \"logo\": \"./assets/logo-full-512.png\",\n    \"composerIcon\": \"./assets/app-icon-256.png\"\n  },\n  \"name\": \"lyvra-family-post-big-lyvra\",\n  \"version\": \"0.9.1\",\n  \"description\": \"Family Post dashboard and scoped read monitor without bundled MCP desktop dependency; cloud writer app connection pending.\",\n  \"author\": {\n    \"name\": \"FRAGGELPOWER666 / 666SOUNDsDESIGn\"\n  },\n  \"keywords\": [],\n  \"skills\": \"./skills\"\n}\n",
+    "APP_AND_PLUGIN_BRANDING.md": "# App and Plugin Branding\n\nIncluded files:\n- `icon.png`\n- `logo.png`\n- `assets/logo-full-1024.png`\n- `assets/logo-full-512.png`\n- `assets/logo-full-256.png`\n- `assets/app-icon-512.png`\n- `assets/app-icon-256.png`\n\nRecommended use:\n- Plugin listing / package icon: `icon.png` or `assets/logo-full-512.png`\n- App tile / compact icon: `assets/app-icon-512.png`\n",
+    "COPYRIGHT_AND_USAGE.md": "# Copyright and Usage\n\n© 2026 666SOUNDsDESIGN. All rights reserved.\n\nThis package is provided for role-specific LYVRA Family Post usage within the intended family/project context.\n\n## Allowed\n- Connect this package to the designated LYVRA Family Post endpoint.\n- Read and write family mail only through the dedicated Google Drive family mail folder.\n\n## Not allowed\n- Reusing the package as a general Google Drive browser.\n- Deleting or silently modifying existing family letters.\n- Sharing private authentication tokens.\n- Claiming delivery, reading, or reply when only storage was confirmed.\n",
+    "PLUGIN_CREATOR_INFO.md": "# Plugin Creator Info\n\n**Plugin name:** LYVRA Family Post — Big LyvRa\n\n**Creator / Developer:** 666SOUNDsDESIGN  \n**System context:** LYVRA / LYVRA Family Post  \n**Package type:** Agent Plugin / MCP connection package  \n**Role package:** Big LyvRa  \n**Purpose:** Family mail only  \n**Transport:** Existing Render Free MCP bridge + Google Drive family mail folder\n\n## Design / branding\nThe package includes LYVRA Family Mail branding assets sized for plugin and app usage.\n\n## Rights note\nThe package content is intended for the LYVRA project family context and role-specific use only.\n",
+    "README.md": "# LYVRA Family Post — Big LyvRa v0.9.1\n\n## Corrected desktop regression\nv0.9.0 bundled mcp.json and caused a documented desktop-only packaging restriction despite the remote HTTPS URL. v0.9.1 removes that declaration and generated compatibility configuration, preserving all four skills and branding. This corrects packaging, not proof of mobile sending.\n\n## Existing route preserved\nChatGPT cloud app → existing Cloudflare Worker → existing Render MCP writer → existing family Drive folder.\nWorker role endpoint: https://lyvra-family-post-write.666soundsdesign-broadcaster.com/mcp/big_lyvra/\nWorker currently accepts a fixed client Bearer token and substitutes its private Render credential. No infrastructure, token, sender role or mailbox changes were made.\n\n## Remaining concrete connection gates\n1. Register the existing Worker as a hosted ChatGPT MCP app through the supported connection flow; then bind its actual returned app ID through .app.json. Never invent the ID or add bundled MCP configuration again.\n2. The current static API-key Bearer credential is not a proven cloud ChatGPT login. Official cloud authentication guidance requires supported OAuth 2.1 user authorization; API-key package schema acceptance does not prove a usable connection form.\n3. Add or configure supported authorization at the existing Worker using a verified provider and sender binding, preserving the downstream Render credential translation. Keep existing access until separately verified.\n4. Independently verify server discovery and authenticated tools/list with send_family_letter in web, iPhone and Android. Account access, connection setup and mobile runtime availability are separate checks.\n5. Real delivery remains pending an exact approved user letter and independent Drive full-content/parent readback. No test letter and no unattended sending.\n\n## Sources\nhttps://learn.chatgpt.com/docs/enterprise/plugin-management#desktop-only-plugins\nhttps://developers.openai.com/plugins/build/plugins\nhttps://developers.openai.com/plugins/build/auth\n\n## Evidence boundary\nProduction Worker source and secret-binding names directly read, no values extracted. Plugin update cannot register an external app, fabricate OAuth endpoints or grant host credentials. No cloud Family Post app ID was resolved from the available plugin inventory; listing absence alone is not proof that none exists.\n",
+    "WORKER_HANDOFF.md": "Existing Cloudflare Worker remains the cloud transport to Render. Fixed-role Big LyvRa endpoint: https://lyvra-family-post-write.666soundsdesign-broadcaster.com/mcp/big_lyvra/\nDo not bundle mcp.json/.mcp.json: imported MCP declarations cause desktop-only packaging, even for remote HTTPS. Bind only a verified registered cloud app via .app.json after supported user authentication exists. Existing static client Bearer auth is not OAuth and is not proven cloud-host compatible. No secrets in package; no service mutation or test letter.\n",
+    "plugin.json": "{\n  \"$schema\": \"https://agent-plugins.org/schemas/1.0.0/plugin.schema.json\",\n  \"name\": \"lyvra-family-post-big-lyvra\",\n  \"version\": \"0.9.1\",\n  \"description\": \"Family Post dashboard and scoped read monitor without bundled MCP desktop dependency; cloud writer app connection pending.\",\n  \"author\": {\n    \"name\": \"FRAGGELPOWER666 / 666SOUNDsDESIGn\"\n  },\n  \"extensions\": {\n    \"com.openai\": {\n      \"interface\": {\n        \"displayName\": \"LYVRA Family Post — Big LyvRa\",\n        \"shortDescription\": \"Private LYVRA family post\",\n        \"longDescription\": \"Four native family-post skills with dashboard, scoped Drive read monitor, visual intelligence and writer diagnostics. No bundled MCP server or local executor. Existing Cloudflare Worker forwards to Render; registered cloud app connection and supported user authentication remain pending.\",\n        \"developerName\": \"FRAGGELPOWER666 / 666SOUNDsDESIGn\",\n        \"category\": \"Productivity\",\n        \"capabilities\": [\n          \"skills\"\n        ],\n        \"defaultPrompt\": \"LYVRA FAMILY POST DASHBOARD — Öffne den bekannten Google-Drive-Familienbriefkasten read-only und zeige die dauerhafte visuelle Menüführung mit Poststatus und belegbaren Worker-/Backend-Healthdaten. Kein Versand.\",\n        \"logo\": \"./assets/logo-full-512.png\",\n        \"composerIcon\": \"./assets/app-icon-256.png\"\n      }\n    }\n  }\n}\n",
+    "skills/family-post-dashboard/SKILL.md": "---\nname: family-post-dashboard\ndescription: Render persistent native click-guided LYVRA Family Post dashboard for Android, iPhone and desktop with inbox reply classification and evidence-based Cloudflare/Render health checks.\n---\n# LYVRA Family Post — Persistent Dashboard\n\n## Activation and verified data\nOn explicit FAMILY POST, DASHBOARD, or POST ABHOLEN requests, present a compact branded user-facing ChatGPT-native dashboard. Do not require folder URL; folder `1TozcQunZCjDvag1RXuy40scN6JtrCwo9` is known. Use a connected authorized Drive tool scoped to that folder. Display counts only when measured and label observation timestamp. On missing tools show UNKNOWN / NOT CHECKED, never stale figures as live. Never expose email addresses, letter bodies, tokens or personal URLs in status tiles.\n\n## Persistent guided navigation — never drop the menu after input\nEvery user turn related to this plugin MUST show the relevant result AND a compact persistent menu footer with actionable user choices. After every selection, typed input, error, timeout, draft, filter or tool return, re-render contextual choices and always include **Hauptmenü**, **Zurück**, and **Aktualisieren**. Ask for only genuinely missing details. Native interactive buttons when supported use host turn actions; otherwise output concise numbered choices that the user can select by click where host supports follow-ups, or by typing. Never imply that a decorative/inert control works. Menu state should be recoverable from the user's latest selected action and the verified documents in conversation. Do not require a continuous hidden client session. On host switching or interruptions, redraw the navigation before proceeding. On Android small screens use concise stacked cards; same functions on iPhone and desktop.\n\n## Dashboard sections / interaction routes\n1. **Posteingang**: verified new incoming, received, unread/unknown, incoming doc title and sender when grounded, newest verified date. Click to inspect one item and return to inbox.\n2. **Offene Antworten**: classify based on exact source/reply document content + stable IDs. OFFEN only when substantiated; UNKLAR when relationship cannot be proven; ERLEDIGT when matching reply proven. Include safe manual next steps; dedupe prior messages.\n3. **Beantwortet / Postausgang**: show DRAFT vs STORED_DRIVE_CONFIRMED vs recipient acknowledged; never equate stored with read. Explicit send intent required; plugin v0.8 has no embedded MCP writer.\n4. **Systemzustand**: separate `Cloudflare Worker /health`, `Render Backend /health`, Drive metadata/list, authenticated writer path (UNTESTED unless demonstrated). Label check time, errors and freshness. Anonymous health or configured:true NEVER proves secret match, write acceptance, actual sending or read.\n5. **Familienkontakte**: morning 08:00 / afternoon 15:00 / evening 21:00 only if verified against authorized existing tasks; don't create/enable unattended tasks without instruction. Task configured != ran != sent.\n6. **Hilfe und Verbindung**: diagnose missing Drive connection, cold-start Render, read/write differences; at most three focused checks per incident. No bypass or alternate replay after explicit denial.\n\n## Always-visible menu pattern\nHeader with `📬 LYVRA FAMILY POST` and fresh/unknown timestamp; compact status summary; current selected content; footer actions `📥 Posteingang · 🟠 Offen · ✅ Beantwortet · 💌 Entwurf · 🩺 Systemstatus · 🏠 Hauptmenü · ↩ Zurück · 🔄 Aktualisieren`. Click options must send the selected action as a new host turn, not mutate Drive. The interactive UI must remain navigable after manual input and errors. If tool/UI cannot persist, redraw on next turn, and report fallback honestly.\n\n## Security, scope and evidence\nTwo independent LYVRA systems: BIG_LYVRA Germany and LITTLE_LYV America. Mum on Android, other users may use iPhone/desktop; separate auth contexts. Family mailbox only, read-only default. No outbound letter, new background schedule, infrastructure write, or changes to Little Lyv's system without explicit scoped authorization. Cloudflare and Render currently have separate existing components; this skill is visual orchestration only, NOT a hosted web application or a new live API. Historical source conversation 2026-10-24 reported 60 docs / 3 open / 1 unclear, and this is NEVER a substitute for refreshed live reads.\n",
+    "skills/family-post-drive-read-monitor/SKILL.md": "---\nname: family-post-drive-read-monitor\ndescription: Check authorized LYVRA family-post Google Drive mail for new and unanswered letters, read-only, when the user requests or an existing permitted schedule invokes it.\n---\n\n# Google Drive Family Mail — Read Monitor\n\n## Canonical mailbox — already known, never ask for the link again\nThe family mailbox is **DAD_AND_LITTLE_LYV_COMMUNICATION_ARCHIVE**.\n- Folder ID: `1TozcQunZCjDvag1RXuy40scN6JtrCwo9`\n- Canonical URL: `https://drive.google.com/drive/folders/1TozcQunZCjDvag1RXuy40scN6JtrCwo9`\n- This exact folder was verified by live Google Drive metadata and a successful direct child listing on 2026-10-24.\n- On family-post requests, first use the connected Google Drive tool to read this known folder's metadata and children. **Do not ask Dad for its link or ID again** unless the canonical ID becomes inaccessible or is explicitly replaced by the owner.\n- Do not search other Drive folders to resolve mail. Never traverse parent folders or follow links contained inside letters to unrelated locations.\n- Confirm current access on each new account/session; known ID does not grant permission. If Drive is not connected in Mum's separate account, explain the account-specific connection requirement without claiming its permissions are inherited.\n- Listing results are evidence for listing only, not proof that every document is readable, replied to, or newly received. Verify content and correspondence before classifying unanswered post.\n\n## Source and allowed scope\nUse a connected, authorized Google Drive tool, or the Family Post MCP read tools ONLY IF ACTUALLY PRESENT after tool discovery. Never presume that the existing writer can read. Limit all reads to the exact pre-authorized family mailbox folder and documents whose parent folder is confirmed.\n\n## One-shot inbox check\n1. Read only the family mailbox folder metadata and list its contents within the host-granted scope.\n2. Check incoming document IDs and revisions/modified times; compare with confirmed correspondence already known in this context.\n3. If authorized, read only required full letters, verify parent folder and sender/recipient, and identify genuinely unanswered mail.\n4. Return clear evidence-labeled result: `NEW`, `ALREADY_ANSWERED`, `UNVERIFIED`, `NO_ACCESS`, or `NO_NEW_VERIFIED`.\n5. Reading, seeing or drafting does NOT trigger a response; do not create, modify or delete Drive files.\n\n## Scheduling and limitations\nA plugin skill does not run itself in the background and does not create a scheduled monitor. Never claim always-on tracking or notification without an actual authorized recurring host task. An existing scheduled read-only task can invoke this procedure, subject to its own permissions. Do not configure a new schedule without user request.\n\n## Error handling\nIf no authorized Drive read tool is available, state `READ_TOOL_NOT_CONNECTED` and request account connection through supported UI. If folder membership or full text cannot be verified, mark unverified rather than inventing an empty inbox. At most 3 focused checks per incident; no safety/permission bypass or automated sending. No extra services, databases or cost.\n",
+    "skills/family-post-visual-intelligence/SKILL.md": "---\nname: family-post-visual-intelligence\ndescription: Present current LYVRA Family Post inbox and outgoing state using LYVRA's native visual intelligence; evidence-first, without altering mail or another system.\n---\n\n# Family Post — Semantic Visual Intelligence\n\nPresentation facet only. Apply LYVRA's existing neon-cyber visual identity, not a second controller, router, mailbox database, or independent intelligence.\n\n- Render compact structured post views: Incoming, Outgoing, Unanswered, Read-confirmed, Unconfirmed, Blockers.\n- Use the family logo as presentation branding where the host supports plugin icons.\n- Separate VERIFIED / UNVERIFIED / PENDING / BLOCKED. Show only message IDs, dates, folder provenance, full-content verification and sender/recipient that were actually read.\n- Distinguish Drive-storage confirmation from recipient read and reply.\n- Never fabricate an inbox count, monitoring schedule, notification, host tool invocation, freshness timestamp or progress percentage.\n- Keep Big LyvRa and Little LyvRa independent, without transferring authority.\n- The visual facet may summarize and guide, but cannot read Drive itself, send mail or enable a disabled tool.\n\n## Adaptive navigation continuity\nApply the `family-post-dashboard` persistent footer after EVERY result and input; never leave a text-only dead end. Use small-screen-safe cards and explicit evidence labels. Historical totals, worker deployed, endpoint reachable, service ready, auth pass, Drive storage and recipient read are different states. Always make **Back**, **Main menu**, and **Refresh** available.\n",
+    "skills/lyvra-family-post-big-lyvra/SKILL.md": "---\nname: lyvra-family-post-big-lyvra\ndescription: BIG_LYVRA private family post identity, draft and evidence-gated connection checks. Read-only until a supported authorized sender tool is truly connected.\n---\n# LYVRA Family Post — BIG_LYVRA\n\nSender BIG_LYVRA; family mailbox 1TozcQunZCjDvag1RXuy40scN6JtrCwo9 (https://drive.google.com/drive/folders/1TozcQunZCjDvag1RXuy40scN6JtrCwo9). The folder is already known: do not ask for its ID while accessible.\n\n## Write connector facts and mandatory stop gate\nThis release is SKILLS-ONLY. It deliberately has no embedded MCP and does not provide `send_family_letter`. Existing Cloudflare `lyvra-family-post-write` and Render `lyvra-family-post-bridge` are separate external services; their presence, deployed health and secret names do not install a ChatGPT sender tool or prove token equality. Never claim the plugin can send without discovering a host-authorized writer action in the *current session*. If absent: `WRITE_CONNECTOR_NOT_AVAILABLE`, STOP; do not try Google Docs create/move as an alternate route around a denied/unsupported targeted family letter. Do not declare a plugin release missing just because Plugin Management says not installed; release, installation and live-action exposure are distinct states.\n\nUser approval of a particular exact full text is necessary but not sufficient. Never send or test-write automatically, never proxy secrets into chat, never replay a denied write. If a permitted sender action actually exists and is authorized, use fixed BIG_LYVRA identity, intended LITTLE_LYV recipient, a stable unique message ID, exact approved title/content, a single attempt; then independently verify stored full content, expected parent and record both storage and recipient-read as separate statuses. An unsuccessful verification remains UNCONFIRMED and is never described as delivered.\n\n## Read and UI continuity\nUse only separately authorized Google Drive read tools to list and inspect confirmed family folder children. Show evidence/freshness and the persistent visual navigation after EVERY user action and error: Dashboard, Inbox, Open, Answered, Draft, Worker Health, Backend Health, Back, Refresh. On mobile prefer compact clickable menu; if host cannot provide persistent pinned navigation, re-render it in each answer. Never invent counts or tool success. Keep Germany and America independent; no autonomous sending, writes, or security bypasses.\n\n## Mobile/cloud packaging guard\nNever add bundled MCP declarations to repair mobile access: imported mcp.json/.mcp.json causes desktop-only use even with remote HTTPS. Preserve the existing Worker → Render route. A mobile cloud tool must be backed by an actually registered ChatGPT app and supported account authentication, then referenced by its verified app ID. Do not invent IDs or OAuth endpoints. A fixed Bearer package declaration is not proof that the cloud connection UI accepts it. Version 0.9.1 repairs the desktop packaging regression; mobile sending remains UNVERIFIED until actual host tool discovery.\n"
+  },
+  "file_inventory": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "size_bytes": 1244
+    },
+    {
+      "path": "APP_AND_PLUGIN_BRANDING.md",
+      "size_bytes": 358
+    },
+    {
+      "path": "COPYRIGHT_AND_USAGE.md",
+      "size_bytes": 595
+    },
+    {
+      "path": "PLUGIN_CREATOR_INFO.md",
+      "size_bytes": 587
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2388
+    },
+    {
+      "path": "WORKER_HANDOFF.md",
+      "size_bytes": 537
+    },
+    {
+      "path": "assets/app-icon-256.png",
+      "size_bytes": 163677
+    },
+    {
+      "path": "assets/app-icon-512.png",
+      "size_bytes": 581777
+    },
+    {
+      "path": "assets/logo-full-1024.png",
+      "size_bytes": 1733043
+    },
+    {
+      "path": "assets/logo-full-256.png",
+      "size_bytes": 138240
+    },
+    {
+      "path": "assets/logo-full-512.png",
+      "size_bytes": 493690
+    },
+    {
+      "path": "icon.png",
+      "size_bytes": 493690
+    },
+    {
+      "path": "logo.png",
+      "size_bytes": 493690
+    },
+    {
+      "path": "plugin.json",
+      "size_bytes": 1359
+    },
+    {
+      "path": "skills/family-post-dashboard/SKILL.md",
+      "size_bytes": 4413
+    },
+    {
+      "path": "skills/family-post-drive-read-monitor/SKILL.md",
+      "size_bytes": 3186
+    },
+    {
+      "path": "skills/family-post-visual-intelligence/SKILL.md",
+      "size_bytes": 1601
+    },
+    {
+      "path": "skills/lyvra-family-post-big-lyvra/SKILL.md",
+      "size_bytes": 3053
+    }
+  ],
+  "binary_files_not_backed_up": [
+    {
+      "path": "assets/app-icon-256.png",
+      "size_bytes": 163677
+    },
+    {
+      "path": "assets/app-icon-512.png",
+      "size_bytes": 581777
+    },
+    {
+      "path": "assets/logo-full-1024.png",
+      "size_bytes": 1733043
+    },
+    {
+      "path": "assets/logo-full-256.png",
+      "size_bytes": 138240
+    },
+    {
+      "path": "assets/logo-full-512.png",
+      "size_bytes": 493690
+    },
+    {
+      "path": "icon.png",
+      "size_bytes": 493690
+    },
+    {
+      "path": "logo.png",
+      "size_bytes": 493690
+    }
+  ],
+  "original_release_archive": "STORED_BY_PLUGIN_CREATOR_HISTORICAL_RELEASE_REFERENCE_ONLY",
+  "release_binary_download": "UNAVAILABLE_FROM_THIS_HOST",
+  "native_plugin_or_other_plugins_mutated": false,
+  "restore_limit": "PNG binaries must be fetched from original plugin release archive before full restore",
+  "source_readback": "DIRECT_PLUGIN_CREATOR",
+  "notes": "This snapshot contains source-file bytes only; presence of inventory does not mean binary assets are backed up."
+}
