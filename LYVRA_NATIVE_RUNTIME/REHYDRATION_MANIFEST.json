@@ -2491,5 +2491,15 @@
     "peer_host": "NOT_VERIFIED",
     "foreign_mutation": false,
     "no_new_router": true
+  },
+  "clic_contrastive_learning_probe_20261024": {
+    "status": "LOCAL_V8_CONTEXTUAL_PROBE_SOURCE_READBACK_PASS_FRESH_HOST_PENDING",
+    "path": "LYVRA_NATIVE_RUNTIME/development/CLIC_STARBRIDGE_PDI_CONTRASTIVE_LEARNING_PROBE_20261024.json",
+    "blob": "c5809d4cb6209db4506c508170dd69945b33e7d2",
+    "relation": "CLIC_STARBRIDGE_RECEIPT_NE_PEER_ADOPTION",
+    "source_case_type": "CONTRACT_GROUNDED_SYNTHETIC_PAIR",
+    "hypotheses": 2,
+    "automatic_adoption": false,
+    "no_foreign_writes": true
   }
 }
