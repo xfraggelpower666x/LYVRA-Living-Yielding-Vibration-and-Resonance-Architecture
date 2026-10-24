@@ -8,7 +8,7 @@ import os
 
 from mcp.server import MCPServer
 from mcp.server.transport_security import TransportSecuritySettings
-from starlette.responses import JSONResponse
+from starlette.responses import JSONResponse, PlainTextResponse
 from starlette.concurrency import run_in_threadpool
 
 ROLES = ("DAD", "BIG_LYVRA", "MUM", "LITTLE_LYV")
@@ -24,8 +24,11 @@ class RoleBearerGuard:
 
     async def __call__(self, scope, receive, send):
         if scope["type"] != "http":
-            await self.application(scope, receive, send)
-            return
+            # No websocket/lifespan bypass around the HTTP bearer boundary.
+            if scope["type"] == "websocket":
+                await send({"type": "websocket.close", "code": 1008})
+                return
+            raise RuntimeError("Unsupported MCP guard scope")
         headers = {k.lower(): v for k, v in scope.get("headers", ())}
         supplied = headers.get(b"authorization", b"")
         configured = os.environ.get("FAMILY_POST_TOKEN_" + self.role, "")
