@@ -7209,5 +7209,25 @@
     "host_execution": "NOT_VERIFIED",
     "recovery": "lyvra-recovery-pre-clic-contextual-learning-probe-20261024-r01",
     "pointer_last": true
+  },
+  "family_post_plugin_source_backup_20261024": {
+    "status": "SOURCE_BACKUP_READBACK_VERIFIED_COMPLETE_BINARY_BACKUP_PENDING",
+    "scope": "FAMILY_POST_PLUGIN_ONLY",
+    "plugin_id": "Plugin_5cbe94ec296c819194ece720a956b5fd",
+    "version": "0.9.1",
+    "release_id": "pluginrel_6adca40b07c481918bcd3b45ed9fed15",
+    "snapshot": "LYVRA_NATIVE_RUNTIME/backups/plugins/family_post/2026-10-24_family_post_v0.9.1_source_snapshot.json",
+    "snapshot_blob": "cd0c4675c00fac1031da646b77d08a04417aa713",
+    "source_files": 11,
+    "missing_binary_assets": 7,
+    "manifest_blob": "0cd7a43d5364f8ee116e34a069b38d90acf337fe",
+    "registry_blob": "b0cdde3035d1cfd3d6cb2c8bf444fc24ee5b6cdb",
+    "critical_carriers_registered": 239,
+    "recovery": "lyvra-recovery-pre-family-post-source-backup-20261024-r01",
+    "archive_url_available_via_plugin_creator": true,
+    "archive_binary_download_host": "FAILED",
+    "live_plugin_changed": false,
+    "complete_restorable_archive": false,
+    "pointer_last": true
   }
 }
