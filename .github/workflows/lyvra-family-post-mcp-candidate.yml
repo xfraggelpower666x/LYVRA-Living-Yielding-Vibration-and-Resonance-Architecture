@@ -8,6 +8,8 @@ on:
       - 'family_post_bridge/mcp_writer_adapter.py'
       - 'family_post_bridge/tests/test_mcp_runtime_candidate_source.py'
       - 'family_post_bridge/tests/test_mcp_runtime_asgi.py'
+      - 'family_post_bridge/delivery_orchestrator_candidate.py'
+      - 'family_post_bridge/tests/test_delivery_orchestrator_candidate.py'
       - 'family_post_bridge/receipt_finalization_candidate.py'
       - 'family_post_bridge/tests/test_receipt_finalization_candidate.py'
       - 'family_post_bridge/commit_recovery_candidate.py'
@@ -32,9 +34,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Syntax-only candidate
-        run: python -m py_compile family_post_bridge/mcp_runtime_candidate.py family_post_bridge/tests/test_mcp_runtime_candidate_source.py family_post_bridge/durable_admission_policy.py family_post_bridge/tests/test_durable_admission_policy.py family_post_bridge/durable_registry_candidate.py family_post_bridge/tests/test_durable_registry_candidate.py family_post_bridge/commit_recovery_candidate.py family_post_bridge/tests/test_commit_recovery_candidate.py family_post_bridge/receipt_finalization_candidate.py family_post_bridge/tests/test_receipt_finalization_candidate.py
+        run: python -m py_compile family_post_bridge/mcp_runtime_candidate.py family_post_bridge/tests/test_mcp_runtime_candidate_source.py family_post_bridge/durable_admission_policy.py family_post_bridge/tests/test_durable_admission_policy.py family_post_bridge/durable_registry_candidate.py family_post_bridge/tests/test_durable_registry_candidate.py family_post_bridge/commit_recovery_candidate.py family_post_bridge/tests/test_commit_recovery_candidate.py family_post_bridge/receipt_finalization_candidate.py family_post_bridge/tests/test_receipt_finalization_candidate.py family_post_bridge/delivery_orchestrator_candidate.py family_post_bridge/tests/test_delivery_orchestrator_candidate.py
       - name: Source no-network boundary tests
-        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_candidate_source family_post_bridge.tests.test_durable_admission_policy family_post_bridge.tests.test_durable_registry_candidate family_post_bridge.tests.test_commit_recovery_candidate family_post_bridge.tests.test_receipt_finalization_candidate
+        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_candidate_source family_post_bridge.tests.test_durable_admission_policy family_post_bridge.tests.test_durable_registry_candidate family_post_bridge.tests.test_commit_recovery_candidate family_post_bridge.tests.test_receipt_finalization_candidate family_post_bridge.tests.test_delivery_orchestrator_candidate
 
   asgi-runtime-negative-tests:
     runs-on: ubuntu-latest
