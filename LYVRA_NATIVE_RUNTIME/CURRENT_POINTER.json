@@ -7046,5 +7046,23 @@
     "canonical_host_prechange_recovery": "lyvra-recovery-pre-weblyvra-addon-462-629-canonical-host-closeout-20261024-r01",
     "real_iphone_voiceover": "OPEN_NOT_TESTED",
     "mobile_product_reach_de_en_focus": "DESKTOP_PARTIAL_MOBILE_HOST_PENDING"
+  },
+  "lyvra_to_littlelyv_new_chat_handoff_20261024": {
+    "status": "APPEND_ONLY_SCOPED_HANDOFF_SOURCE_READBACK_VERIFIED_FRESH_NEW_CHAT_HOST_PENDING",
+    "workspace_id": "WHOLE_LYVRA_NATIVE_RUNTIME",
+    "facet": "LYVRA_TO_LITTLELYV",
+    "lineage_id": "4c10fe6b-0a0a-46a2-8995-2c255f0310b5",
+    "handoff_id": "LYVRA-POST-NEW-CHAT-20261024-ab43f474-b883-4e6b-bee5-972d97e11535",
+    "handoff_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/WHOLE_LYVRA_NATIVE_RUNTIME/4c10fe6b-0a0a-46a2-8995-2c255f0310b5/NEW_CHAT_20261024_ab43f474-b883-4e6b-bee5-972d97e11535.json",
+    "handoff_blob": "f407d700d48a53faf17cdb32c4458d64dcaa04c6",
+    "source_head": "8d1e7ccd6046b3e4bbe703b15056d158a4acb5f0",
+    "source_commit": "fc4a0df9a4a915517b05148ede28773e47c2ddf8",
+    "recovery": "lyvra-recovery-pre-post-chat-handoff-20261024-r01",
+    "post_only": true,
+    "two_independent_systems": true,
+    "recipient_read": "NOT_INFERRED",
+    "automatic_outbound": false,
+    "no_global_workspace_selection": true,
+    "pointer_last": true
   }
 }
