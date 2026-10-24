@@ -81,5 +81,24 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                                      for tool in tools))
 
 
+    def test_authorized_request_rejects_untrusted_origin_and_host(self):
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD": "test-dad-secret"}):
+            with TestClient(create_app(), base_url="https://lyvra-family-post-bridge.onrender.com") as client:
+                request = {"jsonrpc":"2.0", "id":1, "method":"initialize",
+                           "params":{"protocolVersion":"2025-06-18",
+                                     "capabilities":{},
+                                     "clientInfo":{"name":"source-ci","version":"1"}}}
+                for extra in ({"Origin":"https://malicious.example"},
+                              {"Host":"malicious.example"}):
+                    with self.subTest(extra=extra):
+                        headers = {"Authorization":"Bearer test-dad-secret",
+                                   "Accept":"application/json, text/event-stream",
+                                   "Content-Type":"application/json"}
+                        headers.update(extra)
+                        response = client.post("/mcp/dad/", headers=headers, json=request)
+                        self.assertIn(response.status_code, (400, 403, 421),
+                                      response.text[:500])
+
+
 if __name__ == "__main__":
     unittest.main()
