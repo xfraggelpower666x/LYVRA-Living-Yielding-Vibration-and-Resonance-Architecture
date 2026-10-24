@@ -180,5 +180,27 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                             self.assertTrue(response.json()["result"].get("isError", False))
                     self.assertEqual(calls, [])
 
+
+    def test_missing_role_secret_fails_closed_even_with_bearer(self):
+        env = dict(os.environ)
+        env.pop("FAMILY_POST_TOKEN_DAD", None)
+        with patch.dict(os.environ, env, clear=True):
+            with TestClient(create_app()) as client:
+                result = client.post("/mcp/dad/", headers={
+                    "Authorization": "Bearer any-value",
+                    "Host": "lyvra-family-post-bridge.onrender.com",
+                }, json={"jsonrpc":"2.0","id":1,"method":"initialize","params":{}})
+                self.assertEqual(result.status_code, 401)
+                self.assertEqual(result.headers.get("cache-control"), "no-store")
+
+    def test_websocket_cannot_bypass_bearer_guard(self):
+        from starlette.websockets import WebSocketDisconnect
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD": "test-dad-secret"}):
+            with TestClient(create_app()) as client:
+                with self.assertRaises(WebSocketDisconnect):
+                    with client.websocket_connect("/mcp/dad/"):
+                        self.fail("Websocket must never connect")
+
+
 if __name__ == "__main__":
     unittest.main()
