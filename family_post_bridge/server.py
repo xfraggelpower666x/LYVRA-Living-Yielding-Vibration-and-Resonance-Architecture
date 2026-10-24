@@ -80,8 +80,16 @@ def _do_write_locked(letter: Letter) -> dict:
         f"appProperties has {{ key='family_post_message_id' and value='{letter.message_id}' }}"
     )
     existing = service.files().list(q=query, fields="files(id,name,mimeType,appProperties),nextPageToken",pageSize=2).execute().get("files",[])
+    if len(existing) > 1:
+        # Two Drive objects with one message ID cannot be declared idempotent.
+        # Never create a third copy or select one arbitrarily.
+        raise HTTPException(409, "MESSAGE_ID_AMBIGUOUS_DUPLICATES")
     if existing:
         doc = existing[0]
+        if not doc.get("id") or doc.get("mimeType") != "application/vnd.google-apps.document":
+            raise HTTPException(409, "MESSAGE_ID_EXISTING_FILE_UNVERIFIED")
+        if doc.get("appProperties", {}).get("family_post_sender") != letter.sender:
+            raise HTTPException(409, "MESSAGE_ID_EXISTING_SENDER_UNVERIFIED")
         recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")
         if not recorded or not hmac.compare_digest(recorded, fingerprint):
             raise HTTPException(409, "MESSAGE_ID_ALREADY_USED_OR_UNVERIFIED")
@@ -174,6 +182,11 @@ def write_letter(letter: Letter, x_family_post_token: str | None = Header(defaul
         raise HTTPException(status_code=401,detail="UNAUTHORIZED")
     try:
         return do_write(letter)
+    except HTTPException:
+        # Preserve intentional conflict and authorization responses (esp. 409).
+        # A duplicate or conflicting message ID must not be reported as a
+        # transient Drive failure that clients might automatically retry.
+        raise
     except HttpError as exc:
         # Never claim success or claim the mailbox is empty on network/auth failures.
         raise HTTPException(status_code=503, detail=f"DRIVE_WRITE_UNCONFIRMED_HTTP_{exc.resp.status}") from None
