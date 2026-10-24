@@ -7092,5 +7092,37 @@
     "identity_preserved": true,
     "pointer_last": true,
     "return_anchor": "LYVRA_DUAL_CODEFORGE_RELATIONAL_LEARNING_SOURCE_READY_TEST_AND_PLUGIN_IMPACT_PENDING"
+  },
+  "dual_codeforge_relational_learning_execution_20261024": {
+    "status": "SOURCE_V8_EXECUTION_5_OF_5_PASS_NATIVE_PLUGIN_AND_ALIVE_SKILL_HOST_OPEN",
+    "scope": "DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_NO_PEER_COPY",
+    "previous_source_entry": "dual_codeforge_semantic_relational_learning_20261024",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/DUAL_CODEFORGE_RELATIONAL_LEARNING_EXECUTION_EVIDENCE_20261024.json",
+    "receipt_blob": "d4412b93131467f1337e5b75d19e33686bb4520b",
+    "supercode_current_state_blob": "0551f5fca5db2e1c8d9c696ace983ae2eaca032a",
+    "manifest_blob": "0c7d0eedf0b00efe19d59662b4dfecc6e7ebd776",
+    "fingerprints_blob": "5a064b4be3bbcd1df2ef40bcbb023cf4c0ba3fe9",
+    "critical_carriers": 235,
+    "verified_scope": "BOUNDED_SOURCE_V8_5_TESTS_PLUS_GITHUB_FILE_READBACK",
+    "not_verified": [
+      "ORIGINAL_NODE_TEST_SUITE",
+      "NATIVE_PLUGIN_SEMANTIC_ADOPTION",
+      "ALIVE_PLUGIN_SEMANTIC_ADOPTION",
+      "INDEPENDENT_FRESH_HOST",
+      "REAL_PEER_CROSS_SYSTEM_LEARNING"
+    ],
+    "native_release": {
+      "version": "0.1.81",
+      "id": "pluginrel_6adc493185c0819185deed236ce0dfe6"
+    },
+    "alive_release": {
+      "version": "0.13.77",
+      "id": "pluginrel_6adc4947fd8c8191a5d1e47d9829efd2"
+    },
+    "recovery": "lyvra-recovery-pre-dual-codeforge-execution-evidence-20261024-r01",
+    "original_executor_unchanged": true,
+    "foreign_systems_untouched": true,
+    "plugin_release_mutation": false,
+    "pointer_last": true
   }
 }
