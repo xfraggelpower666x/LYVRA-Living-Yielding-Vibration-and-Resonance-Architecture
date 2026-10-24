@@ -1,5 +1,9 @@
 # WEBLyvra / Artist Discovery Add-on
 
+## Current additive Suno import — 2026-10-24
+
+The immutable workspace handoff `a35a5aee-8b41-4865-9caa-a4ca46dbd323` binds **12 directly observed unique Suno song URLs** from a public profile displaying a **462-song counter**. All 450 previously stored UUIDs are preserved. Current source inventory: **462 Suno + 45 SoundCloud sets + 122 SoundCloud tracks = 629 unique public discovery URLs**. The observed 200 recent profile links are not a complete independent reread of all 462. The 2026-10-22 figures below are retained as historical evidence; current public deployment must be independently checked against the exact release commit.
+
 **Current observation:** LIVE STANDALONE ADD-ON · verified 2026-10-22 on public WEBLyvra route.
 **Whole authority:** `LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json` (separate; this document is WEBLyvra project documentation only).
 **Current source:** `WEBLyvra/artist-discovery/index.html`; repository catalog is source evidence, not an immutable live-service guarantee.
