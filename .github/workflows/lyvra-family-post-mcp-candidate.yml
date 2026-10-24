@@ -7,6 +7,8 @@ on:
       - 'family_post_bridge/ZERO_EURO_GOVERNANCE_LOCK_20261024.md'
       - 'family_post_bridge/mcp_asgi_entrypoint_candidate.py'
       - 'family_post_bridge/requirements-mcp-runtime-candidate.txt'
+      - 'family_post_bridge/tests/test_render_free_release_contract.py'
+      - 'family_post_bridge/RENDER_FREE_READBACK_AND_ACTIVATION_GATES_20261024.md'
       - 'family_post_bridge/tests/test_mcp_zero_euro_entrypoint.py'
       - 'family_post_bridge/mcp_runtime_candidate.py'
       - 'family_post_bridge/mcp_gateway.py'
@@ -41,7 +43,7 @@ jobs:
       - name: Syntax-only candidate
         run: python -m py_compile family_post_bridge/mcp_runtime_candidate.py family_post_bridge/tests/test_mcp_runtime_candidate_source.py family_post_bridge/durable_admission_policy.py family_post_bridge/tests/test_durable_admission_policy.py family_post_bridge/durable_registry_candidate.py family_post_bridge/tests/test_durable_registry_candidate.py family_post_bridge/commit_recovery_candidate.py family_post_bridge/tests/test_commit_recovery_candidate.py family_post_bridge/receipt_finalization_candidate.py family_post_bridge/tests/test_receipt_finalization_candidate.py family_post_bridge/delivery_orchestrator_candidate.py family_post_bridge/tests/test_delivery_orchestrator_candidate.py family_post_bridge/tests/test_zero_euro_governance.py
       - name: Source no-network boundary tests
-        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_candidate_source family_post_bridge.tests.test_durable_admission_policy family_post_bridge.tests.test_durable_registry_candidate family_post_bridge.tests.test_commit_recovery_candidate family_post_bridge.tests.test_receipt_finalization_candidate family_post_bridge.tests.test_delivery_orchestrator_candidate family_post_bridge.tests.test_zero_euro_governance
+        run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_candidate_source family_post_bridge.tests.test_durable_admission_policy family_post_bridge.tests.test_durable_registry_candidate family_post_bridge.tests.test_commit_recovery_candidate family_post_bridge.tests.test_receipt_finalization_candidate family_post_bridge.tests.test_delivery_orchestrator_candidate family_post_bridge.tests.test_zero_euro_governance family_post_bridge.tests.test_render_free_release_contract
 
   asgi-runtime-negative-tests:
     runs-on: ubuntu-latest
