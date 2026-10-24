@@ -2501,5 +2501,16 @@
     "hypotheses": 2,
     "automatic_adoption": false,
     "no_foreign_writes": true
+  },
+  "family_post_plugin_source_backup_20261024": {
+    "status": "SOURCE_SNAPSHOT_11_OF_11_TEXT_FILES_VERIFIED_BINARY_ASSETS_7_NOT_SAVED",
+    "plugin_id": "Plugin_5cbe94ec296c819194ece720a956b5fd",
+    "plugin_version": "0.9.1",
+    "release_id": "pluginrel_6adca40b07c481918bcd3b45ed9fed15",
+    "path": "LYVRA_NATIVE_RUNTIME/backups/plugins/family_post/2026-10-24_family_post_v0.9.1_source_snapshot.json",
+    "snapshot_sha": "cd0c4675c00fac1031da646b77d08a04417aa713",
+    "restorable_full_archive": false,
+    "original_release_archive_referenced": true,
+    "plugin_unmodified": true
   }
 }
