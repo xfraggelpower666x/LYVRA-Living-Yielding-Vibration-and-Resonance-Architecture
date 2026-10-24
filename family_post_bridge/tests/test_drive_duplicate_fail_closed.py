@@ -32,5 +32,21 @@ class DuplicateDriveIdTests(unittest.TestCase):
             self.assertEqual(ctx.exception.status_code,409)
             service.files.return_value.create.assert_not_called()
 
+    def test_existing_receipt_needs_id_type_and_sender(self):
+        cases=[
+            {"mimeType":"application/vnd.google-apps.document","appProperties":{"family_post_sender":"DAD"}},
+            {"id":"doc","mimeType":"application/octet-stream","appProperties":{"family_post_sender":"DAD"}},
+            {"id":"doc","mimeType":"application/vnd.google-apps.document","appProperties":{"family_post_sender":"MUM"}},
+        ]
+        for record in cases:
+            with self.subTest(record=record):
+                service=MagicMock()
+                service.files.return_value.list.return_value.execute.return_value={"files":[record]}
+                with patch("family_post_bridge.server.drive",return_value=service), patch.dict(os.environ,{"FAMILY_POST_FOLDER_ID":"synthetic-folder"}):
+                    with self.assertRaises(HTTPException) as ctx:
+                        _do_write_locked(LETTER)
+                    self.assertEqual(ctx.exception.status_code,409)
+                    service.files.return_value.create.assert_not_called()
+
 if __name__=="__main__":
     unittest.main()
