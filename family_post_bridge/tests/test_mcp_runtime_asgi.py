@@ -149,5 +149,36 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                     self.assertIn("Error executing tool", response.text)
 
 
+    def test_invalid_tool_arguments_never_call_writer(self):
+        from family_post_bridge import mcp_runtime_candidate
+        calls = []
+        def forbidden_write(*args):
+            calls.append(args)
+            raise AssertionError("writer must not execute")
+        cases = [
+            {"recipient":"LITTLE_LYV","title":"Valid heading","content":"Synthetic",
+             "message_id":"short"},
+            {"recipient":"OUTSIDER","title":"Valid heading","content":"Synthetic",
+             "message_id":"synthetic-id-20261024"},
+            {"recipient":"MUM","title":"X","content":"Synthetic",
+             "message_id":"synthetic-id-20261024"},
+        ]
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD":"test-dad-secret"}):
+            with patch.object(mcp_runtime_candidate, "write_family_letter", forbidden_write):
+                with TestClient(create_app(), base_url="https://lyvra-family-post-bridge.onrender.com") as client:
+                    for i, arguments in enumerate(cases):
+                        with self.subTest(i=i):
+                            response = client.post("/mcp/dad/", headers={
+                                "Authorization":"Bearer test-dad-secret",
+                                "Accept":"application/json, text/event-stream",
+                                "Content-Type":"application/json",
+                                "Origin":"https://chatgpt.com",
+                            }, json={"jsonrpc":"2.0","id":10+i,"method":"tools/call",
+                                     "params":{"name":"send_family_letter",
+                                               "arguments":arguments}})
+                            self.assertEqual(response.status_code, 200)
+                            self.assertTrue(response.json()["result"].get("isError", False))
+                    self.assertEqual(calls, [])
+
 if __name__ == "__main__":
     unittest.main()
