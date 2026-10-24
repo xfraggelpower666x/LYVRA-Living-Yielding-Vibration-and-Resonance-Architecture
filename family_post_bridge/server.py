@@ -178,6 +178,11 @@ def write_letter(letter: Letter, x_family_post_token: str | None = Header(defaul
         raise HTTPException(status_code=401,detail="UNAUTHORIZED")
     try:
         return do_write(letter)
+    except HTTPException:
+        # Preserve intentional conflict and authorization responses (esp. 409).
+        # A duplicate or conflicting message ID must not be reported as a
+        # transient Drive failure that clients might automatically retry.
+        raise
     except HttpError as exc:
         # Never claim success or claim the mailbox is empty on network/auth failures.
         raise HTTPException(status_code=503, detail=f"DRIVE_WRITE_UNCONFIRMED_HTTP_{exc.resp.status}") from None
