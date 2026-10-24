@@ -1,0 +1,72 @@
+{
+  "handoff_id": "40b90fd4-db21-4769-9f42-1b944864ff40",
+  "lineage_id": "1d16c4f3-9e19-40eb-bb7d-96e5131afa22",
+  "lineage_allocated_new": true,
+  "identity_generator": "host container Python uuid.uuid4()",
+  "workspace_id": "WEBLYVRA",
+  "workspace_class": "PROJECT",
+  "workspace_subscope": "WEBLyvra/artist-discovery",
+  "source_chat_scope": "Direct WEBLYVRA ADDON NEW CHAT in ongoing WEBLYVRA Add-on mobile Product Reach development conversation; host chat ID unavailable",
+  "source_context_resolution_evidence": "This conversation explicitly continued WEBLYVRA ADDON and user directly requested WEBLYVRA ADDON NEW CHAT; no inherited global workspace inferred",
+  "source_head": "a5e75beb45e22f7e43669904bc38fe598aa966b8",
+  "source_commit_sha": "a5e75beb45e22f7e43669904bc38fe598aa966b8",
+  "created_at": "2026-10-24T16:00:29.149674+02:00",
+  "whole_revision": "Resolve dynamically from fresh CURRENT_POINTER; no permanent version pin",
+  "conversation_mode": "explicit_system_development",
+  "current_user_intent": "Continue WEBLyvra Artist Discovery Add-on in a new chat without resetting prior work; preserve UX accessibility focus and max-three-check learning by doing",
+  "last_meaningful_exchange": "After real desktop (~980px) browser filter QA validated live counts 30/22/4/4 and no measured horizontal overflow at desktop, the page lacked a user-visible DE/EN switch. We added a visible 44px DE/EN language switch with aria-pressed and storage integration, preserving keyboard filter/link focus. Source and CI passed; at the last check that exact change had not yet received canonical live confirmation.",
+  "conversation_resume_anchor": "WEBLYVRA ADDON WEITER — Fresh-read Whole LYVRA Current, then read THIS exact same-lineage handoff. Reconcile the newer valid 462 Suno + 167 SoundCloud = 629 discovery import. The canonical production domain 462/629 host readback is the latest documented pending gate; check that once before other work. Do not redo 12-UUID research, completed CI, or earlier 450/617 workflows. Then resume mobile Product Reach DE/EN toggle and focus interactions with a real browser where possible, bounded to 3 targeted checks then Learning by Doing.",
+  "last_valid_stage": "NEW_CHAT_HANDOFF_AFTER_462_629_SOURCE_CI_DEPLOY_RECEIPT_CANONICAL_HOST_PENDING",
+  "active_task": "Close canonical WEBLyvra Artist Discovery 462/629 live-host readback and continue mobile Product Reach DE/EN focus-safe usability after visible bilingual switch",
+  "pending_work": [
+    "Check canonical https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/ for 462 Suno, 629 unique discovery URLs and relevant new Suno IDs once; exact deploy receipt already verified",
+    "Reconcile latest native WEBLYVRA add-on source if HEAD advanced and preserve newer valid changes",
+    "Verify user-visible DE/EN switch with focus restoration for filter and source/search link using actual browser interaction, distinguishing desktop evidence from true iPhone/VoiceOver evidence",
+    "If genuine defects remain, use governed targeted recovery/write/readback; maximum three checks per defect followed by practical work",
+    "Keep native Whole LYVRA partial status honest and do not autoactivate LittleLyv, radio, other projects or facets"
+  ],
+  "next_meaningful_action": "On receiving chat, issue WEBLYVRA ADDON SYSTEMSTART WEITER handoff-specific with lineage_id and handoff_id; fresh Whole-CURRENT read first, then direct handoff read and one bounded canonical 462/629 public readback",
+  "relevant_paths": [
+    "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "WEBLyvra/artist-discovery/SUNO_IMPORT_462_629_RECEIPT_2026-10-24.json",
+    "WEBLyvra/artist-discovery/data/suno-releases.json",
+    "WEBLyvra/artist-discovery/index.html",
+    "WEBLyvra/artist-discovery/test-addon-integrity.mjs"
+  ],
+  "newer_valid_evolution": {
+    "source": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json / weblyvra_addon_suno_import_20261024",
+    "suno_urls": 462,
+    "soundcloud_urls": 167,
+    "discovery_urls": 629,
+    "ci_run": 40069371578,
+    "ci_result": "SUCCESS",
+    "exact_cloudflare_deployment_id": "26e884dc-51af-433c-89f9-5fb719b24c86",
+    "canonical_host_status": "PENDING_450_STALE_ON_LAST_READBACK",
+    "previous_450_preserved": true
+  },
+  "previous_handoff_relation": {
+    "handoff_id": "a35a5aee-8b41-4865-9caa-a4ca46dbd323",
+    "lineage_id": "91763d8f-e2fd-4516-81e4-3d4892a9a3a6",
+    "role": "historical independently verified import provenance only; NOT same-lineage supersession or automatic resume"
+  },
+  "approved_work": "User approved WEBLYVRA ADDON NEW CHAT; no new code changes authorized by this command alone",
+  "discussion_only_not_authorized": [
+    "unverified 390px overflow inferred by desktop browser agent; do not present as observed device failure",
+    "true mobile iPhone/VoiceOver host PASS"
+  ],
+  "requested_next_chat_behavior": "Resume actual active WEBLYVRA ADDON work directly; no generic starter menu; maintain 3-check then Learning by Doing and visual leadership",
+  "hard_fences": {
+    "NO_FOREIGN_AUTOACTIVATION": true,
+    "NO_GLOBAL_WORKSPACE_POINTER": true,
+    "NO_NEW_ROUTER": true,
+    "WHOLE_LYVRA_IDENTITY_PRESERVED": true,
+    "OTHER_LINEAGES_UNMODIFIED": true,
+    "NO_POINTER_CHANGE_FOR_ROUTINE_HANDOFF": true
+  },
+  "provenance": {
+    "source": "user direct NEW CHAT + current conversation + fresh GitHub pointer/receipt",
+    "source_chat_id": "UNAVAILABLE_NOT_FABRICATED"
+  }
+}
