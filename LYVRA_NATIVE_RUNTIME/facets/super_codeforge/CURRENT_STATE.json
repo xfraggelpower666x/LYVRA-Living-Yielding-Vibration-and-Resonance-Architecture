@@ -239,5 +239,18 @@
     "no_router": true,
     "original_executor": "UNCHANGED",
     "return_anchor": "SUPERCODEFORGE_HANDOFF_PROTOCOL_SOURCE_NODE_PASS_LEDGER_DELIVERY_HOST_PENDING"
+  },
+  "dual_codeforge_relational_learning_20261024": {
+    "status": "LOCAL_SOURCE_EXECUTED_V8_5_OF_5_PASS_PLUGIN_SKILLS_AND_NODE_PENDING",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/thinking/DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_20261024.md",
+    "module": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+    "evidence": "LYVRA_NATIVE_RUNTIME/development/DUAL_CODEFORGE_RELATIONAL_LEARNING_EXECUTION_EVIDENCE_20261024.json",
+    "evidence_blob": "d4412b93131467f1337e5b75d19e33686bb4520b",
+    "node_test": "NOT_EXECUTED",
+    "host_plugin": "NOT_VERIFIED",
+    "native_plugin": "0.1.81_SKILL_SEMANTIC_UPDATE_PENDING",
+    "alive_plugin": "0.13.77_SKILL_SEMANTIC_UPDATE_PENDING",
+    "foreign_peers": "NOT_TOUCHED",
+    "no_peer_copying": true
   }
 }
