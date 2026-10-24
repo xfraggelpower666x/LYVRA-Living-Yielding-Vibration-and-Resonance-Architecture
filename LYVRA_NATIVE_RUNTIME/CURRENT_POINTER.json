@@ -7038,14 +7038,21 @@
     "critical_registry": "NO_REGISTERED_CRITICAL_ADDON_SOURCE_FILES_CHANGED",
     "no_foreign_activation": true,
     "pointer_last": true,
-    "return_anchor": "WEBLYVRA_ADDON_MOBILE_PRODUCT_REACH_DE_EN_FOCUS",
+    "return_anchor": "WEBLYVRA_ADDON_MOBILE_DE_EN_HOST_FOCUS_ACCEPTANCE",
     "canonical_host_acceptance_receipt": "WEBLyvra/artist-discovery/CANONICAL_HOST_462_629_ACCEPTANCE_2026-10-24.json",
     "canonical_host_acceptance_receipt_blob": "2be5ef83a13b0df3f9cc2b3c2ae9d83109eee96f",
     "canonical_host_evidence_run": "5695b3eb-ce4c-4b1a-8cf3-07338f5e3e13",
     "canonical_host_scope": "RENDERED_COUNTS_ONLY_NOT_EXHAUSTIVE_UUID_URL_CHECK",
     "canonical_host_prechange_recovery": "lyvra-recovery-pre-weblyvra-addon-462-629-canonical-host-closeout-20261024-r01",
     "real_iphone_voiceover": "OPEN_NOT_TESTED",
-    "mobile_product_reach_de_en_focus": "DESKTOP_PARTIAL_MOBILE_HOST_PENDING"
+    "mobile_product_reach_de_en_focus": "SOURCE_REPAIR_CI_PASS_HOST_PENDING",
+    "mobile_focus_repair_receipt": "WEBLyvra/artist-discovery/MOBILE_DE_EN_FOCUS_REPAIR_RECEIPT_2026-10-24.json",
+    "mobile_focus_repair_receipt_blob": "e2708e8221123024b018f43cef836627ade227df",
+    "mobile_focus_source_blob": "aa22e3a1f6dafbf459caf89828fa971a82ca1f7a",
+    "mobile_focus_ci_run": 40113259975,
+    "mobile_focus_ci_result": "SUCCESS",
+    "mobile_focus_recovery": "lyvra-recovery-pre-weblyvra-mobile-focus-20261024-r01",
+    "mobile_focus_canonical_deployment": "PENDING_NOT_READBACK"
   },
   "lyvra_to_littlelyv_new_chat_handoff_20261024": {
     "status": "APPEND_ONLY_SCOPED_HANDOFF_SOURCE_READBACK_VERIFIED_FRESH_NEW_CHAT_HOST_PENDING",
