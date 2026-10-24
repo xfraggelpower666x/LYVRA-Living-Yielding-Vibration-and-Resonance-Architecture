@@ -21,8 +21,8 @@ class MCPRuntimeCandidateTests(unittest.TestCase):
                              for node in tree.body))
         self.assertIn('Mount("/mcp/" + role.lower()', code)
         self.assertIn('Mount("/", app=legacy_app)', code)
-        self.assertIn("guarded.application", code)
-        self.assertIn("inner.router.lifespan_context(inner)", code)
+        self.assertIn("(role, *create_role_server(role, write_family_letter))", code)
+        self.assertIn("server.session_manager.run()", code)
         self.assertIn("legacy_app.router.lifespan_context(legacy_app)", code)
 
     def test_role_binding_and_no_autonomous_send(self):
