@@ -100,5 +100,51 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                                       response.text[:500])
 
 
+    def test_tool_call_never_reaches_real_drive_and_binds_sender(self):
+        """Mock only the write callback, not ASGI or MCP dispatch."""
+        from family_post_bridge import mcp_runtime_candidate
+        calls = []
+        def fake_write(sender, recipient, title, content, message_id):
+            calls.append((sender, recipient, title, content, message_id))
+            return {"state":"STORED_DRIVE_CONFIRMED","file_id":"fake-doc",
+                    "message_id":message_id,"read_confirmed":False}
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD":"test-dad-secret"}):
+            with patch.object(mcp_runtime_candidate, "write_family_letter", fake_write):
+                with TestClient(create_app(), base_url="https://lyvra-family-post-bridge.onrender.com") as client:
+                    headers = {"Authorization":"Bearer test-dad-secret",
+                               "Accept":"application/json, text/event-stream",
+                               "Content-Type":"application/json",
+                               "Origin":"https://chatgpt.com"}
+                    body = {"jsonrpc":"2.0","id":4,"method":"tools/call",
+                            "params":{"name":"send_family_letter","arguments":{
+                                "recipient":"LITTLE_LYV","title":"Synthetic test",
+                                "content":"synthetic only","message_id":"synthetic-id-20261024"}}}
+                    response = client.post("/mcp/dad/", headers=headers, json=body)
+                    self.assertEqual(response.status_code, 200, response.text[:500])
+                    self.assertEqual(calls, [("DAD","LITTLE_LYV","Synthetic test",
+                                              "synthetic only","synthetic-id-20261024")])
+                    self.assertFalse(response.json()["result"]["structuredContent"]["read_confirmed"])
+
+    def test_tool_call_failure_is_redacted_without_network_or_drive(self):
+        from family_post_bridge import mcp_runtime_candidate
+        def failing_write(*args):
+            raise RuntimeError("synthetic SECRET and private letter body")
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD":"test-dad-secret"}):
+            with patch.object(mcp_runtime_candidate, "write_family_letter", failing_write):
+                with TestClient(create_app(), base_url="https://lyvra-family-post-bridge.onrender.com") as client:
+                    response = client.post("/mcp/dad/", headers={
+                        "Authorization":"Bearer test-dad-secret",
+                        "Accept":"application/json, text/event-stream",
+                        "Content-Type":"application/json","Origin":"https://chatgpt.com"
+                    }, json={"jsonrpc":"2.0","id":5,"method":"tools/call",
+                             "params":{"name":"send_family_letter","arguments":{
+                                 "recipient":"MUM","title":"Synthetic only",
+                                 "content":"private letter body","message_id":"synthetic-id-20261025"}}})
+                    self.assertEqual(response.status_code, 200, response.text[:500])
+                    self.assertNotIn("SECRET", response.text)
+                    self.assertNotIn("private letter body", response.text)
+                    self.assertIn("FAMILY_POST_WRITE_UNCONFIRMED_NO_AUTO_RETRY", response.text)
+
+
 if __name__ == "__main__":
     unittest.main()
