@@ -336,3 +336,16 @@ The most prominent inbox field MUST be an unequivocal localized tri-state **NEUE
 
 ## Interruption-safe POST visual execution separation (2026-10-22)
 The Whole-rehydration family-mail strip and manual POST ABHOLEN detail show distinct TASK HOST and INTERACTIVE CHAT capability columns: task enabled/last run/read-only results versus interactive chat read/write last independently verified outcome. Never show 'chat write blocked' solely from a task host safety error or 'automatic send ready' from a successful historical chat delivery. Show historical-success and current-untested distinctly. For provider FORCE checks, disclose actual affected provider and diagnostic budget (maximum three), distinguish API/auth versus product safety, and return to the verified checkpoint after a user custom-input interruption. Visually retain the selected operation and contextual continuation without resetting the Whole five-choice terminal. A terminal safety refusal cannot be auto-resumed as a write. This is presentation-only and does not promote source evidence into host acceptance.
+
+## Whole native facet-card intelligence (DEV candidate 2026-10-24; not productive)
+PROVENANCE = LYVRA_NATIVE_RUNTIME/development/WHOLE_LYVRA_NATIVE_FACET_CARD_INTELLIGENCE_CANDIDATE_20261024.md
+FACET_CARDS = DERIVED_RECONSTRUCTIBLE_PRESENTATION_ONLY
+ONE_CARD_PER_VERIFIED_REGISTERED_NATIVE_FACET = TRUE
+FACET_INVENTORY = READ_FROM_FRESH_CURRENT_NATIVE_REGISTRY_NOT_HANDMAINTAINED_LIST
+CARD_SOURCE = CURRENT_POINTER | VERIFIED_FACET_RECORD | REVISION_PROVENANCE | DEPENDENCY | RECOVERY
+CARD_DELTA = ADDED | IMPROVED | PRESERVED | REGRESSED | UNVERIFIED | CONFLICTING
+SOURCE_DIFF_NE_BEHAVIORAL_IMPROVEMENT = TRUE
+CARD_RENDERED_NE_REHYDRATION_ACCEPTED = TRUE
+NO_CARD_AUTHORITY_OR_FACET_ACTIVATION = TRUE
+WHOLE_OVERVIEW_AND_FACET_DETAIL = CONTEXTUAL_PROJECTIONS_OF_EXISTING_SEMANTIC_VISUAL_INTELLIGENCE
+An optional concise Whole overview may aggregate source-bound cards for every facet resolved from actual native registry. Facet detail presents identity, current and previous verified state, last meaningful change, causal delta, dependencies, issues, rehydration SOURCE/MEANING/APPLICATION/HOST evidence and recovery binding. If registry, previous state, host evidence or recovery data cannot be read, mark UNKNOWN/PARTIAL and do not invent a status or count. Preserve LYVRA expressive identity, do not clutter normal music/chat with obligatory cards. No 666CLIC pointer/governance import or separate dashboard engine.
