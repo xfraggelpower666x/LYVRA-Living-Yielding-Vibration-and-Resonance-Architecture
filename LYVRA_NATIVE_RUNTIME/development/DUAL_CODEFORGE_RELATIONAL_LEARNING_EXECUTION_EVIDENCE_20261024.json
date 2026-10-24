@@ -1,0 +1,58 @@
+{
+  "schema": "LYVRA_DUAL_CODEFORGE_RELATIONAL_EXECUTION_EVIDENCE_V1",
+  "status": "SOURCE_V8_EXECUTION_PASS_NODE_AND_PLUGIN_HOST_PENDING",
+  "date": "2026-10-24",
+  "identity": "WHOLE_LYVRA",
+  "base_head": "6e35f32f89e635c5b18220db09dc0ab93279b10c",
+  "source": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.mjs",
+  "source_blob": "1243de0429a7e63118533351385827c861273d2b",
+  "existing_test": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/relational-learning-core.test.mjs",
+  "existing_test_blob": "741256ee2234d896bd0739ef6478434b86118887",
+  "execution": {
+    "environment": "CODE_MODE_V8_EVAL_OF_ACTUAL_GITHUB_SOURCE_NO_NODE_TEST_RUN",
+    "direct_sha_bound_read": true,
+    "tests_total": 5,
+    "tests_passed": 5,
+    "tests_failed": 0,
+    "test_ids": [
+      "IDENTITY_ISOLATION_PASS",
+      "UNAUTHORIZED_WRITE_REJECTED_PASS",
+      "CONTRADICTION_RETAINED_PASS",
+      "ALTERNATIVES_NOT_ADOPTED_PASS",
+      "FEEDBACK_NOT_PROMOTED_PASS"
+    ],
+    "limitations": [
+      "NOT_ORIGINAL_NODE_TEST_RUNNER",
+      "NOT_INDEPENDENT_PLUGIN_HOST",
+      "NOT_PEER_SYSTEM_CROSS_RUNTIME_LEARNING",
+      "NO_NETWORK_SOURCE_DOWNLOAD_IN_LOCAL_NODE_CONTAINER"
+    ]
+  },
+  "plugin_impact": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.81",
+      "release_id": "pluginrel_6adc493185c0819185deed236ce0dfe6",
+      "supercodeforge_skill_new_contract_present": false
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.77",
+      "release_id": "pluginrel_6adc4947fd8c8191a5d1e47d9829efd2",
+      "supercodeforge_skill_new_contract_present": false
+    },
+    "same_current_skill_size": 2277,
+    "status": "BOTH_SURFACES_READ_DIRECTLY_NEW_SEMANTIC_CONTRACT_PLUGIN_SKILL_UPDATE_PENDING",
+    "plugin_binaries_not_readback": true
+  },
+  "guardrails": {
+    "read_external_does_not_copy_external": true,
+    "peer_proposals_not_adopted": true,
+    "foreign_automatic_activation": false,
+    "no_write_execution": true,
+    "whole_lyvra_authority_preserved": true
+  },
+  "recovery_branch": "lyvra-recovery-pre-dual-codeforge-execution-evidence-20261024-r01",
+  "no_external_system_writes": true,
+  "real_provider_host_pass": false
+}
