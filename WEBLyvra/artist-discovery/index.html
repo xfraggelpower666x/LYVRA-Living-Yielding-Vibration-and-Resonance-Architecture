@@ -263,7 +263,8 @@ function renderGoogleResonance(lang){
  if(focusedReachFilter)filters.querySelector('[data-reach-filter="'+focusedReachFilter+'"]')?.focus({preventScroll:true});
  else if(focusedReachHref){
   const replacement=[...listing.querySelectorAll('.gr-item a')].find(link=>link.href===focusedReachHref&&(link.classList.contains('gr-search-check')?'search':'source')===focusedReachLinkKind);
-  (replacement||filters.querySelector('[data-reach-filter="'+grState.filter+'"]'))?.focus({preventScroll:true});
+  replacement?.focus({preventScroll:true});
+  if(!replacement)filters.querySelector('[data-reach-filter="'+grState.filter+'"]')?.focus({preventScroll:true});
  }
 }
 
