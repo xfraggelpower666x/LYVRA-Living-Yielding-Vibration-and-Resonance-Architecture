@@ -2477,5 +2477,19 @@
     "new_host_test": "PENDING",
     "no_peer_copying": true,
     "no_foreign_activation": true
+  },
+  "lyvra_understands_clic_starbridge_pdi_20261024": {
+    "status": "LYVRA_LOCAL_SEMANTIC_CAUSAL_CANDIDATE_READBACK_VERIFIED",
+    "source_system": "666CLIC",
+    "source_snapshot_commit": "82c23916c004f3ab71ea5979e839e1ab0c3adc3a",
+    "candidate_path": "LYVRA_NATIVE_RUNTIME/current/thinking/CLIC_STARBRIDGE_PDI_CAUSAL_UNDERSTANDING_20261024.md",
+    "candidate_blob": "d4183c6975e57a8d10190afb68c5783cd42d1ac3",
+    "owner": "WHOLE_LYVRA",
+    "codeforge_relation": "UNDERSTAND_CAUSAL_RELATIONS_NOT_COPY_PEER",
+    "plugin_release_impact": "NO_NEW_SKILL_TEXT_REQUIRED_CURRENT_SKILLS_DOCK_TO_GITHUB_CURRENT",
+    "peer_runtime": "NOT_EXECUTED",
+    "peer_host": "NOT_VERIFIED",
+    "foreign_mutation": false,
+    "no_new_router": true
   }
 }
