@@ -50,5 +50,36 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                 self.assertEqual(resp.status_code, 401)
 
 
+    def test_authorized_role_can_initialize_and_discover_without_sending(self):
+        """Read-only MCP protocol calls through a real mounted guarded app."""
+        role = "dad"
+        with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD": "test-dad-secret"}):
+            with TestClient(create_app(), base_url="https://lyvra-family-post-bridge.onrender.com") as client:
+                headers = {
+                    "Authorization": "Bearer test-dad-secret",
+                    "Accept": "application/json, text/event-stream",
+                    "Content-Type": "application/json",
+                    "Origin": "https://chatgpt.com",
+                }
+                init = client.post("/mcp/dad/", headers=headers, json={
+                    "jsonrpc": "2.0", "id": 1, "method": "initialize",
+                    "params": {
+                        "protocolVersion": "2025-06-18",
+                        "capabilities": {},
+                        "clientInfo": {"name": "source-ci", "version": "1.0"},
+                    },
+                })
+                self.assertEqual(init.status_code, 200, init.text[:500])
+                self.assertIn("result", init.json())
+                listing = client.post("/mcp/dad/", headers=headers, json={
+                    "jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {},
+                })
+                self.assertEqual(listing.status_code, 200, listing.text[:500])
+                tools = listing.json()["result"]["tools"]
+                self.assertIn("send_family_letter", [tool["name"] for tool in tools])
+                self.assertFalse(any("sender" in tool.get("inputSchema", {}).get("properties", {})
+                                     for tool in tools))
+
+
 if __name__ == "__main__":
     unittest.main()
