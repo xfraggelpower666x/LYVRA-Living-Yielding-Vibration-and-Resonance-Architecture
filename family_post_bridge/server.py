@@ -185,5 +185,6 @@ def write_letter(letter: Letter, x_family_post_token: str | None = Header(defaul
 # role-guarded MCP ASGI surface into that same service without an extra host.
 # The candidate composition imports the already-defined legacy FastAPI app,
 # preserving existing REST routes and the OAuth/Drive writer.
+legacy_app = app
 from family_post_bridge.mcp_runtime_candidate import create_app as _create_mcp_app
 app = _create_mcp_app()
