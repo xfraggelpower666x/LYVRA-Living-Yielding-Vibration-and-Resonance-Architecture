@@ -80,6 +80,10 @@ def _do_write_locked(letter: Letter) -> dict:
         f"appProperties has {{ key='family_post_message_id' and value='{letter.message_id}' }}"
     )
     existing = service.files().list(q=query, fields="files(id,name,mimeType,appProperties),nextPageToken",pageSize=2).execute().get("files",[])
+    if len(existing) > 1:
+        # Two Drive objects with one message ID cannot be declared idempotent.
+        # Never create a third copy or select one arbitrarily.
+        raise HTTPException(409, "MESSAGE_ID_AMBIGUOUS_DUPLICATES")
     if existing:
         doc = existing[0]
         recorded = doc.get("appProperties", {}).get("family_post_payload_sha256")
