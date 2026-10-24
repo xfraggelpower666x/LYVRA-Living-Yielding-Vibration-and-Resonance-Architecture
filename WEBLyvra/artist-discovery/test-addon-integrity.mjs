@@ -17,7 +17,8 @@ const platform=JSON.parse(readFileSync(join(root,'data/platforms.json'),'utf8'))
 const found=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert.ok(found,'embedded unified diskography missing');
 const entries=JSON.parse(found[1]);
-assert.ok(suno.length>=450,'protected 450-entry Suno baseline regressed');
+assert.ok(suno.length>=462,'protected 462-entry Suno baseline regressed');
+assert.ok(entries.length>=629,'protected 629-entry unified discovery baseline regressed');
 assert.equal(soundcloud.length,45,'current SoundCloud album/set snapshot count mismatch');
 assert.equal(soundcloudTracks.length,122,'current SoundCloud track/mix snapshot count mismatch');
 const trackUrls=new Set();
