@@ -33,7 +33,7 @@ def reserve_one_transaction(cursor, message_id: str, fingerprint: str, sender_ro
     cursor.execute(RESERVE_SQL, (message_id, fingerprint, sender_role))
     row = cursor.fetchone()
     if row:
-        return ReservationResult("RESERVED_NEW_COMMIT_REQUIRED", True)
+        return ReservationResult("RESERVED_NEW_COMMIT_REQUIRED", False)
     cursor.execute(READ_SQL, (message_id,))
     prior = cursor.fetchone()
     if not prior:
