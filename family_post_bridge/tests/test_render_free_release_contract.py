@@ -18,7 +18,7 @@ class RenderFreeReleaseContract(unittest.TestCase):
         self.assertIn("plan: free",plan)
         self.assertIn("numInstances: 1",plan)
         self.assertIn("uvicorn family_post_bridge.server:app",plan)
-        self.assertIn("not a successful live MCP deployment",plan.lower())
+        self.assertIn("not a successful live mcp deployment",plan.lower())
         self.assertNotIn("mcp_asgi_entrypoint_candidate", (ROOT/"server.py").read_text())
 
     def test_candidate_route_remains_opt_in_only(self):
