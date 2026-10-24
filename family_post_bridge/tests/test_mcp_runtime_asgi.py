@@ -31,7 +31,7 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
                             headers = {"Host": "lyvra-family-post-bridge.onrender.com"}
                             if token:
                                 headers["Authorization"] = token
-                            resp = client.post("/mcp/" + role,
+                            resp = client.post("/mcp/" + role + "/",
                                 headers=headers, json={"jsonrpc":"2.0",
                                 "id":1,"method":"initialize",
                                 "params":{"protocolVersion":"2025-06-18",
@@ -43,7 +43,7 @@ class MCPASGIRuntimeSmokeTests(unittest.TestCase):
         with patch.dict(os.environ, {"FAMILY_POST_TOKEN_DAD":"dad-secret",
                                      "FAMILY_POST_TOKEN_MUM":"mum-secret"}):
             with TestClient(create_app()) as client:
-                resp = client.post("/mcp/mum", headers={
+                resp = client.post("/mcp/mum/", headers={
                     "Authorization": "Bearer dad-secret",
                     "Host": "lyvra-family-post-bridge.onrender.com",
                 }, json={"jsonrpc":"2.0","id":1,"method":"initialize","params":{}})
