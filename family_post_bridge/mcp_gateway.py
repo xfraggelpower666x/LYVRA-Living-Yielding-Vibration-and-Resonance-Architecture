@@ -59,6 +59,11 @@ def create_role_server(role, write_callback):
         when reconciling an uncertain result. Stored is not recipient-read.
         """
         try:
+            # Validate with the same canonical Letter contract before any writer
+            # callback; MCP string schemas alone do not enforce role/ID limits.
+            from family_post_bridge.server import Letter
+            Letter(sender=role, recipient=recipient, title=title,
+                   content=content, message_id=message_id)
             return await run_in_threadpool(
                 write_callback, role, recipient, title, content, message_id
             )
