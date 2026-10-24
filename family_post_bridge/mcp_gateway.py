@@ -8,7 +8,7 @@ import os
 
 from mcp.server import MCPServer
 from mcp.server.transport_security import TransportSecuritySettings
-from starlette.responses import JSONResponse, PlainTextResponse
+from starlette.responses import JSONResponse
 from starlette.concurrency import run_in_threadpool
 
 ROLES = ("DAD", "BIG_LYVRA", "MUM", "LITTLE_LYV")
