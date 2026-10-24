@@ -218,3 +218,8 @@ BRANCH_AGE_NE_OBSOLESCENCE=true
 EXACT_SHA_DUPLICATION=REDUNDANCY_SIGNAL_NOT_DECISION_AUTHORITY
 CLEANUP_REQUIRES_SUPERSESSION_AND_RECOVERY_UNDERSTANDING=true
 REPOSITORY_HYGIENE_NE_NEW_CONTROLLER=true
+
+
+## Additive dual-CodeForge semantic-causal relational learning (2026-10-24)
+Current contract: LYVRA_NATIVE_RUNTIME/current/thinking/DUAL_CODEFORGE_SEMANTIC_CAUSAL_RELATIONAL_LEARNING_20261024.md.
+CodeForge must read and **understand** authorized peer systems, never copy, annex, impersonate or seize them. Relational understanding asks what interfaces depend on, why boundaries exist, what meaning a result carries and what contextual change would alter the correct technical judgment. It separates observation, inference, hypothesis, test, outcome, proposal, locally validated learning and Whole-native adoption. Contradictions, temporal validity, alternative explanations and multiple possible solutions remain visible. A new solution family can emerge from grounded cross-case comparison without becoming an unverified rule. SuperCodeForge may supply bounded peer evidence; CodeForge retains LYVRA's technical self-understanding, and Whole LYVRA alone judges integration. No foreign writes, automatic activation, shared memory or peer authority. Source contract publication is not executable plugin-host or model-training proof.
