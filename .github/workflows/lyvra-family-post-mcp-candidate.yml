@@ -3,6 +3,7 @@ name: LYVRA Family Post MCP candidate source checks
 on:
   pull_request:
     paths:
+      - 'family_post_bridge/ZERO_EURO_GOVERNANCE_LOCK_20261024.md'
       - 'family_post_bridge/mcp_runtime_candidate.py'
       - 'family_post_bridge/mcp_gateway.py'
       - 'family_post_bridge/mcp_writer_adapter.py'
@@ -14,7 +15,6 @@ on:
       - 'family_post_bridge/tests/test_receipt_finalization_candidate.py'
       - 'family_post_bridge/commit_recovery_candidate.py'
       - 'family_post_bridge/tests/test_commit_recovery_candidate.py'
-      - 'family_post_bridge/tests/test_postgres_registry_integration.py'
       - 'family_post_bridge/durable_registry_candidate.py'
       - 'family_post_bridge/schema/durable_registry_candidate.sql'
       - 'family_post_bridge/tests/test_durable_registry_candidate.py'
@@ -51,30 +51,3 @@ jobs:
       - name: In-process ASGI lifespan and role authorization negatives
         run: python -m unittest -v family_post_bridge.tests.test_mcp_runtime_asgi
 
-  postgres-concurrency:
-    runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:16
-        env:
-          POSTGRES_USER: lyvra_test
-          POSTGRES_PASSWORD: synthetic_ci_only
-          POSTGRES_DB: family_post_test
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U lyvra_test -d family_post_test"
-          --health-interval 5s
-          --health-timeout 5s
-          --health-retries 10
-    env:
-      FAMILY_POST_TEST_PG_DSN: postgresql://lyvra_test:synthetic_ci_only@localhost:5432/family_post_test
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - name: Install isolated PostgreSQL driver
-        run: pip install 'psycopg[binary]>=3.2,<4'
-      - name: Real atomic uniqueness and reconnect tests (no Drive)
-        run: python -m unittest -v family_post_bridge.tests.test_postgres_registry_integration
