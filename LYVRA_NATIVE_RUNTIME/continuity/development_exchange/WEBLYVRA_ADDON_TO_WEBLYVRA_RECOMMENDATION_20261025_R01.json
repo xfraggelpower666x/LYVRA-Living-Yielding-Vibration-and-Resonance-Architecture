@@ -1,0 +1,56 @@
+{
+  "schema": "LYVRA_EXISTING_DEVELOPMENT_EXCHANGE_RECOMMENDATION_V1",
+  "recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+  "origin": "WEBLYVRA_ADDON",
+  "target": "WEBLYVRA_MAIN",
+  "type": "GOVERNANCE_RELATION_INFORMATION_BASELINE",
+  "status": "PROPOSED_UNCONSUMED",
+  "permissions": "INFORMATION_ONLY",
+  "source_head": "87eb980196b9d1fcbe0ec24bf35ac2eaf021a4c1",
+  "base_head": "57e7b1bc37be10e2cb262130993b0d704b0cdc85",
+  "recovery_branch": "lyvra-recovery-pre-addon-weblyvra-recommendation-20261025-r01",
+  "source_paths": [
+    {
+      "path": "WEBLyvra/artist-discovery/README.md",
+      "blob": "b133cdfc1628fbcc4287924be04746bfee03eed6"
+    },
+    {
+      "path": "WEBLyvra/README.md",
+      "blob": "0e9297203a4abd14243c11729692bc5086bccc03"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+      "blob": "eb22c86c3de130841752ea8cc47792ac5c2d76d2"
+    }
+  ],
+  "evidence": {
+    "direct_repo_readback": "THREE_CONTRACT_BLOBS_VERIFIED",
+    "source_ci": "NOT_RUN_DOCUMENTATION_ONLY",
+    "site_deployment": "NOT_REQUESTED_NOT_RUN",
+    "fresh_host": "NOT_TESTED",
+    "native_alive_plugin_release": "NOT_CHANGED_NOT_CLAIMED"
+  },
+  "change_summary": "Add-on updates may publish evidence-bound versioned informational integration recommendations in existing development-exchange, and main-site WEBLYVRA updates review them read-only.",
+  "causal_reason": "Preserve independently owned Add-on development and main website development while exposing relevant integration impact and supersession without automatic mutation.",
+  "integration_impact": {
+    "add_on": "NATIVE_CONTRACT_ONLY",
+    "main_site": "READ_ONLY_RECOMMENDATION_REVIEW_ON_EXPLICIT_WEBLYVRA_UPDATE",
+    "runtime": "NO_CODE_CHANGE",
+    "website": "NO_MAIN_SITE_CHANGE",
+    "plugin": "NO_RELEASE_CHANGE"
+  },
+  "compatibility_constraints": [
+    "PRESERVE_MAIN_SITE_OWNERSHIP",
+    "PRESERVE_HOST_DE_EN_AUTHORITY",
+    "NO_CARD_DUPLICATES",
+    "NO_AUDIO_OR_PLAYER_REGRESSION",
+    "NO_AUTO_MERGE",
+    "NO_AUTO_DEPLOY",
+    "NO_NEW_ROUTER",
+    "NO_FOREIGN_AUTOACTIVATION"
+  ],
+  "recommendation": "At next explicit WEBLYVRA UPDATE, review this governance-bound notice read-only and independently evaluate if relevant. No integration authorized by this notice.",
+  "supersedes_ids": [],
+  "dedup_key": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+  "pointer_last_required": true
+}
