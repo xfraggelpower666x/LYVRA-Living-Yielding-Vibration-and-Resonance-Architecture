@@ -264,3 +264,14 @@ READ_ONLY_AUTOMATIC_STATUS_CHECK_IF_AVAILABLE = TRUE
 USER_SELECTION_REQUIRED_FOR_FULL_POST_RETRIEVAL = TRUE
 NO_AUTO_OUTBOUND_MAIL_OR_TASK_CHANGE = TRUE
 FIVE_MAIN_WORK_CHOICES_PRESERVED = TRUE
+
+
+## Scoped Add-on-to-website recommendation relation · 2026-10-25
+
+The existing WEBLYVRA workspace has two distinct development scopes: `WEBLyvra/artist-discovery/` (independent ADDON source) and `WEBLyvra/live/` (independent main-website source). Development in one does not authorize mutation of the other. Do not create a second global workspace, controller, router or facet authority.
+
+At a direct `WEBLYVRA ADDON UPDATE`, after native repository-current/whole safety gates, the Add-on owner should publish a versioned evidence-bound recommendation **only if relevant main-site impact exists**, into the existing `LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_*.json` carrier. Include immutable id, source provenance/HEAD/blob, evidence and limitations, causal rationale, impact, duplicate/supersession fields and readback. Publication is information-only; no main-site write/deploy.
+
+At a direct `WEBLYVRA UPDATE`, the main-site owner reads relevant Add-on notices **read-only**, independently assesses their currency, compatibility, supersession and host-specific consequences, and may authorize integration **only when the creator explicitly directs integration**. Record acknowledgment only via governed native writes. Preserve the current website development backlog, existing DE/EN host language controller, radio/player, cards and all unrelated independent development. The staging script does not confer cross-scope authority.
+
+Detailed owner contracts: `WEBLyvra/artist-discovery/README.md` and `WEBLyvra/README.md`. For this documentation-only governance change, native/ALIVE plugin source and skill code are unchanged; dual-plugin runtime/release parity is **NOT_CLAIMED**. New fresh-host trigger behavior is **PENDING** until independently observed. `RECOMMENDATION != ADOPTION != DEPLOYMENT`.
