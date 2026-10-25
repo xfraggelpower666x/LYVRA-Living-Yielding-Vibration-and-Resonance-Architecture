@@ -7256,6 +7256,14 @@
     "main_site_code_modified": false,
     "standalone_deployment_modified": false,
     "whole_rehydration": "PARTIAL",
-    "return_anchor": "WEBLYVRA_ADDON_NATIVE_RECOMMENDATION_INTAKE"
+    "return_anchor": "WEBLYVRA_ADDON_R02_HOST_COMPATIBILITY_INTAKE",
+    "latest_verified_addon_recommendation": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261025_R02.json",
+    "latest_verified_addon_recommendation_blob": "0f3b73ded17783c81eb1a47ccfbed96b602f7cb0",
+    "latest_recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
+    "previous_notice_preserved": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+    "latest_status": "PROPOSED_UNCONSUMED_INFORMATION_ONLY",
+    "weblyvra_main_development_unchanged": true,
+    "no_plugin_release_change": true,
+    "no_new_deploy": true
   }
 }
