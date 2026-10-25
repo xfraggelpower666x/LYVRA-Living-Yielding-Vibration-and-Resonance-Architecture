@@ -1,0 +1,64 @@
+{
+  "schema": "LYVRA_EXISTING_DEVELOPMENT_EXCHANGE_RECOMMENDATION_V1",
+  "recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
+  "origin": "WEBLYVRA_ADDON",
+  "target": "WEBLYVRA_MAIN",
+  "type": "HOST_COMPATIBILITY_FOCUS_RECOMMENDATION",
+  "status": "PROPOSED_UNCONSUMED",
+  "permissions": "INFORMATION_ONLY",
+  "base_head": "1e3e5c4b549549e2f71887612892df73cba7072e",
+  "source_head": "15d635a12e3dc505bb4606b23c370daa186c4769",
+  "source_paths": [
+    {
+      "path": "WEBLyvra/artist-discovery/index.html",
+      "blob": "aa22e3a1f6dafbf459caf89828fa971a82ca1f7a"
+    },
+    {
+      "path": "WEBLyvra/artist-discovery/MOBILE_DE_EN_FOCUS_REPAIR_RECEIPT_2026-10-24.json",
+      "blob": "e2708e8221123024b018f43cef836627ade227df"
+    }
+  ],
+  "target_reference": {
+    "path": "WEBLyvra/live/dist/i18n.js",
+    "blob": "359089ac4d27bfd6949bcd6e01369cabae66ae2a",
+    "observed_apis": [
+      "getLanguage",
+      "setLanguage",
+      "lyvra:languagechange"
+    ]
+  },
+  "evidence": {
+    "source_readback": "VERIFIED",
+    "source_ci": "SUCCESS",
+    "source_ci_run": 40113259975,
+    "source_host_deployment": "NOT_REVALIDATED_FOR_THIS_CHANGE",
+    "real_iphone_voiceover": "NOT_TESTED",
+    "catalog_counts": "PREVIOUSLY_VERIFIED_NOT_RETESTED"
+  },
+  "change_summary": "Existing Add-on DE/EN discography focus restoration and Product Reach filter fallback may require compatibility evaluation when consumed inside the WEBLYVRA main-site language system.",
+  "causal_reason": "The Add-on currently has standalone state and language handlers. On integration, host is the language authority and may rebuild dynamically; focus should survive without duplicate language controls.",
+  "integration_impact": {
+    "main_site": "READ_ONLY_INTAKE_AND_COMPATIBILITY_REVIEW_ONLY",
+    "host_language": "KEEP_WEBLYVRA_I18N_AUTHORITATIVE",
+    "keyboard_focus": "PRESERVE_ACTIVE_SEARCH_OR_FILTER_IF_REBUILT",
+    "mobile": "RESPONSIVE_SOURCE_NOT_DEVICE_VERIFIED",
+    "radio": "NO_CHANGE",
+    "catalog": "462_SUNO_167_SOUNDCLOUD_629_TOTAL_UNCHANGED",
+    "plugin": "NO_PLUGIN_RELEASE_CHANGE"
+  },
+  "recommendation": "On an explicitly authorized main-site Add-on integration, assess DE/EN event mapping, focus retention and fallback against the current WEBLYVRA i18n.js and dynamic cards. Avoid a second host language selector and do not infer live or iPhone acceptance. No action authorized by this message.",
+  "supersedes_ids": [],
+  "related_prior_notice": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+  "relation_to_prior": "DISTINCT_IMPLEMENTATION_IMPACT_AFTER_GOVERNANCE_BASELINE_NOT_SUPERSESSION",
+  "dedup_key": "focus-source-aa22e3a1f6dafbf459caf89828fa971a82ca1f7a:weblyvra-main",
+  "recovery_branch": "lyvra-recovery-pre-addon-focus-recommendation-20261025-r02",
+  "scope_guards": {
+    "main_site_write": false,
+    "add_on_code_write": false,
+    "merge": false,
+    "deploy": false,
+    "new_router": false,
+    "foreign_activation": false
+  },
+  "pointer_last_required": true
+}
