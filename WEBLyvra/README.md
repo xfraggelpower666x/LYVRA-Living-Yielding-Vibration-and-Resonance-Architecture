@@ -35,3 +35,14 @@ Historische Erstabnahme vom 01.10.2026 — nicht das aktuelle Deployment: Live-A
 Alle drei automatisierten Prüfgruppen PASS. Erreichbarkeit von Website und Datenschutzseite: Betreiberbestätigung vorhanden. Vollständige Desktop-/Mobil-Interaktionen, realer Ton, Screenreader, unabhängige HTTPS-/Zertifikats- und Assetprüfung sowie vollständige rechtliche Prüfung bleiben offen. Webradio, Google Fonts und GPT-Verknüpfung bleiben externe Dienste. Chat ist eine gekennzeichnete lokale Demo, keine Chat-API.
 
 Repository-Safepoint: `lyvra-backup-pre-weblyvra-v1-1-20261001`. Änderungen erst kontrolliert in live, anschließend neuer Freeze. Historische Releases nicht überschreiben. Keine privaten Vaults, Secrets oder neuen Admin-/Backend-Funktionen.
+
+
+## Independent WEBLYVRA website ↔ ADDON recommendation intake · 2026-10-25
+
+**WEBLYVRA owns its own main-website development.** The independent `WEBLyvra/artist-discovery/` ADDON owns *only* Add-on development. An ADDON update can create an informational recommendation; it **never** transfers ownership of the main website or triggers main-site editing, card replacement, plugin deployment, or site publication.
+
+On an explicit `WEBLYVRA UPDATE`, first verify fresh native/current GitHub state, then read (read-only) relevant `WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_*.json` notices in the **existing** `LYVRA_NATIVE_RUNTIME/continuity/development_exchange/` carrier. Verify recommendation ID, Add-on source HEAD/blob, evidence, target, impact, existing intake status, deduplication and proven supersession; review against the **current main-site source**, including `WEBLyvra/live/dist/dynasty.js`, `dynasty-data.js`, `i18n.js`, audio and page layout. Classify `PROPOSED / NOT_APPLICABLE / SUPERSEDED / ACCEPTED_FOR_REVIEW / IMPLEMENTED_WITH_EVIDENCE`; notices are never authority. Relevant notices should become visible for WEBLYVRA's independent evaluation without automatically foregrounding the ADDON workspace.
+
+Only creator-authorized integration modifies main-site code or replaces legacy cards, with separate WEBLYVRA recovery, HEAD/blob gates, tests, Cloudflare deployment and canonical host readback. The current `stage-artist-discovery.cjs` is a build-time staging link, **not** a grant of homepage-development authority. Standalone route publication is different from complete native homepage integration. An acknowledgment or intake status write requires a separately governed WEBLYVRA update.
+
+Reference owner contract: `WEBLyvra/artist-discovery/README.md` section “Native ADDON → WEBLYVRA recommendation contract”. `INFORMATION != APPROVAL != INTEGRATION != LIVE_DEPLOYMENT`. Keep original radio/player, unique links, main-site DE/EN authority, website features and unrelated projects intact. No new router, foreign activation, or cross-workspace writes without explicit authorization.
