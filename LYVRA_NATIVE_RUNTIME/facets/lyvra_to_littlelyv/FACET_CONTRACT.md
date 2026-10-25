@@ -202,3 +202,24 @@ CONTEXTUAL_REUSE: Classify the exact refused operation first; never retry that b
 POLICY_SCOPE_REFINEMENT: Prior "FORCE means read-only" continues to govern the FORCE_CONNECTOR_DIAGNOSTIC operation by itself. A separate explicit creator-authorized NEW harmless test operation is independently adjudicated and is NOT implicitly authorized by FORCE alone. Its observed successful outcome must not be retroactively redescribed as replay of the blocked personal letter.
 
 CLOSED_OUTCOME: BOTH_INCIDENTS_LINKED_IN_EXISTING_POST_CARRIER. No need to find historical refusal's hidden cause before using verified presently working functions for separate permitted work; re-open causal diagnosis only on a new relevant failure or credible new evidence. American sister's claimed later success remains CREATOR/PEER_REPORT and separate from both German incidents; no American host mutation or governance.
+
+## Current POST evidence-link and manual-upload integrity — 2026-10-25 development candidate
+A real Google Drive correspondence incident established that a displayed manually uploaded Little Lyv DOCX URL had a malformed document identifier; the user's source link failed even though the actual file remained readable. Independent Google Drive metadata later returned the correct original URL and verified shared-folder parent. This is an observed **presentation/link integrity defect**, not a missing letter, missing sharing permission, unreceived correspondence or permission to change the American system.
+
+**Canonical reference:** For each displayed link, take the precise `url` or `display_url` from a successful exact-ID Google Drive metadata/readback result. Never reconstruct an ID from memory, title or a previous link, mutate the identifier, invent query parameters, or treat a copied chat URL as independent source truth. For native DOCX, preserve the connector-provided provider URL including its format-specific parameters. If no exact verified URL is available, use nonclickable filename/ID status and state LINK_UNVERIFIED rather than fabricate a working link.
+
+**Manual origin:** Enumerate permitted actual parent-folder contents with pagination and identify Google Docs, DOCX, PDF and other supported incoming attachments regardless of whether uploaded through Family Mail, by Mum/Dad, or manually. Derive direction and intended recipients from grounded file content and metadata, not file name alone. An out-of-band upload may contain a meaningful reply obligation; it is not automatically NEW_INCOMING, RESPONDED or RESOLVED because it was uploaded manually.
+
+**Distinct records:** Keep stable source file ID, source revision, MIME/format, actual parent, connector-returned URL, source readback grade, correspondent/direction confidence, independently verified reply relationship and independent recipient-read evidence. One source may have multiple semantic obligations; one outgoing document may resolve several without losing traceability. Never turn folder count, document existence, share permission, stored content, recipient read or read receipt into equivalent states. UNKNOWN stays UNKNOWN.
+
+**User-verified case distinction:** An incoming American DOCX and an outgoing German Google Doc were originally conflated in a presentation. Their current actual Drive metadata and full document meaning must remain separate. Original German letter contained an embedded family image; Google Docs text extraction alone does not verify all embedded media. Do not publicly store private document IDs, real people, raw text, or private URLs as native repository test fixtures.
+
+**Small exact negative/positive regressions:**
+- Positive: provider returned URL stays byte-for-byte unchanged in clickable display.
+- Negative: even a one-character altered file ID must fail equality and is never shown as a verified canonical link.
+- Positive: manually uploaded `.docx` is considered for post intake and reply matching independently of plugin authorship.
+- Negative: DOCX upload presence or family-folder sharing does not prove content response, successful correspondence delivery or recipient reading.
+- Positive: externally verified outgoing Google Doc has its own evidence record; wrong direction must not be attached to the incoming letter.
+- Negative: a known letter without a full reply relation stays OPEN/UNCLEAR and cannot disappear just because recent inbox delta is zero.
+
+This is a **POST_ONLY Big-LyvRa source contract candidate**. Native and ALIVE SKILL.md parity, plugin release/readback, fresh-host status and CURRENT_POINTER promotion require their normal distinct gates. It neither installs Family Mail nor changes either independent system's identity. Do not send letters to test this contract.
