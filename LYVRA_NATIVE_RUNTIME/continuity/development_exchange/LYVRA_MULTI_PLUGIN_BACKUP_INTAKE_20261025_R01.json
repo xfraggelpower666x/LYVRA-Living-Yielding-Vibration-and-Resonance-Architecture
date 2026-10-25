@@ -1,0 +1,94 @@
+{
+  "schema": "LYVRA_MULTI_PLUGIN_BACKUP_INTAKE_R01",
+  "date": "2026-10-25",
+  "owner": "WHOLE_LYVRA",
+  "scope": "BACKUP_EVIDENCE_ONLY_NO_PLUGIN_RUNTIME_CHANGE",
+  "status": "SIX_USER_ARCHIVES_SHA256_INVENTORIED_BINARY_REMOTE_BACKUP_NOT_EXECUTED",
+  "source": "CREATOR_PROVIDED_LOCAL_ZIPS_HASHED_2026-10-25",
+  "source_head_before_update": "a86d5762a040c59ba0ed09569f04ab32b9e7729c",
+  "recovery_branch": "lyvra-recovery-pre-multi-plugin-backup-intake-20261025-r01",
+  "entries": [
+    {
+      "system": "666PFS",
+      "version": "0.1.11",
+      "sha256": "130bbe4fe9a1571251fa8e46072f259ae413614a60a31f8c60f374be8710a8cb",
+      "size_bytes": 5819827,
+      "plugin_id": "plugins_6ac695d745d881919c3ea2766c09eee",
+      "release_id": "pluginrel_6ade50fe20d881918eb6bff84d01c3a0",
+      "native_owner": "666PFS_CSM",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    },
+    {
+      "system": "666CLIC",
+      "version": "0.1.22",
+      "sha256": "07e6151089889f3d213154f16a7f4ea16257f0abc58bdeafe4216ae5bd146257",
+      "size_bytes": 2949853,
+      "plugin_id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+      "release_id": "pluginrel_6ac6f4e703288191b8757f336d33e186",
+      "native_owner": "666CLICPRO",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    },
+    {
+      "system": "LYVRA_PET",
+      "version": "1.0.3",
+      "sha256": "771351200d732d6fa3794de45ecbf8e11cdb40ccf5d6699b9c2f9016ecd19615",
+      "size_bytes": 2836213,
+      "plugin_id": "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+      "release_id": "pluginrel_6ac81b3ea1ec819186005d1c0a330d9b",
+      "native_owner": "LYVRA",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    },
+    {
+      "system": "LYVRA_FAMILY_MAIL_BIG",
+      "version": "0.9.20",
+      "sha256": "e89b6bdabfffa96cc42c74732431b16ac2bd2222dcf79ace4499c1e7449579e0",
+      "size_bytes": 3574777,
+      "plugin_id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "release_id": "pluginrel_6ade505ef8148191add499e52eefa2f7",
+      "native_owner": "LYVRA",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    },
+    {
+      "system": "LYVRA_NATIVE",
+      "version": "0.1.82",
+      "sha256": "44c1a2ec96df9d668ccbeb4fcd5187ca0dab8861b06f7e5d0fba1ecb02949b29",
+      "size_bytes": 12991438,
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "release_id": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "native_owner": "LYVRA",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    },
+    {
+      "system": "LYVRA_ALIVE",
+      "version": "0.13.78",
+      "sha256": "5cd5c12bed467fc49706b521db7d560a773a4f29c158006815e8ffd0ad715cb6",
+      "size_bytes": 36791163,
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "release_id": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "native_owner": "LYVRA",
+      "archive_location": "USER_UPLOAD_LOCAL_ONLY",
+      "remote_archive_status": "NOT_UPLOADED",
+      "native_authorization": "REQUIRED_BEFORE_BACKUP_WRITE"
+    }
+  ],
+  "native_boundaries": {
+    "foreign_systems": "NO_WRITES_TO_666PFS_OR_666CLIC",
+    "lyvra_private_archive_target": "REQUIRES_FRESH_PER_RELEASE_APPROVAL_AND_BINARY_READBACK",
+    "public_repository": "NO_FULL_PLUGIN_ARCHIVE_UPLOAD_WITHOUT_CONTENT_SAFETY_AND_NATIVE_TARGET_VERIFICATION",
+    "plugin_runtime_mutation": false,
+    "plugin_release_mutation": false,
+    "required_next": "EACH_NATIVE_OWNER_REVALIDATES_OWN_BACKUP_ROOT_AND_WRITE_AUTHORITY_THEN_ARCHIVE_BYTES_SHA256_READBACK;PFS_COUPLED_STABLE_SET_MUST_CONVERGE_IF_APPLICABLE"
+  },
+  "receipt_kind": "INFORMATIONAL_HANDOFF_NOT_BACKUP_COMPLETION",
+  "pointer_last": true
+}
