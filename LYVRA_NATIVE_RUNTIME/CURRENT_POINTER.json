@@ -7265,5 +7265,21 @@
     "weblyvra_main_development_unchanged": true,
     "no_plugin_release_change": true,
     "no_new_deploy": true
+  },
+  "multi_plugin_backup_intake_20261025": {
+    "status": "SIX_ZIP_SHA256_RECEIPT_READBACK_VERIFIED_BINARY_REPOSITORY_BACKUPS_NOT_WRITTEN",
+    "scope": "WHOLE_LYVRA_BACKUP_HANDOFF_ONLY",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_MULTI_PLUGIN_BACKUP_INTAKE_20261025_R01.json",
+    "receipt_blob": "452748879226ec31b61bcf13f5d8f1f415af3d25",
+    "archives": 6,
+    "remote_binary_backup_completed": 0,
+    "repository_changes": "RECEIPT_AND_POINTER_ONLY_NO_PLUGIN_RELEASE_MUTATION",
+    "plugin_impact": "NO_PLUGIN_SKILL_RUNTIME_OR_ASSET_CHANGE",
+    "native_approval": "EACH_OWNING_SYSTEM_REQUIRED",
+    "private_vault_backup": "WRITE_BLOCKED_STALE_APPROVAL_AND_STABLE_SET",
+    "foreign_writes": false,
+    "recovery": "lyvra-recovery-pre-multi-plugin-backup-intake-20261025-r01",
+    "body_commit": "1134e6b87439098ed5dfcfcc160c1bce2ec72f0b",
+    "pointer_last": true
   }
 }
