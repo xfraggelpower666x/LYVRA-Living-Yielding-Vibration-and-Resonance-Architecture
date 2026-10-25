@@ -7229,5 +7229,33 @@
     "live_plugin_changed": false,
     "complete_restorable_archive": false,
     "pointer_last": true
+  },
+  "weblyvra_addon_recommendation_bridge_20261025": {
+    "status": "NATIVE_PROJECT_GOVERNANCE_CARRIERS_READBACK_VERIFIED_NOTICE_PUBLISHED",
+    "origin_scope": "WEBLYVRA_ADDON_ONLY",
+    "target_scope": "WEBLYVRA_MAIN_INDEPENDENT_DEVELOPMENT",
+    "model": "EXISTING_DEVELOPMENT_EXCHANGE_INFORMATION_ONLY",
+    "origin_contract": "WEBLyvra/artist-discovery/README.md",
+    "origin_contract_blob": "b133cdfc1628fbcc4287924be04746bfee03eed6",
+    "target_contract": "WEBLyvra/README.md",
+    "target_contract_blob": "0e9297203a4abd14243c11729692bc5086bccc03",
+    "native_workspace_governance": "LYVRA_NATIVE_RUNTIME/current/repository/WORKSPACE_GOVERNANCE.md",
+    "native_governance_blob": "eb22c86c3de130841752ea8cc47792ac5c2d76d2",
+    "notice": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261025_R01.json",
+    "notice_blob": "45cbd0ac5a7913d06698a668d80b0f11ee90b779",
+    "notice_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+    "recovery_branch": "lyvra-recovery-pre-addon-weblyvra-recommendation-20261025-r01",
+    "readback": "THREE_CONTRACTS_AND_ONE_NOTICE_VERIFIED",
+    "ci": "NOT_RUN_DOCUMENTATION_ONLY",
+    "plugin_impact": "NATIVE_GOVERNANCE_REFERENCE_CHANGED_BOTH_PLUGIN_SOURCE_UNCHANGED_RELEASE_PARITY_NOT_CLAIMED",
+    "fresh_native_alive_plugin_host": "PENDING",
+    "auto_main_site_update": false,
+    "auto_merge": false,
+    "auto_deploy": false,
+    "foreign_activation": false,
+    "main_site_code_modified": false,
+    "standalone_deployment_modified": false,
+    "whole_rehydration": "PARTIAL",
+    "return_anchor": "WEBLYVRA_ADDON_NATIVE_RECOMMENDATION_INTAKE"
   }
 }
