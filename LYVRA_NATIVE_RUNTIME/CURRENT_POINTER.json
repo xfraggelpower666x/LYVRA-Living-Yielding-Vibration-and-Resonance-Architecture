@@ -7299,8 +7299,11 @@
     "native_alive_plugin_impact": "NO_PLUGIN_SOURCE_CHANGE",
     "plugin_releases": "UNCHANGED",
     "foreign_writes": false,
-    "recovery_branch": "lyvra-recovery-pre-horst-fallschirm-candidate-20261026-r01",
-    "body_last_commit": "9f56814599e30d283b7e391d7a4a69ab3119806c",
-    "pointer_last": true
+    "recovery_branch": "lyvra-recovery-pre-horst-status-reconciliation-20261026-r01",
+    "body_last_commit": "519e4eb835411913513f05d4ba0f8fb7758fd37b",
+    "pointer_last": true,
+    "current_state": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/CURRENT_STATE.json",
+    "current_state_blob": "50fa03072a1f2852d018818c9109748b32c3761c",
+    "source_test_reconciliation": "VERIFIED_STATUS_DRIFT_CORRECTED_2026_10_26"
   }
 }
