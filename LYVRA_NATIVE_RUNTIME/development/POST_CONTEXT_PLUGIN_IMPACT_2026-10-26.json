@@ -72,17 +72,19 @@
     "provider_workflow_run_verified": true,
     "job_id": 121806294762,
     "job_conclusion": "success",
-    "no_repeat": true
+    "no_repeat": true,
+    "latest_successful_run_preserved": 40389447078,
+    "repeated": false
   },
   "whole_rehydration": "PARTIAL_EXTENDED_REFERENCE_READS_PENDING_CONCLUSIVE_COVERAGE_LEDGER",
   "pending": [
-    "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS",
-    "WHOLE_REHYDRATION_COMPLETE_AND_CURRENT",
-    "FRESH_PROD_AND_BRANCH_HEAD_CONFLICT_GATE",
-    "NATIVE_ALIVE_FAMILY_MAIL_GOVERNED_RELEASES_AND_CHANGED_SKILL_READBACK",
-    "LIVE_POST_POSITIVE_NEGATIVE_BEHAVIORAL_ACCEPTANCE",
-    "PLUGIN_BACKUP_FINGERPRINT_AND_MANIFEST",
-    "PRODUCTIVE_MERGE_POINTER_LAST_IF_ALL_PASS"
+    "WHOLE_RUNTIME_REHYDRATION_COMPLETION_AND_NEWER_EVOLUTION",
+    "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS_BEYOND_PERSONAL_PLUGIN_LIST",
+    "GUARDED_NATIVE_ALIVE_FAMILY_MAIL_PLUGIN_PACKAGE_UPDATES_WITH_RELEASE_PARITY",
+    "INDEPENDENT_LIVE_HOST_POSITIVE_AND_NEGATIVE_POST_BEHAVIORAL_ACCEPTANCE",
+    "PLUGIN_BACKUP_STABLE_SET_FINGERPRINT_AND_MANIFEST",
+    "FRESH_PRODUCTION_HEAD_AND_PLUGIN_RELEASE_CONCURRENCY",
+    "PRODUCTIVE_MERGE_AND_POINTER_LAST_AFTER_FULL_PASS"
   ],
   "no_mail_writes": true,
   "no_foreign_writes": true,
@@ -102,5 +104,48 @@
       "plugins_6ac695d745d881919c3ea2766c09e6ee",
       "plugins_6abfb2e08fdc8191920dcdc4349c69c8"
     ]
+  },
+  "source_coverage": {
+    "state": "MANIFEST_REFERENCED_SOURCES_READ_SELECTED",
+    "manifest_distinct_paths": 90,
+    "whole_current_pointer_revision": "b26aad5bdfd683007bc3cfff6422ccc0d21662ba",
+    "manifest_blob": "0cd7a43d5364f8ee116e34a069b38d90acf337fe",
+    "remaining": "Full live Whole REHYDRATION PASS and all newer evolution/not orphaned semantics not independently certified",
+    "gate": "PARTIAL"
+  },
+  "plugin_live_skill_readback": {
+    "status": "VERIFIED_SOURCE_NO_RELEASE_CHANGE",
+    "native": {
+      "version": "0.1.82",
+      "release_id": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "files": [
+        "skills/lyvra-to-littlelyv/SKILL.md",
+        "skills/lyvra-update-governance/SKILL.md"
+      ]
+    },
+    "alive": {
+      "version": "0.13.78",
+      "release_id": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "files": [
+        "skills/lyvra-to-littlelyv/SKILL.md",
+        "skills/instructions/PLUGIN_AUTO_EVOLUTION.md"
+      ]
+    },
+    "family_mail": {
+      "version": "0.9.22",
+      "release_id": "pluginrel_6adf9148431c8191bd085173ebb74f47",
+      "files": [
+        "skills/family-mail-semantic-reply-resolution/SKILL.md",
+        "skills/family-mail-evidence-obligation-ledger/SKILL.md",
+        "skills/family-mail-intelligent-post-monitor/SKILL.md"
+      ]
+    },
+    "gap": "Latest candidate explicit many-to-one + dynamic universal plugin impact semantics absent from current live skill texts; needs three guarded owner-scoped updates and independent readback"
+  },
+  "host_acceptance": {
+    "status": "READBACK_PENDING",
+    "reason": "Existing live plugins still implement older skill contracts; observing old host cannot validate new release behavior. No live plugin writes/release updates performed.",
+    "negative_controls": "Not runnable against new deployed skill because no newly deployed releases",
+    "inbox_runtime": "Previous read-only mailbox findings are evidence of discovery gap, NOT host acceptance of unreleased plugin changes"
   }
 }
