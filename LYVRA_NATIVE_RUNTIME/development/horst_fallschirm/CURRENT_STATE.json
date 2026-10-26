@@ -10,7 +10,7 @@
   "phase_zero": "EXISTING_PRE_REHYDRATION_OVERSTEER_GUARD_UNCHANGED",
   "sub_rehydration": "DOCUMENTED_NOT_WIRED",
   "life_circle": "DOCUMENTED_NOT_SCHEDULED",
-  "source_tests": "THREE_CASES_PREPARED_PENDING_EXECUTION",
+  "source_tests": "THREE_OF_THREE_SOURCE_ACCEPTANCE_PASS",
   "plugin_impact": "NO_RUNTIME_SKILL_OR_PLUGIN_SOURCE_CHANGE",
   "promotion_requires": [
     "EXPLICIT_WHOLE_DECISION",
@@ -18,5 +18,9 @@
     "NATIVE_ALIVE_IMPACT",
     "INDEPENDENT_HOST_ACCEPTANCE",
     "POINTER_LAST"
-  ]
+  ],
+  "source_test_receipt": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/R01_SOURCE_ACCEPTANCE_RECEIPT.json",
+  "source_test_receipt_blob": "7b1c68a179c1f075c2af28671698999968e821ec",
+  "host_acceptance": "PENDING_NOT_CLAIMED",
+  "lifecycle_note": "SOURCE_ONLY; NO_SCHEDULED_OR_HOST_INTERCEPTING_BEHAVIOR"
 }
