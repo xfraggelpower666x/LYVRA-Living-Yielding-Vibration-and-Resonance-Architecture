@@ -1,0 +1,40 @@
+{
+  "schema": "WEBLYVRA_MAIN_CATALOG_DOC_CURRENTNESS_V1",
+  "date": "2026-10-26",
+  "scope": "WEBLYVRA_MAIN_WEBSITE_DOCUMENTATION_ONLY",
+  "status": "SOURCE_DOC_UPDATED_PUBLIC_COUNTERS_READBACK_NO_DEPLOY",
+  "prechange_recovery": "lyvra-recovery-pre-weblyvra-main-readme-catalog-current-20261026-r01",
+  "readme": {
+    "path": "WEBLyvra/README.md",
+    "blob": "c87ed9a4658c89ceb233c6af8c993508117210d7",
+    "commit": "3198e6fb102596f50cb0dbac80180ffb2cb93cad"
+  },
+  "live_evidence": {
+    "route": "https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/",
+    "http": 200,
+    "observed_suno": 462,
+    "observed_discovery_total": 629,
+    "individual_uuid_exhaustive_check": false,
+    "checked_date": "2026-10-26"
+  },
+  "prior_authority": {
+    "canonical_host_receipt": "WEBLyvra/artist-discovery/CANONICAL_HOST_462_629_ACCEPTANCE_2026-10-24.json",
+    "blob": "2be5ef83a13b0df3f9cc2b3c2ae9d83109eee96f",
+    "soundcloud_sets": 45,
+    "soundcloud_tracks": 122
+  },
+  "preservation": {
+    "previous_450_suno_617_total": "HISTORICAL_PROVENANCE",
+    "native_host_language": "UNCHANGED",
+    "website_js_html": "UNCHANGED",
+    "radio": "UNCHANGED",
+    "gallery": "UNCHANGED",
+    "addon_code": "UNCHANGED",
+    "host_iphone": "PENDING",
+    "host_voiceover": "PENDING",
+    "deploy": "NOT_REQUESTED_OR_PERFORMED",
+    "ci": "NOT_RUN_DOCUMENTATION_ONLY",
+    "whole_rehydration": "PARTIAL"
+  },
+  "return_anchor": "WEBLYVRA_MAIN_CATALOG_DOC_CURRENTNESS_COMPLETE_HOST_AUDIO_PENDING"
+}
