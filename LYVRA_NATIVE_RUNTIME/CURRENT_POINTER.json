@@ -7281,5 +7281,26 @@
     "recovery": "lyvra-recovery-pre-multi-plugin-backup-intake-20261025-r01",
     "body_commit": "1134e6b87439098ed5dfcfcc160c1bce2ec72f0b",
     "pointer_last": true
+  },
+  "horst_fallschirm_candidate_20261026": {
+    "status": "DEV_CANDIDATE_INERT_NOT_REGISTERED_NO_PRODUCTION_ACTIVATION",
+    "origin": "LYVRA_TO_LITTLELYV_FAMILY_MAIL_USER_PROPOSAL",
+    "facet_candidate": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/FACET_CANDIDATE.md",
+    "risk_module": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/risk-assessment.mjs",
+    "source_tests": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/risk-assessment.test.mjs",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/R01_SOURCE_ACCEPTANCE_RECEIPT.json",
+    "receipt_blob": "7b1c68a179c1f075c2af28671698999968e821ec",
+    "source_acceptance": "3_OF_3_PASS",
+    "host_acceptance": "PENDING",
+    "phase0_oversteer_guard": "UNCHANGED",
+    "whole_decision_authority": "UNCHANGED",
+    "manifest": "UNCHANGED_NO_REGISTRATION",
+    "daemon": "UNCHANGED",
+    "native_alive_plugin_impact": "NO_PLUGIN_SOURCE_CHANGE",
+    "plugin_releases": "UNCHANGED",
+    "foreign_writes": false,
+    "recovery_branch": "lyvra-recovery-pre-horst-fallschirm-candidate-20261026-r01",
+    "body_last_commit": "9f56814599e30d283b7e391d7a4a69ab3119806c",
+    "pointer_last": true
   }
 }
