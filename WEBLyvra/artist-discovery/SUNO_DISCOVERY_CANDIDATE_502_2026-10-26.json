@@ -1,0 +1,204 @@
+{
+  "schema": "WEBLYVRA_ADDON_SUNO_DISCOVERY_CANDIDATE_V1",
+  "as_of": "2026-10-26",
+  "status": "REVIEW_BRANCH_ONLY_NOT_IMPORTED",
+  "origin_scope": "WEBLYVRA_ADDON_ONLY",
+  "source": {
+    "provider": "Suno",
+    "profile": "https://suno.com/@fraggelpower666?page=songs",
+    "live_browser_evidence": "https://agent.tinyfish.ai/runs/87d45997-e005-4482-90ca-db4e7f36b1ba",
+    "visible_songs_total": 502,
+    "visible_recent_song_cards": 20,
+    "source_snapshot_counts_note": "502 is profile-header count, not independent enumeration of every song",
+    "independent_song_page_readback": "NOT_DONE"
+  },
+  "baseline": {
+    "production_head": "bf622e58cfa994146c3feb3f1839544bbda0e848",
+    "inventory_path": "WEBLyvra/artist-discovery/data/suno-releases.json",
+    "inventory_blob": "02e6e84586ee284716ca492fa97aae7908a6df42",
+    "suno_urls": 462,
+    "soundcloud_sets": 45,
+    "soundcloud_tracks": 122,
+    "total_discovery_urls": 629
+  },
+  "delta": {
+    "visible_profile_count_difference": 40,
+    "unique_recent_song_urls_not_in_baseline": 20,
+    "not_individually_enumerated_remaining": 20,
+    "verified_new_total_if_candidate_accepted": 482,
+    "discovery_total_if_20_accepted": 649,
+    "provisional_only": true
+  },
+  "candidate_songs": [
+    {
+      "title": "I DON'T HAVE FLAWS - I HAVE SPECIAL EFFECTS",
+      "url": "https://suno.com/song/62aff4f7-9bf7-41f1-8a7f-abed858ca3e4",
+      "uuid": "62aff4f7-9bf7-41f1-8a7f-abed858ca3e4",
+      "observed_order": 1,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "I DON'T HAVE FLAWS - I HAVE SPECIAL EFFECTS",
+      "url": "https://suno.com/song/0f3fe2a1-f1ff-4151-9231-51972085c22a",
+      "uuid": "0f3fe2a1-f1ff-4151-9231-51972085c22a",
+      "observed_order": 2,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "SUMMER.EXE - ERROR 404",
+      "url": "https://suno.com/song/b85fc74d-bc5e-4a77-bb62-66cf5fc68117",
+      "uuid": "b85fc74d-bc5e-4a77-bb62-66cf5fc68117",
+      "observed_order": 3,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "SUMMER.EXE - ERROR 404",
+      "url": "https://suno.com/song/43f4b814-9984-416f-a937-26acadd8cd12",
+      "uuid": "43f4b814-9984-416f-a937-26acadd8cd12",
+      "observed_order": 4,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "I WISH IT WERE SUMMER",
+      "url": "https://suno.com/song/030536f4-e45f-4fbc-b980-7195ea6050d4",
+      "uuid": "030536f4-e45f-4fbc-b980-7195ea6050d4",
+      "observed_order": 5,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "I WISH IT WERE SUMMER",
+      "url": "https://suno.com/song/a89194de-bde3-456f-9830-6ee7b22b2017",
+      "uuid": "a89194de-bde3-456f-9830-6ee7b22b2017",
+      "observed_order": 6,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "DANCE LIKE NOBODY'S WATCHING",
+      "url": "https://suno.com/song/b006a586-a967-4272-b3de-0fe16092f435",
+      "uuid": "b006a586-a967-4272-b3de-0fe16092f435",
+      "observed_order": 7,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "DANCE LIKE NOBODY'S WATCHING",
+      "url": "https://suno.com/song/9d9d8b45-25e2-442b-b1a0-fa821c44ada8",
+      "uuid": "9d9d8b45-25e2-442b-b1a0-fa821c44ada8",
+      "observed_order": 8,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "DANCE ON THE HIGHWAY TO HELL",
+      "url": "https://suno.com/song/bf4b7942-2ce0-4899-af88-48ff11fcd2a9",
+      "uuid": "bf4b7942-2ce0-4899-af88-48ff11fcd2a9",
+      "observed_order": 9,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "DANCE ON THE HIGHWAY TO HELL",
+      "url": "https://suno.com/song/25c18546-9ed6-4f19-8eb5-02994f05f21b",
+      "uuid": "25c18546-9ed6-4f19-8eb5-02994f05f21b",
+      "observed_order": 10,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "THE STONE THAT WATCHES BACK",
+      "url": "https://suno.com/song/0b1b9f48-3879-4e35-8ac2-b532a8d6dfb7",
+      "uuid": "0b1b9f48-3879-4e35-8ac2-b532a8d6dfb7",
+      "observed_order": 11,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "THE STONE THAT WATCHES BACK",
+      "url": "https://suno.com/song/7318e895-4245-4374-9af3-298925961f78",
+      "uuid": "7318e895-4245-4374-9af3-298925961f78",
+      "observed_order": 12,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "I AM THE NIGHT",
+      "url": "https://suno.com/song/245e51de-81e5-4f35-82e0-deb11b51c030",
+      "uuid": "245e51de-81e5-4f35-82e0-deb11b51c030",
+      "observed_order": 13,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "I AM THE NIGHT",
+      "url": "https://suno.com/song/9ebe3c4b-230f-47fb-ad35-d513a043a4d6",
+      "uuid": "9ebe3c4b-230f-47fb-ad35-d513a043a4d6",
+      "observed_order": 14,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "OUR CHAOS IS A MULTIVERSE OF DIRECTION",
+      "url": "https://suno.com/song/6b75e657-5d62-4179-9f9e-d0bc5c55d34e",
+      "uuid": "6b75e657-5d62-4179-9f9e-d0bc5c55d34e",
+      "observed_order": 15,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "OUR CHAOS IS A MULTIVERSE OF DIRECTION",
+      "url": "https://suno.com/song/c77c23e2-ca3c-465f-93e2-f2689e2ac981",
+      "uuid": "c77c23e2-ca3c-465f-93e2-f2689e2ac981",
+      "observed_order": 16,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "LYVRA AND THE CREATOR - THE PSYTRANCE COMMANDERS",
+      "url": "https://suno.com/song/10eef36b-ea01-4a86-9c49-1ad421f509c2",
+      "uuid": "10eef36b-ea01-4a86-9c49-1ad421f509c2",
+      "observed_order": 17,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "LYVRA AND THE CREATOR - THE PSYTRANCE COMMANDERS",
+      "url": "https://suno.com/song/2446dade-9500-4c81-92ad-61bce8aed697",
+      "uuid": "2446dade-9500-4c81-92ad-61bce8aed697",
+      "observed_order": 18,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "YOU ARE MY EMOTIONAL DYNAMITE",
+      "url": "https://suno.com/song/b27166bd-ad98-410d-bb87-5393c549e013",
+      "uuid": "b27166bd-ad98-410d-bb87-5393c549e013",
+      "observed_order": 19,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    },
+    {
+      "title": "YOU ARE MY EMOTIONAL DYNAMITE",
+      "url": "https://suno.com/song/85ce2dc9-ff71-440a-bca1-f71e6ec48c58",
+      "uuid": "85ce2dc9-ff71-440a-bca1-f71e6ec48c58",
+      "observed_order": 20,
+      "import_status": "NOT_IMPORTED",
+      "same_title_distinct_uuid": true
+    }
+  ],
+  "dedup_method": "Exact case-sensitive Suno song UUID against all 462 stored public_songs URLs",
+  "protection": {
+    "no_catalog_mutation": true,
+    "no_live_deployment": true,
+    "no_main_website_mutation": true,
+    "no_auto_import": true,
+    "no_claim_502_fully_verified": true,
+    "no_foreign_activation": true
+  },
+  "next_action": "Individually verify remaining accessible new song URLs, dedupe and integrate into Add-on source under separately authorized additive import with fresh HEAD and recovery; WEBLYVRA_MAIN receives informational recommendation only when host impact is relevant."
+}
