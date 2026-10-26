@@ -7305,5 +7305,26 @@
     "current_state": "LYVRA_NATIVE_RUNTIME/development/horst_fallschirm/CURRENT_STATE.json",
     "current_state_blob": "50fa03072a1f2852d018818c9109748b32c3761c",
     "source_test_reconciliation": "VERIFIED_STATUS_DRIFT_CORRECTED_2026_10_26"
+  },
+  "family_mail_visual_post_parity_20261026": {
+    "status": "CURRENT_PLUGIN_SOURCE_PARITY_VERIFIED_FRESH_HOST_AND_MAILBOX_PENDING",
+    "source_release": {
+      "plugin_id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "version": "0.9.22",
+      "release_id": "pluginrel_6adf9148431c8191bd085173ebb74f47"
+    },
+    "native_release": "0.1.82",
+    "alive_release": "0.13.78",
+    "receipt": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FAMILY_MAIL_VISUAL_POST_PARITY_20261026_R01.json",
+    "receipt_blob": "3d28d62e8d2dd7dc5de399486c6dee66d98e6686",
+    "post_only": "PRESERVED",
+    "original_assets": "FILE_PATHS_VERIFIED_BINARY_HOST_RENDER_PENDING",
+    "full_host_parity": "PENDING",
+    "plugin_source_writes": false,
+    "letter_writes": false,
+    "foreign_activation": false,
+    "recovery_branch": "lyvra-recovery-pre-family-mail-visual-parity-intake-20261026-r01",
+    "body_commit": "c1d9efb47cff49325c05735c53d7b83bffef32b2",
+    "pointer_last": true
   }
 }
