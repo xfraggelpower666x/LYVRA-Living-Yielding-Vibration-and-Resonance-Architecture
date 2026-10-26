@@ -30,6 +30,9 @@ jobs:
       - name: Verify add-on catalog and artwork byte parity
         working-directory: WEBLyvra/artist-discovery
         run: node test-addon-integrity.mjs
+      - name: Verify bounded Suno 502-candidate evidence and 482/649 catalog preservation
+        working-directory: WEBLyvra/artist-discovery
+        run: node test-suno-502-candidate-evidence.mjs
       - name: Verify five original branded art binaries
         working-directory: WEBLyvra/artist-discovery
         run: node verify-original-assets.mjs
