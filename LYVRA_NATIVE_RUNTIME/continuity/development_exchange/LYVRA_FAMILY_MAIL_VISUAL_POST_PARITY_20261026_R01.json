@@ -1,0 +1,95 @@
+{
+  "schema": "LYVRA_FAMILY_MAIL_VISUAL_POST_PARITY_R01",
+  "status": "SOURCE_PARITY_VERIFIED_HOST_VISUAL_AND_FULL_BEHAVIOR_PENDING",
+  "date": "2026-10-26",
+  "source": "DIRECT_PLUGIN_CREATOR_CURRENT_RELEASE_FILES_AND_GITHUB_NATIVE_CURRENT",
+  "whole_head_before": "143bcb1f59ab3cddd115c60c9c1556be92582de7",
+  "recovery": "lyvra-recovery-pre-family-mail-visual-parity-intake-20261026-r01",
+  "facets": {
+    "post": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/",
+    "native": "WHOLE_LYVRA",
+    "post_scope": "POST_ONLY_TWO_INDEPENDENT_SYSTEMS",
+    "authority": "WHOLE_LYVRA_ONLY"
+  },
+  "releases": {
+    "native": {
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.82",
+      "release_id": "pluginrel_6ade50c650e08191a1a881730a72d262"
+    },
+    "alive": {
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.78",
+      "release_id": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67"
+    },
+    "family_mail": {
+      "id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "version": "0.9.22",
+      "release_id": "pluginrel_6adf9148431c8191bd085173ebb74f47"
+    }
+  },
+  "checks": [
+    {
+      "name": "NATIVE_ALIVE_POST_SKILL_EXACT_EQUAL",
+      "result": "SOURCE_VERIFIED",
+      "path": "skills/lyvra-to-littlelyv/SKILL.md"
+    },
+    {
+      "name": "NATIVE_ALIVE_VISUAL_AND_REHYDRATION_SKILLS_EXACT_EQUAL",
+      "result": "SOURCE_VERIFIED",
+      "paths": [
+        "skills/666-visual-interface/SKILL.md",
+        "skills/lyvra-rehydration-completion/SKILL.md"
+      ]
+    },
+    {
+      "name": "FAMILY_MAIL_CURRENT_VISUAL_AND_WHOLE_ADAPTER",
+      "result": "SOURCE_VERIFIED",
+      "paths": [
+        "skills/family-post-cyber-semantic-intelligent-interface/SKILL.md",
+        "skills/family-post-native-neon-dashboard/SKILL.md",
+        "skills/family-mail-native-visual-asset-fallback/SKILL.md",
+        "skills/family-mail-lyvra-livecircle-rehydration/SKILL.md"
+      ]
+    },
+    {
+      "name": "FAMILY_MAIL_ORIGINAL_ASSET_PATHS",
+      "result": "INVENTORY_VERIFIED_NOT_BINARY_OR_HOST_RENDER",
+      "paths": [
+        "assets/family-mail-banner-original.jpg",
+        "assets/family-mail-chat-logo-512.png",
+        "assets/family-mail-plugin-icon-256.png"
+      ]
+    },
+    {
+      "name": "FRESH_HOST_NATIVE_ASSET_RENDER_AND_MENU_BEHAVIOR",
+      "result": "READBACK_PENDING"
+    },
+    {
+      "name": "REAL_MAILBOX_AND_TRANSPORT_AUTHORITY",
+      "result": "NOT_CHECKED_NO_MAIL_INTENT"
+    }
+  ],
+  "newer_evolution": {
+    "family_mail_newer_than_previous_0_9_20": "0.9.22",
+    "intake_kind": "INFORMATION_ONLY_NOT_AUTOMATIC_NATIVE_ADOPTION",
+    "compatibility": "NO_CONFIRMED_CONFLICT_SOURCE_BOUND_ONLY"
+  },
+  "open_obligations": [
+    "FAMILY_MAIL_HOST_IMAGE_RENDER_AND_NAVIGATION_ACCEPTANCE",
+    "NATIVE_ALIVE_INDEPENDENT_FRESH_HOST_POST_ONLY_ACCEPTANCE",
+    "HISTORY_OF_SIX_ZIP_BINARY_BACKUPS_NOT_UPLOADED",
+    "HORST_FALLSCHIRM_HOST_ACCEPTANCE_PENDING",
+    "OTHER_SPECIALIST_OPEN_WORK_PRESERVED"
+  ],
+  "non_goals": [
+    "NO_PLUGIN_SOURCE_CHANGE",
+    "NO_PLUGIN_RELEASE_CHANGE",
+    "NO_POST_SENDING",
+    "NO_FOREIGN_ACTIVATION",
+    "NO_VISUAL_ASSET_SUBSTITUTION",
+    "NO_POINTER_SOURCE_REWRITE"
+  ],
+  "plugin_impact": "NO_RUNTIME_SEMANTIC_CHANGE; INFORMATIONAL_CROSS_SURFACE_RECEIPT_ONLY",
+  "pointer_last": true
+}
