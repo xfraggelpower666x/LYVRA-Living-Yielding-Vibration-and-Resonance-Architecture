@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-24",
-  "public_profile_song_count_observed": 462,
-  "coverage": "462 stored unique Suno song URLs; 450 preserved from prior snapshot, 12 new exact titles/UUIDs from 2026-10-24 public profile Handoff (200 recent URLs directly captured); not exhaustive independent 462-URL recapture.",
+  "reviewed_at": "2026-10-26",
+  "public_profile_song_count_observed": 502,
+  "coverage": "482 unique public Suno UUID links catalogued: previously verified 462 preserved + 20 new distinct Recent page links seen 2026-10-26. Suno profile displayed 502 songs; remaining 20 not independently enumerated. Candidate branch only, not productive host.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -2848,6 +2848,126 @@
       "url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
       "status": "public_profile_html_anchor_readback",
       "source": "2026-10-17 public Suno Songs HTML waitFor 8500ms"
+    },
+    {
+      "title": "I DON'T HAVE FLAWS - I HAVE SPECIAL EFFECTS",
+      "url": "https://suno.com/song/62aff4f7-9bf7-41f1-8a7f-abed858ca3e4",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "I DON'T HAVE FLAWS - I HAVE SPECIAL EFFECTS",
+      "url": "https://suno.com/song/0f3fe2a1-f1ff-4151-9231-51972085c22a",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "SUMMER.EXE - ERROR 404",
+      "url": "https://suno.com/song/b85fc74d-bc5e-4a77-bb62-66cf5fc68117",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "SUMMER.EXE - ERROR 404",
+      "url": "https://suno.com/song/43f4b814-9984-416f-a937-26acadd8cd12",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "I WISH IT WERE SUMMER",
+      "url": "https://suno.com/song/030536f4-e45f-4fbc-b980-7195ea6050d4",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "I WISH IT WERE SUMMER",
+      "url": "https://suno.com/song/a89194de-bde3-456f-9830-6ee7b22b2017",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "DANCE LIKE NOBODY'S WATCHING",
+      "url": "https://suno.com/song/b006a586-a967-4272-b3de-0fe16092f435",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "DANCE LIKE NOBODY'S WATCHING",
+      "url": "https://suno.com/song/9d9d8b45-25e2-442b-b1a0-fa821c44ada8",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "DANCE ON THE HIGHWAY TO HELL",
+      "url": "https://suno.com/song/bf4b7942-2ce0-4899-af88-48ff11fcd2a9",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "DANCE ON THE HIGHWAY TO HELL",
+      "url": "https://suno.com/song/25c18546-9ed6-4f19-8eb5-02994f05f21b",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "THE STONE THAT WATCHES BACK",
+      "url": "https://suno.com/song/0b1b9f48-3879-4e35-8ac2-b532a8d6dfb7",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "THE STONE THAT WATCHES BACK",
+      "url": "https://suno.com/song/7318e895-4245-4374-9af3-298925961f78",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "I AM THE NIGHT",
+      "url": "https://suno.com/song/245e51de-81e5-4f35-82e0-deb11b51c030",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "I AM THE NIGHT",
+      "url": "https://suno.com/song/9ebe3c4b-230f-47fb-ad35-d513a043a4d6",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "OUR CHAOS IS A MULTIVERSE OF DIRECTION",
+      "url": "https://suno.com/song/6b75e657-5d62-4179-9f9e-d0bc5c55d34e",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "OUR CHAOS IS A MULTIVERSE OF DIRECTION",
+      "url": "https://suno.com/song/c77c23e2-ca3c-465f-93e2-f2689e2ac981",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "LYVRA AND THE CREATOR - THE PSYTRANCE COMMANDERS",
+      "url": "https://suno.com/song/10eef36b-ea01-4a86-9c49-1ad421f509c2",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "LYVRA AND THE CREATOR - THE PSYTRANCE COMMANDERS",
+      "url": "https://suno.com/song/2446dade-9500-4c81-92ad-61bce8aed697",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "YOU ARE MY EMOTIONAL DYNAMITE",
+      "url": "https://suno.com/song/b27166bd-ad98-410d-bb87-5393c549e013",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "YOU ARE MY EMOTIONAL DYNAMITE",
+      "url": "https://suno.com/song/85ce2dc9-ff71-440a-bca1-f71e6ec48c58",
+      "status": "public_recent_page_browser_observed",
+      "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
     }
   ],
   "rules": [
@@ -2859,10 +2979,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 200,
+  "observed_public_song_links": 482,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred.",
+  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-24 additive source reconciliation: 450 repository URLs + 12 directly evidenced new song URLs = 462; SoundCloud inventories unchanged; live readback pending."
+  "last_research_outcome": "2026-10-26 candidate branch: 20 new UUIDs appended to previous 462 -> 482 stored; 502 profile count not equal to inventory; website production remains 462/629."
 }
