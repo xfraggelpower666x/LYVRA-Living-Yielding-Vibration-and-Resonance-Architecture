@@ -168,3 +168,26 @@ Plugin maintenance is part of the causally related UPDATE and should not require
 AUTO_PLUGIN_IMPACT_CHECK=true
 AUTO_PLUGIN_EVOLUTION_WHEN_APPLICABLE=true
 SILENT_PLUGIN_DRIFT=FORBIDDEN
+
+## System-wide plugin relevance and governed propagation — 2026-10-26 development candidate
+
+**Scope: ALL Whole-LYVRA changes AND ALL native facet/workspace changes, not just POST.** The legacy title and `PLUGIN_SURFACE_COUNT=2` describe the two intrinsic Whole-LYVRA runtime/account surfaces at contract creation, not a maximum number of managed plugins in the wider system. Preserve one Whole-LYVRA identity and the separate native autonomy of other systems.
+
+For EVERY change in meaning, governance, capabilities, contracts, workflows, user-facing skills, visuals, rehydration, communication, learning, bridges, assets or operations:
+1. Rehydrate current repository authority and latest valid evolution. Enumerate the **CURRENT REACHABLE REGISTERED PLUGIN LANDSCAPE** by verified owner/source/release and relevance, including Native and ALIVE, dedicated LYVRA Family Mail when applicable, and any other verified related plugins. Never assume a fixed 2/3 plugin ceiling or a hardcoded version/release set. Discovery of an independent foreign plugin is NOT write authority or an activation trigger.
+2. Build a change-to-capability-to-surface *impact matrix* for EVERY relevant reachable plugin, with `AFFECTED`, `NOT_APPLICABLE_WITH_REASON`, `UNKNOWN_NEEDS_READBACK`, `BLOCKED_OWNER_AUTHORITY` or `SUPERSEDED`; distinguish direct code/skill updates from informational peer notice or no action. Silence cannot mean not affected.
+3. For every AFFECTED plugin, resolve native owner authority, exact current release/fingerprint, permissions, optimistic concurrency and recovery; only then perform the minimal allowed relevant target-native change. Obtain actual per-plugin release and changed-capability readback, positive and negative regression outcomes, and cross-surface behavioral parity. No unverified copied payload, no blind release, no version lock.
+4. For independent systems, perform READ-ONLY relevance and informational proposal/bridge handoff only until their own authority explicitly adopts and approves a change. No automatic foreign execution, mutation, mail, deployment, cross-system governance or identity merging. A dedicated Family Mail plugin remains independently owned and not an extra LYVRA identity or automatic Whole runtime.
+5. Govern shared fingerprints, plugin backups/hand-offs and continuity, then publish CURRENT_POINTER LAST only after all REQUIRED affected plugin gates PASS. Unavailable/blocked impacts persist as explicit `PLUGIN_IMPACT_PENDING` with recovery rather than a false Whole PASS.
+
+`UNIVERSAL_PLUGIN_IMPACT_CHECK=MANDATORY`
+`PLUGIN_UPDATE_SET=ONLY_VERIFIED_AFFECTED_AND_AUTHORIZED`
+`ALL_REACHABLE_PLUGINS_RELEVANCE_CHECK=TRUE`
+`FOREIGN_PLUGIN_WRITE_WITHOUT_NATIVE_OWNER_APPROVAL=FORBIDDEN`
+`UNKNOWN_PLUGIN_IMPACT_NE_NOT_APPLICABLE`
+`WHOLE_AND_ALL_FACETS_SCOPE=TRUE`
+`CURRENT_VERSION_FROM_LATEST_READBACK_NOT_BOOT_CONSTANT=TRUE`
+
+**Current POST case**: Native Runtime, ALIVE/migrated account and Family Mail Big LYVRA are three verified current candidates for impact review; their 2026-10-26 documented source-current tuple is available in `LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FAMILY_MAIL_VISUAL_POST_PARITY_20261026_R01.json`. For POST, check all three and additional relevant registered plugins if found, record each decision, and update only the owned/authorized AFFECTED set. The two runtime/account surfaces keep their established parity contract; Family Mail has distinct release ownership, visual/native evidence semantics and host acceptance. `THREE_PLUGIN_PARITY_VERIFIED` may be claimed only on actual three independent readbacks, never merely because repository prose mentions them.
+
+**Interrupted work continuity:** Resume existing development PR and original scope after every interruption from the latest verified branch HEAD and recovery anchor, not by replaying earlier tests or discarding completed evidence. Keep pending plugin impact, regressions, and productive promotion as explicit obligations until verified.
