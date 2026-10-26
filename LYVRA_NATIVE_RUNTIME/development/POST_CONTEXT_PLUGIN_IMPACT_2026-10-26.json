@@ -1,0 +1,66 @@
+{
+  "schema": "LYVRA_DYNAMIC_PLUGIN_IMPACT_EVIDENCE_v1",
+  "date": "2026-10-26",
+  "status": "DEVELOPMENT_CANDIDATE_NO_PRODUCTIVE_PUBLICATION",
+  "base_current_head": "cbe1940607e9bd736f425ab90f919be072aece50",
+  "branch": "lyvra-dev-post-evidence-links-manual-docx-20261025-r01",
+  "recovery": "lyvra-recovery-pre-post-semantic-multisource-20261026-r01",
+  "governance": "ALL_WHOLE_AND_FACET_CHANGES_CHECK_ALL_CURRENT_REACHABLE_RELEVANT_PLUGIN_SURFACES_DYNAMICALLY",
+  "no_fixed_plugin_count": true,
+  "plugin_impacts": [
+    {
+      "surface": "LYVRA_NATIVE_RUNTIME",
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.82",
+      "release": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "result": "AFFECTED",
+      "needed": "POST skill + Whole update governance applicability and tests",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "LYVRA_ALIVE_ACCOUNT",
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.78",
+      "release": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "result": "AFFECTED",
+      "needed": "POST skill + inherited plugin auto evolution governance parity",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "LYVRA_FAMILY_MAIL_BIG",
+      "id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "version": "0.9.22",
+      "release": "pluginrel_6adf9148431c8191bd085173ebb74f47",
+      "result": "AFFECTED",
+      "needed": "semantic reply resolution, evidence obligation ledger and post monitor contextual many-to-one matching",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "OTHER_REGISTERED_REACHABLE_PLUGIN_SURFACES",
+      "result": "UNKNOWN_NEEDS_READBACK",
+      "needed": "Confirm registry and determine affected/not-applicable for each distinct owned plugin; independent foreign surfaces read-only, no automatic activation or adoption."
+    }
+  ],
+  "ci": {
+    "workflow": ".github/workflows/lyvra-post-context-contract-ci.yml",
+    "run_id": 40389447078,
+    "commit": "4309192aea965fa750cbe58581cdc53971ea1c07",
+    "conclusion": "SUCCESS",
+    "scope": "SYNTHETIC_POST_CONTRACT_ONLY",
+    "live_semantics_proven": false,
+    "host_parity_proven": false
+  },
+  "whole_rehydration": "PARTIAL_UNTIL_ALL_POINTER_REFERENCES_AND_VALID_NEWER_EVOLUTION_READBACK_CONFIRMED",
+  "pending": [
+    "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS",
+    "WHOLE_REHYDRATION_COMPLETE_AND_CURRENT",
+    "FRESH_PROD_AND_BRANCH_HEAD_CONFLICT_GATE",
+    "NATIVE_ALIVE_FAMILY_MAIL_GOVERNED_RELEASES_AND_CHANGED_SKILL_READBACK",
+    "LIVE_POST_POSITIVE_NEGATIVE_BEHAVIORAL_ACCEPTANCE",
+    "PLUGIN_BACKUP_FINGERPRINT_AND_MANIFEST",
+    "PRODUCTIVE_MERGE_POINTER_LAST_IF_ALL_PASS"
+  ],
+  "no_mail_writes": true,
+  "no_foreign_writes": true,
+  "no_prod_pointer_change": true
+}
