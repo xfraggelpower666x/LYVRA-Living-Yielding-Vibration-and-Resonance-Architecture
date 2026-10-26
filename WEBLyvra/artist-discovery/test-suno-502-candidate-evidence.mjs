@@ -11,7 +11,7 @@ const albums=read('data/soundcloud-albums.json').albums;
 const tracks=read('data/soundcloud-tracks.json').tracks;
 const receipt=read('SUNO_DISCOVERY_CANDIDATE_502_2026-10-26.json');
 const html=readFileSync(join(here,'index.html'),'utf8');
-const match=html.match(/const discoItems=(\\[[^;]*\\]);\\s*const discoState=/s);
+const match=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert(match,'discography data marker missing');
 const embedded=JSON.parse(match[1]);
 assert.equal(receipt.origin_scope,'WEBLYVRA_ADDON_ONLY');
