@@ -1,13 +1,13 @@
 # WEBLyvra — Website, Live-Quelle und Freeze
 
-## Aktueller WEBLyvra-Betriebsstand · überprüft am 22.10.2026
+## Aktueller WEBLyvra-Betriebsstand · überprüft am 26.10.2026
 
 **Produktiver Stand ist nicht identisch mit dem historischen Release-Freeze vom 01.10.2026.** Der Freeze `v1.1.0` bleibt als unveränderte Recovery-/Provenienzquelle erhalten; der aktuelle Live-Zustand folgt den neueren gültigen Deployments und der öffentlichen HTTP-Auslieferung.
 
-- **Artist Discovery live:** https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/ — zuletzt unabhängig gelesen mit **450 Suno-Song-UUIDs**, **45 SoundCloud-Alben/Sets**, **122 SoundCloud-Tracks/Mixen**, also **617 einzigartigen Links**.
+- **Artist Discovery live (26.10.2026):** https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/ — der öffentlich ausgelieferte Katalog bezeichnet **462 Suno-Song-URLs** und zeigt **629 Discovery-Einträge** an. Der durch native Receipt belegte Quellenbestand umfasst außerdem **45 SoundCloud-Alben/Sets + 122 SoundCloud-Tracks/Mixe = 167 SoundCloud-Einträge**. Somit **462 Suno + 167 SoundCloud = 629**; diese Werte sind beobachtete, zeitgebundene Zähler und keine vollständige Neuprüfung sämtlicher UUIDs.
 - **Google Resonance:** Öffentliche Such-/Produkt-Links und Belegstufen, keine vorgetäuschte Google-Search-Console-Telemetrie.
 - **Produktionsbuild:** Cloudflare Pages `weblyvra-live`, Quellwurzel `WEBLyvra/live`; statisches Artefakt `dist`. `node tests/stage-artist-discovery.cjs` erstellt die Kopie der Add-on-Quelle vor den statischen Prüfungen. Aktuelle Arbeitsanleitung: `artist-discovery/README.md`.
-- **Live-Readback:** Der Abruf vom 22.10.2026 enthält die neue Suno-UUID `b9fa99ea-7802-4f16-9a84-2f5142d4a4c9`, den 450er-Katalog und den 617er-Gesamtbestand. Die bereits bestätigten GitHub-/Cloudflare-Ergebnisse sind unabhängige, zeitgebundene Belege, keine permanente Freigabe künftiger Deployments.
+- **Historischer Live-Readback (22.10.2026):** Der damalige Abruf enthielt die Suno-UUID `b9fa99ea-7802-4f16-9a84-2f5142d4a4c9` und den seinerzeit belegten Bestand **450 Suno / 617 gesamt**. Dies ist erhaltene Provenienz, **nicht der aktuelle Katalogstand**. Der spätere additive Import mit zwölf neuen Suno-URLs und die kanonische Katalog-Zählerabnahme vom 24.10.2026 sind unter `WEBLyvra/artist-discovery/SUNO_IMPORT_462_629_RECEIPT_2026-10-24.json` und `WEBLyvra/artist-discovery/CANONICAL_HOST_462_629_ACCEPTANCE_2026-10-24.json` dokumentiert. Die Live-Zähler wurden am 26.10.2026 erneut read-only beobachtet; keine vollständige UUID-Einzelprüfung, keine frische iPhone-/VoiceOver-Abnahme und kein neues Deployment behauptet.
 - **Audio-Neon-Fallback:** GitHub Actions `WEBLyvra Audio Neon Fallback — read-only regression`, Run `39721271848`, SUCCESS für geprüfte Source-Regressions. Reale iPhone-Audio-, FFT- und Analyzer-Host-Abnahme ist davon getrennt und nicht durch diese CI bewiesen.
 - **Native Grenze:** Whole LYVRA bleibt identitäts- und entscheidungsführend. WEBLyvra ist ein Projekt, kein zusätzlicher nativer Router oder eine eigenständige LYVRA-Authority. Aktuelle Whole-Authority ausschließlich über `LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json` plus referenzierte aktuelle Träger; ein historischer Projekt-Freeze ersetzt das nicht.
 
