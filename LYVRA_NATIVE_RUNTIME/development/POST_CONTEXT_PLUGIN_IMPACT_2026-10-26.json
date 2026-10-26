@@ -36,9 +36,29 @@
       "release_gate": "PENDING"
     },
     {
+      "surface": "LYVRA_PET_INDEPENDENT_BROWSER",
+      "id": "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+      "version": "1.0.3",
+      "release": "pluginrel_6ac81b3ea1ec819186005d1c0a330d9b",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Pet browser package has no post-reply or Whole runtime governance skills in current listed files; scope remains independent Pet app. Re-evaluate if shared Whole adapter changes."
+    },
+    {
+      "surface": "PFS_CSM_NATIVE_FOREIGN",
+      "id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Separate authority, no PFS plugin changes; only informational backup/handoff relevance may arise after approved LYVRA plugin release."
+    },
+    {
+      "surface": "666CLIC_NATIVE_FOREIGN",
+      "id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Independent CLIC authority, no semantic dependency from POST; no foreign write or auto-adoption."
+    },
+    {
       "surface": "OTHER_REGISTERED_REACHABLE_PLUGIN_SURFACES",
       "result": "UNKNOWN_NEEDS_READBACK",
-      "needed": "Confirm registry and determine affected/not-applicable for each distinct owned plugin; independent foreign surfaces read-only, no automatic activation or adoption."
+      "reason": "Personal plugin listing is not an exhaustive registry of workspace/installed plugins and actual current facet capabilities."
     }
   ],
   "ci": {
@@ -48,9 +68,13 @@
     "conclusion": "SUCCESS",
     "scope": "SYNTHETIC_POST_CONTRACT_ONLY",
     "live_semantics_proven": false,
-    "host_parity_proven": false
+    "host_parity_proven": false,
+    "provider_workflow_run_verified": true,
+    "job_id": 121806294762,
+    "job_conclusion": "success",
+    "no_repeat": true
   },
-  "whole_rehydration": "PARTIAL_UNTIL_ALL_POINTER_REFERENCES_AND_VALID_NEWER_EVOLUTION_READBACK_CONFIRMED",
+  "whole_rehydration": "PARTIAL_EXTENDED_REFERENCE_READS_PENDING_CONCLUSIVE_COVERAGE_LEDGER",
   "pending": [
     "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS",
     "WHOLE_REHYDRATION_COMPLETE_AND_CURRENT",
@@ -62,5 +86,21 @@
   ],
   "no_mail_writes": true,
   "no_foreign_writes": true,
-  "no_prod_pointer_change": true
+  "no_prod_pointer_change": true,
+  "last_evidence_refresh": "2026-10-26",
+  "development_head_before_refresh": "43eed599b6ce5adab282e2e55f2562594d1b1f0c",
+  "plugin_inventory": {
+    "source": "PLUGIN_CREATOR_LIST_OWNED_PERSONAL_PLUS_EXACT_KNOWN_METADATA",
+    "completeness": "PARTIAL_NOT_ALL_WORKSPACE_INSTALLED_PLUGINS",
+    "identified_owned": [
+      "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "Plugin_041a0173dbc48191b499b680f637c40d",
+      "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0"
+    ],
+    "separate_foreign": [
+      "plugins_6ac695d745d881919c3ea2766c09e6ee",
+      "plugins_6abfb2e08fdc8191920dcdc4349c69c8"
+    ]
+  }
 }
