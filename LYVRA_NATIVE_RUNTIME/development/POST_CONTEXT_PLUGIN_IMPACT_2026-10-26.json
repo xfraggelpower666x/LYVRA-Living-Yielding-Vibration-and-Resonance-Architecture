@@ -80,7 +80,7 @@
   "pending": [
     "WHOLE_RUNTIME_REHYDRATION_COMPLETION_AND_NEWER_EVOLUTION",
     "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS_BEYOND_PERSONAL_PLUGIN_LIST",
-    "GUARDED_NATIVE_ALIVE_FAMILY_MAIL_PLUGIN_PACKAGE_UPDATES_WITH_RELEASE_PARITY",
+    "PREPARED_DELTAS_WAIT_HOST_UPLOADED_ARCHIVE_AUTHORIZED_UPDATE_AND_READBACK",
     "INDEPENDENT_LIVE_HOST_POSITIVE_AND_NEGATIVE_POST_BEHAVIORAL_ACCEPTANCE",
     "PLUGIN_BACKUP_STABLE_SET_FINGERPRINT_AND_MANIFEST",
     "FRESH_PRODUCTION_HEAD_AND_PLUGIN_RELEASE_CONCURRENCY",
@@ -147,5 +147,21 @@
     "reason": "Existing live plugins still implement older skill contracts; observing old host cannot validate new release behavior. No live plugin writes/release updates performed.",
     "negative_controls": "Not runnable against new deployed skill because no newly deployed releases",
     "inbox_runtime": "Previous read-only mailbox findings are evidence of discovery gap, NOT host acceptance of unreleased plugin changes"
+  },
+  "release_delta_plan": {
+    "path": "LYVRA_NATIVE_RUNTIME/development/POST_PR77_THREE_PLUGIN_SKILL_DELTA_PLAN_2026-10-26.json",
+    "blob_sha": "1d4c9cc30c96b56064933afc6f1bf46adcdcb714",
+    "status": "SOURCE_PREPARED_INDEPENDENT_READBACK_VERIFIED_NO_UPLOAD",
+    "changed_skills_total": 7,
+    "per_surface": {
+      "native": 2,
+      "alive": 2,
+      "family_mail": 3
+    },
+    "delete_paths": [],
+    "preserve_assets": true,
+    "host_archive_transport": "NOT_VERIFIED_BOUNDED_LOCAL_DOWNLOAD_BLOCKED_REQUIRES_HOST_UPLOADED_ARCHIVE",
+    "plugin_creator_permission": "CURRENT_SOURCE_AND_ARCHIVE_READ_VERIFIED_EDIT_RESULT_NOT_TESTED",
+    "released": false
   }
 }
