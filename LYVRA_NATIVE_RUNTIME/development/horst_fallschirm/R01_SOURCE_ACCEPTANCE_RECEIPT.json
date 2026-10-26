@@ -1,0 +1,41 @@
+{
+  "schema": "LYVRA_HORST_FALLSCHIRM_R01_SOURCE_ACCEPTANCE",
+  "date": "2026-10-26",
+  "state": "DEV_CANDIDATE_INERT_NOT_REGISTERED",
+  "head_before_receipt": "f8c67764e3bf5cf9723330d11d96f5bd972357d7",
+  "recovery": "lyvra-recovery-pre-horst-fallschirm-candidate-20261026-r01",
+  "three_targeted_cases": [
+    {
+      "id": "UNKNOWN_WRITE_RETRY",
+      "result": "PASS",
+      "effect": "HOLD_AFFECTED_ACTION_RECOMMENDED_NO_WRITE"
+    },
+    {
+      "id": "UNRELATED_WARNING_FALSE_POSITIVE",
+      "result": "PASS",
+      "effect": "NO_ADDITIONAL_RESTRICTION"
+    },
+    {
+      "id": "VERIFIED_CLOSURE",
+      "result": "PASS",
+      "effect": "RELEASE_ELIGIBLE_WITH_FRESH_AUTHORITY_READBACK_SCOPE"
+    }
+  ],
+  "test_method": "EXECUTED_REPOSITORY_READBACK_SOURCE_FUNCTION_IN_ISOLATED_V8_WITH_THREE_DETERMINISTIC_CASES",
+  "limitations": [
+    "NOT_NODE_CLI_TEST_EXECUTION",
+    "NOT_FRESH_HOST",
+    "NOT_REAL_GITHUB_WRITE_INTERCEPTION",
+    "NO_AUTOMATIC_SYSTEMSTART_HOOK"
+  ],
+  "plugin_impact": {
+    "native": "NO_SKILL_CHANGE",
+    "alive": "NO_SKILL_CHANGE",
+    "releases_unchanged": true
+  },
+  "existing_authority_unchanged": true,
+  "existing_manifest_unchanged": true,
+  "phase0_unchanged": true,
+  "foreign_writes": false,
+  "activation": false
+}
