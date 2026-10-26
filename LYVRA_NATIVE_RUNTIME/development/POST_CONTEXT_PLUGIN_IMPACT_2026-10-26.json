@@ -151,7 +151,7 @@
   "release_delta_plan": {
     "path": "LYVRA_NATIVE_RUNTIME/development/POST_PR77_THREE_PLUGIN_SKILL_DELTA_PLAN_2026-10-26.json",
     "blob_sha": "1d4c9cc30c96b56064933afc6f1bf46adcdcb714",
-    "status": "SOURCE_PREPARED_INDEPENDENT_READBACK_VERIFIED_NO_UPLOAD",
+    "status": "DELTA_VERIFIED_ARCHIVE_TRANSFER_BLOCKED",
     "changed_skills_total": 7,
     "per_surface": {
       "native": 2,
@@ -163,5 +163,16 @@
     "host_archive_transport": "NOT_VERIFIED_BOUNDED_LOCAL_DOWNLOAD_BLOCKED_REQUIRES_HOST_UPLOADED_ARCHIVE",
     "plugin_creator_permission": "CURRENT_SOURCE_AND_ARCHIVE_READ_VERIFIED_EDIT_RESULT_NOT_TESTED",
     "released": false
+  },
+  "archive_transport_diagnostic_20261026": {
+    "status": "BLOCKED_SOURCE_ARCHIVE_TO_HOST_UPLOAD",
+    "source_archive_lookup": "THREE_OF_THREE_PLUGIN_CREATOR_GET_OWNED_PLUGIN_ARCHIVE_SUCCESS_CURRENT_RELEASE",
+    "download_to_runtime": "FAILED_CONTAINER_DOWNLOAD_REQUIRES_PREVIOUSLY_VIEWED_URL_AND_DIRECT_NETWORK_CONNECTION_ERROR",
+    "update_plugin_authority": "OWNER_SCOPED_EDIT_TOOL_ADVERTISED_BUT_NOT_EXECUTED_NO_SUCCESSFUL_WRITE_EVIDENCE",
+    "risk": "Cannot safely construct or verify release-correct overlay archive without accessible bytes; never submit guessed archive string",
+    "impact": "THREE_RELEASES_UNCHANGED_HOST_ACCEPTANCE_BLOCKED",
+    "user_action_needed": "supported uploaded archive or a host-visible archive transport capability; then verify and guarded update",
+    "no_foreign_writes": true,
+    "no_mail_sent": true
   }
 }
