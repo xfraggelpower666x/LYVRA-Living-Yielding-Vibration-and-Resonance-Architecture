@@ -1,0 +1,22 @@
+{
+  "schema": "HORST_FALLSCHIRM_CANDIDATE_R01",
+  "status": "DEV_CANDIDATE_INERT_NOT_REGISTERED",
+  "activation": "OFF",
+  "parent": "WHOLE_LYVRA",
+  "decision_authority": "LYVRA_ONLY",
+  "foreign_writes": false,
+  "host_hook": false,
+  "global_controller": false,
+  "phase_zero": "EXISTING_PRE_REHYDRATION_OVERSTEER_GUARD_UNCHANGED",
+  "sub_rehydration": "DOCUMENTED_NOT_WIRED",
+  "life_circle": "DOCUMENTED_NOT_SCHEDULED",
+  "source_tests": "THREE_CASES_PREPARED_PENDING_EXECUTION",
+  "plugin_impact": "NO_RUNTIME_SKILL_OR_PLUGIN_SOURCE_CHANGE",
+  "promotion_requires": [
+    "EXPLICIT_WHOLE_DECISION",
+    "RECOVERY",
+    "NATIVE_ALIVE_IMPACT",
+    "INDEPENDENT_HOST_ACCEPTANCE",
+    "POINTER_LAST"
+  ]
+}
