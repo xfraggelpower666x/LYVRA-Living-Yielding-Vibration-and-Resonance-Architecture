@@ -2,7 +2,7 @@ name: WEBLyvra Artist Discovery — source integrity
 
 on:
   push:
-    branches: [lyvra]
+    branches: [lyvra, weblyvra-addon-suno-502-observation-20261026]
     paths:
       - 'WEBLyvra/artist-discovery/**'
       - '.github/workflows/weblyvra-artist-discovery-integrity.yml'
