@@ -1,0 +1,5 @@
+interface:
+  display_name: Track Design
+  short_description: Aktuelle Musikregeln und vollständige Track-Pakete
+  default_prompt: Nutze $track-design für den aktuellen LYVRA-Auftrag und prüfe zuerst
+    die aktuelle native Repository-Quelle.
