@@ -11,7 +11,7 @@ function fixture() {
       classList: { contains(v) { return v === 'gr-search-check' && searchCheck; } },
       getAttribute(v) { return v === 'href' ? href : null; },
       closest(selector) {
-        const mapping = {search:'[data-disco-search]',provider:'[data-disco-provider]',more:'[data-disco-more]',filter:'[data-reach-filter]',link:'.gr-item a'};
+        const mapping = {search:'#discography input[type="search"]',provider:'#discography select',more:'#discography .disco-more',item:'#discography .disco-item',filter:'#google-resonance [data-reach-filter]',link:'.gr-item a'};
         return mapping[kind] === selector ? this : null;
       },
       focus(options) { current = this; focusCalls.push(options); },
