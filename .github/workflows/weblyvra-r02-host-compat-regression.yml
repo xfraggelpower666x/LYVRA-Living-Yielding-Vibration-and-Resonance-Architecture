@@ -1,0 +1,19 @@
+name: WEBLyvra R02 host compatibility — isolated candidate regression
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'WEBLyvra/development/r02-host-compat/**'
+      - '.github/workflows/weblyvra-r02-host-compat-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-host-focus-candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify exact checked-out commit
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - name: Node R02 integration candidate regression
+        run: node --test WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs
