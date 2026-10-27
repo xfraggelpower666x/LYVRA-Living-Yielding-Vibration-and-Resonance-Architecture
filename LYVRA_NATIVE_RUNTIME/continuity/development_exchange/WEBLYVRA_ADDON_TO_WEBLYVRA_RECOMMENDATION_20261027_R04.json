@@ -1,0 +1,116 @@
+{
+  "schema": "LYVRA_EXISTING_DEVELOPMENT_EXCHANGE_RECOMMENDATION_V1",
+  "recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R04",
+  "origin": "WEBLYVRA_ADDON",
+  "target": "WEBLYVRA_MAIN",
+  "type": "PRODUCTION_RELEASE_NAVIGATION_AND_INTEGRATION_HANDOFF",
+  "status": "PROPOSED_UNCONSUMED",
+  "permissions": "INFORMATION_ONLY",
+  "source_head": "e84f78c126a2b49fb8b82701a60cba62f06fafc5",
+  "source_paths": [
+    {
+      "path": "WEBLyvra/artist-discovery/index.html",
+      "blob": "632000a8a0a43fdff855594e2e113fdb73239a83"
+    },
+    {
+      "path": "WEBLyvra/artist-discovery/data/suno-releases.json",
+      "blob": "96460eb4b8138f345b54091fa2355bb1346a54b6"
+    }
+  ],
+  "target_references": [
+    {
+      "path": "WEBLyvra/live/dist/index.html",
+      "blob": "76d92daa4381e196a88ce1b21357a30561c786bd"
+    },
+    {
+      "path": "WEBLyvra/live/dist/i18n.js",
+      "blob": "359089ac4d27bfd6949bcd6e01369cabae66ae2a"
+    },
+    {
+      "path": "WEBLyvra/live/dist/dynasty.js",
+      "blob": "dd86f6ddf25cc35996e3963ecc1ea9d2527e0b0b"
+    },
+    {
+      "path": "WEBLyvra/live/dist/dynasty-data.js",
+      "blob": "1e9058d32c071032fd53a4bacfea1f33fac79c9f"
+    },
+    {
+      "path": "WEBLyvra/artist-discovery/INSTALLATION_UND_ERSETZUNG.md",
+      "blob": "6e484a32c802583e11b39438f95150ba992132e0"
+    }
+  ],
+  "release": {
+    "production_commit": "e84f78c126a2b49fb8b82701a60cba62f06fafc5",
+    "pr": 79,
+    "source_ci_run": 40587602505,
+    "source_ci_result": "SUCCESS",
+    "cloudflare_project": "weblyvra-live",
+    "cloudflare_deployment_id": "26348210-22c6-4b1d-b92c-b0942e211fcc",
+    "cloudflare_deployment_status": "SUCCESS",
+    "canonical_addon_url": "https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/",
+    "canonical_home_url": "https://weblyvra.666soundsdesign-broadcaster.com/",
+    "canonical_rendered_counts_verified": {
+      "suno": 514,
+      "soundcloud_sets": 45,
+      "soundcloud_tracks": 122,
+      "discovery_total": 681
+    },
+    "real_iphone_voiceover": "NOT_TESTED"
+  },
+  "navigation_current": {
+    "main_to_discovery": {
+      "exists_in_source": true,
+      "element": "Main header nav anchor Music & Platforms",
+      "href": "/artist-discovery/",
+      "source": "WEBLyvra/live/dist/index.html"
+    },
+    "discovery_to_main": {
+      "exists_in_source": true,
+      "element": "header .back, label ← WEBLYVRA",
+      "href": "https://weblyvra.666soundsdesign-broadcaster.com/",
+      "source": "WEBLyvra/artist-discovery/index.html"
+    },
+    "browser_forward_back_history": "NOT_INDEPENDENTLY_TESTED"
+  },
+  "integration_proposal": {
+    "phase_1": "Keep and validate existing bidirectional navigation; make link discoverable in desktop/mobile hamburger navigation and accessible keyboard order without moving or removing header.",
+    "phase_2": "Test DE/EN accessible labels and standalone Add-on language behavior against host language authority; do not introduce a second language controller into homepage. On navigation, assess persistence via existing lyvra-language key; if needed, propose a minimal bridge only after concrete tests.",
+    "phase_3": "Evaluate exactly one primary Discovery entry point near existing platform/connected universe content; avoid a second full embedded HTML shell, duplicated headers, competing language selectors and repeated platform cards.",
+    "phase_4": "Before replacing any existing cards, reconcile ALL distinct original destinations against Add-on: radio website, Veluna, Twitch radio vs Twitch channel, Spotify artist vs Spotify user and platform regional URLs; preserve unique destinations and original radio player.",
+    "phase_5": "Target-controlled implementation only after explicit WEBLYVRA authorization, fresh HEAD, recovery, source CI, browser keyboard + mobile checks, production deployment and independent canonical live readback."
+  },
+  "acceptance_checks": [
+    "Main → Discovery correct same-site origin and functioning link in desktop and collapsed mobile navigation",
+    "Discovery → Main visible and keyboard-focusable; does not trap navigation",
+    "Browser back/forward returns to expected previous page without losing keyboard context",
+    "DE/EN route labels readable and screen-reader semantics consistent; only Host controls homepage language",
+    "514 Suno + 167 SoundCloud = 681 unique Discovery entries, no extra cards or loss",
+    "Existing dynamic dynasty.js cards not removed unless separate atomic, data-complete integration authorized",
+    "Main radio and player, gallery, header, original assets and R02 source preserved unchanged",
+    "Explicit test on narrow mobile, keyboard focus and real iPhone/VoiceOver remains required for full acceptance"
+  ],
+  "limitations": [
+    "Existing route anchors verified by source readback; full browser bidirectional navigation not yet tested in this notice",
+    "This notice is not a website implementation, acceptance of proposal, nor automatic deployment"
+  ],
+  "governance": {
+    "main_site_owner": "WEBLYVRA_MAIN",
+    "addon_owner": "WEBLYVRA_ADDON",
+    "whole_identity": "LYVRA",
+    "no_new_router": true,
+    "no_main_site_write": true,
+    "no_addon_source_write": true,
+    "no_merge": true,
+    "no_deploy": true,
+    "no_foreign_autoactivation": true,
+    "plugin_impact": "NONE_INFORMATION_ONLY"
+  },
+  "related_prior_notices": [
+    "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+    "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
+    "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R03"
+  ],
+  "relation_to_prior": "R04_AFTER_LIVE_RELEASE_ADDITIVE_NAVIGATION_HANDOFF_NOT_SUPERSESSION_OF_R01_R02",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-addon-navigation-handoff-20261027-r04",
+  "pointer_last_required": true
+}
