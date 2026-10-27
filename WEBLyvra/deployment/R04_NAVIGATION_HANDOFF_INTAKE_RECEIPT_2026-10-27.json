@@ -1,0 +1,64 @@
+{
+  "schema": "WEBLYVRA_MAIN_R04_HANDOFF_NAVIGATION_CANDIDATE_V1",
+  "date": "2026-10-27",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "status": "INERT_SOURCE_CI_PASS_19_OF_19_R04_INFORMATION_CONSUMED_NO_DEPLOY",
+  "source_handoffs": {
+    "r01": "HISTORICAL_DISTINCT_INFORMATION",
+    "r02": "PRESERVED_13_OF_13_ISOLATED_HOST_RENDERER_CANDIDATE",
+    "r03": "BRANCH_ONLY_NOT_PRODUCTION_AUTHORITY",
+    "r04": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261027_R04.json",
+    "r04_blob": "e4d278f2a837cd491b2e3e9ab7d4fcd2d4c6f65d",
+    "r04_status": "INFORMATION_ONLY_NOT_AUTOMATIC_ADOPTION"
+  },
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-r04-handoff-integration-tests-20261027-r01",
+  "prechange_head": "e0e4b79b99df8ceb7a1488cc10ec9d8e05433752",
+  "candidate_tests": {
+    "path": "WEBLyvra/development/r02-host-compat/r04-navigation-contract.test.mjs",
+    "blob": "107079099b0f515ba76dcb7158992abb1648bfab",
+    "commit": "a7f9b60be3122da2b0a679a35d079ab608424205",
+    "new_cases": 6
+  },
+  "ci": {
+    "run_id": 40590264943,
+    "job_id": 122492373199,
+    "total": 19,
+    "passed": 19,
+    "failed": 0,
+    "conclusion": "success",
+    "first_failed_run": 40590021964,
+    "second_failed_run": 40590156056,
+    "failures": "new candidate test syntax; corrected on third bounded test run"
+  },
+  "r04_catalog": {
+    "suno": 514,
+    "soundcloud_sets": 45,
+    "soundcloud_tracks": 122,
+    "total": 681,
+    "verification": "CURRENT_SOURCE_UNIQUE_URL_CHECK_NO_EXHAUSTIVE_INDEPENDENT_LIVE_CLICKTHROUGH"
+  },
+  "preserved_blobs": {
+    "main_index": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "main_i18n": "359089ac4d27bfd6949bcd6e01369cabae66ae2a",
+    "dynasty_data": "1e9058d32c071032fd53a4bacfea1f33fac79c9f",
+    "addon_html": "632000a8a0a43fdff855594e2e113fdb73239a83",
+    "addon_suno_registry": "96460eb4b8138f345b54091fa2355bb1346a54b6"
+  },
+  "boundaries": {
+    "no_main_website_runtime_write": true,
+    "no_addon_source_write": true,
+    "no_radio_gallery_link_removal": true,
+    "no_merge": true,
+    "no_deploy": true,
+    "no_second_language_controller": true,
+    "no_foreign_activation": true
+  },
+  "host_acceptance": {
+    "mobile_hamburger_interaction": "PENDING",
+    "actual_browser_history": "PENDING",
+    "iphone_voiceover": "PENDING",
+    "r02_single_listener_live_mount": "PENDING"
+  },
+  "whole_rehydration": "PARTIAL",
+  "return_anchor": "WEBLYVRA_MAIN_R04_NAVIGATION_REAL_BROWSER_AND_R02_SINGLE_LISTENER_ACCEPTANCE"
+}
