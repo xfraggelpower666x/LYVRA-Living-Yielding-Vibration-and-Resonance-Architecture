@@ -61,7 +61,7 @@ test('R04: language authority remains host-only on main; addon keeps independent
   assert.equal(main.querySelectorAll('#language').length,1);
   assert.equal(main.querySelectorAll('[data-addon-lang]').length,0);
   assert.equal(addon.querySelectorAll('[data-addon-lang]').length,2);
-  assert.match(mainI18n,/export function getLanguage\\(/);
-  assert.match(mainI18n,/export function setLanguage\\(/);
-  assert.match(mainI18n,/lyvra:languagechange/);
+  assert.ok(mainI18n.includes('export function getLanguage('));
+  assert.ok(mainI18n.includes('export function setLanguage('));
+  assert.ok(mainI18n.includes('lyvra:languagechange'));
 });
