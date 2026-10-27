@@ -1,5 +1,11 @@
 # WEBLyvra / Artist Discovery Add-on
 
+## Isolated candidate currentness · 2026-10-27 · 514 Suno / 681 total
+
+**Development-branch source only — NOT deployed or integrated into the main website.** Current source combines 514 exact Suno song UUID links (previous 482 preserved plus 32 newly observed public profile links) with 45 SoundCloud sets and 122 separate SoundCloud tracks: **681 unique discovery URLs**. The public Suno profile displayed a 514-song count in the fresh 2026-10-27 fetch and 280 individually extractable song links in that same snapshot; retained older URLs have separate historical evidence. This is **not** a single-session readback of all 514 link pages.
+
+The new 32-title/UUID observations are recorded in `SUNO_DISCOVERY_514_PUBLIC_LINKS_2026-10-27.json`. The earlier 20 in `SUNO_DISCOVERY_CANDIDATE_502_2026-10-26.json` remain immutable provenance, not re-imported. Regression check: `test-suno-502-candidate-evidence.mjs` validates both generations and protected old entries. The historical 462/629 main-site and deployed Add-on state is separate until explicit deployment verification. No main-site cards, Host-DE/EN code, radio, gallery, or native/plugin surface is changed by this branch.
+
 ## Development candidate currentness · 2026-10-27 (branch-scoped, NOT productive)
 
 **Scope:** `weblyvra-addon-suno-502-observation-20261026` only. The authoritative productive `lyvra` branch and currently deployed WEBLYVRA website retain their independent, earlier source/release states. This documentation must never be used to claim production is 482/649.
