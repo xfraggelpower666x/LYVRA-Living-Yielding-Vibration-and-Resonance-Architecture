@@ -15,5 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify exact checked-out commit
         run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
-      - name: Node R02 integration candidate regression
-        run: node --test WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs
+      - name: Install ephemeral DOM fixture dependency (CI only)
+        run: npm install --prefix WEBLyvra/development/r02-host-compat --no-save --no-package-lock jsdom@26
+      - name: Node R02 integration candidate and real DOM regression
+        run: node --test WEBLyvra/development/r02-host-compat/*.test.mjs
