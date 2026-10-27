@@ -7473,5 +7473,32 @@
     "whole_rehydration": "PARTIAL",
     "pointer_last": true,
     "return_anchor": "WEBLYVRA_R02_SINGLE_RENDERER_REAL_HOST_MOUNT_ACCEPTANCE"
+  },
+  "weblyvra_main_r04_navigation_handoff_20261027": {
+    "status": "INERT_SOURCE_CI_PASS_19_OF_19_NO_DEPLOY_REAL_HOST_PENDING",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "r04_origin": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R04",
+    "r04_origin_role": "INFORMATION_ONLY",
+    "receipt": "WEBLyvra/deployment/R04_NAVIGATION_HANDOFF_INTAKE_RECEIPT_2026-10-27.json",
+    "receipt_blob": "2f7f5f9d94614bb9e722a08259410f60e39a99b1",
+    "test_blob": "107079099b0f515ba76dcb7158992abb1648bfab",
+    "ci_run": 40590264943,
+    "ci_passed": 19,
+    "ci_failed": 0,
+    "suno_urls": 514,
+    "soundcloud_urls": 167,
+    "total_urls": 681,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-r04-handoff-integration-tests-20261027-r01",
+    "r01_r02_preserved": true,
+    "r03_branch_only": true,
+    "no_addon_write": true,
+    "no_main_runtime_mutation": true,
+    "no_deploy": true,
+    "host_browser": "PENDING",
+    "iphone_voiceover": "PENDING",
+    "single_listener_live_mount": "PENDING",
+    "whole_rehydration": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_MAIN_R04_NAVIGATION_REAL_BROWSER_AND_R02_SINGLE_LISTENER_ACCEPTANCE"
   }
 }
