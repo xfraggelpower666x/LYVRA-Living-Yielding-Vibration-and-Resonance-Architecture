@@ -7451,5 +7451,27 @@
     "whole_rehydration": "PARTIAL",
     "pointer_last": true,
     "return_anchor": "WEBLYVRA_R02_HOST_EVENT_SINGLE_RENDER_AND_REAL_BROWSER_ACCEPTANCE"
+  },
+  "weblyvra_main_r02_single_renderer_20261027": {
+    "status": "INERT_OWNERSHIP_CI_PASS_13_OF_13_REAL_HOST_PENDING",
+    "scope": "WEBLYVRA_MAIN_WEBSITE",
+    "parent": "weblyvra_main_r02_dom_compat_candidate_20261027",
+    "receipt": "WEBLyvra/deployment/R02_SINGLE_RENDERER_OWNERSHIP_RECEIPT_2026-10-27.json",
+    "receipt_blob": "86570b670149207865538c5d6e8ac02d998154f8",
+    "source_blob": "58f9890889c9a4a4dd634422ced4187136099a1e",
+    "ownership_test_blob": "0e39e2a32c321b2e3a6bb0c065d54947606f8912",
+    "ci_run": 40588975948,
+    "ci_passed": 13,
+    "ci_failed": 0,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-r02-single-renderer-20261027-r01",
+    "r04_addon_514_681_preserved": true,
+    "main_site_runtime_unchanged": true,
+    "addon_runtime_unchanged": true,
+    "no_deploy": true,
+    "real_host_single_listener": "PENDING",
+    "iphone_voiceover": "PENDING",
+    "whole_rehydration": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_R02_SINGLE_RENDERER_REAL_HOST_MOUNT_ACCEPTANCE"
   }
 }
