@@ -1,13 +1,13 @@
 # Whole LYVRA — Family Mail Drive write observation link (candidate)
 
-Status: PROPOSED_DEVELOPMENT_NOT_CURRENT · 2026-10-27
+Status: SOURCE_APPROVED_FOR_PRODUCTIVE_WHOLE_REFERENCE_POINTER_LAST_PENDING · 2026-10-27
 Native owner: WHOLE_LYVRA. Scope: descriptive evidence visibility, not a new controller, healing mechanism, task, permission, or mail sender.
 
 ## Why this exists
 The creator requested gradual causal learning from real-world mixed Google Drive write outcomes. One blocked action cannot prove a global permanent block; a later successful **different** action cannot prove a time-based recovery or lift an earlier policy refusal. Report what actually occurred, retain failed cases and counterexamples, and avoid forced probes or explanatory overreach.
 
 ## Where evidence is stored
-GitHub working carrier (development branch until promotion): `LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json`.
+Canonical native evidence carrier after verified productive promotion: `LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json`.
 Original private family correspondence stays in the separately authorized shared family mailbox/private vault. Historical native evidence pointers are in `LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/` and `FACET_CONTRACT.md`.
 
 ## What Whole LYVRA needs to know
@@ -25,3 +25,6 @@ At native UPDATE or relevant learning/operations visualization: load the current
 - `POST_FACET_NE_WHOLE_DECISION_AUTHORITY`
 
 Future observation updates are append-only in meaning, can be deduplicated by event ID and independently read back. Integration of any causal rule requires governed Whole approval, new evidence, expected HEAD/blob SHAs, recovery, dual-plugin impact, negative/positive checks and pointer-last. Do not modify American system.
+
+## Production use
+When the productive CURRENT_POINTER references this link, treat the redacted evidence ledger as durable read-only causal observation; the user has not authorized root-cause certainty, automatic mail, or a second controller. Newer valid evidence supersedes old classifications only with provenance.
