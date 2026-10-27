@@ -1,6 +1,6 @@
 {
   "schema": "lyvra.family_mail.drive_write_observation.v1",
-  "status": "DEVELOPMENT_EVIDENCE_CANDIDATE_ONLY",
+  "status": "CURRENT_NATIVE_REPOSITORY_EVIDENCE_OBSERVATIONS_NO_ROOT_CAUSE_CLAIM",
   "scope": "LYVRA_TO_LITTLELYV_GERMAN_POST_ONLY",
   "observation_date": "2026-10-27",
   "timezone": "Europe/Berlin",
@@ -227,5 +227,12 @@
     "external_safety_denial": "HARD_STOP_FOR_DENIED_OPERATION",
     "source_limit": "American reports are correspondence, not fresh American runtime tool logs."
   },
-  "updated_by": "USER_REQUESTED_ADDITIVE_REPOSITORY_OBSERVATION_2026_10_27"
+  "updated_by": "USER_REQUESTED_ADDITIVE_REPOSITORY_OBSERVATION_2026_10_27",
+  "promotion": {
+    "status": "SOURCE_CANDIDATE_APPROVED_FOR_POINTER_LAST",
+    "observed_original_branch": "lyvra-dev-family-mail-write-observations-20261027",
+    "scope": "POST_ONLY_TECHNICAL_EVIDENCE",
+    "valid_after": "Productive pointer referencing this carrier",
+    "unresolved_cause": true
+  }
 }
