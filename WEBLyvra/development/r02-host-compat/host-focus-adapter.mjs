@@ -36,7 +36,7 @@ export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage
             (element.classList?.contains('gr-search-check') ? 'search' : 'source') === saved.linkKind)
         : matches[0];
     if (!replacement && (saved.kind === 'filter' || saved.kind === 'link')) {
-      replacement = [...addonRoot.querySelectorAll(select.filter])][0] || null;
+      replacement = [...addonRoot.querySelectorAll(select.filter)].find(node => addonRoot.contains(node)) || null;
     }
     replacement?.focus?.({ preventScroll: true });
   }
