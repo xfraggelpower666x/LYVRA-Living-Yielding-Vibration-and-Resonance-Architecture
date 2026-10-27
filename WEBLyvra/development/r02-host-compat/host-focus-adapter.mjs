@@ -1,13 +1,14 @@
 // R02 integration candidate only. No side effects until explicitly mounted.
 // WEBLyvra's existing getLanguage/setLanguage owns host language; never create a selector.
 const select = {
-  search: '[data-disco-search]',
-  provider: '[data-disco-provider]',
-  more: '[data-disco-more]',
-  filter: '[data-reach-filter]',
+  search: '#discography input[type="search"]',
+  provider: '#discography select',
+  more: '#discography .disco-more',
+  item: '#discography .disco-item',
+  filter: '#google-resonance [data-reach-filter]',
   link: '.gr-item a',
 };
-const allowed = new Set(['search','provider','more','filter','link']);
+const allowed = new Set(['search','provider','more','item','filter','link']);
 export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage, renderAddon }) {
   if (!hostDocument?.addEventListener || !addonRoot?.contains || typeof getLanguage !== 'function' || typeof renderAddon !== 'function') {
     throw new TypeError('R02 requires existing host, add-on root, language owner and renderer');
@@ -20,6 +21,7 @@ export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage
       const element = active.closest?.(selector);
       if (!element || !addonRoot.contains(element)) continue;
       const identity = kind === 'filter' ? element.dataset?.reachFilter :
+        kind === 'item' ? element.getAttribute?.('href') :
         kind === 'link' ? element.getAttribute?.('href') : kind;
       const linkKind = kind === 'link' && element.classList?.contains('gr-search-check') ? 'search' : 'source';
       return { kind, identity, linkKind };
@@ -31,11 +33,13 @@ export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage
     const matches = [...addonRoot.querySelectorAll(select[saved.kind])].filter(node => addonRoot.contains(node));
     let replacement = saved.kind === 'filter'
       ? matches.find(element => element.dataset?.reachFilter === saved.identity)
+      : saved.kind === 'item'
+        ? matches.find(element => element.getAttribute?.('href') === saved.identity)
       : saved.kind === 'link'
         ? matches.find(element => element.getAttribute?.('href') === saved.identity &&
             (element.classList?.contains('gr-search-check') ? 'search' : 'source') === saved.linkKind)
         : matches[0];
-    if (!replacement && (saved.kind === 'filter' || saved.kind === 'link')) {
+    if (!replacement && (saved.kind === 'filter' || saved.kind === 'link' || saved.kind === 'item')) {
       replacement = [...addonRoot.querySelectorAll(select.filter)].find(node => addonRoot.contains(node)) || null;
     }
     replacement?.focus?.({ preventScroll: true });
