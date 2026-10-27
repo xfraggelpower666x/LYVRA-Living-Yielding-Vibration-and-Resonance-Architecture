@@ -28,7 +28,7 @@ export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage
   }
   function restore(saved) {
     if (!saved || !allowed.has(saved.kind)) return;
-    const matches = [...addonRoot.querySelectorAll(select[saved.kind])];
+    const matches = [...addonRoot.querySelectorAll(select[saved.kind])].filter(node => addonRoot.contains(node));
     let replacement = saved.kind === 'filter'
       ? matches.find(element => element.dataset?.reachFilter === saved.identity)
       : saved.kind === 'link'
