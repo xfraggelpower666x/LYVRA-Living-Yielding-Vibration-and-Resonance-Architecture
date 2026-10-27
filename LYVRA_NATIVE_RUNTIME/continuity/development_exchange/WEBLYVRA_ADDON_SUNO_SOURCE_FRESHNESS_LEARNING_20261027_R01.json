@@ -1,0 +1,56 @@
+{
+  "schema": "WEBLYVRA_ADDON_SUNO_SOURCE_FRESHNESS_LEARNING_V1",
+  "date": "2026-10-27",
+  "workspace": "WEBLYVRA_ADDON_ONLY",
+  "status": "THREE_BOUNDED_SOURCE_ATTEMPTS_COMPLETE_NO_NEW_UUID_EVIDENCE",
+  "source_candidate_branch": "weblyvra-addon-suno-502-observation-20261026",
+  "source_candidate_head": "71dac0a14fcf35f428d4098a9e0f2dac35805ab1",
+  "protected_catalog": {
+    "suno_uuid_count": 482,
+    "soundcloud_sets": 45,
+    "soundcloud_tracks": 122,
+    "discovery_unique_urls": 649,
+    "unverified_profile_count_gap": 20
+  },
+  "observations": [
+    {
+      "approach": 1,
+      "type": "PUBLIC_WEB_INDEX_SEARCH",
+      "queries": [
+        "site:suno.com/song/ FRAGGELPOWER666 2026 October Suno",
+        "site:suno.com/song/ LYVRA FRAGGELPOWER666 latest"
+      ],
+      "result": "OLDER_ALREADY_CATALOGUED_URLS_OR_NON_MATCHING_RESULTS",
+      "new_valid_uuids": 0
+    },
+    {
+      "approach": 2,
+      "type": "PUBLIC_PROFILE_ALT_HTML",
+      "url": "https://suno.com/@fraggelpower666",
+      "result": "STALE_CRAWL_PROFILE_COUNT_384_NOT_LIVE_CURRENT",
+      "observed_stale_count": 384,
+      "prior_more_recent_count": 502,
+      "prior_live_provenance": "https://agent.tinyfish.ai/runs/87d45997-e005-4482-90ca-db4e7f36b1ba",
+      "new_valid_uuids": 0
+    },
+    {
+      "approach": 3,
+      "type": "PUBLIC_NEW_TRACKS_PLAYLIST",
+      "url": "https://suno.com/playlist/294f95a5-aa18-4ac8-b28f-8fcbf269e975",
+      "result": "DIRECT_FETCH_CACHE_MISS_NO_NEW_URL_EVIDENCE",
+      "new_valid_uuids": 0
+    }
+  ],
+  "causal_learning": "Provider-visible profile counters, cached/indexed HTML snapshots and individually verified public song UUID links are different evidence classes. A numerically lower stale crawl must never supersede newer real browser observations, and inaccessible pages cannot establish missing links. Preserve the current partial 482 catalog pending genuinely new direct link evidence.",
+  "duplicate_guard": "exact_uuid_from_source_and_preserve_all_prior_unique_urls",
+  "no_fabricated_uuids": true,
+  "no_additional_import": true,
+  "no_main_site_write": true,
+  "no_plugin_mutation": true,
+  "no_deployment": true,
+  "repository_authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json on productive lyvra",
+  "currentness_boundary": "THIS_RECEIPT_IS_ISOLATED_BRANCH_PROVENANCE_NOT_PRODUCTION_AUTHORITY",
+  "related_r03": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261027_R03.json",
+  "recovery_branch": "lyvra-recovery-pre-addon-suno-three-source-learning-20261027-r01",
+  "next_meaningful_action": "Await a publicly accessible fresh new Suno song URL source, authorized catalog export or credible pagination revealing new song UUIDs; dedupe against 482 before any scoped additive candidate update."
+}
