@@ -1,6 +1,6 @@
 # Whole LYVRA — Family Mail Drive write observation link (candidate)
 
-Status: SOURCE_APPROVED_FOR_PRODUCTIVE_WHOLE_REFERENCE_POINTER_LAST_PENDING · 2026-10-27
+Status: CURRENT_PRODUCTIVE_WHOLE_EVIDENCE_REFERENCE · 2026-10-27
 Native owner: WHOLE_LYVRA. Scope: descriptive evidence visibility, not a new controller, healing mechanism, task, permission, or mail sender.
 
 ## Why this exists
