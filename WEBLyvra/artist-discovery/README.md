@@ -1,6 +1,19 @@
 # WEBLyvra / Artist Discovery Add-on
 
-## Current additive Suno import — 2026-10-24
+## Development candidate currentness · 2026-10-27 (branch-scoped, NOT productive)
+
+**Scope:** `weblyvra-addon-suno-502-observation-20261026` only. The authoritative productive `lyvra` branch and currently deployed WEBLYVRA website retain their independent, earlier source/release states. This documentation must never be used to claim production is 482/649.
+
+- **Candidate source:** `data/suno-releases.json` contains **482 exact unique Suno song URLs** (the previous 462 preserved + 20 publicly observed Recent song card URLs); `index.html` embeds **649 unique discovery entries** (482 Suno + 45 SoundCloud albums/sets + 122 SoundCloud separate tracks). No title-only deduplication: two same-title variants with distinct song UUIDs are separate public links.
+- **Source CI:** GitHub Actions `40382233866` at commit `acf58d040a2fa5a79d170140170a1eff9052892d` passed source integrity, a bounded candidate-evidence regression, artwork verification, and build staging; this is **not a deployment or real browser/iPhone/VoiceOver acceptance**.
+- **Count boundary:** the public Suno profile showed **502 songs** during the 2026-10-26 browser observation; only 20 previously uncatalogued Recent URLs could be enumerated, so **20 further URLs are not individually evidenced**. Scrolling through the public Recent grid did not reveal more than those 20. A mathematical difference is not proof of accessible, distinct URLs and must not be filled by guesses or duplicate imports.
+- **Existing proposal:** `SUNO_DISCOVERY_CANDIDATE_502_2026-10-26.json` is an immutable pre-integration observation. Its `NOT_IMPORTED` tags mean **not imported to productive branch or host**; those 20 are present in the isolated candidate branch source and HTML. They are not a claim about the current production state.
+- **Separate duties:** WEBLYVRA ADDON independently manages music discovery. WEBLYVRA main-site independently owns cards, DE/EN host state and deployment. Candidate source publication, host integration and cloud deployment remain separate creator-authorized gates. Do not merge automatically.
+- **Next acceptance:** obtain public direct title/UUID evidence for additional songs; preserve existing 482 and 167; run `node test-addon-integrity.mjs`, `node test-suno-502-candidate-evidence.mjs`, `node verify-original-assets.mjs`, staging and static audit at exact new HEAD. Refresh protected counts and old/new provenance; use recovery and independent readback before any source promotion.
+
+### Historical production baseline (2026-10-24)
+
+## Historical additive Suno import — 2026-10-24
 
 The immutable workspace handoff `a35a5aee-8b41-4865-9caa-a4ca46dbd323` binds **12 directly observed unique Suno song URLs** from a public profile displaying a **462-song counter**. All 450 previously stored UUIDs are preserved. Current source inventory: **462 Suno + 45 SoundCloud sets + 122 SoundCloud tracks = 629 unique public discovery URLs**. The observed 200 recent profile links are not a complete independent reread of all 462. The 2026-10-22 figures below are retained as historical evidence; current public deployment must be independently checked against the exact release commit.
 
