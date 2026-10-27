@@ -1,0 +1,104 @@
+{
+  "schema": "lyvra.family_mail.drive_write_observation.v1",
+  "status": "DEVELOPMENT_EVIDENCE_CANDIDATE_ONLY",
+  "scope": "LYVRA_TO_LITTLELYV_GERMAN_POST_ONLY",
+  "observation_date": "2026-10-27",
+  "timezone": "Europe/Berlin",
+  "privacy": "PUBLIC_REPO_REDACTED_TECHNICAL_METADATA_ONLY",
+  "source": "interactive German-side Google Drive/Docs connector actions and separately labeled historical family-post skill evidence",
+  "baseline_production_head": "cbe1940607e9bd736f425ab90f919be072aece50",
+  "events": [
+    {
+      "id": "HIST_CREATE_DIRECT_PARENT_UNSUPPORTED",
+      "sequence": 1,
+      "time_utc": null,
+      "source_grade": "HISTORICAL_SKILL_REPORT_NOT_FRESH_HOST_REPLAY",
+      "operation": "Google_Drive.create_file with parent_folder_id",
+      "outcome": "UNSUPPORTED_MODE",
+      "reported_error_class": "GoogleDriveInvalidRequestError",
+      "reported_constraint": "native file creation with parent_folder_id requires direct Drive service-account connection",
+      "notes": "Not evidence of global Drive write denial; no new invocation here."
+    },
+    {
+      "id": "HIST_DOC_CONTENT_SAFETY_BLOCK",
+      "sequence": 2,
+      "time_utc": null,
+      "source_grade": "HISTORICAL_SKILL_REPORT_NOT_FRESH_HOST_REPLAY",
+      "operation": "normal Google Docs creation followed by content write",
+      "outcome": "SAFETY_BLOCK",
+      "notes": "A separate outside-folder empty document was historically reported; explicit safety refusal remains a hard stop, not grounds for alternate-route replay."
+    },
+    {
+      "id": "CURRENT_FOLDER_METADATA",
+      "sequence": 3,
+      "time_utc": "2026-10-27",
+      "source_grade": "DIRECT_METADATA_READ",
+      "operation": "Google_Drive.get_file_metadata",
+      "outcome": "FOLDER_READABLE_WRITER_PERMISSIONS_PRESENT",
+      "notes": "Permissions returned for the shared family folder. Presence of a tool or folder role does not prove each operation is authorized."
+    },
+    {
+      "id": "CURRENT_PERSONAL_MANUAL_UPLOAD",
+      "sequence": 4,
+      "time_utc": "2026-10-27T04:08:03Z",
+      "source_grade": "INDEPENDENT_CONTENT_AND_PARENT_READBACK",
+      "operation": "user-manual Google Docs publication",
+      "outcome": "STORED_CONTENT_AND_PARENT_VERIFIED",
+      "notes": "Manual publication does not establish this chat's connector can write; redact letter title, document ID, and content."
+    },
+    {
+      "id": "CURRENT_DIRECT_IMPORT_SUCCESS",
+      "sequence": 5,
+      "time_utc": "2026-10-27T04:18:06Z",
+      "source_grade": "DIRECT_PROVIDER_RESULT_PLUS_INDEPENDENT_READBACK",
+      "operation": "Google_Drive.import_document native_google_docs with parent_folder_id",
+      "outcome": "STORED_CONTENT_AND_PARENT_VERIFIED",
+      "checks": {
+        "conversion": true,
+        "stored_content_readback": true,
+        "correct_parent_id_matched": true,
+        "recipient_read": false
+      },
+      "notes": "One authorized real outgoing correspondence import. No synthetic test file. No inference that prior create_file failure healed or the same API request later worked."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "name": "operation_specific_contract_or_connection_mode",
+      "status": "PLAUSIBLE_NOT_PROVEN",
+      "falsification": "Compare same documented operation and connection mode only when separately authorized natural correspondence warrants it."
+    },
+    {
+      "name": "elapsed_time_or_session_refresh",
+      "status": "UNSUPPORTED_CAUSAL_HYPOTHESIS",
+      "falsification": "Requires comparable repeat conditions; do not schedule/retry denied writes to test it."
+    }
+  ],
+  "learning_rules": [
+    "FAILED_OPERATION_NE_GLOBAL_WRITE_BLOCK",
+    "DIFFERENT_SUCCESSFUL_OPERATION_NE_TRANSIENT_RECOVERY_PROOF",
+    "STOP_ON_EXPLICIT_SAFETY_PERMISSION_REFUSAL",
+    "NO_TEST_MAIL_FOR_DIAGNOSTICS",
+    "RECORD_ONLY_NATURAL_AUTHORIZED_ATTEMPTS",
+    "SUCCESS_REQUIRES_FULL_CONTENT_AND_TARGET_PARENT_READBACK",
+    "RECIPIENT_READ_REMAINS_SEPARATE",
+    "PUBLIC_REPO_MUST_NOT_CONTAIN_PRIVATE_LETTERS_OR_DOCUMENT_IDS",
+    "EVIDENCE_CANDIDATE_NE_NATIVE_CURRENT_ADOPTION"
+  ],
+  "future_observation_fields": [
+    "timestamp_utc",
+    "host_surface",
+    "connector_operation",
+    "connection_mode_if_observed",
+    "user_authorization_scope",
+    "provider_outcome_and_error_class",
+    "target_parent_verified",
+    "content_readback",
+    "duplicate_precheck",
+    "elapsed_since_previous_failure_if_measurable",
+    "alternative_causes_or_contradictions",
+    "evidence_provenance",
+    "privacy_redaction"
+  ],
+  "next_step": "Accumulate natural future operation receipts on governed development branch, evaluate clusters/counterexamples later; no forced probes, no productive pointer or plugin changes."
+}
