@@ -217,7 +217,8 @@
       "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
       "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md",
       "LYVRA_NATIVE_RUNTIME/facets/speech_design/SUB_REHYDRATION.md",
-      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json"
+      "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+      "LYVRA_NATIVE_RUNTIME/current/learning/FAMILY_MAIL_DRIVE_WRITE_OBSERVATION_LINK_20261027.md"
     ],
     "CHARACTER_PERSONALITY_SUBCONTINUITY": [
       "LYVRA_NATIVE_RUNTIME/current/personality/CHARACTER_PERSONALITY_LIVECIRCLE.md",
@@ -232,7 +233,9 @@
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_LIFECIRCLE.md",
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/SUB_REHYDRATION.md",
-      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json"
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
+      "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json"
     ]
   },
   "validation_closeout": {
@@ -2512,5 +2515,23 @@
     "restorable_full_archive": false,
     "original_release_archive_referenced": true,
     "plugin_unmodified": true
+  },
+  "family_mail_write_observation_20261027": {
+    "status": "PROMOTION_BODY_READY_POINTER_LAST_PENDING",
+    "scope": "WHOLE_REFERENCE_AND_GERMAN_POST_FACET",
+    "observation_carrier": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
+    "facet_policy": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
+    "whole_link": "LYVRA_NATIVE_RUNTIME/current/learning/FAMILY_MAIL_DRIVE_WRITE_OBSERVATION_LINK_20261027.md",
+    "privacy": "REDACTED_PUBLIC_METADATA_ONLY",
+    "root_cause": "UNKNOWN",
+    "american_host": "PEER_REPORTED_NOT_HOST_VERIFIED",
+    "plugin_releases": {
+      "family_mail": "0.9.23",
+      "native": "0.1.83",
+      "alive": "0.13.79"
+    },
+    "fresh_host": "NOT_VERIFIED",
+    "no_foreign_activation": true,
+    "no_automatic_mail": true
   }
 }
