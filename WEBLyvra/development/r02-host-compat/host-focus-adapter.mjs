@@ -9,10 +9,13 @@ const select = {
   link: '.gr-item a',
 };
 const allowed = new Set(['search','provider','more','item','filter','link']);
-export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage, renderAddon }) {
+export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage, renderAddon, rendererOwner = 'host' }) {
   if (!hostDocument?.addEventListener || !addonRoot?.contains || typeof getLanguage !== 'function' || typeof renderAddon !== 'function') {
     throw new TypeError('R02 requires existing host, add-on root, language owner and renderer');
   }
+  if (!['host', 'standalone'].includes(rendererOwner)) throw new TypeError('R02 requires explicit valid renderer owner');
+  // In standalone ownership the existing Add-on listener owns the render;
+  // this adapter registers no duplicate listener and performs no DOM mutation.
   let mounted = false;
   function capture() {
     const active = hostDocument.activeElement;
@@ -53,13 +56,13 @@ export function createR02HostFocusAdapter({ hostDocument, addonRoot, getLanguage
   }
   return {
     mount() {
-      if (mounted) return;
+      if (rendererOwner === 'standalone' || mounted) return;
       mounted = true;
       hostDocument.addEventListener('lyvra:languagechange', onLanguageChange);
       onLanguageChange();
     },
     unmount() {
-      if (!mounted) return;
+      if (rendererOwner === 'standalone' || !mounted) return;
       mounted = false;
       hostDocument.removeEventListener('lyvra:languagechange', onLanguageChange);
     },
