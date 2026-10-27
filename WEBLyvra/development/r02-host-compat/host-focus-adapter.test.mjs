@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createR02HostFocusAdapter } from './host-focus-adapter.mjs';
 
 function fixture() {
-  let lang = 'de', current = null, renders = [], listeners = new Map(), focusCalls = [];
+  let lang = 'de', current = null, renders = [], listeners = new Map(), focusCalls = [], afterRender = () => {};
   const elements = [];
   const make = ({kind, href, filter, searchCheck = false}) => {
     const node = {
@@ -29,10 +29,10 @@ function fixture() {
   };
   const bridge = createR02HostFocusAdapter({
     hostDocument: doc, addonRoot: root, getLanguage: () => lang,
-    renderAddon(next) { renders.push(next); },
+    renderAddon(next) { renders.push(next); afterRender(); },
   });
   return { bridge, make, root, doc, renders, focusCalls,
-    setLang(v) { lang = v; }, focus(node) { current = node; },
+    setLang(v) { lang = v; }, focus(node) { current = node; }, onRender(fn) { afterRender = fn; },
     get focused() { return current; },
     event(detail = {language:'en'}) { listeners.get('lyvra:languagechange')?.({detail}); },
     get listeners() { return listeners.size; },
@@ -54,14 +54,15 @@ test('R02: exact source link identity survives dynamic list rebuild', () => {
   const x = fixture(), before = x.make({kind:'link',href:'https://example.org/original'});
   x.make({kind:'link',href:'https://example.org/other'});
   x.focus(before); x.bridge.mount();
-  x.root.contains = node => node !== before;
   const replacement = x.make({kind:'link',href:'https://example.org/original'});
+  x.onRender(() => { x.root.contains = node => node !== before; });
   x.event(); assert.equal(x.focused,replacement);
 });
 test('R02: missing dynamic link restores focus to available filter, never an unrelated link', () => {
   const x = fixture(), old = x.make({kind:'link',href:'https://example.org/removed'});
   const filter = x.make({kind:'filter',filter:'all'});
-  x.focus(old); x.bridge.mount(); x.root.contains = node => node !== old;
+  x.focus(old); x.bridge.mount();
+  x.onRender(() => { x.root.contains = node => node !== old; });
   x.event(); assert.equal(x.focused,filter);
 });
 test('R02: no focus movement when focus is outside the add-on', () => {
