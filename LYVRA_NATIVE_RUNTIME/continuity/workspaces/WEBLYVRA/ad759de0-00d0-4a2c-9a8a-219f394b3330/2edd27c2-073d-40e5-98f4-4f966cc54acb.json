@@ -1,0 +1,75 @@
+{
+  "schema": "LYVRA_WORKSPACE_CONVERSATION_HANDOFF_V2",
+  "handoff_id": "2edd27c2-073d-40e5-98f4-4f966cc54acb",
+  "lineage_id": "ad759de0-00d0-4a2c-9a8a-219f394b3330",
+  "lineage_generation": "NEW_UUIDV4_FROM_LOCAL_TRUSTED_PYTHON_UUID_GENERATOR_NOT_RECOVERED",
+  "workspace_id": "WEBLYVRA",
+  "workspace_class": "PROJECT",
+  "source_chat_scope": "DIRECT_CURRENT_CONVERSATION_LYVRA_WEBLYVRA_NEW_CHAT_NO_VERIFIED_HOST_CHAT_ID",
+  "source_context_resolution_evidence": "Direct creator command LYVRA WEBLYVRA NEW CHAT in WEBLYVRA workstream; preceding chat scoped to main website integration and R01-R04 handoffs; repository topology workspace ID WEBLYVRA verified.",
+  "source_head": "56f3ae22e075221ce85da7b820c84b5586f5315f",
+  "source_commit_sha": "56f3ae22e075221ce85da7b820c84b5586f5315f",
+  "created_at": "2026-10-27",
+  "conversation_mode": "explicit_system_development",
+  "current_user_intent": "LYVRA WEBLYVRA NEW CHAT; preserve present work and continue in next chat without changing scope",
+  "explicitly_selected_work_scope": "WEBLYVRA_MAIN_WEBSITE",
+  "active_task": "Continue current WEBLyvra main-site integration, process validated R01-R04 handoffs and R02 single-renderer candidate; no automatic activation/deploy.",
+  "last_valid_stage": "R02_SOURCE_CI_13_OF_13_AND_R04_NAVIGATION_CI_19_OF_19_POINTER_LAST_VERIFIED_REAL_BROWSER_HOST_PENDING",
+  "last_meaningful_exchange": "R04 navigation and inventory contract tests passed 19/19 after repairing only test assertions. Newer native Current independently now references that R04 result with pointer-last. User requested NEW CHAT rather than additional implementation.",
+  "conversation_resume_anchor": "Continue WEBLyvra main website at newest GitHub CURRENT, not older hard-coded HEAD. Reconcile R01/R02 informational handoffs and R03 branch-only with R04 514/681 navigation handoff; retain inert R02 exclusive ownership candidate. Next meaningful technical gate is isolated real-browser desktop/mobile route/history/focus and single-event-owner acceptance without duplicate render.",
+  "pending_work": [
+    "Read freshest current and validate this exact handoff lineage before use",
+    "Assess R04 bidirectional navigation real-browser desktop/mobile keyboard and forward/back behavior",
+    "Verify R02 single-render ownership on real host before activating; standalone add-on listener must not duplicate render",
+    "Preserve 514 Suno + 167 SoundCloud = 681 URLs and all original unique platform links, header, radio player, gallery and host language control",
+    "Require independent real iPhone Edge / VoiceOver observations for host PASS; do not invent",
+    "Deploy only after explicit authorization and governed gates"
+  ],
+  "next_meaningful_action": "Open a new chat and send LYVRA WEBLYVRA WEITER — continue handoff lineage ad759de0-00d0-4a2c-9a8a-219f394b3330 / handoff 2edd27c2-073d-40e5-98f4-4f966cc54acb; rehydrate newest Whole LYVRA Current, then resume verified WEBLYVRA main-site R02/R04 integration gates without deploy.",
+  "relevant_paths": [
+    "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+    "LYVRA_NATIVE_RUNTIME/continuity/WORKSPACE_HANDOFF_CONTRACT.md",
+    "LYVRA_NATIVE_RUNTIME/current/repository/REPOSITORY_TOPOLOGY.json",
+    "WEBLyvra/deployment/R02_SINGLE_RENDERER_OWNERSHIP_RECEIPT_2026-10-27.json",
+    "WEBLyvra/deployment/R04_NAVIGATION_HANDOFF_INTAKE_RECEIPT_2026-10-27.json",
+    "WEBLyvra/development/r02-host-compat/",
+    "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261027_R04.json"
+  ],
+  "whole_revision": "USE_NEWEST_VERIFIED_CURRENT_ON_RESUME_NOT_FROZEN_ACCEPTANCE",
+  "current_workspace_specific_revision_version_markers": {
+    "R02_CI": 13,
+    "R02_run": 40588975948,
+    "R04_CI": 19,
+    "R04_run": 40590264943,
+    "R04_catalog": {
+      "suno": 514,
+      "soundcloud": 167,
+      "total": 681
+    },
+    "pointer_at_source": "2edd626a048d2dc9fc75ee68c48bb9dd44a86737"
+  },
+  "supersedes_handoff_id": null,
+  "approved_actions": "Persist same-chat continuity to native immutable handoff only; prior approval for bounded test development does not authorize new deployment or unrelated workspace changes.",
+  "discussed_ideas_not_authorized_as_tasks": [
+    "automatic embedding of standalone add-on into main page",
+    "card replacement or deletion",
+    "live deployment without explicit release instruction",
+    "replacing existing language controls"
+  ],
+  "significant_learning": [
+    "R02 adapter 5/5 then 10/10 DOM then 13/13 renderer ownership CI; still unmounted",
+    "R04 verified release 514/681 and bidirectional navigation source; R04 contract 19/19 CI, not real-browser acceptance",
+    "R03 branch-only not production; R01/R02 independent informational provenance",
+    "A source test runner/HTTP delivery is not iPhone/VoiceOver proof"
+  ],
+  "unresolved_questions": [
+    "Can real host prove exactly one DE/EN event owner without editing independently deployed add-on?",
+    "Does back/forward and mobile collapsed menu retain keyboard focus in real browser?"
+  ],
+  "requested_next_chat_behavior": "Resume same WEBLYVRA project naturally without generic menu. Fresh Whole rehydration, lineage handoff verification, preserve parallel chats and immutable boundaries.",
+  "no_global_workspace_pointer": true,
+  "no_foreign_autoactivation": true,
+  "no_deploy": true,
+  "source_is_continuity_not_authority": true,
+  "fresh_host_acceptance": "PENDING"
+}
