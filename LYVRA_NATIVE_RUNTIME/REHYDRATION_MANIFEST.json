@@ -2517,7 +2517,7 @@
     "plugin_unmodified": true
   },
   "family_mail_write_observation_20261027": {
-    "status": "PROMOTION_BODY_READY_POINTER_LAST_PENDING",
+    "status": "CURRENT_NATIVE_REHYDRATION_REFERENCE",
     "scope": "WHOLE_REFERENCE_AND_GERMAN_POST_FACET",
     "observation_carrier": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
     "facet_policy": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
