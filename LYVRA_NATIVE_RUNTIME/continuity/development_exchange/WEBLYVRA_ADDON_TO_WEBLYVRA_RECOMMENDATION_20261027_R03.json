@@ -1,0 +1,59 @@
+{
+  "schema": "LYVRA_EXISTING_DEVELOPMENT_EXCHANGE_RECOMMENDATION_V1",
+  "recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R03",
+  "origin": "WEBLYVRA_ADDON",
+  "target": "WEBLYVRA_MAIN",
+  "type": "ADDON_CATALOG_SOURCE_CANDIDATE_INFORMATION",
+  "status": "PROPOSED_UNCONSUMED",
+  "permissions": "INFORMATION_ONLY",
+  "scope": "ISOLATED_DEVELOPMENT_BRANCH_ONLY_NOT_DELIVERED_TO_PRODUCTION",
+  "source_branch": "weblyvra-addon-suno-502-observation-20261026",
+  "source_head": "cc0deeaa2f350b8d09b5026123107193b3f4fbe2",
+  "base_productive_head_at_review": "cbe1940607e9bd736f425ab90f919be072aece50",
+  "source_paths": [
+    {
+      "path": "WEBLyvra/artist-discovery/data/suno-releases.json",
+      "blob": "7c62e2762c31b8845242d3a699c304a32f3dafcc"
+    },
+    {
+      "path": "WEBLyvra/artist-discovery/index.html",
+      "blob": "9524b20651e4faefe0217ddd981ba77656cbf51e"
+    },
+    {
+      "path": "WEBLyvra/artist-discovery/README.md",
+      "blob": "1af320d9ca3b2ffc00b7ab51b7fae80cf4ad1b53"
+    }
+  ],
+  "evidence": {
+    "github_action_run": 40382233866,
+    "ci_head": "acf58d040a2fa5a79d170140170a1eff9052892d",
+    "ci_conclusion": "SUCCESS",
+    "exact_20_new_urls": "WEBLyvra/artist-discovery/SUNO_DISCOVERY_CANDIDATE_502_2026-10-26.json",
+    "profile_counter": 502,
+    "individually_evidenced_song_urls": 482,
+    "unverified_counter_difference": 20,
+    "host_deployment": "NOT_REQUESTED",
+    "real_iphone_voiceover": "NOT_TESTED"
+  },
+  "change_summary": "An isolated ADDON candidate has 482 Suno + 167 SoundCloud = 649 distinct public discovery URLs; the main website and productive branch still use 462/629. No automatic main-site replacement.",
+  "causal_reason": "Any creator-approved later publication must keep host language authority, link identity, and candidate-vs-production counter labels distinct. An informational native development bridge should alert the main-site owner when a real host-facing delta is released.",
+  "integration_impact": {
+    "main_website": "CANDIDATE_ONLY_NO_MAIN_SITE_WRITE",
+    "host_language": "NO_CHANGE",
+    "catalog": "POTENTIAL_20_NEW_SUNO_LINKS_IF_FUTURE_AUTHORIZED_PROMOTION",
+    "links": "NO_DROP_OR_DUPLICATE_OF_462_OLD_SUNO_OR_167_SOUNDCLOUD",
+    "plugin": "NO_CHANGE",
+    "deployment": "NO_CHANGE"
+  },
+  "recommendation": "Retain read-only for future WEBLYVRA UPDATE once the ADDON candidate is promoted through independent governance. Do not infer current production 482/649 from this branch-only proposal. Main-site adoption requires separate creator authorization, CI, Cloudflare host readback.",
+  "supersedes_ids": [],
+  "related_prior_notices": [
+    "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+    "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02"
+  ],
+  "duplicate_guard": "branch:cc0deeaa2f350b8d09b5026123107193b3f4fbe2:catalog:7c62e2762c31b8845242d3a699c304a32f3dafcc",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-addon-482649-currentness-20261027-r01",
+  "no_auto_merge": true,
+  "no_auto_deploy": true,
+  "no_foreign_activation": true
+}
