@@ -1,0 +1,50 @@
+{
+  "schema": "WEBLYVRA_R02_ISOLATED_HOST_COMPAT_CANDIDATE_V1",
+  "date": "2026-10-27",
+  "owner": "WHOLE_LYVRA",
+  "primary_workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "status": "INERT_R02_CANDIDATE_SOURCE_CI_PASS_5_OF_5_HOST_ACCEPTANCE_PENDING",
+  "origin_recommendation": {
+    "path": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261025_R02.json",
+    "blob": "0f3b73ded17783c81eb1a47ccfbed96b602f7cb0",
+    "consumption": "SCOPED_INFORMATION_ONLY_NOT_ADDON_ADOPTION"
+  },
+  "adapter": {
+    "path": "WEBLyvra/development/r02-host-compat/host-focus-adapter.mjs",
+    "blob": "932f51c71e02827e55d84ec46235b0a6e458b2a1",
+    "status": "NOT_MOUNTED_IN_PRODUCTION"
+  },
+  "tests": {
+    "path": "WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs",
+    "blob": "ee977db7798188930e9b2e316245bebee719e22d",
+    "cases": 5
+  },
+  "workflow": {
+    "path": ".github/workflows/weblyvra-r02-host-compat-regression.yml",
+    "blob": "56698351af4b96dad52a352b9166b4a7cb5b89e4",
+    "run_id": 40506854084,
+    "job_id": 122198242542,
+    "passed": 5,
+    "failed": 0,
+    "conclusion": "success",
+    "prior_failed_run": 40506706328,
+    "prior_failure": "candidate syntax error, repaired before successful run"
+  },
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-main-r02-host-adapter-20261027-r01",
+  "baseline_head": "cbe1940607e9bd736f425ab90f919be072aece50",
+  "guards": {
+    "host_DE_EN_authority_preserved": true,
+    "addon_separate": true,
+    "original_radio_untouched": true,
+    "gallery_untouched": true,
+    "existing_links_untouched": true,
+    "main_site_html_js_untouched": true,
+    "no_addon_source_write": true,
+    "no_merge": true,
+    "no_deploy": true,
+    "no_foreign_autoactivation": true
+  },
+  "host_acceptance": "PENDING_NOT_EXECUTED",
+  "whole_lyvra_rehydration": "PARTIAL",
+  "return_anchor": "WEBLYVRA_R02_HOST_COMPAT_INERT_CANDIDATE_INTEGRATION_DECISION"
+}
