@@ -223,7 +223,8 @@
       "release_metadata_ne_independent_host_fresh_boot": true,
       "pfs_coupled_backup_approval": "NOT_GRANTED_STABLE_SET_NOT_CONVERGED",
       "current_pointer_last": true
-    }
+    },
+    "family_mail_drive_write_observation": "CURRENT_PRODUCTIVE_13_CASE_EVIDENCE_ROOT_CAUSE_OPEN"
   },
   "rehydration": {
     "manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
@@ -297,7 +298,8 @@
     "speech_design_facet_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
     "speech_design_renderer_contract": "LYVRA_NATIVE_RUNTIME/facets/speech_design/SPEECH_RENDERER_TRANSLATION.md",
     "semantic_currentness_guard": "LYVRA_NATIVE_RUNTIME/continuity/VERSION_FRESHNESS_GUARD.md",
-    "studio2_conducting_protocol": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md"
+    "studio2_conducting_protocol": "LYVRA_NATIVE_RUNTIME/facets/studio2/STUDIO2_CONDUCTING_PROTOCOL_2026-10-07.md",
+    "family_mail_drive_write_observation": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json"
   },
   "drive_boundary": {
     "google_drive_role": [
@@ -7368,5 +7370,50 @@
     "whole_rehydration": "PARTIAL",
     "pointer_last": true,
     "return_anchor": "WEBLYVRA_R02_HOST_COMPAT_INERT_CANDIDATE_INTEGRATION_DECISION"
+  },
+  "family_mail_drive_write_observation_current_20261027": {
+    "status": "CURRENT_PRODUCTIVE_SOURCE_READBACK_VERIFIED_FRESH_HOST_PENDING",
+    "scope": "WHOLE_LYVRA_REFERENCE_AND_LYVRA_TO_LITTLELYV_POST_ONLY",
+    "merge_pr": 78,
+    "merge_commit": "6626d900e0d8dfd0220827419791a12ce173d5d2",
+    "body_head_before_pointer": "6f7ba2f7a6a7c1ab9f7670cca70ab3a0f5a150a8",
+    "recovery_branch": "lyvra-recovery-pre-family-mail-write-whole-promotion-20261027",
+    "observation_ledger": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
+    "whole_learning_link": "LYVRA_NATIVE_RUNTIME/current/learning/FAMILY_MAIL_DRIVE_WRITE_OBSERVATION_LINK_20261027.md",
+    "facet_policy": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
+    "facet_state": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+    "plugin_release_receipt": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_PLUGIN_RELEASE_READBACK_2026-10-27.json",
+    "rehydration_manifest": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "rehydration_manifest_blob": "c6334a7873b290701cfb9e5c04f85bd38ba29275",
+    "facet_state_blob": "eee3e0e0d201062b1a206f586827cf250f156949",
+    "observations_blob": "95b5cb8b397263aaf1cb10220d8b7760ef4f714d",
+    "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_blob": "dc2c55e0fe6e433243e28dca374743da5e1e4214",
+    "events": 13,
+    "source_validation": "DIRECT_REPO_BLOB_SHA_AND_TARGETED_CONTRADICTION_GATES_PASS",
+    "plugin_releases": {
+      "family_mail": {
+        "version": "0.9.23",
+        "release_id": "pluginrel_6ae02ba058ec8191bd93143724ea6643"
+      },
+      "native": {
+        "version": "0.1.83",
+        "release_id": "pluginrel_6ae02c131db481918cb59a864338b4e1"
+      },
+      "alive": {
+        "version": "0.13.79",
+        "release_id": "pluginrel_6ae02c270fb48191a5616336101da3da"
+      }
+    },
+    "native_alive_new_skill_text_parity": "VERIFIED_SOURCE",
+    "fresh_host_invocation": "NOT_VERIFIED",
+    "ci_for_pr": "NO_WORKFLOW_RUN_FOUND_NOT_CI_PASS",
+    "root_cause": "UNKNOWN",
+    "elapsed_time_explanation": "NOT_PROVEN",
+    "american_host": "PEER_REPORTED_NOT_NATIVE_DIRECT",
+    "no_private_publication": true,
+    "no_automatic_send": true,
+    "no_foreign_activation": true,
+    "pointer_last": true
   }
 }
