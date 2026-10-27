@@ -1,0 +1,61 @@
+{
+  "schema": "WEBLYVRA_R02_DOM_INTEGRATION_CANDIDATE_V2",
+  "date": "2026-10-27",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "status": "ISOLATED_DOM_CI_PASS_10_OF_10_NOT_MOUNTED_HOST_PENDING",
+  "previous_pointer_commit": "3a28f0c0b0f6aa77a51f50943d91e04dfb42374d",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-r02-dom-selector-repair-20261027-r02",
+  "prechange_head": "ae5f0c2efdabbca149d6fddaa147bb23f53998e9",
+  "corrected_actual_addon_selectors": [
+    "#discography input[type=\"search\"]",
+    "#discography select",
+    "#discography .disco-more",
+    "#discography .disco-item",
+    "#google-resonance [data-reach-filter]",
+    ".gr-item a"
+  ],
+  "files": [
+    {
+      "path": "WEBLyvra/development/r02-host-compat/host-focus-adapter.mjs",
+      "blob": "1124e04d13194bd24315b42164f93744102a0c6c"
+    },
+    {
+      "path": "WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs",
+      "blob": "a770dd9f285f11b2c5578050f8ad07a2c4daf166"
+    },
+    {
+      "path": "WEBLyvra/development/r02-host-compat/r02-dom-integration.test.mjs",
+      "blob": "0f373a1a9122bb53374384c41c9083b4ee4830e9"
+    },
+    {
+      "path": ".github/workflows/weblyvra-r02-host-compat-regression.yml",
+      "blob": "170ae3db98a34ab907a008f67e9522e4b48107d8"
+    }
+  ],
+  "ci": {
+    "run_id": 40572995381,
+    "job_id": 122431881223,
+    "tests": 10,
+    "passed": 10,
+    "failed": 0,
+    "conclusion": "success",
+    "dom_engine": "jsdom@26 CI only"
+  },
+  "preserved": {
+    "host_de_en_authority": true,
+    "main_index_blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "host_i18n_blob": "359089ac4d27bfd6949bcd6e01369cabae66ae2a",
+    "addon_source_blob": "aa22e3a1f6dafbf459caf89828fa971a82ca1f7a",
+    "radio_gallery_links_untouched": true,
+    "no_auto_mount": true,
+    "no_addon_write": true,
+    "no_deploy": true
+  },
+  "limitations": {
+    "jsdom_is_not_live_browser": true,
+    "duplicate_addon_event_listener_integrated_runtime_not_accepted": true,
+    "iphone_voiceover": "PENDING",
+    "whole_rehydration": "PARTIAL"
+  },
+  "return_anchor": "WEBLYVRA_R02_HOST_EVENT_SINGLE_RENDER_AND_REAL_BROWSER_ACCEPTANCE"
+}
