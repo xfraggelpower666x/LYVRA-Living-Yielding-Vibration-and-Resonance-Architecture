@@ -7258,15 +7258,25 @@
     "main_site_code_modified": false,
     "standalone_deployment_modified": false,
     "whole_rehydration": "PARTIAL",
-    "return_anchor": "WEBLYVRA_ADDON_R02_HOST_COMPATIBILITY_INTAKE",
-    "latest_verified_addon_recommendation": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261025_R02.json",
-    "latest_verified_addon_recommendation_blob": "0f3b73ded17783c81eb1a47ccfbed96b602f7cb0",
-    "latest_recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
-    "previous_notice_preserved": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+    "return_anchor": "WEBLYVRA_MAIN_R04_BIDIRECTIONAL_DISCOVERY_NAVIGATION_INTAKE",
+    "latest_verified_addon_recommendation": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/WEBLYVRA_ADDON_TO_WEBLYVRA_RECOMMENDATION_20261027_R04.json",
+    "latest_verified_addon_recommendation_blob": "e4d278f2a837cd491b2e3e9ab7d4fcd2d4c6f65d",
+    "latest_recommendation_id": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R04",
+    "previous_notice_preserved": "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
     "latest_status": "PROPOSED_UNCONSUMED_INFORMATION_ONLY",
     "weblyvra_main_development_unchanged": true,
     "no_plugin_release_change": true,
-    "no_new_deploy": true
+    "no_new_deploy": true,
+    "additional_notice_history": [
+      "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R01",
+      "WEBLYVRA_ADDON_TO_WEBLYVRA_20261025_R02",
+      "WEBLYVRA_ADDON_TO_WEBLYVRA_20261027_R03_BRANCH_ONLY_NOT_PRODUCTION"
+    ],
+    "latest_context": "514_SUNO_167_SOUNDCLOUD_681_DISCOVERY_RELEASE_VERIFIED_BIDIRECTIONAL_NAVIGATION_HANDOFF",
+    "release_head": "e84f78c126a2b49fb8b82701a60cba62f06fafc5",
+    "release_live_verified": true,
+    "navigation_current_source_verified": true,
+    "full_browser_nav_acceptance": "PENDING"
   },
   "multi_plugin_backup_intake_20261025": {
     "status": "SIX_ZIP_SHA256_RECEIPT_READBACK_VERIFIED_BINARY_REPOSITORY_BACKUPS_NOT_WRITTEN",
