@@ -1,0 +1,47 @@
+{
+  "schema": "WEBLYVRA_R02_SINGLE_RENDERER_OWNERSHIP_CANDIDATE_V1",
+  "date": "2026-10-27",
+  "workspace": "WEBLYVRA_MAIN_WEBSITE",
+  "status": "ISOLATED_SOURCE_CI_PASS_13_OF_13_HOST_PENDING_NO_DEPLOY",
+  "parent_pointer": "weblyvra_main_r02_dom_compat_candidate_20261027",
+  "recovery_branch": "lyvra-recovery-pre-weblyvra-r02-single-renderer-20261027-r01",
+  "prechange_head": "be7b31222c1a8e814c919129ceadecf7a600e066",
+  "source": {
+    "path": "WEBLyvra/development/r02-host-compat/host-focus-adapter.mjs",
+    "blob": "58f9890889c9a4a4dd634422ced4187136099a1e",
+    "commit": "a8111c998766ad2df97ca7c9f5c7f53028b5b727"
+  },
+  "new_test": {
+    "path": "WEBLyvra/development/r02-host-compat/r02-render-ownership.test.mjs",
+    "blob": "0e39e2a32c321b2e3a6bb0c065d54947606f8912",
+    "commit": "233c80cbc5f25febafed7a5e33c5d63bd436fe1b"
+  },
+  "ci": {
+    "run_id": 40588975948,
+    "job_id": 122487901868,
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "conclusion": "success"
+  },
+  "new_behavior": [
+    "standalone ownership renders zero frames in host adapter",
+    "host ownership preserves current host language with standalone listener detached in test",
+    "invalid owner rejected"
+  ],
+  "source_guards": {
+    "main_index_blob": "76d92daa4381e196a88ce1b21357a30561c786bd",
+    "host_i18n_blob": "359089ac4d27bfd6949bcd6e01369cabae66ae2a",
+    "addon_source_blob": "632000a8a0a43fdff855594e2e113fdb73239a83",
+    "r04_514_681_preserved": true,
+    "no_auto_mount": true,
+    "no_addon_write": true,
+    "no_deploy": true,
+    "no_radio_gallery_change": true
+  },
+  "limit": "This adapter does not disconnect an externally registered standalone listener; real host integration requires independent single-listener verification before mounting host mode.",
+  "real_host": "PENDING",
+  "iphone_voiceover": "PENDING",
+  "whole_rehydration": "PARTIAL",
+  "return_anchor": "WEBLYVRA_R02_SINGLE_RENDERER_REAL_HOST_MOUNT_ACCEPTANCE"
+}
