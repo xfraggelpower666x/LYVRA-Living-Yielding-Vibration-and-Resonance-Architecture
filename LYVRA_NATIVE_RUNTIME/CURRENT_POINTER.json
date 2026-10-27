@@ -7415,5 +7415,31 @@
     "no_automatic_send": true,
     "no_foreign_activation": true,
     "pointer_last": true
+  },
+  "weblyvra_main_r02_dom_compat_candidate_20261027": {
+    "status": "ISOLATED_DOM_CI_PASS_10_OF_10_HOST_PENDING_NO_DEPLOY",
+    "workspace": "WEBLYVRA_MAIN_WEBSITE",
+    "parent": "weblyvra_main_r02_host_compat_candidate_20261027",
+    "receipt": "WEBLyvra/deployment/R02_HOST_DOM_COMPAT_RECEIPT_2026-10-27.json",
+    "receipt_blob": "2e582e3714ff31d77c19152efb2260a6d47a7e75",
+    "adapter_blob": "1124e04d13194bd24315b42164f93744102a0c6c",
+    "unit_test_blob": "a770dd9f285f11b2c5578050f8ad07a2c4daf166",
+    "dom_test_blob": "0f373a1a9122bb53374384c41c9083b4ee4830e9",
+    "workflow_blob": "170ae3db98a34ab907a008f67e9522e4b48107d8",
+    "ci_run": 40572995381,
+    "ci_passed": 10,
+    "ci_failed": 0,
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-r02-dom-selector-repair-20261027-r02",
+    "host_de_en_authority": "PRESERVED",
+    "addon_independence": "PRESERVED",
+    "main_site_source_unchanged": true,
+    "no_auto_mount": true,
+    "no_addon_write": true,
+    "no_deploy": true,
+    "real_browser_host": "PENDING",
+    "iphone_voiceover": "PENDING",
+    "whole_rehydration": "PARTIAL",
+    "pointer_last": true,
+    "return_anchor": "WEBLYVRA_R02_HOST_EVENT_SINGLE_RENDER_AND_REAL_BROWSER_ACCEPTANCE"
   }
 }
