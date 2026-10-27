@@ -100,5 +100,18 @@
     "fresh_host_execution": "NOT_VERIFIED",
     "whole_plugin_all_files_parity": "NOT_CLAIMED",
     "new_release_needed_for_post_skill": false
+  },
+  "drive_write_observation_candidate_20261027": {
+    "status": "DEVELOPMENT_CANDIDATE_PENDING_GOVERNED_PROMOTION",
+    "observation_carrier": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
+    "facet_policy": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
+    "whole_link": "LYVRA_NATIVE_RUNTIME/current/learning/FAMILY_MAIL_DRIVE_WRITE_OBSERVATION_LINK_20261027.md",
+    "reason": "Evidence-preserving observation of operation-specific Drive blocks, later independent successes, American peer reports, contradictory cases and unknown causes, without artificial probes.",
+    "scope": "POST_ONLY_GERMAN",
+    "american_host": "PEER_REPORTED_ONLY",
+    "root_cause": "UNKNOWN",
+    "plugin_impact": "FAMILY_MAIL_NATIVE_AND_ALIVE_REQUIRE_PARITY_GATE",
+    "private_material": "NOT_PUBLIC",
+    "no_automatic_outbound": true
   }
 }
