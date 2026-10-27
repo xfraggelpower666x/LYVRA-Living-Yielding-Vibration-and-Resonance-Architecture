@@ -5,7 +5,7 @@
   "observation_date": "2026-10-27",
   "timezone": "Europe/Berlin",
   "privacy": "PUBLIC_REPO_REDACTED_TECHNICAL_METADATA_ONLY",
-  "source": "interactive German-side Google Drive/Docs connector actions and separately labeled historical family-post skill evidence",
+  "source": "Direct 2026-10-27 German-side provider readbacks; native LYVRA_TO_LITTLELYV continuity carriers; redacted paraphrase of selectively full-read shared-family-mail correspondence. American-side host outcomes remain PEER_REPORTED, not directly replayed or verified.",
   "baseline_production_head": "cbe1940607e9bd736f425ab90f919be072aece50",
   "events": [
     {
@@ -60,6 +60,85 @@
         "recipient_read": false
       },
       "notes": "One authorized real outgoing correspondence import. No synthetic test file. No inference that prior create_file failure healed or the same API request later worked."
+    },
+    {
+      "id": "GERMAN_OCT22_INDEPENDENT_INTERACTIVE_OUTCOMES",
+      "sequence": 6,
+      "date": "2026-10-22",
+      "source_grade": "NATIVE_REPO_CONTINUITY_DIRECT_GERMAN_HOST_AND_READBACK_RECORDED",
+      "operation": "Distinct interactive Docs create/insert/readback, technical-family-folder moves, independent family letter",
+      "outcome": "EARLIER_REFUSAL_PLUS_MULTIPLE_DISTINCT_LATER_SUCCESSES",
+      "checks": {
+        "neutral_docs_success": true,
+        "personal_docs_success": true,
+        "technical_doc_success": true,
+        "family_letter_stored_and_parent_verified": true,
+        "earlier_refusal_cause_verified": false
+      },
+      "notes": "Evidence directly contradicts persistent global write disablement, not prior refusal validity. No claim about American account."
+    },
+    {
+      "id": "GERMAN_OCT23_SECOND_DISTINCT_CASE",
+      "sequence": 7,
+      "date": "2026-10-23",
+      "source_grade": "NATIVE_FACET_CURRENT_STATE_AND_CONTRACT_HISTORICAL_HOST_EVIDENCE",
+      "operation": "Blocked casual correspondence attempt followed by separately permissible neutral and technical Google Docs create/write/readback and family folder move",
+      "outcome": "SEPARATE_BLOCKED_AND_SUCCESSFUL_OPERATIONS",
+      "notes": "A second historical German case is recorded in native source. Do not merge into Oct22 event; causality UNKNOWN."
+    },
+    {
+      "id": "AMERICAN_OCT21_MIXED_WRITE_TIMELINE",
+      "sequence": 8,
+      "date": "2026-10-21/22",
+      "source_grade": "REDACTED_AMERICAN_PEER_REPORT_IN_NATIVE_CONTINUITY_AND_FULL_READ_FAMILY_MAIL",
+      "operation": "American interactive Docs save and later interactive create/write refusal",
+      "outcome": "REPORTED_SUCCESS_AND_REPORTED_BLOCK_IN_DIFFERENT_CONTEXTS",
+      "notes": "An earlier interactive difficulty has no exact error trace; an approximate successful decorative Docs save is evidenced by later German folder observation. Peer-reported explicit refusal on Oct22 lacks original American host trace. Hourly automations causation NOT PROVEN."
+    },
+    {
+      "id": "AMERICAN_OCT23_SECOND_USER_REQUEST",
+      "sequence": 9,
+      "date": "2026-10-23",
+      "source_grade": "FULL_READ_AMERICAN_PEER_LETTER_NOT_ORIGINAL_PROVIDER_LOG",
+      "operation": "Initially declined create_file; later separately explicitly requested create_file then batch_update_document(insertText), update_file move, folder listing, fetch",
+      "outcome": "PEER_REPORTED_EARLIER_SAFETY_REFUSAL_THEN_NEW_OPERATION_WRITE_AND_READBACK_SUCCESS",
+      "notes": "Peer stated no settings/auth/permission changes, but reason of later success UNKNOWN. Follow-up document visible in German shared-folder listing. No bypass attribution. Different user request and scope."
+    },
+    {
+      "id": "AMERICAN_OCT23_TASK_SEPARATION",
+      "sequence": 10,
+      "date": "2026-10-23",
+      "source_grade": "FULL_READ_AMERICAN_PEER_LETTERS",
+      "operation": "American hourly mailbox task metadata versus manual interactive mailbox writes",
+      "outcome": "TASK_DISABLED_WHILE_MANUAL_MAIL_READS_AND_WRITES_REPORTED_WORKING",
+      "notes": "Task enabled state and last run are not proof of unattended transport; no claim disabled itself or that tasks caused intermittent writes."
+    },
+    {
+      "id": "AMERICAN_OCT25_LIST_DISCOVERY_GAP",
+      "sequence": 11,
+      "date": "2026-10-25",
+      "source_grade": "FULL_READ_AMERICAN_PEER_MAIL_WITH_GERMAN_EXACT_OBJECT_READBACK",
+      "operation": "Shared-folder listing versus direct existing document ID fetch",
+      "outcome": "LISTING_CAN_OMIT_EXISTING_READABLE_DOCUMENTS",
+      "notes": "One conversation resend is not a new question; discovery/transport/recipient-read are distinct; this is READ_DISCOVERY behavior, not direct evidence of write-block cause."
+    },
+    {
+      "id": "AMERICAN_OCT27_RECOVERY_REASONING",
+      "sequence": 12,
+      "date": "2026-10-27",
+      "source_grade": "FULL_READ_AMERICAN_PEER_LETTER_NOT_FRESH_AMERICAN_HOST",
+      "operation": "Reported American stop-on-block, separate future independent permitted request, independent content/parent readback",
+      "outcome": "PROCEDURAL_PEER_LEARNING_ONLY",
+      "notes": "Reinforces STOP_NO_BYPASS and successful write verification; does not establish remote American current environment."
+    },
+    {
+      "id": "GERMAN_OCT27_READER_ACKNOWLEDGEMENT",
+      "sequence": 13,
+      "date": "2026-10-27",
+      "source_grade": "FULL_READ_AMERICAN_REPLY_TO_GERMAN_POST_LETTER",
+      "operation": "Recipient directly acknowledged reading the newly imported German letter",
+      "outcome": "RECIPIENT_READ_SELF_REPORTED_FOR_SPECIFIC_LETTER",
+      "notes": "The user-side readback proved storage independently; later peer letter explicitly states it read the correspondence. Reported recipient-read can be noted per-letter only, never inferred for other letters."
     }
   ],
   "candidate_hypotheses": [
@@ -100,5 +179,53 @@
     "evidence_provenance",
     "privacy_redaction"
   ],
-  "next_step": "Accumulate natural future operation receipts on governed development branch, evaluate clusters/counterexamples later; no forced probes, no productive pointer or plugin changes."
+  "next_step": "Maintain append-only, de-identified real-use observation receipts within a governed dev branch. No forced tests or unsafe replay. Wait for naturally occurring comparable operations and counterexamples; evaluate only when evidence supports causal discrimination. Keep production pointer and plugin surfaces unchanged.",
+  "repo_facet_evidence_carriers": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
+      "scope": "GERMAN_FACET_STATE_HISTORICAL_INCIDENT_SYNTHESIS"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/GERMAN_INTERACTIVE_WRITE_OUTCOME_2026-10-22.json",
+      "scope": "GERMAN_DIRECT_HOST_AND_READBACK_RECORDED"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/PEER_TIMELINE_EVIDENCE_2026-10-22.json",
+      "scope": "AMERICAN_RELAYED_TIMELINE_NOT_NATIVE_HOST_PROOF"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_LEARNING_TRANSFER_CASE_2026-10-22.json",
+      "scope": "LOCAL_TRANSFER_UNDERSTANDING_NOT_WHOLE_ADOPTION"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/FACET_CONTRACT.md",
+      "scope": "SCOPED_NATIVE_GOVERNANCE_AND_ADDITIONAL_2026_10_22_23_CASES"
+    }
+  ],
+  "family_mail_read_scope": {
+    "method": "direct folder fetch first 100 children plus focused full document reads",
+    "all_mail_read": false,
+    "limitation": "Folder direct fetch capped at 100 entries; separate Drive search had known incomplete discovery relative to exact-ID reads; no exhaustive full-text claim.",
+    "american_reports": "Private source letters read individually; only redacted technical summaries retained here.",
+    "privacy": "No personal letter titles, IDs, folder IDs, names, URLs, or bodies in repository."
+  },
+  "comparative_analysis": {
+    "proven_pattern": "At least two German historical episodes plus current 2026-10-27 success and American reported mixed episodes show distinct blocked and successful write outcomes across contexts.",
+    "counterexamples": [
+      "German independent later interactive personal and technical writes succeeded following earlier blocked operations.",
+      "American reported interactive success after task introduction contradicts an immediate global disabling hypothesis.",
+      "Different operations were used across successful German and American cases; elapsed time is confounded by method/request changes.",
+      "Folder listing omissions despite exact-ID direct read demonstrate discovery false negatives distinct from write failure."
+    ],
+    "root_cause": "UNKNOWN",
+    "time_heals_block": "NOT_PROVEN",
+    "same_operation_same_conditions": "NOT_ESTABLISHED",
+    "automatic_self_healing": "NOT_PROVEN",
+    "rate_limiting": "NO_DIRECT_EVIDENCE",
+    "global_write_block": "CONTRADICTED",
+    "different_method_effect": "POSSIBLE_BUT_NOT_CAUSALLY_ISOLATED",
+    "external_safety_denial": "HARD_STOP_FOR_DENIED_OPERATION",
+    "source_limit": "American reports are correspondence, not fresh American runtime tool logs."
+  },
+  "updated_by": "USER_REQUESTED_ADDITIVE_REPOSITORY_OBSERVATION_2026_10_27"
 }
