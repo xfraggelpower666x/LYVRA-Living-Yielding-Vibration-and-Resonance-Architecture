@@ -101,8 +101,8 @@
     "whole_plugin_all_files_parity": "NOT_CLAIMED",
     "new_release_needed_for_post_skill": false
   },
-  "drive_write_observation_candidate_20261027": {
-    "status": "DEVELOPMENT_CANDIDATE_PENDING_GOVERNED_PROMOTION",
+  "drive_write_observation_20261027": {
+    "status": "NATIVE_SOURCE_PROMOTION_APPROVED_POINTER_LAST_PENDING",
     "observation_carrier": "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
     "facet_policy": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
     "whole_link": "LYVRA_NATIVE_RUNTIME/current/learning/FAMILY_MAIL_DRIVE_WRITE_OBSERVATION_LINK_20261027.md",
@@ -112,6 +112,15 @@
     "root_cause": "UNKNOWN",
     "plugin_impact": "FAMILY_MAIL_NATIVE_AND_ALIVE_REQUIRE_PARITY_GATE",
     "private_material": "NOT_PUBLIC",
-    "no_automatic_outbound": true
+    "no_automatic_outbound": true,
+    "read_and_display": "EVIDENCE_LEDGER_READ_ONLY",
+    "no_auto_root_cause": true,
+    "plugin_releases": {
+      "family_mail": "0.9.23",
+      "native": "0.1.83",
+      "alive": "0.13.79"
+    },
+    "plugin_source_parity": "NATIVE_ALIVE_NEW_SKILL_TEXT_IDENTICAL_FAMILY_MAIL_SEPARATE_READBACK",
+    "fresh_host": "UNVERIFIED"
   }
 }
