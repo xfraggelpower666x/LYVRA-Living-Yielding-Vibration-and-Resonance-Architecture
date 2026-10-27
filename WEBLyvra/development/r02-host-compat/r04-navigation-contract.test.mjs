@@ -52,8 +52,8 @@ test('R04: discovery catalogs preserve current 514 Suno + 45 sets + 122 tracks e
 test('R04: distinct legacy destinations remain in main source, without card removal',()=>{
   const keys=['radio','veluna','twitchRadio','twitch','spotifyArtist','spotifyUser'];
   for (const key of keys) assert.match(dynasty,new RegExp('\\b'+key+':\\s*\\{[^}]*url:'));
-  assert.match(dynasty,/webradio\\.666soundsdesign-broadcaster\\.com\\/veluna\\//);
-  assert.match(dynasty,/open\\.spotify\\.com\\/intl-de\\/artist\\//);
+    assert.ok(dynasty.includes('https://webradio.666soundsdesign-broadcaster.com/veluna/'));
+    assert.ok(dynasty.includes('https://open.spotify.com/intl-de/artist/'));
   assert.ok(main.querySelector('#radio'));
   assert.ok(main.querySelector('[src*="gallery"]') || mainHTML.includes('gallery.js'));
 });
