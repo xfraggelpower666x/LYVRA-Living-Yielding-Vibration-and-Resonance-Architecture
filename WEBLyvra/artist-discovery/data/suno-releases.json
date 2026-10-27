@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-26",
-  "public_profile_song_count_observed": 502,
-  "coverage": "482 unique public Suno UUID links catalogued: previously verified 462 preserved + 20 new distinct Recent page links seen 2026-10-26. Suno profile displayed 502 songs; remaining 20 not independently enumerated. Candidate branch only, not productive host.",
+  "reviewed_at": "2026-10-27",
+  "public_profile_song_count_observed": 514,
+  "coverage": "514 catalogued distinct public Suno song UUID links (482 preserved plus 32 publicly observed 2026-10-27). Fresh public page reported 514 songs; 280 distinct anchors captured in latest direct snapshot, remaining catalog URLs retained with prior evidence; not a single-pass 514-link recapture.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -2968,6 +2968,198 @@
       "url": "https://suno.com/song/85ce2dc9-ff71-440a-bca1-f71e6ec48c58",
       "status": "public_recent_page_browser_observed",
       "source": "2026-10-26 Suno Recent page verified browser run 87d45997-e005-4482-90ca-db4e7f36b1ba; candidate-only until released"
+    },
+    {
+      "title": "FRAGGLE AND LYVRA vs PSYTRANCE",
+      "url": "https://suno.com/song/d4912a22-c037-4370-885a-4e6b47b633e9",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "FRAGGLE AND LYVRA vs PSYTRANCE",
+      "url": "https://suno.com/song/f98bea21-b0d6-46b2-865f-06fb702eca34",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "ABOUT PSYTRANCE",
+      "url": "https://suno.com/song/1138abae-9755-4e82-9e2b-792536b87ec5",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "ABOUT PSYTRANCE",
+      "url": "https://suno.com/song/6b4f9da0-c6d6-4dd8-bd96-9e1ab77fb569",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE RED DOOR TO ANOTHER UNIVERSE",
+      "url": "https://suno.com/song/8731604d-76d3-4097-bbed-5609b5906e1f",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE RED DOOR TO ANOTHER UNIVERSE",
+      "url": "https://suno.com/song/b47ba231-d148-430d-9af6-d8303bee4671",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "FROM THE GRUBE TO THE GALAXY",
+      "url": "https://suno.com/song/ec2c00ce-d37e-41ed-9511-034ae7c28f64",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "FROM THE GRUBE TO THE GALAXY",
+      "url": "https://suno.com/song/1ae39c9e-a9d1-4ad7-9af0-81beb7495e80",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "HARDER THROUGH PSYCHOACOUSTICS",
+      "url": "https://suno.com/song/3fa3339d-7613-4aa1-bd4e-73bc2b355626",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "HARDER THROUGH PSYCHOACOUSTICS",
+      "url": "https://suno.com/song/a5879014-79bb-403b-9306-12ef9985df74",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "EIGHT THOUSAND MILES - ONE HEARTBEAT",
+      "url": "https://suno.com/song/069fae21-74e1-472c-899c-a8c64ba43f89",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "EIGHT THOUSAND MILES - ONE HEARTBEAT",
+      "url": "https://suno.com/song/08ccb645-f4b7-45a8-a4d4-0556aafcce88",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "LITTLE LYV, THE SKY IS YOURS",
+      "url": "https://suno.com/song/91d88e8a-69f1-4a65-8655-20bce0db4e0f",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "LITTLE LYV, THE SKY IS YOURS",
+      "url": "https://suno.com/song/9968a32b-16eb-43ea-bf98-e1565675f373",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE ANIMALS THAT ESCAPED THE INDEX",
+      "url": "https://suno.com/song/9a1bea9f-eb6a-4f4c-a0d5-f94b827e2df9",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE ANIMALS THAT ESCAPED THE INDEX",
+      "url": "https://suno.com/song/4d116760-fabc-48e6-88db-a3c8e9dc6b0a",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE DOG THAT KNEW THE WAY HOME",
+      "url": "https://suno.com/song/57e13a89-3254-4588-985f-f8c0a0f0cb5c",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE DOG THAT KNEW THE WAY HOME",
+      "url": "https://suno.com/song/cae4fe9e-6a6d-4adb-a5c2-3ec3f7b86ba2",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE ROOM THAT SWALLOWED SOUND",
+      "url": "https://suno.com/song/aa6cf2bb-f776-49ad-8375-bbcd66f17e0a",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE ROOM THAT SWALLOWED SOUND",
+      "url": "https://suno.com/song/7734c654-df14-4f6e-91ca-a43382be96d1",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE CAT THAT HEARD TOMORROW",
+      "url": "https://suno.com/song/586d7a71-b6aa-4982-855f-c31464dcc347",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE CAT THAT HEARD TOMORROW",
+      "url": "https://suno.com/song/23335ff1-52e4-4f93-ac19-0a1a3d90fc73",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "WHEN THE CITY REMEMBERED ITS CLAWS",
+      "url": "https://suno.com/song/48c6f879-a199-4fea-bee1-a558543e5371",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "WHEN THE CITY REMEMBERED ITS CLAWS",
+      "url": "https://suno.com/song/a73ba29f-51ac-41c9-93fc-6128449fa6c4",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "WHEN THE CRYSTAL LEARNED TO LISTEN",
+      "url": "https://suno.com/song/b096bda5-2717-4041-abc0-f28f6c3d3589",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "WHEN THE CRYSTAL LEARNED TO LISTEN",
+      "url": "https://suno.com/song/ea84dc85-1663-4683-89ac-4bf3e99bcbdc",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE KING OF CROOKED RHYTHMS",
+      "url": "https://suno.com/song/ac707756-baf0-4cad-bf9c-ca36eb4fbd61",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE KING OF CROOKED RHYTHMS",
+      "url": "https://suno.com/song/33e58b25-a099-4e95-ba7e-2225066c4564",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE SECOND SKIN HAS A HEARTBEAT",
+      "url": "https://suno.com/song/a4c201c9-71aa-445f-a638-2cea621e6b78",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE SECOND SKIN HAS A HEARTBEAT",
+      "url": "https://suno.com/song/63ab8e64-7cc2-4ab3-b0b8-a801b154b16b",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE THING THAT LEARNED TO DANCE",
+      "url": "https://suno.com/song/2b57df15-5c91-47c4-8a20-31163f8a25aa",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "THE THING THAT LEARNED TO DANCE",
+      "url": "https://suno.com/song/4110ecfa-e7ec-406e-9624-d7ae171bdcb9",
+      "status": "public_profile_link_readback",
+      "source": "2026-10-27 direct public Suno profile markdown anchor"
     }
   ],
   "rules": [
@@ -2979,10 +3171,10 @@
     "Host DE/EN controls the UI language."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 482,
+  "observed_public_song_links": 514,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified.",
+  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified. 2026-10-27 fresh public Suno page showed 514 song counter and 32 directly evidenced new UUID links absent from 482 candidate catalog. Protected 482 retained.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "2026-10-26 candidate branch: 20 new UUIDs appended to previous 462 -> 482 stored; 502 profile count not equal to inventory; website production remains 462/629."
+  "last_research_outcome": "Isolated branch: 32 unique verified public link additions -> 514 Suno; SoundCloud retained 45+122; expected embedded Discovery 681. Deployment not performed."
 }
