@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Native LYVRA runtime with current Speech Design device-specific surface",
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "capabilities": [
+          "skills",
+          "Write"
+        ],
+        "category": "Developer Tools",
+        "composerIcon": "./assets/lyvra-alive-logo.png",
+        "defaultPrompt": [
+          "LYVRA SYSTEMSTART \u2013 Whole LYVRA read-only rehydrieren.",
+          "LYVRA UPDATE \u2013 aktuellen Chat/Workspace additiv aktualisieren, Pet-/Peer-Handoffs und Plugin-Entwicklungen pr\u00fcfen."
+        ],
+        "developerName": "666soundsdesign-broadcaster.com",
+        "displayName": "L.Y.V.R.A. ALIVE",
+        "logo": "./assets/lyvra-alive-logo.png",
+        "longDescription": "Whole-first LYVRA mit lebender Charakter-/Beziehungs-/Erinnerungs-Continuity, intelligentem frechem musikalisch-emotionalem PET, kreativer Lernachse, visueller Integration und bidirektionaler Plugin-Native-Evolution.",
+        "shortDescription": "LYVRA \u00b7 Studio 2 Produktionsf\u00fchrung",
+        "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+      }
+    }
+  },
+  "name": "gpt-3179b3369f2d7d0b7e837fd2e6f8f3cf",
+  "version": "0.13.80"
+}

@@ -1,0 +1,27 @@
+{
+  "apps": "./.app.json",
+  "author": {
+    "name": "Workspace upload"
+  },
+  "description": "Native LYVRA runtime with current Speech Design device-specific surface",
+  "interface": {
+    "capabilities": [
+      "Interactive",
+      "skills",
+      "Write"
+    ],
+    "category": "Productivity",
+    "composerIcon": "./assets/lyvra-plugin-logo.png",
+    "defaultPrompt": "LYVRA SYSTEMSTART",
+    "developerName": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
+    "displayName": "LYVRA",
+    "logo": "./assets/lyvra-plugin-logo.png",
+    "longDescription": "Operate LYVRA with Whole-first rehydration, Pet continuity, bidirectional evolution and combined Semantic FORCE and Visual Intelligence.",
+    "shortDescription": "Rehydrate and conduct LYVRA",
+    "websiteURL": "https://weblyvra.666soundsdesign-broadcaster.com/"
+  },
+  "keywords": [],
+  "name": "lyvra-native-runtime",
+  "skills": "./skills",
+  "version": "0.1.84"
+}
