@@ -24,6 +24,9 @@ jobs:
         run: node --test WEBLyvra/development/r04-navigation/*.test.mjs
       - name: Keep R02 inert regression
         run: node --test WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs
+      - name: Stage independent Artist Discovery assets before static audit
+        working-directory: WEBLyvra/live
+        run: node tests/stage-artist-discovery.cjs
       - name: Static website source audit
         working-directory: WEBLyvra/live
         run: python tests/audit_static.py
