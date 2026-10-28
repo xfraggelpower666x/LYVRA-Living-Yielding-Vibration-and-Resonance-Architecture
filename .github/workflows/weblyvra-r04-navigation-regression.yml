@@ -1,0 +1,31 @@
+name: WEBLYVRA R04 navigation — isolated regression
+on:
+  push:
+    branches: [weblyvra-r04-navigation-review-20261028]
+    paths:
+      - 'WEBLyvra/live/dist/app.js'
+      - 'WEBLyvra/development/r04-navigation/**'
+      - '.github/workflows/weblyvra-r04-navigation-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate exact commit
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - name: Syntax check
+        run: node --check WEBLyvra/live/dist/app.js
+      - name: R04 bidirectional and i18n source contract
+        run: node --test WEBLyvra/development/r04-navigation/*.test.mjs
+      - name: Keep R02 inert regression
+        run: node --test WEBLyvra/development/r02-host-compat/host-focus-adapter.test.mjs
+      - name: Static website source audit
+        working-directory: WEBLyvra/live
+        run: python tests/audit_static.py
+      - name: Evidence scope
+        run: echo "SOURCE_AND_STAGING_ONLY; no production deployment or real iPhone VoiceOver acceptance" >> "$GITHUB_STEP_SUMMARY"
