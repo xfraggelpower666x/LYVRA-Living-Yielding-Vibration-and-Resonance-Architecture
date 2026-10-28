@@ -1,15 +1,19 @@
 {
   "status": "CURRENT_PRODUCTIVE",
   "source_baseline": "v1.1.26_ACTIVE_VERIFIED",
-  "resume_rule": "WHOLE_LYVRA_CURRENT_RESOLUTION_THEN_ANALYTICS_FACET_REHYDRATION",
+  "resume_rule": "WHOLE_LYVRA_CURRENT_THEN_RELEVANT_TRACK_DESIGN_PARENT_OR_SELECTIVE_PEER_ANALYTICS_SUB_REHYDRATION",
   "preserve": [
     "CURRENT_STATE",
     "RESEARCH_REGISTER",
     "RENDERER_EVIDENCE_REGISTER",
     "MODEL_COVERAGE_REGISTER",
     "EXPERIMENT_REGISTER",
-    "OPEN_WORK"
+    "OPEN_WORK",
+    "SUB_LIFECIRCLE",
+    "SUNO_MONITOR_RESULT_INTAKE"
   ],
   "legacy_drive_runtime": "PROVENANCE_HISTORY_RECOVERY_ONLY",
-  "no_second_root_boot": true
+  "no_second_root_boot": true,
+  "parent_facet": "TRACK_DESIGN",
+  "peer_access_requires_original_scope": true
 }

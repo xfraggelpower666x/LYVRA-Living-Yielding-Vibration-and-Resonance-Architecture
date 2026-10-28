@@ -3,7 +3,7 @@
   "state": "NATIVE_FACET_ACTIVE_VERIFIED",
   "source_version": "v1.1.26",
   "source_status": "ACTIVE_VERIFIED",
-  "migration_target": "WHOLE_LYVRA_NATIVE_FACET",
+  "migration_target": "TRACK_DESIGN_NATIVE_ANALYTICS_SUBFACET",
   "root_authority": "WHOLE_LYVRA",
   "track_design_version": "v3.4",
   "track_logical_revision": 93,
@@ -39,8 +39,8 @@
     "REAL_SUNO_ANALYTICS_ACCEPTANCE"
   ],
   "legacy_root_authority": "RETIRED_ON_NATIVE_FACET_CUTOVER",
-  "migration_status": "NATIVE_FACET_ACTIVE_VERIFIED",
-  "acceptance_readback": "PASS",
+  "migration_status": "STAGING_SUBFACET_CANDIDATE_PENDING_PLUGIN_AND_FRESH_BOOT",
+  "acceptance_readback": "STAGING_SOURCE_ONLY",
   "additive_music_evolution": {
     "status": "CURRENT_ADDITIVE_CAPABILITY_SET",
     "contract": "LYVRA_NATIVE_RUNTIME/current/music/ADDITIVE_MUSIC_FACET_EVOLUTION_CONTRACT.md",
@@ -55,5 +55,13 @@
     "renderer_compilation": true,
     "additive_conflict_check": true,
     "reference_promotion_guard": true
-  }
+  },
+  "parent_facet": "TRACK_DESIGN",
+  "selective_peer_access": [
+    "SPEECH_DESIGN",
+    "SUNO_STUDIO_2",
+    "CARDS",
+    "WHOLE_LYVRA_DEVELOPMENT"
+  ],
+  "sub_lifecircle": "LYVRA_NATIVE_RUNTIME/facets/analytics/SUB_LIFECIRCLE.md"
 }
