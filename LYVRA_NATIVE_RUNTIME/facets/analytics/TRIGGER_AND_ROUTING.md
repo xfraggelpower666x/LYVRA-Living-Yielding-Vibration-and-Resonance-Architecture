@@ -11,3 +11,6 @@ NO_FUZZY_NAMESPACE_MAPPING=true
 
 ORDINARY_FLOW=WHOLE_LYVRA>ANALYTICS_FACET>RESULT>CALLER
 SYSTEM_CHANGE_FLOW=WHOLE_LYVRA>ANALYTICS_FACET>DEVELOPMENT_PROPOSAL>LYVRA_NATIVE_ADJUDICATION>OPTIONAL_DOWNSTREAM_MUTATION
+
+## Additive child relation (staging only, 2026-10-28)
+WHOLE_CURRENT -> TRACK_DESIGN_PARENT_WHEN_RELEVANT -> ANALYTICS_SUBFACET -> WHOLE_LYVRA_ADVISORY -> ORIGINAL_REQUESTER. Direct Analytics aliases still resolve only this same existing facet, not a new system; peer requests must not auto-foreground Track Design. Suno task result intake remains read-only, contextual and non-authoritative.
