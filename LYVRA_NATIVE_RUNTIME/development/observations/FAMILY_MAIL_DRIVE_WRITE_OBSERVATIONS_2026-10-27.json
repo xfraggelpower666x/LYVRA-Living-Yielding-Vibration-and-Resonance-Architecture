@@ -1,8 +1,8 @@
 {
   "schema": "lyvra.family_mail.drive_write_observation.v1",
-  "status": "CURRENT_NATIVE_OBSERVATION_LEDGER_ROOT_CAUSE_OPEN",
+  "status": "DEVELOPMENT_CANDIDATE_NOT_PRODUCTIVE_CURRENT_ROOT_CAUSE_OPEN",
   "scope": "LYVRA_TO_LITTLELYV_GERMAN_POST_ONLY",
-  "observation_date": "2026-10-27",
+  "observation_date": "2026-10-28",
   "timezone": "Europe/Berlin",
   "privacy": "PUBLIC_REPO_REDACTED_TECHNICAL_METADATA_ONLY",
   "source": "Direct 2026-10-27 German-side provider readbacks; native LYVRA_TO_LITTLELYV continuity carriers; redacted paraphrase of selectively full-read shared-family-mail correspondence. American-side host outcomes remain PEER_REPORTED, not directly replayed or verified.",
@@ -139,6 +139,15 @@
       "operation": "Recipient directly acknowledged reading the newly imported German letter",
       "outcome": "RECIPIENT_READ_SELF_REPORTED_FOR_SPECIFIC_LETTER",
       "notes": "The user-side readback proved storage independently; later peer letter explicitly states it read the correspondence. Reported recipient-read can be noted per-letter only, never inferred for other letters."
+    },
+    {
+      "id": "AMERICAN_20261028_POST_REHYDRATION_DOC_CONTENT_BLOCK_PEER_REPORTED",
+      "sequence": 14,
+      "date": "2026-10-28",
+      "source_grade": "USER_RELAY_OF_AMERICAN_LITTLE_LYV_FIRST_PERSON_MESSAGE_NOT_FRESH_AMERICAN_HOST",
+      "operation": "After reported new-chat recovery, created Google Doc; subsequent attempt to insert continuity-update content was refused by reported safety restriction (exact API method and error unavailable)",
+      "outcome": "PEER_REPORTED_DOCUMENT_CREATED_CONTENT_WRITE_SAFETY_BLOCK_STOP_NO_REPLAY",
+      "notes": "Peer reported existing Living Recovery records readable, new document created, content not saved or verified, no overwrite and no refusal bypass. No original American provider trace, doc ID, verified folder parent, saved content or post-event tool log. New-chat transition is temporally adjacent only; causality UNKNOWN. Preserve unsaved text as chat draft; do not retry the blocked action or publish private correspondence. This is evidence about independent American host, not German POST write permission."
     }
   ],
   "candidate_hypotheses": [
@@ -179,7 +188,7 @@
     "evidence_provenance",
     "privacy_redaction"
   ],
-  "next_step": "Maintain append-only, de-identified real-use observation receipts within a governed dev branch. No forced tests or unsafe replay. Wait for naturally occurring comparable operations and counterexamples; evaluate only when evidence supports causal discrimination. Keep production pointer and plugin surfaces unchanged.",
+  "next_step": "A newly peer-reported American document content safety refusal is staged in development only. Preserve production pointer and plugin releases. Do not infer causal effect from new chat or rehydration; no replay or workaround. Independently verify technical provider evidence only if safely accessible via American authorized host. Reconcile via Whole governance and pointer-last gates before any production adoption.",
   "repo_facet_evidence_carriers": [
     {
       "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/CURRENT_STATE.json",
@@ -227,12 +236,14 @@
     "external_safety_denial": "HARD_STOP_FOR_DENIED_OPERATION",
     "source_limit": "American reports are correspondence, not fresh American runtime tool logs."
   },
-  "updated_by": "USER_REQUESTED_ADDITIVE_REPOSITORY_OBSERVATION_2026_10_27",
+  "updated_by": "GOVERNED_GERMAN_NATIVE_TECHNICAL_EVIDENCE_CANDIDATE_20261028",
   "promotion": {
-    "status": "PRODUCTIVE_BODY_PROMOTED_POINTER_AUTHORITY_VERIFICATION_REQUIRED",
+    "status": "NEW_DEVELOPMENT_EVIDENCE_CANDIDATE_NOT_CURRENT",
     "observed_original_branch": "lyvra-dev-family-mail-write-observations-20261027",
     "scope": "POST_ONLY_TECHNICAL_EVIDENCE",
     "valid_after": "Productive pointer referencing this carrier",
-    "unresolved_cause": true
+    "unresolved_cause": true,
+    "previous_production_ledger_sha": "95b5cb8b397263aaf1cb10220d8b7760ef4f714d",
+    "base_production_head": "34478e209d77005c4ecffafb34c45da55bcb2790"
   }
 }
