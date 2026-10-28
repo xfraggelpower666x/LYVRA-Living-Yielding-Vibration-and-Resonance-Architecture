@@ -43,6 +43,18 @@ tabs.forEach((tab,i)=>{
     if(next!==undefined){e.preventDefault();selectFacet(tabs[next],true);}
   });
 });
+// R04: keep the existing same-origin Discovery link and mobile menu ownership.
+// Host i18n is the only language authority; no second navigation controller.
+export function updateDiscoveryNavLabel(language = getLanguage()) {
+  const link = document.querySelector('.nav a[href="/artist-discovery/"]');
+  if (!link) return;
+  const english = language === 'en';
+  link.textContent = english ? 'Music & Platforms ↗' : 'Musik & Plattformen ↗';
+  link.setAttribute('aria-label', english
+    ? 'Discover FRAGGELPOWER666 music and platforms'
+    : 'FRAGGELPOWER666 Musik und Plattformen entdecken');
+}
+document.addEventListener('lyvra:languagechange', () => updateDiscoveryNavLabel());
 const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');
 function closeMenu(){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label',menuLabel(false));nav.classList.remove('open');}
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',menuLabel(open));nav.classList.toggle('open',open);});
@@ -59,3 +71,4 @@ installChatDemo();
 installExplorers();
 installBrandArt();
 initializeLanguage();
+updateDiscoveryNavLabel();
