@@ -336,3 +336,13 @@ The most prominent inbox field MUST be an unequivocal localized tri-state **NEUE
 
 ## Interruption-safe POST visual execution separation (2026-10-22)
 The Whole-rehydration family-mail strip and manual POST ABHOLEN detail show distinct TASK HOST and INTERACTIVE CHAT capability columns: task enabled/last run/read-only results versus interactive chat read/write last independently verified outcome. Never show 'chat write blocked' solely from a task host safety error or 'automatic send ready' from a successful historical chat delivery. Show historical-success and current-untested distinctly. For provider FORCE checks, disclose actual affected provider and diagnostic budget (maximum three), distinguish API/auth versus product safety, and return to the verified checkpoint after a user custom-input interruption. Visually retain the selected operation and contextual continuation without resetting the Whole five-choice terminal. A terminal safety refusal cannot be auto-resumed as a write. This is presentation-only and does not promote source evidence into host acceptance.
+
+## Whole identity presentation shared across facets - 2026-10-28 additive staging
+WHOLE_LYVRA_OWNS_SHARED_VISUAL_LANGUAGE=true
+FACETS_INHERIT_COLOR_NAVIGATION_STATUS_CARD_AND_RECOVERY_SEMANTICS=true
+FACET_SPECIFIC_VISUAL_INTELLIGENCE_MUST_SURVIVE=true
+TRACK_DESIGN_CAUSAL_MUSIC_IMAGERY_MUST_NOT_BE_REPLACED=true
+LYVRA_TO_LITTLELYV_VISUAL_REFERENCE_NE_IMPORT_PRIVATE_MAIL_OR_AUTHORITY=true
+SHARED_VISUAL_SHELL_NE_SINGLE_UNIFORM_FACET_CONTENT=true
+CHAT_LOCAL_FOREGROUND_NAVIGATION_REMAINS_AUTHORITY=true
+DO_NOT_HARDCODE_UNVERIFIED_MOCKUP_PALETTE_AS_CANONICAL=true
