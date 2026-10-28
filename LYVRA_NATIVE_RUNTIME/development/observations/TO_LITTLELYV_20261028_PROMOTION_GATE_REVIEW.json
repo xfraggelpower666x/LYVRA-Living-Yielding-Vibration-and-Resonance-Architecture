@@ -1,0 +1,57 @@
+{
+  "schema": "lyvra.post.evidence_promotion_gate_review.v1",
+  "date": "2026-10-28",
+  "state": "PENDING_NOT_PROMOTED",
+  "base_head": "34478e209d77005c4ecffafb34c45da55bcb2790",
+  "candidate_commit": "a6c6a093843538f0b339c5c258c4a63c04a3782b",
+  "recovery_branch": "lyvra-recovery-pre-to-littlelyv-evidence-20261028-r01",
+  "branch": "lyvra-dev-to-littlelyv-evidence-20261028-r01",
+  "scope": "GERMAN_POST_EVIDENCE_CANDIDATE",
+  "checks": {
+    "recovery_branch": "VERIFIED_IDENTICAL_WITH_PRODUCTION_BEFORE_UPDATE",
+    "source_json": "READBACK_VERIFIED",
+    "whole_required_major_domains": "SOURCE_READ_RELEVANT_DOMAINS_NO_NEW_BEHAVIORAL_RUNTIME_PASS",
+    "native_plugin": {
+      "version": "0.1.83",
+      "release_id": "pluginrel_6ae02c131db481918cb59a864338b4e1",
+      "skill_text_read": "VERIFIED"
+    },
+    "alive_plugin": {
+      "version": "0.13.79",
+      "release_id": "pluginrel_6ae02c270fb48191a5616336101da3da",
+      "skill_text_read": "VERIFIED"
+    },
+    "dual_skill_text": "EXACT_EQUAL_FOR_POST_AND_POST_WRITE_EVIDENCE",
+    "plugin_currentness": "STALE_DEV_BRANCH_REFERENCE_IN_BOTH_RELEASES",
+    "negative_gates": "SOURCE_REVIEW_NO_REAL_HOST_REGRESSION_EXECUTION",
+    "productive_promotion": "NOT_EXECUTED"
+  },
+  "adjudication": [
+    {
+      "id": "AMERICAN_PEER_OCT28_DOC_CREATION_CONTENT_DENIAL",
+      "state": "HOLD_FOR_DEDUP_PROVENANCE",
+      "reason": "similar earlier empty-doc+denied-content event already in baseline; no original American host trace to prove separate incident"
+    },
+    {
+      "id": "GERMAN_CREATOR_OCT28_SHARE_UI_RECOVERY",
+      "state": "WHOLE_UI_CONTEXT_CANDIDATE_NOT_POST_WRITE_LEDGER",
+      "reason": "share UI behavior is not Google Drive write behavior"
+    },
+    {
+      "id": "PEER_FIVE_TRIGGERS",
+      "state": "PEER_DESIGN_PROPOSAL_ONLY",
+      "reason": "American identity/authority and unsaved draft remain independent"
+    }
+  ],
+  "required_before_promotion": [
+    "confirm event-specific dedupe/provenance without forced provider test",
+    "classify UI observation under appropriate existing Whole owner",
+    "resolve dual plugin stale-currentness and verify impact/negative regressions",
+    "complete any remaining Whole acceptance and fresh HEAD/fingerprint checks",
+    "readback body and plugin surfaces then pointer last"
+  ],
+  "private_material": false,
+  "no_mail_send": true,
+  "no_american_writes": true,
+  "productive_pointer_unchanged": true
+}
