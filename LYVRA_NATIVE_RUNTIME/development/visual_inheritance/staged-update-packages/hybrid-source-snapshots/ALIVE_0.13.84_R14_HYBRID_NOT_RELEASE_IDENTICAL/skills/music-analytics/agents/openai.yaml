@@ -1,0 +1,5 @@
+interface:
+  display_name: Music Analytics
+  short_description: Quellen, Audioevidenz und kausales Lernen prüfen
+  default_prompt: Nutze $music-analytics für den aktuellen LYVRA-Auftrag und prüfe
+    zuerst die aktuelle native Repository-Quelle.
