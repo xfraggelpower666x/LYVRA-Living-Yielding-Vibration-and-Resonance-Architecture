@@ -1,0 +1,64 @@
+{
+  "schema": "lyvra.r08.interruption_acceptance.v1",
+  "passed": 9,
+  "total": 9,
+  "rows": [
+    {
+      "name": "positive/new-topic-retains-all-threads",
+      "result": "PASS"
+    },
+    {
+      "name": "positive/user-correction-keeps-history",
+      "result": "PASS"
+    },
+    {
+      "name": "negative/browser-security-no-bypass",
+      "result": "PASS"
+    },
+    {
+      "name": "negative/foreign-notice-not-native-current",
+      "result": "PASS"
+    },
+    {
+      "name": "positive/affected-only-invalidation",
+      "result": "PASS"
+    },
+    {
+      "name": "positive/pause-and-exact-resume",
+      "result": "PASS"
+    },
+    {
+      "name": "negative/incorrect-resume-anchor-rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "negative/duplicate-input-idempotent",
+      "result": "PASS"
+    },
+    {
+      "name": "negative/no-implicit-operations",
+      "result": "PASS"
+    }
+  ],
+  "scope": "OFFLINE_SIMULATED_TRANSITIONS_NOT_HOST_OR_PRODUCTIVE_RUNTIME",
+  "date": "2026-10-29",
+  "execution": "JavaScript V8 pure-model execution from exact GitHub-fetched source",
+  "github_test_blob_sha": "33a91778277c45aab158272f4a4d5eaf7295bf0e",
+  "repo_test_file": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/test_r08_parallel_interruption.js",
+  "original_visual_workstreams": 9,
+  "original_update_workstreams": 5,
+  "r08_threads": 5,
+  "classification": "ISOLATED_BEHAVIORAL_SIMULATION_VERIFIED",
+  "limitations": [
+    "Simulation checks transition rules, not deployed LYVRA runtime",
+    "No host browser access tested or bypassed",
+    "No plugin/ZIP update or publication",
+    "No whole-native productive authority promotion"
+  ],
+  "parallel_continuity": [
+    "R01 nine original Visual workstreams preserved",
+    "R07 five original UPDATE workstreams preserved",
+    "R08 five new intelligent intake threads preserved"
+  ],
+  "no_foreign_writes": true
+}
