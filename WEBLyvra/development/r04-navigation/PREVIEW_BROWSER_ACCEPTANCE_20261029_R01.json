@@ -1,0 +1,88 @@
+{
+  "schema": "WEBLYVRA_R04_PREVIEW_BROWSER_ACCEPTANCE_20261029_V1",
+  "workspace": "WEBLYVRA_MAIN",
+  "status": "PARTIAL_MOBILE_HISTORY_KEYBOARD_GATES_PENDING",
+  "as_of_date": "2026-10-29",
+  "branch": "weblyvra-r04-navigation-review-20261028",
+  "source_head": "6ad3ef77acf4439c5008a5553fec0fdcf425086e",
+  "production_head_at_initial_readback": "78e93568b43f68b067cb6d7785c49ef9b8a4ed55",
+  "preview": {
+    "deployment_id": "1f7d79ad-25e5-481a-82f1-0b3fd7263290",
+    "url": "https://1f7d79ad.weblyvra-live.pages.dev/",
+    "environment": "preview",
+    "commit": "6ad3ef77acf4439c5008a5553fec0fdcf425086e",
+    "cloudflare_status": "SUCCESS"
+  },
+  "github_source_ci": {
+    "run_id": 40623027199,
+    "head": "6ad3ef77acf4439c5008a5553fec0fdcf425086e",
+    "conclusion": "SUCCESS"
+  },
+  "browser_attempts": [
+    {
+      "n": 1,
+      "url": "https://agent.tinyfish.ai/runs/a1e9e82b-77cc-4e12-b2d1-035795f8e87f",
+      "results": {
+        "desktop_home": "PASS",
+        "host_de_en_label_switch": "PASS",
+        "discovery_href": "PASS_SOURCE_AND_BROWSER",
+        "discovery_click": "NOT_TESTED",
+        "keyboard_focus": "NOT_TESTED",
+        "history": "NOT_TESTED"
+      }
+    },
+    {
+      "n": 2,
+      "url": "https://agent.tinyfish.ai/runs/ba0f583a-b658-46c7-80a8-df8d60dc2def",
+      "results": {
+        "preview_home_to_preview_discovery_click": "PASS",
+        "suno_514": "PASS",
+        "discovery_total_681": "PASS",
+        "show_more_dynamic_count": "80_AND_120_OBSERVED_EXPECTED_INCREMENT",
+        "discovery_to_production_home_link": "PASS",
+        "preview_origin_return": "DIFFERENT_ORIGIN_EXPECTED",
+        "history": "NOT_TESTED"
+      }
+    },
+    {
+      "n": 3,
+      "url": "https://agent.tinyfish.ai/runs/e8728b58-9135-415e-aee7-562ff5a13d16",
+      "results": {
+        "mobile_viewport": "NOT_TESTED_TOOL_UNSUPPORTED",
+        "mobile_hamburger": "NOT_TESTED",
+        "mobile_tap": "NOT_TESTED",
+        "keyboard_tab": "NOT_TESTED",
+        "focus_visible": "NOT_TESTED"
+      }
+    }
+  ],
+  "protected": {
+    "suno": 514,
+    "soundcloud": 167,
+    "total": 681,
+    "r02": "NO_SOURCE_CHANGE",
+    "radio": "NO_SOURCE_CHANGE",
+    "gallery": "NO_SOURCE_CHANGE",
+    "host_language": "HOST_AUTHORITY_PRESERVED",
+    "original_unique_links": "NO_CATALOG_CHANGE"
+  },
+  "gates": {
+    "desktop_navigation": "PASS",
+    "host_de_en": "PASS",
+    "catalog": "PASS",
+    "responsive_mobile": "READBACK_PENDING",
+    "browser_history": "READBACK_PENDING",
+    "keyboard_focus": "READBACK_PENDING",
+    "real_iphone_voiceover": "READBACK_PENDING",
+    "production_release": "BLOCKED_PENDING_GATES"
+  },
+  "governance": {
+    "recovery_branch": "lyvra-recovery-pre-weblyvra-r04-navigation-20261028",
+    "no_production_merge": true,
+    "no_cloudflare_deployment_by_update": true,
+    "no_card_replacement": true,
+    "no_foreign_activation": true,
+    "whole_lyvra_rehydration": "PARTIAL_CURRENT_POINTER_AND_RELEVANT_REFERENCES_READ_ONLY"
+  },
+  "next_action": "Use browser environment with narrow viewport (e.g., independent real mobile browser/controlled browser), keyboard Tab and history controls. Retest only missing gates, then fresh HEAD and R02 impact before optional release."
+}
