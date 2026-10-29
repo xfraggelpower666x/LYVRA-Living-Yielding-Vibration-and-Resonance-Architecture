@@ -108,5 +108,10 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R16_DIRECT_ARCHIVE_ACCESS_AND_FAIL_CLOSED_ATTESTATION_20261029.json",
     "status": "DIRECT_LIVE_ARCHIVE_BYTES_BLOCKED_FAIL_CLOSED_CHECKER_STAGED",
     "parallel_threads_preserved": 5
+  },
+  "r17_parallel_continuity": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R17_TARGETED_PLUGIN_OVERLAY_RELEASES_20261029.json",
+    "status": "PUBLISHED_TARGETED_PLUGIN_OVERLAYS_19_THREADS_RETAINED",
+    "background_execution": false
   }
 }
