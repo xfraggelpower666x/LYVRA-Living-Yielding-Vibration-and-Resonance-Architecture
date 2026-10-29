@@ -90,5 +90,13 @@
     "complete_release_mirror": "PENDING",
     "host": "BLOCKED",
     "pointer": "NOT_PUBLISHED"
+  },
+  "r14_release_zip_mirror": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R14_COMPLETE_HYBRID_SOURCE_SNAPSHOTS_AND_RELEASE_GATES_20261029.json",
+    "status": "NATIVE_50_OF_50_ALIVE_64_OF_64_HYBRID_SOURCE_STAGED",
+    "binary_current_sha256": "PENDING",
+    "dashboard_current_bytes": "PENDING",
+    "full_release_zip": "NOT_BUILT",
+    "release_published": false
   }
 }
