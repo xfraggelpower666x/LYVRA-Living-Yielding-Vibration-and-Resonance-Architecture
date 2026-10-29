@@ -62,5 +62,11 @@
     "plugin_zip_gate": "PENDING",
     "host_gate": "BLOCKED",
     "visual_threads_retained": 9
+  },
+  "causal_dependency_r10": {
+    "status": "ISOLATED_MODEL_PASS",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R10_CAUSAL_DEPENDENCY_AND_RESUME_ACCEPTANCE_20261029.json",
+    "only_affected_gates_retested": true,
+    "exact_release_zip_parity": "OPEN"
   }
 }
