@@ -1,0 +1,82 @@
+{
+  "schema": "lyvra.r14.hybrid_source_stage.v1",
+  "date": "2026-10-29",
+  "status": "FULL_SOURCE_TREE_CANDIDATES_STAGED_AND_READBACK_VERIFIED_NOT_LIVE_RELEASE_PARITY",
+  "previous_head": "184272c9a602963ac32fbe68734e7c45a1ff00c8",
+  "staged_source_head": "f4ae905d2c0cf330a6ddbdf947252665a3f80526",
+  "source_strategy": "REPOSITORY_FIRST_OLD_VERIFIED_BLOBS_PLUS_TARGETED_CURRENT_SOURCE_DELTA",
+  "targets": [
+    {
+      "target": "native",
+      "current_plugin": "0.1.87",
+      "current_release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "staged_candidate_version": "0.1.88",
+      "source_tree": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/hybrid-source-snapshots/NATIVE_0.1.88_R14_HYBRID_NOT_RELEASE_IDENTICAL/",
+      "files_staged": 50,
+      "files_expected": 50,
+      "current_readable_source_matches_old": 40,
+      "new_source_skill": "skills/lyvra-track-capability-continuity/SKILL.md",
+      "current_source_changes": "two manifests plus added track skill; R13 changed visual skill",
+      "current_original_assets_sizes": [
+        790416,
+        504096,
+        906833
+      ],
+      "archive_original_assets_git_sha_parity": "ONLY_BASELINE_VERIFIED_NOT_LIVE",
+      "dashboard_large_file": "SOURCE_REUSED_FROM_ARCHIVED_SNAPSHOT_CURRENT_BYTE_PROOF_PENDING"
+    },
+    {
+      "target": "alive",
+      "current_plugin": "0.13.83",
+      "current_release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "staged_candidate_version": "0.13.84",
+      "source_tree": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/hybrid-source-snapshots/ALIVE_0.13.84_R14_HYBRID_NOT_RELEASE_IDENTICAL/",
+      "files_staged": 64,
+      "files_expected": 64,
+      "current_readable_source_matches_old": 42,
+      "new_source_skill": "skills/lyvra-track-capability-continuity/SKILL.md",
+      "current_source_changes": "two manifests plus added track skill; R13 changed visual skill",
+      "current_original_assets_sizes": [
+        790416,
+        504096,
+        906833
+      ],
+      "archive_original_assets_git_sha_parity": "ONLY_BASELINE_VERIFIED_NOT_LIVE",
+      "dashboard_large_file": "SOURCE_REUSED_FROM_ARCHIVED_SNAPSHOT_CURRENT_BYTE_PROOF_PENDING"
+    }
+  ],
+  "independent_readback": {
+    "github_recursive_tree_files": "50/50 NATIVE 64/64 ALIVE PASS",
+    "manifest_versions": "0.1.88/0.1.88 Native, 0.13.84/0.13.84 Alive",
+    "visual_shared_blob": "3ae45cc6f0f7ad5b4429fd132f58475838eb53ca",
+    "track_shared_blob": "f1dfc49897eddfb34080322a2ca0d3e0acb45d57",
+    "r13_delta_zip_sha256": "ALREADY_VERIFIED_NOT_REPEATED"
+  },
+  "gates": {
+    "plugin_current_release_authority": "VERIFIED_METADATA",
+    "plugin_original_binary_live_hash": "PENDING",
+    "large_dashboard_content_current_hash": "PENDING",
+    "full_release_identical_zip": "NOT_BUILT",
+    "source_snapshot": "HYBRID_VERSIONED_COMPLETE_INVENTORY_NOT_RELEASE_IDENTICAL",
+    "host": "BLOCKED_SECURITY_POLICY",
+    "plugin_publish": "NOT_ATTEMPTED_MISSING_MANDATORY_GATES",
+    "current_pointer": "UNCHANGED"
+  },
+  "family_mail": "NO_WRITE_SEPARATE_GOVERNANCE",
+  "parallel_workstreams": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "not_repeated": [
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R13_VALID_ZIP_SHA256"
+  ],
+  "recovery_branch": "lyvra-r09-recovery-pre-interruption-gates-20261029",
+  "no_foreign_writes": true,
+  "no_production_merge": true,
+  "return_anchor": "LYVRA_R14_HYBRID_FULL_SOURCE_STAGED_BINARY_PARITY_PENDING"
+}
