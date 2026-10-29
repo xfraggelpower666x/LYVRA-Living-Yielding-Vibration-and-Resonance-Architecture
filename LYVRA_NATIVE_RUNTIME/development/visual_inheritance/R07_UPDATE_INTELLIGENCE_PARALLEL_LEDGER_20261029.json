@@ -81,5 +81,14 @@
     "native": "0.1.87",
     "alive": "0.13.83",
     "family": "0.9.23"
+  },
+  "r13_plugin_zip_candidates": {
+    "status": "NATIVE_AND_ALIVE_REAL_THREE_FILE_OVERLAY_ZIPS_VERIFIED",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R13_ACTUAL_NATIVE_ALIVE_STAGED_UPDATE_ZIP_RECEIPT_20261029.json",
+    "native_target": "0.1.88_NOT_PUBLISHED",
+    "alive_target": "0.13.84_NOT_PUBLISHED",
+    "complete_release_mirror": "PENDING",
+    "host": "BLOCKED",
+    "pointer": "NOT_PUBLISHED"
   }
 }
