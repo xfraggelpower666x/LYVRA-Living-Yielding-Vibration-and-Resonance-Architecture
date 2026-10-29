@@ -1,0 +1,87 @@
+{
+  "schema": "lyvra.visual.r03.host-security.release-gates.v1",
+  "date": "2026-10-29",
+  "status": "ISOLATED_INTEGRATION_CANDIDATE_HOST_BLOCKED_PRODUCTIVE_WRITE_PROHIBITED",
+  "candidate_base": "bcedddc075cb40f42c8fb773c1fdcb990f76f728",
+  "production_head_verified": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "browser_evidence": {
+    "tab_inventory": "AVAILABLE",
+    "target_tabs": [
+      "Whole System Rehydration",
+      "LYVRA Track Design status",
+      "LYVRA Familienpost & Familienzeiten"
+    ],
+    "attempts": 3,
+    "read_results": "ALL_REJECTED_BROWSER_SECURITY_POLICY_CHATGPT_DOMAIN",
+    "access_level": "NO_CONTENT_AND_NO_INTERACTIVE_HOST_ACCEPTANCE",
+    "constraint": "DO_NOT_BYPASS_BROWSER_HOST_RESTRICTIONS",
+    "result": "HOST_BLOCKED"
+  },
+  "release_evidence": [
+    {
+      "target": "LYVRA Native",
+      "version": "0.1.87",
+      "release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "archive": "DOWNLOAD_URL_OBTAINED",
+      "installed_skills": "READABLE",
+      "host_render": "NOT_VERIFIED"
+    },
+    {
+      "target": "LYVRA ALIVE",
+      "version": "0.13.83",
+      "release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "archive": "DOWNLOAD_URL_OBTAINED",
+      "installed_skills": "READABLE",
+      "host_render": "NOT_VERIFIED"
+    },
+    {
+      "target": "Family Mail",
+      "version": "0.9.23",
+      "release_id": "pluginrel_6ae265d86c588191bf339b42c347da5e",
+      "archive": "DOWNLOAD_URL_OBTAINED",
+      "installed_skills": "READABLE",
+      "host_render": "NOT_VERIFIED"
+    }
+  ],
+  "asset_evidence": {
+    "native_original_lyvra_assets": "3_FILENAMES_PRESENT_PLUGIN_INVENTORY",
+    "alive_original_lyvra_assets": "3_FILENAMES_PRESENT_PLUGIN_INVENTORY",
+    "family_mail_banner": "assets/family-mail-banner-original.jpg",
+    "family_mail_chat_logo": "assets/family-mail-chat-logo-512.png",
+    "family_mail_icon": "assets/family-mail-plugin-icon-256.png",
+    "actual_bytes_hashed": false,
+    "manifest_logo_mutated": false
+  },
+  "repository_diff": {
+    "base": "ba7d218f3308fcb1fc72be295582f894eb842100",
+    "candidate": "bcedddc075cb40f42c8fb773c1fdcb990f76f728",
+    "git_compare_status": "ahead",
+    "ahead_by": 13,
+    "behind_by": 0,
+    "changed_files": 10,
+    "modified_or_deleted_source_files": 0,
+    "all_changes": "ADDITIVE_DEVELOPMENT_ONLY"
+  },
+  "recovery": {
+    "candidate_sha": "bcedddc075cb40f42c8fb773c1fdcb990f76f728",
+    "pre_candidate_productive_head": "ba7d218f3308fcb1fc72be295582f894eb842100",
+    "prior_production_recovery_branch": "lyvra-recovery-pre-three-critical-fingerprints-20261029-r01",
+    "actual_restore_test": "NOT_RUN",
+    "candidate_isolation": "VERIFIED_BRANCH_SEPARATE"
+  },
+  "pending": [
+    "actual authorized interactive ChatGPT fresh host tests",
+    "actual original image render/fallback tests in all three plugin surfaces",
+    "desktop/mobile keyboard and screen-reader checks",
+    "clipboard copied text and share-sheet behavior",
+    "independent binary hashes and full file parity of original assets",
+    "plugin release updates and independent readback",
+    "governed production promotion with pointer last"
+  ],
+  "prior_source_checks": "PRESERVED_NOT_REPEATED",
+  "no_foreign_writes": true,
+  "no_production_merge": true,
+  "no_plugin_mutation": true,
+  "read_only_external_host": true,
+  "return_anchor": "LYVRA_VISUAL_R03_BROWSER_POLICY_BLOCKED_ARCHIVE_RELEASES_REACHABLE_CONTINUE_NONHOST_GATES"
+}
