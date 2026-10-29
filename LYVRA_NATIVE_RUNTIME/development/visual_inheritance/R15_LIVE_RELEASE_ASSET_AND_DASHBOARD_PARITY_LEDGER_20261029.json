@@ -1,0 +1,1117 @@
+{
+  "schema": "lyvra.r15.current_release_binary_dashboard_ledger.v1",
+  "date": "2026-10-29",
+  "status": "PARTIAL_RELEASE_ARCHIVES_IDENTIFIED_DIRECT_BYTES_UNAVAILABLE_NO_COMPLETE_RELEASE_ZIPS",
+  "base_head": "b31bf2e3c132be4df6362a2f1610114cb054fe94",
+  "provenance": "Provider current release plugin file inventory and archive metadata, GitHub R14 hybrid snapshot tree",
+  "results": [
+    {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "actual_published_version": "0.1.87",
+      "target_candidate_version": "0.1.88",
+      "files_current": 50,
+      "files_candidate": 50,
+      "all_inventory_paths_present": true,
+      "size_equal": 49,
+      "changed_candidate": [
+        "skills/666-visual-interface/SKILL.md"
+      ],
+      "needs_live_byte_proof": [
+        "assets/lyvra-logo.png",
+        "assets/lyvra-original-visuals/LYVRA_Character_Showcase.jpeg",
+        "assets/lyvra-original-visuals/LYVRA_Heart_Logo.jpeg",
+        "assets/lyvra-original-visuals/LYVRA_Leitbild_Character_Card.jpeg",
+        "assets/lyvra-pet-logo.png",
+        "assets/lyvra-plugin-logo.png",
+        "dashboard/index.html"
+      ],
+      "file_manifest": [
+        {
+          "path": ".app.json",
+          "provider_bytes": 178,
+          "candidate_bytes": 178,
+          "git_blob_sha1": "9629ada930a7d87d217a8356eb7216d21036e629",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": ".codex-plugin/plugin.json",
+          "provider_bytes": 919,
+          "candidate_bytes": 919,
+          "git_blob_sha1": "19211771d01e8c6376f020b9b83cf517576b09dc",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": ".mcp.json",
+          "provider_bytes": 23,
+          "candidate_bytes": 23,
+          "git_blob_sha1": "da39e4ffafe816be90259a3f68b763a3f71b93ed",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "README.md",
+          "provider_bytes": 349,
+          "candidate_bytes": 349,
+          "git_blob_sha1": "1f5a9103c94d534b1cdcc106b59cf50a1f8e3b06",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-logo.png",
+          "provider_bytes": 1913401,
+          "candidate_bytes": 1913401,
+          "git_blob_sha1": "9367b70ca38fef09281b985c5bb93c1491fcccaf",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Character_Showcase.jpeg",
+          "provider_bytes": 790416,
+          "candidate_bytes": 790416,
+          "git_blob_sha1": "7d117b84dd5e39b8c68bcfcf2ad8e9f3c07f418c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Heart_Logo.jpeg",
+          "provider_bytes": 504096,
+          "candidate_bytes": 504096,
+          "git_blob_sha1": "06fb03a11aa05454fedb391fc9381c0d84cad7a6",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Leitbild_Character_Card.jpeg",
+          "provider_bytes": 906833,
+          "candidate_bytes": 906833,
+          "git_blob_sha1": "74599dbb6ee3552072ab42169c975ff94988785d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-pet-logo.png",
+          "provider_bytes": 20857,
+          "candidate_bytes": 20857,
+          "git_blob_sha1": "5cae38fa0b447f13c5eb552dd26a625056ec9838",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-plugin-logo.png",
+          "provider_bytes": 2931936,
+          "candidate_bytes": 2931936,
+          "git_blob_sha1": "159ebdf759fdb2abe90414a1990ee98434c76bff",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "dashboard/index.html",
+          "provider_bytes": 7858135,
+          "candidate_bytes": 7858135,
+          "git_blob_sha1": "42efcceb7ab54b4ee68c36be54cfdb16bad1e05a",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "mcp.json",
+          "provider_bytes": 95,
+          "candidate_bytes": 95,
+          "git_blob_sha1": "65125fb78f531242c3c0e15c612fbbaea78f79f0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "plugin.json",
+          "provider_bytes": 1018,
+          "candidate_bytes": 1018,
+          "git_blob_sha1": "284ea2c792046bd65bbd037117549be1ad4a7e57",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/current-authority.md",
+          "provider_bytes": 1394,
+          "candidate_bytes": 1394,
+          "git_blob_sha1": "c1805c5792184d1b0b8e3c8e57701261552b86ed",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/identity-contract.md",
+          "provider_bytes": 1224,
+          "candidate_bytes": 1224,
+          "git_blob_sha1": "8087e805e7790b6f8e03cd9050bb5712af1e48b1",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/local-adaptive-learning.md",
+          "provider_bytes": 1197,
+          "candidate_bytes": 1197,
+          "git_blob_sha1": "f4d0378ab8a544ddf70b83b4fb7e93b2d153b7a5",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-authority.md",
+          "provider_bytes": 2418,
+          "candidate_bytes": 2418,
+          "git_blob_sha1": "e3a75f82645eb83cc410fb14b134b7547b9120a9",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-branding.md",
+          "provider_bytes": 367,
+          "candidate_bytes": 367,
+          "git_blob_sha1": "3b950fc83ab52e194932dbb82fa1450a9f20b6f3",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-expression-publication.md",
+          "provider_bytes": 3136,
+          "candidate_bytes": 3136,
+          "git_blob_sha1": "819c1eebfa98a3a268e756223258a112c1c0af7b",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/visual-interface-contract.md",
+          "provider_bytes": 771,
+          "candidate_bytes": 771,
+          "git_blob_sha1": "9d4bb1ff7407927fdbec78402909822c26c155e2",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/666-visual-interface/SKILL.md",
+          "provider_bytes": 3562,
+          "candidate_bytes": 11035,
+          "git_blob_sha1": "3ae45cc6f0f7ad5b4429fd132f58475838eb53ca",
+          "byte_size_equal": false,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-bidirectional-evolution/SKILL.md",
+          "provider_bytes": 1746,
+          "candidate_bytes": 1746,
+          "git_blob_sha1": "fa766cdbc7028378f76a6a220f7f1c8509f9580f",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-context-recovery/SKILL.md",
+          "provider_bytes": 1859,
+          "candidate_bytes": 1859,
+          "git_blob_sha1": "f123c5cd617e9c094c26cb17d195db64ff8388a7",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-continuity/SKILL.md",
+          "provider_bytes": 3152,
+          "candidate_bytes": 3152,
+          "git_blob_sha1": "a3b2e61bfde452e9510328ca21f5838106e3acf1",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-cross-project-continuity/SKILL.md",
+          "provider_bytes": 2765,
+          "candidate_bytes": 2765,
+          "git_blob_sha1": "22193be5b9b58ebf2dfb902c66563e0c6328f67d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-dashboard/SKILL.md",
+          "provider_bytes": 1478,
+          "candidate_bytes": 1478,
+          "git_blob_sha1": "b6386e417d51ac4c7a57fded374f3d5e8bb8ee74",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-facet-navigation/SKILL.md",
+          "provider_bytes": 1201,
+          "candidate_bytes": 1201,
+          "git_blob_sha1": "d27c092c45596bd40aed73fc9bc1db13e8f8bf5f",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-local-learning/SKILL.md",
+          "provider_bytes": 1241,
+          "candidate_bytes": 1241,
+          "git_blob_sha1": "adc2c24089012d7a524144ee581988072d5b58bf",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-original-visual-assets/SKILL.md",
+          "provider_bytes": 1737,
+          "candidate_bytes": 1737,
+          "git_blob_sha1": "d6f8a5bdd0adc27bffac1903524c2411362f9076",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-pet/SKILL.md",
+          "provider_bytes": 5183,
+          "candidate_bytes": 5183,
+          "git_blob_sha1": "43323f2690862c4db5baab90e812480cc4756c08",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-plugin-update-transport/SKILL.md",
+          "provider_bytes": 2004,
+          "candidate_bytes": 2004,
+          "git_blob_sha1": "986ae0ad7a4e9bb845890d15148e2642cf296f9d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-post-write-evidence-continuity/SKILL.md",
+          "provider_bytes": 4293,
+          "candidate_bytes": 4293,
+          "git_blob_sha1": "e47e2662d67e727a53e26c4572882fdcf86ea494",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-rehydration-completion/SKILL.md",
+          "provider_bytes": 4464,
+          "candidate_bytes": 4464,
+          "git_blob_sha1": "181befbd256100d5af424e6d6816db59384e7f62",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-semantic-translator/SKILL.md",
+          "provider_bytes": 3289,
+          "candidate_bytes": 3289,
+          "git_blob_sha1": "68956bce8a644c0d737dfa4760e6c5bf3c0941b0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-skill-runtime/SKILL.md",
+          "provider_bytes": 1121,
+          "candidate_bytes": 1121,
+          "git_blob_sha1": "07d5cdcba83d06a2d57a7e07621ee7c7c3b76377",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-supercodeforge/SKILL.md",
+          "provider_bytes": 4015,
+          "candidate_bytes": 4015,
+          "git_blob_sha1": "78b6b74ad250c13dc90b59126e6f9fb25598b7ac",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-systemstart/SKILL.md",
+          "provider_bytes": 2577,
+          "candidate_bytes": 2577,
+          "git_blob_sha1": "6fd6a497b26715389abc459bc59436374d934f69",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-to-littlelyv/SKILL.md",
+          "provider_bytes": 3405,
+          "candidate_bytes": 3405,
+          "git_blob_sha1": "04e08fee81719846e08c68fb86576476d6847005",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-capability-continuity/SKILL.md",
+          "provider_bytes": 6134,
+          "candidate_bytes": 6134,
+          "git_blob_sha1": "f1dfc49897eddfb34080322a2ca0d3e0acb45d57",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-causal-reminder/SKILL.md",
+          "provider_bytes": 2158,
+          "candidate_bytes": 2158,
+          "git_blob_sha1": "2b61bdf375afb17c4f672ddb278f170b11bbcee6",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-design/SKILL.md",
+          "provider_bytes": 7779,
+          "candidate_bytes": 7779,
+          "git_blob_sha1": "aad455ed874cd770df1c05b483f898694e8c32da",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-design-creator-ux/SKILL.md",
+          "provider_bytes": 2434,
+          "candidate_bytes": 2434,
+          "git_blob_sha1": "90dcfbeba79dafe24530f9b26d7493981c6b2bb0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-design-full-capability-guard/SKILL.md",
+          "provider_bytes": 3610,
+          "candidate_bytes": 3610,
+          "git_blob_sha1": "35e90cd3d35a943efe629e1634310ed6a6ce77a7",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-design-modes/SKILL.md",
+          "provider_bytes": 3118,
+          "candidate_bytes": 3118,
+          "git_blob_sha1": "3cd6e2592d042b5c811b0b031a55eb911e98cb9c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-design-visual-authorship/SKILL.md",
+          "provider_bytes": 3218,
+          "candidate_bytes": 3218,
+          "git_blob_sha1": "c568c21edd1912cf6dbeea5c1b92897703de1900",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-update-governance/SKILL.md",
+          "provider_bytes": 2786,
+          "candidate_bytes": 2786,
+          "git_blob_sha1": "481fd98e246c6df3478c7559fdf8bb82a918e8a0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/music-analytics/SKILL.md",
+          "provider_bytes": 2549,
+          "candidate_bytes": 2549,
+          "git_blob_sha1": "88a571c4128cd304d0934d605ff9036b0f024a26",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/semantic-force-visual-intelligence/SKILL.md",
+          "provider_bytes": 2454,
+          "candidate_bytes": 2454,
+          "git_blob_sha1": "e680909dc4599e0d2d7325b524d7b8125e251732",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/speech-design/SKILL.md",
+          "provider_bytes": 4843,
+          "candidate_bytes": 4843,
+          "git_blob_sha1": "d54f9c6f1e4c263273285120381f52223278875c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/suno-studio-2/SKILL.md",
+          "provider_bytes": 2884,
+          "candidate_bytes": 2884,
+          "git_blob_sha1": "7f7728189e5cf205ff3db13e9ea84adc0bccf7c4",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        }
+      ]
+    },
+    {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "actual_published_version": "0.13.83",
+      "target_candidate_version": "0.13.84",
+      "files_current": 64,
+      "files_candidate": 64,
+      "all_inventory_paths_present": true,
+      "size_equal": 61,
+      "changed_candidate": [
+        ".codex-plugin/plugin.json",
+        "plugin.json",
+        "skills/666-visual-interface/SKILL.md"
+      ],
+      "needs_live_byte_proof": [
+        "assets/gpt-icon.png",
+        "assets/lyvra-alive-logo.png",
+        "assets/lyvra-original-visuals/LYVRA_Character_Showcase.jpeg",
+        "assets/lyvra-original-visuals/LYVRA_Heart_Logo.jpeg",
+        "assets/lyvra-original-visuals/LYVRA_Leitbild_Character_Card.jpeg",
+        "assets/lyvra-pet-logo.png",
+        "dashboard/index.html",
+        "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+        "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+        "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+        "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+        "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+        "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+        "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+        "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+        "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+        "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+        "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+        "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png"
+      ],
+      "file_manifest": [
+        {
+          "path": ".app.json",
+          "provider_bytes": 178,
+          "candidate_bytes": 178,
+          "git_blob_sha1": "9629ada930a7d87d217a8356eb7216d21036e629",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": ".codex-plugin/plugin.json",
+          "provider_bytes": 1213,
+          "candidate_bytes": 1195,
+          "git_blob_sha1": "5be9efd8dbdcf0ec810cb7e5cffe1c496a9afcd2",
+          "byte_size_equal": false,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": ".mcp.json",
+          "provider_bytes": 23,
+          "candidate_bytes": 23,
+          "git_blob_sha1": "da39e4ffafe816be90259a3f68b763a3f71b93ed",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/gpt-icon.png",
+          "provider_bytes": 2988467,
+          "candidate_bytes": 2988467,
+          "git_blob_sha1": "b5569f39c4687c54e60bcd0b1c5738eb059dcb5d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-alive-logo.png",
+          "provider_bytes": 3034873,
+          "candidate_bytes": 3034873,
+          "git_blob_sha1": "02ff33ad3c68f79e6829a9f92fb4796e31ceccbb",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Character_Showcase.jpeg",
+          "provider_bytes": 790416,
+          "candidate_bytes": 790416,
+          "git_blob_sha1": "7d117b84dd5e39b8c68bcfcf2ad8e9f3c07f418c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Heart_Logo.jpeg",
+          "provider_bytes": 504096,
+          "candidate_bytes": 504096,
+          "git_blob_sha1": "06fb03a11aa05454fedb391fc9381c0d84cad7a6",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-original-visuals/LYVRA_Leitbild_Character_Card.jpeg",
+          "provider_bytes": 906833,
+          "candidate_bytes": 906833,
+          "git_blob_sha1": "74599dbb6ee3552072ab42169c975ff94988785d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "assets/lyvra-pet-logo.png",
+          "provider_bytes": 20857,
+          "candidate_bytes": 20857,
+          "git_blob_sha1": "5cae38fa0b447f13c5eb552dd26a625056ec9838",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "dashboard/index.html",
+          "provider_bytes": 7858135,
+          "candidate_bytes": 7858135,
+          "git_blob_sha1": "42efcceb7ab54b4ee68c36be54cfdb16bad1e05a",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "mcp.json",
+          "provider_bytes": 95,
+          "candidate_bytes": 95,
+          "git_blob_sha1": "65125fb78f531242c3c0e15c612fbbaea78f79f0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "plugin.json",
+          "provider_bytes": 1320,
+          "candidate_bytes": 1302,
+          "git_blob_sha1": "817ef1d3a6379588eccc25db92a522a8a3ead2dc",
+          "byte_size_equal": false,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-authority.md",
+          "provider_bytes": 2418,
+          "candidate_bytes": 2418,
+          "git_blob_sha1": "e3a75f82645eb83cc410fb14b134b7547b9120a9",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-branding.md",
+          "provider_bytes": 367,
+          "candidate_bytes": 367,
+          "git_blob_sha1": "3b950fc83ab52e194932dbb82fa1450a9f20b6f3",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "references/pet-expression-publication.md",
+          "provider_bytes": 3136,
+          "candidate_bytes": 3136,
+          "git_blob_sha1": "819c1eebfa98a3a268e756223258a112c1c0af7b",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/666-visual-interface/SKILL.md",
+          "provider_bytes": 3562,
+          "candidate_bytes": 11035,
+          "git_blob_sha1": "3ae45cc6f0f7ad5b4429fd132f58475838eb53ca",
+          "byte_size_equal": false,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/facet-navigation/SKILL.md",
+          "provider_bytes": 1184,
+          "candidate_bytes": 1184,
+          "git_blob_sha1": "a653cff725fe0f33a71fa83b8651b1ccd7e5b25e",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/PLUGIN_AUTO_EVOLUTION.md",
+          "provider_bytes": 653,
+          "candidate_bytes": 653,
+          "git_blob_sha1": "e9bc3955782e78f22bdf0a355eeb2569e8d61df3",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/SKILL.md",
+          "provider_bytes": 4567,
+          "candidate_bytes": 4567,
+          "git_blob_sha1": "42e7ee8e4409ba4e17154cd32d0333097fc7d057",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/agents/openai.yaml",
+          "provider_bytes": 246,
+          "candidate_bytes": 246,
+          "git_blob_sha1": "9aa370d24e1a8654ca34dd79f8fa17f3f2eb1029",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/lookup/knowledge-index.json",
+          "provider_bytes": 2395,
+          "candidate_bytes": 2395,
+          "git_blob_sha1": "9b0c1783d99a3b8bf0ae7387094cf2260b7dddb3",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+          "provider_bytes": 1308757,
+          "candidate_bytes": 1308757,
+          "git_blob_sha1": "9993828553cbbcbb3114737a5822fbd42b9debcc",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+          "provider_bytes": 1327854,
+          "candidate_bytes": 1327854,
+          "git_blob_sha1": "7bd02057c1c17bf8445d85917015311fb70359b6",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+          "provider_bytes": 2406663,
+          "candidate_bytes": 2406663,
+          "git_blob_sha1": "6f513ae61e19f59394858164225d1622b0e39aa4",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+          "provider_bytes": 2626397,
+          "candidate_bytes": 2626397,
+          "git_blob_sha1": "7ac15ba8e1ee22237e3502fbec1c670576249f58",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+          "provider_bytes": 1918985,
+          "candidate_bytes": 1918985,
+          "git_blob_sha1": "7253c56a977eb7cfc98203e134d2aa1079bd1f4e",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+          "provider_bytes": 1818457,
+          "candidate_bytes": 1818457,
+          "git_blob_sha1": "4ac3f3dd1c3c46bddc193b49bc1f946c4d273978",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+          "provider_bytes": 2699385,
+          "candidate_bytes": 2699385,
+          "git_blob_sha1": "54de895f2e3831ae38445d46fef050d9adc08473",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+          "provider_bytes": 2364103,
+          "candidate_bytes": 2364103,
+          "git_blob_sha1": "935528d13174bfcf3732ad412991c8549101161b",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+          "provider_bytes": 2340666,
+          "candidate_bytes": 2340666,
+          "git_blob_sha1": "7918ae375d2655f76e1d99c4eed1adebfc5dda26",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+          "provider_bytes": 2201974,
+          "candidate_bytes": 2201974,
+          "git_blob_sha1": "d20f0b66c13ae5b36ebe54373f82acc25f95fa64",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+          "provider_bytes": 1713482,
+          "candidate_bytes": 1713482,
+          "git_blob_sha1": "fe2d3a69e21a0201ceded4b374198c1707d9f64c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/READ_WRITE_REHYDRATION.md",
+          "provider_bytes": 1762,
+          "candidate_bytes": 1762,
+          "git_blob_sha1": "0f0d51546f76192cf7912de47796eee110d7ab2e",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+          "provider_bytes": 43931,
+          "candidate_bytes": 43931,
+          "git_blob_sha1": "375b4a4d51c2fb8d38aaaaa8ea7b49c809ca971c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-bidirectional-evolution/SKILL.md",
+          "provider_bytes": 1536,
+          "candidate_bytes": 1536,
+          "git_blob_sha1": "c74dee24bdf4b8b98bc2b2bab3d0192e3bd6cf52",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-context-recovery/SKILL.md",
+          "provider_bytes": 1859,
+          "candidate_bytes": 1859,
+          "git_blob_sha1": "f123c5cd617e9c094c26cb17d195db64ff8388a7",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-cross-project-continuity/SKILL.md",
+          "provider_bytes": 2765,
+          "candidate_bytes": 2765,
+          "git_blob_sha1": "22193be5b9b58ebf2dfb902c66563e0c6328f67d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-dashboard/SKILL.md",
+          "provider_bytes": 1478,
+          "candidate_bytes": 1478,
+          "git_blob_sha1": "b6386e417d51ac4c7a57fded374f3d5e8bb8ee74",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-original-visual-assets/SKILL.md",
+          "provider_bytes": 1737,
+          "candidate_bytes": 1737,
+          "git_blob_sha1": "d6f8a5bdd0adc27bffac1903524c2411362f9076",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-pet/SKILL.md",
+          "provider_bytes": 5183,
+          "candidate_bytes": 5183,
+          "git_blob_sha1": "43323f2690862c4db5baab90e812480cc4756c08",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-plugin-update-transport/SKILL.md",
+          "provider_bytes": 2004,
+          "candidate_bytes": 2004,
+          "git_blob_sha1": "986ae0ad7a4e9bb845890d15148e2642cf296f9d",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-post-write-evidence-continuity/SKILL.md",
+          "provider_bytes": 4293,
+          "candidate_bytes": 4293,
+          "git_blob_sha1": "e47e2662d67e727a53e26c4572882fdcf86ea494",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-rehydration-completion/SKILL.md",
+          "provider_bytes": 4464,
+          "candidate_bytes": 4464,
+          "git_blob_sha1": "181befbd256100d5af424e6d6816db59384e7f62",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-semantic-translator/SKILL.md",
+          "provider_bytes": 2116,
+          "candidate_bytes": 2116,
+          "git_blob_sha1": "6f6f5f8f5dba5fd125f5d3e98dd5d40abfd2303a",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-supercodeforge/SKILL.md",
+          "provider_bytes": 4015,
+          "candidate_bytes": 4015,
+          "git_blob_sha1": "78b6b74ad250c13dc90b59126e6f9fb25598b7ac",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-to-littlelyv/SKILL.md",
+          "provider_bytes": 3405,
+          "candidate_bytes": 3405,
+          "git_blob_sha1": "04e08fee81719846e08c68fb86576476d6847005",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/lyvra-track-capability-continuity/SKILL.md",
+          "provider_bytes": 6134,
+          "candidate_bytes": 6134,
+          "git_blob_sha1": "f1dfc49897eddfb34080322a2ca0d3e0acb45d57",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/music-analytics/SKILL.md",
+          "provider_bytes": 2227,
+          "candidate_bytes": 2227,
+          "git_blob_sha1": "5b4133b9a370ad850811cf2976a02efeb6bb13b9",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/music-analytics/agents/openai.yaml",
+          "provider_bytes": 249,
+          "candidate_bytes": 249,
+          "git_blob_sha1": "0c0fec85b665d26e686506784f36a3a36122cd7a",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/rehydration-continuity/SKILL.md",
+          "provider_bytes": 3659,
+          "candidate_bytes": 3659,
+          "git_blob_sha1": "c211ddff365477b6de7cb7d70391f6d2c2589ba0",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/rehydration-continuity/agents/openai.yaml",
+          "provider_bytes": 264,
+          "candidate_bytes": 264,
+          "git_blob_sha1": "d3755054ad91c64b9454ef72b65e384325f44bf8",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/repair/SKILL.md",
+          "provider_bytes": 1466,
+          "candidate_bytes": 1466,
+          "git_blob_sha1": "1ca0e5634848af39f4cc63c2c8e04e8e3eaf5fb8",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/repository-update-recovery/SKILL.md",
+          "provider_bytes": 2789,
+          "candidate_bytes": 2789,
+          "git_blob_sha1": "04d6efbcafd4c29914f312b5eadab7e37b9e7a44",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/repository-update-recovery/agents/openai.yaml",
+          "provider_bytes": 260,
+          "candidate_bytes": 260,
+          "git_blob_sha1": "cecc0434b5a16b8d5fd7b1a833eb11677b53a6c2",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/speech-design/SKILL.md",
+          "provider_bytes": 4843,
+          "candidate_bytes": 4843,
+          "git_blob_sha1": "d54f9c6f1e4c263273285120381f52223278875c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/suno-studio-2/SKILL.md",
+          "provider_bytes": 2884,
+          "candidate_bytes": 2884,
+          "git_blob_sha1": "7f7728189e5cf205ff3db13e9ea84adc0bccf7c4",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/suno-studio-2/agents/openai.yaml",
+          "provider_bytes": 244,
+          "candidate_bytes": 244,
+          "git_blob_sha1": "376cfd3f78740d1b451c4d73984c619d1c06b35c",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-causal-reminder/SKILL.md",
+          "provider_bytes": 2158,
+          "candidate_bytes": 2158,
+          "git_blob_sha1": "2b61bdf375afb17c4f672ddb278f170b11bbcee6",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design/SKILL.md",
+          "provider_bytes": 8030,
+          "candidate_bytes": 8030,
+          "git_blob_sha1": "e00de52aa7cde3b099ff2346739ca9868c94c386",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design/agents/openai.yaml",
+          "provider_bytes": 245,
+          "candidate_bytes": 245,
+          "git_blob_sha1": "fbfb18f3b14f976f00fe7991de0375bdbec0d63b",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design-creator-ux/SKILL.md",
+          "provider_bytes": 2428,
+          "candidate_bytes": 2428,
+          "git_blob_sha1": "0cd309fa9e2ba26b84365216a980fbd8a0c63b2a",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design-full-capability-guard/SKILL.md",
+          "provider_bytes": 3610,
+          "candidate_bytes": 3610,
+          "git_blob_sha1": "35e90cd3d35a943efe629e1634310ed6a6ce77a7",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design-modes/SKILL.md",
+          "provider_bytes": 3219,
+          "candidate_bytes": 3219,
+          "git_blob_sha1": "dad8df8bd24273382c8fb6446e9fbae64287b6a9",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        },
+        {
+          "path": "skills/track-design-visual-authorship/SKILL.md",
+          "provider_bytes": 3212,
+          "candidate_bytes": 3212,
+          "git_blob_sha1": "809c3d92d2d46277b6faf71eb17e472d2ee616c1",
+          "byte_size_equal": true,
+          "live_content_sha256": null,
+          "live_byte_proof": "NOT_AVAILABLE"
+        }
+      ]
+    }
+  ],
+  "archive_attempt": {
+    "native_release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+    "alive_release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+    "backend_download_urls_returned": true,
+    "direct_archive_bytes_available_in_runtime": false,
+    "error": "archive download disallowed by file access boundary; not an archive absence or release authorization failure"
+  },
+  "previous_r13_zip_proof": "PRESERVED_AND_NOT_RERUN",
+  "valid_new_work": "114 paths matched to hybrid candidate trees with per-file sizes and git blob IDs",
+  "blocking_evidence": "Full current archive binary bytes and dashboard content hash cannot be compared; equal lengths are not byte identity",
+  "full_release_zip_mirrors_created": false,
+  "plugin_releases_published": false,
+  "current_pointer_updated": false,
+  "family_mail_touched": false,
+  "thread_counts": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "return_anchor": "LYVRA_R15_RELEASE_BINARY_READBACK_PENDING_PRESERVE_R14_HYBRID"
+}
