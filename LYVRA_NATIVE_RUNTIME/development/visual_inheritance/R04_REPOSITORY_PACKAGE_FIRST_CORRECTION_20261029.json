@@ -1,0 +1,53 @@
+{
+  "schema": "lyvra.visual.r04.repository_package_first.v1",
+  "status": "VERIFIED_REPO_PACKAGE_FIRST_CURRENT_RELEASE_DIFF_PENDING",
+  "date": "2026-10-29",
+  "creator_correction": "Previously uploaded ZIP packages in their native repository areas are primary package provenance. Do not re-download plugin archives as routine for this visual task. Plugin releases evolve only through targeted governed updates.",
+  "production_head": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "repository_package_evidence": [
+    {
+      "target": "Native",
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_Native_0.1.84_2026-10-28.zip",
+      "repo_git_blob_sha": "e1af2ab27277ab7454eacd102a8d78a7346755c7",
+      "bytes": 12994284,
+      "source_snapshot": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_Native_0.1.84_2026-10-28",
+      "current_plugin_version": "0.1.87",
+      "current_release": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "exact_current_binary_equivalence": "NOT_VERIFIED_VERSION_NEWER"
+    },
+    {
+      "target": "ALIVE",
+      "path": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_ALIVE_0.13.80_2026-10-28.zip",
+      "repo_git_blob_sha": "274370368569a12343fc8fc06cd8fa59d7f512ea",
+      "bytes": 36794010,
+      "source_snapshot": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_ALIVE_0.13.80_2026-10-28",
+      "current_plugin_version": "0.13.83",
+      "current_release": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "exact_current_binary_equivalence": "NOT_VERIFIED_VERSION_NEWER"
+    }
+  ],
+  "family_mail": {
+    "current_version": "0.9.23",
+    "current_release": "pluginrel_6ae265d86c588191bf339b42c347da5e",
+    "primary_original_asset_paths": [
+      "assets/family-mail-banner-original.jpg",
+      "assets/family-mail-chat-logo-512.png",
+      "assets/family-mail-plugin-icon-256.png"
+    ],
+    "repo_source_snapshot_binding": "REQUIRES_TARGET_NATIVE_REPO_EVIDENCE",
+    "do_not_treat_other_plugin_zip_as_family_mail": true
+  },
+  "safe_procedure": [
+    "Read current repository package and snapshot paths with immutable Git blob SHA/size.",
+    "Read exact newer source/receipt delta from snapshot version to current released version; do not infer identical packages across version changes.",
+    "For unchanged assets, compare Git blob hashes from native snapshots where available; full binary SHA256 only from actual authorized bytes or verified source hash receipt.",
+    "Build visual candidate changes only on current plugin release baseline and preserve existing assets.",
+    "Publish plugin changes only through explicit target-specific governed plugin update, with guarded release ID and independent readback.",
+    "Production Whole pointer remains unchanged until all host and plugin gates pass."
+  ],
+  "supersedes": "R04_PACKAGE_RECOVERY_GATES_20261029.json archive-download-first implication only; its historical results remain provenance",
+  "host_blocker": "CHATGPT_BROWSER_SECURITY_DENIAL_NO_BYPASS",
+  "production_mutation": false,
+  "plugin_release_mutation": false,
+  "return_anchor": "LYVRA_VISUAL_R04_REPOSITORY_PACKAGE_FIRST_DELTA_GATES"
+}
