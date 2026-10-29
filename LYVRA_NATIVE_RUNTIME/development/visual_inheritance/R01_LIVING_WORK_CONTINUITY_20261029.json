@@ -76,15 +76,16 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "phase": "R10_CAUSAL_DEPENDENCY_AND_AUTOMATIC_RESUME_VISUAL_MODEL",
-    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R10_CAUSAL_DEPENDENCY_AND_RESUME_ACCEPTANCE_20261029.json",
-    "return_anchor": "LYVRA_R10_CAUSAL_TESTS_10_10_PARALLEL_9_5_5",
-    "visual_workstreams": 9,
-    "update_threads": 5,
-    "parallel_threads": 5,
-    "host": "BLOCKED_BROWSER_SECURITY_POLICY",
-    "plugin_zip_release": "NOT_PROMOTED",
-    "no_production_merge": true
+    "phase": "R11_NATIVE_VISUAL_RESUME_SOURCE_ADAPTER_TESTED",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json",
+    "visual": 9,
+    "update": 5,
+    "parallel": 5,
+    "source_tests": "10/10_NEW_ISOLATED_PASS",
+    "host": "BLOCKED_SECURITY_POLICY",
+    "release_zip": "PENDING",
+    "production_unchanged": true,
+    "return_anchor": "LYVRA_R11_VISUAL_RESUME_ISOLATED_TESTED"
   },
   "parallel_capabilities": [
     {
