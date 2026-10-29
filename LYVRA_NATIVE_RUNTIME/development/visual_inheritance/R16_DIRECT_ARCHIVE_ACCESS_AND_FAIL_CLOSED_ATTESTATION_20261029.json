@@ -1,0 +1,60 @@
+{
+  "schema": "lyvra.r16.live_release_byte_gate.v1",
+  "date": "2026-10-29",
+  "status": "BLOCKED_LIVE_PLUGIN_ARCHIVE_BYTES_UNAVAILABLE",
+  "base_head": "f318ccbf5b8ed926b4db06def651a655ae1774f8",
+  "plugins": [
+    {
+      "target": "NATIVE",
+      "version": "0.1.87",
+      "release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "provider_archive": "current.tar.gz",
+      "direct_bytes": "UNAVAILABLE",
+      "candidate": "0.1.88_R14_HYBRID_SOURCE"
+    },
+    {
+      "target": "ALIVE",
+      "version": "0.13.83",
+      "release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "provider_archive": "current.tar.gz",
+      "direct_bytes": "UNAVAILABLE",
+      "candidate": "0.13.84_R14_HYBRID_SOURCE"
+    }
+  ],
+  "attempts": [
+    {
+      "kind": "PLUGIN_CREATOR_CURRENT_RELEASE_ARCHIVE_METADATA",
+      "result": "BOTH_RELEASE_IDS_CURRENT_CONFIRMED"
+    },
+    {
+      "kind": "DIRECT_AUTHORIZED_ARCHIVE_DOWNLOAD",
+      "result": "BLOCKED_BY_FILE_VIEW_ACCESS_BOUNDARY"
+    },
+    {
+      "kind": "EXECUTION_ENVIRONMENT_DIRECT_ARCHIVE_HTTP",
+      "result": "NETWORK_UNAVAILABLE"
+    }
+  ],
+  "new_source_tool": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/r16_live_archive_byte_attestor.py",
+  "tool_source_git_blob": "01334d54fb95c76640af95181c07fee61802b512",
+  "tool_role": "Requires exact local provider archive and hybrid candidate source directory. Fail-closed check inventory 50/64, exact live manifests, dashboard/index.html byte parity, original and other image bytes, unchanged nonmutable files, target-only skill/manifests; optionally create and reread full ZIP only after all gates.",
+  "tool_execution": "NOT_EXECUTED_AGAINST_LIVE_PROVIDER_BYTES",
+  "r13_r14_r15_tests": "PRESERVED_NOT_REPEATED",
+  "blocked": [
+    "CURRENT_DASHBOARD_SHA256",
+    "CURRENT_ASSET_SHA256",
+    "RELEASE_IDENTICAL_FULL_ZIP",
+    "PLUGIN_PUBLICATION",
+    "PRODUCTIVE_CURRENT_POINTER"
+  ],
+  "preserved": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5,
+    "family_mail": "NO_CHANGES"
+  },
+  "no_host_bypass": true,
+  "no_foreign_writes": true,
+  "no_full_zip_created": true,
+  "return_anchor": "LYVRA_R16_FAIL_CLOSED_LIVE_BYTE_ATTESTATION_REQUIRES_PROVIDER_ARCHIVE"
+}
