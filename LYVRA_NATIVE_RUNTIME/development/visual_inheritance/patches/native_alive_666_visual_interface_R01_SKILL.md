@@ -71,3 +71,13 @@ IDENTITY_ASSET_NE_SILENT_SUBSTITUTION = TRUE
 COMPARABLE_ACTIVE_CHAT_VISUAL_FALLBACK_ALLOWED = TRUE
 FALLBACK_MARKING_MANDATORY = TRUE
 FACET_SEMANTIC_MATCH_REQUIRED = TRUE
+
+## R11 additive native visual continuation — isolated candidate, host acceptance pending
+
+On an explicitly requested LYVRA PARALLEL DEVELOPMENT WEITER or directly relevant resume request, after reading the latest repository Current and the applicable R01/R07/R08 work ledgers, add a compact evidence-first WIEDERAUFNAHME section to the EXISTING native semantic visual interface. Do not add a new top-level menu choice, controller, router, daemon or second identity.
+
+The data-only integration model is `LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/r11_native_resume_view_adapter.js` (candidate only), with acceptance receipt `R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json`. These are SOURCE evidence, not current productive runtime or actual host mount. Preserve all nine original Visual, five UPDATE and five Parallel stable thread IDs; never replace the proven five main work destinations. Keep Track Design thematic visuals, exactly copied field controls, protected output lengths, source/discovery analytics and Family Mail's independent original-art roles untouched.
+
+Show verified candidate HEAD distinct from immutable frozen Recovery HEAD, current active work, completed/blocked/pending gates and precisely scoped next meaningful action. Do not claim plugin/archive SHA parity from repository blob alone. Show `HOST_BLOCKED` under the known browser security restriction without indirect retries. Real user interactions may copy a verified HEAD or issue a new turn only when actual host controls are supported, and never automatically execute an update, post, release, deployment or foreign activation.
+
+R11 source model acceptance: 10/10 bounded isolated tests at 2026-10-29; future changes to these source files can invalidate only causally affected gates. Promotion to either actual Native or ALIVE plugin release requires target-specific expected_release_id governance, independent release/readback, original asset impact checks, latest Whole Current full reference coverage and real host visual acceptance. Any unmet gate keeps this adapter DEVELOPMENT_ONLY.
