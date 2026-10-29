@@ -74,5 +74,12 @@
     "status": "READBACK_VERIFIED_HOST_PENDING",
     "zip": "CURRENT_RELEASE_BINARIES_PENDING",
     "plugin": "PENDING"
+  },
+  "r12_targeted_zip_release_gates": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R12_NATIVE_INTEGRATION_AND_RELEASE_DELTA_GATES_20261029.json",
+    "status": "MANIFESTS_VERIFIED_ZIP_BINARY_MIRROR_PENDING",
+    "native": "0.1.87",
+    "alive": "0.13.83",
+    "family": "0.9.23"
   }
 }
