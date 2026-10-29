@@ -76,14 +76,19 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "current_phase": "R03_SECURITY_BLOCKED_HOST_WITH_PLUGIN_RELEASE_AND_REPOSITORY_DIFF_READBACK",
-    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R03_HOST_SECURITY_AND_RELEASE_GATES_20261029.json",
-    "host_browser": "CHATGPT_CONTENT_ACCESS_BLOCKED_BY_BROWSER_HOST_SECURITY_POLICY_NO_WORKAROUND",
-    "plugin_archives": "CURRENT_RELEASE_ARCHIVE_URLS_OBTAINED_FOR_ALL_THREE",
-    "asset_hashes": "PENDING_NOT_CLAIMED",
-    "live_host_checks": "BLOCKED",
-    "repository_diff": "TEN_ADDITIVE_DEVELOPMENT_FILES_NO_MODIFIED_EXISTING_SOURCE",
-    "no_production_merge": true,
-    "do_not_repeat_source_tests": true
+    "phase": "R04_REPOSITORY_PACKAGE_FIRST_CORRECTION",
+    "creator_guidance": "Native repository ZIP/source snapshot provenance first. Plugin updates targeted only. No routine archive downloads.",
+    "correction_receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R04_REPOSITORY_PACKAGE_FIRST_CORRECTION_20261029.json",
+    "native_zip": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_Native_0.1.84_2026-10-28.zip",
+    "alive_zip": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_ALIVE_0.13.80_2026-10-28.zip",
+    "newer_releases": {
+      "native": "0.1.87",
+      "alive": "0.13.83",
+      "family_mail": "0.9.23"
+    },
+    "binary_equivalence": "NOT_VERIFIED_DIFFERING_VERSION",
+    "host": "BLOCKED_POLICY",
+    "current_production_changed": false,
+    "nine_workstreams_retained": true
   }
 }
