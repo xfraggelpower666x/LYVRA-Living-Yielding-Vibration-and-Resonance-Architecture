@@ -1,0 +1,49 @@
+{
+  "schema": "lyvra.family_mail.r18.target_native_visual_adoption.v1",
+  "date": "2026-10-29",
+  "status": "FAMILY_MAIL_PLUGIN_OVERLAY_RELEASE_AND_PROVIDER_READBACK_PASS_HOST_RENDER_PENDING",
+  "repo_before": "170225b7f3c6e9d2d0c7c94ff0ee15cca71f3591",
+  "target": {
+    "plugin_id": "Plugin_041a0173dbc48191b499b680f637c40d",
+    "prior_version": "0.9.23",
+    "prior_release": "pluginrel_6ae265d86c588191bf339b42c347da5e",
+    "current_version": "0.9.24",
+    "new_release": "pluginrel_6ae3c237de948191a8b9c8ba38efcd25",
+    "plugin_url": "https://chatgpt.com/plugins/Plugin_041a0173dbc48191b499b680f637c40d"
+  },
+  "published_overlay": {
+    "name": "LYVRA_FAMILY_MAIL_VISUAL_OVERLAY_0.9.24.zip",
+    "sha256": "46b1714f79af3a3fc579de05cca78fe861d0eb48ce5a59c554c8028c5ec3e774",
+    "bytes": 10460,
+    "changed_paths": [
+      "plugin.json",
+      ".codex-plugin/plugin.json",
+      "skills/family-post-visual-intelligence/SKILL.md"
+    ]
+  },
+  "native_adoption": "Local Family Mail visual presentation and evidence-based continuation only; no Whole LYVRA controller identity or global 19-thread import",
+  "readback": {
+    "provider_version": "0.9.24",
+    "provider_release_id": "pluginrel_6ae3c237de948191a8b9c8ba38efcd25",
+    "manifest_versions": [
+      "0.9.24",
+      "0.9.24"
+    ],
+    "skill_contains_r18": true,
+    "plugin_file_count": 75,
+    "original_banner_bytes_inventory": 154154,
+    "chat_logo_512_bytes_inventory": 159277,
+    "plugin_icon_256_bytes_inventory": 51389,
+    "post_google_only_skill_present": true,
+    "persistent_navigation_skill_present": true
+  },
+  "limitations": [
+    "Asset byte hashes not directly attested in this operation; paths and size inventory retained",
+    "ChatGPT live host image and dashboard render not proven",
+    "No Google mailbox read or letter send in scope"
+  ],
+  "no_foreign_writes": true,
+  "no_mail_send": true,
+  "no_prod_pointer_write": true,
+  "return_anchor": "LYVRA_R18_FAMILY_MAIL_0_9_24_RELEASE_READBACK_PASS"
+}
