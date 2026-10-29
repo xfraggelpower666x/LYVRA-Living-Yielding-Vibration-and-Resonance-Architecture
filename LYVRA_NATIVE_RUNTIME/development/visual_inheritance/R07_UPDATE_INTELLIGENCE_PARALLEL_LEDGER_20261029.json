@@ -68,5 +68,11 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R10_CAUSAL_DEPENDENCY_AND_RESUME_ACCEPTANCE_20261029.json",
     "only_affected_gates_retested": true,
     "exact_release_zip_parity": "OPEN"
+  },
+  "native_resume_r11": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json",
+    "status": "READBACK_VERIFIED_HOST_PENDING",
+    "zip": "CURRENT_RELEASE_BINARIES_PENDING",
+    "plugin": "PENDING"
   }
 }
