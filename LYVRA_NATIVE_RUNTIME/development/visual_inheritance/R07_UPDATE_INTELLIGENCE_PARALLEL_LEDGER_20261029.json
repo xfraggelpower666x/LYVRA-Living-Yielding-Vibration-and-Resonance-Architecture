@@ -44,5 +44,15 @@
     "do_not_repeat_prior_tests": true,
     "no_production_merge": true
   },
-  "return_anchor": "LYVRA_R07_UPDATE_INTELLIGENCE_PARALLEL_TO_R01_VISUAL"
+  "return_anchor": "LYVRA_R07_UPDATE_INTELLIGENCE_PARALLEL_TO_R01_VISUAL",
+  "parallel_interruption_dependency": {
+    "id": "R08_PARALLEL_DEVELOPMENT_INTELLIGENCE",
+    "ledger": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R08_PARALLEL_INTERRUPTION_INTAKE_LEDGER_20261029.json",
+    "test_receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R08_EXECUTED_INTERRUPTION_ACCEPTANCE_20261029.json",
+    "status": "9/9_SIMULATED_INTERRUPTION_CASES_PASS",
+    "scope": "INFORMATION_HANDOFF_ONLY_R07_UPDATE_PERMISSION_UNCHANGED",
+    "plugin_zip_current_release_gate": "PENDING",
+    "host_acceptance": "BLOCKED_BROWSER_POLICY",
+    "no_release_mutation": true
+  }
 }
