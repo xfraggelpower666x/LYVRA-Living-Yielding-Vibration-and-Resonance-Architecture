@@ -113,5 +113,10 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R17_TARGETED_PLUGIN_OVERLAY_RELEASES_20261029.json",
     "status": "PUBLISHED_TARGETED_PLUGIN_OVERLAYS_19_THREADS_RETAINED",
     "background_execution": false
+  },
+  "r18_family_mail_continuity": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R18_FAMILY_MAIL_TARGET_NATIVE_RELEASE_20261029.json",
+    "status": "TARGET_NATIVE_VISUAL_ONLY_RELEASE_READBACK_PASS",
+    "parallel_threads_preserved": 5
   }
 }
