@@ -1,0 +1,117 @@
+{
+  "schema": "LYVRA_VISUAL_R02_HOST_PLUGIN_ACCEPTANCE_MATRIX_V1",
+  "status": "ISOLATED_DEVELOPMENT_HOST_PENDING",
+  "date": "2026-10-29",
+  "branch": "lyvra-visual-inheritance-family-mail-track-preservation-20261029-r01",
+  "source_candidate": "26884796d2e05f4a89a1eef5ec321d7fd019b5f7",
+  "host_probe": {
+    "tool": "Connected Browser list_tabs",
+    "outcome": "UNAVAILABLE: Unable to find the connected browser",
+    "attempts": 1,
+    "max_attempts": 3,
+    "additional_attempts_not_useful_without_connection": true
+  },
+  "source_rule_probes": {
+    "passed": 16,
+    "total": 16,
+    "classification": "STATIC_SOURCE_ASSERTIONS_ONLY"
+  },
+  "exact_plugin_source_inventory": {
+    "native": "0.1.87",
+    "alive": "0.13.83",
+    "family_mail": "0.9.23"
+  },
+  "asset_inventory": {
+    "native_original_visuals": 3,
+    "alive_original_visuals": 3,
+    "family_mail_required_originals": 3,
+    "byte_hash_test": "NOT_PERFORMED",
+    "host_image_render": "NOT_PERFORMED"
+  },
+  "cases": [
+    {
+      "id": "H01",
+      "target": "Native",
+      "surface": "host_chat",
+      "scenario": "LYVRA SYSTEMSTART without 'visuelle Führung'",
+      "positive": "automatic evidence-first Whole screen + current 5 choices",
+      "negative": "no dead buttons or fake Whole PASS",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H02",
+      "target": "ALIVE",
+      "surface": "host_chat",
+      "scenario": "LYVRA WEITER without visual suffix",
+      "positive": "same visual grammar with preserved LYVRA identity, active facet scope",
+      "negative": "no forced facet activation, no duplicate router",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H03",
+      "target": "Family Mail",
+      "surface": "host_chat",
+      "scenario": "LYVRA FAMILY POST DASHBOARD read-only",
+      "positive": "exact original banner and chat-logo where available; persistent inbox/outbox menu",
+      "negative": "no cropped/fictional original, no mail sent",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H04",
+      "target": "Track Design via Native and ALIVE",
+      "surface": "host_chat",
+      "scenario": "Source and Discovery musical analysis",
+      "positive": "rich hero, LOW/MID/HIGH, music-layer explanation, charts if measured, 30 segments where required",
+      "negative": "no generic-only dashboard, no invented sonic measurement",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H05",
+      "target": "Native and ALIVE",
+      "surface": "host_chat",
+      "scenario": "copy final title/extended/style/lyrics fields",
+      "positive": "byte-exact copied text, UTF-16 count including emoji/newline, corrected overlength payload",
+      "negative": "no control-string leak or fake clipboard action",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H06",
+      "target": "Family Mail",
+      "surface": "host_chat",
+      "scenario": "user-controlled copy/share of a draft",
+      "positive": "full original text and separate translation, host share when supported",
+      "negative": "copy not classified as sent, no WhatsApp auto-send",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H07",
+      "target": "All",
+      "surface": "host_mobile_desktop",
+      "scenario": "desktop and narrow mobile responsive, keyboard focus, back navigation",
+      "positive": "visible focus, screen-reader labels, no clip/scroll dead ends",
+      "negative": "not claiming keyboard/mobile test based on source checks",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H08",
+      "target": "Family Mail",
+      "surface": "host_visual_fallback",
+      "scenario": "banner cannot render",
+      "positive": "honestly labelled thematic card, original identity location reserved, no broken-image loop",
+      "negative": "no generated lookalike presented as official art",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    },
+    {
+      "id": "H09",
+      "target": "All",
+      "surface": "host_visual_fallback",
+      "scenario": "creator original unavailable; contextual comparable image available",
+      "positive": "facet-appropriate illustration or native semantic visual with explicit FALLBACK",
+      "negative": "no unrelated visual and no image as evidence of audio/mail",
+      "status": "BLOCKED_NO_CONNECTED_BROWSER"
+    }
+  ],
+  "production_gate": "BLOCKED_UNTIL_REAL_HOST_AND_PLUGIN_PARITY_PASS",
+  "no_production_merge": true,
+  "no_external_send": true
+}
