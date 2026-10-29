@@ -98,5 +98,13 @@
     "dashboard_current_bytes": "PENDING",
     "full_release_zip": "NOT_BUILT",
     "release_published": false
+  },
+  "r15_release_impact": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R15_LIVE_RELEASE_ASSET_AND_DASHBOARD_PARITY_LEDGER_20261029.json",
+    "status": "NATIVE_50_50_ALIVE_64_64_INVENTORY_VERIFIED",
+    "full_release_current_binary_sha256": "PENDING",
+    "dashboard_live_sha256": "PENDING",
+    "source_candidate_zip": "R13_DELTA_VERIFIED_R14_HYBRID_PRESERVED",
+    "publish": "BLOCKED_BY_REQUIRED_BYTE_EVIDENCE"
   }
 }
