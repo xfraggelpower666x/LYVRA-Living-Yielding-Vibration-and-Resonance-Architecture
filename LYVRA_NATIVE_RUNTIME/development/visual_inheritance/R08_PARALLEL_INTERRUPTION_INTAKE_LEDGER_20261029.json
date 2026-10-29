@@ -87,5 +87,11 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R12_NATIVE_INTEGRATION_AND_RELEASE_DELTA_GATES_20261029.json",
     "status": "SOURCE_PATCH_READBACK_VERIFIED_HOST_PENDING",
     "threads": 5
+  },
+  "latest_coupled_release_work": {
+    "status": "REAL_STAGED_ZIPS_BINARY_VERIFIED_NOT_RELEASED",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R13_ACTUAL_NATIVE_ALIVE_STAGED_UPDATE_ZIP_RECEIPT_20261029.json",
+    "unaffected_parallel_threads": 5,
+    "host_blocked": true
   }
 }
