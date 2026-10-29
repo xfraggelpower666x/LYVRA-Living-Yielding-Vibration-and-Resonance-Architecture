@@ -93,5 +93,10 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R13_ACTUAL_NATIVE_ALIVE_STAGED_UPDATE_ZIP_RECEIPT_20261029.json",
     "unaffected_parallel_threads": 5,
     "host_blocked": true
+  },
+  "r14_parallel_handoff": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R14_COMPLETE_HYBRID_SOURCE_SNAPSHOTS_AND_RELEASE_GATES_20261029.json",
+    "status": "HYBRID_SOURCE_TREES_STAGED_50_64_NOT_RELEASED",
+    "threads_preserved": 5
   }
 }
