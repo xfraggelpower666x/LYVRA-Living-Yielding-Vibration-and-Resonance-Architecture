@@ -1,0 +1,50 @@
+{
+  "schema": "lyvra.visual.r04.package_recovery_gates.v1",
+  "date": "2026-10-29",
+  "status": "ISOLATED_CANDIDATE_PACKAGE_METADATA_PASS_BINARY_HASH_AND_HOST_PENDING",
+  "source_base": "a9a9fcf331ce9dfce86a34c8ae4193eb21601077",
+  "recovery_branch": "lyvra-visual-r04-recovery-pre-asset-gates-20261029",
+  "recovery_sha": "a9a9fcf331ce9dfce86a34c8ae4193eb21601077",
+  "recovery_branch_readback": "PASS",
+  "plugin_manifests": [
+    {
+      "target": "Native",
+      "version": "0.1.87",
+      "top_manifest": "PASS",
+      "codex_manifest": "PASS",
+      "logo": "./assets/lyvra-plugin-logo.png",
+      "release": "pluginrel_6ae2b9c989608191a858005bc2fb2af9"
+    },
+    {
+      "target": "ALIVE",
+      "version": "0.13.83",
+      "top_manifest": "PASS",
+      "codex_manifest": "PASS",
+      "logo": "./assets/lyvra-alive-logo.png",
+      "release": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16"
+    },
+    {
+      "target": "Family Mail",
+      "version": "0.9.23",
+      "top_manifest": "PASS",
+      "codex_manifest": "PASS",
+      "logo": "./assets/family-mail-plugin-icon-512.png",
+      "composer_icon": "./assets/family-mail-plugin-icon-256.png",
+      "release": "pluginrel_6ae265d86c588191bf339b42c347da5e"
+    }
+  ],
+  "archive_readbacks": "ARCHIVE_DOWNLOAD_URLS_RETRIEVED_FROM_PLUGIN_CREATOR",
+  "archive_download_local": "FAILED_NETWORK_UNREACHABLE",
+  "binary_sha256": "NOT_VERIFIED",
+  "binary_asset_parity": "NOT_VERIFIED",
+  "script": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/verify_visual_plugin_archives.py",
+  "script_repository_readback": "PASS",
+  "script_execution_against_real_archives": "PENDING_INPUT",
+  "host_tests": "BLOCKED_BROWSER_SECURITY_POLICY_DO_NOT_BYPASS",
+  "plugin_updates": "NONE",
+  "production_merge": false,
+  "production_pointer_unchanged": true,
+  "ongoing_workstreams": 9,
+  "live_host_acceptance_required": true,
+  "return_anchor": "LYVRA_VISUAL_R04_PACKAGE_METADATA_PASS_BINARY_SHA256_AND_HOST_PENDING"
+}
