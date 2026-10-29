@@ -1,0 +1,48 @@
+{
+  "schema": "lyvra.r10.causal_dependency_resume.v1",
+  "date": "2026-10-29",
+  "lifecycle": "DEV_ACTIVE_ISOLATED",
+  "source_base": "5dc3063152b0b1ec98fd1d1529b9ffca730a92c7",
+  "source_code": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/r10_causal_resume_engine.js",
+  "source_blob": "0dcdd9b98ef47b6a2d92469c5edee0ca078436c3",
+  "tests": {
+    "total": 10,
+    "passed": 10,
+    "execution": "V8 pure JavaScript read from actual GitHub version with real ledger stable IDs, adverse mutations synthetic",
+    "repeated_r09_tests": false
+  },
+  "preserved": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "verified_causes": [
+    "Native release invalidates its own ZIP and release parity, not unrelated Family Mail release",
+    "Family Mail release requires family owner/original asset binding without activating other plugin surfaces",
+    "Visual source change retains required specialist/host gates",
+    "Parallel continuity does not force unrelated ZIP/Track validation",
+    "Host security denial remains blocked, productive promotion prohibited"
+  ],
+  "resume_view": {
+    "status": "ISOLATED_CONTINUITY_READY_HOST_NOT_PROVED",
+    "expected_panels": [
+      "R01_VISUAL",
+      "R07_UPDATE",
+      "R08_PARALLEL",
+      "VISUAL_HOST"
+    ],
+    "frozen_anchor": "c34352188aa87b6e34a0af280a1c679183244344",
+    "recovery_branch": "lyvra-r09-recovery-pre-interruption-gates-20261029",
+    "actual_host_render": "NOT_EXECUTED",
+    "note": "pure display model not active ChatGPT host plugin UI"
+  },
+  "limitations": [
+    "No production capability was installed",
+    "Current plugin release and repository ZIP parity still pending",
+    "Real browser host blocked by security policy; not bypassed",
+    "Complete Whole current-reference read not claimed"
+  ],
+  "no_foreign_writes": true,
+  "no_plugin_publish": true,
+  "no_pointer_write": true
+}
