@@ -77,5 +77,10 @@
     ],
     "no_new_controller": true,
     "host": "BLOCKED"
+  },
+  "native_resume_r11": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json",
+    "status": "10/10_ISOLATED_VIEW_MODEL_PASS",
+    "next": "Exact native plugin host integration & accessibility acceptance still blocked"
   }
 }
