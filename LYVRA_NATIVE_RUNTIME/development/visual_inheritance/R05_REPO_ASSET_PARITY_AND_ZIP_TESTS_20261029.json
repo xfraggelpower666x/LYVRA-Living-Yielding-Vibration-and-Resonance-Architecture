@@ -1,0 +1,56 @@
+{
+  "schema": "lyvra.visual.r05.repository_asset_parity.v1",
+  "date": "2026-10-29",
+  "scope": "ISOLATED_VISUAL_CANDIDATE_ONLY",
+  "status": "REPOSITORY_SNAPSHOT_3_OF_3_GIT_BLOB_PARITY_PASS_TEST_CODE_STAGED_EXECUTION_PENDING",
+  "candidate_base": "a25bd2ebf86fe90688decbfc360bf950aa473e97",
+  "production_base": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "sources": {
+    "native": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_NATIVE_0.1.84_2026-10-28",
+    "alive": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-snapshots/LYVRA_ALIVE_0.13.80_2026-10-28"
+  },
+  "original_asset_git_blob_parity": [
+    {
+      "name": "LYVRA_Character_Showcase.jpeg",
+      "git_sha": "7d117b84dd5e39b8c68bcfcf2ad8e9f3c07f418c",
+      "bytes": 790416,
+      "parity": true
+    },
+    {
+      "name": "LYVRA_Heart_Logo.jpeg",
+      "git_sha": "06fb03a11aa05454fedb391fc9381c0d84cad7a6",
+      "bytes": 504096,
+      "parity": true
+    },
+    {
+      "name": "LYVRA_Leitbild_Character_Card.jpeg",
+      "git_sha": "74599dbb6ee3552072ab42169c975ff94988785d",
+      "bytes": 906833,
+      "parity": true
+    }
+  ],
+  "parity_verified": 3,
+  "parity_total": 3,
+  "git_blob_sha_ne_sha256": true,
+  "limitations": [
+    "Proven only for archived repository snapshots 0.1.84 Native and 0.13.80 ALIVE, not current plugin releases 0.1.87 and 0.13.83.",
+    "Family Mail original asset full binary parity remains unchecked.",
+    "No interactive ChatGPT host acceptance due browser security denial."
+  ],
+  "r05_builder": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/build_release_zip_mirror.py",
+  "synthetic_negative_and_positive_tests": {
+    "file": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/test_build_release_zip_mirror.py",
+    "test_count": 4,
+    "test_cases": [
+      "deterministic_zip_and_byte_readback",
+      "missing_approved_original_rejected",
+      "manifest_version_drift_rejected",
+      "manifest_logo_role_drift_rejected"
+    ],
+    "execution_status": "NOT_EXECUTED_PENDING_RUNTIME"
+  },
+  "targeted_plugin_updates": "NOT_PERFORMED",
+  "release_zips_refreshed": false,
+  "current_pointer_written": false,
+  "return_anchor": "LYVRA_VISUAL_R05_3_ORIGINAL_BLOBS_MATCH_ZIP_TESTS_STAGED"
+}
