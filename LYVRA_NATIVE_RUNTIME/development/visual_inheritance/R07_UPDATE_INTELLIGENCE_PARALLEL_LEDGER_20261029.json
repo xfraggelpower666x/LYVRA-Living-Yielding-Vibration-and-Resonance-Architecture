@@ -114,5 +114,12 @@
     "release_published": false,
     "host": "BLOCKED",
     "zip_current_release": "PENDING"
+  },
+  "r17_plugin_zip_sync": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R17_TARGETED_PLUGIN_OVERLAY_RELEASES_20261029.json",
+    "native_release": "pluginrel_6ae3c0b096b881918f67531f89b8dd0d",
+    "alive_release": "pluginrel_6ae3c0c9d31c8191a54e5ee6c67e1f7c",
+    "release_and_skill_readback": "PASS",
+    "complete_byte_identical_zip": "PENDING"
   }
 }
