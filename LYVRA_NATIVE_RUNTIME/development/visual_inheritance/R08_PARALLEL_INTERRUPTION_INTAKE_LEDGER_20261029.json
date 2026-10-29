@@ -65,5 +65,17 @@
     "frozen_head": "c34352188aa87b6e34a0af280a1c679183244344",
     "own_commit_lineage_rule": "DIRECT_COMMIT_AND_BLOB_READBACK_REQUIRED",
     "host_pending": true
+  },
+  "causal_resume_r10": {
+    "status": "10_OF_10_ISOLATED_TEST_PASS",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R10_CAUSAL_DEPENDENCY_AND_RESUME_ACCEPTANCE_20261029.json",
+    "visual_resume_panels": [
+      "R01_VISUAL",
+      "R07_UPDATE",
+      "R08_PARALLEL",
+      "VISUAL_HOST"
+    ],
+    "no_new_controller": true,
+    "host": "BLOCKED"
   }
 }
