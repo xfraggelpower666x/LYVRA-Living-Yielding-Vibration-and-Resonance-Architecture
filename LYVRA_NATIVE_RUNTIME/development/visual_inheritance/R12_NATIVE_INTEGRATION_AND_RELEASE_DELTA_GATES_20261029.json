@@ -1,0 +1,81 @@
+{
+  "schema": "lyvra.visual.r12.integration_release_delta.v1",
+  "date": "2026-10-29",
+  "status": "SOURCE_INTEGRATION_PATCH_READBACK_VERIFIED_CURRENT_RELEASE_INVENTORY_VERIFIED_BINARY_AND_HOST_PENDING",
+  "baseline": "dd29a0b3bfbbf5bc92b380d1f7d36c88a64be2b3",
+  "existing_visual_skill": "skills/666-visual-interface/SKILL.md",
+  "native_alive_current_skill_text_identical": true,
+  "integrated_patch": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/patches/native_alive_666_visual_interface_R01_SKILL.md",
+  "integrated_patch_git_blob": "3ae45cc6f0f7ad5b4429fd132f58475838eb53ca",
+  "preservation": "Current 3560-character visual skill was exact prefix of existing R01 additive candidate; appended R11 only, no existing source truncated",
+  "native_resume_adapter": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/r11_native_resume_view_adapter.js",
+  "prior_tests": {
+    "r11": "10/10 EXISTING PASS NOT REEXECUTED",
+    "r10": "10/10 EXISTING PASS NOT REEXECUTED",
+    "r09": "10/10 EXISTING PASS NOT REEXECUTED",
+    "r08": "9/9 EXISTING PASS NOT REEXECUTED"
+  },
+  "releases": [
+    {
+      "surface": "native",
+      "version": "0.1.87",
+      "release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "manifests": "MATCH",
+      "repo_zip_version": "0.1.84",
+      "zip_blob": "e1af2ab27277ab7454eacd102a8d78a7346755c7",
+      "zip_bytes": 12994284,
+      "release_binary_parity": "PENDING"
+    },
+    {
+      "surface": "alive",
+      "version": "0.13.83",
+      "release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "manifests": "MATCH",
+      "repo_zip_version": "0.13.80",
+      "zip_blob": "274370368569a12343fc8fc06cd8fa59d7f512ea",
+      "zip_bytes": 36794010,
+      "release_binary_parity": "PENDING"
+    },
+    {
+      "surface": "family_mail",
+      "version": "0.9.23",
+      "release_id": "pluginrel_6ae265d86c588191bf339b42c347da5e",
+      "manifests": "MATCH",
+      "original_asset_paths_verified": 4,
+      "host_render": "PENDING",
+      "release_binary_parity": "PENDING"
+    }
+  ],
+  "asset_roles": {
+    "native_alive_three_original_images_sizes": [
+      790416,
+      504096,
+      906833
+    ],
+    "family_mail_originals_sizes": [
+      154154,
+      159277,
+      51389,
+      154370
+    ],
+    "identity_bytes_current_sha256": "NOT_VERIFIED"
+  },
+  "gates": {
+    "existing_native_skill_additive_candidate": "PASS_SOURCE_READBACK",
+    "release_manifest_binding": "PASS_CURRENT_PROVIDER",
+    "repo_zip_current_release": "PENDING",
+    "protected_full_whole_rehydration": "NOT_CLAIMED",
+    "live_chat_host_visual_acceptance": "BLOCKED_SECURITY_POLICY_NO_BYPASS",
+    "plugin_publication": "NOT_PERFORMED",
+    "productive_pointer": "NOT_UPDATED"
+  },
+  "preserved_threads": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "no_plugin_release": true,
+  "no_prod_merge": true,
+  "no_foreign_writes": true,
+  "return_anchor": "LYVRA_R12_NATIVE_VISUAL_PATCH_AND_RELEASE_GATES_PARTIAL"
+}
