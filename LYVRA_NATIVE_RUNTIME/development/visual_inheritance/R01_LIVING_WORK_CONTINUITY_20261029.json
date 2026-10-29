@@ -76,18 +76,16 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "phase": "R17_BOTH_NATIVE_ALIVE_PLUGINS_UPDATED_BY_OVERLAY",
-    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R17_TARGETED_PLUGIN_OVERLAY_RELEASES_20261029.json",
+    "phase": "R18_FAMILY_MAIL_TARGET_NATIVE_VISUAL_RELEASE",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R18_FAMILY_MAIL_TARGET_NATIVE_RELEASE_20261029.json",
     "visual": 9,
     "update": 5,
     "parallel": 5,
-    "native": "0.1.88",
-    "alive": "0.13.84",
-    "provider_release_readback": "PASS",
+    "release": "0.9.24",
+    "family_mail_release_id": "pluginrel_6ae3c237de948191a8b9c8ba38efcd25",
     "host": "PENDING",
-    "full_release_zip_mirror": "PENDING",
-    "productive_pointer": "UNCHANGED",
-    "return_anchor": "LYVRA_R17_BOTH_TARGETED_PLUGINS_PUBLISHED_WITH_RELEASE_READBACK"
+    "no_prod_merge": true,
+    "return_anchor": "LYVRA_R18_FAMILY_MAIL_0_9_24_RELEASE_READBACK_PASS"
   },
   "parallel_capabilities": [
     {
