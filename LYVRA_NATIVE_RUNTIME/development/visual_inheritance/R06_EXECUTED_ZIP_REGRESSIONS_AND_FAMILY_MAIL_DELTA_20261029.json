@@ -1,0 +1,75 @@
+{
+  "schema": "lyvra.visual.r06.executed_regressions.v1",
+  "date": "2026-10-29",
+  "status": "FOUR_OF_FOUR_SYNTHETIC_REGRESSIONS_EXECUTED_PASS_CURRENT_RELEASE_BYTE_PARITY_PENDING",
+  "source_branch": "lyvra-visual-inheritance-family-mail-track-preservation-20261029-r01",
+  "baseline_candidate": "e9b761d1513d1fbf8d1709d8bf4108b30cc764e6",
+  "execution": {
+    "environment": "local Python 3.13.5 ephemeral test directory",
+    "command": "python -m unittest -v test_build_release_zip_mirror.py",
+    "tests_executed": 4,
+    "tests_pass": 4,
+    "tests_failed": 0,
+    "tests": [
+      "test_deterministic_zip_and_byte_readback",
+      "test_manifest_logo_role_drift_rejected",
+      "test_manifest_version_drift_rejected",
+      "test_missing_approved_original_rejected"
+    ],
+    "git_blob_exact_source_match": {
+      "builder": "58493049b72b23c9e78558bd17dc491bdf327646",
+      "test": "7078fca7c18ff41d8cb06bb05b6e25bcd73b9d5e"
+    },
+    "scope": "Synthetic native ZIP fixture only. Family Mail and ALIVE zip-builder runtime success not inferred.",
+    "actual_plugin_zip_generated": false,
+    "production_release_changed": false
+  },
+  "family_mail": {
+    "current_plugin_id": "Plugin_041a0173dbc48191b499b680f637c40d",
+    "version": "0.9.23",
+    "release_id": "pluginrel_6ae265d86c588191bf339b42c347da5e",
+    "previous_2026_10_27_same_version_release_id": "pluginrel_6ae02ba058ec8191bd93143724ea6643",
+    "delta": "SAME_VERSION_DIFFERENT_RELEASE_ID; specific newer release bindings must be read, not inferred from semantic version",
+    "historical_source_snapshot": "LYVRA_NATIVE_RUNTIME/backups/plugins/family_post/2026-10-24_family_post_v0.9.1_source_snapshot.json",
+    "historical_snapshot_version": "0.9.1",
+    "historical_snapshot_plugin_id": "Plugin_5cbe94ec296c819194ece720a956b5fd",
+    "historical_snapshot_ne_current_plugin": true,
+    "manifest_parity": "plugin.json and .codex-plugin/plugin.json == 0.9.23",
+    "asset_inventory": [
+      {
+        "path": "assets/family-mail-banner-original.jpg",
+        "bytes": 154154
+      },
+      {
+        "path": "assets/family-mail-chat-logo-512.png",
+        "bytes": 159277
+      },
+      {
+        "path": "assets/family-mail-plugin-icon-256.png",
+        "bytes": 51389
+      },
+      {
+        "path": "assets/family-mail-plugin-icon-512.png",
+        "bytes": 154370
+      }
+    ],
+    "manifest_logo": "./assets/family-mail-plugin-icon-512.png",
+    "composer_icon": "./assets/family-mail-plugin-icon-256.png",
+    "binary_hashes": "NOT_VERIFIED",
+    "host_render": "BLOCKED_BY_HOST_BROWSER_POLICY"
+  },
+  "other_current_release_ids": {
+    "native": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+    "alive": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16"
+  },
+  "next_gates": [
+    "Family Mail source-of-truth native repo path and full binary source hash or owner-approved release-identical package",
+    "Fresh exact release SHA bindings for all three targets",
+    "Independent host rendering only via allowed host surface",
+    "Target-governed update with ZIP mirror readback only after all prerequisite approvals"
+  ],
+  "no_production_merge": true,
+  "no_plugin_update": true,
+  "no_foreign_write": true,
+  "nine_workstreams_preserved": true
+}
