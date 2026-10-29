@@ -1,0 +1,67 @@
+{
+  "schema": "lyvra.r13.real_staged_delta_zips.v1",
+  "date": "2026-10-29",
+  "status": "TWO_REAL_UPDATE_OVERLAY_ZIPS_GITHUB_BINARY_SHA256_AND_EXTRACTED_SOURCE_READBACK_PASS_RELEASE_NOT_PUBLISHED",
+  "baseline_development_head": "3ccb24fa0471a6e89396bf7fa85d698306363750",
+  "production_head_at_start": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "scope": "ISOLATED_BRANCH_ONLY",
+  "files": [
+    {
+      "target": "native",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "baseline_version": "0.1.87",
+      "target_unpublished_version": "0.1.88",
+      "expected_baseline_release_id": "pluginrel_6ae2b9c989608191a858005bc2fb2af9",
+      "zip_path": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/LYVRA_NATIVE_0.1.88_R12_VISUAL_UPDATE_DELTA_UNPUBLISHED.zip",
+      "sha256": "2ba32eda747455e11a1e69b96f88cd0a7dab5adb3797749b25c23550c2b81099",
+      "git_blob_sha": "b70c9391b372760204f9fbf0ff99d779393b6528",
+      "bytes": 13366,
+      "source_path": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/source-overlays/native_0.1.88/",
+      "zip_entries_verified": 3,
+      "zip_entries_match_source": 3
+    },
+    {
+      "target": "alive",
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "baseline_version": "0.13.83",
+      "target_unpublished_version": "0.13.84",
+      "expected_baseline_release_id": "pluginrel_6ae2b9dbd83c8191b2dfea8cdbde2b16",
+      "zip_path": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/LYVRA_ALIVE_0.13.84_R12_VISUAL_UPDATE_DELTA_UNPUBLISHED.zip",
+      "sha256": "3c2e49eb24ab02448fae1d15d979680d5738318771637a7a69615097a3acee63",
+      "git_blob_sha": "75a4031d8b6a22ffcb1a4f3facf6a835e953492c",
+      "bytes": 13926,
+      "source_path": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/source-overlays/alive_0.13.84/",
+      "zip_entries_verified": 3,
+      "zip_entries_match_source": 3
+    }
+  ],
+  "files_per_zip": [
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    "skills/666-visual-interface/SKILL.md"
+  ],
+  "shared_visual_skill_blob_sha": "3ae45cc6f0f7ad5b4429fd132f58475838eb53ca",
+  "verification": {
+    "zip_sha256": "INDEPENDENT_GITHUB_BASE64_READBACK_MATCH",
+    "archive_git_blob_sha": "MATCH",
+    "archive_headers": "PK_LOCAL_AND_CENTRAL_DIRECTORY_PRESENT_THREE_ENTRIES",
+    "source_overlay_content": "6_OF_6_UNCOMPRESSED_ZIP_ENTRIES_BYTE_EQUAL_WITH_GITHUB_SOURCE",
+    "not_previous_r08_r11_tests_repeated": true
+  },
+  "limits": [
+    "ZIPs are targeted three-file plugin update overlays, not current full release mirrors or complete binary backups.",
+    "Unchanged assets omitted from ZIP remain intact only after the future guarded plugin update; not directly read-hashed as current release from these overlays.",
+    "No authorized real host acceptance; productive plugin and pointer publication not attempted.",
+    "Family Mail intentionally not touched; separate owner governance.",
+    "Target versions are candidates only, never label 0.1.88 or 0.13.84 as currently published."
+  ],
+  "thread_counts": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "plugin_publish": false,
+  "foreign_write": false,
+  "production_pointer_write": false,
+  "return_anchor": "LYVRA_R13_TWO_REAL_STAGED_DELTA_ZIPS_SHA256_READBACK_PASS"
+}
