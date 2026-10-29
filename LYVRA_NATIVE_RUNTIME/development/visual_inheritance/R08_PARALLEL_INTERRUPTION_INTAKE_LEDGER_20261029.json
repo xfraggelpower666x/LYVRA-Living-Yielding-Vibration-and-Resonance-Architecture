@@ -1,0 +1,51 @@
+{
+  "schema": "lyvra.r08.parallel_interruption_intake.v1",
+  "date": "2026-10-29",
+  "lifecycle": "DEV_ACTIVE",
+  "parent": "EXISTING_WHOLE_LYVRA_UPDATE_AND_CONTINUITY",
+  "type": "NESTED_PARALLEL_DEVELOPMENT_CAPABILITY_NOT_NEW_NATIVE_FACET",
+  "contract": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/PARALLEL_DEVELOPMENT_INTERRUPTION_INTELLIGENCE_R08.md",
+  "existing_ledgers": {
+    "visual": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R01_LIVING_WORK_CONTINUITY_20261029.json",
+    "update": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R07_UPDATE_INTELLIGENCE_PARALLEL_LEDGER_20261029.json"
+  },
+  "preserve": {
+    "visual_workstream_count": 9,
+    "update_thread_count": 5,
+    "do_not_repeat_passed_source_or_zip_tests": true,
+    "host_security_policy_denial_still_blocked": true,
+    "production_sha": "ba7d218f3308fcb1fc72be295582f894eb842100"
+  },
+  "new_capability_threads": [
+    {
+      "id": "INTAKE_SEMANTIC_CLASSIFIER",
+      "status": "SOURCE_CANDIDATE_READBACK_PENDING",
+      "next": "Validate classification cases and boundary examples."
+    },
+    {
+      "id": "INTERRUPTION_TACTICS",
+      "status": "SOURCE_CANDIDATE_READBACK_PENDING",
+      "next": "Test inline-add, sibling thread, pause/return and blocked-host cases."
+    },
+    {
+      "id": "PARALLEL_DEPENDENCY_GRAPH",
+      "status": "SOURCE_CANDIDATE_READBACK_PENDING",
+      "next": "Link release, ZIP, host acceptance without conflating gates."
+    },
+    {
+      "id": "EVIDENCE_RETURN_ANCHORS",
+      "status": "SOURCE_CANDIDATE_READBACK_PENDING",
+      "next": "Verify exact repo commit, prior stable IDs, blockers and recovery path."
+    },
+    {
+      "id": "ADAPTIVE_VISUAL_CONTINUITY",
+      "status": "SOURCE_CANDIDATE_READBACK_PENDING",
+      "next": "Render truthful compact active/paused/blocked status without background-work claims."
+    }
+  ],
+  "no_new_router": true,
+  "no_foreign_writes": true,
+  "no_autonomous_background_claim": true,
+  "no_productive_release": true,
+  "return_anchor": "LYVRA_R08_PARALLEL_WORK_AND_INTERRUPTION_DEV_ACTIVE"
+}
