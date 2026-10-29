@@ -1,0 +1,56 @@
+{
+  "schema": "lyvra.r17.targeted_plugin_overlay_publication.v1",
+  "date": "2026-10-29",
+  "kind": "REAL_PLUGIN_CREATOR_OVERLAY_UPDATE_AND_INDEPENDENT_PROVIDER_READBACK",
+  "status": "NATIVE_ALIVE_PLUGIN_PUBLISHED_AND_SOURCE_READBACK_PASS_HOST_PENDING",
+  "source_development_head_before": "a52e7c60f72751a3f9ffdc9f58eff72f51570feb",
+  "published": [
+    {
+      "surface": "NATIVE",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "previous_version": "0.1.87",
+      "new_version": "0.1.88",
+      "release_id": "pluginrel_6ae3c0b096b881918f67531f89b8dd0d",
+      "provider_files": 50,
+      "both_manifest_versions_match": true,
+      "skill_matches_repo_candidate_exactly": true,
+      "assets_and_dashboard_file_inventory_preserved": true,
+      "uploaded_overlay_archive_sha256": "af30b06aaac9341b16754fb53581e43d8312a5fcc914758776266472a03b1c02",
+      "uploaded_archive_bytes": 13366,
+      "uploaded_archive_name": "LYVRA_NATIVE_VISUAL_OVERLAY_0.1.88.zip",
+      "repository_prebuilt_equivalent_source_overlay": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/LYVRA_NATIVE_0.1.88_R12_VISUAL_UPDATE_DELTA_UNPUBLISHED.zip"
+    },
+    {
+      "surface": "ALIVE",
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "previous_version": "0.13.83",
+      "new_version": "0.13.84",
+      "release_id": "pluginrel_6ae3c0c9d31c8191a54e5ee6c67e1f7c",
+      "provider_files": 64,
+      "both_manifest_versions_match": true,
+      "skill_matches_repo_candidate_exactly": true,
+      "assets_and_dashboard_file_inventory_preserved": true,
+      "uploaded_overlay_archive_sha256": "b9b71526749fdb4360b1d25532dcdf9a6dad3b01ea56ca43863f218416345460",
+      "uploaded_archive_bytes": 13926,
+      "uploaded_archive_name": "LYVRA_ALIVE_VISUAL_OVERLAY_0.13.84.zip",
+      "repository_prebuilt_equivalent_source_overlay": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/staged-update-packages/LYVRA_ALIVE_0.13.84_R12_VISUAL_UPDATE_DELTA_UNPUBLISHED.zip"
+    }
+  ],
+  "scope": "TWO_UPDATED_PLUGIN_RELEASES_ONLY; untouched Family Mail and Whole repo production pointer",
+  "gate_truth": {
+    "source": "PASS",
+    "plugin_provider_release": "PASS",
+    "provider_manifest_and_skill_readback": "PASS",
+    "unchanged_asset_inventory": "PASS_PATH_AND_SIZE_NOT_INDEPENDENT_SHA256",
+    "full_byte_identical_release_zip_mirror": "PENDING",
+    "fresh_host_invocation": "PENDING",
+    "production_current_pointer": "UNCHANGED"
+  },
+  "no_foreign_write": true,
+  "parallel_workstreams": {
+    "visual": 9,
+    "update": 5,
+    "parallel": 5
+  },
+  "return_anchor": "LYVRA_R17_BOTH_TARGETED_PLUGINS_PUBLISHED_WITH_RELEASE_READBACK"
+}
