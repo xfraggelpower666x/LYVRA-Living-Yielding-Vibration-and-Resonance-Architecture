@@ -76,19 +76,13 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "phase": "R04_REPOSITORY_PACKAGE_FIRST_CORRECTION",
-    "creator_guidance": "Native repository ZIP/source snapshot provenance first. Plugin updates targeted only. No routine archive downloads.",
-    "correction_receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R04_REPOSITORY_PACKAGE_FIRST_CORRECTION_20261029.json",
-    "native_zip": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_Native_0.1.84_2026-10-28.zip",
-    "alive_zip": "LYVRA_NATIVE_RUNTIME/plugin-backups/source-packages/LYVRA_ALIVE_0.13.80_2026-10-28.zip",
-    "newer_releases": {
-      "native": "0.1.87",
-      "alive": "0.13.83",
-      "family_mail": "0.9.23"
-    },
-    "binary_equivalence": "NOT_VERIFIED_DIFFERING_VERSION",
-    "host": "BLOCKED_POLICY",
-    "current_production_changed": false,
-    "nine_workstreams_retained": true
+    "phase": "R05_PLUGIN_RELEASE_ZIP_MIRROR_COUPLING",
+    "creator_requirement": "Plugin release targeted UPDATE automatically includes its matching repository ZIP and source snapshot freshness; avoid repeated offline bridge. No forced independent releases.",
+    "contract": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/PLUGIN_RELEASE_ZIP_MIRROR_R05_CONTRACT.md",
+    "builder": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/build_release_zip_mirror.py",
+    "status": "ISOLATED_CANDIDATE_READBACK_VERIFIED_EXECUTION_AND_HOST_PENDING",
+    "package_sources": "REPOSITORY_FIRST",
+    "no_production_merge": true,
+    "all_nine_workstreams_retained": true
   }
 }
