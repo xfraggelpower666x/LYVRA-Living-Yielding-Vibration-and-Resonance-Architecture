@@ -48,3 +48,26 @@ SOURCE_READBACK_NE_HOST_VISUAL_PASS = TRUE
 COMMON_STYLE_NE_COMMON_AUTHORITY = TRUE
 TRACK_VISUAL_SPECIALIZATION_MUST_SURVIVE = TRUE
 AUTOMATIC_VISUAL_GUIDANCE_NE_AUTOMATIC_ACTION = TRUE
+
+## Intelligent Active-Chat Visual Fallback — R01 additive rule
+
+When an original image cannot be resolved, do not automatically collapse the meaning to bare text. Select the strongest actually available and semantically appropriate native-chat presentation, respecting current user intent, facet scope and host capabilities:
+
+1. ORIGINAL_EXACT: creator-approved asset in its designated place only when the host can render that exact asset.
+2. ORIGINAL_APPROVED_DERIVATIVE: smaller pre-existing approved derivative preserving the same content and permitted role, if the host can render it.
+3. CONTEXTUAL_COMPARABLE: relevant source-backed nonidentity visual or suitable already-available image in the active chat, genuinely presentable on that host; never pass it off as creator art or evidence.
+4. SEMANTIC_NATIVE_VISUAL: native themed header, icon/image card, evidence-backed infographic, analytical chart, timeline, relational diagram or meaningful copy box appropriate to the facet. Use chart only with grounded data; mark illustrative examples.
+5. ACCESSIBLE_TEXT: clear, descriptive, functional fallback if native visuals genuinely unavailable.
+
+Identity-critical originals (logos, plugin icons, approved Family Mail banner, official character identity artwork) are IMMUTABLE and cannot be silently replaced with a generated lookalike, stock image or a comparably branded fake. Comparable material may occupy a distinct, explicitly labelled **THEMATIC_FALLBACK** illustration or informational card; it must not be described as the official image or rewrite the original's identity-bearing purpose. Do not alter original asset files, paths, image-role mappings or plugin manifest icons.
+
+Track Design: retain visual thematic hero/concept imagery and musical analysis, using suitable active-chat comparable mood visuals, meaningful native diagrams or illustrated semantics when originals are unavailable. Do not claim illustrative energies, rendered sound or psychoacoustic measurements were observed. Preserve Source + Discovery and real Copy/Share capability.
+
+Family Mail: original banner/logo/icon remain mandatory primary assets. When exact host display fails, a separately labelled contextual cyber-post/family/letter illustration MAY supplement the existing NATIVE_THEMATIC_FALLBACK or accessible text, provided it cannot be confused with the official artwork; the official logo slot must still honestly indicate original unavailable. Keep persistent menu and existing safe Google-only correspondence intact.
+
+Host tool capability and user request determine media suitability; if no viable nonidentity visual can be displayed, use the existing native semantic layout rather than inventing a successful image render. The fallback is adaptive, not a new image generator, tool router, agent or authorization. Copy and Share function only through actually supported host actions.
+ORIGINAL_UNAVAILABLE_NE_VISUAL_VOID = TRUE
+IDENTITY_ASSET_NE_SILENT_SUBSTITUTION = TRUE
+COMPARABLE_ACTIVE_CHAT_VISUAL_FALLBACK_ALLOWED = TRUE
+FALLBACK_MARKING_MANDATORY = TRUE
+FACET_SEMANTIC_MATCH_REQUIRED = TRUE
