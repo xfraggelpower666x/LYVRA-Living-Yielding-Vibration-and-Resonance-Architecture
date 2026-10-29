@@ -1,0 +1,40 @@
+{
+  "schema": "lyvra.visual.inheritance.fallback.acceptance.v1",
+  "date": "2026-10-29",
+  "status": "ISOLATED_SOURCE_TEST_PASS_HOST_PENDING",
+  "static_tests": 13,
+  "static_pass": 13,
+  "static_fail": 0,
+  "test_scope": "candidate source text and previous continuity only; host capabilities untested",
+  "patch_shas": {
+    "native_alive": "84df97f4a81af83c9b9566cc8297c375ace2dc9c",
+    "family_mail": "3ca26639b9a4fb71e73381a74205572e21bfad6d"
+  },
+  "continuity_sha": "284c5afd817fbd9d46e71d5f29d8dbdec768ea88",
+  "ongoing_workstreams": 9,
+  "source_checks": [
+    "original_derivative_comparable_semantic_text_order",
+    "identity_asset_substitution_forbidden",
+    "fallback_truth_label",
+    "facet_theme_match",
+    "source_discovery_preservation",
+    "psychoacoustic_analysis_preservation",
+    "family_mail_asset_paths_preservation",
+    "actual_copy_share_host_actions_only",
+    "no_auto_send",
+    "nine_workstreams_retained"
+  ],
+  "production_sha_unchanged": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "current_plugin_releases": {
+    "native": "0.1.87",
+    "alive": "0.13.83",
+    "family_mail": "0.9.23"
+  },
+  "host_acceptance": "NOT_VERIFIED",
+  "binary_asset_rehash": "NOT_EXECUTED",
+  "plugin_updates": "NOT_EXECUTED",
+  "production_merge": false,
+  "pointer_update": false,
+  "foreign_writes": false,
+  "return_anchor": "LYVRA_VISUAL_R01_FALLBACK_13_13_ONGOING_WORKSTREAMS_9"
+}
