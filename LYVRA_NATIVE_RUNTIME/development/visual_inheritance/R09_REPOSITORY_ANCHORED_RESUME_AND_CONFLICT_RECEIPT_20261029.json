@@ -1,0 +1,60 @@
+{
+  "schema": "lyvra.r09.repository_anchored_acceptance.v1",
+  "date": "2026-10-29",
+  "status": "RECOVERY_BRANCH_READBACK_PASS_10_OF_10_GUARD_TESTS_PASS_HOST_PENDING",
+  "pretest_candidate_head": "c34352188aa87b6e34a0af280a1c679183244344",
+  "production_head": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "recovery_branch": "lyvra-r09-recovery-pre-interruption-gates-20261029",
+  "recovery_branch_head": "c34352188aa87b6e34a0af280a1c679183244344",
+  "recovery_branch_exact_match": true,
+  "compare_to_production": {
+    "status": "ahead",
+    "ahead": 38,
+    "behind": 0,
+    "changed_files": 25,
+    "existing_modified_files": 0
+  },
+  "ledger_snapshot_readback": [
+    {
+      "name": "visual",
+      "sha": "2a91b04cfef3dfc5594545b741ce5ac914663874",
+      "count": 9
+    },
+    {
+      "name": "update",
+      "sha": "bebe24fa5b321d52ebf4eb189b425e58f9690449",
+      "count": 5
+    },
+    {
+      "name": "parallel",
+      "sha": "61360165cb7ac86d7c19c4ac47f737fe78ef162e",
+      "count": 5
+    }
+  ],
+  "test_source": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/tools/r09_repository_resume_guard.js",
+  "test_source_git_blob_sha": "91416cf77cec602fe6cb5e14bfb512665d3f473b",
+  "tested_cases": 10,
+  "passed": 10,
+  "failed": 0,
+  "negative_cases": [
+    "wrong_return_anchor",
+    "development_head_conflict",
+    "productive_head_conflict",
+    "recovery_file_tampering",
+    "stale_expected_blob",
+    "missing_ledger_evidence",
+    "visual_thread_omitted",
+    "update_thread_renamed",
+    "parallel_thread_omitted"
+  ],
+  "tests_explanation": "Reads of real GitHub recovery branch/ledger blobs used as input to pure guard function. Adverse variants were synthetic and no protected update operation was attempted. Healthy baseline represented the exact frozen checkpoint; a newer same-session candidate head is intentionally not the frozen checkpoint and must be tracked as session lineage before replay.",
+  "unfrozen_head_checked": "9f91f484428eb164cf4fe1724f766aeadedef43a",
+  "unfrozen_head_vs_old_anchor": "CONFLICT_QUARANTINE_EXPECTED_FOR_RAW_RESUME_WITHOUT_LINEAGE",
+  "next_gate": "Implement same-session candidate ancestry tracking and recovery at newest checkpoint, separate from frozen return anchor. Do not treat own later development commits as external conflict.",
+  "host": "BROWSER_CHATGPT_POLICY_BLOCKED_NO_BYPASS",
+  "plugin_updates": false,
+  "zip_updates": false,
+  "prod_mutation": false,
+  "foreign_writes": false,
+  "return_anchor": "LYVRA_R09_REPOSITORY_RECOVERY_VERIFIED_NEGATIVE_CONFLICT_GATES_10_OF_10"
+}
