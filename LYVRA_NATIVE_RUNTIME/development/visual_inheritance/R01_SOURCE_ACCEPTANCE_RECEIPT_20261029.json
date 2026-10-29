@@ -1,0 +1,50 @@
+{
+  "schema": "lyvra.visual_inheritance.source_acceptance.v1",
+  "date": "2026-10-29",
+  "status": "SOURCE_STATIC_ACCEPTANCE_13_OF_13_PASS_HOST_PENDING_PRODUCTION_BLOCKED",
+  "production_head_at_baseline": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "branch": "lyvra-visual-inheritance-family-mail-track-preservation-20261029-r01",
+  "patches": {
+    "native_alive": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/patches/native_alive_666_visual_interface_R01_SKILL.md",
+    "native_alive_sha": "35e8dc99c1c6d7f7d3a645538fb7fdae15ecb5ed",
+    "family_mail": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/patches/family_mail_cyber_semantic_R01_SKILL.md",
+    "family_mail_sha": "ec67fcd76c0639e1a707eba37ec5f6ae90157c4a"
+  },
+  "static_checks_total": 13,
+  "static_checks_pass": 13,
+  "static_checks_failed": 0,
+  "checks": [
+    "native_alive_original_identical",
+    "native_patch_append_only",
+    "family_patch_append_only",
+    "whole_five_choices_preserved",
+    "automatic_visual_default",
+    "track_source_discovery",
+    "track_visual_analysis",
+    "track_copy_exact_utf16",
+    "family_original_asset_paths",
+    "family_post_specialization",
+    "family_copy_share_gates",
+    "no_auto_send",
+    "source_not_host"
+  ],
+  "test_limitations": [
+    "Static substring and content-equality checks only; no actual native UI, playback, chart data, copy clipboard, share sheet, focus or mobile interaction tested.",
+    "Original binary artwork not re-downloaded or independently hashed in this candidate, but current plugin source file inventory was read.",
+    "No current plugin release modified; plugin installation/source parity reflects the prior releases only."
+  ],
+  "required_for_productive": [
+    "Native, ALIVE and Family Mail target-plugin release update with independent source, metadata and binary asset continuity readbacks",
+    "Actual fresh-host native interactive visual acceptance (responsive mobile + desktop, original Family Mail image/fallback)",
+    "Contextual automatic visual behavior positive/negative tests, Track Source+Discovery visual and copy/share functioning",
+    "Whole source and registry impact review, complete recovery and pointer-last production promotion"
+  ],
+  "plugin_releases_unchanged": {
+    "native": "0.1.87",
+    "alive": "0.13.83",
+    "family_mail": "0.9.23"
+  },
+  "foreign_writes": false,
+  "mail_sent": false,
+  "production_mutation": false
+}
