@@ -76,16 +76,16 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "phase": "R11_NATIVE_VISUAL_RESUME_SOURCE_ADAPTER_TESTED",
-    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json",
+    "phase": "R12_NATIVE_VISUAL_INTEGRATION_AND_RELEASE_DELTA",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R12_NATIVE_INTEGRATION_AND_RELEASE_DELTA_GATES_20261029.json",
     "visual": 9,
     "update": 5,
     "parallel": 5,
-    "source_tests": "10/10_NEW_ISOLATED_PASS",
-    "host": "BLOCKED_SECURITY_POLICY",
-    "release_zip": "PENDING",
-    "production_unchanged": true,
-    "return_anchor": "LYVRA_R11_VISUAL_RESUME_ISOLATED_TESTED"
+    "host": "BLOCKED_BROWSER_POLICY",
+    "candidate_skill": "ADDITIVE_R11_PATCH_READY_NOT_RELEASED",
+    "repo_zip_parity": "PENDING",
+    "no_prod_merge": true,
+    "return_anchor": "LYVRA_R12_NATIVE_VISUAL_PATCH_AND_RELEASE_GATES_PARTIAL"
   },
   "parallel_capabilities": [
     {
