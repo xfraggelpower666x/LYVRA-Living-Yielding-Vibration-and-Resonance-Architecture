@@ -76,18 +76,18 @@
   "return_anchor": "LYVRA_VISUAL_R01_CONTINUITY_ACTIVE_FALLBACK_AND_UNFINISHED_GATES",
   "last_continuation": {
     "date": "2026-10-29",
-    "phase": "R16_DIRECT_ARCHIVE_ACCESS_AND_FAIL_CLOSED_SOURCE_ATTESTOR",
-    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R16_DIRECT_ARCHIVE_ACCESS_AND_FAIL_CLOSED_ATTESTATION_20261029.json",
+    "phase": "R17_BOTH_NATIVE_ALIVE_PLUGINS_UPDATED_BY_OVERLAY",
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R17_TARGETED_PLUGIN_OVERLAY_RELEASES_20261029.json",
     "visual": 9,
     "update": 5,
     "parallel": 5,
-    "live_plugin_zip_download": "BLOCKED",
-    "binary_current_hash": "READBACK_PENDING",
-    "full_zip_mirror": "NOT_BUILT",
-    "release_published": false,
-    "host": "BLOCKED_BROWSER_SECURITY_POLICY",
-    "no_prod_merge": true,
-    "return_anchor": "LYVRA_R16_FAIL_CLOSED_LIVE_BYTE_ATTESTATION_REQUIRES_PROVIDER_ARCHIVE"
+    "native": "0.1.88",
+    "alive": "0.13.84",
+    "provider_release_readback": "PASS",
+    "host": "PENDING",
+    "full_release_zip_mirror": "PENDING",
+    "productive_pointer": "UNCHANGED",
+    "return_anchor": "LYVRA_R17_BOTH_TARGETED_PLUGINS_PUBLISHED_WITH_RELEASE_READBACK"
   },
   "parallel_capabilities": [
     {
