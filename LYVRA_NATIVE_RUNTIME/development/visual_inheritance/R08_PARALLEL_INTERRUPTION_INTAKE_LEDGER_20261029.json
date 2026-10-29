@@ -82,5 +82,10 @@
     "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R11_NATIVE_VISUAL_RESUME_ACCEPTANCE_20261029.json",
     "status": "10/10_ISOLATED_VIEW_MODEL_PASS",
     "next": "Exact native plugin host integration & accessibility acceptance still blocked"
+  },
+  "r12_native_resume_integration": {
+    "receipt": "LYVRA_NATIVE_RUNTIME/development/visual_inheritance/R12_NATIVE_INTEGRATION_AND_RELEASE_DELTA_GATES_20261029.json",
+    "status": "SOURCE_PATCH_READBACK_VERIFIED_HOST_PENDING",
+    "threads": 5
   }
 }
