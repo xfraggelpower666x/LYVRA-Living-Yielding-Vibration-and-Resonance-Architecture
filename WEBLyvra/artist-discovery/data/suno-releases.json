@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-27",
+  "reviewed_at": "2026-10-30",
   "public_profile_song_count_observed": 514,
-  "coverage": "514 catalogued distinct public Suno song UUID links (482 preserved plus 32 publicly observed 2026-10-27). Fresh public page reported 514 songs; 280 distinct anchors captured in latest direct snapshot, remaining catalog URLs retained with prior evidence; not a single-pass 514-link recapture.",
+  "coverage": "534 catalogued distinct public Suno UUID links (514 preserved plus 20 unique directly observed in 2026-10-30 live Recent browser). Public counter 536; 2 entries not independently identified and NOT inserted.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -3160,6 +3160,126 @@
       "url": "https://suno.com/song/4110ecfa-e7ec-406e-9624-d7ae171bdcb9",
       "status": "public_profile_link_readback",
       "source": "2026-10-27 direct public Suno profile markdown anchor"
+    },
+    {
+      "title": "MY OWN WAY",
+      "url": "https://suno.com/song/dae85b27-4468-457c-acab-5c735c127141",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "MY OWN WAY",
+      "url": "https://suno.com/song/6ee1a2bb-a933-457f-b604-4504c5a2138d",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "FUCK THE SILENCE",
+      "url": "https://suno.com/song/12c4e310-992a-4306-8e68-d37b17e1b991",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "FUCK THE SILENCE",
+      "url": "https://suno.com/song/e89788bf-e1ad-41d9-bf6d-090ad7544fa0",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE MEMORY OF IMPACT",
+      "url": "https://suno.com/song/89e99567-626f-429a-b5dd-cc12ca6655d7",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE MEMORY OF IMPACT",
+      "url": "https://suno.com/song/9881bc15-a72a-4a9f-b116-f8268b1312a6",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "PARALLAX ENGINE",
+      "url": "https://suno.com/song/00c08a2a-0ad7-43f4-9254-166464bb27c0",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "PARALLAX ENGINE",
+      "url": "https://suno.com/song/6d812ef9-8d17-47d9-8258-aad9700520e6",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "DESTRUCTION CHAOS WITH RHYTHM DIRECTION",
+      "url": "https://suno.com/song/88a6554e-4896-42a6-8d4a-a53329e1134c",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "DESTRUCTION CHAOS WITH RHYTHM DIRECTION",
+      "url": "https://suno.com/song/da40f779-40f7-4177-82e0-6beec7185a20",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "FLUID SYNDROM",
+      "url": "https://suno.com/song/8dcb66b6-de24-49d3-9c36-55a355fe6e9e",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "FLUID SYNDROM",
+      "url": "https://suno.com/song/ac5fb5fe-4a40-44a4-9bad-626bc81a2498",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "SYNTHETIC VIBES",
+      "url": "https://suno.com/song/b75b54e8-8fae-43ba-bcc8-bf0b28fddb8f",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "SYNTHETIC VIBES",
+      "url": "https://suno.com/song/0cee959f-ced7-4b8b-9379-17f2eca0423f",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE THUNDER THAT REFUSED THE SKY",
+      "url": "https://suno.com/song/405348a4-975c-4eca-b5bc-f65950f95b5a",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE THUNDER THAT REFUSED THE SKY",
+      "url": "https://suno.com/song/dc5d1855-b622-434e-89a4-52628bf075f2",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE MACHINE THAT DREAMED IN BASS",
+      "url": "https://suno.com/song/ea72ccdd-eb74-4be1-91af-4c9b40240352",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE MACHINE THAT DREAMED IN BASS",
+      "url": "https://suno.com/song/9e5bdbbc-6dac-4e13-b9b1-014cfb78c2e4",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE WRONG SIDE OF GRAVITY",
+      "url": "https://suno.com/song/31e919b7-e7aa-495b-a781-5e091c3e3f2b",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "THE WRONG SIDE OF GRAVITY",
+      "url": "https://suno.com/song/19b62665-872b-4d99-b9af-475cb8a6c6a9",
+      "status": "public_recent_profile_browser_link",
+      "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
     }
   ],
   "rules": [
@@ -3168,13 +3288,14 @@
     "Keep playlists separate from published songs; do not call a playlist an album.",
     "Profile full playlist page was blocked by hCaptcha; do not bypass or claim complete coverage.",
     "New items require direct public URL evidence; no invented links.",
-    "Host DE/EN controls the UI language."
+    "Host DE/EN controls the UI language.",
+    "TWO_STAGE_DISCOVERY: a first profile/search pass is provisional; conduct an independent deeper Recent/Songs list or equivalent second source-path check before accepting an import. Compare canonical UUID URLs and retain contradictory count gaps as OPEN; no fabricated URLs, no silent removal. Separate source/CI/host readbacks."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 514,
+  "observed_public_song_links": 534,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
-  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified. 2026-10-27 fresh public Suno page showed 514 song counter and 32 directly evidenced new UUID links absent from 482 candidate catalog. Protected 482 retained.",
+  "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified. 2026-10-27 fresh public Suno page showed 514 song counter and 32 directly evidenced new UUID links absent from 482 candidate catalog. Protected 482 retained. 2026-10-30 live Recent browser enumerated 20 new unique UUIDs beyond the existing 514, profile counter 536; 2 remain unverified. Two-stage discovery required before acceptance.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "Isolated branch: 32 unique verified public link additions -> 514 Suno; SoundCloud retained 45+122; expected embedded Discovery 681. Deployment not performed."
+  "last_research_outcome": "PATCH_FIRST ISOLATED DEVELOPMENT CANDIDATE ONLY: +20 verified links => 534 Suno, +167 SoundCloud => 701 total. Production deployment NOT performed; 2 count-gap entries unresolved."
 }
