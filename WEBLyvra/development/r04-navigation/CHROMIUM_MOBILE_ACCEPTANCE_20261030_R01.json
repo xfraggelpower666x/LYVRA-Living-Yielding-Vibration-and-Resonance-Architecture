@@ -1,0 +1,75 @@
+{
+  "schema": "WEBLYVRA_R04_MOBILE_CHROMIUM_REAL_BROWSER_ACCEPTANCE_20261030_V1",
+  "workspace": "WEBLYVRA_MAIN",
+  "release_scope": "ISOLATED_R04_ONLY",
+  "status": "PARTIAL_2_OF_3_REAL_CHROMIUM_TESTS_PASS_KEYBOARD_FAIL",
+  "as_of_date": "2026-10-30",
+  "branch": "weblyvra-r04-navigation-review-20261028",
+  "source_head": "023a56d3c1a2fef18650fc0d167d12f294e89e55",
+  "production_head_at_readback": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "preview": {
+    "url": "https://1f7d79ad.weblyvra-live.pages.dev/",
+    "deployment_id": "1f7d79ad-25e5-481a-82f1-0b3fd7263290",
+    "exact_preview_commit": "6ad3ef77acf4439c5008a5553fec0fdcf425086e",
+    "isolation_warning": "CI branch contains only browser harness/CI/receipt changes after exact preview, no new deployed navigational code"
+  },
+  "ci": {
+    "run_id": 40991927772,
+    "url": "https://github.com/xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture/actions/runs/40991927772",
+    "workflow_name": "WEBLYVRA R04 mobile Chromium — isolated exact-preview acceptance",
+    "commit": "023a56d3c1a2fef18650fc0d167d12f294e89e55",
+    "conclusion": "FAILURE_DUE_TO_CASE_02",
+    "chromium_install": "PASS",
+    "source_checkout": "PASS"
+  },
+  "tests": [
+    {
+      "number": 1,
+      "name": "01_MOBILE_390x844_HAMBURGER_DE_EN",
+      "result": "PASS",
+      "checks": [
+        "390x844 viewport",
+        "no horizontal overflow",
+        "hamburger expands",
+        "Discovery link visible",
+        "host DE/EN labels",
+        "tap/click to Discovery",
+        "514 Suno count and 681 total"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "02_KEYBOARD_TAB_SHIFT_TAB_ENTER",
+      "result": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Tab cannot reach Discovery anchor",
+      "source_line": 58,
+      "root_cause": "UNCONFIRMED_NEEDS_FOCUS_TRACE",
+      "scope": "Browser keyboard Tab from initially focused hamburger after Enter; 26 Tab presses did not target the Discovery anchor. Do not claim cause or a working Shift+Tab/Enter."
+    },
+    {
+      "number": 3,
+      "name": "03_BROWSER_HISTORY_AND_FOCUS_RETURN",
+      "result": "PASS",
+      "checks": [
+        "Back returns homepage",
+        "Forward returns Discovery",
+        "Back returns homepage again",
+        "hamburger focusable following browser history"
+      ],
+      "limitation": "This only checks keyboard focusability after return, not automatic preservation of focused nav link across navigation."
+    }
+  ],
+  "conclusions": {
+    "new_real_mobile_chromium_evidence": true,
+    "mobile_navigation": "PASS_CHROMIUM_SIMULATION_NOT_REAL_PHONE",
+    "keyboard_navigation": "FAIL",
+    "browser_history": "PASS",
+    "source_ci_previous": 40929616630,
+    "real_iphone_voiceover": "NOT_TESTED",
+    "production_merge": "BLOCKED",
+    "production_deployment": "NOT_ATTEMPTED"
+  },
+  "recovery": "lyvra-recovery-pre-weblyvra-r04-playwright-20261030-r01",
+  "learning_by_doing": "Keep tested mobile/history PASS, isolate keyboard focus trail as single next regression-causal repair; inspect tab sequence, focus owner and menu accessibility before any app.js changes; do not rerun all three previously passed/failed checks blindly.",
+  "next": "Target only case 02 with instrumented document.activeElement trace and Tab sequence; then minimal isolated fix if demonstrated; test exact browser preview again after verified build. Maintain no production merge or deploy until keyboard gate PASS."
+}
