@@ -1,0 +1,33 @@
+name: WEBLYVRA R04 mobile Chromium — isolated exact-preview acceptance
+on:
+  push:
+    branches: [weblyvra-r04-navigation-review-20261028]
+    paths:
+      - 'WEBLyvra/development/r04-navigation/preview-mobile-browser.mjs'
+      - '.github/workflows/weblyvra-r04-mobile-browser.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium-mobile-history-keyboard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify exact checked-out commit
+        run: test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install ephemeral Playwright and Chromium
+        run: |
+          npm install --prefix WEBLyvra/development/r04-navigation --no-save --no-package-lock playwright@1.56.1
+          npx --prefix WEBLyvra/development/r04-navigation playwright install --with-deps chromium
+      - name: Run three real-browser R04 cases against exact preview
+        run: node WEBLyvra/development/r04-navigation/preview-mobile-browser.mjs
+      - name: Classification
+        if: always()
+        run: echo "ISOLATED_PREVIEW_CHROMIUM_ONLY; NOT_PRODUCTION_OR_REAL_DEVICE_VOICEOVER; R04 release gate separate" >> "$GITHUB_STEP_SUMMARY"
