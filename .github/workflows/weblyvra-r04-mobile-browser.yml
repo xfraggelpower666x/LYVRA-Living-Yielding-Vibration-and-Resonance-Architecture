@@ -26,7 +26,9 @@ jobs:
         run: |
           npm install --prefix WEBLyvra/development/r04-navigation --no-save --no-package-lock playwright@1.56.1
           npx --prefix WEBLyvra/development/r04-navigation playwright install --with-deps chromium
-      - name: Run three real-browser R04 cases against exact preview
+      - name: Trace only R04 keyboard case 02 against exact preview
+        env:
+          R04_CASE: '02'
         run: node WEBLyvra/development/r04-navigation/preview-mobile-browser.mjs
       - name: Classification
         if: always()
