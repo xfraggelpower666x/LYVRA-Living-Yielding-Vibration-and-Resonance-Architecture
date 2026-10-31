@@ -29,6 +29,7 @@ jobs:
       - name: Trace only R04 keyboard case 02 against exact preview
         env:
           R04_CASE: '02'
+          R04_PREVIEW_URL: 'https://18209294.weblyvra-live.pages.dev'
         run: node WEBLyvra/development/r04-navigation/preview-mobile-browser.mjs
       - name: Classification
         if: always()
