@@ -1,0 +1,71 @@
+{
+  "schema": "WEBLYVRA_R04_KEYBOARD_CAUSAL_REPAIR_20261031_R01",
+  "status": "VERIFIED_ISOLATED_KEYBOARD_CASE_02_PASS",
+  "branch": "weblyvra-r04-navigation-review-20261028",
+  "prechange_head": "044f1eb6c7abf63811adf3d4158c9766b2a0617a",
+  "head_at_readback": "73c4a3e191660e69fbf0e0e0d94f0f9927d3f523",
+  "production_head_at_readback": "ba7d218f3308fcb1fc72be295582f894eb842100",
+  "recovery": "lyvra-recovery-pre-r04-keyboard-trace-20261031-r01",
+  "prior_failure": {
+    "run_id": 40991927772,
+    "receipt": "WEBLyvra/development/r04-navigation/CHROMIUM_MOBILE_ACCEPTANCE_20261030_R01.json",
+    "result": "2_PASS_1_KEYBOARD_FAIL"
+  },
+  "causal_trace": {
+    "run_id": 41214216059,
+    "result": "FAILURE_TRACED",
+    "initial_focus": "button.menu",
+    "tab_01_to_10": "WEBRADIO_IFRAME",
+    "tab_11_to_26": "HOME_PAGE_CONTROLS_AND_DYNAMIC_CARDS",
+    "navigation_anchor_skipped": true,
+    "interpretation": "Keyboard activation of hamburger left active focus on .menu; next Tab proceeded into radio iframe instead of newly visible navigation links."
+  },
+  "repair": {
+    "path": "WEBLyvra/live/dist/app.js",
+    "sha": "4e143d3458a944b09ed0448f07e6462862ca1dcb",
+    "commit": "7984b05eec0e9a8a0d8e862041d1badf70bb859c",
+    "mechanism": "Upon menu-opening click with event.detail === 0, focus existing first nav anchor with preventScroll:true, preserving normal pointer/touch behavior and original menu implementation.",
+    "r02_source_unchanged": true,
+    "radio_source_unchanged": true,
+    "homepage_hero_gallery_unchanged": true
+  },
+  "new_preview": {
+    "cloudflare_deployment_id": "18209294-8c1b-46ef-9012-0f9e43d0b66d",
+    "exact_app_commit": "7984b05eec0e9a8a0d8e862041d1badf70bb859c",
+    "url": "https://18209294.weblyvra-live.pages.dev",
+    "status": "SUCCESS",
+    "type": "PREVIEW_NOT_PRODUCTION"
+  },
+  "focused_ci": {
+    "run_id": 41214385071,
+    "head": "73c4a3e191660e69fbf0e0e0d94f0f9927d3f523",
+    "conclusion": "SUCCESS",
+    "executed_case": "02_KEYBOARD_TAB_SHIFT_TAB_ENTER",
+    "log": "R04_CHROMIUM_PASS 02_KEYBOARD_TAB_SHIFT_TAB_ENTER",
+    "tab_steps": 7,
+    "shift_tab_enter": "PASS",
+    "navigation": "PASS"
+  },
+  "prior_evidence_preserved": {
+    "mobile_test_case_01": {
+      "run_id": 40991927772,
+      "result": "PASS"
+    },
+    "history_test_case_03": {
+      "run_id": 40991927772,
+      "result": "PASS"
+    },
+    "retested": false,
+    "real_iphone_voiceover": "NOT_TESTED"
+  },
+  "conclusions": {
+    "isolated_keyboard_gate": "PASS",
+    "historical_mobile_gate": "PASS_PRIOR_RUN",
+    "historical_history_gate": "PASS_PRIOR_RUN",
+    "whole_lyvra_rehydration": "PARTIAL_NOT_CLAIMED",
+    "production_merge": "NOT_AUTHORIZED_IN_THIS_CONTINUATION",
+    "production_deploy": "NOT_EXECUTED",
+    "post_release_real_device": "PENDING"
+  },
+  "next": "Independent release readiness requires fresh production HEAD, host compatibility check, recovery, source CI, and decision on real-device accessibility. No automatic merge."
+}
