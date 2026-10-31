@@ -2,7 +2,7 @@
 // Triggered ONLY on the isolated R04 branch; no production deployment.
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
-const preview='https://1f7d79ad.weblyvra-live.pages.dev';
+const preview=process.env.R04_PREVIEW_URL || 'https://1f7d79ad.weblyvra-live.pages.dev';
 let fails=0;
 async function check(name,fn){
   const browser=await chromium.launch({headless:true});
@@ -49,6 +49,7 @@ await check('02_KEYBOARD_TAB_SHIFT_TAB_ENTER',async page=>{
   const nav=page.locator('#navigation');
   const link=nav.locator('a[href="/artist-discovery/"]');
   assert(await link.isVisible(),'target hidden after keyboard menu activation');
+  assert(await nav.locator('a').first().evaluate(x=>x===document.activeElement),'keyboard menu opening must focus first navigation link');
   // Walk actual keyboard focus order, not programmatic link.focus().
   let reached=false;
   console.log('R04_FOCUS_TRACE INITIAL '+JSON.stringify(await page.evaluate(()=>({active:document.activeElement?.outerHTML?.slice(0,250),open:document.querySelector('.menu')?.getAttribute('aria-expanded')}))));
