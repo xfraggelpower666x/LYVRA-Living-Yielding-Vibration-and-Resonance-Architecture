@@ -17,7 +17,7 @@ const visit=async page=>{
   assert.equal(response?.status(),200,'preview homepage must return HTTP 200');
   await page.locator('.menu').waitFor({state:'visible'});
 };
-await check('01_MOBILE_390x844_HAMBURGER_DE_EN',async page=>{
+if(process.env.R04_CASE !== '02') await check('01_MOBILE_390x844_HAMBURGER_DE_EN',async page=>{
   await visit(page);
   const dims=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
   assert.equal(dims.width,390);
@@ -51,8 +51,10 @@ await check('02_KEYBOARD_TAB_SHIFT_TAB_ENTER',async page=>{
   assert(await link.isVisible(),'target hidden after keyboard menu activation');
   // Walk actual keyboard focus order, not programmatic link.focus().
   let reached=false;
+  console.log('R04_FOCUS_TRACE INITIAL '+JSON.stringify(await page.evaluate(()=>({active:document.activeElement?.outerHTML?.slice(0,250),open:document.querySelector('.menu')?.getAttribute('aria-expanded')}))));
   for(let i=0;i<26;i++){
     await page.keyboard.press('Tab');
+    console.log('R04_FOCUS_TRACE TAB_'+String(i+1).padStart(2,'0')+' '+JSON.stringify(await page.evaluate(()=>({tag:document.activeElement?.tagName,html:document.activeElement?.outerHTML?.slice(0,260),insideNav:!!document.activeElement?.closest?.('#navigation'),expanded:document.querySelector('.menu')?.getAttribute('aria-expanded')}))));
     if(await link.evaluate(x=>x===document.activeElement)){reached=true;break;}
   }
   assert(reached,'Tab cannot reach Discovery anchor');
@@ -63,7 +65,7 @@ await check('02_KEYBOARD_TAB_SHIFT_TAB_ENTER',async page=>{
   await page.keyboard.press('Enter');
   await page.waitForURL(preview+'/artist-discovery/',{timeout:25000});
 });
-await check('03_BROWSER_HISTORY_AND_FOCUS_RETURN',async page=>{
+if(process.env.R04_CASE !== '02') await check('03_BROWSER_HISTORY_AND_FOCUS_RETURN',async page=>{
   await visit(page);
   const menu=page.locator('.menu');
   await menu.click();
@@ -86,4 +88,4 @@ await check('03_BROWSER_HISTORY_AND_FOCUS_RETURN',async page=>{
   assert(await page.locator('.menu').evaluate(x=>x===document.activeElement),'home menu not keyboard-focusable after history');
 });
 if(fails){console.error('R04_CHROMIUM_PARTIAL '+fails+'/3 FAILED');process.exitCode=1;}
-else console.log('R04_CHROMIUM_3_OF_3_PASS_ISOLATED_PREVIEW_ONLY_NO_REAL_DEVICE_VOICEOVER');
+else console.log(process.env.R04_CASE === '02' ? 'R04_CHROMIUM_KEYBOARD_ONLY_PASS' : 'R04_CHROMIUM_3_OF_3_PASS_ISOLATED_PREVIEW_ONLY_NO_REAL_DEVICE_VOICEOVER');
