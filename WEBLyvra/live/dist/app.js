@@ -57,7 +57,7 @@ export function updateDiscoveryNavLabel(language = getLanguage()) {
 document.addEventListener('lyvra:languagechange', () => updateDiscoveryNavLabel());
 const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');
 function closeMenu(){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label',menuLabel(false));nav.classList.remove('open');}
-menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',menuLabel(open));nav.classList.toggle('open',open);});
+menu.addEventListener('click',event=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',menuLabel(open));nav.classList.toggle('open',open);if(open && event.detail===0){nav.querySelector('a')?.focus({preventScroll:true});}});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();if(document.activeElement.closest('.nav'))menu.focus();}});
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){nav.querySelectorAll('a').forEach(a=>{const active=a.hash==='#'+entry.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}});},{rootMargin:'-18% 0px -60% 0px'});
