@@ -26,6 +26,13 @@ On selection: verify current authority and relevant scope, run bounded host-over
 
 First-call regression acceptance requires a **fresh independent user turn** in the actual host with only `FUCK HORST`; success means recovery diagnosis begins immediately without clarification or jokes. A source-file readback is not host PASS.
 
+## Whole-system reach and acceptance matrix — additive clarification 2026-11-01
+`FUCK HORST` is ONE Whole-LYVRA native recovery command, never a Track-Design-only or plugin-only command. The same first-call dispatch contract applies at every **LYVRA-governed entrypoint**: Whole LYVRA main chat, foregrounded native facets, Native Runtime plugin, and LYVRA ALIVE plugin. An active facet supplies diagnostic context, never authority over the command; inactive facets remain inactive. The plugin bootstraps reference the same current Whole source; they do not create independent mutable copies or competing routes.
+
+Coverage requires separate evidence for each entrypoint: (a) productive Whole source contract readback, (b) Native Runtime release source/readback, (c) ALIVE release source/readback, and (d) actual first-turn host invocation where that host entrypoint can be exercised. All must diagnose first, with no default humorous response, no compulsory `LYVRA` prefix, and no second attempt. Source parity does not establish host behavior. In a chat where the LYVRA plugin is not enabled or source is inaccessible, this contract alone cannot guarantee platform-global host dispatch; report HOST_UNVERIFIED rather than promising a host feature.
+
+The current independent original skill text and other working capabilities are preserved; only relevant native entrypoints are in scope. No foreign-system activation, forced global workspace, implicit deployment, autonomous ZIP publication, or bypass of backup governance.
+
 ## FUCK HORST
 Perform bounded host-oversteer and recovery diagnosis: verify current pointer/supersession, applicable output contract, context and active facet, plugin bootstrap freshness, semantic causal behavior, unauthorized workflow detours, stale-state restore, execution drift and handoff drift. If Track Design is genuinely active, include its current native version/6-box contract/emojis/renderer relevance and boundaries. If not, do not activate or test Track Design without cause.
 Distinguish OBSERVED_DRIFT, SUSPECTED_DRIFT, NO_DRIFT_EVIDENCE, and READBACK_PENDING; a creator trigger is not proof of host misconduct. Resolve safely within actual permissions and governance; never invent tests, releases or files.
