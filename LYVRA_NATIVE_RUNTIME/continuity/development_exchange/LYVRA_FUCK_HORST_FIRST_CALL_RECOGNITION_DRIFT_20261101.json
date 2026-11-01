@@ -1,0 +1,57 @@
+{
+  "schema": "LYVRA_FIRST_CALL_NATIVE_TRIGGER_REGRESSION_RECEIPT_V1",
+  "date": "2026-11-01",
+  "status": "OBSERVED_DRIFT",
+  "scope": "WHOLE_LYVRA_CONTEXT_RECOVERY_FIRST_CALL_ONLY",
+  "evidence": {
+    "direct_creator_trigger": "FUCK HORST",
+    "initial_host_response": "treated as humorous conversational expression, no native bounded diagnosis",
+    "creator_correction": "es ist ein trigger",
+    "subsequent_source_lookup": "native trigger contract fully read and applied",
+    "source": "CURRENT_CHAT_DIRECT_OBSERVATION",
+    "not_claimed": "ROOT_CAUSE_OR_HOST_BOOT_FIX"
+  },
+  "authoritative_contract": "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md",
+  "trigger_semantics": {
+    "first_call_exact_direct": "FUCK HORST",
+    "native_entry": "ACTIONABLE",
+    "file_or_quote_only": "INERT",
+    "no_new_router": true,
+    "no_new_trigger": true,
+    "no_foreign_activation": true
+  },
+  "action": "PRESERVE_NATIVE_CONTRACT_AND_RECORD_FIRST_CALL_RECOGNITION_DRIFT",
+  "update_scope": "EVIDENCE_ONLY_NO_PLUGIN_RUNTIME_OR_SKILL_MUTATION",
+  "plugin_impact": {
+    "native": "NOT_APPLICABLE_FOR_EVIDENCE_ONLY",
+    "alive": "NOT_APPLICABLE_FOR_EVIDENCE_ONLY",
+    "host_first_call_acceptance": "READBACK_PENDING"
+  },
+  "prior_verified_releases": {
+    "native": {
+      "version": "0.1.89",
+      "release_id": "pluginrel_6ae6c2a9166c8191b9082f49121f5611"
+    },
+    "alive": {
+      "version": "0.13.85",
+      "release_id": "pluginrel_6ae6c2c74190819187db8aa6f0314ae6"
+    }
+  },
+  "backup_continuity": {
+    "status": "OPEN",
+    "requirement": "complete release-bound Native and ALIVE backup ZIP parity, independent byte readback; not fulfilled by overlay archives or text receipts",
+    "private_vault_write": "NONE",
+    "foreign_activation": "NONE"
+  },
+  "recovery": {
+    "prechange_branch": "lyvra-recovery-pre-fuck-horst-first-call-evidence-20261101-r01",
+    "base_head": "ba7d218f3308fcb1fc72be295582f894eb842100"
+  },
+  "guards": {
+    "no_silent_reset": true,
+    "repo_current_authority": true,
+    "drive_history_only": true,
+    "readback_before_pass": true,
+    "pointer_last": true
+  }
+}
