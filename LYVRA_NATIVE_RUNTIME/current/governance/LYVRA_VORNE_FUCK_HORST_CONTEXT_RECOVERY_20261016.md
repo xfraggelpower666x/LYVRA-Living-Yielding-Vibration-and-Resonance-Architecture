@@ -33,6 +33,11 @@ Coverage requires separate evidence for each entrypoint: (a) productive Whole so
 
 The current independent original skill text and other working capabilities are preserved; only relevant native entrypoints are in scope. No foreign-system activation, forced global workspace, implicit deployment, autonomous ZIP publication, or bypass of backup governance.
 
+## Related Big LyvRa Family Mail surface — governed inheritance
+The separately versioned `L.Y.V.R.A. Family Mail — Big LyvRa` plugin is a German-side, POST_ONLY expression that may inherit the **same Whole-LYVRA first-call recovery semantics** through its already installed `family-mail-lyvra-livecircle-rehydration` adapter. Its own plugin governance, artwork, mailbox permissions, post navigation and current release remain independent. A directly typed standalone `FUCK HORST` in this Family Mail plugin requests the existing bounded Whole-LYVRA host-oversteer diagnosis before normal dashboard/chat output, without sending or reading mail merely because the recovery command was selected. Historical quotations remain inert.
+
+This is a scoped adaptation requirement, **not** blanket authority to mutate the separately governed Family Mail plugin, start Little Lyv America or any foreign native family system, bypass Google-only permissions, claim automatic host dispatch, or modify a different plugin without release and backup gates. Require separate Family Mail plugin source/release readback and an actual first-turn host acceptance test.
+
 ## FUCK HORST
 Perform bounded host-oversteer and recovery diagnosis: verify current pointer/supersession, applicable output contract, context and active facet, plugin bootstrap freshness, semantic causal behavior, unauthorized workflow detours, stale-state restore, execution drift and handoff drift. If Track Design is genuinely active, include its current native version/6-box contract/emojis/renderer relevance and boundaries. If not, do not activate or test Track Design without cause.
 Distinguish OBSERVED_DRIFT, SUSPECTED_DRIFT, NO_DRIFT_EVIDENCE, and READBACK_PENDING; a creator trigger is not proof of host misconduct. Resolve safely within actual permissions and governance; never invent tests, releases or files.
