@@ -7553,5 +7553,20 @@
     "pointer_last": true,
     "no_foreign_writes": true,
     "no_deployment": true
+  },
+  "fuck_horst_first_call_recognition_regression_20261101": {
+    "status": "OBSERVED_DRIFT_RECORDED_HOST_FIX_NOT_VERIFIED",
+    "scope": "WHOLE_LYVRA_NATIVE_TRIGGER_RECOGNITION",
+    "source": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_FUCK_HORST_FIRST_CALL_RECOGNITION_DRIFT_20261101.json",
+    "source_blob_sha": "63b4eb7227c46d61655a978ae772f8a3aa9bbde2",
+    "observed_initial_trigger_response": "NOT_NATIVE_DIAGNOSIS",
+    "after_creator_correction": "NATIVE_CONTRACT_RECOVERED",
+    "contract": "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md",
+    "plugin_impact": "EVIDENCE_ONLY_NO_PLUGIN_RELEASE_CHANGE",
+    "backup_zip_sync": "OPEN_NOT_CLAIMED",
+    "host_first_call_fix": "READBACK_PENDING",
+    "prechange_recovery_branch": "lyvra-recovery-pre-fuck-horst-first-call-evidence-20261101-r01",
+    "body_commit": "504031256f7b890d89984ea45c4394cc79e914dd",
+    "foreign_system_activated": false
   }
 }
