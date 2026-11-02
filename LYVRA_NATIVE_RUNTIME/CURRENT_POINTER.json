@@ -7568,5 +7568,25 @@
     "prechange_recovery_branch": "lyvra-recovery-pre-fuck-horst-first-call-evidence-20261101-r01",
     "body_commit": "504031256f7b890d89984ea45c4394cc79e914dd",
     "foreign_system_activated": false
+  },
+  "track_visual_psy_vocal_update_20261102": {
+    "status": "SOURCE_READBACK_VERIFIED_HOST_ACCEPTANCE_OPEN",
+    "scope": "TRACK_DESIGN_PRESENTATION_AND_CREATOR_RENDERER_LEARNING_ONLY",
+    "prechange_head": "dedd905516b48063c0e02c66d1075505662abda8",
+    "prechange_recovery_branch": "lyvra-recovery-pre-track-visual-psy-vocal-20261102-r01",
+    "genre_vocal_source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "genre_vocal_source_blob": "f640461d6b6441d75048d5dfe6b1e3a4fe236bbd",
+    "visual_source": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CREATOR_VALIDATED_VISUAL_COPY_RENDER_FEEDBACK.md",
+    "visual_source_blob": "8803db1a2dd6e00cc2d16567a7b1c25577b167b8",
+    "body_commits": [
+      "5f8f4d96a4cc37eacf90bade3633350986a623a1",
+      "175605073b05b6cba998faf0939f6de522b84d47"
+    ],
+    "creator_report_causes_proven": false,
+    "other_facets_modified": false,
+    "drive_access_in_this_update": false,
+    "plugin_release_parity": "PENDING",
+    "host_visual_acceptance": "PENDING",
+    "pointer_last": true
   }
 }
