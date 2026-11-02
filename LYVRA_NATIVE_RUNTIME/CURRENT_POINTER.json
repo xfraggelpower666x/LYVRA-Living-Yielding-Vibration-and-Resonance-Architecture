@@ -7626,5 +7626,17 @@
     "plugin_parity": "PENDING",
     "fresh_host": "OPEN",
     "pointer_last": true
+  },
+  "iphone_custom_duration_stability_20261103": {
+    "status": "SOURCE_READBACK_VERIFIED",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/IPHONE_CUSTOM_DURATION_STABILITY_20261103.md",
+    "source_blob_sha": "3144d4b242a29e04263ab92939c41dfbd93c79b0",
+    "body_commit": "fb59e8275e3420648a400c5630f375d087ab5adb",
+    "prechange_head": "01d847ad40c506f1e9d47e4e5a7fe8b908093b6e",
+    "recovery_branch": "lyvra-recovery-pre-iphone-duration-stability-20261103-r01",
+    "decision": "retain validated iPhone Custom duration and ending approach; no deliberate length experiments; retain musical freedom",
+    "plugin_parity": "OPEN",
+    "pointer_last": true
   }
 }
