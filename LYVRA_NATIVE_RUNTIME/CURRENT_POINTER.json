@@ -7611,5 +7611,20 @@
     "plugins": "REPO_DYNAMIC_REFERENCE_REVIEW_PENDING",
     "no_drive": true,
     "pointer_last": true
+  },
+  "iphone_suno_four_render_schema_20261103": {
+    "status": "SOURCE_READBACK_VERIFIED_CREATOR_FEEDBACK",
+    "scope": "TRACK_DESIGN_ONLY",
+    "device": "IPHONE_SUNO_PRO6_CUSTOM_MAIN_EMPTY",
+    "evidence": "THRUST 6:04/6:05 creator report; ROCKET LAUNCH screenshot 6:14/6:18; all four perfect endings creator report",
+    "schema": "flexible causal long-form lyrics and instrumental development; no static quota or duration guarantee",
+    "source_path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "source_blob_sha": "5b77c2dfd15b4bd110e0ea4d52fd0e04fe563827",
+    "body_commit": "1c78b5fa7dfb62573375d8532087c5fd5a0f4f71",
+    "prechange_head": "9464f01b496fcfa2e47e3731c3954bb780b88aee",
+    "recovery_branch": "lyvra-recovery-pre-iphone-four-render-schema-20261103-r01",
+    "plugin_parity": "PENDING",
+    "fresh_host": "OPEN",
+    "pointer_last": true
   }
 }
