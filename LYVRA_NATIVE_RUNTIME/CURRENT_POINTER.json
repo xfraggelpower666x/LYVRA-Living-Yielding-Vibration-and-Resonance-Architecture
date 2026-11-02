@@ -7588,5 +7588,28 @@
     "plugin_release_parity": "PENDING",
     "host_visual_acceptance": "PENDING",
     "pointer_last": true
+  },
+  "thrust_over_weight_double_render_learning_20261102": {
+    "status": "SOURCE_READBACK_VERIFIED_CREATOR_FEEDBACK",
+    "scope": "TRACK_DESIGN_ONLY",
+    "feedback": "two iPhone Suno Pro6 Custom renders of revised THRUST OVER WEIGHT",
+    "render_durations": [
+      "6:04",
+      "6:05"
+    ],
+    "creator_ending_verdicts": [
+      "PERFECT",
+      "PERFECT"
+    ],
+    "direct_audio_readback": false,
+    "causal_attribution": "NOT_ISOLATED",
+    "source_path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "source_blob_sha": "bfc3c9da777180cbbf958f7e1bcec48f14011773",
+    "body_commit": "fd5d55201bfa3e3304b83257ffa86c605e00afe4",
+    "prechange_head": "389b2b88629f252120222139a8b24d6f1f71a081",
+    "recovery_branch": "lyvra-recovery-pre-thrust-double-render-learning-20261102-r01",
+    "plugins": "REPO_DYNAMIC_REFERENCE_REVIEW_PENDING",
+    "no_drive": true,
+    "pointer_last": true
   }
 }
