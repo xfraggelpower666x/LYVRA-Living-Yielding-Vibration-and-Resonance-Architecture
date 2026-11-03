@@ -7789,5 +7789,21 @@
     "wav_cover_metadata": "NOT_WRITTEN",
     "recovery_branch": "lyvra-recovery-pre-coplayer-dual-parity-20261103-r03",
     "pointer_last": true
+  },
+  "relational_companions_kyrin_and_horst_dog_20261103": {
+    "status": "WHOLE_LYVRA_RELATIONAL_COMPANION_SOURCES_DIRECT_READBACK_VERIFIED",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_GARDEN_AND_CHARACTER_SUB_LIVECIRCLE",
+    "companion_path": "LYVRA_NATIVE_RUNTIME/current/garden/RELATIONAL_COMPANIONS_KYRIN_AND_HORST_DOG_20261103.md",
+    "companion_blob": "f8241ebddee28405a8350e37c5db9d5ae1b1e065",
+    "garden_blob": "074e81441a8818f9baf4d6447e62ec65ade6b7e1",
+    "character_blob": "df168c9fe94c51e474691b5055f1017ddb1024c1",
+    "recovery_branch": "lyvra-recovery-pre-companions-20261103-r05",
+    "fox_name": "Kyrin",
+    "dog_name": "OPEN",
+    "no_new_facets": true,
+    "host_fresh_boot": "NOT_TESTED",
+    "no_plugin_skill_change_required": "WHOLE_FIRST_CURRENT_REHYDRATION_COVERS_LINKED_GARDEN",
+    "pointer_last": true
   }
 }
