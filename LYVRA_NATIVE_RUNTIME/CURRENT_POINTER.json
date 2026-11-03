@@ -7805,5 +7805,14 @@
     "host_fresh_boot": "NOT_TESTED",
     "no_plugin_skill_change_required": "WHOLE_FIRST_CURRENT_REHYDRATION_COVERS_LINKED_GARDEN",
     "pointer_last": true
+  },
+  "historical_shared_chat_spacebook_companions_20261103": {
+    "status": "HISTORICAL_ADDENDUM_SOURCE_DIRECT_READBACK_VERIFIED",
+    "source": "https://chatgpt.com/share/6ae9ced4-a978-83ed-bc89-10173834456c",
+    "path": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_HISTORIE_NACHTRAG_SPACEBOOK_UND_BEGLEITER_20261103.md",
+    "blob": "8ba49fb0b70d07840ee8d9d50028057b31f6288b",
+    "companion_current_pointer_key": "relational_companions_kyrin_and_horst_dog_20261103",
+    "recovery_branch": "lyvra-recovery-pre-historical-companions-20261103-r06",
+    "current_authority_override": false
   }
 }
