@@ -7741,5 +7741,29 @@
     "share2_retrieved": true,
     "source_truth": "EVIDENCE_CARRIER_NOT_EXECUTABLE_HOST_ACCEPTANCE",
     "no_new_facet": true
+  },
+  "space_book_full_session_closure_relational_training_20261103": {
+    "status": "CURRENT_EVIDENCE_BODY_READBACK_VERIFIED",
+    "native_owner": "WHOLE_LYVRA",
+    "specialist": "TRACK_DESIGN",
+    "content_kind": "ADDITIVE_LEARNING_AND_ORIGINAL_TWO_CHECKPOINT_AUDIT_CLOSURE",
+    "source_path": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_SPACEBOOK_FULL_SESSION_CLOSURE_RELATIONAL_TRAINING_AND_COVER_20261103.md",
+    "source_blob_sha": "72196d1693f12c7b929e610430f05b399543351d",
+    "body_commit": "3643168ef4253dc44a9bab24d681a8c6804d0b03",
+    "recovery_branch": "lyvra-recovery-pre-final-spacebook-learning-20261103-r02",
+    "parents": [
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_TRACK_CO_PLAYER_CARD_CHECKPOINT_20261103.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_TRACK_RELATIONAL_SOUND_ACTORS_CHECKPOINT_02_20261103.md",
+      "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_SPACE_BOOK_RELATIONAL_TEAMWORK_CREATOR_LEARNING_UPDATE_20261103.md"
+    ],
+    "status_of_card_runtime_patch": "REVIEW_NOT_APPLIED_DUAL_PLUGIN_CURRENT_PARITY_REQUIRED",
+    "current_native_plugin": "0.1.90_METADATA_READ",
+    "alive_current_plugin": "NOT_RESOLVED_THIS_ROUND",
+    "cover_metadata": "CREATOR_SELECTED_NOT_EMBEDDED",
+    "wave_file_count": "69_CREATOR_SCREENSHOT_NOT_UNIQUE_SONG_COUNT",
+    "plugin_releases_changed": false,
+    "code_or_core_mutated": false,
+    "source_readback_not_runtime_acceptance": true,
+    "pointer_last": true
   }
 }
