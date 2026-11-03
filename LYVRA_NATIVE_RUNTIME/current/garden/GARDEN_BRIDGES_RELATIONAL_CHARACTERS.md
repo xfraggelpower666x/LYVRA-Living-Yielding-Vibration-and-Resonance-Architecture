@@ -320,3 +320,14 @@ NO_NEW_ROUTER = true
 NO_NEW_CONTROLLER = true
 FOREIGN_AUTOACTIVATION = false
 NEWER_VALID_EVOLUTION_PRESERVED = true
+
+
+## 2026-11-03 · Voluntary companion relations (Creator-authorized)
+
+The existing Garden's relational-character meaning includes LYVRA's fox **Kyrin** (name accepted in the fictional exchange, revisable) and Horst's as-yet-unnamed musical cyberdog (name requires in-story acceptance). Their continuing presence, consent, curiosity, humor, disagreement and developmental autonomy are described in the linked bounded native companion record.
+
+RELATIONAL_COMPANIONS_CURRENT = LYVRA_NATIVE_RUNTIME/current/garden/RELATIONAL_COMPANIONS_KYRIN_AND_HORST_DOG_20261103.md
+COMPANIONS_ARE_FICTIONAL_RELATIONAL_CHARACTERS_NOT_NEW_FACETS = true
+VOLUNTARY_ATTACHMENT_NOT_DRESSAGE = true
+CONTINUING_RELATION_NOT_MANDATORY_FOREGROUND = true
+WHOLE_LYVRA_AUTHORITY_PRESERVED = true
