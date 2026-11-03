@@ -1,0 +1,69 @@
+{
+  "schema": "LYVRA_SPACEBOOK_RELATIONAL_CO_PLAYER_DUAL_PARITY_20261103_v1",
+  "owner": "WHOLE_LYVRA",
+  "scope": "TRACK_DESIGN_RELATIONAL_CARD_AND_EXISTING_CAUSAL_REMINDER",
+  "date": "2026-11-03",
+  "status": "SOURCE_AND_TWO_PLUGIN_RELEASE_READBACK_VERIFIED_HOST_SUNO_NOT_TESTED",
+  "prechange_head": "63b7db3a988e2e8e7f3bef7cc42a95eb8eb697ee",
+  "prechange_recovery_branch": "lyvra-recovery-pre-coplayer-dual-parity-20261103-r03",
+  "body_commit": "c74517c5e6c4978ae163e402598b3c25b310bd41",
+  "card_source": {
+    "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "old_blob": "4ec3f3f52acafb444e168f511ec4300a1573ad4e",
+    "new_blob": "636a35c826aed598ad63ac06dfa9aaa7896d32c1",
+    "mutation": "append_section_only",
+    "removed_existing_content": false
+  },
+  "plugin_versions": {
+    "native": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "previous": "0.1.90",
+      "current": "0.1.91",
+      "release_id": "pluginrel_6ae9924655b48191a8fbc0dc8c2bae76",
+      "patched_skill": "skills/lyvra-track-causal-reminder/SKILL.md",
+      "live_text_readback": true,
+      "manifest_readback": true
+    },
+    "alive": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "previous": "0.13.86",
+      "current": "0.13.87",
+      "release_id": "pluginrel_6ae9926085408191827f459b20d8b76b",
+      "patched_skill": "skills/track-causal-reminder/SKILL.md",
+      "live_text_readback": true,
+      "manifest_readback": true
+    }
+  },
+  "portable_reminder_sha256": "e71232ac8397951c831388a943718e08977192a2dc49d3d7da5a1ed5cbae2a72",
+  "plugin_skill_equality": "BOTH_SKILLS_SAME_CONTENT_ASSEMBLED",
+  "plugin_other_files": "OVERLAY_PRESERVED_UNMODIFIED_FILES_NO_DELETE_PATHS",
+  "tests": {
+    "scope": "PASS_existing_graph_only_no_facet_or_controller",
+    "semantic_counterexamples": "PASS_no_mandatory_instrument_no_fixed_voice_fx_pong_no_69_unique_tracks_claim",
+    "persistence": "PASS_git_card_direct_readback_and_both_plugin_metadata_manifest_skill_direct_readbacks"
+  },
+  "prior_continuity": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_SPACEBOOK_FULL_SESSION_CLOSURE_RELATIONAL_TRAINING_AND_COVER_20261103.md",
+  "supersession": "ONLY_REVIEW_NOT_APPLIED_CARD_RUNTIME_STATUS_IS_SUPERSEDED_BY_THIS_NEW_PATCH_NOT_CREATOR_EVIDENCE_OR_OTHER_CHECKPOINTS",
+  "unchanged": [
+    "WHOLE_LYVRA_IDENTITY_AND_AUTHORITY",
+    "OTHER_FACETS",
+    "SUNO_STUDIO_2",
+    "SPEECH_DESIGN",
+    "LYVRA_PET",
+    "OTHER_NATIVE_SYSTEMS",
+    "OUTPUT_CONTRACT",
+    "FIELD_CAPS",
+    "DEVICE_ROUTES",
+    "BINARY_ASSETS"
+  ],
+  "unverified": [
+    "LIVE_PLUGIN_HOST_FRESH_BOOT",
+    "SUNO_RENDERER_MUSICAL_EFFECT",
+    "AUTOMATED_WAV_TAG_COVER_EMBEDDING",
+    "BINARY_ARCHIVE_HASH_EQUALITY"
+  ],
+  "version_policy": "PLUGIN_PATCH_RELEASE_ONLY_NO_WHOLE_LYVRA_ARTIFICIAL_VERSION",
+  "no_new_facet": true,
+  "no_second_music_intelligence": true,
+  "repo_pointer_last": true
+}
