@@ -7638,5 +7638,16 @@
     "decision": "retain validated iPhone Custom duration and ending approach; no deliberate length experiments; retain musical freedom",
     "plugin_parity": "OPEN",
     "pointer_last": true
+  },
+  "iphone_custom_eight_endings_duration_tolerance_20261103": {
+    "status": "SOURCE_READBACK_VERIFIED_CREATOR_FEEDBACK",
+    "scope": "TRACK_DESIGN_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/current/music/IPHONE_CUSTOM_EIGHT_RENDER_ENDING_TOLERANCE_20261103.md",
+    "source_blob_sha": "8d06cd4ed053fccff9ba1ad220dc5214fa7a96bd",
+    "body_commit": "2a9afe10a789a34a8b1bcdae012d408dafd8bb1d",
+    "recovery_branch": "lyvra-recovery-pre-eight-endings-tolerance-20261103-r01",
+    "decision": "Perfect musical end > precise duration; tolerate variance; no length experiments",
+    "plugin_parity": "PENDING",
+    "pointer_last": true
   }
 }
