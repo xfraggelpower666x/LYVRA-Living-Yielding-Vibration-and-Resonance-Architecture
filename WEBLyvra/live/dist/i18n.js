@@ -116,6 +116,7 @@ const attributes=[
   ['.skip','aria-label','Zum Inhalt','Skip to content'],
   ['.header .brand','aria-label','LYVRA Startseite','LYVRA home'],
   ['.nav','aria-label','Hauptnavigation','Main navigation'],
+  ['.nav a[href="/artist-discovery/"]','aria-label','FRAGGELPOWER666 Musik und Plattformen entdecken','Explore FRAGGELPOWER666 music and platforms'],
   ['.facet-tabs','aria-label','Kreative Facetten','Creative facets']
 ];
 export function setLanguage(next,persist=true){
