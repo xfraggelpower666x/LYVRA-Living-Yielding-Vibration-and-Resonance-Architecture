@@ -1848,3 +1848,53 @@ AVOID_UNJUSTIFIED_TONAL_RESOLUTION
 
 PSYCHOACOUSTIC_CONTROL_MAY_ACT_EARLY_IN_RELATIONAL_RESOLUTION = true
 LOCAL_FX_MAY_IMPLEMENT_A_RESOLVED_PSYCHOACOUSTIC_INTENT_BUT_MUST_NOT_REPLACE_IT = true
+
+
+## Space-book relational co-player consequence refinement — 2026-11-03
+
+RELATIONAL_CO_PLAYER_REFINEMENT = ADDITIVE_EXPERIENCE_MEMORY_TO_EXISTING_GRAPH
+PROVENANCE = LYVRA_NATIVE_RUNTIME/continuity/LYVRA_SPACEBOOK_FULL_SESSION_CLOSURE_RELATIONAL_TRAINING_AND_COVER_20261103.md
+CHECKPOINTS = LYVRA_TRACK_CO_PLAYER_CARD_CHECKPOINT_20261103 | LYVRA_TRACK_RELATIONAL_SOUND_ACTORS_CHECKPOINT_02_20261103
+NO_NEW_MUSIC_INTELLIGENCE = true
+NO_NEW_FACET_OR_CONTROLLER = true
+NO_REPLACED_CARD_OR_DORMANT_FX_CAPABILITY = true
+
+### Existing card-to-card causal relationship (not a scripted chain)
+
+When a current story, voice event, emotion, lyrical anchor or psychoacoustic need makes a dialogue musically relevant, the EXISTING relational graph may choose an expressive co-player from:
+VOICE | ELECTRONIC_INSTRUMENT | ACID_FM_GOA_PHRASE | FX_SFX_EVENT | SPATIAL_SOMATIC_MOTION | SILENCE
+
+The actor may initiate, answer, transform, interrupt, support, yield, inherit or conclude a motif or event. The actors do NOT need to be humanized, paired or present together. Existing card fields MEANING, RELATION, CONTEXT, CAUSALITY, COUNTEREXAMPLE, RETURN_WITH_HISTORY, CURRENT_TRACK_HISTORY and EMOTION/PSYCHOACOUSTIC references remain authoritative.
+
+EVALUATE_ROLE_WITH_EXISTING_CARD_MEANING =
+CURRENT_TRACK_SEMANTIC_CAUSE |
+RELEVANT_PAST_RELATION |
+CO_PLAYER_EVENT_OR_NON_EVENT |
+WHAT_CHANGED_IN_NEXT_MUSICAL_DECISION |
+COUNTERRELATION_OR_RELEASE
+
+WHAT_CHANGED_MAY_BE =
+MEANING_OF_NEXT_VOCAL_OR_MOTIF |
+PRESSURE_OR_SPATIAL_INTERPRETATION |
+RHYTHMIC_OR_SPECTRAL_INTERLOCK |
+ANTICIPATION_OR_CONTRAST |
+RETURN_WITH_HISTORY |
+EARNED_INSTRUMENTAL_TERMINAL_RELEASE
+
+A meaningful consequence may also be NO instrument, NO response, NO FX, or silence. The connection is a candidate until justified by the track's meaning; card recall is never a mandatory command or an exhaustive menu.
+
+### Creator evidence (qualified, not automated DSP proof)
+
+2026-11-03 space-book music-session creator feedback: electronic violin perceived to answer vocals on NO SHAPE CAN HOLD ME; cello/vocal interplay praised as symphonic on THE QUIET WEIGHT OF STARS; saxophone contributed to ARMS OF A BILLION STARS; electronic piano supplied the THE GRAVITY WE CANNOT SEE finale; FX/SFX/processed voice co-players explored on LYVRA OUT OF CONTROL and CREATOR OVERDOSE FREAK OUT. These are positive CREATOR_OR_LISTENER_REPORT examples and possible future retrieval cues, not prescribed future ensemble slots or measured per-effect causal attribution. The screenshot reports 69 WAV files, which does not establish 69 distinct concepts or 69 independent runtime tests.
+
+TRACK_SPECIFIC_EMERGENT_STORY_MAY_RELATE_TO_WHOLE_COLLECTION_MEANING = true
+MICRO_STORY_NE_FIXED_MACRO_STORY_SCRIPT = true
+CO_PLAYER_EXAMPLE_NE_DEFAULT_INSTRUMENTATION = true
+SOUND_ACTOR_RELATION_NE_REQUIRED_VOCAL_PING_PONG = true
+RADIO_ANTI_SAMENESS_RECALL_NE_RANDOM_ROTATION = true
+MAXIMAL_FREAKOUT_NE_UNIVERSAL_TRACK_INTENSITY = true
+CREATOR_AUDIO_FEEDBACK_NE_VERIFIED_RENDERER_IMPLEMENTATION = true
+
+### Renderer and closure boundaries
+
+Use shared semantic-causal musical choices before translating to distinct existing iPhone Custom and PC browser renderers. iPhone Pro 6 Custom without Main has no Duration slider; PC browser Duration slider remains primary. Preserve the real stable LOW DJ motor where context demands it, autonomous MID/HIGH dialogue, sufficient meaningful lyric structure, functional emojis, pre-copy UTF-16 guards and instrumentally earned unambiguous ending. Complete endings outrank a fixed seconds quota. No new fields and no host success claims from source readback alone.
