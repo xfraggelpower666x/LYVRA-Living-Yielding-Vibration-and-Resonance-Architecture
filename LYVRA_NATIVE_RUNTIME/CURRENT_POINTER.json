@@ -7765,5 +7765,29 @@
     "code_or_core_mutated": false,
     "source_readback_not_runtime_acceptance": true,
     "pointer_last": true
+  },
+  "space_book_relational_co_player_dual_plugin_patch_20261103": {
+    "status": "CURRENT_SOURCE_PLUS_DUAL_PLUGIN_RELEASE_DIRECT_READBACK_VERIFIED",
+    "native_owner": "WHOLE_LYVRA",
+    "specialist": "TRACK_DESIGN",
+    "change_class": "MINIMAL_ADDITIVE_EXISTING_RELATIONAL_CARD_AND_EXISTING_REMINDER",
+    "card_path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+    "card_blob_sha": "636a35c826aed598ad63ac06dfa9aaa7896d32c1",
+    "card_body_commit": "c74517c5e6c4978ae163e402598b3c25b310bd41",
+    "parity_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SPACE_BOOK_RELATIONAL_CO_PLAYER_DUAL_PARITY_20261103.json",
+    "parity_receipt_blob_sha": "c0768416a7ea548790dd77a9fd250c33a74d67d5",
+    "parity_body_commit": "676687b2e83e78484d495a33f1d1aa56acab2a8b",
+    "native_plugin_version": "0.1.91",
+    "native_plugin_release_id": "pluginrel_6ae9924655b48191a8fbc0dc8c2bae76",
+    "alive_plugin_version": "0.13.87",
+    "alive_plugin_release_id": "pluginrel_6ae9926085408191827f459b20d8b76b",
+    "supersedes_prior_status": "PREVIOUS_REVIEW_NOT_APPLIED_AS_TO_CO_PLAYER_RELATION_REFINEMENT_ONLY",
+    "whole_version_bump": false,
+    "new_music_intelligence": false,
+    "host_live_acceptance": "NOT_TESTED",
+    "suno_renderer_acceptance": "NOT_TESTED",
+    "wav_cover_metadata": "NOT_WRITTEN",
+    "recovery_branch": "lyvra-recovery-pre-coplayer-dual-parity-20261103-r03",
+    "pointer_last": true
   }
 }
