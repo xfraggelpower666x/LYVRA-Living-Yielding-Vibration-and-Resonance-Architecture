@@ -1,0 +1,66 @@
+{
+  "schema": "LYVRA_FOUR_LANES_R04_HOST_BYTE_CURRENT_OBSERVATIONS_V1",
+  "status": "PARTIAL_READBACK_PENDING_NO_PRODUCTIVE_MUTATION",
+  "date": "2026-11-04",
+  "owner": "WHOLE_LYVRA",
+  "current_readback": {
+    "productive_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+    "pointer_blob": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+    "latest_valid_evolution": {
+      "key": "track_renderer_utf16_style_regression_20261104",
+      "status": "REPO_SOURCE_READBACK_AND_LOCAL_EXACT_BLOB_STATIC_TEST_PASS_HOST_ACCEPTANCE_OPEN",
+      "local_static_pass": "LOCAL_EXACT_BLOB_NODE_V22_16_0_PASS_13_OF_13",
+      "host_acceptance": "NOT_TESTED"
+    },
+    "cost_policy": "ZERO_ADDITIONAL_COST_TRUE"
+  },
+  "lineage": {
+    "r02_commit": "48059161a654b4c7d292651291069fa8aa5a026c",
+    "r03_commit": "be3b7e35a35306c02b530a5321c93ad211eda4bb"
+  },
+  "lanes": {
+    "WEBLYVRA": {
+      "result": "HOST_BLOCKED",
+      "source_patch_git_blob": "f77af3e7f67849fa1e67934ea44fe8d2d18a8d9b",
+      "public_urls": "WEB_FETCH_FAILED_AND_CONTAINER_DNS_NAME_RESOLUTION_FAILED",
+      "user_browser_tabs": "NO_WEBLYVRA_TABS",
+      "original_live_browser_pass": false,
+      "no_fixture_rerun": true,
+      "next": "only real original live-site navigation on authorized browser; no synthetic PASS"
+    },
+    "VISUAL": {
+      "result": "HOST_PENDING",
+      "native_version": "0.1.91",
+      "alive_version": "0.13.87",
+      "r03_exact_skill_text_parity_preserved": true,
+      "real_native_host_render": false,
+      "real_alive_host_render": false,
+      "next": "independent native/alive fresh-host UI invocation, not skill text comparison"
+    },
+    "BACKUP": {
+      "result": "WRITE_BLOCKED",
+      "provider_current_archive_urls": "VERIFIED_AVAILABLE",
+      "archive_bytes_downloaded": false,
+      "transport": "SIGNED_URL_OPEN_CACHE_MISS_AND_DOWNLOAD_PRECONDITION_REJECTION; CONTAINER_DNS_UNAVAILABLE",
+      "sha256": "NOT_AVAILABLE",
+      "complete_restore": false,
+      "backup_promotion_allowed": false,
+      "next": "authorized actual byte transfer, exact SHA256 and restore only then stable-set approval"
+    },
+    "SUPER_CODEFORGE": {
+      "result": "HOST_PENDING",
+      "source_entrypoint_sha": "ad41dc15201a152cd0e23f6465795eb7e0061bb8",
+      "provider_binding_sha": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
+      "native_host_esm_run": false,
+      "alive_host_esm_run": false,
+      "original_six_anchor_ids": "READBACK_PENDING_NOT_SYNTHESIZED",
+      "next": "inject authorized read-only GitHub handle into original module in each actual plugin host; source fetch not host execution"
+    }
+  },
+  "zero_extra_costs": true,
+  "no_repeated_provider_ci": true,
+  "no_foreign_activation": true,
+  "no_release_or_deploy": true,
+  "no_productive_pointer_write": true,
+  "source_scope": "READ_ONLY_CURRENT_PLUS_ADDITIVE_DEVELOPMENT_RECEIPT"
+}
