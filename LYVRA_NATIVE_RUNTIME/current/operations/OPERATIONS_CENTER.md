@@ -248,3 +248,21 @@ MONITOR_MANDATORY = TRUE
 OPERATIONS_CENTER_NE_CONTROLLER = TRUE
 NO_FAKE_COMPLETENESS = TRUE
 NO_FORCED_ALL_PROJECTS_ACTIVE = TRUE
+
+
+## Development Continuity R02 — isolated optional projection (not productive)
+
+STATUS = ISOLATED_DEVELOPMENT_ONLY
+REFERENCE_BRANCH = lyvra-visual-continuity-isolated-20261104-r02
+EXISTING_VISUAL_PROJECTOR = LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs
+OPTIONAL_READ_ONLY_ADAPTER = LYVRA_NATIVE_RUNTIME/development/visual_inheritance/operations-continuity-view.mjs
+CONTINUITY_LEDGER = LYVRA_NATIVE_RUNTIME/development/visual_inheritance/continuity/DEVELOPMENT_CONTINUITY_LEDGER.json
+PROJECT_REGISTRY = LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json
+
+The optional source adapter extends the EXISTING Operations Center visual projection with a separate, durable-development view. It does not add a visual engine, controller, sixth top-level menu choice, workspace selection, native authority or background scheduler. Keep the original two project projections and original entries intact.
+
+Show each development record's stable ID, source classification, handoff status, independently read-back SOURCE / DELIVERY / ADOPTION / HOST evidence, and precise resume anchor. Historical ChatBackup information is diagnostic provenance, never CURRENT. Absence of real handoff receipt means NOT_SENT or READBACK_PENDING; no receipt means no adoption. R02 does not itself send, accept, adopt, execute, register in productive Current, or display on a verified fresh host.
+
+Suno Audio Integrity is an independent source-bound DIAGNOSTIC_CANDIDATE, not a renderer change or the frozen Suno Monitor R06/R11 governance. Browser R04/R06 remains host-blocked pending authorized free Chromium acceptance. Preserve Whole-LYVRA authority, all six Return Anchors, current projects, Native/ALIVE and no foreign autoactivation.
+
+PRODUCTION_ADOPTION = WRITE_BLOCKED_PENDING_GOVERNANCE_AND_FRESH_HOST
