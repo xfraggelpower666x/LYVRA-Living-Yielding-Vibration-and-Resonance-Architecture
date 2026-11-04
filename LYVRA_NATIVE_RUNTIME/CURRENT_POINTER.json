@@ -7853,25 +7853,28 @@
     "pointer_last": true
   },
   "track_renderer_utf16_style_regression_20261104": {
-    "status": "REPO_TEST_AND_EVIDENCE_READBACK_VERIFIED_CI_HOST_ACCEPTANCE_OPEN",
+    "status": "REPO_SOURCE_READBACK_AND_LOCAL_EXACT_BLOB_STATIC_TEST_PASS_HOST_ACCEPTANCE_OPEN",
     "owner": "WHOLE_LYVRA",
     "scope": "TRACK_DESIGN_ONLY_STATIC_TEST_CORRECTION",
     "regression_test_path": "LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs",
     "regression_test_blob_sha": "f43c31820e0cb5a93954162779d7719f56a3c0fd",
     "test_body_commit": "67add2392470591c84ec96e3514263eb2039f1ea",
     "evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_TRACK_RENDERER_UTF16_STYLE_REGRESSION_20261104.md",
-    "evidence_sha": "49b811a1f4e7ac88b5b76b50969b483366878c9a",
-    "evidence_commit": "128f9886f26dc03a311b568901de8f1e2513eac6",
+    "evidence_sha": "d8d40dd97e46c1c5611c14aaba6c21fffc31ff3b",
+    "evidence_commit": "0a886fe79e7e0b2d3cc42ad86f8cb852250a9814",
     "prechange_head": "f7b18d218f4c2be16ec1766d9967cf584f258589",
     "recovery_branch": "lyvra-recovery-pre-utf16-static-regression-20261104-r01",
     "cause": "STATIC_TEST_COUNTED_UNICODE_CODEPOINTS_NOT_UTF16_CODE_UNITS",
     "fix": "JS_STRING_LENGTH_FOR_DISPLAY_COUNT_AND_AUDIT_PLUS_ASTRAL_EMOJI_REGRESSIONS",
     "native_renderer_policy_unchanged": true,
     "plugin_impact": "STATIC_TEST_ONLY_NO_PLUGIN_RUNTIME_CHANGE",
-    "node_test_execution": "NOT_EXECUTED",
+    "node_test_execution": "LOCAL_EXACT_BLOB_NODE_V22_16_0_PASS_13_OF_13",
     "fresh_host_copy_acceptance": "NOT_TESTED",
     "suno_render_acceptance": "NOT_TESTED",
     "no_new_facet_or_version": true,
-    "pointer_last": true
+    "pointer_last": true,
+    "github_ci_execution": "NO_STATUS_RETURNED_UNVERIFIED",
+    "test_execution_hash_match": "f43c31820e0cb5a93954162779d7719f56a3c0fd",
+    "local_test_recovery_branch": "lyvra-recovery-pre-utf16-test-execution-20261104-r01"
   }
 }
