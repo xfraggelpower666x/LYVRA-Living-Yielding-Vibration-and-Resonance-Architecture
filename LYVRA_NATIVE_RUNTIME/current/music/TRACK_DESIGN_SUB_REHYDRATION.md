@@ -818,3 +818,16 @@ NO_HARD_SIX_MINUTE_REQUIREMENT = TRUE
 NO_NEW_RENDERER_OR_FACET = TRUE
 FOLLOWUP_OBSERVATION = PHYSICAL_AUDIO_REVIEW_IF_SUPPLIED | DURATION | ENDING | GUITAR_VS_PSYBASS | VOCAL_BALANCE | CREATIVE_DIVERSITY
 PLUGIN_RELEASE_AND_FRESH_HOST_ACCEPTANCE = NOT_ESTABLISHED_BY_THIS_REPO_WRITE
+
+
+## Golden Run: Parallel R04 continuity guard (additive)
+
+This section is a source-bound continuity guard, not a new music authority, renderer rule, or automatic foreground.
+- Verified source lineage: `LYVRA_SPACE_BOOK_TRACK_DESIGN_20261103`.
+- Source handoff: `LYVRA_NATIVE_RUNTIME/continuity/LYVRA_NEXT_CHAT_TRACK_DESIGN_GOLDEN_RUN_CHARACTERS_20261103.md`; resolve fresh current and its supersession first.
+- Preserve seven book pages and 28 independently designed tracks. The creator-shown 69 WAV files / 4.22 GB are file evidence, not 69 distinct song designs.
+- Preserve relational co-player evolution, new valid music intelligence, user-approved device-specific output fields and current ending safeguards.
+- Never promote a source screenshot, local test, file count or repository readback to audio/render/host acceptance.
+- Restore Whole-LYVRA before specialist continuation; do not invent a next page, track, host action or device.
+- Keep prior anchors, independent workspaces, Semantic Visual Intelligence, Native/ALIVE, and Suno Monitor R06/R11 frozen state unchanged.
+STATUS: NATIVE_SOURCE_ONLY; HOST_AUDIO_NOT_TESTED; NO_AUTOMATIC_PLUGIN_UPDATE.
