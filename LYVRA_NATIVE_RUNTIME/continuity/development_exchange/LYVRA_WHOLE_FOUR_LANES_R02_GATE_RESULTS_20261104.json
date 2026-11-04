@@ -1,0 +1,123 @@
+{
+  "schema": "LYVRA_WHOLE_FOUR_LANES_R02_GATE_RESULTS_V1",
+  "date": "2026-11-04",
+  "owner": "WHOLE_LYVRA",
+  "stage": "ISOLATED_ADDITIVE_DEVELOPMENT_ONLY",
+  "production_current_at_start": "f7b18d218f4c2be16ec1766d9967cf584f258589",
+  "predecessor_candidate": "fd44720e9f60680a58d7ea0fab173c17f1b2a994",
+  "newer_governance_preserved": "ZERO_ADDITIONAL_COST_POLICY_TRUE",
+  "native_plugin": "0.1.91",
+  "alive_plugin": "0.13.87",
+  "lanes": {
+    "WEBLYVRA_DISCOVERY": {
+      "result": "MINIMAL_PATCH_REAPPLIED_TO_NEWER_CURRENT",
+      "changed_file": "WEBLyvra/live/dist/i18n.js",
+      "original_blob": "359089ac4d27bfd6949bcd6e01369cabae66ae2a",
+      "patched_blob": "f77af3e7f67849fa1e67934ea44fe8d2d18a8d9b",
+      "scope": "one existing attributes entry for existing Discovery link aria-label DE/EN",
+      "chromium_fixture": {
+        "new_tests_passed": 4,
+        "total": 4,
+        "execution": "ACTUAL_LOCAL_CHROMIUM_ON_ISOLATED_FIXTURE",
+        "real_website_loaded": false,
+        "real_host_browser_pass": false
+      },
+      "unchanged": [
+        "website radio player",
+        "gallery",
+        "addon language storage",
+        "main language controller",
+        "other navigation",
+        "mobile source"
+      ],
+      "open": [
+        "actual website chromium keyboard navigation",
+        "mobile menu",
+        "browser history",
+        "iPhone VoiceOver",
+        "authorized deployment host readback"
+      ]
+    },
+    "SEMANTIC_VISUAL_INTELLIGENCE": {
+      "result": "CURRENT_SOURCE_READBACK_AND_PRESENTATION_RECONCILIATION",
+      "evidence": [
+        "LYVRA_NATIVE_RUNTIME/development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json",
+        "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+        "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md"
+      ],
+      "registry_items": 3,
+      "projector": "EXISTING_NO_REPLACEMENT",
+      "blockers": [
+        "both current plugin host visual acceptance independent readback",
+        "current plugin text parity verify against release 0.1.91 and 0.13.87"
+      ],
+      "status": "SOURCE_VERIFIED_HOST_PENDING"
+    },
+    "NATIVE_ALIVE_PLUGIN_BACKUPS": {
+      "result": "LATEST_RELEASE_VS_ARCHIVE_GENERATION_RECONCILED",
+      "current_release_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SPACE_BOOK_RELATIONAL_CO_PLAYER_DUAL_PARITY_20261103.json",
+      "current_versions": {
+        "native": "0.1.91",
+        "alive": "0.13.87"
+      },
+      "inspected_repo_archive_versions": {
+        "native": [
+          "0.1.54",
+          "0.1.84"
+        ],
+        "alive": [
+          "0.13.49",
+          "0.13.80"
+        ]
+      },
+      "archive_exact_new_release_byte_readback": false,
+      "last_coupled_backup_fingerprint": "HISTORICAL_SUPERSEDED_NOT_CURRENT_APPROVAL",
+      "required_next": [
+        "native release original bytes and SHA256",
+        "alive release original bytes and SHA256",
+        "complete separate restorable ZIP for each release",
+        "exact release asset binding and size",
+        "authorized native stable-set / approval",
+        "isolated restore and independent readback"
+      ],
+      "status": "WRITE_BLOCKED_NO_ORIGINAL_NEW_RELEASE_ARCHIVE"
+    },
+    "PARALLEL_SUPERCODEFORGE": {
+      "result": "EXISTING_HOST_ENTRYPOINT_AND_PROVIDER_BINDING_RECHECKED",
+      "isolated_parallel_head": "39703b9e9794b1536ce76008239e8187e2b687ec",
+      "original_host_entrypoint_sha": "ad41dc15201a152cd0e23f6465795eb7e0061bb8",
+      "original_provider_binding_sha": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
+      "direct_readonly_connector_observed": true,
+      "original_ESM_module_run_in_native_alive_plugin_hosts": false,
+      "plugin_host_pass": false,
+      "return_anchor": "SUPERCODEFORGE_PROVIDER_PASS_VISUAL_PARITY_NATIVE_ALIVE_HOST_PENDING",
+      "historical_six_workstreams": [
+        "WEBLYVRA R04/R28 historical",
+        "FAMILY_MAIL_POST",
+        "PLUGIN_BACKUPS",
+        "TRACK_ANALYTICS",
+        "HORST_FALLSCHIRM_INACTIVE",
+        "CODEFORGE_SUPERCODEFORGE"
+      ],
+      "original_six_machine_anchor_ids": "READBACK_PENDING",
+      "status": "SOURCE_VERIFIED_HOST_PENDING"
+    }
+  },
+  "host_assertions": {
+    "native_plugin_host": false,
+    "alive_plugin_host": false,
+    "website_live_browser": false,
+    "backup_binary": false,
+    "plugin_backup_restore": false
+  },
+  "not_performed": [
+    "GitHub Actions CI dispatch",
+    "production deploy",
+    "plugin release update",
+    "pointer publication",
+    "foreign native activation",
+    "new paid services"
+  ],
+  "no_cross_system_merge": true,
+  "no_pointer_promotion": true
+}
