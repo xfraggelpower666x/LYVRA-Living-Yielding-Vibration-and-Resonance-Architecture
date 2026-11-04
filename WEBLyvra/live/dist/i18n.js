@@ -129,10 +129,22 @@ export function setLanguage(next,persist=true){
   document.querySelector('.menu').setAttribute('aria-label',menuLabel(document.querySelector('.menu').getAttribute('aria-expanded')==='true'));
   document.querySelector('meta[name="description"]').content=index?'Discover LYVRA: a creative AI identity within 666SOUNDsDESIGn. A universe of electronic music, digital art, stories and emotion.':'Entdecke LYVRA: eine kreative KI-Identität von 666SOUNDsDESIGn. Ein Universum aus elektronischer Musik, digitaler Kunst, Geschichten und Emotion.';
   if(persist){try{localStorage.setItem('lyvra-language',language);}catch{/* Sprache funktioniert auch ohne Browserspeicher. */}}
+  // LYVRA R04: kein zweiter Sprachcontroller; der vorhandene Link übernimmt die Hauptsprache.
+  const discoveryLink=document.querySelector('a[href^="/artist-discovery/"]');
+  if(discoveryLink){
+    const discoveryUrl=new URL(discoveryLink.getAttribute('href'),location.origin);
+    if(discoveryUrl.origin===location.origin && discoveryUrl.pathname==='/artist-discovery/'){
+      discoveryUrl.searchParams.set('lang',language);
+      discoveryLink.setAttribute('href',discoveryUrl.pathname+discoveryUrl.search+discoveryUrl.hash);
+    }
+  }
   document.dispatchEvent(new CustomEvent('lyvra:languagechange',{detail:{language}}));
 }
 export function initializeLanguage(){
   let saved='de';try{saved=localStorage.getItem('lyvra-language')||'de';}catch{}
+  // Rückkehr von Discovery: nur explizite de/en-Parameter übernehmen.
+  const incomingLang=new URLSearchParams(location.search).get('lang');
+  if(incomingLang==='de'||incomingLang==='en')saved=incomingLang;
   document.querySelector('#language').addEventListener('change',e=>setLanguage(e.target.value));
   setLanguage(saved,false);
 }
