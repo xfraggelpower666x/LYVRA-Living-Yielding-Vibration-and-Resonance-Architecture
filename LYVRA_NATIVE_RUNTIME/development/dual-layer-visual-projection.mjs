@@ -14,3 +14,16 @@ export function projectDualLayer(registry, opts = {}) {
   const dynamic = persistent.filter(item => item.state !== "ADOPTED").sort((a,b) => score(b)-score(a) || a.id.localeCompare(b.id)).map(item=>({...item, priority_basis:{creator_selected:!!item.priority_inputs?.creator_selected,blocked:!!item.priority_inputs?.blocked,urgent:!!item.priority_inputs?.urgent}}));
   return {authority:"WHOLE_LYVRA", dynamic, persistent, source_count:items.length, no_autoactivation:true, no_private_content:true};
 }
+
+
+// R04: zusätzlicher read-only Snapshot-Guard; bestehende Projektion bleibt unberührt.
+// Projektion bleibt einzige dynamische und permanente Datenquelle.
+export function inspectDualLayerSnapshot(registry, opts={}){
+  const projection=projectDualLayer(registry,opts);
+  const persistentIds=new Set(projection.persistent.map(item=>item.id));
+  if(projection.persistent.some(item=>!item.evidence_path))throw new TypeError('missing evidence');
+  if(projection.dynamic.some(item=>!persistentIds.has(item.id)))throw new TypeError('dynamic not persistent');
+  return {authority:projection.authority,source_count:projection.source_count,
+    dynamic_count:projection.dynamic.length,persistent_count:projection.persistent.length,
+    no_autoactivation:projection.no_autoactivation,no_private_content:projection.no_private_content};
+}
