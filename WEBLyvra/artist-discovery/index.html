@@ -273,6 +273,15 @@ function addonLanguage(next){
  discoState.lang=next==='en'?'en':'de';
  const lang=next==='en'?'en':'de';
  document.documentElement.lang=lang;
+ // Vorhandenen Rücklink ohne zweiten Router oder Origin-Wechsel aktualisieren.
+ const lyvraReturnLink=document.querySelector('a.back');
+ if(lyvraReturnLink){
+   const returnUrl=new URL(lyvraReturnLink.getAttribute('href'),location.href);
+   if(returnUrl.origin===location.origin && returnUrl.pathname==='/'){
+     returnUrl.searchParams.set('lang',lang);
+     lyvraReturnLink.setAttribute('href',returnUrl.toString());
+   }
+ }
  for(const button of document.querySelectorAll('[data-addon-lang]'))button.setAttribute('aria-pressed',String(button.dataset.addonLang===lang));
  makeDiscography();
  renderGoogleResonance(lang);
@@ -296,6 +305,8 @@ function detectLyvraLanguage(){
  const pageLanguage=document.documentElement.lang;
  let saved=null;
  try{saved=localStorage.getItem('lyvra-language')}catch{}
+ const incomingLang=new URLSearchParams(location.search).get('lang');
+ if(incomingLang==='de'||incomingLang==='en')return incomingLang;
  return saved==='en'||saved==='de'?saved:pageLanguage==='en'?'en':'de';
 }
 for(const button of document.querySelectorAll('[data-addon-lang]'))button.addEventListener('click',()=>{
