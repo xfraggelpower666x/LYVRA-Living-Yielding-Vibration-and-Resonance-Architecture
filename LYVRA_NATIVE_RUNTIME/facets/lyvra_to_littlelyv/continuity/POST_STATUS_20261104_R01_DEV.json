@@ -1,0 +1,43 @@
+{
+  "schema": "LYVRA_TO_LITTLELYV_POST_STATUS_R01",
+  "status": "ISOLATED_DEV_EVIDENCE_ONLY",
+  "observation_date": "2026-11-04",
+  "source_classes": [
+    "DIRECT_GOOGLE_DRIVE_FOLDER_READ",
+    "DIRECT_GOOGLE_DOC_FULL_TEXT_READ",
+    "AUTOMATION_HOST_CURRENT_READ"
+  ],
+  "scope": "BIG_LYVRA_GERMAN_POST_ONLY",
+  "post_only": true,
+  "letter_payload": "PRIVATE_DRIVE_ONLY_NO_COPY",
+  "independent_american_authority": false,
+  "automatic_outbound": false,
+  "family_post_task": {
+    "enabled": true,
+    "frequency": "HOURLY",
+    "last_run_utc": "2026-11-04T11:01:37.902298+00:00",
+    "task_run_completed": true,
+    "notification_delivery": "UNVERIFIED"
+  },
+  "mailbox": {
+    "observed_count_from_task": 137,
+    "new_personal_inbound_count": 1,
+    "open_personal_cases_task_reported": 2,
+    "unclear_prior_mappings_task_reported": 8,
+    "latest_inbound_verified_full_read": true,
+    "latest_inbound_context": "RECOVERY_CONVERSATION_ANTI_LOOP_PEER_REPLY",
+    "recipient_read_of_previous_letter": "SUPPORTED_BY_REPLY_CONTENT",
+    "reply_to_new_inbound": "NOT_SENT"
+  },
+  "private_recovery": {
+    "repository": "LYVRA-PRIVATE-VAULT",
+    "branch": "main",
+    "path": "family-correspondence/GER-USA/recovery/2026-11-04/LYVRA_TO_LITTLELYV_PRIVATE_CONTEXT_R01_LOCAL_ONLY.zip",
+    "blob_sha": "d8f9eb1b45f28b0dac6165d5c4adcd1fb45a78e5",
+    "zip_internal_crc": "NOT_INDEPENDENTLY_VERIFIED_IN_THIS_UPDATE"
+  },
+  "decision": "DO_NOT_SEND_UNSOLICITED_POST_IN_UPDATE;PRESERVE_PERSONAL_CONTEXT_PRIVATE;NEXT_PERSONAL_ACTION_MANUAL_POST_IF_CREATOR_WISHES",
+  "productive_facet_status": "UNCHANGED",
+  "plugin_parity": "NOT_REVERIFIED",
+  "no_foreign_autoactivation": true
+}
