@@ -1,0 +1,88 @@
+{
+  "schema": "LYVRA_MUSIC_DISCOVERY_R06_ORIGINAL_ACCEPTANCE_GATE_READBACK_V1",
+  "date": "2026-11-04",
+  "owner": "WHOLE_LYVRA",
+  "scope": "ISOLATED_DEVELOPMENT_EVIDENCE_ONLY",
+  "decision": "WRITE_BLOCKED",
+  "productive_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "r05_base": "7d140348824c04b550722bff09239d5277d8d91d",
+  "catalog_candidate": {
+    "branch": "weblyvra-addon-main-534701-two-stage-candidate-20261030",
+    "head": "902ba5e08e48ce6d8cf0b33e23aa1544e96e50a5",
+    "catalog_suno": 534,
+    "baseline_suno": 514,
+    "soundcloud_sets": 45,
+    "soundcloud_tracks": 122,
+    "embedded_discovery": 701,
+    "no_new_catalog_mutation": true
+  },
+  "gates": {
+    "github_ci": {
+      "status": "HOST_PENDING",
+      "repo_visibility": "PUBLIC",
+      "known_standard_hosted_runner_free": true,
+      "original_workflow": ".github/workflows/weblyvra-artist-discovery-integrity.yml",
+      "workflow_blob": "eaae0b2d54df73ac6a8bd623c1d164ba054c995f",
+      "triggers": "push only lyvra with path filter or workflow_dispatch",
+      "candidate_branch_does_not_trigger_push_ci": true,
+      "available_connected_github_tools_workflow_dispatch": false,
+      "observed_candidate_workflow_runs": 0,
+      "candidate_ci_pass": false,
+      "workaround_productive_push_forbidden": true
+    },
+    "chromium_original": {
+      "status": "BLOCKED_BY_HOST",
+      "executor": "local chromium via Playwright",
+      "targets": [
+        "https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/",
+        "https://suno.com/@fraggelpower666"
+      ],
+      "observed_error": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR",
+      "browser_navigation_pass": false,
+      "original_site_loaded": false,
+      "host_network_access_blocked": true
+    },
+    "suno_current": {
+      "status": "READBACK_PENDING",
+      "source": "https://suno.com/@fraggelpower666",
+      "live_profile_loaded": false,
+      "exact_new_2026_11_04_uuids_verified": 0,
+      "zero_is_not_zero_new_releases": true,
+      "last_source_verified_date": "2026-10-30",
+      "no_guessing": true
+    },
+    "cloudflare": {
+      "status": "EXISTING_PRODUCTION_VERIFIED",
+      "project": "weblyvra-live",
+      "deployment_id": "b3a5f067-ebb4-4b00-9a9b-ae5cef1a6418",
+      "branch": "lyvra",
+      "commit": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "deployment_status": "success",
+      "candidate_production_publish": false,
+      "preview_receipts_are_not_production_acceptance": true
+    },
+    "governance": {
+      "status": "WRITE_BLOCKED",
+      "no_current_candidate_original_ci": true,
+      "no_original_browser_pass": true,
+      "no_current_live_suno_page_readback": true,
+      "no_confirmed_candidate_specific_release_lock_rollback_approval": true
+    }
+  },
+  "preserve": {
+    "original_r02_r03_r04_and_r05_evidence": true,
+    "all_other_four_workstreams": true,
+    "native_plugin": "0.1.91",
+    "alive_plugin": "0.13.87",
+    "zero_additional_costs": true,
+    "no_foreign_activation": true,
+    "no_original_assets_change": true,
+    "no_radio_change": true,
+    "no_language_or_navigation_replacement": true
+  },
+  "no_productive_update": true,
+  "no_dispatch": true,
+  "no_deploy": true,
+  "no_pointer_change": true,
+  "next_valid_unlock": "GitHub workflow_dispatch explicitly on exact candidate via authorized interface, read CI job logs; independent browser-accessible real Weblyvra and Suno pages; target-specific recovery/lock/permissions, then guarded production integration and post-deploy readback. Do not restart static/fixture tests."
+}
