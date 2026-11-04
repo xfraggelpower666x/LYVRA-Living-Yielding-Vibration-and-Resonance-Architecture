@@ -22,7 +22,7 @@ The test now uses JavaScript string `.length` for both fixture count and audited
 
 ## Impact and evidence classification
 - Native source/body direct readback: PASS at commit 67add2392470591c84ec96e3514263eb2039f1ea.
-- Running `node --test` or CI for this modified test: NOT_EXECUTED in this update.
+- LOCAL EXACT-BLOB NODE TEST: PASS 13/13 (0 fail, 0 skipped) on Node v22.16.0; local `git hash-object` exactly matched production blob `f43c31820e0cb5a93954162779d7719f56a3c0fd` before running `node --test`. This verifies the exact production test source behavior in a local static Node runner, not the live host.\n- GitHub Actions CI status for this update: no status returned; CI execution NOT_VERIFIED.
 - Host actual-copy payload integration / clickable UI readback: NOT_TESTED.
 - Creator's actual Suno Style acceptance after repair: NOT_TESTED.
 - Scope is a native static test correction only. No native music authority/contract/renderer rules changed; plugin functional package change not required by this delta. Native plugin 0.1.91 and ALIVE 0.13.87 remain recorded recent source evidence, not fresh live release verification.
