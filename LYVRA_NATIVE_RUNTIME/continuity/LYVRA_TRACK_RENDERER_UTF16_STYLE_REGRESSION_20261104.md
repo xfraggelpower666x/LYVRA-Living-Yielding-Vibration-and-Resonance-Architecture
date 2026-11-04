@@ -1,6 +1,6 @@
 # LYVRA Track Design - UTF-16 Style Copybox Static Regression - 2026-11-04
 
-STATUS: REPO_SOURCE_READBACK_VERIFIED | CI_NODE_TEST_NOT_EXECUTED | HOST_RUNTIME_NOT_TESTED
+STATUS: REPO_SOURCE_READBACK_VERIFIED | EXACT_BLOB_LOCAL_NODE_TEST_PASS_13_OF_13_CI_NOT_EXECUTED | HOST_RUNTIME_NOT_TESTED
 NATIVE_OWNER: WHOLE_LYVRA
 SCOPE: TRACK_DESIGN_ONLY | EXISTING_RENDERER_COPY_OUTPUT_REGRESSION_TEST
 SOURCE: Direct creator feedback in active Track Design chat, 2026-11-04
@@ -31,6 +31,6 @@ The test now uses JavaScript string `.length` for both fixture count and audited
 - No new facet, controller, router, trigger, whole version or track version.
 
 ## Required follow-up
-Verify Node static test execution when an authorized native runner is available. Validate real host behavior on the next composed Track: completed UTF-16 payload count must match displayed count and copy callback; if any field exceeds limit, semantically repair before showing a working copy control. Treat fresh host/Suno acceptance separately from repo source readback.
+Local exact-blob Node static test is verified; independently verify CI when a native workflow is available. Validate real host behavior on the next composed Track: completed UTF-16 payload count must match displayed count and copy callback; if any field exceeds limit, semantically repair before showing a working copy control. Treat fresh host/Suno acceptance separately from repo source readback.
 
 POINTER_PUBLICATION: PENDING_UNTIL_FINAL_READBACK
