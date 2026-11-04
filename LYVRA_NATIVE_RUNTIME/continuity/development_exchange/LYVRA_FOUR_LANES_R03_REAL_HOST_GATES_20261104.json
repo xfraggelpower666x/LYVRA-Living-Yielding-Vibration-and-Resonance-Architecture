@@ -1,0 +1,97 @@
+{
+  "schema": "LYVRA_FOUR_LANES_R03_REAL_HOST_GATES_V1",
+  "date": "2026-11-04",
+  "owner": "WHOLE_LYVRA",
+  "scope": "DEVELOPMENT_ISOLATED_READBACK_AND_GATE_EVIDENCE_ONLY",
+  "production_current": "f7b18d218f4c2be16ec1766d9967cf584f258589",
+  "r02_anchor": "48059161a654b4c7d292651291069fa8aa5a026c",
+  "authority": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+  "zero_additional_cost_policy": "CURRENT_VERIFIED_PRESERVED",
+  "tracks": {
+    "WEBLYVRA_DISCOVERY": {
+      "result": "HOST_ACCESS_UNAVAILABLE",
+      "source_patch": "WEBLyvra/live/dist/i18n.js",
+      "patch_blob": "f77af3e7f67849fa1e67934ea44fe8d2d18a8d9b",
+      "attempted_host_routes": [
+        "https://weblyvra.666soundsdesign-broadcaster.com/",
+        "https://weblyvra.666soundsdesign-broadcaster.com/artist-discovery/"
+      ],
+      "observed": "WEB_TOOL_NOT_ACCESSIBLE_AND_LOCAL_HOST_DNS_UNAVAILABLE",
+      "browser_tabs": "NO_WEBLYVRA_TAB_AVAILABLE_IN_CONNECTED_READ_ONLY_TAB_LIST",
+      "original_full_website_browser_acceptance": "NOT_TESTED",
+      "repeated_R02_fixture_tests": false,
+      "source_patch_changed_R03": false,
+      "next": "Only authorized original-site browser route can establish keyboard/mobile/history host PASS; preserve R02 fixture PASS without promotion."
+    },
+    "SEMANTIC_VISUAL_INTELLIGENCE": {
+      "result": "CURRENT_PLUGIN_SOURCE_TEXT_PARITY_INDEPENDENTLY_VERIFIED",
+      "native_plugin": {
+        "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+        "version": "0.1.91",
+        "release_id": "pluginrel_6ae9924655b48191a8fbc0dc8c2bae76"
+      },
+      "alive_plugin": {
+        "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+        "version": "0.13.87",
+        "release_id": "pluginrel_6ae9926085408191827f459b20d8b76b"
+      },
+      "direct_current_provider_files_read": true,
+      "identical_skills": [
+        "skills/666-visual-interface/SKILL.md",
+        "skills/lyvra-supercodeforge/SKILL.md",
+        "skills/lyvra-track-causal-reminder/SKILL.md == skills/track-causal-reminder/SKILL.md"
+      ],
+      "visual_contract_length_codepoints": 11026,
+      "plugin_fresh_host_visual_invocation": "NOT_TESTED",
+      "additional_visual_engine_created": false,
+      "next": "Independent live Native/ALIVE fresh-plugin-host render, not another skill text parity fixture."
+    },
+    "NATIVE_ALIVE_PLUGIN_BACKUPS": {
+      "result": "CURRENT_OWNER_PLUGIN_PROVIDER_METADATA_AND_ARCHIVE_AVAILABILITY_CONFIRMED",
+      "native_release": "0.1.91",
+      "alive_release": "0.13.87",
+      "provider_download_urls_available": true,
+      "archive_provider_bytes_downloaded": false,
+      "sha256_original_archive": "READBACK_PENDING",
+      "provider_file_inventory": {
+        "native": {
+          "files": 50,
+          "sum_uncompressed_file_sizes": 15043672
+        },
+        "alive": {
+          "files": 64,
+          "sum_uncompressed_file_sizes": 38992949
+        }
+      },
+      "inventory_is_not_zip_bytes": true,
+      "archive_download_failure": "SIGNED_URL_CANNOT_BE_MATERIALIZED_IN_THIS_HOST_ENVIRONMENT",
+      "complete_restorable_backup_zip_verified": false,
+      "stable_set_and_native_approval_verified": false,
+      "status": "WRITE_BLOCKED",
+      "next": "Use legitimate authorized archive transfer mechanism; SHA256 exact original archive bytes, verify manifest/release, then independently restore. Do not promote from list/URL."
+    },
+    "PARALLEL_SUPERCODEFORGE": {
+      "result": "SOURCE_GATE_CONFIRMED_NO_FAKE_PLUGIN_HOST",
+      "original_entrypoint": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/host-entrypoint.mjs",
+      "entrypoint_git_blob": "ad41dc15201a152cd0e23f6465795eb7e0061bb8",
+      "original_provider_binding": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/github-provider-binding.mjs",
+      "provider_git_blob": "bfc6999e72c152cd0e23f6465795eb7e0061bb8f",
+      "native_alive_supercodeforge_skill_text_same": true,
+      "github_connector_access": "DIRECT_READ_ONLY_SOURCE_FETCH_AVAILABLE",
+      "original_esm_executed_inside_plugin_host": false,
+      "native_plugin_host_pass": false,
+      "alive_plugin_host_pass": false,
+      "return_anchor": "SUPERCODEFORGE_PROVIDER_PASS_VISUAL_PARITY_NATIVE_ALIVE_HOST_PENDING",
+      "six_historical_return_anchors": "PRESERVE_NOT_SYNTHESIZE; ORIGINAL_IDS_READBACK_PENDING",
+      "next": "Native and ALIVE plugin-host must independently import original ESM and inject authorized GitHub read-only handle; provider self-read is not equivalent."
+    }
+  },
+  "rehearsal_costs": "NO_NEW_PAID_SERVICE_OR_METERED_RUN_AUTHORIZED",
+  "release_changed": false,
+  "plugin_changed": false,
+  "productive_deploy": false,
+  "foreign_activation": false,
+  "source_patch_new_in_R03": false,
+  "pointer_modified": false,
+  "host_pass_claim": false
+}
