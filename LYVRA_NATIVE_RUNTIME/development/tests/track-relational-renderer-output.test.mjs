@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 // Checks a bounded creator-output Markdown surface; not live Suno or plugin runtime.
 const C = String.fromCharCode(96).repeat(3);
 const LIM = { Title:80, Extended:1000, 'My Taste':2000, Style:1000, Lyrics:5000 };
-function box(name,value,limit) { return '### '+name+' — '+[...value].length+'/'+limit+'\n'+C+'text\n'+value+'\n'+C+'\n'; }
+function box(name,value,limit) { return '### '+name+' — '+value.length+'/'+limit+'\n'+C+'text\n'+value+'\n'+C+'\n'; }
 function sample(taste='OFF') {
  return box('Title','TEST TRACK',80)+box('Extended','Dry kick 🌀',1000)+
   'My Taste: '+taste+'\n'+(taste==='ON'?box('My Taste','Psytrance profile',2000):'')+
@@ -28,7 +28,7 @@ function audit(src) {
   const s=sections.find(x=>x.name===name);if(!s)continue;
   const blocks=[...s.body.matchAll(/```(?:text|plaintext)?\n([\s\S]*?)\n```/g)];
   if(blocks.length!==1){err.push('INVALID_COPYBOX_'+name);continue;}
-  const size=[...blocks[0][1]].length;
+  const size=blocks[0][1].length;
   if(size>limit||!s.title.includes('— '+size+'/'+limit))err.push('INVALID_COUNT_'+name);
  }
  return err;
@@ -59,6 +59,17 @@ test('valid surface with neutral control narrative is not accidental historic he
 test('missing controls rejected',()=>assert.ok(audit(sample().replace(/### Suno Controls[\s\S]*?(?=### Drift Forecast)/,'' )).length));
 test('missing drift rejected',()=>assert.ok(audit(sample().replace(/### Drift Forecast[\s\S]*?(?=### Style)/,'' )).length));
 test('wrong order rejected',()=>assert.ok(audit(sample().replace('### Suno Controls','### TEMP').replace('### Drift Forecast','### Suno Controls').replace('### TEMP','### Drift Forecast')).length));
+test('UTF-16 count includes surrogate pairs in emoji copy payload',()=>{
+ const emoji='🌀';
+ assert.equal(emoji.length,2);
+ assert.equal([...emoji].length,1);
+ const src=sample().replace('Dark rolling psytrance 🌀','Dark rolling psytrance 🌀🌀');
+ assert.ok(audit(src).includes('INVALID_COUNT_Style'));
+});
+test('UTF-16 over-limit Style rejected despite codepoint count fitting',()=>{
+ const src=sample().replace('Dark rolling psytrance 🌀','🌀'.repeat(501));
+ assert.ok(audit(src).includes('INVALID_COUNT_Style'));
+});
 test('false displayed count rejected',()=>assert.ok(audit(sample().replace('TEST TRACK','TEST TRACK!')).includes('INVALID_COUNT_Title')));
 test('ON without fifth copybox rejected',()=>assert.ok(audit(sample('OFF').replace('My Taste: OFF','My Taste: ON')).length));
 test('OFF with fifth copybox rejected',()=>assert.ok(audit(sample('ON').replace('My Taste: ON','My Taste: OFF')).length));
