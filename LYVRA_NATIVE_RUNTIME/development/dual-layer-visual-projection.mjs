@@ -1,5 +1,6 @@
 import {prepareR43SelectiveAnalyticsCall} from './r43-analytics-live-carrier-binding.mjs';
 import {ingestSunoMonitorResult} from './r40-suno-source-bridge.mjs';
+import {ingestR44AutomationPeek} from './r44-suno-automation-run-adapter.mjs';
 import {assessAnalyticsMigration} from './r40-analytics-parentage-guard.mjs';
 import {executeR39OriginalBridge} from './r39-native-original-bridge.mjs';
 // LYVRA existing Semantic Cyber Field: two read-only projections, no new engine.
@@ -118,14 +119,17 @@ export async function executeR39ChatWork({
 // R40: Explicit six-strand R39 execution PLUS safe T07/T19 original-source gates.
 // These are read-only classifications; deployment authority remains Whole LYVRA.
 export async function executeR40ChatWork({
-  sunoTaskSnapshot=null, reviewedSunoSources=[],
+  sunoTaskSnapshot=null, sunoAutomationPeek=null, reviewedSunoSources=[],
   analyticsNativeContract=null, analyticsNativeState=null, carrierBlobs={},
   r23Plan=null, creatorDecision='CREATOR_AUTHORIZED_NOT_DEPLOYED',
   trackDnaGuard=false, analyticsCallerRequest=null, analyticsCallerCurrentReadbacks=[], analyticsCallerProductiveBlobs={}, ...r39Inputs
 }={}){
   const r39=await executeR39ChatWork(r39Inputs);
   const head=r39Inputs.expectedHead, pointerBlob=r39Inputs.expectedPointer;
-  const suno=sunoTaskSnapshot?
+  if(sunoTaskSnapshot&&sunoAutomationPeek)throw TypeError('SINGLE_SUNO_RESULT_SOURCE_REQUIRED');
+  const suno=sunoAutomationPeek?
+    ingestR44AutomationPeek(sunoAutomationPeek,{currentHead:head,reviewedSources:reviewedSunoSources}):
+    sunoTaskSnapshot?
     ingestSunoMonitorResult({...sunoTaskSnapshot,currentHead:head,sourceRevision:head,reviewedSources:reviewedSunoSources}):
     {status:'MONITOR_RUN_RESULT_NOT_SUPPLIED',accepted:false,sourceReadback:false};
   const analytics=analyticsNativeContract&&analyticsNativeState?
@@ -139,6 +143,7 @@ export async function executeR40ChatWork({
     analytics_selective_caller:selectiveCaller,
     sourceIntegrationReady:true,
     originalRunProviderReadback:suno.sourceReadback===true,
+    monitorResultReadback:suno.status==='NO_CHANGE_REPORT_READBACK',
     analyticsParentageMigrated:false,
     hostGatesOpen:18,productiveWrites:0,
     pluginHostVerified:false,returnFacet:'LYVRA_ANALYTICS',
