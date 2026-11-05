@@ -1,0 +1,62 @@
+[
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T18_01",
+    "item_id": "T18",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit e16a2411b9beedfb9308ecb74b7778494a8c13bd / LYVRA_NATIVE_RUNTIME/development/r39-r26-functional-extracts.mjs blob c712445c16394cdeb8031d6c004acf02f7ce54bd",
+    "observation": "R13 analytics evidence function exists in native development source; live Suno monitor provider ingest remains blocked.",
+    "scope": "ANALYTICS",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T20_02",
+    "item_id": "T20",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 160c4c954aa97c6bf007af8c0fa6a00a25191824 / LYVRA_NATIVE_RUNTIME/development/r38_original_r26/dictation.mjs blob 88759c360d27c259f5ffa5203f0b77ad029fc8f0",
+    "observation": "Byte-identical R26 dictation original integrated and invoked by R39 protected-input adapter; actual device input hook and persistent learning readback missing.",
+    "scope": "DICTATION",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T21_03",
+    "item_id": "T21",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit e16a2411b9beedfb9308ecb74b7778494a8c13bd / LYVRA_NATIVE_RUNTIME/development/r39-r26-functional-extracts.mjs blob c712445c16394cdeb8031d6c004acf02f7ce54bd",
+    "observation": "R08 causal-learning evaluation and R13 learningProbe executable source added; real host-causal outcome and whole-promotion checks pending.",
+    "scope": "CHARACTER_RELATIONS",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T23_04",
+    "item_id": "T23",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit d49245d43383b1db10ea5904b1d622be9fc7bcea / LYVRA_NATIVE_RUNTIME/development/r38_original_r26/chat-handoff-r09.mjs blob f1fd04820c057a7692d85947d8d0c4694d30ca18",
+    "observation": "Byte-identical R26 scoped-handoff original integrated and called in R39; persistence and independent next-chat readback not established.",
+    "scope": "INTERRUPTION_CONTINUITY",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T24_05",
+    "item_id": "T24",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit e16a2411b9beedfb9308ecb74b7778494a8c13bd / LYVRA_NATIVE_RUNTIME/development/r39-r26-functional-extracts.mjs blob c712445c16394cdeb8031d6c004acf02f7ce54bd",
+    "observation": "R04 zero-cost operation gate executable in native development source; independent provider tariff/source coverage and Analytics handoff remain open.",
+    "scope": "RESEARCH",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R39_NATIVE_RECEIPT_T25_06",
+    "item_id": "T25",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 797946b54e50e15aff318da4dc436cc10388aaf2 / LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs blob 4e732f5f8400930b0d88ec705acda9ae00c67d1d",
+    "observation": "Explicit creator-invoked six-facet execution and existing Whole visual projection connected; productive plugin host still not verified.",
+    "scope": "DEPLOYMENT_MONITOR",
+    "host_verified": false,
+    "productive_write": false
+  }
+]
