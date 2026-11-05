@@ -41,7 +41,7 @@ const mixcloudItems=[...mixcloud.shows,...mixcloud.tracks];
 const platform=JSON.parse(readFileSync(join(root,'data/platforms.json'),'utf8'));
 
 const evidence=JSON.parse(readFileSync(join(root,'data/discovery-evidence.json'),'utf8'));
-assert.equal(evidence.catalog.total,975,'discovery snapshot catalog count mismatch');
+assert.equal(evidence.catalog.total,suno.length+soundcloud.length+soundcloudTracks.length+soundcloudPlaylists.length+mixcloudItems.length,'discovery snapshot catalog count mismatch');
 assert.equal(evidence.catalog.soundcloud_playlists,2,'source playlist count missing');
 assert.equal(evidence.catalog.soundcloud_verified_album_member_urls,233,'album members evidence drift');
 assert.equal(evidence.catalog.soundcloud_new_unique_tracks_from_albums,216,'new album derived track links drift');
