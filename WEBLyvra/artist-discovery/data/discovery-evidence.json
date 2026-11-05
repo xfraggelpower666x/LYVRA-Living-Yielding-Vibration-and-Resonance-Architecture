@@ -169,12 +169,25 @@
         "confidence": "sampled_public_search_links",
         "google_search_link": "https://www.google.com/search?q=%22666soundsdesign%22",
         "not_total_google_hits": true
+      },
+      {
+        "term": "fragglepower666",
+        "distinct_sampled_result_urls": 19,
+        "returned_links_including_duplicates": 21,
+        "confidence": "sampled_public_search_links",
+        "google_search_link": "https://www.google.com/search?q=%22fragglepower666%22",
+        "not_total_google_hits": true,
+        "source_note": "Exact English artist spelling found on publicly indexed music credits, Qobuz, YouTube and Facebook; 3 pages free TinyFish Search 2026-11-05."
       }
     ],
     "google_direct_response": "Google direct query did not provide a reliable total hit number; first query challenged by reCAPTCHA",
     "warning_de": "Ungefähre öffentlich auffindbare Fundlinks aus drei Suchseiten. Keine offizielle Google-Gesamttrefferzahl und kein Reichweitenwert.",
     "warning_en": "Approximate publicly discovered links across three search-result pages. Not official Google total results, reach or traffic.",
-    "on_next_track_search": "re-run free exact phrase samples, replace current dated values and append an observed historical point; no daily chart without actual dated samples."
+    "on_next_track_search": "re-run free exact phrase samples, replace current dated values and append an observed historical point; no daily chart without actual dated samples.",
+    "queries_covered": 3,
+    "alias_note_de": "FRAGGELPOWER666 und FRAGGLEPOWER666 werden getrennt gesucht. Treffer können sich überschneiden; die Einzelwerte werden nicht als eindeutige Gesamtsumme addiert.",
+    "alias_note_en": "FRAGGELPOWER666 and FRAGGLEPOWER666 are searched separately. Results can overlap; counts must not be added as a deduplicated total.",
+    "last_alias_scan_date": "2026-11-05"
   },
   "google_ai_overview_observation": {
     "observed_on": "2026-11-05",
