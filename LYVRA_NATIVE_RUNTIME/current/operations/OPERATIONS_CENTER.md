@@ -375,3 +375,37 @@ POST_SCEERI_PLUGIN_HOST = SEPARATE_PENDING
 PRODUCTIVE_CURRENT_AND_POINTER = UNCHANGED
 
 Further mutation requires full Current authority/references, host-specific governance, recovery and independent readback. No pointer update occurred in R41.
+
+
+## R42 — Real Node and selective Analytics caller (isolated development)
+
+STATUS = VERIFIED_SOURCE_AND_LOCAL_NODE | PARTIAL_CROSS_FACET_MAPPING | HOST_READBACK_PENDING
+ROOT = WHOLE_LYVRA
+EXISTING_VISUAL = SEMANTIC_CYBER_FIELD
+NO_NEW_ENGINE = TRUE
+NO_HTML = TRUE
+NO_AUTOACTIVATION = TRUE
+RETURN_FACET = LYVRA_ANALYTICS
+
+Source work:
+- `development/r42-analytics-caller-compat.mjs`: source-backed selective Speech Design -> central Analytics request/return gate. This preserves Speech domain authority; does not create a router or migrate Analytics.
+- `development/r42-analytics-caller-compat.test.mjs`: actual Node.js 22 source execution, 21/21 PASS, exact local file Git blobs matched branch blobs.
+- `development/r42-analytics-caller-readbacks.json`: direct current GitHub caller evidence from Speech Design FACET_CONTRACT, central Analytics CAPABILITY_REGISTRY, Track Design Master Base, specialist handoff and Studio 2 FACET_CONTRACT. Complete caller mapping NOT claimed; Studio2 and other native callers still pending.
+- `development/dual-layer-visual-projection.mjs`: R42 caller may be supplied only to the explicitly creator-invoked existing R40 six-facet execution; rendering alone never activates Analytics, Speech or any external system.
+- `development/r41-original-source-gates.test.mjs` original repository Node test was actually executed locally. After replacing stale local copies with byte-identical current GitHub source, 19/19 PASS. Seven exact Git blob hashes were matched for test, R40 Suno, R40 parentage, R39 original-extract, original R26 dictation/impact and R41 ledger.
+
+Original Suno Monitor: scheduled automation exists and is enabled; result and independent official-source readback remain unavailable; no live source ingest or music-rule promotion.
+Analytics parentage: current central native facet preserved; bounded Speech caller confirmed, complete cross-facet migration not proven. T19 source gate remains WRITE_BLOCKED.
+
+Plugin release check: actual editable Native plugin `plugins_6ab3a345db308191b8ad7ef6311f8a29` is 0.1.91 at release `pluginrel_6ae9924655b48191a8fbc0dc8c2bae76`. The R42 JavaScript files are not in the current plugin release file list. ALIVE release/host parity not independently read back here. Neither release is modified.
+
+NINE_R30_OPEN_ITEMS = PRESERVED
+SIX_R26_ORIGINAL_STRANDS = PRESERVED
+EIGHTEEN_HOST_GATES = ALL_OPEN
+SUPPLEMENTAL_RETURNS = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+CURRENT_POINTER = UNTOUCHED
+PRODUCTIVE_WRITE_AUTHORITY = NONE_FOR_THIS_ROUND
+WHOLE_REHYDRATION = PARTIAL
+NEXT_GATE = COMPLETE_CROSS_FACET_CALLERS_AND_ORIGINAL_SUNO_RESULT_THEN_GOVERNED_LIFECIRCLE_NATIVE_ALIVE_HOST_TESTS
+
+The existing current developer artifacts and earlier valid evolution remain preserved. No SOURCE/LOCAL test is promoted to plugin HOST PASS.
