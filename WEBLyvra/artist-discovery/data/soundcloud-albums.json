@@ -4,7 +4,7 @@
   "source": "https://soundcloud.com/fraggelpower666/albums",
   "observed_at": "2026-11-05",
   "status": "browser_album_listing_30_items_partial_completeness",
-  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album. 2026-10-18 additive scan: 15 extra unique set URLs from the public SoundCloud /albums listing; first-seen here is not a publication date; type classification pending. 2026-11-05: LYVRA SPACE ERUPTION PART 1 and PART 2 verified directly as two public sets, with public listing dated 2026-11-03. Previous 45 preserved.",
+  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album. 2026-10-18 additive scan: 15 extra unique set URLs from the public SoundCloud /albums listing; first-seen here is not a publication date; type classification pending. 2026-11-05: LYVRA SPACE ERUPTION PART 1 and PART 2 verified directly as two public sets, with public listing dated 2026-11-03. Previous 45 preserved. 2026-11-05: one pre-existing verified extra set promoted after fresh direct original page readback (47→48); two separate artist playlists remain independent and must not be counted as albums.",
   "albums": [
     {
       "title": "Another Psy Revolution",
@@ -315,6 +315,14 @@
       "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-space-eruption-part-2",
       "status": "direct_public_set_page_readback",
       "source": "2026-11-05 exact public set page, listing dated 2026-11-03"
+    },
+    {
+      "title": "Sie sind unter uns (Single - Part3)",
+      "type": "SoundCloud set (album classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_set_page_confirmed",
+      "source": "2026-11-05 fresh public original SoundCloud set page readback",
+      "reason": "set page verified; not present in the 30-entry interactive /albums listing"
     }
   ],
   "next_scan": {
@@ -361,5 +369,6 @@
       "source": "SoundCloud set page",
       "reason": "set page verified; not present in the 30-entry interactive /albums listing"
     }
-  ]
+  ],
+  "albums_observed_count": 48
 }
