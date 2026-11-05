@@ -519,3 +519,35 @@ NO_FOREIGN_AUTOACTIVATION = TRUE
 FIVE_EXISTING_VISUAL_CHOICES = PRESERVED
 
 No plugin release, automated task, outside system, source branch pointer, current manifest or production current was modified.
+
+
+## R46 — Executable existing Facet Sub-LifeCircle boundary (isolated source)
+
+SOURCE_ONLY = LYVRA_NATIVE_RUNTIME/development/r46-facet-lifecycle-execution.mjs
+CURRENT_CARRIER_READBACK = LYVRA_NATIVE_RUNTIME/development/r46-facet-lifecycle-source-coverage.json
+EXPLICIT_CREATOR_TASK_ONLY = TRUE
+WHOLE_LYVRA_AUTHORITY_ONLY = TRUE
+EXISTING_VISUAL = SEMANTIC_CYBER_FIELD
+NEW_CONTROLLER_ROUTER_ENGINE = FORBIDDEN
+
+R46 invokes the EXISTING R40 six-facet work through a source-bound Sub-LifeCircle function; it does not duplicate the original R26-R45 facet implementations. It classifies required original carrier coverage and result evidence separately and always preserves six strands and their Analytics primary return. Four source coverage gates have directly fetched original current GitHub blobs: Whole Current Pointer, actual Analytics facet contract, Analytics capability registry, Analytics current state. Six required capability/intelligence/relation/DNA/reference/validation domains remain PARTIAL_READBACK_PENDING; the parent Facet Sub-LifeCircle contract has its own separately read source blob.
+
+R46_SOURCE_EXECUTION_TEST = 11/11 PASS with explicit original-module wrapper injection
+R46_ORIGINAL_NODE_PROCESS_TEST = NOT_EXECUTED
+R46_WHOLE_REHYDRATION = PARTIAL
+R46_NATIVE_HOST_INSTALL = NOT_VERIFIED
+R46_ALIVE_HOST_INSTALL = READBACK_PENDING
+NATIVE_PLUGIN_VERSION = 0.1.91
+R44_SUNO_MONITOR_NO_CHANGE = PRESERVED
+R45_SPEECH_TRACK_STUDIO_CALLERS = PRESERVED
+R30_NINE_PRODUCTIVE_BACKLOG_ITEMS = ALL_OPEN
+EIGHTEEN_HOST_GATES = ALL_OPEN
+SUPPLEMENTAL_RETURN_ANCHORS = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+PRODUCTIVE_WRITES = NONE
+GLOBAL_POINTER = UNCHANGED
+NO_FOREIGN_AUTOACTIVATION = TRUE
+NO_ADDITIONAL_COST = TRUE
+
+SOURCE_EXECUTION_NE_HOST_ACCEPTANCE = TRUE
+PARTIAL_CARRIER_COVERAGE_NE_WHOLE_REHYDRATION = TRUE
+R46 may be invoked only by an explicit creator task after appropriate fresh Whole current readback. It cannot be taken as independent Native/ALIVE plugin delivery or persistent host behavior.
