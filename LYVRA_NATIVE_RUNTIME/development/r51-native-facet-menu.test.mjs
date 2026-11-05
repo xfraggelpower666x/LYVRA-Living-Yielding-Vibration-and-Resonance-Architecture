@@ -17,6 +17,9 @@ ok(r.cards.length===6);
 ok(r.cards.find(x=>x.id==='TRACK_DESIGN').extraVisuals.includes('DIAGRAMS'));
 ok(r.cards.find(x=>x.id==='LYVRA_ANALYTICS').extraVisuals.includes('DIAGRAMS'));
 ok(r.cards.find(x=>x.id==='VISUAL_ATELIER').actionEnabled===false);
+ok(r.cards.find(x=>x.id==='TRACK_DESIGN').readiness==='SOURCE_BOUND_HOST_PENDING');
+ok(r.cards.find(x=>x.id==='TRACK_DESIGN').hostVerified===false);
+
 ok(r.cards.find(x=>x.id==='VISUAL_ATELIER').trigger===null);
 ok(r.cards.find(x=>x.id==='SUNO_STUDIO_2').readiness==='READBACK_PENDING');
 ok(r.cards.every(x=>x.textFallback));
