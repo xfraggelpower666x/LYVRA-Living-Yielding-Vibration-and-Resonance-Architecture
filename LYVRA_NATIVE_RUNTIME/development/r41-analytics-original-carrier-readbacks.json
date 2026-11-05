@@ -1,0 +1,74 @@
+{
+  "schema": "LYVRA_R41_ANALYTICS_CARRIER_READBACK_LEDGER",
+  "authority": "WHOLE_LYVRA",
+  "repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+  "ref": "lyvra",
+  "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "current_pointer_blob": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "source_scope": "DIRECT_GITHUB_FETCH_FILE_COMPLETE_CONTENT",
+  "carrierReadbacks": [
+    {
+      "carrier": "ANALYTICS_FACET_CONTRACT",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+      "blob_sha": "783860c266e92cfc65bd613b7eb23a5026f44353",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md@lyvra"
+    },
+    {
+      "carrier": "ANALYTICS_CURRENT_STATE",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
+      "blob_sha": "8e94e0f93db9bb882bbe953f0d5318870fcd5aed",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json@lyvra"
+    },
+    {
+      "carrier": "ANALYTICS_CAPABILITY_REGISTRY",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md@lyvra"
+    },
+    {
+      "carrier": "TRACK_DESIGN_SUBREHYDRATION",
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+      "blob_sha": "5b77c2dfd15b4bd110e0ea4d52fd0e04fe563827",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md@lyvra"
+    },
+    {
+      "carrier": "WHOLE_REHYDRATION_MANIFEST",
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "blob_sha": "c6334a7873b290701cfb9e5c04f85bd38ba29275",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json@lyvra"
+    },
+    {
+      "carrier": "CURRENT_POINTER",
+      "path": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "blob_sha": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "complete": true,
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json@lyvra"
+    }
+  ],
+  "missing": [
+    "CROSS_FACET_CALLERS"
+  ],
+  "readback_count": 6,
+  "required_count": 7,
+  "t19_migration_status": "WRITE_BLOCKED_UNTIL_FULL_CROSS_FACET_AND_GOVERNANCE",
+  "legacy_r23_state": "CREATOR_AUTHORIZED_NOT_DEPLOYED",
+  "no_prod_writes": true,
+  "no_auto_promotion": true
+}
