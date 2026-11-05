@@ -26,4 +26,5 @@ reject('fake host evidence',()=>projectR50Intake(ledger,[{...e,host_verified:tru
 reject('lost backlog',()=>projectR50Intake({...ledger,r30_open_ids:['T07']},[e],opts));
 reject('duplicate intake',()=>projectR50Intake(ledger,[e,e],opts));
 reject('no provenance',()=>projectR50Intake(ledger,[{...e,source:''}],opts));
+reject('ambiguous acceptance gate across two tasks',()=>projectR50Intake(ledger,[e],{...opts,knownTasks:[{id:'T21',strand:'VISUAL',acceptance_key:'native+alive host readback'}, {id:'T22',strand:'VISUAL',acceptance_key:'  NATIVE+ALIVE   HOST READBACK  '}]}));
 console.log(JSON.stringify({result:'PASS',checks:count,scope:'SOURCE_REGRESSION_ONLY',hostAccepted:false}));
