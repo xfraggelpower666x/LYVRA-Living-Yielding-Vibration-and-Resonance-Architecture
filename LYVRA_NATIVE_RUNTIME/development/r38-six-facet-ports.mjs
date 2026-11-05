@@ -23,7 +23,7 @@ export async function executeR38Ports({head,pointerSha,ports,inputs={},returnFac
   INTERRUPTION_CONTINUITY:()=>ports.buildHandoff({head,workspaceId:'WHOLE_LYVRA_NATIVE_RUNTIME',lineageId:inputs.continuity?.lineageId||'R38_ISOLATED',conversationAnchor:inputs.continuity?.conversationAnchor||'R38 six-strand source integration; fresh Whole boot required',strands:STRANDS,checkpoints:inputs.continuity?.checkpoints||{},writeStatus:'NOT_ATTEMPTED'}),
   RESEARCH:()=>ports.researchCostGate({tool:inputs.research?.tool||'TinyFish',operation:inputs.research?.operation||'Fetch',priceUSD:inputs.research?.priceUSD,costChecked:inputs.research?.costChecked===true})
  };
- const settlements=await Promise.allSettled(STRANDS.map(async id=>({id,result:run[id]()})));
+ const settlements=await Promise.allSettled(STRANDS.map(async id=>({id,result:await run[id]()})));
  const results=settlements.map((s,i)=>s.status==='fulfilled'?{id:STRANDS[i],status:'ORIGINAL_R26_FUNCTION_EXECUTED',value:s.value.result,hostVerified:false}:{id:STRANDS[i],status:'INPUT_ORIGINAL_FUNCTION_BLOCKED',reason:String(s.reason),hostVerified:false});
  return {schema:'LYVRA_R38_ORIGINAL_SIX_NATIVE_PORTS',head,pointerSha,returnFacet,results,allSixInvoked:results.length===6,
   hostGatesOpen:18,productiveWrites:0,pluginHostVerified:false,crossChatPersisted:false,
