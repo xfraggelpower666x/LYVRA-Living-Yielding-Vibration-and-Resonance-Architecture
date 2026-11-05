@@ -33,7 +33,9 @@ assert.equal(evidence.google_ai_overview_observation.independently_reproduced,fa
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_min_relevant_pages,15,'AI estimated lower bound altered');
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_max_relevant_pages,30,'AI estimated upper bound altered');
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.independently_reproduced,false,'AI estimate incorrectly promoted to verified');
-assert.equal(evidence.bing_exact_artist_search_observation.displayed_approximate_results,1470,'Bing displayed result count changed');
+assert.equal(evidence.bing_exact_artist_search_observation.displayed_approximate_results,2160,'Bing displayed result count changed');
+assert.deepEqual(evidence.bing_exact_artist_search_observation.history.map(x=>x.displayed_approximate_results),[1470,2160],'Bing observations history lost');
+assert.equal(evidence.bing_exact_artist_search_observation.estimate_change_not_verified_growth,true,'Bing estimate change misrepresented as growth');
 assert.equal(evidence.bing_exact_artist_search_observation.independently_reproduced,false,'Bing screenshot promoted to independent proof');
 assert.equal(evidence.bing_exact_artist_search_observation.not_unique_pages,true,'Bing displayed hits incorrectly treated as counted unique URLs');
 assert.equal(evidence.bing_exact_artist_search_observation.not_google_result_count,true,'Bing value misrepresented as Google result count');
