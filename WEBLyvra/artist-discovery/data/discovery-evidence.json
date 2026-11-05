@@ -24,13 +24,17 @@
   },
   "catalog": {
     "suno": 547,
-    "soundcloud_tracks": 142,
-    "soundcloud_sets": 47,
+    "soundcloud_tracks": 358,
+    "soundcloud_sets": 48,
     "mixcloud_tracks": 10,
     "mixcloud_shows": 10,
-    "total": 756,
+    "total": 975,
     "candidate_branch": "dev/weblyvra-discovery-active-build-736-20261105",
-    "release_state": "ISOLATED_PREVIEW_ONLY"
+    "release_state": "ISOLATED_PREVIEW_ONLY",
+    "soundcloud_playlists": 2,
+    "soundcloud_verified_album_member_urls": 233,
+    "soundcloud_new_unique_tracks_from_albums": 216,
+    "source_note": "2026-11-05: 48 SoundCloud albums/sets verified by original page plus 2 separate SoundCloud playlists = 50 collections, not 50 confirmed albums. Album lists supply 233 distinct direct track URLs; 216 were missing in the pre-existing 142-track catalog. No music audio or artwork binaries copied."
   },
   "search_sample": {
     "checked_at": "2026-11-05",
@@ -62,8 +66,8 @@
       "name": "SoundCloud",
       "url": "https://soundcloud.com/fraggelpower666/tracks",
       "evidence": "direct_public_tracks_and_sets",
-      "catalog_count": 189,
-      "unit": "142 tracks + 47 sets",
+      "catalog_count": 408,
+      "unit": "358 original artist track links + 48 album/set links + 2 distinct playlist links",
       "discovery_points": 87
     },
     {
@@ -130,7 +134,8 @@
     "action": "Refresh public source evidence and date, update add-on dataset and inline snapshot, build original source tests, read back deployment. A scan date is not a background scheduler.",
     "silent_overwrite_forbidden": true,
     "missing_evidence_does_not_zero_metrics": true,
-    "search_term_samples_update": "On each explicitly performed new track research, refresh zero-price public search sampling and link counts in the source JSON before the staged build. No paid background monitoring."
+    "search_term_samples_update": "On each explicitly performed new track research, refresh zero-price public search sampling and link counts in the source JSON before the staged build. No paid background monitoring.",
+    "actual_action": "2026-11-05 original SoundCloud album pages and images; no new public Google or Bing sample was executed in this album expansion, so their prior dates/values remain unchanged."
   },
   "evidence_note": "Public artist and song pages show availability and catalogued discovery URLs. Counts are NOT Google index counts, unique viewers, ranking, traffic, total platform inventory or Search Console analytics.",
   "discovery_index": {
