@@ -32,7 +32,7 @@ for(const item of expected)assert(embeddedUrls.has(item.url),'current source URL
 const page=main.toString('utf8');
 assert(page.includes('Suno: '+catalog.public_songs.length+' verifizierte'),'German public count has drifted from current snapshot');
 assert(page.includes('Suno: '+catalog.public_songs.length+' verified'),'English public count has drifted from current snapshot');
-const data=['platforms.json','suno-releases.json','soundcloud-albums.json','soundcloud-tracks.json','mixcloud-releases.json'];
+const data=['platforms.json','suno-releases.json','soundcloud-albums.json','soundcloud-tracks.json','mixcloud-releases.json','discovery-evidence.json'];
 const art=[...Array(17)].map((_,i)=>'art-'+String(i+1).padStart(2,'0')+'.webp');
 const original=['fraggel-system-designer.webp','lyvra-666soundsdesign-wordmark.webp','lyvra-cyber-emblem.webp','lyvra-hero-crest.webp','lyvra-resonance-banner.webp'];
 const files=['index.html',...data.map(x=>'data/'+x),...art.map(x=>'assets/addon-20261018/'+x),...original.map(x=>'assets/'+x)];
@@ -45,5 +45,5 @@ for(const rel of files){
  const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
  assert.equal(digest(fs.readFileSync(src)),digest(fs.readFileSync(dst)),'staging byte drift: '+rel);
 }
-assert.equal(files.length,28,'unexpected asset selection');
-console.log('WEBLYVRA_DISCOVERY_STAGE_PASS '+items.length+' unique URLs, '+catalog.public_songs.length+' Suno, '+albums.length+' sets, '+tracks.length+' tracks, 22 WebP binaries, 5 data inventories; repository originals unchanged');
+assert.equal(files.length,29,'unexpected asset selection');
+console.log('WEBLYVRA_DISCOVERY_STAGE_PASS '+items.length+' unique URLs, '+catalog.public_songs.length+' Suno, '+albums.length+' sets, '+tracks.length+' tracks, 22 WebP binaries, 6 data inventories; repository originals unchanged');
