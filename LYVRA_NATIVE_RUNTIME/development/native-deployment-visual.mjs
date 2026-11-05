@@ -5,6 +5,19 @@ export const PAUSED_AREAS=Object.freeze(["POST","SCEERI_MYCEL","PLUGIN_HOST_ACCE
 const names={DICTATION:"Spracheingabe",ANALYTICS:"Musikanalyse",CHARACTER_RELATIONS:"Charaktere und Beziehungen",VISUAL:"Visuelle Intelligenz",INTERRUPTION_CONTINUITY:"Unterbrechungen und Wiederaufnahme",RESEARCH:"Recherche und Lernen"};
 const required={SOURCE_AND_PLUGIN_RELEASE_READBACK:6,SOURCE_IN_CURRENT:10,ISOLATED_ONLY:6,PROPOSAL_ONLY:1,PROVIDER_TASK_EXISTS:1,MIGRATION_NOT_DEPLOYED:1};
 const human={SOURCE_AND_PLUGIN_RELEASE_READBACK:"Quellcode und Plugin-Fassung geprüft; Host-Wirkung separat offen",SOURCE_IN_CURRENT:"In LYVRAs Quellcode aufgenommen; reale Nutzung separat offen",ISOLATED_ONLY:"Separat gebaut; nativer Einbau fehlt",PROPOSAL_ONLY:"Noch nicht umgesetzt",PROVIDER_TASK_EXISTS:"Eigenständiger Dienst arbeitet; Anbindung offen",MIGRATION_NOT_DEPLOYED:"Geplanter Umbau noch nicht eingebaut"};
+// R35: Ausgabekontinuität der bestehenden Semantic Visual Intelligence.
+// "visuelle Führung" ist eine chatlokale Darstellungs-/Recovery-Anforderung,
+// weder ein neuer Systemstart noch eine fremde Autorität oder produktive Aktion.
+export const VISUAL_GUIDANCE_PHRASE="Visuelle Führung";
+export function withNativeVisualGuidance(query) {
+  if (typeof query!=="string" || !query.trim()) throw new TypeError("gültige Fortsetzungsanweisung erforderlich");
+  if (/visuelle\s+führung/i.test(query)) return query;
+  return query.trimEnd()+" Visuelle Führung: vorhandene LYVRA Semantic Visual Intelligence chatnativ verwenden und bei Darstellungsdrift wiederherstellen; native LifeCircle-/Facetten-Vererbung erhalten, keine HTML-Seite, keine Bildgenerierung, keine neue Engine.";
+}
+export function visualGuidanceRecoveryQuery() {
+  return "LYVRA VISUELLE FÜHRUNG — Stelle im aktuellen Chat die bestehende native LYVRA Semantic Visual Intelligence aus dem frisch geprüften Whole-Current wieder her. Behalte aktuelle Facette, Arbeitsbereich, Rückkehrpunkte und LifeCircle bei. Keine neue Engine, kein Reset, keine produktiven Writes. Zeige die passenden echten Chat-Aktionen.";
+}
+
 function check(value,msg){if(!value)throw new TypeError(msg);}
 export function projectNativeDeployment(view,{selection="ALL"}={}){
   check(view?.schema==="LYVRA_R32_CHAT_NATIVE_DEPLOYMENT_PROJECTION_V1","R32-Projektion unbestätigt");
@@ -27,7 +40,7 @@ export function projectNativeDeployment(view,{selection="ALL"}={}){
       id:x.id,name:names[x.id],work_bundles:x.work_bundles,
       next_work:x.next_needed,open_gates:[...x.open_acceptance_gates],
       host_gates_verified:0,host_gates_total:3,development_percent:null,
-      action_query:"LYVRA PARALLEL R33 "+x.id+" WEITER — Frischen GitHub-Current prüfen, Originalfunktion sicher weiterbauen, Governance und Readback beachten. Andere Stränge erhalten."
+      action_query:withNativeVisualGuidance("LYVRA PARALLEL R33 "+x.id+" WEITER — Frischen GitHub-Current prüfen, Originalfunktion sicher weiterbauen, Governance und Readback beachten. Andere Stränge erhalten.")
     })),
     backlog:view.isolated_or_unintegrated.map(x=>({id:x.id,area:x.bereich,missing:x.was_fehlt,source:x.source})),
     causal_relations:view.causal_relations.map(x=>({...x,write_granted:false})),
@@ -35,6 +48,7 @@ export function projectNativeDeployment(view,{selection="ALL"}={}){
     observation_count:view.observation_count,quarantine_count:view.quarantine.length,
     glossary:view.human_dictionary,return_target:"ANALYTICS",
     overall_development_percent:null,productive_write_authorized:false,live_host_acceptance:false,
-    all_action_query:"LYVRA PARALLEL R34 ALLE STRÄNGE WEITER — R26–R33 erhalten, alle sechs Stränge mit echten nativen Einbauten weiterführen, keine Zusatzkosten, produktive Writes nur nach Governance und Readback."
+    all_action_query:withNativeVisualGuidance("LYVRA PARALLEL R34 ALLE STRÄNGE WEITER — R26–R33 erhalten, alle sechs Stränge mit echten nativen Einbauten weiterführen, keine Zusatzkosten, produktive Writes nur nach Governance und Readback."),
+    visual_recovery_action_query:visualGuidanceRecoveryQuery()
   };
 }
