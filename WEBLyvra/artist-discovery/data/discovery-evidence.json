@@ -291,5 +291,27 @@
     "does_not_change_sampled_search_link_counts": true,
     "does_not_contribute_to_editorial_resonance_scores": true,
     "no_paid_lookup": true
+  },
+  "bing_exact_artist_search_observation": {
+    "observed_on": "2026-11-05",
+    "source_kind": "user_supplied_bing_search_result_screenshot",
+    "query": "\"fraggelpower666\"",
+    "displayed_approximate_results": 1470,
+    "display_language": "de",
+    "search_url": "https://www.bing.com/search?q=%22fraggelpower666%22",
+    "independently_reproduced": false,
+    "count_method": "Bing UI displayed estimated search result total, not independently enumerated pages",
+    "not_unique_pages": true,
+    "not_google_result_count": true,
+    "not_site_impressions_or_visitors": true,
+    "not_google_search_console_metric": true,
+    "does_not_change_search_term_samples": true,
+    "does_not_change_resonance_scores": true,
+    "context": "Screenshot also shows FRAGGELPOWER666 - Topic YouTube and associated artist videos",
+    "label_de": "Bing · ungefähr angezeigte Suchergebnisse",
+    "label_en": "Bing · approximate displayed search results",
+    "warning_de": "Angezeigte Bing-Schätzung aus Nutzerscreenshot; keine nachgezählten Einzelseiten und keine Google-Trefferzahl. Suchmaschinen und Filter können stark voneinander abweichen.",
+    "warning_en": "Displayed Bing estimate from a user screenshot; not individually counted pages or a Google result count. Search engines and filtering can differ greatly.",
+    "no_paid_lookup": true
   }
 }
