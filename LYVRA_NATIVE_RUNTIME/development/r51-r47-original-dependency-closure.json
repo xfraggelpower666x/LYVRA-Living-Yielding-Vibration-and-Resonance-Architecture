@@ -1,0 +1,97 @@
+{
+  "schema": "LYVRA_R51_R47_ORIGINAL_STATIC_DEPENDENCY_CLOSURE",
+  "timestamp_utc": "2026-11-05",
+  "authority": "SOURCE_READBACK_ONLY",
+  "base_development_commit": "ba71c3d8b916af6761793ad23c0590056fec32ab",
+  "source_ref": "lyvra-parallel-r33-native-visual-isolated-20261105",
+  "original_entry": "LYVRA_NATIVE_RUNTIME/development/r47-sourced-lifecycle-entry.test.mjs",
+  "recursive_static_imports_resolved": 20,
+  "missing_static_imports": 0,
+  "original_node_executed": false,
+  "checkout_in_node_environment": false,
+  "host_acceptance": false,
+  "no_new_suno_run": true,
+  "files": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r47-sourced-lifecycle-entry.test.mjs",
+      "blob_sha_at_source_snapshot": "ad2c730396cca868049173b9cee25df3668efb6d"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r47-sourced-lifecycle-entry.mjs",
+      "blob_sha_at_source_snapshot": "7d40f097433f301bb6fe248fa492687165f17822"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r47-six-carrier-original-source-evidence.json",
+      "blob_sha_at_source_snapshot": "38bc8fcbab85c4daa8f167c4024d1ad56f54d9c9"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r46-facet-lifecycle-source-coverage.json",
+      "blob_sha_at_source_snapshot": "0e4299e50c9b8060a86e5443b7c42c402e5139aa"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r46-facet-lifecycle-execution.mjs",
+      "blob_sha_at_source_snapshot": "083bbd7ee8afb757f24083ff96a53add27af659a"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs",
+      "blob_sha_at_source_snapshot": "0430bd2b8dc28629dfee09c793064434221c180c"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r45-track-studio-analytics-profile.mjs",
+      "blob_sha_at_source_snapshot": "de89b21f940d6c1e1298f1ff99818c7de842c126"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r43-analytics-live-carrier-binding.mjs",
+      "blob_sha_at_source_snapshot": "7aaa027e53862d16b0b768d212c476eba4600ec7"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r40-suno-source-bridge.mjs",
+      "blob_sha_at_source_snapshot": "0ffd83740c37513651214b74967633382672c751"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r44-suno-automation-run-adapter.mjs",
+      "blob_sha_at_source_snapshot": "5d32c74b05cefd81f2314a8aa3df6c28aa299ddc"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r40-analytics-parentage-guard.mjs",
+      "blob_sha_at_source_snapshot": "c4283f0bd2cece3417566e09fc6463255a120343"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r39-native-original-bridge.mjs",
+      "blob_sha_at_source_snapshot": "29e9a3e6aa502523fca99b96cdeb5a0353224949"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/native-deployment-visual.mjs",
+      "blob_sha_at_source_snapshot": "86ad7c8e7bfb33187d6b064ef72088eb39e415f7"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r38-six-facet-ports.mjs",
+      "blob_sha_at_source_snapshot": "d7b70748bc34b725ddd31caef82d9f0bf21f7e7b"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r38_original_r26/visual-action-inheritance-r10.mjs",
+      "blob_sha_at_source_snapshot": "9fd4834b714a5c83f956e1fd1b54f511a038ce5f"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r42-analytics-caller-compat.mjs",
+      "blob_sha_at_source_snapshot": "b8d6f5be460bdba318b5ec51af43cef8bb3c2eed"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r39-r26-functional-extracts.mjs",
+      "blob_sha_at_source_snapshot": "c712445c16394cdeb8031d6c004acf02f7ce54bd"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r38_original_r26/chat-handoff-r09.mjs",
+      "blob_sha_at_source_snapshot": "f1fd04820c057a7692d85947d8d0c4694d30ca18"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r38_original_r26/always-on-impact-r09.mjs",
+      "blob_sha_at_source_snapshot": "f3e996e8fc043f2ae30cf82396b9fbc893e61a08"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/development/r38_original_r26/dictation.mjs",
+      "blob_sha_at_source_snapshot": "88759c360d27c259f5ffa5203f0b77ad029fc8f0"
+    }
+  ],
+  "note": "Dependency closure is complete as source metadata, not proof of a local original byte checkout or executed Node test. Original dual-layer-visual-projection.mjs was additively modified later in R51; use pre-R51 source commit for exact R47 regression."
+}
