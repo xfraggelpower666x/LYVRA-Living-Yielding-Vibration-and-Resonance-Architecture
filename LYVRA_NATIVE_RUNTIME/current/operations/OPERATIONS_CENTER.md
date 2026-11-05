@@ -409,3 +409,39 @@ WHOLE_REHYDRATION = PARTIAL
 NEXT_GATE = COMPLETE_CROSS_FACET_CALLERS_AND_ORIGINAL_SUNO_RESULT_THEN_GOVERNED_LIFECIRCLE_NATIVE_ALIVE_HOST_TESTS
 
 The existing current developer artifacts and earlier valid evolution remain preserved. No SOURCE/LOCAL test is promoted to plugin HOST PASS.
+
+
+## R43 — Fresh-bound selective Analytics source integration (isolated, nonproductive)
+
+SOURCE = LYVRA_NATIVE_RUNTIME/development/r43-analytics-live-carrier-binding.mjs
+SOURCE_LEDGER = LYVRA_NATIVE_RUNTIME/development/r43-analytics-current-caller-readbacks.json
+NODE_TEST = LYVRA_NATIVE_RUNTIME/development/r43-analytics-live-carrier-binding.test.mjs
+CHAT_ENTRY = LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs
+ROOT_AUTHORITY = WHOLE_LYVRA
+CURRENT_BRANCH = lyvra
+DEV_BRANCH = lyvra-parallel-r33-native-visual-isolated-20261105
+
+R42's static source hash profile no longer suffices for a selective call in the existing explicit R40 six-facet chat entry. R43 now requires the current productive commit head, fresh current GitHub blob map, and three unique path/blob/head-bound full readback records. A bare cached SHA or unbound caller claim fails closed. The confirmed Speech Design caller keeps its native decision authority; Studio 2, Track Design and other potential caller profiles remain COVERAGE_PENDING and are not autoenabled. Existing five work choices, six R26 strands, nine R30 items and three supplementary return points stay intact.
+
+LOCAL_NODE_R43_EXACT_GITHUB_BLOB = VERIFIED_16_OF_16
+R40_TO_R43_EXISTING_CHAT_CODE_INTEGRATION = SOURCE_TEST_10_OF_10
+NATIVE_PLUGIN_LATEST_READ = 0.1.91 / pluginrel_6ae9924655b48191a8fbc0dc8c2bae76
+NATIVE_PLUGIN_R43_HOST_MOUNT = NOT_VERIFIED
+ALIVE_PLUGIN_CURRENT_RELEASE = READBACK_PENDING
+ALIVE_PLUGIN_R43_HOST_MOUNT = NOT_VERIFIED
+ORIGINAL_SUNO_RESULT = NOT_RETRIEVED_FROM_AUTOMATION_PROVIDER
+T07_REAL_SOURCE_INGEST = BLOCKED_PENDING_SOURCE
+T19_FULL_CROSS_FACET_MIGRATION = BLOCKED_PENDING_CALLER_COVERAGE
+T19_EXISTING_ANALYTICS_PLACEMENT = CENTRAL_SHARED_NATIVE_LYVRA_FACET
+EIGHTEEN_HOST_GATES = OPEN
+NINE_PRODUCTIVE_INTEGRATION_ITEMS = OPEN
+PRODUCTIVE_LIFECIRCLE_MUTATION = NONE
+CURRENT_POINTER_MUTATION = NONE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+ZERO_ADDITIONAL_COST = TRUE
+VISUAL_GUIDANCE = CHAT_NATIVE_AUTOMATIC
+
+SOURCE_TEST_NE_HOST_PASS = TRUE
+READBACK_NE_WHOLE_REHYDRATION = TRUE
+WHOLE_REHYDRATION = PARTIAL
+This records a verified development-only source change, not native/ALIVE plugin-host acceptance or authorized productive Current promotion.
