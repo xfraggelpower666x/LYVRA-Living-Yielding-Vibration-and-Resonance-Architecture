@@ -310,3 +310,42 @@ Implementation:
 R30 development mapping: seven of nine open items have an isolated native development source; T07 (original Suno monitor integration) and T19 (Analytics parentage migration) require separate current-authority/relation assessment and remain unintegrated. ALL nine items remain open for productive adoption/host acceptance. Each of six original strands has three independent host gates; 18/18 remain OPEN. POST, SCEERI_MYCEL and PLUGIN_HOST_ACCEPTANCE remain separate pending return points. Analytics remains the primary return target. Track Design/Analytics authority may not migrate from older R23 proposals without fresh registry governance and direct readback.
 
 Source execution tests are not Native/ALIVE plugin fresh-host traces. Before any productive adoption require current Pointer and all relevant references, whole coverage, branch-head/expected-blob checks, named recovery when needed, plugin impact, approval, source readback and pointer-last. Missing full coverage => PARTIAL/READBACK_PENDING. This section neither modifies Current nor grants write authorization.
+
+
+## R40 — Suno Monitoring und Analytics Parentage source-gated integration (isolated)
+
+STATUS = SOURCE_DEVELOPMENT_INTEGRATED | PRODUCTIVE_HOST_NOT_DEPLOYED
+SOURCE_CHAIN = R26-R39 preserved
+NATIVE_CHAT_DISPLAY = EXISTING_SEMANTIC_VISUAL_INTELLIGENCE
+EXPLICIT_WORK_ACTION_ONLY = TRUE
+NO_NEW_ENGINE_OR_HTML = TRUE
+NO_NEW_DAEMON = TRUE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+
+Native source additions:
+- `development/r40-suno-source-bridge.mjs` reads explicitly supplied Suno scheduled-task RESULT evidence into the existing R13 Analytics intake. Task existence / run metadata alone returns RUN_METADATA_ONLY. An independently reviewed source reference is required for any candidate; OBSERVED never means validated musical guidance.
+- `development/r40-analytics-parentage-guard.mjs` examines current native Analytics state and contract, all seven carrier references, R23 creator-authorized migration proposal and Track DNA guard. Central shared native Analytics remains Current until a separate governed migration with direct readback.
+- `development/dual-layer-visual-projection.mjs` exposes `executeR40ChatWork` for direct creator R40 work only; it wraps existing R39 six-strand execution and returns T07/T19 states, without modifying actual task or facet placement.
+- `development/r39-native-provider-receipts.json` adds the original GitHub-referenced T07 and T19 native DEVELOPMENT gate receipts to existing R36/R39 entries; do not promote host gates.
+R40 original-source classification: 19 accepted development receipts; 9/9 T07/T18/T19/T20/T21/T22/T23/T24/T25 have a source connection on this isolated branch. None is thereby proved productive. All nine remain open for native production/host acceptance. All 18 independent host gates remain OPEN.
+
+REAL_T07_TASK = LYVRA Suno Gesamtmonitor / 6ad3035a13c8819188a27f9b6de6e2ec
+REAL_TASK_STATUS = ENABLED
+REAL_TASK_RUN_RESULT = NOT_AVAILABLE_FROM_READBACK_AT_R40
+SCHEDULED_RUN_NE_ORIGINAL_SOURCE_READBACK = TRUE
+T07_REAL_ANALYTICS_AUTOMATIC_INGEST = PENDING
+
+T19_CURRENT_ANALYTICS_PLACEMENT = CENTRAL_SHARED_NATIVE_LYVRA_FACET
+T19_CREATOR_MIGRATION_INTENT = CREATOR_AUTHORIZED_NOT_DEPLOYED
+T19_PRODUCTIVE_MIGRATION = NOT_DEPLOYED
+ROOT_AUTHORITY = WHOLE_LYVRA
+T19_CHANGE_REQUIRES = CURRENT_CARRIER_READBACK | CAPABILITY_REGISTRY | TRACK_DESIGN_SUBREHYDRATION | CROSS_FACET_CALLERS | R23_PROVENANCE | TRACK_DNA_GUARD | GOVERNED_UPDATE | HOST_CHECK
+NO_ANALYTICS_PARENTAGE_GUESS = TRUE
+
+PRIMARY_RETURN = ANALYTICS
+EXTRA_INTERRUPTS = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+NO_ADDITIONAL_COST = TRUE
+FIVE_MAIN_CHOICES = PRESERVED
+PARTIAL_REHYDRATION_MUST_REMAIN_PARTIAL = TRUE
+
+This remains a development-only, bounded integration, not a productive LifeCircle host install, successful Native/ALIVE fresh boot, or authorized pointer update.
