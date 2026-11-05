@@ -129,7 +129,8 @@
     "trigger": "Whenever a human-directed new-track scan is actually completed",
     "action": "Refresh public source evidence and date, update add-on dataset and inline snapshot, build original source tests, read back deployment. A scan date is not a background scheduler.",
     "silent_overwrite_forbidden": true,
-    "missing_evidence_does_not_zero_metrics": true
+    "missing_evidence_does_not_zero_metrics": true,
+    "search_term_samples_update": "On each explicitly performed new track research, refresh zero-price public search sampling and link counts in the source JSON before the staged build. No paid background monitoring."
   },
   "evidence_note": "Public artist and song pages show availability and catalogued discovery URLs. Counts are NOT Google index counts, unique viewers, ranking, traffic, total platform inventory or Search Console analytics.",
   "discovery_index": {
@@ -144,5 +145,35 @@
     "refresh": "Only when an actual verified new-track scan explicitly updates evidence and current catalog data; never by page load or background billing.",
     "source_date": "2026-11-05",
     "sort": "descending indexed evidence, tie alphabetical; NO visitor/ranking/search position implication."
+  },
+  "search_term_samples": {
+    "observed_at": "2026-11-05",
+    "source": "TinyFish Search exact quoted phrase query; NOT Google index/API/Search Console",
+    "geo": "DE",
+    "language": "de",
+    "pages_per_term": 3,
+    "count_mode": "distinct returned result URLs across three pages; non-exhaustive query sample",
+    "terms": [
+      {
+        "term": "fraggelpower666",
+        "distinct_sampled_result_urls": 28,
+        "returned_links_including_duplicates": 29,
+        "confidence": "sampled_public_search_links",
+        "google_search_link": "https://www.google.com/search?q=%22fraggelpower666%22",
+        "not_total_google_hits": true
+      },
+      {
+        "term": "666soundsdesign",
+        "distinct_sampled_result_urls": 25,
+        "returned_links_including_duplicates": 28,
+        "confidence": "sampled_public_search_links",
+        "google_search_link": "https://www.google.com/search?q=%22666soundsdesign%22",
+        "not_total_google_hits": true
+      }
+    ],
+    "google_direct_response": "Google direct query did not provide a reliable total hit number; first query challenged by reCAPTCHA",
+    "warning_de": "Ungefähre öffentlich auffindbare Fundlinks aus drei Suchseiten. Keine offizielle Google-Gesamttrefferzahl und kein Reichweitenwert.",
+    "warning_en": "Approximate publicly discovered links across three search-result pages. Not official Google total results, reach or traffic.",
+    "on_next_track_search": "re-run free exact phrase samples, replace current dated values and append an observed historical point; no daily chart without actual dated samples."
   }
 }
