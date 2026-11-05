@@ -1,3 +1,5 @@
+import {ingestSunoMonitorResult} from './r40-suno-source-bridge.mjs';
+import {assessAnalyticsMigration} from './r40-analytics-parentage-guard.mjs';
 import {executeR39OriginalBridge} from './r39-native-original-bridge.mjs';
 // LYVRA existing Semantic Cyber Field: two read-only projections, no new engine.
 // Source evidence is supplied by the verified CURRENT registry, not inferred by this module.
@@ -109,4 +111,34 @@ export async function executeR39ChatWork({
    returnFacet:"LYVRA_ANALYTICS",
    automaticTaskScheduling:false
  };
+}
+
+
+// R40: Explicit six-strand R39 execution PLUS safe T07/T19 original-source gates.
+// These are read-only classifications; deployment authority remains Whole LYVRA.
+export async function executeR40ChatWork({
+  sunoTaskSnapshot=null, reviewedSunoSources=[],
+  analyticsNativeContract=null, analyticsNativeState=null, carrierBlobs={},
+  r23Plan=null, creatorDecision='CREATOR_AUTHORIZED_NOT_DEPLOYED',
+  trackDnaGuard=false, ...r39Inputs
+}={}){
+  const r39=await executeR39ChatWork(r39Inputs);
+  const head=r39Inputs.expectedHead, pointerBlob=r39Inputs.expectedPointer;
+  const suno=sunoTaskSnapshot?
+    ingestSunoMonitorResult({...sunoTaskSnapshot,currentHead:head,sourceRevision:head,reviewedSources:reviewedSunoSources}):
+    {status:'MONITOR_RUN_RESULT_NOT_SUPPLIED',accepted:false,sourceReadback:false};
+  const analytics=analyticsNativeContract&&analyticsNativeState?
+    assessAnalyticsMigration({currentHead:head,pointerBlob,contractText:analyticsNativeContract,state:analyticsNativeState,sourceBlobs:carrierBlobs,r23Plan,creatorDecision,trackDnaGuard}):
+    {status:'ANALYTICS_NATIVE_CURRENT_READBACK_REQUIRED',candidateReadyForGovernedWriteReview:false,productiveMigrationApplied:false};
+  return {
+    schema:'LYVRA_R40_SIX_NATIVE_WITH_SUNO_PARENTAGE_GATES',
+    ...r39, t07_suno:suno,t19_analytics:analytics,
+    sourceIntegrationReady:true,
+    originalRunProviderReadback:suno.sourceReadback===true,
+    analyticsParentageMigrated:false,
+    hostGatesOpen:18,productiveWrites:0,
+    pluginHostVerified:false,returnFacet:'LYVRA_ANALYTICS',
+    visualGuidanceAction:r39.visual.visual_guidance_action,
+    requiresExplicitCreatorTask:true
+  };
 }
