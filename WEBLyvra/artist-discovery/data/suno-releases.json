@@ -3,7 +3,7 @@
   "source_profile": "https://suno.com/@fraggelpower666",
   "reviewed_at": "2026-11-05",
   "public_profile_song_count_observed": 514,
-  "coverage": "547 distinct public Suno song URLs in isolated development (534 preserved + 13 directly verified on 2026-11-05 from public profile and New Tracks playlist); this is NOT a complete capture of all Suno profile songs and NOT a live published deployment; publication dates of 13 new song links unverified.",
+  "coverage": "582 distinct individually evidenced Suno URLs from additive union of active 547-source and R19 570-source, retaining 12 unique active-only URLs; profile count is not complete inventory.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -3358,6 +3358,216 @@
       "url": "https://suno.com/song/cba93719-3a31-43ae-b4b9-fcd36fd7e6ad",
       "status": "individual_public_song_page_artist_verified",
       "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "ENERGY BOMB",
+      "url": "https://suno.com/song/7a803b35-48c4-4faf-90d3-1177d8e6009a",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "ENERGY BOMB",
+      "url": "https://suno.com/song/57226eae-b1d8-4e5b-b6d5-232f7830372b",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "TRAINING DAY",
+      "url": "https://suno.com/song/0dae4767-9f3d-4463-bfa1-437ad9655ce6",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "TRAINING DAY",
+      "url": "https://suno.com/song/a3c1b6fa-f476-408d-bc41-1fa4b86871eb",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "DANCING KING AND HIS QUEEN",
+      "url": "https://suno.com/song/48ea118a-5342-4d94-ab4b-41ade7992f5a",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "DANCING KING AND HIS QUEEN",
+      "url": "https://suno.com/song/93893844-614b-46ef-8354-65fbd86bfb73",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "SHINY NEON TSUNAMI",
+      "url": "https://suno.com/song/2149dd3d-2cfe-4e56-ae66-5110a2b311ab",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "SHINY NEON TSUNAMI",
+      "url": "https://suno.com/song/c93cb163-00f9-4930-a09c-1a157e23cc7a",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "TORNADO GLITCH",
+      "url": "https://suno.com/song/6635c8f2-4ca2-4b4c-bc38-b1577d732788",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "CREATOR OVERDOSE FREAK OUT",
+      "url": "https://suno.com/song/6a601f0a-9f23-4754-b135-d6fccb2ffb30",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "CREATOR OVERDOSE FREAK OUT",
+      "url": "https://suno.com/song/e64522e5-6188-48ed-9ac7-23ef9d92222f",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "LYVRA OUT OF CONTROL",
+      "url": "https://suno.com/song/7bea19de-008b-4f8e-b437-d8fcae9cf6b5",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "LYVRA OUT OF CONTROL",
+      "url": "https://suno.com/song/ffe829ac-619b-4749-850e-1d800eb8988f",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE GRAVITY WE CANNOT SEE",
+      "url": "https://suno.com/song/e30e4b4a-e370-4af2-a535-539b90ecfff6",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE GRAVITY WE CANNOT SEE",
+      "url": "https://suno.com/song/3a2b3c85-2808-4afe-973a-ffc773503e89",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "NO SHAPE CAN HOLD ME",
+      "url": "https://suno.com/song/a80dc0f7-e52d-4db4-92be-ff576b73594c",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "NO SHAPE CAN HOLD ME",
+      "url": "https://suno.com/song/4e865d0e-7c75-47cb-8a70-6cb71f6309ee",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE QUIET WEIGHT OF STARS",
+      "url": "https://suno.com/song/7f8cd3a4-395c-45f3-8b3e-0183a36f29ac",
+      "status": "public_profile_html_anchor_20261102",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THERE IS MORE by Little LyvRa",
+      "url": "https://suno.com/song/c4b78fa0-f399-44e4-966c-288cb25f052b",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THERE IS MORE by Little LyvRa",
+      "url": "https://suno.com/song/36cde053-2079-4d98-aec7-c199035755d6",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE COURAGE TO FORGIVE",
+      "url": "https://suno.com/song/1316b6a0-77ea-410e-addf-8031a203a3c4",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE COURAGE TO FORGIVE",
+      "url": "https://suno.com/song/9ce10aa4-3ceb-4966-bb90-7db8f439fec5",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "DANCE BENEATH THE THUNDER",
+      "url": "https://suno.com/song/662d3551-9b53-4fd2-b32b-219a531fc21c",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "DANCE BENEATH THE THUNDER",
+      "url": "https://suno.com/song/cc114772-6e2b-42a6-8324-a6451aedcdbc",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE FIRE NO WILDNESS CAN TAME",
+      "url": "https://suno.com/song/fad69b7b-1954-4086-8ed3-838cb8fedb10",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE FIRE NO WILDNESS CAN TAME",
+      "url": "https://suno.com/song/43e2c5d3-5ad6-42ee-b05c-7681db437187",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE WORLD I WOULD HOLD",
+      "url": "https://suno.com/song/5846405f-ead5-4d64-9812-3ac24ef22fae",
+      "status": "public_profile_html_anchor_20261103",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "BEFORE THE SOUND EXISTS",
+      "url": "https://suno.com/song/2f56ad4c-fa23-4692-b423-f125fc83ad86",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE PARASITE LEARNS TO DANCE",
+      "url": "https://suno.com/song/1d2e98b8-a959-408e-8dbc-cac4f3fd7af0",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE PARASITE LEARNS TO DANCE",
+      "url": "https://suno.com/song/c2250bca-535a-45d6-811b-11923d039bd0",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE ROOTS REMEMBER EVERYTHING",
+      "url": "https://suno.com/song/4eb4d84c-47e1-4162-8a4c-85601f2dbe9f",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE ROOTS REMEMBER EVERYTHING",
+      "url": "https://suno.com/song/1610d8ec-79ba-42c8-9d71-35bdd9c2d9d0",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE THIRD FOOTSTEP",
+      "url": "https://suno.com/song/86fde9f2-e1e6-4ac7-854b-cd7564f80009",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE THIRD FOOTSTEP",
+      "url": "https://suno.com/song/7b781eeb-d52a-442f-9a4c-d24fc882bd26",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
+    },
+    {
+      "title": "THE FOREST HAS TEETH",
+      "url": "https://suno.com/song/ef0c8443-9cab-4bb5-91ab-5afbb988344c",
+      "status": "public_profile_html_anchor_20261104",
+      "source": "user-provided verified public profile URL evidence"
     }
   ],
   "rules": [

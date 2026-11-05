@@ -23,18 +23,18 @@
     "automatic_paid_watch": false
   },
   "catalog": {
-    "suno": 547,
+    "suno": 582,
     "soundcloud_tracks": 358,
     "soundcloud_sets": 48,
     "mixcloud_tracks": 10,
     "mixcloud_shows": 10,
-    "total": 975,
-    "candidate_branch": "dev/weblyvra-discovery-active-build-736-20261105",
+    "total": 1010,
+    "candidate_branch": "dev/weblyvra-discovery-merge-582-20261105-r01",
     "release_state": "ISOLATED_PREVIEW_ONLY",
     "soundcloud_playlists": 2,
     "soundcloud_verified_album_member_urls": 233,
     "soundcloud_new_unique_tracks_from_albums": 216,
-    "source_note": "2026-11-05: 48 SoundCloud albums/sets verified by original page plus 2 separate SoundCloud playlists = 50 collections, not 50 confirmed albums. Album lists supply 233 distinct direct track URLs; 216 were missing in the pre-existing 142-track catalog. No music audio or artwork binaries copied."
+    "source_note": "2026-11-05: 48 SoundCloud albums/sets verified by original page plus 2 separate SoundCloud playlists = 50 collections, not 50 confirmed albums. Album lists supply 233 distinct direct track URLs; 216 were missing in the pre-existing 142-track catalog. No music audio or artwork binaries copied. Additive merge of 35 individually evidenced unique Suno URLs from isolated R19-570 branch; 12 source-only URLs preserved. Total 582 unique, no claims of 647 complete inventory."
   },
   "search_sample": {
     "checked_at": "2026-11-05",
@@ -58,7 +58,7 @@
       "name": "Suno",
       "url": "https://suno.com/@fraggelpower666",
       "evidence": "direct_public_profile_and_song_pages",
-      "catalog_count": 547,
+      "catalog_count": 582,
       "unit": "public song links",
       "discovery_points": 93
     },
