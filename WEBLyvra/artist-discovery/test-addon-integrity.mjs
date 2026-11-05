@@ -24,7 +24,7 @@ assert.equal(evidence.catalog.soundcloud_sets,soundcloud.length,'SoundCloud sets
 assert.equal(evidence.catalog.soundcloud_tracks,soundcloudTracks.length,'SoundCloud tracks snapshot count mismatch');
 assert.equal(evidence.catalog.mixcloud_shows,mixcloud.shows.length,'Mixcloud shows snapshot count mismatch');
 assert.equal(evidence.catalog.mixcloud_tracks,mixcloud.tracks.length,'Mixcloud tracks snapshot count mismatch');
-assert.match(evidence.last_scan_date,/^\\d{4}-\\d{2}-\\d{2}$/,'evidence scan date invalid');
+assert.match(evidence.last_scan_date,/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/,'evidence scan date invalid');
 assert.equal(evidence.cost_contract.maximum_incremental_cost_usd,0,'zero additional cost violated');
 assert.equal(evidence.discovery_index.is_google_rank,false,'editorial ranking improperly called a Google rank');
 assert.equal(evidence.measurements.impressions,null,'Google impressions fabricated');
