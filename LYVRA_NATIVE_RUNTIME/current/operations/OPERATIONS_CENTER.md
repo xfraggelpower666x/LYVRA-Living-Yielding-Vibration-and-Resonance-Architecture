@@ -485,3 +485,37 @@ SOURCE_READBACK_NE_PLUGIN_RELEASE = TRUE
 AUTOMATION_REPORT_READBACK_NE_SUNO_SOURCE_READBACK = TRUE
 NO_CHANGE_REPORT_NE_NEW_MUSIC_FACT = TRUE
 NO_CHANGE_NE_HOST_PASS = TRUE
+
+
+## R45 — Native Track and Studio caller integration (isolated)
+
+STATE = SOURCE_INTEGRATED_READBACK_VERIFIED | PRODUCTIVE_HOST_READBACK_PENDING | WHOLE_REHYDRATION_PARTIAL
+SOURCE = LYVRA_NATIVE_RUNTIME/development/r45-track-studio-analytics-profile.mjs
+SOURCE_READBACKS = LYVRA_NATIVE_RUNTIME/development/r45-native-cross-facet-original-readbacks.json
+EXECUTION_ENTRY = LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs
+
+The existing creator-invoked R40/R44 six-strand work now supports explicitly supplied Track Design and Studio 2 central-Analytics capability requests via R45. These requests preserve the existing R43 Speech Design selective caller, and must include exact current-head-bound original GitHub readbacks and the matching capability profile. The source-only gates reject duplicate, outdated, incomplete, missing or incorrect source references and prohibit auto-foreground, arbitrary capability expansion or composition authority transfer. No second router, controller, visual engine or HTML is created.
+
+SOURCE_EVIDENCE = Current central Analytics capability registry plus current music semantic-causal relation plus original Studio2 and Track Design master-base contracts.
+SCOPED_CAPABILITIES = TRACK_PREAUDIT_BUNDLE | STUDIO2_OPERATION_BUNDLE
+SOURCE_TEST_R45 = 14/14 GitHub-original direct JS source tests PASS
+EXISTING_WORK_ENTRY_INTEGRATION_R45 = 9/9 source-level integration checks PASS
+NODE_PROCESS_TEST_R45 = NOT_INDEPENDENTLY_VERIFIED
+HOST_NATIVE_R45 = NOT_MOUNTED
+HOST_ALIVE_R45 = READBACK_PENDING
+NATIVE_RELEASE = 0.1.91 / pluginrel_6ae9924655b48191a8fbc0dc8c2bae76
+NATIVE_RELEASE_FILES_R45_PRESENT = FALSE
+ALIVE_EXACT_BACKEND_RELEASE = NOT_RESOLVED_FROM_AVAILABLE_OWNED_PLUGIN_INVENTORY
+
+T07 actual original Nov-05 automation report NO_CHANGE is preserved from R44; no new source-driven music rule or additional credits. T19's central native Analytics authority is unchanged. R45 confirms three profile classes (Speech, Track Design, Studio 2) from scoped source contracts, but this does NOT establish exhaustive cross-facet caller inventory or productively migrated T19 authority.
+SIX_ORIGINAL_STRANDS = PRESERVED
+NINE_R30_PRODUCTIVE_ITEMS = OPEN
+EIGHTEEN_NATIVE_HOST_GATES = OPEN
+RETURN_ANCHOR = ANALYTICS
+SEPARATE_INTERRUPT_RETURN_ANCHORS = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+PRODUCTIVE_WRITES = NONE
+CURRENT_POINTER = UNCHANGED
+NO_FOREIGN_AUTOACTIVATION = TRUE
+FIVE_EXISTING_VISUAL_CHOICES = PRESERVED
+
+No plugin release, automated task, outside system, source branch pointer, current manifest or production current was modified.
