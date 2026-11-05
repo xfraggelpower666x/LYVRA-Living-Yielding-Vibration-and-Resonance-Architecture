@@ -296,7 +296,7 @@
     "observed_on": "2026-11-05",
     "source_kind": "user_supplied_bing_search_result_screenshot",
     "query": "\"fraggelpower666\"",
-    "displayed_approximate_results": 1470,
+    "displayed_approximate_results": 2160,
     "display_language": "de",
     "search_url": "https://www.bing.com/search?q=%22fraggelpower666%22",
     "independently_reproduced": false,
@@ -307,11 +307,26 @@
     "not_google_search_console_metric": true,
     "does_not_change_search_term_samples": true,
     "does_not_change_resonance_scores": true,
-    "context": "Screenshot also shows FRAGGELPOWER666 - Topic YouTube and associated artist videos",
+    "context": "Latest screenshot shows FRAGGEL © 666SOUNDsDESIGn 2026 Suno profile, FRAGGELPOWER666 YouTube Topic artist videos and 666SOUNDsDESIGn Radio on webradio.666soundsdesign-broadcaster.com.",
     "label_de": "Bing · ungefähr angezeigte Suchergebnisse",
     "label_en": "Bing · approximate displayed search results",
-    "warning_de": "Angezeigte Bing-Schätzung aus Nutzerscreenshot; keine nachgezählten Einzelseiten und keine Google-Trefferzahl. Suchmaschinen und Filter können stark voneinander abweichen.",
-    "warning_en": "Displayed Bing estimate from a user screenshot; not individually counted pages or a Google result count. Search engines and filtering can differ greatly.",
-    "no_paid_lookup": true
+    "warning_de": "Aktuell angezeigte Bing-Schätzung 2.160; zuvor am selben Tag 1.470. Differenz 690 ist eine Schwankung der Suchtreffer-Schätzung, kein nachgewiesener Zuwachs indexierter Seiten oder Besucher.",
+    "warning_en": "Latest Bing estimate shows 2,160, compared with 1,470 earlier the same day. The 690 difference is search estimate variability, not verified growth in indexed pages or visitors.",
+    "no_paid_lookup": true,
+    "history": [
+      {
+        "observed_on": "2026-11-05",
+        "displayed_approximate_results": 1470,
+        "source_kind": "user_supplied_bing_search_result_screenshot",
+        "order": "earlier screenshot"
+      },
+      {
+        "observed_on": "2026-11-05",
+        "displayed_approximate_results": 2160,
+        "source_kind": "user_supplied_bing_search_result_screenshot",
+        "order": "later screenshot"
+      }
+    ],
+    "estimate_change_not_verified_growth": true
   }
 }
