@@ -45,6 +45,10 @@ assert.ok(html.includes("className='gr-bing-observation'")&&html.includes('grEvi
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.does_not_change_sampled_search_link_counts,true,'Google AI estimate must not change real search link counts');
 assert.equal(evidence.search_term_samples.terms[0].distinct_sampled_result_urls,28,'direct search sample incorrectly overwritten');
 assert.equal(evidence.search_term_samples.terms[1].distinct_sampled_result_urls,25,'brand search sample incorrectly overwritten');
+assert.equal(evidence.search_term_samples.terms.length,3,'artist aliases must be kept separate');
+assert.equal(evidence.search_term_samples.terms[2].term,'fragglepower666','English spelling not catalogued');
+assert.equal(evidence.search_term_samples.terms[2].distinct_sampled_result_urls,19,'English spelling search sample mismatch');
+assert.equal(evidence.search_term_samples.terms[2].not_total_google_hits,true,'alias sample incorrectly called Google total');
 assert.ok(html.includes("className='gr-google-ai-range'")&&html.includes('grEvidence.google_ai_exact_phrase_estimate_observation'),'Google AI estimated range UI missing');
 
 assert.equal(evidence.google_ai_overview_observation.not_for_scoring_adjustment,true,'AI overview must not inflate popularity scores');
