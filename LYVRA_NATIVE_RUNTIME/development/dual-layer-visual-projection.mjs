@@ -67,3 +67,6 @@ export function projectWholeRehydrationDeployment({
 // R38: Original-R26-Fachfunktionen werden ausschliesslich ueber explizite Ports aufgerufen.
 // Keine automatische Aktivierung beim Rendern oder bei Whole-Rehydration.
 export {executeR38Ports,STRANDS as R38_SIX_FACET_STRANDS} from "./r38-six-facet-ports.mjs";
+
+// R38: originale R26-Visual-Fuehrung direkt erreichbar, nicht nur nachgebaut.
+export {withVisualGuidance as originalR26VisualGuidance,actionForStrand as originalR26ActionForStrand,actionAll as originalR26ActionAll} from "./r38_original_r26/visual-action-inheritance-r10.mjs";
