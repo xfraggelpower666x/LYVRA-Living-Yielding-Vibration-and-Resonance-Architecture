@@ -1,0 +1,68 @@
+{
+  "schema": "LYVRA_R46_FACET_LIFECIRCLE_SOURCE_COVERAGE_LEDGER",
+  "authority": "WHOLE_LYVRA",
+  "source_ref": "lyvra",
+  "head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "pointer_blob": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "coverage_class": "PARTIAL_READBACK_PENDING",
+  "provided": [
+    {
+      "gate": "WHOLE_CURRENT",
+      "path": "LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json",
+      "blob_sha": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json @ lyvra"
+    },
+    {
+      "gate": "FACET_CONTRACT",
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+      "blob_sha": "0330b4536738516ed496e410cf8459de28713cc3",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md @ lyvra"
+    },
+    {
+      "gate": "CURRENT_CAPABILITY_SET",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md @ lyvra"
+    },
+    {
+      "gate": "EVIDENCE_STATUS",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json",
+      "blob_sha": "8e94e0f93db9bb882bbe953f0d5318870fcd5aed",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/CURRENT_STATE.json @ lyvra"
+    }
+  ],
+  "unread_or_not_independently_reconstructed": [
+    "CURRENT_INTELLIGENCE_SET",
+    "CURRENT_CAPABILITY_RELATIONS",
+    "FACET_DNA",
+    "REFERENCE_MAPS",
+    "CAPABILITY_MAPS",
+    "OPEN_VALIDATION_GATES"
+  ],
+  "provider_execution_host": "NOT_TESTED",
+  "whole_rehydration": "PARTIAL",
+  "release_native": "0.1.91_NOT_ADOPTED",
+  "release_alive": "READBACK_PENDING",
+  "suno": "R44_NO_CHANGE_RESULT_PRESERVED",
+  "r30_productive_items": 9,
+  "host_gates_open": 18,
+  "return_anchor": "ANALYTICS",
+  "preserved": [
+    "POST",
+    "SCEERI_MYCEL",
+    "PLUGIN_HOST_ACCEPTANCE"
+  ],
+  "no_foreign_activation": true
+}
