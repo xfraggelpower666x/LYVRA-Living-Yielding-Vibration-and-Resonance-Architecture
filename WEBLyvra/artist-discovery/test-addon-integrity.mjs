@@ -33,6 +33,13 @@ assert.equal(evidence.google_ai_overview_observation.independently_reproduced,fa
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_min_relevant_pages,15,'AI estimated lower bound altered');
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_max_relevant_pages,30,'AI estimated upper bound altered');
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.independently_reproduced,false,'AI estimate incorrectly promoted to verified');
+assert.equal(evidence.bing_exact_artist_search_observation.displayed_approximate_results,1470,'Bing displayed result count changed');
+assert.equal(evidence.bing_exact_artist_search_observation.independently_reproduced,false,'Bing screenshot promoted to independent proof');
+assert.equal(evidence.bing_exact_artist_search_observation.not_unique_pages,true,'Bing displayed hits incorrectly treated as counted unique URLs');
+assert.equal(evidence.bing_exact_artist_search_observation.not_google_result_count,true,'Bing value misrepresented as Google result count');
+assert.equal(evidence.bing_exact_artist_search_observation.does_not_change_search_term_samples,true,'Bing screenshot mutated search-link samples');
+assert.ok(html.includes("className='gr-bing-observation'")&&html.includes('grEvidence.bing_exact_artist_search_observation'),'Bing observation UI missing');
+
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.does_not_change_sampled_search_link_counts,true,'Google AI estimate must not change real search link counts');
 assert.equal(evidence.search_term_samples.terms[0].distinct_sampled_result_urls,28,'direct search sample incorrectly overwritten');
 assert.equal(evidence.search_term_samples.terms[1].distinct_sampled_result_urls,25,'brand search sample incorrectly overwritten');
