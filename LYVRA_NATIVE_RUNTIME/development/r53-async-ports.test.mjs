@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {executeR38Ports,STRANDS} from './r38-six-facet-ports.mjs';
+const head='6337840188b0f2b15ef070f9872f65b0ae2bba53';
+const pointerSha='87b6d6cfd400e3866b211bb8b49d683098fbff65';
+const ports={guardedDictation:async()=>({ok:'dictation'}),ingestAnalyticsEvidence:async()=>({ok:'analytics'}),learningProbe:async()=>({ok:'relations'}),visualAction:async()=>({ok:'visual'}),buildHandoff:async()=>({ok:'continuity'}),researchCostGate:async()=>({ok:'research'})};
+const inputs={analytics:{sourceId:'source'},learning:{problemKey:'case'}};
+test('all six async original ports settle before result returns',async()=>{const r=await executeR38Ports({head,pointerSha,ports,inputs});assert.deepEqual(r.results.map(x=>x.id),STRANDS);assert.ok(r.results.every(x=>x.status==='ORIGINAL_R26_FUNCTION_EXECUTED'));assert.ok(r.results.every(x=>x.value?.ok));assert.ok(r.results.every(x=>!(x.value instanceof Promise)));assert.equal(r.hostGatesOpen,18);assert.equal(r.productiveWrites,0);assert.equal(r.pluginHostVerified,false);});
+test('an asynchronous rejected original port is blocked, not false success',async()=>{const broken={...ports,learningProbe:async()=>{throw new Error('CAUSAL_HOST_PENDING')}};const r=await executeR38Ports({head,pointerSha,ports:broken,inputs});assert.equal(r.results.find(x=>x.id==='CHARACTER_RELATIONS').status,'INPUT_ORIGINAL_FUNCTION_BLOCKED');assert.equal(r.results.filter(x=>x.status==='ORIGINAL_R26_FUNCTION_EXECUTED').length,5);assert.equal(r.hostGatesOpen,18)});
+test('existing sync fallback and authority boundaries intact',async()=>{const r=await executeR38Ports({head,pointerSha,ports});assert.equal(r.results.find(x=>x.id==='ANALYTICS').value.ingested,false);assert.equal(r.returnFacet,'LYVRA_ANALYTICS');await assert.rejects(()=>executeR38Ports({head:'bad',pointerSha,ports}));await assert.rejects(()=>executeR38Ports({head,pointerSha,ports:{}}));});
