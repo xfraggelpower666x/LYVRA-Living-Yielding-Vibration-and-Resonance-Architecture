@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-11-05",
+  "artist": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
+  "scope": "Publicly accessible SoundCloud set membership and SoundCloud-owned original artwork URLs",
+  "covered_albums": 47,
+  "original_album_count": 47,
+  "errors": [],
+  "missing_albums": [],
+  "note": "Individual track URLs are preserved per album. Cover URLs are remote SoundCloud og:image originals; do not download, mirror or infer reuse rights. Do not count the same track twice in global catalog.",
+  "albums": [
+    {
+      "title": "Another Psy Revolution",
+      "url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "artwork_url": "https://i1.sndcdn.com/artworks-HL6mpk4JcHWp09oF-VEhV7Q-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Psy Revolution",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "artwork_url": "https://i1.sndcdn.com/artworks-HL6mpk4JcHWp09oF-VEhV7Q-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Sie sind unter uns (Single - Part2)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "artwork_url": "https://i1.sndcdn.com/artworks-dMryLE7z3e6Z0G7i-3T20LQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Sie sind unter uns (Single)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "artwork_url": "https://i1.sndcdn.com/artworks-q4wA2tGRDUPcUfyz-48KSzA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "The Power must go on...",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "artwork_url": "https://i1.sndcdn.com/artworks-4Y7U0WahdjwoaxtZ-uJ0WaA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Album Alien being in Human",
+      "url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "artwork_url": "https://i1.sndcdn.com/artworks-q4wA2tGRDUPcUfyz-48KSzA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "PsyTrance - From the Beginning",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "artwork_url": "https://i1.sndcdn.com/artworks-i5UPFfygryZ8gD75-rIwcjg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "A Speech to Humanity - Die Rede an die Menschheit",
+      "url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "artwork_url": "https://i1.sndcdn.com/artworks-MQfejTIjdfE0pHac-nzS9cQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 the Alpha and the AIs",
+      "url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "artwork_url": "https://i1.sndcdn.com/artworks-ao44fnYxkJ4r4S0d-VeuLfQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Second Life - Bunker - Techno / PsyTechno",
+      "url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "artwork_url": "https://i1.sndcdn.com/artworks-sRJPCWlmDzX0y5P3-4VGGgg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "PsyTechno Overdosed CyberStorm",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "artwork_url": "https://i1.sndcdn.com/artworks-rtcimzpaizQXEuVI-8tyb6g-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 @ The Asylum",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "artwork_url": "https://i1.sndcdn.com/artworks-198WktaEjWvol8Wv-KpYTng-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Numinastics Forever",
+      "url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "artwork_url": "https://i1.sndcdn.com/artworks-P7uHPjXxmpzrPs9Z-DgE4Bg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Second Life - Multiverse Fair",
+      "url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "artwork_url": "https://i1.sndcdn.com/artworks-d6tT8aEmuYgvQz4S-OXzRMg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Vocal Psytrance Adventure 2.0",
+      "url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "artwork_url": "https://i1.sndcdn.com/artworks-AKk267gdRn3ckrAK-ZgdysA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA - LOVE PROTOCOL",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-love-protocol",
+      "artwork_url": "https://i1.sndcdn.com/artworks-ZRpcvRyFgpvkf2x0-D1sU3Q-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA - NEW GENERATION II",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation-ii-1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-81VNqcw86dNtty0O-j8pVzA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA - NEW GENERATION",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "artwork_url": "https://i1.sndcdn.com/artworks-asjO9Lg3bGSJW1sE-lop6CA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA - FUSION",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "artwork_url": "https://i1.sndcdn.com/artworks-xZ7IvYckmyW9icvp-ODVDuA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LyvRa - Midnight Architecture",
+      "url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "artwork_url": "https://i1.sndcdn.com/artworks-WfJCG7AnqwemEuBz-epmHgw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LyvRa - Resonance Bloom",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "artwork_url": "https://i1.sndcdn.com/artworks-aBpmjiaRWSl6tazW-vnf5jQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LyvRa - Electric Desire",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "artwork_url": "https://i1.sndcdn.com/artworks-D03mZGFAiQW40H3G-nDILCQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LyvRa - Velvet Signal",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "artwork_url": "https://i1.sndcdn.com/artworks-ZuWcOcX6gGQsv4yK-Le2Tuw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "CHAOS MATRIX SAGA - THE COLLAPSE OF SYNCHRONISATION",
+      "url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "artwork_url": "https://i1.sndcdn.com/artworks-0h8nrzHhRVyNOikB-IyIwVw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "CHAOS MATRIX - THE BIRTH OF THE SIGNAL",
+      "url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "artwork_url": "https://i1.sndcdn.com/artworks-HFTkGu6hGmfjw8l8-iHbr0g-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Not every one likes you!",
+      "url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "artwork_url": "https://i1.sndcdn.com/artworks-hiTxSztPCSb9UDLq-7Wo3Dw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Geschichtenerzähler (Storyteller)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "artwork_url": "https://i1.sndcdn.com/artworks-gECtqG1s2kXlCvxn-vSYNng-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 Special Dark Techno Part Two",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-zAxCI1ECQtgxGvsI-BTSjhw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "FRAGGEL STYLE MUSIC",
+      "url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "artwork_url": "https://i1.sndcdn.com/artworks-dwuabybz7Gf6DARo-wUdgyQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "POWERBEATS - 666 SOUNDsDESIGn 2026",
+      "url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "artwork_url": "https://i1.sndcdn.com/artworks-AluoEHzWFI7eXJIi-wsHfRw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "SELFMADE - EMOTION - DARK TECHNO - PSYTRANCE COMPLIATION",
+      "url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "artwork_url": "https://i1.sndcdn.com/artworks-ADDdnqOtuTWGqqyo-mMvR0Q-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "The Virtual Worlds - Second Life - 3DX Chat Meredian",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "artwork_url": "https://i1.sndcdn.com/artworks-oSiIGuLVye6E4vFy-LxQDiA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 Special Dark Techno Part One",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "artwork_url": "https://i1.sndcdn.com/artworks-NsOf1GxRDqypdNyy-Jrn1Lg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 SPECIAL DARK TECHNO AGGRO",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "artwork_url": "https://i1.sndcdn.com/artworks-v5fZk9tnyf9TkjeG-aWFRdA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "666 Special ACID DARK TECHNO",
+      "url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "artwork_url": "https://i1.sndcdn.com/artworks-KKF8rxK5BHEiaOvV-eEZ9kQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "THE DARK DANCER - VOLUME 2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "artwork_url": "https://i1.sndcdn.com/artworks-w9etBB0SYYiWIBQF-JTD5KA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "THE DARK DANCER - VOLUME1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-6C6QqWiH7V69PAMW-SBLkkg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Remakes, Remixes, some new Tracks of my work - Part One",
+      "url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-bRPWy294wNhi7muQ-8KkbfA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Remakes, Remixes, some new Tracks of my work - Part Two",
+      "url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "artwork_url": "https://i1.sndcdn.com/artworks-bRPWy294wNhi7muQ-8KkbfA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "PsyTrance Attack v2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "artwork_url": "https://i1.sndcdn.com/artworks-I1ooHvnyfnr9DTR2-tr8LOg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "PsyTrance Attack v1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-LmVNdWeAyo88b6Jc-33XsFw-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "The Power of Nothing Part 2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "artwork_url": "https://i1.sndcdn.com/artworks-ySXHLp3nwmy1RVcO-qmxAag-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "The Power of Nothing Part 1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-kLWhQrddiwGHBSBa-NXgzdg-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Trapped in PsyTrance",
+      "url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "artwork_url": "https://i1.sndcdn.com/artworks-15e6lhKioAybQxo8-2yayFQ-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Storyteller englisch",
+      "url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "artwork_url": "https://i1.sndcdn.com/artworks-gECtqG1s2kXlCvxn-vSYNng-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA SPACE ERUPTION PART 1",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-space-eruption-part-1",
+      "artwork_url": "https://i1.sndcdn.com/artworks-JTOzddOoUaauPo3z-oLPUpA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "LYVRA SPACE ERUPTION PART 2",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-space-eruption-part-2",
+      "artwork_url": "https://i1.sndcdn.com/artworks-pfz7hLtBTmfT2z7R-ixo9KA-t500x500.jpg",
+      "track_urls": [],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "no_tracks_extracted",
+      "cover_verification": "og:image_from_album_page"
+    }
+  ]
+}
