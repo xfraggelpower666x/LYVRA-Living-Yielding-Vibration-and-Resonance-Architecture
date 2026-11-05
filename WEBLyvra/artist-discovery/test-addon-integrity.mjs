@@ -31,6 +31,14 @@ assert.equal(evidence.measurements.impressions,null,'Google impressions fabricat
 assert.equal(evidence.google_ai_overview_observation.source_kind,'user_supplied_screenshot_of_google_ai_overview','AI overview provenance missing');
 assert.equal(evidence.google_ai_overview_observation.independently_reproduced,false,'screenshot promoted to independent proof');
 assert.equal(evidence.google_ai_overview_observation.not_for_scoring_adjustment,true,'AI overview must not inflate popularity scores');
+assert.equal(evidence.semrush_backlink_observation.target_domain,'666soundsdesign-broadcaster.com','Semrush target changed');
+assert.equal(evidence.semrush_backlink_observation.estimated_backlinks_display,'5.2K','Semrush screenshot backlink count changed');
+assert.equal(evidence.semrush_backlink_observation.referring_domains,230,'Semrush referring domain count changed');
+assert.equal(evidence.semrush_backlink_observation.authority_score,2,'Semrush authority screenshot changed');
+assert.equal(evidence.semrush_backlink_observation.dofollow_backlinks_percent,98.44,'Semrush dofollow screenshot changed');
+assert.equal(evidence.semrush_backlink_observation.independently_reproduced,false,'Semrush estimate incorrectly promoted to verified');
+assert.equal(evidence.semrush_backlink_observation.does_not_contribute_to_editorial_resonance_scores,true,'Backlink volume must not inflate discovery ranking');
+assert.ok(html.includes("className='gr-semrush'")&&html.includes('grEvidence.semrush_backlink_observation'),'Semrush warning panel missing');
 assert.ok(html.includes("className='gr-ai-observation'")&&html.includes('grEvidence.google_ai_overview_observation'),'Google AI overview evidence UI missing');
 assert.equal(evidence.measurements.clicks,null,'Google clicks fabricated');
 assert.equal(evidence.measurements.ctr,null,'Google CTR fabricated');
