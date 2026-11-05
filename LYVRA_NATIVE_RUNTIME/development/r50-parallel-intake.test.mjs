@@ -30,4 +30,5 @@ reject('ambiguous acceptance gate across two tasks',()=>projectR50Intake(ledger,
 const claimedResume=projectR50Intake(ledger,[{...e,id:'r57-resume',kind:'RESUME',verified_checkpoint:'HOST_PASS_NOT_REAL'}],opts);
 check('unverified claimed checkpoint never promoted',claimedResume.events[0].checkpoint===null);
 check('unverified claim remains visible for source verification',claimedResume.events[0].checkpoint_claim==='HOST_PASS_NOT_REAL'&&claimedResume.events[0].resume_status==='CHECKPOINT_READBACK_REQUIRED');
+reject('nonarray relationship input cannot silently discard dependencies',()=>projectR50Intake(ledger,[{...e,related_strands:'ANALYTICS'}],opts));
 console.log(JSON.stringify({result:'PASS',checks:count,scope:'SOURCE_REGRESSION_ONLY',hostAccepted:false}));
