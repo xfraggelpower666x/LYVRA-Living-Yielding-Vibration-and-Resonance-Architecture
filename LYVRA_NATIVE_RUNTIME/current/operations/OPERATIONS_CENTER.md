@@ -248,3 +248,39 @@ MONITOR_MANDATORY = TRUE
 OPERATIONS_CENTER_NE_CONTROLLER = TRUE
 NO_FAKE_COMPLETENESS = TRUE
 NO_FORCED_ALL_PROJECTS_ACTIVE = TRUE
+
+
+## R37 — Native Parallel Deployment Visual projection (development branch)
+
+STATUS = SOURCE_DEVELOPMENT_LINKED | PRODUCTIVE_ADOPTION_PENDING | HOST_READBACK_PENDING
+OWNER = WHOLE_LYVRA
+EXISTING_VISUAL_SURFACE = SEMANTIC_CYBER_FIELD
+NO_NEW_ENGINE = TRUE
+NO_NEW_FACET = TRUE
+NO_NEW_CONTROLLER = TRUE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+
+The existing `LYVRA_NATIVE_RUNTIME/development/dual-layer-visual-projection.mjs`
+now exposes `projectWholeRehydrationDeployment` as a read-only data projection,
+reusing existing `projectDualLayer` and the R36 evidence reconciliation.
+The function consumes an explicitly supplied, current-head-and-pointer-bound R32
+source projection and source-bound R33–R36 receipts; it does not discover or
+independently fetch the current repository or execute actions.
+
+CALL_POSITION = WHOLE_CURRENT_VERIFIED > WHOLE_CONTEXT_AVAILABLE > OPERATIONS_CENTER > VISUAL_PROJECTION > WORK_SCOPE_LAST
+WHOLE_COVERAGE_PARTIAL_MUST_STAY_PARTIAL = TRUE
+FIVE_MAIN_CHOICES_UNCHANGED = TRUE
+SIX_STRANDS = PRESERVED
+SEVEN_WORK_BUNDLES = PRESERVED
+NINE_CURRENT_INTEGRATION_ITEMS = EVIDENCE_BASELINE_ONLY_NOT_PERMANENT_VERSION_LOCK
+EIGHTEEN_OPEN_HOST_GATES = CURRENT_BASELINE_NO_AUTOMATIC_CLOSURE
+SUPPLEMENTAL = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+PRIMARY_RETURN = ANALYTICS
+VISUAL_GUIDANCE_ACTION = CHAT_LOCAL_RECOVERY_NO_RESET
+
+This integration is a governed isolated-development source connection, NOT
+proof that a productive native chat plugin automatically invokes it.
+Before productive adoption: full current authority/reference coverage, direct
+source tests, recovery, scope/lock/HEAD checks, both plugin impact reviews,
+pointer-last and readback. Never promote development-branch evidence to
+productive HOST PASS, never use the rejected standalone HTML dashboard.
