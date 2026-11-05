@@ -1,0 +1,124 @@
+{
+  "schema": "LYVRA_R47_SIX_ANALYTICS_SUB_LIFECIRCLE_CARRIER_EVIDENCE",
+  "source_current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "pointer_blob": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "source": "direct GitHub lyvra original full file fetch",
+  "facet": "LYVRA_ANALYTICS",
+  "sub_lifecircle": "WHOLE_LYVRA_CHILD_CAPABILITY",
+  "whole_rehydration": "PARTIAL",
+  "gate_evidence": [
+    {
+      "gate": "CURRENT_INTELLIGENCE_SET",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md @ lyvra",
+      "semantic_marker": "ANALYTICS_CAPABILITIES = SELECTIVELY_ADDRESSABLE_INTELLIGENCES",
+      "semantic_role": "CENTRAL_ANALYTICS_CURRENT_INTELLIGENCE",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    },
+    {
+      "gate": "CURRENT_CAPABILITY_RELATIONS",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md @ lyvra",
+      "semantic_marker": "ANALYTICS_RESULT_RETURNS_TO_CALLER = true",
+      "semantic_role": "NATIVE_ANALYTICS_RELATIONS",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    },
+    {
+      "gate": "FACET_DNA",
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md",
+      "blob_sha": "db8a09aacfd29a837d07f7bc8e3a21049f2adc44",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/current/music/TRACK_MUSIC_INTELLIGENCE.md @ lyvra",
+      "semantic_marker": "MUSIC_DNA",
+      "semantic_role": "TRACK_DNA_BY_REFERENCE_NOT_ANALYTICS_IDENTITY",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    },
+    {
+      "gate": "REFERENCE_MAPS",
+      "path": "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json",
+      "blob_sha": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json @ lyvra",
+      "semantic_marker": "REFERENCE_PROVENANCE_EVIDENCE_ONLY_NOT_CURRENT_AUTHORITY",
+      "semantic_role": "REFERENCE_PROVENANCE_ONLY",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    },
+    {
+      "gate": "CAPABILITY_MAPS",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+      "blob_sha": "34a71cf6fdc0fc72e64372d156b9721dd99ee03f",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json @ lyvra",
+      "semantic_marker": "READ_FACET_CONTRACT",
+      "semantic_role": "ANALYTICS_FACET_CARRIER_MAP",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    },
+    {
+      "gate": "OPEN_VALIDATION_GATES",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/current/OPEN_WORK.json",
+      "blob_sha": "dee6392ac4e1b9be8d3510823f096bf9bf47f16c",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/current/OPEN_WORK.json @ lyvra",
+      "semantic_marker": "OPEN_EVENT_GATED",
+      "semantic_role": "OPEN_WORK_LAST",
+      "status": "ORIGINAL_SOURCE_MAPPED_READBACK_VERIFIED",
+      "facet_runtime_rehydrated": false
+    }
+  ],
+  "facet_manifest": {
+    "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/REHYDRATION_MANIFEST.json",
+    "sha": "34a71cf6fdc0fc72e64372d156b9721dd99ee03f",
+    "required_sequence_last": "READ_OPEN_WORK_LAST"
+  },
+  "boundaries": {
+    "referenced_music_dna_ne_analytics_owner": true,
+    "reference_registry_ne_current_authority": true,
+    "sub_lifecircle_ne_whole_rehydration": true,
+    "source_mapped_ne_host_verified": true
+  },
+  "progress": {
+    "source_mapped_gates": 6,
+    "total_new_gates": 6,
+    "semantic_facet_runtime_verified": 0,
+    "independent_host_pass": 0,
+    "host_gates_open": 18
+  },
+  "return_anchor": "ANALYTICS",
+  "strands": [
+    "DICTATION",
+    "ANALYTICS",
+    "CHARACTER_RELATIONS",
+    "VISUAL",
+    "INTERRUPTION_CONTINUITY",
+    "RESEARCH"
+  ],
+  "r30_items_open": 9,
+  "pauses": [
+    "POST",
+    "SCEERI_MYCEL",
+    "PLUGIN_HOST_ACCEPTANCE"
+  ],
+  "suno_report": "R44_NO_CHANGE_PRESERVED",
+  "no_production_write": true
+}
