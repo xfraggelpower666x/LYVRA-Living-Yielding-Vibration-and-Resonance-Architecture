@@ -2,9 +2,9 @@
   "schema_version": "1.0",
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/tracks",
-  "observed_at": "2026-10-18",
+  "observed_at": "2026-11-05",
   "status": "public_artist_tracks_listing_snapshot",
-  "notes": "Only public URLs directly linked on the artist track listing. Items may be songs, mixes or other uploads; publication date and type not reliably proven. Listing may be paginated. Do not conflate with albums/sets, likes or reposts.",
+  "notes": "Only public URLs directly linked on the artist track listing. Items may be songs, mixes or other uploads; publication date and type not reliably proven. Listing may be paginated. Do not conflate with albums/sets, likes or reposts. 2026-11-05 additive direct public artist track and LYVRA SPACE ERUPTION set page readbacks: 20 individually linked URLs; 2026-11-03 listing dates, no assumption of complete SoundCloud inventory.",
   "tracks": [
     {
       "title": "SOUND FAMILY REMIX",
@@ -737,6 +737,166 @@
       "url": "https://soundcloud.com/fraggelpower666/irradiated-beautiful-collapse-4c-bunker-142",
       "provider": "SoundCloud",
       "type": "track"
+    },
+    {
+      "title": "SYNTHETIC VIBES 1",
+      "url": "https://soundcloud.com/fraggelpower666/synthetic-vibes-1-46",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "NO SHAPE CAN HOLD ME",
+      "url": "https://soundcloud.com/fraggelpower666/no-shape-can-hold-me-31",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "THRUST OVER WEIGHT 1",
+      "url": "https://soundcloud.com/fraggelpower666/thrust-over-weight-1-70",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "THE FURNACE HAS NO FLAME 1",
+      "url": "https://soundcloud.com/fraggelpower666/the-furnace-has-no-flame-1-50",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "WHEN THE BIRDS FALL SILENT 1",
+      "url": "https://soundcloud.com/fraggelpower666/when-the-birds-fall-silent-1-79",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "ONLY VOYAGER TWO",
+      "url": "https://soundcloud.com/fraggelpower666/only-voyager-two-33",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "THE RED DOOR TO ANOTHER UNIVERSE 1",
+      "url": "https://soundcloud.com/fraggelpower666/the-red-door-to-another-universe-1-62",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "VESTA OF A THOUSAND SCARS",
+      "url": "https://soundcloud.com/fraggelpower666/vesta-of-a-thousand-scars-78",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "NO SHAPE CAN HOLD ME 1",
+      "url": "https://soundcloud.com/fraggelpower666/no-shape-can-hold-me-1-30",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "THE MACHINE THAT DREAMED IN BASS",
+      "url": "https://soundcloud.com/fraggelpower666/the-machine-that-dreamed-in-bass-55",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 current public artist tracks listing (listing shows 2026-11-03)"
+    },
+    {
+      "title": "GRAVITON STRING THEORY 1",
+      "url": "https://soundcloud.com/fraggelpower666/graviton-string-theory-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "GRAVITON STRING THEORY",
+      "url": "https://soundcloud.com/fraggelpower666/graviton-string-theory-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "HALF OF THEM REACHED MARS 1",
+      "url": "https://soundcloud.com/fraggelpower666/half-of-them-reached-mars-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "HARDER THROUGH PSYCHOACOUSTICS 1",
+      "url": "https://soundcloud.com/fraggelpower666/harder-through-psychoacoustics-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "HARDER THROUGH PSYCHOACOUSTICS",
+      "url": "https://soundcloud.com/fraggelpower666/harder-through-psychoacoustics-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "A MILLION EARTHS INSIDE 1",
+      "url": "https://soundcloud.com/fraggelpower666/a-million-earths-inside-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "A MILLION EARTHS INSIDE",
+      "url": "https://soundcloud.com/fraggelpower666/a-million-earths-inside-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "ABOUT PSYTRANCE 1",
+      "url": "https://soundcloud.com/fraggelpower666/about-psytrance-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "ABOUT PSYTRANCE",
+      "url": "https://soundcloud.com/fraggelpower666/about-psytrance-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "AMAZING JOURNEYS 1",
+      "url": "https://soundcloud.com/fraggelpower666/amazing-journeys-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "status": "direct_public_artist_track_link_verified",
+      "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
     }
   ]
 }
