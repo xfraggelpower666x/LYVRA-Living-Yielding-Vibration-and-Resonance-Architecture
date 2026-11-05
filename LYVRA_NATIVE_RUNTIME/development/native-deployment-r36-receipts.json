@@ -1,0 +1,37 @@
+[
+  {
+    "event_id": "R33_VISUAL_NATIVE_BRANCH_READBACK",
+    "item_id": "T25",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 71859ac6c806aa13d062f350e69b0443d6b1ac82 / dual-layer-visual-projection.mjs blob 776b5e1666b1d96ab418d27f182483002d279d7c",
+    "observation": "Existing native dual-layer visual source exports deployment projector on isolated development branch; production branch unchanged."
+  },
+  {
+    "event_id": "R34_EXECUTABLE_RUNNER_READBACK",
+    "item_id": "T25",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit e3e5ff7a49023e2356cd33de6e3b76aa4c8e4732 / native-deployment-runner.mjs blob 0c9681a127edda706ba7f3d82db59806a679e460",
+    "observation": "Original source runner linked to native projector; exact file readback, no productive host execution claimed."
+  },
+  {
+    "event_id": "R35_VISUAL_GUIDANCE_SOURCE",
+    "item_id": "T22",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit c943c3012425f011ab52a77aab65014bace43c27 / native-deployment-visual.mjs blob a4f204d3ca29eee5d2e7d4bfb736fe75af56765e",
+    "observation": "Deployment action queries now inherit native visual guidance and recovery query; Native/ALIVE interactive action traces remain open."
+  },
+  {
+    "event_id": "R36_RECONCILE_SOURCE",
+    "item_id": "T25",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 18c72e8493473d4e95464ae760af2bcabb9c5f53 / native-deployment-visual.mjs blob 86ad7c8e7bfb33187d6b064ef72088eb39e415f7",
+    "observation": "R36 evidence classification and strand associations added; test data remains source-only with host gates 18/18 OPEN."
+  },
+  {
+    "event_id": "R36_RUNNER_RECEIPTS",
+    "item_id": "T25",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 1de3d6b1fce4fc841f636a250867cfb89cb8cf1a / native-deployment-runner.mjs blob 2fa666d3ba6a52e8df47b8d9156dadc192d24c78",
+    "observation": "R36 runner now accepts causal receipts as real input, without auto promotion to productive host."
+  }
+]
