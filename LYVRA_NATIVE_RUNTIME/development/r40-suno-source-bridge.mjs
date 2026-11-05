@@ -6,7 +6,7 @@ const isISO=x=>typeof x==='string'&&!Number.isNaN(Date.parse(x));
 const WEB=/^https:\/\/[^\s]+$/;
 export function ingestSunoMonitorResult({taskId,enabled,lastRunTime,result,currentHead,sourceRevision,reviewedSources=[]}={}){
  if(taskId!==SUNO_TASK_ID||enabled!==true||!isISO(lastRunTime))return {status:'MONITOR_PROVIDER_UNVERIFIED',accepted:false,sourceReadback:false};
- if(!result?.content_text||result.content_truncated!==false||result.is_failure_message===true||result.recorded_status==='failed')return {status:'RUN_METADATA_ONLY',accepted:false,sourceReadback:false,lastRunTime};
+ if(!result?.content_text||result.content_truncated!==false||result.is_failure_message===true||result.recorded_status!=='completed')return {status:'RUN_METADATA_ONLY',accepted:false,sourceReadback:false,lastRunTime};
  if(!isISO(result.completed_at)||!result.run_id||!result.content_text.trim())return {status:'RUN_RESULT_READBACK_INCOMPLETE',accepted:false,sourceReadback:false};
  if(!/^[a-f0-9]{40}$/.test(currentHead||'')||typeof sourceRevision!=='string'||!sourceRevision.trim())return {status:'FRESH_WHOLE_CURRENT_REQUIRED',accepted:false,sourceReadback:false};
  // R41: A caller's bare readback=true is NOT source content evidence. Require
@@ -18,7 +18,8 @@ export function ingestSunoMonitorResult({taskId,enabled,lastRunTime,result,curre
       s.readback!==true||!s.revision||!isISO(s.accessedAt)||
       typeof s.content_text!=='string'||!s.content_text.trim()||
       !/^[a-f0-9]{64}$/.test(s.content_sha256||'')||s.content_truncated!==false||
-      !s.retrieval_ref||typeof s.retrieval_ref!=='string')return false;
+      !s.retrieval_ref||typeof s.retrieval_ref!=='string'||
+      !result.content_text.includes(s.url))return false;
    return createHash('sha256').update(s.content_text,'utf8').digest('hex')===s.content_sha256;
  });
  if(verified.length===0)return {status:'LINKED_ORIGINAL_SOURCE_READBACK_PENDING',accepted:false,sourceReadback:false,runId:result.run_id};
