@@ -30,6 +30,14 @@ assert.equal(evidence.discovery_index.is_google_rank,false,'editorial ranking im
 assert.equal(evidence.measurements.impressions,null,'Google impressions fabricated');
 assert.equal(evidence.google_ai_overview_observation.source_kind,'user_supplied_screenshot_of_google_ai_overview','AI overview provenance missing');
 assert.equal(evidence.google_ai_overview_observation.independently_reproduced,false,'screenshot promoted to independent proof');
+assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_min_relevant_pages,15,'AI estimated lower bound altered');
+assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_max_relevant_pages,30,'AI estimated upper bound altered');
+assert.equal(evidence.google_ai_exact_phrase_estimate_observation.independently_reproduced,false,'AI estimate incorrectly promoted to verified');
+assert.equal(evidence.google_ai_exact_phrase_estimate_observation.does_not_change_sampled_search_link_counts,true,'Google AI estimate must not change real search link counts');
+assert.equal(evidence.search_term_samples.terms[0].distinct_sampled_result_urls,28,'direct search sample incorrectly overwritten');
+assert.equal(evidence.search_term_samples.terms[1].distinct_sampled_result_urls,25,'brand search sample incorrectly overwritten');
+assert.ok(html.includes("className='gr-google-ai-range'")&&html.includes('grEvidence.google_ai_exact_phrase_estimate_observation'),'Google AI estimated range UI missing');
+
 assert.equal(evidence.google_ai_overview_observation.not_for_scoring_adjustment,true,'AI overview must not inflate popularity scores');
 assert.equal(evidence.semrush_backlink_observation.target_domain,'666soundsdesign-broadcaster.com','Semrush target changed');
 assert.equal(evidence.semrush_backlink_observation.estimated_backlinks_display,'5.2K','Semrush screenshot backlink count changed');
