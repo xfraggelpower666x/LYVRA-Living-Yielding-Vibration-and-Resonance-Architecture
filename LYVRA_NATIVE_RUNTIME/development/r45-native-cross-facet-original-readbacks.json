@@ -1,0 +1,70 @@
+{
+  "schema": "LYVRA_R45_TRACK_STUDIO_CROSS_FACET_READBACK",
+  "scope": "ISOLATED_SOURCE_PROFILE_ONLY",
+  "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "pointer_sha": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "readbacks": [
+    {
+      "key": "registry",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md@lyvra"
+    },
+    {
+      "key": "music",
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md",
+      "blob_sha": "e6c51293d72b56ebc24b8a1e217804da285695de",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_MUSIC_ANALYTICS.md@lyvra"
+    },
+    {
+      "key": "studio",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+      "blob_sha": "048f6e780c2fc8709d95fbc931d04da286606d69",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md@lyvra"
+    },
+    {
+      "key": "track",
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/TRACK_DESIGN_MASTER_BASE_AND_FACET_ADAPTATION.md",
+      "blob_sha": "eb8af5f198e28ffdcb802ef4e50afdc015925ae0",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/current/governance/TRACK_DESIGN_MASTER_BASE_AND_FACET_ADAPTATION.md@lyvra"
+    }
+  ],
+  "verified_profiles": [
+    "SPEECH_DESIGN_R43",
+    "TRACK_DESIGN_R45",
+    "STUDIO2_R45"
+  ],
+  "caller_inventory_exhaustive": false,
+  "caller_runtime_accepted": false,
+  "liveHostAccepted": false,
+  "productiveFacetMigration": false,
+  "sunoReport": "R44_NO_CHANGE_PRESERVED",
+  "return_anchor": "ANALYTICS",
+  "preserved_strands": [
+    "DICTATION",
+    "ANALYTICS",
+    "CHARACTER_RELATIONS",
+    "VISUAL",
+    "INTERRUPTION_CONTINUITY",
+    "RESEARCH"
+  ],
+  "pending": [
+    "POST",
+    "SCEERI_MYCEL",
+    "PLUGIN_HOST_ACCEPTANCE"
+  ],
+  "r30_items_open": 9,
+  "host_gates_open": 18
+}
