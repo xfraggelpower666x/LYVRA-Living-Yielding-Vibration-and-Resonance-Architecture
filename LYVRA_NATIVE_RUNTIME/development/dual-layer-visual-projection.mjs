@@ -140,7 +140,7 @@ export async function executeR40ChatWork({
     prepareR43SelectiveAnalyticsCall(analyticsCallerRequest,{currentHead:r39Inputs.expectedHead,sourceReadbacks:analyticsCallerCurrentReadbacks,freshProductiveBlobs:analyticsCallerProductiveBlobs}):null;
   if(analyticsCallerRequest&&analyticsSpecialistRequest)throw TypeError('SINGLE_ANALYTICS_CALLER_REQUEST_REQUIRED');
   const specialistCaller=analyticsSpecialistRequest?
-    prepareR45Caller({...analyticsSpecialistRequest,head},{readbacks:analyticsSpecialistReadbacks,currentBlobs:analyticsSpecialistProductiveBlobs}):null;
+    prepareR45Caller({...analyticsSpecialistRequest,head,readbacks:analyticsSpecialistReadbacks,currentBlobs:analyticsSpecialistProductiveBlobs}):null;
   return {
     schema:'LYVRA_R40_SIX_NATIVE_WITH_SUNO_PARENTAGE_GATES',
     ...r39, t07_suno:suno,t19_analytics:analytics,
