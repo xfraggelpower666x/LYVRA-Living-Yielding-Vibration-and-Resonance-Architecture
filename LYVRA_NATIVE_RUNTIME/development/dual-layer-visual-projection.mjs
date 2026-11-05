@@ -1,3 +1,4 @@
+import {executeR39OriginalBridge} from './r39-native-original-bridge.mjs';
 // LYVRA existing Semantic Cyber Field: two read-only projections, no new engine.
 // Source evidence is supplied by the verified CURRENT registry, not inferred by this module.
 export const STATES = Object.freeze(["PROPOSED","DEV_ACTIVE","DEFERRED_WITH_REASON","ADOPTED","SUPERSEDED","ARCHIVED"]);
@@ -74,3 +75,38 @@ export {withVisualGuidance as originalR26VisualGuidance,actionForStrand as origi
 // R39: direkte Verwendung der originalen R26-Handoff-/Impact-/Visual-Fachquellen.
 // Kein automatischer Aufruf beim Anzeigen des Operations Centers.
 export {executeR39OriginalBridge,verifyOriginalContinuity} from "./r39-native-original-bridge.mjs";
+
+
+// R39: ausdruecklich gewollte Fachausfuehrung + vorhandene chatnative Visual-Projektion.
+// Ein Rehydration-Read oder reiner Dashboard-Render darf diesen Aufruf NIE starten.
+export async function executeR39ChatWork({
+  creatorIntent=false, scope, registry, deploymentSource, receipts=[],
+  expectedHead, expectedPointer, wholeCoverage="PARTIAL", inputs={},
+  lineageId="R39_LOCAL", conversationAnchor="LYVRA PARALLEL R39 ALL WEITER",
+  observations=[]
+}={}){
+ if(creatorIntent!==true || scope!=="SIX_NATIVE_FACETS")throw TypeError("EXPLICIT_CREATOR_TASK_REQUIRED");
+ const visual=projectWholeRehydrationDeployment({
+   registry,deploymentSource,receipts,expectedHead,expectedPointer,
+   wholeCoverage,selection:"ALL",openWork:true
+ });
+ const execution=await executeR39OriginalBridge({
+   head:expectedHead,pointerSha:expectedPointer,ports:{},
+   inputs,lineageId,conversationAnchor,observations
+ });
+ if(execution.execution.results.length!==6||execution.hostGatesOpen!==18||
+    execution.productiveWrites!==0||execution.pluginHostVerified!==false){
+   throw Error("FACET_SCOPE_OR_HOST_BOUNDARY");
+ }
+ return {
+   schema:"LYVRA_R39_CHAT_NATIVE_SIX_EXECUTION_VIEW",
+   visual,execution,
+   explicitTask:true,
+   operativeHostActions:false,
+   productiveWrites:0,
+   hostGatesOpen:18,
+   wholeRehydration:wholeCoverage,
+   returnFacet:"LYVRA_ANALYTICS",
+   automaticTaskScheduling:false
+ };
+}
