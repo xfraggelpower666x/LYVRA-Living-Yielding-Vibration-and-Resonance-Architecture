@@ -462,6 +462,54 @@ evidenceBox.append(stamp,statsEvidence,termHeading,terms,queryWarn,bingCard,bran
  }
 }
 
+
+// Genuine SoundCloud owner-account export, 2026-11-03. Lazy loaded to keep original
+// 975-entry static catalog available even when the optional JSON cannot load.
+const discoOwnerSource='./data/soundcloud-owned-api-export-20261103.json';
+const discoOwnerReadback={state:'PENDING',owned:0,sets:0};
+function loadOriginalSoundcloudAlbumTracks(){
+ fetch(discoOwnerSource,{cache:'no-cache'}).then(r=>{
+  if(!r.ok)throw new Error('SoundCloud data HTTP '+r.status);
+  return r.json();
+ }).then(source=>{
+  if(source.schema!=='LYVRA_SOUNDCLOUD_OWNER_EXPORT_20261103_V1'||source.api_owner_id!=='31668033'||source.expected_sets!==50||source.owned_unique_track_ids!==3183||source.external_unique_track_ids!==21||source.albums.length!==50)throw new Error('SoundCloud source contract mismatch');
+  const ownerTracks=new Map();
+  const sortedAlbums=new Map();
+  for(const album of source.albums){
+   if(!/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9-]+$/i.test(album.url))throw new Error('Untrusted SoundCloud set URL');
+   const members=[];
+   for(const [position,id,title,url] of album.tracks){
+    if(!Number.isSafeInteger(position)||!Number.isSafeInteger(id)||typeof title!=='string'||!/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9-]+$/i.test(url))throw new Error('Untrusted owned-track field');
+    members.push({title,url,position,id});ownerTracks.set(url,{title,url,provider:'SoundCloud',type:'track',api_owner_id:source.api_owner_id});
+   }
+   sortedAlbums.set(album.url,members);
+  }
+  if(ownerTracks.size!==3183)throw new Error('SoundCloud owner dedup count mismatch');
+  // Original 975 catalog is preserved; navigation links are never promoted to tracks.
+  const navigationLink='https://soundcloud.com/fraggelpower666/following';
+  const existing=new Map(discoItems.filter(item=>item.url!==navigationLink).map(item=>[item.url,item]));
+  discoItems.splice(0,discoItems.length,...existing.values());
+  for(const track of ownerTracks.values()){
+   if(existing.has(track.url)){existing.get(track.url).title=track.title;continue}
+   discoItems.push(track);existing.set(track.url,track)
+  }
+  const cards=new Map(discoAlbumDetails.albums.map(a=>[a.url,a]));
+  for(const [url,tracks] of sortedAlbums){
+   const card=cards.get(url);
+   if(card){card.tracks=tracks.map(t=>({url:t.url,title:t.title}));for(const tr of tracks)if(card.cover)discoAlbumDetails.track_artwork[tr.url]=card.cover}
+  }
+  const de=discoWords.de,en=discoWords.en;
+  de.notice='Suno: 547 verifizierte Song-URLs · SoundCloud: 50 API-Sets/Playlists, 3.183 per Eigentümer-ID bestätigte Einzeltracks (+ ältere Links separat) · Mixcloud: 10 DJ-Shows und 10 Tracks. Ein SoundCloud-Set bleibt laut Export unvollständig.';
+  en.notice='Suno: 547 verified song URLs · SoundCloud: 50 API sets/playlists, 3,183 owner-ID-verified individual tracks (+ older links separately) · Mixcloud: 10 DJ shows and 10 tracks. One SoundCloud set is incomplete in the export.';
+  discoOwnerReadback.state='LOADED_PARTIAL_EXPORT';
+  discoOwnerReadback.owned=ownerTracks.size;discoOwnerReadback.sets=source.albums.length;
+  makeDiscography();
+ }).catch(error=>{
+  discoOwnerReadback.state='READBACK_PENDING';
+  console.warn('SoundCloud owner export unavailable, preserved original catalog',error?.message||error);
+ });
+}
+
 const originalText=new WeakMap();
 function addonLanguage(next){
  discoState.lang=next==='en'?'en':'de';
@@ -500,4 +548,5 @@ for(const button of document.querySelectorAll('[data-addon-lang]'))button.addEve
 document.addEventListener('lyvra:languagechange',event=>addonLanguage(event.detail?.language||detectLyvraLanguage()));
 window.addEventListener('storage',event=>{if(event.key==='lyvra-language')addonLanguage(event.newValue)});
 addonLanguage(detectLyvraLanguage());
+loadOriginalSoundcloudAlbumTracks();
 </script></body></html>
