@@ -4,7 +4,7 @@
   "source": "https://soundcloud.com/fraggelpower666/tracks",
   "observed_at": "2026-11-05",
   "status": "public_artist_tracks_listing_snapshot",
-  "notes": "Only public URLs directly linked on the artist track listing. Items may be songs, mixes or other uploads; publication date and type not reliably proven. Listing may be paginated. Do not conflate with albums/sets, likes or reposts. 2026-11-05 additive direct public artist track and LYVRA SPACE ERUPTION set page readbacks: 20 individually linked URLs; 2026-11-03 listing dates, no assumption of complete SoundCloud inventory.",
+  "notes": "Only public URLs directly linked on the artist track listing. Items may be songs, mixes or other uploads; publication date and type not reliably proven. Listing may be paginated. Do not conflate with albums/sets, likes or reposts. 2026-11-05 additive direct public artist track and LYVRA SPACE ERUPTION set page readbacks: 20 individually linked URLs; 2026-11-03 listing dates, no assumption of complete SoundCloud inventory. 2026-11-05: 216 distinct additional track URLs found within 48 direct-read public SoundCloud album/set pages; 17 already catalogued; titles derived from source URL slug when canonical track title not independently read. Covers linked via album-track membership.",
   "tracks": [
     {
       "title": "SOUND FAMILY REMIX",
@@ -897,6 +897,1950 @@
       "type": "track",
       "status": "direct_public_artist_track_link_verified",
       "source": "2026-11-05 direct public LYVRA SPACE ERUPTION set page (listing shows 2026-11-03)"
+    },
+    {
+      "title": "Ehrliche Freundschaft In Einer Kaputten Welt The 3rd Hit 1",
+      "url": "https://soundcloud.com/fraggelpower666/ehrliche-freundschaft-in-einer-kaputten-welt-the-3rd-hit-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Die Power Of The Fraggles Vocal Version 2",
+      "url": "https://soundcloud.com/fraggelpower666/die-power-of-the-fraggles-vocal-version-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "The Power Of The Fraggles Cover Psytechno 3",
+      "url": "https://soundcloud.com/fraggelpower666/the-power-of-the-fraggles-cover-psytechno-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggle Power Oder Power Fraggle Das Ist Die Frage 4",
+      "url": "https://soundcloud.com/fraggelpower666/fraggle-power-oder-power-fraggle-das-ist-die-frage-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Ekstase Ekstase Ekstase 5",
+      "url": "https://soundcloud.com/fraggelpower666/ekstase-ekstase-ekstase-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/another-psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Black Light Black Room V2 Psytechno 1",
+      "url": "https://soundcloud.com/fraggelpower666/black-light-black-room-v2-psytechno-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "The Power Of Fraggles Englisch Psytechno 2",
+      "url": "https://soundcloud.com/fraggelpower666/the-power-of-fraggles-englisch-psytechno-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Psychonaut Psytechno 3",
+      "url": "https://soundcloud.com/fraggelpower666/psychonaut-psytechno-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Passwort Liebe Und Es Ist Zu Ende Psytechno 4",
+      "url": "https://soundcloud.com/fraggelpower666/passwort-liebe-und-es-ist-zu-ende-psytechno-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Password Love_and Its Over_psytechno 5",
+      "url": "https://soundcloud.com/fraggelpower666/password-love_and-its-over_psytechno-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psy-revolution",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Warning Contaminated With Nuclear Radiation 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/warning-contaminated-with-nuclear-radiation-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "I Am An Extraterrestrial Being In Human Form 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/i-am-an-extraterrestrial-being-in-human-form-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "They Are Among Us Dark Full On 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/they-are-among-us-dark-full-on-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Remix Dark Full On Psycover 1 4",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-remix-dark-full-on-psycover-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Dark Full On Instrumental 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-dark-full-on-instrumental-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Dark Full On Instrumental 1",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-dark-full-on-instrumental-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Dark Full On 2",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-dark-full-on-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Melodic Electro Rock 3",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-melodic-electro-rock-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sie Sind Unter Uns Remix Dark Full On Psycover 4",
+      "url": "https://soundcloud.com/fraggelpower666/sie-sind-unter-uns-remix-dark-full-on-psycover-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Antinote Remix 1",
+      "url": "https://soundcloud.com/fraggelpower666/antinote-remix-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Beyond Eternitydark Remix 2",
+      "url": "https://soundcloud.com/fraggelpower666/beyond-eternitydark-remix-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Boom Remix 3",
+      "url": "https://soundcloud.com/fraggelpower666/boom-remix-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Breath Deep Remix 4",
+      "url": "https://soundcloud.com/fraggelpower666/breath-deep-remix-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Creations Labyrinth Remix 5",
+      "url": "https://soundcloud.com/fraggelpower666/creations-labyrinth-remix-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-must-go-on",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggel 1",
+      "url": "https://soundcloud.com/fraggelpower666/fraggel-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Toy Toy Toy 2",
+      "url": "https://soundcloud.com/fraggelpower666/toy-toy-toy-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "6 6 6x 3",
+      "url": "https://soundcloud.com/fraggelpower666/6-6-6x-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "The Art Of State 4",
+      "url": "https://soundcloud.com/fraggelpower666/the-art-of-state-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Root Boot 5",
+      "url": "https://soundcloud.com/fraggelpower666/root-boot-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/album-alien-being-in-human",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Am Anfang 145bmp Fullon Psytrance Social 1",
+      "url": "https://soundcloud.com/fraggelpower666/am-anfang-145bmp-fullon-psytrance-social-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Am Anfang 145bmp Fullon Psytrance Social 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/am-anfang-145bmp-fullon-psytrance-social-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Artificial Intelligence 145bpm Hazeman 3",
+      "url": "https://soundcloud.com/fraggelpower666/artificial-intelligence-145bpm-hazeman-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Artificial Intelligence 145bpm Hazeman 1 4",
+      "url": "https://soundcloud.com/fraggelpower666/artificial-intelligence-145bpm-hazeman-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Back To My Roots Of Electronic Music Trance 145bpm Fullon Psytrance Be Alive 5",
+      "url": "https://soundcloud.com/fraggelpower666/back-to-my-roots-of-electronic-music-trance-145bpm-fullon-psytrance-be-alive-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-from-the-beginning",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Great Dictator Speech A Speech To Humanity 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-great-dictator-speech-a-speech-to-humanity-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Great Dictator Speech A Speech To Humanity 2",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-great-dictator-speech-a-speech-to-humanity-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Great Dictator Speech Die Rede An Die Menschheit 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-great-dictator-speech-die-rede-an-die-menschheit-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Great Dictator Speech Die Rede An Die Menschheit 4",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-great-dictator-speech-die-rede-an-die-menschheit-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/a-speech-to-humanity-die-rede-an-die-menschheit",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "666 The Alpha And The Ais 1",
+      "url": "https://soundcloud.com/fraggelpower666/666-the-alpha-and-the-ais-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Alpha And The Ais German 2",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-alpha-and-the-ais-german-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Alpha And The Ais German 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-alpha-and-the-ais-german-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Alpha And The Ais 1 4",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-alpha-and-the-ais-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Techno Rap 666 The Alpha And The Ais 5",
+      "url": "https://soundcloud.com/fraggelpower666/techno-rap-666-the-alpha-and-the-ais-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/9b702f54-6edf-4ab2-ae1b-8e4ed2b92180",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Fraggelpower666 Bunker Psytechno 1",
+      "url": "https://soundcloud.com/fraggelpower666/1-fraggelpower666-bunker-psytechno-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 Berlin The Bunker Club Biography 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-berlin-the-bunker-club-biography-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 The Bunker Club Dna Showopener 666 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-the-bunker-club-dna-showopener-666-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 The Bunker Club D N A Techno Code 2025 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-the-bunker-club-d-n-a-techno-code-2025-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 Bunker Second Life Psytechno World 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-bunker-second-life-psytechno-world-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-bunker-techno-psytechno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Fraggelpower666 666 Syrenour Darkness 1",
+      "url": "https://soundcloud.com/fraggelpower666/1-fraggelpower666-666-syrenour-darkness-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 666 Syrenour Darkness V2 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-666-syrenour-darkness-v2-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 Anger Unusual Bunker Psytechno Remix 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-anger-unusual-bunker-psytechno-remix-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 Age Of Love Psytechno Cover V1 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-age-of-love-psytechno-cover-v1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 Age Of Love Psytechno Cover V2 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-age-of-love-psytechno-cover-v2-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytechno-overdosed-cyberstorm",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Fraggelpower666 Asylum 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/1-fraggelpower666-asylum-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 Fraggelpower666presents His Second Lifes Club Anthem For The Asylum 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-fraggelpower666presents-his-second-lifes-club-anthem-for-the-asylum-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 Fraggelpower666 Continuos Mix Second Lifes Club Anthem For The Asylum 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-fraggelpower666-continuos-mix-second-lifes-club-anthem-for-the-asylum-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 Hey Asylum Electronic Music Consumer 1 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-hey-asylum-electronic-music-consumer-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 Asylum Vocal Psy Trance Teaser 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-asylum-vocal-psy-trance-teaser-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-the-asylum",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Welcome To Numinastic The Heartbeat Of Numiland Intro Album Version 1",
+      "url": "https://soundcloud.com/fraggelpower666/welcome-to-numinastic-the-heartbeat-of-numiland-intro-album-version-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Welcome To Numinastic Numinastic Pulse Of Shadows Album Version 2",
+      "url": "https://soundcloud.com/fraggelpower666/welcome-to-numinastic-numinastic-pulse-of-shadows-album-version-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Here Are The Special Numinastic Techno Code Of The Year 2025 Album Version 3",
+      "url": "https://soundcloud.com/fraggelpower666/here-are-the-special-numinastic-techno-code-of-the-year-2025-album-version-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "We Are The One Album Version 4",
+      "url": "https://soundcloud.com/fraggelpower666/we-are-the-one-album-version-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Who Ist Dancing In The Dark Album Version 5",
+      "url": "https://soundcloud.com/fraggelpower666/who-ist-dancing-in-the-dark-album-version-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/10f0b008-2c9a-4de3-a585-7b202b1a17ec",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Fraggelpower666 01 Second Life Multiverse Dj Fraggelpower666 Showopener Welcome 2 1",
+      "url": "https://soundcloud.com/fraggelpower666/1-fraggelpower666-01-second-life-multiverse-dj-fraggelpower666-showopener-welcome-2-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 01_5 Back To My Roots Of Music_cover 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-01_5-back-to-my-roots-of-music_cover-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 02 Tribute Michael J_fox Johnny B_goode 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-02-tribute-michael-j_fox-johnny-b_goode-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 Our Virtual World World World Cover 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-our-virtual-world-world-world-cover-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 08 Like This Like That V2 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-08-like-this-like-that-v2-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/second-life-multiverse-fair",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Fraggelpower666 Show Intro Album Vocal Psytrance Adventure 2_0 1",
+      "url": "https://soundcloud.com/fraggelpower666/1-fraggelpower666-show-intro-album-vocal-psytrance-adventure-2_0-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 Dj Fraggelpower 666 At Numinastic Showopener 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-dj-fraggelpower-666-at-numinastic-showopener-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 Dj Fraggelpower 666 Back To The Psytrance Roots 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-dj-fraggelpower-666-back-to-the-psytrance-roots-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 Club Numinasticcover 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-club-numinasticcover-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 Who Iam Dj Fraggelpower666cover 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-who-iam-dj-fraggelpower666cover-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/vocal-psytrance-adventure-20",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Beat By Beat 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/beat-by-beat-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Beat By Beat 2",
+      "url": "https://soundcloud.com/fraggelpower666/beat-by-beat-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Become The Signal 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/become-the-signal-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Become The Signal 4",
+      "url": "https://soundcloud.com/fraggelpower666/become-the-signal-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Desire In The Dark 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/desire-in-the-dark-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-new-generation",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bound With A Kiss 2 1",
+      "url": "https://soundcloud.com/fraggelpower666/bound-with-a-kiss-2-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bound With A Kiss 2 2",
+      "url": "https://soundcloud.com/fraggelpower666/bound-with-a-kiss-2-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bound With A Kiss 3",
+      "url": "https://soundcloud.com/fraggelpower666/bound-with-a-kiss-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Break The Chains 2 4",
+      "url": "https://soundcloud.com/fraggelpower666/break-the-chains-2-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Break The Chains 3 5",
+      "url": "https://soundcloud.com/fraggelpower666/break-the-chains-3-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-fusion",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Lyv This Frequency 65",
+      "url": "https://soundcloud.com/fraggelpower666/lyv-this-frequency-65",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Unmakyr Of Dreams_1 179",
+      "url": "https://soundcloud.com/fraggelpower666/unmakyr-of-dreams_1-179",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Vespera Count On Me Count On You_1 199",
+      "url": "https://soundcloud.com/fraggelpower666/vespera-count-on-me-count-on-you_1-199",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Vesper Noctis We Count On Us_1 197",
+      "url": "https://soundcloud.com/fraggelpower666/vesper-noctis-we-count-on-us_1-197",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Sevraya Perfect Strangers_1 142",
+      "url": "https://soundcloud.com/fraggelpower666/sevraya-perfect-strangers_1-142",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/midnight-architecture",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "A Living Perfection 1",
+      "url": "https://soundcloud.com/fraggelpower666/a-living-perfection-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "A Living Perfection_1 2",
+      "url": "https://soundcloud.com/fraggelpower666/a-living-perfection_1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Another Window Opens 3",
+      "url": "https://soundcloud.com/fraggelpower666/another-window-opens-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Another Window Opens_1 4",
+      "url": "https://soundcloud.com/fraggelpower666/another-window-opens_1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Already Here 5",
+      "url": "https://soundcloud.com/fraggelpower666/already-here-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-resonance-bloom",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Amaris And The Sun Beneath 1",
+      "url": "https://soundcloud.com/fraggelpower666/amaris-and-the-sun-beneath-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Amaris And The Sun Beneath_1 2",
+      "url": "https://soundcloud.com/fraggelpower666/amaris-and-the-sun-beneath_1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Beyond The Cradle Line 3",
+      "url": "https://soundcloud.com/fraggelpower666/beyond-the-cradle-line-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Beyond The Cradle Line_1 4",
+      "url": "https://soundcloud.com/fraggelpower666/beyond-the-cradle-line_1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "But Lyvra Is My Name 5",
+      "url": "https://soundcloud.com/fraggelpower666/but-lyvra-is-my-name-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-electric-desire",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3dx Behind The Neon Masks 1",
+      "url": "https://soundcloud.com/fraggelpower666/3dx-behind-the-neon-masks-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3dx Behind The Neon Masks_1 2",
+      "url": "https://soundcloud.com/fraggelpower666/3dx-behind-the-neon-masks_1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3dx Crazy Side Of Desire 3",
+      "url": "https://soundcloud.com/fraggelpower666/3dx-crazy-side-of-desire-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3dx Crazy Side Of Desire_1 4",
+      "url": "https://soundcloud.com/fraggelpower666/3dx-crazy-side-of-desire_1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3dx The Meredian Code 5",
+      "url": "https://soundcloud.com/fraggelpower666/3dx-the-meredian-code-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/lyvra-velvet-signal",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "000 The Holograph Of My Mind 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/000-the-holograph-of-my-mind-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "00 Heart Of The Transmission 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/00-heart-of-the-transmission-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "0 Neon Blue Laser Music Galaxy 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/0-neon-blue-laser-music-galaxy-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Before The Signal 1 4",
+      "url": "https://soundcloud.com/fraggelpower666/1-before-the-signal-1-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 The Dreams Begin 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/2-the-dreams-begin-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-saga-the-collapse",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "000 The Holograph Of My Mind 1",
+      "url": "https://soundcloud.com/fraggelpower666/000-the-holograph-of-my-mind-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "00 Heart Of The Transmission 2",
+      "url": "https://soundcloud.com/fraggelpower666/00-heart-of-the-transmission-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "0 Neon Blue Laser Music Galaxy 3",
+      "url": "https://soundcloud.com/fraggelpower666/0-neon-blue-laser-music-galaxy-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Before The Signal 4",
+      "url": "https://soundcloud.com/fraggelpower666/1-before-the-signal-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 The Dreams Begin 5",
+      "url": "https://soundcloud.com/fraggelpower666/2-the-dreams-begin-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/chaos-matrix-the-birth-of-the",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Not Everyone Likes You 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/not-everyone-likes-you-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Not Everyone Likes You V2 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/not-everyone-likes-you-v2-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Not Everyone Likes You V2 3",
+      "url": "https://soundcloud.com/fraggelpower666/not-everyone-likes-you-v2-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Not Everyone Likes You 4",
+      "url": "https://soundcloud.com/fraggelpower666/not-everyone-likes-you-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/not-every-one-likes-you",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "0 Ich Bin Der Geschichtenerzahler Psytechno 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/0-ich-bin-der-geschichtenerzahler-psytechno-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 Und Die Legende Beginnt Psytechno 2",
+      "url": "https://soundcloud.com/fraggelpower666/1-und-die-legende-beginnt-psytechno-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Das Buch Des Mysteriums Psytechno 3",
+      "url": "https://soundcloud.com/fraggelpower666/2-das-buch-des-mysteriums-psytechno-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Das Konigreich Kali Psytechno 4",
+      "url": "https://soundcloud.com/fraggelpower666/3-das-konigreich-kali-psytechno-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Der Moment Der Wahrheit Psytechno 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/4-der-moment-der-wahrheit-psytechno-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/geschichtenerzahler-storyteller",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "00 Gangster Intro 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/00-gangster-intro-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "00 Gangster Intro 2",
+      "url": "https://soundcloud.com/fraggelpower666/00-gangster-intro-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 Paradise City Digital Underground Signal 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/01-paradise-city-digital-underground-signal-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 Paradise City Digital Underground Signal 4",
+      "url": "https://soundcloud.com/fraggelpower666/01-paradise-city-digital-underground-signal-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 Shadow Of The Street 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/01-shadow-of-the-street-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electromusic Lover 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/electromusic-lover-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electromusic Lover 2",
+      "url": "https://soundcloud.com/fraggelpower666/electromusic-lover-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electronic Beats Are Awake 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/electronic-beats-are-awake-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electronic Beats Are Awake 4",
+      "url": "https://soundcloud.com/fraggelpower666/electronic-beats-are-awake-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggle Style 5c Overload 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/fraggle-style-5c-overload-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/fraggel-style-music",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Rock The World Global Anthem Raggy Mid Switch 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/rock-the-world-global-anthem-raggy-mid-switch-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Rock The World Global Anthem Raggy Mid Switch 2",
+      "url": "https://soundcloud.com/fraggelpower666/rock-the-world-global-anthem-raggy-mid-switch-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "The Incredible New Sound Harmonica Core 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/the-incredible-new-sound-harmonica-core-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "The Incredible New Sound Harmonica Core 4",
+      "url": "https://soundcloud.com/fraggelpower666/the-incredible-new-sound-harmonica-core-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggel Of Illusion Superviza 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/fraggel-of-illusion-superviza-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/powerbeats-666-soundsdesign",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "All The Things With You Dark Intimate Flow 1 9",
+      "url": "https://soundcloud.com/fraggelpower666/all-the-things-with-you-dark-intimate-flow-1-9",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "All The Things With You Dark Intimate Flow 10",
+      "url": "https://soundcloud.com/fraggelpower666/all-the-things-with-you-dark-intimate-flow-10",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bad Boys Go Everywhere Dark Control Hybrid 1 11",
+      "url": "https://soundcloud.com/fraggelpower666/bad-boys-go-everywhere-dark-control-hybrid-1-11",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bad Boys Go Everywhere Dark Control Hybrid 12",
+      "url": "https://soundcloud.com/fraggelpower666/bad-boys-go-everywhere-dark-control-hybrid-12",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Becoming Like You Dark Control Rejection 1 13",
+      "url": "https://soundcloud.com/fraggelpower666/becoming-like-you-dark-control-rejection-1-13",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/selfmade-emotion-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Club Numinastic System Entry 2 1",
+      "url": "https://soundcloud.com/fraggelpower666/club-numinastic-system-entry-2-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Club Numinastic System Entry 2",
+      "url": "https://soundcloud.com/fraggelpower666/club-numinastic-system-entry-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggles Numinastic Techno Code Final Version 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/fraggles-numinastic-techno-code-final-version-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Fraggles Numinastic Techno Code Final Version 4",
+      "url": "https://soundcloud.com/fraggelpower666/fraggles-numinastic-techno-code-final-version-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Numinastic Eat Sleep Techno Rave Repeat 2 5",
+      "url": "https://soundcloud.com/fraggelpower666/numinastic-eat-sleep-techno-rave-repeat-2-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-virtual-worlds-second-life",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Angel Vs Devil Inner Conflict Engine 4c V2 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/angel-vs-devil-inner-conflict-engine-4c-v2-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Angel Vs Devil Inner Conflict Engine 4c V2 2",
+      "url": "https://soundcloud.com/fraggelpower666/angel-vs-devil-inner-conflict-engine-4c-v2-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Anytime Anywhere Desire Control Loop 4c V2 Reduced 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/anytime-anywhere-desire-control-loop-4c-v2-reduced-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Anytime Anywhere Desire Control Loop 4c V2 Reduced 4",
+      "url": "https://soundcloud.com/fraggelpower666/anytime-anywhere-desire-control-loop-4c-v2-reduced-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Afterburner Mind Samira Echo 142 5",
+      "url": "https://soundcloud.com/fraggelpower666/afterburner-mind-samira-echo-142-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-part",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 Digital Underground The Beginning Fraggle Style 1",
+      "url": "https://soundcloud.com/fraggelpower666/01-digital-underground-the-beginning-fraggle-style-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5e81dcf8 1a4f 4cb2 80f1 92ee194098a4",
+      "url": "https://soundcloud.com/fraggelpower666/5e81dcf8-1a4f-4cb2-80f1-92ee194098a4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "6ba2d6d5 Fe5a 4a57 Ad03 782a07dc81ce",
+      "url": "https://soundcloud.com/fraggelpower666/6ba2d6d5-fe5a-4a57-ad03-782a07dc81ce",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "348daf5c C6b2 4d9f Adc2 872c5f79f99b",
+      "url": "https://soundcloud.com/fraggelpower666/348daf5c-c6b2-4d9f-adc2-872c5f79f99b",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "14bcfe57 6850 4b66 9c28 642a9c977ef1",
+      "url": "https://soundcloud.com/fraggelpower666/14bcfe57-6850-4b66-9c28-642a9c977ef1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-dark-techno-aggro",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "666soundsdesign Digital Underground Transmission 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/666soundsdesign-digital-underground-transmission-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "666soundsdesign Digital Underground Transmission 2",
+      "url": "https://soundcloud.com/fraggelpower666/666soundsdesign-digital-underground-transmission-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Awesome God Dark Ascension 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/awesome-god-dark-ascension-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Awesome God Dark Ascension 2 4",
+      "url": "https://soundcloud.com/fraggelpower666/awesome-god-dark-ascension-2-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Awesome God Dark Ascension 5",
+      "url": "https://soundcloud.com/fraggelpower666/awesome-god-dark-ascension-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/666-special-acid-dark-techno",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 System Presentation Volume 2 Control Conflict Fragglepower 666 1",
+      "url": "https://soundcloud.com/fraggelpower666/01-system-presentation-volume-2-control-conflict-fragglepower-666-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Eb45661d 8974 4f01 Ac38 Ef1107b12b82",
+      "url": "https://soundcloud.com/fraggelpower666/eb45661d-8974-4f01-ac38-ef1107b12b82",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Cd3711e9 62ab 4c3f Ac74 7eb954c30089",
+      "url": "https://soundcloud.com/fraggelpower666/cd3711e9-62ab-4c3f-ac74-7eb954c30089",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5e2048c0 90f3 4bf1 8525 F1db64fa1416",
+      "url": "https://soundcloud.com/fraggelpower666/5e2048c0-90f3-4bf1-8525-f1db64fa1416",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "8da0a01b 6388 4c58 82d8 B7ec6caa1153",
+      "url": "https://soundcloud.com/fraggelpower666/8da0a01b-6388-4c58-82d8-b7ec6caa1153",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "01 System Presentation Volume 1 Awakening Fragglepower 666 1",
+      "url": "https://soundcloud.com/fraggelpower666/01-system-presentation-volume-1-awakening-fragglepower-666-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "02 Digital Underground The Beginning Fraggle Style 2",
+      "url": "https://soundcloud.com/fraggelpower666/02-digital-underground-the-beginning-fraggle-style-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "03 Dark Dance Bunker Flow Fraggle Style 3",
+      "url": "https://soundcloud.com/fraggelpower666/03-dark-dance-bunker-flow-fraggle-style-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "04 Dark Dance Continuum Fraggle Style 4",
+      "url": "https://soundcloud.com/fraggelpower666/04-dark-dance-continuum-fraggle-style-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "05 Dark Dance Convergence Fraggle Style 5",
+      "url": "https://soundcloud.com/fraggelpower666/05-dark-dance-convergence-fraggle-style-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-dark-dancer-volume1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "You And Me In The Darkness 1",
+      "url": "https://soundcloud.com/fraggelpower666/you-and-me-in-the-darkness-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "You And Me In The Darkness 2 2",
+      "url": "https://soundcloud.com/fraggelpower666/you-and-me-in-the-darkness-2-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "You And Me Forever 3",
+      "url": "https://soundcloud.com/fraggelpower666/you-and-me-forever-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "You And Me Forever 2 4",
+      "url": "https://soundcloud.com/fraggelpower666/you-and-me-forever-2-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Who Am I 666 5",
+      "url": "https://soundcloud.com/fraggelpower666/who-am-i-666-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Webradio Intro Neon Music Galaxy Transmission V20 2 1",
+      "url": "https://soundcloud.com/fraggelpower666/webradio-intro-neon-music-galaxy-transmission-v20-2-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "We Become One 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/we-become-one-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Webradio Intro Neon Music Galaxy Transmission 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/webradio-intro-neon-music-galaxy-transmission-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Webradio Intro Neon Music Galaxy Transmission 2 4",
+      "url": "https://soundcloud.com/fraggelpower666/webradio-intro-neon-music-galaxy-transmission-2-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Webradio Intro Neon Music Galaxy Transmission V20 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/webradio-intro-neon-music-galaxy-transmission-v20-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/remakes-remixes-some-new",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "6 Am In The Morning V2 1",
+      "url": "https://soundcloud.com/fraggelpower666/6-am-in-the-morning-v2-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "6am In The Morning 2",
+      "url": "https://soundcloud.com/fraggelpower666/6am-in-the-morning-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bad Love Feelings 3",
+      "url": "https://soundcloud.com/fraggelpower666/bad-love-feelings-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Eat Sleep Psy Trance Rave Repeat 4",
+      "url": "https://soundcloud.com/fraggelpower666/eat-sleep-psy-trance-rave-repeat-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Eat Sleep Rave Repeat 5",
+      "url": "https://soundcloud.com/fraggelpower666/eat-sleep-rave-repeat-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "6am In The Morning 1",
+      "url": "https://soundcloud.com/fraggelpower666/6am-in-the-morning-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bad Love Feelings 2",
+      "url": "https://soundcloud.com/fraggelpower666/bad-love-feelings-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Eat Sleep Psy Trance Rave Repeat 3",
+      "url": "https://soundcloud.com/fraggelpower666/eat-sleep-psy-trance-rave-repeat-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Eat Sleep Rave Repeat 4",
+      "url": "https://soundcloud.com/fraggelpower666/eat-sleep-rave-repeat-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Every Virtual Love Is A Lie 5",
+      "url": "https://soundcloud.com/fraggelpower666/every-virtual-love-is-a-lie-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/psytrance-attack-v1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "17 Fraggelpower666 Iam A Fucking Electromusic Lover Fraggelpower666 1",
+      "url": "https://soundcloud.com/fraggelpower666/17-fraggelpower666-iam-a-fucking-electromusic-lover-fraggelpower666-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "23 Fraggelpower666 Let The Fraggelpower 6 6 6 Music Take Control Let Your Body Trimble Fraggelpower666 2",
+      "url": "https://soundcloud.com/fraggelpower666/23-fraggelpower666-let-the-fraggelpower-6-6-6-music-take-control-let-your-body-trimble-fraggelpower666-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "29 Fraggelpower666 Sabotage Fraggelpower666 3",
+      "url": "https://soundcloud.com/fraggelpower666/29-fraggelpower666-sabotage-fraggelpower666-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "30 Fraggelpower666 She Only Likes Music When Its Loud Fraggelpower666 4",
+      "url": "https://soundcloud.com/fraggelpower666/30-fraggelpower666-she-only-likes-music-when-its-loud-fraggelpower666-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "31 Fraggelpower666 So Many Cheeky And Uneducated Damn Jerks_fraggelpower666 5",
+      "url": "https://soundcloud.com/fraggelpower666/31-fraggelpower666-so-many-cheeky-and-uneducated-damn-jerks_fraggelpower666-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-2",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 Fraggelpower666 Albert Hofmann Lsd Fraggelpower666 2",
+      "url": "https://soundcloud.com/fraggelpower666/2-fraggelpower666-albert-hofmann-lsd-fraggelpower666-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 Fraggelpower666 Another Trip Around The Sun 1 Fraggelpower666 3",
+      "url": "https://soundcloud.com/fraggelpower666/3-fraggelpower666-another-trip-around-the-sun-1-fraggelpower666-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 Fraggelpower666 As You Are_1 Fraggelpower666 4",
+      "url": "https://soundcloud.com/fraggelpower666/4-fraggelpower666-as-you-are_1-fraggelpower666-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "5 Fraggelpower666 Asyouare V2_0 1 Fraggelpower666 5",
+      "url": "https://soundcloud.com/fraggelpower666/5-fraggelpower666-asyouare-v2_0-1-fraggelpower666-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/the-power-of-nothing-part-1",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "666 Psytrance 1",
+      "url": "https://soundcloud.com/fraggelpower666/666-psytrance-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "666 Psytrance 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/666-psytrance-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Bleib So Wie Du Bist Denn Du Bist Gut So 3",
+      "url": "https://soundcloud.com/fraggelpower666/bleib-so-wie-du-bist-denn-du-bist-gut-so-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Brain Train Psytrance Cover 4",
+      "url": "https://soundcloud.com/fraggelpower666/brain-train-psytrance-cover-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Crazy Life Psytrance 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/crazy-life-psytrance-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/trapped-in-psytrance",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "0 Im The Storyteller Psytechno 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/0-im-the-storyteller-psytechno-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "1 And The Legend Begins Psytechno 1 2",
+      "url": "https://soundcloud.com/fraggelpower666/1-and-the-legend-begins-psytechno-1-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "2 The Book Of Mystery Psytechno 3",
+      "url": "https://soundcloud.com/fraggelpower666/2-the-book-of-mystery-psytechno-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "3 The Kingdom Of Kali Psytechno 4",
+      "url": "https://soundcloud.com/fraggelpower666/3-the-kingdom-of-kali-psytechno-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "4 The Moment Of Truth Psytechno 5",
+      "url": "https://soundcloud.com/fraggelpower666/4-the-moment-of-truth-psytechno-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/storyteller-englisch",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electro Space 1 1",
+      "url": "https://soundcloud.com/fraggelpower666/electro-space-1-1",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Electro Space 2",
+      "url": "https://soundcloud.com/fraggelpower666/electro-space-2",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Back To My Roots Of Electronic Music Trance Remake Dark Full On Psy 1 3",
+      "url": "https://soundcloud.com/fraggelpower666/back-to-my-roots-of-electronic-music-trance-remake-dark-full-on-psy-1-3",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Back To My Roots Of Electronic Music Trance Remake Dark Full On Psy 4",
+      "url": "https://soundcloud.com/fraggelpower666/back-to-my-roots-of-electronic-music-trance-remake-dark-full-on-psy-4",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
+    },
+    {
+      "title": "Dark Full On Electro Space Instrumental 1 5",
+      "url": "https://soundcloud.com/fraggelpower666/dark-full-on-electro-space-instrumental-1-5",
+      "provider": "SoundCloud",
+      "type": "track",
+      "title_source": "derived_from_original_soundcloud_slug",
+      "source_album_url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "status": "direct_original_album_track_link_verified_2026-11-05"
     }
   ]
 }
