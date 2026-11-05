@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
   "source_profile": "https://suno.com/@fraggelpower666",
-  "reviewed_at": "2026-10-30",
+  "reviewed_at": "2026-11-05",
   "public_profile_song_count_observed": 514,
-  "coverage": "534 catalogued distinct public Suno UUID links (514 preserved plus 20 unique directly observed in 2026-10-30 live Recent browser). Public counter 536; 2 entries not independently identified and NOT inserted.",
+  "coverage": "547 distinct public Suno song URLs in isolated development (534 preserved + 13 directly verified on 2026-11-05 from public profile and New Tracks playlist); this is NOT a complete capture of all Suno profile songs and NOT a live published deployment; publication dates of 13 new song links unverified.",
   "playlists": [
     {
       "title": "Multiverse Dj Set 1, Psy-Dark Techno",
@@ -3280,6 +3280,84 @@
       "url": "https://suno.com/song/19b62665-872b-4d99-b9af-475cb8a6c6a9",
       "status": "public_recent_profile_browser_link",
       "source": "2026-10-30 live browser Recent list 20 directly enumerated unique song URLs, profile counter 536"
+    },
+    {
+      "title": "NIKE MAG - THE FUTURE EDITION [0m00s-5m34s]",
+      "url": "https://suno.com/song/017be409-f466-492e-a073-cb553d6c9f27",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "NIKE MAG - THE FUTURE EDITION [0m00s-5m27s]",
+      "url": "https://suno.com/song/b2b9f26b-281f-4b4b-9b3c-20ba9aff4d47",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "NIKE AIR MAX - GRAVITY OFF",
+      "url": "https://suno.com/song/82aa5861-5caa-455d-97c5-572bfb06ee44",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "NIKE AIR MAX - GRAVITY OFF",
+      "url": "https://suno.com/song/b2fd24e7-de68-419a-8e71-29c2ce9a801b",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "BEFORE THE SOUND EXISTS",
+      "url": "https://suno.com/song/ac45d96a-f4ac-46de-9961-cf470c912279",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Not everyone likes you - Who I Really Am",
+      "url": "https://suno.com/song/46e0bbf0-1235-4e8e-958e-2e45cd39f98d",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Not everyone likes you - Who I Really Am",
+      "url": "https://suno.com/song/a16c2e27-12e8-4c1f-8c3a-c1a1f0dee85a",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "We Become One",
+      "url": "https://suno.com/song/9f55724b-df95-4603-8d6a-f1a40ed97630",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "We Become One",
+      "url": "https://suno.com/song/ec79a2c5-f95b-49c4-b079-15548147cb7f",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Infinity — Beyond the Edge of Time",
+      "url": "https://suno.com/song/e070180c-b236-4a3c-919f-914457c2d379",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Infinity — Beyond the Edge of Time",
+      "url": "https://suno.com/song/4f903e53-4f5d-4a56-a26b-b931f61ec078",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Take a Photo",
+      "url": "https://suno.com/song/0691abdb-c578-43dd-a3a4-bab4317c506e",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
+    },
+    {
+      "title": "Take a Photo",
+      "url": "https://suno.com/song/cba93719-3a31-43ae-b4b9-fcd36fd7e6ad",
+      "status": "individual_public_song_page_artist_verified",
+      "source": "2026-11-05 fresh public profile/playlist and direct song page; publication date unverified"
     }
   ],
   "rules": [
@@ -3292,10 +3370,10 @@
     "TWO_STAGE_DISCOVERY: a first profile/search pass is provisional; conduct an independent deeper Recent/Songs list or equivalent second source-path check before accepting an import. Compare canonical UUID URLs and retain contradictory count gaps as OPEN; no fabricated URLs, no silent removal. Separate source/CI/host readbacks."
   ],
   "cover_note": "Image UUID convention is a candidate where applicable; nonstandard covers require independent metadata confirmation. Do not claim each image independently verified.",
-  "observed_public_song_links": 534,
+  "observed_public_song_links": 547,
   "source_songs_page": "https://suno.com/@fraggelpower666?page=songs",
   "discovery_notes": "2026-10-24 public profile counter 462 and 200 visible unique public links; 12 new distinct URLs in verified immutable handoff a35a5aee; prior 450 retained, no deletions inferred. 2026-10-26 Suno Recent page live browser observed 502 counter and 20 directly enumerated new unique song UUIDs; no publication; 20 additional profile entries not URL verified. 2026-10-27 fresh public Suno page showed 514 song counter and 32 directly evidenced new UUID links absent from 482 candidate catalog. Protected 482 retained. 2026-10-30 live Recent browser enumerated 20 new unique UUIDs beyond the existing 514, profile counter 536; 2 remain unverified. Two-stage discovery required before acceptance.",
   "last_seen_end_song_url": "https://suno.com/song/8e5ab3f1-63fc-4b58-9469-4626d864f20d",
   "pagination_observation": "Infinite scroll observed in public browser. No visible URL cursor. Continuation markers are song UUIDs, not API cursors.",
-  "last_research_outcome": "PATCH_FIRST ISOLATED DEVELOPMENT CANDIDATE ONLY: +20 verified links => 534 Suno, +167 SoundCloud => 701 total. Production deployment NOT performed; 2 count-gap entries unresolved."
+  "last_research_outcome": "2026-11-05 ACTIVE BUILD: 13 directly verified Suno song URLs added over preserved 534 -> 547 isolated. 20 independent SoundCloud tracks + 2 sets added over preserved 122+45 -> 144+47; complete embedded discovery expected 738."
 }
