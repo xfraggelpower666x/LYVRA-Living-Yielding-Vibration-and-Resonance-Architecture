@@ -175,5 +175,37 @@
     "warning_de": "Ungefähre öffentlich auffindbare Fundlinks aus drei Suchseiten. Keine offizielle Google-Gesamttrefferzahl und kein Reichweitenwert.",
     "warning_en": "Approximate publicly discovered links across three search-result pages. Not official Google total results, reach or traffic.",
     "on_next_track_search": "re-run free exact phrase samples, replace current dated values and append an observed historical point; no daily chart without actual dated samples."
+  },
+  "google_ai_overview_observation": {
+    "observed_on": "2026-11-05",
+    "source_kind": "user_supplied_screenshot_of_google_ai_overview",
+    "independently_reproduced": false,
+    "language": "de",
+    "search_term": "FRAGGELPOWER666",
+    "visible_claims": [
+      {
+        "topic": "identity",
+        "observation": "FRAGGELPOWER666, also described under project name 666SOUNDsDESIGn, presented as electronic music producer and artist"
+      },
+      {
+        "topic": "genres",
+        "observation": "Dark Techno, Hyper Psy Trance and psychoacoustic music design are mentioned"
+      },
+      {
+        "topic": "music_presence",
+        "observation": "Spotify, YouTube Music and SoundCloud mentioned in the summary"
+      },
+      {
+        "topic": "historic_presence",
+        "observation": "Historical Nintendo Wii Homebrew / WiiMC ThemeMod involvement mentioned, not a current music distribution claim"
+      }
+    ],
+    "grounding": "Screenshot demonstrates a generated Google AI summary displayed on the user's device; not an independent confirmation of summary accuracy, Google index size, search position, impressions, click traffic or coverage stability.",
+    "presentation_de": "Google-KI-Übersicht zeigt eine Beschreibung von FRAGGELPOWER666 und nennt 666SOUNDsDESIGn sowie Musikplattformen; vom Nutzer am 05.11.2026 dokumentiert.",
+    "presentation_en": "A Google AI Overview was observed describing FRAGGELPOWER666, mentioning 666SOUNDsDESIGn and music platforms; user-supplied screenshot dated Nov 5, 2026.",
+    "historical_note_de": "Ein Hinweis auf frühere Wii-/WiiMC-Homebrew-Aktivitäten ist ebenfalls sichtbar; historische Erwähnung, keine neue Musikveröffentlichung.",
+    "historical_note_en": "The screenshot also mentions earlier Wii/WiiMC homebrew activity, a historical mention rather than a new music release.",
+    "not_for_metrics": true,
+    "not_for_scoring_adjustment": true
   }
 }
