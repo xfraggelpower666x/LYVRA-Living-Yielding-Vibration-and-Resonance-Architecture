@@ -28,6 +28,10 @@ assert.match(evidence.last_scan_date,/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/,'evidence sc
 assert.equal(evidence.cost_contract.maximum_incremental_cost_usd,0,'zero additional cost violated');
 assert.equal(evidence.discovery_index.is_google_rank,false,'editorial ranking improperly called a Google rank');
 assert.equal(evidence.measurements.impressions,null,'Google impressions fabricated');
+assert.equal(evidence.google_ai_overview_observation.source_kind,'user_supplied_screenshot_of_google_ai_overview','AI overview provenance missing');
+assert.equal(evidence.google_ai_overview_observation.independently_reproduced,false,'screenshot promoted to independent proof');
+assert.equal(evidence.google_ai_overview_observation.not_for_scoring_adjustment,true,'AI overview must not inflate popularity scores');
+assert.ok(html.includes("className='gr-ai-observation'")&&html.includes('grEvidence.google_ai_overview_observation'),'Google AI overview evidence UI missing');
 assert.equal(evidence.measurements.clicks,null,'Google clicks fabricated');
 assert.equal(evidence.measurements.ctr,null,'Google CTR fabricated');
 assert.equal(evidence.platform_presence.length,9,'source-backed platform coverage drift');
