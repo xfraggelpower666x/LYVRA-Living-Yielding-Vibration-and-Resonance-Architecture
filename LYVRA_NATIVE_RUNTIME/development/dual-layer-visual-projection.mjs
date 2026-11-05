@@ -156,3 +156,37 @@ export async function executeR40ChatWork({
     requiresExplicitCreatorTask:true
   };
 }
+
+
+// R51 additive presentation-only projection in the existing Semantic Cyber Field.
+// Retains the original four verified native destinations and never activates facets.
+export function projectR51NativeFacetMenu({currentHead,pointerBlob,wholeReadback=false,registry=[],candidates=[]}={}){
+  const sha=/^[0-9a-f]{40}$/;
+  if(!sha.test(currentHead||'')||!sha.test(pointerBlob||'')||wholeReadback!==true)throw Error('WHOLE_READBACK_REQUIRED');
+  if(!Array.isArray(registry)||!Array.isArray(candidates))throw TypeError('FACET_REGISTRY_REQUIRED');
+  const base=[
+    {id:'LYVRA_MAIN',label:'Whole LYVRA',trigger:'LYVRA MAIN',family:'INTELLIGENCE'},
+    {id:'TRACK_DESIGN',label:'Track Design',trigger:'LYVRA TRACK DESIGN',family:'CREATIVE'},
+    {id:'SPEECH_DESIGN',label:'Speech Design',trigger:'LYVRA SPEECH DESIGN',family:'CREATIVE'},
+    {id:'SUNO_STUDIO_2',label:'Suno Studio 2',trigger:'LYVRA SUNO STUDIO 2',family:'CREATIVE'}
+  ];
+  const palette={CREATIVE:'#FF3FBD',INTELLIGENCE:'#B34CFF',EVIDENCE:'#24E9F2'};
+  const ids=new Set(),entries=[];
+  for(const item of [...base,...registry.filter(x=>!base.some(c=>c.id===x.id))]){
+    if(!item?.id||ids.has(item.id))throw Error('DUPLICATE_OR_MISSING_FACET');
+    ids.add(item.id);
+    const original=registry.find(x=>x.id===item.id);
+    if(original?.sourceReadback!==true||original?.registrationReadback!==true){
+      entries.push({id:item.id,label:item.label,readiness:'READBACK_PENDING',actionEnabled:false,trigger:null,group:item.family||'INTELLIGENCE',color:palette[item.family]||palette.INTELLIGENCE,textFallback:true});continue;
+    }
+    if(typeof item.trigger!=='string'||!item.trigger.startsWith('LYVRA '))throw Error('UNSAFE_FACET_TRIGGER');
+    const actionEnabled=original?.hostExecutable===true;
+    entries.push({id:item.id,label:item.label,readiness:actionEnabled?'VERIFIED':'PARTIAL',actionEnabled,trigger:actionEnabled?item.trigger:null,proposedTrigger:actionEnabled?null:item.trigger,group:item.family||'INTELLIGENCE',color:palette[item.family]||palette.INTELLIGENCE,textFallback:true,extraVisuals:['TRACK_DESIGN','LYVRA_ANALYTICS'].includes(item.id)?['DIAGRAMS','IMAGE_EXAMPLES']:[]});
+  }
+  for(const candidate of candidates){
+    if(!candidate?.id||ids.has(candidate.id)||!candidate.evidenceRef)throw Error('DISCOVERY_PROVENANCE_REQUIRED');
+    ids.add(candidate.id);
+    entries.push({id:candidate.id,label:candidate.label||candidate.id,readiness:'VORGESCHLAGEN',actionEnabled:false,trigger:null,group:'INTELLIGENCE',color:palette.INTELLIGENCE,textFallback:true,evidenceRef:candidate.evidenceRef});
+  }
+  return {schema:'LYVRA_R51_NATIVE_FACET_MENU_PROJECTION',owner:'WHOLE_LYVRA',currentHead,pointerBlob,coreFourPreserved:true,source:'EXISTING_SEMANTIC_CYBER_FIELD',presentationOnly:true,noAutomaticActivation:true,hostAccepted:false,palette,cards:entries};
+}
