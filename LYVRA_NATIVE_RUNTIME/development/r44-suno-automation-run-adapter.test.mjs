@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {dirname,join} from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {ingestR44AutomationPeek} from './r44-suno-automation-run-adapter.mjs';
+const here=dirname(fileURLToPath(import.meta.url));
+const record=JSON.parse(readFileSync(join(here,'r44-actual-suno-monitor-result-readback.json'),'utf8'));
+const base={automations:[{id:record.task_id,is_enabled:record.task_enabled,last_run_time:record.task_last_run_time,run_details:{
+ last_run:{id:record.run_id,recorded_status:record.run_recorded_status,completed_at:record.run_completed_at,chat_ref:record.run_chat_ref},
+ latest_result:record.report}}]};
+const head=record.source_current_head;let tests=0;
+const ck=(v,message)=>{assert.ok(v,message);tests++;};
+const clone=()=>JSON.parse(JSON.stringify(base));
+const out=ingestR44AutomationPeek(base,{currentHead:head});
+ck(out.status==='NO_CHANGE_REPORT_READBACK','actual completed NO_CHANGE result');
+ck(out.runId===record.run_id,'exact result/run id match');
+ck(out.reportText===record.report.content_text,'full original report retained');
+ck(out.reportComplete===true,'complete result');
+ck(out.hostGatesClosed===0,'no host gate closed');
+ck(out.originalSunoSourceReadback===false,'result is not original linked source');
+ck(out.hostSunoExecutionVerified===false,'no fake Suno execution');
+ck(out.analyticsEvidencePromoted===false,'no music rule promoted');
+ck(out.productiveWrites===0,'no writes');
+let t=clone();t.automations[0].run_details.latest_result.run_id='invalid';
+ck(!ingestR44AutomationPeek(t,{currentHead:head}).accepted,'mismatched run blocked');
+t=clone();t.automations[0].run_details.latest_result.content_truncated=true;
+ck(!ingestR44AutomationPeek(t,{currentHead:head}).accepted,'truncation blocked');
+t=clone();t.automations[0].run_details.last_run.recorded_status='in_progress';
+ck(!ingestR44AutomationPeek(t,{currentHead:head}).accepted,'unfinished run blocked');
+t=clone();t.automations[0].run_details.last_run.chat_ref=null;
+ck(!ingestR44AutomationPeek(t,{currentHead:head}).accepted,'missing chat origin blocked');
+t=clone();t.automations[0].is_enabled=false;
+ck(!ingestR44AutomationPeek(t,{currentHead:head}).accepted,'disabled task blocked');
+console.log(JSON.stringify({status:'PASS',checks:tests,classification:'ACTUAL_AUTOMATION_RESULT_NO_CHANGE',hostAcceptance:false,sourceReadback:false,productiveWrites:0}));
