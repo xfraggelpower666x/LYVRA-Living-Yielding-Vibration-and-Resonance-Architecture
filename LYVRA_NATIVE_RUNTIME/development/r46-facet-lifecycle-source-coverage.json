@@ -17,12 +17,12 @@
     },
     {
       "gate": "FACET_CONTRACT",
-      "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
-      "blob_sha": "0330b4536738516ed496e410cf8459de28713cc3",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md",
+      "blob_sha": "783860c266e92cfc65bd613b7eb23a5026f44353",
       "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
       "complete": true,
       "readback_type": "GITHUB_FETCH_FILE",
-      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md @ lyvra"
+      "fetch_ref": "GitHub fetch_file LYVRA_NATIVE_RUNTIME/facets/analytics/FACET_CONTRACT.md @ lyvra"
     },
     {
       "gate": "CURRENT_CAPABILITY_SET",
@@ -64,5 +64,10 @@
     "SCEERI_MYCEL",
     "PLUGIN_HOST_ACCEPTANCE"
   ],
-  "no_foreign_activation": true
+  "no_foreign_activation": true,
+  "parent_sub_lifecycle_contract": {
+    "path": "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md",
+    "blob_sha": "0330b4536738516ed496e410cf8459de28713cc3",
+    "readback": "FULL_SOURCE_READ_BY_GITHUB_FETCH_FILE"
+  }
 }
