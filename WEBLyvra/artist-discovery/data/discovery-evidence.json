@@ -226,5 +226,30 @@
     "verified_google_impressions": null,
     "does_not_contribute_to_editorial_resonance_scores": true,
     "action_policy": "No backlink purchase, removal, disavow or SEO-action automatically. Free source checks only; disavow only after evidence and owner approval."
+  },
+  "webradio_seo_audit_observation": {
+    "observed_on": "2026-11-05",
+    "source_kind": "user_supplied_screenshot_of_search_engine_land_free_seo_check",
+    "vendor": "Search Engine Land / Semrush free SEO check",
+    "target_url": "https://webradio.666soundsdesign-broadcaster.com/",
+    "target_scope": "WEBRADIO_SITE_ONLY",
+    "seo_score_out_of_100": 55,
+    "critical_count": 8,
+    "warnings_count": 4,
+    "passed_count": 10,
+    "total_issues_claimed": 12,
+    "score_scale": "VENDOR_DIAGNOSTIC_SCORE_NOT_GOOGLE_RANKING",
+    "independently_reproduced": false,
+    "individual_findings_available": false,
+    "actual_issue_list": [],
+    "website_verified_as_broken": false,
+    "warning_de": "Kostenloser, seitenbezogener Drittanbieter-Check aus einem Nutzerscreenshot. Die konkreten zwölf Hinweise sind hier nicht sichtbar. Kein Beleg für tatsächliche Google-Platzierungen, Besucherzahlen oder die Ursache eines technischen Fehlers.",
+    "warning_en": "Free third-party page-level SEO check from a user-provided screenshot. The twelve individual findings are not visible. This does not measure Google ranking, visits or the root cause of a technical problem.",
+    "status": "OBSERVED_SCREENSHOT_ONLY",
+    "authorized_followup": "Read exact 12 findings if user supplies them, compare with authoritative WEBRADIO original code and owner scope; route any repair to independent WEBRADIO system without foreign automatic activation.",
+    "no_cross_system_mutation": true,
+    "separate_from_semrush_backlink_observation": true,
+    "does_not_contribute_to_editorial_resonance_scores": true,
+    "no_paid_scan_or_subscription": true
   }
 }
