@@ -171,6 +171,10 @@ export function projectR51NativeFacetMenu({currentHead,pointerBlob,wholeReadback
   const sha=/^[0-9a-f]{40}$/;
   if(!sha.test(currentHead||'')||!sha.test(pointerBlob||'')||wholeReadback!==true)throw Error('WHOLE_READBACK_REQUIRED');
   if(!Array.isArray(registry)||!Array.isArray(candidates))throw TypeError('FACET_REGISTRY_REQUIRED');
+  // R54: duplicate Core IDs were previously silently hidden by registry.find().
+  // Ambiguous provider claims must fail closed before a trigger is made clickable.
+  const registeredIds=registry.map(item=>item?.id);
+  if(registeredIds.some(id=>typeof id!=='string'||!id.trim())||new Set(registeredIds).size!==registeredIds.length)throw Error('DUPLICATE_OR_INVALID_REGISTRY_ID');
   const base=[
     {id:'LYVRA_MAIN',label:'Whole LYVRA',trigger:'LYVRA MAIN',family:'INTELLIGENCE'},
     {id:'TRACK_DESIGN',label:'Track Design',trigger:'LYVRA TRACK DESIGN',family:'CREATIVE'},
