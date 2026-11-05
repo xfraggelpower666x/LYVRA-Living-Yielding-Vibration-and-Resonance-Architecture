@@ -476,10 +476,10 @@ function loadOriginalSoundcloudAlbumTracks(){
   const ownerTracks=new Map();
   const sortedAlbums=new Map();
   for(const album of source.albums){
-   if(!/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9-]+$/i.test(album.url))throw new Error('Untrusted SoundCloud set URL');
+   if(!/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9_-]+$/i.test(album.url))throw new Error('Untrusted SoundCloud set URL');
    const members=[];
    for(const [position,id,title,url] of album.tracks){
-    if(!Number.isSafeInteger(position)||!Number.isSafeInteger(id)||typeof title!=='string'||!/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9-]+$/i.test(url))throw new Error('Untrusted owned-track field');
+    if(!Number.isSafeInteger(position)||!Number.isSafeInteger(id)||typeof title!=='string'||!/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9_-]+$/i.test(url))throw new Error('Untrusted owned-track field');
     members.push({title,url,position,id});ownerTracks.set(url,{title,url,provider:'SoundCloud',type:'track',api_owner_id:source.api_owner_id});
    }
    sortedAlbums.set(album.url,members);
