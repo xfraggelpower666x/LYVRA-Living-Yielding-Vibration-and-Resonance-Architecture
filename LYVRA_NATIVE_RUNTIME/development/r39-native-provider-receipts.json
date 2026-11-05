@@ -58,5 +58,25 @@
     "scope": "DEPLOYMENT_MONITOR",
     "host_verified": false,
     "productive_write": false
+  },
+  {
+    "event_id": "R40_T07_SUNO_RESULT_GATE_SOURCE",
+    "item_id": "T07",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit 55fd97f5edeabef02af226f592205b0d855a091f / LYVRA_NATIVE_RUNTIME/development/r40-suno-source-bridge.mjs blob 13331cbaecf80f700af241068eb90932390666e0",
+    "observation": "Existing independent Suno automation result adapter connected into six-facet explicit execution; metadata-only real task remains RUN_METADATA_ONLY, no original result or source readback, no live ingest accepted.",
+    "scope": "SUNO_MONITOR_SOURCE_GATE_ISOLATED",
+    "host_verified": false,
+    "productive_write": false
+  },
+  {
+    "event_id": "R40_T19_ANALYTICS_PARENTAGE_GUARD_SOURCE",
+    "item_id": "T19",
+    "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
+    "source_ref": "GitHub commit c937f10dd0be5e2b5504b21ef22bf161e20c7408 / LYVRA_NATIVE_RUNTIME/development/r40-analytics-parentage-guard.mjs blob cfb8192a94fbaba61a9ae352567bc6b7f51c89b1",
+    "observation": "Analytics current central authority preserved; migration guard connected to R40 explicit six-facet visual execution, migration itself remains NOT_DEPLOYED until fresh native references, R23 provenance, Track DNA, governance and host readback.",
+    "scope": "ANALYTICS_MIGRATION_GUARD_ISOLATED",
+    "host_verified": false,
+    "productive_write": false
   }
 ]
