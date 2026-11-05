@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "scope": "FRAGGELPOWER666 / 666SOUNDsDESIGn Music Discovery evidence",
+  "last_scan_date": "2026-11-05",
+  "last_scan_method": "Free TinyFish Search and Fetch + direct public artist/release pages; human-directed track search, NOT live Google metrics",
+  "cost_contract": {
+    "maximum_incremental_cost_usd": 0,
+    "allowed": [
+      "TinyFish Search (0 USD/query as checked 2026-11-05)",
+      "TinyFish Fetch (0 USD/URL as checked 2026-11-05)",
+      "repository readback",
+      "existing Cloudflare Pages preview build"
+    ],
+    "prohibited": [
+      "TinyFish Agent",
+      "TinyFish Browser",
+      "TinyFish Monitor",
+      "TinyFish Research",
+      "TinyFish Deep Research",
+      "metered jobs",
+      "paid add-ons"
+    ],
+    "automatic_paid_watch": false
+  },
+  "catalog": {
+    "suno": 547,
+    "soundcloud_tracks": 142,
+    "soundcloud_sets": 47,
+    "mixcloud_tracks": 10,
+    "mixcloud_shows": 10,
+    "total": 756,
+    "candidate_branch": "dev/weblyvra-discovery-active-build-736-20261105",
+    "release_state": "ISOLATED_PREVIEW_ONLY"
+  },
+  "search_sample": {
+    "checked_at": "2026-11-05",
+    "query_count": 4,
+    "engine": "TinyFish Search public web, not Google Search Console",
+    "position_metric": "NOT_MEASURED",
+    "impressions": null,
+    "clicks": null,
+    "ctr": null,
+    "traffic": null,
+    "results_not_exhaustive": true,
+    "queries": [
+      "\"FRAGGELPOWER666\" \"666SOUNDsDESIGn\"",
+      "\"FRAGGELPOWER666\" music artist platforms",
+      "\"LYVRA\" \"FRAGGELPOWER666\" music November 2026",
+      "\"FRAGGELPOWER666\" site:spotify.com OR site:apple.com OR site:deezer.com"
+    ]
+  },
+  "platform_presence": [
+    {
+      "name": "Suno",
+      "url": "https://suno.com/@fraggelpower666",
+      "evidence": "direct_public_profile_and_song_pages",
+      "catalog_count": 547,
+      "unit": "public song links"
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com/fraggelpower666/tracks",
+      "evidence": "direct_public_tracks_and_sets",
+      "catalog_count": 189,
+      "unit": "142 tracks + 47 sets"
+    },
+    {
+      "name": "Mixcloud",
+      "url": "https://www.mixcloud.com/Fraggelpower666/uploads/",
+      "evidence": "direct_public_shows_and_tracks",
+      "catalog_count": 20,
+      "unit": "10 shows + 10 tracks"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/artist/3zCE2VC90X2GI016N2vuBS",
+      "evidence": "artist_link_in_public_search_sample",
+      "catalog_count": null
+    },
+    {
+      "name": "Apple Music",
+      "url": "https://music.apple.com/us/artist/fraggelpower666/1896220408",
+      "evidence": "direct_public_artist_page",
+      "catalog_count": null
+    },
+    {
+      "name": "Deezer",
+      "url": "https://www.deezer.com/artist/389015831",
+      "evidence": "direct_public_artist_discography",
+      "catalog_count": null
+    },
+    {
+      "name": "Qobuz",
+      "url": "https://www.qobuz.com/it-it/album/lyvra-fusion-fraggelpower666/d25drsdyml9kn",
+      "evidence": "direct_public_release_page",
+      "catalog_count": null
+    },
+    {
+      "name": "iHeartRadio",
+      "url": "https://www.iheart.com/artist/fraggelpower666-50624046",
+      "evidence": "direct_public_artist_page",
+      "catalog_count": null
+    },
+    {
+      "name": "YouTube Music",
+      "url": "https://music.youtube.com/@fraggelpower666",
+      "evidence": "direct_public_profile",
+      "catalog_count": null
+    }
+  ],
+  "measurements": {
+    "google_search_console_connected": false,
+    "impressions": null,
+    "clicks": null,
+    "ctr": null,
+    "position": null,
+    "trend_30_days": null
+  },
+  "scan_policy": {
+    "trigger": "Whenever a human-directed new-track scan is actually completed",
+    "action": "Refresh public source evidence and date, update add-on dataset and inline snapshot, build original source tests, read back deployment. A scan date is not a background scheduler.",
+    "silent_overwrite_forbidden": true,
+    "missing_evidence_does_not_zero_metrics": true
+  },
+  "evidence_note": "Public artist and song pages show availability and catalogued discovery URLs. Counts are NOT Google index counts, unique viewers, ranking, traffic, total platform inventory or Search Console analytics."
+}
