@@ -32,7 +32,8 @@ export function projectR50Intake(ledger,events=[],{head,pointerBlob,knownTasks=[
     requireTrue(typeof event.id==='string'&&event.id&&typeof event.source==='string'&&event.source.trim()&&typeof event.description==='string'&&event.description.trim(),'EVENT_PROVENANCE_REQUIRED');
     requireTrue(!seen.has(event.id),'DUPLICATE_EVENT_ID');seen.add(event.id);
     requireTrue(!event.host_verified&&!event.productive_write,'EVENT_CANNOT_PROMOTE_HOST_OR_WRITES');
-    const links=Array.isArray(event.related_strands)?event.related_strands:[];
+    requireTrue(event.related_strands===undefined||Array.isArray(event.related_strands),'RELATIONSHIPS_MUST_BE_ARRAY');
+    const links=event.related_strands||[];
     requireTrue(links.every(s=>SIX.includes(s)&&s!==event.strand),'FOREIGN_OR_SELF_DEPENDENCY');
     const match=knownTasks.find(x=>x.strand===event.strand&&canonical(x.acceptance_key)===canonical(event.acceptance_key||''));
     results.push({id:event.id,strand:event.strand,kind:event.kind,source:event.source,
