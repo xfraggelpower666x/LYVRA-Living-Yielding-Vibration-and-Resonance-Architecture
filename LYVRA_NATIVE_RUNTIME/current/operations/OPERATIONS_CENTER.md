@@ -551,3 +551,35 @@ NO_ADDITIONAL_COST = TRUE
 SOURCE_EXECUTION_NE_HOST_ACCEPTANCE = TRUE
 PARTIAL_CARRIER_COVERAGE_NE_WHOLE_REHYDRATION = TRUE
 R46 may be invoked only by an explicit creator task after appropriate fresh Whole current readback. It cannot be taken as independent Native/ALIVE plugin delivery or persistent host behavior.
+
+
+## R47 — Ten original source carriers mapped to existing Facet LifeCircle
+
+STATUS = ORIGINAL_SOURCE_MAPPING_READBACK_VERIFIED | FACET_SEMANTIC_REHYDRATION_PARTIAL | NATIVE_ALIVE_HOST_PENDING
+OWNER = WHOLE_LYVRA
+EXISTING_VISUAL = SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE
+NO_NEW_ROUTER_OR_ENGINE = TRUE
+NO_HTML = TRUE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+
+Original source ledger: `development/r47-six-carrier-original-source-evidence.json`. It supplies six directly fetched original productive GitHub carrier files mapped to the six R46-open sub-LifeCircle source domains, with full source blobs, semantic markers, scope and provenance. The four prior R46 original source readbacks stay preserved, making ten unique current source-bound gate records. Music Track DNA is used BY REFERENCE, not promoted to a new Analytics parent or Whole authority. The music reference registry is older evidence provenance, explicitly NOT current decision authority. Rehydration sequence is sourced to native Analytics `facets/analytics/REHYDRATION_MANIFEST.json` and keeps `OPEN_WORK` last.
+
+Execution source: `development/r47-sourced-lifecycle-entry.mjs` imports the EXISTING R46 six-strand execution and combines ten GitHub blob/head/path readbacks, rejecting stale or duplicated originals and violating provenance boundaries. A completed source read is NOT facet runtime understanding, independent productive life-circle installation, renderer survival or a host acceptance. R47 always reports WHOLE_REHYDRATED=false and HOST_VERIFIED=false.
+
+Targeted source execution: 8/8 checks PASS in isolated JS evaluation with injected R46 result. Reproducible test committed to `development/r47-sourced-lifecycle-entry.test.mjs` with direct GitHub readback; independent Node process execution of this exact test remains NOT_VERIFIED. No unnecessary rerun of R41-R45 passed tests was performed.
+
+SOURCE_CARRIER_COVERAGE = 10_OF_10_MAPPED_NOT_SEMANTIC_PASS
+FACET_SEMANTIC_REHYDRATION = PARTIAL
+WHOLE_NATIVE_REHYDRATION = PARTIAL
+NATIVE_RELEASE_ADOPTION = OPEN
+ALIVE_RELEASE_READBACK = PENDING
+NATIVE_ALIVE_INDEPENDENT_HOST_ACCEPTANCE = OPEN
+R30_NINE_PRODUCTIVE_INTEGRATION_ITEMS = OPEN
+EIGHTEEN_HOST_GATES = ALL_OPEN
+SIX_PARALLEL_STRANDS = PRESERVED
+R44_REAL_SUNO_NO_CHANGE = PRESERVED
+RETURN_ANCHOR = ANALYTICS
+OTHER_RETURNS = POST | SCEERI_MYCEL | PLUGIN_HOST_ACCEPTANCE
+PRODUCTIVE_WRITES = NONE
+CURRENT_POINTER = UNCHANGED
+ZERO_ADDITIONAL_COST = TRUE
