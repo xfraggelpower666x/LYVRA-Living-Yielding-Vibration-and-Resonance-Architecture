@@ -1,0 +1,84 @@
+{
+  "schema": "LYVRA_R42_CROSS_FACET_CALLERS_EVIDENCE",
+  "authority": "WHOLE_LYVRA",
+  "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "source_pointer_blob": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "readback_files": [
+    {
+      "facet": "SPEECH_DESIGN",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "blob_sha": "ccaf08e6d5bf85837feee24d2f16b6d8650eb012",
+      "evidence": "SPEECH_DESIGN_MAY_REQUEST_CENTRAL_ANALYTICS = true",
+      "scope": "EXPLICIT_CURRENT_CALLER",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "repository_ref": "lyvra",
+      "readback_complete": true
+    },
+    {
+      "facet": "ANALYTICS_REQUEST_CONTRACT",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "evidence": "ANALYTICS_RESULT_RETURNS_TO_CALLER = true",
+      "scope": "CURRENT_SHARED_CONTRACT",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "repository_ref": "lyvra",
+      "readback_complete": true
+    },
+    {
+      "facet": "TRACK_MASTER_BASE",
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/TRACK_DESIGN_MASTER_BASE_AND_FACET_ADAPTATION.md",
+      "blob_sha": "eb8af5f198e28ffdcb802ef4e50afdc015925ae0",
+      "evidence": "CENTRAL_ANALYTICS_ADDS =",
+      "scope": "RELATED_MASTER_BASE_NOT_COMPLETE_CALLER_MAP",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "repository_ref": "lyvra",
+      "readback_complete": true
+    },
+    {
+      "facet": "SPECIALIST_HANDOFF",
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+      "blob_sha": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
+      "evidence": "OLDER_ANALYTICS_TRACK_DESIGN_CHILD_WORDING = HISTORICAL_PROVENANCE_ONLY",
+      "scope": "CURRENT_SUPERSESSION_EVIDENCE",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "repository_ref": "lyvra",
+      "readback_complete": true
+    },
+    {
+      "facet": "STUDIO2",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md",
+      "blob_sha": "048f6e780c2fc8709d95fbc931d04da286606d69",
+      "evidence": "STUDIO2_ANALYTICS_CALL_PROFILE_NOT_EXPLICIT_IN_FACET_CONTRACT",
+      "scope": "COVERAGE_PENDING",
+      "readback_type": "GITHUB_FETCH_FILE",
+      "repository_ref": "lyvra",
+      "readback_complete": true
+    }
+  ],
+  "verified_explicit_callers": [
+    "SPEECH_DESIGN"
+  ],
+  "pending_unmapped_callers": [
+    "TRACK_DESIGN",
+    "STUDIO2",
+    "ADDITIONAL_NATIVE_CALLERS"
+  ],
+  "coverage": "PARTIAL",
+  "t19_carrier_complete": false,
+  "migration_write_allowed": false,
+  "return_anchor": "ANALYTICS",
+  "open_host_gates": 18,
+  "related_strands": [
+    "DICTATION",
+    "ANALYTICS",
+    "CHARACTER_RELATIONS",
+    "VISUAL",
+    "INTERRUPTION_CONTINUITY",
+    "RESEARCH"
+  ],
+  "supplemental_preserved": [
+    "POST",
+    "SCEERI_MYCEL",
+    "PLUGIN_HOST_ACCEPTANCE"
+  ]
+}
