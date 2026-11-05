@@ -5,6 +5,9 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const crypto = require('node:crypto');
 const source = path.resolve(__dirname, '../../artist-discovery');
+// Run the unchanged original Addon source-integrity suite before staging.
+// This verifies catalog entries, 17 staged WebP/source pairs, original assets and DE/EN.
+require('node:child_process').execFileSync(process.execPath, [path.join(source, 'test-addon-integrity.mjs')], {stdio:'inherit'});
 const target = path.resolve(__dirname, '../dist/artist-discovery');
 const main = fs.readFileSync(path.join(source, 'index.html'));
 const catalog = JSON.parse(fs.readFileSync(path.join(source, 'data/suno-releases.json'),'utf8'));
