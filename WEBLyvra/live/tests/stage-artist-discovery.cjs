@@ -17,13 +17,18 @@ const items=JSON.parse(embedded[1]);
 const albums=JSON.parse(fs.readFileSync(path.join(source,'data/soundcloud-albums.json'),'utf8')).albums;
 const tracks=JSON.parse(fs.readFileSync(path.join(source,'data/soundcloud-tracks.json'),'utf8')).tracks;
 assert(catalog.public_songs.length>=450, 'protected 450-entry Suno baseline regressed');
-assert.equal(albums.length,47,'protected SoundCloud set baseline changed');
-assert.equal(tracks.length,142,'protected SoundCloud track baseline changed');
+assert.equal(albums.length,48,'protected SoundCloud set baseline changed');
+assert.equal(tracks.length,358,'protected SoundCloud track baseline changed');
 const mixcloud=JSON.parse(fs.readFileSync(path.join(source,'data/mixcloud-releases.json'),'utf8'));
 const mixcloudItems=[...mixcloud.shows,...mixcloud.tracks];
 assert.equal(mixcloud.shows.length,10,'original Mixcloud shows missing');
 assert.equal(mixcloud.tracks.length,10,'original Mixcloud individual tracks missing');
-const expected=[...catalog.public_songs,...tracks,...albums,...mixcloudItems];
+const soundcloudDetails=JSON.parse(fs.readFileSync(path.join(source,'data/soundcloud-album-details.json'),'utf8'));
+const playlists=soundcloudDetails.public_playlists;
+assert.equal(soundcloudDetails.albums.length,48,'source bound SoundCloud album cover catalog mismatch');
+assert.equal(playlists.length,2,'SoundCloud playlists should be distinct from artist albums');
+assert.equal(soundcloudDetails.distinct_album_track_urls,233,'verified SoundCloud album member URL coverage changed');
+const expected=[...catalog.public_songs,...tracks,...albums,...playlists,...mixcloudItems];
 assert.equal(items.length,expected.length,'unified discovery does not match exact current provider inventories');
 assert.equal(new Set(items.map(x=>x.url)).size,items.length,'duplicate discovery URLs');
 assert.equal(new Set(expected.map(x=>x.url)).size,expected.length,'duplicate source catalog URL');
@@ -32,7 +37,7 @@ for(const item of expected)assert(embeddedUrls.has(item.url),'current source URL
 const page=main.toString('utf8');
 assert(page.includes('Suno: '+catalog.public_songs.length+' verifizierte'),'German public count has drifted from current snapshot');
 assert(page.includes('Suno: '+catalog.public_songs.length+' verified'),'English public count has drifted from current snapshot');
-const data=['platforms.json','suno-releases.json','soundcloud-albums.json','soundcloud-tracks.json','mixcloud-releases.json','discovery-evidence.json'];
+const data=['platforms.json','suno-releases.json','soundcloud-albums.json','soundcloud-tracks.json','mixcloud-releases.json','discovery-evidence.json','soundcloud-album-details.json'];
 const art=[...Array(17)].map((_,i)=>'art-'+String(i+1).padStart(2,'0')+'.webp');
 const original=['fraggel-system-designer.webp','lyvra-666soundsdesign-wordmark.webp','lyvra-cyber-emblem.webp','lyvra-hero-crest.webp','lyvra-resonance-banner.webp'];
 const files=['index.html',...data.map(x=>'data/'+x),...art.map(x=>'assets/addon-20261018/'+x),...original.map(x=>'assets/'+x)];
@@ -45,5 +50,5 @@ for(const rel of files){
  const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
  assert.equal(digest(fs.readFileSync(src)),digest(fs.readFileSync(dst)),'staging byte drift: '+rel);
 }
-assert.equal(files.length,29,'unexpected asset selection');
-console.log('WEBLYVRA_DISCOVERY_STAGE_PASS '+items.length+' unique URLs, '+catalog.public_songs.length+' Suno, '+albums.length+' sets, '+tracks.length+' tracks, 22 WebP binaries, 6 data inventories; repository originals unchanged');
+assert.equal(files.length,30,'unexpected asset selection');
+console.log('WEBLYVRA_DISCOVERY_STAGE_PASS '+items.length+' unique URLs, '+catalog.public_songs.length+' Suno, '+albums.length+' sets, '+tracks.length+' tracks, 22 WebP binaries, 7 data inventories; repository originals unchanged');
