@@ -104,7 +104,7 @@ export function reconcileDeploymentEvidence(view, receipts=[], {selection="ALL"}
     observation_count:accepted.length,quarantine_count:quarantine.length,
     integration_alerts:backlog.filter(x=>x.native_development_connected&&!x.productive_integration_verified).map(x=>x.id),
     strands:base.strands.map(s=>({...s,
-      evidence_items:backlog.filter(x=>bundles.some(b=>b.related_strands.includes(s.id)&&b.id===x.work_bundles?.[0])).map(x=>x.id),
+      evidence_items:backlog.filter(x=>bundles.some(b=>b.related_strands.includes(s.id)&&b.open_candidates>0&&view.bundles.find(z=>z.id===b.id)?.isolated_item_ids.includes(x.id))).map(x=>x.id),
       action_query:withNativeVisualGuidance(s.action_query)
     })),
     all_action_query:withNativeVisualGuidance(base.all_action_query),
