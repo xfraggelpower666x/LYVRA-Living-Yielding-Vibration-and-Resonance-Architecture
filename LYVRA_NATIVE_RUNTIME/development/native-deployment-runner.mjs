@@ -21,12 +21,13 @@ export function runNativeDeployment(data, {expectedHead, expectedPointer, select
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const args=process.argv.slice(2);
   const get=n=>{const i=args.indexOf(n);return i<0?undefined:args[i+1]};
-  const input=get('--input'), head=get('--head'), pointer=get('--pointer'), selection=get('--selection')||'ALL', receiptsPath=get('--receipts');
+  const input=get('--input'), head=get('--head'), pointer=get('--pointer'), selection=get('--selection')||'ALL';
+  const receiptPaths=[]; for(let i=0;i<args.length-1;i++)if(args[i]==='--receipts')receiptPaths.push(args[i+1]);
   if (!input || !head || !pointer) {
-    process.stderr.write('Benutzung: node native-deployment-runner.mjs --input R32_PROJECTION.json --head VERIFIZIERTER_HEAD --pointer VERIFIZIERTER_POINTER [--selection STRANG]\n');
+    process.stderr.write('Benutzung: node native-deployment-runner.mjs --input R32_PROJECTION.json --head VERIFIZIERTER_HEAD --pointer VERIFIZIERTER_POINTER [--selection STRANG] [--receipts R36.json --receipts R39.json]\n');
     process.exitCode=2;
   } else {
-    try {const view=JSON.parse(readFileSync(input,'utf8'));const receipts=receiptsPath?JSON.parse(readFileSync(receiptsPath,'utf8')):[];process.stdout.write(JSON.stringify(runNativeDeployment(view,{expectedHead:head,expectedPointer:pointer,selection,receipts}),null,2)+'\n');}
+    try {const view=JSON.parse(readFileSync(input,'utf8'));const receipts=receiptPaths.flatMap(p=>{const rows=JSON.parse(readFileSync(p,'utf8'));if(!Array.isArray(rows))throw TypeError('RECEIPTS_ARRAY_REQUIRED');return rows;});process.stdout.write(JSON.stringify(runNativeDeployment(view,{expectedHead:head,expectedPointer:pointer,selection,receipts}),null,2)+'\n');}
     catch(e){process.stderr.write(`R34_VALIDATION_BLOCKED: ${e.message}\n`);process.exitCode=1;}
   }
 }
