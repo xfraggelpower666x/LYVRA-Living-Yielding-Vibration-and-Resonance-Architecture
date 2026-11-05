@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "artist": "Fraggelpower666 - L.Y.V.R.A.",
+  "source_pages": [
+    "https://www.mixcloud.com/Fraggelpower666/uploads/",
+    "https://www.mixcloud.com/Fraggelpower666/tracks/"
+  ],
+  "restricted_dashboard_pages": [
+    "https://www.mixcloud.com/dashboard/my-shows/published/",
+    "https://www.mixcloud.com/dashboard/my-tracks/published/"
+  ],
+  "observed_at": "2026-11-05",
+  "visibility": "public_only",
+  "notes": "Exact public Mixcloud pages and their publish timestamps read individually; /dashboard requires login, not treated as evidence. Includes two historical shows; 8 publicly listed shows from Nov 5, 2026 and 10 public tracks from Nov 5.",
+  "shows": [
+    {
+      "title": "ALIEN - BLUE LASER GALAXY INVASION FULL SET",
+      "url": "https://www.mixcloud.com/Fraggelpower666/alien-blue-laser-galaxy-invasion-full-set/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T08:01:49+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "Progressive.PsyTechno.Trance - 666 + his own stuff - Covering !!! - Remixing !!!",
+      "url": "https://www.mixcloud.com/Fraggelpower666/progressivepsytechnotrance-666-his-own-stuff-covering-remixing/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:50:46+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "HORST SAGA",
+      "url": "https://www.mixcloud.com/Fraggelpower666/horst-saga/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:48:28+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "LYVRA - DARK DANCER - FULLSTORY - VOLUME II",
+      "url": "https://www.mixcloud.com/Fraggelpower666/lyvra-dark-dancer-fullstory-volume-ii/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:47:01+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "LYVRA - THE SOUL INSIDE THE CODE",
+      "url": "https://www.mixcloud.com/Fraggelpower666/lyvra-the-soul-inside-the-code/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:44:31+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "LYVRA - THROUGH EVERY REMIX FORM",
+      "url": "https://www.mixcloud.com/Fraggelpower666/lyvra-through-every-remix-form/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:41:40+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "SOUND FAMILY REMIX",
+      "url": "https://www.mixcloud.com/Fraggelpower666/sound-family-remix/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:40:32+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "THE PORNWORLD PROJECT FULL SET",
+      "url": "https://www.mixcloud.com/Fraggelpower666/the-pornworld-project-full-set/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2026-11-05T07:38:41+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "Progressive PsyTechno Trance -Own Stuff- Covering - Remixing [TAO ANDRA] by DJ Fraggelpower666",
+      "url": "https://www.mixcloud.com/Fraggelpower666/progressive-psytechno-trance-own-stuff-covering-remixing-tao-andra-by-dj-fraggelpower666/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2025-11-03T10:48:50+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    },
+    {
+      "title": "The Advent & Industrialyzer - Fraggelpower666 Recording_2025-02-16",
+      "url": "https://www.mixcloud.com/Fraggelpower666/the-advent-industrialyzer-fraggelpower666-recording_2025-02-16/",
+      "provider": "Mixcloud",
+      "type": "show",
+      "published_at": "2025-02-17T12:12:25+00:00",
+      "status": "direct_public_show_page_readback",
+      "source": "2026-11-05 public Mixcloud /uploads and exact show page"
+    }
+  ],
+  "tracks": [
+    {
+      "title": "HARDER THROUGH PSYCHOACOUSTICS",
+      "url": "https://www.mixcloud.com/Fraggelpower666/harder-through-psychoacoustics/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:33:38+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "SOUND BECOMES FEELING",
+      "url": "https://www.mixcloud.com/Fraggelpower666/sound-becomes-feeling/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:31:29+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "FLUID SYNDROM",
+      "url": "https://www.mixcloud.com/Fraggelpower666/fluid-syndrom/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:29:06+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "ABOUT PSYTRANCE",
+      "url": "https://www.mixcloud.com/Fraggelpower666/about-psytrance/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:27:30+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "TORNADO GLITCH",
+      "url": "https://www.mixcloud.com/Fraggelpower666/tornado-glitch/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:25:25+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "SYNTHETIC VIBES",
+      "url": "https://www.mixcloud.com/Fraggelpower666/synthetic-vibes/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:22:44+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "NEXT STOP - CYBER HOLO MATRIX",
+      "url": "https://www.mixcloud.com/Fraggelpower666/next-stop-cyber-holo-matrix/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:19:01+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "FUCK THE SILENCE",
+      "url": "https://www.mixcloud.com/Fraggelpower666/fuck-the-silence/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:16:18+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "ENERGY FOR LIFE",
+      "url": "https://www.mixcloud.com/Fraggelpower666/energy-for-life/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:14:36+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    },
+    {
+      "title": "ENERGY BOMB",
+      "url": "https://www.mixcloud.com/Fraggelpower666/energy-bomb/",
+      "provider": "Mixcloud",
+      "type": "track",
+      "published_at": "2026-11-05T07:09:47+00:00",
+      "status": "direct_public_track_page_readback",
+      "source": "2026-11-05 public Mixcloud /tracks and exact track page"
+    }
+  ]
+}
