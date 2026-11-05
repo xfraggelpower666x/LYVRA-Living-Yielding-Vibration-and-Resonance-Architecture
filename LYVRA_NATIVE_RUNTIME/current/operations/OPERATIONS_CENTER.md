@@ -284,3 +284,29 @@ Before productive adoption: full current authority/reference coverage, direct
 source tests, recovery, scope/lock/HEAD checks, both plugin impact reviews,
 pointer-last and readback. Never promote development-branch evidence to
 productive HOST PASS, never use the rejected standalone HTML dashboard.
+
+
+## R39 — Original-R26 Fachintegration in vorhandener Chat Visual Intelligence (isoliert)
+
+STATUS = ISOLATED_NATIVE_SOURCE_INTEGRATION | PRODUCTIVE_LIFECIRCLE_PENDING | NATIVE_ALIVE_HOST_PENDING
+ROOT_AUTHORITY = WHOLE_LYVRA
+FACET_AUTHORITY = PRESERVED
+VISUAL_SURFACE = EXISTING_SEMANTIC_CYBER_FIELD
+NO_EXTRA_VISUAL_ENGINE = TRUE
+NO_HTML_DASHBOARD = TRUE
+EXPLICIT_CREATOR_TASK_REQUIRED = TRUE
+NO_AUTO_EXECUTION_ON_REHYDRATION = TRUE
+NO_PRODUCTION_WRITES = TRUE
+NO_CROSS_SYSTEM_AUTOACTIVATION = TRUE
+
+Implementation:
+- `development/r39-native-original-bridge.mjs`: direct R26 originals for protected speech understanding, scoped chat handoff, six-strand impact, and native visual guidance; temporary pure function extraction for Analytics, learning and cost-gated research.
+- `development/r39-r26-functional-extracts.mjs`: callable R13/R08/R04 functions; source extraction does not prove full original module install or real Suno/host execution.
+- `development/dual-layer-visual-projection.mjs`: `executeR39ChatWork` joins the existing R37 Whole visual projection with the explicit R39 six-strand execution. Mere dashboard rendering never runs a task.
+- `development/native-deployment-runner.mjs`: multiple additive `--receipts` inputs to classify older and newer source receipts together.
+- `development/native-deployment-r36-receipts.json` and `development/r39-native-provider-receipts.json`: additive original-source evidence, never authority.
+- `development/r38_original_r26/`: four Git-blob-exact original R26 modules retained: dictation, handoff, visual actions and always-on impact.
+
+R30 development mapping: seven of nine open items have an isolated native development source; T07 (original Suno monitor integration) and T19 (Analytics parentage migration) require separate current-authority/relation assessment and remain unintegrated. ALL nine items remain open for productive adoption/host acceptance. Each of six original strands has three independent host gates; 18/18 remain OPEN. POST, SCEERI_MYCEL and PLUGIN_HOST_ACCEPTANCE remain separate pending return points. Analytics remains the primary return target. Track Design/Analytics authority may not migrate from older R23 proposals without fresh registry governance and direct readback.
+
+Source execution tests are not Native/ALIVE plugin fresh-host traces. Before any productive adoption require current Pointer and all relevant references, whole coverage, branch-head/expected-blob checks, named recovery when needed, plugin impact, approval, source readback and pointer-last. Missing full coverage => PARTIAL/READBACK_PENDING. This section neither modifies Current nor grants write authorization.
