@@ -349,3 +349,29 @@ FIVE_MAIN_CHOICES = PRESERVED
 PARTIAL_REHYDRATION_MUST_REMAIN_PARTIAL = TRUE
 
 This remains a development-only, bounded integration, not a productive LifeCircle host install, successful Native/ALIVE fresh boot, or authorized pointer update.
+
+
+## R41 — Original-Suno-Evidenz und Analytics-Carriernachweise (isoliert)
+
+STATUS = SOURCE_HARDENING_VERIFIED | COMPLETE_WHOLE_REHYDRATION_PENDING | PRODUCTIVE_HOST_PENDING
+ORIGIN = EXISTING_R40_NATIVE_CHAT_PATH
+NO_NEW_VISUAL_ENGINE = TRUE
+NO_HTML = TRUE
+NO_BACKGROUND_EXECUTION = TRUE
+NO_AUTO_FACET_MIGRATION = TRUE
+
+T07: Existing `development/r40-suno-source-bridge.mjs` now requires a completed monitor-result body, nontruncated original source text, matching SHA256, direct retrieval reference, source URL in the result and explicit timestamp. Caller-supplied `readback:true` alone no longer passes. Matching local content integrity != independent host attestation. Without an actual readable scheduled-run result, LIVE_T07_SOURCE_READBACK = PENDING. No task run triggered and no Suno rule auto-promoted.
+
+T19: Existing `development/r40-analytics-parentage-guard.mjs` now rejects SHA-shaped source claims unless matched to scoped full-read carrier receipts. `development/r41-analytics-original-carrier-readbacks.json` preserves six directly read current repo blobs: Analytics FACET_CONTRACT, Analytics CURRENT_STATE, Analytics CAPABILITY_REGISTRY, Track Design SUB_REHYDRATION, Whole REHYDRATION_MANIFEST and CURRENT_POINTER. Missing = independently audited CROSS_FACET_CALLERS. T19_CURRENT_PLACEMENT = CENTRAL_SHARED_NATIVE_LYVRA_FACET. T19_MIGRATION = WRITE_BLOCKED_UNTIL_FULL_NATIVE_GOVERNANCE. Older creator-approved migration intent is not a current parentage state.
+
+Regression = R41 original-local-source parity and gate tests 18/18 PASS. Direct GitHub version of the T19 function with six actual carrier blobs: 5/5 PASS. `development/r41-original-source-gates.test.mjs` is the reproducible repository-native test source. None of these source tests establish independent ChatGPT Native or ALIVE plugin host invocation.
+
+R26_R40_PREVIOUS_VALID_DEVELOPMENT = PRESERVED
+SIX_WORK_STRANDS = PRESERVED
+R30_NINE_ITEMS = SOURCE_DEVELOPMENT_ONLY_NOT_PRODUCTION
+EIGHTEEN_HOST_GATES = OPEN
+RETURN_FACET = LYVRA_ANALYTICS
+POST_SCEERI_PLUGIN_HOST = SEPARATE_PENDING
+PRODUCTIVE_CURRENT_AND_POINTER = UNCHANGED
+
+Further mutation requires full Current authority/references, host-specific governance, recovery and independent readback. No pointer update occurred in R41.
