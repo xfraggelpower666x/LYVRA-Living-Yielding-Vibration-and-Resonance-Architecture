@@ -24,4 +24,8 @@ ok(r.hostAccepted===false&&r.noAutomaticActivation===true);
 reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:false}));
 reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:true,registry,candidates:[{id:'VISUAL_ATELIER'}]}));
 reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:true,registry,candidates:[{id:'TRACK_DESIGN',evidenceRef:'bad'}]}));
+// R54: source-bound registry ambiguity must never silently select one core claim.
+reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:true,registry:[...registry,{...registry[0],hostExecutable:false}]}));
+reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:true,registry:[...registry,{...registry[2]}]}));
+reject(()=>projectR51NativeFacetMenu({currentHead:head,pointerBlob,wholeReadback:true,registry:[...registry,{id:'',sourceReadback:true}]}));
 console.log(JSON.stringify({result:'PASS',checks,scope:'R51_ORIGINAL_MODULE_NODE_REGRESSION_NOT_HOST',hostAccepted:false}));
