@@ -70,3 +70,7 @@ export {executeR38Ports,STRANDS as R38_SIX_FACET_STRANDS} from "./r38-six-facet-
 
 // R38: originale R26-Visual-Fuehrung direkt erreichbar, nicht nur nachgebaut.
 export {withVisualGuidance as originalR26VisualGuidance,actionForStrand as originalR26ActionForStrand,actionAll as originalR26ActionAll} from "./r38_original_r26/visual-action-inheritance-r10.mjs";
+
+// R39: direkte Verwendung der originalen R26-Handoff-/Impact-/Visual-Fachquellen.
+// Kein automatischer Aufruf beim Anzeigen des Operations Centers.
+export {executeR39OriginalBridge,verifyOriginalContinuity} from "./r39-native-original-bridge.mjs";
