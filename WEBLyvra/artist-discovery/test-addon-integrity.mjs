@@ -38,6 +38,15 @@ assert.equal(evidence.semrush_backlink_observation.authority_score,2,'Semrush au
 assert.equal(evidence.semrush_backlink_observation.dofollow_backlinks_percent,98.44,'Semrush dofollow screenshot changed');
 assert.equal(evidence.semrush_backlink_observation.independently_reproduced,false,'Semrush estimate incorrectly promoted to verified');
 assert.equal(evidence.semrush_backlink_observation.does_not_contribute_to_editorial_resonance_scores,true,'Backlink volume must not inflate discovery ranking');
+assert.equal(evidence.webradio_seo_audit_observation.target_scope,'WEBRADIO_SITE_ONLY','Webradio audit leaked into another target');
+assert.equal(evidence.webradio_seo_audit_observation.seo_score_out_of_100,55,'SEO screenshot score drift');
+assert.equal(evidence.webradio_seo_audit_observation.critical_count,8,'SEO screenshot critical drift');
+assert.equal(evidence.webradio_seo_audit_observation.warnings_count,4,'SEO screenshot warning drift');
+assert.equal(evidence.webradio_seo_audit_observation.passed_count,10,'SEO screenshot passed drift');
+assert.equal(evidence.webradio_seo_audit_observation.individual_findings_available,false,'invented individual SEO findings');
+assert.equal(evidence.webradio_seo_audit_observation.does_not_contribute_to_editorial_resonance_scores,true,'SEO score must not inflate artist ranking');
+assert.equal(evidence.webradio_seo_audit_observation.no_cross_system_mutation,true,'foreign WEBRADIO auto-mutation forbidden');
+assert.ok(html.includes("className='gr-webradio-audit'")&&html.includes('grEvidence.webradio_seo_audit_observation'),'Webradio SEO evidence card missing');
 assert.ok(html.includes("className='gr-semrush'")&&html.includes('grEvidence.semrush_backlink_observation'),'Semrush warning panel missing');
 assert.ok(html.includes("className='gr-ai-observation'")&&html.includes('grEvidence.google_ai_overview_observation'),'Google AI overview evidence UI missing');
 assert.equal(evidence.measurements.clicks,null,'Google clicks fabricated');
