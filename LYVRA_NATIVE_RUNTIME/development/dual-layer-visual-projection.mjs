@@ -14,3 +14,7 @@ export function projectDualLayer(registry, opts = {}) {
   const dynamic = persistent.filter(item => item.state !== "ADOPTED").sort((a,b) => score(b)-score(a) || a.id.localeCompare(b.id)).map(item=>({...item, priority_basis:{creator_selected:!!item.priority_inputs?.creator_selected,blocked:!!item.priority_inputs?.blocked,urgent:!!item.priority_inputs?.urgent}}));
   return {authority:"WHOLE_LYVRA", dynamic, persistent, source_count:items.length, no_autoactivation:true, no_private_content:true};
 }
+
+// R33: Nur additive Datenprojektion in der EXISTIERENDEN Chat-Visual-Intelligence.
+// Kein HTML, keine zusätzliche Engine, keine automatische Task-Ausführung.
+export {projectNativeDeployment,SIX_STRANDS,PAUSED_AREAS} from "./native-deployment-visual.mjs";
