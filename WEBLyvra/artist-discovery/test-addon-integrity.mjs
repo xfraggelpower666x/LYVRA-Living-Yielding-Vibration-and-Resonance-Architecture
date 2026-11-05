@@ -16,6 +16,25 @@ const soundcloudTracks=JSON.parse(readFileSync(join(root,'data/soundcloud-tracks
 const mixcloud=JSON.parse(readFileSync(join(root,'data/mixcloud-releases.json'),'utf8'));
 const mixcloudItems=[...mixcloud.shows,...mixcloud.tracks];
 const platform=JSON.parse(readFileSync(join(root,'data/platforms.json'),'utf8'));
+
+const evidence=JSON.parse(readFileSync(join(root,'data/discovery-evidence.json'),'utf8'));
+assert.equal(evidence.catalog.total,756,'discovery snapshot catalog count mismatch');
+assert.equal(evidence.catalog.suno,suno.length,'Suno snapshot count mismatch');
+assert.equal(evidence.catalog.soundcloud_sets,soundcloud.length,'SoundCloud sets snapshot count mismatch');
+assert.equal(evidence.catalog.soundcloud_tracks,soundcloudTracks.length,'SoundCloud tracks snapshot count mismatch');
+assert.equal(evidence.catalog.mixcloud_shows,mixcloud.shows.length,'Mixcloud shows snapshot count mismatch');
+assert.equal(evidence.catalog.mixcloud_tracks,mixcloud.tracks.length,'Mixcloud tracks snapshot count mismatch');
+assert.match(evidence.last_scan_date,/^\\d{4}-\\d{2}-\\d{2}$/,'evidence scan date invalid');
+assert.equal(evidence.cost_contract.maximum_incremental_cost_usd,0,'zero additional cost violated');
+assert.equal(evidence.discovery_index.is_google_rank,false,'editorial ranking improperly called a Google rank');
+assert.equal(evidence.measurements.impressions,null,'Google impressions fabricated');
+assert.equal(evidence.measurements.clicks,null,'Google clicks fabricated');
+assert.equal(evidence.measurements.ctr,null,'Google CTR fabricated');
+assert.equal(evidence.platform_presence.length,9,'source-backed platform coverage drift');
+assert.ok(evidence.platform_presence.every(x=>Number.isInteger(x.discovery_points)&&x.discovery_points>=0&&x.discovery_points<=100),'index scores malformed');
+assert.ok(html.includes('const grEvidence='+JSON.stringify(evidence)+';'),'inline Google Resonance evidence differs from ship-ready JSON');
+assert.ok(html.includes("className='gr-index-fill'")&&html.includes("grEvidence.last_scan_date"),'dated graphical evidence ranking missing');
+
 const found=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert.ok(found,'embedded unified diskography missing');
 const entries=JSON.parse(found[1]);
