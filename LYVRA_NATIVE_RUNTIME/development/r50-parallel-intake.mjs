@@ -18,10 +18,13 @@ export function projectR50Intake(ledger,events=[],{head,pointerBlob,knownTasks=[
   requireTrue(ledger.host_gates_open===18&&ledger.host_gates_closed_by_this_round===0,'HOST_GATE_INFLATION');
   requireTrue(ledger.writes?.production===0,'PRODUCTIVE_WRITE_NOT_AUTHORIZED');
   requireTrue(Array.isArray(events)&&Array.isArray(knownTasks),'INVALID_INPUT');
-  const taskMap=new Map();
+  const taskMap=new Map(), acceptanceKeys=new Set();
   for(const task of knownTasks){
     requireTrue(SIX.includes(task.strand)&&typeof task.id==='string'&&task.id&&typeof task.acceptance_key==='string'&&task.acceptance_key,'INVALID_KNOWN_TASK');
-    requireTrue(!taskMap.has(task.id),'DUPLICATE_KNOWN_TASK');taskMap.set(task.id,task);
+    requireTrue(!taskMap.has(task.id),'DUPLICATE_KNOWN_TASK');
+    const scopedKey=task.strand+'\u0000'+canonical(task.acceptance_key);
+    requireTrue(!acceptanceKeys.has(scopedKey),'AMBIGUOUS_KNOWN_ACCEPTANCE_KEY');
+    acceptanceKeys.add(scopedKey);taskMap.set(task.id,task);
   }
   const seen=new Set(),results=[];
   for(const event of events){
