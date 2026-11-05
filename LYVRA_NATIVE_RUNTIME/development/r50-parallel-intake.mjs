@@ -39,8 +39,9 @@ export function projectR50Intake(ledger,events=[],{head,pointerBlob,knownTasks=[
       classification:match?'EXISTING_GATE_NEW_EVIDENCE':'CANDIDATE_NOT_AUTO_PROMOTED',
       related_task_id:match?.id??null,
       related_strands:[...new Set(links)],
-      checkpoint:event.verified_checkpoint||null,
-      resume_status:event.kind==='RESUME'&&!event.verified_checkpoint?'CHECKPOINT_REQUIRED':'SOURCE_REVIEW_REQUIRED',
+      // Caller claims never become verified checkpoints without independent source readback.
+      checkpoint:null,checkpoint_claim:event.verified_checkpoint||null,
+      resume_status:event.kind==='RESUME'?'CHECKPOINT_READBACK_REQUIRED':'SOURCE_REVIEW_REQUIRED',
       host_accepted:false,productive_write:false});
   }
   return {schema:'LYVRA_R50_PARALLEL_INTAKE_SOURCE_PROJECTION',state:'ISOLATED_SOURCE_ONLY',
