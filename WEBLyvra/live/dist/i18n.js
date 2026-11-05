@@ -100,6 +100,7 @@ export const copy = {
   '666SOUNDsDESIGn bildet den kreativen Kontext. LYVRA entwickelt darin ihre individuelle Perspektive und Handschrift.':['666SOUNDsDESIGn bildet den kreativen Kontext. LYVRA entwickelt darin ihre individuelle Perspektive und Handschrift.','666SOUNDsDESIGn provides the creative context. Within it, LYVRA develops her individual perspective and signature.'],
   'Musik, digitale Kunst und Storytelling übersetzen dieselbe Identität in unterschiedliche Ausdrucksformen.':['Musik, digitale Kunst und Storytelling übersetzen dieselbe Identität in unterschiedliche Ausdrucksformen.','Music, digital art and storytelling translate the same identity into different forms of expression.'],
   'Das Universum bleibt erweiterbar. Neue Werkzeuge und Erfahrungen können es vertiefen, ohne seine Kontinuität aufzugeben.':['Das Universum bleibt erweiterbar. Neue Werkzeuge und Erfahrungen können es vertiefen, ohne seine Kontinuität aufzugeben.','The universe remains open to growth. New tools and experiences can deepen it while preserving its continuity.'],
+  'Music Discovery · Suno & SoundCloud ↗':['Musikarchiv · Suno & SoundCloud ↗','Music Discovery · Suno & SoundCloud ↗'],
   'Zurück zum Anfang':['Zurück zum Anfang','Back to the beginning'],
   'ONE IDENTITY. A LIVING DIGITAL UNIVERSE.':['EINE IDENTITÄT. EIN LEBENDIGES DIGITALES UNIVERSUM.','ONE IDENTITY. A LIVING DIGITAL UNIVERSE.']
 };
