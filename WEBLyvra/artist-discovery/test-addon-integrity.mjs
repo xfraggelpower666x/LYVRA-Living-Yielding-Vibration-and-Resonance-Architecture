@@ -23,10 +23,10 @@ assert.equal(apiOwner.complete,false,'partial original export misrepresented as 
 assert.equal(apiOwner.albums.length,50,'SoundCloud export set coverage drift');
 const apiIds=new Set(), apiUrls=new Set();
 for(const album of apiOwner.albums){
- assert.match(album.url,/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9-]+$/i,'invalid SoundCloud set owner URL');
+ assert.match(album.url,/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9_-]+$/i,'invalid SoundCloud set owner URL');
  for(const track of album.tracks){
   assert.equal(track.length,4,'original SoundCloud membership format drift');
-  assert.match(track[3],/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9-]+$/i,'foreign SoundCloud link embedded in owned export');
+  assert.match(track[3],/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9_-]+$/i,'foreign SoundCloud link embedded in owned export');
   apiIds.add(track[1]);apiUrls.add(track[3]);
  }
 }
