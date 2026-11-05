@@ -17,4 +17,4 @@ export function projectDualLayer(registry, opts = {}) {
 
 // R33: Nur additive Datenprojektion in der EXISTIERENDEN Chat-Visual-Intelligence.
 // Kein HTML, keine zusätzliche Engine, keine automatische Task-Ausführung.
-export {projectNativeDeployment,SIX_STRANDS,PAUSED_AREAS} from "./native-deployment-visual.mjs";
+export {projectNativeDeployment,SIX_STRANDS,PAUSED_AREAS,VISUAL_GUIDANCE_PHRASE,withNativeVisualGuidance,visualGuidanceRecoveryQuery} from "./native-deployment-visual.mjs";
