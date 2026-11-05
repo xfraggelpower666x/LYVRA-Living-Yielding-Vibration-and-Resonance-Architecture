@@ -207,5 +207,24 @@
     "historical_note_en": "The screenshot also mentions earlier Wii/WiiMC homebrew activity, a historical mention rather than a new music release.",
     "not_for_metrics": true,
     "not_for_scoring_adjustment": true
+  },
+  "semrush_backlink_observation": {
+    "observed_on": "2026-11-05",
+    "source_kind": "user_supplied_screenshot_of_semrush_backlink_summary",
+    "independently_reproduced": false,
+    "target_domain": "666soundsdesign-broadcaster.com",
+    "metric_scope": "SEMRUSH_BACKLINK_DATABASE_NOT_GOOGLE_RESULTS",
+    "estimated_backlinks_display": "5.2K",
+    "referring_domains": 230,
+    "authority_score": 2,
+    "dofollow_backlinks_percent": 98.44,
+    "metrics_are_vendor_estimates": true,
+    "sampled_backlink_quality": "Visible sampled links prominently contain generic ranking/SEO/PBN backlink promotion pages; review required. This is not proof of who created the backlinks, deliberate link building or Google penalties.",
+    "warnings_de": "SEMrush-Schätzdaten vom Screenshot; viele sichtbare Verweise wirken wie SEO-/PBN-Spam. Kein Beleg für 5.200 Google-Treffer oder 5.200 Besucher. Die tatsächliche Linkqualität ist noch nicht unabhängig geprüft.",
+    "warnings_en": "Semrush estimates from a screenshot; several visible links resemble SEO/PBN spam. Not 5,200 Google results or visitors. Link quality has not been independently audited.",
+    "verified_google_clicks": null,
+    "verified_google_impressions": null,
+    "does_not_contribute_to_editorial_resonance_scores": true,
+    "action_policy": "No backlink purchase, removal, disavow or SEO-action automatically. Free source checks only; disavow only after evidence and owner approval."
   }
 }
