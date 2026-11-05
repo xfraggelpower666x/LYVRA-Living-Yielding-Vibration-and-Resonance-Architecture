@@ -31,7 +31,8 @@ export {projectNativeDeployment,reconcileDeploymentEvidence,SIX_STRANDS,PAUSED_A
 // Keine neue Facette, Engine, Task-Mutation, Host-PASS oder Produktivfreigabe.
 export function projectWholeRehydrationDeployment({
   registry, deploymentSource, receipts=[], expectedHead, expectedPointer,
-  wholeCoverage="PARTIAL", selection="ALL", openWork=true
+  wholeCoverage="PARTIAL", selection="ALL", openWork=true,
+  facetMenuRegistry=null, facetMenuCandidates=[]
 }={}) {
   if(typeof expectedHead!=="string"||!/^[0-9a-f]{40}$/.test(expectedHead)||
      typeof expectedPointer!=="string"||!/^[0-9a-f]{40}$/.test(expectedPointer)) {
@@ -55,6 +56,12 @@ export function projectWholeRehydrationDeployment({
     current:{head:expectedHead,pointer_blob:expectedPointer,coverage:wholeCoverage},
     five_existing_main_choices_preserved:true,
     dual_layer:dualLayer,
+    // R52: optional evidence-gated menu on the EXISTING Whole operations projection.
+    // It is null until a verified Whole readback and explicit registry input exist.
+    native_facet_menu:facetMenuRegistry!==null && wholeCoverage==="VERIFIED"
+      ?projectR51NativeFacetMenu({currentHead:expectedHead,pointerBlob:expectedPointer,
+        wholeReadback:true,registry:facetMenuRegistry,candidates:facetMenuCandidates})
+      :null,
     deployment:openWork?deployment:null,
     deployment_reachable:true,
     checkpoint_count:6,
