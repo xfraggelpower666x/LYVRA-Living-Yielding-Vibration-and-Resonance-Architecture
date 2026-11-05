@@ -50,7 +50,7 @@ export async function executeR46FacetLifecycle({explicitIntent=false,scope='ALL_
    observedSunoResult:out.monitorResultReadback?'NO_CHANGE_REPORT_READBACK':'NOT_PROVIDED_OR_BLOCKED',
    selectiveCaller:out.analytics_selective_caller||out.analytics_specialist_caller||null,
    visualGuidanceAction:out.visualGuidanceAction,
-   wholeRehydrated:coverage.complete&&wholeCoverage==='VERIFIED',
+   wholeRehydrated:false, // Source carrier coverage alone never proves full Whole behavioral rehydration.
    productiveHostInstalled:false,actualHostResult:null,productiveWrites:0,
    nextGate:coverage.complete?'INDEPENDENT_NATIVE_ALIVE_FRESH_HOST_READBACK':'COMPLETE_WHOLE_FACET_CARRIER_READBACKS'};
 }
