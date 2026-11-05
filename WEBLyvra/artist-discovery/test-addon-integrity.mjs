@@ -34,6 +34,15 @@ assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_min_r
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.estimate_max_relevant_pages,30,'AI estimated upper bound altered');
 assert.equal(evidence.google_ai_exact_phrase_estimate_observation.independently_reproduced,false,'AI estimate incorrectly promoted to verified');
 assert.equal(evidence.bing_exact_artist_search_observation.displayed_approximate_results,2160,'Bing displayed result count changed');
+assert.equal(evidence.bing_666soundsdesign_search_observation.query,'"666soundsdesign"','brand Bing query must be separate');
+assert.equal(evidence.bing_666soundsdesign_search_observation.displayed_approximate_results,1510,'brand Bing screenshot count changed');
+assert.equal(evidence.bing_666soundsdesign_search_observation.independently_reproduced,false,'brand Bing screenshot incorrectly marked independent');
+assert.equal(evidence.bing_666soundsdesign_search_observation.not_google_result_count,true,'brand Bing results must not become Google totals');
+assert.equal(evidence.google_ai_666soundsdesign_overview_observation.independently_reproduced,false,'brand AI Overview incorrectly marked independent');
+assert.equal(evidence.google_ai_666soundsdesign_overview_observation.does_not_change_resonance_scores,true,'AI summary must not modify editorial scores');
+assert.ok(html.includes("const brandBingData=grEvidence.bing_666soundsdesign_search_observation"),'brand Bing card source absent');
+assert.ok(html.includes("const brandAiData=grEvidence.google_ai_666soundsdesign_overview_observation"),'brand AI summary source absent');
+
 assert.deepEqual(evidence.bing_exact_artist_search_observation.history.map(x=>x.displayed_approximate_results),[1470,2160],'Bing observations history lost');
 assert.equal(evidence.bing_exact_artist_search_observation.estimate_change_not_verified_growth,true,'Bing estimate change misrepresented as growth');
 assert.equal(evidence.bing_exact_artist_search_observation.independently_reproduced,false,'Bing screenshot promoted to independent proof');
