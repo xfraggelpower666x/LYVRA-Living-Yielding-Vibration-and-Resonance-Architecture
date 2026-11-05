@@ -14,6 +14,27 @@ const suno=JSON.parse(readFileSync(join(root,'data/suno-releases.json'),'utf8'))
 const soundcloud=JSON.parse(readFileSync(join(root,'data/soundcloud-albums.json'),'utf8')).albums;
 const soundcloudTracks=JSON.parse(readFileSync(join(root,'data/soundcloud-tracks.json'),'utf8')).tracks;
 const albumDetails=JSON.parse(readFileSync(join(root,'data/soundcloud-album-details.json'),'utf8'));
+const apiOwner=JSON.parse(readFileSync(join(root,'data/soundcloud-owned-api-export-20261103.json'),'utf8'));
+assert.equal(apiOwner.schema,'LYVRA_SOUNDCLOUD_OWNER_EXPORT_20261103_V1','original SoundCloud API export not bound');
+assert.equal(apiOwner.expected_sets,50,'50 original SoundCloud sets lost');
+assert.equal(apiOwner.owned_unique_track_ids,3183,'owned SoundCloud track count drift');
+assert.equal(apiOwner.external_unique_track_ids,21,'external songs improperly promoted');
+assert.equal(apiOwner.complete,false,'partial original export misrepresented as complete');
+assert.equal(apiOwner.albums.length,50,'SoundCloud export set coverage drift');
+const apiIds=new Set(), apiUrls=new Set();
+for(const album of apiOwner.albums){
+ assert.match(album.url,/^https:\/\/soundcloud\.com\/fraggelpower666\/sets\/[a-z0-9-]+$/i,'invalid SoundCloud set owner URL');
+ for(const track of album.tracks){
+  assert.equal(track.length,4,'original SoundCloud membership format drift');
+  assert.match(track[3],/^https:\/\/soundcloud\.com\/fraggelpower666\/[a-z0-9-]+$/i,'foreign SoundCloud link embedded in owned export');
+  apiIds.add(track[1]);apiUrls.add(track[3]);
+ }
+}
+assert.equal(apiIds.size,3183,'original API-ID ownership coverage drift');
+assert.equal(apiUrls.size,3183,'original API owned URL coverage drift');
+assert.equal(apiOwner.albums.reduce((n,a)=>n+a.tracks.length,0),3185,'owner membership count drift');
+for(const token of ["const discoOwnerSource='./data/soundcloud-owned-api-export-20261103.json'","if(ownerTracks.size!==3183)throw new Error","discoOwnerReadback.state='READBACK_PENDING'","loadOriginalSoundcloudAlbumTracks();"])assert.ok(html.includes(token),'complete source owner-export runtime binding missing: '+token);
+
 const soundcloudPlaylists=albumDetails.public_playlists;
 const mixcloud=JSON.parse(readFileSync(join(root,'data/mixcloud-releases.json'),'utf8'));
 const mixcloudItems=[...mixcloud.shows,...mixcloud.tracks];
