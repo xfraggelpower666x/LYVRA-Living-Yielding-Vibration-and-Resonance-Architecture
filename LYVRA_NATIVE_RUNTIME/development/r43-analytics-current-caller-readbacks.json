@@ -1,0 +1,55 @@
+{
+  "schema": "LYVRA_R43_NATIVE_SELECTIVE_CALLER_ORIGINAL_READBACKS",
+  "authority": "WHOLE_LYVRA",
+  "ref": "lyvra",
+  "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+  "current_pointer_sha": "87b6d6cfd400e3866b211bb8b49d683098fbff65",
+  "readbacks": [
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md",
+      "blob_sha": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md@lyvra"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md",
+      "blob_sha": "ccaf08e6d5bf85837feee24d2f16b6d8650eb012",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md@lyvra"
+    },
+    {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md",
+      "blob_sha": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7",
+      "current_head": "6337840188b0f2b15ef070f9872f65b0ae2bba53",
+      "complete": true,
+      "readback_type": "GITHUB_FETCH_FILE",
+      "fetch_ref": "GitHub fetch_file:LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md@lyvra"
+    }
+  ],
+  "freshProductiveBlobs": {
+    "LYVRA_NATIVE_RUNTIME/facets/analytics/CAPABILITY_REGISTRY.md": "3af1e58f566bd0b4ff6742ba63d3e5ed8e793ca2",
+    "LYVRA_NATIVE_RUNTIME/facets/speech_design/FACET_CONTRACT.md": "ccaf08e6d5bf85837feee24d2f16b6d8650eb012",
+    "LYVRA_NATIVE_RUNTIME/continuity/TRACK_DESIGN_SUNO_STUDIO2_REPO_HANDOFF_CONTRACT.md": "d4293dafed9e0b7da4cee7b94ef9b167ac30bda7"
+  },
+  "callingFacets": {
+    "SPEECH_DESIGN": {
+      "status": "SOURCE_PROFILE_VERIFIED_HOST_PENDING",
+      "eligible_by_source_only": true
+    },
+    "TRACK_DESIGN": {
+      "status": "CALLER_INVENTORY_INCOMPLETE",
+      "eligible_by_source_only": false
+    },
+    "STUDIO2": {
+      "status": "CALLER_INVENTORY_INCOMPLETE",
+      "eligible_by_source_only": false
+    }
+  },
+  "no_host_acceptance_claim": true,
+  "full_analytics_parentage_migration": false,
+  "source_readback_not_whole_boot": true
+}
