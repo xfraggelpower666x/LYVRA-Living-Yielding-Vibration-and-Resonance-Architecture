@@ -4,6 +4,26 @@ import {executeR38Ports} from './r38-six-facet-ports.mjs';
 import {buildHandoff,recoverHandoff,assessContext} from './r38_original_r26/chat-handoff-r09.mjs';
 import {planImpactForAnyTask,SIX} from './r38_original_r26/always-on-impact-r09.mjs';
 import {withVisualGuidance} from './r38_original_r26/visual-action-inheritance-r10.mjs';
+import {correct,defaultState} from './r38_original_r26/dictation.mjs';
+
+
+const R39_PROTECTED=/(?:\x60\x60\x60[\s\S]*?\x60\x60\x60|\x60[^\x60\n]*\x60|https?:\/\/[^\s<>"']+|\[[^\]\n]{1,200}\]\([^\)\n]+\)|"[^"\n]*"|“[^”\n]*”|\[[A-Z_][A-Z0-9_]*\])/g;
+// Uses exact R26 original correct/defaultState. No OS interception.
+export function nativeGuardedDictation(text,state=defaultState(),{trustedSpeech=false}={}){
+ if(typeof text!=='string')throw TypeError('INVALID_SPEECH');
+ if(!trustedSpeech)return {text,applied:[],status:'NO_AUTHENTICATED_SPEECH_SOURCE'};
+ const spans=[];
+ const masked=text.replace(R39_PROTECTED,part=>{
+   const key=String.fromCharCode(0xE000)+spans.length+String.fromCharCode(0xE001);
+   spans.push(part);return key;
+ });
+ const st=structuredClone(state);
+ st.rules=(st.rules||[]).filter(x=>x.id==='LYVRA_NAME_001').map(x=>({...x,observed:['Lübber']}));
+ const result=correct(masked,st);
+ return {text:result.text.replace(/\uE000(\d+)\uE001/g,(_,n)=>spans[Number(n)]||''),
+   applied:result.applied,withheld:result.withheld,protectedCount:spans.length,
+   status:'CONTEXTUAL_CANDIDATE_NO_OS_INTERCEPTION'};
+}
 
 export {buildHandoff,recoverHandoff,assessContext,planImpactForAnyTask};
 export function verifyOriginalContinuity({head,lineageId,conversationAnchor,checkpoints={}}={}) {
@@ -24,6 +44,7 @@ export async function executeR39OriginalBridge({head,pointerSha,ports,inputs={},
   // The R26 visualAction shape is preserved, not reinterpreted as host execution.
   const provided={
     ...ports,
+    guardedDictation:nativeGuardedDictation,
     buildHandoff,
     visualAction({label,command,owner='LYVRA',kind='CONTINUATION'}={}){
       if(!label?.trim()||!command?.trim()||owner!=='LYVRA'||!['CONTINUATION','FACET','RECOVERY'].includes(kind))throw Error('ACTION_CONTRACT');
@@ -35,8 +56,8 @@ export async function executeR39OriginalBridge({head,pointerSha,ports,inputs={},
   }});
   return {schema:'LYVRA_R39_NATIVE_ORIGINAL_BINDING',originalImpact,execution,
     sources:['R26/always-on-impact-r09.mjs','R26/chat-handoff-r09.mjs','R26/visual-action-inheritance-r10.mjs'],
-    originalProviderCoverage:'CONTINUITY_AND_VISUAL_PLUS_IMPACT',
-    missingNativeOriginalProviders:['DICTATION','ANALYTICS','CHARACTER_RELATIONS','RESEARCH'],
+    originalProviderCoverage:'DICTATION_CONTINUITY_VISUAL_PLUS_IMPACT',
+    missingNativeOriginalProviders:['ANALYTICS','CHARACTER_RELATIONS','RESEARCH'],
     hostGatesOpen:18,productiveWrites:0,pluginHostVerified:false,returnFacet:'LYVRA_ANALYTICS',
     supplemental:['POST','SCEERI_MYCEL','PLUGIN_HOST_ACCEPTANCE'],
     visualGuidance:'CHAT_NATIVE'};
