@@ -33,5 +33,47 @@
     "kind": "NATIVE_DEV_BRANCH_INTEGRATION",
     "source_ref": "GitHub commit 1de3d6b1fce4fc841f636a250867cfb89cb8cf1a / native-deployment-runner.mjs blob 2fa666d3ba6a52e8df47b8d9156dadc192d24c78",
     "observation": "R36 runner now accepts causal receipts as real input, without auto promotion to productive host."
+  },
+  {
+    "event_id": "R37_ORIGINAL_DICTATION_LOCAL",
+    "item_id": "T20",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 guardedDictation executed: creator-authorized contextual correction; unauthenticated input rejected; no OS/iPhone hook."
+  },
+  {
+    "event_id": "R37_ORIGINAL_ANALYTICS_LOCAL",
+    "item_id": "T18",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 ingestAnalyticsEvidence executed on R26 source digest; not a Suno-monitor production ingest."
+  },
+  {
+    "event_id": "R37_ORIGINAL_CHARACTER_RELATIONS_LOCAL",
+    "item_id": "T21",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 causal reuse probe executed; zero eligible cases, no learned host behavior claimed."
+  },
+  {
+    "event_id": "R37_ORIGINAL_VISUAL_LOCAL",
+    "item_id": "T22",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 visualMenu executed with seven guided actions; no installed plugin host actions claimed."
+  },
+  {
+    "event_id": "R37_ORIGINAL_INTERRUPTION_CONTINUITY_LOCAL",
+    "item_id": "T23",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 six-checkpoint snapshot and copy-only handoff built and locally hash verified; no independent persistent cross-chat readback."
+  },
+  {
+    "event_id": "R37_ORIGINAL_RESEARCH_LOCAL",
+    "item_id": "T24",
+    "kind": "LOCAL_EXECUTION",
+    "source_ref": "Local Node exact original R26 zip SHA256 038e522e14fd4b91fe8c37cb142953e539b3f59ca88a858ece2236ce296e082e / receipt SHA256 cdc64f459bf5883db22051f57338b16661afac02957c0a673eaa5423f3725c9b",
+    "observation": "Original R26 zero-cost tool gate executed and blocked unverifiable tariff; no external fetch or paid action."
   }
 ]
