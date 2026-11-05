@@ -52,3 +52,63 @@ export function projectNativeDeployment(view,{selection="ALL"}={}){
     visual_recovery_action_query:visualGuidanceRecoveryQuery()
   };
 }
+
+
+// R36: Vorhandene R32-Rueckstaende mit neuen Originalbelegen verknuepfen.
+// Nur gerichtete Beobachtung, kein automatischer Native/ALIVE-Host-PASS oder Write.
+export function reconcileDeploymentEvidence(view, receipts=[], {selection="ALL"}={}) {
+  const base=projectNativeDeployment(view,{selection});
+  check(Array.isArray(receipts),"Belege muessen eine Liste bilden");
+  const items=new Map(view.isolated_or_unintegrated.map(x=>[x.id,x]));
+  const seen=new Map(), accepted=[], quarantine=[];
+  const allowed=new Set(["SOURCE_READBACK","LOCAL_EXECUTION","NATIVE_DEV_BRANCH_INTEGRATION","PRODUCTIVE_SOURCE_READBACK","HOST_OBSERVATION_PENDING","CONTRADICTION"]);
+  for(const [index,rec] of receipts.entries()){
+    const id=rec?.event_id, item=rec?.item_id, kind=rec?.kind, src=rec?.source_ref, claim=rec?.observation;
+    if(![id,item,kind,src,claim].every(v=>typeof v==="string"&&v.trim())||!items.has(item)||!allowed.has(kind)){
+      quarantine.push({index,reason:"Unbekannter oder unvollstaendiger Beleg",event_id:id??null});continue;
+    }
+    if(!/^(GitHub |R[0-9]+ archive |Local Node )/.test(src)){
+      quarantine.push({index,reason:"Originalquellenverweis fehlt",event_id:id});continue;
+    }
+    const fingerprint=JSON.stringify([item,kind,src,claim]);
+    if(seen.has(id)){
+      quarantine.push({index,reason:seen.get(id)===fingerprint?"Doppelter Beleg":"Widerspruch: gleiche ID, anderer Inhalt",event_id:id});continue;
+    }
+    seen.set(id,fingerprint);
+    accepted.push({event_id:id,item_id:item,kind,source_ref:src,observation:claim,
+      scope:kind==="NATIVE_DEV_BRANCH_INTEGRATION"?"ISOLATED_NATIVE_CODE_ONLY":
+      kind==="PRODUCTIVE_SOURCE_READBACK"?"PRODUCTIVE_SOURCE_ONLY":
+      kind==="LOCAL_EXECUTION"?"LOCAL_TEST_ONLY":"OBSERVATION_ONLY",
+      closes_host_gate:false});
+  }
+  const byItem=new Map();
+  for(const event of accepted){if(!byItem.has(event.item_id))byItem.set(event.item_id,[]);byItem.get(event.item_id).push(event);}
+  const backlog=base.backlog.map(item=>{
+    const evidence=byItem.get(item.id)||[];
+    return {...item,evidence_count:evidence.length,
+      native_development_connected:evidence.some(e=>e.kind==="NATIVE_DEV_BRANCH_INTEGRATION"),
+      productive_integration_verified:evidence.some(e=>e.kind==="PRODUCTIVE_SOURCE_READBACK"),
+      host_verified:false,
+      next_step:evidence.some(e=>e.kind==="NATIVE_DEV_BRANCH_INTEGRATION")?
+        "Native Einbaukette pruefen, LifeCircle und Host erst nach direktem Readback freigeben":item.missing};
+  });
+  const bundles=view.bundles.map(b=>{
+    const impacted=backlog.filter(x=>b.isolated_item_ids.includes(x.id));
+    return {id:b.id,title:b.name,related_strands:[...b.affected_strands],
+      open_candidates:impacted.length,
+      native_dev_candidates:impacted.filter(x=>x.native_development_connected).length,
+      productive_source_candidates:impacted.filter(x=>x.productive_integration_verified).length,
+      host_accepted:0};
+  });
+  return {...base,backlog,bundles,observations:accepted,quarantine,
+    observation_count:accepted.length,quarantine_count:quarantine.length,
+    integration_alerts:backlog.filter(x=>x.native_development_connected&&!x.productive_integration_verified).map(x=>x.id),
+    strands:base.strands.map(s=>({...s,
+      evidence_items:backlog.filter(x=>bundles.some(b=>b.related_strands.includes(s.id)&&b.id===x.work_bundles?.[0])).map(x=>x.id),
+      action_query:withNativeVisualGuidance(s.action_query)
+    })),
+    all_action_query:withNativeVisualGuidance(base.all_action_query),
+    live_host_acceptance:false,productive_write_authorized:false,
+    overall_development_percent:null,
+    evidence_limitation:"Entwicklungsbranch und lokale Tests sind keine produktive Chat-Host-Ausfuehrung"};
+}
