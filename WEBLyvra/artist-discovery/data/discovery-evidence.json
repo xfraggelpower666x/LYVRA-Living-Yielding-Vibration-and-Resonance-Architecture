@@ -251,5 +251,45 @@
     "separate_from_semrush_backlink_observation": true,
     "does_not_contribute_to_editorial_resonance_scores": true,
     "no_paid_scan_or_subscription": true
+  },
+  "google_ai_exact_phrase_estimate_observation": {
+    "observed_on": "2026-11-05",
+    "source_kind": "three_user_supplied_screenshots_of_google_ai_generated_answer",
+    "query": "\"fraggelpower666\"",
+    "language": "de",
+    "estimate_min_relevant_pages": 15,
+    "estimate_max_relevant_pages": 30,
+    "estimate_kind": "UNVERIFIED_GOOGLE_AI_GENERATED_APPROXIMATION",
+    "independently_reproduced": false,
+    "screenshots_count": 3,
+    "observations": [
+      "AI text estimates 15 to 30 relevant individual pages, not a complete Google search index",
+      "Estimated concentration on SoundCloud, Spotify, YouTube Music; historical Wii homebrew/forum references also mentioned",
+      "AI text discusses filtered similar results and niche artist-name presence"
+    ],
+    "source_estimates_not_verified": [
+      {
+        "platform": "SoundCloud",
+        "approx_range": "10–15 indexed pages"
+      },
+      {
+        "platform": "Spotify",
+        "approx_range": "5–8 indexed pages"
+      },
+      {
+        "platform": "YouTube Music",
+        "approx_range": "about one main profile"
+      },
+      {
+        "platform": "Historical forum references",
+        "approx_range": "about one"
+      }
+    ],
+    "note_de": "Google-KI-Schätzung aus drei Nutzerscreenshots vom 05.11.2026: etwa 15–30 eigenständige Treffer für den exakten Namen. Nicht durch Durchzählen der Google-Ergebnisse bestätigt; die Plattformaufteilung ist ebenfalls eine KI-Angabe. Unabhängig davon listet unsere kostenlose Suchstichprobe 28 unterschiedliche Ergebnis-URLs. Beide Werte haben unterschiedliche Erhebungsmethoden.",
+    "note_en": "Google AI estimate from three user screenshots dated Nov 5, 2026: roughly 15–30 distinct relevant results for the exact artist name. Not independently confirmed by manual Google result enumeration; platform shares are AI estimates too. Our separate free public-search sample found 28 distinct result URLs by another method.",
+    "not_a_google_search_console_metric": true,
+    "does_not_change_sampled_search_link_counts": true,
+    "does_not_contribute_to_editorial_resonance_scores": true,
+    "no_paid_lookup": true
   }
 }
