@@ -17,4 +17,49 @@ export function projectDualLayer(registry, opts = {}) {
 
 // R33: Nur additive Datenprojektion in der EXISTIERENDEN Chat-Visual-Intelligence.
 // Kein HTML, keine zusätzliche Engine, keine automatische Task-Ausführung.
-export {projectNativeDeployment,SIX_STRANDS,PAUSED_AREAS,VISUAL_GUIDANCE_PHRASE,withNativeVisualGuidance,visualGuidanceRecoveryQuery} from "./native-deployment-visual.mjs";
+export {projectNativeDeployment,reconcileDeploymentEvidence,SIX_STRANDS,PAUSED_AREAS,VISUAL_GUIDANCE_PHRASE,withNativeVisualGuidance,visualGuidanceRecoveryQuery} from "./native-deployment-visual.mjs";
+
+
+// R37: Vorhandenen Whole-LYVRA-Operations-Center-Dual-Layer-View nach
+// Whole-Rehydration um die bestehende Deployment-Datenprojektion erweitern.
+// Keine neue Facette, Engine, Task-Mutation, Host-PASS oder Produktivfreigabe.
+export function projectWholeRehydrationDeployment({
+  registry, deploymentSource, receipts=[], expectedHead, expectedPointer,
+  wholeCoverage="PARTIAL", selection="ALL", openWork=true
+}={}) {
+  if(typeof expectedHead!=="string"||!/^[0-9a-f]{40}$/.test(expectedHead)||
+     typeof expectedPointer!=="string"||!/^[0-9a-f]{40}$/.test(expectedPointer)) {
+    throw new TypeError("Frischer Whole-LYVRA-Current erforderlich");
+  }
+  if(deploymentSource?.source_anchor?.head!==expectedHead||
+     deploymentSource?.source_anchor?.pointer_blob!==expectedPointer){
+    throw new TypeError("Deployment-Daten veraltet; aktuellen Pointer nachlesen");
+  }
+  const dualLayer=projectDualLayer(registry);
+  const deployment=reconcileDeploymentEvidence(deploymentSource,receipts,{selection});
+  if(!["VERIFIED","PARTIAL","READBACK_PENDING"].includes(wholeCoverage)) {
+    throw new TypeError("Unbekannte Whole-Rehydration-Abdeckung");
+  }
+  return {
+    schema:"LYVRA_WHOLE_OPERATIONS_DEPLOYMENT_R37_V1",
+    owner:"WHOLE_LYVRA",
+    surface:"EXISTING_SEMANTIC_VISUAL_INTELLIGENCE",
+    integration:"SOURCE_BOUND_DEV_BRANCH_ONLY",
+    boot_order:"CURRENT_POINTER > WHOLE_CONTEXT > OPERATIONS_CENTER > VISUAL_PROJECTION > WORK_SCOPE_LAST",
+    current:{head:expectedHead,pointer_blob:expectedPointer,coverage:wholeCoverage},
+    five_existing_main_choices_preserved:true,
+    dual_layer:dualLayer,
+    deployment:openWork?deployment:null,
+    deployment_reachable:true,
+    checkpoint_count:6,
+    additional_areas:[...PAUSED_AREAS],
+    open_host_gates:18,
+    return_anchor:"ANALYTICS",
+    visual_guidance_action:visualGuidanceRecoveryQuery(),
+    resume_all_action:withNativeVisualGuidance(deployment.all_action_query),
+    live_host_verified:false,
+    productive_write:false,
+    foreign_activation:false,
+    not_a_new_controller:true
+  };
+}
