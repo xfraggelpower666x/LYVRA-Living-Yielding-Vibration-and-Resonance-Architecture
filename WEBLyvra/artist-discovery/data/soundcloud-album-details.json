@@ -3,11 +3,11 @@
   "observed_at": "2026-11-05",
   "artist": "FRAGGELPOWER666 / 666SOUNDsDESIGn",
   "scope": "Publicly accessible SoundCloud set membership and SoundCloud-owned original artwork URLs",
-  "covered_albums": 47,
-  "original_album_count": 47,
+  "covered_albums": 48,
+  "original_album_count": 48,
   "errors": [],
   "missing_albums": [],
-  "note": "Individual track URLs are preserved per album. Cover URLs are remote SoundCloud og:image originals; do not download, mirror or infer reuse rights. Do not count the same track twice in global catalog.",
+  "note": "48 original-album/set pages + two independent playlists = 50 public collections; Playlists are NOT automatically artist albums; playlist members not added to original music tracks. Original SoundCloud og cover URLs are remote third-party images.",
   "albums": [
     {
       "title": "Another Psy Revolution",
@@ -753,9 +753,42 @@
       "source": "public_soundcloud_set_page_readback_2026-11-05",
       "track_links_verification": "links_from_album_original_page",
       "cover_verification": "og:image_from_album_page"
+    },
+    {
+      "title": "Sie sind unter uns (Single - Part3)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/sie-sind-unter-uns-single-part3",
+      "artwork_url": "https://i1.sndcdn.com/artworks-dMryLE7z3e6Z0G7i-3T20LQ-t500x500.jpg",
+      "track_urls": [
+        "https://soundcloud.com/fraggelpower666/electro-space-1-1",
+        "https://soundcloud.com/fraggelpower666/electro-space-2",
+        "https://soundcloud.com/fraggelpower666/back-to-my-roots-of-electronic-music-trance-remake-dark-full-on-psy-1-3",
+        "https://soundcloud.com/fraggelpower666/back-to-my-roots-of-electronic-music-trance-remake-dark-full-on-psy-4",
+        "https://soundcloud.com/fraggelpower666/dark-full-on-electro-space-instrumental-1-5"
+      ],
+      "source": "public_soundcloud_set_page_readback_2026-11-05",
+      "track_links_verification": "direct_membership_original_set_page",
+      "cover_verification": "original_og_image"
     }
   ],
-  "total_album_track_memberships": 275,
-  "distinct_album_track_urls": 275,
-  "album_track_index_status": "DIRECT_PUBLIC_MEMBERSHIP_READBACK"
+  "total_album_track_memberships": 280,
+  "distinct_album_track_urls": 280,
+  "album_track_index_status": "DIRECT_PUBLIC_MEMBERSHIP_READBACK",
+  "public_playlists": [
+    {
+      "title": "DarkTechno",
+      "url": "https://soundcloud.com/fraggelpower666/sets/darktechno",
+      "artwork_url": "https://i1.sndcdn.com/avatars-IJ5q1ZBm5Jap5zLt-ycrlyg-t500x500.jpg",
+      "type": "playlist",
+      "track_membership_status": "unavailable_from_public_page",
+      "source": "2026-11-05 source page og:metadata"
+    },
+    {
+      "title": "Ähnliche Tracks: Techno Is My Only Drug",
+      "url": "https://soundcloud.com/fraggelpower666/sets/aehnliche-tracks-techno-is-my",
+      "artwork_url": "https://i1.sndcdn.com/artworks-wnfHgeVOrzSN-0-t500x500.png",
+      "type": "playlist",
+      "track_membership_status": "third_party_music; do not claim as original artist tracks",
+      "source": "2026-11-05 source page og:metadata"
+    }
+  ]
 }
