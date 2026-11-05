@@ -19,8 +19,8 @@ assert.ok(found,'embedded unified diskography missing');
 const entries=JSON.parse(found[1]);
 assert.ok(suno.length>=462,'protected 462-entry Suno baseline regressed');
 assert.ok(entries.length>=629,'protected 629-entry unified discovery baseline regressed');
-assert.equal(soundcloud.length,45,'current SoundCloud album/set snapshot count mismatch');
-assert.equal(soundcloudTracks.length,122,'current SoundCloud track/mix snapshot count mismatch');
+assert.equal(soundcloud.length,47,'current SoundCloud album/set snapshot count mismatch');
+assert.equal(soundcloudTracks.length,142,'current SoundCloud track/mix snapshot count mismatch');
 const trackUrls=new Set();
 for(const track of soundcloudTracks){
  assert.ok(track.title&&typeof track.title==='string','SoundCloud track title missing');
@@ -64,8 +64,8 @@ assert.ok(html.includes("item.level/3*100"),'evidence-tier progress bars missing
 assert.ok(html.includes("sort((a,b)=>b.level-a.level"),'ranking must sort by evidence level');
 assert.ok(html.includes('Suno: '+suno.length+' katalogisierte öffentliche Song-URLs'),'stale German discovery count');
 assert.ok(html.includes('Suno: '+suno.length+' catalogued public song URLs'),'stale English discovery count');
-assert.ok(html.includes('SoundCloud: 45 Alben/Sets und 122 eigenständige Tracks/Mixe'),'German SoundCloud count regressed');
-assert.ok(html.includes('SoundCloud: 45 albums/sets and 122 separate tracks/mixes'),'English SoundCloud count regressed');
+assert.ok(html.includes('SoundCloud: 47 Alben/Sets und 142 eigenständige Tracks/Mixe'),'German SoundCloud count regressed');
+assert.ok(html.includes('SoundCloud: 47 albums/sets and 142 separate tracks/mixes'),'English SoundCloud count regressed');
 assert.ok(!html.includes('Suno: 418')&&!html.includes('Suno: 436')&&!html.includes('SoundCloud: 30'),'obsolete count restored');
 assert.ok(html.includes('LIVE ON WEBLYVRA')&&html.includes('AUF WEBLYVRA LIVE'),'live standalone classification missing');
 assert.ok(html.includes('Dieses eigenständige Add-on ist über WEBLyvra live erreichbar'),'German footer must reflect productive standalone deployment');
