@@ -192,7 +192,7 @@ export function projectR51NativeFacetMenu({currentHead,pointerBlob,wholeReadback
     }
     if(typeof item.trigger!=='string'||!item.trigger.startsWith('LYVRA '))throw Error('UNSAFE_FACET_TRIGGER');
     const actionEnabled=original?.hostExecutable===true;
-    entries.push({id:item.id,label:item.label,readiness:actionEnabled?'VERIFIED':'PARTIAL',actionEnabled,trigger:actionEnabled?item.trigger:null,proposedTrigger:actionEnabled?null:item.trigger,group:item.family||'INTELLIGENCE',color:palette[item.family]||palette.INTELLIGENCE,textFallback:true,extraVisuals:['TRACK_DESIGN','LYVRA_ANALYTICS'].includes(item.id)?['DIAGRAMS','IMAGE_EXAMPLES']:[]});
+    entries.push({id:item.id,label:item.label,readiness:actionEnabled?'SOURCE_BOUND_HOST_PENDING':'PARTIAL',hostVerified:false,actionEnabled,trigger:actionEnabled?item.trigger:null,proposedTrigger:actionEnabled?null:item.trigger,group:item.family||'INTELLIGENCE',color:palette[item.family]||palette.INTELLIGENCE,textFallback:true,extraVisuals:['TRACK_DESIGN','LYVRA_ANALYTICS'].includes(item.id)?['DIAGRAMS','IMAGE_EXAMPLES']:[]});
   }
   for(const candidate of candidates){
     if(!candidate?.id||ids.has(candidate.id)||!candidate.evidenceRef)throw Error('DISCOVERY_PROVENANCE_REQUIRED');
