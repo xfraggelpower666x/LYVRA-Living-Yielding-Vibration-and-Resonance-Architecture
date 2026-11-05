@@ -95,12 +95,13 @@ export async function executeR39ChatWork({
   creatorIntent=false, scope, registry, deploymentSource, receipts=[],
   expectedHead, expectedPointer, wholeCoverage="PARTIAL", inputs={},
   lineageId="R39_LOCAL", conversationAnchor="LYVRA PARALLEL R39 ALL WEITER",
-  observations=[]
+  observations=[], facetMenuRegistry=null, facetMenuCandidates=[]
 }={}){
  if(creatorIntent!==true || scope!=="SIX_NATIVE_FACETS")throw TypeError("EXPLICIT_CREATOR_TASK_REQUIRED");
  const visual=projectWholeRehydrationDeployment({
    registry,deploymentSource,receipts,expectedHead,expectedPointer,
-   wholeCoverage,selection:"ALL",openWork:true
+   wholeCoverage,selection:"ALL",openWork:true,
+   facetMenuRegistry,facetMenuCandidates
  });
  const execution=await executeR39OriginalBridge({
    head:expectedHead,pointerSha:expectedPointer,ports:{},
