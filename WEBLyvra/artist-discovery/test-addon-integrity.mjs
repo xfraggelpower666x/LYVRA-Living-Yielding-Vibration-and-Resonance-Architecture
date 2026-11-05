@@ -13,6 +13,8 @@ for(const code of inlineScripts)assert.doesNotThrow(()=>new Script(code,{filenam
 const suno=JSON.parse(readFileSync(join(root,'data/suno-releases.json'),'utf8')).public_songs;
 const soundcloud=JSON.parse(readFileSync(join(root,'data/soundcloud-albums.json'),'utf8')).albums;
 const soundcloudTracks=JSON.parse(readFileSync(join(root,'data/soundcloud-tracks.json'),'utf8')).tracks;
+const mixcloud=JSON.parse(readFileSync(join(root,'data/mixcloud-releases.json'),'utf8'));
+const mixcloudItems=[...mixcloud.shows,...mixcloud.tracks];
 const platform=JSON.parse(readFileSync(join(root,'data/platforms.json'),'utf8'));
 const found=html.match(/const discoItems=(\[[^;]*\]);\s*const discoState=/s);
 assert.ok(found,'embedded unified diskography missing');
@@ -29,16 +31,19 @@ for(const track of soundcloudTracks){
  assert.ok(!trackUrls.has(track.url),'duplicate SoundCloud track URL');
  trackUrls.add(track.url);
 }
-assert.equal(entries.length,suno.length+soundcloud.length+soundcloudTracks.length,'discography missing entries');
+assert.equal(entries.length,suno.length+soundcloud.length+soundcloudTracks.length+mixcloudItems.length,'discography missing entries');
+assert.equal(mixcloud.shows.length,10,'Mixcloud show count mismatch');
+assert.equal(mixcloud.tracks.length,10,'Mixcloud track count mismatch');
+assert.equal(new Set(mixcloudItems.map(x=>x.url)).size,20,'Mixcloud duplicate URLs');
 const urls=new Set();
 for(const entry of entries){
- assert.ok(['Suno','SoundCloud'].includes(entry.provider),'unknown provider');
+ assert.ok(['Suno','SoundCloud','Mixcloud'].includes(entry.provider),'unknown provider');
  assert.ok(typeof entry.title==='string'&&entry.title.length>0,'title missing');
- assert.ok(/^https:\/\/(suno\.com\/song\/|soundcloud\.com\/fraggelpower666\/)/.test(entry.url),'unexpected release URL');
+ assert.ok(/^https:\/\/(suno\.com\/song\/|soundcloud\.com\/fraggelpower666\/|www\.mixcloud\.com\/Fraggelpower666\/)/.test(entry.url),'unexpected release URL');
  assert.ok(!urls.has(entry.url),'duplicate release URL');
  urls.add(entry.url);
 }
-for(const original of [...suno,...soundcloud,...soundcloudTracks])assert.ok(urls.has(original.url),'original public URL lost');
+for(const original of [...suno,...soundcloud,...soundcloudTracks,...mixcloudItems])assert.ok(urls.has(original.url),'original public URL lost');
 for(const token of ['populateRadio(section)','lyvra:languagechange','lyvra-language','id="discography"','const originalArt=','discoState.limit+=40','rel=\'noopener noreferrer\''])assert.ok(html.includes(token),'protected capability missing: '+token);
 for(const name of ['lyvra-hero-crest.webp','lyvra-resonance-banner.webp','lyvra-cyber-emblem.webp','lyvra-666soundsdesign-wordmark.webp'])assert.ok(html.includes(name),'progressive art slot missing '+name);
 // New WEBLyvra staged artwork must remain complete; this checks presence, not binary hashes or deployment.
@@ -62,10 +67,10 @@ for(const token of ['id="google-resonance"','renderGoogleResonance(lang)','grPla
 assert.ok(html.includes("value.textContent='—'"),'unverified search metric must remain empty');
 assert.ok(html.includes("item.level/3*100"),'evidence-tier progress bars missing');
 assert.ok(html.includes("sort((a,b)=>b.level-a.level"),'ranking must sort by evidence level');
-assert.ok(html.includes('Suno: '+suno.length+' katalogisierte öffentliche Song-URLs'),'stale German discovery count');
-assert.ok(html.includes('Suno: '+suno.length+' catalogued public song URLs'),'stale English discovery count');
-assert.ok(html.includes('SoundCloud: 47 Alben/Sets und 142 eigenständige Tracks/Mixe'),'German SoundCloud count regressed');
-assert.ok(html.includes('SoundCloud: 47 albums/sets and 142 separate tracks/mixes'),'English SoundCloud count regressed');
+assert.ok(html.includes('Suno: '+suno.length+' verifizierte Song-URLs'),'stale German discovery count');
+assert.ok(html.includes('Suno: '+suno.length+' verified song URLs'),'stale English discovery count');
+assert.ok(html.includes('SoundCloud: 47 Alben/Sets und 142 Tracks/Mixe'),'German SoundCloud count regressed');
+assert.ok(html.includes('SoundCloud: 47 albums/sets and 142 tracks/mixes'),'English SoundCloud count regressed');
 assert.ok(!html.includes('Suno: 418')&&!html.includes('Suno: 436')&&!html.includes('SoundCloud: 30'),'obsolete count restored');
 assert.ok(html.includes('LIVE ON WEBLYVRA')&&html.includes('AUF WEBLYVRA LIVE'),'live standalone classification missing');
 assert.ok(html.includes('Dieses eigenständige Add-on ist über WEBLyvra live erreichbar'),'German footer must reflect productive standalone deployment');
