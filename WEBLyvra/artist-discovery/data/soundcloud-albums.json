@@ -2,9 +2,9 @@
   "schema_version": "1.2",
   "artist": "FRAGGELPOWER666",
   "source": "https://soundcloud.com/fraggelpower666/albums",
-  "observed_at": "2026-10-18",
+  "observed_at": "2026-11-05",
   "status": "browser_album_listing_30_items_partial_completeness",
-  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album. 2026-10-18 additive scan: 15 extra unique set URLs from the public SoundCloud /albums listing; first-seen here is not a publication date; type classification pending.",
+  "notes": "Ten album-page listings and six individually verified SoundCloud set pages. SoundCloud set metadata does not independently establish that every set is classified as an album. 2026-10-18 additive scan: 15 extra unique set URLs from the public SoundCloud /albums listing; first-seen here is not a publication date; type classification pending. 2026-11-05: LYVRA SPACE ERUPTION PART 1 and PART 2 verified directly as two public sets, with public listing dated 2026-11-03. Previous 45 preserved.",
   "albums": [
     {
       "title": "Another Psy Revolution",
@@ -301,6 +301,20 @@
       "type": "SoundCloud album listing",
       "status": "browser_album_listing",
       "source": "SoundCloud /albums interactive browser readback 2026-10-17"
+    },
+    {
+      "title": "LYVRA SPACE ERUPTION PART 1",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-space-eruption-part-1",
+      "status": "direct_public_set_page_readback",
+      "source": "2026-11-05 exact public set page, listing dated 2026-11-03"
+    },
+    {
+      "title": "LYVRA SPACE ERUPTION PART 2",
+      "type": "SoundCloud album/set (classification pending)",
+      "url": "https://soundcloud.com/fraggelpower666/sets/lyvra-space-eruption-part-2",
+      "status": "direct_public_set_page_readback",
+      "source": "2026-11-05 exact public set page, listing dated 2026-11-03"
     }
   ],
   "next_scan": {
