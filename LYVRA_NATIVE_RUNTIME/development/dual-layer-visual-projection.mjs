@@ -1,4 +1,4 @@
-import {prepareSelectiveAnalyticsRequest} from './r42-analytics-caller-compat.mjs';
+import {prepareR43SelectiveAnalyticsCall} from './r43-analytics-live-carrier-binding.mjs';
 import {ingestSunoMonitorResult} from './r40-suno-source-bridge.mjs';
 import {assessAnalyticsMigration} from './r40-analytics-parentage-guard.mjs';
 import {executeR39OriginalBridge} from './r39-native-original-bridge.mjs';
@@ -121,7 +121,7 @@ export async function executeR40ChatWork({
   sunoTaskSnapshot=null, reviewedSunoSources=[],
   analyticsNativeContract=null, analyticsNativeState=null, carrierBlobs={},
   r23Plan=null, creatorDecision='CREATOR_AUTHORIZED_NOT_DEPLOYED',
-  trackDnaGuard=false, analyticsCallerRequest=null, ...r39Inputs
+  trackDnaGuard=false, analyticsCallerRequest=null, analyticsCallerCurrentReadbacks=[], analyticsCallerProductiveBlobs={}, ...r39Inputs
 }={}){
   const r39=await executeR39ChatWork(r39Inputs);
   const head=r39Inputs.expectedHead, pointerBlob=r39Inputs.expectedPointer;
@@ -132,7 +132,7 @@ export async function executeR40ChatWork({
     assessAnalyticsMigration({currentHead:head,pointerBlob,contractText:analyticsNativeContract,state:analyticsNativeState,sourceBlobs:carrierBlobs,r23Plan,creatorDecision,trackDnaGuard}):
     {status:'ANALYTICS_NATIVE_CURRENT_READBACK_REQUIRED',candidateReadyForGovernedWriteReview:false,productiveMigrationApplied:false};
   const selectiveCaller=analyticsCallerRequest?
-    prepareSelectiveAnalyticsRequest(analyticsCallerRequest):null;
+    prepareR43SelectiveAnalyticsCall(analyticsCallerRequest,{currentHead:r39Inputs.expectedHead,sourceReadbacks:analyticsCallerCurrentReadbacks,freshProductiveBlobs:analyticsCallerProductiveBlobs}):null;
   return {
     schema:'LYVRA_R40_SIX_NATIVE_WITH_SUNO_PARENTAGE_GATES',
     ...r39, t07_suno:suno,t19_analytics:analytics,
