@@ -5,6 +5,7 @@ import {buildHandoff,recoverHandoff,assessContext} from './r38_original_r26/chat
 import {planImpactForAnyTask,SIX} from './r38_original_r26/always-on-impact-r09.mjs';
 import {withVisualGuidance} from './r38_original_r26/visual-action-inheritance-r10.mjs';
 import {correct,defaultState} from './r38_original_r26/dictation.mjs';
+import {ingestAnalyticsEvidence,learningProbe,researchCostGate} from './r39-r26-functional-extracts.mjs';
 
 
 const R39_PROTECTED=/(?:\x60\x60\x60[\s\S]*?\x60\x60\x60|\x60[^\x60\n]*\x60|https?:\/\/[^\s<>"']+|\[[^\]\n]{1,200}\]\([^\)\n]+\)|"[^"\n]*"|“[^”\n]*”|\[[A-Z_][A-Z0-9_]*\])/g;
@@ -45,6 +46,9 @@ export async function executeR39OriginalBridge({head,pointerSha,ports,inputs={},
   const provided={
     ...ports,
     guardedDictation:nativeGuardedDictation,
+    ingestAnalyticsEvidence,
+    learningProbe,
+    researchCostGate,
     buildHandoff,
     visualAction({label,command,owner='LYVRA',kind='CONTINUATION'}={}){
       if(!label?.trim()||!command?.trim()||owner!=='LYVRA'||!['CONTINUATION','FACET','RECOVERY'].includes(kind))throw Error('ACTION_CONTRACT');
@@ -56,8 +60,11 @@ export async function executeR39OriginalBridge({head,pointerSha,ports,inputs={},
   }});
   return {schema:'LYVRA_R39_NATIVE_ORIGINAL_BINDING',originalImpact,execution,
     sources:['R26/always-on-impact-r09.mjs','R26/chat-handoff-r09.mjs','R26/visual-action-inheritance-r10.mjs'],
-    originalProviderCoverage:'DICTATION_CONTINUITY_VISUAL_PLUS_IMPACT',
-    missingNativeOriginalProviders:['ANALYTICS','CHARACTER_RELATIONS','RESEARCH'],
+    originalProviderCoverage:'FOUR_ORIGINAL_MODULES_PLUS_THREE_FUNCTIONAL_EXTRACTS',
+    missingNativeOriginalProviders:[],
+    originalWholeModuleFilesPending:['r13-native-bridges.mjs','causal-learning-r08.mjs','research-reconcile-r04.mjs'],
+    parityStatus:'PENDING_EXACT_ORIGINAL_BEHAVIOR_COMPARISON',
+    allSixFunctionalPortsInSource:true,
     hostGatesOpen:18,productiveWrites:0,pluginHostVerified:false,returnFacet:'LYVRA_ANALYTICS',
     supplemental:['POST','SCEERI_MYCEL','PLUGIN_HOST_ACCEPTANCE'],
     visualGuidance:'CHAT_NATIVE'};
