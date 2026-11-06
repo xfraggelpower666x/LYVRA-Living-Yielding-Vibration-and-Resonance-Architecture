@@ -4,6 +4,9 @@ on:
     branches: [lyvra]
     paths:
       - 'LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/development/tests/track-device-route-current-source.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md'
+      - 'LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_IPHONE_CUSTOM_THREE_ROUTES_20261029.md'
       - 'LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md'
       - '.github/workflows/track-renderer-output-regression.yml'
   workflow_dispatch:
@@ -21,4 +24,4 @@ jobs:
         with:
           node-version: '20'
       - name: Validate creator-output structural regressions
-        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs
+        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/track-relational-renderer-output.test.mjs LYVRA_NATIVE_RUNTIME/development/tests/track-device-route-current-source.test.mjs
