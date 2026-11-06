@@ -7930,5 +7930,43 @@
     "new_facet": false,
     "codeforge_full_repo_audit": "NOT_CLAIMED",
     "pointer_last": true
+  },
+  "critical_registry_integrity_repair_20261106": {
+    "status": "DIRECT_REPOSITORY_GIT_TREE_VERIFIED_243_OF_243_PLUGIN_SELECTED_SKILL_PARITY_VERIFIED",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "CRITICAL_CARRIER_SHA_FRESHNESS_ONLY",
+    "prechange_head": "701dee774e020e927273a64e491ef0833df3f8f2",
+    "recovery_branch": "lyvra-recovery-pre-critical-registry-two-sha-repair-20261106-r01",
+    "registry_path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+    "registry_blob_sha": "692c19c12cfd55430d4d0876bf87db9951a8d462",
+    "registry_body_commit": "dbe29e87b6a0c68705daf2d39ac8385d6f618946",
+    "evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_CRITICAL_REGISTRY_TWO_SHA_REPAIR_20261106.md",
+    "evidence_blob_sha": "ded98227109c81c15a2285359845bafb6a27b4b5",
+    "evidence_body_commit": "4d402d8a99c198334f554c470a88f7d32a00d3b8",
+    "critical_carriers_checked": 243,
+    "critical_carriers_matched": 243,
+    "critical_carriers_missing": 0,
+    "critical_carrier_sha_mismatches": 0,
+    "tree_truncated": false,
+    "source_rollbacks": 0,
+    "plugin_releases": {
+      "native": {
+        "version": "0.1.91",
+        "release_id": "pluginrel_6ae9924655b48191a8fbc0dc8c2bae76"
+      },
+      "alive": {
+        "version": "0.13.87",
+        "release_id": "pluginrel_6ae9926085408191827f459b20d8b76b"
+      }
+    },
+    "selected_plugin_skill_source_equal": true,
+    "plugin_release_mutation": false,
+    "backup_approval": "NOT_GRANTED_STABLE_SET_NOT_CONVERGED",
+    "fresh_host_acceptance": "NOT_TESTED",
+    "suno_render_acceptance": "NOT_TESTED",
+    "node_ci": "NOT_VERIFIED",
+    "foreign_mutation": false,
+    "new_cost": false,
+    "pointer_last": true
   }
 }
