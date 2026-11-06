@@ -37,7 +37,7 @@ export function assessParallelWork(items,observations=[],options={}) {
   const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
   const occupied=new Set(items.filter(x=>x.state==="DONE" && x.outcome_readback===true).map(x=>x.id));
   const resources=new Map();
-  for (const item of items) if(str(item.resource_key)&&item.state!=="DONE") {
+  for (const item of items) if(str(item.resource_key)&&["OPEN","ACTIVE"].includes(item.state)) {
     resources.set(item.resource_key,[...(resources.get(item.resource_key)||[]),item.id]);
   }
   const reviewed=items.map(item=>{
@@ -78,9 +78,14 @@ export function assessImpact(task,dependencies=[]) {
     suggested_actions_only:true,automatic_mutation:false};
 }
 export function antiLoopReview(checks,execution) {
-  const scoped=asArray(checks).filter(c=>c&&str(c.fingerprint)&&c.result==="NO_NEW_EVIDENCE");
-  const last=scoped.at(-1)?.fingerprint;
-  const repeated=last?scoped.filter(c=>c.fingerprint===last).length:0;
+  const sequence=asArray(checks);
+  const last=sequence.at(-1);
+  let repeated=0;
+  if(last?.result==="NO_NEW_EVIDENCE" && str(last.fingerprint)) for(let i=sequence.length-1;i>=0;i--){
+    const item=sequence[i];
+    if(item?.result!=="NO_NEW_EVIDENCE"||item.fingerprint!==last.fingerprint)break;
+    repeated++;
+  }
   if(repeated<3) return {mode:"CHECK_IF_MEANINGFUL",repeated,execution_authorized:false};
   const permitted=execution?.explicit_authorization===true&&execution?.host_verified===true&&execution?.recovery_verified===true;
   return {mode:permitted?"LEARNING_BY_DOING_AUTHORIZED":"PAUSE_REPEATED_CHECKS_HOST_GATE",repeated,

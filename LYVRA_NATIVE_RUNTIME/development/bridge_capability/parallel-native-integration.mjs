@@ -45,3 +45,18 @@ export function nativeImpactGate(intake) {
     release_ready:false,needs_original_tests:true,needs_native_lifecycle:true,needs_host_readback:true,
     no_foreign_autowrites:true};
 }
+
+// Adapt original native Analytics OPEN_WORK without inventing completed experiments.
+// A supplied source receipt must bind this exact current read; source is not a live host.
+export function ingestNativeAnalyticsOpenWork(native,source) {
+  if(!native||!Array.isArray(native.items)||!readback(source))throw new TypeError("Native Analytics source and original receipt required");
+  return native.items.map(item=>{
+    if(!nonempty(item.id)||!nonempty(item.state)||!nonempty(item.task))throw new TypeError("Invalid native Analytics item");
+    const state=item.state==="ACTIVE_CURRENT_RESEARCH_AND_RENDER_LEARNING"?"ACTIVE":
+      item.state==="OPEN_EVENT_GATED"?"OPEN":"DORMANT";
+    return {id:item.id,title:item.task,strand:"ANALYTICS",state,origin_ref:source.source_ref,
+      current_evidence:{...source},resource_key:"ANALYTICS:"+item.id,required:["semantic_handoff"],
+      related_facets:["ANALYTICS"],impact_targets:[],native_state:item.state,
+      creator_selected:false,blocks_other_tasks:false,outcome_readback:false};
+  });
+}
