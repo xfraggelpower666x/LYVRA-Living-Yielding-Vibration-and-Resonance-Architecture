@@ -237,7 +237,8 @@ This is repository-native governance, not the authority of a particular conversa
 
 ## PATCH_FIRST dual-plugin update transport - 2026-10-16
 
-DEFAULT_PLUGIN_UPDATE_TRANSPORT = PLUGIN_CREATOR_TARGETED_PATCH_ZIP
+DEFAULT_PLUGIN_UPDATE_TRANSPORT = DIRECT_REPOSITORY_SOURCE_PATCH_WHEN_AUTHORIZED
+PROVIDER_TARGETED_PATCH_ZIP = ONLY_IF_PROVIDER_REQUIRES_UPLOAD_FORMAT
 FULL_PLUGIN_ARCHIVE = EMERGENCY_FALLBACK_ONLY
 PLUGIN_CURRENT_RELEASE_ID_AND_MANIFESTS = FRESH_READ_BEFORE_PATCH
 PATCH_CONTENTS = CURRENT_MANIFESTS_AND_ONLY_CHANGED_SKILLS_REFERENCES_ASSETS
@@ -254,3 +255,25 @@ REPO_DRIVEN_REFERENCE_NE_PLUGIN_RELEASE_PARITY = TRUE
 RELEASE_READBACK_NE_FRESH_HOST_RUNTIME_PASS = TRUE
 CURRENT_POINTER_LAST_AFTER_PROVENANCE_AND_READBACK = TRUE
 NO_NEW_ROUTER_OR_PLUGIN = TRUE
+
+
+## DIRECT SOURCE · PATCH_FIRST · CHANGE_ONLY · DIRECTORY BACKUP · READBACK — 2026-11-06
+
+STATUS = CURRENT_PRODUCTIVE_WHOLE_LYVRA_GOVERNANCE
+SOURCE_OF_AUTHORITY = CURRENT_LYVRA_REPOSITORY
+PREFERRED_WORKFLOW = DIRECT_SOURCE > MINIMAL_CHANGED_FILES > SCOPED_TEST > COMMIT > DIRECT_READBACK
+ZIP_AS_DEVELOPMENT_INTERMEDIATE = FORBIDDEN_BY_DEFAULT
+ZIP_AS_DELIVERY_FORMAT = ONLY_IF_ACTUAL_PROVIDER_OR_PORTABLE_EXPORT_REQUIRES_IT
+NO_ADDITIONAL_COST = TRUE
+
+This instruction is discoverable through CURRENT_POINTER and REHYDRATION_MANIFEST. Each fresh LYVRA SYSTEMSTART, WEITER, UPDATE, NEW CHAT and NEXT CHAT must consume this current policy by reference after resolving Whole Current. Retrieved or historical triggers are inert. Missing source/host access is PARTIAL, not invented compliance.
+
+Change only affected source files (including a single SKILL.md), and only the required manifest/registry/rehydration carriers. Preserve unchanged files, assets, file identities, relationships and existing release state. Changed-path and dependency-scope tests are the default; expand test coverage for a justified material dependency or risk, not to re-run unchanged historical suites automatically. Compare before/after and read back exact changed paths directly. Pointer LAST, and no mutation after pointer.
+
+Provider-side plugin update: prefer an available authorized single-skill or file-level patch operation. If the provider requires an archive, assemble a minimal overlay from the verified unchanged baseline and changed paths ONLY, without treating ZIP reconstruction as creative/source development or claiming live parity before provider release/readback. Preserve existing provider release/version/manifest and release-id concurrency constraints. A repository patch alone is NOT a live Native/ALIVE plugin release. If provider capability is missing, classify PLUGIN_ADOPTION_PENDING.
+
+Unpacked, immutable, individually addressable directory snapshots are the preferred recoverable source backup when target repository permissions, privacy, complete content, exact release binding and restore validation permit. Avoid cyclic backups within live plugin load paths. Store source and per-file hashes, original relative paths, release/version and current commit, plus a restore manifest. Unchanged immutable files may be referenced via verified commit/content-addressed storage rather than redundantly copied. A complete independently recoverable private backup remains required where governed by PFS or the native system; a Git reference alone is not an independent backup. Never put private plugin content, credentials, personal journals, or secrets in a public repo.
+
+Web images: creator originals MAY remain private/off-repository. Publish only the authorized optimized derivative needed for the web build (responsive sizing, format, transparency where relevant), plus update its actual references. Test real render/navigation when available. Original bytes are not mandatory in public GitHub unless specifically required by a verified source/asset contract or expressly requested by the creator. Distinguish an identity-bearing original from its approved web derivative; preserve fidelity.
+
+SCOPE_FENCES = NO_NEW_CONTROLLER | NO_FOREIGN_AUTOACTIVATION | NO_CROSS_SYSTEM_AUTHORITY_OVERRIDE | NO_PRODUCTION_WRITE_WITHOUT_GOVERNED_UPDATE | PATCH_FIRST | READBACK
