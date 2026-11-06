@@ -1,0 +1,36 @@
+name: LYVRA Parallel Bridge Original Node Validation
+on:
+  push:
+    branches:
+      - lyvra-dev-parallel-governance-r11-20261106
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/bridge_capability/**'
+      - '.github/workflows/lyvra-parallel-bridge-node-validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lyvra-parallel-bridge-node-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  original-source-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact native development head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check original source syntax
+        run: |
+          node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.mjs
+      - name: Execute all original bridge and parallel tests
+        run: |
+          node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs
+# Read-only original Node CI; not Native/ALIVE plugin host acceptance or productive adoption.
