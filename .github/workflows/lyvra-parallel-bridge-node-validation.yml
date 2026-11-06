@@ -30,7 +30,10 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.mjs
       - name: Execute all original bridge and parallel tests
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.test.mjs
+      - name: Validate actual native Analytics original Git objects and return queue
+        run: node LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.mjs
 # Read-only original Node CI; not Native/ALIVE plugin host acceptance or productive adoption.
