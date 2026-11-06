@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {evaluateBridgeCapability,evaluateTasks,classifyFeedback} from "./bridge-capability-evaluation.mjs";
+import {evaluateBridgeCapability,evaluateBridgeComposition,evaluateTasks,classifyFeedback} from "./bridge-capability-evaluation.mjs";
 const owned={capability_id:"LYVRA_BINARY",owner:"LYVRA",source_ref:"git:blob",capabilities:["github_binary_write"],authorization:"AUTHORIZED",host_status:"HOST_VERIFIED",cost_status:"ZERO_ADDITIONAL_COST_VERIFIED",recovery_ref:"git:recovery"};
 test("eligible only when native and all evidence are verified",()=>{const r=evaluateBridgeCapability({required:["github_binary_write"]},[owned]);assert.equal(r[0].eligible,true);assert.equal(r[0].evidence.outcome,"NOT_EXECUTED")});
 test("source alone is not a host pass",()=>{const r=evaluateBridgeCapability({required:["github_binary_write"]},[{...owned,host_status:"HOST_PENDING"}]);assert.equal(r[0].eligible,false);assert.ok(r[0].reasons.includes("HOST_NOT_VERIFIED"))});
@@ -9,3 +9,4 @@ test("no foreign autoactivation",()=>{const r=evaluateBridgeCapability({required
 test("single and multiple tasks carry independent return anchors",()=>{const r=evaluateTasks([{id:"image",required:["github_binary_write"]},{id:"mail",required:["semantic_handoff"]}],[owned]);assert.equal(r.length,2);assert.equal(r[0].caller_receipt,"PENDING");assert.equal(r[1].candidates[0].eligible,false)});
 test("independent outcome required for learning",()=>{assert.equal(classifyFeedback({task_id:"a",capability_id:"b",independent_readback:false,outcome_observed:true,origin_ref:"receipt",outcome:"PASS"}).learning_state,"UNVERIFIED_OBSERVATION");assert.equal(classifyFeedback({task_id:"a",capability_id:"b",independent_readback:true,outcome_observed:true,origin_ref:"receipt",outcome:"PASS"}).auto_promote,false)});
 test("invalid tasks and duplicated ids fail closed",()=>{assert.throws(()=>evaluateTasks([{id:"x",required:["a"]},{id:"x",required:["b"]}],[owned]));assert.throws(()=>evaluateBridgeCapability({required:[]},[owned]))});
+test("multiple native bridges compose without dispatch or bypass",()=>{const a=evaluateBridgeComposition({id:"combined",required:["github_binary_write","semantic_handoff"]},[owned,{...owned,capability_id:"LYVRA_MEANING",capabilities:["semantic_handoff"]}]);assert.equal(a.eligible,true);assert.deepEqual(a.assignments.map(x=>x.selected_capability_id),["LYVRA_BINARY","LYVRA_MEANING"]);assert.equal(a.auto_dispatch,false);assert.equal(a.caller_result,"READBACK_PENDING")});

@@ -23,11 +23,23 @@ export function evaluateBridgeCapability(task, bridges) {
       evidence:{source:b.source_ref||null,host:b.host_status||"UNKNOWN",outcome:"NOT_EXECUTED"}};
   }).sort((a,b)=>Number(b.eligible)-Number(a.eligible)||b.coverage.length-a.coverage.length||String(a.capability_id).localeCompare(String(b.capability_id)));
 }
+export function evaluateBridgeComposition(task, bridges) {
+  if (!task || !Array.isArray(task.required) || !task.required.length) throw new TypeError("Task requirements required");
+  const required=uniq(task.required.map(norm).filter(Boolean));
+  const assignments=required.map(capability=>{
+    const candidates=evaluateBridgeCapability({...task,required:[capability]},bridges);
+    const selected=candidates.find(x=>x.eligible);
+    return {required_capability:capability,selected_capability_id:selected?.capability_id??null,
+      blockers:selected?[]:uniq(candidates.flatMap(x=>x.reasons)),candidate_count:candidates.length};
+  });
+  return {eligible:assignments.every(a=>a.selected_capability_id!==null),
+    assignments,execution:"NOT_STARTED",auto_dispatch:false,caller_result:"READBACK_PENDING"};
+}
 export function evaluateTasks(tasks,bridges) {
   if(!Array.isArray(tasks) || tasks.length===0) throw new TypeError("Nonempty tasks required");
   const ids=tasks.map(t=>t.id);
   if(ids.some(x=>!x)||new Set(ids).size!==ids.length) throw new TypeError("Unique task ids required");
-  return tasks.map(t=>({task_id:t.id,candidates:evaluateBridgeCapability(t,bridges),execution:"NOT_STARTED",caller_receipt:"PENDING"}));
+  return tasks.map(t=>({task_id:t.id,candidates:evaluateBridgeCapability(t,bridges),composition:evaluateBridgeComposition(t,bridges),execution:"NOT_STARTED",caller_receipt:"PENDING"}));
 }
 export function classifyFeedback(receipt) {
   if(!receipt || !receipt.task_id || !receipt.capability_id) throw new TypeError("Receipt identity required");
