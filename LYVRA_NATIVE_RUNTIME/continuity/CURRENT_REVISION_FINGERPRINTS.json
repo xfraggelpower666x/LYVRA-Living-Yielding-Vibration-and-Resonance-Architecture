@@ -97,7 +97,7 @@
     "lyvra-plugin/account/releases/v0.13.16/PROVENANCE.json": "0987e1af78c2a00ce4aa650102841df807f27e56",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_LIFECIRCLE_REHYDRATION.md": "0330b4536738516ed496e410cf8459de28713cc3",
     "LYVRA_NATIVE_RUNTIME/current/governance/FACET_SUB_LIFECIRCLE_REGISTRY.md": "9b2be7f5f4897520234ac3cadc71d53a85675e73",
-    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "2df6de40ecb1880a60077b69e7bd684ec7e576e4",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "216015c871de1128d3f07de367343fffd06bf8fe",
     "LYVRA_NATIVE_RUNTIME/current/self_conductor/SELF_CONDUCTOR_CONTINUITY.md": "7b556e46a881b38e9a6da5290c46c14ac224f7cd",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/FACET_CONTRACT.md": "048f6e780c2fc8709d95fbc931d04da286606d69",
     "LYVRA_NATIVE_RUNTIME/facets/studio2/SUB_REHYDRATION.md": "423de4024e6db4e074b4d9ee30dffaa3231cc286",
@@ -2318,5 +2318,21 @@
     "fresh_host": "NOT_VERIFIED",
     "full_registry_validation": "NOT_CLAIMED",
     "no_foreign_activation": true
+  },
+  "scoped_track_route_reconciliation_20261106": {
+    "status": "EXACT_TARGET_SOURCE_BLOB_READBACK_VERIFIED_FULL_REGISTRY_RESCAN_NOT_CLAIMED",
+    "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md",
+    "previous_sha": "2df6de40ecb1880a60077b69e7bd684ec7e576e4",
+    "current_sha": "216015c871de1128d3f07de367343fffd06bf8fe",
+    "scope": "DEVICE_ROUTE_PRECEDENCE_CLARIFICATION_ONLY",
+    "source_test_path": "LYVRA_NATIVE_RUNTIME/development/tests/track-device-route-current-source.test.mjs",
+    "source_test_ci_workflow": ".github/workflows/track-renderer-output-regression.yml",
+    "source_test_node_ci": "READBACK_PENDING",
+    "plugin_impact": "DUAL_PLUGIN_RUNTIME_UNCHANGED_REPO_CURRENT_SOURCE_UPDATED_HOST_REHYDRATION_PENDING",
+    "prechange_head": "fe5829701aa4ff621766190061c91046f95c12da",
+    "recovery_branch": "lyvra-recovery-pre-track-route-contract-repair-20261106-r01",
+    "full_tree_verification": false,
+    "host_copy_acceptance": false,
+    "suno_render_acceptance": false
   }
 }
