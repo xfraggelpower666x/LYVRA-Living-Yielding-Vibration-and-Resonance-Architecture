@@ -65,7 +65,7 @@ export function ingestNativeAnalyticsOpenWork(native,source) {
   return native.items.map(item=>{
     if(!nonempty(item.id)||!nonempty(item.state)||!nonempty(item.task))throw new TypeError("Invalid native Analytics item");
     const state=item.state==="ACTIVE_CURRENT_RESEARCH_AND_RENDER_LEARNING"?"ACTIVE":
-      item.state==="OPEN_EVENT_GATED"?"OPEN":"DORMANT";
+      item.state==="OPEN_EVENT_GATED"||item.state==="PRE_RENDER_EVIDENCE_CALIBRATED_REAL_RENDER_OPEN"?"OPEN":"DORMANT";
     return {id:item.id,title:item.task,strand:"ANALYTICS",state,origin_ref:source.source_ref,
       current_evidence:{...source},resource_key:"ANALYTICS:"+item.id,required:["semantic_handoff"],
       related_facets:["ANALYTICS"],impact_targets:[],native_state:item.state,
@@ -89,11 +89,21 @@ export function inspectNativeAnalyticsResultQueue(queue,source) {
 export function assessAnalyticsQueueReturns(queue,source,callers) {
   const snapshot=inspectNativeAnalyticsResultQueue(queue,source);
   if(!Array.isArray(callers))throw new TypeError("Caller array required");
-  const targets=new Map(callers.filter(x=>nonempty(x.request_id)).map(x=>[x.request_id,x]));
+  // Never let duplicate request IDs silently select the last caller.
+  const ids=new Map();
+  for(const caller of callers){
+    if(!nonempty(caller?.request_id))continue;
+    const entries=ids.get(caller.request_id)||[];
+    entries.push(caller);
+    ids.set(caller.request_id,entries);
+  }
   return {source:snapshot.original_source,source_status:snapshot.status,
     returns:queue.items.map(result=>{
-      const caller=targets.get(result.REQUEST_ID);
-      return caller?nativeAnalyticsReturn(result,caller):{result_id:result.RESULT_ID,
-        request_id:result.REQUEST_ID||null,caller_state:"CALLER_NOT_VERIFIED",permission_to_write:false};
+      const matches=ids.get(result.REQUEST_ID)||[];
+      if(matches.length>1)return {result_id:result.RESULT_ID,request_id:result.REQUEST_ID||null,
+        caller_state:"CALLER_ID_AMBIGUOUS",permission_to_write:false,autoaccept:false};
+      if(matches.length===1)return nativeAnalyticsReturn(result,matches[0]);
+      return {result_id:result.RESULT_ID,request_id:result.REQUEST_ID||null,
+        caller_state:"CALLER_NOT_VERIFIED",permission_to_write:false};
     }),writes:"NONE",autoaccept:false};
 }
