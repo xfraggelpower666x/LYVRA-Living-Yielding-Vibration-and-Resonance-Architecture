@@ -1,0 +1,17 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {reviewDictation,assessParallelWork,assessImpact,antiLoopReview,projectParallelMonitor} from "./parallel-work-intelligence.mjs";
+const task=(id,x={})=>({id,title:id,strand:"VISUAL",state:"OPEN",origin_ref:"git:verified",resource_key:id, ...x});
+const verified=(x={})=>({direct_readback:true,source_ref:"git:receipt",head:"abc",...x});
+test("single work item is not automatically executed",()=>{const r=assessParallelWork([task("one")]);assert.equal(r.mode,"SINGLE");assert.equal(r.execute,false)});
+test("multi selects max eight by default while preserving all",()=>{const r=assessParallelWork(Array.from({length:14},(_,i)=>task("T"+i)));assert.equal(r.recommended.length,8);assert.equal(r.reviewed.length,14);assert.equal(r.unselected.length,6)});
+test("explicit all covers full eligible load",()=>{assert.equal(assessParallelWork(Array.from({length:12},(_,i)=>task("T"+i)),[],{all:true}).recommended.length,12)});
+test("unverified active actor does not create fake lock",()=>{const r=assessParallelWork([task("a")],[{kind:"ACTIVE_WRITE",resource_key:"a",actor_id:"other"}]);assert.equal(r.reviewed[0].state,"OPEN")});
+test("verified foreign writer pauses only matching resource",()=>{const r=assessParallelWork([task("a"),task("b")],[verified({kind:"ACTIVE_WRITE",resource_key:"a",actor_id:"other"})]);assert.equal(r.reviewed[0].state,"PAUSED_CONCURRENT");assert.equal(r.reviewed[1].action_allowed,true)});
+test("dormant without current receipt not promoted",()=>{assert.equal(assessParallelWork([task("d",{state:"DORMANT"})]).reviewed[0].state,"DORMANT_UNCONFIRMED")});
+test("dependent tasks remain blocked",()=>{assert.equal(assessParallelWork([task("a",{depends_on:["missing"]})]).reviewed[0].state,"DEPENDENCY_BLOCKED")});
+test("done without actual readback not closed",()=>{assert.equal(assessParallelWork([task("a",{state:"DONE"})]).reviewed[0].state,"RESULT_READBACK_PENDING")});
+test("dictation preserves originals and requires review on ambiguity",()=>{const r=reviewDictation({original:"Screei",alternatives:["SCEERI"]});assert.equal(r.interpreted,"Screei");assert.equal(r.needs_creator_review,true);assert.equal(r.auto_corrected,false)});
+test("impact inference stays evidence-scoped",()=>{const r=assessImpact(task("a",{impact_targets:["website"]}),[verified({cause_id:"a",effect_target:"cdn"}),{cause_id:"a",effect_target:"unknown"}]);assert.deepEqual(r.affected,["cdn","website"]);assert.equal(r.unverified_links,1)});
+test("three repeated checks do not bypass permissions",()=>{const c=Array.from({length:3},()=>({fingerprint:"same",result:"NO_NEW_EVIDENCE"}));assert.equal(antiLoopReview(c,{}).mode,"PAUSE_REPEATED_CHECKS_HOST_GATE");assert.equal(antiLoopReview(c,{explicit_authorization:true,host_verified:true,recovery_verified:true}).mode,"LEARNING_BY_DOING_AUTHORIZED")});
+test("monitor includes bridge+forge+legend and native scope",()=>{const r=projectParallelMonitor(assessParallelWork([task("a",{bridge_assignments:[{capability_id:"binary",role:"upload"}],codeforge_role:"HTML repair"})]));assert.equal(r.tasks[0].bridge_details.length,1);assert.equal(r.scope,"FIFTH_MAIN_OPTION_SUBMENU_ONLY");assert.ok(r.glossary.SCEERI);assert.equal(r.no_auto_deploy,true)});
