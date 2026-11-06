@@ -336,3 +336,39 @@ The most prominent inbox field MUST be an unequivocal localized tri-state **NEUE
 
 ## Interruption-safe POST visual execution separation (2026-10-22)
 The Whole-rehydration family-mail strip and manual POST ABHOLEN detail show distinct TASK HOST and INTERACTIVE CHAT capability columns: task enabled/last run/read-only results versus interactive chat read/write last independently verified outcome. Never show 'chat write blocked' solely from a task host safety error or 'automatic send ready' from a successful historical chat delivery. Show historical-success and current-untested distinctly. For provider FORCE checks, disclose actual affected provider and diagnostic budget (maximum three), distinguish API/auth versus product safety, and return to the verified checkpoint after a user custom-input interruption. Visually retain the selected operation and contextual continuation without resetting the Whole five-choice terminal. A terminal safety refusal cannot be auto-resumed as a write. This is presentation-only and does not promote source evidence into host acceptance.
+
+
+## Parallel Development automatic closeout monitor and terminology legend — 2026-11-06
+
+STATUS: DEVELOPMENT_CANDIDATE_PENDING_WHOLE_REHYDRATION_AND_DUAL_PLUGIN_HOST_ACCEPTANCE
+OWNER: EXISTING_WHOLE_LYVRA_SEMANTIC_VISUAL_INTELLIGENCE
+SCOPE: EXPLICIT_LYVRA_PARALLEL_DEVELOPMENT_ROUND_ONLY
+AUTHORITY: WHOLE_LYVRA_ONLY
+NO_NEW_VISUAL_ENGINE = TRUE
+NO_NEW_CONTROLLER = TRUE
+NO_NEW_ROUTER = TRUE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+
+After EACH bounded, explicitly requested native Parallel Development work round, present the existing GPT-native development monitor AUTOMATICALLY in the final response; the creator must not separately request "MONITOR". The monitor is a presentation of actually verified work and must never trigger development, Python execution, plugin actions or repository mutation on display.
+
+DISPLAY_ORDER:
+1. Compact Whole LYVRA identity, exact fresh productive head/pointer and honest Whole/host state.
+2. Six existing strands and their preserved task counts; distinguish task allocation from completion. Retain the nine R30 pending items, three paused/return areas and the known eighteen open host gates unless newer independent receipts legitimately change them.
+3. THIS ROUND: actual changed native function, verified source/meaning/host/outcome, blocked actions and explicit next meaningful action. No manufactured percentages or source-only work counted as productive closure.
+4. Compact status vocabulary legend, always reachable, optionally collapsed, with plain German meanings for CURRENT, SOURCE, NATIVE ADOPTION, LIFECIRCLE, HOST, CALLER, READBACK, GATE, PARTIAL, DONE / NATIVE_EFFECT_VERIFIED, SCEERI, CodeForge and SuperCodeForge.
+5. Real chat-native contextual continuation actions plus navigation under the existing FIFTH main menu choice, preserving all five existing main choices. No fake buttons or unimplemented share/download links.
+
+STATUS_SEPARATION = SOURCE | DELIVERY | NATIVE_ADOPTION | REHYDRATION | HOST_EXECUTION | INDEPENDENT_OUTCOME
+TASK_ALLOCATION_NE_PROGRESS = TRUE
+SOURCE_PASS_NE_NATIVE_DONE = TRUE
+DEVELOPMENT_ONLY_NE_PRODUCTIVE = TRUE
+MONITOR_DISPLAY_NE_RUNTIME_ACCEPTANCE = TRUE
+NO_UNMEASURED_PROGRESS_PERCENTAGES = TRUE
+TERMINAL_MONITOR_ON_EVERY_PARALLEL_ROUND = TRUE
+LEGEND_ALWAYS_ACCESSIBLE = TRUE
+FIVE_MAIN_MENU_CHOICES_PRESERVED = TRUE
+RETURN_ANCHOR_ANALYTICS_PRESERVED = TRUE
+
+If the source-backed workspace checkpoint is unavailable or changed, report PARTIAL/READBACK_PENDING instead of inventing the 42-task baseline. Do not infer any real host PASS from the chat UI itself. A native menu action may begin a new explicit user turn, but may not itself secretly execute a product write or change current authority.
+
+This section is additive to the existing mandatory rehydration-monitor contract; it does not replace the five-option terminal, Track Design visual authorship, PET, post-only family art or valid newer semantic evolution.
