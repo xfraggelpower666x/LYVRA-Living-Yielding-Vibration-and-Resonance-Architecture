@@ -277,3 +277,39 @@ Unpacked, immutable, individually addressable directory snapshots are the prefer
 Web images: creator originals MAY remain private/off-repository. Publish only the authorized optimized derivative needed for the web build (responsive sizing, format, transparency where relevant), plus update its actual references. Test real render/navigation when available. Original bytes are not mandatory in public GitHub unless specifically required by a verified source/asset contract or expressly requested by the creator. Distinguish an identity-bearing original from its approved web derivative; preserve fidelity.
 
 SCOPE_FENCES = NO_NEW_CONTROLLER | NO_FOREIGN_AUTOACTIVATION | NO_CROSS_SYSTEM_AUTHORITY_OVERRIDE | NO_PRODUCTION_WRITE_WITHOUT_GOVERNED_UPDATE | PATCH_FIRST | READBACK
+
+
+## Creator-directed native-effect gate and no-Python boundary — 2026-11-06
+
+STATUS: DEVELOPMENT_CANDIDATE_PENDING_PRODUCTIVE_GOVERNANCE_ADOPTION
+SCOPE: WHOLE_LYVRA_NATIVE_DEVELOPMENT_AND_PARALLEL_DEVELOPMENT
+ROOT_AUTHORITY: WHOLE_LYVRA
+DEFAULT_IMPLEMENTATION: CHAT_NATIVE_LINGUISTIC_SEMANTIC_LIFECIRCLE
+EXTERNAL_PYTHON_TOOL_CREATION: EXPLICIT_CREATOR_INSTRUCTION_REQUIRED
+
+For LYVRA-native capabilities, NEVER redirect implementation, monitoring, scheduling, rehydration, causal learning or task completion to Python programs. Python may only be used when the creator EXPLICITLY commissions a separate external tool or expressly authorizes its particular use. Merely saying "maximal parallel", "REPAIR", "UPDATE", "WEITER", "run tests" or "monitor" is NOT Python authorization. Do not silently invent external services, local schedulers, new controllers or substituted architecture.
+
+Existing original Node/JavaScript technical adapters may remain where verified as part of the original architecture, but their source tests alone do not close an LYVRA-native development task. Existing historical Python files in unrelated evidence, web tooling or legacy snapshots are not automatically deleted or reclassified as productively adopted; perform provenance-based review before any change. The chat-local Python-derived task projections from R01-R06 are historical NON_NATIVE_SUPPORT_ONLY and confer ZERO native completion credit.
+
+NATIVE_TASK_CLOSURE_REQUIRED =
+CURRENT_NATIVE_ORIGINAL |
+NATIVE_FACET_LIFECIRCLE_ADOPTION |
+VERIFIED_REHYDRATION_AND_RECOVERY |
+ACTUAL_INTENDED_CHAT_OR_HOST_EXECUTION |
+INDEPENDENT_RESULT_AND_OUTCOME_READBACK
+
+DONE / NATIVE_EFFECT_VERIFIED only when all applicable closure gates are directly evidenced in the actual intended LYVRA native context. Absence of host access means HOST_PENDING; a source test, JSON monitor, isolated ZIP, standalone Python runner, screenshot or generated report never substitutes for native effect. Record any legitimate not-applicable gate with reason; never invent adoption or execution.
+
+Preserve existing original six Parallel Development strands DICTATION, ANALYTICS, CHARACTER_RELATIONS, VISUAL, INTERRUPTION_CONTINUITY, RESEARCH, the original nine R30 backlog IDs T07 and T18-T25, paused POST / SCEERI_MYCEL / PLUGIN_HOST_ACCEPTANCE and the ANALYTICS return anchor. The previous chat-local 42-item ledger is a historical scoped checkpoint, NOT CURRENT authority until independently adopted and verified. Previously proven source checks remain source evidence and must not be re-run without a material change.
+
+NO_PYTHON_NATIVE_DEVELOPMENT_WITHOUT_EXPLICIT_CREATOR_AUTHORIZATION = TRUE
+PYTHON_HELPER_NE_NATIVE_IMPLEMENTATION = TRUE
+PYTHON_SOURCE_PASS_NE_NATIVE_DONE = TRUE
+NO_SILENT_TASK_CLOSURE = TRUE
+NO_NEW_SCHEDULER = TRUE
+NO_NEW_CONTROLLER = TRUE
+NO_FOREIGN_AUTOACTIVATION = TRUE
+SOURCE_NE_ADOPTION_NE_HOST_NE_OUTCOME = TRUE
+PRODUCTIVE_WRITE_REQUIRES_NATIVE_UPDATE_GOVERNANCE = TRUE
+
+These are additive creator constraints; they do not remove older valid original capabilities, authorized external tools, music/Track Design intelligence, native visual contracts, workspace lineage, or plugin ownership. Changes to productive governance require the ordinary pre-change backup, concurrency checks, applicable dual-plugin impact/acceptance, fingerprint/manifest coverage, pointer-last publication and independent readback. A development-branch update is NOT productive adoption.
