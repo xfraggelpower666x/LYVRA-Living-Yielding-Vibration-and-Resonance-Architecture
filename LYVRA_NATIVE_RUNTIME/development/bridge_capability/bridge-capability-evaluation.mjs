@@ -47,3 +47,39 @@ export function classifyFeedback(receipt) {
   return {task_id:receipt.task_id,capability_id:receipt.capability_id,learning_state:evidence?"EVIDENCE_BACKED_LOCAL_CANDIDATE":"UNVERIFIED_OBSERVATION",
     outcome: evidence?receipt.outcome:"NOT_VERIFIED",auto_promote:false,may_change_permission:false};
 }
+
+export function discoverBridgeChanges(previous, current) {
+  if(!Array.isArray(previous)||!Array.isArray(current))throw new TypeError("Bridge inventories required");
+  const known=new Map(previous.filter(x=>x&&x.capability_id).map(x=>[x.capability_id,x]));
+  const changes=[];
+  for(const b of current){
+    if(!b?.capability_id || !b.owner) throw new TypeError("Native identity and ownership required");
+    const old=known.get(b.capability_id);
+    const change=!old?"NEW":old.source_sha!==b.source_sha||JSON.stringify(old.capabilities||[])!==JSON.stringify(b.capabilities||[])?"CHANGED":"UNCHANGED";
+    if(change==="UNCHANGED")continue;
+    changes.push({capability_id:b.capability_id,owner:b.owner,change,
+      source_state:b.source_verified===true&&Boolean(b.source_sha)&&Boolean(b.source_ref)?"SOURCE_VERIFIED":"SOURCE_READBACK_PENDING",
+      native_adoption:"NOT_PROMOTED",host_execution:"NOT_VERIFIED",auto_activate:false,
+      needs_native_review:true,previous_source_sha:old?.source_sha||null,source_sha:b.source_sha||null});
+  }
+  return {changes,detected:changes.length,auto_adoption:false,auto_discovery_execute:false};
+}
+export function learnBridgeOutcomes(receipts) {
+  if(!Array.isArray(receipts))throw new TypeError("Evidence receipts required");
+  const groups=new Map();
+  for(const r of receipts){
+    if(!r||!r.capability_id||!r.context_fingerprint)continue;
+    const validated=r.independent_readback===true&&r.outcome_observed===true&&Boolean(r.origin_ref)&&
+      (r.outcome==="PASS"||r.outcome==="FAIL");
+    if(!validated)continue;
+    const key=r.capability_id+"::"+r.context_fingerprint;
+    const g=groups.get(key)||{capability_id:r.capability_id,context_fingerprint:r.context_fingerprint,pass:0,fail:0,source_refs:[]};
+    if(r.outcome==="PASS")g.pass++;else g.fail++;
+    if(!g.source_refs.includes(r.origin_ref))g.source_refs.push(r.origin_ref);
+    groups.set(key,g);
+  }
+  return {cases:[...groups.values()].map(g=>({...g,relation_state:g.pass&&g.fail?"CONTRADICTORY_OUTCOMES":g.pass?"OBSERVED_SUCCESS":"OBSERVED_FAILURE",
+    learning_state:"LOCAL_CAUSAL_CANDIDATE",independent_context_transfer:"NOT_VERIFIED",auto_promote:false})),
+    ignored_without_independent_evidence:receipts.length-[...groups.values()].reduce((n,g)=>n+g.pass+g.fail,0),
+    permissions_unchanged:true,automatic_rule_install:false};
+}
