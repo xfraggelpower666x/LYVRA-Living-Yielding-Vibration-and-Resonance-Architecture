@@ -1,6 +1,7 @@
 // R17: Live public GitHub read-only provider through EXISTING SuperCodeForge native entrypoint.
 // This is a CI provider acceptance, NOT a ChatGPT Native/ALIVE plugin-host acceptance.
 import {spawnSync} from "node:child_process";
+import {createHash} from "node:crypto";
 import {invokeWithAuthorizedGitHubHandle} from "../../facets/super_codeforge/host-entrypoint.mjs";
 const REPO="xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture";
 const PATH="LYVRA_NATIVE_RUNTIME/facets/analytics/development/RESULT_QUEUE.json";
@@ -8,6 +9,10 @@ function git(args){
   const p=spawnSync("git",args,{encoding:"utf8",maxBuffer:1024*1024});
   if(p.status!==0||p.error)throw new Error("Git checkout authority unavailable");
   return p.stdout.trim();
+}
+export function gitObjectBlobSha(bytes){
+  if(!Buffer.isBuffer(bytes))throw new TypeError("Git blob requires Buffer");
+  return createHash("sha1").update(Buffer.from("blob "+bytes.length+"\\0")).update(bytes).digest("hex");
 }
 function strictSha(s){if(!/^[a-f0-9]{40}$/.test(s))throw new Error("invalid immutable SHA");return s}
 export async function runLiveSuperCodeForgeRead({head=git(["rev-parse","HEAD"]),
@@ -26,6 +31,8 @@ export async function runLiveSuperCodeForgeRead({head=git(["rev-parse","HEAD"]),
     if(json.encoding!=="base64"||json.sha!==blob||typeof json.content!=="string")
       throw new Error("PROVIDER_BLOB_OR_ENCODING_MISMATCH");
     const bytes=Buffer.from(json.content.replace(/\\s/g,""),"base64");
+    const independentlyComputed=gitObjectBlobSha(bytes);
+    if(independentlyComputed!==blob)throw new Error("GITHUB_PROVIDER_BYTES_SHA_MISMATCH");
     return {result:{sha:json.sha,content:bytes.toString("utf8"),encoding:"utf-8"}};
   }};
   const request={capability_id:"LYVRA_GITHUB_COMMIT_FILE_READBACK_V1",origin_system:"LYVRA",

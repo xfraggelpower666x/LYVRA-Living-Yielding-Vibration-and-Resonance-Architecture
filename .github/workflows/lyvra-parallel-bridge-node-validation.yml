@@ -35,7 +35,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-supercodeforge-provider-r17.mjs
       - name: Execute all original bridge and parallel tests
         run: |
-          node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-lineage-evidence.test.mjs
+          node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-lineage-evidence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-supercodeforge-provider-r18.test.mjs
       - name: Validate actual native Analytics original Git objects and return queue
         run: node LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.mjs
       - name: Inspect original Whole workspace lineages without activation
