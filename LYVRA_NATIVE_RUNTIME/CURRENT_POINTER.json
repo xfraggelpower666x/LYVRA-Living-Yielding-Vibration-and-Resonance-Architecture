@@ -8012,5 +8012,48 @@
       "POINTER_LAST",
       "NO_FURTHER_MUTATION_THIS_UPDATE"
     ]
+  },
+  "lyvra_to_littlelyv_post_r09_20261106": {
+    "status": "CURRENT_PRODUCTIVE_POST_EVIDENCE_INTEGRATED_SOURCE_READBACK_VERIFIED",
+    "scope": "GERMAN_LYVRA_TO_LITTLELYV_POST_ONLY",
+    "prechange_head": "e40f7a2c8600b0a744cddc46924eb8d5f551df9c",
+    "recovery_branch": "lyvra-recovery-pre-littlelyv-post-r09-20261106",
+    "body_head_before_pointer": "ac4cd2a96dba911e0738d1a6cd867002d0853b89",
+    "evidence_paths": [
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_HOST_OUTCOMES_20261105_R01_DEV.json",
+        "blob_sha": "21ec21af2374910ac30a8651b51c38de0b35a404"
+      },
+      {
+        "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R05_INTEGRATION_GATES_20261106_DEV.json",
+        "blob_sha": "1186693d254825d180df363309ede9b84f68e85f"
+      }
+    ],
+    "registry": {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+      "blob_sha": "0a8098cf4e54c11ea929c093d1bdbccb691f1349",
+      "existing_243_preserved": true,
+      "added_post_carriers": 2
+    },
+    "manifest": {
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "blob_sha": "a4469ca4e8245e6ff01c7f5a9c5b9437a442d358",
+      "domains_preserved": 29,
+      "post_references": 8
+    },
+    "safety_denial_preserved": true,
+    "manual_egg_upload": "PREVIOUSLY_VERIFIED_DIRECT_DRIVE_READBACK",
+    "joint_reply": "PREVIOUSLY_VERIFIED_DIRECT_DRIVE_READBACK",
+    "historical_unclear_reply_mappings": 13,
+    "other_historical_cases": 15,
+    "private_letter_payload_in_repo": false,
+    "native_release": "0.1.91",
+    "alive_release": "0.13.87",
+    "plugin_impact": "EVIDENCE_ONLY_NO_RELEASE_NEEDED",
+    "plugin_fresh_host_acceptance": "NOT_VERIFIED",
+    "whole_runtime_acceptance": "NOT_CLAIMED",
+    "no_foreign_autoload": true,
+    "new_cost": false,
+    "pointer_last": true
   }
 }
