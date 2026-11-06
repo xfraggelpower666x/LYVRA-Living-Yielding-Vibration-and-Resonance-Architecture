@@ -26,16 +26,18 @@ export function projectActionBoard(standstill, options={}) {
      !eqIds(ids,standstill.continuity.persistent.map(x=>x.id)) ||
      standstill.totals?.projects!==standstill.projects.persistent.length ||
      standstill.totals?.continuity!==ids.length) throw new TypeError('source coverage or identity mismatch');
-  const confirmedAudio=options.existingOriginalAudioAndPlayback===true;
-  const confirmedHost=options.newAuthorizedFreeHostAndRealCheckout===true;
+  // A caller-supplied boolean is not provider readback. Fail closed until a separately
+  // authenticated, scope-bound evidence channel is designed and approved.
+  const unverifiedReadinessRequested = options.existingOriginalAudioAndPlayback===true ||
+    options.newAuthorizedFreeHostAndRealCheckout===true;
   const cards=permanent.map((r,i)=>{
     if(r.resume_anchor!==anchors[i].resume_anchor || !r.resume_anchor)throw new TypeError('return-anchor drift');
     for(const field of ['source','delivery','adoption','host'])if(!allowedEvidence.has(r[field]))throw new TypeError('invalid evidence state');
     const known=KNOWN[r.resume_anchor];
     const state=known?.category==='AUDIO_SOURCE_COMPARISON'
-       ? confirmedAudio?'READY_FOR_USER_DIRECTED_COMPARISON':'WAITING_FOR_EXISTING_AUDIO'
+       ? 'WAITING_FOR_EXISTING_AUDIO'
        : known?.category==='HOST_ACCEPTANCE'
-       ? confirmedHost?'READY_FOR_AUTHORIZED_HOST_REVIEW':'FROZEN_HOST_BLOCK'
+       ? 'FROZEN_HOST_BLOCK'
        : 'MANUAL_SCOPE_REVIEW';
     return Object.freeze({id:r.id,title:r.title,stage:r.stage,anchor:r.resume_anchor,
       evidence:Object.freeze({source:r.source,delivery:r.delivery,adoption:r.adoption,host:r.host}),
@@ -49,5 +51,6 @@ export function projectActionBoard(standstill, options={}) {
     cards, frozen_return_anchors:anchors.map(x=>Object.freeze({...x})),
     source_revision:options.sourceRevision??'UNVERIFIED',
     no_new_engine:true,no_autoactivation:true,no_host_claim:true,no_receipt_search:true,
+    prerequisite_readback:'PENDING_INDEPENDENT_VERIFICATION', unverified_readiness_requested:unverifiedReadinessRequested,
     writes_performed:false});
 }
