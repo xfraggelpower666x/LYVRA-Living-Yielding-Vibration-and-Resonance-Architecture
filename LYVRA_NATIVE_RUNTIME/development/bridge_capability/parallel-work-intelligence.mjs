@@ -36,11 +36,17 @@ export function assessParallelWork(items,observations=[],options={}) {
   const obs=asArray(observations);
   const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
   const occupied=new Set(items.filter(x=>x.state==="DONE" && x.outcome_readback===true).map(x=>x.id));
+  const resources=new Map();
+  for (const item of items) if(str(item.resource_key)&&item.state!=="DONE") {
+    resources.set(item.resource_key,[...(resources.get(item.resource_key)||[]),item.id]);
+  }
   const reviewed=items.map(item=>{
     const openDeps=asArray(item.depends_on).filter(id=>!occupied.has(id));
     const live=perResource(item.resource_key).filter(e=>e.actor_id!==item.actor_id);
+    const matching=resources.get(item.resource_key)||[];
+    const localCollision=matching.length>1&&matching[0]!==item.id;
     const own=obs.find(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e));
-    const state=live.length?"PAUSED_CONCURRENT":openDeps.length?"DEPENDENCY_BLOCKED":
+    const state=live.length?"PAUSED_CONCURRENT":localCollision?"WAIT_SAME_RESOURCE":openDeps.length?"DEPENDENCY_BLOCKED":
       item.state==="DORMANT"&&!own?"DORMANT_UNCONFIRMED":
       item.state==="DONE"&&!item.outcome_readback?"RESULT_READBACK_PENDING":
       item.state==="ACTIVE"&&!own?"ACTIVE_UNVERIFIED":
@@ -50,7 +56,7 @@ export function assessParallelWork(items,observations=[],options={}) {
     return {id:item.id,title:item.title||item.id,strand:item.strand||"UNCLASSIFIED",state,score,origin_ref:item.origin_ref,
       resource_key:item.resource_key||null,bridges,codeforge_role:item.codeforge_role||"NOT_ASSIGNED",
       dependent_ids:openDeps,concurrent_evidence:live.map(e=>({actor:e.actor_id,source:e.source_ref,head:e.head})),
-      action_allowed:!["PAUSED_CONCURRENT","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED"].includes(state)&&item.state!=="DONE",
+      action_allowed:!["PAUSED_CONCURRENT","WAIT_SAME_RESOURCE","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED","BLOCKED","PAUSED","PROPOSED"].includes(state)&&item.state!=="DONE",
       related_facets:asArray(item.related_facets),impact_targets:asArray(item.impact_targets),
       evidence_state:own?"CURRENT_WORK_VERIFIED":"CURRENT_WORK_NOT_VERIFIED"};
   });
@@ -89,7 +95,7 @@ export function projectParallelMonitor(assessment,opts={}) {
       active_verified:assessment.reviewed.filter(x=>x.strand===id&&x.evidence_state==="CURRENT_WORK_VERIFIED").length})),
     tasks:assessment.reviewed.map(x=>({id:x.id,title:x.title,status:x.state,bridge_details:x.bridges,
       codeforge:x.codeforge_role,relations:x.related_facets,impact:x.impact_targets,blockers:x.dependent_ids,
-      explanation:x.concurrent_evidence.length?"Belegter gleichzeitiger Schreibvorgang":x.state==="DORMANT_UNCONFIRMED"?"Ruhende Aufgabe: erst Quelle prüfen":x.state==="ACTIVE_UNVERIFIED"?"Aktive Arbeit nicht unabhängig belegt":"Status aus bereitgestellter Evidenz"})),
+      explanation:x.concurrent_evidence.length?"Belegter gleichzeitiger Schreibvorgang":x.state==="WAIT_SAME_RESOURCE"?"Eigene Aufträge benötigen dieselbe Datei: nacheinander bearbeiten":x.state==="DORMANT_UNCONFIRMED"?"Ruhende Aufgabe: erst Quelle prüfen":x.state==="ACTIVE_UNVERIFIED"?"Aktive Arbeit nicht unabhängig belegt":"Status aus bereitgestellter Evidenz"})),
     actions:[{id:"recommended",label:"Empfohlene 6–10 geeignete Aufträge prüfen",meaning:"Anzeigen, nicht automatisch starten"},
       {id:"all",label:"Alle geeigneten Stränge prüfen",meaning:"Breite Auswahl, jeder Write bleibt geschützt"},
       {id:"return_analytics",label:"Zu Analytics zurückkehren",meaning:"Bestehenden Rückkehranker verwenden"}],
