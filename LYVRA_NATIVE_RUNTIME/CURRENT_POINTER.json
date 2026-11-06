@@ -7876,5 +7876,29 @@
     "github_ci_execution": "NO_STATUS_RETURNED_UNVERIFIED",
     "test_execution_hash_match": "f43c31820e0cb5a93954162779d7719f56a3c0fd",
     "local_test_recovery_branch": "lyvra-recovery-pre-utf16-test-execution-20261104-r01"
+  },
+  "whole_evidence_repair_matrix_20261106": {
+    "status": "REPOSITORY_BODY_SOURCE_READBACK_VERIFIED_EXTERNAL_ACCEPTANCE_PENDING",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "TRACK_DESIGN_CHAT_CONTINUITY_AND_WHOLE_RELATIONAL_EVIDENCE",
+    "evidence_path": "LYVRA_NATIVE_RUNTIME/continuity/LYVRA_REPAIR_EVIDENCE_MATRIX_20261106.md",
+    "evidence_blob_sha": "86749ce78747e663216acbc26d6ca59a8373f833",
+    "body_commit": "17214165d05d52109bae60c986dc879e8a317da8",
+    "recovery_branch": "lyvra-recovery-pre-whole-repair-evidence-20261106-r01",
+    "resolved": "MISSING_CREATOR_CHAT_EVIDENCE_IN_REPO",
+    "open": [
+      "TRACK_HOST_COPY_AND_SUNO",
+      "ALIVE_AND_NATIVE_FRESH_HOST",
+      "ANALYTICS_TO_TRACK_MIGRATION",
+      "INDEPENDENT_WINDOWS_RADIO_TIME_DISPLAY",
+      "INDEPENDENT_WINDOWS_EXPORT_VALIDATION",
+      "PEER_STABLE_SET_AND_ADOPTION"
+    ],
+    "plugin_change": false,
+    "version_bump": false,
+    "music_contract_changed": false,
+    "no_foreign_writes": true,
+    "no_new_costs": true,
+    "pointer_last": true
   }
 }
