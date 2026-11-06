@@ -12,7 +12,7 @@ function git(args){
 }
 export function gitObjectBlobSha(bytes){
   if(!Buffer.isBuffer(bytes))throw new TypeError("Git blob requires Buffer");
-  return createHash("sha1").update(Buffer.from("blob "+bytes.length+"\\0")).update(bytes).digest("hex");
+  return createHash("sha1").update(Buffer.from("blob "+bytes.length+String.fromCharCode(0))).update(bytes).digest("hex");
 }
 function strictSha(s){if(!/^[a-f0-9]{40}$/.test(s))throw new Error("invalid immutable SHA");return s}
 export async function runLiveSuperCodeForgeRead({head=git(["rev-parse","HEAD"]),
