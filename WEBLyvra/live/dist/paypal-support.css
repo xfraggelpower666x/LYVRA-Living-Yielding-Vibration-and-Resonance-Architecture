@@ -14,3 +14,14 @@
 #support-fraggel .lyvra-support-caption{font-size:.75rem;color:#b7e8f0}
 @media(max-width:760px){#support-fraggel .lyvra-support-panel{grid-template-columns:minmax(0,1fr)}#support-fraggel .lyvra-support-link{width:100%;min-height:120px}}
 @media(prefers-reduced-motion:reduce){#support-fraggel .lyvra-support-link{transition:none}#support-fraggel .lyvra-support-link:hover{transform:none}}
+
+/* PAYPAL_SUPPORT_R02_IMAGE_LINK: logo left, supplied English creator statement right. */
+#support-fraggel .lyvra-support-panel{grid-template-columns:minmax(160px,.72fr) minmax(0,1.28fr);gap:clamp(18px,4vw,56px)}
+#support-fraggel .lyvra-support-logo-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-width:0;text-align:center;border:1px solid #ed8edca6;border-radius:20px;padding:clamp(14px,3vw,25px);background:linear-gradient(145deg,#251538,#101d31);box-shadow:0 0 26px #d16cff21;color:#f4d0ff;transition:transform .18s,border-color .18s}
+#support-fraggel .lyvra-support-logo-link:hover{transform:translateY(-2px);border-color:#72e8ed}
+#support-fraggel .lyvra-support-logo-link:focus-visible{outline:3px solid #7bebed;outline-offset:5px}
+#support-fraggel .lyvra-support-logo{display:block;width:min(100%,280px);height:auto;aspect-ratio:1;object-fit:contain}
+#support-fraggel .lyvra-support-link-caption{font-size:clamp(.73rem,1.4vw,.93rem);overflow-wrap:anywhere}
+#support-fraggel .lyvra-support-note{font-size:.8rem;color:#9cabc1}
+@media(max-width:760px){#support-fraggel .lyvra-support-panel{grid-template-columns:minmax(0,1fr)}#support-fraggel .lyvra-support-logo-link{max-width:440px;width:100%;margin:auto}}
+@media(prefers-reduced-motion:reduce){#support-fraggel .lyvra-support-logo-link{transition:none}#support-fraggel .lyvra-support-logo-link:hover{transform:none}}
