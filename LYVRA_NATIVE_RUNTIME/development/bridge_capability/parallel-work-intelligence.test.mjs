@@ -19,3 +19,37 @@ test("two local tasks for one resource are serialized by proposal, not fake lock
 test("blocked paused and proposed work is never automatically actionable",()=>{for(const state of ["BLOCKED","PAUSED","PROPOSED"]){assert.equal(assessParallelWork([task(state,{state})]).recommended.length,0)}});
 test("a paused task does not block independent open work for same resource",()=>{const r=assessParallelWork([task("paused",{state:"PAUSED",resource_key:"same"}),task("open",{resource_key:"same"})]);assert.equal(r.reviewed[1].state,"OPEN");assert.equal(r.recommended.length,1)});
 test("anti-loop requires three consecutive equivalent checks",()=>{const checks=[{fingerprint:"A",result:"NO_NEW_EVIDENCE"},{fingerprint:"B",result:"NO_NEW_EVIDENCE"},{fingerprint:"A",result:"NO_NEW_EVIDENCE"},{fingerprint:"A",result:"NO_NEW_EVIDENCE"}];assert.equal(antiLoopReview(checks,{}).repeated,2);assert.equal(antiLoopReview([...checks,{fingerprint:"A",result:"NO_NEW_EVIDENCE"}],{}).repeated,3)});
+
+test("DONE readback flag alone never closes native task or releases dependent",()=>{
+ const r=assessParallelWork([task("done",{state:"DONE",outcome_readback:true}),task("dependent",{depends_on:["done"]})]);
+ assert.equal(r.reviewed[0].state,"RESULT_READBACK_PENDING");
+ assert.ok(r.reviewed[0].missing_native_done_gates.length>0);
+ assert.equal(r.reviewed[1].state,"DEPENDENCY_BLOCKED");
+});
+test("DONE requires all four same-head native evidence gates plus independent outcome",()=>{
+ const receipt=(x={})=>verified({head:"current-head",...x});
+ const done=task("done",{state:"DONE",outcome_readback:true,current_evidence:receipt(),
+   native_adoption_evidence:receipt(),lifecycle_rehydration_evidence:receipt(),
+   host_execution_evidence:receipt({execution_observed:true}),
+   independent_outcome_evidence:receipt({independent:true,outcome_observed:true})});
+ const accepted=assessParallelWork([done,task("next",{depends_on:["done"]})]);
+ assert.equal(accepted.reviewed[0].state,"DONE_VERIFIED");
+ assert.equal(accepted.reviewed[1].state,"OPEN");
+ for(const key of ["native_adoption_evidence","lifecycle_rehydration_evidence","host_execution_evidence","independent_outcome_evidence"]){
+   const rejected=assessParallelWork([{...done,[key]:undefined}]);
+   assert.equal(rejected.reviewed[0].state,"RESULT_READBACK_PENDING",key);
+ }
+});
+test("stale host evidence and unobserved outcome never count as DONE",()=>{
+ const receipt=(x={})=>verified({head:"current-head",...x});
+ const done=task("x",{state:"DONE",outcome_readback:true,current_evidence:receipt(),
+ native_adoption_evidence:receipt(),lifecycle_rehydration_evidence:receipt(),
+ host_execution_evidence:receipt({execution_observed:true}),
+ independent_outcome_evidence:receipt({independent:true,outcome_observed:true})});
+ for(const candidate of [
+   {...done,host_execution_evidence:receipt({head:"stale-head",execution_observed:true})},
+   {...done,host_execution_evidence:receipt({execution_observed:false})},
+   {...done,independent_outcome_evidence:receipt({independent:false,outcome_observed:true})},
+   {...done,independent_outcome_evidence:receipt({independent:true,outcome_observed:false})}
+ ])assert.equal(assessParallelWork([candidate]).reviewed[0].state,"RESULT_READBACK_PENDING");
+});

@@ -5,6 +5,16 @@ const asArray=x=>Array.isArray(x)?x:[];
 const unique=x=>[...new Set(x)];
 const str=x=>String(x??"").trim();
 const evidenceOK=e=>Boolean(e&&e.direct_readback===true&&str(e.source_ref)&&str(e.head));
+const NATIVE_DONE_GATES=Object.freeze(["native_adoption_evidence","lifecycle_rehydration_evidence","host_execution_evidence","independent_outcome_evidence"]);
+function nativeDoneGaps(item){
+  const expected=item?.current_evidence?.head;
+  if(!evidenceOK(item?.current_evidence)||item.current_evidence.head!==expected||!item.outcome_readback)return ["CURRENT_SOURCE_OR_RESULT_READBACK"];
+  const gaps=NATIVE_DONE_GATES.filter(key=>!evidenceOK(item[key])||item[key].head!==expected);
+  if(!gaps.includes("host_execution_evidence")&&item.host_execution_evidence.execution_observed!==true)gaps.push("HOST_EXECUTION_NOT_OBSERVED");
+  if(!gaps.includes("independent_outcome_evidence")&&(item.independent_outcome_evidence.outcome_observed!==true||item.independent_outcome_evidence.independent!==true))gaps.push("INDEPENDENT_OUTCOME_NOT_OBSERVED");
+  return gaps;
+}
+
 export const GLOSSARY=Object.freeze({
   BRIDGE:"Technische oder semantische Verbindung für eine bestimmte Aufgabe",
   CODEFORGE:"LYVRAs eigene Code- und Reparaturfähigkeit",
@@ -35,7 +45,7 @@ export function assessParallelWork(items,observations=[],options={}) {
   }
   const obs=asArray(observations);
   const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
-  const occupied=new Set(items.filter(x=>x.state==="DONE" && x.outcome_readback===true).map(x=>x.id));
+  const occupied=new Set(items.filter(x=>x.state==="DONE"&&nativeDoneGaps(x).length===0).map(x=>x.id));
   const resources=new Map();
   for (const item of items) if(str(item.resource_key)&&["OPEN","ACTIVE"].includes(item.state)) {
     resources.set(item.resource_key,[...(resources.get(item.resource_key)||[]),item.id]);
@@ -48,14 +58,14 @@ export function assessParallelWork(items,observations=[],options={}) {
     const own=obs.find(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e));
     const state=live.length?"PAUSED_CONCURRENT":localCollision?"WAIT_SAME_RESOURCE":openDeps.length?"DEPENDENCY_BLOCKED":
       item.state==="DORMANT"&&!own?"DORMANT_UNCONFIRMED":
-      item.state==="DONE"&&!item.outcome_readback?"RESULT_READBACK_PENDING":
+      item.state==="DONE"&&nativeDoneGaps(item).length?"RESULT_READBACK_PENDING":
       item.state==="ACTIVE"&&!own?"ACTIVE_UNVERIFIED":
       item.state==="DONE"?"DONE_VERIFIED":item.state;
     const score=(item.creator_selected?16:0)+(item.blocks_other_tasks?8:0)+(item.risk_reduction?4:0)+(item.impact_verified?2:0);
     const bridges=asArray(item.bridge_assignments).map(b=>({capability_id:b.capability_id,role:b.role,evidence:b.evidence||"NOT_VERIFIED",host:b.host||"HOST_PENDING"}));
     return {id:item.id,title:item.title||item.id,strand:item.strand||"UNCLASSIFIED",state,score,origin_ref:item.origin_ref,
       resource_key:item.resource_key||null,bridges,codeforge_role:item.codeforge_role||"NOT_ASSIGNED",
-      dependent_ids:openDeps,concurrent_evidence:live.map(e=>({actor:e.actor_id,source:e.source_ref,head:e.head})),
+      dependent_ids:openDeps,missing_native_done_gates:item.state==="DONE"?nativeDoneGaps(item):[],concurrent_evidence:live.map(e=>({actor:e.actor_id,source:e.source_ref,head:e.head})),
       action_allowed:!["PAUSED_CONCURRENT","WAIT_SAME_RESOURCE","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED","BLOCKED","PAUSED","PROPOSED"].includes(state)&&item.state!=="DONE",
       related_facets:asArray(item.related_facets),impact_targets:asArray(item.impact_targets),
       evidence_state:own?"CURRENT_WORK_VERIFIED":"CURRENT_WORK_NOT_VERIFIED"};
