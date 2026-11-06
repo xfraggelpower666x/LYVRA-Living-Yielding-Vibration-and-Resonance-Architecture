@@ -1,6 +1,6 @@
 // Whole LYVRA: bounded caller-to-parallel integration, no scheduler or authority transfer.
 import {evaluateTasks} from "./bridge-capability-evaluation.mjs";
-import {assessParallelWork,assessImpact,reviewDictation,projectParallelMonitor} from "./parallel-work-intelligence.mjs";
+import {assessParallelWork,assessImpact,reviewDictation,assessDictatedNativeAddress,projectParallelMonitor} from "./parallel-work-intelligence.mjs";
 const asList=x=>Array.isArray(x)?x:[];
 const nonempty=x=>typeof x==="string"&&x.trim().length>0;
 const readback=e=>Boolean(e?.direct_readback===true&&nonempty(e.source_ref)&&nonempty(e.head));
@@ -19,9 +19,17 @@ export function nativeParallelIntake({tasks,observations=[],bridges=[],dictation
     .map(x=>evaluateTasks([verified.find(t=>t.id===x.id)],capabilities)[0]);
   const impact=verified.map(t=>assessImpact(t,validObs.filter(e=>e.kind==="CAUSAL_DEPENDENCY")));
   const reviewedDictation=dictation?reviewDictation(dictation):null;
+  const dictatedAddress=dictation?assessDictatedNativeAddress(dictation):null;
   const menu=projectParallelMonitor(work,{source_head});
+  menu.capability_evidence=proposals.map(p=>({task_id:p.task_id,
+    eligible:p.composition.eligible,execution:p.execution,caller_receipt:p.caller_receipt,
+    bridges:p.composition.assignments.map(a=>({required_capability:a.required_capability,
+      candidate:a.selected_capability_id,blockers:a.blockers}))}));
+  menu.dictation_review=dictatedAddress?{original_unchanged:dictatedAddress.original_unchanged,
+    candidate:dictatedAddress.normalized_candidate,needs_creator_review:dictatedAddress.needs_creator_review,
+    execute:false}:null;
   return {schema:"LYVRA_PARALLEL_INTAKE_R13",authority:"LYVRA_ONLY",source_head,work,capability_proposals:proposals,impact,
-    dictation:reviewedDictation,dictation_execution_blocked:Boolean(reviewedDictation?.needs_creator_review),
+    dictation:reviewedDictation,dictation_address:dictatedAddress,dictation_execution_blocked:Boolean(reviewedDictation?.needs_creator_review||dictatedAddress?.needs_creator_review),
     deferred,unverified_observations:asList(observations).length-validObs.length,
     menu,execution:"NOT_EXECUTED",writes:"NONE",autoactivate:false};
 }

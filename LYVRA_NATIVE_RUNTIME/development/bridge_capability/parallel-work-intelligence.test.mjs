@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {reviewDictation,assessParallelWork,assessImpact,antiLoopReview,projectParallelMonitor} from "./parallel-work-intelligence.mjs";
+import {reviewDictation,assessDictatedNativeAddress,assessParallelWork,assessImpact,antiLoopReview,projectParallelMonitor} from "./parallel-work-intelligence.mjs";
 const task=(id,x={})=>({id,title:id,strand:"VISUAL",state:"OPEN",origin_ref:"git:verified",resource_key:id, ...x});
 const verified=(x={})=>({direct_readback:true,source_ref:"git:receipt",head:"abc",...x});
 test("single work item is not automatically executed",()=>{const r=assessParallelWork([task("one")]);assert.equal(r.mode,"SINGLE");assert.equal(r.execute,false)});
@@ -53,3 +53,7 @@ test("stale host evidence and unobserved outcome never count as DONE",()=>{
    {...done,independent_outcome_evidence:receipt({independent:true,outcome_observed:false})}
  ])assert.equal(assessParallelWork([candidate]).reviewed[0].state,"RESULT_READBACK_PENDING");
 });
+test("historical LYV spoken shorthand is a review candidate only in explicit command context",()=>{const x=assessDictatedNativeAddress({original:"Lyv weiter",direct_address:true,explicit_project_context:true});assert.equal(x.normalized_candidate,"LYVRA");assert.equal(x.interpreted,"Lyv weiter");assert.equal(x.needs_creator_review,true);assert.equal(x.execute,false)});
+test("ordinary words and indirect references never activate dictated system addresses",()=>{const x=assessDictatedNativeAddress({original:"lyv is a word",direct_address:false,explicit_project_context:true});assert.equal(x.normalized_candidate,null);assert.equal(x.ordinary_words_preserved,true);assert.equal(x.command_authorized,false)});
+test("explicit confirmed utterance may be presented but never executed by normalization",()=>{const x=assessDictatedNativeAddress({original:"Lyv weiter",direct_address:true,explicit_project_context:true,confirmed:true,confirmed_text:"LYVRA WEITER"});assert.equal(x.interpreted,"LYVRA WEITER");assert.equal(x.needs_creator_review,false);assert.equal(x.command_authorized,false)});
+test("phonetic alternative is not promoted when project context is missing",()=>{const x=assessDictatedNativeAddress({original:"live update",alternatives:["LYVRA"],direct_address:true,explicit_project_context:false});assert.equal(x.normalized_candidate,null);assert.equal(x.interpreted,"live update")});

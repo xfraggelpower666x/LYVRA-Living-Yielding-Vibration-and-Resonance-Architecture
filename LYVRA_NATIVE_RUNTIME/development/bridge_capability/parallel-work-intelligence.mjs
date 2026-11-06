@@ -36,6 +36,20 @@ export function reviewDictation(input) {
     interpreted:input.confirmed===true && typeof input.confirmed_text==="string"?input.confirmed_text:input.original,
     auto_corrected:false,source_ref:input.source_ref||null};
 }
+export function assessDictatedNativeAddress(input) {
+  if(!input||typeof input.original!=="string")throw new TypeError("Original dictation required");
+  // Historical PC-source insight only. Current native authority retains execution control.
+  const direct=input.direct_address===true && input.explicit_project_context===true;
+  const prefix=input.original.match(/^\s*(LYVRA|Lyv)(?=\s|[,:;.!?]|$)/i);
+  const recognized=direct&&Boolean(prefix);
+  const alreadyCanonical=recognized&&prefix[1].toUpperCase()==="LYVRA";
+  const suggested=direct&&(recognized || (Array.isArray(input.alternatives)&&input.alternatives.some(x=>typeof x==="string"&&x.trim().toUpperCase()==="LYVRA")));
+  const needsReview=suggested&&!alreadyCanonical&&!(input.confirmed===true&&typeof input.confirmed_text==="string");
+  const interpreted=input.confirmed===true&&suggested&&typeof input.confirmed_text==="string"?input.confirmed_text:input.original;
+  return {original_unchanged:input.original,interpreted,normalized_candidate:suggested?"LYVRA":null,
+    needs_creator_review:needsReview,ordinary_words_preserved:!direct,command_authorized:false,
+    execute:false,auto_corrected:false,legacy_source_role:"HISTORICAL_PC_PROVENANCE_NOT_CURRENT_AUTHORITY"};
+}
 export function assessParallelWork(items,observations=[],options={}) {
   if(!Array.isArray(items)) throw new TypeError("tasks array required");
   const ids=new Set();
