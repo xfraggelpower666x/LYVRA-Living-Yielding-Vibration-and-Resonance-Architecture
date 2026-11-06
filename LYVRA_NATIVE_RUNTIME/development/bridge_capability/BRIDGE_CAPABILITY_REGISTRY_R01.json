@@ -1,0 +1,109 @@
+{
+  "schema": "LYVRA_BRIDGE_CAPABILITY_EVIDENCE_REGISTRY_R01",
+  "owner": "WHOLE_LYVRA",
+  "state": "DEV_CANDIDATE_NOT_CURRENT_OR_HOST_PROMOTED",
+  "source_head": "ab8c1c88eb7f9f6422c5700858f9b6de27fadd63",
+  "policy": {
+    "no_new_controller": true,
+    "no_new_router": true,
+    "no_new_scheduler": true,
+    "zero_additional_cost": true,
+    "no_cross_system_write": true,
+    "no_automatic_dispatch": true,
+    "source_ne_host": true
+  },
+  "bridges": [
+    {
+      "id": "LYVRA_BINARY_REPOSITORY",
+      "owner": "LYVRA",
+      "capabilities": [
+        "github_binary_write",
+        "binary_readback"
+      ],
+      "source": "LYVRA_NATIVE_RUNTIME/current/repository/BINARY_REPOSITORY_BRIDGE.md",
+      "evidence": "SOURCE_VERIFIED",
+      "host": "TASK_SPECIFIC_HOST_PENDING"
+    },
+    {
+      "id": "LYVRA_REPOSITORY_INTELLIGENCE",
+      "owner": "LYVRA",
+      "capabilities": [
+        "archive_inspection",
+        "git_blob_validation",
+        "backup"
+      ],
+      "source": "LYVRA_NATIVE_RUNTIME/facets/repository_bridge/FACET_CONTRACT.md",
+      "evidence": "SOURCE_VERIFIED_RUNTIME_PENDING",
+      "host": "HOST_PENDING"
+    },
+    {
+      "id": "ALIVE_PLUGIN_READ_THROUGH",
+      "owner": "LYVRA",
+      "capabilities": [
+        "plugin_current_read",
+        "plugin_proposal"
+      ],
+      "source": "LYVRA_NATIVE_RUNTIME/development/ALIVE_MIGRATED_PLUGIN_REPOSITORY_BRIDGE.md",
+      "evidence": "SOURCE_VERIFIED",
+      "host": "ALIVE_HOST_PENDING"
+    },
+    {
+      "id": "LYVRA_MEANING_RECIPROCAL_RETURN",
+      "owner": "LYVRA",
+      "capabilities": [
+        "semantic_handoff",
+        "cross_branch_return",
+        "continuity"
+      ],
+      "source": "LYVRA_NATIVE_RUNTIME/current/garden/GARDEN_BRIDGES_RELATIONAL_CHARACTERS.md",
+      "evidence": "SOURCE_VERIFIED",
+      "host": "PER_TARGET_PENDING"
+    },
+    {
+      "id": "STARBRIDGE_PDI",
+      "owner": "LYVRA_RECEIVER_PEER_CLIC_AUTHORITY_SEPARATE",
+      "capabilities": [
+        "peer_evidence_intake",
+        "peer_handoff"
+      ],
+      "source": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_STARBRIDGE_SB04_NATIVE_EVIDENCE_20261016.json",
+      "evidence": "SOURCE_CI_VERIFIED_DELIVERY_PENDING",
+      "host": "HOST_PENDING"
+    },
+    {
+      "id": "STREAM_ARTIFACT_BRIDGE",
+      "owner": "666STREAM",
+      "capabilities": [
+        "github_binary_write",
+        "artifact_transfer"
+      ],
+      "source": "radio-codeforge/bridge/MASTER_BRIDGE_REFERENCE_v1.0.0.md",
+      "evidence": "PEER_SOURCE_VERIFIED",
+      "host": "TASK_SPECIFIC_PENDING"
+    },
+    {
+      "id": "STREAM_GOVEE_DISCORD_WEBRADIO",
+      "owner": "666STREAM",
+      "capabilities": [
+        "govee_device",
+        "discord_transport",
+        "webradio_integration"
+      ],
+      "source": "projects/666-GOVEE-CONTROL/bridge/BRIDGE_FACET_CONTRACT_v1.md",
+      "evidence": "PARTIAL_PEER_SOURCE",
+      "host": "PER_TARGET_PENDING"
+    },
+    {
+      "id": "LYVRA_PET_EVENT_EXPRESSION",
+      "owner": "LYVRA_PET",
+      "capabilities": [
+        "signed_events",
+        "expression",
+        "pet_recovery"
+      ],
+      "source": "LYVRA_PET/bridge/signed-event-transport.mjs",
+      "evidence": "SOURCE_INVENTORY_ONLY",
+      "host": "PER_TARGET_PENDING"
+    }
+  ]
+}
