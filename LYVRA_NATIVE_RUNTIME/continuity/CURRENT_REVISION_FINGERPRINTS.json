@@ -125,13 +125,13 @@
     "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/PFS_PLUGIN_BACKUP_APPROVAL_CURRENT.json": "621d8c57228815c6cb9b7834fa1b00067c35ca0b",
     "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md": "ca223593b3aecf1119d80b0e9704a4de44f65b9f",
     "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_PLUGIN_BACKUP_CIRCLE_CURRENT.json": "067a38f6d472ecd259a05ca278e56f01c1bfc94c",
-    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json": "dece58a2b690fe16bf10c0fa3bca3a242501162b",
+    "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json": "f199717ce2d84d4fd9520bcba31ecdcf6455e2a0",
     "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_CLIC_COUPLED_BACKUP_NOTICE_CURRENT.json": "0e787d89cc4245e59926b6c92fd09f67c9fc9c51",
     "lyvra-plugin/native-runtime/releases/v0.1.32/PROVENANCE.json": "4ccf7f23f3d5bd805932300a31043bbd7d04fecf",
     "lyvra-plugin/account/releases/v0.13.32/PROVENANCE.json": "fdb043a2e9d5ba2dffc4d3877eb610db0a3c7d1b",
     "LYVRA_NATIVE_RUNTIME/continuity/approval_requests/LYVRA_RUNTIME_PLUGIN_STATE_BINDING_CURRENT.json": "58bfb75b48dc74ed79266b3685d6c0ee0b06b6ff",
     "LYVRA_NATIVE_RUNTIME/current/music/SEMANTIC_CAUSAL_LYRIC_INTELLIGENCE.md": "d14b0687f048e1a4e8b615c36719d8331ad2a617",
-    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md": "4ec3f3f52acafb444e168f511ec4300a1573ad4e",
+    "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md": "636a35c826aed598ad63ac06dfa9aaa7896d32c1",
     "lyvra-plugin/native-runtime/releases/v0.1.33/PROVENANCE.json": "3af105c03c0fedf5c013b9dfb7541d6f5cdd1293",
     "lyvra-plugin/account/releases/v0.13.33/PROVENANCE.json": "582271c5c9babd933d026386db2e168ec5590f20",
     "LYVRA_NATIVE_RUNTIME/current/governance/TRACK_DESIGN_MASTER_BASE_AND_FACET_ADAPTATION.md": "eb8af5f198e28ffdcb802ef4e50afdc015925ae0",
@@ -2334,5 +2334,32 @@
     "full_tree_verification": false,
     "host_copy_acceptance": false,
     "suno_render_acceptance": false
+  },
+  "scoped_critical_carrier_repair_20261106": {
+    "status": "REPOSITORY_TREE_SHA_RECONCILED_AT_BASE_HEAD",
+    "base_head": "701dee774e020e927273a64e491ef0833df3f8f2",
+    "recovery_branch": "lyvra-recovery-pre-critical-registry-two-sha-repair-20261106-r01",
+    "target_count": 2,
+    "card": {
+      "path": "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_RELATIONAL_CARD_INTELLIGENCE.md",
+      "previous": "4ec3f3f52acafb444e168f511ec4300a1573ad4e",
+      "current": "636a35c826aed598ad63ac06dfa9aaa7896d32c1",
+      "current_pointer_golden_run_binding": "space_book_relational_co_player_dual_plugin_patch_20261103"
+    },
+    "pfs": {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/OUTBOUND_TO_PFS_COUPLED_BACKUP_CIRCLE_CURRENT.json",
+      "previous": "dece58a2b690fe16bf10c0fa3bca3a242501162b",
+      "current": "f199717ce2d84d4fd9520bcba31ecdcf6455e2a0",
+      "source_current": "BACKUP_REQUEST_PENDING_APPROVAL_NOT_GRANTED",
+      "foreign_execution": false
+    },
+    "live_repo_critical_carriers_before": 243,
+    "observed_exact_matches_before": 241,
+    "expected_after_recheck": "243_OF_243",
+    "no_source_file_rollback": true,
+    "full_git_tree_readback_required": true,
+    "release_plugin_mutation": false,
+    "foreign_write": false,
+    "provider_host_acceptance": "NOT_TESTED"
   }
 }
