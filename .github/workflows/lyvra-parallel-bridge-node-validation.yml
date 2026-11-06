@@ -32,6 +32,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.mjs
           node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-lineage-evidence.mjs
+          node --check LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-supercodeforge-provider-r17.mjs
       - name: Execute all original bridge and parallel tests
         run: |
           node --test LYVRA_NATIVE_RUNTIME/development/bridge_capability/bridge-capability-evaluation.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-work-intelligence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-native-integration.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.test.mjs LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-lineage-evidence.test.mjs
@@ -39,4 +40,6 @@ jobs:
         run: node LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-repository-evidence.mjs
       - name: Inspect original Whole workspace lineages without activation
         run: node LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-lineage-evidence.mjs
+      - name: Live provider-to-original-SuperCodeForge read-only host entrypoint
+        run: node LYVRA_NATIVE_RUNTIME/development/bridge_capability/parallel-supercodeforge-provider-r17.mjs
 # Read-only original Node CI; not Native/ALIVE plugin host acceptance or productive adoption.
