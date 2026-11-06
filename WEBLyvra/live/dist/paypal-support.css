@@ -1,0 +1,16 @@
+/* WEBLYVRA_SUPPORT_PAYPAL_R01
+   Scoped main-site PayPal support; user-supplied original artwork is pending verified binary transport.
+   Preserve header, player, gallery and all other native surfaces. */
+#support-fraggel.lyvra-support{padding-top:clamp(32px,5vw,70px);padding-bottom:clamp(32px,5vw,70px)}
+#support-fraggel .lyvra-support-panel{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(22px,4vw,54px);align-items:center;padding:clamp(20px,4vw,48px);border:1px solid #8067bd7a;border-radius:24px;background:radial-gradient(circle at 82% 0%,#49205d72,transparent 45%),linear-gradient(130deg,#0d1625f5,#180f2cf0);box-shadow:0 16px 48px #0005}
+#support-fraggel .lyvra-support-copy{min-width:0}
+#support-fraggel .lyvra-support-copy h2{font-size:clamp(1.8rem,3.2vw,3rem);margin-bottom:14px}
+#support-fraggel .lyvra-support-copy p:last-child{max-width:62ch;margin-bottom:0;color:#d7d6e6}
+#support-fraggel .lyvra-support-link{display:flex;min-height:146px;min-width:0;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:9px;padding:20px 18px;border:1px solid #ed8edcb3;border-radius:18px;background:linear-gradient(135deg,#351747,#112238);color:#f7edff;overflow-wrap:anywhere;box-shadow:inset 0 0 24px #e971d51a,0 0 24px #d16cff26;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+#support-fraggel .lyvra-support-link:hover{transform:translateY(-3px);border-color:#77ecf2;box-shadow:0 0 26px #62d9e43a}
+#support-fraggel .lyvra-support-link:focus-visible{outline:3px solid #76f1fa;outline-offset:5px}
+#support-fraggel .lyvra-support-brand{font-family:var(--heading,system-ui);font-size:clamp(.95rem,1.7vw,1.3rem);font-weight:700;letter-spacing:.12em;color:#f2a2ed}
+#support-fraggel .lyvra-support-link strong{font-size:clamp(.98rem,1.6vw,1.2rem);letter-spacing:.025em}
+#support-fraggel .lyvra-support-caption{font-size:.75rem;color:#b7e8f0}
+@media(max-width:760px){#support-fraggel .lyvra-support-panel{grid-template-columns:minmax(0,1fr)}#support-fraggel .lyvra-support-link{width:100%;min-height:120px}}
+@media(prefers-reduced-motion:reduce){#support-fraggel .lyvra-support-link{transition:none}#support-fraggel .lyvra-support-link:hover{transform:none}}
