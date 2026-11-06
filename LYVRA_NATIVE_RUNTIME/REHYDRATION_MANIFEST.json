@@ -238,7 +238,8 @@
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/DRIVE_WRITE_OBSERVATION_POLICY_20261027.md",
       "LYVRA_NATIVE_RUNTIME/development/observations/FAMILY_MAIL_DRIVE_WRITE_OBSERVATIONS_2026-10-27.json",
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_HOST_OUTCOMES_20261105_R01_DEV.json",
-      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R05_INTEGRATION_GATES_20261106_DEV.json"
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R05_INTEGRATION_GATES_20261106_DEV.json",
+      "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R10_NOV06_MAILBOX_OUTCOME_20261106.json"
     ],
     "DIRECT_SOURCE_CHANGE_ONLY_GOVERNANCE": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
   },
