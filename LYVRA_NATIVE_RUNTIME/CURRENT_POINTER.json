@@ -8055,5 +8055,41 @@
     "no_foreign_autoload": true,
     "new_cost": false,
     "pointer_last": true
+  },
+  "lyvra_to_littlelyv_post_r10_20261106": {
+    "status": "CURRENT_PRODUCTIVE_POST_R10_SOURCE_EVIDENCE_READBACK_VERIFIED",
+    "scope": "GERMAN_LYVRA_TO_LITTLELYV_POST_ONLY",
+    "prechange_head": "4242e80e0ccf4fc21f0f9122a47bed397773449f",
+    "recovery_branch": "lyvra-recovery-pre-littlelyv-post-r10-20261106",
+    "body_head_before_pointer": "69699779dbe73ad8664680534f27536ccb10dccf",
+    "evidence": {
+      "path": "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R10_NOV06_MAILBOX_OUTCOME_20261106.json",
+      "blob_sha": "b007c201e04d866a431bd450fdde70e7c631ed32"
+    },
+    "registry": {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+      "blob_sha": "7b21dfe6a28e5fbd21a0b20527cb970e60e1704b",
+      "total_carriers": 246,
+      "previous_carriers_preserved": true
+    },
+    "manifest": {
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "blob_sha": "59a5e20fbeea1331d1d8d8442a8897351504568c",
+      "domains": 29,
+      "post_refs": 9
+    },
+    "direct_mailbox_events": "REDACTED_IN_EVIDENCE_CARRIER",
+    "historical_denial": "STOP_NO_REPLAY_PRESERVED",
+    "historical_unclear_reply_mappings": 13,
+    "historical_other_unreviewed_cases": 15,
+    "recipient_read": "UNVERIFIED",
+    "plugin_impact": "SOURCE_ONLY_NO_RELEASE",
+    "native_version": "0.1.91",
+    "alive_version": "0.13.87",
+    "fresh_host": "PENDING",
+    "whole_rehydration": "PARTIAL_NOT_CLAIMED",
+    "no_foreign_autoload": true,
+    "zero_additional_cost": true,
+    "pointer_last": true
   }
 }
