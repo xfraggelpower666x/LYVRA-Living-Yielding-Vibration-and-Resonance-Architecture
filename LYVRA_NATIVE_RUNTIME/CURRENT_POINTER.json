@@ -7968,5 +7968,49 @@
     "foreign_mutation": false,
     "new_cost": false,
     "pointer_last": true
+  },
+  "direct_source_change_only_policy_2026_11_06": {
+    "status": "CURRENT_PRODUCTIVE_SOURCE_GOVERNANCE_PUBLISHED_POINTER_LAST",
+    "owner": "WHOLE_LYVRA",
+    "source_commit_before_pointer": "38da7a3cf1d9da7563e1b5111d23fe882a3b1991",
+    "recovery_branch": "lyvra-recovery-pre-direct-source-change-only-20261106",
+    "source_governance": {
+      "path": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+      "git_blob_sha": "4c3249dffe37c5c9b833ab498b3d4a1295a59902"
+    },
+    "backup_governance": {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/plugin_backup_circle/COUPLED_LYVRA_CLIC_PLUGIN_BACKUP_CIRCLE_CONTRACT.md",
+      "git_blob_sha": "5acc502a04e74b305957e00c4462e0262575c3a3"
+    },
+    "rehydration_manifest": {
+      "path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "git_blob_sha": "adf34d73cffa630a26b58ddaed28af9df281f7be",
+      "required_domain": "DIRECT_SOURCE_CHANGE_ONLY_GOVERNANCE"
+    },
+    "critical_fingerprints": {
+      "path": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
+      "git_blob_sha": "f5c5b2b6868460e23a4ad9c98bdc42931da56c56",
+      "changed_carriers": 3,
+      "other_carriers_preserved": true
+    },
+    "policy": "DIRECT_SOURCE | PATCH_FIRST | CHANGE_ONLY | DIRECTORY_BACKUP | READBACK",
+    "live_runtime": "UNPACKED_DIRECT_MODULE_LOAD_PREFERRED",
+    "provider_zip": "ONLY_WHEN_PROVIDER_REQUIRES_OVERLAY_OR_DELIVERY",
+    "web_assets": "OPTIMIZED_DEPLOYABLE_DERIVATIVE; PRIVATE_ORIGINAL_MAY_REMAIN_OFF_REPOSITORY",
+    "visibility": "FRESH_GITHUB_CURRENT_SYSTEMSTART_AND_NEW_NEXT_CHAT_BY_REFERENCE",
+    "plugin_current_release_observed": {
+      "native": "0.1.91",
+      "alive": "0.13.87"
+    },
+    "plugin_release_adoption": "READBACK_PENDING_PROVIDER_REQUIRES_ARCHIVE_OVERLAY",
+    "plugin_fresh_host_acceptance": "NOT_VERIFIED",
+    "whole_rehydration_runtime": "NOT_CLAIMED_AS_PART_OF_GOVERNANCE_UPDATE",
+    "system_fences": [
+      "NO_FOREIGN_AUTOACTIVATION",
+      "NO_CROSS_SYSTEM_MERGE",
+      "NO_NEW_CONTROLLER",
+      "POINTER_LAST",
+      "NO_FURTHER_MUTATION_THIS_UPDATE"
+    ]
   }
 }
