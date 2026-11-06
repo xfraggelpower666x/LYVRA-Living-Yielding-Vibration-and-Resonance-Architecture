@@ -30,9 +30,13 @@ export function nativeAnalyticsReturn(result, caller) {
     throw new TypeError("Analytics result identity/parentage required");
   if(!ANALYTICS_STATES.has(result.STATUS))throw new TypeError("Invalid native Analytics status");
   if(!caller||!nonempty(caller.caller_id)||!nonempty(caller.request_id))throw new TypeError("Caller return anchor required");
-  const lineageMatch=result.REQUEST_ORIGIN===caller.caller_id && result.TARGET===caller.target;
+  // Distinct requests from one caller must never be confused.
+  const lineageMatch=result.REQUEST_ORIGIN===caller.caller_id&&result.TARGET===caller.target
+    &&nonempty(result.REQUEST_ID)&&result.REQUEST_ID===caller.request_id;
+  const independent=result.native_receiver_evidence?.source_ref!==result.independent_outcome_evidence?.source_ref
+    &&result.native_receiver_evidence?.head===result.independent_outcome_evidence?.head;
   const delivered=lineageMatch&&result.STATUS==="INTEGRATED"&&readback(result.native_receiver_evidence)
-    &&readback(result.independent_outcome_evidence);
+    &&readback(result.independent_outcome_evidence)&&independent;
   return {result_id:result.RESULT_ID,caller_id:caller.caller_id,request_id:caller.request_id,
     lineage_match:lineageMatch,result_status:result.STATUS,caller_state:delivered?"INDEPENDENT_OUTCOME_VERIFIED":"RETURN_PENDING",
     provenance:result.RELATED_EVIDENCE||null,causal_finding:result.CAUSAL_FINDING||null,
@@ -59,4 +63,29 @@ export function ingestNativeAnalyticsOpenWork(native,source) {
       related_facets:["ANALYTICS"],impact_targets:[],native_state:item.state,
       creator_selected:false,blocks_other_tasks:false,outcome_readback:false};
   });
+}
+
+export function inspectNativeAnalyticsResultQueue(queue,source) {
+  if(!queue||!Array.isArray(queue.items)||queue.source_facet!=="LYVRA_ANALYTICS"||!readback(source))
+    throw new TypeError("Original Analytics result queue and source receipt required");
+  const seen=new Set();
+  return {status:queue.status,original_source:source.source_ref,
+    items:queue.items.map(item=>{
+      if(!nonempty(item.RESULT_ID)||seen.has(item.RESULT_ID))throw new TypeError("Missing or duplicate result id");
+      seen.add(item.RESULT_ID);
+      return {result_id:item.RESULT_ID,state:item.STATUS||"PREPARED",request_id:item.REQUEST_ID||null,
+        caller_origin:item.REQUEST_ORIGIN||null,native_receiver_verified:readback(item.native_receiver_evidence),
+        caller_outcome_verified:readback(item.independent_outcome_evidence)};
+    }),delivery_verified:false,auto_dispatch:false};
+}
+export function assessAnalyticsQueueReturns(queue,source,callers) {
+  const snapshot=inspectNativeAnalyticsResultQueue(queue,source);
+  if(!Array.isArray(callers))throw new TypeError("Caller array required");
+  const targets=new Map(callers.filter(x=>nonempty(x.request_id)).map(x=>[x.request_id,x]));
+  return {source:snapshot.original_source,source_status:snapshot.status,
+    returns:queue.items.map(result=>{
+      const caller=targets.get(result.REQUEST_ID);
+      return caller?nativeAnalyticsReturn(result,caller):{result_id:result.RESULT_ID,
+        request_id:result.REQUEST_ID||null,caller_state:"CALLER_NOT_VERIFIED",permission_to_write:false};
+    }),writes:"NONE",autoaccept:false};
 }
