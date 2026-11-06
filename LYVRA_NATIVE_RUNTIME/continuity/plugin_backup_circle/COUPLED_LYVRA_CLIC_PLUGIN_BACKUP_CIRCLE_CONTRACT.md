@@ -201,3 +201,15 @@ VALID_SNAPSHOT_NE_AUTOMATIC_CURRENT_RUNTIME_PARITY = true
 NO_SILENT_PLUGIN_ROLLBACK = true
 
 PFS may restore bytes only into a recovery candidate; native current authority must validate promotion/publication.
+
+
+## LYVRA-owned source snapshot transport preference — 2026-11-06
+
+SOURCE = WHOLE_LYVRA_CURRENT_GOVERNANCE
+LYVRA_BACKUP_SOURCE_DEFAULT = IMMUTABLE_UNPACKED_DIRECTORY_WHEN_FULLY_RESTORABLE_AND_AUTHORIZED
+ZIP_MANDATORY = ONLY_WHEN_ACTUAL_PROVIDER_OR_NATIVE_BACKUP_TARGET_CONTRACT_REQUIRES_ARCHIVE
+SOURCE_FILES = FILE_LEVEL_COPY_OR_VERIFIED_CONTENT_ADDRESS_REFERENCE
+REQUIRED = EXACT_RELATIVE_PATHS | PER_FILE_HASHES | RELEASE_ID_VERSION | SOURCE_COMMIT | RESTORE_MANIFEST | DIRECT_READBACK | RESTORE_TEST
+NO_UNCHANGED_SOURCE_REPACKAGING = TRUE
+
+This is a LYVRA-owned source-transport preference, NOT a unilateral amendment of 666PFS or 666CLIC native archive/approval requirements. The existing coupled round, independent native approval, stable-set, private-storage and exact release binding requirements remain binding until their owning authorities explicitly evolve them. When only an archived full-provider artifact can satisfy an active native backup contract, capture it as an exceptional delivery artifact and report that necessity, not as everyday development workflow. No private content in a public repository, no backup snapshot inside live plugin skill-loading paths, no false restore PASS from Git-object presence alone.
