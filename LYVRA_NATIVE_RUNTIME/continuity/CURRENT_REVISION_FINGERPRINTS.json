@@ -35,7 +35,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "adf34d73cffa630a26b58ddaed28af9df281f7be",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "59a5e20fbeea1331d1d8d8442a8897351504568c",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -2377,5 +2377,20 @@
     "provider_plugin_adoption": "PENDING",
     "independent_fresh_host": "PENDING",
     "no_foreign_writes": true
+  },
+  "scoped_manifest_r10_freshness_repair_20261106": {
+    "status": "CURRENT_POINTER_R10_MANIFEST_BLOB_DIRECT_VERIFIED_REGISTRY_BINDING_REPAIRED",
+    "scope": "ONE_STALE_FINGERPRINT_BINDING_ONLY",
+    "prechange_head": "3a14494990c285ef2f09bb3e5a33b30a57cf2847",
+    "recovery_branch": "lyvra-recovery-pre-manifest-fingerprint-r10-reconcile-20261106-r01",
+    "target_path": "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+    "previous_sha": "adf34d73cffa630a26b58ddaed28af9df281f7be",
+    "current_sha": "59a5e20fbeea1331d1d8d8442a8897351504568c",
+    "post_r10_pointer_manifest_sha": "59a5e20fbeea1331d1d8d8442a8897351504568c",
+    "all_246_tree_recheck": "REQUIRED_AFTER_WRITE",
+    "plugin_mutation": false,
+    "facet_mutation": false,
+    "version_bump": false,
+    "host_runtime_acceptance": "NOT_CLAIMED"
   }
 }
