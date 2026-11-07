@@ -61,7 +61,8 @@ export function assessParallelWork(items,observations=[],options={}) {
   const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
   const occupied=new Set(items.filter(x=>x.state==="DONE"&&nativeDoneGaps(x).length===0).map(x=>x.id));
   // Verified active tasks reserve their specific resource; claims alone do not.
-  const hasOwnCurrent=item=>obs.some(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e));
+  const realHostWork=e=>e?.kind==="WORK_CURRENT"&&evidenceOK(e)&&e.execution_observed===true&&e.independent_host_readback===true&&str(e.host_receipt_ref);
+  const hasOwnCurrent=item=>obs.some(e=>e.task_id===item.id&&realHostWork(e));
   const resources=new Map();
   for (const item of items.filter(x=>x.state==="ACTIVE"&&hasOwnCurrent(x)).concat(items.filter(x=>x.state==="OPEN"))) {
     if(!str(item.resource_key))continue;
@@ -72,7 +73,8 @@ export function assessParallelWork(items,observations=[],options={}) {
     const live=perResource(item.resource_key).filter(e=>e.actor_id!==item.actor_id);
     const matching=resources.get(item.resource_key)||[];
     const localCollision=matching.length>1&&matching[0]!==item.id;
-    const own=obs.find(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e));
+    const own=obs.find(e=>e.task_id===item.id&&realHostWork(e));
+    const sourceOnly=obs.some(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e)&&!realHostWork(e));
     const state=live.length?"PAUSED_CONCURRENT":localCollision?"WAIT_SAME_RESOURCE":openDeps.length?"DEPENDENCY_BLOCKED":
       item.state==="DORMANT"&&!own?"DORMANT_UNCONFIRMED":
       item.state==="DONE"&&nativeDoneGaps(item).length?"RESULT_READBACK_PENDING":
@@ -86,7 +88,7 @@ export function assessParallelWork(items,observations=[],options={}) {
       dependent_ids:openDeps,missing_native_done_gates:item.state==="DONE"?nativeDoneGaps(item):[],concurrent_evidence:live.map(e=>({actor:e.actor_id,source:e.source_ref,head:e.head})),
       action_allowed:!["PAUSED_CONCURRENT","WAIT_SAME_RESOURCE","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED","ACTIVE_VERIFIED","BLOCKED","PAUSED","PROPOSED"].includes(state)&&item.state!=="DONE",
       related_facets:asArray(item.related_facets),impact_targets:asArray(item.impact_targets),
-      evidence_state:own?"CURRENT_WORK_VERIFIED":"CURRENT_WORK_NOT_VERIFIED"};
+      evidence_state:own?"HOST_WORK_VERIFIED":sourceOnly?"SOURCE_ONLY_NOT_HOST":"CURRENT_WORK_NOT_VERIFIED"};
   });
   const ranked=reviewed.filter(x=>x.action_allowed).sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));
   const count=options.all===true?ranked.length:Math.max(6,Math.min(10,Number.isInteger(options.limit)?options.limit:8));
@@ -125,7 +127,7 @@ export function projectParallelMonitor(assessment,opts={}) {
   return {schema:"LYVRA_PARALLEL_VISUAL_PROJECTION_V1",identity:"ONE_WHOLE_LYVRA",
     scope:"FIFTH_MAIN_OPTION_SUBMENU_ONLY",verified_source_head:opts.source_head||null,
     strands:unique(assessment.reviewed.map(x=>x.strand)).map(id=>({id,count:assessment.reviewed.filter(x=>x.strand===id).length,
-      active_verified:assessment.reviewed.filter(x=>x.strand===id&&x.evidence_state==="CURRENT_WORK_VERIFIED").length})),
+      active_verified:assessment.reviewed.filter(x=>x.strand===id&&x.state==="ACTIVE_VERIFIED"&&x.evidence_state==="HOST_WORK_VERIFIED").length})),
     tasks:assessment.reviewed.map(x=>({id:x.id,title:x.title,status:x.state,bridge_details:x.bridges,
       codeforge:x.codeforge_role,relations:x.related_facets,impact:x.impact_targets,blockers:x.dependent_ids,
       explanation:x.concurrent_evidence.length?"Belegter gleichzeitiger Schreibvorgang":x.state==="WAIT_SAME_RESOURCE"?"Eigene Aufträge benötigen dieselbe Datei: nacheinander bearbeiten":x.state==="DORMANT_UNCONFIRMED"?"Ruhende Aufgabe: erst Quelle prüfen":x.state==="ACTIVE_UNVERIFIED"?"Aktive Arbeit nicht unabhängig belegt":x.state==="ACTIVE_VERIFIED"?"Aktive Arbeit belegt: beobachten, nicht erneut starten":"Status aus bereitgestellter Evidenz"})),
