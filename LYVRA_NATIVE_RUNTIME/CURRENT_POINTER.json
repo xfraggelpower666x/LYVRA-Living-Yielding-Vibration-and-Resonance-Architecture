@@ -8134,5 +8134,23 @@
     "no_foreign_writes": true,
     "plugin_release_mutation": false,
     "pointer_last": true
+  },
+  "track_design_session_r09_20261107": {
+    "status": "SCOPED_CHAT_CREATIVE_CANDIDATES_SOURCE_DIRECT_READBACK_VERIFIED",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "TRACK_DESIGN_ONLY_CREATIVE_CONTINUITY",
+    "lineage_id": "LYVRA_SPACE_BOOK_TRACK_DESIGN_20261103",
+    "source_path": "LYVRA_NATIVE_RUNTIME/continuity/workspaces/LYVRA_TRACK_DESIGN/LYVRA_SPACE_BOOK_TRACK_DESIGN_20261103/LYVRA_TRACK_SESSION_20261107_R09.json",
+    "source_blob_sha": "de0f5f67813eb22e52694711b56a65e675fec7a6",
+    "source_body_commit": "09fcfba68ebeec0c1a1230a8f43e4fa0351a7c9e",
+    "supersedes_handoff": false,
+    "preceding_handoff": "LYVRA_NEW_CHAT_20261106_R08",
+    "creative_candidates": 12,
+    "audio_validation": "NOT_TESTED",
+    "plugin_runtime_changed": false,
+    "plugin_host_parity": "NOT_VERIFIED",
+    "new_track_design_version": false,
+    "recovery_branch": "lyvra-recovery-pre-track-session-20261107-r01",
+    "pointer_last": true
   }
 }
