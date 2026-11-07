@@ -13,7 +13,7 @@ export function inspectWorkspaceHandoffs(head,provider={git,readFileSync}){
   if(!/^[0-9a-f]{40}$/.test(head))throw new TypeError("Current full commit required");
   if(provider.git(["rev-parse","HEAD"])!==head)throw new Error("Checkout HEAD mismatch");
   const paths=provider.git(["ls-tree","-r","--name-only","HEAD","--",PREFIX]).split("\n").filter(eligiblePath);
-  const groups=new Map(),invalid=[];
+  const groups=new Map(),invalid=[],related_source_artifacts=[];
   for(const path of paths){
     const sections=path.slice(PREFIX.length).split("/");
     if(sections.length!==3){invalid.push({path,reason:"UNEXPECTED_LINEAGE_LAYOUT"});continue}
@@ -23,6 +23,17 @@ export function inspectWorkspaceHandoffs(head,provider={git,readFileSync}){
     if(provider.readFileSync(path,"utf8").trimEnd()!==original)throw new Error("Git/worktree handoff mismatch: "+path);
     let item;
     try{item=JSON.parse(original)}catch(e){invalid.push({path,reason:"INVALID_JSON"});continue}
+    // A creative session delta is native continuity, but must NEVER masquerade as a handoff.
+    if(item?.schema==="LYVRA_TRACK_DESIGN_CHAT_SESSION_DELTA_V1"){
+      if(item.native_owner==="WHOLE_LYVRA"&&item.workspace===workspace&&item.lineage===lineage
+         &&item.scope==="TRACK_DESIGN_ONLY"&&item.supersedes_handoff===false){
+        related_source_artifacts.push({path,blob,workspace_id:workspace,lineage_id:lineage,
+          schema:item.schema,status:item.status||"UNSPECIFIED",preceding_handoff:item.preceding_handoff||null,
+          source_class:"CREATIVE_SESSION_DELTA_NOT_HANDOFF",host_verified:false,
+          music_audio_verified:false,autoactivate:false,authority_transfer:false});
+      } else invalid.push({path,reason:"CREATIVE_DELTA_SCOPE_OR_AUTHORITY_MISMATCH"});
+      continue;
+    }
     if(!item||!item.handoff_id||item.lineage_id!==lineage||item.workspace_id!==workspace){
       invalid.push({path,reason:"IDENTITY_OR_LINEAGE_MISMATCH"});continue;
     }
@@ -48,7 +59,8 @@ export function inspectWorkspaceHandoffs(head,provider={git,readFileSync}){
     workspace_activation:"FORBIDDEN_UNLESS_EXPLICITLY_SELECTED"})).sort((a,b)=>a.workspace_id.localeCompare(b.workspace_id));
   return {schema:"LYVRA_PARALLEL_LINEAGE_SOURCE_R16",source_head:head,paths_examined:paths.length,
     verified_handoffs:lineages.reduce((n,l)=>n+l.candidates.length,0),lineages,workspace_summary,
-    invalid,authority:"WHOLE_LYVRA_ONLY",readback:"GIT_OBJECT_AND_CHECKOUT",
+    invalid,related_source_artifacts,related_source_artifact_count:related_source_artifacts.length,
+    authority:"WHOLE_LYVRA_ONLY",readback:"GIT_OBJECT_AND_CHECKOUT",
     autoactivate:false,no_global_last_writer:true,no_foreign_activation:true};
 }
 if(import.meta.url===`file://${process.argv[1]}`){
