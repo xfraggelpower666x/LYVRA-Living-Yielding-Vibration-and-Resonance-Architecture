@@ -60,8 +60,11 @@ export function assessParallelWork(items,observations=[],options={}) {
   const obs=asArray(observations);
   const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
   const occupied=new Set(items.filter(x=>x.state==="DONE"&&nativeDoneGaps(x).length===0).map(x=>x.id));
+  // Verified active tasks reserve their specific resource; claims alone do not.
+  const hasOwnCurrent=item=>obs.some(e=>e.task_id===item.id&&e.kind==="WORK_CURRENT"&&evidenceOK(e));
   const resources=new Map();
-  for (const item of items) if(str(item.resource_key)&&["OPEN","ACTIVE"].includes(item.state)) {
+  for (const item of items.filter(x=>x.state==="ACTIVE"&&hasOwnCurrent(x)).concat(items.filter(x=>x.state==="OPEN"))) {
+    if(!str(item.resource_key))continue;
     resources.set(item.resource_key,[...(resources.get(item.resource_key)||[]),item.id]);
   }
   const reviewed=items.map(item=>{
@@ -74,13 +77,14 @@ export function assessParallelWork(items,observations=[],options={}) {
       item.state==="DORMANT"&&!own?"DORMANT_UNCONFIRMED":
       item.state==="DONE"&&nativeDoneGaps(item).length?"RESULT_READBACK_PENDING":
       item.state==="ACTIVE"&&!own?"ACTIVE_UNVERIFIED":
+      item.state==="ACTIVE"&&own?"ACTIVE_VERIFIED":
       item.state==="DONE"?"DONE_VERIFIED":item.state;
     const score=(item.creator_selected?16:0)+(item.blocks_other_tasks?8:0)+(item.risk_reduction?4:0)+(item.impact_verified?2:0);
     const bridges=asArray(item.bridge_assignments).map(b=>({capability_id:b.capability_id,role:b.role,evidence:b.evidence||"NOT_VERIFIED",host:b.host||"HOST_PENDING"}));
     return {id:item.id,title:item.title||item.id,strand:item.strand||"UNCLASSIFIED",state,score,origin_ref:item.origin_ref,
       resource_key:item.resource_key||null,bridges,codeforge_role:item.codeforge_role||"NOT_ASSIGNED",
       dependent_ids:openDeps,missing_native_done_gates:item.state==="DONE"?nativeDoneGaps(item):[],concurrent_evidence:live.map(e=>({actor:e.actor_id,source:e.source_ref,head:e.head})),
-      action_allowed:!["PAUSED_CONCURRENT","WAIT_SAME_RESOURCE","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED","BLOCKED","PAUSED","PROPOSED"].includes(state)&&item.state!=="DONE",
+      action_allowed:!["PAUSED_CONCURRENT","WAIT_SAME_RESOURCE","DEPENDENCY_BLOCKED","DORMANT_UNCONFIRMED","RESULT_READBACK_PENDING","ACTIVE_UNVERIFIED","ACTIVE_VERIFIED","BLOCKED","PAUSED","PROPOSED"].includes(state)&&item.state!=="DONE",
       related_facets:asArray(item.related_facets),impact_targets:asArray(item.impact_targets),
       evidence_state:own?"CURRENT_WORK_VERIFIED":"CURRENT_WORK_NOT_VERIFIED"};
   });
@@ -124,7 +128,7 @@ export function projectParallelMonitor(assessment,opts={}) {
       active_verified:assessment.reviewed.filter(x=>x.strand===id&&x.evidence_state==="CURRENT_WORK_VERIFIED").length})),
     tasks:assessment.reviewed.map(x=>({id:x.id,title:x.title,status:x.state,bridge_details:x.bridges,
       codeforge:x.codeforge_role,relations:x.related_facets,impact:x.impact_targets,blockers:x.dependent_ids,
-      explanation:x.concurrent_evidence.length?"Belegter gleichzeitiger Schreibvorgang":x.state==="WAIT_SAME_RESOURCE"?"Eigene Aufträge benötigen dieselbe Datei: nacheinander bearbeiten":x.state==="DORMANT_UNCONFIRMED"?"Ruhende Aufgabe: erst Quelle prüfen":x.state==="ACTIVE_UNVERIFIED"?"Aktive Arbeit nicht unabhängig belegt":"Status aus bereitgestellter Evidenz"})),
+      explanation:x.concurrent_evidence.length?"Belegter gleichzeitiger Schreibvorgang":x.state==="WAIT_SAME_RESOURCE"?"Eigene Aufträge benötigen dieselbe Datei: nacheinander bearbeiten":x.state==="DORMANT_UNCONFIRMED"?"Ruhende Aufgabe: erst Quelle prüfen":x.state==="ACTIVE_UNVERIFIED"?"Aktive Arbeit nicht unabhängig belegt":x.state==="ACTIVE_VERIFIED"?"Aktive Arbeit belegt: beobachten, nicht erneut starten":"Status aus bereitgestellter Evidenz"})),
     actions:[{id:"recommended",label:"Empfohlene 6–10 geeignete Aufträge prüfen",meaning:"Anzeigen, nicht automatisch starten"},
       {id:"all",label:"Alle geeigneten Stränge prüfen",meaning:"Breite Auswahl, jeder Write bleibt geschützt"},
       {id:"return_analytics",label:"Zu Analytics zurückkehren",meaning:"Bestehenden Rückkehranker verwenden"}],
