@@ -58,7 +58,11 @@ export function assessParallelWork(items,observations=[],options={}) {
     ids.add(item.id);
   }
   const obs=asArray(observations);
-  const perResource=key=>obs.filter(e=>e.resource_key===key && e.kind==="ACTIVE_WRITE" && evidenceOK(e));
+  // Source-side intent is not a verified concurrent host write.
+  const verifiedForeignWrite=e=>e?.kind==="ACTIVE_WRITE"&&evidenceOK(e)
+    &&e.execution_observed===true&&e.independent_host_readback===true
+    &&str(e.host_receipt_ref)&&str(e.actor_id)&&str(e.resource_key);
+  const perResource=key=>str(key)?obs.filter(e=>e.resource_key===key&&verifiedForeignWrite(e)):[];
   const occupied=new Set(items.filter(x=>x.state==="DONE"&&nativeDoneGaps(x).length===0).map(x=>x.id));
   // Verified active tasks reserve their specific resource; claims alone do not.
   const realHostWork=e=>e?.kind==="WORK_CURRENT"&&evidenceOK(e)&&e.execution_observed===true&&e.independent_host_readback===true&&str(e.host_receipt_ref);
