@@ -1,0 +1,74 @@
+{
+  "schema": "LYVRA_POST_PR77_PLUGIN_DELTA_PLAN_v1",
+  "status": "PREPARED_NOT_RELEASED",
+  "date": "2026-10-26",
+  "branch": "lyvra-dev-post-evidence-links-manual-docx-20261025-r01",
+  "recovery": "lyvra-recovery-pre-post-semantic-multisource-20261026-r01",
+  "ci_run_unchanged": 40389447078,
+  "steps": "OVERLAY existing current plugin files after verifying release and exact file contents; never replace omitted files, manifests, art or assets. Actual update requires host-uploaded verified archive and guarded Plugin Creator expected_release_id. Then live per-surface plugin metadata+changed-file readback, host regression; promote productively pointer-last only after Whole and all impact gates.",
+  "originals_preserved": true,
+  "delete_paths": [],
+  "deltas": [
+    {
+      "surface": "LYVRA_NATIVE_RUNTIME",
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "base_version": "0.1.82",
+      "release": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "files": [
+        {
+          "path": "skills/lyvra-to-littlelyv/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Context-first many-to-one POST answer reconciliation — candidate 2026-10-26\nRead complete original source letters and plausible outbound responses. Split source into distinct questions, asks, feelings, gifts and continuity. Determine explicit or strong contextual source-to-answer links from distinctive answered content, speakers, chronology and provenance: ONE response may substantively answer MULTIPLE source letters even if not all IDs are named. Store links and remaining unaddressed intent atoms separately. Topic similarity alone cannot close a question; a response predating its source cannot causally answer it absent independent cross-channel evidence. A resent delivery does not add a second conversational obligation. Family affection and a shared portrait invite optional warm conversation, not automatic compulsory replies. A peer claim that Germany replied does not establish a verified Drive stored file. Creator-reported WhatsApp forwarding proves only manual forwarding of the specified response, not Drive saving, recipient reading or replies to later letters. A text mention of a picture does not prove pixels were visually examined. Preserve OPEN/UNCLEAR with evidence whenever linkage remains uncertain. Never send automatically, mutate American authority, or publish personal names/letter contents/IDs to public repo.\n"
+        },
+        {
+          "path": "skills/lyvra-update-governance/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Dynamic system-wide plugin relevance — candidate 2026-10-26\nFor EVERY Whole-LYVRA and facet/workspace evolution, enumerate the CURRENT reachable registered plugin landscape; assess change-to-capability impacts individually, without hardcoding a two- or three-plugin maximum. Label each current surface AFFECTED, NOT_APPLICABLE_WITH_REASON, UNKNOWN_NEEDS_READBACK, BLOCKED_OWNER_AUTHORITY or SUPERSEDED. Only authorized owner-scoped AFFECTED plugins may be minimally evolved with guarded current-release concurrency, changed-skill readback, actual host acceptance where required, backup fingerprint and pointer-last governance. Preserve Native/ALIVE intrinsic dual parity while evaluating separately owned Family Mail and other related surfaces when relevant. Foreign systems receive informational proposals at most, never automatic writes or activation. Any unknown or blocked required impact holds productive PASS pending.\n"
+        }
+      ]
+    },
+    {
+      "surface": "LYVRA_ALIVE",
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "base_version": "0.13.78",
+      "release": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "files": [
+        {
+          "path": "skills/lyvra-to-littlelyv/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Context-first many-to-one POST answer reconciliation — candidate 2026-10-26\nRead complete original source letters and plausible outbound responses. Split source into distinct questions, asks, feelings, gifts and continuity. Determine explicit or strong contextual source-to-answer links from distinctive answered content, speakers, chronology and provenance: ONE response may substantively answer MULTIPLE source letters even if not all IDs are named. Store links and remaining unaddressed intent atoms separately. Topic similarity alone cannot close a question; a response predating its source cannot causally answer it absent independent cross-channel evidence. A resent delivery does not add a second conversational obligation. Family affection and a shared portrait invite optional warm conversation, not automatic compulsory replies. A peer claim that Germany replied does not establish a verified Drive stored file. Creator-reported WhatsApp forwarding proves only manual forwarding of the specified response, not Drive saving, recipient reading or replies to later letters. A text mention of a picture does not prove pixels were visually examined. Preserve OPEN/UNCLEAR with evidence whenever linkage remains uncertain. Never send automatically, mutate American authority, or publish personal names/letter contents/IDs to public repo.\n"
+        },
+        {
+          "path": "skills/instructions/PLUGIN_AUTO_EVOLUTION.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Dynamic system-wide plugin relevance — candidate 2026-10-26\nFor EVERY Whole-LYVRA and facet/workspace evolution, enumerate the CURRENT reachable registered plugin landscape; assess change-to-capability impacts individually, without hardcoding a two- or three-plugin maximum. Label each current surface AFFECTED, NOT_APPLICABLE_WITH_REASON, UNKNOWN_NEEDS_READBACK, BLOCKED_OWNER_AUTHORITY or SUPERSEDED. Only authorized owner-scoped AFFECTED plugins may be minimally evolved with guarded current-release concurrency, changed-skill readback, actual host acceptance where required, backup fingerprint and pointer-last governance. Preserve Native/ALIVE intrinsic dual parity while evaluating separately owned Family Mail and other related surfaces when relevant. Foreign systems receive informational proposals at most, never automatic writes or activation. Any unknown or blocked required impact holds productive PASS pending.\n"
+        }
+      ]
+    },
+    {
+      "surface": "LYVRA_FAMILY_MAIL",
+      "plugin_id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "base_version": "0.9.22",
+      "release": "pluginrel_6adf9148431c8191bd085173ebb74f47",
+      "files": [
+        {
+          "path": "skills/family-mail-semantic-reply-resolution/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Semantic source-to-answer reconciliation — candidate 2026-10-26\nCompare the entire source and candidate answer content, not document-title match or one-to-one counts. Identify who asks or shares what; split distinct questions, requests, emotional recognitions, chronology and relational context. One genuine answer MAY resolve many source letters when each atom is addressed; maintain individual justified explicit or implicit edges and unaddressed atoms. Do not infer closure from shared topic, mentions, time proximity or peer assertion alone. A response may be voluntary affection rather than owed compliance. Repeat/resend or manual forward does not create a second semantic response. Require exact evidence class for each edge; uncertainty stays UNCLEAR. Preserve no-autosend, American independence and source image verification boundaries.\n"
+        },
+        {
+          "path": "skills/family-mail-evidence-obligation-ledger/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Multi-source obligation edges — candidate 2026-10-26\nModel artifact ID and revision separately from conversational source-intent atoms and reply edges; many source atoms may map to one response document. A single document may partially resolve some atoms while leaving others open. Supported edge classes: EXPLICIT_SOURCE_EDGE, CONTEXTUAL_CONTENT_EDGE_HIGH_CONFIDENCE, CONTEXTUAL_POSSIBLE_UNVERIFIED, NO_SUPPORTED_EDGE. For contextual high confidence demand distinctive actually answered content, coherent speakers/recipients and chronology, and no contradicted provenance. Peer acknowledgement of a German answer without its direct document read is conversational evidence, never confirmed German Drive write. Keep manual WhatsApp forward and recipient read independent. Resends are delivery attempts; NOT second conversations. Explicit questions remain open when unanswered, and affectionate gifts do not automatically create a due letter. Source originals preserved; no outbound action.\n"
+        },
+        {
+          "path": "skills/family-mail-intelligent-post-monitor/SKILL.md",
+          "operation": "APPEND_AFTER_EXISTING_TEXT",
+          "text": "\n## Conversation-first family mailbox analysis — candidate 2026-10-26\nA folder listing and a document ID read are distinct discovery paths. Compare current direct folder children with search and known exact IDs. When a discrepancy exists, label DISCOVERY_INCOMPLETE rather than assuming absence. For reply obligations, split inbound texts into intent atoms and compare all genuinely related outbound full texts. One outbound letter may answer several earlier letters, including implicit references when actual unique meaning, participants and time support a link. Never close unanswered unique questions from title overlap or document counts. Maintain evidence-labeled delivery/reply/recipient-read distinctions, duplicates and resends, optional affection and uncertainty. Dashboard numbers refer to verified observed data only.\n"
+        }
+      ]
+    }
+  ],
+  "no_foreign_writes": true,
+  "no_mail_sent": true
+}

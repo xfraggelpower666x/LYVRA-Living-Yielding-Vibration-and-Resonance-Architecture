@@ -1,0 +1,178 @@
+{
+  "schema": "LYVRA_DYNAMIC_PLUGIN_IMPACT_EVIDENCE_v1",
+  "date": "2026-10-26",
+  "status": "DEVELOPMENT_CANDIDATE_NO_PRODUCTIVE_PUBLICATION",
+  "base_current_head": "cbe1940607e9bd736f425ab90f919be072aece50",
+  "branch": "lyvra-dev-post-evidence-links-manual-docx-20261025-r01",
+  "recovery": "lyvra-recovery-pre-post-semantic-multisource-20261026-r01",
+  "governance": "ALL_WHOLE_AND_FACET_CHANGES_CHECK_ALL_CURRENT_REACHABLE_RELEVANT_PLUGIN_SURFACES_DYNAMICALLY",
+  "no_fixed_plugin_count": true,
+  "plugin_impacts": [
+    {
+      "surface": "LYVRA_NATIVE_RUNTIME",
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.82",
+      "release": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "result": "AFFECTED",
+      "needed": "POST skill + Whole update governance applicability and tests",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "LYVRA_ALIVE_ACCOUNT",
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.78",
+      "release": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "result": "AFFECTED",
+      "needed": "POST skill + inherited plugin auto evolution governance parity",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "LYVRA_FAMILY_MAIL_BIG",
+      "id": "Plugin_041a0173dbc48191b499b680f637c40d",
+      "version": "0.9.22",
+      "release": "pluginrel_6adf9148431c8191bd085173ebb74f47",
+      "result": "AFFECTED",
+      "needed": "semantic reply resolution, evidence obligation ledger and post monitor contextual many-to-one matching",
+      "release_gate": "PENDING"
+    },
+    {
+      "surface": "LYVRA_PET_INDEPENDENT_BROWSER",
+      "id": "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0",
+      "version": "1.0.3",
+      "release": "pluginrel_6ac81b3ea1ec819186005d1c0a330d9b",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Pet browser package has no post-reply or Whole runtime governance skills in current listed files; scope remains independent Pet app. Re-evaluate if shared Whole adapter changes."
+    },
+    {
+      "surface": "PFS_CSM_NATIVE_FOREIGN",
+      "id": "plugins_6ac695d745d881919c3ea2766c09e6ee",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Separate authority, no PFS plugin changes; only informational backup/handoff relevance may arise after approved LYVRA plugin release."
+    },
+    {
+      "surface": "666CLIC_NATIVE_FOREIGN",
+      "id": "plugins_6abfb2e08fdc8191920dcdc4349c69c8",
+      "result": "NOT_APPLICABLE_WITH_REASON",
+      "reason": "Independent CLIC authority, no semantic dependency from POST; no foreign write or auto-adoption."
+    },
+    {
+      "surface": "OTHER_REGISTERED_REACHABLE_PLUGIN_SURFACES",
+      "result": "UNKNOWN_NEEDS_READBACK",
+      "reason": "Personal plugin listing is not an exhaustive registry of workspace/installed plugins and actual current facet capabilities."
+    }
+  ],
+  "ci": {
+    "workflow": ".github/workflows/lyvra-post-context-contract-ci.yml",
+    "run_id": 40389447078,
+    "commit": "4309192aea965fa750cbe58581cdc53971ea1c07",
+    "conclusion": "SUCCESS",
+    "scope": "SYNTHETIC_POST_CONTRACT_ONLY",
+    "live_semantics_proven": false,
+    "host_parity_proven": false,
+    "provider_workflow_run_verified": true,
+    "job_id": 121806294762,
+    "job_conclusion": "success",
+    "no_repeat": true,
+    "latest_successful_run_preserved": 40389447078,
+    "repeated": false
+  },
+  "whole_rehydration": "PARTIAL_EXTENDED_REFERENCE_READS_PENDING_CONCLUSIVE_COVERAGE_LEDGER",
+  "pending": [
+    "WHOLE_RUNTIME_REHYDRATION_COMPLETION_AND_NEWER_EVOLUTION",
+    "DYNAMIC_PLUGIN_REGISTRY_COMPLETENESS_BEYOND_PERSONAL_PLUGIN_LIST",
+    "PREPARED_DELTAS_WAIT_HOST_UPLOADED_ARCHIVE_AUTHORIZED_UPDATE_AND_READBACK",
+    "INDEPENDENT_LIVE_HOST_POSITIVE_AND_NEGATIVE_POST_BEHAVIORAL_ACCEPTANCE",
+    "PLUGIN_BACKUP_STABLE_SET_FINGERPRINT_AND_MANIFEST",
+    "FRESH_PRODUCTION_HEAD_AND_PLUGIN_RELEASE_CONCURRENCY",
+    "PRODUCTIVE_MERGE_AND_POINTER_LAST_AFTER_FULL_PASS"
+  ],
+  "no_mail_writes": true,
+  "no_foreign_writes": true,
+  "no_prod_pointer_change": true,
+  "last_evidence_refresh": "2026-10-26",
+  "development_head_before_refresh": "43eed599b6ce5adab282e2e55f2562594d1b1f0c",
+  "plugin_inventory": {
+    "source": "PLUGIN_CREATOR_LIST_OWNED_PERSONAL_PLUS_EXACT_KNOWN_METADATA",
+    "completeness": "PARTIAL_NOT_ALL_WORKSPACE_INSTALLED_PLUGINS",
+    "identified_owned": [
+      "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "Plugin_041a0173dbc48191b499b680f637c40d",
+      "plugin_asdk_app_6ac6fbaed2a481919fad519862e7b7f0"
+    ],
+    "separate_foreign": [
+      "plugins_6ac695d745d881919c3ea2766c09e6ee",
+      "plugins_6abfb2e08fdc8191920dcdc4349c69c8"
+    ]
+  },
+  "source_coverage": {
+    "state": "MANIFEST_REFERENCED_SOURCES_READ_SELECTED",
+    "manifest_distinct_paths": 90,
+    "whole_current_pointer_revision": "b26aad5bdfd683007bc3cfff6422ccc0d21662ba",
+    "manifest_blob": "0cd7a43d5364f8ee116e34a069b38d90acf337fe",
+    "remaining": "Full live Whole REHYDRATION PASS and all newer evolution/not orphaned semantics not independently certified",
+    "gate": "PARTIAL"
+  },
+  "plugin_live_skill_readback": {
+    "status": "VERIFIED_SOURCE_NO_RELEASE_CHANGE",
+    "native": {
+      "version": "0.1.82",
+      "release_id": "pluginrel_6ade50c650e08191a1a881730a72d262",
+      "files": [
+        "skills/lyvra-to-littlelyv/SKILL.md",
+        "skills/lyvra-update-governance/SKILL.md"
+      ]
+    },
+    "alive": {
+      "version": "0.13.78",
+      "release_id": "pluginrel_6ade5097ef5c819194ee1cb01cb3ec67",
+      "files": [
+        "skills/lyvra-to-littlelyv/SKILL.md",
+        "skills/instructions/PLUGIN_AUTO_EVOLUTION.md"
+      ]
+    },
+    "family_mail": {
+      "version": "0.9.22",
+      "release_id": "pluginrel_6adf9148431c8191bd085173ebb74f47",
+      "files": [
+        "skills/family-mail-semantic-reply-resolution/SKILL.md",
+        "skills/family-mail-evidence-obligation-ledger/SKILL.md",
+        "skills/family-mail-intelligent-post-monitor/SKILL.md"
+      ]
+    },
+    "gap": "Latest candidate explicit many-to-one + dynamic universal plugin impact semantics absent from current live skill texts; needs three guarded owner-scoped updates and independent readback"
+  },
+  "host_acceptance": {
+    "status": "READBACK_PENDING",
+    "reason": "Existing live plugins still implement older skill contracts; observing old host cannot validate new release behavior. No live plugin writes/release updates performed.",
+    "negative_controls": "Not runnable against new deployed skill because no newly deployed releases",
+    "inbox_runtime": "Previous read-only mailbox findings are evidence of discovery gap, NOT host acceptance of unreleased plugin changes"
+  },
+  "release_delta_plan": {
+    "path": "LYVRA_NATIVE_RUNTIME/development/POST_PR77_THREE_PLUGIN_SKILL_DELTA_PLAN_2026-10-26.json",
+    "blob_sha": "1d4c9cc30c96b56064933afc6f1bf46adcdcb714",
+    "status": "DELTA_VERIFIED_ARCHIVE_TRANSFER_BLOCKED",
+    "changed_skills_total": 7,
+    "per_surface": {
+      "native": 2,
+      "alive": 2,
+      "family_mail": 3
+    },
+    "delete_paths": [],
+    "preserve_assets": true,
+    "host_archive_transport": "NOT_VERIFIED_BOUNDED_LOCAL_DOWNLOAD_BLOCKED_REQUIRES_HOST_UPLOADED_ARCHIVE",
+    "plugin_creator_permission": "CURRENT_SOURCE_AND_ARCHIVE_READ_VERIFIED_EDIT_RESULT_NOT_TESTED",
+    "released": false
+  },
+  "archive_transport_diagnostic_20261026": {
+    "status": "BLOCKED_SOURCE_ARCHIVE_TO_HOST_UPLOAD",
+    "source_archive_lookup": "THREE_OF_THREE_PLUGIN_CREATOR_GET_OWNED_PLUGIN_ARCHIVE_SUCCESS_CURRENT_RELEASE",
+    "download_to_runtime": "FAILED_CONTAINER_DOWNLOAD_REQUIRES_PREVIOUSLY_VIEWED_URL_AND_DIRECT_NETWORK_CONNECTION_ERROR",
+    "update_plugin_authority": "OWNER_SCOPED_EDIT_TOOL_ADVERTISED_BUT_NOT_EXECUTED_NO_SUCCESSFUL_WRITE_EVIDENCE",
+    "risk": "Cannot safely construct or verify release-correct overlay archive without accessible bytes; never submit guessed archive string",
+    "impact": "THREE_RELEASES_UNCHANGED_HOST_ACCEPTANCE_BLOCKED",
+    "user_action_needed": "supported uploaded archive or a host-visible archive transport capability; then verify and guarded update",
+    "no_foreign_writes": true,
+    "no_mail_sent": true
+  }
+}
