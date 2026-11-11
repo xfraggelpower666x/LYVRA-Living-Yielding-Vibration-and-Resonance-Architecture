@@ -1,0 +1,27 @@
+name: LYVRA Family Post Fallback - source-only checks
+
+on:
+  pull_request:
+    paths:
+      - 'family_post_bridge/fallback_decision.py'
+      - 'family_post_bridge/tests/test_fallback_decision.py'
+      - '.github/workflows/lyvra-family-post-fallback-regression.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fallback-pure-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact PR source
+        uses: actions/checkout@v4
+      - name: Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pure deterministic fallback contract
+        run: python -m unittest -v family_post_bridge.tests.test_fallback_decision
+      - name: Source syntax check
+        run: python -m py_compile family_post_bridge/fallback_decision.py family_post_bridge/tests/test_fallback_decision.py
