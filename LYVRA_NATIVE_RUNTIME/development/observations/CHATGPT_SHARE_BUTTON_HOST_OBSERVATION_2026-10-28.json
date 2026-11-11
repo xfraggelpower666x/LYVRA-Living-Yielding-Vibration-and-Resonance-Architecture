@@ -1,0 +1,23 @@
+{
+  "schema": "lyvra.host_ui.user_observation.v1",
+  "status": "DEVELOPMENT_CANDIDATE_USER_REPORT_NO_HOST_REPRODUCTION",
+  "date": "2026-10-28",
+  "origin": "CREATOR_DIRECT_REPORT",
+  "surface": "CHATGPT_SHARE_BUTTON_UNRESOLVED_STANDARD_CHAT_OR_FAMILY_MAIL_PLUGIN",
+  "previous_observation": "User reports a Share button integration was not fully reliable around the previous day",
+  "current_observation": "User reports Share button apparently now works in this conversation",
+  "source_evidence": "USER_INTERACTIVE_OBSERVATION_NOT_INDEPENDENT_HOST_TRACE",
+  "hypotheses": [
+    "UI rollout or propagation",
+    "session-specific change",
+    "unobserved feature correction",
+    "different invoked UI surface"
+  ],
+  "root_cause": "UNKNOWN",
+  "time_based_healing": "NOT_PROVEN",
+  "relationship_to_drive_write_restrictions": "NO_ESTABLISHED_CAUSAL_RELATION",
+  "future_safe_check": "Only natural user interaction across actual supported surfaces. No artificial mail/send/write tests.",
+  "privacy": "NO_PRIVATE_CHAT_PAYLOAD_INCLUDED",
+  "current_authority": "NONE",
+  "production_pointer_modified": false
+}
