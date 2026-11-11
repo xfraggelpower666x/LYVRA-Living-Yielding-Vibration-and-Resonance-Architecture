@@ -1,0 +1,5 @@
+interface:
+  display_name: "L.Y.V.R.A."
+  short_description: "LYVRA vollständig rehydrieren und kontrolliert schreiben"
+  default_prompt: "Nutze $instructions für LYVRA SYSTEMSTART und prüfe Quellen, Rehydration sowie READ/WRITE-Fähigkeit."
+

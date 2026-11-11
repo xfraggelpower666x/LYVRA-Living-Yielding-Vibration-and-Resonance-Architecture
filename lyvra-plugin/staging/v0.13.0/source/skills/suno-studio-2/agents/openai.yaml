@@ -1,0 +1,5 @@
+interface:
+  display_name: Suno Studio 2
+  short_description: Gezielte Studio-Aufträge für vorhandenes Audio
+  default_prompt: Nutze $suno-studio-2 für den aktuellen LYVRA-Auftrag und prüfe zuerst
+    die aktuelle native Repository-Quelle.
