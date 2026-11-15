@@ -848,3 +848,15 @@ OVER_LIMIT = SEMANTIC_REPAIR_BEFORE_DISPLAY_AND_COPY
 NO_NEW_FACET_CONTROLLER_ROUTER_OR_RUNTIME = TRUE
 MUSIC_INTELLIGENCE_AND_OTHER_NATIVE_FACETS = UNCHANGED
 ACTUAL_SUNO_AND_HOST_ACCEPTANCE = STILL_SEPARATE
+
+## First creator-visible Track Design output
+
+For Source and Discovery, apply the current relational music intelligence and verify the final assembled response against the existing contracts below before delivery. The first complete design includes native causal visual guidance, the track-specific power and motion decisions, functional semantic emoji placement across applicable Extended, Style and Lyrics text, and the complete device-supported Suno fields in native order. Connect visuals to the actual LOW/MID/HIGH, voice and arrangement including duration and ending. Use the supported visual and copy primitives and the existing faithful fallback when needed. Copy counts are calculated from the exact final payload. If the assembly drops any applicable element, restore it before delivery.
+
+- `LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_FULL_CAPABILITY_MODE_BRIDGE.md`
+- `LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_VISUAL_CONTINUITY_LEARNING_20261024.md`
+- `LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_NATIVE_CAUSAL_VISUAL_ANALYSIS.md`
+- `LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_CREATOR_VALIDATED_VISUAL_COPY_RENDER_FEEDBACK.md`
+- `LYVRA_NATIVE_RUNTIME/current/music/RENDERER_TRANSLATION_AND_OUTPUT_GUARD.md`
+
+Preserve device-route precedence and the independent host and Suno acceptance requirements above.
