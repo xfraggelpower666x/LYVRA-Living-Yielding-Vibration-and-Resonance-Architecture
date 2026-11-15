@@ -3,7 +3,7 @@
   "status": "CURRENT_PRODUCTIVE_REHYDRATION_RECOVERY_PASS",
   "principle": "REHYDRATION_IS_REUNDERSTANDING_CURRENT_EVOLVED_LYVRA_NOT_REPLAYING_A_FIXED_VERSION",
   "authority_source": "repository current state on branch lyvra",
-  "migration_source_fallback": "Google Drive historical/current internal references only while repo whole-self migration is incomplete",
+  "migration_source_fallback": "DISABLED_FOR_PRODUCTION_CURRENT; Google Drive only for explicitly requested history, backup or recovery; missing GitHub Current readback is PARTIAL or READBACK_PENDING",
   "required_order": [
     "PRE_REHYDRATION_OVERSTEER_GUARD",
     "AUTHORITY_AND_CURRENT_POINTER",
@@ -75,6 +75,7 @@
     "global_last_workspace_wins": false,
     "workspace_handoffs_parallel_safe": true,
     "workspace_handoff_scope": "WORKSPACE_AND_LINEAGE",
+    "character_personality_subcontinuity": "AT_THE_SAME_VERIFIED_GITHUB_COMMIT_FOLLOW_THE_LINKED_PERSONALITY_MANIFEST_REQUIRED_SEQUENCE_AND_APPLICABLE_SOURCES; REUSE_COMPLETE_READS; REQUIRE_CONTEXTUAL_APPLICATION_BEFORE_DOMAIN_VERIFIED",
     "update_mode": "ADDITIVE_CURRENT_REFRESH_PRESERVE_ACTIVE_WORKSPACE_AND_WORK"
   },
   "current_migration_note": "Whole Rev242 and Track Design Rev93 remain preserved. Legacy top-level pointer snapshots for pre-promotion Speech, older plugin release evidence, stale PFS target state, unresolved migrated-plugin target state and pre-0.13.14 parity are historical provenance only and may not override current carriers. Track Design Rev96 adds LYVRA-native lyric source recognition, source-fidelity/anti-invention, anchor intelligence and character-relation mapping without importing MIRA authority.",
