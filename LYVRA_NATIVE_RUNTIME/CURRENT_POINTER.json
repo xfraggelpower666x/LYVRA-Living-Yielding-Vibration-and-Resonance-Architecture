@@ -8152,5 +8152,37 @@
     "new_track_design_version": false,
     "recovery_branch": "lyvra-recovery-pre-track-session-20261107-r01",
     "pointer_last": true
+  },
+  "whole_track_stabilization_20261115": {
+    "status": "PRODUCTIVE_SOURCE_AND_DUAL_PLUGIN_RELEASE_READBACK_HOST_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "scope": "WHOLE_CHARACTER_AND_TRACK_FIRST_OUTPUT_STABILIZATION",
+    "previous_product_head": "51f2fdd6e9f95bd5d28753d4c86a9ff886c8e290",
+    "body_commit": "b8841602d2b33c91810a7842fc388c7eaf1cf3c7",
+    "recovery_branch": "lyvra-recovery-pre-whole-track-stabilization-20261115",
+    "body_blobs": {
+      "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "5c8b3ada4ce851e91b4d17b64e7225188f75e00d",
+      "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json": "b7929f84b267769c897751098efc51a4010ac154",
+      "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md": "514d37d46b8fd98acea49ffcdaf9e5636e8a7061",
+      "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_SUB_REHYDRATION.md": "fcd9352d20527a676df0c623a8225538de0ae8b9"
+    },
+    "plugin_releases": {
+      "native": {
+        "version": "0.1.92",
+        "release_id": "pluginrel_6af8fd9f3f0081919fe2f496d70f4952",
+        "changed_text_readback": "EXACT_MATCH",
+        "untouched_file_inventory": "PATH_AND_SIZE_MATCH"
+      },
+      "alive": {
+        "version": "0.13.88",
+        "release_id": "pluginrel_6af8fdb04a38819190c527a8679a0b6a",
+        "changed_text_readback": "EXACT_MATCH",
+        "untouched_file_inventory": "PATH_AND_SIZE_MATCH"
+      }
+    },
+    "local_track_static_regression": "PASS_17_OF_17_ON_EXACT_BODY_BLOBS",
+    "whole_and_track_host_acceptance": "NOT_TESTED",
+    "suno_render_acceptance": "NOT_TESTED",
+    "pointer_last": true
   }
 }
