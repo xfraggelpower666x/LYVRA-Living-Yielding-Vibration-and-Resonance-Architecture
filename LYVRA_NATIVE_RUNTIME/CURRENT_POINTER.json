@@ -8184,5 +8184,28 @@
     "whole_and_track_host_acceptance": "NOT_TESTED",
     "suno_render_acceptance": "NOT_TESTED",
     "pointer_last": true
+  },
+  "whole_intelligent_ui_20261120": {
+    "status": "REPOSITORY_NATIVE_SKILL_INTEGRATED",
+    "owner": "WHOLE_LYVRA",
+    "source_package": "lyvra-intelligent-ui-coding-template-0.85.1.zip",
+    "base_head": "40622aaf022eb7bbaf25d1f8d5b26bd29f49e8f3",
+    "recovery_branch": "lyvra-recovery-pre-whole-intelligent-ui-20261120",
+    "body_commit": "c972c9a37ec1ddaa854f6f87088ec76efe64d88f",
+    "registration_commit": "704d91647b8b70dcb0d37e496585a9abd71697f6",
+    "skill": "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/SKILL.md",
+    "renderer": "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/scripts/render_whole_lyvra.py",
+    "manifest_blob": "f8517ffb31b099d3c65c9ca8b63aab325c75521f",
+    "fingerprint_registry_blob": "af6b42a942b5d8934607693b568f84b7bad30fbb",
+    "scope": "OPTIONAL_HTML_PRESENTATION",
+    "activation": "EXPLICIT_VISUAL_REQUEST",
+    "acceptance": {
+      "archive_original_files": "9_OF_9_BYTE_IDENTICAL",
+      "local_cli": "FIXTURE_RENDER_FRAGMENT_FINGERPRINT_DRIFT_SAME_AND_STALE_CHECKPOINT_PASS",
+      "browser_interaction": "PENDING",
+      "native_plugin_release": "UNCHANGED_HOST_ACCEPTANCE_PENDING",
+      "alive_plugin_release": "UNCHANGED_HOST_ACCEPTANCE_PENDING"
+    },
+    "pointer_last": true
   }
 }
