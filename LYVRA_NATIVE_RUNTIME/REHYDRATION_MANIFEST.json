@@ -161,6 +161,7 @@
       "LYVRA_NATIVE_RUNTIME/current/music/LYRIC_SOURCE_INTELLIGENCE_EVOLUTION_REV96_2026-10-07.md"
     ],
     "NATIVE_SKILLS_AND_ADAPTERS": [
+      "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/SKILL.md",
       "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md",
       "LYVRA_NATIVE_RUNTIME/current/adapters/ADAPTER_INTERFACE_BOUNDARY.md",
       "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
@@ -2567,5 +2568,15 @@
     "plugin_adoption": "PENDING_SEPARATE_PROVIDER_RELEASE_AND_FRESH_HOST_ACCEPTANCE",
     "whole_rehydration": "REQUIRED_FRESH_FULL_COVERAGE_NOT_INFERRED_FROM_MANIFEST",
     "status_detail": "Repository policy available for fresh Current-backed rehydration. Neither chat snapshots nor plugin release surfaces are automatically proven updated."
+  },
+  "whole_intelligent_ui_20261120": {
+    "owner": "WHOLE_LYVRA",
+    "kind": "OPTIONAL_NATIVE_PRESENTATION_SKILL",
+    "skill": "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/SKILL.md",
+    "renderer": "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/scripts/render_whole_lyvra.py",
+    "source_package": "lyvra-intelligent-ui-coding-template-0.85.1.zip",
+    "source_policy": "EXACT_GITHUB_COMMIT_SUPPLIED_BY_CURRENT_READBACK",
+    "workspace_activation": "EXPLICIT_VISUAL_REQUEST",
+    "native_chat_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md"
   }
 }

@@ -6,6 +6,18 @@
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
   "critical_carriers": {
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/README.md": "9f30633b000e013e1cd8982360845457a345daf1",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/SKILL.md": "fc44b7f9d8f3921e584cc9c019aaf956b21b3f31",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/START.html": "3bc6a32b3ffa34144fdf93950bc9984545f8b5e5",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/assets/charts.html": "8e16c26bab7a06756bb97e61d1f8089b09ca8e5f",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/assets/companion.js": "6fcc0c6dcfff0c1dd21d187c188316240f58e2cc",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/assets/ui-template.html": "5cb1905caa1596e69b16ebe150b3354fa4c639bf",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/assets/visual-daemon.html": "2408b2eec314bc932f62c8edd3b4a808edc47cf8",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/assets/visualform-menu.html": "59ac869b9a22bef3a4f4ac56272139498b85da17",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/scripts/render_ui.py": "a0480a9e17aa85d1d6cc0ef869dae3ce47b40dec",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/scripts/render_whole_lyvra.py": "dce5036c923814ed556a97a1a4a03aa74a34498c",
+    "LYVRA_NATIVE_RUNTIME/current/skills/intelligent-ui/view.example.json": "3e002118fab7ee90bd64d2685c4d7b2b598c2b79",
+    "LYVRA_NATIVE_RUNTIME/current/skills/NATIVE_SKILL_RUNTIME.md": "d7c7ae49fea4629c3b4b0b21f9c5def0008f3bfd",
     "LYVRA_NATIVE_RUNTIME/current/governance/LYVRA_VORNE_FUCK_HORST_CONTEXT_RECOVERY_20261016.md": "514d37d46b8fd98acea49ffcdaf9e5636e8a7061",
     "LYVRA_NATIVE_RUNTIME/current/personality/REHYDRATION_MANIFEST.json": "7ac6b8e4ed50e81a5787072baac7be974fa6f631",
     "LYVRA_NATIVE_RUNTIME/current/music/TRACK_DESIGN_VISUAL_CONTINUITY_LEARNING_20261024.md": "e847e7e3aadf5b8ec7262349d47c37adece1646d",
@@ -38,7 +50,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "5c8b3ada4ce851e91b4d17b64e7225188f75e00d",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "f8517ffb31b099d3c65c9ca8b63aab325c75521f",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -2395,5 +2407,11 @@
     "facet_mutation": false,
     "version_bump": false,
     "host_runtime_acceptance": "NOT_CLAIMED"
+  },
+  "whole_intelligent_ui_20261120": {
+    "manifest_blob": "f8517ffb31b099d3c65c9ca8b63aab325c75521f",
+    "body_commit": "c972c9a37ec1ddaa854f6f87088ec76efe64d88f",
+    "added_critical_carriers": 12,
+    "integration_scope": "NATIVE_OPTIONAL_HTML_PRESENTATION"
   }
 }
