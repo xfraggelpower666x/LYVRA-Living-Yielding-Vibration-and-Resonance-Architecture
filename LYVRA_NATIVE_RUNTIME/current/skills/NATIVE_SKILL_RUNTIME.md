@@ -182,3 +182,7 @@ The translator interprets relevant relationships between relational lenses progr
 
 ACCEPTANCE_TEST = SAME_DELIVERED_CARD_SET > TRACEABLE_RELATIONAL_RECONSTRUCTION > TWO_CONTEXTUALLY_DIFFERENT_DECISIONS_WITH_CAUSAL_EXPLANATION > CORRECT_CURRENT_OUTPUT_SURFACE
 FRESH_SESSION_AND_PLUGIN_INVOCATION_EVIDENCE_REQUIRED_FOR_RUNTIME_PASS = true
+
+## Intelligent UI — Whole-LYVRA-Darstellungsfähigkeit (2026-11-20)
+
+Der native Skill [lyvra-intelligent-ui](intelligent-ui/SKILL.md) stellt projektbezogene Visualformen, Charts, evidenzgebundene Aktionen und einen revisionsgebundenen UI-Handoff bereit. Sein Whole-LYVRA-Einstieg liest Git-Objekte des zuvor verifizierten Commits. Das Ergebnis ist eine optionale HTML-Ansicht. Fachentscheidungen, Checkpoints und Schreibrechte folgen dem nativen Vertrag. Der normale Chat-Renderer und die vorhandenen Facetten-Einstiege behalten ihre Zuständigkeit.

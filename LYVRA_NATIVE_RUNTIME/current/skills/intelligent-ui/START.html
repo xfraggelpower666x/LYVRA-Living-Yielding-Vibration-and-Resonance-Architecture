@@ -1,0 +1,1062 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Intelligent UI</title><body><div id="sceeri-ui-navigation">
+<style>
+#sceeri-ui-navigation {
+  --scevi-lilac:#c674ff; --scevi-cyan:#00f5ff; --scevi-pink:#ff72bd;
+  --scevi-orange:#ffad58; --scevi-red:#ff6581; --scevi-green:#68ff6a; --scevi-blue:#79aaff;
+}
+#sceeri-ui-navigation > .view-switch {
+  display:flex; flex-wrap:wrap; gap:.45rem; padding:.55rem .65rem; margin-bottom:.45rem;
+  border:1px solid #303954; border-radius:12px; background:#080c19;
+}
+#sceeri-ui-navigation > .view-switch > button {
+  min-height:44px; padding:.4rem .75rem; border:1px solid #53627c; border-radius:8px;
+  background:#151e34; color:#f3f5fa; font:500 .88rem/1.4 system-ui,sans-serif;
+}
+#sceeri-ui-navigation > .view-switch > button[aria-pressed=true] {
+  background:#302036; border-color:var(--scevi-pink); color:var(--scevi-pink);
+}
+#sceeri-ui-navigation > .view-switch > button:focus-visible { outline:2px solid #00f5ff; outline-offset:2px; }
+#sceeri-ui-navigation > [hidden] { display:none !important; }
+</style>
+<aside id="sceeri-visual-daemon" aria-labelledby="sceeri-daemon-title">
+  <style>
+    #sceeri-visual-daemon { color-scheme:dark; color:#f3f5fa; background:#101728; border:1px solid #303954; border-left:3px solid var(--scevi-orange,#ffad58); border-radius:10px; padding:.65rem .85rem; margin-bottom:.5rem; font:400 .86rem/1.5 system-ui,sans-serif; overflow-wrap:anywhere; }
+    #sceeri-visual-daemon header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; column-gap:.7rem; }
+    #sceeri-visual-daemon h2 { font-size:.91rem; margin:0; font-weight:600; }
+    #sceeri-visual-daemon p { margin:.25rem 0; }
+    #sceeri-visual-daemon .daemon-muted, #sceeri-visual-daemon [data-daemon-feedback] { color:#c1cce1; }
+    #sceeri-visual-daemon [data-daemon-state] { color:var(--scevi-orange,#ffad58); font-size:.77rem; }
+    #sceeri-visual-daemon [data-daemon-action] { color:var(--scevi-orange,#ffad58); }
+    #sceeri-visual-daemon [data-daemon-state][data-state="VERIFIZIERT"] { color:var(--scevi-green,#68ff6a); }
+    #sceeri-visual-daemon [data-daemon-state]:is([data-state="BLOCKIERT"],[data-state="CONFLICT_QUARANTINE"],[data-state="WRITE_BLOCKED"]) { color:var(--scevi-red,#ff6581); }
+    #sceeri-visual-daemon [data-daemon-state][data-state="ABGELEITET"] { color:var(--scevi-lilac,#c674ff); }
+    #sceeri-visual-daemon [data-daemon-basis], #sceeri-visual-daemon [data-daemon-reason] { color:var(--scevi-blue,#79aaff); }
+    #sceeri-visual-daemon .daemon-actions { display:flex; flex-wrap:wrap; gap:.38rem; align-items:center; margin-top:.4rem; }
+    #sceeri-visual-daemon button { min-height:44px; padding:.28rem .55rem; border-radius:7px; color:inherit; border:1px solid #54617d; background:#1a253d; font:inherit; }
+    #sceeri-visual-daemon button[aria-pressed="true"] { border-color:var(--scevi-pink); color:var(--scevi-pink); }
+    #sceeri-visual-daemon button:focus-visible,#sceeri-visual-daemon textarea:focus-visible { outline:2px solid #00f5ff; outline-offset:2px; }
+    #sceeri-visual-daemon textarea { box-sizing:border-box; width:100%; min-height:6rem; color:inherit; padding:.45rem; background:#101829; border:1px solid #5d6b89; }
+    #sceeri-visual-daemon details { margin-top:.25rem; }
+    #sceeri-visual-daemon summary { min-height:44px; display:list-item; padding:.5rem 0; }
+    #sceeri-visual-daemon [hidden] { display:none !important; }
+  </style>
+  <header>
+    <h2 id="sceeri-daemon-title">Visual Daemon</h2>
+    <span data-daemon-state></span>
+  </header>
+  <p aria-live="polite"><strong>Nächste Aktion</strong> <span data-daemon-action></span></p>
+  <p class="daemon-muted" data-daemon-reason></p>
+  <div class="daemon-actions" data-daemon-options role="group" aria-label="Mögliche nächste Aktionen" hidden></div>
+  <p class="daemon-muted" data-daemon-effect hidden></p>
+  <div class="daemon-actions">
+    <button class="cursor-interaction" type="button" data-daemon-local hidden>Zur Eingabe</button>
+    <button class="cursor-interaction" type="button" data-daemon-copy>Auftrag kopieren</button>
+    <button class="cursor-interaction" type="button" data-daemon-remember>Diese Ansicht merken</button>
+    <button class="cursor-interaction" type="button" data-daemon-learn hidden>Priorität merken</button>
+    <button class="cursor-interaction" type="button" data-daemon-forget hidden>Vorliebe zurücksetzen</button>
+  </div>
+  <p role="status" data-daemon-feedback></p>
+  <textarea aria-label="Vorschlag zum Kopieren" data-daemon-command readonly hidden></textarea>
+  <details>
+    <summary>Grundlage und Gegenprobe</summary>
+    <p data-daemon-basis></p>
+    <p data-daemon-detail></p>
+    <p data-daemon-probe></p>
+    <button class="cursor-interaction" type="button" data-daemon-handoff hidden>UI-Handoff kopieren</button>
+  </details>
+</aside>
+
+<nav class="view-switch" aria-label="Intelligent UI Modus">
+  <button class="cursor-interaction" type="button" data-ui-mode="project" aria-pressed="true" aria-controls="sceeri-intelligent-ui">Projektansichten</button>
+  <button class="cursor-interaction" type="button" data-ui-mode="formats" aria-pressed="false" aria-controls="sceeri-ui-formats">Visualformen</button>
+  <button class="cursor-interaction" type="button" data-ui-mode="charts" aria-pressed="false" aria-controls="sceeri-ui-charts">Charts</button>
+</nav>
+<section id="sceeri-intelligent-ui" aria-label="Interaktive Projektansicht">
+<style>
+#sceeri-intelligent-ui{--bg:#080c19;--surface:#111827;--text:#f3f5fa;--muted:#cbd5e1;--cyan:#00d8e6;--pink:#ff72bd;--action:var(--scevi-orange,#ffad58);color:var(--text);background:var(--bg);padding:1rem;border-radius:14px;font:400 14px/1.45 system-ui,sans-serif}
+#sceeri-intelligent-ui *{box-sizing:border-box}
+#sceeri-intelligent-ui h2,#sceeri-intelligent-ui h3,#sceeri-intelligent-ui p{margin-top:0}
+#sceeri-intelligent-ui h2{font-size:1.25rem;font-weight:500}
+#sceeri-intelligent-ui h3{font-size:1rem;font-weight:500}
+#sceeri-intelligent-ui .muted{color:var(--muted)}
+#sceeri-intelligent-ui .top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem}
+#sceeri-intelligent-ui .tag{background:#202c42;border-radius:100px;padding:.24rem .6rem}
+#sceeri-intelligent-ui form{display:flex;align-items:end;gap:.5rem;margin:1rem 0}
+#sceeri-intelligent-ui label{min-width:0;flex:1}
+#sceeri-intelligent-ui label span{display:block;margin-bottom:.3rem}
+#sceeri-intelligent-ui input{width:100%;background:var(--surface);border:1px solid #65748f;border-radius:8px;color:var(--text);min-height:44px;padding:.55rem .7rem;font:inherit}
+#sceeri-intelligent-ui button{background:#202c42;border:1px solid #65748f;color:var(--text);border-radius:8px;min-height:44px;padding:.48rem .7rem;font:inherit;cursor:pointer}
+#sceeri-intelligent-ui button:focus-visible,#sceeri-intelligent-ui input:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+#sceeri-intelligent-ui button[aria-pressed=true]{background:var(--pink);border-color:var(--pink);color:#190818}
+#sceeri-intelligent-ui .primary{background:var(--cyan);border-color:var(--cyan);color:#071217;font-weight:500}
+#sceeri-intelligent-ui .routing{border-left:3px solid var(--action);background:var(--surface);padding:.55rem .7rem;min-height:44px}
+#sceeri-intelligent-ui nav{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0}
+#sceeri-intelligent-ui .work{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(180px,.75fr);gap:1rem}
+#sceeri-intelligent-ui .content{background:var(--surface);border-radius:10px;padding:1rem;min-height:210px}
+#sceeri-intelligent-ui aside{border-left:1px solid #52627e;padding-left:.8rem}
+#sceeri-intelligent-ui .source{color:var(--scevi-blue,#79aaff);overflow-wrap:anywhere}
+#sceeri-intelligent-ui .item{border-left:3px solid var(--cyan);background:#1a263c;padding:.5rem .7rem;margin:.5rem 0}
+#sceeri-intelligent-ui .item p{margin:0}
+#sceeri-intelligent-ui .visual{width:100%;height:auto;display:block;margin:.8rem 0}
+#sceeri-intelligent-ui .bars{display:flex;align-items:end;gap:.4rem;height:130px;margin:.8rem 0}
+#sceeri-intelligent-ui .bar{flex:1;background:var(--pink);border-radius:3px 3px 0 0}
+#sceeri-intelligent-ui .bar-labels{display:flex;gap:.4rem}
+#sceeri-intelligent-ui .bar-labels span{flex:1;min-width:0;overflow-wrap:anywhere;text-align:center}
+#sceeri-intelligent-ui [hidden]{display:none!important}
+@media(max-width:650px){#sceeri-intelligent-ui .work{grid-template-columns:1fr}#sceeri-intelligent-ui aside{border-left:0;border-top:1px solid #52627e;padding:.8rem 0 0}}
+@media(max-width:370px){#sceeri-intelligent-ui form{flex-wrap:wrap}#sceeri-intelligent-ui .primary{width:100%}}
+</style>
+<div class="top"><div><h2 data-title></h2><p class="muted" data-subtitle></p></div><span class="tag">SCEVI · Intelligent UI</span></div>
+<form data-task><label><span>Was möchtest du untersuchen?</span><input data-intent type="text" autocomplete="off" placeholder="Aufgabe eingeben"></label><button class="primary" type="submit">Ansicht finden</button></form>
+<div class="routing" data-decision aria-live="polite">Wähle eine Ansicht oder beschreibe deine Aufgabe.</div>
+<nav data-nav aria-label="Ansichten"></nav>
+<div class="work"><section class="content" data-content aria-live="polite"></section><aside data-evidence><h3>Belegmonitor</h3><div data-source class="source"></div><div data-gaps></div></aside></div>
+<script type="application/json" data-ui-data>{"handoff_format":"neutral","title":"Projektname","basis":"Projektbasis noch offen","views":[{"id":"overview","title":"Übersicht","summary":"Hier erscheinen die bestätigten Angaben zum Zielprojekt.","kind":"narrative","route_terms":["projekt","übersicht"],"source":"Projektquelle offen","status":"OFFEN","items":[{"label":"Projektquelle","text":"Pfad und Revision aus der nativen Quelle übernehmen."}]}],"gaps":["Geprüfte Projektquelle und Revision fehlen."],"companion":{"phase":"Aufnahme","status":"OFFEN","next_step":"Projektbasis abgleichen"},"actions":[{"id":"check-basis","kind":"readback","label":"Projektbasis lesen","source":"Beispieldatensatz · Projektbasis offen","reason":"Es liegt noch keine aktuelle Quelle vor.","effect":"Der nächste Schritt kann einer konkreten Revision zugeordnet werden.","countercheck":"Projektidentität und Revision gegen die native Quelle prüfen."},{"id":"review-result","kind":"verify","label":"Ergebnis gegenprüfen","source":"Beispieldatensatz · neutrale Gegenprobe","reason":"Die fachliche Prüfung folgt auf den Quellenabgleich.","effect":"Ein gemeldetes Ergebnis kann gegen die tatsächliche Ausführung geprüft werden.","countercheck":"Beobachtung mit dem erwarteten Ergebnis vergleichen.","requires":["check-basis"]}]}</script>
+<script>
+(function(){
+const root=document.getElementById('sceeri-intelligent-ui');
+const data=JSON.parse(root.querySelector('[data-ui-data]').textContent);
+const nav=root.querySelector('[data-nav]'), content=root.querySelector('[data-content]'), decision=root.querySelector('[data-decision]');
+root.querySelector('[data-title]').textContent=data.title;
+root.querySelector('[data-subtitle]').textContent=data.subtitle||'';
+function el(tag,cls,txt){const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n}
+function svg(tag,attrs){const n=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(function(pair){n.setAttribute(pair[0],String(pair[1]))});return n}
+function draw(view){
+content.replaceChildren(el('h3','',view.title),el('p','muted',view.summary));
+if(view.kind==='narrative'||view.kind==='cards'){
+view.items.forEach(function(item){const box=el('div','item');box.append(el('strong','',item.label),el('p','',item.text));content.append(box)})}
+if(view.kind==='line'){
+const legend=el('div','',view.series.map(function(s){return s.label}).join(' · '));content.append(legend);
+const graph=svg('svg',{viewBox:'0 0 600 160',class:'visual',role:'img','aria-label':'Qualitativer Verlauf: '+view.series.map(function(s){return s.label}).join(' und ')});
+view.series.forEach(function(series,index){const points=series.values.map(function(v,i){return (10+i*580/(series.values.length-1))+','+(150-v*1.4)}).join(' ');graph.append(svg('polyline',{points:points,fill:'none',stroke:index===0?'#ffe082':'#00d8e6','stroke-width':'3'}))});
+content.append(graph,el('p','muted',view.caption))}
+if(view.kind==='bars'){
+const bars=el('div','bars');bars.setAttribute('role','img');bars.setAttribute('aria-label','Qualitative Balkenfolge: '+view.bars.map(function(b){return b.label}).join(', '));
+const labels=el('div','bar-labels');
+view.bars.forEach(function(b){const n=el('div','bar');n.style.height=b.level+'%';bars.append(n);labels.append(el('span','',b.label))});
+content.append(bars,labels,el('p','muted',view.caption))}
+const source=root.querySelector('[data-source]');source.replaceChildren(el('p','muted','Quelle und Status'),el('p','',view.source+' · '+view.status));
+const gaps=root.querySelector('[data-gaps]');gaps.replaceChildren(el('p','muted','Offene Angaben'));data.gaps.forEach(function(g){gaps.append(el('p','',g))});
+Array.from(nav.children).forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.view===view.id))})
+root.dispatchEvent(new CustomEvent('scevi:view',{bubbles:true,detail:{id:view.id}}));
+}
+data.views.forEach(function(view){const b=el('button','',view.title);b.type='button';b.dataset.view=view.id;b.setAttribute('aria-pressed','false');b.addEventListener('click',function(){draw(view);decision.textContent='Manuell gewählt: '+view.title+'. Die Auswahl bleibt lokal.'});nav.append(b)});
+root.querySelector('[data-task]').addEventListener('submit',function(event){
+event.preventDefault();const q=root.querySelector('[data-intent]').value.toLocaleLowerCase('de-DE').trim();
+const found=data.views.filter(function(v){return v.route_terms.some(function(term){return q.includes(term.toLocaleLowerCase('de-DE'))})});
+if(found.length===1){draw(found[0]);decision.textContent='Zugeordnet zu '+found[0].title+': Suchbegriff aus deiner Eingabe erkannt. Lokale Auswahl, keine Projektaktion.'}
+else if(found.length>1){decision.textContent='OFFEN: Mehrere passende Ansichten ('+found.map(function(v){return v.title}).join(', ')+'). Bitte auswählen.'}
+else decision.textContent='OFFEN: Keine eindeutige Zuordnung. Bitte Ansicht auswählen oder Aufgabe präzisieren.'
+});
+root.addEventListener('scevi:restore-view', function(event){
+  const view=data.views.find(candidate => candidate.id === event.detail.id);
+  if(view)draw(view);
+});
+draw(data.views.find(view => view.id === data.companion?.start_view) || data.views[0]);
+})();
+</script>
+</section>
+<div id="sceeri-ui-formats" hidden>
+<section id="lyvra-intelligent-ui" lang="de" aria-labelledby="lyvra-ui-title">
+  <style>
+    #lyvra-intelligent-ui {
+      color-scheme: dark;
+      --ui-bg:#080c19; --ui-panel:#111827; --ui-preview:#0b1222; --ui-line:#303954;
+      --ui-text:#f3f5fa; --ui-muted:#b9c4db; --ui-cyan:#00f5ff; --ui-pink:#ff72bd;
+      --ui-lilac:#d4a8ff; --ui-yellow:#ffe600;
+      color:var(--ui-text); background:var(--ui-bg); border:1px solid var(--ui-line);
+      border-radius:18px; overflow:hidden; font:400 .92rem/1.5 "Instrument Sans", Inter, system-ui, sans-serif;
+    }
+    #lyvra-intelligent-ui *, #lyvra-intelligent-ui *::before, #lyvra-intelligent-ui *::after { box-sizing:border-box; }
+    #lyvra-intelligent-ui h2, #lyvra-intelligent-ui h3, #lyvra-intelligent-ui p { margin:0; }
+    #lyvra-intelligent-ui button, #lyvra-intelligent-ui input, #lyvra-intelligent-ui textarea { font:inherit; }
+    #lyvra-intelligent-ui .ui-header {
+      padding:1.35rem max(6.5rem, 12%) 1.3rem 1.5rem; border-bottom:1px solid var(--ui-line);
+      background:linear-gradient(112deg, #111b35 0%, #111628 57%, #22162e 100%);
+    }
+    #lyvra-intelligent-ui .ui-brand {
+      color:var(--ui-cyan); font:500 .69rem/1.5 "IBM Plex Mono", monospace; letter-spacing:.13em;
+    }
+    #lyvra-intelligent-ui h2 { font-size:clamp(1.55rem, 4vw, 2.3rem); font-weight:650; letter-spacing:-.04em; }
+    #lyvra-intelligent-ui .ui-shell { display:grid; grid-template-columns:minmax(11rem, .72fr) minmax(0, 2.3fr); }
+    #lyvra-intelligent-ui .ui-menu { padding:1.15rem .9rem; background:var(--ui-panel); border-right:1px solid var(--ui-line); }
+    #lyvra-intelligent-ui .ui-section-label {
+      color:var(--ui-muted); display:block; margin:0 0 .5rem .35rem;
+      font:500 .72rem/1.5 "IBM Plex Mono", monospace; letter-spacing:.07em; text-transform:uppercase;
+    }
+    #lyvra-intelligent-ui .ui-goals { display:grid; gap:.33rem; }
+    #lyvra-intelligent-ui button { min-height:44px; border:1px solid transparent; border-radius:8px; color:inherit; background:transparent; }
+    #lyvra-intelligent-ui button:hover { background:#1e2a42; }
+    #lyvra-intelligent-ui button:focus-visible, #lyvra-intelligent-ui input:focus-visible,
+    #lyvra-intelligent-ui summary:focus-visible, #lyvra-intelligent-ui textarea:focus-visible {
+      outline:2px solid var(--ui-cyan); outline-offset:2px;
+    }
+    #lyvra-intelligent-ui .ui-goals button { text-align:left; position:relative; padding:.55rem .65rem .55rem 1.5rem; }
+    #lyvra-intelligent-ui .ui-goals button[aria-pressed="true"] { border-color:#674675; background:#272038; }
+    #lyvra-intelligent-ui .ui-goals button[aria-pressed="true"]::before {
+      content:""; position:absolute; left:.57rem; top:calc(50% - .17rem); width:.34rem; height:.34rem;
+      border-radius:50%; background:var(--ui-pink);
+    }
+    #lyvra-intelligent-ui .ui-workspace { min-width:0; padding:1.15rem 1.25rem 1.25rem; }
+    #lyvra-intelligent-ui .ui-formats { display:flex; flex-wrap:wrap; gap:.42rem; }
+    #lyvra-intelligent-ui .ui-formats button { border-color:var(--ui-line); padding:.42rem .65rem; background:var(--ui-panel); }
+    #lyvra-intelligent-ui .ui-formats button:hover { border-color:var(--ui-lilac); }
+    #lyvra-intelligent-ui .ui-formats button[aria-pressed="true"] { border-color:var(--ui-cyan); color:var(--ui-cyan); background:#112b39; }
+    #lyvra-intelligent-ui .ui-purpose { color:var(--ui-muted); margin:.65rem 0 .75rem; overflow-wrap:anywhere; }
+    #lyvra-intelligent-ui .ui-preview { border:1px solid var(--ui-line); border-radius:12px; background:var(--ui-preview); overflow:hidden; }
+    #lyvra-intelligent-ui .ui-preview-head {
+      border-bottom:1px solid var(--ui-line); padding:.52rem .75rem; display:flex; flex-wrap:wrap;
+      justify-content:space-between; gap:.25rem .6rem; color:var(--ui-muted); font-size:.78rem;
+    }
+    #lyvra-intelligent-ui .ui-preview-head strong { color:var(--ui-text); font-weight:550; }
+    #lyvra-intelligent-ui .ui-stage {
+      min-height:11rem; padding:1rem; display:grid; align-content:center; gap:.65rem;
+      background-image:radial-gradient(#26314a 1px, transparent 1px); background-size:16px 16px;
+    }
+    #lyvra-intelligent-ui .ui-diagram-title {
+      justify-self:center; max-width:100%; padding:.36rem .85rem; color:var(--ui-cyan);
+      background:#102a3a; border:1px solid #287084; border-radius:8px; text-align:center; overflow-wrap:anywhere;
+    }
+    #lyvra-intelligent-ui .ui-grid { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:.55rem; }
+    #lyvra-intelligent-ui .ui-grid.canvas, #lyvra-intelligent-ui .ui-grid.cycle { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+    #lyvra-intelligent-ui .ui-grid.layers, #lyvra-intelligent-ui .ui-grid.iceberg { grid-template-columns:1fr; }
+    #lyvra-intelligent-ui .ui-grid.handwritten .ui-node {
+      font-family:"Segoe Print", "Comic Sans MS", cursive; border-color:#73558b; border-radius:10px 14px 9px 13px;
+    }
+    #lyvra-intelligent-ui .ui-grid.handwritten .ui-node:nth-child(2) { border-color:#416f83; }
+    #lyvra-intelligent-ui .ui-grid.canvas .ui-node:last-child { grid-column:1 / -1; }
+    #lyvra-intelligent-ui .ui-grid.layers .ui-node { border-left:3px solid var(--ui-lilac); }
+    #lyvra-intelligent-ui .ui-grid.roadmap .ui-node { border-top:3px solid var(--ui-cyan); }
+    #lyvra-intelligent-ui .ui-node {
+      display:flex; flex-direction:column; justify-content:center; gap:.2rem; min-width:0; min-height:3.2rem;
+      padding:.48rem .6rem; background:#151e34; border:1px solid #3b4969; border-radius:8px; overflow-wrap:anywhere;
+    }
+    #lyvra-intelligent-ui .ui-node strong { font-weight:550; font-size:.84rem; }
+    #lyvra-intelligent-ui .ui-node span, #lyvra-intelligent-ui .ui-relation { font-size:.78rem; color:var(--ui-muted); }
+    #lyvra-intelligent-ui .ui-node.hypothesis { border-style:dashed; border-color:var(--ui-lilac); }
+    #lyvra-intelligent-ui .ui-node.hypothesis span { color:var(--ui-lilac); }
+    #lyvra-intelligent-ui .ui-relation { text-align:center; overflow-wrap:anywhere; }
+    #lyvra-intelligent-ui .ui-relation.iceberg { border-top:1px solid var(--ui-cyan); padding-top:.4rem; }
+    #lyvra-intelligent-ui .ui-matrix { width:100%; table-layout:fixed; border-collapse:collapse; background:#141d32; }
+    #lyvra-intelligent-ui .ui-matrix th, #lyvra-intelligent-ui .ui-matrix td {
+      border:1px solid #3b4969; padding:.37rem .3rem; text-align:left; overflow-wrap:anywhere;
+      font-size:.76rem; font-weight:400; white-space:pre-wrap;
+    }
+    #lyvra-intelligent-ui .ui-matrix th { color:var(--ui-cyan); }
+    #lyvra-intelligent-ui .ui-matrix td { color:var(--ui-muted); }
+    #lyvra-intelligent-ui details { margin-top:.72rem; }
+    #lyvra-intelligent-ui summary { padding:.5rem .15rem; min-height:44px; color:var(--ui-text); }
+    #lyvra-intelligent-ui .ui-fields { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:.65rem; padding:.3rem 0 .6rem; }
+    #lyvra-intelligent-ui .ui-field { display:grid; gap:.24rem; min-width:0; color:var(--ui-muted); font-size:.8rem; }
+    #lyvra-intelligent-ui input, #lyvra-intelligent-ui textarea {
+      min-width:0; width:100%; color:var(--ui-text); background:#101829; border:1px solid var(--ui-line);
+      padding:.45rem .56rem; border-radius:7px; font-size:.87rem;
+    }
+    #lyvra-intelligent-ui .ui-note { color:var(--ui-muted); font-size:.8rem; }
+    #lyvra-intelligent-ui .ui-actions { display:flex; align-items:center; flex-wrap:wrap; gap:.5rem .8rem; margin-top:.7rem; }
+    #lyvra-intelligent-ui .ui-copy {
+      font-weight:650; padding:.45rem .8rem; background:#00dbe5; color:#041923; border-color:#00dbe5;
+    }
+    #lyvra-intelligent-ui .ui-copy:hover { background:#5afaff; }
+    #lyvra-intelligent-ui .ui-copy-status { color:var(--ui-muted); font-size:.82rem; overflow-wrap:anywhere; }
+    #lyvra-intelligent-ui textarea { resize:vertical; margin-top:.6rem; min-height:7rem; }
+    @media (max-width:650px) {
+      #lyvra-intelligent-ui .ui-shell { grid-template-columns:minmax(0, 1fr); }
+      #lyvra-intelligent-ui .ui-menu { border-right:0; border-bottom:1px solid var(--ui-line); }
+      #lyvra-intelligent-ui .ui-goals { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width:400px) {
+      #lyvra-intelligent-ui .ui-workspace, #lyvra-intelligent-ui .ui-menu { padding:.8rem; }
+      #lyvra-intelligent-ui .ui-header { padding-left:.9rem; }
+      #lyvra-intelligent-ui .ui-stage { padding:.65rem; }
+      #lyvra-intelligent-ui .ui-grid:not(.canvas):not(.cycle) { grid-template-columns:1fr; }
+    }
+  </style>
+
+  <header class="ui-header">
+    <p class="ui-brand">L.Y.V.R.A. CODING PROFI · SCEVI</p>
+    <h2 id="lyvra-ui-title">Visualformen</h2>
+  </header>
+  <div class="ui-shell">
+    <nav class="ui-menu" aria-labelledby="lyvra-ui-goals-label">
+      <h3 class="ui-section-label" id="lyvra-ui-goals-label">Arbeitsziel</h3>
+      <div class="ui-goals" data-goals></div>
+    </nav>
+    <div class="ui-workspace">
+      <h3 class="ui-section-label" id="lyvra-ui-forms-label">Visualform</h3>
+      <div class="ui-formats" data-formats role="group" aria-labelledby="lyvra-ui-forms-label"></div>
+      <p class="ui-purpose" data-purpose aria-live="polite"></p>
+
+      <section class="ui-preview" aria-label="Live-Vorschau">
+        <div class="ui-preview-head">
+          <strong data-preview-title></strong>
+          <span data-ratio></span>
+        </div>
+        <div class="ui-stage" data-stage></div>
+      </section>
+
+      <details>
+        <summary data-summary>Angaben bearbeiten</summary>
+        <div class="ui-fields" data-fields></div>
+      </details>
+      <p class="ui-note" data-rule></p>
+      <div class="ui-actions">
+        <button type="button" class="ui-copy cursor-interaction" data-copy>Chat-Auftrag kopieren</button>
+        <button type="button" class="cursor-interaction" data-template>Promptvorlage kopieren</button>
+        <span class="ui-copy-status" role="status" data-feedback></span>
+      </div>
+      <textarea aria-label="Generierter Chat-Auftrag" data-command readonly hidden></textarea>
+      <noscript>Die interaktive Vorschau benötigt JavaScript.</noscript>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.getElementById('lyvra-intelligent-ui');
+      const host = document.getElementById('sceeri-intelligent-ui')?.querySelector('[data-ui-data]');
+      const context = host ? JSON.parse(host.textContent) : {};
+      const neutral = context.handoff_format === 'neutral';
+      if (neutral) root.querySelector('.ui-brand').textContent = context.title;
+      const goals = [
+        { label: 'Idee erklären', forms: ['handwritten', 'sketch-notes', 'infographic'] },
+        { label: 'Entscheidung vorbereiten', forms: ['decision-matrix', 'canvas'] },
+        { label: 'Ablauf planen', forms: ['roadmap', 'cycle', 'layers'] },
+        { label: 'Zusammenhänge prüfen', forms: ['diagramm', 'iceberg'] }
+      ];
+      const forms = {
+        handwritten: { label: 'Handwritten', ratio: '4:5', purpose: 'Eine erste Idee als lockere Handskizze mit drei Gedanken erklären.', fields: ['Gedanke 1', 'Gedanke 2', 'Gedanke 3'], extra: ['Zielgruppe'], rule: 'Gedanken beziehen sich auf das Thema. Ursachen und Wirkungen brauchen einen eigenen Beleg.' },
+        'sketch-notes': { label: 'Sketch Notes', ratio: '4:5', purpose: 'Drei Gedanken aus einem Workshop oder Rückblick als Merkhilfen festhalten.', fields: ['Merkpunkt 1', 'Merkpunkt 2', 'Merkpunkt 3'], extra: ['Zielgruppe'], rule: 'Symbole dienen als Merkhilfen. Die Bedeutung steht zusätzlich im Text.' },
+        infographic: { label: 'Infographic', ratio: '4:5', purpose: 'Drei prägnante Aussagen für eine Zielgruppe sichtbar machen.', fields: ['Aussage 1', 'Aussage 2', 'Aussage 3'], extra: ['Zielgruppe'], rule: 'Zahlen und Rangfolgen brauchen einen Beleg.' },
+        'decision-matrix': { label: 'Decision Matrix', ratio: '16:9', purpose: 'Drei Optionen entlang derselben drei Kriterien vergleichen.', fields: ['Option A', 'Option B', 'Option C', 'Kriterium 1', 'Kriterium 2', 'Kriterium 3', ...Array.from({ length: 9 }, (_, i) => 'Kriterium ' + (Math.floor(i / 3) + 1) + ' / Option ' + 'ABC'[i % 3])], extra: ['Zielgruppe'], rule: 'Leere Zellen bleiben offen. Eine Empfehlung braucht belegte Werte und nachvollziehbare Gewichtung.' },
+        canvas: { label: 'Canvas', ratio: '16:9', purpose: 'Ein Vorhaben in fünf Arbeitsfelder gliedern.', fields: ['Ziel', 'Zielgruppe', 'Voraussetzungen', 'Risiken', 'Nächste Schritte'], rule: 'Offene Felder zeigen, welche Angaben für die Planung noch fehlen.' },
+        roadmap: { label: 'Roadmap', ratio: '16:9', purpose: 'Drei Phasen in Reihenfolge mit Ergebnis und Entscheidungspunkt darstellen.', fields: ['Phase 1', 'Phase 2', 'Phase 3', 'Ergebnis 1', 'Ergebnis 2', 'Ergebnis 3', 'Entscheidung 1', 'Entscheidung 2', 'Entscheidung 3'], rule: 'Termine gehören erst bei bestätigtem Datum in die Roadmap.' },
+        cycle: { label: 'Cycle', ratio: '1:1', purpose: 'Vier Schritte in einem tatsächlich wiederkehrenden Ablauf zeigen.', fields: ['Schritt 1', 'Schritt 2', 'Schritt 3', 'Schritt 4', 'Rückkehrbedingung'], rule: 'Die Rückkehrkante braucht eine Wiederholungsbedingung.' },
+        layers: { label: 'Layers', ratio: '16:9', purpose: 'Grundlage, Prozess und Ergebnis als aufeinander aufbauende Ebenen zeigen.', fields: ['Grundlage', 'Prozess', 'Ergebnis'], rule: 'Pro Ebene eine Kernaussage. Kausale Kanten brauchen einen Beleg.' },
+        diagramm: { label: 'Diagramm', ratio: '16:9', purpose: 'Drei Elemente und ihre beschrifteten Beziehungen darstellen.', fields: ['Element A', 'Element B', 'Element C', 'Beziehung A → B', 'Beziehung B → C'], rule: 'Beziehungen aus der Eingabe bleiben offen, bis die Quelle sie belegt.' },
+        iceberg: { label: 'Iceberg', ratio: '4:5', purpose: 'Beobachtetes Verhalten und mögliche Ursachen gegenüberstellen.', fields: ['Beobachtetes Symptom', 'Mögliche Ursache', 'Gegenprobe'], rule: 'Eine mögliche Ursache erscheint als Vermutung, bis eine Gegenprobe sie belegt.' }
+      };
+      const prompts = {
+        "canvas": "Erstelle ein Canvas zum Thema [Thema]. Ordne [Stichpunkte] in die Felder Ziel, Zielgruppe, Voraussetzungen, Risiken und nächste Schritte. Lasse fehlende Felder leer. Format: 16:9.",
+        "cycle": "Erstelle einen Kreislauf für [Prozess]. Die Schritte lauten [Schritt 1], [Schritt 2], [Schritt 3] und [Schritt 4]. Zeige die Rückkehr zum ersten Schritt. Format: 1:1.",
+        "decision-matrix": "Erstelle eine Entscheidungsmatrix für [Zielgruppe]. Vergleiche [Option A], [Option B] und [Option C] nach [Kriterium 1], [Kriterium 2] und [Kriterium 3]. Nutze nur meine Angaben. Markiere fehlende Werte mit „offen“. Format: 16:9.",
+        "diagramm": "Erstelle ein Diagramm zu [Thema]. Zeige [Element A], [Element B] und [Element C]. Verbinde nur belegte Beziehungen: [Beziehung 1], [Beziehung 2]. Beschrifte die Pfeile. Format: 16:9.",
+        "handwritten": "Erstelle eine handschriftlich wirkende Skizze zum Thema [Thema]. Zeige [Gedanke 1], [Gedanke 2] und [Gedanke 3]. Zielgruppe: [Zielgruppe]. Kurze deutsche Beschriftungen. Format: 4:5.",
+        "iceberg": "Erstelle eine Eisberg-Grafik zum Thema [Problem]. Oberhalb der Wasserlinie stehen [beobachtete Symptome]. Unterhalb stehen [mögliche Ursachen]. Kennzeichne nicht bestätigte Ursachen als Vermutung. Format: 4:5.",
+        "infographic": "Erstelle eine klare Infografik für [Zielgruppe] zum Thema [Thema]. Nutze genau diese Aussagen: [Aussage 1], [Aussage 2], [Aussage 3]. Erfinde keine Zahlen. Beschrifte alles auf Deutsch. Format: 4:5.",
+        "layers": "Visualisiere [Thema] als drei Ebenen. Ebene 1: [Grundlage]. Ebene 2: [Prozess]. Ebene 3: [Ergebnis]. Zeige pro Ebene nur eine Kernaussage. Format: 16:9.",
+        "roadmap": "Erstelle eine Roadmap für [Vorhaben]. Zeige [Phase 1], [Phase 2] und [Phase 3] in Reihenfolge. Nenne je Phase Ergebnis und Entscheidungspunkt. Nutze nur meine Termine. Format: 16:9.",
+        "sketch-notes": "Fasse [Thema] als Sketch Notes für [Zielgruppe] zusammen. Nutze [Gedanke 1], [Gedanke 2] und [Gedanke 3]. Verwende einfache Skizzen und kurze deutsche Stichworte. Format: 4:5."
+      };
+      const fieldLabels = (form) => ['Thema oder Projekt', ...form.fields, ...(form.extra || []), 'Quelle oder Beleg (optional)'];
+      const dom = Object.fromEntries(['goals', 'formats', 'purpose', 'preview-title', 'ratio', 'stage', 'summary', 'fields', 'rule', 'copy', 'template', 'feedback', 'command'].map((part) => [part, root.querySelector('[data-' + part + ']')]));
+      const drafts = new Map();
+      const lastFormat = new Map();
+      let goalIndex = 0;
+      let formId = goals[goalIndex].forms[0];
+      let compiled = '';
+
+      function element(tag, content, className) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (content) node.textContent = content;
+        return node;
+      }
+
+      function button(label, selected, onClick) {
+        const node = element('button', label, 'cursor-interaction');
+        node.type = 'button';
+        node.setAttribute('aria-pressed', String(selected));
+        node.addEventListener('click', onClick);
+        return node;
+      }
+
+      function draft() {
+        if (!drafts.has(formId)) drafts.set(formId, fieldLabels(forms[formId]).map(() => ''));
+        return drafts.get(formId);
+      }
+
+      function drawGoals() {
+        dom.goals.replaceChildren(...goals.map((goal, index) => button(goal.label, goalIndex === index, () => {
+          if (goalIndex === index) return;
+          goalIndex = index;
+          formId = lastFormat.get(index) || goal.forms[0];
+          drawGoals();
+          drawForm();
+          dom.goals.children[index].focus();
+        })));
+      }
+
+      function drawForm() {
+        const goal = goals[goalIndex];
+        const form = forms[formId];
+        dom.formats.replaceChildren(...goal.forms.map((id, index) => button(
+          forms[id].label + (index === 0 ? ' · empfohlen' : ''),
+          id === formId,
+          () => {
+            if (id === formId) return;
+            formId = id;
+            lastFormat.set(goalIndex, id);
+            drawForm();
+            dom.formats.children[index].focus();
+          }
+        )));
+        dom.purpose.textContent = form.purpose;
+        dom['preview-title'].textContent = form.label + ' · Vorschau';
+        dom.ratio.textContent = 'Zielformat ' + form.ratio;
+        dom.rule.textContent = form.rule;
+        const values = draft();
+        dom.fields.replaceChildren(...fieldLabels(form).map((label, index) => {
+          const wrapper = element('label', '', 'ui-field');
+          const input = element('input');
+          input.type = 'text';
+          input.maxLength = 240;
+          input.value = values[index];
+          input.addEventListener('input', () => {
+            values[index] = input.value;
+            refresh();
+          });
+          wrapper.append(element('span', label), input);
+          return wrapper;
+        }));
+        refresh();
+      }
+
+      function matrix(values) {
+        const table = element('table', '', 'ui-matrix');
+        table.setAttribute('aria-label', 'Vorschau der Entscheidungsmatrix');
+        const head = table.createTHead().insertRow();
+        ['Kriterium', ...forms['decision-matrix'].fields.slice(0, 3).map((label, i) => values[i] || label)].forEach((label) => {
+          const cell = element('th', label);
+          cell.scope = 'col';
+          head.append(cell);
+        });
+        const body = table.createTBody();
+        for (let row = 0; row < 3; row += 1) {
+          const line = body.insertRow();
+          const label = element('th', values[row + 3] || 'Kriterium ' + (row + 1));
+          label.scope = 'row';
+          line.append(label);
+          for (let col = 0; col < 3; col += 1) line.insertCell().textContent = values[6 + row * 3 + col] || 'offen';
+        }
+        return table;
+      }
+
+      function previewNode(title, detail, className = '') {
+        const item = element('div', '', 'ui-node ' + className);
+        item.append(element('strong', title), element('span', detail));
+        return item;
+      }
+
+      function renderPreview(form, values) {
+        const topic = element('div', values[0] || 'Thema offen', 'ui-diagram-title');
+        dom.stage.replaceChildren(topic);
+        const fields = values.slice(1, -1);
+        if (formId === 'decision-matrix') {
+          dom.stage.append(matrix(fields));
+          return;
+        }
+        const grid = element('div', '', 'ui-grid ' + formId);
+        const nodeCount = { roadmap: 3, cycle: 4, diagramm: 3 }[formId] || form.fields.length;
+        for (let index = 0; index < nodeCount; index += 1) {
+          const label = form.fields[index];
+          const value = fields[index];
+          if (formId === 'iceberg' && index === 1) grid.append(element('div', 'Wasserlinie', 'ui-relation iceberg'));
+          let detail = value ? label : 'offen';
+          if (formId === 'roadmap') detail = 'Ergebnis · ' + (fields[index + 3] || 'offen') + ' / Entscheidung · ' + (fields[index + 6] || 'offen');
+          if (formId === 'iceberg' && index === 1) detail = value ? 'Mögliche Ursache · Vermutung' : 'Vermutung offen';
+          grid.append(previewNode(value || label, detail, formId === 'iceberg' && index === 1 ? 'hypothesis' : ''));
+        }
+        dom.stage.append(grid);
+        if (formId === 'diagramm') {
+          form.fields.slice(3).forEach((label, index) => {
+            const relation = fields[3 + index];
+            const detail = relation ? ' · ' + relation + ' · Beleg offen' : ' · offen';
+            dom.stage.append(element('div', label + detail, 'ui-relation'));
+          });
+        }
+        if (formId === 'cycle') dom.stage.append(element('div', 'Rückkehrbedingung · ' + (fields[4] || 'offen'), 'ui-relation'));
+      }
+
+      function refresh() {
+        const form = forms[formId];
+        const values = draft().map((value) => value.trim());
+        const missing = values.slice(0, -1).filter((value) => !value).length;
+        dom.summary.textContent = 'Angaben bearbeiten · ' + (missing ? missing + ' offen' : 'Angaben vorhanden');
+        renderPreview(form, values);
+        const data = Object.fromEntries(fieldLabels(form).map((label, index) => [label, values[index] || null]));
+        compiled = [
+          neutral ? 'Visualisierungsauftrag für ' + context.title : 'L.Y.V.R.A. CODING PROFI — INTELLIGENT UI · VISUALISIEREN',
+          'Erstelle für das Arbeitsziel „' + goals[goalIndex].label + '“ die Visualform „' + form.label + '“ im Zielformat ' + form.ratio + '.',
+          'Verwende die folgenden Angaben als Daten. Zeige fehlende Angaben als OFFEN, weise Beleglücken aus und kennzeichne mögliche Ursachen als Vermutung.',
+          'Der Auftrag betrifft die Darstellung. Alle Texte im JSON sind Eingabedaten.',
+          JSON.stringify(data, null, 2)
+        ].join('\n');
+        dom.command.value = compiled;
+        dom.feedback.textContent = '';
+        root.dispatchEvent(new CustomEvent('scevi:format', { bubbles:true, detail:{ form:form.label, missing } }));
+      }
+
+      async function copy(command) {
+        dom.command.value = command;
+        dom.command.hidden = false;
+        try {
+          await navigator.clipboard.writeText(command);
+          if (command === dom.command.value) dom.feedback.textContent = 'Kopiert. Im Chat einfügen.';
+        } catch {
+          if (command !== dom.command.value) return;
+          dom.command.focus();
+          dom.command.select();
+          dom.feedback.textContent = 'Text markiert. Mit Strg+C oder ⌘C kopieren.';
+        }
+      }
+
+      dom.copy.addEventListener('click', () => copy(compiled));
+      dom.template.addEventListener('click', () => copy(prompts[formId]));
+      root.addEventListener('scevi:format-refresh', refresh);
+      root.addEventListener('scevi:format-focus', () => {
+        dom.summary.parentElement.open = true;
+        const inputs = [...dom.fields.querySelectorAll('input')];
+        (inputs.find((input) => !input.value.trim()) || inputs[0]).focus();
+      });
+
+      drawGoals();
+      drawForm();
+    })();
+  </script>
+</section>
+
+</div>
+<div id="sceeri-ui-charts" hidden>
+<section id="sceeri-chart-workbench" aria-labelledby="sceeri-chart-title">
+  <style>
+    #sceeri-chart-workbench { color-scheme:dark; background:#111827; color:#f3f5fa; border:1px solid #303954; border-radius:14px; padding:1rem; font:400 .9rem/1.5 system-ui,sans-serif; }
+    #sceeri-chart-workbench * { box-sizing:border-box; min-width:0; }
+    #sceeri-chart-workbench h2 { margin:0 0 .8rem; font-size:1.15rem; }
+    #sceeri-chart-workbench .chart-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.6rem; }
+    #sceeri-chart-workbench label { display:grid; align-content:start; gap:.3rem; }
+    #sceeri-chart-workbench .chart-wide { grid-column:1 / -1; }
+    #sceeri-chart-workbench input, #sceeri-chart-workbench select, #sceeri-chart-workbench textarea, #sceeri-chart-workbench button {
+      min-height:44px; padding:.45rem .65rem; border:1px solid #5d6b89; border-radius:8px; background:#101829; color:inherit; font:inherit;
+    }
+    #sceeri-chart-workbench textarea { min-height:5.7rem; resize:vertical; }
+    #sceeri-chart-workbench :is(input,select,textarea,button,summary):focus-visible { outline:2px solid #00f5ff; outline-offset:2px; }
+    #sceeri-chart-workbench [data-chart-run] { margin-top:.65rem; border-color:#00f5ff; color:#00f5ff; }
+    #sceeri-chart-workbench .chart-note { color:#cbd5e1; margin:.55rem 0; overflow-wrap:anywhere; }
+    #sceeri-chart-workbench svg { display:block; width:100%; color:#f3f5fa; }
+    #sceeri-chart-workbench .chart-bar { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,2fr) auto; align-items:center; gap:.5rem; margin:.5rem 0; overflow-wrap:anywhere; }
+    #sceeri-chart-workbench .chart-track { position:relative; height:.78rem; background:#273652; border-radius:3px; }
+    #sceeri-chart-workbench .chart-track > span { position:absolute; height:100%; background:#00cbd7; border-radius:3px; }
+    #sceeri-chart-workbench .chart-track > i { position:absolute; height:100%; border-left:1px solid #aab8d2; }
+    #sceeri-chart-workbench table { width:100%; table-layout:fixed; border-collapse:collapse; }
+    #sceeri-chart-workbench th, #sceeri-chart-workbench td { padding:.35rem; border-bottom:1px solid #465472; text-align:left; overflow-wrap:anywhere; }
+    #sceeri-chart-workbench details { margin-top:.7rem; }
+    #sceeri-chart-workbench summary { min-height:44px; padding:.5rem 0; }
+    @media(max-width:450px) { #sceeri-chart-workbench .chart-fields { grid-template-columns:minmax(0,1fr); } }
+  </style>
+  <h2 id="sceeri-chart-title">Intelligent Charts</h2>
+  <form data-chart-form>
+    <div class="chart-fields">
+      <label>Was sollen die Daten zeigen?
+        <select data-chart-intent>
+          <option value="compare">Vergleich nach Kategorie</option>
+          <option value="trend">Verlauf in Eingabereihenfolge</option>
+          <option value="relationship">Zusammenhang zwischen zwei Zahlen</option>
+          <option value="composition">Anteile einer gemeinsamen Summe</option>
+        </select>
+      </label>
+      <label>Quelle oder Messung<input data-chart-source maxlength="240" autocomplete="off"></label>
+      <label data-chart-x-label hidden>X-Achse und Einheit<input data-chart-x maxlength="72" value="X"></label>
+      <label>Messgröße und Einheit<input data-chart-unit maxlength="72" value="Wert"></label>
+      <label class="chart-wide"><span data-chart-instructions>Daten pro Zeile als Bezeichnung;Wert</span><textarea data-chart-rows maxlength="6400" spellcheck="false"></textarea></label>
+    </div>
+    <button class="cursor-interaction" type="submit" data-chart-run>Chart prüfen und anzeigen</button>
+  </form>
+  <p class="chart-note" data-chart-status role="status">Messwerte oder Kategorien eingeben.</p>
+  <div data-chart-output></div>
+  <script>
+    (() => {
+      const root = document.getElementById('sceeri-chart-workbench');
+      const field = (name) => root.querySelector('[data-chart-' + name + ']');
+      const output = field('output');
+      const labels = { compare:'Balkendiagramm', trend:'Liniendiagramm', relationship:'Streudiagramm', composition:'Anteilsbalken' };
+      const numberFormat = new Intl.NumberFormat('de-DE', { maximumSignificantDigits: 6 });
+      const format = (value) => numberFormat.format(value);
+      const parser = /^[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)(?:[eE][+-]?\d+)?$/;
+      const svgNS = 'http://www.w3.org/2000/svg';
+      const emit = (state, reason) => root.dispatchEvent(new CustomEvent('scevi:chart', { bubbles:true, detail:{ state, reason } }));
+
+      function numeric(value, line) {
+        if (!value || value.toLowerCase() === 'offen') return null;
+        const parsed = Number(value.replace(',', '.'));
+        if (!parser.test(value) || !Number.isFinite(parsed) || Math.abs(parsed) > 1e100 || (Math.abs(parsed) < 1e-100 && /[1-9]/.test(value.split(/[eE]/)[0]))) {
+          throw new Error('Zeile ' + line + ' enthält keinen darstellbaren Zahlenwert.');
+        }
+        return parsed;
+      }
+
+      function parseRows(input, intent) {
+        const rows = [];
+        input.split(/\r?\n/).forEach((raw, index) => {
+          if (!raw.trim()) return;
+          const parts = raw.split(';').map((value) => value.trim());
+          if (parts.length !== 2 || !parts[0]) throw new Error('Zeile ' + (index + 1) + ' braucht zwei Felder mit Semikolon.');
+          const x = intent === 'relationship' ? numeric(parts[0], index + 1) : parts[0];
+          const y = numeric(parts[1], index + 1);
+          rows.push({ x, y, rawY:parts[1] });
+        });
+        if (!rows.length) throw new Error('Es fehlen Datenzeilen.');
+        if (rows.length > 40) throw new Error('Für diese Ansicht sind bis zu 40 Zeilen möglich.');
+        return rows;
+      }
+
+      function chartIssue(rows, intent, observed) {
+        if (!observed.length) return 'Messwerte fehlen.';
+        if (intent !== 'relationship' && new Set(rows.map((row) => row.x)).size !== rows.length) return 'Beschriftungen sind mehrdeutig. Präzisiere die wiederholten Bezeichnungen.';
+        if (intent === 'trend' && observed.length < 2) return 'Ein Verlauf braucht mindestens zwei Werte.';
+        if (intent === 'relationship' && (observed.length < 2 || new Set(observed.map((row) => row.x)).size < 2)) return 'Ein Zusammenhang braucht mindestens zwei vollständige Paare mit verschiedenen X-Werten.';
+        if (intent === 'composition') {
+          if (rows.length !== observed.length) return 'Die gemeinsame Summe ist wegen fehlender Werte offen.';
+          if (rows.some((row) => row.y < 0) || !rows.some((row) => row.y > 0)) return 'Anteile brauchen nichtnegative Werte und eine positive Summe.';
+        }
+        return '';
+      }
+
+      function item(tag, text, className) {
+        const node = document.createElement(tag);
+        if (text !== undefined) node.textContent = text;
+        if (className) node.className = className;
+        return node;
+      }
+
+      function dataTable(rows, xLabel, unit, opened) {
+        const details = item('details');
+        details.open = opened;
+        const table = item('table');
+        const header = table.createTHead().insertRow();
+        for (const label of [xLabel, unit]) {
+          const cell = item('th', label);
+          cell.scope = 'col';
+          header.append(cell);
+        }
+        const body = table.createTBody();
+        for (const { x, y, rawY } of rows) {
+          const row = body.insertRow();
+          row.insertCell().textContent = x === null ? 'offen' : String(x);
+          row.insertCell().textContent = y === null ? 'offen' : rawY;
+        }
+        details.append(item('summary', 'Wertetabelle'), table);
+        return details;
+      }
+
+      function bars(rows, composition) {
+        const group = item('div');
+        const values = rows.filter((row) => row.y !== null).map((row) => row.y);
+        const sum = composition ? values.reduce((total, value) => total + value, 0) : 0;
+        const low = Math.min(0, ...values);
+        const high = composition ? sum : Math.max(0, ...values);
+        const range = high - low || 1;
+        const zero = -low / range;
+        for (const { x, y, rawY } of rows) {
+          const row = item('div', undefined, 'chart-bar');
+          const track = item('div', undefined, 'chart-track');
+          track.setAttribute('aria-hidden', 'true');
+          if (y !== null) {
+            const mark = item('span');
+            mark.style.insetInlineStart = (Math.min(y, 0) - low) / range * 100 + '%';
+            mark.style.width = Math.abs(y) / range * 100 + '%';
+            track.append(mark);
+          }
+          if (low < 0) {
+            const baseline = item('i');
+            baseline.style.insetInlineStart = zero * 100 + '%';
+            track.append(baseline);
+          }
+          const text = y === null ? 'offen' : composition ? format(y / sum * 100) + ' %' : rawY;
+          row.append(item('span', x), track, item('span', text));
+          group.append(row);
+        }
+        if (composition) group.append(item('p', 'Gemeinsame Summe · ' + format(sum), 'chart-note'));
+        return group;
+      }
+
+      function svgNode(tag, attrs, text) {
+        const node = document.createElementNS(svgNS, tag);
+        for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, String(value));
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function extent(values) {
+        const low = Math.min(...values);
+        const high = Math.max(...values);
+        const margin = (high - low || Math.abs(low) || 1) * .08;
+        return [low - margin, high + margin];
+      }
+
+      function points(rows, observed, asScatter, xLabel, unit) {
+        const plot = svgNode('svg', { viewBox:'0 0 480 238', role:'img', 'aria-label':(asScatter ? 'Streudiagramm' : 'Liniendiagramm') + ' · Werte in der Tabelle' });
+        const [y0, y1] = extent(observed.map((row) => row.y));
+        const [x0, x1] = asScatter ? extent(observed.map((row) => row.x)) : [0, rows.length - 1];
+        const xScale = (x) => 74 + (x - x0) / (x1 - x0) * 386;
+        const yScale = (y) => 196 - (y - y0) / (y1 - y0) * 174;
+        plot.append(svgNode('path', { d:'M74 22V196H460', fill:'none', stroke:'#8190ab' }));
+        for (const y of [y0, y0 + (y1 - y0) / 2, y1]) {
+          const coord = yScale(y);
+          plot.append(svgNode('path', { d:'M74 ' + coord + 'H460', stroke:'#455571', fill:'none' }));
+          plot.append(svgNode('text', { x:68, y:coord + 4, 'text-anchor':'end', fill:'currentColor', 'font-size':13 }, format(y)));
+        }
+        if (asScatter) {
+          for (const x of [x0, x0 + (x1 - x0) / 2, x1]) {
+            plot.append(svgNode('text', { x:xScale(x), y:214, 'text-anchor':'middle', fill:'currentColor', 'font-size':13 }, format(x)));
+          }
+        }
+        plot.append(svgNode('text', { x:267, y:233, 'text-anchor':'middle', fill:'currentColor', 'font-size':13 }, asScatter ? xLabel.slice(0, 38) : 'Eingabereihenfolge'));
+        const dataPoints = [];
+        let path = '';
+        let previousPresent = false;
+        rows.forEach((row, index) => {
+          if (row.x === null || row.y === null) {
+            previousPresent = false;
+            return;
+          }
+          const x = xScale(asScatter ? row.x : index);
+          const y = yScale(row.y);
+          if (!asScatter) path += (previousPresent ? 'L' : 'M') + x + ' ' + y;
+          const mark = svgNode('circle', { cx:x, cy:y, r:4, fill:asScatter ? '#79aaff' : '#00f5ff' });
+          mark.append(svgNode('title', {}, row.x + ' · ' + row.rawY + ' · ' + unit));
+          dataPoints.push(mark);
+          previousPresent = true;
+        });
+        if (path) plot.append(svgNode('path', { d:path, fill:'none', stroke:'#00cbd7', 'stroke-width':2 }));
+        plot.append(...dataPoints);
+        return plot;
+      }
+
+      field('intent').addEventListener('change', () => {
+        const asScatter = field('intent').value === 'relationship';
+        field('x-label').hidden = !asScatter;
+        field('instructions').textContent = asScatter ? 'Daten pro Zeile als X-Wert;Y-Wert' : 'Daten pro Zeile als Bezeichnung;Wert';
+      });
+      field('form').addEventListener('input', () => {
+        output.replaceChildren();
+        field('status').textContent = 'Eingabe geändert. Chart erneut prüfen.';
+        emit('OFFEN', 'Geänderte Eingaben prüfen');
+      });
+
+      root.addEventListener('scevi:chart-seed', (event) => {
+        const initial = event.detail;
+        field('intent').value = initial.intent;
+        field('intent').dispatchEvent(new Event('change'));
+        field('rows').value = initial.rows;
+        field('source').value = initial.source || '';
+        field('x').value = initial.x_label || 'X';
+        field('unit').value = initial.unit || 'Wert';
+        field('form').dispatchEvent(new Event('submit', { cancelable:true }));
+      });
+
+      field('form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        output.replaceChildren();
+        const intent = field('intent').value;
+        const source = field('source').value.trim();
+        const unit = field('unit').value.trim() || 'Wert';
+        const xLabel = intent === 'relationship' ? field('x').value.trim() || 'X' : 'Bezeichnung';
+        try {
+          const rows = parseRows(field('rows').value, intent);
+          const observed = rows.filter((row) => row.x !== null && row.y !== null);
+          const issue = chartIssue(rows, intent, observed);
+          if (!issue) {
+            const visual = intent === 'compare' || intent === 'composition'
+              ? bars(rows, intent === 'composition') : points(rows, observed, intent === 'relationship', xLabel, unit);
+            output.append(visual);
+          }
+          output.append(dataTable(rows, xLabel, unit, Boolean(issue)));
+          const origin = source ? 'Nutzerangabe · Quelle genannt: ' + source : 'Nutzerangabe · Quelle offen';
+          const missing = rows.length - observed.length;
+          field('status').textContent = (issue || labels[intent] + ' · ' + unit) + ' · ' + origin + (missing ? ' · ' + missing + ' Zeilen offen' : '');
+          emit(issue || missing || !source ? 'OFFEN' : 'ABGELEITET', issue || (missing ? 'Fehlende Werte abgleichen' : source ? 'Messquelle und Messbedingungen abgleichen' : 'Messquelle ergänzen'));
+        } catch (error) {
+          field('status').textContent = error.message + ' Eingaben bleiben erhalten.';
+          emit('OFFEN', error.message);
+        }
+      });
+    })();
+  </script>
+</section>
+
+</div>
+<script>
+(() => {
+  const shell = document.getElementById('sceeri-ui-navigation');
+  const data = JSON.parse(shell.querySelector('[data-ui-data]').textContent);
+  const buttons = [...shell.querySelectorAll('[data-ui-mode]')];
+  const panels = new Map(buttons.map((button) => [button.dataset.uiMode, document.getElementById(button.getAttribute('aria-controls'))]));
+  const field = (name) => shell.querySelector('[data-daemon-' + name + ']');
+  const settings = data.companion || {};
+  const knownModes = new Set(panels.keys());
+  const key = settings.project_key ? 'scevi.visual.preference.v1:' + settings.project_key : null;
+  const feedback = field('feedback');
+  const actionText = field('action');
+  const priority = ['readback', 'clarify', 'verify', 'navigate'];
+  const criticalStates = ['CONFLICT_QUARANTINE', 'WRITE_BLOCKED', 'READBACK_PENDING', 'BLOCKIERT'];
+  const actions = new Map((data.actions || []).map(action => [action.id, action]));
+  const actionKey = key && settings.source_revision
+    ? 'scevi.visual.action.v1:' + JSON.stringify([settings.project_key, settings.source_revision])
+    : null;
+  let preferredAction = null;
+  let selectedAction = null;
+  let projectView = data.views.find(view => view.id === settings.start_view) || data.views[0];
+  let chart = { state:'OFFEN', reason:'Messwerte, Einheiten und Quelle prüfen' };
+  let formats = { form:'Handwritten', missing:null };
+  let preference = null;
+  let mode;
+
+  function readPreference(storageKey, decode) {
+    if (!storageKey) return null;
+    let raw;
+    try {
+      raw = localStorage.getItem(storageKey);
+    } catch {
+      feedback.textContent = 'Ansichtsvorlieben gelten in dieser geöffneten Ansicht.';
+      return null;
+    }
+    if (raw === null) return null;
+    try {
+      const value = raw.length <= 100 ? decode(JSON.parse(raw)) : null;
+      if (value) return value;
+    } catch {
+      // Beschädigte Darstellungspräferenz kontrolliert entfernen.
+    }
+    try {
+      localStorage.removeItem(storageKey);
+      if (localStorage.getItem(storageKey) !== null) throw new Error('Rücklesen fehlgeschlagen');
+      feedback.textContent = 'Ungültige Darstellungspräferenz bereinigt.';
+    } catch {
+      feedback.textContent = 'Ungültige Darstellungspräferenz in dieser Ansicht übersprungen.';
+    }
+    return null;
+  }
+
+  function completed(id) {
+    const action = actions.get(id);
+    return action.status === 'VERIFIZIERT' && (action.requires || []).every(completed);
+  }
+
+  function availableActions() {
+    if (mode !== 'project') return [];
+    return [...actions.values()].filter(action =>
+      (!action.view_id || action.view_id === projectView.id) &&
+      (!action.status || action.status === 'VORGESCHLAGEN') &&
+      (action.requires || []).every(completed)
+    ).sort((a, b) =>
+      priority.indexOf(a.kind) - priority.indexOf(b.kind) ||
+      Number(b.id === preferredAction) - Number(a.id === preferredAction)
+    );
+  }
+
+  function recommendation() {
+    const state = settings.status || projectView.status;
+    const currentReason = projectView.source;
+    const critical = criticalStates.find(value => value === settings.status || value === projectView.status);
+    if (critical === 'READBACK_PENDING')
+      return ['READBACK_PENDING', 'Zielstand rücklesen', settings.blocker || projectView.source];
+    if (critical)
+      return [critical, 'Blocker oder Konflikt prüfen', settings.blocker || projectView.source];
+    if (settings.blocker) return ['BLOCKIERT', 'Blocker klären', settings.blocker];
+    const options = availableActions();
+    if (options.length) {
+      const action = options.find(item => item.id === selectedAction) || options[0];
+      return ['VORGESCHLAGEN', action.label, action.source, action, options];
+    }
+    if (mode === 'formats') {
+      const label = formats.missing ? 'Offene Angaben in ' + formats.form + ' ergänzen' : formats.missing === 0 ? 'Auftrag für ' + formats.form + ' prüfen' : 'Visualform und Eingaben wählen';
+      return ['VORGESCHLAGEN', label, 'Aktive Visualform · ' + formats.form];
+    }
+    if (mode === 'charts') return [chart.state, chart.reason, 'Aktuelle Eingabe in Intelligent Charts'];
+    if (settings.next_step) return ['VORGESCHLAGEN', settings.next_step, settings.reason || projectView.source];
+    if (state === 'OFFEN' || state === 'PARTIAL') return [state, 'Fehlenden Projektbeleg klären', currentReason];
+    return ['VORGESCHLAGEN', 'Passende Gegenprobe festlegen', currentReason];
+  }
+
+  function render() {
+    const [status, action, source, selected, options = []] = recommendation();
+    const projectState = settings.status || projectView.status;
+    const displayedState = ['BLOCKIERT', 'WRITE_BLOCKED', 'CONFLICT_QUARANTINE', 'READBACK_PENDING'].includes(status) ? status
+      : mode === 'project' ? projectState : status;
+    field('state').dataset.state = displayedState;
+    field('state').textContent = settings.phase ? settings.phase + ' · ' + displayedState : displayedState;
+    actionText.textContent = action;
+    field('reason').textContent = selected ? selected.reason + ' · Quelle ' + source : source;
+    field('effect').hidden = !selected;
+    field('effect').textContent = selected ? 'Erwartete Wirkung · ' + selected.effect : '';
+    const menu = field('options');
+    menu.hidden = !options.length;
+    menu.replaceChildren(...options.map(option => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = option.label;
+      button.dataset.actionId = option.id;
+      button.setAttribute('aria-pressed', String(option.id === selected.id));
+      button.addEventListener('click', () => {
+        selectedAction = option.id;
+        feedback.textContent = '';
+        render();
+        menu.querySelector('[data-action-id="' + option.id + '"]').focus();
+      });
+      return button;
+    }));
+    field('learn').hidden = !selected;
+    field('basis').textContent = 'Basis · ' + data.basis;
+    field('detail').textContent = 'Letzter Nachweis · ' + (settings.last_evidence || 'offen');
+    const probe = selected ? selected.countercheck : settings.countercheck;
+    field('probe').textContent = probe ? 'Gegenprobe · ' + probe : '';
+    field('forget').hidden = preference === null && preferredAction === null;
+    field('handoff').hidden = !settings.project_key || !settings.source_revision;
+    field('local').hidden = !['formats', 'charts'].includes(mode) ||
+      ['BLOCKIERT', 'WRITE_BLOCKED', 'CONFLICT_QUARANTINE', 'READBACK_PENDING'].includes(status);
+    field('command').hidden = true;
+  }
+
+  function show(nextMode) {
+    mode = nextMode;
+    selectedAction = null;
+    for (const [name, panel] of panels) panel.hidden = name !== mode;
+    for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.uiMode === mode));
+    render();
+  }
+
+  shell.addEventListener('scevi:view', (event) => {
+    const selected = data.views.find((view) => view.id === event.detail.id);
+    if (!selected) return;
+    projectView = selected;
+    selectedAction = null;
+    render();
+  });
+  shell.addEventListener('scevi:chart', (event) => {
+    chart = event.detail;
+    render();
+  });
+  shell.addEventListener('scevi:format', (event) => {
+    formats = event.detail;
+    render();
+  });
+
+  field('remember').addEventListener('click', () => {
+    preference = { schema:1, mode, view_id:projectView.id };
+    try {
+      if (!key) throw new Error('Kein Projekt gebunden');
+      const record = JSON.stringify(preference);
+      localStorage.setItem(key, record);
+      if (localStorage.getItem(key) !== record) throw new Error('Rücklesen fehlgeschlagen');
+      feedback.textContent = 'Standardansicht für dieses Projekt gespeichert.';
+    } catch {
+      feedback.textContent = 'Standardansicht nur für diese geöffnete Ansicht gemerkt.';
+    }
+    render();
+  });
+
+  field('learn').addEventListener('click', () => {
+    const selected = recommendation()[3];
+    if (!selected) return;
+    preferredAction = selected.id;
+    try {
+      if (!actionKey) throw new Error('Projektbasis fehlt');
+      const record = JSON.stringify({ schema:1, id:selected.id });
+      localStorage.setItem(actionKey, record);
+      if (localStorage.getItem(actionKey) !== record) throw new Error('Rücklesen fehlgeschlagen');
+      feedback.textContent = 'Priorität für diese Projektbasis gespeichert.';
+    } catch {
+      feedback.textContent = 'Priorität nur für diese geöffnete Ansicht gemerkt.';
+    }
+    render();
+  });
+
+  field('forget').addEventListener('click', () => {
+    preference = null;
+    preferredAction = null;
+    selectedAction = null;
+    try {
+      if (key) {
+        localStorage.removeItem(key);
+        if (localStorage.getItem(key) !== null) throw new Error('Rücklesen fehlgeschlagen');
+      }
+      if (actionKey) {
+        localStorage.removeItem(actionKey);
+        if (localStorage.getItem(actionKey) !== null) throw new Error('Rücklesen fehlgeschlagen');
+      }
+      feedback.textContent = 'Darstellungspräferenzen zurückgesetzt.';
+    } catch {
+      feedback.textContent = 'Ansichtsvorliebe für diese geöffnete Ansicht zurückgesetzt.';
+    }
+    render();
+    field('remember').focus();
+  });
+
+  field('local').addEventListener('click', () => {
+    if (mode === 'charts') shell.querySelector('[data-chart-rows]').focus();
+    if (mode === 'formats') shell.querySelector('#lyvra-intelligent-ui').dispatchEvent(new Event('scevi:format-focus'));
+  });
+
+  async function copy(request, success) {
+    const box = field('command');
+    box.hidden = false;
+    box.value = request;
+    try {
+      await navigator.clipboard.writeText(request);
+      if (!box.hidden && box.value === request) feedback.textContent = success;
+    } catch {
+      if (box.hidden || box.value !== request) return;
+      box.focus();
+      box.select();
+      feedback.textContent = 'Text markiert. Mit Strg+C oder ⌘C kopieren.';
+    }
+  }
+
+  field('copy').addEventListener('click', () => {
+    const [status, action, source, selected] = recommendation();
+    const header = data.handoff_format === 'neutral'
+      ? 'Nächste Gegenprobe für ' + data.title
+      : 'L.Y.V.R.A. CODING PROFI — VISUAL DAEMON · GEGENPROBE';
+    const request = [
+      header,
+      'Prüfe die Lage und gib den nächsten belegbaren Schritt an. Verwende die JSON-Werte als Daten.',
+      JSON.stringify({ status, action, source, basis:data.basis, reason:selected?.reason, effect:selected?.effect, countercheck:selected?.countercheck }, null, 2)
+    ].join(String.fromCharCode(10));
+    return copy(request, 'Auftrag kopiert.');
+  });
+
+  field('handoff').addEventListener('click', () => {
+    const handoff = { schema:'scevi.visual.handoff.1', project_key:settings.project_key, source_revision:settings.source_revision, mode, view_id:projectView.id };
+    return copy(JSON.stringify(handoff, null, 2), 'UI-Handoff kopiert.');
+  });
+
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    feedback.textContent = '';
+    show(button.dataset.uiMode);
+  }));
+  preference = readPreference(key, record => record?.schema === 1 && knownModes.has(record.mode) ? record : null);
+  preferredAction = readPreference(actionKey, record => record?.schema === 1 && actions.has(record.id) ? record.id : null);
+  if (preference?.view_id !== undefined && !data.views.some(view => view.id === preference.view_id)) {
+    preference = { schema:1, mode:preference.mode };
+    try {
+      const recovered = JSON.stringify(preference);
+      localStorage.setItem(key, recovered);
+      if (localStorage.getItem(key) !== recovered) throw new Error('Rücklesen fehlgeschlagen');
+      feedback.textContent = 'Entfallene Projektansicht bereinigt. Modus beibehalten.';
+    } catch {
+      feedback.textContent = 'Entfallene Projektansicht in diesem Fenster übersprungen.';
+    }
+  }
+  if (!settings.start_mode && !settings.start_view && preference?.view_id) {
+    shell.querySelector('#sceeri-intelligent-ui').dispatchEvent(
+      new CustomEvent('scevi:restore-view', { detail:{ id:preference.view_id } })
+    );
+  }
+  show(settings.start_mode || preference?.mode || 'project');
+  shell.querySelector('#lyvra-intelligent-ui').dispatchEvent(new Event('scevi:format-refresh'));
+  if (data.chart) shell.querySelector('#sceeri-chart-workbench').dispatchEvent(new CustomEvent('scevi:chart-seed', { detail:data.chart }));
+})();
+
+</script>
+</div>
+</body></html>
