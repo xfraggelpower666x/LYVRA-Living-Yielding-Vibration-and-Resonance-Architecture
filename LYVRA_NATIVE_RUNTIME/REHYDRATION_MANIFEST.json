@@ -2578,5 +2578,33 @@
     "source_policy": "EXACT_GITHUB_COMMIT_SUPPLIED_BY_CURRENT_READBACK",
     "workspace_activation": "EXPLICIT_VISUAL_REQUEST",
     "native_chat_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md"
+  },
+  "clic_track_currentness_20261121": {
+    "status": "BOUNDED_EXISTING_PRACTICAL_ASSEMBLY_SOURCE_REPAIR_V8_VERIFIED_HOST_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "scope": "TRACK_DESIGN_PRACTICAL_SCENARIO_ONLY",
+    "base_productive_head": "f75789056f37c3fd03fa351ec594f0548384d999",
+    "recovery_branch": "lyvra-recovery-pre-clic-track-currentness-20261121-r01",
+    "source": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "test": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs",
+    "ci": ".github/workflows/track-renderer-output-regression.yml",
+    "review": "LYVRA_NATIVE_RUNTIME/development/reviews/CLIC_TRACK_CURRENTNESS_ASSEMBLY_REVIEW_20261121.md",
+    "clic_return_outbox": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+    "native_survival": [
+      "TEMPLATE_INVALIDATION",
+      "UNDERSTEER_REJECTION",
+      "OVERSTEER_REJECTION",
+      "COMPONENT_TRACK_REGISTRY_REVISION_BINDING",
+      "UTF16_COPY_PAYLOAD"
+    ],
+    "bounded_v8_regression": "11_OF_11_PLUS_HARDENED_NEGATIVE_PASS",
+    "node_ci": "NOT_EXECUTED",
+    "host_plugin_runtime": "NOT_VERIFIED",
+    "suno_audio": "NOT_TESTED",
+    "plugin_impact": "NOT_APPLICABLE_DEV_PRACTICAL_COMPILER_ONLY",
+    "component_revisions": "PRESERVED_HISTORY_NO_BLIND_REVISION_BUMP",
+    "whole_revision": 242,
+    "track_revision": 96,
+    "foreign_clic_writes": false
   }
 }
