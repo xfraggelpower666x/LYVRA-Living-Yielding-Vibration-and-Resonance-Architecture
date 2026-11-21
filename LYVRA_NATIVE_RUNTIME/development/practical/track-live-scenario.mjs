@@ -32,12 +32,23 @@ export function renderCreator(s){
  const taste='OFF';
  return box('Title',title,80)+box('Extended',extended,1000)+'My Taste: '+taste+'\n'+'### Suno Controls\n'+controls+'\n'+'### Drift Forecast\n'+drift+'\n'+box('Style',style,1000)+box('Lyrics',lyrics,5000);
 }
-export function exercise(){
+export function exercise(options={}){
  const base=resolveScenario('baseline'),changed=resolveScenario('contradiction'),irrelevant=resolveScenario('irrelevant');
  if(base.motor!==changed.motor||base.motor!==irrelevant.motor)throw Error('LOW_MOTOR_BLEED');
  if(base.mid===changed.mid||changed.mid!==irrelevant.mid)throw Error('CAUSAL_DELTA_INCORRECT');
  if(base.bpm!==changed.bpm||changed.bpm!==irrelevant.bpm)throw Error('TEMPO_DRIFT');
  const creator=renderCreator(changed);
+ if(options.currentContext){
+  const bound=requireCurrentOutputContext(options.currentContext);
+  const realized=[
+   /dry (?:mono )?kick|dry motor/i.test(creator)&&/psybass/i.test(creator)?'LOW_MOTOR':null,
+   /breath-shaped MID|breath-enveloped repeating MID/i.test(creator)?'MID_BREATH':null,
+   /spectral forest textures|forest microtexture spiral/i.test(creator)?'SPECTRAL_ORBIT':null,
+   /acid response|acid answer|acid stab/i.test(creator)&&/Whisper|whisper/i.test(creator)?'VOICE_ACID_RESPONSE':null,
+   /hard stop|hard finish/i.test(creator)?'ENDING':null
+  ].filter(Boolean);
+  checkTrackOutputSurvival({source:bound,output:creator,requiredSignals:['LOW_MOTOR','MID_BREATH','SPECTRAL_ORBIT','VOICE_ACID_RESPONSE','ENDING'],realizedSignals:realized,deviceRoute:options.deviceRoute??'PC_BROWSER',requestedFields:options.requestedFields??[]});
+ }
  const headings=[...creator.matchAll(/^### ([^\n]+)$/gm)].map(x=>x[1].split(' — ')[0]);
  const expected=['Title','Extended','Suno Controls','Drift Forecast','Style','Lyrics'];
  if(JSON.stringify(headings)!==JSON.stringify(expected))throw Error('CREATOR_OUTPUT_ORDER');
