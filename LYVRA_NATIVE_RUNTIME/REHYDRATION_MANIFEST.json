@@ -2650,5 +2650,26 @@
     "no_cllc_writes": true,
     "whole_revision_preserved": 242,
     "track_revision_preserved": 96
+  },
+  "singleton_carrier_ci_repair_20261121": {
+    "status": "CURRENT_SINGLETON_CARRIER_READER_REPAIR_SOURCE_VERIFIED_CI_PENDING",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_CI_MANIFEST_AND_UNIFIED_VERIFIER_ONLY",
+    "base_head": "e7ba42c033197a9bad9c4233681e5eff11cf9358",
+    "recovery_branch": "lyvra-recovery-pre-single-carrier-ci-20261121-r04",
+    "manifest_required_order": 29,
+    "manifest_required_order_changed": false,
+    "singleton_source": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+    "verifier": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs",
+    "verifier_test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+    "unified_test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs",
+    "reason": "CI_IGNORED_VALID_SINGLE_STRING_AS_UNMAPPED_AND_USED_HARDCODED_COUNTS",
+    "new_expectation": "ACCEPT_STRING_AND_ARRAY_AND_DERIVE_CURRENT_TOPOLOGY",
+    "ci_previous_run": 44929966470,
+    "ci_new_run": "PENDING",
+    "plugin_impact": "NOT_APPLICABLE_CI_ONLY",
+    "no_new_facets": true,
+    "no_new_router": true,
+    "no_clic_writes": true
   }
 }

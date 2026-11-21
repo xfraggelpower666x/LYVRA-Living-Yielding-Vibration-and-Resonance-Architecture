@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-11-21-MANIFEST-CI-DYNAMIC-COVERAGE-R03",
+  "freshness_epoch": "2026-11-21-SINGLETON-MANIFEST-CARRIER-CI-R04",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -50,7 +50,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "fbd61fb8b3ab5b07ce6b2c4227d0233759a9e64d",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "13b64f63a51b455061fd6b8ad35f5bc612823d73",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -271,10 +271,12 @@
     "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs": "2c1d0cc22032872bc394896986a2751d75416127",
     ".github/workflows/track-renderer-output-regression.yml": "46dcd0d5db3db1f1c12ec70fa09f7e0c2b2cbdba",
     "LYVRA_NATIVE_RUNTIME/development/reviews/CLIC_TRACK_CURRENTNESS_ASSEMBLY_REVIEW_20261121.md": "7da0fb668799e48e136b012b10a3c71071804e31",
-    "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md": "27368f6d18392f648b5e63d8c1dddb392906a14c",
+    "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md": "8c4bfff9628cb39c26fb0ac745d3b7fcf2fd2438",
     "LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md": "3d52daa87bdf6d68991ed2b95268fb894b5ade87",
-    "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs": "f26319dde70406c6f29641b30dccb530f82cc288",
-    ".github/workflows/codeforge-evidence-bound-verifiers.yml": "ab2e9b0dc491c745757a9d8fcc068c8c69f54d15"
+    "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs": "e63780d34c70854a563af332a189364f6d345d37",
+    ".github/workflows/codeforge-evidence-bound-verifiers.yml": "ab2e9b0dc491c745757a9d8fcc068c8c69f54d15",
+    "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs": "17d7cb0bf6ca308a0ca3c02713a9deccf2842f93",
+    "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs": "3791b9db4bd2b1e11fe1c440478a2b8535307627"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -282,7 +284,7 @@
   "codeforge_review_required": true,
   "registry_population_status": "TARGETED_FAMILY_MAIL_SIX_CARRIERS_DIRECT_READBACK_EXISTING_REGISTRY_PRESERVED",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 269,
+  "verified_carrier_count": 271,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -2471,5 +2473,24 @@
     "ci_new": "PENDING",
     "no_new_facets": true,
     "plugin_impact": "NOT_APPLICABLE_VERIFIER_ONLY"
+  },
+  "singleton_carrier_ci_repair_20261121": {
+    "status": "SOURCE_AND_BLOB_RECONCILED_CI_PENDING",
+    "base_head": "e7ba42c033197a9bad9c4233681e5eff11cf9358",
+    "source_head_before_pointer": "eb9c3fdc3e99921d03d9e3e4660afb8ec706b707",
+    "recovery_branch": "lyvra-recovery-pre-single-carrier-ci-20261121-r04",
+    "modified_paths": [
+      "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json",
+      "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+      "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs",
+      "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+      "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs"
+    ],
+    "manifest_required_order": 29,
+    "singleton_source_now_mapped": true,
+    "ci_previous_run": 44929966470,
+    "new_ci": "PENDING",
+    "host_behavior": "NOT_VERIFIED",
+    "plugin_impact": "NOT_APPLICABLE_CI_ONLY"
   }
 }
