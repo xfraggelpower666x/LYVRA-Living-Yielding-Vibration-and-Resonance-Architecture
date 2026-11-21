@@ -2632,5 +2632,23 @@
     "plugin_impact": "NOT_APPLICABLE_GOLDEN_TEST_FIXTURE_AND_OUTBOX_ONLY",
     "whole_revision_preserved": 242,
     "track_revision_preserved": 96
+  },
+  "manifest_ci_dynamic_stage_count_20261121": {
+    "status": "EXISTING_CI_STALE_STAGE_COUNT_REPAIR_SOURCE_VERIFIED_RUN_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_MANIFEST_VERIFIER_TEST_AND_WORKFLOW_ONLY",
+    "base_head": "64022166546aa7c8c1237e5ec907430837affa9f",
+    "recovery_branch": "lyvra-recovery-pre-manifest-ci-dynamic-20261121-r03",
+    "required_order_preserved": 29,
+    "test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+    "workflow": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "failure_evidence_run": 44929738215,
+    "problem": "STALE_HARDCODED_28_WHILE_REQUIRED_ORDER_29",
+    "repair": "DERIVE_COUNT_FROM_COMMITTED_CURRENT_MANIFEST",
+    "plugin_impact": "NOT_APPLICABLE_SOURCE_ONLY_VERIFIER",
+    "no_facets_mutated": true,
+    "no_cllc_writes": true,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96
   }
 }
