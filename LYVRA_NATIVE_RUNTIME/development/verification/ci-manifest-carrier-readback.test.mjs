@@ -4,12 +4,13 @@ import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
 import {inspectCheckoutManifest} from './ci-manifest-carrier-readback.mjs';
 const head=()=>execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
+const requiredStages=()=>JSON.parse(execFileSync('git',['show','HEAD:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json'],{encoding:'utf8'})).required_order.length;
 test('manifest has complete source diagnostics and no runtime overclaim',()=>{
  const r=inspectCheckoutManifest({expectedHead:head()});
  assert.equal(r.contract,'LYVRA_CI_MANIFEST_READBACK_V1');
  assert.equal(r.stages[0].stage,'PRE_REHYDRATION_OVERSTEER_GUARD');
  assert.equal(r.stages.at(-1).stage,'CURRENT_WORK_SCOPE');
- assert.equal(r.stages.length,28);
+ assert.equal(r.stages.length,requiredStages());
  assert.equal(r.semantic_rehydration_verified,false);
  assert.equal(r.host_runtime_verified,false);
  assert.equal(r.communications_blocked,false);
@@ -23,7 +24,7 @@ test('stage locations include independent pet and WebLyvra carriers',()=>{
 test('unmapped stages are reported rather than invented',()=>{
  const r=inspectCheckoutManifest({expectedHead:head()});
  assert.ok(r.stages.some(x=>x.coverage==='UNMAPPED'));
- assert.equal(r.coverage.mapped+r.coverage.unmapped,28);
+ assert.equal(r.coverage.mapped+r.coverage.unmapped,requiredStages());
 });
 test('currentness cannot come from a claimed head',()=>assert.throws(()=>inspectCheckoutManifest({expectedHead:'f'.repeat(40)}),/HEAD_MISMATCH/));
 test('unsafe manifest path is rejected',()=>{

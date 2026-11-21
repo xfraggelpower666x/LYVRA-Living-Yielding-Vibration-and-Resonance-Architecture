@@ -1910,12 +1910,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-21-TRACK-CURRENTNESS-UTF16-GOLDEN-R02",
+    "epoch": "2026-11-21-MANIFEST-CI-DYNAMIC-COVERAGE-R03",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 267,
+    "verified_carrier_count": 269,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_267_OF_267_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_269_OF_269_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8264,6 +8264,32 @@
     "no_router": true,
     "whole_revision_preserved": 242,
     "track_revision_preserved": 96,
+    "pointer_last": true,
+    "mutation_after_pointer": "NONE"
+  },
+  "manifest_ci_dynamic_stage_count_20261121": {
+    "status": "NATIVE_SOURCE_REPAIRED_CI_EXECUTION_PENDING",
+    "scope": "EXISTING_MANIFEST_VERIFIER_TEST_AND_WORKFLOW_ONLY",
+    "base_head": "64022166546aa7c8c1237e5ec907430837affa9f",
+    "recovery_branch": "lyvra-recovery-pre-manifest-ci-dynamic-20261121-r03",
+    "body_head_before_pointer": "e62e0a1bc16d16bfb3ebbe9473a5cf1443513c1a",
+    "manifest_blob_sha": "fbd61fb8b3ab5b07ce6b2c4227d0233759a9e64d",
+    "fingerprint_registry_blob_sha": "e252f3094dedbfededef8c91a037bb246f7ab614",
+    "critical_count": 269,
+    "manifest_required_order_preserved": 29,
+    "ci_test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+    "ci_workflow": ".github/workflows/codeforge-evidence-bound-verifiers.yml",
+    "prior_ci_failure_run": 44929738215,
+    "prior_cause": "STALE_28_IN_TEST_WHILE_CURRENT_REQUIRED_ORDER_29",
+    "new_ci": "PENDING",
+    "plugin_impact": "NOT_APPLICABLE_CI_VERIFIER_ONLY",
+    "clic_return_outbox": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+    "clic_delivery": "NOT_OBSERVED",
+    "whole_rev_preserved": 242,
+    "track_rev_preserved": 96,
+    "no_foreign_writes": true,
+    "no_new_facets": true,
+    "no_new_router": true,
     "pointer_last": true,
     "mutation_after_pointer": "NONE"
   }
