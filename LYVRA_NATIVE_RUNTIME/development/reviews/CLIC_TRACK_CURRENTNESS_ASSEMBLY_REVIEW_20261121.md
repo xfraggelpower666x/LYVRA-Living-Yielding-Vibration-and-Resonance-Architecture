@@ -54,3 +54,29 @@ ACCEPTANCE: historical Rev92/95/86 components remain correctly scoped; mismatche
 ## Current disposition
 
 The evidence confirms the existence of native contracts but does not establish end-to-end survival gates. Productive files are UNCHANGED. This staged review is NOT a repair, NOT a completed UPDATE, and NOT an authorization for automatic publication. A verified CLIC return-handoff claiming successful repair is NOT YET AVAILABLE.
+
+## Additive bounded native repair — 2026-11-21
+
+IMPLEMENTED_ONLY_IN_EXISTING_PRACTICAL_COMPILER:
+- `LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs`
+- `LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs`
+- `.github/workflows/track-renderer-output-regression.yml`
+
+SOURCE_BINDING: exact Whole revision, Track revision, registry epoch, component path, verified Git blob SHA; missing registered source or changed SHA fails closed. Previously accepted template becomes invalid when legitimate source SHA+registry epoch evolve.
+ASSEMBLY_GATES: bounded output signal survival checked against actual assembled text and copy payload; understeer and oversteer failures are explicit; creator-reported no-Main mobile route cannot acquire fabricated fields; UTF-16 copy length corrected from code-point counting in the practical renderer.
+NO_NEW_FACET = TRUE
+NO_NEW_ROUTER = TRUE
+NO_GENERIC_SONG_TEMPLATE = TRUE
+NO_COMPONENT_REVISION_REWRITE = TRUE
+NO_CLIC_REPOSITORY_WRITE = TRUE
+
+EXACT_STAGED_SOURCE_V8_REGRESSION = PASS_11_OF_11_PREHARDENING
+POST_HARDENING_V8_NEGATIVE_PROBE = PASS_UNDERSTEER_UNREALIZED_MID_BREATH
+NODE_CI_WORKFLOW = WIRED_NOT_EXECUTED
+NODE_TEST_SUITE = COMMITTED_NOT_YET_RUN_BY_NODE_IN_THIS_HOST
+PLUGIN_HOST_OUTPUT_ASSEMBLY = NOT_PROVEN_WIRED_TO_PRACTICAL_COMPILER
+PLUGIN_IMPACT = NOT_APPLICABLE_TO_DEVELOPMENT_PRACTICAL_COMPILER_SOURCE_CHANGE
+LIVE_SUNO_RENDER = NOT_TESTED
+SCOPE = PRACTICAL_TEST_AND_STATIC_BOUNDARY_ONLY
+
+Production acceptance for a real plugin-host assembly remains a separate gate. No claim is made that the host calls this helper.
