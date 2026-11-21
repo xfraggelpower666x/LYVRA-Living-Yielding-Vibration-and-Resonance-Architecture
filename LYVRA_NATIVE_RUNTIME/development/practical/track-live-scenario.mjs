@@ -81,6 +81,15 @@ export function checkTrackOutputSurvival({source,output,requiredSignals=[],reali
  if(!source||!source.component_sha||typeof output!=='string')throw Error('UNBOUND_OUTPUT');
  if(!Array.isArray(requiredSignals)||!Array.isArray(realizedSignals)||!Array.isArray(forbiddenSignals))throw Error('SURVIVAL_SCOPE_REQUIRED');
  const actual=new Set(realizedSignals);
+ // Cross-check declared practical-case signals against ACTUAL assembled copy text.
+ const observed={
+  LOW_MOTOR:/dry (?:mono )?kick|dry motor/i.test(output)&&/psybass/i.test(output),
+  MID_BREATH:/breath-shaped MID|breath-enveloped repeating MID/i.test(output),
+  SPECTRAL_ORBIT:/spectral forest textures|forest microtexture spiral/i.test(output),
+  VOICE_ACID_RESPONSE:/acid response|acid answer|acid stab/i.test(output)&&/Whisper|whisper/i.test(output),
+  ENDING:/hard stop|hard finish/i.test(output)
+ };
+ for(const sig of requiredSignals){if(Object.hasOwn(observed,sig)&&!observed[sig])throw Error('UNDERSTEER_UNREALIZED_'+sig);}
  for(const sig of requiredSignals){if(typeof sig!=='string'||!sig.trim())throw Error('INVALID_SIGNAL');if(!actual.has(sig))throw Error('UNDERSTEER_MISSING_'+sig);}
  for(const sig of forbiddenSignals){if(actual.has(sig))throw Error('OVERSTEER_INJECTED_'+sig);}
  if(deviceRoute==='IPHONE_APP_PRO6_CUSTOM_NO_MAIN'){
