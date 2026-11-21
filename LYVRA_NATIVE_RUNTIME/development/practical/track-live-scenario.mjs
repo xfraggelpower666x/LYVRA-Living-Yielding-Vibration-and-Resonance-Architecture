@@ -66,7 +66,9 @@ export function requireCurrentOutputContext({pointer,registry,tree,componentPath
  if(whole!==registry.whole_revision||track!==registry.track_design_revision)throw Error('TRACK_REGISTRY_REVISION_MISMATCH');
  if(!Object.hasOwn(tree,componentPath))throw Error('COMPONENT_SOURCE_ABSENT');
  const actual=tree[componentPath],expected=registry.critical_carriers?.[componentPath];
- if(expected&&actual!==expected)throw Error('REGISTRY_COMPONENT_SHA_MISMATCH');
+ if(!expected)throw Error('COMPONENT_NOT_REGISTERED');
+ if(actual!==expected)throw Error('REGISTRY_COMPONENT_SHA_MISMATCH');
+ if(typeof registry.freshness_epoch!=='string'||!registry.freshness_epoch)throw Error('REGISTRY_EPOCH_REQUIRED');
  if(!/^[0-9a-f]{40}$/i.test(actual))throw Error('INVALID_COMPONENT_SHA');
  const identity={whole_revision:whole,track_revision:track,registry_epoch:registry.freshness_epoch,component_path:componentPath,component_sha:actual};
  if(template){
