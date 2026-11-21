@@ -1910,12 +1910,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-21-MANIFEST-CI-DYNAMIC-COVERAGE-R03",
+    "epoch": "2026-11-21-SINGLETON-MANIFEST-CARRIER-CI-R04",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 269,
+    "verified_carrier_count": 271,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_269_OF_269_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_271_OF_271_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8290,6 +8290,36 @@
     "no_foreign_writes": true,
     "no_new_facets": true,
     "no_new_router": true,
+    "pointer_last": true,
+    "mutation_after_pointer": "NONE"
+  },
+  "singleton_carrier_ci_repair_20261121": {
+    "status": "EXISTING_VERIFIER_SINGLETON_CARRIER_REPAIRED_CI_PENDING",
+    "base_head": "e7ba42c033197a9bad9c4233681e5eff11cf9358",
+    "recovery_branch": "lyvra-recovery-pre-single-carrier-ci-20261121-r04",
+    "body_head_before_pointer": "c16d34876b10d0d389434f9667f78a5eb61a12c4",
+    "manifest_blob_sha": "13b64f63a51b455061fd6b8ad35f5bc612823d73",
+    "fingerprint_registry_blob_sha": "001cbe6e57d296159ba2ef7f8d0bc892cb22c3b0",
+    "registered_critical": 271,
+    "actual_required_order": 29,
+    "source_mapped_stages": 27,
+    "unmapped_derived_stages": [
+      "VALID_NEWER_EVOLUTION",
+      "CURRENT_WORK_SCOPE"
+    ],
+    "verifier": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs",
+    "verifier_test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs",
+    "unified_test": "LYVRA_NATIVE_RUNTIME/development/verification/ci-unified-evidence-execution.test.mjs",
+    "prior_failed_ci_run": 44929966470,
+    "next_ci": "PENDING",
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "plugin_impact": "NOT_APPLICABLE_EXISTING_CI_VERIFIER_ONLY",
+    "clic_outbox": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+    "clic_receipt": "NOT_OBSERVED",
+    "no_new_facet": true,
+    "no_new_router": true,
+    "no_foreign_write": true,
     "pointer_last": true,
     "mutation_after_pointer": "NONE"
   }
