@@ -43,3 +43,12 @@ test('exact committed manifest bytes preserve trailing newline',()=>{
  assert.equal(raw,disk);
  assert.equal(inspectCheckoutManifest({expectedHead:head()}).manifest_blob,execFileSync('git',['rev-parse','HEAD:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json'],{encoding:'utf8'}).trim());
 });
+
+test('singleton native governance path is a directly read source carrier, not an unmapped stage',()=>{
+ const r=inspectCheckoutManifest({expectedHead:head()});
+ const stage=r.stages.find(x=>x.stage==='DIRECT_SOURCE_CHANGE_ONLY_GOVERNANCE');
+ assert.equal(stage.coverage,'SOURCE_READBACK');
+ assert.equal(stage.carrier_results.length,1);
+ assert.equal(stage.carrier_results[0].path,'LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md');
+ assert.equal(stage.carrier_results[0].source,'COMMITTED_BLOB_MATCHED');
+});
