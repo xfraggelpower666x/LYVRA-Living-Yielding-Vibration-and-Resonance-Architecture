@@ -73,3 +73,18 @@ test('actual output copy payload counts UTF-16 emoji surrogate pairs',()=>{
  const bad=output.replace('### Style — ','### Style — 1/1000\nBAD\n### Style — ');
  assert.throws(()=>checkTrackOutputSurvival({source:identity(),output:bad}),/OUTPUT_UTF16_PAYLOAD_Style/);
 });
+
+test('fake declared semantic signal fails when missing from actual output',()=>{
+ const output=renderCreator(resolveScenario('contradiction')).replace(/breath-shaped MID/gi,'muted MID').replace(/breath-enveloped repeating MID/gi,'muted MID');
+ assert.throws(()=>checkTrackOutputSurvival({source:identity(),output,requiredSignals:['MID_BREATH'],realizedSignals:['MID_BREATH']}),/UNDERSTEER_UNREALIZED_MID_BREATH/);
+});
+test('actual emoji code-unit counts match displayed copy fields',()=>{
+ const output=renderCreator(resolveScenario('contradiction'));
+ const fence=String.fromCharCode(96).repeat(3);
+ for(const [field,limit] of [['Title',80],['Extended',1000],['Style',1000],['Lyrics',5000]]){
+  const re=new RegExp('^### '+field+' — (\\d+)\\/'+limit+'$\\n'+fence+'text\\n([\\s\\S]*?)\\n'+fence,'m');
+  const segment=output.match(re);
+  assert.ok(segment,'missing '+field);
+  assert.equal(Number(segment[1]),segment[2].length);
+ }
+});
