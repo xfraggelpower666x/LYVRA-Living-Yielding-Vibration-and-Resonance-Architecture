@@ -16,7 +16,7 @@ export function inspectCheckoutManifest({manifestPath='LYVRA_NATIVE_RUNTIME/REHY
  const order=manifest.required_order,map=manifest.domain_path_map;
  if(!Array.isArray(order)||!map||typeof map!=='object'||order[0]!=='PRE_REHYDRATION_OVERSTEER_GUARD'||order.at(-1)!=='CURRENT_WORK_SCOPE')throw Error('MANIFEST_STRUCTURE_INVALID');
  const stageResults=order.map((stage,index)=>{
-  const carrierPaths=Array.isArray(map[stage])?map[stage]:[];
+  const carrierPaths=Array.isArray(map[stage])?map[stage]:typeof map[stage]==='string'?[map[stage]]:[];
   const results=carrierPaths.map(path=>{
    if(!valid(path))return {path,source:'INVALID_PATH'};
    try{
