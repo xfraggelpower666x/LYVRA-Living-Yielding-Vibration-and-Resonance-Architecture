@@ -1910,12 +1910,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-10-07-REV95-PSYCHOACOUSTIC-PRIORITY-EMOTION-HARMONY-GUARD-FINAL",
+    "epoch": "2026-11-21-TRACK-CURRENTNESS-PRACTICAL-GATES-R01",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
-    "expected_track_revision": 95,
-    "verified_carrier_count": 134,
+    "expected_track_revision": 96,
+    "verified_carrier_count": 266,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_INCREMENTAL"
+    "full_tree_readback": "PASS_266_OF_266_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8207,5 +8207,34 @@
       "alive_plugin_release": "UNCHANGED_HOST_ACCEPTANCE_PENDING"
     },
     "pointer_last": true
+  },
+  "clic_track_currentness_repair_20261121": {
+    "status": "PRACTICAL_SOURCE_GUARDS_PUBLISHED_HOST_ASSEMBLY_PENDING",
+    "scope": "EXISTING_TRACK_DESIGN_PRACTICAL_COMPILER_ONLY",
+    "base_head": "f75789056f37c3fd03fa351ec594f0548384d999",
+    "recovery_branch": "lyvra-recovery-pre-clic-track-currentness-20261121-r01",
+    "body_head_before_pointer": "40c0e176ef0740066d111f957b162fc35b440fd0",
+    "review_pr": 84,
+    "source": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.mjs",
+    "test": "LYVRA_NATIVE_RUNTIME/development/practical/track-live-scenario.test.mjs",
+    "workflow": ".github/workflows/track-renderer-output-regression.yml",
+    "review": "LYVRA_NATIVE_RUNTIME/development/reviews/CLIC_TRACK_CURRENTNESS_ASSEMBLY_REVIEW_20261121.md",
+    "clic_return_outbox": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+    "manifest_blob_sha": "ceb010771a91e2510ebb1ab2011ad7a771896ccd",
+    "fingerprint_registry_blob_sha": "ba21a81d053cad4f713bf50c38fdf5125e7905b6",
+    "fingerprints_validated": 266,
+    "v8_exact_staged_regression": "PASS_21_OF_21_NODE_API_SHIM_NOT_REAL_NODE_CI",
+    "node_ci": "NOT_EXECUTED",
+    "host_plugin_assembly": "NOT_VERIFIED",
+    "suno_audio": "NOT_TESTED",
+    "plugin_impact": "NOT_APPLICABLE_EXISTING_DEVELOPMENT_PRACTICAL_COMPILER_ONLY",
+    "whole_revision_preserved": 242,
+    "track_design_revision_preserved": 96,
+    "no_clic_write": true,
+    "no_new_router": true,
+    "no_new_facet": true,
+    "no_rollback": true,
+    "pointer_last": true,
+    "mutation_after_pointer": "NONE_IN_REVIEW_BRANCH"
   }
 }
