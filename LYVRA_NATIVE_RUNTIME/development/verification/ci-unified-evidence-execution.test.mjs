@@ -3,11 +3,12 @@ import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {executeUnifiedCheckoutEvidence} from './ci-unified-evidence-execution.mjs';
 const head=()=>execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
+const manifestTopology=()=>{const m=JSON.parse(execFileSync('git',['show','HEAD:LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json'],{encoding:'utf8'}));return {stages:m.required_order,unmapped:m.required_order.filter(stage=>!m.domain_path_map[stage]||Array.isArray(m.domain_path_map[stage])&&m.domain_path_map[stage].length===0)};};
 test('whole manifest, CLIC receipt, track source, and native diagnostics compose',()=>{
  const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
  assert.equal(r.contract,'LYVRA_UNIFIED_CI_EVIDENCE_V1');
  assert.equal(r.observed_checkout_head,head());
- assert.equal(r.manifest.stages.length,28);
+ assert.equal(r.manifest.stages.length,manifestTopology().stages.length);
  assert.equal(r.peer_receipt.local_receipt_worktree_matches_commit,true);
  assert.equal(r.track_source.fixture_worktree_matches_commit,true);
  assert.equal(r.cooperation.coverage.input_exchanges,1);
@@ -25,10 +26,10 @@ test('whole and sub-LiveCircle semantic verification remains independently open'
  assert.equal(r.continuity.derived_semantics_verified,false);
  assert.equal(r.continuity.host_fresh_boot_verified,false);
  assert.equal(r.rehydration_advisory.semantic_rehydration_verified,false);
- assert.equal(r.manifest.coverage.unmapped,2);
- assert.equal(r.rehydration_advisory.advisory.results.lifecircle.mapped,26);
- assert.equal(r.rehydration_advisory.advisory.results.lifecircle.derived.length,2);
- assert.equal(r.rehydration_advisory.advisory.results.lifecircle.missing.length,26);
+ assert.equal(r.manifest.coverage.unmapped,manifestTopology().unmapped.length);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.mapped,manifestTopology().stages.length-manifestTopology().unmapped.length);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.derived.length,manifestTopology().unmapped.length);
+ assert.equal(r.rehydration_advisory.advisory.results.lifecircle.missing.length,manifestTopology().stages.length-manifestTopology().unmapped.length);
 });
 test('CLIC cooperation remains advisory, never automatic peer authority',()=>{
  const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
@@ -53,9 +54,9 @@ test('forged HEAD cannot pass unified current gate',()=>{
 test('only actual manifest stages are mapped, never elevated to rehydration proof',()=>{
  const r=executeUnifiedCheckoutEvidence({expectedHead:head()});
  const stage=r.rehydration_advisory.advisory.results.lifecircle;
- assert.equal(stage.required,28);
- assert.equal(stage.mapped,26);
- assert.deepEqual(stage.derived,['VALID_NEWER_EVOLUTION','CURRENT_WORK_SCOPE']);
+ assert.equal(stage.required,manifestTopology().stages.length);
+ assert.equal(stage.mapped,manifestTopology().stages.length-manifestTopology().unmapped.length);
+ assert.deepEqual(stage.derived,manifestTopology().unmapped);
  assert.equal(stage.fully_rehydrated,false);
  assert.equal(r.rehydration_advisory.external_provider_authenticated,false);
  assert.equal(r.evidence_boundary.actual_host_execution_verified,false);
