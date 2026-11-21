@@ -1910,12 +1910,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-21-TRACK-CURRENTNESS-PRACTICAL-GATES-R01",
+    "epoch": "2026-11-21-TRACK-CURRENTNESS-UTF16-GOLDEN-R02",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 266,
+    "verified_carrier_count": 267,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_266_OF_266_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_267_OF_267_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8236,5 +8236,35 @@
     "no_rollback": true,
     "pointer_last": true,
     "mutation_after_pointer": "NONE_IN_REVIEW_BRANCH"
+  },
+  "track_golden_utf16_alignment_20261121": {
+    "status": "SOURCE_GOLDEN_BYTE_PARITY_VERIFIED_NODE_CI_PENDING",
+    "scope": "PRACTICAL_TRACK_STATIC_REFERENCE_AND_OUTBOX_ONLY",
+    "base_head": "fd608abbe35a2c9e123d43efcc72559a1b07fe1a",
+    "recovery_branch": "lyvra-recovery-pre-track-golden-utf16-20261121-r02",
+    "body_head_before_pointer": "8c603a2b56ee42952f5ae6d3a074d1eef50af7aa",
+    "golden_path": "LYVRA_NATIVE_RUNTIME/development/practical/examples/THE_SIGNAL_THAT_LEARNED_TO_BREATHE.md",
+    "golden_blob_sha": "3d52daa87bdf6d68991ed2b95268fb894b5ade87",
+    "manifest_blob_sha": "60697a5371d614323783c242603b99c2d96bcf16",
+    "fingerprint_registry_blob_sha": "2a1e3eb8ee789dc292d09941a964926f8d4c73de",
+    "registered_critical": 267,
+    "only_3_utf16_heading_counts_changed": true,
+    "source_and_golden_exact_output_match": true,
+    "prior_node_practical_tests": "PASS_21_OF_21",
+    "prior_renderer_ci_run": 44929522076,
+    "prior_renderer_ci": "PASS",
+    "prior_codeforge_ci_run": 44929522662,
+    "prior_codeforge_ci": "FAIL_GOLDEN_STALE_COUNTERS_ONLY",
+    "new_ci": "PENDING",
+    "plugin_impact": "NOT_APPLICABLE_DEV_TEST_FIXTURE_ONLY",
+    "clic_return_outbox": "LYVRA_NATIVE_RUNTIME/continuity/development_exchange/LYVRA_TO_CLIC_TRACK_CURRENTNESS_RETURN_20261121_R01.md",
+    "clic_delivery": "NOT_OBSERVED",
+    "no_foreign_write": true,
+    "no_facets_changed": true,
+    "no_router": true,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "pointer_last": true,
+    "mutation_after_pointer": "NONE"
   }
 }
