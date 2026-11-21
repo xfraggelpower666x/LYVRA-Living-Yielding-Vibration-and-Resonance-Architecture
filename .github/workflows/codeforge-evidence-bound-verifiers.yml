@@ -153,7 +153,7 @@ jobs:
           node --check LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs
           node --test LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.test.mjs 2>&1 | tee codeforge-evidence/manifest_carrier_test_tap.txt
           node LYVRA_NATIVE_RUNTIME/development/verification/ci-manifest-carrier-readback.mjs > codeforge-evidence/manifest_carrier_source_report.json
-          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/manifest_carrier_source_report.json'));if(x.head!==process.env.GITHUB_SHA||x.stages.length!==28||x.host_runtime_verified!==false||x.semantic_rehydration_verified!==false||x.coverage.mapped+x.coverage.unmapped!==28)process.exit(1)"
+          node --input-type=module -e "import {readFileSync} from 'node:fs';const x=JSON.parse(readFileSync('codeforge-evidence/manifest_carrier_source_report.json'));const required=JSON.parse(readFileSync('LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json')).required_order.length;if(x.head!==process.env.GITHUB_SHA||x.stages.length!==required||x.host_runtime_verified!==false||x.semantic_rehydration_verified!==false||x.coverage.mapped+x.coverage.unmapped!==required)process.exit(1)"
       - name: Execute CLIC R02 real checkout receipt-to-cooperation integration
         shell: bash
         run: |
