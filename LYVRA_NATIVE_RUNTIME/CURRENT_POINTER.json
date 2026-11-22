@@ -1910,12 +1910,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-21-SINGLETON-MANIFEST-CARRIER-CI-R04",
+    "epoch": "2026-11-22-CREATOR-DISCOVERY-SMOKE-R05",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 271,
+    "verified_carrier_count": 272,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_271_OF_271_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_272_OF_272_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8322,5 +8322,31 @@
     "no_foreign_write": true,
     "pointer_last": true,
     "mutation_after_pointer": "NONE"
+  },
+  "creator_smoke_feedback_20261122": {
+    "status": "CREATOR_CONFIRMED_CHAT_ASSEMBLY_PASS_HOST_PENDING",
+    "owner": "WHOLE_LYVRA",
+    "workspace": "MAIN",
+    "scope": "EXISTING_TRACK_DESIGN_DISCOVERY_FEEDBACK_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/continuity/track_design/CREATOR_CONFIRMED_DISCOVERY_SMOKE_20261122_R05.md",
+    "source_blob": "55757fd615b462966a59ea19c4a9b45e8b543040",
+    "manifest_blob_sha": "eb973c9865a7722d25da1d4c98e97f7ecc8cfe17",
+    "fingerprint_registry_blob_sha": "4f676fe41244d16b514b68f94208b0fea85c70c0",
+    "body_head_before_pointer": "85e2e7dd7bd070b65ef29620203785896df2fc25",
+    "base_head": "1b35d9e44dd0270615b2a6efb15ef5ed0a601324",
+    "recovery_branch": "lyvra-recovery-pre-creator-smoke-20261122-r05",
+    "creator_confirmed": true,
+    "independent_native_plugin_host": "NOT_VERIFIED",
+    "independent_alive_plugin_host": "NOT_VERIFIED",
+    "audio": "NOT_TESTED",
+    "plugin_impact": "NO_RUNTIME_SOURCE_CHANGE",
+    "no_new_router": true,
+    "no_new_facet": true,
+    "no_foreign_write": true,
+    "no_rollback": true,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "pointer_last": true,
+    "post_pointer_mutations": "NONE"
   }
 }
