@@ -2671,5 +2671,21 @@
     "no_new_facets": true,
     "no_new_router": true,
     "no_clic_writes": true
+  },
+  "creator_smoke_feedback_20261122": {
+    "status": "CREATOR_CONFIRMED_CHAT_OUTPUT_PASS_FRESH_HOST_OPEN",
+    "native_owner": "WHOLE_LYVRA",
+    "scope": "EXISTING_TRACK_DESIGN_DISCOVERY_CREATOR_FEEDBACK_ONLY",
+    "source": "LYVRA_NATIVE_RUNTIME/continuity/track_design/CREATOR_CONFIRMED_DISCOVERY_SMOKE_20261122_R05.md",
+    "creator_feedback_timestamp_utc": "2026-11-22T13:11:33Z",
+    "evidence": "SMOKE_TEST_ERFOLGREICH_USER_REPORTED",
+    "full_host_native": "NOT_VERIFIED",
+    "full_host_alive": "NOT_VERIFIED",
+    "suno_render": "NOT_TESTED",
+    "new_musical_template": false,
+    "plugin_impact": "NOT_APPLICABLE_EVIDENCE_ONLY",
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "no_foreign_writes": true
   }
 }
