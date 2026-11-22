@@ -1,0 +1,132 @@
+{
+  "schema": "LYVRA_TO_CLIC_R13_NATIVE_SOURCE_RECEIPT_V1",
+  "id": "LYVRA-TO-CLIC-R13-20261122-01",
+  "created_date": "2026-11-22",
+  "status": "NATIVE_SOURCE_INTAKE_VERIFIED_HOST_GATES_OPEN",
+  "native_owner": "WHOLE_LYVRA",
+  "source": {
+    "system": "666CLIC",
+    "repo": "xfraggelpower666x/666CLICPRO",
+    "branch": "clic-migration-rev79-staging",
+    "commit": "15e9a70515d184a01c961fe6fb5ef7e08316c9a9",
+    "tree": "7385943b606d34a55be223aa3fe92c7a31a95e87",
+    "handoff": "666CLIC_NATIVE_RUNTIME/outbox/LYVRA/CLIC-TO-LYVRA-R13-20261122-01.json",
+    "blob": "46f65dbc900571c497dd2e8cdb79a7c0e36a5bc8",
+    "direct_commit_tree_blob_readback": true
+  },
+  "target": {
+    "repo": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "branch": "lyvra",
+    "source_base_head": "dfba2bf1f03ba76cc5a71e8840bf67ba149e18e3",
+    "prechange_recovery_branch": "lyvra-recovery-pre-clic-r13-intake-20261122-01",
+    "whole_revision": 242,
+    "track_design_revision": 96
+  },
+  "findings": {
+    "LYVRA-01": {
+      "decision": "NO_PROVEN_FUNCTIONAL_REGRESSION_NO_SKILL_OVERWRITE",
+      "native_alive_three_differing_skills": [
+        "lyvra-bidirectional-evolution",
+        "lyvra-semantic-translator",
+        "music-analytics"
+      ],
+      "versions": [
+        "0.1.93",
+        "0.13.89"
+      ],
+      "source_semantic_review": "BOTH_HAVE_GOVERNED_EVOLUTION_SEMANTIC_TRANSLATION_AND_ANALYTICS_WITH_DIFFERENT_DETAILS",
+      "host": "OPEN"
+    },
+    "LYVRA-02": {
+      "decision": "VALID_BLOBS_PRESERVED_INDEX_HEAD_METADATA_STALE",
+      "suno_plugin_version": "0.4.0",
+      "index_head": "40622aaf022eb7bbaf25d1f8d5b26bd29f49e8f3",
+      "productive_head_checked": "dfba2bf1f03ba76cc5a71e8840bf67ba149e18e3",
+      "indexed_entries": 22,
+      "matched_source_git_blob_sha": 22,
+      "source_modified": false,
+      "index_changed": false,
+      "index_currentness_repair": "OPEN_BOUNDED_PLUGIN_RELEASE_ONLY"
+    },
+    "LYVRA-03": {
+      "decision": "SOURCE_PROVIDER_PRESENT_HOST_PENDING",
+      "host_native": "NOT_VERIFIED",
+      "host_alive": "NOT_VERIFIED",
+      "live_handle_injection": "NOT_VERIFIED"
+    },
+    "LYVRA-04": {
+      "decision": "EXISTING_DYNAMIC_CI_PASS_SEMANTIC_FRESH_HOST_PENDING",
+      "required_stages": 29,
+      "explicitly_mapped": 27,
+      "derived_unmapped": [
+        "VALID_NEWER_EVOLUTION",
+        "CURRENT_WORK_SCOPE"
+      ],
+      "existing_actions_run": 44930215044,
+      "existing_run_conclusion": "success",
+      "existing_run_head": "dfba2bf1f03ba76cc5a71e8840bf67ba149e18e3"
+    },
+    "LYVRA-05": {
+      "decision": "EXISTING_ASSEMBLY_GUARDS_PRESERVED_HOST_FINAL_COPY_PENDING",
+      "host_output_assembly": "NOT_VERIFIED",
+      "live_audio": "NOT_TESTED"
+    },
+    "LYVRA-06": {
+      "decision": "EXISTING_VISUAL_SKILLS_PRESERVED_HOST_PENDING",
+      "native_alive_live_visual_acceptance": "NOT_VERIFIED",
+      "logo_icon_sync": "FORBIDDEN"
+    },
+    "LYVRA-07": {
+      "decision": "EXISTING_STARBRIDGE_PRESERVED_R13_SOURCE_READ_FROM_LYVRA",
+      "automatic_delivery": "NOT_VERIFIED",
+      "clic_read_receipt": "NOT_VERIFIED"
+    },
+    "LYVRA-08": {
+      "decision": "CODING_PROFI_SEPARATE_NATIVE_AUTHORITY_PRESERVED",
+      "plugin_version": "0.87.5",
+      "foreign_mutation": false
+    }
+  },
+  "installed_plugins": {
+    "native": {
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.93",
+      "release_id": "pluginrel_6b024c0f57b08191aa6db7ca48ef72a6"
+    },
+    "alive": {
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.89",
+      "release_id": "pluginrel_6b024c56a3bc8191a6606c3823135117"
+    },
+    "suno": {
+      "id": "plugins_6af0bb9f6d7c8191a2c47c1194b46968",
+      "version": "0.4.0",
+      "release_id": "pluginrel_6afdf46544fc8191b36ceeff5087f83b"
+    },
+    "coding_profi": {
+      "id": "plugins_6af753996b5c81918daadc40df266ce7",
+      "version": "0.87.5",
+      "release_id": "pluginrel_6b0268d75ee48191ad8db59c3f7a0d57"
+    }
+  },
+  "changes": {
+    "native_provenance_receipt_created": true,
+    "music_source_files": 0,
+    "runtime_files": 0,
+    "plugins_changed": 0,
+    "foreign_writes": 0,
+    "pointer_changed": false,
+    "reason_pointer_unchanged": "PURE_ADDITIVE_PROVENANCE_RECEIPT_NO_CURRENT_CRITICAL_CARRIER_CHANGE"
+  },
+  "evidence_classification": {
+    "source": "VERIFIED_BY_DIRECT_GITHUB_READBACK",
+    "delivery": "LYVRA_OUTBOX_SOURCE_ONLY_CLIC_NOT_OBSERVED",
+    "native_intake": "REVIEWED_NO_AUTOMATIC_RUNTIME_ADOPTION",
+    "plugin_release": "UNCHANGED_FROM_OBSERVED_RELEASES",
+    "host": "READBACK_PENDING",
+    "new_ci_tests": "NONE_RUN_NO_RELEVANT_SOURCE_CHANGE",
+    "no_new_router": true,
+    "no_cross_system_merge": true
+  },
+  "next_step": "BOUNDED_SUNO_INDEX_CURRENTNESS_METADATA_PATCH_WITH_SOURCE_HASH_PRESERVATION_AND_PLUGIN_RELEASE_READBACK; THEN_INDEPENDENT_HOST_NATIVE_ALIVE_ACCEPTANCE; CLIC_MAY_READ_THIS_SOURCE_RECEIPT"
+}
