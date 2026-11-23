@@ -1,7 +1,7 @@
 {
   "status": "CURRENT_CRITICAL_CARRIER_TREE_RECONCILED_SOURCE_ONLY",
   "schema": "LYVRA_REVISION_FRESHNESS_v1",
-  "freshness_epoch": "2026-11-22-CREATOR-DISCOVERY-SMOKE-R05",
+  "freshness_epoch": "2026-11-23-SUPERCODEFORGE-CODING-PROFI-R03",
   "whole_revision": 242,
   "track_design_revision": 96,
   "registry_role": "CACHE_BUSTER_AND_CURRENTNESS_BINDING",
@@ -50,7 +50,7 @@
     "LYVRA_NATIVE_RUNTIME/dashboard/INTERNAL_DASHBOARD_CONTRACT.md": "fe4c2073d8fba2524991d06ece9344e90921d254",
     "LYVRA_NATIVE_RUNTIME/dashboard/MULTI_MUSIC_FACET_EVOLUTION_DASHBOARD.md": "13b3526ba5de15d5f5a6e1d80021c75663084303",
     "LYVRA_NATIVE_RUNTIME/music/MUSIC_REFERENCE_REGISTRY_2026-10-05.json": "050dca6268e53ba809fd7ebad528cb76bc6ccf8e",
-    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "7422e0a1cc10aedcf86302af8155d2a283bc9ec0",
+    "LYVRA_NATIVE_RUNTIME/REHYDRATION_MANIFEST.json": "f2af41ceeab48e14ce9b1f42a5e9e4e37ccad375",
     "LYVRA_NATIVE_RUNTIME/migration/COVERAGE_LEDGER.json": "45e27b98a1829e5b0adf3f4cf9d65a882ad86da7",
     "LYVRA_NATIVE_RUNTIME/dashboard/DASHBOARD_ROLLOUT_STATUS_2026-10-05.md": "00ae6ab2ceed4d0c7ea866c870b6e65bf622318f",
     "LYVRA_NATIVE_RUNTIME/current/music/LONGFORM_STORY_ARCHITECTURE_REV93.md": "7d617e3e8263fa4052b8957bd76d7a8b46074975",
@@ -289,7 +289,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/parallel-wave-planner.test.mjs": "9b3834fa3cb142eb4173fabcd0b57108306f9595",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/evidence-ledger.test.mjs": "945d216d6cb6aa0402d2f068aee286010b18fbc5",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/composition-planner.test.mjs": "3d61ac9578c8b8b1bfd35b8f35dc2e3808e21931",
-    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/README.md": "a0554e41c2880d7a17d880210369659127fdcdb3",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/README.md": "e5bb95e1be693738b90bfd9602225c9228dd5f89",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/R02_TEST_RECEIPT.md": "3cfda338bd9c272a361372f18478799fb1184a35",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/peer-source-inventory.json": "d12dd7423eaf777c0b0fd96a64674735238bd25f",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/parallel-workstreams.json": "7b3dcfd11038dc1f9ad55dcb06084ff9e12781d4",
@@ -297,7 +297,11 @@
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/ARCHITECTURE.md": "7fa5bfe16ba510761df92c8dc9c99340249aecaa",
     "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_PARALLEL_COOPERATION_R02_CI_2026-11-23.json": "2584b381aa79c44f8023b08158685e3dbd83e9ca",
     "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_PARALLEL_COOPERATION_DUAL_PLUGIN_2026-11-23.json": "31ff593c05b28223129e45eae563c6610a1947c3",
-    ".github/workflows/supercodeforge-parallel-cooperation-ci.yml": "38ac40efcd5b9cf830623b66d07c751ee4b46892"
+    ".github/workflows/supercodeforge-parallel-cooperation-ci.yml": "8d5a6f8e16a5783c28378d5cf8353a8b2d9c00c3",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/coding-profi-coordination.mjs": "d70de39f88fc4a5c4dab09f3b1635824354b84ba",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/example-r02-integration.mjs": "066bbdb7eb5cc8e20ebed2431b298219a0eaf43f",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/coding-profi-coordination.test.mjs": "c20c72eb4368fb5d107b7510ccbf4108c8c739c3",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/coding-profi-r03-r02-integration.test.mjs": "d64fe2520e7d96d2b4376c9fbab0ef31a748b758"
   },
   "validation_rule": "DIRECT_READ_SHA_MUST_MATCH_REGISTRY_AND_POINTER_EPOCH",
   "stale_policy": "MISMATCH_NE_CURRENT",
@@ -305,7 +309,7 @@
   "codeforge_review_required": true,
   "registry_population_status": "TARGETED_FAMILY_MAIL_SIX_CARRIERS_DIRECT_READBACK_EXISTING_REGISTRY_PRESERVED",
   "codeforge_review_status": "PASS_NEW_CHAT_HANDOFF_NO_UNCOMMITTED_DEVELOPMENT",
-  "verified_carrier_count": 272,
+  "verified_carrier_count": 296,
   "verified_mismatch_count": 0,
   "codeforge_branch_stewardship": {
     "status": "PHASE3_READ_ONLY_CLASSIFICATION_COMPLETE_NO_DELETION",
@@ -2537,5 +2541,22 @@
     "fresh_host": "PENDING",
     "peer_onboarding": "PENDING",
     "current_state": "CI_PASS_FRESH_HOST_PENDING"
+  },
+  "supercodeforge_coding_profi_r03_20261123": {
+    "status": "SOURCE_BOUND_CI_PENDING",
+    "source_base_head": "5c47c2d17ad676dfd6da7e376d062a03690666c3",
+    "body_commit_before_fingerprint": "a1aaa49aa5a6c22cd521e9614bf9421d80c5eaa1",
+    "recovery": "lyvra-recovery-pre-supercodeforge-r03-20261123",
+    "new_files": [
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/coding-profi-coordination.mjs",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/example-r02-integration.mjs",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/coding-profi-coordination.test.mjs",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/coding-profi-r03-r02-integration.test.mjs"
+    ],
+    "manifest_blob": "f2af41ceeab48e14ce9b1f42a5e9e4e37ccad375",
+    "tests": "18_LOCAL_R03_PLUS_11_NEW_INTEGRATION_CI_PENDING",
+    "host": "NOT_VERIFIED",
+    "peer_dispatch": "NOT_PERFORMED",
+    "foreign_writes": 0
   }
 }
