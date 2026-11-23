@@ -1928,12 +1928,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-23-SUPERCODEFORGE-R03-CI-DUAL-PLUGIN-PARITY",
+    "epoch": "2026-11-23-SUPERCODEFORGE-R04-SELF-HOST-BRIDGE",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 297,
+    "verified_carrier_count": 299,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_297_OF_297_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_299_OF_299_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8478,5 +8478,29 @@
     "alive_release_id": "pluginrel_6b0488a353408191b81b6d0fa23d8c3b",
     "release_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_R03_PARITY_CI_20261123.json",
     "release_receipt_blob_sha": "88be789fa1c0e46d9a8c1aaa39692695ab518535"
+  },
+  "supercodeforge_coding_profi_r04_host_20261123": {
+    "status": "SOURCE_BRIDGE_IN_REVIEW_CI_PENDING",
+    "engineering_lead": "LYVRA_CODING_PROFI",
+    "existing_facet": "SUPERCODEFORGE_FIFTH_CHOICE",
+    "new_bridge_path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/coding-profi-host-bridge.mjs",
+    "new_bridge_blob_sha": "75d0d0deeda1d1e91390f71fcc50266b186df476",
+    "base_head": "9eaa6f56fcd7473ec8e64281edfec32a46dddfe2",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-r04-host-20261123",
+    "body_head_before_pointer": "db7f83fc39cd62d9cbefaac4ec66bda8e3436451",
+    "manifest_sha": "5fe2c460de939db0e53ae2a76b2f2879828bdc8f",
+    "fingerprints_sha": "c3bcf870bf5e3fb72af858b35593b7edf8cf2edb",
+    "source_carrier_count": 299,
+    "original_executor_preserved": true,
+    "peer_dispatch": "NOT_IMPLEMENTED",
+    "native_plugin_fresh_host": "NOT_VERIFIED",
+    "alive_plugin_fresh_host": "NOT_VERIFIED",
+    "source_ci": "PENDING",
+    "plugin_impact": "SOURCE_ONLY_HOST_RUNTIME_NOT_VERIFIED",
+    "foreign_writes": 0,
+    "whole_revision_preserved": 242,
+    "track_revision_preserved": 96,
+    "pointer_last": true,
+    "mutations_after_pointer": "NONE"
   }
 }
