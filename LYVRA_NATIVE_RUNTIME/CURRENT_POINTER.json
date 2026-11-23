@@ -8383,7 +8383,7 @@
     "github_ci": {
       "run_id": 45135840905,
       "job_id": 137561776950,
-      "head": "0a20c9a7b13a2d5ecb9ba9c318d524ce56871e02",
+      "head": "4355a82c667d33916abd5d4a517e1a4baf6703f4",
       "conclusion": "success",
       "node_version": "v22.23.5",
       "tests": 35,
@@ -8426,7 +8426,7 @@
     "scope": "SUPERCODEFORGE_PARALLEL_COOPERATION_R02_NATIVE_INTEGRATION_AND_DUAL_PLUGIN_SKILL_PARITY",
     "classification": "SAFE_ADDITIVE",
     "productive_body_head": "196223a30a41ea7c632617b334b50f923ba6798a",
-    "prechange_recovery_branch": "lyvra-recovery-pre-supercodeforge-state-reconcile-20261123-r01",
+    "prechange_recovery_branch": "lyvra-recovery-pre-supercodeforge-pointer-ci-reconcile-20261123-r01",
     "source_readback": "17_OF_17_PASS",
     "github_ci_run": 45135840905,
     "github_ci_tests": "35_OF_35_PASS",
@@ -8435,6 +8435,15 @@
     "no_foreign_system_activation": true,
     "no_cross_system_merge": true,
     "pointer_publication_last": true,
-    "mutation_after_pointer": "NONE"
+    "mutation_after_pointer": "NONE",
+    "github_ci_head": "4355a82c667d33916abd5d4a517e1a4baf6703f4"
+  },
+  "supercodeforge_pointer_ci_reconciliation_2026_11_23": {
+    "status": "VERIFIED",
+    "previous_pointer_commit": "dfa9e2d33527ea02cd7d45f463e38e5533c6fad9",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-pointer-ci-reconcile-20261123-r01",
+    "ci_run": 45135840905,
+    "ci_head": "4355a82c667d33916abd5d4a517e1a4baf6703f4",
+    "pointer_publication_last": true
   }
 }
