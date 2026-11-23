@@ -251,7 +251,9 @@
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/README.md",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/peer-source-inventory.json",
       "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/parallel-workstreams.json",
-      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/PARALLEL_DEPLOYMENT_PLAN.md"
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/PARALLEL_DEPLOYMENT_PLAN.md",
+      "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_PARALLEL_COOPERATION_R02_CI_2026-11-23.json",
+      "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_PARALLEL_COOPERATION_DUAL_PLUGIN_2026-11-23.json"
     ]
   },
   "validation_closeout": {

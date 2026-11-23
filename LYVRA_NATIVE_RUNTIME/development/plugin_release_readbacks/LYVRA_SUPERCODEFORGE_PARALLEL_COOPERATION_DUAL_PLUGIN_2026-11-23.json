@@ -1,0 +1,36 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_DUAL_PLUGIN_RELEASE_RECEIPT_R01",
+  "status": "BOTH_PLUGIN_RELEASES_AND_SKILL_READBACK_VERIFIED_FRESH_HOST_PENDING",
+  "date": "2026-11-23",
+  "native": {
+    "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.94",
+    "release_id": "pluginrel_6b03f2809d6c8191aff941cf0598f8f3",
+    "skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "skill_readback": "VERIFIED"
+  },
+  "alive": {
+    "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.90",
+    "release_id": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5",
+    "skill_path": "skills/lyvra-supercodeforge/SKILL.md",
+    "skill_readback": "VERIFIED"
+  },
+  "skill_text_parity": "VERIFIED_IDENTICAL",
+  "manifests": {
+    "native_v1_v2_version_match": true,
+    "alive_v1_v2_version_match": true
+  },
+  "preserved_assets": {
+    "native_logo_paths_readback": "PRESENT",
+    "alive_logo_paths_readback": "PRESENT",
+    "existing_skills": "PRESERVED_BY_OVERLAY"
+  },
+  "archive_binary_parity": "NOT_VERIFIED",
+  "fresh_host": {
+    "native": "NOT_VERIFIED",
+    "alive": "NOT_VERIFIED"
+  },
+  "foreign_activation": false,
+  "foreign_writes": false
+}

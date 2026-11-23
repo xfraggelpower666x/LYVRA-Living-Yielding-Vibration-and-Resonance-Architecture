@@ -1,5 +1,13 @@
 # SuperCodeForge R02 Test Receipt
 
-Local candidate suite: 35/35 PASS under Node.js v22.16.0. The committed GitHub source is independently covered by `.github/workflows/supercodeforge-parallel-cooperation-ci.yml`; its run result must be read back before CI PASS is claimed.
+<status>VERIFIED</status>
 
-This receipt does not claim agent dispatch, peer delivery, receiver receipt, Native/ALIVE fresh-host execution or deployment.
+- GitHub Actions: PASS
+- Run: 45135544054
+- Job: 137560825358
+- Tested commit: `799fb763c4f8240e07313ccb8fca11c0771b7fad`
+- Runtime: Node.js v22.23.5
+- Syntax checks: PASS
+- Tests: 35 passed / 0 failed
+
+This verifies the exact committed repository files in the isolated GitHub Actions job. It does not prove agent dispatch, peer delivery, receiver receipt, Native/ALIVE fresh-host execution, or deployment to peer systems.

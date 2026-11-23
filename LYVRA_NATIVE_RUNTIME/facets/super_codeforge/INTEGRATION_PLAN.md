@@ -1,5 +1,5 @@
 # SuperCodeForge — native development roadmap
-STATE=R02_PARALLEL_COOPERATION_SOURCE_INTEGRATED_DUAL_PLUGIN_SKILL_READBACK_VERIFIED
+STATE=R02_NATIVE_SOURCE_AND_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_CI_PASS
 PARENT=EXISTING_LYVRA_NATIVE_RUNTIME_FIFTH_MENU_SUBFACET
 NO_NEW_SYSTEM=true
 NO_NEW_ROUTER=true
@@ -15,14 +15,14 @@ NO_FOREIGN_WRITES=true
 6. Keep transport, authenticated delivery, receiver receipts and host acceptance as separate future gates.
 7. Preserve existing Semantic Visual Intelligence; no second visual engine or top-level menu option.
 8. Update both LYVRA plugin skill surfaces; preserve independent Fresh-Host gates.
-9. Run the dedicated read-only GitHub Actions regression workflow and record its exact run/head/test result.
+9. Verify R02 GitHub Actions run and source blobs before Current pointer publication.
 
-## Current R02 gates
+## Verified R02 gates
 SOURCE=REPOSITORY_BODY_COMMITTED_DIRECT_READBACK_PASS
-LOCAL_TESTS=35_OF_35_CANDIDATE_TESTS_PASS
-GITHUB_CI=PENDING
-NATIVE_PLUGIN=0.1.94_SKILL_READBACK_VERIFIED
-ALIVE_PLUGIN=0.13.90_SKILL_READBACK_VERIFIED
+GITHUB_CI=PASS_RUN_45135544054_JOB_137560825358
+GITHUB_CI_TESTS=35_OF_35_PASS_NODE_22_23_5
+NATIVE_PLUGIN=0.1.94_RELEASE_READBACK_VERIFIED
+ALIVE_PLUGIN=0.13.90_RELEASE_READBACK_VERIFIED
 DUAL_SKILL_TEXT_PARITY=VERIFIED_IDENTICAL
 FRESH_HOST_BOTH=NOT_VERIFIED
 LIVE_PEER_CAPABILITIES=0

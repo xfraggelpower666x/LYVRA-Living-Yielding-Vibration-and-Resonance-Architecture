@@ -75,17 +75,16 @@
         "NATIVE_PLUGIN_FRESH_HOST_ACCEPTANCE_PENDING",
         "ALIVE_PLUGIN_FRESH_HOST_ACCEPTANCE_PENDING",
         "PLUGIN_ARCHIVE_BINARY_PARITY_PENDING",
-        "PEER_NATIVE_CURRENT_AND_PERMISSION_READBACK_PENDING",
-        "GITHUB_CI_R02_REGRESSION_PENDING"
+        "PEER_NATIVE_CURRENT_AND_PERMISSION_READBACK_PENDING"
       ],
-      "source": "R02_PARALLEL_COOPERATION_SOURCE_COMMITTED_READBACK_PASS",
+      "source": "R02_PARALLEL_COOPERATION_SOURCE_AND_GITHUB_CI_PASS",
       "delivery": "BOTH_PLUGIN_SKILL_RELEASES_READBACK_VERIFIED",
       "adoption": "WHOLE_LYVRA_NATIVE_DEVELOPMENT_ONLY",
       "host": "NATIVE_AND_ALIVE_FRESH_HOST_NOT_VERIFIED",
       "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
       "latest_evidence_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db",
       "native_facet_state_blob": "fc875ada3456df361e654cb6cbfde6657dddc28b",
-      "next": "RUN_R02_GITHUB_CI_THEN_FRESH_HOST_GATES_AND_TARGET_SPECIFIC_PEER_ONBOARDING",
+      "next": "FRESH_HOST_ACCEPTANCE_AND_TARGET_SPECIFIC_PEER_ONBOARDING",
       "original_node_test": "PRIOR_3_OF_3_PASS",
       "visual_evidence_binding": {
         "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
@@ -184,7 +183,13 @@
           "release_id": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5"
         },
         "dual_skill_text_parity": "VERIFIED_IDENTICAL",
-        "github_ci": "PENDING",
+        "github_ci": {
+          "run_id": 45135544054,
+          "job_id": 137560825358,
+          "head": "799fb763c4f8240e07313ccb8fca11c0771b7fad",
+          "conclusion": "success",
+          "tests": "35_OF_35"
+        },
         "live_peer_capabilities": 0,
         "dispatch": "NOT_IMPLEMENTED"
       }
