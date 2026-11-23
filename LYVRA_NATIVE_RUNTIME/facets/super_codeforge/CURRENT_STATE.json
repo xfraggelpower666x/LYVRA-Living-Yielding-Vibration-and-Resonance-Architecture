@@ -295,7 +295,20 @@
       "skill_readback": "VERIFIED"
     },
     "dual_plugin_skill_parity": "VERIFIED_IDENTICAL",
-    "github_ci": "PENDING_NEW_WORKFLOW_RUN",
+    "github_ci": {
+      "status": "PASS",
+      "workflow": "LYVRA SuperCodeForge Parallel Cooperation R02",
+      "workflow_path": ".github/workflows/supercodeforge-parallel-cooperation-ci.yml",
+      "run_id": 45135840905,
+      "job_id": 137561776950,
+      "head": "4355a82c667d33916abd5d4a517e1a4baf6703f4",
+      "conclusion": "success",
+      "node_version": "v22.23.5",
+      "tests": 35,
+      "passed": 35,
+      "failed": 0,
+      "syntax_check": "PASS"
+    },
     "native_host": "NOT_VERIFIED",
     "alive_host": "NOT_VERIFIED",
     "live_peer_capabilities": 0,
