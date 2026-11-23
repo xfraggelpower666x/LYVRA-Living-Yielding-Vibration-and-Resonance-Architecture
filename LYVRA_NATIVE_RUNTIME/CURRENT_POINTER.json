@@ -1928,12 +1928,12 @@
     "track_rev93_preserved": true
   },
   "freshness": {
-    "epoch": "2026-11-23-SUPERCODEFORGE-CODING-PROFI-R03",
+    "epoch": "2026-11-23-SUPERCODEFORGE-R03-CI-DUAL-PLUGIN-PARITY",
     "registry": "LYVRA_NATIVE_RUNTIME/continuity/CURRENT_REVISION_FINGERPRINTS.json",
     "expected_track_revision": 96,
-    "verified_carrier_count": 296,
+    "verified_carrier_count": 297,
     "verified_mismatch_count": 0,
-    "full_tree_readback": "PASS_296_OF_296_EXACT_BLOB_BINDINGS"
+    "full_tree_readback": "PASS_297_OF_297_EXACT_BLOB_BINDINGS"
   },
   "weblyvra_freshness_sync_2026_10_07": {
     "status": "CURRENT_PRODUCTIVE_VERIFIED",
@@ -8447,20 +8447,20 @@
     "pointer_publication_last": true
   },
   "supercodeforge_coding_profi_r03_20261123": {
-    "status": "SOURCE_INTEGRATED_REVIEW_CI_PENDING",
+    "status": "SOURCE_CI_VERIFIED_DUAL_PLUGIN_RELEASE_READBACK_VERIFIED_HOST_PENDING",
     "coordinator": "LYVRA_CODING_PROFI_ENGINEERING_REVIEW_ONLY",
     "facet": "EXISTING_SUPERCODEFORGE_FIFTH_MENU",
     "base_head": "5c47c2d17ad676dfd6da7e376d062a03690666c3",
-    "body_head_before_pointer": "916d416d9dfc5f2a354f5f528214f20930cbb568",
-    "recovery_branch": "lyvra-recovery-pre-supercodeforge-r03-20261123",
-    "manifest_sha": "f2af41ceeab48e14ce9b1f42a5e9e4e37ccad375",
-    "fingerprints_sha": "1440bacb384c2ca38ee215577548a1dbc60cf354",
-    "critical_carriers": 296,
+    "body_head_before_pointer": "de1249562c1fe32d679dd719b4c5b333a1e14788",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-r03-parity-20261123",
+    "manifest_sha": "47cb1138d4325e5e88f13cd78f0b24cc6820cdb9",
+    "fingerprints_sha": "85f3d179f3d7e729660ccffe2b97edf837b83385",
+    "critical_carriers": 297,
     "whole_revision_preserved": 242,
     "track_revision_preserved": 96,
     "local_r03_tests": "18_PASS_NODE_22_16_0",
-    "combined_github_ci": "PENDING",
-    "plugin_impact": "REPO_ONLY_LIVE_PLUGIN_HOST_PENDING",
+    "combined_github_ci": "PASS_64_OF_64",
+    "plugin_impact": "NATIVE_AND_ALIVE_PATCHED_RELEASES_READBACK_VERIFIED",
     "native_plugin_host": "NOT_VERIFIED",
     "alive_plugin_host": "NOT_VERIFIED",
     "peer_dispatch": "NOT_PERFORMED",
@@ -8469,6 +8469,14 @@
     "no_new_router": true,
     "no_new_controller": true,
     "pointer_last": true,
-    "mutation_after_pointer": "NONE"
+    "mutation_after_pointer": "NONE",
+    "pr_ci_run": 45238459620,
+    "production_ci_run": 45238636620,
+    "native_version": "0.1.95",
+    "native_release_id": "pluginrel_6b04888f341c819194195313d1bc61d8",
+    "alive_version": "0.13.91",
+    "alive_release_id": "pluginrel_6b0488a353408191b81b6d0fa23d8c3b",
+    "release_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_R03_PARITY_CI_20261123.json",
+    "release_receipt_blob_sha": "88be789fa1c0e46d9a8c1aaa39692695ab518535"
   }
 }

@@ -1,0 +1,73 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_R03_SOURCE_CI_PLUGIN_PARITY_READBACK_V1",
+  "date": "2026-11-23",
+  "status": "SOURCE_CI_AND_BOTH_PLUGIN_RELEASES_VERIFIED_HOST_PENDING",
+  "owner": "WHOLE_LYVRA",
+  "scope": "EXISTING_SUPERCODEFORGE_R03_DOCUMENTATION_AND_RELEASE_PARITY",
+  "source": {
+    "repository": "xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture",
+    "branch": "lyvra",
+    "base_head": "0db7c8b45f32e112eaa4bb85b7aa96430eed4f82",
+    "pr": 89,
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-r03-parity-20261123",
+    "files": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/",
+    "r02_original_files_preserved": true,
+    "r03_code_merged": true,
+    "whole_revision": 242,
+    "track_revision": 96
+  },
+  "ci": {
+    "pr": {
+      "run_id": 45238459620,
+      "head": "6303c82f3427cf71f28a7577a695a7b53077562b",
+      "result": "success"
+    },
+    "productive": {
+      "run_id": 45238636620,
+      "head": "0db7c8b45f32e112eaa4bb85b7aa96430eed4f82",
+      "result": "success"
+    },
+    "combined_r02_r03_tests": 64,
+    "failed": 0,
+    "host_execution_proved": false
+  },
+  "plugins": {
+    "native": {
+      "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.95",
+      "release_id": "pluginrel_6b04888f341c819194195313d1bc61d8",
+      "supercodeforge_skill": "skills/lyvra-supercodeforge/SKILL.md",
+      "skill_r03_present": true,
+      "prior_r02_text_preserved": true,
+      "manifest_version_readback": "0.1.95"
+    },
+    "alive": {
+      "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.91",
+      "release_id": "pluginrel_6b0488a353408191b81b6d0fa23d8c3b",
+      "supercodeforge_skill": "skills/lyvra-supercodeforge/SKILL.md",
+      "skill_r03_present": true,
+      "prior_r02_text_preserved": true,
+      "manifest_version_readback": "0.13.91"
+    }
+  },
+  "limitations": {
+    "native_plugin_fresh_host": "NOT_VERIFIED",
+    "alive_plugin_fresh_host": "NOT_VERIFIED",
+    "peer_capability_execution": "NOT_IMPLEMENTED",
+    "foreign_peer_dispatch": "NOT_PERFORMED",
+    "peer_delivery": "NOT_PERFORMED",
+    "cross_system_adoption": "NOT_OBSERVED",
+    "full_plugin_binary_hash_parity": "NOT_VERIFIED",
+    "source_test_not_equivalent_host": true
+  },
+  "governance": {
+    "native_identity_preserved": true,
+    "readback_both_plugin_releases": true,
+    "logo_icon_sync": false,
+    "foreign_mutations": 0,
+    "manifest_pointer_last_required": true,
+    "no_new_router": true,
+    "no_new_controller": true
+  }
+}
