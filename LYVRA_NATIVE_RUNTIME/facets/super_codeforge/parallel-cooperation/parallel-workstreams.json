@@ -1,0 +1,133 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_PARALLEL_WORKSTREAMS_R02",
+  "owner": "WHOLE_LYVRA",
+  "dispatch_status": "NOT_DISPATCHED",
+  "deployment_status": "NOT_DEPLOYED",
+  "workstreams": [
+    {
+      "id": "A-CAPABILITY-CONTRACT",
+      "ownerSystem": "LYVRA",
+      "mode": "WRITE",
+      "dependsOn": [],
+      "readScopes": [
+        "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md"
+      ],
+      "writeScopes": [
+        "parallel-cooperation/capability-contract.mjs",
+        "parallel-cooperation/test/capability-contract.test.mjs"
+      ]
+    },
+    {
+      "id": "B-PEER-SOURCE-INVENTORY",
+      "ownerSystem": "LYVRA",
+      "mode": "WRITE",
+      "dependsOn": [],
+      "readScopes": [
+        "peer-current-sources"
+      ],
+      "writeScopes": [
+        "parallel-cooperation/peer-source-inventory.json",
+        "parallel-cooperation/peer-source-registry.mjs"
+      ]
+    },
+    {
+      "id": "C-PARALLEL-WAVE-PLANNER",
+      "ownerSystem": "LYVRA",
+      "mode": "WRITE",
+      "dependsOn": [
+        "A-CAPABILITY-CONTRACT"
+      ],
+      "readScopes": [
+        "parallel-cooperation/capability-contract.mjs"
+      ],
+      "writeScopes": [
+        "parallel-cooperation/parallel-wave-planner.mjs"
+      ]
+    },
+    {
+      "id": "D-EVIDENCE-LEDGER",
+      "ownerSystem": "LYVRA",
+      "mode": "WRITE",
+      "dependsOn": [
+        "A-CAPABILITY-CONTRACT"
+      ],
+      "readScopes": [
+        "parallel-cooperation/capability-contract.mjs"
+      ],
+      "writeScopes": [
+        "parallel-cooperation/evidence-ledger.mjs"
+      ]
+    },
+    {
+      "id": "E-COMPOSITION-INTEGRATION",
+      "ownerSystem": "LYVRA",
+      "mode": "WRITE",
+      "dependsOn": [
+        "A-CAPABILITY-CONTRACT",
+        "B-PEER-SOURCE-INVENTORY",
+        "C-PARALLEL-WAVE-PLANNER",
+        "D-EVIDENCE-LEDGER"
+      ],
+      "readScopes": [
+        "parallel-cooperation/capability-catalog.mjs",
+        "parallel-cooperation/peer-source-registry.mjs"
+      ],
+      "writeScopes": [
+        "parallel-cooperation/composition-planner.mjs"
+      ]
+    },
+    {
+      "id": "F-TRANSPORT-ISOLATION-AUDIT",
+      "ownerSystem": "LYVRA",
+      "mode": "READ_ONLY",
+      "dependsOn": [
+        "B-PEER-SOURCE-INVENTORY",
+        "D-EVIDENCE-LEDGER",
+        "E-COMPOSITION-INTEGRATION"
+      ],
+      "readScopes": [
+        "../repository-handoff-protocol.mjs",
+        "../authorized-host-executor.mjs"
+      ],
+      "writeScopes": []
+    },
+    {
+      "id": "G-VISUAL-NATIVE-INTEGRATION-AUDIT",
+      "ownerSystem": "LYVRA",
+      "mode": "READ_ONLY",
+      "dependsOn": [
+        "B-PEER-SOURCE-INVENTORY",
+        "E-COMPOSITION-INTEGRATION"
+      ],
+      "readScopes": [
+        "../../current/visual",
+        "../../development/DUAL_LAYER_PROJECT_VIEW_REGISTRY.json"
+      ],
+      "writeScopes": []
+    },
+    {
+      "id": "H-REGRESSION-AND-DELIVERY",
+      "ownerSystem": "LYVRA",
+      "mode": "READ_ONLY",
+      "dependsOn": [
+        "C-PARALLEL-WAVE-PLANNER",
+        "D-EVIDENCE-LEDGER",
+        "E-COMPOSITION-INTEGRATION",
+        "F-TRANSPORT-ISOLATION-AUDIT",
+        "G-VISUAL-NATIVE-INTEGRATION-AUDIT"
+      ],
+      "readScopes": [
+        "parallel-cooperation/test",
+        "parallel-cooperation/README.md"
+      ],
+      "writeScopes": []
+    }
+  ],
+  "constraints": [
+    "NO_FOREIGN_ACTIVATION",
+    "NO_FOREIGN_WRITES",
+    "NO_NEW_ROUTER",
+    "NO_NEW_CONTROLLER",
+    "NATIVE_UPDATE_REQUIRED_FOR_REPOSITORY_PUBLICATION"
+  ]
+}

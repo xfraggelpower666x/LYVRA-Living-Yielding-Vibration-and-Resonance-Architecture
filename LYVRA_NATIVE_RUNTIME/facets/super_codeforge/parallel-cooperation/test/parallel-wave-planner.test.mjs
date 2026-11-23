@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {planParallelWaves,PARALLEL_PLANNER_BOUNDARY} from '../parallel-wave-planner.mjs';
+const ws=(id,o)=>({id,ownerSystem:'LYVRA',mode:'WRITE',dependsOn:[],readScopes:[],writeScopes:['src/'+id],...o});
+test('parallelizes independent scopes',()=>{const p=planParallelWaves({workstreams:[ws('A'),ws('B')]});assert.equal(p.wave_count,1);assert.equal(p.waves[0].length,2)});
+test('orders dependencies into later waves',()=>{const p=planParallelWaves({workstreams:[ws('A'),ws('B',{dependsOn:['A']})]});assert.deepEqual(p.waves.map(w=>w.map(x=>x.id)),[['A'],['B']])});
+test('isolates overlapping write scopes',()=>{const p=planParallelWaves({workstreams:[ws('A',{writeScopes:['src/core']}),ws('B',{writeScopes:['src/core/ui']})]});assert.equal(p.wave_count,2)});
+test('isolates read/write conflicts',()=>{const p=planParallelWaves({workstreams:[ws('A',{writeScopes:['src/core']}),ws('B',{mode:'READ_ONLY',writeScopes:[],readScopes:['src/core/file']})]});assert.equal(p.wave_count,2)});
+test('rejects unknown dependencies and cycles',()=>{assert.equal(planParallelWaves({workstreams:[ws('A',{dependsOn:['Z']})]}).code,'UNKNOWN_DEPENDENCY');assert.equal(planParallelWaves({workstreams:[ws('A',{dependsOn:['B']}),ws('B',{dependsOn:['A']})]}).code,'DEPENDENCY_CYCLE')});
+test('rejects write scopes on read-only strands',()=>{assert.equal(planParallelWaves({workstreams:[ws('A',{mode:'READ_ONLY'})]}).code,'READ_ONLY_WORKSTREAM_HAS_WRITE_SCOPE')});
+test('enforces max parallel limit',()=>{assert.equal(planParallelWaves({workstreams:[ws('A'),ws('B'),ws('C')],maxParallel:2}).wave_count,2)});
+test('never dispatches or deploys',()=>{const p=planParallelWaves({workstreams:[ws('A')]});assert.equal(p.dispatch_performed,false);assert.equal(p.deployment_performed,false);assert.equal(PARALLEL_PLANNER_BOUNDARY.foreign_activation,false)});
+test('rejects invalid scope and invalid concurrency cap',()=>{assert.equal(planParallelWaves({workstreams:[ws('A',{writeScopes:['../escape']})]}).code,'INVALID_SCOPE');assert.equal(planParallelWaves({workstreams:[ws('A')],maxParallel:0}).code,'INVALID_PARALLEL_LIMIT')});

@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {PeerSourceRegistry,PEER_SOURCE_REGISTRY_BOUNDARY} from '../peer-source-registry.mjs';
+const sha=c=>c.repeat(40),snap=o=>({system:'666STREAM',native_authority:'666STREAM_STRUCTURE_CONTROL',repository:'owner/stream',branch:'main',head:sha('a'),pointer_path:'CURRENT_POINTER.json',pointer_blob:sha('b'),status:'CURRENT_PROJECT_SCOPED_SOURCE_READBACK_OPEN_GATES',...o});
+test('records snapshot without host or foreign authority',()=>{const r=new PeerSourceRegistry();assert.equal(r.register(snap()).accepted,true);assert.equal(r.get('666STREAM').host_verified,false);assert.equal(r.get('666STREAM').foreign_write_authority,false);assert.equal(PEER_SOURCE_REGISTRY_BOUNDARY.activates_peers,false)});
+test('requires immutable source provenance',()=>{assert.equal(new PeerSourceRegistry().register(snap({head:'main'})).code,'NATIVE_SOURCE_PROVENANCE_REQUIRED')});
+test('quarantines pointer/current-state mismatch',()=>{const r=new PeerSourceRegistry();assert.equal(r.register(snap({expected_current_state_blob:sha('c'),observed_current_state_blob:sha('d')})).status,'READBACK_PENDING_POINTER_STATE_BLOB_MISMATCH');assert.equal(r.summary().pointer_state_mismatches,1)});
+test('rejects pointer absence contradicted by pointer data',()=>{assert.equal(new PeerSourceRegistry().register(snap({status:'CURRENT_POINTER_NOT_FOUND_ON_DEFAULT_BRANCH'})).code,'POINTER_ABSENCE_CONTRADICTED')});
+test('rejects duplicate peers',()=>{const r=new PeerSourceRegistry();r.register(snap());assert.equal(r.register(snap()).code,'DUPLICATE_NATIVE_SYSTEM')});
+test('does not fetch or mutate peers',()=>{assert.equal(PEER_SOURCE_REGISTRY_BOUNDARY.fetches_sources,false);assert.equal(PEER_SOURCE_REGISTRY_BOUNDARY.foreign_writes,false)});
+test('rejects partial pointer readback',()=>{assert.equal(new PeerSourceRegistry().register(snap({pointer_blob:null})).code,'POINTER_READBACK_INCOMPLETE')});
+test('rejects unknown peer identity',()=>{assert.equal(new PeerSourceRegistry().register(snap({system:'ALIEN'})).code,'UNKNOWN_NATIVE_SYSTEM')});
