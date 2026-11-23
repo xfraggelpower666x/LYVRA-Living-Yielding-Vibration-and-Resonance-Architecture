@@ -243,7 +243,16 @@
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R05_INTEGRATION_GATES_20261106_DEV.json",
       "LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/continuity/POST_R10_NOV06_MAILBOX_OUTCOME_20261106.json"
     ],
-    "DIRECT_SOURCE_CHANGE_ONLY_GOVERNANCE": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md"
+    "DIRECT_SOURCE_CHANGE_ONLY_GOVERNANCE": "LYVRA_NATIVE_RUNTIME/current/governance/REPO_NATIVE_WRITE_GOVERNANCE.md",
+    "SUPER_CODEFORGE": [
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/README.md",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/peer-source-inventory.json",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/parallel-workstreams.json",
+      "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/PARALLEL_DEPLOYMENT_PLAN.md"
+    ]
   },
   "validation_closeout": {
     "date": "2026-09-30",

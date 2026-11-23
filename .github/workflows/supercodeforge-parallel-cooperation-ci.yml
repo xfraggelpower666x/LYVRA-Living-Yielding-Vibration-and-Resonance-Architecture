@@ -1,0 +1,32 @@
+name: LYVRA SuperCodeForge Parallel Cooperation R02
+on:
+  push:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/**'
+      - '.github/workflows/supercodeforge-parallel-cooperation-ci.yml'
+permissions:
+  contents: read
+concurrency:
+  group: lyvra-supercodeforge-parallel-cooperation-r02
+  cancel-in-progress: false
+jobs:
+  r02-source-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact checkout
+        run: |
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          node --version
+      - name: Syntax check R02 modules and tests
+        run: |
+          for file in LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/*.mjs LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/*.test.mjs; do node --check "$file"; done
+      - name: Run R02 tests
+        run: node --test LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/test/*.test.mjs

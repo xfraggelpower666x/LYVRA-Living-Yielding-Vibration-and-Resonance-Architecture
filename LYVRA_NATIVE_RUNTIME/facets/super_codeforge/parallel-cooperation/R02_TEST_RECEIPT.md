@@ -1,8 +1,5 @@
-# SuperCodeForge R02 Local Test Receipt
+# SuperCodeForge R02 Test Receipt
 
-Status: PASS
-Runtime: Node.js v22.16.0
-Result: 35 tests passed / 0 failed.
-Syntax checks: all six modules and five test modules passed node --check.
+Local candidate suite: 35/35 PASS under Node.js v22.16.0. The committed GitHub source is independently covered by `.github/workflows/supercodeforge-parallel-cooperation-ci.yml`; its run result must be read back before CI PASS is claimed.
 
-Scope: local module behavior only. This does not prove GitHub CI, native/ALIVE plugin-host execution, remote peer delivery, receiver receipts, adoption or deployment.
+This receipt does not claim agent dispatch, peer delivery, receiver receipt, Native/ALIVE fresh-host execution or deployment.

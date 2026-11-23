@@ -1,6 +1,6 @@
 {
   "schema": "LYVRA_SUPERCODEFORGE_CAPABILITY_REGISTRY_PROPOSAL_V1",
-  "state": "EMPTY_METADATA_PROPOSAL_NO_LIVE_CAPABILITIES",
+  "state": "EMPTY_PEER_CAPABILITIES_R02_PLANNER_SOURCE_INTEGRATED",
   "owner": "WHOLE_LYVRA",
   "verified_capabilities": [],
   "collaboration_evidence": [],
@@ -24,5 +24,50 @@
     "NO_FABRICATED_HOST",
     "NO_PERMISSION_ESCALATION",
     "SOURCE_NE_HOST"
-  ]
+  ],
+  "local_planning_modules": [
+    {
+      "id": "LYVRA_SUPERCODEFORGE_CAPABILITY_CATALOG_R02",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/capability-catalog.mjs",
+      "dispatch": false
+    },
+    {
+      "id": "LYVRA_SUPERCODEFORGE_PEER_SOURCE_REGISTRY_R02",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/peer-source-registry.mjs",
+      "foreign_activation": false
+    },
+    {
+      "id": "LYVRA_SUPERCODEFORGE_PARALLEL_WAVE_PLANNER_R02",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/parallel-wave-planner.mjs",
+      "dispatch": false
+    },
+    {
+      "id": "LYVRA_SUPERCODEFORGE_COMPOSITION_PLANNER_R02",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/composition-planner.mjs",
+      "dispatch": false
+    },
+    {
+      "id": "LYVRA_SUPERCODEFORGE_EVIDENCE_LEDGER_R02",
+      "path": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/evidence-ledger.mjs",
+      "durable_persistence": false
+    }
+  ],
+  "peer_onboarding_status": "BLOCKED_PENDING_TARGET_NATIVE_CURRENT_AND_PERMISSIONED_CAPABILITY_READBACK",
+  "plugin_impact": {
+    "native": {
+      "version": "0.1.94",
+      "release_id": "pluginrel_6b03f2809d6c8191aff941cf0598f8f3",
+      "skill_readback": "VERIFIED",
+      "fresh_host": "NOT_VERIFIED"
+    },
+    "alive": {
+      "version": "0.13.90",
+      "release_id": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5",
+      "skill_readback": "VERIFIED",
+      "fresh_host": "NOT_VERIFIED"
+    },
+    "skill_text_parity": "VERIFIED_IDENTICAL",
+    "binary_archive_parity": "NOT_VERIFIED",
+    "host_execution": "NOT_VERIFIED"
+  }
 }

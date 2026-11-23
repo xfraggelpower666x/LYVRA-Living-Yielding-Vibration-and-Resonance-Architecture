@@ -72,19 +72,20 @@
         "urgent": false
       },
       "blockers": [
-        "NATIVE_PLUGIN_HOST_INJECTION_PENDING",
-        "ALIVE_PLUGIN_HOST_INJECTION_PENDING",
-        "FULL_NATIVE_PLUGIN_ARCHIVE_BINARY_READBACK_PENDING",
-        "FULL_ALIVE_PLUGIN_ARCHIVE_BINARY_READBACK_PENDING"
+        "NATIVE_PLUGIN_FRESH_HOST_ACCEPTANCE_PENDING",
+        "ALIVE_PLUGIN_FRESH_HOST_ACCEPTANCE_PENDING",
+        "PLUGIN_ARCHIVE_BINARY_PARITY_PENDING",
+        "PEER_NATIVE_CURRENT_AND_PERMISSION_READBACK_PENDING",
+        "GITHUB_CI_R02_REGRESSION_PENDING"
       ],
-      "source": "ORIGINAL_EXECUTOR_GITHUB_ACTIONS_PROVIDER_READBACK_VERIFIED",
-      "delivery": "NATIVE_0_1_76_ALIVE_0_13_72_VISUAL_AND_SUPERCODEFORGE_SKILL_TEXT_PARITY_VERIFIED",
-      "adoption": "NATIVE_LYVRA_DEVELOPMENT_ONLY",
-      "host": "GITHUB_ACTIONS_PROVIDER_PASS_NATIVE_ALIVE_PLUGIN_HOST_NOT_VERIFIED",
+      "source": "R02_PARALLEL_COOPERATION_SOURCE_COMMITTED_READBACK_PASS",
+      "delivery": "BOTH_PLUGIN_SKILL_RELEASES_READBACK_VERIFIED",
+      "adoption": "WHOLE_LYVRA_NATIVE_DEVELOPMENT_ONLY",
+      "host": "NATIVE_AND_ALIVE_FRESH_HOST_NOT_VERIFIED",
       "latest_evidence": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_VISUAL_PARITY_20261018_R02.json",
       "latest_evidence_blob": "e8ea6b83c4974a01d268500e646bd56de422d4db",
       "native_facet_state_blob": "fc875ada3456df361e654cb6cbfde6657dddc28b",
-      "next": "INDEPENDENT_NATIVE_ALIVE_HOST_HANDLE_INJECTION_AND_FULL_ARCHIVE_BINARY_READBACK",
+      "next": "RUN_R02_GITHUB_CI_THEN_FRESH_HOST_GATES_AND_TARGET_SPECIFIC_PEER_ONBOARDING",
       "original_node_test": "PRIOR_3_OF_3_PASS",
       "visual_evidence_binding": {
         "visual_contract": "LYVRA_NATIVE_RUNTIME/current/visual/SEMANTIC_CYBER_FIELD_LOCAL_ADAPTIVE_VISUAL_CONTRACT.md",
@@ -169,6 +170,23 @@
           "native_host": "NOT_VERIFIED",
           "alive_host": "NOT_VERIFIED"
         }
+      },
+      "parallel_cooperation_r02": {
+        "source_commit": "2d047ebca0b55d5897003e828375368c28d836f6",
+        "source_files_readback": "17_OF_17_PASS",
+        "local_candidate_tests": "35_OF_35_PASS",
+        "native_plugin": {
+          "version": "0.1.94",
+          "release_id": "pluginrel_6b03f2809d6c8191aff941cf0598f8f3"
+        },
+        "alive_plugin": {
+          "version": "0.13.90",
+          "release_id": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5"
+        },
+        "dual_skill_text_parity": "VERIFIED_IDENTICAL",
+        "github_ci": "PENDING",
+        "live_peer_capabilities": 0,
+        "dispatch": "NOT_IMPLEMENTED"
       }
     }
   ],

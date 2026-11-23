@@ -3,8 +3,8 @@
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_PROVIDER_VERIFIED_HOST_PENDING",
   "stage": "GITHUB_ACTIONS_ORIGINAL_EXECUTOR_PROVIDER_PASS_NATIVE_ALIVE_HOST_PENDING",
-  "return_anchor": "SUPERCODEFORGE_PROVIDER_PASS_VISUAL_PARITY_NATIVE_ALIVE_HOST_PENDING",
-  "next_action": "Source-only host handle adapter is available and local Node negative tests passed. Require real native and ALIVE independent plugin-host ESM module import, explicitly authorized mcp__GitHub__fetch_file callable injection, and independent traces before any host promotion; complete live plugin archive byte readback separately. Do not rerun old provider Actions without new information.",
+  "return_anchor": "SUPERCODEFORGE_R02_NATIVE_SOURCE_INTEGRATED_DUAL_PLUGIN_READBACK_CI_PENDING",
+  "next_action": "Run the dedicated read-only R02 GitHub Actions regression workflow; then finalize current manifest/fingerprints and publish CURRENT_POINTER last. Keep fresh-host and peer onboarding gates open.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_EXECUTOR_AND_GITHUB_ACTIONS_PROVIDER_READBACK_VERIFIED",
   "delivery": "NOT_SENT",
@@ -265,5 +265,44 @@
     "real_cross_system_execution": "NOT_TESTED",
     "fresh_host": "NOT_VERIFIED",
     "no_foreign_writes": true
+  },
+  "parallel_cooperation_r02": {
+    "status": "NATIVE_SOURCE_INTEGRATED_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_CI_PENDING",
+    "base_head": "9a94e33707def2d19ca8893bf4f8da715fbe1e73",
+    "body_commit": "2d047ebca0b55d5897003e828375368c28d836f6",
+    "recovery_branch": "lyvra-recovery-pre-supercodeforge-parallel-20261123-r01",
+    "source_root": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/",
+    "modules": [
+      "capability-contract.mjs",
+      "capability-catalog.mjs",
+      "peer-source-registry.mjs",
+      "parallel-wave-planner.mjs",
+      "composition-planner.mjs",
+      "evidence-ledger.mjs"
+    ],
+    "source_blob_readback": "17_OF_17_PASS",
+    "local_candidate_tests": "35_OF_35_PASS_NODE_22_16_0",
+    "native_plugin": {
+      "plugin_id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+      "version": "0.1.94",
+      "release_id": "pluginrel_6b03f2809d6c8191aff941cf0598f8f3",
+      "skill_readback": "VERIFIED"
+    },
+    "alive_plugin": {
+      "plugin_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+      "version": "0.13.90",
+      "release_id": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5",
+      "skill_readback": "VERIFIED"
+    },
+    "dual_plugin_skill_parity": "VERIFIED_IDENTICAL",
+    "github_ci": "PENDING_NEW_WORKFLOW_RUN",
+    "native_host": "NOT_VERIFIED",
+    "alive_host": "NOT_VERIFIED",
+    "live_peer_capabilities": 0,
+    "dispatch": "NOT_IMPLEMENTED",
+    "remote_peer_delivery": "NOT_PERFORMED",
+    "foreign_writes": false,
+    "foreign_activation": false,
+    "next": "R02_GITHUB_CI_READBACK_THEN_POINTER_LAST_THEN_TARGET_SPECIFIC_PEER_ONBOARDING"
   }
 }
