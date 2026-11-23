@@ -242,7 +242,7 @@
     "LYVRA_NATIVE_RUNTIME/facets/irl/LEARNING_LEDGER.json": "d90590948845700a3327229be0ea7a13423cf370",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/DEVELOPMENT_HANDOFF.md": "682f68fd600625ebdafcd306b51a2c127101698d",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/FACET_CONTRACT.md": "f9995c662c6c892ec610e84aee42aea5099f7b22",
-    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "45fd003455c1e6a174676e29ef14dd5f183ef02c",
+    "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CURRENT_STATE.json": "2cdeb8a749d59472d1d22eb39c28b79cc2caecea",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/CAPABILITY_REGISTRY_PROPOSAL.json": "8ee5cb43b60cc4cde2a65b1b0140805c820bb098",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/INTEGRATION_PLAN.md": "95d6137e4f2e831e52ed6085e227aeefc244d64a",
     "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/SUB_REHYDRATION.md": "1ac15c782f23c9be3acbd13c4fc02b6fbbdc38ab",
@@ -2535,6 +2535,7 @@
     "native_plugin_release": "pluginrel_6b03f2809d6c8191aff941cf0598f8f3",
     "alive_plugin_release": "pluginrel_6b03f293c1f88191b7ea29e8a5ad83e5",
     "fresh_host": "PENDING",
-    "peer_onboarding": "PENDING"
+    "peer_onboarding": "PENDING",
+    "current_state": "CI_PASS_FRESH_HOST_PENDING"
   }
 }

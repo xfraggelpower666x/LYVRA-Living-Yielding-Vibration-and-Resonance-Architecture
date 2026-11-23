@@ -3,8 +3,8 @@
   "owner": "WHOLE_LYVRA",
   "status": "DEV_ACTIVE_SOURCE_PROVIDER_VERIFIED_HOST_PENDING",
   "stage": "GITHUB_ACTIONS_ORIGINAL_EXECUTOR_PROVIDER_PASS_NATIVE_ALIVE_HOST_PENDING",
-  "return_anchor": "SUPERCODEFORGE_R02_NATIVE_SOURCE_INTEGRATED_DUAL_PLUGIN_READBACK_CI_PENDING",
-  "next_action": "Run the dedicated read-only R02 GitHub Actions regression workflow; then finalize current manifest/fingerprints and publish CURRENT_POINTER last. Keep fresh-host and peer onboarding gates open.",
+  "return_anchor": "SUPERCODEFORGE_R02_CI_PASS_POINTER_PUBLISHED_FRESH_HOST_AND_PEER_ONBOARDING_PENDING",
+  "next_action": "Run independent fresh-host acceptance for Native and ALIVE plugin surfaces. After that, reconcile each peer's native Current and permissions before any onboarding or remote delivery.",
   "verified_live_capabilities": 0,
   "source": "REPOSITORY_EXECUTOR_AND_GITHUB_ACTIONS_PROVIDER_READBACK_VERIFIED",
   "delivery": "NOT_SENT",
@@ -267,7 +267,7 @@
     "no_foreign_writes": true
   },
   "parallel_cooperation_r02": {
-    "status": "NATIVE_SOURCE_INTEGRATED_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_CI_PENDING",
+    "status": "NATIVE_SOURCE_INTEGRATED_DUAL_PLUGIN_SKILL_READBACK_VERIFIED_CI_PASS_FRESH_HOST_PENDING",
     "base_head": "9a94e33707def2d19ca8893bf4f8da715fbe1e73",
     "body_commit": "2d047ebca0b55d5897003e828375368c28d836f6",
     "recovery_branch": "lyvra-recovery-pre-supercodeforge-parallel-20261123-r01",
@@ -316,7 +316,7 @@
     "remote_peer_delivery": "NOT_PERFORMED",
     "foreign_writes": false,
     "foreign_activation": false,
-    "next": "R02_GITHUB_CI_READBACK_THEN_POINTER_LAST_THEN_TARGET_SPECIFIC_PEER_ONBOARDING",
+    "next": "FRESH_NATIVE_AND_ALIVE_HOST_ACCEPTANCE_THEN_TARGET_SPECIFIC_PEER_ONBOARDING",
     "ci_receipt": "LYVRA_NATIVE_RUNTIME/development/SUPERCODEFORGE_PARALLEL_COOPERATION_R02_CI_2026-11-23.json",
     "plugin_release_receipt": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_PARALLEL_COOPERATION_DUAL_PLUGIN_2026-11-23.json"
   }
