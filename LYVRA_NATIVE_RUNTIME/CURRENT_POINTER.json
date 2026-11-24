@@ -8502,5 +8502,23 @@
     "track_revision_preserved": 96,
     "pointer_last": true,
     "mutations_after_pointer": "NONE"
+  },
+  "supercodeforge_r04_ci_reconciliation_20261124": {
+    "status": "R04_SOURCE_CI_VERIFIED_PLUGIN_RELEASES_UNCHANGED_HOST_PENDING",
+    "source_commit": "946e239f859042e8e5336d6710f637c9a22600f7",
+    "evidence_path": "LYVRA_NATIVE_RUNTIME/development/plugin_release_readbacks/LYVRA_SUPERCODEFORGE_R04_CI_RECONCILIATION_20261124.json",
+    "evidence_blob": "7b6da8ae39b209087130ebda682c5b0b2eae1b67",
+    "recovery_branch": "lyvra-recovery-pre-r04-ci-reconcile-20261124",
+    "workflow_run": 45243119042,
+    "ci": "PASS",
+    "native_plugin": "0.1.95",
+    "alive_plugin": "0.13.91",
+    "plugin_release_change": false,
+    "plugin_host": "NOT_VERIFIED",
+    "peer_dispatch": "NOT_PERFORMED",
+    "foreign_writes": 0,
+    "manifest_and_fingerprints": "UNCHANGED_NON_SEMANTIC_EVIDENCE_RECONCILIATION",
+    "pointer_last": true,
+    "no_post_pointer_mutation": true
   }
 }
