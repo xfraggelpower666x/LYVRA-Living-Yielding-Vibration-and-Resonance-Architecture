@@ -1,0 +1,39 @@
+{
+  "schema": "LYVRA_SUPERCODEFORGE_R04_CI_RECONCILIATION_V1",
+  "date": "2026-11-24",
+  "owner": "WHOLE_LYVRA",
+  "status": "R04_SOURCE_CI_VERIFIED_PLUGIN_RELEASES_UNCHANGED_HOST_PENDING",
+  "base_head": "946e239f859042e8e5336d6710f637c9a22600f7",
+  "recovery_branch": "lyvra-recovery-pre-r04-ci-reconcile-20261124",
+  "scope": "GOVERNANCE_EVIDENCE_ONLY_NO_RUNTIME_SOURCE_MUTATION",
+  "r04_source_bridge": "LYVRA_NATIVE_RUNTIME/facets/super_codeforge/parallel-cooperation/coding-profi-host-bridge.mjs",
+  "r04_source_bridge_blob": "75d0d0deeda1d1e91390f71fcc50266b186df476",
+  "r04_test_blob": "c136c47131c6c9445390bf4c14967cc60c8558c1",
+  "workflow": ".github/workflows/supercodeforge-parallel-cooperation-ci.yml",
+  "workflow_run_id": 45243119042,
+  "workflow_run_head": "946e239f859042e8e5336d6710f637c9a22600f7",
+  "workflow_status": "completed",
+  "workflow_conclusion": "success",
+  "workflow_scope": "node --check for *.mjs and test/*.test.mjs, node --test for all test/*.test.mjs; includes R04 host-bridge tests",
+  "native_plugin": {
+    "id": "plugins_6ab3a345db308191b8ad7ef6311f8a29",
+    "version": "0.1.95",
+    "release_id": "pluginrel_6b04888f341c819194195313d1bc61d8"
+  },
+  "alive_plugin": {
+    "id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+    "version": "0.13.91",
+    "release_id": "pluginrel_6b0488a353408191b81b6d0fa23d8c3b"
+  },
+  "dual_plugin_skill_text_equal": true,
+  "plugin_impact": "NO_RELEASE_CHANGE; R04 is a host-injected own-repository source-only bridge not independently mounted in either plugin",
+  "host_proof": "NOT_VERIFIED",
+  "peer_execution": "NOT_PERFORMED",
+  "foreign_writes": 0,
+  "whole_revision_preserved": 242,
+  "track_revision_preserved": 96,
+  "critical_carrier_count_prior": 299,
+  "manifest_and_fingerprints": "UNCHANGED_APPLICABLE_EVIDENCE_ONLY",
+  "pointer_publication": "LAST_WRITE_PENDING_AT_BODY_CREATION",
+  "peer_proposal": "CODING_PROFI_R03_REVIEW_ONLY_NO_AUTOMATIC_ADOPTION"
+}
