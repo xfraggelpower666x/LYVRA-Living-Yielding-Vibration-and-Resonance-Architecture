@@ -1,0 +1,182 @@
+{
+  "schema": "LYVRA_PLUGIN_PARTIAL_TEXT_SOURCE_v1",
+  "status": "PARTIAL_NOT_RESTORABLE",
+  "capture_date": "2026-10-02",
+  "plugin_backend_id": "plugin_06a4fc64dd848191982ca4a6ebdb2619",
+  "backend_release_id": "pluginrel_6abed7676b5881918674b8d2c64e21af",
+  "version": "0.13.0",
+  "scope": "USER",
+  "discoverability": "PRIVATE",
+  "productive_repo_head_at_capture": "89db0978d0f62660986d27efd1d2005265811448",
+  "content_origin": "Plugin Creator get_plugin_files live release read",
+  "source_files_count": 30,
+  "text_files_preserved": [
+    {
+      "path": ".app.json",
+      "source_size_bytes": 124,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "source_size_bytes": 1345,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "plugin.json",
+      "source_size_bytes": 1437,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/instructions/SKILL.md",
+      "source_size_bytes": 11088,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/instructions/agents/openai.yaml",
+      "source_size_bytes": 246,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/instructions/lookup/knowledge-index.json",
+      "source_size_bytes": 2395,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/instructions/references/READ_WRITE_REHYDRATION.md",
+      "source_size_bytes": 9170,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/music-analytics/SKILL.md",
+      "source_size_bytes": 4025,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/music-analytics/agents/openai.yaml",
+      "source_size_bytes": 249,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/rehydration-continuity/SKILL.md",
+      "source_size_bytes": 3863,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/rehydration-continuity/agents/openai.yaml",
+      "source_size_bytes": 264,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/repository-update-recovery/SKILL.md",
+      "source_size_bytes": 4726,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/repository-update-recovery/agents/openai.yaml",
+      "source_size_bytes": 260,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/suno-studio-2/SKILL.md",
+      "source_size_bytes": 4009,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/suno-studio-2/agents/openai.yaml",
+      "source_size_bytes": 244,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/track-design/SKILL.md",
+      "source_size_bytes": 3632,
+      "status": "PRESENT_TEXT_SOURCE"
+    },
+    {
+      "path": "skills/track-design/agents/openai.yaml",
+      "source_size_bytes": 245,
+      "status": "PRESENT_TEXT_SOURCE"
+    }
+  ],
+  "binary_assets_missing": [
+    {
+      "path": "assets/gpt-icon.png",
+      "source_size_bytes": 492586,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_10-1.png",
+      "source_size_bytes": 1308757,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/ChatGPT-Bild 26. Sept. 2026, 12_14_11-2.png",
+      "source_size_bytes": 1327854,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Kosmischer Lebensbaum im Neonraum.png",
+      "source_size_bytes": 2406663,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/LYVRA – Ein lebendiges digitales Universum.png",
+      "source_size_bytes": 2626397,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/LYVRA_ Baum des Lebens in Neon.png",
+      "source_size_bytes": 1918985,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Chrome-Emblem LYVRA.png",
+      "source_size_bytes": 1818457,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos mit leuchtendem Lebensbaum.png",
+      "source_size_bytes": 2699385,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-Kosmos-Footer mit Baum-Emblem.png",
+      "source_size_bytes": 2364103,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Emblem mit Alien-Maskottchen.png",
+      "source_size_bytes": 2340666,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Kosmosmaskottchen.png",
+      "source_size_bytes": 2201974,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/Neon-LYVRA-Symbol mit Lebensbaum.png",
+      "source_size_bytes": 1713482,
+      "status": "MISSING_BINARY"
+    },
+    {
+      "path": "skills/instructions/references/b692ff1f-c65e-49bb-b216-79186707e7ac.png",
+      "source_size_bytes": 43931,
+      "status": "MISSING_BINARY"
+    }
+  ],
+  "checks": {
+    "text_readback": "PASS_17_OF_17_EXACT_SOURCE_CONTENT_COMPARISON",
+    "source_text_secret_pattern_scan": "PASS_BASIC_NOT_SECURITY_AUDIT",
+    "source_binary_archive_sha256": "NOT_AVAILABLE",
+    "full_restore": "NOT_TESTED",
+    "pfs_child_backup": "NOT_VERIFIED",
+    "remote_manifest_readback": "PASS_FRESH_READBACK_OF_PRIOR_MANIFEST_REVISION"
+  },
+  "restrictions": [
+    "Not a full plugin backup",
+    "Not a Freeze",
+    "Do not restore from this partial text snapshot",
+    "Do not overwrite any valid original release",
+    "No native pointer write or root authority transfer"
+  ]
+}
