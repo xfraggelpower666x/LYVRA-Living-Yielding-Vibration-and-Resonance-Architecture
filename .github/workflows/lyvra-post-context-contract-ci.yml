@@ -1,0 +1,38 @@
+name: LYVRA POST Context Contract Regression
+
+on:
+  pull_request:
+    branches: [lyvra]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/tests/post-context-answer-relations.test.mjs'
+      - 'LYVRA_NATIVE_RUNTIME/facets/lyvra_to_littlelyv/**'
+      - 'LYVRA_NATIVE_RUNTIME/development/LYVRA_TWO_PLUGIN_SYNC_CONTRACT.md'
+      - '.github/workflows/lyvra-post-context-contract-ci.yml'
+  push:
+    branches:
+      - lyvra-dev-post-evidence-links-manual-docx-20261025-r01
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/tests/post-context-answer-relations.test.mjs'
+      - '.github/workflows/lyvra-post-context-contract-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-offline-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax check the private-data-free POST contract fixture
+        run: node --check LYVRA_NATIVE_RUNTIME/development/tests/post-context-answer-relations.test.mjs
+      - name: Execute positive and negative synthetic POST contract regressions
+        run: node --test LYVRA_NATIVE_RUNTIME/development/tests/post-context-answer-relations.test.mjs
+
+# Contract regression only; does not assert live NLP, mailbox delivery, plugin host or release parity.
