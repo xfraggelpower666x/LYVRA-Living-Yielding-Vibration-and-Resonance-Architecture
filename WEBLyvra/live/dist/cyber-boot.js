@@ -24,8 +24,19 @@
   css.rel='stylesheet'; { const u=new URL('./cyber-boot.css', base); u.searchParams.set('v',RELEASE); css.href=u.href; }
   let cssReady=false;
   css.addEventListener('load',()=>{ cssReady=true; begin(); },{once:true});
-  css.addEventListener('error',()=>{ css.remove(); },{once:true});
+  css.addEventListener('error',()=>{
+    css.remove();
+    document.documentElement.classList.add('lyvra-cyber-boot-failed');
+    window.dispatchEvent(new CustomEvent('lyvra:system-start',{detail:{failOpen:true,reason:'css-load-error'}}));
+  },{once:true});
   document.head.appendChild(css);
+  setTimeout(()=>{
+    if(!cssReady){
+      try{ css.remove(); }catch{}
+      document.documentElement.classList.add('lyvra-cyber-boot-failed');
+      window.dispatchEvent(new CustomEvent('lyvra:system-start',{detail:{failOpen:true,reason:'css-timeout'}}));
+    }
+  },2500);
 
   function begin(){
     if(!cssReady) return;
