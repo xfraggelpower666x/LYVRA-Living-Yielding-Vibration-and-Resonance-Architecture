@@ -1,0 +1,86 @@
+name: LYVRA Worker Evidence Offline Tests (DEV)
+
+on:
+  push:
+    branches:
+      - lyvra-worker-evidence-preflight-20261003
+    paths:
+      - "LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py"
+      - "LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py"
+      - ".github/workflows/lyvra-worker-evidence-offline.yml"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-context.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.test.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.test.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-v3.mjs"
+      - "LYVRA_NATIVE_RUNTIME/tools/worker-native-v3.test.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  no-network-offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Syntax verification
+        run: python -m py_compile LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py LYVRA_NATIVE_RUNTIME/tools/test_worker_evidence_preflight.py
+      - name: Mocked offline tests
+        run: python -m unittest discover -s LYVRA_NATIVE_RUNTIME/tools -p "test_worker_evidence_preflight.py" -v
+
+      - name: Canonical native context regression tests (Node 22)
+        run: node --test LYVRA_NATIVE_RUNTIME/tools/worker-native-context.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-native-bridge.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-github-snapshot.test.mjs LYVRA_NATIVE_RUNTIME/tools/worker-native-v3.test.mjs
+
+      - name: Read-only public Worker reachability (non-gating)
+        run: python LYVRA_NATIVE_RUNTIME/tools/worker_evidence_preflight.py
+
+      - name: Read-only LYVRA public contract verification
+        continue-on-error: true
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.request
+          from urllib.error import HTTPError
+          import sys
+          sys.path.insert(0, "LYVRA_NATIVE_RUNTIME/tools")
+          from worker_evidence_preflight import BASE, TIMEOUT_SECONDS, MAX_BYTES, build_opener
+          opener=build_opener()
+          def read(path):
+              req=urllib.request.Request(BASE+path, method="GET",headers={"Accept":"application/json","User-Agent":"LYVRA-optional-evidence-preflight/1.0"})
+              with opener.open(req, timeout=TIMEOUT_SECONDS) as response:
+                  assert response.status==200, "NON_200"
+                  raw=response.read(MAX_BYTES+1)
+                  assert len(raw)<=MAX_BYTES, "OVERSIZED_JSON"
+              obj=json.loads(raw.decode("utf-8"))
+              assert isinstance(obj,dict) and obj.get("ok") is True, "INVALID_REPLY"
+              return obj
+          health=read("/health")
+          assert health.get("service")=="666_MAIN_SYSTEM_AUTHORITY_EVIDENCE_GATE", "UNEXPECTED_SERVICE"
+          assert health.get("secret_exposed") is False, "SECRET_EXPOSURE_FLAG"
+          print("WORKER_HEALTH_IDENTITY=PASS")
+          systems=read("/v2/systems")
+          assert systems.get("personal_worker_applies_to")=="MAIN_PERSONAL_ONLY", "WRONG_SCOPE"
+          assert systems.get("portable_worker_binding") is False, "PORTABLE_BOUNDARY"
+          assert systems.get("secret_exposed") is False, "SECRET_EXPOSURE_FLAG"
+          lyvra=[c for c in systems.get("systems",[]) if c.get("system_id")=="LYVRA"]
+          assert len(lyvra)==1, "LYVRA_REGISTRY_ENTRY_MISSING_OR_DUPLICATE"
+          assert lyvra[0].get("enabled") is True and lyvra[0].get("branch_class")=="MAIN_PERSONAL", "LYVRA_NOT_ENABLED_PERSONAL"
+          print("LYVRA_REGISTRY_PUBLIC=PASS")
+          root=read("/v2/authority-root?system=LYVRA")
+          a=root.get("authority_root",{})
+          assert root.get("worker_status")=="WORKER_VERIFIED", "WORKER_ROOT_STATUS"
+          assert a.get("system_id")=="LYVRA" and a.get("namespace")=="LYVRA", "WRONG_IDENTITY"
+          assert a.get("authority_context")=="LYVRA_MAIN_PERSONAL", "WRONG_AUTHORITY_CONTEXT"
+          assert a.get("authority",{}).get("worker_is_absolute_root_of_trust") is False, "WORKER_ROOT_OVERREACH"
+          assert a.get("evidence_policy",{}).get("worker_unavailable_is_system_failure") is False, "FAIL_CLOSED_UNINTENDED"
+          assert root.get("secret_exposed") is False, "SECRET_EXPOSURE_FLAG"
+          print("LYVRA_AUTHORITY_CONTEXT_PUBLIC=PASS")
+          print("SIGNED_TICKET_CRYPTOGRAPHY=NOT_TESTED")
+          PY
