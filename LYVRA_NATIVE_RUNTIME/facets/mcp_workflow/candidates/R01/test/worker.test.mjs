@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {execute,gitBlob,createWorker} from '../runtime/worker.mjs';
+const content='LYVRA R01 fixture';const blob=await gitBlob(content);const job={operation:'READ_FILE',repository:'xfraggelpower666x/LYVRA-Living-Yielding-Vibration-and-Resonance-Architecture',commit:'a'.repeat(40),blob,path:'LYVRA_NATIVE_RUNTIME/CURRENT_POINTER.json',cost:0};
+const file={content,sha:blob,encoding:'utf-8'};const bindings=()=>({policy:{zeroCostVerified:true,toolName:'fetch_file'},client:{listTools:async()=>({tools:[{name:'fetch_file',inputSchema:{properties:{repository_full_name:{},ref:{},path:{}}}}]}),callTool:async()=>({structuredContent:{result:file}})},verifier:async()=>file});
+test('positive dual fixture',async()=>assert.equal((await execute(job,bindings())).status,'DUAL_READBACK_MATCH'));
+for(const [name,patch] of Object.entries({foreign:{repository:'other/repo'},write:{operation:'WRITE'},branch:{commit:'lyvra'},traversal:{path:'LYVRA_NATIVE_RUNTIME/../x'},cost:{cost:1}}))test(name,async()=>{const b=bindings();b.client.listTools=()=>assert.fail('provider called');assert.equal((await execute({...job,...patch},b)).status,'DENIED')});
+test('cost gate',async()=>assert.equal((await execute(job,{})).code,'COST_GATE'));
+test('missing binding',async()=>assert.equal((await execute(job,{policy:{zeroCostVerified:true}})).code,'BINDINGS'));
+test('tool missing',async()=>{const b=bindings();b.client.listTools=async()=>({tools:[]});assert.equal((await execute(job,b)).code,'TOOL_SCHEMA')});
+test('wrong bytes',async()=>{const b=bindings();b.client.callTool=async()=>({structuredContent:{result:{...file,content:'wrong'}}});assert.equal((await execute(job,b)).code,'BLOB')});
+test('second read mismatch',async()=>{const b=bindings();b.verifier=async()=>({});assert.equal((await execute(job,b)).code,'SECOND_READBACK')});
+test('MCP error',async()=>{const b=bindings();b.client.callTool=async()=>({isError:true});assert.equal((await execute(job,b)).code,'MCP_ERROR')});
+test('default closed',async()=>assert.equal((await createWorker().fetch(new Request('https://example.invalid/readback',{method:'POST',body:JSON.stringify(job)}))).status,401));

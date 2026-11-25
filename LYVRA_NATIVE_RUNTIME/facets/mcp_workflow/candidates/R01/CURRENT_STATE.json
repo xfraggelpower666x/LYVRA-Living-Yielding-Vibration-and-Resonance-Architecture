@@ -1,0 +1,1 @@
+{"facet":"LYVRA_MCP_WORKFLOW","revision":"R01","status":"LOCAL_CANDIDATE","base_head":"63c045fd55ada6e1511222c2eded03ff4e1079c2","host_verified":false,"billing_verified":false,"deployment":false,"next":"Bind real authorized MCP client and independent verifier; review R04 integration; persistent workflow state"}
