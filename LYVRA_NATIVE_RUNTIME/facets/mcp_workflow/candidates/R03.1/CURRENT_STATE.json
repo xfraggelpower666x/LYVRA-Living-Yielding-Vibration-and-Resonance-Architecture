@@ -1,0 +1,22 @@
+{
+  "facet": "LYVRA_MCP_WORKFLOW",
+  "revision": "R03.1",
+  "status": "LOCAL_CANDIDATE_NOT_ADOPTED",
+  "parent": "WHOLE_LYVRA",
+  "basis_head": "63c045fd55ada6e1511222c2eded03ff4e1079c2",
+  "basis_pointer_blob": "3cf260d2ee22f7971da370967799fa138dbeb59c",
+  "local_regression": {
+    "total": 81,
+    "passed": 81,
+    "original": 66,
+    "new": 15
+  },
+  "github_publication": "PENDING",
+  "live_deployment": false,
+  "cloudflare_billing": "READ_BLOCKED",
+  "host_verified": false,
+  "independent_provider_identity_verified": false,
+  "plugin_parity": "PENDING",
+  "foreign_mutations": 0,
+  "cost_governance": "OPERATION_SCOPED_CANDIDATE"
+}

@@ -1,0 +1,2 @@
+# Sub-LifeCircle R03
+Creator intent → native Current → relevante Quellen → begrenzter Kandidat → lokale Regression → Repository-Readback → explizite Deployment-/Kostenfreigabe → Host-Abnahme → Whole-LYVRA-Adoption. Keine automatische Promotion. Bei unklarem Resultat Job-ID erhalten und Zustand abfragen; keine automatische erneute Ausführung. Fehler werden als lokale Gegenbeispiele mit Herkunft festgehalten. Keine private Familienpost-Autorität übernehmen.

@@ -1,0 +1,3 @@
+# LYVRA MCP WORKFLOW R02
+STATUS=LOCAL_CANDIDATE; PARENT=WHOLE_LYVRA; keine zweite Authority.
+MCP Intelligence: autorisierter Streamable-HTTP-Client (2025-11-25, begrenzter Funktionsumfang). Worker Intelligence: atomarer Claim und persistierbarer terminaler Beleg mittels Durable Object storage. R01 bleibt unverändert. Original-SuperCodeForge-Executor und seine zwei Abhängigkeiten werden bytegenau importiert; Herkunft siehe PROVENANCE.md. Kein Family-Post-Token, kein Radio-Zugriff, kein automatisches Deployment, keine fremden Writes. Kein autonomer Kostenverbrauch. Native Visual Intelligence bleibt gemeinsame Referenz. Keine Live-Freigabe.

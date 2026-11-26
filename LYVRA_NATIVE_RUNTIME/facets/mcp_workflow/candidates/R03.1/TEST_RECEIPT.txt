@@ -1,0 +1,496 @@
+TAP version 13
+# Subtest: positive dual fixture
+ok 1 - positive dual fixture
+  ---
+  duration_ms: 4.893974
+  type: 'test'
+  ...
+# Subtest: foreign
+ok 2 - foreign
+  ---
+  duration_ms: 0.240923
+  type: 'test'
+  ...
+# Subtest: write
+ok 3 - write
+  ---
+  duration_ms: 0.069905
+  type: 'test'
+  ...
+# Subtest: branch
+ok 4 - branch
+  ---
+  duration_ms: 0.063005
+  type: 'test'
+  ...
+# Subtest: traversal
+ok 5 - traversal
+  ---
+  duration_ms: 0.11318
+  type: 'test'
+  ...
+# Subtest: cost
+ok 6 - cost
+  ---
+  duration_ms: 0.087542
+  type: 'test'
+  ...
+# Subtest: cost gate
+ok 7 - cost gate
+  ---
+  duration_ms: 0.089044
+  type: 'test'
+  ...
+# Subtest: missing binding
+ok 8 - missing binding
+  ---
+  duration_ms: 0.089495
+  type: 'test'
+  ...
+# Subtest: tool missing
+ok 9 - tool missing
+  ---
+  duration_ms: 0.322375
+  type: 'test'
+  ...
+# Subtest: wrong bytes
+ok 10 - wrong bytes
+  ---
+  duration_ms: 3.746127
+  type: 'test'
+  ...
+# Subtest: second read mismatch
+ok 11 - second read mismatch
+  ---
+  duration_ms: 1.499236
+  type: 'test'
+  ...
+# Subtest: MCP error
+ok 12 - MCP error
+  ---
+  duration_ms: 0.168734
+  type: 'test'
+  ...
+# Subtest: default closed
+ok 13 - default closed
+  ---
+  duration_ms: 16.765458
+  type: 'test'
+  ...
+# Subtest: protocol JSON and original executor
+ok 14 - protocol JSON and original executor
+  ---
+  duration_ms: 30.543401
+  type: 'test'
+  ...
+# Subtest: protocol SSE and original executor
+ok 15 - protocol SSE and original executor
+  ---
+  duration_ms: 2.376316
+  type: 'test'
+  ...
+# Subtest: same ID after recreation does not call provider
+ok 16 - same ID after recreation does not call provider
+  ---
+  duration_ms: 4.464568
+  type: 'test'
+  ...
+# Subtest: concurrent same ID executes once
+ok 17 - concurrent same ID executes once
+  ---
+  duration_ms: 2.30611
+  type: 'test'
+  ...
+# Subtest: ID conflict
+ok 18 - ID conflict
+  ---
+  duration_ms: 1.851727
+  type: 'test'
+  ...
+# Subtest: unfinished state remains pending
+ok 19 - unfinished state remains pending
+  ---
+  duration_ms: 0.419992
+  type: 'test'
+  ...
+# Subtest: foreign
+ok 20 - foreign
+  ---
+  duration_ms: 0.253932
+  type: 'test'
+  ...
+# Subtest: write
+ok 21 - write
+  ---
+  duration_ms: 0.149014
+  type: 'test'
+  ...
+# Subtest: mutation
+ok 22 - mutation
+  ---
+  duration_ms: 0.422206
+  type: 'test'
+  ...
+# Subtest: traversal
+ok 23 - traversal
+  ---
+  duration_ms: 0.461665
+  type: 'test'
+  ...
+# Subtest: cost
+ok 24 - cost
+  ---
+  duration_ms: 0.215675
+  type: 'test'
+  ...
+# Subtest: expired cost proof
+ok 25 - expired cost proof
+  ---
+  duration_ms: 0.217187
+  type: 'test'
+  ...
+# Subtest: same channel rejected
+ok 26 - same channel rejected
+  ---
+  duration_ms: 0.154883
+  type: 'test'
+  ...
+# Subtest: malicious primary bytes
+ok 27 - malicious primary bytes
+  ---
+  duration_ms: 4.456245
+  type: 'test'
+  ...
+# Subtest: mismatching verifier
+ok 28 - mismatching verifier
+  ---
+  duration_ms: 6.512119
+  type: 'test'
+  ...
+# Subtest: protocol mismatch
+ok 29 - protocol mismatch
+  ---
+  duration_ms: 0.586593
+  type: 'test'
+  ...
+# Subtest: RPC wrong ID
+ok 30 - RPC wrong ID
+  ---
+  duration_ms: 0.452922
+  type: 'test'
+  ...
+# Subtest: text content normalization
+ok 31 - text content normalization
+  ---
+  duration_ms: 0.160422
+  type: 'test'
+  ...
+# Subtest: conflicting representations
+ok 32 - conflicting representations
+  ---
+  duration_ms: 0.349907
+  type: 'test'
+  ...
+# Subtest: unconfigured worker closed
+ok 33 - unconfigured worker closed
+  ---
+  duration_ms: 1.601259
+  type: 'test'
+  ...
+# Subtest: original Git blob hashes
+ok 34 - original Git blob hashes
+  ---
+  duration_ms: 3.749051
+  type: 'test'
+  ...
+# Subtest: LOCAL_DESIGN without billing access
+ok 35 - LOCAL_DESIGN without billing access
+  ---
+  duration_ms: 0.825152
+  type: 'test'
+  ...
+# Subtest: LOCAL_CODE without billing access
+ok 36 - LOCAL_CODE without billing access
+  ---
+  duration_ms: 0.223215
+  type: 'test'
+  ...
+# Subtest: OFFLINE_TEST without billing access
+ok 37 - OFFLINE_TEST without billing access
+  ---
+  duration_ms: 0.108864
+  type: 'test'
+  ...
+# Subtest: DOCUMENTATION without billing access
+ok 38 - DOCUMENTATION without billing access
+  ---
+  duration_ms: 0.109745
+  type: 'test'
+  ...
+# Subtest: publication without unrelated billing evidence
+ok 39 - publication without unrelated billing evidence
+  ---
+  duration_ms: 0.098278
+  type: 'test'
+  ...
+# Subtest: publication with uncertain preview costs blocked
+ok 40 - publication with uncertain preview costs blocked
+  ---
+  duration_ms: 0.077177
+  type: 'test'
+  ...
+# Subtest: unknown paid operation blocked
+ok 41 - unknown paid operation blocked
+  ---
+  duration_ms: 0.210216
+  type: 'test'
+  ...
+# Subtest: operation-specific remote proof accepted without unrelated cloudflare billing flag
+ok 42 - operation-specific remote proof accepted without unrelated cloudflare billing flag
+  ---
+  duration_ms: 0.191889
+  type: 'test'
+  ...
+# Subtest: remote refuses operation
+ok 43 - remote refuses operation
+  ---
+  duration_ms: 0.280432
+  type: 'test'
+  ...
+# Subtest: remote refuses operationBound
+ok 44 - remote refuses operationBound
+  ---
+  duration_ms: 0.289676
+  type: 'test'
+  ...
+# Subtest: remote refuses entitlementVerified
+ok 45 - remote refuses entitlementVerified
+  ---
+  duration_ms: 0.206591
+  type: 'test'
+  ...
+# Subtest: remote refuses noAdditionalCharge
+ok 46 - remote refuses noAdditionalCharge
+  ---
+  duration_ms: 0.069625
+  type: 'test'
+  ...
+# Subtest: remote refuses zeroAdditionalCost
+ok 47 - remote refuses zeroAdditionalCost
+  ---
+  duration_ms: 0.141583
+  type: 'test'
+  ...
+# Subtest: remote refuses evidenceRef
+ok 48 - remote refuses evidenceRef
+  ---
+  duration_ms: 0.058108
+  type: 'test'
+  ...
+# Subtest: remote refuses expiresAt
+ok 49 - remote refuses expiresAt
+  ---
+  duration_ms: 1.208168
+  type: 'test'
+  ...
+# Subtest: authorization exact and fail closed
+ok 50 - authorization exact and fail closed
+  ---
+  duration_ms: 25.828967
+  type: 'test'
+  ...
+# Subtest: cost gate expired
+ok 51 - cost gate expired
+  ---
+  duration_ms: 0.220222
+  type: 'test'
+  ...
+# Subtest: cost gate future
+ok 52 - cost gate future
+  ---
+  duration_ms: 0.07281
+  type: 'test'
+  ...
+# Subtest: cost gate long
+ok 53 - cost gate long
+  ---
+  duration_ms: 0.061983
+  type: 'test'
+  ...
+# Subtest: cost gate quota
+ok 54 - cost gate quota
+  ---
+  duration_ms: 0.064467
+  type: 'test'
+  ...
+# Subtest: cost gate cloudflare
+ok 55 - cost gate cloudflare
+  ---
+  duration_ms: 0.303197
+  type: 'test'
+  ...
+# Subtest: cost gate cost
+ok 56 - cost gate cost
+  ---
+  duration_ms: 0.084447
+  type: 'test'
+  ...
+# Subtest: cost gate scope
+ok 57 - cost gate scope
+  ---
+  duration_ms: 0.074662
+  type: 'test'
+  ...
+# Subtest: cost gate limit
+ok 58 - cost gate limit
+  ---
+  duration_ms: 0.288124
+  type: 'test'
+  ...
+# Subtest: cost gate evidence
+ok 59 - cost gate evidence
+  ---
+  duration_ms: 0.304789
+  type: 'test'
+  ...
+# Subtest: valid cost proof
+ok 60 - valid cost proof
+  ---
+  duration_ms: 0.170516
+  type: 'test'
+  ...
+# Subtest: strict scope rejects extras
+ok 61 - strict scope rejects extras
+  ---
+  duration_ms: 0.290066
+  type: 'test'
+  ...
+# Subtest: GitHub REST independent transport request and byte verification
+ok 62 - GitHub REST independent transport request and byte verification
+  ---
+  duration_ms: 8.530296
+  type: 'test'
+  ...
+# Subtest: REST rejects path
+ok 63 - REST rejects path
+  ---
+  duration_ms: 0.659983
+  type: 'test'
+  ...
+# Subtest: REST rejects size
+ok 64 - REST rejects size
+  ---
+  duration_ms: 0.429796
+  type: 'test'
+  ...
+# Subtest: REST rejects hash
+ok 65 - REST rejects hash
+  ---
+  duration_ms: 1.101888
+  type: 'test'
+  ...
+# Subtest: REST rejects type
+ok 66 - REST rejects type
+  ---
+  duration_ms: 0.513633
+  type: 'test'
+  ...
+# Subtest: REST rejects encoding
+ok 67 - REST rejects encoding
+  ---
+  duration_ms: 0.568596
+  type: 'test'
+  ...
+# Subtest: REST rejects bytes
+ok 68 - REST rejects bytes
+  ---
+  duration_ms: 0.430578
+  type: 'test'
+  ...
+# Subtest: REST rejects foreign repository before transport
+ok 69 - REST rejects foreign repository before transport
+  ---
+  duration_ms: 0.309195
+  type: 'test'
+  ...
+# Subtest: atomic budget limits concurrent distinct jobs
+ok 70 - atomic budget limits concurrent distinct jobs
+  ---
+  duration_ms: 0.47174
+  type: 'test'
+  ...
+# Subtest: duplicate does not consume quota, terminal readback preserved
+ok 71 - duplicate does not consume quota, terminal readback preserved
+  ---
+  duration_ms: 0.23927
+  type: 'test'
+  ...
+# Subtest: new UTC day permits new job
+ok 72 - new UTC day permits new job
+  ---
+  duration_ms: 0.13934
+  type: 'test'
+  ...
+# Subtest: missing cost evidence blocks gateway without state call
+ok 73 - missing cost evidence blocks gateway without state call
+  ---
+  duration_ms: 4.670398
+  type: 'test'
+  ...
+# Subtest: unauthorized request blocks before state
+ok 74 - unauthorized request blocks before state
+  ---
+  duration_ms: 1.332405
+  type: 'test'
+  ...
+# Subtest: cross origin rejected
+ok 75 - cross origin rejected
+  ---
+  duration_ms: 0.428785
+  type: 'test'
+  ...
+# Subtest: gateway does not forward credentials, returns receipt
+ok 76 - gateway does not forward credentials, returns receipt
+  ---
+  duration_ms: 2.162244
+  type: 'test'
+  ...
+# Subtest: DO directly blocks missing cost evidence
+ok 77 - DO directly blocks missing cost evidence
+  ---
+  duration_ms: 0.827675
+  type: 'test'
+  ...
+# Subtest: DO status survives object recreation
+ok 78 - DO status survives object recreation
+  ---
+  duration_ms: 1.186175
+  type: 'test'
+  ...
+# Subtest: full R03 gateway to DO to R02 original executor to separate HTTP verifier
+ok 79 - full R03 gateway to DO to R02 original executor to separate HTTP verifier
+  ---
+  duration_ms: 13.814848
+  type: 'test'
+  ...
+# Subtest: mutation string and non-string commit blocked
+ok 80 - mutation string and non-string commit blocked
+  ---
+  duration_ms: 0.139199
+  type: 'test'
+  ...
+# Subtest: verifier preserves UTF-8 BOM exactly
+ok 81 - verifier preserves UTF-8 BOM exactly
+  ---
+  duration_ms: 0.908437
+  type: 'test'
+  ...
+1..81
+# tests 81
+# suites 0
+# pass 81
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 226.427492
