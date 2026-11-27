@@ -16,4 +16,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node --test LYVRA_NATIVE_RUNTIME/development/practical/track-mcp-r062.test.mjs
+      - run: node --test LYVRA_NATIVE_RUNTIME/development/practical/track-mcp-r062.test.mjs LYVRA_NATIVE_RUNTIME/development/practical/track-mcp-r062-view.test.mjs
