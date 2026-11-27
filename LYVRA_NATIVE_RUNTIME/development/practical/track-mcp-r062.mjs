@@ -10,7 +10,7 @@ export function inspect(d,discovery){
  for(const k of ['title','extended','style','lyrics'])if(typeof d[k]!=='string'||!d[k].trim())errors.push('REQUIRED_'+k);
  if(d.mode!=='custom')errors.push('CUSTOM_REQUIRED');
  if(!discovery?.revision||d.discoveryRevision!==discovery.revision)errors.push('DISCOVERY_STALE');
- if(!Array.isArray(discovery?.models)||!discovery.models.some(m=>m?.id===d.modelId&&m.can_use===true))errors.push('MODEL_NOT_VERIFIED');
+ if(!Array.isArray(discovery?.models)||!discovery.models.some(m=>typeof d.modelId==='string'&&d.modelId.length>0&&m?.id===d.modelId&&m?.can_use===true))errors.push('MODEL_NOT_VERIFIED');
  for(const k of ['weirdness','styleInfluence']){if(!Number.isInteger(d[k])||d[k]<0||d[k]>100)errors.push('RANGE_'+k);else if(d[k]>=86){warnings.push('CRITICAL_'+k);if(d[k]>86&&(typeof d.reasons?.[k]!=='string'||!d.reasons[k].trim()))errors.push('REASON_'+k);}}
  if(!Number.isInteger(d.variety)||d.variety<0||d.variety>4)errors.push('VARIETY_RANGE');
  if(!['ON','OFF'].includes(d.tasteMode))errors.push('TASTE_DECISION');

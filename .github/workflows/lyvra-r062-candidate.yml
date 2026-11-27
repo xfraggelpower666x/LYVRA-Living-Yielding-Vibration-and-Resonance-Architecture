@@ -1,0 +1,19 @@
+name: LYVRA R06.2 candidate regression
+on:
+  push:
+    branches: [dev/lyvra-r062-native-mcp-20261127]
+    paths:
+      - 'LYVRA_NATIVE_RUNTIME/development/practical/track-mcp-r062*'
+      - '.github/workflows/lyvra-r062-candidate.yml'
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test LYVRA_NATIVE_RUNTIME/development/practical/track-mcp-r062.test.mjs

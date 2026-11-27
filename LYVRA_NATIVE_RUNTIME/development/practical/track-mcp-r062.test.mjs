@@ -19,3 +19,5 @@ test('no execution',()=>assert.equal(inspect(draft(),discovery).providerExecutio
 
 test('live schema nesting',()=>{const p=inspect(draft(),discovery).payload;assert.deepEqual(p.controls,{weirdness:.86,style_influence:.86,variety:1});assert.equal(p.duration,355);assert.equal(p.duration_strict,false);assert.equal(p.max_mode,false);});
 test('invalid reason fails closed',()=>assert.equal(inspect({...draft(),weirdness:99,reasons:{weirdness:42}},discovery).status,'HOLD'));
+
+test('null model and missing id fail closed',()=>assert.equal(inspect({...draft(),modelId:undefined},{...discovery,models:[null]}).status,'HOLD'));
