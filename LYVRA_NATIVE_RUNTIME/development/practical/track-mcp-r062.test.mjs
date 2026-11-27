@@ -16,3 +16,6 @@ test('strict truncation rejected',()=>assert.equal(inspect({...draft(),durationS
 test('approval invalidated by changes',()=>{const d=draft(),a={revision:inspect(d,discovery).revision,explicit:true};assert.equal(release(d,discovery,a).status,'LOCAL_APPROVAL_MATCH');assert.equal(release({...d,title:'Changed'},discovery,a).status,'HOLD');});
 test('max needs named consent',()=>{const d={...draft(),maxMode:true};assert.equal(release(d,discovery,{revision:inspect(d,discovery).revision,explicit:true}).status,'HOLD');});
 test('no execution',()=>assert.equal(inspect(draft(),discovery).providerExecution,false));
+
+test('live schema nesting',()=>{const p=inspect(draft(),discovery).payload;assert.deepEqual(p.controls,{weirdness:.86,style_influence:.86,variety:1});assert.equal(p.duration,355);assert.equal(p.duration_strict,false);assert.equal(p.max_mode,false);});
+test('invalid reason fails closed',()=>assert.equal(inspect({...draft(),weirdness:99,reasons:{weirdness:42}},discovery).status,'HOLD'));
